@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { LogoMark } from "@/components/brand/Logo";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { appStoreLink } from "@/lib/config";
@@ -79,14 +79,7 @@ export function Navbar() {
           href="/"
           style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
         >
-          <Image
-            src="/images/logo-64.png"
-            alt="Invoicor"
-            width={32}
-            height={32}
-            priority
-            style={{ borderRadius: 8 }}
-          />
+          <LogoMark size={32} />
           <span
             style={{
               fontFamily: "var(--font-display)",

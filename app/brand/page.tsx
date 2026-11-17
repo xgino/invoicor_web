@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { Logo, LogoMark } from "@/components/brand/Logo";
 import { buildMetadata } from "@/lib/seo";
 
 /**
@@ -125,6 +126,56 @@ export default function BrandPage() {
       </div>
 
       <div className="max-w-page px-gutter mx-auto pb-24 sm:px-6">
+        <Block id="logo" title="Logo">
+          <div className="grid gap-6 sm:grid-cols-3">
+            <div className="border-line bg-surface flex h-40 items-center justify-center rounded-2xl border">
+              <Logo size={48} />
+            </div>
+            <div className="border-line bg-tint flex h-40 items-center justify-center gap-5 rounded-2xl border">
+              <LogoMark size={64} title="Invoicor" />
+              <LogoMark size={40} />
+              <LogoMark size={24} />
+              <LogoMark size={16} />
+            </div>
+            <div className="border-line bg-surface text-ink flex h-40 items-center justify-center gap-5 rounded-2xl border">
+              <LogoMark variant="mono" size={48} />
+              <span className="text-brand-700">
+                <LogoMark variant="mono" size={48} />
+              </span>
+            </div>
+          </div>
+          <p className="text-small text-muted mt-4">
+            <code>&lt;Logo /&gt;</code> (mark + wordmark), <code>&lt;LogoMark /&gt;</code> (the app
+            icon tile) and <code>&lt;LogoMark variant=&quot;mono&quot; /&gt;</code> (one color, uses
+            the text color). One SVG path, traced from the iOS app icon. Keep clear space of half
+            the mark&apos;s height around it; never stretch, recolor the tile or add effects.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <figure>
+              {/* eslint-disable-next-line @next/next/no-img-element -- static export, plain image */}
+              <img
+                src="/og.png"
+                alt="Default share image"
+                className="border-line w-full rounded-2xl border"
+              />
+              <figcaption className="text-small text-muted mt-2">
+                Default share image (/og.png)
+              </figcaption>
+            </figure>
+            <figure>
+              {/* eslint-disable-next-line @next/next/no-img-element -- static export, plain image */}
+              <img
+                src="/og/templates/plumbing/og.png"
+                alt="Share image of the plumbing template page"
+                className="border-line w-full rounded-2xl border"
+              />
+              <figcaption className="text-small text-muted mt-2">
+                Per-page share image (templates, industries, compare)
+              </figcaption>
+            </figure>
+          </div>
+        </Block>
+
         <Block id="brand-colors" title="Brand colors">
           <div className="grid grid-cols-3 gap-4 sm:grid-cols-6 lg:grid-cols-11">
             {BRAND.map(([k, hex]) => (

@@ -18,7 +18,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { appStoreLink } from "@/lib/config";
 import { getTemplate, getTemplates, text } from "@/lib/content";
 import { breadcrumbLd, faqLd, howToLd } from "@/lib/jsonld";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 // Only the slugs in content/templates.json exist; anything else is a real 404.
 export const dynamicParams = false;
@@ -37,6 +37,7 @@ export async function generateMetadata({
     title: d.title,
     description: d.meta_description,
     path: `/templates/${d.slug}`,
+    image: ogImagePath("templates", d.slug),
   });
 }
 

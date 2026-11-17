@@ -74,7 +74,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage D: Brand system**
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
-- [ ] 16. Logo, icons & OG images
+- [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
 - [ ] 17. UI components kit
 
 **Stage E: Rebuild the pages (in the new brand)**
@@ -460,11 +460,11 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 ### 16. Logo, icons & OG images
 **Goal:** sharp brand assets everywhere, and no 364 KB JPGs.
 
-- [ ] a. Redraw the logo as **SVG**: the mark (white arrow on the orange gradient), mark + wordmark, and a one-color version for small or monochrome use. Add it as a `<Logo>` component.
-- [ ] b. App icons with Next file conventions: `app/icon.svg`, `app/apple-icon.png` (180×180), `app/manifest.ts` (name, colors, icons).
-- [ ] c. A branded 1200×630 share card: light background, orange glow, logo, page title.
-- [ ] d. Per-page OG images for templates (with the template preview), industries, compare pages and guides.
-- [ ] e. Delete the duplicated `icon.jpg`, `logo.jpg` and `og-image.jpg` once nothing uses them.
+- [x] a. Redraw the logo as **SVG**: the mark (white arrow on the orange gradient), mark + wordmark, and a one-color version for small or monochrome use. Add it as a `<Logo>` component.
+- [x] b. App icons with Next file conventions: `app/icon.svg`, `app/apple-icon.png` (180×180), `app/manifest.ts` (name, colors, icons).
+- [x] c. A branded 1200×630 share card: light background, orange glow, logo, page title.
+- [x] d. Per-page OG images for templates, industries and compare pages (`app/og/[collection]/[slug]/og.png`, title + eyebrow). _Template preview images and guides come with chunks 21 and 42._
+- [x] e. Delete the duplicated `icon.jpg`, `logo.jpg` and `og-image.jpg` once nothing uses them.
 
 **Done when:** pasting a template-page URL into WhatsApp or Slack, or into an OG debugger, shows a branded card with the right title.
 

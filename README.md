@@ -43,10 +43,13 @@ app/                     routes (one folder per URL) + site-wide files
   not-found.tsx          branded 404 (exported as out/404.html)
   sitemap.ts robots.ts manifest.ts llms.txt/  generated at build time
   og.png/route.tsx       default social share image (out/og.png)
+  og/[collection]/[slug]/og.png/   per-page share images (templates, industries, compare)
+  icon.svg icon.png apple-icon.png  favicons, generated from the SVG logo
   fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
   globals.css            Tailwind + keyframes + hover/reveal helpers
 styles/tokens.css        brand tokens: colors, gradients, type scale, shadows, motion (see BRAND.md §7)
 components/
+  brand/                 Logo, LogoMark (SVG)
   layout/                Navbar, Footer
   landing/               home page sections and their building blocks
   content/               shared blocks for SEO pages (breadcrumbs, FAQ, TOC, CTAs)
@@ -57,6 +60,7 @@ lib/
   content.ts             typed + validated access to content/*.json
   seo.ts jsonld.ts       page metadata and structured data helpers
   api.ts                 build-time calls to the Invoicor API
+assets/og-fonts/         TTF copies of the site fonts for the share images (the renderer can't read woff2)
 public/                  static files copied as-is (icons, images, BingSiteAuth.xml, IndexNow key)
 scripts/                 content-check.mjs, indexnow.mjs
 types/                   api.generated.ts (from the API's OpenAPI schema)

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { LogoMark } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 import { AppleIcon } from "@/components/landing/AppleIcon";
 import { CONTACT_EMAIL, appStoreLink } from "@/lib/config";
@@ -57,13 +57,7 @@ export function Footer() {
           {/* Brand */}
           <div style={{ flex: "1 1 240px", maxWidth: 280 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-              <Image
-                src="/images/logo-64.png"
-                alt=""
-                width={28}
-                height={28}
-                style={{ borderRadius: 7 }}
-              />
+              <LogoMark size={28} />
               <span
                 style={{
                   fontFamily: "var(--font-display)",

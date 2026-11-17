@@ -12,7 +12,7 @@ import { Toc } from "@/components/content/Toc";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getIndustries, getIndustry, text } from "@/lib/content";
 import { breadcrumbLd, definedTermSetLd, faqLd } from "@/lib/jsonld";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -30,6 +30,7 @@ export async function generateMetadata({
     title: d.title,
     description: d.meta_description,
     path: `/industries/${d.slug}`,
+    image: ogImagePath("industries", d.slug),
   });
 }
 

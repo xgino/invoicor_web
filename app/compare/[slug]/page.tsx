@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { flag, getComparison, getComparisons, text } from "@/lib/content";
 import { breadcrumbLd, faqLd } from "@/lib/jsonld";
 import { FREE_INVOICES, PAID_PLANS, PRICING, STARTING_PRICE, formatPrice } from "@/lib/pricing";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -25,6 +25,7 @@ export async function generateMetadata({
     title: d.title,
     description: d.meta_description,
     path: `/compare/${d.slug}`,
+    image: ogImagePath("compare", d.slug),
   });
 }
 
