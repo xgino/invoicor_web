@@ -1,4 +1,4 @@
-import { Counter } from "../Counter";
+import { Counter } from "@/components/ui/Counter";
 import { Cta, Eyebrow, display } from "../primitives";
 
 const METRICS = [

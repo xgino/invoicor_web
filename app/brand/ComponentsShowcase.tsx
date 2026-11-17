@@ -14,6 +14,15 @@ import {
 import { Field, Input, NumberInput, Select, Textarea, messageId } from "@/components/ui/form";
 import { Eyebrow, Gradient, Heading, Prose, Text } from "@/components/ui/layout";
 import { Tabs } from "@/components/ui/Tabs";
+import { PricingTable } from "@/components/pricing/PricingTable";
+import {
+  CoffeeCup,
+  InvoicePaper,
+  LineItems,
+  Money,
+  PaperLabel,
+  Stamp,
+} from "@/components/ui/invoice";
 
 /** Every UI kit component (ROADMAP chunk 17f), shown on /brand. */
 
@@ -46,6 +55,78 @@ export function ComponentsShowcase() {
             Link to templates
           </Button>
         </div>
+      </Demo>
+
+      <Demo name="Invoice components (chunk 17.2): InvoicePaper · PaperLabel · LineItems · Money · Stamp">
+        <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+          <InvoicePaper highlight edge="perforated" className="p-6 sm:p-8">
+            <div className="mb-6 flex items-start justify-between">
+              <div>
+                <PaperLabel>Invoice № 0042</PaperLabel>
+                <p className="font-heading text-h4 mt-1">Rivera Plumbing</p>
+                <p className="text-small text-muted">Due on receipt</p>
+              </div>
+              <Stamp tone="success" rotate={-12}>
+                Paid
+              </Stamp>
+            </div>
+            <PaperLabel className="mb-1">Bill to</PaperLabel>
+            <p className="text-small text-ink mb-6">Sarah Mitchell · 18 Oak Lane</p>
+            <LineItems
+              showQty
+              animate
+              items={[
+                {
+                  description: "Emergency call-out",
+                  detail: "Saturday",
+                  qty: "1",
+                  amount: "$95.00",
+                },
+                {
+                  description: "Labor",
+                  detail: "Replace kitchen faucet",
+                  qty: "2 h",
+                  amount: "$170.00",
+                },
+                { description: "Faucet, Delta 9159", qty: "1", amount: "$189.00" },
+                { description: "Supply lines and fittings", qty: "1", amount: "$24.50" },
+              ]}
+              totals={[
+                { label: "Subtotal", amount: "$478.50" },
+                { label: "Tax 8%", amount: "$38.28" },
+              ]}
+              total={{ label: "Total", amount: "$516.78" }}
+            />
+          </InvoicePaper>
+          <div className="grid content-start gap-6">
+            <InvoicePaper className="p-6">
+              <PaperLabel>Money</PaperLabel>
+              <p className="mt-2">
+                <Money strong className="text-h2">
+                  $1,250.00
+                </Money>
+              </p>
+              <p className="text-small text-muted mt-1">
+                Tabular figures, so amounts line up in columns.
+              </p>
+            </InvoicePaper>
+            <InvoicePaper className="flex flex-wrap items-center gap-4 p-6">
+              <Stamp>Save 16%</Stamp>
+              <Stamp rotate={6}>0% fees</Stamp>
+              <Stamp tone="success" rotate={-4}>
+                Paid
+              </Stamp>
+            </InvoicePaper>
+            <InvoicePaper className="text-small text-brand-800 flex items-center gap-3 p-6">
+              <CoffeeCup className="text-brand-700 size-7" />
+              CoffeeCup: the steaming price anchor.
+            </InvoicePaper>
+          </div>
+        </div>
+      </Demo>
+
+      <Demo name="PricingTable (each plan as an invoice) · BillingSwitch">
+        <PricingTable campaign="brand_page" />
       </Demo>
 
       <Demo name="AppStoreBadge · Badge">

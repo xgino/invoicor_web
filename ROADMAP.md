@@ -77,7 +77,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
 - [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
 - [x] 17.1 Tests: the safety net before the rebuild _(✅ 2026-11-18: 14 unit, 42 built-site, 56 browser tests in CI; style guard (e) follows Stage E)_
-- [ ] 17.2 Invoice-style premium components _(new 2026-11-18)_
+- [x] 17.2 Invoice-style premium components _(✅ 2026-11-18: paper, line items, stamp, billing switch, invoice-shaped pricing; on `/brand`)_
 
 **Stage E: Rebuild the pages (in the new brand)**
 - [ ] 18. Navbar & footer _(the current footer fails contrast (2.67:1); rebuild it light with the kit first)_
@@ -511,21 +511,23 @@ tailored to the people who use it, with reusable invoice-style parts")._
 **Goal:** a visual language that only an invoicing brand could have, so the site looks like a
 serious business tool and the price reads as a great deal instead of "cheap".
 
-- [ ] a. `InvoicePaper`: a white "sheet" card with a subtle paper shadow and an optional
+- [x] a. `InvoicePaper`: a white "sheet" card with a subtle paper shadow and an optional
   perforated or torn bottom edge; the base for hero mockups, pricing and examples.
-- [ ] b. `LineItems`: an invoice table (item, qty, price, total) with tabular figures, a hairline
+- [x] b. `LineItems`: an invoice table (item, qty, price, total) with tabular figures, a hairline
   ruler and a subtotal / tax / **Total** footer. Used for examples, pricing and the fee comparison.
-- [ ] c. `Stamp`: a "PAID" / "2 MONTHS FREE" / "0% FEES" rubber stamp that lands with a small
+- [x] c. `Stamp`: a "PAID" / "2 MONTHS FREE" / "0% FEES" rubber stamp that lands with a small
   scale-and-rotate animation once, when scrolled into view.
-- [ ] d. `PriceTag` as an invoice: the pricing card shows the plan as line items ending in
+- [x] d. `PricingTable` (`components/pricing/`), each plan as an invoice: the pricing card shows the plan as line items ending in
   "Total $4.99 / month", the yearly card adds a discount line ("2 months free −$9.89").
-- [ ] e. `BillingSwitch`: the monthly / yearly toggle styled as a physical switch; flipping it to
+- [x] e. `BillingSwitch`: the monthly / yearly toggle styled as a physical switch; flipping it to
   yearly animates the price down (count-down number), slides in the discount line and stamps
   "SAVE 16%". Keyboard and screen-reader friendly (`role="switch"`).
-- [ ] f. An invoice-style CTA variant: a primary button with a subtle "paper slip" sheen.
-- [ ] g. Typography for money: tabular numbers everywhere a price or total appears; amounts in
+- [x] f. An invoice-style CTA variant: every primary button gets a light sheen sweep on hover (`.sheen`).
+- [x] g. Typography for money: tabular numbers everywhere a price or total appears; amounts in
   the heading font.
-- [ ] h. Show all of them on `/brand`, with axe checks.
+- [x] h. Show all of them on `/brand`, with axe checks.
+
+_✅ 2026-11-18: `components/ui/invoice.tsx` (InvoicePaper, PaperLabel, LineItems, Money, Stamp, CoffeeCup), `BillingSwitch`, `Counter`, `styles/effects.css` (stamp, sheen, steam, glow drift, float; all off under reduced motion). Savings come from `yearlySaving()` in `lib/pricing.ts`, never typed by hand._
 
 **Done when:** `/brand` shows every invoice component, and a pricing card built from them looks
 like a real invoice at phone and desktop width.

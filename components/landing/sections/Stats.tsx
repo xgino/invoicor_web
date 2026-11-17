@@ -1,4 +1,4 @@
-import { Counter } from "../Counter";
+import { Counter } from "@/components/ui/Counter";
 import { Marquee, delay } from "../primitives";
 
 const FEATURES = [

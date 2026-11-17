@@ -57,3 +57,23 @@ export const STARTING_PRICE = formatPrice(Math.min(...PAID_PLANS.map((p) => p.mo
 
 /** Number of free invoices, read from the free plan's first feature ("3 invoices (lifetime)"). */
 export const FREE_INVOICES = Number(getPlan("free").features[0]?.match(/\d+/)?.[0] ?? 3);
+
+/**
+ * What yearly saves against 12 monthly payments, from the real prices (never typed by hand):
+ * Starter $59.88 vs $49.99 → saves $9.89, 16%, 2 months (1.98, rounded).
+ */
+export function yearlySaving(plan: Plan) {
+  const twelveMonths = Math.round(plan.monthly * 12 * 100) / 100;
+  const amount = Math.round((twelveMonths - plan.yearly) * 100) / 100;
+  return {
+    twelveMonths,
+    amount,
+    percent: Math.floor((amount / twelveMonths) * 100),
+    months: Math.round(amount / plan.monthly),
+    perMonth: Math.round((plan.yearly / 12) * 100) / 100,
+  };
+}
+
+/** The smallest saving across paid plans, so a shared "save X%" label is true for every plan. */
+export const YEARLY_SAVING_PERCENT = Math.min(...PAID_PLANS.map((p) => yearlySaving(p).percent));
+export const YEARLY_MONTHS_FREE = Math.min(...PAID_PLANS.map((p) => yearlySaving(p).months));

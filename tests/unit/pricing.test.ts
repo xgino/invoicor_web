@@ -7,6 +7,9 @@ import {
   formatPrice,
   getPlan,
   trialNote,
+  YEARLY_MONTHS_FREE,
+  YEARLY_SAVING_PERCENT,
+  yearlySaving,
 } from "@/lib/pricing";
 
 // The App Store is the source of truth (decision D1). If prices change there, change
@@ -43,5 +46,23 @@ describe("pricing", () => {
 
   it("makes yearly cheaper than 12 monthly payments", () => {
     for (const plan of PAID_PLANS) expect(plan.yearly).toBeLessThan(plan.monthly * 12);
+  });
+});
+
+describe("yearly saving", () => {
+  it("is calculated from the real prices", () => {
+    expect(yearlySaving(getPlan("starter"))).toEqual({
+      twelveMonths: 59.88,
+      amount: 9.89,
+      percent: 16,
+      months: 2,
+      perMonth: 4.17,
+    });
+    expect(yearlySaving(getPlan("pro")).amount).toBe(15.89);
+  });
+
+  it("only claims what every plan delivers", () => {
+    expect(YEARLY_SAVING_PERCENT).toBe(16);
+    expect(YEARLY_MONTHS_FREE).toBe(2);
   });
 });
