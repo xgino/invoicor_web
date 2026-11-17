@@ -84,7 +84,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-18: light hero with a real sample invoice and PAID stamp, true-numbers band, live template gallery, 3 steps)_
 - [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
 - [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
-- [ ] 22. Industry pages + hub
+- [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
 - [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_
 - [ ] 24. About, contact, help, affiliate & legal
 - [ ] 25. Motion & micro-interactions
@@ -610,9 +610,11 @@ _✅ 2026-11-18: shared SEO-page blocks in `components/sections/content/` (PageH
 ### 22. Industry pages + hub
 **Goal:** the same treatment for `/industries` and `/industries/[slug]`.
 
-- [ ] a. Page sections: breadcrumbs, hero, the industry's pain points, what this industry's invoice must include, recommended templates, a **generator preset CTA** (`?industry={slug}` once the generator is live), FAQ, related.
-- [ ] b. Hub grid with icons + intro.
-- [ ] c. Metadata, OG images, JSON-LD.
+- [x] a. Page sections: breadcrumbs, hero with the industry snapshot as an invoice sheet, billing mistakes, how Invoicor helps, a real scenario, expert tip, common line items, glossary (DefinedTermSet), tax notes, FAQ, related. _Recommended templates and the generator preset CTA (`?industry={slug}`) follow with chunk 34._
+- [x] b. Hub grid with icons + intro.
+- [x] c. Metadata, OG images, JSON-LD.
+
+_✅ 2026-11-18. The rebuild exposed **33 more false claims** the 2026-11-17 audit missed (automatic recurring invoices, per-line tax flags, Apple Pay / Google Pay tap-to-pay, 135+ currencies, overdue notifications, brand hex colors, auto-updating milestones, "watermarks on premium plans"). All rewritten to what the app does; a unit test now blocks these phrases in the "How Invoicor helps" cards, subtitles and descriptions._
 
 **Done when:** every old `/industries/*` URL works and its content is in the raw HTML.
 

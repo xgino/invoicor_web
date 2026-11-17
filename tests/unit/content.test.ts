@@ -27,3 +27,17 @@ describe("content", () => {
     for (const pattern of banned) expect(text).not.toMatch(pattern);
   });
 });
+
+describe("what the industry pages say Invoicor does", () => {
+  // The "How Invoicor helps" cards, subtitles and descriptions speak for the app, so they may only
+  // describe features on the fact sheet (BRAND.md §10). Found in the 2026-11-18 rebuild.
+  const claims =
+    /apple pay|google pay|tap[- ]to[- ]pay|automatic(ally)?\s+(generate|send|monthly)|recurring invoice|135|any currency|notification|tax flag|hex colou?r|updates automatically/i;
+
+  it.each(getIndustries().map((d) => [d.slug, d] as const))("%s", (_slug, d) => {
+    const fields = Object.entries(d).filter(([k]) =>
+      /^(feature_\d_(title|text)|subtitle|meta_description|h1)$/.test(k),
+    );
+    for (const [key, value] of fields) expect(String(value), key).not.toMatch(claims);
+  });
+});

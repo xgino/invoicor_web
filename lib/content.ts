@@ -60,7 +60,7 @@ export type ComparisonEntry = z.infer<typeof comparisonSchema>;
 /** Last real content update per collection (used for sitemap <lastmod>). Update when content changes. */
 export const CONTENT_UPDATED_AT = {
   templates: "2026-07-22",
-  industries: "2026-07-22",
+  industries: "2026-11-18",
   comparisons: "2026-07-22",
   legal: "2026-04-27",
   privacy: "2026-11-17",

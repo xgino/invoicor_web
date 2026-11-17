@@ -1,9 +1,7 @@
-import { Briefcase } from "lucide-react";
 import type { Metadata } from "next";
-import { HubCard, HubHeader } from "@/components/content/blocks";
-import { JsonLd } from "@/components/seo/JsonLd";
+import { HubPage } from "@/components/sections/content/hub";
 import { getIndustries, text } from "@/lib/content";
-import { breadcrumbLd } from "@/lib/jsonld";
+import { FREE_INVOICES } from "@/lib/pricing";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -13,31 +11,39 @@ export const metadata: Metadata = buildMetadata({
   path: "/industries",
 });
 
+/** Industries hub (ROADMAP chunk 22b, blueprint "Hub"). */
 export default function IndustriesHubPage() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
-      <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "Industries" }])} />
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
-        <HubHeader
-          icon={<Briefcase className="h-8 w-8" aria-hidden />}
-          iconClass="bg-emerald-100 text-emerald-600"
-          title="Built for how you work."
-          text="Every profession bills differently. Find out how Invoicor solves the specific invoicing and cash flow headaches in your industry."
-        />
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {getIndustries().map((d) => (
-            <HubCard
-              key={d.slug}
-              href={`/industries/${d.slug}`}
-              eyebrow={text(d, "badge_text") ?? "Industry Solution"}
-              title={d.industry}
-              text={d.subtitle}
-              cta="View workflow"
-              accent="emerald"
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    <HubPage
+      path="/industries"
+      name="Industries"
+      eyebrow="Industries"
+      title="Built for how you work."
+      subtitle="Every trade bills differently. See the billing mistakes, line items and tax rules for your work, and how Invoicor handles them."
+      items={getIndustries().map((d) => ({
+        href: `/industries/${d.slug}`,
+        eyebrow: text(d, "badge_text") ?? "Industry",
+        title: d.industry,
+        text: d.subtitle,
+      }))}
+      cta="See how it works"
+      campaign="industries-hub"
+      explainer={
+        <>
+          <h2 className="font-heading text-h3 text-ink">One app, the way your trade bills</h2>
+          <p>
+            A plumber bills a call-out fee, labor and parts. A designer bills a deposit and
+            milestones. A cleaner bills the same client every week. Each industry page covers the
+            mistakes that delay payment in that trade, the line items you&apos;ll use most, the
+            words clients expect to see, and the tax points to check.
+          </p>
+          <p>
+            Invoicor works the same way for all of them: save your clients and line items once, pick
+            a template, and send a clean PDF from your phone. {FREE_INVOICES} invoices are free, and
+            Invoicor never takes a cut of your payments.
+          </p>
+        </>
+      }
+    />
   );
 }

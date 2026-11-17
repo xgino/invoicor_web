@@ -1,19 +1,26 @@
-import { BookOpen, CirclePlay, CircleX, Lightbulb, Receipt, Scale } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { AppleIcon } from "@/components/brand/AppleIcon";
 import {
-  AppStoreButton,
-  Breadcrumbs,
+  ArticleLayout,
+  Block,
+  Callout,
   ClosingCta,
-  FaqSection,
-  RelatedLinks,
-} from "@/components/content/blocks";
-import { Toc } from "@/components/content/Toc";
+  FaqBlock,
+  NoteList,
+  PageHeader,
+  PointList,
+} from "@/components/sections/content/blocks";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { buttonClass } from "@/components/ui/Button";
+import { Badge, RelatedLinks } from "@/components/ui/content";
+import { InvoicePaper, PaperLabel } from "@/components/ui/invoice";
+import { appStoreLink } from "@/lib/config";
 import { getIndustries, getIndustry, text } from "@/lib/content";
-import { breadcrumbLd, definedTermSetLd, faqLd } from "@/lib/jsonld";
+import { definedTermSetLd } from "@/lib/jsonld";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
+// Only the slugs in content/industries.json exist; anything else is a real 404.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -36,6 +43,7 @@ export async function generateMetadata({
 
 const THREE = [1, 2, 3];
 
+/** Industry page (ROADMAP chunk 22, blueprint "Industry"). All text from content/industries.json. */
 export default async function IndustryPage({ params }: PageProps<"/industries/[slug]">) {
   const { slug } = await params;
   const d = getIndustry(slug);
@@ -43,277 +51,195 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
 
   const industry = d.industry;
   const industryLower = industry.toLowerCase();
-  const mistakes = THREE.flatMap((n) => {
-    const title = text(d, `industry_mistake_${n}_title`);
-    return title ? [{ n, title, text: text(d, `industry_mistake_${n}_text`) }] : [];
-  });
-  const features = THREE.flatMap((n) => {
-    const title = text(d, `feature_${n}_title`);
-    return title ? [{ n, title, text: text(d, `feature_${n}_text`) }] : [];
-  });
+  const pairs = (prefix: string) =>
+    THREE.flatMap((n) => {
+      const title = text(d, `${prefix}_${n}_title`);
+      return title ? [{ title, text: text(d, `${prefix}_${n}_text`) }] : [];
+    });
+  const mistakes = pairs("industry_mistake");
+  const features = pairs("feature");
   const scenario = text(d, "real_scenario_text");
   const tip = text(d, "expert_tip_text");
   const tax = text(d, "tax_or_compliance_text");
   const glossaryTitle = text(d, "industry_glossary_title") ?? `${industry} billing terms`;
 
-  const tocSections = [
-    { id: "stats", label: "Industry snapshot", show: d.industry_stats.length > 0 },
+  const toc = [
     { id: "mistakes", label: "Billing mistakes", show: mistakes.length > 0 },
-    { id: "features", label: "Key features", show: features.length > 0 },
-    { id: "scenario", label: "Real scenario", show: !!scenario },
-    { id: "tip", label: "Pro tip", show: !!tip },
+    { id: "features", label: "How Invoicor helps", show: features.length > 0 },
+    { id: "scenario", label: "A real scenario", show: !!scenario },
+    { id: "tip", label: "Expert tip", show: !!tip },
     { id: "line-items", label: "Common line items", show: d.common_line_items.length > 0 },
     { id: "glossary", label: "Glossary", show: d.industry_glossary.length > 0 },
     { id: "tax", label: "Tax & compliance", show: !!tax },
-    { id: "faqs", label: "FAQs", show: d.faqs.length > 0 },
-  ]
-    .filter((s) => s.show)
-    .map(({ id, label }) => ({ id, label }));
+    { id: "faqs", label: "FAQ", show: d.faqs.length > 0 },
+  ].filter((s) => s.show);
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
-      <JsonLd
-        data={[
-          breadcrumbLd([
-            { name: "Home", path: "/" },
-            { name: "Industries", path: "/industries" },
-            { name: industry },
-          ]),
-          faqLd(d.faqs),
-          definedTermSetLd(glossaryTitle, d.industry_glossary),
-        ]}
-      />
-      <Toc sections={tocSections} />
+    <>
+      <JsonLd data={definedTermSetLd(glossaryTitle, d.industry_glossary)} />
 
-      <Breadcrumbs
-        items={[
+      <PageHeader
+        crumbs={[
           { name: "Home", href: "/" },
           { name: "Industries", href: "/industries" },
           { name: industry },
         ]}
+        eyebrow={text(d, "badge_text") ?? `Invoicing for ${industryLower}`}
+        title={d.h1}
+        subtitle={d.subtitle}
+        actions={
+          <a
+            href={appStoreLink(`industry-${d.slug}`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_click"
+            data-track-section={`industry-${d.slug}`}
+            className={buttonClass({ size: "lg" })}
+          >
+            <AppleIcon size={17} />
+            Start free on iOS
+          </a>
+        }
+        aside={
+          d.industry_stats.length > 0 && (
+            <InvoicePaper highlight edge="perforated" className="p-6 sm:p-7">
+              <PaperLabel>{industry} at a glance</PaperLabel>
+              <dl className="mt-4">
+                {d.industry_stats.map((s) => (
+                  <div
+                    key={s.label}
+                    className="border-line flex items-baseline justify-between gap-4 border-b py-3 last:border-b-0"
+                  >
+                    <dt className="text-small text-muted">{s.label}</dt>
+                    <dd className="text-ink text-right font-bold tabular-nums">{s.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </InvoicePaper>
+          )
+        }
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 text-center">
-        <span className="mb-6 inline-block rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-bold tracking-wider text-blue-700 uppercase">
-          {text(d, "badge_text") ?? "Industry Invoicing"}
-        </span>
-        <h1 className="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-slate-900 md:text-6xl">
-          {d.h1}
-        </h1>
-        <p className="mb-10 text-lg leading-relaxed font-medium text-slate-500 md:text-xl">
-          {d.subtitle}
-        </p>
-        <AppStoreButton campaign={`industry-${d.slug}`}>Start Free Trial</AppStoreButton>
-      </section>
+      <ArticleLayout toc={toc}>
+        {mistakes.length > 0 && (
+          <Block
+            id="mistakes"
+            eyebrow="What goes wrong"
+            title={
+              text(d, "industry_mistakes_title") ??
+              `Billing mistakes that cost ${industryLower} money`
+            }
+          >
+            <PointList items={mistakes} tone="cross" />
+          </Block>
+        )}
 
-      {d.industry_stats.length > 0 && (
-        <section id="stats" className="scroll-mt-24 border-y border-slate-200 bg-white py-16">
-          <div className="mx-auto max-w-5xl px-6">
-            <dl className="grid gap-6 md:grid-cols-3">
-              {d.industry_stats.map((s) => (
-                <div
-                  key={s.label}
-                  className="flex flex-col-reverse rounded-2xl border border-slate-200 bg-slate-50 p-8 text-center"
-                >
-                  <dd className="text-2xl font-extrabold text-slate-900 md:text-3xl">{s.value}</dd>
-                  <dt className="mb-3 text-xs font-bold tracking-wider text-slate-500 uppercase">
-                    {s.label}
-                  </dt>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
-      )}
+        {features.length > 0 && (
+          <Block
+            id="features"
+            eyebrow="How Invoicor helps"
+            title={`Built for how ${industryLower} bill`}
+          >
+            <PointList items={features} numbered />
+          </Block>
+        )}
 
-      {mistakes.length > 0 && (
-        <section id="mistakes" className="scroll-mt-24 border-b border-slate-200 bg-white py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <h2 className="mb-12 text-center text-3xl font-extrabold">
-              {text(d, "industry_mistakes_title") ?? `Billing mistakes that cost ${industry} money`}
-            </h2>
-            <div className="grid gap-8 md:grid-cols-3">
-              {mistakes.map((m) => (
-                <div key={m.n} className="rounded-3xl border border-rose-100 bg-rose-50/50 p-8">
-                  <CircleX className="mb-6 h-10 w-10 text-rose-500" aria-hidden />
-                  <h3 className="mb-3 text-xl font-bold">{m.title}</h3>
-                  {m.text && <p className="text-[15px] leading-relaxed text-slate-600">{m.text}</p>}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+        {scenario && (
+          <Block
+            id="scenario"
+            eyebrow="A day on the job"
+            title={text(d, "real_scenario_title") ?? "A real billing scenario"}
+          >
+            <p className="text-ink text-[1.0625rem] leading-relaxed">{scenario}</p>
+          </Block>
+        )}
 
-      {features.length > 0 && (
-        <section id="features" className="scroll-mt-24 bg-slate-50 py-24">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-extrabold text-slate-900">
-                Built for how {industryLower} actually bill
-              </h2>
-              <p className="text-lg font-medium text-slate-500">
-                Every feature is designed around the realities of your day.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              {features.map((f) => (
-                <div
-                  key={f.n}
-                  className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
-                >
-                  <div
-                    aria-hidden
-                    className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-xl font-black text-blue-600"
+        {tip && (
+          <Block
+            id="tip"
+            eyebrow="Expert tip"
+            title={text(d, "expert_tip_title") ?? `A tip for ${industryLower}`}
+          >
+            <Callout title="From experience">{tip}</Callout>
+          </Block>
+        )}
+
+        {d.common_line_items.length > 0 && (
+          <Block
+            id="line-items"
+            eyebrow="Line items"
+            title={`Common line items for ${industryLower}`}
+            intro="Save these once as products in Invoicor and add them to any invoice with a tap."
+          >
+            <InvoicePaper className="p-6 sm:p-8">
+              <ul>
+                {d.common_line_items.map((item) => (
+                  <li
+                    key={item.name}
+                    className="border-line flex items-start justify-between gap-4 border-b py-4 first:pt-0 last:border-b-0 last:pb-0"
                   >
-                    {f.n}
-                  </div>
-                  <h3 className="mb-3 text-xl font-bold text-slate-900">{f.title}</h3>
-                  {f.text && <p className="text-[15px] leading-relaxed text-slate-600">{f.text}</p>}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+                    <div>
+                      <h3 className="text-ink font-bold">{item.name}</h3>
+                      <p className="text-small text-muted mt-1">{item.desc}</p>
+                    </div>
+                    <Badge tone="neutral">{item.type}</Badge>
+                  </li>
+                ))}
+              </ul>
+            </InvoicePaper>
+          </Block>
+        )}
 
-      {scenario && (
-        <section id="scenario" className="scroll-mt-24 border-y border-slate-200 bg-white py-24">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="mb-6 flex items-center gap-3 text-blue-600">
-              <CirclePlay className="h-6 w-6" aria-hidden />
-              <span className="text-xs font-bold tracking-wider uppercase">Walkthrough</span>
-            </div>
-            <h2 className="mb-6 text-3xl font-extrabold text-slate-900">
-              {text(d, "real_scenario_title") ?? "A real billing scenario"}
-            </h2>
-            <div className="rounded-r-2xl border-l-4 border-blue-600 bg-slate-50 p-8">
-              <p className="text-[17px] leading-relaxed text-slate-700">{scenario}</p>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {tip && (
-        <section id="tip" className="scroll-mt-24 border-b border-amber-100 bg-amber-50/50 py-20">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="rounded-3xl border border-amber-200 bg-white p-10 shadow-sm">
-              <div className="flex items-start gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
-                  <Lightbulb className="h-7 w-7" aria-hidden />
-                </div>
-                <div>
-                  <div className="mb-2 text-xs font-bold tracking-wider text-amber-700 uppercase">
-                    Pro Tip
-                  </div>
-                  {text(d, "expert_tip_title") && (
-                    <h2 className="mb-3 text-2xl font-bold text-slate-900">
-                      {text(d, "expert_tip_title")}
-                    </h2>
-                  )}
-                  <p className="text-[16px] leading-relaxed text-slate-700">{tip}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {d.common_line_items.length > 0 && (
-        <section
-          id="line-items"
-          className="scroll-mt-24 border-b border-slate-200 bg-slate-50 py-24"
-        >
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="mb-6 flex items-center gap-3 text-slate-500">
-              <Receipt className="h-6 w-6" aria-hidden />
-              <span className="text-xs font-bold tracking-wider uppercase">Reference</span>
-            </div>
-            <h2 className="mb-4 text-3xl font-extrabold text-slate-900">
-              Common {industryLower} line items
-            </h2>
-            <p className="mb-10 font-medium text-slate-500">
-              Save these as reusable items in your Invoicor library for one-tap invoicing.
-            </p>
-            <ul className="divide-y divide-slate-100 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              {d.common_line_items.map((item) => (
-                <li
-                  key={item.name}
-                  className="flex items-start justify-between gap-6 p-6 transition-colors hover:bg-slate-50"
-                >
-                  <div className="flex-1">
-                    <h3 className="mb-1 font-bold text-slate-900">{item.name}</h3>
-                    <p className="text-[15px] leading-relaxed text-slate-500">{item.desc}</p>
-                  </div>
-                  <span className="shrink-0 rounded-full bg-blue-50 px-3 py-1 text-xs font-bold tracking-wider text-blue-700 uppercase">
-                    {item.type}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {d.industry_glossary.length > 0 && (
-        <section id="glossary" className="scroll-mt-24 border-b border-slate-200 bg-white py-24">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="mb-6 flex items-center gap-3 text-slate-500">
-              <BookOpen className="h-6 w-6" aria-hidden />
-              <span className="text-xs font-bold tracking-wider uppercase">Glossary</span>
-            </div>
-            <h2 className="mb-10 text-3xl font-extrabold text-slate-900">{glossaryTitle}</h2>
-            <dl className="space-y-6">
+        {d.industry_glossary.length > 0 && (
+          <Block id="glossary" eyebrow="Glossary" title={glossaryTitle}>
+            <dl className="grid gap-4 sm:grid-cols-2">
               {d.industry_glossary.map((g) => (
-                <div key={g.term} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                  <dt className="mb-2 text-lg font-bold text-slate-900">{g.term}</dt>
-                  <dd className="text-[15px] leading-relaxed text-slate-600">{g.definition}</dd>
+                <div key={g.term} className="bg-tint rounded-2xl p-5">
+                  <dt className="text-ink font-bold">{g.term}</dt>
+                  <dd className="text-muted mt-1.5 text-[0.9375rem] leading-relaxed">
+                    {g.definition}
+                  </dd>
                 </div>
               ))}
             </dl>
-          </div>
-        </section>
-      )}
+          </Block>
+        )}
 
-      {tax && (
-        <section id="tax" className="scroll-mt-24 bg-slate-950 py-24 text-white">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="mb-6 flex items-center gap-3 text-emerald-400">
-              <Scale className="h-6 w-6" aria-hidden />
-              <span className="text-xs font-bold tracking-wider uppercase">
-                Tax &amp; Compliance
-              </span>
-            </div>
-            <h2 className="mb-6 text-3xl font-extrabold">
-              {text(d, "tax_or_compliance_title") ?? `Tax considerations for ${industryLower}`}
-            </h2>
-            <p className="text-[17px] leading-relaxed text-slate-300">{tax}</p>
-            <p className="mt-6 text-sm leading-relaxed text-slate-400 italic">
-              This is general information, not tax advice. Confirm specifics with a licensed
-              accountant in your jurisdiction.
+        {tax && (
+          <Block
+            id="tax"
+            eyebrow="Tax & compliance"
+            title={text(d, "tax_or_compliance_title") ?? `Tax considerations for ${industryLower}`}
+          >
+            <NoteList items={[{ title: "What to know", text: tax }]} />
+            <p className="text-small text-subtle mt-6">
+              General information, not tax or legal advice. Check the specifics with an accountant
+              or lawyer where you work.
             </p>
-          </div>
-        </section>
-      )}
+          </Block>
+        )}
 
-      <FaqSection title={`Questions from ${industryLower}`} faqs={d.faqs} slug={d.slug} />
+        <FaqBlock title={`Questions from ${industryLower}`} faqs={d.faqs} />
+
+        {d.related.length > 0 && (
+          <div className="border-line border-t py-14">
+            <RelatedLinks
+              title="More industries"
+              links={d.related.map((r) => ({
+                href: `/industries/${r.slug}`,
+                title: `Invoicing for ${r.name}`,
+              }))}
+            />
+          </div>
+        )}
+      </ArticleLayout>
 
       <ClosingCta
-        title={`Built for ${industryLower}. Try it free.`}
-        text="No credit card required. Send your first invoice in 60 seconds."
-        button="Get Started Free"
+        title={`Built for ${industryLower}.`}
+        gradient="Try it free."
+        text="Saved clients and line items, automatic totals and tax, and a clean PDF you send from your phone."
         campaign={`industry-${d.slug}-footer`}
       />
-
-      <RelatedLinks
-        title="More industries we support"
-        allHref="/industries"
-        allLabel="All Industries"
-        links={d.related.map((r) => ({
-          href: `/industries/${r.slug}`,
-          label: `Invoicing for ${r.name}`,
-        }))}
-      />
-    </div>
+    </>
   );
 }

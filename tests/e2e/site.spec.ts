@@ -6,15 +6,7 @@ import { PAGE_TYPES, axeViolations, trackAnalytics } from "./helpers";
  * recorded as a test annotation instead of failing the run; every other page must pass. Each
  * Stage E chunk removes its pages from this list. The list may only shrink.
  */
-const NOT_REBUILT_YET = new Set<string>([
-  "industries hub",
-  "industry",
-  "compare",
-  "help",
-  "affiliate",
-  "privacy",
-  "terms",
-]);
+const NOT_REBUILT_YET = new Set<string>(["compare", "help", "affiliate", "privacy", "terms"]);
 
 for (const [name, path] of Object.entries(PAGE_TYPES)) {
   test(`${name} (${path}) loads without errors`, async ({ page }) => {
