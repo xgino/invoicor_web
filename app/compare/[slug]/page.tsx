@@ -6,6 +6,7 @@ import { Toc } from "@/components/content/Toc";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { flag, getComparison, getComparisons, text } from "@/lib/content";
 import { breadcrumbLd, faqLd } from "@/lib/jsonld";
+import { FREE_INVOICES, PAID_PLANS, PRICING, STARTING_PRICE, formatPrice } from "@/lib/pricing";
 import { buildMetadata } from "@/lib/seo";
 
 export const dynamicParams = false;
@@ -63,14 +64,14 @@ export default async function ComparePage({ params }: PageProps<"/compare/[slug]
   });
   const audienceTitle = text(d, "target_audience_title");
   const policyH2 = text(d, "policy_h2");
-  const pricingUs = text(d, "pricing_us");
+  const pricingThem = text(d, "pricing_them");
 
   const tocSections = [
     { id: "pain-points", label: `Why ${competitor} slows you down`, show: painPoints.length > 0 },
     { id: "features", label: "Feature comparison", show: featureRows.length > 0 },
     { id: "audience", label: "Who it's for", show: !!audienceTitle },
     { id: "philosophy", label: "The Invoicor approach", show: !!policyH2 },
-    { id: "pricing", label: "Pricing comparison", show: !!pricingUs },
+    { id: "pricing", label: "Pricing comparison", show: !!pricingThem },
     { id: "steps", label: "How switching works", show: steps.length > 0 },
     { id: "faqs", label: "FAQs", show: d.faqs.length > 0 },
   ]
@@ -257,7 +258,7 @@ export default async function ComparePage({ params }: PageProps<"/compare/[slug]
         </section>
       )}
 
-      {pricingUs && (
+      {pricingThem && (
         <section
           id="pricing"
           className="scroll-mt-24 border-b border-slate-200 bg-white py-24 text-center"
@@ -282,9 +283,19 @@ export default async function ComparePage({ params }: PageProps<"/compare/[slug]
                 <h3 className="mb-4 text-lg font-bold tracking-wider text-blue-200 uppercase">
                   Invoicor
                 </h3>
-                <div className="mb-4 text-5xl font-black text-white">{pricingUs}</div>
+                <div className="mb-1 text-5xl font-black text-white">
+                  {STARTING_PRICE}
+                  <span className="text-2xl font-bold text-blue-200">/mo</span>
+                </div>
+                <p className="mb-4 text-sm font-semibold text-blue-200">
+                  Free for your first {FREE_INVOICES} invoices
+                </p>
                 <p className="text-[15px] leading-relaxed text-blue-100">
-                  {text(d, "pricing_us_subtext")}
+                  {PAID_PLANS.map(
+                    (p) => `${p.name} ${formatPrice(p.monthly)}/mo (${p.features[0]})`,
+                  ).join(" · ")}
+                  . {PRICING.trial_days.monthly}-day free trial ({PRICING.trial_days.yearly} days on
+                  yearly plans), cancel anytime. No fees on your payments.
                 </p>
               </div>
             </div>

@@ -17,7 +17,7 @@
     "feature_compare_1_name": "60-Second Invoicing",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
-    "feature_compare_2_name": "Embedded Apple Pay / Credit Cards",
+    "feature_compare_2_name": "Payment Link on Every Invoice",
     "feature_compare_2_us": true,
     "feature_compare_2_them": true,
     "feature_compare_3_name": "Zero-Configuration Dashboard",
@@ -32,32 +32,30 @@
     "policy_h2": "The Problem with 'All-in-One' Software",
     "policy_text": "When software tries to do everything, every individual task gets harder. QuickBooks forces you to set up a chart of accounts, map income categories, configure sales tax jurisdictions, and create vendor profiles before you can send a single invoice. This makes sense if you're a CPA managing a portfolio of clients. It doesn't make sense if you're a plumber who just finished a job and wants to text the customer a bill before driving home.",
     "solution_h2": "The Invoicer Advantage",
-    "solution_text": "Invoicor strips away every layer of accounting infrastructure that isn't directly required to send an invoice and accept payment. There is no chart of accounts. There is no income category mapping. You create an invoice, attach a payment link, and hit send. Your clients pay instantly via card, Apple Pay, or Google Pay, and at tax time you export a clean CSV your accountant can actually read.",
+    "solution_text": "Invoicor strips away every layer of accounting infrastructure that isn't directly required to send an invoice. There is no chart of accounts. There is no income category mapping. You pick a client, tap your saved items, and share a clean PDF. If you want to get paid online, add your own payment link (PayPal, Stripe, or any other provider) to the invoice, and your client pays you directly.",
     "stat_1_value": "60s",
-    "stat_1_desc": "Average time to draft and send a complete invoice from the Invoicor iOS app, including line items, tax, and a secure payment link.",
-    "stat_2_value": "$400+",
-    "stat_2_desc": "Typical annual difference for a solo freelancer between an Invoicor subscription and a comparable QuickBooks Online plan after introductory pricing expires.",
+    "stat_1_desc": "Roughly how long it takes to create a complete invoice in the Invoicor iOS app once your clients and items are saved, including line items, tax, and your payment link.",
+    "stat_2_value": "$300+",
+    "stat_2_desc": "Typical yearly difference between Invoicor Pro ($79.99/year) and a QuickBooks Online plan once its introductory pricing ends.",
     "pricing_them": "$35/mo",
     "pricing_them_subtext": "QuickBooks Online plans start with introductory discounts but scale aggressively. Adding payroll, time tracking, or extra users pushes total monthly cost well above $50 for most small businesses.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "Flat-rate price with no introductory pricing games. Includes unlimited invoices, unlimited clients, multi-business profile switching, and access to every premium template.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Solo freelancers, trade contractors, consultants, designers, and small service businesses (1-3 people) who send between 5 and 100 invoices per month and want zero accounting setup time.",
     "target_audience_them": "Established small-to-mid-sized businesses (10+ employees), companies with dedicated bookkeepers or in-house accountants, and certified public accountants managing the books for multiple client businesses.",
     "step_1_title": "Create in Seconds",
     "step_1_text": "Open Invoicor, pick the client from your library (or add a new one in two taps), then tap saved line items to assemble the invoice. Your business details, logo, tax rate, and currency are already populated from your profile.",
-    "step_2_title": "Send with a Payment Link",
-    "step_2_text": "Send the invoice by email or text message with an embedded secure 'Pay Now' button. Your client doesn't have to download anything, create an account, or log in to view or pay.",
+    "step_2_title": "Share the PDF",
+    "step_2_text": "Share the finished PDF by email, iMessage or WhatsApp straight from the iOS share sheet. Your client doesn't need an app or an account to open it.",
     "step_3_title": "Get Paid Faster",
-    "step_3_text": "Clients pay via credit card, Apple Pay, or Google Pay directly from their phone in seconds. You get an instant push notification the moment payment clears, and funds route straight to your bank.",
+    "step_3_text": "Add your own payment link (PayPal, Stripe, or your bank details) to the invoice, so your client can pay you directly. Invoicor never touches the money and takes no fees. Mark the invoice as paid with one tap.",
     "faqs": [
       {
-        "question": "Can I export my Invoicor data for my accountant at tax time?",
-        "answer": "Yes. Invoicor isn't a double-entry bookkeeping tool, but you can export your complete invoice history, payment records, and client list as a clean CSV at any time. Most accountants find this format easier to work with than a QuickBooks Online export, since there are no income account mappings or vendor lists to untangle."
+        "question": "Can I keep my invoices organized for my accountant at tax time?",
+        "answer": "Yes. Every invoice is saved with its status (draft, sent, paid) and can be shared again as a PDF at any time, so you can hand your accountant a clean set of invoices. Invoicor isn't a double-entry bookkeeping tool, so you won't need to untangle income account mappings or vendor lists."
       },
       {
         "question": "Will my clients need to create an account to pay me?",
-        "answer": "Never. When you send an invoice through Invoicor, your client receives a link to a secure web portal where they can view the full invoice and pay instantly. No app download, no account creation, no login screen. This is a major friction reduction compared to portals that require client registration."
+        "answer": "No. Your client gets a PDF invoice, the same way they'd get one from any business. If you add your own payment link (PayPal, Stripe, or another provider), they pay you through it directly. No app download or Invoicor account needed."
       },
       {
         "question": "Does Invoicor handle sales tax or VAT?",
@@ -65,11 +63,11 @@
       },
       {
         "question": "What happens if I outgrow Invoicor and need real accounting software later?",
-        "answer": "If your business grows to the point where you need full bookkeeping, payroll, and inventory management, switching to QuickBooks or another accounting platform is straightforward. Your historical invoice and payment data exports cleanly to CSV, which any accounting tool can import. You're never locked in."
+        "answer": "If your business grows to the point where you need full bookkeeping, payroll, and inventory management, switching to QuickBooks or another accounting platform is straightforward: your invoices are standard PDFs you keep. You're never locked in."
       },
       {
         "question": "Can I use Invoicor in multiple currencies or languages?",
-        "answer": "Yes. Invoicor supports five interface languages and lets you send invoices in any currency. If you have multiple business profiles (for example, one for freelance design work and one for a side consulting practice), each profile can have its own currency, tax setup, branding, and template."
+        "answer": "Yes. You can create invoices in 11 languages and 38 currencies. On the Pro plan you can run up to 3 business profiles (for example, one for freelance design work and one for a consulting practice), each with its own details, logo and template."
       }
     ],
     "related_comparisons": [
@@ -81,11 +79,11 @@
     "slug": "freshbooks",
     "competitor": "FreshBooks",
     "title": "FreshBooks Alternative: Flat Pricing vs Client Limits | Invoicor",
-    "meta_description": "Compare Invoicor vs FreshBooks. Stop paying more just because your business is growing. Get unlimited clients and invoices with Invoicor.",
+    "meta_description": "Compare Invoicor vs FreshBooks. Stop paying more because you have more clients: every Invoicor plan, including Free, has unlimited clients.",
     "canonical": "https://invoicor.com/compare/freshbooks",
     "badge_text": "Pricing Model Comparison",
     "h1": "Don't let software punish you for growing.",
-    "subtitle": "FreshBooks ties your subscription price directly to how many billable clients you have. Cross 5 clients and you're forced into the next tier. Cross 50, you jump again. Invoicor takes the opposite approach: one flat monthly rate, unlimited clients, unlimited invoices, forever. The more you grow, the more value you get for the same price.",
+    "subtitle": "FreshBooks ties your subscription price directly to how many billable clients you have. Cross 5 clients and you're forced into the next tier. Cross 50, you jump again. Invoicor takes the opposite approach: every plan, including the free one, has unlimited clients. You never pay more because your client list grows.",
     "mistake_1_title": "The 'Client Limit' Trap.",
     "mistake_1_text": "FreshBooks' Lite plan limits you to 5 billable clients. The moment you take on your 6th client, even if it's a one-off $50 logo job, you're pushed into the Plus tier at roughly double the monthly cost. This pricing model penalizes freelancers and agencies who naturally cycle through small jobs, since every short engagement burns a client slot.",
     "mistake_2_title": "Cluttered project management.",
@@ -96,9 +94,9 @@
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
     "feature_compare_2_name": "Automated Late Reminders",
-    "feature_compare_2_us": true,
+    "feature_compare_2_us": false,
     "feature_compare_2_them": true,
-    "feature_compare_3_name": "Flat-Rate Subscriptions",
+    "feature_compare_3_name": "No Per-Client Pricing",
     "feature_compare_3_us": true,
     "feature_compare_3_them": false,
     "feature_compare_4_name": "Team Time Tracking",
@@ -109,37 +107,35 @@
     "feature_compare_5_them": false,
     "policy_h2": "Why Billable Client Limits Hurt Freelancers",
     "policy_text": "Freelancers and small agencies typically work with a mix of long-term retainer clients and short, one-off projects. Under FreshBooks' billable client model, every one-off engagement consumes a slot from your monthly allocation. A graphic designer who completes 8 small jobs in a month is forced onto a more expensive plan than a designer working with one large retainer client, even though both made similar revenue. The pricing punishes the type of business model most freelancers actually run.",
-    "solution_h2": "Unlimited Invoicing with Invoicor",
+    "solution_h2": "Unlimited Clients with Invoicor",
     "solution_text": "Invoicor's pricing is built on a simple promise: success shouldn't cost extra. Whether you bill 5 clients this year or 500, the monthly subscription is identical. Every client you've ever invoiced stays in your library forever, with full payment history, so you can invoice repeat customers in seconds without re-entering their details or hitting an arbitrary paywall.",
     "stat_1_value": "Unlimited",
-    "stat_1_desc": "Clients you can bill and store on Invoicor without ever triggering a subscription tier upgrade. Add your 6th client, 60th, or 600th at the same flat monthly price.",
+    "stat_1_desc": "Clients you can store and bill on every Invoicor plan, including Free. Add your 6th client, 60th, or 600th without a tier change.",
     "stat_2_value": "0",
     "stat_2_desc": "Project management tabs, kanban boards, or time-tracking modules cluttering the invoice creation flow. The app does one job and does it well.",
     "pricing_them": "$19/mo",
     "pricing_them_subtext": "FreshBooks Lite starts at this rate but is capped at 5 billable clients. Plus tier ($33/mo) raises the cap, Premium ($60/mo) makes it unlimited. Annual cost scales sharply as you add clients.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "Flat rate with always-unlimited clients and invoices. No up-charges as your business grows, and no surprise renewal increases at the end of an introductory period.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Freelancers and small agencies who take on a mix of long-term and one-off clients, side-hustlers running multiple businesses, and contractors who already have their own project management workflow.",
     "target_audience_them": "Small agencies with 3-10 team members who specifically need integrated team time-tracking and project profitability reports, and who only work with a small number of long-term retainer clients.",
-    "step_1_title": "Import Your Clients",
-    "step_1_text": "Bring your full client list across in a single import, or rebuild it as you go. There's no penalty for keeping inactive past clients in your library, and reactivating an old client for a new project takes one tap.",
+    "step_1_title": "Add Your Clients",
+    "step_1_text": "Add a client once and they're saved for every future invoice. There's no penalty for keeping inactive past clients in your library, and invoicing an old client again takes one tap.",
     "step_2_title": "Generate the Invoice",
     "step_2_text": "Pick the client, add services from your saved product library, and apply tax or discount lines. The interface is built for speed: no project setup, no time-tracking entry, no expense reconciliation required before sending.",
-    "step_3_title": "Track Views & Payments",
-    "step_3_text": "You see exactly when a client opens the invoice, and you get a real-time push notification the moment payment clears. Automated late-payment reminders can be configured to fire on a schedule of your choice.",
+    "step_3_title": "Track What's Paid",
+    "step_3_text": "Every invoice has a clear status: draft, sent or paid. Mark an invoice as paid with one tap, and see at a glance who still owes you.",
     "faqs": [
       {
         "question": "Does Invoicor limit how many invoices I can send?",
-        "answer": "No. The flat-rate subscription includes truly unlimited invoice generation. Whether you send 10 invoices a month or 10,000, the price stays the same. There are also no client caps, no team member limits, and no monthly invoice ceilings."
+        "answer": "The free plan includes 3 invoices. Starter ($4.99/month) includes 10 invoices a month and Pro ($7.99/month) includes 50 a month. Clients are unlimited on every plan, so you never pay more because your client list grows."
       },
       {
         "question": "Can I set up recurring invoices on Invoicor?",
-        "answer": "Yes. For retainer clients or subscription services, you can configure an invoice to generate and send automatically on a weekly, monthly, quarterly, or yearly schedule. The invoice number increments correctly, your branding stays consistent, and the client gets a fresh payment link each cycle."
+        "answer": "Not automatically yet. For retainer clients you can duplicate last month's invoice with one tap, update the date, and send it. Saved clients and products fill in the rest."
       },
       {
         "question": "What happens to my historical clients on FreshBooks if I switch?",
-        "answer": "Export your client list and historical invoices from FreshBooks as a CSV, then import them into Invoicor in one step. You keep your full business history, and your inactive past clients no longer count against any limit because Invoicor doesn't have one."
+        "answer": "Keep your FreshBooks history for your records, and add clients to Invoicor as you invoice them. Each client is saved after the first invoice, and inactive past clients never count against a limit, because Invoicor doesn't have one for clients."
       },
       {
         "question": "Does Invoicor support time tracking like FreshBooks?",
@@ -163,7 +159,7 @@
     "canonical": "https://invoicor.com/compare/invoice2go",
     "badge_text": "Mobile App Experience",
     "h1": "Upgrade to a faster, modern invoicing engine.",
-    "subtitle": "Invoice2go has been on the market for over a decade, and large parts of its interface still feel like 2013. Invoice2go also tiers its plans aggressively, capping the Starter plan at 30 invoices per year and locking unlimited invoicing behind the $39.99/month Premium tier. Invoicor was rebuilt from scratch for the modern mobile contractor, with one flat price and no invoice caps at any tier.",
+    "subtitle": "Invoice2go has been on the market for over a decade, and large parts of its interface still feel like 2013. Invoice2go also tiers its plans aggressively, capping the Starter plan at 30 invoices per year and locking unlimited invoicing behind the $39.99/month Premium tier. Invoicor was built from scratch for the modern mobile contractor, with a free plan, 50 invoices a month for $7.99 on Pro, and unlimited clients on every plan.",
     "mistake_1_title": "Outdated, clunky templates.",
     "mistake_1_text": "Your invoice is a direct reflection of your brand. Many of Invoice2go's default templates haven't been visually refreshed in years and feel dated next to invoices from modern competitors. When you send a 2013-style invoice to a high-end client, it subtly signals that your business systems are stuck in the past, even if your actual service is excellent.",
     "mistake_2_title": "Aggressive feature gating across tiers.",
@@ -173,13 +169,13 @@
     "feature_compare_1_name": "Modern, Customizable Design",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
-    "feature_compare_2_name": "Offline Mode Drafting",
+    "feature_compare_2_name": "Free Plan Without Watermark",
     "feature_compare_2_us": true,
-    "feature_compare_2_them": true,
-    "feature_compare_3_name": "Real-time Native Desktop Sync",
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Payment Processing Fees",
     "feature_compare_3_us": true,
     "feature_compare_3_them": false,
-    "feature_compare_4_name": "Unlimited Invoices on Base Plan",
+    "feature_compare_4_name": "50 Invoices a Month for $7.99",
     "feature_compare_4_us": true,
     "feature_compare_4_them": false,
     "feature_compare_5_name": "Multi-Business Profile Switching",
@@ -188,44 +184,42 @@
     "policy_h2": "The Cost of Legacy Architecture",
     "policy_text": "Software platforms that have been in continuous development since the early 2010s accumulate technical debt: layered codebases, slower release cycles, and UI patterns that predate modern mobile design conventions. The visible result is an app that feels heavier to use than it should, with more taps required for common tasks and inconsistencies between the mobile and web experiences. Underneath, it also slows the pace of meaningful new features, since engineering time goes into maintaining old code rather than building new capabilities.",
     "solution_h2": "The Invoicor Speed Advantage",
-    "solution_text": "Invoicor was built recently, on a modern Swift and SwiftUI stack, with the iPhone as the primary target rather than an afterthought. The app launches instantly, runs smoothly in low-connectivity environments on job sites, and produces PDFs that look like they came from a premium design agency rather than a 2013-era invoice template library. There's no legacy code dragging the experience down.",
+    "solution_text": "Invoicor was built recently, on a modern Swift and SwiftUI stack, with the iPhone as the primary target rather than an afterthought. The app is fast, the flow is short, and it produces PDFs that look like they came from a design agency rather than a 2013-era template library. There's no legacy code dragging the experience down.",
     "stat_1_value": "10s",
     "stat_1_desc": "Time to duplicate a past invoice and send it to a new client. Invoicor's duplicate feature copies line items, tax rates, and notes, so you only update what's different.",
-    "stat_2_value": "Flat",
-    "stat_2_desc": "Subscription structure with no per-invoice limits, no tier-gated features, and no surprise renewal increases tied to feature relocation.",
+    "stat_2_value": "$7.99",
+    "stat_2_desc": "Monthly price of Invoicor Pro: 50 invoices a month, 3 business profiles and the premium templates. Invoice2go's $7.99 Starter plan allows 30 invoices a year.",
     "pricing_them": "$39.99/mo",
     "pricing_them_subtext": "Invoice2go Premium is required for unlimited invoices, recurring billing, the lowest card fees, and phone support. Cheaper tiers cap invoices at 30 or 100 per year, which most growing freelancers outgrow within months.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "Single flat tier with unlimited invoices, unlimited clients, recurring billing, premium templates, and full feature access. No upsell pressure as your usage grows.",
     "target_audience_title": "Who is each platform actually built for?",
-    "target_audience_us": "Modern mobile-first contractors, consultants, and service teams who draft and send invoices directly from their phone, and freelancers who want a flat predictable price with no per-invoice metering.",
+    "target_audience_us": "Modern mobile-first contractors, consultants, and service teams who draft and send invoices directly from their phone, and who want a simple monthly price with no fees on their payments.",
     "target_audience_them": "Long-time Invoice2go users who are deeply embedded in the platform's ecosystem, or businesses specifically needing Invoice2go's integrated business banking and debit card product.",
     "step_1_title": "Choose a Premium Design",
-    "step_1_text": "Browse a gallery of 30 modern invoice templates, including 10 premium designs with decorative details like marble veins, carbon fiber, and pseudo-element corner ornaments. Upload your logo and pick your brand colors; the template adapts automatically.",
+    "step_1_text": "Browse a gallery of 31 modern invoice templates, 21 of them free, from clean minimal layouts to premium designs. Add your logo and every invoice looks like yours.",
     "step_2_title": "Draft On the Go",
-    "step_2_text": "Build an invoice from the driver's seat of your truck in under a minute. Predictive line-item entry pulls from your saved product library, and the app keeps working even when your phone has no cellular signal. It syncs the moment you reconnect.",
-    "step_3_title": "Secure Client Portal",
-    "step_3_text": "Clients receive a link to a beautifully formatted web portal, not just a flat PDF attachment. They can view the invoice, download a copy, and pay with card or Apple Pay directly in the browser, all without creating an account.",
+    "step_2_text": "Build an invoice from the driver's seat of your truck in under a minute. Line items come from your saved product library, and saved clients fill in their details automatically.",
+    "step_3_title": "Share and Get Paid",
+    "step_3_text": "Share a clean PDF by email, iMessage or WhatsApp. Add your own payment link (PayPal, Stripe, or your bank details) so your client can pay you directly, with no fees from Invoicor.",
     "faqs": [
       {
         "question": "Can I customize the look of my Invoicor invoices?",
-        "answer": "Yes. Upload your high-resolution logo (PNG with transparency works perfectly), set your exact brand hex colors, and choose from 30 designed templates that range from clean minimal palettes to premium templates with decorative CSS details like textures, ornaments, and multi-font pairings. Every template renders identically on iPhone, tablet, web, and PDF."
+        "answer": "Yes. Add your logo and choose from 31 templates, from clean minimal layouts to premium designs. 21 templates are free; Starter unlocks all standard templates and Pro adds the premium ones. Every invoice exports as a clean PDF."
       },
       {
-        "question": "Does Invoicor work offline?",
-        "answer": "Yes. You can draft invoices in dead zones on a job site, in a basement, or anywhere else without cellular signal. The app stores your drafts locally and silently syncs them to the cloud the moment your phone reconnects. Sending an invoice still requires connectivity, but drafting never does."
+        "question": "Does Invoicor need an internet connection?",
+        "answer": "Invoicor saves your invoices to secure servers in Germany, so you can pick up where you left off on any iPhone you sign in to. For the smoothest experience, create and send invoices with a connection."
       },
       {
         "question": "Will my Invoice2go data transfer over?",
-        "answer": "You can export your client list and historical invoices from Invoice2go as a CSV, then import them into Invoicor. Your full client and invoice history is preserved, and your existing recurring invoice setup can be rebuilt in a few minutes."
+        "answer": "There's no automatic import. Most people keep their old Invoice2go invoices as PDFs for their records and set up Invoicor as they go: each client and product is saved the first time you use it, so the second invoice is already much faster."
       },
       {
         "question": "Why is Invoicor cheaper than Invoice2go Premium?",
-        "answer": "Invoice2go's Premium tier bundles features many users don't need, including integrated business banking and a debit card product. Invoicor focuses purely on the invoicing experience and uses RevenueCat for subscription management, which keeps overhead low and lets the flat $12/month price include unlimited invoicing without tier gating."
+        "answer": "Invoice2go's Premium tier bundles features many users don't need, including payment processing, business banking and a debit card product. Invoicor focuses purely on creating and sending invoices, which keeps it simple: Pro is $7.99 a month for 50 invoices, and payments go straight to you through your own payment link."
       },
       {
         "question": "Can I run multiple businesses from one Invoicor account?",
-        "answer": "Yes. Multi-business profile switching is built in. Each profile has its own logo, branding colors, tax setup, currency, client list, and template. Switch between your freelance design business and your side consulting practice with a single tap, without logging out or maintaining two separate accounts."
+        "answer": "Yes. On the Pro plan you can set up to 3 business profiles, each with its own details, logo, and template. Switch between your freelance design business and your side consulting practice without logging out."
       }
     ],
     "related_comparisons": [
@@ -241,7 +235,7 @@
     "canonical": "https://invoicor.com/compare/wave",
     "badge_text": "Mobile App Experience",
     "h1": "Stop waiting 5 days for your money to settle.",
-    "subtitle": "Wave offers \"free\" invoicing, but they make their money through payment processing fees and a platform that feels like a sluggish website wrapped in an app. Invoicor is built natively for iOS, meaning it runs incredibly fast, works offline, and doesn't rely on hidden costs to support your business.",
+    "subtitle": "Wave offers \"free\" invoicing, but they make their money through payment processing fees and a platform that feels like a website wrapped in an app. Invoicor is built natively for iOS, so it's fast, and it doesn't rely on fees taken from your payments.",
     "mistake_1_title": "The 'Free' illusion.",
     "mistake_1_text": "Wave's core software is free, but when your clients pay via card, Wave's processing fees are often higher than standard gateway rates. Over a year of billing, the extra pennies taken from every transaction easily eclipse the cost of a flat-rate invoicing tool like Invoicor.",
     "mistake_2_title": "Slow mobile performance.",
@@ -251,10 +245,10 @@
     "feature_compare_1_name": "Native iOS Performance",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
-    "feature_compare_2_name": "Offline Invoicing Drafts",
+    "feature_compare_2_name": "No Fees on Your Payments",
     "feature_compare_2_us": true,
     "feature_compare_2_them": false,
-    "feature_compare_3_name": "Embedded Payment Links",
+    "feature_compare_3_name": "Payment Link on Invoices",
     "feature_compare_3_us": true,
     "feature_compare_3_them": true,
     "feature_compare_4_name": "Double-Entry Accounting",
@@ -266,28 +260,26 @@
     "policy_h2": "The True Cost of Free Software",
     "policy_text": "When the product is free, you pay in other ways. With Wave, you pay with your time navigating a sluggish mobile interface and dealing with complex accounting menus you don't need. A dedicated tool that charges a fair, transparent flat rate can afford to optimize purely for your speed and convenience.",
     "solution_h2": "The Speed of Native iOS",
-    "solution_text": "Invoicor is built specifically for iPhone and iPad using native Apple frameworks. It launches instantly, caches data locally so you can draft offline, and never makes you wait for a loading spinner just to view your client list.",
-    "stat_1_value": "Zero",
-    "stat_1_desc": "Number of loading spinners you'll see while drafting an invoice offline with Invoicor.",
+    "solution_text": "Invoicor is built specifically for iPhone using native Apple frameworks. It opens fast, keeps your clients and products one tap away, and never makes you dig through accounting menus just to send an invoice.",
+    "stat_1_value": "0%",
+    "stat_1_desc": "What Invoicor takes from your payments. Clients pay you directly through your own payment link.",
     "stat_2_value": "100%",
     "stat_2_desc": "Native iOS code, resulting in buttery smooth animations and instant data retrieval.",
     "pricing_them": "$0/mo",
     "pricing_them_subtext": "Wave is free to use, but they monetize heavily through their proprietary payment processing rates and payroll add-ons.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "A transparent flat rate that supports a fast, ad-free, premium mobile experience with no hidden upsells.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Service professionals who value their time and want a lightning-fast, dedicated mobile invoicing app.",
     "target_audience_them": "Budget-conscious small businesses who need a full general ledger and don't mind sacrificing mobile speed to get it for free.",
     "step_1_title": "Launch and Draft instantly",
-    "step_1_text": "Tap the Invoicor icon and you're immediately ready to work. No web logins or waiting for servers to sync.",
+    "step_1_text": "Tap the Invoicor icon and you're ready to work. No web logins or desktop dashboards.",
     "step_2_title": "Send without friction",
     "step_2_text": "Share your beautiful PDF invoice via iMessage, email, or WhatsApp directly from the iOS share sheet.",
     "step_3_title": "Track with confidence",
-    "step_3_text": "Receive an instant push notification the second your invoice is opened or paid.",
+    "step_3_text": "Mark invoices as sent or paid with one tap, and see at a glance which clients still owe you.",
     "faqs": [
       {
         "question": "Can I use Invoicor if I already use Wave for accounting?",
-        "answer": "Absolutely. Many users rely on Invoicor for its superior mobile experience on the go, and simply export their CSV data at the end of the month to import into Wave for their accountant."
+        "answer": "Yes. Many people create and send invoices in Invoicor for the faster mobile experience, and keep their bookkeeping in Wave. Your invoices are standard PDFs you can file anywhere."
       },
       {
         "question": "Is Invoicor really faster than Wave on mobile?",
@@ -314,7 +306,7 @@
     "mistake_2_text": "Xero's entry-level pricing heavily restricts the number of invoices you can send per month. Once you cross that tiny threshold, you're forced into a significantly more expensive tier.",
     "mistake_3_title": "Mobile app limitations.",
     "mistake_3_text": "Xero's mobile app is mostly a companion to their desktop software. It isn't designed to be a standalone, primary tool for running your business on the go.",
-    "feature_compare_1_name": "No Invoice Limits",
+    "feature_compare_1_name": "Free Plan Available",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
     "feature_compare_2_name": "Zero Accounting Jargon",
@@ -333,14 +325,12 @@
     "policy_text": "When software is designed to handle millions of dollars in corporate revenue, it fundamentally changes how the interface works. Every action requires categorization and approval flows. Freelancers don't need approval flows; they need speed.",
     "solution_h2": "Built for the Solo Operator",
     "solution_text": "Invoicor assumes you are the boss, the employee, and the billing department. We removed every click and confirmation screen that doesn't directly help you assemble an invoice and send it to your client.",
-    "stat_1_value": "Unlimited",
-    "stat_1_desc": "Invoices you can send on Invoicor's base plan. Xero forces you to upgrade if you send more than a handful.",
+    "stat_1_value": "$4.99",
+    "stat_1_desc": "Starting monthly price of Invoicor's paid plans, after 3 free invoices. No bank feeds or accounting setup required.",
     "stat_2_value": "0",
     "stat_2_desc": "Accounting degrees required to perfectly set up and use Invoicor.",
     "pricing_them": "$15/mo",
     "pricing_them_subtext": "Xero's starter plan strictly limits how many bills and invoices you can process. Most businesses are quickly forced onto the $42/mo standard plan.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "One flat price. Unlimited everything. No surprise upgrades when you have a busy month.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Agile freelancers and independent contractors who want to hit 'send' and move on with their day.",
     "target_audience_them": "Mid-sized companies with dedicated bookkeepers who require strict financial compliance and reporting.",
@@ -348,16 +338,16 @@
     "step_1_text": "No bank feeds to connect, no accounts to reconcile. Just enter your name, add a client, and start billing.",
     "step_2_title": "Look Professional",
     "step_2_text": "Invoicor's premium templates make you look like a top-tier agency, not an automated accounting printout.",
-    "step_3_title": "Export for the CPA",
-    "step_3_text": "When tax season arrives, a simple CSV export gives your accountant everything they need without requiring you to learn their job.",
+    "step_3_title": "Keep Clean Records",
+    "step_3_text": "Every invoice is saved with its status (draft, sent, paid) and can be shared as a PDF again at any time, so tax season doesn't require learning your accountant's job.",
     "faqs": [
       {
         "question": "Does Invoicor do my taxes?",
-        "answer": "No. We focus on invoicing and getting you paid. We provide clean exports of your revenue that any tax professional or software can easily digest."
+        "answer": "No. We focus on invoicing. Invoicor calculates tax and discounts on each invoice and keeps every invoice as a clean PDF that any tax professional can work with."
       },
       {
         "question": "Can I switch from Xero easily?",
-        "answer": "Yes. Export your clients from Xero, import them into Invoicor, and you can start sending bills immediately without missing a beat."
+        "answer": "Yes. There's no automatic import, but there's also no setup: add your business details, then add each client the first time you invoice them. Keep your Xero history for your records."
       }
     ],
     "related_comparisons": [
@@ -405,25 +395,23 @@
     "stat_2_desc": "Ads or prompts to upgrade to other business management tools.",
     "pricing_them": "$0/mo",
     "pricing_them_subtext": "Zoho Invoice is free, acting as a loss-leader to get you into the Zoho ecosystem where they upcharge for CRM and accounting.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "A straightforward $12/mo ensures you are the customer, not a lead generation tool for enterprise software.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Creatives, contractors, and side-hustlers who want a beautiful, focused tool.",
     "target_audience_them": "Businesses that are already heavily invested in the Zoho ecosystem and don't mind a steep learning curve.",
     "step_1_title": "Focus on the Work",
-    "step_1_text": "Open the app and you're greeted with a clean list of your invoices. No dashboards full of charts you don't need.",
+    "step_1_text": "Open the app and you're greeted with a clean list of your invoices. No dashboards full of charts you don't need, and no CRM, inventory or books modules to click past.",
     "step_2_title": "Customize Your Brand",
-    "step_2_text": "Make your invoice uniquely yours with easy color pickers and high-res logo uploads.",
+    "step_2_text": "Make your invoice yours with your own logo and a choice of 31 templates.",
     "step_3_title": "Instant Delivery",
-    "step_3_text": "Fire off the invoice via text, email, or a simple link without ever leaving the app.",
+    "step_3_text": "Share the invoice as a PDF by text, email, or WhatsApp without leaving the app.",
     "faqs": [
       {
         "question": "Is Invoicor's customer support better than Zoho's?",
-        "answer": "Yes. Because we only support one product, our team is highly specialized and responds quickly without bouncing you between departments."
+        "answer": "Invoicor is one product, and a real person answers your questions. You can send feedback or a question from inside the app."
       },
       {
         "question": "Can I import my Zoho clients?",
-        "answer": "Easily. A quick CSV export from Zoho and you can populate your Invoicor client list in seconds."
+        "answer": "Not automatically. Add each client the first time you invoice them; after that they're saved and fill in with one tap."
       }
     ],
     "related_comparisons": [
@@ -465,14 +453,12 @@
     "policy_text": "Using retail point-of-sale software to send professional service invoices is like using a hammer to drive a screw. It works eventually, but it's clumsy. Service businesses require detailed descriptions, terms, milestone payments, and elegant presentation—things Square deprioritizes in favor of quick retail transactions.",
     "solution_h2": "Crafted for Professionals",
     "solution_text": "Invoicor is designed exclusively for service professionals. Our templates are built to showcase your brand, and our line-item structuring makes it easy to explain complex projects, hourly rates, or tiered services clearly to your clients.",
-    "stat_1_value": "30+",
+    "stat_1_value": "31",
     "stat_1_desc": "Number of beautifully designed, customizable templates available in Invoicor.",
     "stat_2_value": "Zero",
     "stat_2_desc": "Retail POS hardware you have to configure or ignore in Invoicor's dashboard.",
     "pricing_them": "$20/mo",
     "pricing_them_subtext": "Square Invoices Plus starts at $20/mo for advanced features, plus their mandatory, often higher payment processing fees.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "Flat $12/mo with unlimited features, allowing you to present a premium brand image without the POS baggage.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Consultants, designers, and contractors who bill for their time, expertise, and services.",
     "target_audience_them": "Retailers, cafes, and pop-up shops who primarily rely on swiping physical credit cards.",
@@ -485,11 +471,11 @@
     "faqs": [
       {
         "question": "Can I use Invoicor to take in-person payments?",
-        "answer": "While Invoicor specializes in digital invoices with payment links, your clients can easily pay on their own phones using Apple Pay or Google Pay while you are standing right next to them."
+        "answer": "Invoicor doesn't process payments, so there's no card reader. You can add your own payment link (PayPal, Stripe, or another provider) to the invoice, and your client can open it and pay on their own phone while you're standing next to them."
       },
       {
         "question": "Are Invoicor's processing fees better than Square's?",
-        "answer": "Invoicor uses standard Stripe processing under the hood, which generally offers more competitive rates for digital/card-not-present transactions than Square's flat rates."
+        "answer": "Invoicor doesn't charge processing fees, because it doesn't process payments. Your client pays you directly through the payment link or bank details you add to the invoice, and only your own provider's fees apply."
       }
     ],
     "related_comparisons": [
@@ -500,7 +486,7 @@
   {
     "slug": "honeybook",
     "competitor": "HoneyBook",
-    "title": "HoneyBook Alternative: $12/mo Invoicing vs $39/mo CRM Bloat | Invoicor",
+    "title": "HoneyBook Alternative: Simple Invoicing vs CRM Bloat | Invoicor",
     "meta_description": "Don't pay for CRM features you don't need. Compare HoneyBook vs Invoicor to see why pure, fast invoicing is better for most freelancers.",
     "canonical": "https://invoicor.com/compare/honeybook",
     "badge_text": "Invoicing vs CRM",
@@ -515,7 +501,7 @@
     "feature_compare_1_name": "Instant Invoice Generation",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
-    "feature_compare_2_name": "$12/mo Flat Pricing",
+    "feature_compare_2_name": "Plans from $4.99/mo",
     "feature_compare_2_us": true,
     "feature_compare_2_them": false,
     "feature_compare_3_name": "No Mandatory 'Projects'",
@@ -537,8 +523,6 @@
     "stat_2_desc": "Mandatory pipeline stages or project setups required to send a bill in Invoicor.",
     "pricing_them": "$39/mo",
     "pricing_them_subtext": "HoneyBook is expensive because you are paying for an entire suite of CRM and marketing tools, even if you just need invoicing.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "A fair, flat rate for unlimited, lightning-fast invoicing that actually saves you time.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Freelancers, designers, and tradespeople who have their own workflows and just want a simple, beautiful invoicing app.",
     "target_audience_them": "Wedding photographers and event planners who need heavy contract management and complex lead pipelines.",
@@ -547,11 +531,11 @@
     "step_2_title": "Use Your Own Tools",
     "step_2_text": "Keep using Calendly for scheduling and Notion for notes. Use Invoicor purely for what it's best at: billing.",
     "step_3_title": "Get Paid Faster",
-    "step_3_text": "Clients appreciate a simple payment link without being forced into a complex 'client portal' experience.",
+    "step_3_text": "Clients get a clean PDF with your payment link on it, without being forced into a complex 'client portal' experience.",
     "faqs": [
       {
         "question": "Can I attach contracts to Invoicor?",
-        "answer": "You can add detailed terms and conditions directly to the invoice, or attach supplementary PDFs, but Invoicor is not a dedicated e-signature platform."
+        "answer": "You can add detailed terms and notes directly to the invoice, but Invoicor is not a contract or e-signature platform. Keep using your contract tool and send the invoice from Invoicor."
       },
       {
         "question": "Why is Invoicor so much cheaper?",
@@ -567,18 +551,18 @@
     "slug": "bonsai",
     "competitor": "Bonsai",
     "title": "Bonsai Alternative: Flat Invoicing vs Expensive All-In-One | Invoicor",
-    "meta_description": "Bonsai's all-in-one suite is expensive and overkill for simple billing. Switch to Invoicor for $12/mo flat-rate, unlimited mobile invoicing.",
+    "meta_description": "Bonsai's all-in-one suite is expensive and overkill for simple billing. Invoicor is free for 3 invoices, then from $4.99/mo for fast mobile invoicing.",
     "canonical": "https://invoicor.com/compare/bonsai",
     "badge_text": "Pricing & Focus",
     "h1": "Escape the freelancer tax.",
-    "subtitle": "Bonsai markets itself as the ultimate freelancer tool, but it comes with an ultimate price tag. Starting at $25/mo and pushing you toward business banking and tax add-ons, it quickly becomes a bloated expense. Invoicor keeps it simple: flawless mobile invoicing for just $12/mo.",
+    "subtitle": "Bonsai markets itself as the ultimate freelancer tool, but it comes with an ultimate price tag. Starting at $25/mo and pushing you toward business banking and tax add-ons, it quickly becomes a bloated expense. Invoicor keeps it simple: fast mobile invoicing from $4.99 a month.",
     "mistake_1_title": "Overpriced baseline.",
     "mistake_1_text": "Bonsai's entry-level plan is more than double the cost of Invoicor, and that's before they try to upsell you on their dedicated banking and tax calculation features.",
     "mistake_2_title": "Feature creep.",
     "mistake_2_text": "What started as an invoicing tool has morphed into a sprawling suite handling proposals, contracts, banking, and taxes. The core invoicing experience has suffered under the weight of these additions.",
     "mistake_3_title": "Web-first, mobile-second.",
     "mistake_3_text": "Bonsai's interface is heavily optimized for desktop browsers. Their mobile app feels like an afterthought, making on-the-go invoicing a frustrating experience.",
-    "feature_compare_1_name": "Affordable Flat Rate",
+    "feature_compare_1_name": "Affordable Monthly Price",
     "feature_compare_1_us": true,
     "feature_compare_1_them": false,
     "feature_compare_2_name": "Native iOS Excellence",
@@ -603,13 +587,11 @@
     "stat_2_desc": "Focus on pure invoicing and getting you paid fast.",
     "pricing_them": "$25/mo",
     "pricing_them_subtext": "Bonsai's starter plan is pricey, and they constantly push their 'tax' and 'banking' add-ons which drive the cost even higher.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "A clean, predictable $12/mo for unlimited invoicing, without the constant upsell pressure.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Independent professionals who want a lean, fast, and affordable way to handle their billing.",
     "target_audience_them": "Freelancers who want their software to act as their bank account, tax preparer, and legal department.",
     "step_1_title": "Keep Your Own Bank",
-    "step_1_text": "Route your Invoicor payments directly to the business bank account you already use.",
+    "step_1_text": "Add your own payment link or bank details to the invoice, so payments go straight to the account you already use.",
     "step_2_title": "Fast Mobile Drafting",
     "step_2_text": "Enjoy a native iOS app that actually works smoothly, unlike bulky web-wrappers.",
     "step_3_title": "Save Money",
@@ -617,7 +599,7 @@
     "faqs": [
       {
         "question": "Can I use Invoicor for multiple businesses like Bonsai allows?",
-        "answer": "Yes! Invoicor supports multi-business profile switching on our flat $12/mo plan without charging you extra per business."
+        "answer": "Yes. The Pro plan ($7.99/month) includes up to 3 business profiles, each with its own details, logo, and template, without paying extra per business."
       },
       {
         "question": "Does Invoicor have time tracking like Bonsai?",
@@ -637,7 +619,7 @@
     "canonical": "https://invoicor.com/compare/stripe-invoices",
     "badge_text": "Mobile App vs Developer Tool",
     "h1": "Built for developers, not for contractors.",
-    "subtitle": "Stripe is an incredible payment gateway, but their standalone Stripe Invoicing product is designed for tech companies with development teams. Navigating the Stripe dashboard on a mobile phone to send a quick bill is a nightmare of nested menus and technical jargon. Invoicor gives you Stripe's power with a beautiful, mobile-first interface.",
+    "subtitle": "Stripe is an incredible payment gateway, but their standalone Stripe Invoicing product is designed for tech companies with development teams. Navigating the Stripe dashboard on a mobile phone to send a quick bill is a maze of nested menus and technical jargon. Invoicor gives you a fast, mobile-first way to create invoices, and you can still put your Stripe payment link on them.",
     "mistake_1_title": "The developer interface.",
     "mistake_1_text": "Stripe's dashboard is cluttered with API keys, webhook configurations, and developer tools. Finding the invoice generation screen requires dodging menus built for software engineers, not service providers.",
     "mistake_2_title": "Hidden per-invoice fees.",
@@ -664,30 +646,28 @@
     "solution_h2": "The Best of Both Worlds",
     "solution_text": "Invoicor offers a stunning, fast, native iOS experience that connects to your bank without skimming off the top of every invoice. You get the reliability of modern payment rails without the developer interface or the hidden percentage fees.",
     "stat_1_value": "$0",
-    "stat_1_desc": "Extra software fees Invoicor takes per invoice. You only pay standard card gateway fees.",
+    "stat_1_desc": "Fees Invoicor takes from your payments. Clients pay you directly through your own payment link; only your provider's fees apply.",
     "stat_2_value": "1",
     "stat_2_desc": "Tap required to open Invoicor on your iPhone and start billing.",
     "pricing_them": "0.4% per invoice",
     "pricing_them_subtext": "Stripe Invoicing charges a percentage of your total bill on top of standard processing fees, which scales endlessly as your revenue grows.",
-    "pricing_us": "$12/mo",
-    "pricing_us_subtext": "A flat, predictable $12/mo. Whether you bill $100 or $100,000, your software cost never changes.",
     "target_audience_title": "Who is each platform actually built for?",
     "target_audience_us": "Mobile professionals, contractors, and freelancers who need an app that is fast, beautiful, and transparently priced.",
     "target_audience_them": "SaaS companies and developers who need programmatic API access to automatically generate millions of receipts.",
     "step_1_title": "Avoid the Dashboard",
     "step_1_text": "Never log into a complex web dashboard again. Handle everything beautifully from your phone.",
     "step_2_title": "Keep Your Revenue",
-    "step_2_text": "Stop paying percentage 'software fees' on your hard work. Pay one flat monthly rate.",
+    "step_2_text": "Stop paying percentage 'software fees' on your hard work. Invoicor is a fixed monthly price.",
     "step_3_title": "Impress Your Clients",
     "step_3_text": "Send invoices that look incredibly professional, rather than standard, unbranded Stripe receipts.",
     "faqs": [
       {
-        "question": "Can I use Stripe as my payment processor within Invoicor?",
-        "answer": "Yes! Invoicor utilizes secure integrations to ensure you can accept cards and Apple Pay seamlessly, without forcing you to use Stripe's clunky invoicing UI."
+        "question": "Can I use Stripe as my payment processor with Invoicor?",
+        "answer": "Yes. Create a payment link in Stripe and add it to your Invoicor invoice. Your client pays through Stripe, and the money goes straight to your Stripe account. Invoicor doesn't sit in between."
       },
       {
         "question": "Does Invoicor charge a percentage on top of processing?",
-        "answer": "Never. We charge $12/mo. Any card processing fees are standard gateway rates passed directly from the processor, with zero markup from Invoicor."
+        "answer": "Never. Invoicor is a fixed monthly price (from $4.99 a month, with 3 free invoices to start) and takes nothing from your payments. Only your own payment provider's fees apply."
       }
     ],
     "related_comparisons": [

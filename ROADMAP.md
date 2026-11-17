@@ -81,7 +81,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] 20. Landing page, part 2 (features → final CTA)
 - [ ] 21. Template pages + hub
 - [ ] 22. Industry pages + hub
-- [ ] 23. Compare pages + hub
+- [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_
 - [ ] 24. About, contact, help, affiliate & legal
 - [ ] 25. Motion & micro-interactions
 

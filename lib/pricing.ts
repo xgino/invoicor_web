@@ -54,3 +54,6 @@ export function trialNote(plan: Plan, period: "monthly" | "yearly"): string {
 
 /** Cheapest paid monthly price, e.g. "$4.99". */
 export const STARTING_PRICE = formatPrice(Math.min(...PAID_PLANS.map((p) => p.monthly)));
+
+/** Number of free invoices, read from the free plan's first feature ("3 invoices (lifetime)"). */
+export const FREE_INVOICES = Number(getPlan("free").features[0]?.match(/\d+/)?.[0] ?? 3);
