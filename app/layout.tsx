@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/analytics/Analytics";
+import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { RevealObserver } from "@/components/RevealObserver";
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <RevealObserver />
         <Analytics />
+        <ConsentBanner />
       </body>
     </html>
   );

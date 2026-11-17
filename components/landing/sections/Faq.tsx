@@ -24,7 +24,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "Is my data safe with Invoicor?",
     answer:
-      "Yes. All data is stored on secure servers in Germany, fully compliant with EU data protection regulations including GDPR. We never sell or share your data.",
+      "Yes. Your account and invoice data is stored on secure servers in Germany, under EU data protection rules (GDPR). We never sell your data. Website analytics only run if you accept cookies.",
   },
   {
     question: "Does Invoicor calculate tax and discounts automatically?",

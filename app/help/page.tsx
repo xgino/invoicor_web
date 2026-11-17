@@ -152,7 +152,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
     items: [
       {
         q: "Where is my data stored?",
-        a: "All your data is stored on secure servers in Germany, within the European Union. We are fully GDPR compliant.",
+        a: "Your account and invoice data is stored on secure servers in Germany, within the European Union, under GDPR. Website analytics on invoicor.com (Google Analytics and PostHog, US services) only run if you accept cookies.",
       },
       {
         q: "Do you sell my data?",

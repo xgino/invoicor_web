@@ -19,7 +19,9 @@ export default function PrivacyPage() {
       eyebrowColor="#4ade80"
       title="Privacy Policy"
       intro={
-        <>Last updated: April 27, 2026 &middot; Invoicor &middot; Operated from the Netherlands</>
+        <>
+          Last updated: November 17, 2026 &middot; Invoicor &middot; Operated from the Netherlands
+        </>
       }
     >
       <S n="1" t="Our Core Principle">
@@ -128,8 +130,16 @@ export default function PrivacyPage() {
           Article 28.
         </P>
         <P>
-          We do not share your data with any advertising networks, analytics platforms that track
-          individuals, or data brokers.
+          <B>Website analytics (invoicor.com only, with your consent):</B> If you click
+          &quot;Accept&quot; in the cookie banner, our website uses Google Analytics 4 (Google LLC,
+          USA) and PostHog (PostHog Inc., US cloud) to measure which pages are visited and which
+          buttons are clicked. This website usage data is processed in the United States. Neither
+          service receives your account or invoice data from the app. If you click
+          &quot;Decline&quot;, neither is loaded.
+        </P>
+        <P>
+          We do not share your data with advertising networks or data brokers, and we do not use
+          advertising cookies.
         </P>
       </S>
 
@@ -177,18 +187,25 @@ export default function PrivacyPage() {
 
       <S n="10" t="International Data Transfers">
         <P>
-          Your data is stored and processed within the European Union (Germany). We do not transfer
-          your data outside the EU/EEA unless required by a third-party service (e.g., Apple&apos;s
-          servers), in which case appropriate safeguards such as Standard Contractual Clauses are in
-          place.
+          Your account and invoice data is stored and processed within the European Union (Germany).
+          It is not transferred outside the EU/EEA unless required by a third-party service (e.g.,
+          Apple&apos;s servers).
+        </P>
+        <P>
+          Website analytics on invoicor.com (Google Analytics and PostHog, only after you accept
+          cookies) are processed in the United States. These transfers rely on the EU–US Data
+          Privacy Framework and/or Standard Contractual Clauses.
         </P>
       </S>
 
-      <S n="11" t="Cookies and Tracking">
+      <S n="11" t="Cookies and Tracking" id="cookies">
         <P>
-          The Invoicor iOS app does not use cookies. Our website (invoicor.com) may use essential
-          cookies for functionality and anonymous analytics (via PostHog) to understand website
-          traffic. We do not use advertising cookies or cross-site tracking.
+          The Invoicor iOS app does not use cookies. Our website (invoicor.com) only sets analytics
+          cookies (Google Analytics and PostHog, both US services) after you click
+          &quot;Accept&quot; in the cookie banner. If you decline, no analytics scripts are loaded.
+          Your choice is saved in your browser, and you can change it any time with &quot;Cookie
+          settings&quot; at the bottom of every page. We do not use advertising cookies or
+          cross-site tracking.
         </P>
       </S>
 

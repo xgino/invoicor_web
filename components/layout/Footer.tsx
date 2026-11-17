@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 import { AppleIcon } from "@/components/landing/AppleIcon";
 import { CONTACT_EMAIL, appStoreLink } from "@/lib/config";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
@@ -155,6 +156,7 @@ export function Footer() {
                 >
                   Terms
                 </Link>
+                <CookieSettingsButton style={linkStyle} />
                 <Link
                   href="/affiliate"
                   data-track="footer_click"

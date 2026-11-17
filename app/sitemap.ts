@@ -23,6 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/help", CONTENT_UPDATED_AT.site),
     page("/affiliate", CONTENT_UPDATED_AT.site),
     page("/terms", CONTENT_UPDATED_AT.legal),
-    page("/privacy", CONTENT_UPDATED_AT.legal),
+    page("/privacy", CONTENT_UPDATED_AT.privacy),
   ];
 }

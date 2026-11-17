@@ -4,6 +4,7 @@ declare global {
   interface Window {
     posthog?: {
       capture: (event: string, properties?: Record<string, unknown>) => void;
+      opt_out_capturing?: () => void;
     };
   }
 }

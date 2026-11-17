@@ -63,6 +63,7 @@ export const CONTENT_UPDATED_AT = {
   industries: "2026-07-22",
   comparisons: "2026-07-22",
   legal: "2026-04-27",
+  privacy: "2026-11-17",
   site: "2026-11-17",
 } as const;
 

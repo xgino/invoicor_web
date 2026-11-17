@@ -31,9 +31,8 @@ export const AFFILIATE_SIGNUP_URL =
 export const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS !== "false";
 export const GA_MEASUREMENT_ID = "G-DX0880SW9D";
 export const POSTHOG_KEY = "phc_Pc8MPW957gjYlwUzKVdGBfcWXc2k7Oy8aM7BHZsI0EV";
+/** PostHog US cloud. Moving to the EU cloud (eu.i.posthog.com) needs a new PostHog project (ROADMAP Y12). */
 export const POSTHOG_HOST = "https://us.i.posthog.com";
-export const STATSUP_SITE_ID = "a5a3e40b-d48f-4787-a0b9-a215ac4d2a4a";
-export const AHREFS_KEY = "nkbhH6Yq5U6NJnDHzwdfFA";
 
 /**
  * App Store link with optional campaign attribution.

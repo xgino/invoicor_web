@@ -59,9 +59,19 @@ export function DarkPage({
 }
 
 /** Numbered legal section. */
-export function S({ n, t, children }: { n: string; t: string; children: ReactNode }) {
+export function S({
+  n,
+  t,
+  id,
+  children,
+}: {
+  n: string;
+  t: string;
+  id?: string;
+  children: ReactNode;
+}) {
   return (
-    <section style={{ marginBottom: 40 }}>
+    <section id={id} style={{ marginBottom: 40, scrollMarginTop: 96 }}>
       <h2
         style={{
           fontFamily: "var(--font-display)",

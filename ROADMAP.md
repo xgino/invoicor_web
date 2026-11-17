@@ -68,7 +68,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md) + `content/pricing.json`; `content/en/` comes with chunk 36)_
 - [x] 12. Metadata & structured data helpers
 - [x] 13. Sitemap, robots & indexing _(sitemap, robots with all AI bots allowed (D3), `/llms.txt`, IndexNow in `deploy.sh`)_
-- [ ] 14. Analytics, cookie consent & App Store attribution _(`appStoreLink()` and `lib/analytics.ts` `track()` done; tool choice and consent banner wait for D4 and D5)_
+- [ ] 14. Analytics, cookie consent & App Store attribution _(✅ GA4 + PostHog load only after "Accept"; StatsUp and Ahrefs removed; privacy policy states analytics run in the US, app data in Germany; session replay off. Left: provider token (Y6), `seo/TRACKING.md`)_
 
 **Stage D: Brand system**
 - [ ] 15. Brand tokens (colors, gradient, type, spacing)
@@ -1376,4 +1376,5 @@ _Things Claude can't do from here (they need your accounts, your server, your ph
 | Y8 | **App Store listing:** name, subtitle, keywords, screenshots (Claude drafts the text and screenshot copy). | App Store Connect | 48, 49 | n/a |
 | Y9 | **Profiles in your name:** Google Business Profile, Crunchbase, Product Hunt, LinkedIn page, X, YouTube; send Claude the URLs for `sameAs`. | each site | 51, 52 | n/a |
 | Y10 | **Outreach and PR:** sending emails, posting in communities, launches (Claude drafts them). | email, Reddit, Product Hunt | 45, 52, 57 | n/a |
+| Y12 | **Recommended: move PostHog to the EU cloud.** Website analytics now go to PostHog **US** (`us.i.posthog.com`), while app data is in Germany. Create a new PostHog project in the EU region (eu.posthog.com), send Claude the new key, and the site switches to `eu.i.posthog.com`: then only GA4 leaves the EU. Session replay is off in code; turning it on needs a privacy policy update first. | posthog.com | 14 | n/a |
 | Y11 | **Public generator API** (D10): approve, then it's built in `invoicor_api` and deployed on the server. | invoicor_api | 30, 31 | Stage G |
