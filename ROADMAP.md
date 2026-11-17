@@ -13,6 +13,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - Each chunk has: **Goal**, steps **a, b, c…**, and **Done when** (the check that closes it).
 - Tick the steps as you go, and tick the chunk in the overview when its "Done when" passes.
 - Background is in **Reference** at the bottom (R1–R7). Chunks link there instead of repeating it.
+- Steps only you can do (accounts, server, App Store, opinions) are collected in [Your steps](#your-steps) at the end.
 - Decisions to make are marked **🟡 Decide:** and collected in [Decisions for you](#decisions-for-you) at the end. Write the answer there, so the file stays the single source of truth.
 
 ---
@@ -21,7 +22,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Done:** chunk 1 (repo cleanup), Stage C (chunks 8–12; 13 and 14 wait on decisions), first drafts of Stage B ([BRAND.md](BRAND.md), [seo/keyword-map.csv](seo/keyword-map.csv), [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md)), and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
 
-**Next up:** answer [Decisions for you](#decisions-for-you) D1–D7 (about 30 minutes), then deploy (chunk 4 baseline first), then Stage D (brand tokens, chunk 15).
+**Next up:** D1–D5 are answered and being built. Still open: D6–D11 (see [Decisions for you](#decisions-for-you)). Everything only you can do is in [Your steps](#your-steps).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -1345,14 +1346,34 @@ _The open questions in one place. Each has a recommendation; write your answer i
 
 | # | Decision | Recommendation | Blocks | Your call |
 |---|---|---|---|---|
-| D1 | **Which price tiers are live?** Website: Free / Starter $4.99 / Pro $7.99 (yearly $49.99 / $79.99). `strategy.md`: also Business $19.99 and yearly $49 / $79. Affiliate calculator: Starter €4.99 / Pro €9.99. The iOS app only sells Starter and Pro (no Business product). **All 10 compare pages say Invoicor is "$12/mo flat, unlimited invoices"**, which matches no plan. Also: is there a free trial? The buttons say "Start Free Trial". | Use what the **App Store actually charges** as the only truth. Put it in `content/pricing.json` and let the home page, affiliate calculator **and compare pages** all read it. Fix the compare pages first: a wrong price is a trust and legal risk. | 5j, 11a, 20, 23, 24, 48 | |
-| D2 | **Fake social proof.** Hero avatars are random faces from pravatar.cc, and the three testimonials aren't real customers. | Remove both now. Replace with true claims ("31 templates", "6 languages", "EU servers") until you have real reviews (chunk 50), then quote real App Store reviews with permission. | 19, 20 | |
-| D3 | **AI bots in robots.txt.** `GPTBot`, `Google-Extended` and `CCBot` are blocked. | Allow the **answer/search** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so ChatGPT, Perplexity and Claude can recommend Invoicor. Training bots: allow too (more mentions in answers), unless you object. | 6g, 13b | |
-| D4 | **Analytics tools.** 4 tools load today: GA4, PostHog, StatsUp, Ahrefs. | Keep **PostHog** (funnels) + Search Console/Bing. Keep GA4 only if you open it. Drop StatsUp and Ahrefs Web Analytics. Fewer tools = faster pages and a smaller consent banner. | 14a, 14b | |
-| D5 | **Cookie consent.** No banner today, but GA4/PostHog set cookies (EU users). | A small branded banner; nothing loads until "Accept"; PostHog cookieless before consent. Needed before more EU traffic (Stage H). | 14b, 36 | |
+| D1 | **Which price tiers are live?** Website: Free / Starter $4.99 / Pro $7.99 (yearly $49.99 / $79.99). `strategy.md`: also Business $19.99 and yearly $49 / $79. Affiliate calculator: Starter €4.99 / Pro €9.99. The iOS app only sells Starter and Pro (no Business product). **All 10 compare pages say Invoicor is "$12/mo flat, unlimited invoices"**, which matches no plan. Also: is there a free trial? The buttons say "Start Free Trial". | Use what the **App Store actually charges** as the only truth. Put it in `content/pricing.json` and let the home page, affiliate calculator **and compare pages** all read it. Fix the compare pages first: a wrong price is a trust and legal risk. | 5j, 11a, 20, 23, 24, 48 | ✅ **2026-11-17:** Free (3 invoices, lifetime) · Starter $4.99/mo or $49.99/yr (10/mo) · Pro $7.99/mo or $79.99/yr (50/mo). Monthly plans: **3-day free trial**; yearly: **7-day free trial**; cancel any time. No Business tier. |
+| D2 | **Fake social proof.** Hero avatars are random faces from pravatar.cc, and the three testimonials aren't real customers. | Remove both now. Replace with true claims ("31 templates", "6 languages", "EU servers") until you have real reviews (chunk 50), then quote real App Store reviews with permission. | 19, 20 | ✅ **2026-11-17:** remove; use true facts until real reviews exist. |
+| D3 | **AI bots in robots.txt.** `GPTBot`, `Google-Extended` and `CCBot` are blocked. | Allow the **answer/search** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so ChatGPT, Perplexity and Claude can recommend Invoicor. Training bots: allow too (more mentions in answers), unless you object. | 6g, 13b | ✅ **2026-11-17:** allow all AI bots (search and training). |
+| D4 | **Analytics tools.** 4 tools load today: GA4, PostHog, StatsUp, Ahrefs. | Keep **PostHog** (funnels) + Search Console/Bing. Keep GA4 only if you open it. Drop StatsUp and Ahrefs Web Analytics. Fewer tools = faster pages and a smaller consent banner. | 14a, 14b | ✅ **2026-11-17:** keep PostHog + GA4; drop StatsUp and Ahrefs Web Analytics. |
+| D5 | **Cookie consent.** No banner today, but GA4/PostHog set cookies (EU users). | A small branded banner; nothing loads until "Accept"; PostHog cookieless before consent. Needed before more EU traffic (Stage H). | 14b, 36 | ✅ **2026-11-17:** yes, branded consent banner; nothing with cookies before Accept. |
 | D6 | **Legal/company details** for About, Contact and the footer (company name, KvK number, address or "registered in"). | Show the legal name + KvK number in the footer and on the About page. Needed for trust (E-E-A-T) and EU rules. | 7c, 24 | |
 | D7 | **Brand strategy draft** (`BRAND.md`): positioning, audience, pillars, voice, tagline. | Review the draft, change what doesn't sound like you, then mark it approved. | 5, 15–25 | |
 | D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
 | D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
 | D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
+
+---
+
+## Your steps
+
+_Things Claude can't do from here (they need your accounts, your server, your phone or your opinion). Everything else in this file Claude can build. Do them in this order when you have time; none of them blocks the build track except where noted._
+
+| # | Step | Where | Chunk | Blocks |
+|---|---|---|---|---|
+| Y1 | **Export the SEO baseline** before the first Next.js deploy: Search Console Performance (queries + pages, 3 months, CSV), Pages report, Links report; Bing the same. Drop the files in `seo/baseline/2026-11/` (Claude commits and analyses them). | Search Console, Bing Webmaster | 4d | the first deploy |
+| Y2 | **Server setup + first deploy:** `deploy/.env`, merge the nginx config, `sudo nginx -t`, `bash deploy/deploy.sh` (see DEPLOY.md A–C). | VPS | 2, 28 | going live |
+| Y3 | **After going live:** resubmit the sitemap in Search Console and Bing, request indexing for the top pages. | Search Console, Bing | 28, 29 | n/a |
+| Y4 | **Answer D6:** legal company name, KvK number, and what address or city to show. | this file | 7c, 24 | About, Contact, footer |
+| Y5 | **Review BRAND.md** (D7): change what doesn't sound like you, mark it approved. | BRAND.md | 5 | final copy in Stage E |
+| Y6 | **App Store provider token:** App Store Connect → Analytics → Campaigns → copy the provider token (`pt`) into `NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN`, so installs per page show up. | App Store Connect | 14e | install attribution |
+| Y7 | **iOS app:** set `AccentColor` to `#E95D05` (D11); review prompt triggers (chunk 50). | Xcode | 5i, 50 | n/a |
+| Y8 | **App Store listing:** name, subtitle, keywords, screenshots (Claude drafts the text and screenshot copy). | App Store Connect | 48, 49 | n/a |
+| Y9 | **Profiles in your name:** Google Business Profile, Crunchbase, Product Hunt, LinkedIn page, X, YouTube; send Claude the URLs for `sameAs`. | each site | 51, 52 | n/a |
+| Y10 | **Outreach and PR:** sending emails, posting in communities, launches (Claude drafts them). | email, Reddit, Product Hunt | 45, 52, 57 | n/a |
+| Y11 | **Public generator API** (D10): approve, then it's built in `invoicor_api` and deployed on the server. | invoicor_api | 30, 31 | Stage G |

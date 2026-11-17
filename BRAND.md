@@ -107,9 +107,7 @@ Details and tokens come in ROADMAP chunk 15; these are the rules.
 
 ## 9. Pricing (source of truth)
 
-> **Waiting for decision D1.** The iOS app sells only **Starter** and **Pro** (product IDs
-> `starter_monthly`, `starter_yearly`, `pro_monthly`, `pro_yearly`); there is no Business tier
-> in the app. Confirm the prices below against App Store Connect.
+> **Confirmed 2026-11-17 (decision D1).** Prices in USD. The iOS app sells Starter and Pro only.
 
 | Plan | Monthly | Yearly | Invoices | Business profiles | Extras |
 |---|---|---|---|---|---|
@@ -117,8 +115,8 @@ Details and tokens come in ROADMAP chunk 15; these are the rules.
 | Starter | $4.99 | $49.99 | 10 / month | 1 | All templates, revenue dashboard |
 | Pro | $7.99 | $79.99 | 50 / month | 3 | Premium templates, compare mode |
 
-Also confirm: do Starter and Pro have a **free trial** in the app? The pricing buttons say
-"Start Free Trial". If there's no trial, they must say "Get Starter" / "Get Pro" (honesty pillar).
+**Free trials:** monthly plans 3 days, yearly plans 7 days. Cancel any time through Apple.
+Say it exactly like that; never "free" without the limit, never "unlimited".
 
-Once confirmed, this table moves into `content/pricing.json`, and the home page and affiliate
-calculator both read from it.
+The source of truth in code is `content/pricing.json`: the home page, the affiliate calculator and
+the compare pages all read it.
