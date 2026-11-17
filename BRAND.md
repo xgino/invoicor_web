@@ -89,8 +89,10 @@ Hero headline options (pick one, A/B test the others in chunk 60):
 Details and tokens come in ROADMAP chunk 15; these are the rules.
 
 - **One brand color:** the logo's orange-to-red, `#E95D05` → `#DC3002`. No indigo, violet or blue.
-- **Light first** (invoices are white paper), with dark sections as accents: near-black `#0C0A09`
-  with a soft orange glow (hero, stats band, final CTA).
+- **Light only** (decided 2026-11-18). Invoicing is a B2B trust purchase and invoices are white paper;
+  a dark site feels like a gaming or crypto product to a tradesperson or accountant. Sections are white
+  or warm off-white (`#FAFAF9`, `#FFF7ED` for a highlighted band). Depth comes from a soft orange glow
+  on light, warm shadows and hairline borders, never black backgrounds. No dark mode.
 - **The gradient is rare:** primary buttons, one word per headline, the popular pricing card, the hero glow.
   Nowhere else.
 - **Type:** Cabinet Grotesk for headings, Satoshi for text (already self-hosted).

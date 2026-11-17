@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Meanwhile Claude continues with Stage D (brand tokens, chunk 15). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
+**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Meanwhile Claude does Stage D (chunks 15–17: tokens, logo, UI kit), light only (D13). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -460,9 +460,9 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 ### 16. Logo, icons & OG images
 **Goal:** sharp brand assets everywhere, and no 364 KB JPGs.
 
-- [ ] a. Redraw the logo as **SVG**: the mark, mark + wordmark, light and dark versions. Add it as a `<Logo>` component.
+- [ ] a. Redraw the logo as **SVG**: the mark (white arrow on the orange gradient), mark + wordmark, and a one-color version for small or monochrome use. Add it as a `<Logo>` component.
 - [ ] b. App icons with Next file conventions: `app/icon.svg`, `app/apple-icon.png` (180×180), `app/manifest.ts` (name, colors, icons).
-- [ ] c. `app/[locale]/opengraph-image.tsx`: a branded 1200×630 card (orange glow, logo, page title).
+- [ ] c. A branded 1200×630 share card: light background, orange glow, logo, page title.
 - [ ] d. Per-page OG images for templates (with the template preview), industries, compare pages and guides.
 - [ ] e. Delete the duplicated `icon.jpg`, `logo.jpg` and `og-image.jpg` once nothing uses them.
 
@@ -472,7 +472,7 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 **Goal:** pages are built from shared parts, never one-off styles.
 
 - [ ] a. `Button`: primary (gradient), secondary, ghost; sizes sm/md/lg; loading state; works as a link.
-- [ ] b. `Container`, `Section` (light/dark/glow variants), `Heading` (with an optional gradient word), `Text`, `Prose` (long-form content).
+- [ ] b. `Container`, `Section` (white / tint / glow variants, all light), `Heading` (with an optional gradient word), `Text`, `Prose` (long-form content).
 - [ ] c. `Card`, `Badge` (free/starter/pro), `AppStoreBadge`, `Breadcrumbs` (with `breadcrumbLd()` built in).
 - [ ] d. Form parts for the generator later: `Input`, `Textarea`, `Select`, `Field` (label + error), `NumberInput`.
 - [ ] e. `Accordion` (FAQ, with `faqLd()` support), `Tabs`, `Skeleton`, `RelatedLinks`.
@@ -484,13 +484,13 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 ---
 
 ## Stage E: Rebuild the pages (in the new brand)
-_Light-first, with dark glow sections as accents. Each page follows its blueprint (chunk 7). Port the **content**, not the old code. Keep every URL the same._
+_Light only: white and warm off-white sections, a soft orange glow on light for the hero and final CTA (see R3). Each page follows its blueprint (chunk 7). Port the **content**, not the old code. Keep every URL the same._
 
 ### 18. Navbar & footer
 **Goal:** clear navigation and strong internal linking on every page.
 
 - [ ] a. Navbar links: Free Invoice Generator · Templates · Industries · Pricing (`/#pricing`) · Help, plus the App Store CTA. Leave a slot for the language switcher.
-- [ ] b. Light by default, with a transparent version over dark heroes. Blur and border appear on scroll.
+- [ ] b. Light (white, translucent with blur once you scroll, hairline border). No dark variant.
 - [ ] c. Mobile: a hamburger opening a slide-out menu, with the focus kept inside it and closing on Esc.
 - [ ] d. Footer columns: Product, Free tools, Templates (top 6), Industries (top 6), Compare, Guides, Company (About, Contact, Affiliate), Legal. Brand gradient hairline at the top, App Store badge.
 - [ ] e. Both are server components; only the mobile menu toggle is a client component.
@@ -502,7 +502,7 @@ _Light-first, with dark glow sections as accents. Each page follows its blueprin
 
 - [ ] a. Split it into one file per section in `components/sections/`.
 - [ ] b. **Hero:**
-  - dark with the orange glow
+  - light (warm white) with the soft orange glow behind the phone
   - the headline from chunk 5f, with one gradient word
   - two CTAs: “Create a free invoice” → generator, “Get the app” → App Store
   - an iPhone/invoice mockup
@@ -520,7 +520,7 @@ _Light-first, with dark glow sections as accents. Each page follows its blueprin
 - [ ] c. Pricing from `content/pricing.json`: monthly/yearly toggle, the popular card with a gradient border. Make sure the tiers match the app exactly.
 - [ ] d. Testimonials: **real ones only**; remove the section if you don't have them yet.
 - [ ] e. A visible FAQ (Accordion) + matching `faqLd()`.
-- [ ] f. Final CTA section (dark + glow).
+- [ ] f. Final CTA section (light, `brand-50` tint + glow).
 - [ ] g. Metadata + `organizationLd()` + `websiteLd()` + `softwareAppLd()`, on this page only.
 
 **Done when:** `curl /` shows all the text, and the Rich Results Test passes.
@@ -1200,7 +1200,7 @@ That's why chunks 30–31 add the public endpoints.
 
 ### R3. Design decisions
 
-- **Light-first, with dark accent sections.** Invoices are white paper, forms read better on light backgrounds, and the SEO pages are already light. Dark is used for the hero, the stats band and the final CTA: near-black `#0C0A09` with an orange glow.
+- **Light only, no dark sections** (decided 2026-11-18). Invoicing is a B2B trust purchase: invoices are white paper, forms read better on light backgrounds, and a dark site feels like a gaming or crypto product to a plumber or an accountant. Every section uses white or warm off-white (`stone-50` `#FAFAF9`, `brand-50` `#FFF7ED` for highlighted bands). Depth comes from a soft orange glow on light, warm shadows and hairline borders, never from black backgrounds. Text is warm near-black (`stone-900`). A site-wide dark mode is not planned.
 - **The brand comes from the logo:**
   - orange `#E95D05` → red `#DC3002`
   - warm stone neutrals instead of cold slate
@@ -1375,6 +1375,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
 | D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
 | D12 | **"5 seconds" and "80% auto-fill"** are on the hero, stats band, FAQ and meta description, but nothing measures them. | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
+| D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
 
 ---
