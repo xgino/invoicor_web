@@ -120,3 +120,24 @@ Say it exactly like that; never "free" without the limit, never "unlimited".
 
 The source of truth in code is `content/pricing.json`: the home page, the affiliate calculator and
 the compare pages all read it.
+
+## 10. Fact sheet: what the app does (check every claim against this)
+
+> The 2026-11-17 audit found the website promising features that don't exist (a $12 unlimited
+> plan, Apple Pay checkout, offline mode, recurring invoices, per-line tax, push notifications,
+> CSV import). Before publishing any page, check its claims here. Update this list when the app
+> changes. Verified against `invoicor_ios` and `invoicor_api` on 2026-11-17.
+
+| Invoicor **does** | Invoicor **does not** (don't claim it) |
+|---|---|
+| Create invoices on iPhone; share the PDF via the iOS share sheet (email, iMessage, WhatsApp) | Process payments, card readers, Apple Pay / Google Pay checkout, client payment portal |
+| A **payment link field**: you paste your own PayPal / Stripe / other link, shown on the PDF | Hold, route or take a cut of money; per-transaction fees |
+| 31 templates (21 free, 8 Starter, 2 Pro), your logo | Custom brand colors per template (unverified: don't claim) |
+| Saved clients and products; one-tap **duplicate** of an invoice | Automatic recurring invoices or scheduled sending |
+| Subtotal, discount, **one tax rate per invoice** (inclusive or exclusive) | Per-line tax / taxable toggles per item |
+| Status: draft, sent, paid | Read receipts, "client opened it" tracking, push notifications on payment |
+| 11 invoice languages, 38 currencies | "135 currencies", "any currency" |
+| Dashboard (Starter and Pro), up to 3 business profiles (Pro) | Team members, assistant logins, multi-user |
+| Data on servers in Germany; needs an internet connection | Offline mode, background sync |
+| In-app feedback to a real person | Live chat, phone support |
+| Free: 3 invoices, no watermark; trials 3 days (monthly) / 7 days (yearly) | Unlimited invoices on any plan; estimates/quotes; CSV import/export; photo attachments; e-signatures |

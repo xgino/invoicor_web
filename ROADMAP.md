@@ -22,7 +22,9 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Done:** chunk 1 (repo cleanup), Stage C (chunks 8–12; 13 and 14 wait on decisions), first drafts of Stage B ([BRAND.md](BRAND.md), [seo/keyword-map.csv](seo/keyword-map.csv), [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md)), and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
 
-**Next up:** D1–D5 are answered and being built. Still open: D6–D11 (see [Decisions for you](#decisions-for-you)). Everything only you can do is in [Your steps](#your-steps).
+**2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
+
+**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Meanwhile Claude continues with Stage D (brand tokens, chunk 15). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -52,7 +54,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage A: Clean repo, baseline & deploy**
 - [x] 1. Clean up the repo
-- [ ] 2. Map the server & write DEPLOY.md _(DEPLOY.md written; the server paths still need checking)_
+- [ ] 2. Map the server & write DEPLOY.md _(DEPLOY.md + nginx config for 1.24 written; server paths are checked during Y2)_
 - [ ] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger)_
 - [ ] 4. SEO baseline & quick fixes on the live site _(www redirect + /pricing are in `deploy/nginx/`; baseline export still to do **before** deploying Next.js)_
 
@@ -1297,6 +1299,7 @@ invoicor_web/                     repo root (after launch: only these)
 - **Never delete pages that rank.** Improve them, or 301 them to the closest page.
 - **Sitemaps:** only indexable 200 URLs, with real `lastModified` dates, split by section.
 - **AI search:** allow the answer/search bots, keep `llms.txt` up to date, write clear answers under each heading.
+- **Truth:** every claim about Invoicor matches the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this). `content:check` can't catch a false claim; this rule is the only guard.
 
 ### R7. Migration strategy
 
@@ -1338,6 +1341,21 @@ invoicor_web/                     repo root (after launch: only these)
 | New ratings per week & average rating | App Store Connect |
 | Email subscribers → installs | Email tool + App Store Connect |
 
+### R9. App feature ideas from the content audit
+
+_The old SEO pages kept promising features the app doesn't have. That's a signal of what each audience expects. Not website work: input for the iOS/API roadmap, ranked by how often the pages (and `competitor_research.md`) needed them._
+
+| Feature | Wanted by | Why it matters | Website after it ships |
+|---|---|---|---|
+| **Estimates / quotes → invoice** | electricians, contractors, landscapers | 6 of 9 competitors have it; contractors quote first | New template + guide pages; "estimate" keywords (chunk 44) |
+| **Recurring invoices** | cleaning, lawn care, trainers, retainers | Weekly/monthly clients; the duplicate button is a workaround | Re-add to industry pages, compare tables |
+| **Per-line tax (taxable / non-taxable items)** | plumbers, electricians, photographers, auto (7 of 10 industry pages) | US sales tax often applies to parts but not labor | Restore the tax sections' strongest advice |
+| **Payment reminders** | freelancers, agencies | Table stakes in reviews | Compare tables (FreshBooks, Invoice2go) |
+| **Offline drafts** | trades in basements and rural areas | Job sites without signal | Industry pages (electricians, landscaping) |
+| **Photo attachments** | landscaping, contractors, detailers | Before/after proof | Industry FAQs |
+
+When one ships: update BRAND.md §10 first, then the pages.
+
 ---
 
 ## Decisions for you
@@ -1356,6 +1374,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
 | D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
 | D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
+| D12 | **"5 seconds" and "80% auto-fill"** are on the hero, stats band, FAQ and meta description, but nothing measures them. | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
 
 ---
@@ -1376,5 +1395,7 @@ _Things Claude can't do from here (they need your accounts, your server, your ph
 | Y8 | **App Store listing:** name, subtitle, keywords, screenshots (Claude drafts the text and screenshot copy). | App Store Connect | 48, 49 | n/a |
 | Y9 | **Profiles in your name:** Google Business Profile, Crunchbase, Product Hunt, LinkedIn page, X, YouTube; send Claude the URLs for `sameAs`. | each site | 51, 52 | n/a |
 | Y10 | **Outreach and PR:** sending emails, posting in communities, launches (Claude drafts them). | email, Reddit, Product Hunt | 45, 52, 57 | n/a |
-| Y12 | **Recommended: move PostHog to the EU cloud.** Website analytics now go to PostHog **US** (`us.i.posthog.com`), while app data is in Germany. Create a new PostHog project in the EU region (eu.posthog.com), send Claude the new key, and the site switches to `eu.i.posthog.com`: then only GA4 leaves the EU. Session replay is off in code; turning it on needs a privacy policy update first. | posthog.com | 14 | n/a |
 | Y11 | **Public generator API** (D10): approve, then it's built in `invoicor_api` and deployed on the server. | invoicor_api | 30, 31 | Stage G |
+| Y12 | **Recommended: move PostHog to the EU cloud.** Website analytics now go to PostHog **US** (`us.i.posthog.com`), while app data is in Germany. Create a new PostHog project in the EU region (eu.posthog.com), send Claude the new key, and the site switches to `eu.i.posthog.com`: then only GA4 leaves the EU. Session replay is off in code; turning it on needs a privacy policy update first. | posthog.com | 14 | n/a |
+| Y13 | **Verify Search Console by DNS (before deploying).** No Google verification file or DNS record exists, so Search Console was probably verified through the Google Analytics tag. GA4 now only loads after cookie consent, so that verification can break. Add a **Domain property** in Search Console and put its `google-site-verification` TXT record in DNS (where invoicor.com's DNS is managed). | Search Console + DNS | 4, 13e | the baseline export (Y1) |
+| Y14 | **Check two homepage claims:** time yourself creating a real invoice with a saved client and items. If it takes about 5 seconds, keep "takes 5 seconds"; otherwise Claude changes it to "in seconds". Same for "80% auto-fill" (decision D12). | your iPhone | 19 | n/a |

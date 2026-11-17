@@ -38,6 +38,9 @@ sudo cat /etc/nginx/sites-enabled/<that-file>      # note the "root" line and th
 
 ### 3. On the server: update nginx (once)
 
+The reference config is written for **nginx 1.24** (check with `nginx -v`). On 1.25.1 or newer,
+change `listen 443 ssl http2;` to `listen 443 ssl;` plus a separate `http2 on;` line.
+
 Open the file from step 2 and merge in `deploy/nginx/invoicor.com.conf`:
 
 - **Keep** your `ssl_certificate` lines and your `/api/` (and `/admin/`, `/static/`) proxy blocks;
@@ -95,6 +98,10 @@ This swaps back to the previous upload. Fix the problem on `dev`, then deploy ag
 ---
 
 ## C. After the first Next.js deploy (one time)
+
+> **Before** the first deploy: verify Google Search Console with a DNS TXT record (Domain property),
+> and export the SEO baseline (ROADMAP Your steps Y13 and Y1). Search Console may be verified through
+> the Google Analytics tag today, which now only loads after cookie consent.
 
 1. Check a few pages in the browser and with `curl -s https://invoicor.com/templates/plumbing | grep "<h1"`:
    you should see the real heading in the raw HTML.
