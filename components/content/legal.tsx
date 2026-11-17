@@ -1,60 +1,30 @@
 import type { ReactNode } from "react";
+import { Breadcrumbs } from "@/components/ui/content";
+import { Container } from "@/components/ui/layout";
 
-/** Dark long-form layout shared by Help, Terms and Privacy. */
-export function DarkPage({
+/**
+ * Long-form layout for Terms and Privacy (ROADMAP chunk 24d): light, reading width, numbered
+ * sections, a visible "last updated" line. No CTA clutter.
+ */
+export function LegalPage({
   eyebrow,
-  eyebrowColor,
   title,
   intro,
   children,
 }: {
   eyebrow: string;
-  eyebrowColor: string;
   title: string;
   intro: ReactNode;
   children: ReactNode;
 }) {
   return (
-    <div style={{ background: "#09090b", color: "#e2e8f0", minHeight: "100vh" }}>
-      <div style={{ maxWidth: 720, margin: "0 auto", padding: "120px 24px 80px" }}>
-        <p
-          style={{
-            fontSize: 13,
-            fontWeight: 700,
-            color: eyebrowColor,
-            letterSpacing: ".08em",
-            textTransform: "uppercase",
-            marginBottom: 12,
-          }}
-        >
-          {eyebrow}
-        </p>
-        <h1
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(36px,5vw,52px)",
-            fontWeight: 800,
-            letterSpacing: "-0.03em",
-            margin: "0 0 12px",
-            color: "#fff",
-          }}
-        >
-          {title}
-        </h1>
-        <div
-          style={{
-            fontSize: 14,
-            color: "#94a3b8",
-            marginBottom: 48,
-            paddingBottom: 24,
-            borderBottom: "1px solid rgba(255,255,255,.06)",
-          }}
-        >
-          {intro}
-        </div>
-        {children}
-      </div>
-    </div>
+    <Container narrow className="pt-nav pb-section">
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: title }]} className="pt-8" />
+      <p className="text-eyebrow text-brand-700 mt-10 mb-3 uppercase">{eyebrow}</p>
+      <h1 className="font-heading text-h1 text-ink">{title}</h1>
+      <div className="text-small text-muted border-line mt-4 mb-12 border-b pb-6">{intro}</div>
+      {children}
+    </Container>
   );
 }
 
@@ -71,18 +41,9 @@ export function S({
   children: ReactNode;
 }) {
   return (
-    <section id={id} style={{ marginBottom: 40, scrollMarginTop: 96 }}>
-      <h2
-        style={{
-          fontFamily: "var(--font-display)",
-          fontSize: 21,
-          fontWeight: 800,
-          color: "#fff",
-          margin: "0 0 14px",
-          letterSpacing: "-0.01em",
-        }}
-      >
-        <span style={{ color: "#6b7280", marginRight: 8 }}>{n}.</span>
+    <section id={id} className="mb-10 scroll-mt-24">
+      <h2 className="font-heading text-h4 text-ink mb-3">
+        <span className="text-subtle mr-2 tabular-nums">{n}.</span>
         {t}
       </h2>
       {children}
@@ -92,29 +53,13 @@ export function S({
 
 /** Paragraph. */
 export function P({ children }: { children: ReactNode }) {
-  return (
-    <p style={{ fontSize: 15, lineHeight: 1.75, color: "#94a3b8", margin: "0 0 12px" }}>
-      {children}
-    </p>
-  );
+  return <p className="text-muted mb-3 text-[0.9375rem] leading-[1.75]">{children}</p>;
 }
 
 /** Highlighted paragraph. */
 export function H({ children }: { children: ReactNode }) {
   return (
-    <p
-      style={{
-        fontSize: 14,
-        lineHeight: 1.7,
-        color: "#cbd5e1",
-        background: "rgba(255,255,255,.03)",
-        border: "1px solid rgba(255,255,255,.06)",
-        borderRadius: 10,
-        padding: "14px 18px",
-        margin: "0 0 12px",
-        fontWeight: 500,
-      }}
-    >
+    <p className="bg-tint ring-line text-ink mb-3 rounded-xl px-4 py-3.5 text-[0.9375rem] leading-relaxed font-medium ring-1">
       {children}
     </p>
   );
@@ -122,5 +67,9 @@ export function H({ children }: { children: ReactNode }) {
 
 /** Bold inline label. */
 export function B({ children }: { children: ReactNode }) {
-  return <strong style={{ color: "#e2e8f0" }}>{children}</strong>;
+  return <strong className="text-ink font-bold">{children}</strong>;
 }
+
+/** Inline link inside legal text. */
+export const LEGAL_LINK =
+  "text-brand-700 focus-visible:focus-ring rounded font-medium underline underline-offset-2 hover:no-underline";

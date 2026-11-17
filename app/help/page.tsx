@@ -1,8 +1,12 @@
+import { Mail, MessageCircle } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { DarkPage } from "@/components/content/legal";
+import { ArticleLayout, Block, PageHeader } from "@/components/sections/content/blocks";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Accordion } from "@/components/ui/Accordion";
+import { buttonClass } from "@/components/ui/Button";
+import { InvoicePaper } from "@/components/ui/invoice";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { faqLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
@@ -22,10 +26,9 @@ interface HelpItem {
   rich?: ReactNode;
 }
 
-const strong: React.CSSProperties = { color: "#e2e8f0" };
-
-const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
+const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
   {
+    id: "getting-started",
     title: "Getting Started",
     items: [
       {
@@ -38,7 +41,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
       },
       {
         q: "Is Invoicor free to use?",
-        a: "Yes. You can create up to 3 invoices for free with no time limit. Free invoices include all features — templates, PDF export, client management, and status tracking. No watermarks on any plan.",
+        a: "Yes. You can create up to 3 invoices for free with no time limit. Free invoices include all features — templates, PDF export, client management, and status tracking. No watermark on any plan.",
       },
       {
         q: "Which devices are supported?",
@@ -47,6 +50,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
     ],
   },
   {
+    id: "creating-invoices",
     title: "Creating Invoices",
     items: [
       {
@@ -55,15 +59,15 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
       },
       {
         q: "How do templates work?",
-        a: "Invoicor includes 30+ professionally designed invoice templates. Free users get access to the free collection. Starter and Pro plans unlock additional premium templates. You can set a default template in your Business Profile or choose a different one for each invoice.",
+        a: "Invoicor includes 31 professionally designed invoice templates: 21 are free, 8 come with Starter and 2 with Pro. Higher plans include all lower-tier templates. You can set a default template in your Business Profile or choose a different one for each invoice.",
       },
       {
         q: "Can I invoice in different currencies?",
-        a: "Yes. Invoicor supports 20+ currencies including USD, EUR, GBP, JPY, CHF, CAD, AUD, INR, BRL, and many more. Set a default currency in your Business Profile or change it per invoice.",
+        a: "Yes. Invoicor supports 38 currencies, including USD, EUR, GBP, JPY, CHF, CAD, AUD, INR and BRL. Set a default currency in your Business Profile or change it per invoice.",
       },
       {
         q: "Can I send invoices in my client's language?",
-        a: "Yes. Invoicor supports multiple invoice languages. All labels on the invoice (Item, Quantity, Total, etc.) are translated automatically. Set a default language in your Business Profile or choose per invoice.",
+        a: "Yes. Invoicor supports 11 invoice languages. All labels on the invoice (Item, Quantity, Total, etc.) are translated automatically. Set a default language in your Business Profile or choose per invoice.",
       },
       {
         q: "How does tax calculation work?",
@@ -75,11 +79,12 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
       },
       {
         q: "What's the maximum number of items per invoice?",
-        a: "Each invoice can have up to 7 line items. This keeps invoices clean and fits on a single A4 page.",
+        a: "It depends on your plan: up to 10 line items per invoice on Free, 25 on Starter and 50 on Pro.",
       },
     ],
   },
   {
+    id: "sending-tracking",
     title: "Sending & Tracking",
     items: [
       {
@@ -91,15 +96,17 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
         a: "Draft — saved but not sent yet, you can still edit it. Sent — shared with your client, locked for editing. Paid — client has paid, marked by you. Overdue — past the due date, still unpaid. Cancelled — voided, no longer active.",
         rich: (
           <>
-            <strong style={strong}>Draft</strong> — saved but not sent yet, you can still edit it.
+            <strong className="text-ink">Draft</strong> — saved but not sent yet, you can still edit
+            it.
             <br />
-            <strong style={strong}>Sent</strong> — shared with your client, locked for editing.
+            <strong className="text-ink">Sent</strong> — shared with your client, locked for
+            editing.
             <br />
-            <strong style={strong}>Paid</strong> — client has paid, marked by you.
+            <strong className="text-ink">Paid</strong> — client has paid, marked by you.
             <br />
-            <strong style={strong}>Overdue</strong> — past the due date, still unpaid.
+            <strong className="text-ink">Overdue</strong> — past the due date, still unpaid.
             <br />
-            <strong style={strong}>Cancelled</strong> — voided, no longer active.
+            <strong className="text-ink">Cancelled</strong> — voided, no longer active.
           </>
         ),
       },
@@ -114,6 +121,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
     ],
   },
   {
+    id: "account-billing",
     title: "Account & Billing",
     items: [
       {
@@ -135,6 +143,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
     ],
   },
   {
+    id: "multiple-businesses",
     title: "Multiple Businesses",
     items: [
       {
@@ -148,6 +157,7 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
     ],
   },
   {
+    id: "data-privacy",
     title: "Data & Privacy",
     items: [
       {
@@ -161,7 +171,10 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
           <>
             No. We do not sell, rent, or share your personal data or your clients&apos; data with
             anyone. Read our full{" "}
-            <Link href="/privacy" style={{ color: "#818cf8", textDecoration: "none" }}>
+            <Link
+              href="/privacy"
+              className="text-brand-700 font-medium underline underline-offset-2"
+            >
               Privacy Policy
             </Link>
             .
@@ -176,131 +189,48 @@ const SECTIONS: Array<{ title: string; items: HelpItem[] }> = [
   },
 ];
 
-function SectionTitle({ children }: { children: ReactNode }) {
-  return (
-    <h2
-      style={{
-        fontFamily: "var(--font-display)",
-        fontSize: 20,
-        fontWeight: 800,
-        color: "#fff",
-        margin: "40px 0 8px",
-        letterSpacing: "-0.01em",
-        paddingTop: 24,
-        borderTop: "1px solid rgba(255,255,255,.04)",
-      }}
-    >
-      {children}
-    </h2>
-  );
-}
-
-function Question({ item }: { item: HelpItem }) {
-  return (
-    <details className="faq-item" style={{ borderBottom: "1px solid rgba(255,255,255,.06)" }}>
-      <summary
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "20px 0",
-        }}
-      >
-        <h3
-          style={{ fontSize: 16, fontWeight: 600, color: "#e2e8f0", paddingRight: 16, margin: 0 }}
-        >
-          {item.q}
-        </h3>
-        <svg
-          aria-hidden
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#64748b"
-          strokeWidth="2"
-          strokeLinecap="round"
-          style={{ flexShrink: 0 }}
-        >
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
-      </summary>
-      <div style={{ paddingBottom: 20, fontSize: 15, lineHeight: 1.7, color: "#94a3b8" }}>
-        {item.rich ?? item.a}
-      </div>
-    </details>
-  );
-}
-
+/** Help center (ROADMAP chunk 24b): questions grouped by topic, one FAQPage JSON-LD for all. */
 export default function HelpPage() {
   const allItems = SECTIONS.flatMap((s) => s.items);
   return (
-    <DarkPage
-      eyebrow="Support"
-      eyebrowColor="#818cf8"
-      title="Help Center"
-      intro={
-        <p style={{ fontSize: 16, color: "#94a3b8", margin: 0 }}>
-          Everything you need to know about Invoicor. Can&apos;t find what you&apos;re looking for?
-          Reach out to us directly.
-        </p>
-      }
-    >
+    <>
       <JsonLd data={faqLd(allItems.map((i) => ({ question: i.q, answer: i.a })))} />
+      <PageHeader
+        crumbs={[{ name: "Home", href: "/" }, { name: "Help" }]}
+        eyebrow="Support"
+        title="Help Center"
+        subtitle="Everything you need to know about Invoicor. Can't find your answer? A real person reads every message."
+      />
+      <ArticleLayout toc={SECTIONS.map((s) => ({ id: s.id, label: s.title }))}>
+        {SECTIONS.map((section) => (
+          <Block key={section.id} id={section.id} title={section.title}>
+            <Accordion
+              items={section.items.map((i) => ({ question: i.q, answer: i.a, content: i.rich }))}
+            />
+          </Block>
+        ))}
 
-      {SECTIONS.map((section) => (
-        <div key={section.title}>
-          <SectionTitle>{section.title}</SectionTitle>
-          {section.items.map((item) => (
-            <Question key={item.q} item={item} />
-          ))}
+        <div className="border-line border-t py-14">
+          <InvoicePaper highlight className="p-8 text-center">
+            <MessageCircle
+              aria-hidden
+              className="text-brand-600 mx-auto size-8"
+              strokeWidth={1.75}
+            />
+            <h2 className="font-heading text-h3 text-ink mt-4">Still have a question?</h2>
+            <p className="text-muted mx-auto mt-2 max-w-md">
+              Send us a message from inside the app, or email us. A real person reads every message.
+            </p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className={buttonClass({ variant: "secondary", className: "mt-6" })}
+            >
+              <Mail aria-hidden className="size-4" />
+              {CONTACT_EMAIL}
+            </a>
+          </InvoicePaper>
         </div>
-      ))}
-
-      <div
-        style={{
-          marginTop: 56,
-          padding: "32px 24px",
-          background: "rgba(255,255,255,.02)",
-          border: "1px solid rgba(255,255,255,.06)",
-          borderRadius: 16,
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: 22,
-            fontWeight: 800,
-            margin: "0 0 8px",
-            color: "#fff",
-          }}
-        >
-          Still have questions?
-        </h2>
-        <p style={{ fontSize: 15, color: "#94a3b8", margin: "0 0 20px" }}>
-          Send us a message directly from the app, or email us. We respond within 24 hours.
-        </p>
-        <a
-          href={`mailto:${CONTACT_EMAIL}`}
-          className="soft-btn"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            background: "rgba(255,255,255,.06)",
-            border: "1px solid rgba(255,255,255,.08)",
-            color: "#e2e8f0",
-            padding: "12px 24px",
-            borderRadius: 12,
-            fontSize: 14,
-            fontWeight: 600,
-            textDecoration: "none",
-          }}
-        >
-          {CONTACT_EMAIL}
-        </a>
-      </div>
-    </DarkPage>
+      </ArticleLayout>
+    </>
   );
 }

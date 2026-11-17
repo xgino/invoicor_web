@@ -1,13 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { PAGE_TYPES, axeViolations, trackAnalytics } from "./helpers";
 
-/**
- * Pages still on the old design (before the Stage E rebuild). Their accessibility issues are
- * recorded as a test annotation instead of failing the run; every other page must pass. Each
- * Stage E chunk removes its pages from this list. The list may only shrink.
- */
-const NOT_REBUILT_YET = new Set<string>(["compare", "help", "affiliate", "privacy", "terms"]);
-
 for (const [name, path] of Object.entries(PAGE_TYPES)) {
   test(`${name} (${path}) loads without errors`, async ({ page }) => {
     const errors: string[] = [];
@@ -25,13 +18,6 @@ for (const [name, path] of Object.entries(PAGE_TYPES)) {
     await trackAnalytics(page);
     await page.goto(path);
     const violations = await axeViolations(page);
-    if (NOT_REBUILT_YET.has(name)) {
-      test.info().annotations.push({
-        type: "not rebuilt yet",
-        description: violations.map((v) => `${v.id}: ${v.targets.join(", ")}`).join(" | "),
-      });
-      return;
-    }
     expect(violations).toEqual([]);
   });
 }

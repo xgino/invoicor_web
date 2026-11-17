@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { B, DarkPage, H, P, S } from "@/components/content/legal";
+import { B, H, LEGAL_LINK, LegalPage, P, S } from "@/components/content/legal";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { buildMetadata } from "@/lib/seo";
 
@@ -10,13 +10,10 @@ export const metadata: Metadata = buildMetadata({
   path: "/privacy",
 });
 
-const link: React.CSSProperties = { color: "#4ade80", textDecoration: "none" };
-
 export default function PrivacyPage() {
   return (
-    <DarkPage
+    <LegalPage
       eyebrow="Privacy"
-      eyebrowColor="#4ade80"
       title="Privacy Policy"
       intro={
         <>
@@ -221,7 +218,7 @@ export default function PrivacyPage() {
       <S n="13" t="Contact">
         <P>
           For privacy inquiries, data requests, or concerns, contact us at{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} style={link}>
+          <a href={`mailto:${CONTACT_EMAIL}`} className={LEGAL_LINK}>
             {CONTACT_EMAIL}
           </a>
           .
@@ -233,13 +230,13 @@ export default function PrivacyPage() {
             href="https://autoriteitpersoonsgegevens.nl"
             target="_blank"
             rel="noopener noreferrer"
-            style={link}
+            className={LEGAL_LINK}
           >
             autoriteitpersoonsgegevens.nl
           </a>
           .
         </P>
       </S>
-    </DarkPage>
+    </LegalPage>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DarkPage, H, P, S } from "@/components/content/legal";
+import { LegalPage, H, P, S, LEGAL_LINK } from "@/components/content/legal";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { buildMetadata } from "@/lib/seo";
 
@@ -12,9 +12,8 @@ export const metadata: Metadata = buildMetadata({
 
 export default function TermsPage() {
   return (
-    <DarkPage
+    <LegalPage
       eyebrow="Legal"
-      eyebrowColor="#818cf8"
       title="Terms of Service"
       intro={
         <>Last updated: April 27, 2026 &middot; Invoicor &middot; Operated from the Netherlands</>
@@ -226,12 +225,12 @@ export default function TermsPage() {
       <S n="16" t="Contact">
         <P>
           Questions about these Terms? Contact us at{" "}
-          <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: "#818cf8", textDecoration: "none" }}>
+          <a href={`mailto:${CONTACT_EMAIL}`} className={LEGAL_LINK}>
             {CONTACT_EMAIL}
           </a>
           .
         </P>
       </S>
-    </DarkPage>
+    </LegalPage>
   );
 }

@@ -209,12 +209,15 @@ export function ClosingCta({
   gradient,
   text,
   campaign,
+  action,
 }: {
   title: string;
   /** The one gradient word or phrase, appended to the title. */
   gradient?: string;
   text: string;
   campaign: string;
+  /** Replaces the App Store badge and the free-plan note (e.g. the affiliate sign-up). */
+  action?: ReactNode;
 }) {
   return (
     <Section tone="glow" className="text-center">
@@ -225,12 +228,18 @@ export function ClosingCta({
         <Text size="lead" className="mx-auto mt-5 max-w-lg">
           {text}
         </Text>
-        <div className="mt-8 flex justify-center">
-          <AppStoreBadge campaign={campaign} />
-        </div>
-        <p className="text-small text-subtle mt-4">
-          {FREE_INVOICES} invoices free · no watermark · no card needed
-        </p>
+        {action ? (
+          <div className="mt-8 flex justify-center">{action}</div>
+        ) : (
+          <>
+            <div className="mt-8 flex justify-center">
+              <AppStoreBadge campaign={campaign} />
+            </div>
+            <p className="text-small text-subtle mt-4">
+              {FREE_INVOICES} invoices free · no watermark · no card needed
+            </p>
+          </>
+        )}
       </Container>
     </Section>
   );

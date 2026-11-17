@@ -86,7 +86,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
 - [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
 - [ ] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Left: sources + dates for competitor facts (Y16), more competitors (23c))_
-- [ ] 24. About, contact, help, affiliate & legal
+- [ ] 24. About, contact, help, affiliate & legal _(✅ 2026-11-18: help, affiliate, legal, 404, error page rebuilt. Left: About + Contact, which need D6/D7)_
 - [ ] 25. Motion & micro-interactions
 
 **Stage F: Switch to Next.js**
@@ -634,11 +634,13 @@ _✅ 2026-11-18: rebuilt on shared blocks (at-a-glance stats as an invoice sheet
 ### 24. About, contact, help, affiliate & legal
 **Goal:** the remaining pages, plus the trust pages Google looks for.
 
-- [ ] a. **New: About** (the story, who's behind it, EU hosting, the mission) and **Contact** (email/form, response time, company details). Both feed the trust signals (chunk 7c).
-- [ ] b. Help: FAQ accordion + search filter + contact link.
-- [ ] c. Affiliate: rebuilt with the shared sections.
-- [ ] d. Terms & Privacy: `Prose` layout, a table of contents, a "last updated" date. **Update the privacy policy** for analytics + consent, Turnstile, and the generator ("we don't store invoice data").
-- [ ] e. A branded 404 (`not-found.tsx`) with links to the main pages, and an error page (`error.tsx`).
+- [ ] a. _(needs your input: D6 company details, D7 story; Claude builds both pages as soon as you answer)_ **New: About** (the story, who's behind it, EU hosting, the mission) and **Contact** (email/form, response time, company details). Both feed the trust signals (chunk 7c).
+- [x] b. Help: FAQ accordion + search filter + contact link.
+- [x] c. Affiliate: rebuilt with the shared sections.
+- [x] d. Terms & Privacy: light reading layout, numbered sections, a "last updated" date. _(Turnstile and generator wording follows in Stage G.)_ **Update the privacy policy** for analytics + consent, Turnstile, and the generator ("we don't store invoice data").
+- [x] e. A branded 404 (`not-found.tsx`) with links to the main pages, and an error page (`error.tsx`).
+
+_✅ 2026-11-18: Help (grouped accordions, sticky topic list, fixed facts: 31 templates, 38 currencies, 11 languages, **line items per invoice 10 / 25 / 50 by plan (was "7")**, removed the unconfirmed "we respond within 24 hours"), Affiliate (calculator as a commission statement, no unsourced "100M+ freelancers" or "fastest app"), Terms and Privacy on the light layout (legal text unchanged), invoice-style 404 ("VOID") and `error.tsx`. Every page now passes axe; the "not rebuilt yet" test list is gone._
 
 **Done when:** no page uses the old styling, a wrong URL shows the branded 404 with **status 404**, and the privacy policy matches what the site actually does.
 
