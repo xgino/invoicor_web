@@ -60,7 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: jsClassScript }} />
       </head>
-      <body className="flex min-h-screen flex-col bg-white font-sans text-slate-900 selection:bg-blue-100 selection:text-blue-900">
+      <body className="bg-surface text-ink selection:bg-brand-100 selection:text-brand-900 flex min-h-screen flex-col font-sans">
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />

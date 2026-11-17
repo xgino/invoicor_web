@@ -39,11 +39,13 @@ app/                     routes (one folder per URL) + site-wide files
   page.tsx               home page
   templates/ industries/ compare/   hub page + [slug] detail pages
   help/ affiliate/ terms/ privacy/
+  brand/                 hidden brand reference: every token and component (noindex)
   not-found.tsx          branded 404 (exported as out/404.html)
   sitemap.ts robots.ts manifest.ts llms.txt/  generated at build time
   og.png/route.tsx       default social share image (out/og.png)
   fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
   globals.css            Tailwind + keyframes + hover/reveal helpers
+styles/tokens.css        brand tokens: colors, gradients, type scale, shadows, motion (see BRAND.md §7)
 components/
   layout/                Navbar, Footer
   landing/               home page sections and their building blocks

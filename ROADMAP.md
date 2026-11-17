@@ -73,7 +73,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] 14. Analytics, cookie consent & App Store attribution _(✅ GA4 + PostHog load only after "Accept"; StatsUp and Ahrefs removed; privacy policy states analytics run in the US, app data in Germany; session replay off. Left: provider token (Y6), `seo/TRACKING.md`)_
 
 **Stage D: Brand system**
-- [ ] 15. Brand tokens (colors, gradient, type, spacing)
+- [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
 - [ ] 16. Logo, icons & OG images
 - [ ] 17. UI components kit
 
@@ -442,18 +442,18 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 ### 15. Brand tokens (colors, gradient, type, spacing)
 **Goal:** one file defines how Invoicor looks.
 
-- [ ] a. `styles/tokens.css` with Tailwind v4 `@theme`:
+- [x] a. `styles/tokens.css` _(✅ 2026-11-18; also semantic roles `ink`/`muted`/`subtle`/`tint`/`line`, and a deeper **CTA gradient** `#CC4A04 → #C23003` because white on the logo orange is only 3.5:1)_ with Tailwind v4 `@theme`:
   - **Brand colors:** a scale from `brand-50` to `brand-950`, generated from `#E95D05` (500) and `#DC3002` (600).
   - **Neutrals:** a warm stone scale `#FAFAF9 → #0C0A09`.
   - **Semantic colors:** success `#16A34A`, warning `#D97706`, danger `#DC2626`, info `#2563EB`.
-- [ ] b. Gradients:
+- [x] b. Gradients:
   - `--brand-gradient: linear-gradient(135deg, #F07A1A 0%, #E95D05 45%, #DC3002 100%)`
   - `--brand-glow: radial-gradient(60% 50% at 50% 0%, rgb(233 93 5 / .12), transparent 70%)`
-- [ ] c. Fonts: download the Cabinet Grotesk and Satoshi `woff2` files and load them with `next/font/local` in the root layout. Set a type scale with `clamp()`: display, h1–h4, body, small.
-- [ ] d. Radius (8/12/16/24), 3 shadow levels with a slight warm tint, hairline border `rgb(0 0 0 / .06)`, and a spacing rhythm for sections.
-- [ ] e. Motion tokens: durations 150/250/400 ms, easing `cubic-bezier(.22,1,.36,1)`.
-- [ ] f. Add the visual rules to `BRAND.md`: where the gradient is allowed (primary CTA, one word per headline, the popular pricing card, the hero glow) and where it isn't.
-- [ ] g. A hidden `/brand` page (`noindex`) showing every token.
+- [x] c. Fonts: Cabinet Grotesk and Satoshi `woff2`, loaded with `next/font/local` (`app/fonts.ts`, done during the migration). Set a type scale with `clamp()`: display, h1–h4, body, small.
+- [x] d. Radius (8/12/16/24), 3 shadow levels with a slight warm tint, hairline border `rgb(0 0 0 / .06)`, and a spacing rhythm for sections.
+- [x] e. Motion tokens: durations 150/250/400 ms, easing `cubic-bezier(.22,1,.36,1)`.
+- [x] f. Add the visual rules to `BRAND.md`: where the gradient is allowed (primary CTA, one word per headline, the popular pricing card, the hero glow) and where it isn't.
+- [x] g. A hidden `/brand` page (`noindex`) showing every token.
 
 **Done when:** `/brand` shows every color, the gradient, all type sizes and all shadows, and they look right together.
 

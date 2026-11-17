@@ -1,0 +1,142 @@
+/*
+ * Invoicor brand tokens (ROADMAP chunk 15). The one place that defines how Invoicor looks.
+ * Rules for using them: BRAND.md section 7. Every token is shown on /brand.
+ *
+ * Light only (decision D13): no dark sections, no dark mode.
+ * Tailwind v4 turns each @theme variable into utilities, e.g. --color-brand-600 → text-brand-600,
+ * --shadow-card → shadow-card, --spacing-section → py-section, --text-h1 → text-h1.
+ */
+
+@theme {
+  /* ── Brand: from the logo, #E95D05 (500) → #DC3002 (600) ──
+   * Text on white: use brand-700 (6.4:1). brand-600 passes AA (4.7:1); brand-500 only for
+   * large text or decoration (3.5:1). */
+  --color-brand-50: #fff7ed;
+  --color-brand-100: #ffedd5;
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #f7913d;
+  --color-brand-500: #e95d05;
+  --color-brand-600: #dc3002;
+  --color-brand-700: #b42a06;
+  --color-brand-800: #8f240c;
+  --color-brand-900: #74200e;
+  --color-brand-950: #400d04;
+
+  /* ── Neutrals: Tailwind's warm `stone` scale (stone-50 #FAFAF9 … stone-950 #0C0A09) is used
+   * as-is. Semantic names for the common roles: */
+  --color-ink: #1c1917; /* headings and body text (stone-900, 17.5:1) */
+  --color-muted: #57534e; /* secondary text (stone-600, 7.6:1) */
+  --color-subtle: #78716c; /* captions, placeholders (stone-500, 4.8:1, the lightest text allowed) */
+  --color-surface: #ffffff; /* default section and card background */
+  --color-tint: #fafaf9; /* alternate section background (stone-50) */
+  --color-line: rgb(28 25 23 / 0.08); /* hairline borders */
+  --color-line-strong: rgb(28 25 23 / 0.16); /* inputs, dividers that must be seen */
+
+  /* ── Semantic ── */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* ── Type (fonts: see the @theme inline block below) ──
+   * Fluid scale: 375 px phone → 1280 px desktop. Use with font-heading for display–h4. */
+  --text-display: clamp(2.5rem, 1.6rem + 3.8vw, 4.5rem);
+  --text-display--line-height: 1.04;
+  --text-display--letter-spacing: -0.035em;
+  --text-display--font-weight: 800;
+  --text-h1: clamp(2.125rem, 1.6rem + 2.2vw, 3.5rem);
+  --text-h1--line-height: 1.08;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h1--font-weight: 800;
+  --text-h2: clamp(1.75rem, 1.4rem + 1.5vw, 2.625rem);
+  --text-h2--line-height: 1.12;
+  --text-h2--letter-spacing: -0.025em;
+  --text-h2--font-weight: 800;
+  --text-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.015em;
+  --text-h3--font-weight: 700;
+  --text-h4: 1.125rem;
+  --text-h4--line-height: 1.35;
+  --text-h4--font-weight: 700;
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-eyebrow: 0.8125rem;
+  --text-eyebrow--line-height: 1.3;
+  --text-eyebrow--letter-spacing: 0.08em;
+  --text-eyebrow--font-weight: 700;
+
+  /* ── Radius: Tailwind's lg / xl / 2xl / 3xl are 8 / 12 / 16 / 24 px ──
+   * inputs and small buttons: rounded-lg · buttons, badges: rounded-xl · cards: rounded-2xl ·
+   * large panels and phone frames: rounded-3xl. */
+
+  /* ── Shadows: warm-tinted, three levels ── */
+  --shadow-soft: 0 1px 2px rgb(68 32 10 / 0.05), 0 1px 3px rgb(68 32 10 / 0.04);
+  --shadow-card: 0 2px 4px rgb(68 32 10 / 0.04), 0 8px 24px -4px rgb(68 32 10 / 0.08);
+  --shadow-float: 0 4px 8px rgb(68 32 10 / 0.04), 0 24px 48px -12px rgb(68 32 10 / 0.18);
+  --shadow-brand: 0 6px 20px -6px rgb(220 48 2 / 0.45);
+
+  /* ── Spacing rhythm ── */
+  --spacing-section: clamp(4rem, 2.5rem + 6vw, 7.5rem); /* py-section: between page sections */
+  --spacing-gutter: 1rem; /* px-gutter: page side padding on phones */
+  --container-page: 72rem; /* max-w-page: 1152 px content width */
+  --container-reading: 42rem; /* max-w-reading: long-form text */
+
+  /* ── Motion: small and fast; transform and opacity only ── */
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Fonts are self-hosted with next/font/local (app/fonts.ts), which sets --font-satoshi and
+ * --font-cabinet on <html>. `inline` makes font-sans / font-heading use them directly. */
+@theme inline {
+  --font-sans:
+    var(--font-satoshi), "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: var(--font-cabinet), var(--font-satoshi), -apple-system, sans-serif;
+}
+
+:root {
+  /* Logo gradient: logo, glows, decorative shapes and the one gradient word in a large
+   * headline (large text needs 3:1; both stops pass). */
+  --brand-gradient: linear-gradient(135deg, #f07a1a 0%, #e95d05 45%, #dc3002 100%);
+  --brand-gradient-text: linear-gradient(135deg, #e95d05 0%, #dc3002 100%);
+  /* Button gradient: a deeper version so white text passes AA (4.6:1+) at any size. */
+  --brand-gradient-cta: linear-gradient(135deg, #cc4a04 0%, #c23003 100%);
+  --brand-gradient-cta-hover: linear-gradient(135deg, #bb4304 0%, #b02b03 100%);
+  /* Soft orange glow on a light background (hero, final CTA). */
+  --brand-glow: radial-gradient(60% 50% at 50% 0%, rgb(233 93 5 / 0.12), transparent 70%);
+
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+
+  /* Legacy names still used by the landing page CSS until Stage E. */
+  --font-body: var(--font-sans);
+  --font-display: var(--font-heading);
+}
+
+/* ── Brand utilities ── */
+@utility bg-brand-gradient {
+  background-image: var(--brand-gradient);
+}
+@utility bg-brand-cta {
+  background-image: var(--brand-gradient-cta);
+}
+@utility bg-brand-glow {
+  background-image: var(--brand-glow);
+}
+@utility text-gradient {
+  background-image: var(--brand-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility focus-ring {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 2px;
+}

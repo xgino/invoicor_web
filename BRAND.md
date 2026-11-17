@@ -95,7 +95,26 @@ Details and tokens come in ROADMAP chunk 15; these are the rules.
   on light, warm shadows and hairline borders, never black backgrounds. No dark mode.
 - **The gradient is rare:** primary buttons, one word per headline, the popular pricing card, the hero glow.
   Nowhere else.
-- **Type:** Cabinet Grotesk for headings, Satoshi for text (already self-hosted).
+- **Type:** Cabinet Grotesk for headings, Satoshi for text (self-hosted). Sizes: `text-display`, `text-h1`–`text-h4`,
+  `text-lead`, `text-body`, `text-small`, `text-eyebrow` (fluid, phone to desktop).
+- **Tokens:** all in `styles/tokens.css`, shown on `/brand` (hidden, noindex). Never hard-code a color or shadow in a page.
+
+**Color rules (checked for contrast):**
+
+| Use | Token | Why |
+|---|---|---|
+| Orange text or links on white | `brand-700` `#B42A06` | 6.4:1. `brand-500` (the logo orange) is only 3.5:1: large text or decoration only |
+| Primary button | `bg-brand-cta` (`#CC4A04` → `#C23003`) + white text | A slightly deeper logo gradient so white text passes AA (4.6:1) at any size |
+| Logo, glow, decorative shapes | `bg-brand-gradient` (`#F07A1A` → `#E95D05` → `#DC3002`) | The real logo gradient |
+| One gradient word in a big headline | `text-gradient` | Large text, both stops pass 3:1 |
+| Body text / secondary / captions | `text-ink` / `text-muted` / `text-subtle` | `subtle` (stone-500, 4.8:1) is the lightest text allowed |
+| Backgrounds | `bg-surface` (white), `bg-tint` (stone-50), `bg-brand-50` for one highlighted band | Light only |
+| Borders | `border-line` (hairline), `border-line-strong` (inputs) | |
+| Focus | `focus-ring` (2 px `brand-600`) | Visible on every interactive element |
+
+**The gradient is allowed only on:** primary buttons, one word per headline (at most one per screen),
+the popular pricing card's border, the logo, and the hero / final-CTA glow. **Not** on section
+backgrounds, body text, icons, borders of normal cards, or more than one button per section.
 - **Icons:** Lucide, 1.5 px stroke, one color.
 - **Images:** real app screens in an iPhone frame and real invoice templates. No stock photos, no
   fake faces, no AI-generated people.
