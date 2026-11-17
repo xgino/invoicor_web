@@ -31,8 +31,15 @@ export async function trackAnalytics(page: Page) {
 
 const axeSource = readFileSync(join(process.cwd(), "node_modules/axe-core/axe.min.js"), "utf8");
 
+export interface AxeViolation {
+  id: string;
+  impact: string;
+  help: string;
+  targets: string[];
+}
+
 /** Runs axe-core (WCAG 2.1 AA) and returns serious and critical violations. */
-export async function axeViolations(page: Page) {
+export async function axeViolations(page: Page): Promise<AxeViolation[]> {
   await page.addScriptTag({ content: axeSource });
   const result = await page.evaluate(async () => {
     // @ts-expect-error axe is injected above

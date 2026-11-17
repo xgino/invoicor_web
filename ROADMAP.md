@@ -80,7 +80,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 17.2 Invoice-style premium components _(✅ 2026-11-18: paper, line items, stamp, billing switch, invoice-shaped pricing; on `/brand`)_
 
 **Stage E: Rebuild the pages (in the new brand)**
-- [ ] 18. Navbar & footer _(the current footer fails contrast (2.67:1); rebuild it light with the kit first)_
+- [x] 18. Navbar & footer _(✅ 2026-11-18: light, mobile menu, footer links into every hub; contrast fixed)_
 - [ ] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-17: fake avatars + stars replaced by true promises; stats corrected to 31 templates, 38 currencies, 11 languages)_
 - [ ] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-17: fake testimonials replaced by a true "Promises" section; real reviews come with chunk 50)_
 - [ ] 21. Template pages + hub
@@ -540,11 +540,13 @@ _Light only: white and warm off-white sections, a soft orange glow on light for 
 ### 18. Navbar & footer
 **Goal:** clear navigation and strong internal linking on every page.
 
-- [ ] a. Navbar links: Free Invoice Generator · Templates · Industries · Pricing (`/#pricing`) · Help, plus the App Store CTA. Leave a slot for the language switcher.
-- [ ] b. Light (white, translucent with blur once you scroll, hairline border). No dark variant.
-- [ ] c. Mobile: a hamburger opening a slide-out menu, with the focus kept inside it and closing on Esc.
-- [ ] d. Footer columns: Product, Free tools, Templates (top 6), Industries (top 6), Compare, Guides, Company (About, Contact, Affiliate), Legal. Brand gradient hairline at the top, App Store badge.
-- [ ] e. Both are server components; only the mobile menu toggle is a client component.
+- [x] a. Navbar links _(the generator link is added in chunk 35, when it exists)_: Free Invoice Generator · Templates · Industries · Pricing (`/#pricing`) · Help, plus the App Store CTA. Leave a slot for the language switcher.
+- [x] b. Light (white, translucent with blur once you scroll, hairline border). No dark variant.
+- [x] c. Mobile: a hamburger opening a slide-out menu, with the focus kept inside it and closing on Esc.
+- [x] d. Footer columns: Templates (top 6), Industries (top 6), Compare (top 6), Company (pricing, help, affiliate, email), plus Privacy, Terms and Cookie settings. _Free tools, Guides, About and Contact are added when those pages exist (chunks 24, 35, 42)._ Brand gradient hairline at the top, App Store badge.
+- [x] e. Both are server components; only the mobile menu toggle is a client component.
+
+_✅ 2026-11-18: `components/layout/` (Navbar server component; NavClient for scroll state, active-link underline and the mobile menu with focus trap and Esc). The footer contrast failure is gone: the templates and compare hubs now pass axe._
 
 **Done when:** every page is reachable within 3 clicks from home, on desktop and mobile.
 

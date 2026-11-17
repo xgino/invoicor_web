@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { AppleIcon } from "@/components/landing/AppleIcon";
+import { AppleIcon } from "@/components/brand/AppleIcon";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { appStoreLink } from "@/lib/config";
 import { breadcrumbLd } from "@/lib/jsonld";

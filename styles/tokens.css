@@ -83,6 +83,7 @@
 
   /* ── Spacing rhythm ── */
   --spacing-section: clamp(4rem, 2.5rem + 6vw, 7.5rem); /* py-section: between page sections */
+  --spacing-nav: 4rem; /* pt-nav: height of the fixed navbar */
   --spacing-gutter: 1rem; /* px-gutter: page side padding on phones */
   --container-page: 72rem; /* max-w-page: 1152 px content width */
   --container-reading: 42rem; /* max-w-reading: long-form text */

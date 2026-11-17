@@ -159,17 +159,6 @@ body {
 .cta-btn:active {
   transform: scale(0.97);
 }
-.nav-cta {
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s,
-    background 0.3s,
-    color 0.3s;
-}
-.nav-cta:hover {
-  transform: translateY(-1px) scale(1.02);
-  box-shadow: var(--nav-cta-shadow-hover) !important;
-}
 .tmpl-card {
   transition:
     transform 0.3s var(--ease-out),

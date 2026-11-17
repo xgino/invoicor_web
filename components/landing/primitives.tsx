@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { appStoreLink } from "@/lib/config";
-import { AppleIcon } from "./AppleIcon";
+import { AppleIcon } from "@/components/brand/AppleIcon";
 
 /** Style helper for a reveal delay, e.g. <div className="reveal" style={{ ...delay(0.1) }}> */
 export function delay(seconds: number): CSSProperties {

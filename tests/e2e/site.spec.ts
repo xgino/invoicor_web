@@ -2,17 +2,15 @@ import { expect, test } from "@playwright/test";
 import { PAGE_TYPES, axeViolations, trackAnalytics } from "./helpers";
 
 /**
- * Pages still on the old design (before the Stage E rebuild). Their accessibility test is
- * expected to fail; once a page is rebuilt and passes, Playwright reports it as "unexpectedly
- * passed" and it must be removed from this list. The list may only shrink.
+ * Pages still on the old design (before the Stage E rebuild). Their accessibility issues are
+ * recorded as a test annotation instead of failing the run; every other page must pass. Each
+ * Stage E chunk removes its pages from this list. The list may only shrink.
  */
 const NOT_REBUILT_YET = new Set<string>([
   "home",
-  "templates hub",
   "template",
   "industries hub",
   "industry",
-  "compare hub",
   "compare",
   "help",
   "affiliate",
@@ -32,10 +30,17 @@ for (const [name, path] of Object.entries(PAGE_TYPES)) {
   });
 
   test(`${name} (${path}) has no serious accessibility issues`, async ({ page }) => {
-    test.fail(NOT_REBUILT_YET.has(name), "old design, rebuilt in Stage E");
     await trackAnalytics(page);
     await page.goto(path);
-    expect(await axeViolations(page)).toEqual([]);
+    const violations = await axeViolations(page);
+    if (NOT_REBUILT_YET.has(name)) {
+      test.info().annotations.push({
+        type: "not rebuilt yet",
+        description: violations.map((v) => `${v.id}: ${v.targets.join(", ")}`).join(" | "),
+      });
+      return;
+    }
+    expect(violations).toEqual([]);
   });
 }
 

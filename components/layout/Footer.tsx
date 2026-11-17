@@ -1,234 +1,149 @@
+import { ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import { LogoMark } from "@/components/brand/Logo";
+import type { ReactNode } from "react";
+import { AFFILIATE } from "@/components/affiliate/config";
+import { Logo } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
-import { AppleIcon } from "@/components/landing/AppleIcon";
-import { CONTACT_EMAIL, appStoreLink } from "@/lib/config";
+import { AppStoreBadge } from "@/components/ui/content";
+import { CONTACT_EMAIL } from "@/lib/config";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
 
-const columnHeader: React.CSSProperties = {
-  fontSize: 12,
-  fontWeight: 700,
-  color: "#64748b",
-  textTransform: "uppercase",
-  letterSpacing: ".06em",
-  margin: "0 0 14px",
-};
-const linkStyle: React.CSSProperties = {
-  fontSize: 14,
-  fontWeight: 500,
-  color: "#4b5563",
-  textDecoration: "none",
-};
-const viewAllStyle: React.CSSProperties = {
-  fontSize: 14,
-  fontWeight: 600,
-  color: "#3b82f6",
-  textDecoration: "none",
-  marginTop: 6,
-  display: "inline-block",
-};
-const column: React.CSSProperties = { display: "flex", flexDirection: "column", gap: 10 };
+/**
+ * Site footer (ROADMAP chunk 18d): light, with a brand-gradient hairline on top. Columns link
+ * into every hub and the top pages of each, so every page is within 3 clicks of any other.
+ */
+const LINK =
+  "text-small text-muted hover:text-ink focus-visible:focus-ring rounded transition-colors duration-150";
+
+function Column({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <div>
+      <h2 className="text-eyebrow text-ink mb-4 uppercase">{title}</h2>
+      <ul className="space-y-2.5">{children}</ul>
+    </div>
+  );
+}
+
+function Item({ href, children, track }: { href: string; children: ReactNode; track?: string }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className={LINK}
+        data-track={track ? "footer_click" : undefined}
+        data-track-link={track}
+      >
+        {children}
+      </Link>
+    </li>
+  );
+}
+
+function AllLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className="text-small text-brand-700 focus-visible:focus-ring rounded font-bold hover:underline"
+      >
+        {children} →
+      </Link>
+    </li>
+  );
+}
 
 export function Footer() {
-  const topComparisons = getComparisons().slice(0, 4);
-  const topIndustries = getIndustries().slice(0, 4);
-  const topTemplates = getTemplates().slice(0, 4);
+  const templates = getTemplates().slice(0, 6);
+  const industries = getIndustries().slice(0, 6);
+  const comparisons = getComparisons().slice(0, 6);
+  const year = new Date().getFullYear();
 
   return (
-    <footer
-      style={{
-        background: "#06060a",
-        borderTop: "1px solid rgba(255,255,255,.04)",
-        padding: "64px 24px 32px",
-      }}
-    >
-      <div style={{ maxWidth: 1240, margin: "0 auto" }}>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 48,
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            paddingBottom: 40,
-            borderBottom: "1px solid rgba(255,255,255,.04)",
-          }}
-        >
-          {/* Brand */}
-          <div style={{ flex: "1 1 240px", maxWidth: 280 }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
-              <LogoMark size={28} />
-              <span
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: 17,
-                  fontWeight: 800,
-                  color: "#f5f5f5",
-                  letterSpacing: "-0.02em",
-                }}
-              >
-                Invoicor
-              </span>
-            </div>
-            <p style={{ fontSize: 14, lineHeight: 1.6, color: "#4b5563", margin: 0 }}>
-              Professional invoicing for freelancers and small businesses. Create, send, and track
-              PDF invoices from your iPhone.
+    <footer className="bg-tint relative">
+      <div aria-hidden className="bg-brand-gradient absolute inset-x-0 top-0 h-px opacity-60" />
+      <div className="max-w-page px-gutter mx-auto pt-16 pb-10 sm:px-6">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_3fr]">
+          <div className="max-w-xs">
+            <Link
+              href="/"
+              aria-label="Invoicor home"
+              className="text-ink focus-visible:focus-ring inline-block rounded-lg"
+            >
+              <Logo size={32} />
+            </Link>
+            <p className="text-small text-muted mt-4 leading-relaxed">
+              Professional invoices from your iPhone, for freelancers and small businesses. No fees
+              on your payments, ever.
+            </p>
+            <AppStoreBadge campaign="footer" className="mt-6" />
+            <p className="text-small text-muted mt-6 flex items-center gap-2">
+              <ShieldCheck aria-hidden className="text-brand-700 size-4 shrink-0" />
+              Your app data is stored in Germany.
             </p>
           </div>
 
-          {/* Link columns */}
-          <nav
-            aria-label="Footer"
-            style={{ display: "flex", flexWrap: "wrap", gap: 48, flex: "1 1 auto" }}
-          >
-            <div style={{ minWidth: 140 }}>
-              <p style={columnHeader}>Compare</p>
-              <div style={column}>
-                {topComparisons.map((item) => (
-                  <Link key={item.slug} href={`/compare/${item.slug}`} style={linkStyle}>
-                    vs {item.competitor}
-                  </Link>
-                ))}
-                <Link href="/compare" style={viewAllStyle}>
-                  All Alternatives &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div style={{ minWidth: 140 }}>
-              <p style={columnHeader}>Industries</p>
-              <div style={column}>
-                {topIndustries.map((item) => (
-                  <Link key={item.slug} href={`/industries/${item.slug}`} style={linkStyle}>
-                    {item.industry}
-                  </Link>
-                ))}
-                <Link href="/industries" style={viewAllStyle}>
-                  All Industries &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div style={{ minWidth: 140 }}>
-              <p style={columnHeader}>Free Templates</p>
-              <div style={column}>
-                {topTemplates.map((item) => (
-                  <Link key={item.slug} href={`/templates/${item.slug}`} style={linkStyle}>
-                    {item.niche} Invoice
-                  </Link>
-                ))}
-                <Link href="/templates" style={viewAllStyle}>
-                  All Templates &rarr;
-                </Link>
-              </div>
-            </div>
-
-            <div style={{ minWidth: 140 }}>
-              <p style={columnHeader}>Company</p>
-              <div style={column}>
-                <Link
-                  href="/help"
-                  data-track="footer_click"
-                  data-track-link="help"
-                  style={linkStyle}
-                >
-                  Help &amp; FAQ
-                </Link>
-                <Link
-                  href="/privacy"
-                  data-track="footer_click"
-                  data-track-link="privacy"
-                  style={linkStyle}
-                >
-                  Privacy
-                </Link>
-                <Link
-                  href="/terms"
-                  data-track="footer_click"
-                  data-track-link="terms"
-                  style={linkStyle}
-                >
-                  Terms
-                </Link>
-                <CookieSettingsButton style={linkStyle} />
-                <Link
-                  href="/affiliate"
-                  data-track="footer_click"
-                  data-track-link="affiliate"
-                  style={linkStyle}
-                >
-                  Affiliate Program (20%)
-                </Link>
+          <nav aria-label="Footer" className="grid grid-cols-2 gap-10 sm:grid-cols-4">
+            <Column title="Templates">
+              {templates.map((t) => (
+                <Item key={t.slug} href={`/templates/${t.slug}`}>
+                  {t.niche} invoice
+                </Item>
+              ))}
+              <AllLink href="/templates">All templates</AllLink>
+            </Column>
+            <Column title="Industries">
+              {industries.map((i) => (
+                <Item key={i.slug} href={`/industries/${i.slug}`}>
+                  {i.industry}
+                </Item>
+              ))}
+              <AllLink href="/industries">All industries</AllLink>
+            </Column>
+            <Column title="Compare">
+              {comparisons.map((c) => (
+                <Item key={c.slug} href={`/compare/${c.slug}`}>
+                  {c.competitor} alternative
+                </Item>
+              ))}
+              <AllLink href="/compare">All comparisons</AllLink>
+            </Column>
+            <Column title="Company">
+              <Item href="/#pricing" track="pricing">
+                Pricing
+              </Item>
+              <Item href="/help" track="help">
+                Help &amp; FAQ
+              </Item>
+              <Item href="/affiliate" track="affiliate">
+                Affiliate program ({AFFILIATE.commission}%)
+              </Item>
+              <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
+                  className={LINK}
                   data-track="footer_click"
                   data-track-link="email"
-                  style={linkStyle}
                 >
                   {CONTACT_EMAIL}
                 </a>
-              </div>
-            </div>
+              </li>
+            </Column>
           </nav>
-
-          {/* App Store */}
-          <div style={{ flex: "0 0 auto" }}>
-            <a
-              href={appStoreLink("footer")}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-track="footer_click"
-              data-track-link="app_store"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-                background: "rgba(255,255,255,.04)",
-                border: "1px solid rgba(255,255,255,.08)",
-                borderRadius: 14,
-                padding: "14px 20px",
-                textDecoration: "none",
-                color: "#f5f5f5",
-              }}
-            >
-              <AppleIcon size={24} />
-              <div>
-                <p style={{ fontSize: 10, color: "#64748b", margin: "0 0 1px", fontWeight: 500 }}>
-                  Download on the
-                </p>
-                <p
-                  style={{
-                    fontSize: 16,
-                    fontWeight: 800,
-                    color: "#f5f5f5",
-                    margin: 0,
-                    letterSpacing: "-0.01em",
-                  }}
-                >
-                  App Store
-                </p>
-              </div>
-            </a>
-          </div>
         </div>
 
-        {/* Bottom row */}
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: 12,
-            paddingTop: 24,
-          }}
-        >
-          <p style={{ fontSize: 13, color: "#6b7280", margin: 0 }}>
-            &copy; {new Date().getFullYear()} Invoicor. All rights reserved.
-          </p>
-          <p style={{ fontSize: 12, color: "#6b7280", margin: 0 }}>
-            Made in the Netherlands <span style={{ margin: "0 6px" }}>·</span> Hosted in Germany
-          </p>
+        <div className="border-line text-small text-subtle mt-14 flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} Invoicor. All rights reserved.</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            <Item href="/privacy" track="privacy">
+              Privacy
+            </Item>
+            <Item href="/terms" track="terms">
+              Terms
+            </Item>
+            <li>
+              <CookieSettingsButton className={LINK} />
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
