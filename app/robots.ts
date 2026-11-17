@@ -4,17 +4,33 @@ import { absoluteUrl } from "@/lib/config";
 export const dynamic = "force-static";
 
 /**
- * Same rules as the previous robots.txt.
- * Decision pending (ROADMAP chunk 6g): allow AI search bots (OAI-SearchBot, PerplexityBot,
- * Claude-SearchBot) so assistants can recommend Invoicor.
+ * Decision D3 (ROADMAP, 2026-11-17): allow all AI bots, search and training, so ChatGPT,
+ * Claude, Perplexity and Gemini can find, cite and recommend Invoicor. The `*` rule already
+ * covers them; they're listed by name so the choice is explicit and easy to change.
  */
+const AI_BOTS = [
+  // Answer / search bots (cite pages in AI answers)
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Claude-SearchBot",
+  "Claude-User",
+  // Training bots (more mentions in AI models over time)
+  "GPTBot",
+  "ClaudeBot",
+  "Google-Extended",
+  "Applebot-Extended",
+  "CCBot",
+];
+
+const PRIVATE = ["/api/", "/admin/"];
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/api/", "/admin/"] },
-      { userAgent: "GPTBot", disallow: "/" },
-      { userAgent: "Google-Extended", disallow: "/" },
-      { userAgent: "CCBot", disallow: "/" },
+      { userAgent: "*", allow: "/", disallow: PRIVATE },
+      { userAgent: AI_BOTS, allow: "/", disallow: PRIVATE },
     ],
     sitemap: absoluteUrl("/sitemap.xml"),
   };
