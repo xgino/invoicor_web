@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Meanwhile Claude does Stage D (chunks 15–17: tokens, logo, UI kit), light only (D13). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
+**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: Stage E, starting with chunk 18 (navbar and footer, light). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -75,10 +75,10 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 **Stage D: Brand system**
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
 - [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
-- [ ] 17. UI components kit
+- [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
 
 **Stage E: Rebuild the pages (in the new brand)**
-- [ ] 18. Navbar & footer
+- [ ] 18. Navbar & footer _(the current footer fails contrast (2.67:1); rebuild it light with the kit first)_
 - [ ] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-17: fake avatars + stars replaced by true promises; stats corrected to 31 templates, 38 currencies, 11 languages)_
 - [ ] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-17: fake testimonials replaced by a true "Promises" section; real reviews come with chunk 50)_
 - [ ] 21. Template pages + hub
@@ -471,13 +471,14 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 ### 17. UI components kit
 **Goal:** pages are built from shared parts, never one-off styles.
 
-- [ ] a. `Button`: primary (gradient), secondary, ghost; sizes sm/md/lg; loading state; works as a link.
-- [ ] b. `Container`, `Section` (white / tint / glow variants, all light), `Heading` (with an optional gradient word), `Text`, `Prose` (long-form content).
-- [ ] c. `Card`, `Badge` (free/starter/pro), `AppStoreBadge`, `Breadcrumbs` (with `breadcrumbLd()` built in).
-- [ ] d. Form parts for the generator later: `Input`, `Textarea`, `Select`, `Field` (label + error), `NumberInput`.
-- [ ] e. `Accordion` (FAQ, with `faqLd()` support), `Tabs`, `Skeleton`, `RelatedLinks`.
-- [ ] f. Show every component on `/brand`.
-- [ ] g. Accessibility: visible focus rings in brand color, AA contrast (orange text on white uses `brand-700`), keyboard support.
+- [x] a. `Button`: primary (gradient), secondary, ghost; sizes sm/md/lg; loading state; works as a link.
+- [x] b. `Container`, `Section` (white / tint / glow variants, all light), `Heading` (with an optional gradient word), `Text`, `Prose` (long-form content).
+- [x] c. `Card`, `Badge` (free/starter/pro), `AppStoreBadge`, `Breadcrumbs` (with `breadcrumbLd()` built in).
+- [x] d. Form parts for the generator later: `Input`, `Textarea`, `Select`, `Field` (label + error), `NumberInput`.
+- [x] e. `Accordion` (FAQ, with `faqLd()` support), `Tabs`, `Skeleton`, `RelatedLinks`.
+- [x] Also: the cookie banner now uses the kit (light, Decline and Accept styled the same: no nudging).
+- [x] f. Show every component on `/brand`.
+- [x] g. Accessibility: visible focus rings in brand color, AA contrast (orange text on white uses `brand-700`), keyboard support. _(✅ axe-core on `/brand`: every kit component passes; the only failures are in the **old dark footer** (grey on black, 2.67:1), fixed by the chunk 18 rebuild. A full Lighthouse run is part of chunk 26 QA.)_
 
 **Done when:** every component is on `/brand`, works with the keyboard and passes an axe/Lighthouse accessibility check.
 

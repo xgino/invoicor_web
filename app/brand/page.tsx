@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Logo, LogoMark } from "@/components/brand/Logo";
 import { buildMetadata } from "@/lib/seo";
+import { ComponentsShowcase } from "./ComponentsShowcase";
 
 /**
  * Hidden brand reference (ROADMAP chunks 15–17): every token, the logo and every UI component.
@@ -286,6 +287,10 @@ export default function BrandPage() {
               </div>
             ))}
           </div>
+        </Block>
+
+        <Block id="components" title="Components (components/ui)">
+          <ComponentsShowcase />
         </Block>
       </div>
     </div>

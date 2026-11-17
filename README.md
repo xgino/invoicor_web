@@ -50,6 +50,7 @@ app/                     routes (one folder per URL) + site-wide files
 styles/tokens.css        brand tokens: colors, gradients, type scale, shadows, motion (see BRAND.md §7)
 components/
   brand/                 Logo, LogoMark (SVG)
+  ui/                    UI kit: Button, Section, Heading, Card, Badge, Breadcrumbs, form parts, Accordion, Tabs… (see /brand)
   layout/                Navbar, Footer
   landing/               home page sections and their building blocks
   content/               shared blocks for SEO pages (breadcrumbs, FAQ, TOC, CTAs)
