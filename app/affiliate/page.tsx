@@ -5,11 +5,13 @@ import { AFFILIATE } from "@/components/affiliate/config";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { AFFILIATE_SIGNUP_URL } from "@/lib/config";
 import { faqLd } from "@/lib/jsonld";
+import { PRICING } from "@/lib/pricing";
 import { buildMetadata } from "@/lib/seo";
 
 const { commission, plans, green, greenLight, greenBorder, dark, text1, text2, text3, border } =
   AFFILIATE;
 const pro = plans[1] ?? plans[0]!;
+const { symbol } = PRICING;
 const proMonthly = ((pro.price * commission) / 100).toFixed(2);
 const proYearly = ((pro.price * commission * 12) / 100).toFixed(2);
 
@@ -22,7 +24,7 @@ export const metadata: Metadata = buildMetadata({
 const FAQS = [
   {
     question: "What does recurring commission mean?",
-    answer: `You get paid every single month your referral stays subscribed. Refer one Pro user (EUR ${pro.price}/mo) and earn EUR ${proMonthly} every month. After 12 months, that one referral earned you EUR ${proYearly}. It keeps going as long as they stay.`,
+    answer: `You get paid every single month your referral stays subscribed. Refer one Pro user (${symbol}${pro.price}/mo) and earn ${symbol}${proMonthly} every month. After 12 months, that one referral earned you ${symbol}${proYearly}. It keeps going as long as they stay.`,
   },
   {
     question: "How is commission calculated?",
@@ -253,7 +255,7 @@ export default function AffiliatePage() {
             {
               emoji: "💵",
               title: `${commission}% lifetime recurring`,
-              desc: `Every month your referral stays subscribed, you earn. A single Pro subscriber at EUR ${pro.price}/month pays you EUR ${proMonthly} every month. That is EUR ${proYearly}/year from one referral.`,
+              desc: `Every month your referral stays subscribed, you earn. A single Pro subscriber at ${symbol}${pro.price}/month pays you ${symbol}${proMonthly} every month. That is ${symbol}${proYearly}/year from one referral.`,
             },
             {
               emoji: "📊",

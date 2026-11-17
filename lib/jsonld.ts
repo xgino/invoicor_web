@@ -3,6 +3,7 @@
  * Rule: markup only describes what is visible on the page it is placed on.
  */
 import type { Faq } from "./content";
+import { PLANS, PRICING } from "./pricing";
 import {
   APP_STORE_APP_NAME,
   APP_STORE_URL,
@@ -54,26 +55,15 @@ export function mobileAppLd(): JsonLd {
     url: absoluteUrl("/"),
     downloadUrl: APP_STORE_URL,
     installUrl: APP_STORE_URL,
-    offers: [
-      {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-        description: "Free plan with 3 invoices",
-      },
-      {
-        "@type": "Offer",
-        price: "4.99",
-        priceCurrency: "USD",
-        description: "Starter plan, billed monthly",
-      },
-      {
-        "@type": "Offer",
-        price: "7.99",
-        priceCurrency: "USD",
-        description: "Pro plan, billed monthly",
-      },
-    ],
+    offers: PLANS.map((plan) => ({
+      "@type": "Offer",
+      price: plan.monthly.toFixed(2),
+      priceCurrency: PRICING.currency,
+      description:
+        plan.monthly === 0
+          ? `${plan.name} plan: ${plan.features[0]}`
+          : `${plan.name} plan, billed monthly`,
+    })),
     featureList:
       "Auto Fill Invoices, PDF Templates, Multi Currency, Multi Language, Tax Calculator, Discount Calculator, Status Tracking, Multiple Business Profiles, Revenue Dashboard",
     publisher: { "@id": `${SITE_URL}/#organization` },

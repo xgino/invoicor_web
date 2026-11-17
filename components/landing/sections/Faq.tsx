@@ -1,5 +1,6 @@
 import type { Faq as FaqItem } from "@/lib/content";
 import { display } from "../primitives";
+import { PRICING, STARTING_PRICE } from "@/lib/pricing";
 
 /**
  * Visible FAQ. The same list feeds the FAQPage JSON-LD in app/page.tsx, so the markup always
@@ -8,8 +9,7 @@ import { display } from "../primitives";
 export const HOME_FAQS: FaqItem[] = [
   {
     question: "Is Invoicor free to use?",
-    answer:
-      "Yes. Invoicor offers a free plan that includes 3 invoices with no watermark, unlimited clients, status tracking, and free templates. Paid plans start at $4.99 per month.",
+    answer: `Yes. Invoicor offers a free plan that includes 3 invoices with no watermark, unlimited clients, status tracking, and free templates. Paid plans start at ${STARTING_PRICE} per month, with a ${PRICING.trial_days.monthly}-day free trial (${PRICING.trial_days.yearly} days on yearly plans).`,
   },
   {
     question: "Can I create invoices in different currencies and languages?",

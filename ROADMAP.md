@@ -65,7 +65,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 8. Create the Next.js app skeleton _(static export at repo root; i18n moved to chunk 36)_
 - [x] 9. Tooling & CI checks _(pre-commit hook + GitHub Actions `check.yml`; the no-inline-style rule comes with Stage E)_
 - [x] 10. Config, types & API client _(`npm run api:types`; the API schema doesn't describe template/currency/language responses, so `lib/api.ts` validates them with zod)_
-- [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md); `pricing.json` waits for D1, `content/en/` for chunk 36)_
+- [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md) + `content/pricing.json`; `content/en/` comes with chunk 36)_
 - [x] 12. Metadata & structured data helpers
 - [ ] 13. Sitemap, robots & indexing _(sitemap, robots, `/llms.txt` and IndexNow in `deploy.sh` done; only the AI-bot rules wait for D3)_
 - [ ] 14. Analytics, cookie consent & App Store attribution _(`appStoreLink()` and `lib/analytics.ts` `track()` done; tool choice and consent banner wait for D4 and D5)_

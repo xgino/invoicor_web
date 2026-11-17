@@ -1,0 +1,50 @@
+{
+  "currency": "USD",
+  "symbol": "$",
+  "trial_days": { "monthly": 3, "yearly": 7 },
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "description": "Try everything",
+      "monthly": 0,
+      "yearly": 0,
+      "features": [
+        "3 invoices (lifetime)",
+        "Unlimited clients",
+        "1 business profile",
+        "Free templates",
+        "PDF export, no watermark"
+      ]
+    },
+    {
+      "id": "starter",
+      "name": "Starter",
+      "description": "For side projects",
+      "monthly": 4.99,
+      "yearly": 49.99,
+      "features": [
+        "10 invoices/month",
+        "Unlimited clients",
+        "1 business profile",
+        "All templates",
+        "Revenue dashboard"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "For growing businesses",
+      "monthly": 7.99,
+      "yearly": 79.99,
+      "popular": true,
+      "features": [
+        "50 invoices/month",
+        "Unlimited clients",
+        "3 business profiles",
+        "Premium templates",
+        "Compare mode"
+      ]
+    }
+  ]
+}

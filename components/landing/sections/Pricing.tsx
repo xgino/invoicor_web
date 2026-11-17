@@ -2,75 +2,15 @@
 
 import { useState } from "react";
 import { appStoreLink } from "@/lib/config";
+import { PLANS, formatPrice, trialNote, type Plan } from "@/lib/pricing";
 import { Eyebrow, display } from "../primitives";
 
-interface Plan {
-  nm: string;
-  desc: string;
-  monthly: string;
-  yearly: string;
-  features: string[];
-  btn: string;
-  bg: string;
-  fg: string;
-  accent: string;
-  pop?: boolean;
-}
-
-const PLANS: Plan[] = [
-  {
-    nm: "Free",
-    desc: "Try everything",
-    monthly: "$0",
-    yearly: "$0",
-    features: [
-      "3 invoices (lifetime)",
-      "Unlimited clients",
-      "1 business profile",
-      "Free templates",
-      "PDF export",
-    ],
-    btn: "Download Free",
-    bg: "#fff",
-    fg: "#0a0a0a",
-    accent: "#64748b",
-  },
-  {
-    nm: "Starter",
-    desc: "For side projects",
-    monthly: "$4.99",
-    yearly: "$49.99",
-    features: [
-      "10 invoices/month",
-      "Unlimited clients",
-      "1 business profile",
-      "All templates",
-      "Revenue dashboard",
-    ],
-    btn: "Start Free Trial",
-    bg: "#6366f1",
-    fg: "#fff",
-    accent: "#6366f1",
-  },
-  {
-    nm: "Pro",
-    desc: "For growing businesses",
-    monthly: "$7.99",
-    yearly: "$79.99",
-    features: [
-      "50 invoices/month",
-      "Unlimited clients",
-      "3 business profiles",
-      "Premium templates",
-      "Compare mode",
-    ],
-    btn: "Start Free Trial",
-    bg: "#7c3aed",
-    fg: "#fff",
-    accent: "#7c3aed",
-    pop: true,
-  },
-];
+/** Colors per plan (prices and features come from content/pricing.json). */
+const STYLE: Record<Plan["id"], { bg: string; fg: string; accent: string }> = {
+  free: { bg: "#fff", fg: "#0a0a0a", accent: "#64748b" },
+  starter: { bg: "#6366f1", fg: "#fff", accent: "#6366f1" },
+  pro: { bg: "#7c3aed", fg: "#fff", accent: "#7c3aed" },
+};
 
 function toggleStyle(active: boolean): React.CSSProperties {
   return {
@@ -162,37 +102,39 @@ export function Pricing() {
           }
         >
           {PLANS.map((plan) => {
-            const isFree = plan.monthly === "$0";
-            const price = yearly ? plan.yearly : plan.monthly;
+            const { bg, fg, accent } = STYLE[plan.id];
+            const isFree = plan.monthly === 0;
+            const billing = yearly ? "yearly" : "monthly";
+            const price = formatPrice(plan[billing]);
             const period = isFree ? "" : yearly ? "/year" : "/mo";
             return (
               <div
-                key={plan.nm}
+                key={plan.id}
                 className="lift"
                 style={
                   {
                     background: "rgba(255,255,255,.02)",
-                    border: plan.pop
-                      ? `1.5px solid ${plan.accent}40`
+                    border: plan.popular
+                      ? `1.5px solid ${accent}40`
                       : "1px solid rgba(255,255,255,.06)",
                     borderRadius: 20,
                     padding: "30px 24px",
                     position: "relative",
                     display: "flex",
                     flexDirection: "column",
-                    boxShadow: plan.pop ? `0 0 60px ${plan.accent}08` : "none",
-                    "--accent": plan.pop ? plan.accent : "#ffffff",
+                    boxShadow: plan.popular ? `0 0 60px ${accent}08` : "none",
+                    "--accent": plan.popular ? accent : "#ffffff",
                   } as React.CSSProperties
                 }
               >
-                {plan.pop && (
+                {plan.popular && (
                   <div
                     style={{
                       position: "absolute",
                       top: -12,
                       left: "50%",
                       transform: "translateX(-50%)",
-                      background: plan.accent,
+                      background: accent,
                       color: "#fff",
                       fontSize: 11,
                       fontWeight: 800,
@@ -205,8 +147,10 @@ export function Pricing() {
                     Most Popular
                   </div>
                 )}
-                <h3 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 2px" }}>{plan.nm}</h3>
-                <p style={{ fontSize: 13, color: "#64748b", margin: "0 0 20px" }}>{plan.desc}</p>
+                <h3 style={{ fontSize: 20, fontWeight: 800, margin: "0 0 2px" }}>{plan.name}</h3>
+                <p style={{ fontSize: 13, color: "#64748b", margin: "0 0 20px" }}>
+                  {plan.description}
+                </p>
                 <div style={{ display: "flex", alignItems: "baseline", gap: 2, marginBottom: 24 }}>
                   <span
                     style={{ fontSize: 38, fontWeight: 900, letterSpacing: "-0.03em", ...display }}
@@ -233,7 +177,7 @@ export function Pricing() {
                         height="16"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke={plan.accent}
+                        stroke={accent}
                         strokeWidth="2.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -245,27 +189,38 @@ export function Pricing() {
                   ))}
                 </ul>
                 <a
-                  href={appStoreLink(`home-pricing-${plan.nm.toLowerCase()}`)}
+                  href={appStoreLink(`home-pricing-${plan.id}`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="grow"
                   data-track="pricing_click"
-                  data-track-plan={plan.nm}
+                  data-track-plan={plan.id}
                   style={{
                     display: "block",
                     textAlign: "center",
                     padding: "14px 0",
                     borderRadius: 12,
-                    background: plan.bg,
-                    color: plan.fg,
+                    background: bg,
+                    color: fg,
                     fontWeight: 700,
                     fontSize: 14,
                     textDecoration: "none",
-                    boxShadow: `0 4px 16px ${plan.accent}20`,
+                    boxShadow: `0 4px 16px ${accent}20`,
                   }}
                 >
-                  {plan.btn}
+                  {isFree ? "Download Free" : "Start Free Trial"}
                 </a>
+                <p
+                  style={{
+                    fontSize: 12,
+                    color: "#64748b",
+                    textAlign: "center",
+                    margin: "10px 0 0",
+                    minHeight: 18,
+                  }}
+                >
+                  {isFree ? "No card needed." : trialNote(plan, billing)}
+                </p>
               </div>
             );
           })}

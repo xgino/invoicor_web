@@ -1,11 +1,11 @@
-/** Affiliate program settings and colors. Edit prices/commission here. */
+import { PAID_PLANS, PRICING } from "@/lib/pricing";
+
+/** Affiliate program settings and colors. Prices come from content/pricing.json. */
 export const AFFILIATE = {
   commission: 20,
-  /** Monthly subscription prices (EUR) used by the earnings calculator. */
-  plans: [
-    { name: "Starter", price: 4.99 },
-    { name: "Pro", price: 9.99 },
-  ],
+  /** Monthly subscription prices used by the earnings calculator. */
+  plans: PAID_PLANS.map((p) => ({ name: p.name, price: p.monthly })),
+  currency: PRICING.currency,
   green: "#10b981",
   greenLight: "#ecfdf5",
   greenBorder: "#d1fae5",
@@ -14,4 +14,4 @@ export const AFFILIATE = {
   text2: "#475569",
   text3: "#64748b",
   border: "#e2e8f0",
-} as const;
+};

@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { PRICING } from "@/lib/pricing";
 import { AFFILIATE } from "./config";
 
+const { symbol } = PRICING;
 const { green, greenLight, greenBorder, dark, text2, text3, border, plans, commission } = AFFILIATE;
 
 const MIN = 1;
@@ -79,7 +81,8 @@ export function AffiliateCalculator() {
               boxShadow: selectedPlan === i ? "0 2px 8px rgba(16,185,129,0.3)" : "none",
             }}
           >
-            {p.name} - EUR {p.price}/mo
+            {p.name} - {symbol}
+            {p.price}/mo
           </button>
         ))}
       </div>
@@ -152,19 +155,27 @@ export function AffiliateCalculator() {
           marginBottom: 24,
         }}
       >
-        <Result label="Per subscriber" value={`EUR ${money(perSub)}`} note="every month" />
+        <Result label="Per subscriber" value={`${symbol}${money(perSub)}`} note="every month" />
         <Result
           label="Monthly income"
-          value={`EUR ${money(monthly)}`}
+          value={`${symbol}${money(monthly)}`}
           note={`from ${referrals} subscribers`}
           highlight
         />
-        <Result label="Yearly income" value={`EUR ${money(yearly)}`} note="passive recurring" />
+        <Result
+          label="Yearly income"
+          value={`${symbol}${money(yearly)}`}
+          note="passive recurring"
+        />
       </div>
 
       <div style={{ background: dark, borderRadius: 14, padding: 20, textAlign: "center" }}>
         <p style={{ fontSize: 14, color: "#cbd5e1", margin: 0 }}>
-          That is <strong style={{ color: "#fff", fontSize: 18 }}>EUR {money(yearly)}/year</strong>{" "}
+          That is{" "}
+          <strong style={{ color: "#fff", fontSize: 18 }}>
+            {symbol}
+            {money(yearly)}/year
+          </strong>{" "}
           from just <strong style={{ color: "#34d399" }}>{referrals} subscribers</strong> on the{" "}
           {plan.name} plan. All passive. All recurring.
         </p>
