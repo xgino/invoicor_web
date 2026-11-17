@@ -76,7 +76,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
 - [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
 - [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
-- [ ] 17.1 Tests: the safety net before the rebuild _(new 2026-11-18)_
+- [x] 17.1 Tests: the safety net before the rebuild _(✅ 2026-11-18: 14 unit, 42 built-site, 56 browser tests in CI; style guard (e) follows Stage E)_
 - [ ] 17.2 Invoice-style premium components _(new 2026-11-18)_
 
 **Stage E: Rebuild the pages (in the new brand)**
@@ -488,19 +488,19 @@ tests come first: they prove no URL, title or price breaks during the rebuild._
 
 **Goal:** CI fails if a page disappears, a price is wrong, or accessibility gets worse.
 
-- [ ] a. **Vitest unit tests** for the logic: `lib/pricing.ts` (prices, trial text, yearly saving),
+- [x] a. **Vitest unit tests** for the logic: `lib/pricing.ts` (prices, trial text, yearly saving),
   `lib/seo.ts` (canonical, OG image per page), `lib/content.ts` (schema), `lib/consent.ts`
   (nothing loads before Accept).
-- [ ] b. **URL parity test** (runs on `out/`): every URL from the old site (the 3 hubs, 30 detail
+- [x] b. **URL parity test** (runs on `out/`): every URL from the old site (the 3 hubs, 30 detail
   pages, home, help, affiliate, terms, privacy) exists, has one H1, a canonical and an OG image.
   The list is frozen in `tests/urls.txt`; removing a URL needs a redirect in nginx first.
-- [ ] c. **Playwright smoke tests**: home, one page of each type, the 404 page, the consent banner
+- [x] c. **Playwright smoke tests** _(✅ 2026-11-18: desktop + mobile, using the installed Chrome; plus trailing-slash redirect and "Decline and Accept look the same")_: home, one page of each type, the 404 page, the consent banner
   (Decline → no analytics requests; Accept → GA + PostHog load), the pricing toggle.
-- [ ] d. **Accessibility test**: axe-core on one page of each type (same approach as the `/brand`
-  check in chunk 17g); fail on serious or critical issues.
-- [ ] e. **Style guard**: fail on hex colors or inline `style=` in pages and components outside
+- [x] d. **Accessibility test**: axe-core on one page of each type (same approach as the `/brand`
+  check in chunk 17g); fail on serious or critical issues. _Pages on the old design are listed in `NOT_REBUILT_YET` (expected to fail); each Stage E chunk removes its pages from that list._
+- [ ] e. _(after Stage E, when the old pages are gone)_ **Style guard**: fail on hex colors or inline `style=` in pages and components outside
   `styles/tokens.css`, `lib/og.tsx` and `components/brand/` (turns "unified styling" into a rule).
-- [ ] f. Add `npm test` to `npm run check` and the GitHub Actions workflow.
+- [x] f. Add `npm test` to `npm run check` and the GitHub Actions workflow.
 
 **Done when:** `npm run check` runs the tests locally and in CI, and they pass on the current site.
 

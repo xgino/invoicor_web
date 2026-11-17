@@ -5,3 +5,5 @@ package-lock.json
 content/*.json
 *.md
 types/api.generated.ts
+test-results/
+playwright-report/

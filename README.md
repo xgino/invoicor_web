@@ -23,13 +23,16 @@ Every page is pre-rendered, so search engines get the full content, titles and s
 | `npm install` | Install dependencies (first time, or after `package.json` changes) |
 | `npm run dev` | Local dev server with hot reload at http://localhost:3000 |
 | `npm run build` | Production build into `out/` |
-| `npm run preview` | Serve `out/` locally, like production, at http://localhost:3000 |
+| `npm run preview` | Serve `out/` locally the way nginx does (clean URLs, real 404s) at http://127.0.0.1:4173 |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | TypeScript, no output |
 | `npm run format` | Format all code with Prettier |
 | `npm run content:check` | SEO rules for `content/*.json` (duplicates, word counts, broken links) |
+| `npm run test:unit` | Unit tests for pricing, SEO, consent and content (Vitest) |
+| `npm run test:site` | Checks the build in `out/`: every URL in `tests/urls.txt` exists with one H1, canonical and share image |
+| `npm run test:e2e` | Browser tests with your installed Chrome: page loads, consent banner, 404, accessibility (axe) |
 | `npm run api:types` | Regenerate `types/api.generated.ts` from the live API schema |
-| `npm run check` | lint + typecheck + content:check + build (run before every deploy) |
+| `npm run check` | everything above, in order: lint, typecheck, content:check, unit tests, build, site tests, browser tests (run before every deploy; CI runs the same) |
 
 ## Project structure
 
@@ -63,7 +66,8 @@ lib/
   api.ts                 build-time calls to the Invoicor API
 assets/og-fonts/         TTF copies of the site fonts for the share images (the renderer can't read woff2)
 public/                  static files copied as-is (icons, images, BingSiteAuth.xml, IndexNow key)
-scripts/                 content-check.mjs, indexnow.mjs
+scripts/                 content-check.mjs, indexnow.mjs, serve-out.mjs (local nginx-like server)
+tests/                   unit/, site/ (checks out/), e2e/ (Playwright), urls.txt (every public URL, frozen)
 types/                   api.generated.ts (from the API's OpenAPI schema)
 deploy/                  deploy script + nginx config
 ```

@@ -24,3 +24,7 @@ npm-debug.log*
 .DS_Store
 .vscode/
 .idea/
+
+# Test output
+/test-results/
+/playwright-report/
