@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+/* ── Fonts (self-hosted via next/font/local in app/fonts.ts) ── */
+@theme inline {
+  --font-sans:
+    var(--font-satoshi), "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: var(--font-cabinet), var(--font-satoshi), -apple-system, sans-serif;
+}
+
+:root {
+  --font-body:
+    var(--font-satoshi), "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-cabinet), var(--font-satoshi), -apple-system, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Keyframes (landing page) ── */
+@keyframes sfA {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(8deg);
+  }
+}
+@keyframes sfB {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(14px) rotate(-6deg);
+  }
+}
+@keyframes sfC {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(12px) rotate(5deg);
+  }
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.8);
+    opacity: 0;
+  }
+}
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+@keyframes scroll-hint {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes phone-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── Hero entrance: pure CSS, runs on first paint, no JavaScript needed ── */
+.anim-up {
+  animation: fade-up 0.7s var(--ease-out) both;
+}
+.anim-phone {
+  animation: phone-in 0.9s 0.3s var(--ease-out) both;
+}
+
+/* ── Scroll reveal (components/RevealObserver.tsx). Delay via style={{ "--d": "0.1s" }} ── */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s var(--d, 0s) var(--ease-out),
+    transform 0.7s var(--d, 0s) var(--ease-out);
+}
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Hover / press effects (replace the old inline onMouseEnter handlers) ── */
+.cta-btn {
+  transition:
+    transform 0.22s var(--ease-out),
+    box-shadow 0.22s;
+}
+.cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+.cta-btn:active {
+  transform: scale(0.97);
+}
+.nav-cta {
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.3s,
+    color 0.3s;
+}
+.nav-cta:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: var(--nav-cta-shadow-hover) !important;
+}
+.tmpl-card {
+  transition:
+    transform 0.3s var(--ease-out),
+    box-shadow 0.3s;
+}
+.tmpl-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12) !important;
+}
+.lift {
+  transition:
+    transform 0.25s,
+    border-color 0.25s;
+}
+.lift:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent, #ffffff) 20%, transparent) !important;
+}
+.grow {
+  transition: transform 0.2s;
+}
+.grow:hover {
+  transform: scale(1.02);
+}
+.soft-btn {
+  transition: background 0.2s;
+}
+.soft-btn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.tmpl-scroll {
+  scrollbar-width: none;
+}
+.tmpl-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Native <details> accordion (help page, landing FAQ) ── */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary svg {
+  transition: transform 0.25s;
+}
+.faq-item[open] summary svg {
+  transform: rotate(180deg);
+}
+
+/* ── Respect reduced motion everywhere ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

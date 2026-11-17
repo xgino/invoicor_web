@@ -1,6 +1,6 @@
 # Invoicor Web Roadmap
 
-_Last updated: 2026-11-17 (revision 3)_
+_Last updated: 2026-11-17 (revision 4: Next.js migration done)_
 
 Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Google, Bing and AI assistants)**, and turn visitors into app users through a **free invoice generator**.
 
@@ -17,13 +17,43 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 ---
 
+## Status (2026-11-17)
+
+**Done:** chunk 1 (repo cleanup) and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
+
+**Decisions made during the migration** (they replace what some older chunks say):
+
+| Decision | Why | Affects |
+|---|---|---|
+| **Static export** (`output: "export"`): `npm run build` → `out/` → upload; nginx serves it. **No Node/PM2 on the server.** | You deploy by hand; a folder of HTML is the simplest and most reliable thing to host. Nothing can crash. | Chunks 3, 19, 26, 28, 29 |
+| The Next.js app lives at the **repo root** (not in `web/`). | The old Vite app is gone from `dev`; `main` still holds it until you deploy. | R5, R7 |
+| No server-side features: no ISR/on-demand revalidation, no `proxy.ts`, no next.config redirects. | Not available in a static export. Redirects live in nginx (`deploy/nginx/`). Fresh API data = rebuild + deploy. | Chunks 11e, 13, 37 |
+| Language detection (chunk 37) becomes a **client-side banner** (reads the browser language), not `proxy.ts`. Language URLs (`/de/…`) are still separate static pages. | Same SEO result (Google never gets redirected); works on static hosting. | Chunks 8d, 36, 37 |
+| `next-intl` and `[locale]` routing are **not** set up yet; add them in chunk 36, when the first translation is ready. | Avoids complexity before there's a second language. | Chunk 8d |
+| Visual design is unchanged for now (inline styles kept on the landing page); the "no inline styles" lint rule comes with the redesign (Stage E). | Migrate first, then redesign; one risk at a time. | Chunk 9b |
+| Upgrade path: if we ever need server features, remove `output: "export"` and run `next start` behind nginx. | No code rewrite needed. | n/a |
+
+**Found and fixed during the migration:**
+- `node_modules/` (9,104 files) and `.vite/` were committed to git; now untracked.
+- The schema markup claimed **4.8★ from 347 ratings**; the App Store shows **2 ratings** → removed (Google penalises fake ratings). Add it back once you have real volume.
+- The CTAs on the template, industry and compare pages linked to `/register`, which doesn't exist; they now go to the App Store.
+- Two template pages linked to a non-existent `/templates/electrician` (removed). The build now skips and warns about broken related links.
+- The affiliate calculator slider's fill bar was wrong (it filled up after 100 of 10,000).
+- FAQ markup sat on every page without a visible FAQ → the home page now shows those FAQs; the Help and Affiliate pages got FAQ markup for their visible questions.
+
+**Still open from the old site** (not changed on purpose, needs your call):
+- The hero avatars (random faces from pravatar.cc) and the three testimonials aren't real customers (chunk 20d).
+- Pricing differs between pages: home says Pro $7.99, the affiliate calculator uses €9.99, and `strategy.md` has a Business tier (chunk 5j).
+
+---
+
 ## Overview (the todo list)
 
 **Stage A: Clean repo, baseline & deploy**
-- [ ] 1. Clean up the repo
-- [ ] 2. Map the server & write DEPLOY.md
-- [ ] 3. Set up auto-deploy (dev → main → live)
-- [ ] 4. SEO baseline & quick fixes on the live site
+- [x] 1. Clean up the repo
+- [ ] 2. Map the server & write DEPLOY.md _(DEPLOY.md written; the server paths still need checking)_
+- [ ] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger)_
+- [ ] 4. SEO baseline & quick fixes on the live site _(www redirect + /pricing are in `deploy/nginx/`; baseline export still to do **before** deploying Next.js)_
 
 **Stage B: Strategy (decide before building)**
 - [ ] 5. Brand strategy
@@ -31,13 +61,13 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] 7. Page-type blueprints & content quality rules
 
 **Stage C: Next.js foundation**
-- [ ] 8. Create the Next.js app skeleton
-- [ ] 9. Tooling & CI checks
-- [ ] 10. Config, types & API client
-- [ ] 11. Content pipeline & page generation
-- [ ] 12. Metadata & structured data helpers
-- [ ] 13. Sitemap, robots & indexing
-- [ ] 14. Analytics, cookie consent & App Store attribution
+- [x] 8. Create the Next.js app skeleton _(static export at repo root; i18n moved to chunk 36)_
+- [ ] 9. Tooling & CI checks _(ESLint, Prettier, typecheck and `npm run check` done; pre-commit hook and CI to do)_
+- [x] 10. Config, types & API client _(OpenAPI-generated types still to do)_
+- [ ] 11. Content pipeline & page generation _(zod validation, static pages and real 404s done; `content:check` script and CONTENT.md to do)_
+- [x] 12. Metadata & structured data helpers
+- [ ] 13. Sitemap, robots & indexing _(sitemap + robots done; llms.txt, IndexNow and the AI-bot decision to do)_
+- [ ] 14. Analytics, cookie consent & App Store attribution _(`appStoreLink()` and click tracking done; consent banner to do)_
 
 **Stage D: Brand system**
 - [ ] 15. Brand tokens (colors, gradient, type, spacing)
@@ -269,7 +299,7 @@ _No code. These three chunks decide what the pages say and which searches they t
 ---
 
 ## Stage C: Next.js foundation
-_Repo layout during the migration: the new app is built in **`web/`** on the `dev` branch, while the old Vite app stays at the root and keeps deploying. At launch (chunk 28) the Vite files are removed, and `web/` + `deploy/` remain, the same layout as vindevent._
+_✅ Done on 2026-11-17, as a **static export at the repo root** (see "Decisions made during the migration" at the top). Steps below that mention `web/`, PM2, `proxy.ts` or revalidation describe the original plan; the decision table at the top wins._
 
 ### 8. Create the Next.js app skeleton
 **Goal:** an empty Next.js app with the final folder structure.
@@ -1190,6 +1220,8 @@ That's why chunks 30–31 add the public endpoints.
 
 ### R5. Target folder structure
 
+> **Current state:** the app lives at the repo root (no `web/` level). The actual layout is described in [README.md](README.md#project-structure). The tree below is the long-term target; read it without the `web/` level. `proxy.ts` and `api/revalidate` only apply if we ever leave static export.
+
 ```
 invoicor_web/                     repo root (after launch: only these)
   web/                            the Next.js app
@@ -1267,12 +1299,12 @@ invoicor_web/                     repo root (after launch: only these)
 
 ### R7. Migration strategy
 
-1. **Build next to the old site:** Next.js in `web/` on `dev`; the Vite site at the root keeps deploying from `main`.
-2. **Baseline first** (chunk 4): record every URL, title and ranking before anything changes.
-3. **Staging** (chunk 26): the full site on `staging.invoicor.com`, password-protected and `noindex`.
-4. **Parity** (chunk 27): a script proves every old URL resolves with the right title and canonical.
-5. **Switch** (chunk 28): nginx goes from `dist/` to PM2; rollback = restore one nginx file (under 1 minute).
-6. **Watch** (chunk 29): 4 weeks of comparison against the baseline; redirect anything that 404s.
+1. **Build on `dev`** ✅: the Next.js app replaced the Vite app on `dev`; `main` (and the live site) still run Vite until you deploy.
+2. **Baseline first** (chunk 4): record every URL, title and ranking **before** the first Next.js deploy.
+3. **Check locally** ✅: `npm run build && npm run preview`. All 35 old sitemap URLs (minus the nonexistent `/pricing`) return 200; unknown URLs return 404. A separate staging server (chunk 26) is optional for a static site.
+4. **Parity** (chunk 27): compare the baseline titles/canonicals against `out/` before deploying.
+5. **Switch** (chunk 28): `bash deploy/deploy.sh` uploads `out/` and swaps folders; nginx `root` points at `$SITE_DIR/site`. Rollback = `bash deploy/deploy.sh --rollback` (under a minute).
+6. **Watch** (chunk 29): 4 weeks of comparison against the baseline; redirect anything that 404s (in nginx).
 
 ### R8. Growth model
 
