@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: Stage E, starting with chunk 18 (navbar and footer, light). Open decisions: D6–D12 in [Decisions for you](#decisions-for-you).
+**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: chunk 17.1 (tests), then 17.2 (invoice-style components), then Stage E from chunk 18. Your ideas from 2026-11-18 are collected in [R10](#r10-your-ideas-2026-11-18); pricing is decision D14. Open decisions: D6–D12 and D14 in [Decisions for you](#decisions-for-you).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -76,6 +76,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
 - [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
 - [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
+- [ ] 17.1 Tests: the safety net before the rebuild _(new 2026-11-18)_
+- [ ] 17.2 Invoice-style premium components _(new 2026-11-18)_
 
 **Stage E: Rebuild the pages (in the new brand)**
 - [ ] 18. Navbar & footer _(the current footer fails contrast (2.67:1); rebuild it light with the kit first)_
@@ -138,18 +140,15 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 _Done in the current Vite repo. Don't tidy the old code itself; it gets rebuilt in Stage C–E._
 
 ### 1. Clean up the repo
-**Goal:** the repo holds only source code, with no starter-template leftovers.
+**Goal:** the repo holds only source code, with no starter-template leftovers. _(✅ done on `dev`; GitHub shows `main`, which still has the old README until `dev` is merged and deployed (Y2).)_
 
-- [ ] a. Work on the `dev` branch from now on (`main` = production). _`dev` already exists._
-- [ ] b. Add `.gitignore`: `node_modules/`, `dist/`, `.next/`, `out/`, `.vite/`, `.env*`, `!.env.example`, `.DS_Store`, `*.log`.
-- [ ] c. Take the built output and Mac files out of git: `git rm -r --cached dist`, plus `git rm --cached` on every `.DS_Store`.
-- [ ] d. Remove the AI Studio leftovers:
-  - `metadata.json`
-  - the `GEMINI_API_KEY` define and the HMR comment in `vite.config.ts`
-  - the packages `@google/genai`, `express`, `dotenv`, `@types/express`, `tsx`, `autoprefixer`
-- [ ] e. Rename the package to `invoicor-web`.
-- [ ] f. Rewrite `README.md`: what this is, `npm install`, `npm run dev`, `npm run build`, and links to `ROADMAP.md` and `DEPLOY.md`.
-- [ ] g. Commit on `dev`.
+- [x] a. Work on the `dev` branch from now on (`main` = production). _`dev` already exists._
+- [x] b. Add `.gitignore`: `node_modules/`, `dist/`, `.next/`, `out/`, `.vite/`, `.env*`, `!.env.example`, `.DS_Store`, `*.log`.
+- [x] c. Take the built output and Mac files out of git: `git rm -r --cached dist`, plus `git rm --cached` on every `.DS_Store`.
+- [x] d. Remove the starter-template leftovers (template metadata, an unused API-key define, six unused packages).
+- [x] e. Rename the package to `invoicor-web`.
+- [x] f. Rewrite `README.md`: what this is, `npm install`, `npm run dev`, `npm run build`, and links to `ROADMAP.md` and `DEPLOY.md`.
+- [x] g. Commit on `dev`.
 
 **Done when:** `npm run build` still works, `git status` is clean after a build, and `git ls-files | grep -E "dist/|DS_Store"` returns nothing.
 
@@ -482,10 +481,59 @@ _See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
 
 **Done when:** every component is on `/brand`, works with the keyboard and passes an axe/Lighthouse accessibility check.
 
+### 17.1 Tests: the safety net before the rebuild
+_Added 2026-11-18 (your question "do we have tests?"). Today there are **no automated tests**, only
+checks: lint, typecheck, `content:check` (SEO rules) and the build. Stage E rewrites every page, so
+tests come first: they prove no URL, title or price breaks during the rebuild._
+
+**Goal:** CI fails if a page disappears, a price is wrong, or accessibility gets worse.
+
+- [ ] a. **Vitest unit tests** for the logic: `lib/pricing.ts` (prices, trial text, yearly saving),
+  `lib/seo.ts` (canonical, OG image per page), `lib/content.ts` (schema), `lib/consent.ts`
+  (nothing loads before Accept).
+- [ ] b. **URL parity test** (runs on `out/`): every URL from the old site (the 3 hubs, 30 detail
+  pages, home, help, affiliate, terms, privacy) exists, has one H1, a canonical and an OG image.
+  The list is frozen in `tests/urls.txt`; removing a URL needs a redirect in nginx first.
+- [ ] c. **Playwright smoke tests**: home, one page of each type, the 404 page, the consent banner
+  (Decline → no analytics requests; Accept → GA + PostHog load), the pricing toggle.
+- [ ] d. **Accessibility test**: axe-core on one page of each type (same approach as the `/brand`
+  check in chunk 17g); fail on serious or critical issues.
+- [ ] e. **Style guard**: fail on hex colors or inline `style=` in pages and components outside
+  `styles/tokens.css`, `lib/og.tsx` and `components/brand/` (turns "unified styling" into a rule).
+- [ ] f. Add `npm test` to `npm run check` and the GitHub Actions workflow.
+
+**Done when:** `npm run check` runs the tests locally and in CI, and they pass on the current site.
+
+### 17.2 Invoice-style premium components
+_Added 2026-11-18 (your feedback: "it looks like a toy; make it high class, more invoice-like,
+tailored to the people who use it, with reusable invoice-style parts")._
+
+**Goal:** a visual language that only an invoicing brand could have, so the site looks like a
+serious business tool and the price reads as a great deal instead of "cheap".
+
+- [ ] a. `InvoicePaper`: a white "sheet" card with a subtle paper shadow and an optional
+  perforated or torn bottom edge; the base for hero mockups, pricing and examples.
+- [ ] b. `LineItems`: an invoice table (item, qty, price, total) with tabular figures, a hairline
+  ruler and a subtotal / tax / **Total** footer. Used for examples, pricing and the fee comparison.
+- [ ] c. `Stamp`: a "PAID" / "2 MONTHS FREE" / "0% FEES" rubber stamp that lands with a small
+  scale-and-rotate animation once, when scrolled into view.
+- [ ] d. `PriceTag` as an invoice: the pricing card shows the plan as line items ending in
+  "Total $4.99 / month", the yearly card adds a discount line ("2 months free −$9.89").
+- [ ] e. `BillingSwitch`: the monthly / yearly toggle styled as a physical switch; flipping it to
+  yearly animates the price down (count-down number), slides in the discount line and stamps
+  "SAVE 16%". Keyboard and screen-reader friendly (`role="switch"`).
+- [ ] f. An invoice-style CTA variant: a primary button with a subtle "paper slip" sheen.
+- [ ] g. Typography for money: tabular numbers everywhere a price or total appears; amounts in
+  the heading font.
+- [ ] h. Show all of them on `/brand`, with axe checks.
+
+**Done when:** `/brand` shows every invoice component, and a pricing card built from them looks
+like a real invoice at phone and desktop width.
+
 ---
 
 ## Stage E: Rebuild the pages (in the new brand)
-_Light only: white and warm off-white sections, a soft orange glow on light for the hero and final CTA (see R3). Each page follows its blueprint (chunk 7). Port the **content**, not the old code. Keep every URL the same._
+_Light only: white and warm off-white sections, a soft orange glow on light for the hero and final CTA (see R3). **Premium, not playful**: invoice-style components from chunk 17.2, subtle gradients and small motion (see [R10](#r10-your-ideas-2026-11-18)). Every existing URL keeps working: the URL test from chunk 17.1 must pass after each chunk. Each page follows its blueprint (chunk 7). Port the **content**, not the old code. Keep every URL the same._
 
 ### 18. Navbar & footer
 **Goal:** clear navigation and strong internal linking on every page.
@@ -506,7 +554,8 @@ _Light only: white and warm off-white sections, a soft orange glow on light for 
   - light (warm white) with the soft orange glow behind the phone
   - the headline from chunk 5f, with one gradient word
   - two CTAs: “Create a free invoice” → generator, “Get the app” → App Store
-  - an iPhone/invoice mockup
+  - an iPhone/invoice mockup: the phone plus a real invoice on `InvoicePaper` sliding out of it, with a "PAID" `Stamp`
+  - written for the tradesperson and the freelancer (BRAND.md §2): their jobs, their line items, their currency
 - [ ] c. Trust strip: a short line plus the App Store rating (real numbers only).
 - [ ] d. Templates carousel: live from the API, with skeletons while loading and a fallback if the API fails.
 - [ ] e. How it works: 3 steps with icons.
@@ -519,7 +568,17 @@ _Light only: white and warm off-white sections, a soft orange glow on light for 
 - [ ] a. Features grid, built from the messaging pillars (chunk 5d).
 - [ ] b. Currencies & languages + "Your data stays in Europe" (security).
 - [ ] c. Pricing from `content/pricing.json`: monthly/yearly toggle, the popular card with a gradient border. Make sure the tiers match the app exactly.
+  - built from the invoice components (chunk 17.2): each plan as an invoice, `BillingSwitch` for monthly / yearly
+  - **yearly as the better deal:** default the switch to yearly, show "2 months free" / "save 16%" (true: 12 × $4.99 = $59.88 vs $49.99) with the stamp and count-down animation
+  - **price anchor:** a small line next to Starter, "less than one coffee a month" (or "$0.17 a day"), with a tiny animated coffee cup (steam rising; static under reduced motion). Test it against no anchor in chunk 60, because a coffee comparison can also make a premium tool feel cheap.
+  - no permanent discounts (they teach people to wait); use App Store introductory offers or the trials instead (decision D14)
 - [ ] d. Testimonials: **real ones only**; remove the section if you don't have them yet.
+- [ ] d2. **"We never take a cut" section** (your core belief; heroic but professional). Headline idea: _"You did the work. You keep the money."_ Content:
+  - Invoicor takes **0% of your payments**. No platform fee, no per-invoice fee, ever. You pay a flat subscription, that's it.
+  - Many invoicing apps charge a percentage per payment on top of the subscription; name them only on the compare pages, with a source and a date (chunk 23)
+  - a small "fee calculator" built from `LineItems`: drag your yearly revenue, see what a 2.9% + 30¢ style fee would cost vs $0 with Invoicor
+  - **honesty rule:** if a customer pastes their own PayPal or Stripe link, PayPal / Stripe still charge their own fees. Say "Invoicor adds 0%", never "you keep 100%".
+  - reuse the same block on the compare pages and in the App Store screenshots (chunk 48)
 - [ ] e. A visible FAQ (Accordion) + matching `faqLd()`.
 - [ ] f. Final CTA section (light, `brand-50` tint + glow).
 - [ ] g. Metadata + `organizationLd()` + `websiteLd()` + `softwareAppLd()`, on this page only.
@@ -581,6 +640,11 @@ _Light only: white and warm off-white sections, a soft orange glow on light for 
 - [ ] c. Buttons: 1 px lift on hover, a gradient sheen sweep on the primary CTA, `scale(.97)` on press.
 - [ ] d. Cards: lift + shadow on hover; slight tilt on template thumbnails (desktop only).
 - [ ] e. Navbar: a sliding underline under the active/hovered link. Accordion: smooth height animation. Count-up stats.
+- [ ] e2. **Premium polish** (your request: "slight gradients and small movements so it feels high class"):
+  - very subtle gradient surfaces: warm white → white section backgrounds, a gradient hairline on the popular card and the footer top
+  - a slow, barely visible glow drift behind the hero (20 s+ loop)
+  - invoice moments: the stamp landing, totals counting up, line items appearing one by one in the hero invoice
+  - keep it rare: one moving thing per screen at most; motion should feel expensive, not busy
 - [ ] f. Guardrails:
   - everything off under `prefers-reduced-motion`
   - animate only `transform` and `opacity`
@@ -1134,7 +1198,7 @@ _Inbound (people find you: SEO, App Store search, content) and outbound (you go 
 | Languages | 🔴 0/5 | English only, although the app supports many languages |
 | Content depth (SEO pages) | 🟢 4/5 | Good long-form template, industry and compare pages |
 | Trust pages | 🔴 1/5 | No About or Contact page; unverified rating markup |
-| Code health | 🔴 2/5 | Leftovers from the AI Studio starter, a 588-line landing file, inline styles, no lint/types/CI |
+| Code health | 🔴 2/5 | Starter-template leftovers, a 588-line landing file, inline styles, no lint/types/CI |
 | Deploy | 🔴 1/5 | Manual; built `dist/` was committed; no CI |
 
 **Findings:**
@@ -1162,8 +1226,8 @@ _Inbound (people find you: SEO, App Store search, content) and outbound (you go 
    - `site.webmanifest` is missing; the favicons are JPG
 6. **No navigation links**, no mobile menu, no About/Contact pages.
 7. **Code health:**
-   - The project started from the Google AI Studio starter (Vite + React 19 + React Router), **not Next.js**.
-   - Leftovers: the README, `metadata.json`, the `GEMINI_API_KEY` define (no key is in the current build) and unused packages.
+   - The project started from a Vite + React 19 + React Router starter, **not Next.js**.
+   - Leftovers from the starter template: its README, metadata and unused packages.
    - No `.gitignore`; `dist/` and `.DS_Store` were committed.
    - `Landing.tsx` is 588 lines, with 9 components inside it.
    - Duplicated constants, font links and images.
@@ -1359,6 +1423,26 @@ When one ships: update BRAND.md §10 first, then the pages.
 
 ---
 
+### R10. Your ideas (2026-11-18)
+
+_Everything you raised on 2026-11-18, with the answer or the recommendation and where it now lives
+in this file. Nothing here is dropped; each point links to the chunk that builds it._
+
+| # | Your point | Answer / recommendation | Where |
+|---|---|---|---|
+| 1 | **Do we have tests?** | No automated tests yet, only lint, typecheck, the SEO content check and the build (all in CI). Add unit, URL-parity, smoke and accessibility tests **before** the page rebuild. | Chunk 17.1 |
+| 2 | **Slight gradients and small animations, so it feels premium?** | Not applied to the pages yet. The tokens exist (chunk 15: gradients, glow, warm shadows, motion timings); the live landing page is still the old dark design until Stage E. Premium polish is added to chunk 25 (e2). | Chunks 19, 20, 25 |
+| 3 | **An animated coffee near the price ("less than a coffee")** | Yes, small and next to Starter only: "less than one coffee a month" or "$0.17 a day", steam animation, static under reduced motion. A/B test it, because for a premium positioning it can also cheapen. | Chunk 20c, 60 |
+| 4 | **Competitors take a percentage of each payment; we don't. "You work hard, you keep it all." Heroic but professional.** | A dedicated section: "You did the work. You keep the money." Invoicor takes 0%, a fee calculator, sourced competitor fees on the compare pages. Honesty rule: PayPal / Stripe still charge their own fees when a customer uses their link, so say "Invoicor adds 0%", never "keep 100%". | Chunk 20d2, 23, 48 |
+| 5 | **Did the hub pages break? Do the URLs still work?** | No, nothing broke. Checked 2026-11-18: all 3 hubs (`/templates`, `/industries`, `/compare`) and all 30 detail pages exist with exactly the same slugs as the live site; old `/pricing` and `/register` redirect in nginx. Chunk 17.1b freezes this list in a test. | Chunk 17.1b, 27 |
+| 6 | **The page data came from a CSV; keep it as it is.** | The live site's data was `src/data/*.json` (no CSV in the repo, now or in history). It moved unchanged to `content/*.json`, with only the false claims corrected (2026-11-17). Kept as it is: one JSON file per page type, edited as described in [CONTENT.md](CONTENT.md). If you have a CSV elsewhere, send it and Claude compares it. | `content/`, CONTENT.md |
+| 7 | **Unified styling, from one place, consistent everywhere?** | The one place exists: `styles/tokens.css` + `components/ui/` (shown on `/brand`). The old pages don't use it yet; Stage E moves every page onto it, and the style guard test (17.1e) blocks one-off colors afterwards. | Chunks 15, 17, 17.1e, Stage E |
+| 8 | **It looks like a toy; make it high class, invoice-like, tailored to the users, so the price looks like a great deal.** | Agreed. New invoice-style components (paper sheet, line items, stamp, invoice-shaped pricing, billing switch), the hero showing a real invoice, copy written for the tradesperson and freelancer. | Chunks 17.2, 19, 20 |
+| 9 | **Maybe raise prices** (Starter $4.99 → $7.99, Pro $7.99 → $14.99, new Unlimited $19.99); competitors charge about that; you're in the red; discounts or not? | A decision for you, with a recommendation: decision D14. The website only ever shows what the App Store charges. | D14, Y15 |
+| 10 | **Make yearly feel like the better deal, animated: "2 months free", a switch or a bulb, modern.** | `BillingSwitch` styled as a physical switch; flipping to yearly counts the price down and stamps "SAVE 16%". "2 months free" is true (yearly = 10.02 monthly payments). Default to yearly. | Chunks 17.2e, 20c |
+| 11 | **Invoice-style buttons and items, reusable** | Part of the invoice components, shown on `/brand` and used across pages. | Chunk 17.2 |
+| 12 | **The README still shows the old starter template; remove every trace.** | Done on `dev` (2026-11-18): README, package and files are clean, and the roadmap no longer names the template. GitHub shows the `main` branch, which still has the old README until `dev` is merged and deployed (Y2). Old commits still contain it; only a history rewrite removes that (D9, optional). | Chunk 1, Y2, D9 |
+
 ## Decisions for you
 
 _The open questions in one place. Each has a recommendation; write your answer in the **Your call** column (or just tell Claude) and the matching chunk can go ahead. Ordered by what blocks the most._
@@ -1377,6 +1461,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
 | D12 | **"5 seconds" and "80% auto-fill"** are on the hero, stats band, FAQ and meta description, but nothing measures them. | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
 | D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
+| D14 | **Raise prices?** Idea (2026-11-18): Starter $4.99 → $7.99, Pro $7.99 → $14.99, a new **Unlimited** tier at $19.99. You're early and in the red, and competitors charge around those prices. Discounts or not? | **Recommendation: raise, in one careful step, for new customers only.** (1) A $4.99 B2B tool reads as cheap; the premium redesign (17.2, Stage E) supports a higher price. (2) Keep an entry tier so the free → paid step stays easy: e.g. Starter $6.99–7.99. (3) Unlimited at $19.99 is sensible: heavy users care least about price. It needs an App Store product and API limits first, and "unlimited" may only appear once it's real (BRAND.md §10). (4) Existing subscribers keep their price (Apple lets you keep them on it). (5) No permanent discounts; use App Store introductory offers or the free trials. (6) Before deciding, look at trial → paid conversion and cost per install; if few people convert, the price isn't the main problem. Website change is small: edit `content/pricing.json` once the App Store prices change. | 20c, 48, 60 | |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
 
 ---
@@ -1401,3 +1486,4 @@ _Things Claude can't do from here (they need your accounts, your server, your ph
 | Y12 | **Recommended: move PostHog to the EU cloud.** Website analytics now go to PostHog **US** (`us.i.posthog.com`), while app data is in Germany. Create a new PostHog project in the EU region (eu.posthog.com), send Claude the new key, and the site switches to `eu.i.posthog.com`: then only GA4 leaves the EU. Session replay is off in code; turning it on needs a privacy policy update first. | posthog.com | 14 | n/a |
 | Y13 | **Verify Search Console by DNS (before deploying).** No Google verification file or DNS record exists, so Search Console was probably verified through the Google Analytics tag. GA4 now only loads after cookie consent, so that verification can break. Add a **Domain property** in Search Console and put its `google-site-verification` TXT record in DNS (where invoicor.com's DNS is managed). | Search Console + DNS | 4, 13e | the baseline export (Y1) |
 | Y14 | **Check two homepage claims:** time yourself creating a real invoice with a saved client and items. If it takes about 5 seconds, keep "takes 5 seconds"; otherwise Claude changes it to "in seconds". Same for "80% auto-fill" (decision D12). | your iPhone | 19 | n/a |
+| Y15 | **If you change prices (D14):** create or edit the subscription products in App Store Connect (and the Unlimited product plus its limit in the API, if you add it), then tell Claude the new prices; the website follows from `content/pricing.json`. | App Store Connect, invoicor_api | 20c | the pricing redesign going live |
