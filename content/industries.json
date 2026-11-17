@@ -8,7 +8,7 @@
     "color": "blue",
     "badge_text": "Field Service Invoicing",
     "h1": "Invoice from the driveway. Get paid before you leave.",
-    "subtitle": "Plumbers and HVAC techs lose hours every week to evening paperwork. Invoicor lets you build a complete invoice from your phone while still on-site, separate dispatch fees from parts and labor cleanly, and let the homeowner tap-to-pay with Apple Pay before you pull out of the driveway.",
+    "subtitle": "Plumbers and HVAC techs lose hours every week to evening paperwork. Invoicor lets you build a complete invoice from your phone while still on-site, separate dispatch fees from parts and labor cleanly, and text the homeowner a PDF with your payment link before you pull out of the driveway.",
     "industry_stats": [
       { "label": "Typical service call value", "value": "$150 - $2,500" },
       { "label": "Standard payment timeline", "value": "Same-day or net-15" },
@@ -24,13 +24,13 @@
     "feature_1_title": "One-tap callout and emergency fees",
     "feature_1_text": "Save your standard dispatch fee, weekend multiplier, and emergency rate as reusable line items in your product library. Adding them to an invoice takes one tap, so you never forget to apply them on a Saturday job.",
     "feature_2_title": "Separate parts and labor with tax flags",
-    "feature_2_text": "Tag materials lines as taxable and labor lines as non-taxable (or vice versa, depending on your state). Invoicor calculates the correct sales tax automatically and your year-end export is already clean for your accountant.",
+    "feature_2_text": "Tag materials lines as taxable and labor lines as non-taxable (or vice versa, depending on your state). Invoicor calculates the tax and totals for you, and every invoice stays saved with its status for your accountant.",
     "feature_3_title": "Tap-to-pay on the kitchen counter",
     "feature_3_text": "Text or email the invoice link directly to the homeowner. They open it on their phone, tap Apple Pay or Google Pay, and the payment clears before you've packed up your tools. No more waiting on mailed checks.",
     "expert_tip_title": "Pro Tip: Always list dispatch as a separate line item",
     "expert_tip_text": "List your diagnostic or dispatch fee on its own row, distinct from the actual repair labor. This reduces sticker shock for the homeowner, justifies the cost of driving to their property, and gives you a clean upgrade path if you ever want to waive dispatch as a sales incentive on larger repair jobs.",
     "real_scenario_title": "A typical Saturday emergency callout",
-    "real_scenario_text": "8:14 AM Saturday call: homeowner has a leaking water heater. You arrive at 8:45, diagnose a failed T&P relief valve in 15 minutes, drive to the supply house, return with the replacement part, complete the install and pressure test by 11:30. From the kitchen counter, you build the invoice in Invoicor: $95 emergency callout fee (weekend rate, non-taxable labor), $42 T&P relief valve (taxable parts), $180 install labor (1.5 hours at $120/hr, non-taxable). Total: $317 plus calculated sales tax on the part only. You text the link to the homeowner, she pays via Apple Pay while you're loading the van. You're home for lunch by noon, paid in full.",
+    "real_scenario_text": "8:14 AM Saturday call: homeowner has a leaking water heater. You arrive at 8:45, diagnose a failed T&P relief valve in 15 minutes, drive to the supply house, return with the replacement part, complete the install and pressure test by 11:30. From the kitchen counter, you build the invoice in Invoicor: $95 emergency callout fee (weekend rate), $42 T&P relief valve, $180 install labor (1.5 hours at $120/hr). Total: $317. You text the PDF with your payment link to the homeowner, and she pays through it while you're loading the van. You're home for lunch by noon, paid in full.",
     "common_line_items": [
       { "name": "Emergency Callout Fee", "desc": "Standard rate for after-hours, weekend, or holiday dispatch.", "type": "Flat Rate" },
       { "name": "Diagnostic Fee", "desc": "Initial site visit, problem assessment, and quote preparation.", "type": "Flat Rate" },
@@ -48,7 +48,7 @@
       { "term": "T&P Valve", "definition": "Temperature and pressure relief valve on a water heater. A common high-frequency replacement part on emergency callouts." }
     ],
     "tax_or_compliance_title": "Sales tax on plumbing and HVAC invoices",
-    "tax_or_compliance_text": "In most US states, materials used in plumbing and HVAC work are subject to sales tax, while labor is not. A handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) tax both. The cleanest approach: tag every line item on your invoice as either 'parts' (taxable) or 'labor' (non-taxable) at the time you create the invoice, so the tax calculation is correct by default. Invoicor's per-line tax flags handle this automatically and your year-end CSV export already has the categorization your accountant needs. Check your specific state's department of revenue for the exact rules; this is a common source of audit issues for trade businesses.",
+    "tax_or_compliance_text": "In most US states, materials used in plumbing and HVAC work are subject to sales tax, while labor is not. A handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) tax both. The cleanest approach: always list parts and labor as separate line items, so it's clear what was taxed. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if only your parts are taxable, check with your accountant whether to bill parts and labor on separate invoices. Check your specific state's department of revenue for the exact rules; this is a common source of audit issues for trade businesses.",
     "faqs": [
       {
         "question": "Can I separate parts and labor on the invoice with different tax rates?",
@@ -64,7 +64,7 @@
       },
       {
         "question": "What if I need to invoice a commercial property manager instead of a homeowner?",
-        "answer": "Same flow, but you can save the property management company as a client with their billing email and net-30 payment terms baked in. Many commercial property managers prefer email-based ACH bank transfer rather than card payments to avoid processing fees on larger invoices; Invoicor's payment link supports both."
+        "answer": "Same flow, but you can save the property management company as a client with their billing email and net-30 payment terms in the notes. Many commercial property managers prefer bank transfer over card payments on larger invoices, so add your bank details to the invoice next to your payment link."
       },
       {
         "question": "Does Invoicor handle multi-truck or multi-tech operations?",
@@ -80,7 +80,7 @@
     "slug": "freelance-designers",
     "industry": "Freelance Designers",
     "title": "Invoicing Software for Freelance Designers & Creatives | Invoicor",
-    "meta_description": "Invoicor helps freelance designers and creatives send beautiful, premium invoices. Collect upfront deposits and get paid faster via secure credit card links.",
+    "meta_description": "Invoicor helps freelance designers send beautiful, premium invoices from their phone. Bill deposits upfront and add your own payment link to get paid faster.",
     "canonical": "https://invoicor.com/industries/freelance-designers",
     "icon": "Sparkles",
     "color": "pink",
@@ -108,7 +108,7 @@
     "expert_tip_title": "Pro Tip: Always invoice the deposit before any deliverable goes out",
     "expert_tip_text": "Set a personal rule: no mood board, no wireframe, no Figma file leaves your machine until the deposit has cleared. Not 'signed contract', not 'deposit invoice sent' — cleared. This is the single highest-leverage habit a freelance designer can build. Clients who push back on this rule are also the clients most likely to ghost on the balance payment later. Use the deposit clearance as a filter, not just a payment milestone.",
     "real_scenario_title": "A typical brand identity project, billed",
-    "real_scenario_text": "$8,000 brand identity project, four-week timeline. Contract signed Monday. You immediately send Deposit Invoice 1001-A: $4,000 with payment terms 'due before kickoff', a 'pay by card' button, and your bank details for ACH/wire as a backup. Tuesday morning, the deposit clears via Stripe; your Invoicor app sends a push notification, you open Figma. Weeks 1-2: discovery, moodboards, logo exploration. Week 3: client picks a direction, two revision rounds (within scope). Week 4: final delivery. On the delivery day, you send Balance Invoice 1001-B: $4,000 with payment terms 'due on receipt', files attached as a ZIP, terms note that 'usage rights transfer on final payment'. Client pays Friday afternoon. Project complete, paid in full, zero awkward follow-up emails.",
+    "real_scenario_text": "$8,000 brand identity project, four-week timeline. Contract signed Monday. You immediately send Deposit Invoice 1001-A: $4,000 with payment terms 'due before kickoff', your Stripe payment link, and your bank details for ACH/wire as a backup. Tuesday morning the deposit lands in your Stripe account; you mark the invoice as paid in Invoicor and open Figma. Weeks 1-2: discovery, moodboards, logo exploration. Week 3: client picks a direction, two revision rounds (within scope). Week 4: final delivery. On the delivery day, you send Balance Invoice 1001-B: $4,000 with payment terms 'due on receipt', files attached as a ZIP, terms note that 'usage rights transfer on final payment'. Client pays Friday afternoon. Project complete, paid in full, zero awkward follow-up emails.",
     "common_line_items": [
       { "name": "Brand Strategy Discovery", "desc": "Stakeholder interviews, competitive audit, positioning workshop.", "type": "Phase 1" },
       { "name": "Logo Design & Refinement", "desc": "Initial concepts (3 directions) plus two refinement rounds.", "type": "Milestone" },
@@ -126,7 +126,7 @@
       { "term": "MSA / SOW", "definition": "Master Services Agreement (the umbrella contract) and Statement of Work (the per-project addendum that specifies deliverables and pricing). Reference the SOW number on every invoice so larger clients can match it to their PO system." }
     ],
     "tax_or_compliance_title": "VAT and tax for designers billing internationally",
-    "tax_or_compliance_text": "Designers in the EU billing other EU businesses typically use the reverse-charge mechanism: your invoice excludes VAT but includes both VAT numbers and a note like 'VAT reverse-charged per Article 196 of the EU VAT Directive'. Designers in the US billing US clients generally don't charge sales tax on design services (most states classify them as non-taxable services), but a handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) do tax services — check your state's rules. UK designers post-Brexit charge VAT on UK clients only and zero-rate exports; the invoice must show your VAT number and the client's country to be compliant. Invoicor lets you save these tax configurations per business profile, so once you set it up correctly, every future invoice handles it automatically.",
+    "tax_or_compliance_text": "Designers in the EU billing other EU businesses typically use the reverse-charge mechanism: your invoice excludes VAT but includes both VAT numbers and a note like 'VAT reverse-charged per Article 196 of the EU VAT Directive'. Designers in the US billing US clients generally don't charge sales tax on design services (most states classify them as non-taxable services), but a handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) do tax services — check your state's rules. UK designers post-Brexit charge VAT on UK clients only and zero-rate exports; the invoice must show your VAT number and the client's country to be compliant. In Invoicor you set the tax rate on each invoice and add the VAT numbers and reverse-charge note in the notes, so you can copy a correct invoice for the next client with one tap.",
     "faqs": [
       {
         "question": "Can I attach my design contract or SOW to the invoice?",
@@ -134,7 +134,7 @@
       },
       {
         "question": "How do I charge international clients without losing money on FX?",
-        "answer": "Invoicor supports over 135 currencies. Send the invoice in your client's local currency (EUR, GBP, AUD, etc.) and they pay via card or bank transfer in that currency. Stripe handles the FX conversion at near-interbank rates, and funds deposit into your bank in your home currency. You lose far less to FX than if you invoiced in USD and made the client absorb their bank's conversion fee."
+        "answer": "Invoicor lets you invoice in 38 currencies and 11 languages. Send the invoice in your client's local currency (EUR, GBP, AUD, etc.) and let them pay through your own payment provider or by bank transfer. Providers like Wise or Stripe convert at close to the real exchange rate, so you lose far less than when you invoice in USD and make the client absorb their bank's conversion fee."
       },
       {
         "question": "Can I send a deposit invoice and a balance invoice for the same project?",
@@ -164,7 +164,7 @@
     "color": "green",
     "badge_text": "Outdoor Service Billing",
     "h1": "Bill your entire route in minutes, not hours.",
-    "subtitle": "Landscaping and lawn care businesses thrive on route density and recurring revenue, but manually creating 40 weekly invoices kills your weekend. Invoicor automates your recurring billing for standard cuts, while letting you easily fire off custom invoices for one-off aeration or mulch jobs right from your truck.",
+    "subtitle": "Landscaping and lawn care businesses thrive on route density and recurring revenue, but manually creating 40 weekly invoices kills your weekend. With Invoicor you duplicate last week's invoice for a standard cut in one tap, and fire off custom invoices for one-off aeration or mulch jobs right from your truck.",
     "industry_stats": [
       { "label": "Typical recurring cut value", "value": "$40 - $120" },
       { "label": "Standard payment structure", "value": "Weekly or monthly" },
@@ -181,12 +181,12 @@
     "feature_1_text": "Set up your weekly or bi-weekly mowing clients once. Invoicor will automatically generate and send the invoice on schedule, complete with a fresh payment link. You mow the lawn, the software gets you paid.",
     "feature_2_title": "Lightning-fast one-off billing",
     "feature_2_text": "Need to quote and bill for 10 yards of mulch? Use your saved product library to tap 'Premium Mulch (per yard)' and 'Spreading Labor'. The invoice is ready to send before you even put the truck in drive.",
-    "feature_3_title": "Offline Mode for dead zones",
-    "feature_3_text": "Working on a large rural property with no cell service? Draft the invoice offline. Invoicor will save it locally and silently sync it to the cloud the second you drive back into a coverage area.",
+    "feature_3_title": "Repeat jobs in one tap",
+    "feature_3_text": "Weekly mowing clients get nearly the same invoice every time. Duplicate the last one, change the date, and send. Saved clients and saved services fill in everything else.",
     "expert_tip_title": "Pro Tip: Shift to monthly prepaid retainers",
     "expert_tip_text": "Instead of billing per cut (which means revenue fluctuates based on rain delays), pitch clients a flat monthly 'property maintenance' retainer. It guarantees your cash flow, simplifies your billing to one invoice per month, and locks the client in for the season.",
     "real_scenario_title": "A spring cleanout job",
-    "real_scenario_text": "You finish a massive spring cleanout at a new property. It took 3 hours, required 5 yards of fresh mulch, and resulted in a trailer full of debris. From the cab of your truck, you open Invoicor. You tap your saved items: 'Spring Cleanup Labor' (3 hrs @ $75), 'Premium Cedar Mulch' (5 yds @ $60), and 'Yard Waste Disposal Fee' (Flat $80). Total: $605. You hit send. The client gets an SMS, taps Apple Pay, and the funds are secured before you even hit the dump.",
+    "real_scenario_text": "You finish a massive spring cleanout at a new property. It took 3 hours, required 5 yards of fresh mulch, and resulted in a trailer full of debris. From the cab of your truck, you open Invoicor. You tap your saved items: 'Spring Cleanup Labor' (3 hrs @ $75), 'Premium Cedar Mulch' (5 yds @ $60), and 'Yard Waste Disposal Fee' (Flat $80). Total: $605. You text the PDF with your payment link. The client pays through it before you even hit the dump.",
     "common_line_items": [
       { "name": "Standard Lawn Maintenance", "desc": "Weekly mowing, edging, and debris blow-off.", "type": "Recurring" },
       { "name": "Premium Mulch Installation", "desc": "Cost per cubic yard, including edge trenching and spreading.", "type": "Materials + Labor" },
@@ -204,7 +204,7 @@
       { "term": "Dump Fee", "definition": "The exact cost charged by the municipal waste facility to dump a trailer of yard debris, passed on to the client." }
     ],
     "tax_or_compliance_title": "Navigating sales tax on landscaping services",
-    "tax_or_compliance_text": "Taxation on lawn care is highly state-dependent. In places like Texas or New Jersey, landscaping and lawn care services are subject to state sales tax. In others, only tangible goods (like a tree you planted or mulch you laid) are taxed, but the labor to mow a lawn is exempt. You must know your local rules. With Invoicor, you can default your entire profile to apply tax, or manually toggle the tax flag on specific line items (e.g., taxing the mulch but not the mowing labor) to stay compliant.",
+    "tax_or_compliance_text": "Taxation on lawn care is highly state-dependent. In places like Texas or New Jersey, landscaping and lawn care services are subject to state sales tax. In others, only tangible goods (like a tree you planted or mulch you laid) are taxed, but the labor to mow a lawn is exempt. You must know your local rules. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if the mulch is taxed but the mowing isn't, check with your accountant whether to bill materials on a separate invoice.",
     "faqs": [
       {
         "question": "Can I set up automatic weekly billing for my route?",
@@ -216,7 +216,7 @@
       },
       {
         "question": "Can I add photos of the completed yard work to the invoice?",
-        "answer": "Currently, Invoicor focuses on the financial document. Most pros text before/after photos directly to the client, and follow up immediately with the Invoicor payment link in the same text thread."
+        "answer": "Not yet: Invoicor focuses on the invoice itself. Most pros text before/after photos directly to the client, and send the Invoicor PDF in the same text thread."
       },
       {
         "question": "How do I handle clients who still want to pay by check?",
@@ -236,7 +236,7 @@
     "slug": "electricians",
     "industry": "Electricians",
     "title": "Invoicing Software for Independent Electricians | Invoicor",
-    "meta_description": "Stop doing electrical billing at night. Invoicor lets electricians build accurate, itemized invoices on-site, handle permit fees, and accept card payments instantly.",
+    "meta_description": "Stop doing electrical billing at night. Invoicor lets electricians build accurate, itemized invoices on-site, including permit fees, and send them before leaving.",
     "canonical": "https://invoicor.com/industries/electricians",
     "icon": "Zap",
     "color": "yellow",
@@ -257,14 +257,14 @@
     "industry_mistake_3_text": "Commercial GCs pay slowly (often Net-30 or Net-60). If you take a week to send them your invoice, you just pushed your payday back another 7 days. Send the invoice the minute the rough-in is approved.",
     "feature_1_title": "Detailed T&M breakdowns",
     "feature_1_text": "Easily separate Time and Materials. Pull standard items like '14/2 Romex (per foot)' or '20A GFCI Receptacle' from your saved library, and bill labor on a separate line to keep your margins transparent (or hidden, depending on how you quote).",
-    "feature_2_title": "Works in the basement (Offline mode)",
-    "feature_2_text": "Electrical panels are often in concrete basements with zero cell reception. Invoicor's offline mode lets you draft the entire bill while standing in front of the panel. It syncs the moment you walk outside.",
+    "feature_2_title": "Bill before you leave the site",
+    "feature_2_text": "Finish the job, open Invoicor in the driveway, and the invoice is ready in a minute: your saved panel packages, permit fees and labor rates fill in with a tap. No evening paperwork at the kitchen table.",
     "feature_3_title": "Instant Deposits for large rewires",
     "feature_3_text": "Doing a $10,000 panel upgrade? Don't float the cost of the hardware. Send a 50% deposit invoice, get the client to tap-to-pay, and use their funds to buy the materials.",
     "expert_tip_title": "Pro Tip: Charge a flat diagnostic fee, then quote the repair",
     "expert_tip_text": "Electrical troubleshooting can take 10 minutes or 3 hours. Always bill a flat 'Diagnostic / Site Visit Fee' to find the short. Once found, quote the actual repair as a separate line item. This guarantees you are paid for your diagnostic expertise even if they decline the repair.",
     "real_scenario_title": "The classic panel upgrade",
-    "real_scenario_text": "You just finished a 200-Amp service upgrade. You're standing in the garage. You open Invoicor, select the client, and add your saved '200A Panel Upgrade Package' line item ($3,200). You add a second line for 'Town Permit Fee' ($150, marked non-taxable). You hit send via text message. The homeowner receives a clean, professional PDF link, taps Apple Pay, and the funds are on their way to your bank account before you even load the old panel into your van.",
+    "real_scenario_text": "You just finished a 200-Amp service upgrade. You're standing in the garage. You open Invoicor, select the client, and add your saved '200A Panel Upgrade Package' line item ($3,200). You add a second line for 'Town Permit Fee' ($150). You send the PDF by text message. The homeowner opens a clean, professional invoice with your payment link and pays before you even load the old panel into your van.",
     "common_line_items": [
       { "name": "Diagnostic / Troubleshooting Fee", "desc": "Initial testing of circuits to locate faults.", "type": "Flat Rate" },
       { "name": "200-Amp Service Upgrade", "desc": "Replacement of main panel, breakers, and grounding.", "type": "Package" },
@@ -282,7 +282,7 @@
       { "term": "Markup", "definition": "The percentage added to wholesale material costs to cover procurement, holding, and warranty risks (standard is 20-40%)." }
     ],
     "tax_or_compliance_title": "Handling material markups and tax",
-    "tax_or_compliance_text": "When you buy materials at a supply house, you often pay tax. When you resell them to the client with a markup, depending on your state, you may need to charge sales tax to the end consumer and claim a credit, or you operate as the 'end consumer' of the materials. If you do need to charge sales tax on parts, Invoicor's per-line tax flags allow you to tax the wire and breakers without illegally taxing your labor rate. Always consult your CPA to set up your default tax rules for your specific state.",
+    "tax_or_compliance_text": "When you buy materials at a supply house, you often pay tax. When you resell them to the client with a markup, depending on your state, you may need to charge sales tax to the end consumer and claim a credit, or you operate as the 'end consumer' of the materials. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if only the materials are taxable, list them separately and check with your accountant whether to bill them on their own invoice. Always consult your CPA to set up your default tax rules for your specific state.",
     "faqs": [
       {
         "question": "Can I hide my material markup from the client?",
@@ -301,8 +301,8 @@
         "answer": "The payment link includes options for Credit Card and Apple Pay, but you can also include your ACH routing details directly on the invoice for large commercial GCs who prefer bank transfers."
       },
       {
-        "question": "Does it work if I have no cell service?",
-        "answer": "Yes. Invoicor's offline mode is perfect for basements and new construction sites without Wi-Fi or cellular. Draft the invoice locally, and it syncs when you get a signal."
+        "question": "Do I need a signal to use Invoicor?",
+        "answer": "Yes. Invoicor saves your invoices on secure servers in Germany, so it needs an internet connection (mobile data or Wi-Fi). In a basement without signal, finish the invoice in the driveway: with saved clients and items it takes about a minute."
       }
     ],
     "related": [
@@ -438,7 +438,7 @@
       { "term": "Deliverables", "definition": "The final products provided to the client (e.g., 500 edited JPEGs, 1 physical album, 1 highlight reel)." }
     ],
     "tax_or_compliance_title": "Sales tax on digital goods and photography",
-    "tax_or_compliance_text": "Tax laws for photography are notoriously tricky. In some US states, if you deliver photos on a USB drive (a physical good), the entire shoot becomes subject to sales tax. If you deliver them via a digital download link, it might be exempt. Furthermore, sitting fees or session fees might be taxed differently than print sales. It is vital to consult your local tax authority. Invoicor makes it easy by allowing you to selectively tax the physical album line item while leaving the digital session fee tax-free, keeping you perfectly compliant.",
+    "tax_or_compliance_text": "Tax laws for photography are notoriously tricky. In some US states, if you deliver photos on a USB drive (a physical good), the entire shoot becomes subject to sales tax. If you deliver them via a digital download link, it might be exempt. Furthermore, sitting fees or session fees might be taxed differently than print sales. It is vital to consult your local tax authority. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if prints are taxed and the session fee isn't, ask your accountant whether to invoice them separately.",
     "faqs": [
       {
         "question": "Can I separate the retainer from the final balance?",
@@ -450,7 +450,7 @@
       },
       {
         "question": "Can clients pay via credit card to get their credit card points?",
-        "answer": "Yes! Brides love paying for wedding expenses on credit cards to earn travel points for their honeymoon. Invoicor's secure payment links support all major credit cards."
+        "answer": "Yes, if your payment provider accepts cards. Add your own payment link (for example Stripe or PayPal) to the Invoicor invoice, and your clients can pay by credit card and collect their points."
       },
       {
         "question": "How do I bill for overtime on a shoot?",
@@ -458,7 +458,7 @@
       },
       {
         "question": "Does Invoicor handle contracts?",
-        "answer": "Invoicor handles the money. You can include your terms in the notes section, but for complex liability and model release contracts, you should use a dedicated e-signature tool or attach the PDF to the invoice email."
+        "answer": "No. Invoicor handles the invoice. You can include your terms in the notes section, but for liability and model release contracts, use a dedicated e-signature tool and send the contract alongside the invoice."
       }
     ],
     "related": [
@@ -535,7 +535,7 @@
       },
       {
         "question": "Can my assistant manage my invoices?",
-        "answer": "Because Invoicor is tied to your account, you can log in across multiple devices (iPad, iPhone, Mac) allowing your assistant to draft invoices while you focus on consulting."
+        "answer": "Not with separate team logins yet. Invoicor is one account per business owner. Your invoices are saved to your account, so you can sign in on another device and pick up where you left off."
       }
     ],
     "related": [
@@ -566,8 +566,8 @@
     "industry_mistake_2_text": "If a client cancels when you are already in the driveway, you lose half a day's pay. You must have a cancellation fee policy and seamlessly invoice for it to protect your schedule.",
     "industry_mistake_3_title": "Underpricing deep cleans.",
     "industry_mistake_3_text": "A move-out clean takes twice as long as a standard bi-weekly maintenance clean. Having separate, clearly defined line items for 'Deep Clean' vs 'Standard Clean' ensures clients understand why the price is different.",
-    "feature_1_title": "Recurring Auto-Billing",
-    "feature_1_text": "For your bi-weekly residential clients or nightly commercial contracts, set up recurring invoices. Invoicor does the administrative work while you manage the mops.",
+    "feature_1_title": "Repeat invoices in one tap",
+    "feature_1_text": "For bi-weekly residential clients or monthly commercial contracts, duplicate last period's invoice, update the date, and send. Saved clients and services fill in the rest.",
     "feature_2_title": "1-Tap Invoice Duplication",
     "feature_2_text": "Have a standard rate for 3-bedroom houses? Duplicate a past invoice in one second, change the client name, and hit send. It's the fastest way to bill a full day's route.",
     "feature_3_title": "Overdue Notifications",
@@ -575,7 +575,7 @@
     "expert_tip_title": "Pro Tip: Offer clear Add-Ons",
     "expert_tip_text": "Standardize your base price, but clearly list Add-Ons on your website and invoices (e.g., 'Inside Fridge Clean: $40', 'Oven Scrub: $50'). This turns a standard $150 visit into a $240 visit with minimal extra time, and the itemized invoice proves the value.",
     "real_scenario_title": "A commercial office clean",
-    "real_scenario_text": "You manage the janitorial contract for a local real estate office. They are on a $800/month retainer. On the 1st of the month, Invoicor automatically generates and emails their invoice. The office manager clicks the link, pays with the corporate credit card, and the funds are in your account. You didn't even have to open the app.",
+    "real_scenario_text": "You manage the janitorial contract for a local real estate office. They are on a $800/month retainer. On the 1st of the month, you duplicate last month's invoice in Invoicor, update the date, and email it. The office manager pays through your payment link with the corporate card, and the funds are in your account. It took you thirty seconds.",
     "common_line_items": [
       { "name": "Standard Residential Clean", "desc": "Bi-weekly surface cleaning, vacuuming, and mopping.", "type": "Recurring" },
       { "name": "Deep / Move-Out Clean", "desc": "Intensive scrubbing of baseboards, inside cabinets, and appliances.", "type": "Flat Rate" },
@@ -593,7 +593,7 @@
       { "term": "Walkthrough", "definition": "The initial visit to assess the property's condition before issuing a formal quote or invoice." }
     ],
     "tax_or_compliance_title": "Sales tax on janitorial and cleaning services",
-    "tax_or_compliance_text": "In many states (like New York or Texas), commercial cleaning and janitorial services are subject to sales tax, while residential cleaning might be exempt—or vice versa depending on local laws. It is crucial to configure your Invoicor account to apply the correct tax rate to the correct type of client. You can save specific tax rates to different line items (e.g., 'Commercial Cleaning - Taxable') to make compliance foolproof.",
+    "tax_or_compliance_text": "In many states (like New York or Texas), commercial cleaning and janitorial services are subject to sales tax, while residential cleaning might be exempt—or vice versa depending on local laws. It is crucial to set the correct tax rate on each invoice for the type of client you're billing. You can save specific tax rates to different line items (e.g., 'Commercial Cleaning - Taxable') to make compliance foolproof.",
     "faqs": [
       {
         "question": "Can I bill all my residential clients on Friday automatically?",
@@ -653,7 +653,7 @@
     "expert_tip_title": "Pro Tip: Make the invoice terms double as a policy reminder",
     "expert_tip_text": "Use the notes section of your Invoicor template to permanently state: 'All packages are non-refundable. Sessions cancelled with less than 24 hours notice will be forfeited.' Having it in writing on every receipt eliminates arguments.",
     "real_scenario_title": "Onboarding a new personal training client",
-    "real_scenario_text": "You finish a free consultation with a lead. They want to train 3 days a week. Instead of saying 'just Venmo me', you open Invoicor, select your '12-Session Kickstart Package' ($1,200), and hit send. They receive a polished PDF via text, tap the Apple Pay button, and the money is secured. You instantly established authority and professionalism.",
+    "real_scenario_text": "You finish a free consultation with a lead. They want to train 3 days a week. Instead of saying 'just Venmo me', you open Invoicor, select your '12-Session Kickstart Package' ($1,200), and hit send. They receive a polished PDF via text with your payment link, pay through it, and the money is secured. You instantly established authority and professionalism.",
     "common_line_items": [
       { "name": "10-Session Training Block", "desc": "10 hours of 1-on-1 coaching, valid for 60 days.", "type": "Package" },
       { "name": "Monthly Online Programming", "desc": "Customized weekly workouts and macro-nutrient adjustments.", "type": "Recurring" },
@@ -670,11 +670,11 @@
       { "term": "Assessment / Consult", "definition": "The initial meeting to assess movement mechanics and goals. Often free to generate leads, but sometimes billed." }
     ],
     "tax_or_compliance_title": "Tax considerations for online vs in-person training",
-    "tax_or_compliance_text": "Generally, personal training services are not subject to sales tax, but selling physical goods (like supplements, resistance bands, or branded apparel) absolutely is. Furthermore, if you sell 'digital downloads' like a generic PDF workout program, some states tax that as a digital good. Keep your service billing (training) cleanly separated from your product sales on your invoices using Invoicor's line-item specific tax toggles.",
+    "tax_or_compliance_text": "Generally, personal training services are not subject to sales tax, but selling physical goods (like supplements, resistance bands, or branded apparel) absolutely is. Furthermore, if you sell 'digital downloads' like a generic PDF workout program, some states tax that as a digital good. Keep your service billing (training) separate from product sales: Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so put supplements or gear on their own invoice if they're taxed differently.",
     "faqs": [
       {
         "question": "Can I use Invoicor for recurring monthly subscriptions?",
-        "answer": "Yes. Set up a recurring invoice for your online coaching clients. It will automatically email them a payment link every month."
+        "answer": "Not automatically yet. For monthly online coaching clients, duplicate last month's invoice in one tap, change the date and send it. It takes seconds."
       },
       {
         "question": "Does it track how many sessions a client has left?",
@@ -730,7 +730,7 @@
     "expert_tip_title": "Pro Tip: Collect deposits for Ceramic Coatings",
     "expert_tip_text": "A true ceramic coating takes hours and blocks out your whole day. Never book a ceramic job without sending an Invoicor link for a 25% non-refundable deposit to ensure they don't flake on you.",
     "real_scenario_title": "A premium driveway detail",
-    "real_scenario_text": "You finish a full interior/exterior detail on a Ford F-150. The owner is thrilled. From your phone, you open Invoicor, add 'Full Size Truck Detail Package' ($250), and the 'Pet Hair Removal Add-On' ($40) that you agreed upon. You add the truck's plate number in the notes, hit send via SMS. The owner reviews it on their phone, taps Google Pay, and leaves a tip. You drive away with the money already processing.",
+    "real_scenario_text": "You finish a full interior/exterior detail on a Ford F-150. The owner is thrilled. From your phone, you open Invoicor, add 'Full Size Truck Detail Package' ($250), and the 'Pet Hair Removal Add-On' ($40) that you agreed upon. You add the truck's plate number in the notes, hit send via SMS. The owner reviews it on their phone and pays through your payment link. You drive away with the money already on its way.",
     "common_line_items": [
       { "name": "Full Interior/Exterior Detail", "desc": "Wash, wax, vacuum, and interior surface wipe down.", "type": "Package" },
       { "name": "Paint Correction (1-Step)", "desc": "Machine polishing to remove light swirls and scratches.", "type": "Flat Rate" },
@@ -748,7 +748,7 @@
       { "term": "Core Charge", "definition": "A deposit paid on a part (like a battery or alternator) that is refunded when the old, broken part is returned for recycling." }
     ],
     "tax_or_compliance_title": "Taxation on auto repair and detailing",
-    "tax_or_compliance_text": "Automotive services are highly scrutinized by state tax boards. In states like California or New York, the rules regarding taxing auto repair labor versus parts can be extremely complex. Often, parts are taxable but repair labor is not, whereas detailing (washing/waxing) might be fully taxable as a maintenance service. You must separate your parts and labor on your Invoicor invoices and apply the correct tax toggles to protect yourself in an audit.",
+    "tax_or_compliance_text": "Automotive services are highly scrutinized by state tax boards. In states like California or New York, the rules regarding taxing auto repair labor versus parts can be extremely complex. Often, parts are taxable but repair labor is not, whereas detailing (washing/waxing) might be fully taxable as a maintenance service. You must separate your parts and labor into clear line items on your invoices to protect yourself in an audit. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if parts and labor are taxed differently in your state, check with your accountant whether to bill them separately.",
     "faqs": [
       {
         "question": "Can I record the customer's VIN or License Plate on the invoice?",
@@ -764,7 +764,7 @@
       },
       {
         "question": "Do I need a card swiper?",
-        "answer": "No! Invoicor eliminates the need for bluetooth card readers. The customer pays via a secure link on their own device using Apple Pay or manually entering their card."
+        "answer": "No. Add your own payment link (PayPal, Stripe or similar) to the invoice, and the customer pays on their own phone, by card or a wallet like Apple Pay if your provider supports it."
       },
       {
         "question": "Can I use it for mobile window tinting?",

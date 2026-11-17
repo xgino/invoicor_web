@@ -144,7 +144,7 @@
       },
       {
         "question": "Can I accept credit card payments in the field?",
-        "answer": "Not from a printed PDF you can't, but with a mobile invoicing tool (like the Invoicor app) you can text the invoice link to the homeowner and they pay from their own phone using card, Apple Pay, or Google Pay — usually before you've packed up your tools. This dramatically reduces the time from job completion to cash in your bank account compared to mailing a paper invoice and waiting for a check."
+        "answer": "Not from a printed PDF, but with a mobile invoicing app you can. In Invoicor, add your own payment link (for example a PayPal or Stripe payment link) to the invoice and text the PDF to the homeowner before you leave. They open your link and pay on their own phone, often by card, Apple Pay or Google Pay depending on your provider. That's much faster than mailing a paper invoice and waiting for a check."
       },
       {
         "question": "What payment terms should I put on a plumbing invoice?",
@@ -721,7 +721,7 @@
       },
       {
         "question": "How do I take payments on the go?",
-        "answer": "With a digital PDF invoice generated from an app like Invoicor, you simply text the link to the customer. They pay securely using Apple Pay or their credit card right there on their phone."
+        "answer": "Create the invoice on your phone, add your own payment link (PayPal, Stripe or similar) and text the PDF to the customer. They pay through your link on their own phone, by card or a wallet like Apple Pay if your payment provider offers it. No card reader needed."
       }
     ],
     "related": [
