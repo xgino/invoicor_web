@@ -1,39 +1,43 @@
 import type { Metadata } from "next";
-import { Dashboard } from "@/components/landing/sections/Dashboard";
-import { Faq, HOME_FAQS } from "@/components/landing/sections/Faq";
-import { FinalCta } from "@/components/landing/sections/FinalCta";
-import { GlobalSecurity } from "@/components/landing/sections/GlobalSecurity";
-import { Hero } from "@/components/landing/sections/Hero";
-import { HowItWorks } from "@/components/landing/sections/HowItWorks";
-import { Pricing } from "@/components/landing/sections/Pricing";
-import { Stats } from "@/components/landing/sections/Stats";
-import { Templates } from "@/components/landing/sections/Templates";
-import { Promises } from "@/components/landing/sections/Promises";
+import { Features } from "@/components/sections/home/Features";
+import { FinalCta } from "@/components/sections/home/FinalCta";
+import { Hero } from "@/components/sections/home/Hero";
+import { HomeFaq } from "@/components/sections/home/HomeFaq";
+import { HowItWorks } from "@/components/sections/home/HowItWorks";
+import { KeepYourMoney } from "@/components/sections/home/KeepYourMoney";
+import { PricingSection } from "@/components/sections/home/PricingSection";
+import { Promises } from "@/components/sections/home/Promises";
+import { ProofBand } from "@/components/sections/home/ProofBand";
+import { Templates } from "@/components/sections/home/Templates";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { faqLd, mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
+import { mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
   title: "Invoice Maker for iPhone | Create Invoices in Seconds | Invoicor",
   description:
-    "Create professional invoices in under 5 seconds on your iPhone. 80% auto fill, beautiful PDF templates, multi currency, tax calculator, and instant sharing. Free to start.",
+    "Create professional invoices in seconds on your iPhone. 31 templates, 38 currencies, 11 languages. 3 invoices free, and no fees on your payments.",
   path: "/",
 });
 
+/**
+ * Home page (ROADMAP chunks 19–20), light and invoice-styled. Sections live in
+ * components/sections/home/. The FAQPage JSON-LD comes from the FAQ section itself.
+ */
 export default function HomePage() {
   return (
-    <div style={{ color: "#f5f5f5", background: "#09090b", overflowX: "hidden" }}>
-      <JsonLd data={[organizationLd(), websiteLd(), mobileAppLd(), faqLd(HOME_FAQS)]} />
+    <>
+      <JsonLd data={[organizationLd(), websiteLd(), mobileAppLd()]} />
       <Hero />
-      <Stats />
+      <ProofBand />
       <Templates />
       <HowItWorks />
-      <Dashboard />
-      <GlobalSecurity />
-      <Pricing />
+      <Features />
+      <KeepYourMoney />
+      <PricingSection />
       <Promises />
-      <Faq />
+      <HomeFaq />
       <FinalCta />
-    </div>
+    </>
   );
 }

@@ -51,11 +51,13 @@ app/                     routes (one folder per URL) + site-wide files
   fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
   globals.css            Tailwind + keyframes + hover/reveal helpers
 styles/tokens.css        brand tokens: colors, gradients, type scale, shadows, motion (see BRAND.md §7)
+styles/effects.css       stamp, sheen, steam, glow drift, paper edge (all off under reduced motion)
 components/
   brand/                 Logo, LogoMark (SVG)
   ui/                    UI kit: Button, Section, Heading, Card, Badge, Breadcrumbs, form parts, Accordion, Tabs… (see /brand)
   layout/                Navbar, Footer
-  landing/               home page sections and their building blocks
+  sections/home/         home page sections (hero, pricing, fee calculator, FAQ…)
+  pricing/               PricingTable: every plan as an invoice
   content/               shared blocks for SEO pages (breadcrumbs, FAQ, TOC, CTAs)
   affiliate/  analytics/  seo/
 content/                 templates.json, industries.json, comparisons.json (page content)

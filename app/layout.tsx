@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Create professional invoices in under 5 seconds on your iPhone. 80% auto fill, beautiful PDF templates, multi currency, tax calculator, and instant sharing. Free to start.",
+    "Create professional invoices in seconds on your iPhone. 31 templates, 38 currencies, 11 languages. 3 invoices free, and no fees on your payments.",
   applicationName: SITE_NAME,
   robots: {
     index: true,

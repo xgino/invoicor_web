@@ -7,7 +7,6 @@ import { PAGE_TYPES, axeViolations, trackAnalytics } from "./helpers";
  * Stage E chunk removes its pages from this list. The list may only shrink.
  */
 const NOT_REBUILT_YET = new Set<string>([
-  "home",
   "template",
   "industries hub",
   "industry",

@@ -81,8 +81,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage E: Rebuild the pages (in the new brand)**
 - [x] 18. Navbar & footer _(✅ 2026-11-18: light, mobile menu, footer links into every hub; contrast fixed)_
-- [ ] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-17: fake avatars + stars replaced by true promises; stats corrected to 31 templates, 38 currencies, 11 languages)_
-- [ ] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-17: fake testimonials replaced by a true "Promises" section; real reviews come with chunk 50)_
+- [x] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-18: light hero with a real sample invoice and PAID stamp, true-numbers band, live template gallery, 3 steps)_
+- [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
 - [ ] 21. Template pages + hub
 - [ ] 22. Industry pages + hub
 - [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_
@@ -553,39 +553,39 @@ _✅ 2026-11-18: `components/layout/` (Navbar server component; NavClient for sc
 ### 19. Landing page, part 1 (hero → how it works)
 **Goal:** a premium first impression.
 
-- [ ] a. Split it into one file per section in `components/sections/`.
-- [ ] b. **Hero:**
+- [x] a. Split it into one file per section in `components/sections/`.
+- [x] b. **Hero:**
   - light (warm white) with the soft orange glow behind the phone
   - the headline from chunk 5f, with one gradient word
   - two CTAs: “Create a free invoice” → generator, “Get the app” → App Store
   - an iPhone/invoice mockup: the phone plus a real invoice on `InvoicePaper` sliding out of it, with a "PAID" `Stamp`
   - written for the tradesperson and the freelancer (BRAND.md §2): their jobs, their line items, their currency
-- [ ] c. Trust strip: a short line plus the App Store rating (real numbers only).
-- [ ] d. Templates carousel: live from the API, with skeletons while loading and a fallback if the API fails.
-- [ ] e. How it works: 3 steps with icons.
+- [x] c. Trust strip: true numbers (31 templates, 38 currencies, 11 languages, 0% fees). _The App Store rating joins once there are ≥ 10 real ratings (chunk 50)._
+- [x] d. Templates carousel: live from the API, with skeletons while loading and a fallback if the API fails.
+- [x] e. How it works: 3 steps with icons.
 
 **Done when:** the top half of the page looks finished on mobile and desktop, with no layout shift.
 
 ### 20. Landing page, part 2 (features → final CTA)
 **Goal:** the full landing page, with SEO.
 
-- [ ] a. Features grid, built from the messaging pillars (chunk 5d).
-- [ ] b. Currencies & languages + "Your data stays in Europe" (security).
-- [ ] c. Pricing from `content/pricing.json`: monthly/yearly toggle, the popular card with a gradient border. Make sure the tiers match the app exactly.
+- [x] a. Features grid, built from the messaging pillars (chunk 5d).
+- [x] b. Currencies & languages + "Your data stays in Europe" (security).
+- [x] c. Pricing from `content/pricing.json`: monthly/yearly toggle, the popular card with a gradient border. Make sure the tiers match the app exactly.
   - built from the invoice components (chunk 17.2): each plan as an invoice, `BillingSwitch` for monthly / yearly
   - **yearly as the better deal:** default the switch to yearly, show "2 months free" / "save 16%" (true: 12 × $4.99 = $59.88 vs $49.99) with the stamp and count-down animation
   - **price anchor:** a small line next to Starter, "less than one coffee a month" (or "$0.17 a day"), with a tiny animated coffee cup (steam rising; static under reduced motion). Test it against no anchor in chunk 60, because a coffee comparison can also make a premium tool feel cheap.
   - no permanent discounts (they teach people to wait); use App Store introductory offers or the trials instead (decision D14)
-- [ ] d. Testimonials: **real ones only**; remove the section if you don't have them yet.
-- [ ] d2. **"We never take a cut" section** (your core belief; heroic but professional). Headline idea: _"You did the work. You keep the money."_ Content:
+- [x] d. Testimonials: **real ones only**; until then the "Promises" section stands in.
+- [x] d2. **"We never take a cut" section** (your core belief; heroic but professional). Headline idea: _"You did the work. You keep the money."_ Content:
   - Invoicor takes **0% of your payments**. No platform fee, no per-invoice fee, ever. You pay a flat subscription, that's it.
   - Many invoicing apps charge a percentage per payment on top of the subscription; name them only on the compare pages, with a source and a date (chunk 23)
   - a small "fee calculator" built from `LineItems`: drag your yearly revenue, see what a 2.9% + 30¢ style fee would cost vs $0 with Invoicor
   - **honesty rule:** if a customer pastes their own PayPal or Stripe link, PayPal / Stripe still charge their own fees. Say "Invoicor adds 0%", never "you keep 100%".
   - reuse the same block on the compare pages and in the App Store screenshots (chunk 48)
-- [ ] e. A visible FAQ (Accordion) + matching `faqLd()`.
-- [ ] f. Final CTA section (light, `brand-50` tint + glow).
-- [ ] g. Metadata + `organizationLd()` + `websiteLd()` + `softwareAppLd()`, on this page only.
+- [x] e. A visible FAQ (Accordion) + matching `faqLd()`.
+- [x] f. Final CTA section (light, `brand-50` tint + glow).
+- [x] g. Metadata + `organizationLd()` + `websiteLd()` + `mobileAppLd()`, on this page only. _The hero says "in seconds" until decision D12 (the "5 seconds" claim) is made._
 
 **Done when:** `curl /` shows all the text, and the Rich Results Test passes.
 
@@ -1463,7 +1463,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
 | D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
 | D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
-| D12 | **"5 seconds" and "80% auto-fill"** are on the hero, stats band, FAQ and meta description, but nothing measures them. | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
+| D12 | **"5 seconds" and "80% auto-fill"** were on the hero, stats band, FAQ and meta description, but nothing measures them. _Since 2026-11-18 the site says "in seconds" and no longer claims 80%; restore a number only after Y14._ | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
 | D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
 | D14 | **Raise prices?** Idea (2026-11-18): Starter $4.99 → $7.99, Pro $7.99 → $14.99, a new **Unlimited** tier at $19.99. You're early and in the red, and competitors charge around those prices. Discounts or not? | **Recommendation: raise, in one careful step, for new customers only.** (1) A $4.99 B2B tool reads as cheap; the premium redesign (17.2, Stage E) supports a higher price. (2) Keep an entry tier so the free → paid step stays easy: e.g. Starter $6.99–7.99. (3) Unlimited at $19.99 is sensible: heavy users care least about price. It needs an App Store product and API limits first, and "unlimited" may only appear once it's real (BRAND.md §10). (4) Existing subscribers keep their price (Apple lets you keep them on it). (5) No permanent discounts; use App Store introductory offers or the free trials. (6) Before deciding, look at trial → paid conversion and cost per install; if few people convert, the price isn't the main problem. Website change is small: edit `content/pricing.json` once the App Store prices change. | 20c, 48, 60 | |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |

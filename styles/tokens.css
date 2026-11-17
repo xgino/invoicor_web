@@ -137,6 +137,12 @@
   background-clip: text;
   color: transparent;
 }
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 @utility focus-ring {
   outline: 2px solid var(--color-brand-600);
   outline-offset: 2px;
