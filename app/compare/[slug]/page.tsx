@@ -1,12 +1,23 @@
-import { Check, CircleCheck, CircleX, TrendingUp, UserCheck, X } from "lucide-react";
+import { Check, Minus } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { AppStoreButton, Breadcrumbs, FaqSection, RelatedLinks } from "@/components/content/blocks";
-import { Toc } from "@/components/content/Toc";
-import { JsonLd } from "@/components/seo/JsonLd";
+import { AppleIcon } from "@/components/brand/AppleIcon";
+import {
+  ArticleLayout,
+  Block,
+  Callout,
+  ClosingCta,
+  FaqBlock,
+  PageHeader,
+  PointList,
+} from "@/components/sections/content/blocks";
+import { buttonClass } from "@/components/ui/Button";
+import { RelatedLinks } from "@/components/ui/content";
+import { cx } from "@/components/ui/cx";
+import { InvoicePaper, LineItems, PaperLabel, Stamp } from "@/components/ui/invoice";
+import { appStoreLink } from "@/lib/config";
 import { flag, getComparison, getComparisons, text } from "@/lib/content";
-import { breadcrumbLd, faqLd } from "@/lib/jsonld";
-import { FREE_INVOICES, PAID_PLANS, PRICING, STARTING_PRICE, formatPrice } from "@/lib/pricing";
+import { FREE_INVOICES, PAID_PLANS, PRICING, formatPrice } from "@/lib/pricing";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 export const dynamicParams = false;
@@ -32,22 +43,40 @@ export async function generateMetadata({
 const THREE = [1, 2, 3];
 const FIVE = [1, 2, 3, 4, 5];
 
+function Mark({ yes, label }: { yes: boolean; label: string }) {
+  return yes ? (
+    <span className="bg-brand-50 text-brand-700 inline-grid size-8 place-items-center rounded-full">
+      <Check aria-hidden className="size-4" strokeWidth={2.5} />
+      <span className="sr-only">{label}: yes</span>
+    </span>
+  ) : (
+    <span className="bg-tint text-subtle inline-grid size-8 place-items-center rounded-full">
+      <Minus aria-hidden className="size-4" />
+      <span className="sr-only">{label}: no</span>
+    </span>
+  );
+}
+
+/** Compare page (ROADMAP chunk 23, blueprint "Compare"). Text from content/comparisons.json;
+ * Invoicor's prices from content/pricing.json. */
 export default async function ComparePage({ params }: PageProps<"/compare/[slug]">) {
   const { slug } = await params;
   const d = getComparison(slug);
   if (!d) notFound();
 
   const competitor = d.competitor;
-  const painPoints = THREE.flatMap((n) => {
-    const title = text(d, `mistake_${n}_title`);
-    return title ? [{ n, title, text: text(d, `mistake_${n}_text`) }] : [];
-  });
-  const featureRows = FIVE.flatMap((n) => {
+  const pairs = (prefix: string) =>
+    THREE.flatMap((n) => {
+      const title = text(d, `${prefix}_${n}_title`);
+      return title ? [{ title, text: text(d, `${prefix}_${n}_text`) }] : [];
+    });
+  const painPoints = pairs("mistake");
+  const steps = pairs("step");
+  const rows = FIVE.flatMap((n) => {
     const name = text(d, `feature_compare_${n}_name`);
     return name
       ? [
           {
-            n,
             name,
             us: flag(d, `feature_compare_${n}_us`),
             them: flag(d, `feature_compare_${n}_them`),
@@ -57,289 +86,218 @@ export default async function ComparePage({ params }: PageProps<"/compare/[slug]
   });
   const stats = [1, 2].flatMap((n) => {
     const value = text(d, `stat_${n}_value`);
-    return value ? [{ n, value, desc: text(d, `stat_${n}_desc`) }] : [];
-  });
-  const steps = THREE.flatMap((n) => {
-    const title = text(d, `step_${n}_title`);
-    return title ? [{ n, title, text: text(d, `step_${n}_text`) }] : [];
+    return value ? [{ value, desc: text(d, `stat_${n}_desc`) }] : [];
   });
   const audienceTitle = text(d, "target_audience_title");
   const policyH2 = text(d, "policy_h2");
   const pricingThem = text(d, "pricing_them");
 
-  const tocSections = [
-    { id: "pain-points", label: `Why ${competitor} slows you down`, show: painPoints.length > 0 },
-    { id: "features", label: "Feature comparison", show: featureRows.length > 0 },
-    { id: "audience", label: "Who it's for", show: !!audienceTitle },
-    { id: "philosophy", label: "The Invoicor approach", show: !!policyH2 },
-    { id: "pricing", label: "Pricing comparison", show: !!pricingThem },
-    { id: "steps", label: "How switching works", show: steps.length > 0 },
-    { id: "faqs", label: "FAQs", show: d.faqs.length > 0 },
-  ]
-    .filter((s) => s.show)
-    .map(({ id, label }) => ({ id, label }));
+  const toc = [
+    { id: "pain-points", label: `Where ${competitor} slows you down`, show: painPoints.length > 0 },
+    { id: "features", label: "Feature comparison", show: rows.length > 0 },
+    { id: "audience", label: "Who each is for", show: !!audienceTitle },
+    { id: "approach", label: "The Invoicor approach", show: !!policyH2 },
+    { id: "pricing", label: "Pricing", show: !!pricingThem },
+    { id: "steps", label: "How to switch", show: steps.length > 0 },
+    { id: "faqs", label: "FAQ", show: d.faqs.length > 0 },
+  ].filter((s) => s.show);
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
-      <JsonLd
-        data={[
-          breadcrumbLd([
-            { name: "Home", path: "/" },
-            { name: "Compare", path: "/compare" },
-            { name: `Invoicor vs ${competitor}` },
-          ]),
-          faqLd(d.faqs),
-        ]}
-      />
-      <Toc sections={tocSections} />
-
-      <Breadcrumbs
-        items={[
+    <>
+      <PageHeader
+        crumbs={[
           { name: "Home", href: "/" },
           { name: "Compare", href: "/compare" },
           { name: `vs ${competitor}` },
         ]}
+        eyebrow={text(d, "badge_text") ?? `Invoicor vs ${competitor}`}
+        title={d.h1}
+        subtitle={d.subtitle}
+        actions={
+          <a
+            href={appStoreLink(`compare-${d.slug}`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_click"
+            data-track-section={`compare-${d.slug}`}
+            className={buttonClass({ size: "lg" })}
+          >
+            <AppleIcon size={17} />
+            Try Invoicor free
+          </a>
+        }
+        aside={
+          stats.length > 0 && (
+            <InvoicePaper highlight edge="perforated" className="p-6 sm:p-7">
+              <PaperLabel>Invoicor vs {competitor} · at a glance</PaperLabel>
+              <ul className="mt-2">
+                {stats.map((s) => (
+                  <li key={s.value} className="border-line border-b py-5 last:border-b-0">
+                    <p className="font-heading text-h2 text-ink tabular-nums">{s.value}</p>
+                    {s.desc && <p className="text-small text-muted mt-1">{s.desc}</p>}
+                  </li>
+                ))}
+              </ul>
+            </InvoicePaper>
+          )
+        }
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 text-center">
-        <span className="mb-6 inline-block rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-xs font-bold tracking-wider text-blue-700 uppercase">
-          {text(d, "badge_text") ?? "Software Comparison"}
-        </span>
-        <h1 className="mb-6 text-4xl leading-tight font-extrabold tracking-tight text-slate-900 md:text-6xl">
-          {d.h1}
-        </h1>
-        <p className="mb-10 text-lg leading-relaxed font-medium text-slate-500 md:text-xl">
-          {d.subtitle}
-        </p>
-        <AppStoreButton campaign={`compare-${d.slug}`}>Start Free Trial</AppStoreButton>
-      </section>
+      <ArticleLayout toc={toc}>
+        {painPoints.length > 0 && (
+          <Block
+            id="pain-points"
+            eyebrow="The problem"
+            title={`Where ${competitor} slows you down`}
+          >
+            <PointList items={painPoints} tone="cross" />
+          </Block>
+        )}
 
-      {painPoints.length > 0 && (
-        <section id="pain-points" className="scroll-mt-24 border-y border-slate-200 bg-white py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <h2 className="mb-12 text-center text-3xl font-extrabold">
-              Why {competitor} slows you down.
-            </h2>
-            <div className="grid gap-8 md:grid-cols-3">
-              {painPoints.map((m) => (
-                <div key={m.n} className="rounded-3xl border border-rose-100 bg-rose-50/50 p-8">
-                  <CircleX className="mb-6 h-10 w-10 text-rose-500" aria-hidden />
-                  <h3 className="mb-3 text-xl font-bold">{m.title}</h3>
-                  {m.text && <p className="text-[15px] leading-relaxed text-slate-600">{m.text}</p>}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {featureRows.length > 0 && (
-        <section id="features" className="scroll-mt-24 bg-slate-50 py-24">
-          <div className="mx-auto max-w-4xl px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-extrabold text-slate-900">
-                Invoicor vs {competitor} Features
-              </h2>
-              <p className="text-lg font-medium text-slate-500">
-                A clear breakdown of what you actually get.
-              </p>
-            </div>
-            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+        {rows.length > 0 && (
+          <Block id="features" eyebrow="Side by side" title={`Invoicor vs ${competitor}`}>
+            <div className="bg-surface ring-line shadow-soft overflow-hidden rounded-2xl ring-1">
               <table className="w-full text-left">
-                <thead className="border-b border-slate-200 bg-slate-100 text-sm font-bold tracking-wider text-slate-500 uppercase">
+                <caption className="sr-only">
+                  Feature comparison between Invoicor and {competitor}
+                </caption>
+                <thead className="bg-tint text-eyebrow text-subtle uppercase">
                   <tr>
-                    <th scope="col" className="p-6">
+                    <th scope="col" className="px-5 py-4">
                       Feature
                     </th>
-                    <th scope="col" className="p-6 text-center text-blue-600">
+                    <th scope="col" className="text-brand-700 w-28 px-3 py-4 text-center">
                       Invoicor
                     </th>
-                    <th scope="col" className="p-6 text-center">
+                    <th scope="col" className="w-28 px-3 py-4 text-center">
                       {competitor}
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100">
-                  {featureRows.map((row) => (
-                    <tr key={row.n} className="transition-colors hover:bg-slate-50">
-                      <th scope="row" className="p-6 font-semibold text-slate-900">
-                        {row.name}
+                <tbody className="divide-line divide-y">
+                  {rows.map((r) => (
+                    <tr key={r.name}>
+                      <th scope="row" className="text-ink px-5 py-4 font-medium">
+                        {r.name}
                       </th>
-                      <td className="p-6">
-                        <span className="flex justify-center">
-                          {row.us ? (
-                            <CircleCheck className="h-6 w-6 text-emerald-500" aria-label="Yes" />
-                          ) : (
-                            <X className="h-6 w-6 text-slate-300" aria-label="No" />
-                          )}
-                        </span>
+                      <td className="bg-brand-50/40 px-3 py-4 text-center">
+                        <Mark yes={r.us} label="Invoicor" />
                       </td>
-                      <td className="p-6">
-                        <span className="flex justify-center">
-                          {row.them ? (
-                            <Check className="h-6 w-6 text-slate-800" aria-label="Yes" />
-                          ) : (
-                            <X className="h-6 w-6 text-rose-400" aria-label="No" />
-                          )}
-                        </span>
+                      <td className="px-3 py-4 text-center">
+                        <Mark yes={r.them} label={competitor} />
                       </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-          </div>
-        </section>
-      )}
+            <p className="text-small text-subtle mt-4">
+              Where {competitor} has a feature Invoicor doesn&apos;t, we say so. Features change:
+              check {competitor}&apos;s website for their current plans.
+            </p>
+          </Block>
+        )}
 
-      {audienceTitle && (
-        <section id="audience" className="scroll-mt-24 border-b border-slate-200 bg-white py-20">
-          <div className="mx-auto max-w-5xl px-6">
-            <h2 className="mb-12 text-center text-3xl font-extrabold text-slate-900">
-              {audienceTitle}
-            </h2>
-            <div className="grid gap-8 md:grid-cols-2">
-              <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-8">
-                <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-blue-700">
-                  <UserCheck className="h-6 w-6" aria-hidden /> Ideal for Invoicor
-                </h3>
-                <p className="leading-relaxed font-medium text-slate-700">
-                  {text(d, "target_audience_us")}
-                </p>
+        {audienceTitle && (
+          <Block id="audience" eyebrow="Who each is for" title={audienceTitle}>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="bg-brand-50 ring-brand-200 rounded-2xl p-6 ring-1">
+                <h3 className="text-brand-800 font-bold">Choose Invoicor if you are</h3>
+                <p className="text-ink mt-2 leading-relaxed">{text(d, "target_audience_us")}</p>
               </div>
-              <div className="rounded-2xl border border-slate-200 bg-slate-100/70 p-8">
-                <h3 className="mb-4 flex items-center gap-3 text-lg font-bold text-slate-700">
-                  <UserCheck className="h-6 w-6" aria-hidden /> Better Fit for {competitor}
-                </h3>
-                <p className="leading-relaxed font-medium text-slate-700">
-                  {text(d, "target_audience_them")}
-                </p>
+              <div className="bg-tint ring-line rounded-2xl p-6 ring-1">
+                <h3 className="text-ink font-bold">Choose {competitor} if you are</h3>
+                <p className="text-muted mt-2 leading-relaxed">{text(d, "target_audience_them")}</p>
               </div>
             </div>
-          </div>
-        </section>
-      )}
+          </Block>
+        )}
 
-      {policyH2 && (
-        <section id="philosophy" className="scroll-mt-24 bg-slate-950 py-24 text-white">
-          <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
-            <div>
-              <h2 className="mb-6 text-3xl font-extrabold">{policyH2}</h2>
-              <p className="mb-8 text-lg leading-relaxed text-slate-400">
-                {text(d, "policy_text")}
-              </p>
-              {text(d, "solution_h2") && (
-                <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
-                  <h3 className="mb-4 text-2xl font-bold">{text(d, "solution_h2")}</h3>
-                  <p className="text-lg leading-relaxed text-blue-200/80">
-                    {text(d, "solution_text")}
-                  </p>
-                </div>
-              )}
-            </div>
-            {stats.length > 0 && (
-              <div className="rounded-3xl border border-slate-800 bg-slate-900 p-10 shadow-xl">
-                <h3 className="mb-8 flex items-center gap-3 text-2xl font-bold">
-                  <TrendingUp className="text-emerald-400" aria-hidden /> Invoicor Impact
-                </h3>
-                {stats.map((s) => (
-                  <div
-                    key={s.n}
-                    className="mb-8 border-b border-slate-800 pb-8 last:mb-0 last:border-0 last:pb-0"
-                  >
-                    <div className="mb-3 bg-linear-to-br from-blue-400 to-emerald-400 bg-clip-text text-5xl font-black text-transparent">
-                      {s.value}
-                    </div>
-                    {s.desc && <p className="text-lg font-medium text-slate-400">{s.desc}</p>}
-                  </div>
-                ))}
+        {policyH2 && (
+          <Block id="approach" eyebrow="The Invoicor approach" title={policyH2}>
+            <p className="text-ink text-[1.0625rem] leading-relaxed">{text(d, "policy_text")}</p>
+            {text(d, "solution_text") && (
+              <div className="mt-8">
+                <Callout title={text(d, "solution_h2") ?? "How Invoicor is different"}>
+                  {text(d, "solution_text")}
+                </Callout>
               </div>
             )}
-          </div>
-        </section>
-      )}
+          </Block>
+        )}
 
-      {pricingThem && (
-        <section
-          id="pricing"
-          className="scroll-mt-24 border-b border-slate-200 bg-white py-24 text-center"
-        >
-          <div className="mx-auto max-w-4xl px-6">
-            <h2 className="mb-12 text-3xl font-extrabold text-slate-900">
-              Honest Pricing Comparison
-            </h2>
-            <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
-              <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 p-8 md:w-1/2">
-                <h3 className="mb-4 text-lg font-bold tracking-wider text-slate-500 uppercase">
-                  {competitor}
-                </h3>
-                <div className="mb-4 text-4xl font-bold text-slate-400 line-through">
-                  {text(d, "pricing_them")}
-                </div>
-                <p className="text-[15px] leading-relaxed text-slate-500">
-                  {text(d, "pricing_them_subtext")}
+        {pricingThem && (
+          <Block id="pricing" eyebrow="Pricing" title="An honest price comparison">
+            <div className="grid items-start gap-6 sm:grid-cols-2">
+              <InvoicePaper className="p-6">
+                <PaperLabel>{competitor}</PaperLabel>
+                <p className="font-heading text-h2 text-ink mt-3">{pricingThem}</p>
+                {text(d, "pricing_them_subtext") && (
+                  <p className="text-small text-muted mt-3 leading-relaxed">
+                    {text(d, "pricing_them_subtext")}
+                  </p>
+                )}
+                <p className="text-small text-subtle border-line mt-5 border-t pt-4">
+                  {competitor}&apos;s prices change; check their website for the current price.
                 </p>
-              </div>
-              <div className="w-full transform rounded-3xl border border-blue-700 bg-blue-600 p-8 shadow-2xl md:w-1/2 md:scale-105">
-                <h3 className="mb-4 text-lg font-bold tracking-wider text-blue-200 uppercase">
-                  Invoicor
-                </h3>
-                <div className="mb-1 text-5xl font-black text-white">
-                  {STARTING_PRICE}
-                  <span className="text-2xl font-bold text-blue-200">/mo</span>
-                </div>
-                <p className="mb-4 text-sm font-semibold text-blue-200">
-                  Free for your first {FREE_INVOICES} invoices
+              </InvoicePaper>
+              <InvoicePaper highlight edge="perforated" className="relative p-6">
+                <Stamp className="absolute top-5 right-5" rotate={-8}>
+                  0% fees
+                </Stamp>
+                <PaperLabel>Invoicor</PaperLabel>
+                <LineItems
+                  className="mt-12"
+                  items={[
+                    {
+                      description: "Free",
+                      detail: `${FREE_INVOICES} invoices, no watermark`,
+                      amount: "$0",
+                    },
+                    ...PAID_PLANS.map((p) => ({
+                      description: p.name,
+                      detail: p.features[0],
+                      amount: `${formatPrice(p.monthly)}/mo`,
+                    })),
+                  ]}
+                />
+                <p className="text-small text-muted mt-4">
+                  {PRICING.trial_days.monthly}-day free trial ({PRICING.trial_days.yearly} days on
+                  yearly plans), cancel any time through Apple. Invoicor takes nothing from your
+                  payments.
                 </p>
-                <p className="text-[15px] leading-relaxed text-blue-100">
-                  {PAID_PLANS.map(
-                    (p) => `${p.name} ${formatPrice(p.monthly)}/mo (${p.features[0]})`,
-                  ).join(" · ")}
-                  . {PRICING.trial_days.monthly}-day free trial ({PRICING.trial_days.yearly} days on
-                  yearly plans), cancel anytime. No fees on your payments.
-                </p>
-              </div>
+              </InvoicePaper>
             </div>
+          </Block>
+        )}
+
+        {steps.length > 0 && (
+          <Block id="steps" eyebrow="Switching" title={`Switch from ${competitor} in 3 steps`}>
+            <PointList items={steps} numbered />
+          </Block>
+        )}
+
+        <FaqBlock title={`Switching from ${competitor}`} faqs={d.faqs} />
+
+        {d.related_comparisons.length > 0 && (
+          <div className={cx("border-line border-t py-14")}>
+            <RelatedLinks
+              title="More comparisons"
+              links={d.related_comparisons.map((r) => ({
+                href: `/compare/${r.slug}`,
+                title: `Invoicor vs ${r.name}`,
+              }))}
+            />
           </div>
-        </section>
-      )}
+        )}
+      </ArticleLayout>
 
-      {steps.length > 0 && (
-        <section id="steps" className="scroll-mt-24 border-b border-slate-200 bg-slate-50 py-20">
-          <div className="mx-auto max-w-6xl px-6">
-            <h2 className="mb-16 text-center text-3xl font-extrabold">Switching is Easy</h2>
-            <ol className="relative grid gap-8 md:grid-cols-3">
-              {steps.map((s) => (
-                <li
-                  key={s.n}
-                  className="relative rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
-                >
-                  <span
-                    aria-hidden
-                    className="absolute -top-6 left-6 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-xl font-black text-white shadow-md"
-                  >
-                    {s.n}
-                  </span>
-                  <h3 className="mt-2 mb-3 text-xl font-bold text-slate-900">{s.title}</h3>
-                  {s.text && <p className="text-[15px] leading-relaxed text-slate-600">{s.text}</p>}
-                </li>
-              ))}
-            </ol>
-          </div>
-        </section>
-      )}
-
-      <FaqSection title={`Switching from ${competitor}`} faqs={d.faqs} slug={d.slug} />
-
-      <RelatedLinks
-        title="Compare More Invoicing Software"
-        allHref="/compare"
-        allLabel="All Comparisons"
-        links={d.related_comparisons.map((r) => ({
-          href: `/compare/${r.slug}`,
-          label: `Invoicor vs ${r.name}`,
-        }))}
+      <ClosingCta
+        title={`Try the ${competitor} alternative`}
+        gradient="for free."
+        text="Professional invoices from your iPhone, clear prices, and no cut of your payments."
+        campaign={`compare-${d.slug}-footer`}
       />
-    </div>
+    </>
   );
 }

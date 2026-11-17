@@ -85,7 +85,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
 - [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
 - [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
-- [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_
+- [ ] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Left: sources + dates for competitor facts (Y16), more competitors (23c))_
 - [ ] 24. About, contact, help, affiliate & legal
 - [ ] 25. Motion & micro-interactions
 
@@ -621,11 +621,13 @@ _✅ 2026-11-18. The rebuild exposed **33 more false claims** the 2026-11-17 aud
 ### 23. Compare pages + hub
 **Goal:** the same treatment for `/compare` and `/compare/[slug]`.
 
-- [ ] a. A comparison table component (✓/✗, prices), with a "last checked" date, a verdict box and a CTA. Use the differentiation work from chunk 5e.
-- [ ] b. Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up.
+- [x] a. A comparison table component (✓/✗, prices), with a "last checked" date, a verdict box and a CTA. Use the differentiation work from chunk 5e.
+- [ ] b. _(partly: Invoicor's own claims fixed 2026-11-18; competitor prices and facts still need a source + date each, see Y16)_ Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up.
 - [ ] c. Cover every competitor with real search demand: `/compare/{competitor}-alternative` for the top 10 (Invoice Simple, Invoice2go, Invoice Fly, Bookipi, Zoho Invoice, Wave, FreshBooks, QuickBooks, Joist, Invoice Home), plus the most-searched "{A} vs {B}" pairs. People searching these are ready to switch.
-- [ ] d. Hub grid + intro.
-- [ ] e. Metadata, OG images, JSON-LD.
+- [x] d. Hub grid + intro.
+- [x] e. Metadata, OG images, JSON-LD.
+
+_✅ 2026-11-18: rebuilt on shared blocks (at-a-glance stats as an invoice sheet, accessible ✓/— table, who-each-is-for, approach, honest price comparison with Invoicor's prices from `pricing.json`, 3 switching steps, FAQ). Fixed Invoicor claims: unmeasured "60s"/"10s" stats → "0 setup" and "1 tap" duplicate; "connects to your bank" (Stripe page); "get paid immediately"; "fastest on the market"; the "Invoicer" typo. Every competitor price box now says prices change and to check their site. Remaining in (b) and (c)._
 
 **Done when:** every old `/compare/*` URL works, its content is in the raw HTML, and the top 10 competitors each have an alternative page.
 
@@ -1496,3 +1498,4 @@ _Things Claude can't do from here (they need your accounts, your server, your ph
 | Y13 | **Verify Search Console by DNS (before deploying).** No Google verification file or DNS record exists, so Search Console was probably verified through the Google Analytics tag. GA4 now only loads after cookie consent, so that verification can break. Add a **Domain property** in Search Console and put its `google-site-verification` TXT record in DNS (where invoicor.com's DNS is managed). | Search Console + DNS | 4, 13e | the baseline export (Y1) |
 | Y14 | **Check two homepage claims:** time yourself creating a real invoice with a saved client and items. If it takes about 5 seconds, keep "takes 5 seconds"; otherwise Claude changes it to "in seconds". Same for "80% auto-fill" (decision D12). | your iPhone | 19 | n/a |
 | Y15 | **If you change prices (D14):** create or edit the subscription products in App Store Connect (and the Unlimited product plus its limit in the API, if you add it), then tell Claude the new prices; the website follows from `content/pricing.json`. | App Store Connect, invoicor_api | 20c | the pricing redesign going live |
+| Y16 | **Check the competitor facts on the 10 compare pages** (prices, plan limits like "30 invoices a year", "70% less than HoneyBook", "50% savings vs Bonsai", "$300+ vs QuickBooks"). Claude can draft each with its source URL if you OK web research, but a person should confirm before relying on them (legal safety). | competitor websites | 23b | nothing; recommended before promoting the compare pages |
