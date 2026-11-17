@@ -1,13 +1,15 @@
 # Invoicor Web Roadmap
 
-_Last updated: 2026-11-17 (revision 2)_
+_Last updated: 2026-11-17 (revision 3)_
 
 Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Google, Bing and AI assistants)**, and turn visitors into app users through a **free invoice generator**.
 
 ## How to use this file
 
-- The work is split into **46 numbered chunks** in **9 stages**. Each chunk is roughly **one working session** (2–6 hours) and ends in something you can check.
-- Do them **in order**. A chunk only depends on chunks with a lower number. Chunks marked ⇄ can run in parallel with the stage before them.
+- The work is split into **60 numbered chunks** in **two tracks**. Each chunk is roughly **one working session** (2–6 hours) and ends in something you can check.
+  - **Build track (Stages A–I, chunks 1–46):** do these **in order**. A chunk only depends on chunks with a lower number. Chunks marked ⇄ can run in parallel with the stage before them.
+  - **Growth track (Stage J, chunks 47–60):** runs **in parallel from week 1**. Each chunk says when it can start (“Start:”). Don't wait for the rebuild to start growing: App Store search, reviews, social and links take months to compound, so they start now.
+- How the channels compare (expected impact and time to results) is in [R8](#r8-growth-model).
 - Each chunk has: **Goal**, steps **a, b, c…**, and **Done when** (the check that closes it).
 - Tick the steps as you go, and tick the chunk in the overview when its "Done when" passes.
 - Background is in **Reference** at the bottom (R1–R7). Chunks link there instead of repeating it.
@@ -80,6 +82,22 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] 44. More free tools (receipt, estimate)
 - [ ] 45. Launch & backlinks
 - [ ] 46. Monthly monitoring routine
+
+**Stage J: Growth track (parallel, from week 1)**
+- [ ] 47. Competitor SEO & link gap analysis _(start: now)_
+- [ ] 48. App Store Optimization: the listing _(start: now)_
+- [ ] 49. App Store Optimization: localized listings _(start: after 48)_
+- [ ] 50. Ratings & reviews engine _(start: now)_
+- [ ] 51. Brand entity & profiles _(start: now)_
+- [ ] 52. Social, video & communities _(start: now)_
+- [ ] 53. Downloadable templates (Word, Excel, Google Docs, PDF) _(start: after 21)_
+- [ ] 54. Image & video SEO _(start: after 21)_
+- [ ] 55. Free micro-tools (link magnets) _(start: after 35)_
+- [ ] 56. Scale the programmatic content _(start: after 42)_
+- [ ] 57. Digital PR & link building _(start: after 35)_
+- [ ] 58. Email capture & lifecycle _(start: after 34)_
+- [ ] 59. Affiliate & partner program _(start: after 24)_
+- [ ] 60. Conversion experiments _(start: after 35)_
 
 ---
 
@@ -160,6 +178,8 @@ _No code. These three chunks decide what the pages say and which searches they t
 **Goal:** a written brand that the website, the iOS app and the App Store listing all follow.
 
 - [ ] a. **Inputs:** `invoicor_api/docs/strategy.md`, `competitor_research.md`, `price_analysis.md`, and the App Store reviews.
+  - The competitor reviews show where they fail: deceptive "free" paywalls (19 mentions), no human support (17), payment funds held (13), accounts locked without reason (10).
+  - Those failures **are** the positioning: _honestly free (3 real invoices, no watermark), no payment processing that can hold your money, a real human answers_. Build the messaging on them, and only claim what's true.
 - [ ] b. **Positioning:** one sentence. Draft: _“The fastest native invoice app for freelancers and small businesses: an invoice in seconds, in any language and currency, with zero payment fees.”_
 - [ ] c. **Audience:** 2–3 short profiles (e.g. a solo freelancer, a tradesperson, a small agency), each with the main pain point and the trigger moment ("I need to send an invoice now").
 - [ ] d. **Messaging pillars** (3–4), each with proof points:
@@ -186,6 +206,7 @@ _No code. These three chunks decide what the pages say and which searches they t
 **Goal:** every page targets one search intent, and no two pages compete with each other.
 
 - [ ] a. **Inputs:**
+  - the competitor gap analysis (chunk 47): what Invoice Simple, Invoice Home, Zoho, Bookipi and Invoice Fly rank for
   - the baseline from chunk 4 (which queries already get impressions)
   - `pseo_engine/google_page_ideas.ipynb`
   - Google autocomplete / "People also ask"
@@ -210,7 +231,10 @@ _No code. These three chunks decide what the pages say and which searches they t
     - blocking `Google-Extended` doesn't affect normal Google ranking
   - Write pages in a format that's easy to quote: a short, clear answer under each heading, plus FAQs.
   - Add `llms.txt` (a short site summary + key links) in chunk 13.
-- [ ] h. **Targets:** pick 10 priority keywords and set a 6-month goal for each (e.g. top 10 for "free invoice generator").
+- [ ] h. **Targets:** pick 10 priority keywords and set a 6-month goal for each. Be realistic about difficulty:
+  - **Head terms** ("free invoice generator", "invoice template") are owned by sites with thousands of backlinks (Invoice Simple, Zoho, Canva, Shopify, Square). For a young domain they're 12–18-month goals that need links (chunk 57).
+  - **Quick wins (3–6 months):** long-tail terms ("{profession} invoice template", "how to invoice in {country}"), non-English searches (Stage H), and template **file format** searches ("invoice template word / excel / google docs", chunk 53).
+  - Order the work by **traffic potential ÷ difficulty**, not by search volume alone.
 
 **Done when:** `seo/keyword-map.csv` covers every existing and planned URL, with no intent claimed twice.
 
@@ -344,6 +368,7 @@ _Repo layout during the migration: the new app is built in **`web/`** on the `de
   - split it with `generateSitemaps()` into `pages`, `templates`, `industries`, `compare`, `guides` (plus a sitemap index)
   - `lastModified` = the content's real `updatedAt`, **not** the build date
   - each URL lists its language versions (`alternates.languages`) once there are more locales
+  - template pages include their preview image (`images` in the sitemap entry), so they can show up in Google Images
   - leave out: `noindex` pages, redirects, `/brand`, the API
   - drop `priority` and `changefreq` (Google ignores them)
 - [ ] b. `app/robots.ts`:
@@ -496,11 +521,12 @@ _Light-first, with dark glow sections as accents. Each page follows its blueprin
 **Goal:** the same treatment for `/compare` and `/compare/[slug]`.
 
 - [ ] a. A comparison table component (✓/✗, prices), with a "last checked" date, a verdict box and a CTA. Use the differentiation work from chunk 5e.
-- [ ] b. Keep the claims about competitors factual and dated (legal safety).
-- [ ] c. Hub grid + intro.
-- [ ] d. Metadata, OG images, JSON-LD.
+- [ ] b. Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up.
+- [ ] c. Cover every competitor with real search demand: `/compare/{competitor}-alternative` for the top 10 (Invoice Simple, Invoice2go, Invoice Fly, Bookipi, Zoho Invoice, Wave, FreshBooks, QuickBooks, Joist, Invoice Home), plus the most-searched "{A} vs {B}" pairs. People searching these are ready to switch.
+- [ ] d. Hub grid + intro.
+- [ ] e. Metadata, OG images, JSON-LD.
 
-**Done when:** every old `/compare/*` URL works and its content is in the raw HTML.
+**Done when:** every old `/compare/*` URL works, its content is in the raw HTML, and the top 10 competitors each have an alternative page.
 
 ### 24. About, contact, help, affiliate & legal
 **Goal:** the remaining pages, plus the trust pages Google looks for.
@@ -816,8 +842,7 @@ _See [R4](#r4-language-strategy) for the strategy._
 
 - [ ] a. API: support `document_type: receipt | estimate` in the public endpoints (different title and fields).
 - [ ] b. `/free-receipt-generator` and `/free-estimate-generator` reuse the generator components, each with its own blueprint and content.
-- [ ] c. A small calculator page: late fee or VAT calculator, linking to the generator.
-- [ ] d. A "Free tools" footer column + a navbar dropdown.
+- [ ] c. A "Free tools" footer column + a navbar dropdown (the calculators come in chunk 55).
 
 **Done when:** both generators are live with the watermark and their SEO content.
 
@@ -827,7 +852,7 @@ _See [R4](#r4-language-strategy) for the strategy._
 - [ ] a. Track the watermark: check that `?ref=pdf` visits show up in analytics.
 - [ ] b. Listings: Product Hunt, AlternativeTo, SaaSHub, G2/Capterra, freelancer tool lists. Use UTM links (chunk 14f).
 - [ ] c. An "Embed this generator" snippet (iframe + a credit link back) for blogs and accountants.
-- [ ] d. Outreach to the "best free invoice generator" roundups (find them on Google, ask for inclusion).
+- [ ] d. Outreach to the "best free invoice generator" roundups (find them on Google, ask for inclusion). Ongoing link building continues in chunk 57.
 - [ ] e. Removing the watermark becomes a listed perk of the paid plans (upsell copy on the pricing page).
 - [ ] f. Keep the Organization `sameAs` profiles up to date (App Store, LinkedIn, X, Product Hunt).
 
@@ -844,9 +869,218 @@ _See [R4](#r4-language-strategy) for the strategy._
 - [ ] c. PostHog: the generate → download → app click / signup funnel. Find the step with the biggest drop.
 - [ ] d. App Store Connect: installs per campaign (`ct`), to see which pages bring users.
 - [ ] e. Core Web Vitals + uptime report.
-- [ ] f. Pick the 1–2 biggest fixes and add them as new chunks at the end of this file.
+- [ ] f. Growth KPIs from [R8](#r8-growth-model): organic clicks, referring domains, App Store search installs, generator → install rate, reviews.
+- [ ] g. **Content refresh:** pick the 3 pages whose clicks dropped most over 3 months. Update their facts, examples and FAQs, and change the "last updated" date only when the content really changed.
+- [ ] h. Pick the 1–2 biggest fixes and add them as new chunks at the end of this file.
 
 **Done when:** it's a recurring calendar item (or a scheduled Claude task).
+
+---
+
+## Stage J: Growth track (parallel, from week 1)
+_Inbound (people find you: SEO, App Store search, content) and outbound (you go to them: social, communities, PR, partners). These chunks don't wait for the rebuild unless "Start:" says so. Paid channels (Apple Search Ads, the Meta ads in `invoicor_api/docs/meta/`) are outside this roadmap, but use their keyword and creative data to guide the organic work._
+
+### 47. Competitor SEO & link gap analysis
+**Start:** now. **Goal:** know exactly what the leaders rank for and where their links come from, so we copy what works and target what they miss.
+
+- [ ] a. Tools: the Ahrefs free tools / Webmaster Tools (free for your own site), plus a 7-day Semrush or Ahrefs trial for competitor data.
+- [ ] b. For Invoice Simple, Invoice Home, Zoho Invoice, Bookipi, Invoice Fly and Invoice2go's websites, list:
+  - their top 50 pages by organic traffic
+  - the keywords they rank for that we have no page for (the **keyword gap**)
+  - their page types (generators, templates by format, industry pages, guides, calculators)
+- [ ] c. **Link gap:** the sites linking to 2+ competitors but not to us (roundups, directories, resource pages, blogs). This becomes the outreach list for chunk 57.
+- [ ] d. Look at their SERP features: who has featured snippets, image results and video results for the top keywords?
+- [ ] e. Save it as `seo/competitors.md` + `seo/link-targets.csv`. It feeds chunk 6 (keyword map) and chunk 57 (links).
+
+**Done when:** you can name the 20 keywords and the 30 linking sites with the best opportunity.
+
+### 48. App Store Optimization: the listing
+**Start:** now. **Goal:** more installs from App Store search, which is probably the biggest organic channel for an iOS app and doesn't need the website at all.
+
+- [ ] a. **Keyword research** in the App Store: autocomplete for "invoice…", "receipt…", "estimate…", "bill…"; competitor titles and subtitles; the Apple Search Ads keyword-popularity data if you have an account.
+- [ ] b. **Title (30 characters)** and **subtitle (30)**: the strongest keywords, read naturally. Example direction: "Invoicor: Invoice Maker" + "Free Invoices & Estimates PDF". Test what actually fits.
+- [ ] c. **Keyword field (100 characters):**
+  - comma-separated, no spaces after commas
+  - no words already in the title or subtitle
+  - no plurals of words you already have
+  - no competitor brand names
+- [ ] d. **Screenshots** (the first 3 matter most) in the new brand:
+  - each one has one benefit headline: speed, templates, currencies, honestly free
+  - real app screens
+- [ ] e. **App preview video** (15–30 s): an invoice made in 5 seconds.
+- [ ] f. **Description:** the first 3 lines carry the message (that's what shows before "more"). It doesn't affect search ranking on iOS, but it drives conversion.
+- [ ] g. **Custom product pages** (up to 35): one per audience (freelancer, contractor, consultant) with matching screenshots. Link each from the matching website page (chunk 14e campaign links) and use them in ads.
+- [ ] h. **In-app events** for real updates (new templates, new languages). These show up in App Store search.
+- [ ] i. Track in App Store Connect: impressions, product page views, conversion rate, installs from search. Change one thing at a time, every 2–4 weeks.
+
+**Done when:** the new listing is live and you have a 4-week before/after on search impressions and conversion.
+
+### 49. App Store Optimization: localized listings
+**Start:** after 48. **Goal:** rank in the App Store in other countries, which is much faster than translating the website.
+
+- [ ] a. Localize the title, subtitle, keywords and screenshots for the top markets: DE, ES, MX, FR, IT, NL, PT-BR, UK, AU, CA. Each locale has **its own 100-character keyword field**.
+- [ ] b. Do keyword research per language (e.g. "Rechnung", "factura"); don't just translate the English keywords.
+- [ ] c. Use the extra locales a storefront indexes (for example, the US store also indexes the Spanish (Mexico) listing) to fit more keywords.
+- [ ] d. Make sure the app itself is fully localized in those languages; reviews punish half-translated apps.
+- [ ] e. Measure installs per country in App Store Connect after 4 weeks.
+
+**Done when:** at least 6 localized listings are live and installs from those countries are measured.
+
+### 50. Ratings & reviews engine
+**Start:** now (iOS app work). **Goal:** many real, recent ratings. They lift App Store ranking and conversion, and give the website true social proof.
+
+- [ ] a. In the app: ask for a rating with `SKStoreReviewController` at a **happy moment** (e.g. after the 2nd invoice is sent or marked paid). Never right after a bug or a paywall.
+- [ ] b. Before the system prompt, a simple "Enjoying Invoicor?" choice: yes → the rating prompt; no → a feedback form (the existing `/api/feedback/`), so unhappy users reach you instead of the store.
+- [ ] c. Reply to every App Store review, especially negative ones, within 48 hours.
+- [ ] d. Create profiles on G2, Capterra and Trustpilot. Invite happy users (email or in-app).
+- [ ] e. Collect testimonials with permission (name, job, photo) for the website (chunk 20d) and update the real rating in `softwareAppLd()`.
+
+**Done when:** the rating prompt is in production and new ratings arrive every week.
+
+### 51. Brand entity & profiles
+**Start:** now. **Goal:** Google (and AI assistants) understand "Invoicor" as a real brand: consistent profiles, branded search results, a chance of a knowledge panel.
+
+- [ ] a. Create or complete the profiles with the same name, logo, description and URL everywhere:
+  - LinkedIn company page
+  - X/Twitter
+  - Product Hunt
+  - Crunchbase
+  - YouTube channel
+  - Pinterest business account
+  - the App Store developer page
+- [ ] b. Add them all to `organizationLd()` `sameAs` (chunk 12c).
+- [ ] c. Get listed in the major app and software directories (AlternativeTo, SaaSHub, Capterra, G2, GetApp). These are also links.
+- [ ] d. Check the branded search ("invoicor") monthly: what shows up, and is anything wrong or missing?
+
+**Done when:** every profile exists, is consistent, and is linked from the site's JSON-LD.
+
+### 52. Social, video & communities
+**Start:** now. **Goal:** steady outbound reach that brings visitors, brand searches and links, at a pace you can keep up.
+
+- [ ] a. **Short video** (TikTok, Reels, YouTube Shorts): "invoice in 5 seconds", "invoice mistakes that delay payment", before/after templates. Reuse the `social video` material and the `posttune` tooling. Aim for 3 a week.
+- [ ] b. **YouTube tutorials** (long form): "How to make an invoice on iPhone", "How to invoice as a freelancer", "Invoice template walkthrough". YouTube is the second-largest search engine, and its videos show up in Google results. Embed them in the matching guides (chunk 54).
+- [ ] c. **Pinterest:** a pin for every template (vertical image → template page). Template searches do very well on Pinterest.
+- [ ] d. **Reddit & communities** (r/freelance, r/smallbusiness, r/Entrepreneur, Indie Hackers, local freelancer groups):
+  - answer invoicing questions helpfully
+  - mention Invoicor only where it really fits, and follow each community's self-promotion rules
+  - a "Show" post when the generator launches
+- [ ] e. **Build in public** on X/LinkedIn: milestones, design work, numbers. This earns attention from other makers, who are also potential linkers.
+- [ ] f. Every link out uses UTM tags (chunk 14f). Review monthly which channel actually brings installs, and double down on it.
+
+**Done when:** a posting rhythm runs for 4 weeks, and the best channel is known from the UTM data.
+
+### 53. Downloadable templates (Word, Excel, Google Docs, PDF)
+**Start:** after 21. **Goal:** capture the biggest template searches ("invoice template word", "invoice template excel", "google docs invoice template", "printable invoice pdf"), which the app-only templates can't serve today.
+
+- [ ] a. Make the top 10 free templates as **.docx**, **.xlsx** (with working formulas), **Google Docs/Sheets** ("Make a copy" links) and **printable PDF**.
+- [ ] b. A small "Made with Invoicor · invoicor.com" credit in each file's footer. People who reuse and share the files spread the brand, the same way the PDF watermark does.
+- [ ] c. Pages:
+  - `/templates/word`, `/templates/excel`, `/templates/google-docs`, `/templates/pdf` (one page per format: a different search intent each)
+  - download buttons on every template page
+- [ ] d. Every download page also offers "or fill it online in 60 seconds" → the generator, and "or on your phone" → the App Store.
+- [ ] e. Track downloads as `tpl_download` events with the format.
+- [ ] f. Add the format pages to the keyword map and the sitemap.
+
+**Done when:** the 4 format pages are live with 10 templates each, and downloads are tracked.
+
+### 54. Image & video SEO
+**Start:** after 21. **Goal:** extra traffic from Google Images and video results. Template searches are very visual.
+
+- [ ] a. Template preview images: descriptive file names (`classic-invoice-template.png`), real alt text ("Classic invoice template with blue header and itemized table"), served through `next/image`, listed in the sitemap (chunk 13a).
+- [ ] b. Large, high-quality previews (1200 px+ wide) with `max-image-preview:large` in robots meta, so Google can show big thumbnails.
+- [ ] c. Embed the YouTube tutorials (chunk 52b) in the matching guide and template pages, with `VideoObject` JSON-LD.
+- [ ] d. Check Search Console → Performance → search type "Image" and "Video" monthly.
+
+**Done when:** template images get impressions in Google Images, and the guide videos have `VideoObject` markup.
+
+### 55. Free micro-tools (link magnets)
+**Start:** after 35. **Goal:** small, useful tools that people bookmark and other sites link to.
+
+- [ ] a. Pick 4–6 from the keyword map, for example:
+  - invoice number generator
+  - late payment fee / interest calculator (with EU/UK late payment rules)
+  - VAT / sales tax calculator
+  - due date calculator (Net 15/30/60)
+  - freelance hourly rate calculator
+- [ ] b. Each tool: client-side, instant, no signup; its own page following a "tool" blueprint (short explanation, FAQ, a link to the generator); `webAppLd()`.
+- [ ] c. A "Free tools" hub page (`/tools`) linked from the navbar and footer.
+- [ ] d. A "use this on your site" embed option for the calculators (like chunk 45c), with a credit link.
+- [ ] e. Pitch the tools in the link-building outreach (chunk 57): "a free resource for your readers" works far better than "link to our app".
+
+**Done when:** 4 tools are live, indexed and listed on `/tools`.
+
+### 56. Scale the programmatic content
+**Start:** after 42. **Goal:** more pages that each serve a real, different search, without becoming thin or doorway pages.
+
+- [ ] a. **Industries:** grow from today's set to 50–100 professions, prioritized by the keyword map. Each page gets unique content: that profession's billing practices, typical line items, an example invoice. It must pass `content:check`.
+- [ ] b. **Glossary** (`/glossary/[term]`): pro forma invoice, credit note, reverse charge, Net 30, PO number, VAT invoice, self-billing… Short, clear definitions (AI assistants like to quote these), each linking to a guide or template.
+- [ ] c. **"How to invoice in {country}"** guides for the top 20 countries: legal requirements, tax, numbering rules, language. They link to the country generator pages (chunk 43).
+- [ ] d. Translate the best-performing pages into the live languages (Stage H).
+- [ ] e. Watch quality: if a batch of new pages isn't indexed after 6–8 weeks, improve those pages before adding more.
+
+**Done when:** each section grows by its planned batch, and at least 80% of the new pages are indexed.
+
+### 57. Digital PR & link building
+**Start:** after 35. **Goal:** a steady flow of quality backlinks: the thing that decides whether we can win the head terms.
+
+- [ ] a. **Linkable assets:** the free tools (55), the downloadable templates (53), the guides (42), and a yearly **data report**.
+- [ ] b. **Data report:** "The Invoicing Report 2027", built from **anonymized, aggregated** generator and app stats (most used currencies, average payment terms by country, busiest invoicing days), plus a small freelancer survey. Pitch it to journalists and freelancer/finance blogs. Check the privacy policy covers aggregated stats.
+- [ ] c. **Outreach** to the link-gap list from chunk 47:
+  - roundups ("best invoice apps 2027")
+  - resource pages for freelancers and small businesses
+  - university/bootcamp career pages
+  - coworking spaces
+  - accountant blogs
+- [ ] d. **Expert quotes:** answer journalist requests on Qwoted / Featured.com about invoicing and freelancing.
+- [ ] e. **Guest posts:** 1–2 a month on freelancer, design, trades and small-business blogs, with useful content and one natural link.
+- [ ] f. **Partnerships:** freelancer unions/associations, accounting firms, banks/fintechs for freelancers. Co-branded templates or guides.
+- [ ] g. **Unlinked mentions:** monthly search for "Invoicor" without a link → a polite request to add it.
+- [ ] h. **Never** buy links or use link schemes (Google penalty risk).
+- [ ] i. Track referring domains monthly (Ahrefs Webmaster Tools, Search Console links).
+
+**Done when:** outreach runs every month, and referring domains grow month over month.
+
+### 58. Email capture & lifecycle
+**Start:** after 34. **Goal:** turn one-time generator visitors into app users through email, not just one page visit.
+
+- [ ] a. In the generator success panel: **optional** "Email me a copy" and "Remind me when this invoice is due". These are useful reasons to give an email, not a gate.
+- [ ] b. Double opt-in, a clear consent text, and an unsubscribe link (GDPR). Add it to the privacy policy.
+- [ ] c. Tool: Loops, Resend or Brevo. Store only the email + consent + the due date, not the invoice data.
+- [ ] d. A 4–5 email sequence over 3 weeks:
+  - the copy and the due-date reminder
+  - "get paid faster" tips
+  - "track this invoice in the app"
+  - template showcase
+  - an honest free-plan explanation
+  - each one with an App Store link (`ct=email-{n}`)
+- [ ] e. Measure open → click → install, and improve the weakest email first.
+
+**Done when:** the sequence runs, and email-sourced installs show up in App Store Connect.
+
+### 59. Affiliate & partner program
+**Start:** after 24. **Goal:** other people promote Invoicor for a reward. The `/affiliate` page exists, but nobody is recruited yet.
+
+- [ ] a. Check how affiliate payouts work today (RevenueCat? a tool like Rewardful/FirstPromoter?) and how referrals are tracked from the web into the app.
+- [ ] b. Recruit: freelancer YouTubers and TikTokers, accountants and bookkeepers, freelancer course creators, and the blogs from chunk 57.
+- [ ] c. A partner kit: logos, screenshots, short copy, custom product page links (chunk 48g), UTM/`ct` links.
+- [ ] d. Their own landing pages where worthwhile (`/partners/{name}`, `noindex`), with an offer such as an extended free period.
+- [ ] e. Monthly: payouts, the top partners, and a thank-you to them.
+
+**Done when:** 10 active partners, and referral installs are tracked.
+
+### 60. Conversion experiments
+**Start:** after 35. **Goal:** more installs from the same traffic.
+
+- [ ] a. Set up PostHog experiments (feature flags) and session replays on the key pages (generator, home, top template pages).
+- [ ] b. Test one thing at a time, for at least 2 weeks or until the result is significant. For example:
+  - hero headline variants
+  - CTA text ("Create a free invoice" vs "Make my invoice")
+  - the success panel's app pitch (QR code vs button; the wording)
+  - the template page CTA position
+- [ ] c. Log every experiment (hypothesis, result, decision) in `seo/EXPERIMENTS.md`.
+- [ ] d. Keep the winners, and feed what you learn back into the brand messaging (chunk 5) and the App Store listing (chunk 48).
+
+**Done when:** 4 experiments have run with documented results.
 
 ---
 
@@ -1039,3 +1273,34 @@ invoicor_web/                     repo root (after launch: only these)
 4. **Parity** (chunk 27): a script proves every old URL resolves with the right title and canonical.
 5. **Switch** (chunk 28): nginx goes from `dist/` to PM2; rollback = restore one nginx file (under 1 minute).
 6. **Watch** (chunk 29): 4 weeks of comparison against the baseline; redirect anything that 404s.
+
+### R8. Growth model
+
+**Channels, ranked by expected impact and time to results** (for a young iOS app with a new website):
+
+| # | Channel | Type | Time to results | Why |
+|---|---|---|---|---|
+| 1 | App Store search (ASO) | Inbound | 2–6 weeks | People search the App Store ready to install; no website needed (chunks 48–50) |
+| 2 | Generator + PDF watermark loop | Inbound / viral | 1–3 months, compounding | Every invoice sent shows invoicor.com to a new business (chunks 30–35) |
+| 3 | Long-tail + non-English SEO | Inbound | 3–6 months | Lower competition; profession, country and language pages (Stages E, H, chunk 56) |
+| 4 | Template downloads & free tools | Inbound + links | 3–6 months | Huge search volume, and the assets other sites link to (chunks 53, 55) |
+| 5 | Social, video, communities | Outbound | Weeks, steady | Reach, brand searches and links; YouTube also ranks in Google (chunk 52) |
+| 6 | PR, links, partners, affiliates | Outbound | 3–12 months | The backlinks that unlock the head terms (chunks 57, 59) |
+| 7 | Head terms ("free invoice generator") | Inbound | 12–18 months | Needs everything above: authority, links and good engagement |
+
+**Inbound** = people find you (search, App Store, content, the watermark). **Outbound** = you go to them (social, communities, PR, partners, email). You need both: outbound builds the links and brand searches that make inbound rank.
+
+**North-star metric:** installs from organic channels per month (App Store search + web referrals + `ct` campaign links).
+
+**KPIs to review monthly (chunk 46):**
+
+| KPI | Where |
+|---|---|
+| Organic clicks & impressions (web, per language) | Search Console, Bing Webmaster |
+| Number of keywords in the top 10 / top 3 | Search Console or a rank tracker |
+| Referring domains | Ahrefs Webmaster Tools, Search Console links |
+| App Store search impressions → product page views → installs | App Store Connect |
+| Installs per web campaign (`ct`) | App Store Connect |
+| Generator → PDF → app click conversion | PostHog |
+| New ratings per week & average rating | App Store Connect |
+| Email subscribers → installs | Email tool + App Store Connect |
