@@ -1,6 +1,6 @@
 # Invoicor Web Roadmap
 
-_Last updated: 2026-11-17 (revision 4: Next.js migration done)_
+_Last updated: 2026-11-17 (revision 5: Stage C finished, Stage B drafted, decisions collected at the end)_
 
 Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Google, Bing and AI assistants)**, and turn visitors into app users through a **free invoice generator**.
 
@@ -13,13 +13,15 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - Each chunk has: **Goal**, steps **a, b, c…**, and **Done when** (the check that closes it).
 - Tick the steps as you go, and tick the chunk in the overview when its "Done when" passes.
 - Background is in **Reference** at the bottom (R1–R7). Chunks link there instead of repeating it.
-- Decisions to make are marked **🟡 Decide:**. Write the answer next to them, so the file stays the single source of truth.
+- Decisions to make are marked **🟡 Decide:** and collected in [Decisions for you](#decisions-for-you) at the end. Write the answer there, so the file stays the single source of truth.
 
 ---
 
 ## Status (2026-11-17)
 
-**Done:** chunk 1 (repo cleanup) and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
+**Done:** chunk 1 (repo cleanup), Stage C (chunks 8–12; 13 and 14 wait on decisions), first drafts of Stage B ([BRAND.md](BRAND.md), [seo/keyword-map.csv](seo/keyword-map.csv), [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md)), and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
+
+**Next up:** answer [Decisions for you](#decisions-for-you) D1–D7 (about 30 minutes), then deploy (chunk 4 baseline first), then Stage D (brand tokens, chunk 15).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -41,9 +43,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - The affiliate calculator slider's fill bar was wrong (it filled up after 100 of 10,000).
 - FAQ markup sat on every page without a visible FAQ → the home page now shows those FAQs; the Help and Affiliate pages got FAQ markup for their visible questions.
 
-**Still open from the old site** (not changed on purpose, needs your call):
-- The hero avatars (random faces from pravatar.cc) and the three testimonials aren't real customers (chunk 20d).
-- Pricing differs between pages: home says Pro $7.99, the affiliate calculator uses €9.99, and `strategy.md` has a Business tier (chunk 5j).
+**Still open:** every decision waiting on you is listed in [Decisions for you](#decisions-for-you) at the end of this file.
 
 ---
 
@@ -56,18 +56,18 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] 4. SEO baseline & quick fixes on the live site _(www redirect + /pricing are in `deploy/nginx/`; baseline export still to do **before** deploying Next.js)_
 
 **Stage B: Strategy (decide before building)**
-- [ ] 5. Brand strategy
-- [ ] 6. SEO strategy: keyword map & URL plan
-- [ ] 7. Page-type blueprints & content quality rules
+- [ ] 5. Brand strategy _(draft in [BRAND.md](BRAND.md); waiting on decisions D1 and D7)_
+- [ ] 6. SEO strategy: keyword map & URL plan _(draft [seo/keyword-map.csv](seo/keyword-map.csv): 60 URLs, one intent each; positions after chunk 4, competitor data after chunk 47)_
+- [ ] 7. Page-type blueprints & content quality rules _(draft [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md); needs D6 for the trust details)_
 
 **Stage C: Next.js foundation**
 - [x] 8. Create the Next.js app skeleton _(static export at repo root; i18n moved to chunk 36)_
-- [ ] 9. Tooling & CI checks _(ESLint, Prettier, typecheck and `npm run check` done; pre-commit hook and CI to do)_
-- [x] 10. Config, types & API client _(OpenAPI-generated types still to do)_
-- [ ] 11. Content pipeline & page generation _(zod validation, static pages and real 404s done; `content:check` script and CONTENT.md to do)_
+- [x] 9. Tooling & CI checks _(pre-commit hook + GitHub Actions `check.yml`; the no-inline-style rule comes with Stage E)_
+- [x] 10. Config, types & API client _(`npm run api:types`; the API schema doesn't describe template/currency/language responses, so `lib/api.ts` validates them with zod)_
+- [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md); `pricing.json` waits for D1, `content/en/` for chunk 36)_
 - [x] 12. Metadata & structured data helpers
-- [ ] 13. Sitemap, robots & indexing _(sitemap + robots done; llms.txt, IndexNow and the AI-bot decision to do)_
-- [ ] 14. Analytics, cookie consent & App Store attribution _(`appStoreLink()` and click tracking done; consent banner to do)_
+- [ ] 13. Sitemap, robots & indexing _(sitemap, robots, `/llms.txt` and IndexNow in `deploy.sh` done; only the AI-bot rules wait for D3)_
+- [ ] 14. Analytics, cookie consent & App Store attribution _(`appStoreLink()` and `lib/analytics.ts` `track()` done; tool choice and consent banner wait for D4 and D5)_
 
 **Stage D: Brand system**
 - [ ] 15. Brand tokens (colors, gradient, type, spacing)
@@ -1336,3 +1336,23 @@ invoicor_web/                     repo root (after launch: only these)
 | Generator → PDF → app click conversion | PostHog |
 | New ratings per week & average rating | App Store Connect |
 | Email subscribers → installs | Email tool + App Store Connect |
+
+---
+
+## Decisions for you
+
+_The open questions in one place. Each has a recommendation; write your answer in the **Your call** column (or just tell Claude) and the matching chunk can go ahead. Ordered by what blocks the most._
+
+| # | Decision | Recommendation | Blocks | Your call |
+|---|---|---|---|---|
+| D1 | **Which price tiers are live?** Website: Free / Starter $4.99 / Pro $7.99 (yearly $49.99 / $79.99). `strategy.md`: also Business $19.99 and yearly $49 / $79. Affiliate calculator: Starter €4.99 / Pro €9.99. The iOS app only sells Starter and Pro (no Business product). **All 10 compare pages say Invoicor is "$12/mo flat, unlimited invoices"**, which matches no plan. Also: is there a free trial? The buttons say "Start Free Trial". | Use what the **App Store actually charges** as the only truth. Put it in `content/pricing.json` and let the home page, affiliate calculator **and compare pages** all read it. Fix the compare pages first: a wrong price is a trust and legal risk. | 5j, 11a, 20, 23, 24, 48 | |
+| D2 | **Fake social proof.** Hero avatars are random faces from pravatar.cc, and the three testimonials aren't real customers. | Remove both now. Replace with true claims ("31 templates", "6 languages", "EU servers") until you have real reviews (chunk 50), then quote real App Store reviews with permission. | 19, 20 | |
+| D3 | **AI bots in robots.txt.** `GPTBot`, `Google-Extended` and `CCBot` are blocked. | Allow the **answer/search** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so ChatGPT, Perplexity and Claude can recommend Invoicor. Training bots: allow too (more mentions in answers), unless you object. | 6g, 13b | |
+| D4 | **Analytics tools.** 4 tools load today: GA4, PostHog, StatsUp, Ahrefs. | Keep **PostHog** (funnels) + Search Console/Bing. Keep GA4 only if you open it. Drop StatsUp and Ahrefs Web Analytics. Fewer tools = faster pages and a smaller consent banner. | 14a, 14b | |
+| D5 | **Cookie consent.** No banner today, but GA4/PostHog set cookies (EU users). | A small branded banner; nothing loads until "Accept"; PostHog cookieless before consent. Needed before more EU traffic (Stage H). | 14b, 36 | |
+| D6 | **Legal/company details** for About, Contact and the footer (company name, KvK number, address or "registered in"). | Show the legal name + KvK number in the footer and on the About page. Needed for trust (E-E-A-T) and EU rules. | 7c, 24 | |
+| D7 | **Brand strategy draft** (`BRAND.md`): positioning, audience, pillars, voice, tagline. | Review the draft, change what doesn't sound like you, then mark it approved. | 5, 15–25 | |
+| D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
+| D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
+| D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
+| D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |

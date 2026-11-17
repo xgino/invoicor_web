@@ -1,0 +1,61 @@
+url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_position,notes
+/,live,home,invoice app iphone,invoice maker app; invoicor,app / brand,19-20,,Brand + app intent. Not 'free invoice generator' (that's the generator page).
+/free-invoice-generator,planned,generator,free invoice generator,invoice generator; create invoice online; invoice maker online; invoice generator pdf,tool (do),30-35,,Owns all 'make an invoice online' intent. No variants like /invoice-generator-pdf.
+/templates,live,hub,invoice templates,free invoice template; invoice template by industry,browse,21,,
+/templates/photography,live,template,photography invoice template,photographer invoice; photography invoice pdf,template (download/fill),21,,
+/templates/plumbing,live,template,plumbing invoice template,plumber invoice template; plumbing invoice pdf,template (download/fill),21,,
+/templates/hvac,live,template,hvac invoice template,hvac service invoice; hvac invoice pdf,template (download/fill),21,,
+/templates/freelance-design,live,template,graphic design invoice template,freelance design invoice; designer invoice template,template (download/fill),21,,
+/templates/handyman,live,template,handyman invoice template,handyman invoice pdf; handyman receipt,template (download/fill),21,,
+/templates/videography,live,template,videography invoice template,videographer invoice template; video production invoice,template (download/fill),21,,
+/templates/landscaping,live,template,landscaping invoice template,lawn care invoice template; landscaping invoice pdf,template (download/fill),21,,
+/templates/consulting,live,template,consulting invoice template,consultant invoice template; consulting invoice word,template (download/fill),21,,
+/templates/cleaning-services,live,template,cleaning invoice template,cleaning service invoice; house cleaning invoice template,template (download/fill),21,,
+/templates/auto-detailing,live,template,auto repair invoice template,mechanic invoice template; auto detailing invoice,template (download/fill),21,,
+/industries,live,hub,invoicing software by industry,invoice app for small business,browse,22,,
+/industries/plumbers-hvac,live,industry,invoice app for plumbers,plumbing invoicing software; hvac invoicing software,software (commercial),22,,Template intent belongs to /templates/plumbing and /templates/hvac
+/industries/freelance-designers,live,industry,invoicing app for freelance designers,invoice software for creatives,software (commercial),22,,
+/industries/landscaping-lawn-care,live,industry,landscaping invoicing software,lawn care invoice app,software (commercial),22,,Template intent belongs to /templates/landscaping
+/industries/electricians,live,industry,invoice app for electricians,electrician invoicing software; electrician invoice template,software (commercial),22,,Owns 'electrician invoice template' until a /templates/electrician page exists
+/industries/general-contractors,live,industry,invoice app for contractors,contractor invoicing software; handyman invoice app,software (commercial),22,,Template intent belongs to /templates/handyman
+/industries/photographers-videographers,live,industry,invoicing software for photographers,photography invoice app,software (commercial),22,,Template intent belongs to /templates/photography
+/industries/consultants-coaches,live,industry,invoicing software for consultants,coaching invoice app,software (commercial),22,,Template intent belongs to /templates/consulting
+/industries/cleaning-services,live,industry,invoice app for cleaning business,cleaning business invoicing software,software (commercial),22,,Template intent belongs to /templates/cleaning-services
+/industries/personal-trainers,live,industry,invoicing for personal trainers,personal trainer invoice template,software (commercial),22,,Owns 'personal trainer invoice template' until a template page exists
+/industries/auto-detailing-mechanics,live,industry,invoice app for mechanics,auto detailing invoicing software,software (commercial),22,,Template intent belongs to /templates/auto-detailing
+/compare,live,hub,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,
+/compare/quickbooks,live,compare,quickbooks alternative,quickbooks vs invoicor; apps like quickbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/freshbooks,live,compare,freshbooks alternative,freshbooks vs invoicor; apps like freshbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/invoice2go,live,compare,invoice2go alternative,invoice2go vs invoicor; apps like invoice2go,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/wave,live,compare,wave alternative,wave vs invoicor; apps like wave,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/xero,live,compare,xero alternative,xero vs invoicor; apps like xero,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/zoho-invoice,live,compare,zoho invoice alternative,zoho invoice vs invoicor; apps like zoho invoice,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/square-invoices,live,compare,square invoices alternative,square invoices vs invoicor; apps like square invoices,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/honeybook,live,compare,honeybook alternative,honeybook vs invoicor; apps like honeybook,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/bonsai,live,compare,bonsai alternative,bonsai vs invoicor; apps like bonsai,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/stripe-invoices,live,compare,stripe invoicing alternative,stripe invoicing vs invoicor; apps like stripe invoicing,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/invoice-simple,planned,compare,invoice simple alternative,invoice simple vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
+/compare/invoice-fly,planned,compare,invoice fly alternative,invoice fly vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
+/compare/bookipi,planned,compare,bookipi alternative,bookipi vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
+/help,live,support,invoicor help,invoicor faq,support,24,,
+/affiliate,live,program,invoicor affiliate program,invoice app affiliate program,program,24 / 59,,
+/about,planned,trust,about invoicor,,brand / trust,24,,E-E-A-T
+/contact,planned,trust,contact invoicor,,brand / trust,24,,E-E-A-T
+/terms,live,legal,,,legal,24,,Not targeted
+/privacy,live,legal,,,legal,24,,Not targeted
+/guides,planned,hub,invoicing guide,how to invoice,learn,42,,
+/guides/how-to-write-an-invoice,planned,guide,how to write an invoice,,learn (how-to),42,,
+/guides/what-to-include-on-an-invoice,planned,guide,what to include on an invoice,,learn (how-to),42,,
+/guides/invoice-vs-receipt,planned,guide,invoice vs receipt,,learn (how-to),42,,
+/guides/invoice-payment-terms,planned,guide,invoice payment terms,,learn (how-to),42,,
+/guides/how-to-number-invoices,planned,guide,invoice numbering,,learn (how-to),42,,
+/guides/late-payment-email,planned,guide,late payment email template,,learn (how-to),42,,
+/guides/invoice-requirements-uk,planned,guide,uk invoice requirements / vat invoice,,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
+/guides/invoice-requirements-germany,planned,guide,rechnung schreiben (de: /de/…),,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
+/guides/invoice-requirements-netherlands,planned,guide,factuur maken (nl: /nl/…),,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
+/templates/invoice-template-word,planned,template (file format),invoice template word,,download,53,,Big-volume quick wins
+/templates/invoice-template-excel,planned,template (file format),invoice template excel,,download,53,,Big-volume quick wins
+/templates/invoice-template-google-docs,planned,template (file format),invoice template google docs,,download,53,,Big-volume quick wins
+/templates/invoice-template-pdf,planned,template (file format),invoice template pdf,,download,53,,Big-volume quick wins
+/free-receipt-generator,planned,generator,free receipt generator,,tool (do),44,,
+/free-estimate-generator,planned,generator,free estimate generator,,tool (do),44,,

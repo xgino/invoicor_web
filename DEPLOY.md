@@ -80,7 +80,9 @@ bash deploy/deploy.sh
 git checkout dev
 ```
 
-The script ends by checking that `https://invoicor.com/` returns 200 and an unknown page returns 404.
+The script ends by checking that `https://invoicor.com/` returns 200 and an unknown page returns 404,
+and tells search engines (IndexNow: Bing, Yandex, Seznam) which pages changed. Google doesn't use
+IndexNow; it picks up changes from the sitemap.
 
 ### Rollback (under a minute)
 
@@ -98,9 +100,11 @@ This swaps back to the previous upload. Fix the problem on `dev`, then deploy ag
    you should see the real heading in the raw HTML.
 2. `curl -sI https://www.invoicor.com/` → `301` to `https://invoicor.com/`.
 3. `curl -sI https://invoicor.com/does-not-exist` → `404`.
-4. Google Search Console + Bing Webmaster Tools: resubmit `https://invoicor.com/sitemap.xml`,
+4. Check `https://invoicor.com/llms.txt` and `https://invoicor.com/d3e8f87315d5d18c667a3f10ea082f94.txt`
+   (the IndexNow key) both load.
+5. Google Search Console + Bing Webmaster Tools: resubmit `https://invoicor.com/sitemap.xml`,
    then "Inspect URL" → "Request indexing" for the home page and your top pages.
-5. Keep an eye on Search Console → Pages for 2–4 weeks (see ROADMAP chunk 29).
+6. Keep an eye on Search Console → Pages for 2–4 weeks (see ROADMAP chunk 29).
 
 ## Without the script (manual fallback)
 

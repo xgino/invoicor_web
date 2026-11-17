@@ -45,6 +45,10 @@ echo "==> Uploading to $SSH_TARGET:$SITE_DIR/site-new"
 ssh "$SSH_TARGET" "mkdir -p '$SITE_DIR'"
 rsync -az --delete out/ "$SSH_TARGET:$SITE_DIR/site-new/"
 
+echo "==> Saving the live sitemap (to find changed pages for IndexNow)"
+prev_sitemap="$(mktemp)"
+curl -s --max-time 15 https://invoicor.com/sitemap.xml -o "$prev_sitemap" || true
+
 echo "==> Switching live"
 ssh "$SSH_TARGET" "set -e; cd '$SITE_DIR'; rm -rf site-prev; if [ -d site ]; then mv site site-prev; fi; mv site-new site"
 
@@ -53,4 +57,8 @@ status="$(curl -s -o /dev/null -w '%{http_code}' https://invoicor.com/)"
 missing="$(curl -s -o /dev/null -w '%{http_code}' https://invoicor.com/this-page-does-not-exist)"
 echo "    https://invoicor.com/ -> $status (expect 200)"
 echo "    unknown page          -> $missing (expect 404)"
+echo "==> Notifying search engines (IndexNow)"
+node scripts/indexnow.mjs "$prev_sitemap" out/sitemap.xml || true
+rm -f "$prev_sitemap"
+
 echo "Done ($(git log -1 --format='%h %s')). Undo with: bash deploy/deploy.sh --rollback"

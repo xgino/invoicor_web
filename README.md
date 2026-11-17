@@ -8,6 +8,8 @@ Every page is pre-rendered, so search engines get the full content, titles and s
 
 - Plan and progress: [ROADMAP.md](ROADMAP.md)
 - How to put it live: [DEPLOY.md](DEPLOY.md)
+- How to add or edit SEO pages: [CONTENT.md](CONTENT.md)
+- Brand and SEO strategy: [BRAND.md](BRAND.md), [seo/](seo/)
 
 ## Requirements
 
@@ -25,7 +27,9 @@ Every page is pre-rendered, so search engines get the full content, titles and s
 | `npm run lint` | ESLint |
 | `npm run typecheck` | TypeScript, no output |
 | `npm run format` | Format all code with Prettier |
-| `npm run check` | lint + typecheck + build (run before every deploy) |
+| `npm run content:check` | SEO rules for `content/*.json` (duplicates, word counts, broken links) |
+| `npm run api:types` | Regenerate `types/api.generated.ts` from the live API schema |
+| `npm run check` | lint + typecheck + content:check + build (run before every deploy) |
 
 ## Project structure
 
@@ -36,7 +40,7 @@ app/                     routes (one folder per URL) + site-wide files
   templates/ industries/ compare/   hub page + [slug] detail pages
   help/ affiliate/ terms/ privacy/
   not-found.tsx          branded 404 (exported as out/404.html)
-  sitemap.ts robots.ts manifest.ts  generated at build time
+  sitemap.ts robots.ts manifest.ts llms.txt/  generated at build time
   og.png/route.tsx       default social share image (out/og.png)
   fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
   globals.css            Tailwind + keyframes + hover/reveal helpers
@@ -51,21 +55,23 @@ lib/
   content.ts             typed + validated access to content/*.json
   seo.ts jsonld.ts       page metadata and structured data helpers
   api.ts                 build-time calls to the Invoicor API
-public/                  static files copied as-is (icons, images, BingSiteAuth.xml)
+public/                  static files copied as-is (icons, images, BingSiteAuth.xml, IndexNow key)
+scripts/                 content-check.mjs, indexnow.mjs
+types/                   api.generated.ts (from the API's OpenAPI schema)
 deploy/                  deploy script + nginx config
 ```
 
 ## Adding or editing an SEO page
 
-1. Edit the entry in `content/templates.json`, `industries.json` or `comparisons.json`
-   (copy an existing entry for a new page; `slug` becomes the URL).
-2. Run `npm run build`. The build fails with a clear message if a field is missing or a slug
-   is duplicated. Related links to pages that don't exist are skipped with a warning.
-3. Update `CONTENT_UPDATED_AT` in `lib/content.ts`, so the sitemap tells Google something changed.
-
-The page, its sitemap entry, canonical URL, breadcrumbs and FAQ markup are generated automatically.
+See [CONTENT.md](CONTENT.md): add one JSON entry, run `npm run content:check`, done.
 
 ## Configuration
 
 All values have production defaults in `lib/config.ts`, so no `.env` file is needed.
 To override something locally, copy `.env.example` to `.env.local`.
+
+## Git hooks and CI
+
+`npm install` sets up a pre-commit hook (husky + lint-staged): staged files are linted and
+formatted, content JSON is checked, and the project is type-checked. GitHub Actions
+(`.github/workflows/check.yml`) runs all checks on every push to `dev` and `main`. It never deploys.

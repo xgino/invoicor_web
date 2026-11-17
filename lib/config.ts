@@ -51,3 +51,6 @@ export function absoluteUrl(path = "/"): string {
   if (path === "/" || path === "") return `${SITE_URL}/`;
   return `${SITE_URL}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+/** IndexNow key (Bing, Yandex, Seznam…). The same value is served at /<key>.txt from public/. */
+export const INDEXNOW_KEY = "d3e8f87315d5d18c667a3f10ea082f94";
