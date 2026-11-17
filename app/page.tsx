@@ -8,7 +8,7 @@ import { HowItWorks } from "@/components/landing/sections/HowItWorks";
 import { Pricing } from "@/components/landing/sections/Pricing";
 import { Stats } from "@/components/landing/sections/Stats";
 import { Templates } from "@/components/landing/sections/Templates";
-import { Testimonials } from "@/components/landing/sections/Testimonials";
+import { Promises } from "@/components/landing/sections/Promises";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { faqLd, mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
@@ -31,7 +31,7 @@ export default function HomePage() {
       <Dashboard />
       <GlobalSecurity />
       <Pricing />
-      <Testimonials />
+      <Promises />
       <Faq />
       <FinalCta />
     </div>

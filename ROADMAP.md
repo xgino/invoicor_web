@@ -77,8 +77,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage E: Rebuild the pages (in the new brand)**
 - [ ] 18. Navbar & footer
-- [ ] 19. Landing page, part 1 (hero → how it works)
-- [ ] 20. Landing page, part 2 (features → final CTA)
+- [ ] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-17: fake avatars + stars replaced by true promises; stats corrected to 31 templates, 38 currencies, 11 languages)_
+- [ ] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-17: fake testimonials replaced by a true "Promises" section; real reviews come with chunk 50)_
 - [ ] 21. Template pages + hub
 - [ ] 22. Industry pages + hub
 - [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_

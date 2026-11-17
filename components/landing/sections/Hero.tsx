@@ -1,7 +1,8 @@
-/* eslint-disable @next/next/no-img-element -- tiny external avatar images, no optimization server in static export */
-import { Cta, IPhone, Shape, Stars } from "../primitives";
+import { CircleCheck } from "lucide-react";
+import { Cta, IPhone, Shape } from "../primitives";
 
-const AVATARS = [12, 32, 47, 52, 68].map((n) => `https://i.pravatar.cc/64?img=${n}`);
+/** True, checkable promises (BRAND.md). No fake faces or ratings until there are real reviews. */
+const PROMISES = ["3 invoices free", "No watermark", "No card needed"];
 
 const RECENT_INVOICES = [
   {
@@ -242,42 +243,36 @@ export function Hero() {
 
             <Cta text="Download Free on iOS" section="hero" />
 
-            <div
+            <ul
+              aria-label="What you get for free"
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 alignItems: "center",
                 justifyContent: "center",
-                gap: 14,
-                marginTop: 44,
+                gap: "8px 20px",
+                listStyle: "none",
+                padding: 0,
+                margin: "40px 0 0",
               }}
             >
-              <div style={{ display: "flex" }}>
-                {AVATARS.map((src, i) => (
-                  <img
-                    key={src}
-                    src={src}
-                    alt=""
-                    width={34}
-                    height={34}
-                    loading="lazy"
-                    style={{
-                      width: 34,
-                      height: 34,
-                      borderRadius: "50%",
-                      border: "2px solid #18181b",
-                      marginLeft: i ? -10 : 0,
-                      objectFit: "cover",
-                    }}
-                  />
-                ))}
-              </div>
-              <div style={{ textAlign: "left" }}>
-                <Stars />
-                <p style={{ fontSize: 12, color: "#64748b", margin: "2px 0 0", fontWeight: 500 }}>
-                  Used by businesses worldwide
-                </p>
-              </div>
-            </div>
+              {PROMISES.map((item) => (
+                <li
+                  key={item}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 6,
+                    fontSize: 13,
+                    fontWeight: 600,
+                    color: "#94a3b8",
+                  }}
+                >
+                  <CircleCheck aria-hidden size={16} color="#4ade80" strokeWidth={2.25} />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* iPhone mockup */}

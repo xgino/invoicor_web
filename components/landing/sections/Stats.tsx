@@ -4,9 +4,9 @@ import { Marquee, delay } from "../primitives";
 const FEATURES = [
   "Create in Seconds",
   "80% Auto-Fill",
-  "30+ Templates",
-  "Multi-Currency",
-  "Multi-Language",
+  "31 Templates",
+  "38 Currencies",
+  "11 Invoice Languages",
   "Status Tracking",
   "Tax Calculator",
   "PDF Export",
@@ -36,10 +36,10 @@ const CURRENCIES = [
 ];
 
 const STATS = [
-  { end: 30, suffix: "+", label: "Invoice templates", color: "#818cf8" },
-  { end: 20, suffix: "+", label: "Currencies", color: "#4ade80" },
+  { end: 31, suffix: "", label: "Invoice templates", color: "#818cf8" },
+  { end: 38, suffix: "", label: "Currencies", color: "#4ade80" },
   { end: 5, suffix: "s", label: "To create & send", color: "#fbbf24" },
-  { end: 80, suffix: "%", label: "Auto-filled", color: "#f472b6" },
+  { end: 11, suffix: "", label: "Invoice languages", color: "#f472b6" },
 ];
 
 export function Stats() {
