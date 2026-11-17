@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: chunk 17.1 (tests), then 17.2 (invoice-style components), then Stage E from chunk 18. Your ideas from 2026-11-18 are collected in [R10](#r10-your-ideas-2026-11-18); pricing is decision D14. Open decisions: D6–D12 and D14 in [Decisions for you](#decisions-for-you).
+**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: chunk 17.1 (tests), then 17.2 (invoice-style components), then Stage E from chunk 18. Your ideas from 2026-11-18 are collected in [R10](#r10-your-ideas-2026-11-18); pricing is decision D14. Open decisions: D6–D12, D14 and D15 in [Decisions for you](#decisions-for-you).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -83,7 +83,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 18. Navbar & footer _(✅ 2026-11-18: light, mobile menu, footer links into every hub; contrast fixed)_
 - [x] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-18: light hero with a real sample invoice and PAID stamp, true-numbers band, live template gallery, 3 steps)_
 - [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
-- [ ] 21. Template pages + hub
+- [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
 - [ ] 22. Industry pages + hub
 - [ ] 23. Compare pages + hub _(✅ 2026-11-17: false claims about Invoicor removed (price, unlimited invoices, recurring, card/Apple Pay portal, CSV import, offline, push notifications); price box reads `pricing.json`. Competitor facts still need sources + dates)_
 - [ ] 24. About, contact, help, affiliate & legal
@@ -592,16 +592,18 @@ _✅ 2026-11-18: `components/layout/` (Navbar server component; NavClient for sc
 ### 21. Template pages + hub
 **Goal:** `/templates` and `/templates/[slug]` rebuilt following the template blueprint.
 
-- [ ] a. A static page for each template (chunk 11d), revalidated with the `templates` tag.
-- [ ] b. Template page:
+- [x] a. A static page for each template (chunk 11d). _(Static export: new content = rebuild + deploy.)_
+- [x] b. Template page:
   - breadcrumbs
-  - branded hero with the live preview image
-  - sticky CTA "Use this template free →" (to the App Store until the generator ships, then to `/free-invoice-generator?template={slug}`)
+  - branded hero with the page's own sample invoice (from `sample_breakdown_rows`) as `InvoicePaper`
+  - CTA "Create it in the app" (App Store until the generator ships, then `/free-invoice-generator?template={slug}`); _a sticky CTA bar follows with the generator (chunk 34)_
   - the existing long-form content
   - FAQ
-  - related templates + industries
-- [ ] c. Hub: a filterable grid (free / starter / pro), plus an intro text for SEO.
-- [ ] d. Metadata, OG image, JSON-LD for each page.
+  - related templates _(links to the matching industry page need a template ↔ industry mapping in the content: chunk 56)_
+- [x] c. Hub: a card grid of every template, an explainer and CollectionPage JSON-LD. _A free / starter / pro filter isn't useful here: these are trade guides, not app templates._
+- [x] d. Metadata, OG image, JSON-LD for each page.
+
+_✅ 2026-11-18: shared SEO-page blocks in `components/sections/content/` (PageHeader, ArticleLayout with a sticky TOC, Block, PointList, NoteList, Callout, FaqBlock, ClosingCta, HubPage). Removed a leftover false claim from the closing CTA ("get paid by Apple Pay on the spot")._
 
 **Done when:** every old `/templates/*` URL renders its full content in the raw HTML, styled in the new brand, and `content:check` passes.
 
@@ -1466,6 +1468,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D12 | **"5 seconds" and "80% auto-fill"** were on the hero, stats band, FAQ and meta description, but nothing measures them. _Since 2026-11-18 the site says "in seconds" and no longer claims 80%; restore a number only after Y14._ | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
 | D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
 | D14 | **Raise prices?** Idea (2026-11-18): Starter $4.99 → $7.99, Pro $7.99 → $14.99, a new **Unlimited** tier at $19.99. You're early and in the red, and competitors charge around those prices. Discounts or not? | **Recommendation: raise, in one careful step, for new customers only.** (1) A $4.99 B2B tool reads as cheap; the premium redesign (17.2, Stage E) supports a higher price. (2) Keep an entry tier so the free → paid step stays easy: e.g. Starter $6.99–7.99. (3) Unlimited at $19.99 is sensible: heavy users care least about price. It needs an App Store product and API limits first, and "unlimited" may only appear once it's real (BRAND.md §10). (4) Existing subscribers keep their price (Apple lets you keep them on it). (5) No permanent discounts; use App Store introductory offers or the free trials. (6) Before deciding, look at trial → paid conversion and cost per install; if few people convert, the price isn't the main problem. Website change is small: edit `content/pricing.json` once the App Store prices change. | 20c, 48, 60 | |
+| D15 | **Template titles promise "(PDF, Word, Excel)"**, but the pages offer no download yet; they explain the formats. Visitors searching "plumbing invoice template word" may bounce. | Build real downloads (chunk 53: Word, Excel, Google Docs, PDF per template); that fixes it and wins those searches. Until then keep the titles (changing them risks rankings). If chunk 53 is far off, change the titles to "Free {Niche} Invoice Template & Guide". | 21, 53 | |
 | D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
 
 ---

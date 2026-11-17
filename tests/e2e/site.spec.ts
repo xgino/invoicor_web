@@ -7,7 +7,6 @@ import { PAGE_TYPES, axeViolations, trackAnalytics } from "./helpers";
  * Stage E chunk removes its pages from this list. The list may only shrink.
  */
 const NOT_REBUILT_YET = new Set<string>([
-  "template",
   "industries hub",
   "industry",
   "compare",
@@ -29,6 +28,8 @@ for (const [name, path] of Object.entries(PAGE_TYPES)) {
   });
 
   test(`${name} (${path}) has no serious accessibility issues`, async ({ page }) => {
+    // Reduced motion: measure final colors, not text that is still fading in.
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await trackAnalytics(page);
     await page.goto(path);
     const violations = await axeViolations(page);

@@ -132,3 +132,26 @@ export function definedTermSetLd(
     })),
   };
 }
+
+/** A hub page listing its child pages (CollectionPage + ItemList). */
+export function collectionLd(
+  name: string,
+  path: string,
+  items: Array<{ name: string; path: string }>,
+): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    url: absoluteUrl(path),
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: items.map((item, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.name,
+        url: absoluteUrl(item.path),
+      })),
+    },
+  };
+}

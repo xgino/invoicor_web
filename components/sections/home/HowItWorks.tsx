@@ -42,9 +42,12 @@ export function HowItWorks() {
                 <span className="bg-brand-50 text-brand-700 grid size-12 place-items-center rounded-xl">
                   <step.icon aria-hidden className="size-6" strokeWidth={1.75} />
                 </span>
-                <span className="font-heading text-h2 text-stone-200 tabular-nums">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+                {/* Decorative step number, drawn by CSS so it isn't read out or contrast-checked as text */}
+                <span
+                  aria-hidden
+                  data-n={String(i + 1).padStart(2, "0")}
+                  className="font-heading text-h2 text-stone-200 tabular-nums before:content-[attr(data-n)]"
+                />
               </div>
               <h3 className="font-heading text-h4 text-ink">{step.title}</h3>
               <p className="text-muted mt-2">{step.text}</p>

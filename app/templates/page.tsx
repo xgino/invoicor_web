@@ -1,9 +1,6 @@
-import { FileText } from "lucide-react";
 import type { Metadata } from "next";
-import { HubCard, HubHeader } from "@/components/content/blocks";
-import { JsonLd } from "@/components/seo/JsonLd";
+import { HubPage } from "@/components/sections/content/hub";
 import { getTemplates } from "@/lib/content";
-import { breadcrumbLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -13,31 +10,40 @@ export const metadata: Metadata = buildMetadata({
   path: "/templates",
 });
 
+/** Templates hub (ROADMAP chunk 21c, blueprint "Hub"). */
 export default function TemplatesHubPage() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-50 text-slate-900">
-      <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "Invoice Templates" }])} />
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-12">
-        <HubHeader
-          icon={<FileText className="h-8 w-8" aria-hidden />}
-          iconClass="bg-indigo-100 text-indigo-600"
-          title="Free Invoice Templates"
-          text="Industry-specific invoice templates and guides. Learn exactly what to include, or use our mobile app to create and send a professional PDF in seconds."
-        />
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {getTemplates().map((t) => (
-            <HubCard
-              key={t.slug}
-              href={`/templates/${t.slug}`}
-              eyebrow="Free Template & Guide"
-              title={`${t.niche} Invoice`}
-              text={t.subtitle}
-              cta="View Template"
-              accent="indigo"
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    <HubPage
+      path="/templates"
+      name="Templates"
+      eyebrow="Free templates & guides"
+      title="Free Invoice Templates"
+      subtitle="Invoice templates and guides for your trade: exactly what to include, a sample invoice with real line items, and the mistakes that delay payment."
+      items={getTemplates().map((t) => ({
+        href: `/templates/${t.slug}`,
+        eyebrow: "Template & guide",
+        title: `${t.niche} invoice`,
+        text: t.subtitle,
+      }))}
+      cta="View template"
+      campaign="templates-hub"
+      explainer={
+        <>
+          <h2 className="font-heading text-h3 text-ink">How to use these templates</h2>
+          <p>
+            Each guide shows what a good invoice for that trade contains: the details your client
+            and their accountant expect, how to list labor and materials, and how to handle deposits
+            and tax. The sample invoice uses realistic line items, so you can copy the structure for
+            your own jobs.
+          </p>
+          <p>
+            You can rebuild any of them in a spreadsheet or word processor. Or create the same
+            invoice in the Invoicor app: your business details, saved clients and saved items fill
+            in for you, totals and tax are calculated, and you send a clean PDF from your phone.
+            Your first 3 invoices are free.
+          </p>
+        </>
+      }
+    />
   );
 }
