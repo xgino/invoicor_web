@@ -138,6 +138,8 @@ launch() {
     : "${NGINX_SITE:?run bash deploy/setup.sh info first and put NGINX_SITE in deploy/.env}"
     local conf="$DIR/nginx/$DOMAIN.conf"
     [ -f "$conf" ] || { echo "$conf is missing (Claude writes it from deploy/server-info.txt)"; exit 1; }
+    remote "for f in /etc/nginx/sites-enabled/*; do readlink -f \"\$f\"; done | grep -qx '$NGINX_SITE'" \
+        || { echo "$NGINX_SITE isn't enabled in /etc/nginx/sites-enabled: check NGINX_SITE in deploy/.env"; exit 1; }
     remote "test -f '$WEB_PATH/current/index.html' && test -f '$WEB_PATH/current/404.html'" \
         || { echo "the new site isn't uploaded yet: run bash deploy/deploy.sh first"; exit 1; }
 
