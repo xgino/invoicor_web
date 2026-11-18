@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { CSSProperties } from "react";
 import { AppStoreBadge } from "@/components/ui/content";
 import { IPhoneFrame } from "@/components/ui/IPhoneFrame";
+import { QrDownload } from "@/components/ui/QrDownload";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 
 /**
@@ -43,8 +44,9 @@ export function AppPreview() {
               </li>
             ))}
           </ul>
-          <div className="mt-9">
+          <div className="mt-9 flex flex-wrap items-center gap-5">
             <AppStoreBadge campaign="app_preview" />
+            <QrDownload campaign="qr_app_preview" />
           </div>
         </div>
 

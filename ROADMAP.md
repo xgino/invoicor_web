@@ -132,7 +132,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P14. "Who it's for": the people Invoicor is built for
 - [x] P15. Real app screens in an iPhone frame
 - [x] P16. Sticky "Get the app" bar on phones
-- [ ] P17. QR code for desktop visitors
+- [x] P17. QR code for desktop visitors
 - [ ] P18. Mobile and speed recheck
 - [x] P19. FAQ audit: every answer matches its question and the app _(✅ 2026-11-18)_
 - [x] P20. Plain, true security wording; Google sign-in in Privacy; positive trial line _(✅ 2026-11-18)_
@@ -1074,7 +1074,7 @@ of the screen keeps the download one tap away (hidden on desktop, hidden near th
 **P17. QR code for desktop visitors.** People on a laptop can't install an iPhone app directly. A
 "scan with your iPhone" QR code (generated at build time, no tracking) next to the App Store button
 on desktop.
-- [ ] Build it.
+- [x] Build it. _(✅ 2026-11-18: `lib/qr.ts` + `components/ui/QrDownload.tsx` (qrcode 1.5.4, SVG at build time, desktop only) next to the App Store badge in the final CTA, the app preview and every SEO page's closing CTA; decoded in Chrome from the built pages to the App Store link; campaign `qr_*` once the provider token is set (X10))_
 
 **P18. Mobile and speed recheck** after P11–P17 (same measurement as P10).
 - [ ] Measure and fix.

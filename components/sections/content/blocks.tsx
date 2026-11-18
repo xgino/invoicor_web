@@ -2,6 +2,7 @@ import { CircleCheck, CircleX, Info, Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
 import { Accordion } from "@/components/ui/Accordion";
 import { AppStoreBadge, Breadcrumbs } from "@/components/ui/content";
+import { QrDownload } from "@/components/ui/QrDownload";
 import { cx } from "@/components/ui/cx";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 import { FREE_INVOICES } from "@/lib/pricing";
@@ -232,8 +233,9 @@ export function ClosingCta({
           <div className="mt-8 flex justify-center">{action}</div>
         ) : (
           <>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
               <AppStoreBadge campaign={campaign} />
+              <QrDownload campaign={`qr_${campaign}`} />
             </div>
             <p className="text-small text-subtle mt-4">
               {FREE_INVOICES} invoices free · no watermark · no subscription needed
