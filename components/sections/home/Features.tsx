@@ -153,11 +153,11 @@ export function Features() {
             <ul className="text-muted mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
               {[
                 "3 invoices free, no watermark",
-                "No card needed to start",
+                "No subscription needed to start",
                 "0% of your payments, ever",
                 "Data stored in Germany (GDPR)",
                 "Clear prices, cancel any time",
-                "A real person answers",
+                "Real people read every message",
               ].map((t) => (
                 <li key={t} className="flex gap-2">
                   <span aria-hidden className="text-brand-600">

@@ -236,7 +236,7 @@ export function ClosingCta({
               <AppStoreBadge campaign={campaign} />
             </div>
             <p className="text-small text-subtle mt-4">
-              {FREE_INVOICES} invoices free · no watermark · no card needed
+              {FREE_INVOICES} invoices free · no watermark · no subscription needed
             </p>
           </>
         )}

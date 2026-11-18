@@ -7,7 +7,7 @@ import { Container, Eyebrow, Gradient } from "@/components/ui/layout";
 import { appStoreLink } from "@/lib/config";
 import { FREE_INVOICES } from "@/lib/pricing";
 
-const PROMISES = [`${FREE_INVOICES} invoices free`, "No watermark", "No card needed"];
+const PROMISES = [`${FREE_INVOICES} invoices free`, "No watermark", "No subscription needed"];
 
 /**
  * Home hero (ROADMAP chunk 19b): light, a soft orange glow, one gradient word, and a real

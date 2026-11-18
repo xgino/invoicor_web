@@ -245,7 +245,7 @@ export function ComponentsShowcase() {
           items={[
             {
               question: "Is Invoicor really free?",
-              answer: "Yes: 3 invoices free, no watermark, no card needed.",
+              answer: "Yes: 3 invoices free, no watermark, no subscription needed.",
             },
             {
               question: "Where is my data stored?",

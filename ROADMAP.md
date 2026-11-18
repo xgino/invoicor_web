@@ -114,7 +114,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X15. 🟠 Have a lawyer review Terms and Privacy
 
 **Stage P: Polish from your review (2026-11-18)** _(your remarks on the new site; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
-- [ ] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
+- [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [ ] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [ ] P3. "How it works" as a visible path
 - [ ] P4. Promises that stand out
@@ -913,19 +913,20 @@ _Your remarks after seeing the redesign, each with the answer or recommendation,
 Mobile layout and loading speed are checked for every chunk (P10 at the end measures it)._
 
 ### P1. Honest wording
-- [ ] a. **Free trial and card.** Your remark: "I think we do require a card for the free trial."
+_✅ 2026-11-18: "No card needed" → "No subscription needed" everywhere; a billing line under every trial button; a new FAQ "Do I need a card for the free trial?" (home + help); "Real people, not bots: replies can take a few days"; "not a payment gateway" on the home page and in the fees FAQ; Help no longer says free includes "all features"; BRAND.md §10 updated._
+- [x] a. **Free trial and card.** Your remark: "I think we do require a card for the free trial."
   Answer: Apple handles it. To start a free trial, the user confirms the subscription with their
   Apple ID, which needs a payment method on file; Apple charges after the trial unless they cancel.
   We never see the card. So: the **Free plan** (3 invoices) needs no subscription and no payment, but
   the **trials** do need Apple payment details. Change "No card needed" to "No subscription needed"
   (true for Free) and add "Billed by Apple after the trial unless you cancel" under every trial button.
-- [ ] b. **Watermark.** The app has no watermark on any plan; the future web generator (Stage G)
+- [x] b. **Watermark.** The app has no watermark on any plan; the future web generator (Stage G)
   will. Say "No watermark in the app" where it could be read as the web version, and record the
   difference in BRAND.md §10.
-- [ ] c. **Support.** Your remark: you read every message, but not fast. Change "A real person
+- [x] c. **Support.** Your remark: you read every message, but not fast. Change "A real person
   answers" to "Real people, not bots: we read every message" and set expectations ("replies can take
   a few days"). Never promise a response time we can't keep.
-- [ ] d. **Not a payment gateway.** Say plainly: Invoicor doesn't sit between you and your client.
+- [x] d. **Not a payment gateway.** Say plainly: Invoicor doesn't sit between you and your client.
   It makes the invoice; you add your own payment link or bank details; your client pays you directly.
 
 ### P2. Trust row: "send it anywhere"

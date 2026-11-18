@@ -9,12 +9,16 @@ import { FREE_INVOICES, PRICING, STARTING_PRICE } from "@/lib/pricing";
 export const HOME_FAQS: Faq[] = [
   {
     question: "Is Invoicor free to use?",
-    answer: `Yes. The free plan includes ${FREE_INVOICES} invoices with no watermark and no card needed, plus free templates and PDF export. Paid plans start at ${STARTING_PRICE} a month, with a ${PRICING.trial_days.monthly}-day free trial (${PRICING.trial_days.yearly} days on yearly plans). Cancel any time through Apple.`,
+    answer: `Yes. The free plan includes ${FREE_INVOICES} invoices with no watermark and no subscription, plus free templates and PDF export. Paid plans start at ${STARTING_PRICE} a month, with a ${PRICING.trial_days.monthly}-day free trial (${PRICING.trial_days.yearly} days on yearly plans). Cancel any time through Apple.`,
   },
   {
     question: "Does Invoicor take a fee from my payments?",
     answer:
-      "No. Invoicor never processes, holds or takes a cut of your payments. You pay a flat subscription and that's it. If you add your own PayPal or Stripe link to an invoice, your client pays you there directly, and only PayPal or Stripe's own fees apply.",
+      "No. Invoicor isn't a payment gateway: it never processes, holds or takes a cut of your payments, and it doesn't sit between you and your client. You pay a flat subscription and that's it. Add your own payment link (PayPal, Stripe, Wise) or bank details to the invoice and your client pays you directly; only that provider's own fees apply.",
+  },
+  {
+    question: "Do I need a card for the free trial?",
+    answer: `Not for the free plan: your first ${FREE_INVOICES} invoices need no subscription and no payment. The free trials of Starter and Pro (${PRICING.trial_days.monthly} days monthly, ${PRICING.trial_days.yearly} days yearly) run through Apple: you confirm with your Apple ID, which needs a payment method, and Apple only charges after the trial if you don't cancel. Invoicor never sees your card.`,
   },
   {
     question: "Can I invoice in other currencies and languages?",

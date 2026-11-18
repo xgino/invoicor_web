@@ -20,8 +20,8 @@ seconds, in your client's language and currency, with no hidden paywall and no f
 
 | What users hate about competitors | Mentions | What Invoicor says (only because it's true) |
 |---|---|---|
-| "Free" that turns out to be a trial or paywall | 19 | **Honestly free:** 3 real invoices, no watermark, no card needed |
-| No human support | 17 | **A real person answers**, from inside the app |
+| "Free" that turns out to be a trial or paywall | 19 | **Honestly free:** 3 real invoices, no watermark, no subscription needed |
+| No human support | 17 | **Real people, not bots:** every message is read (replies can take a few days) |
 | Payment processing that holds your money | 13 | **We never touch your money:** no payment processing, no fees |
 | Locked out of your account and data | 10 | **Your data is yours:** export it, never held hostage |
 | Slow, complicated invoice creation | 4 | **Seconds, not minutes:** saved clients and items, auto totals |
@@ -154,7 +154,7 @@ the compare pages all read it.
 
 | Invoicor **does** | Invoicor **does not** (don't claim it) |
 |---|---|
-| Create invoices on iPhone; share the PDF via the iOS share sheet (email, iMessage, WhatsApp) | Process payments, card readers, Apple Pay / Google Pay checkout, client payment portal |
+| Create invoices on iPhone; share the PDF via the iOS share sheet (email, iMessage, WhatsApp). **Not a payment gateway:** it never sits between the user and their client | Process payments, card readers, Apple Pay / Google Pay checkout, client payment portal |
 | A **payment link field**: you paste your own PayPal / Stripe / other link, shown on the PDF | Hold, route or take a cut of money; per-transaction fees |
 | 31 templates (21 free, 8 Starter, 2 Pro), your logo | Custom brand colors per template (unverified: don't claim) |
 | Saved clients and products; one-tap **duplicate** of an invoice | Automatic recurring invoices or scheduled sending |
@@ -164,5 +164,5 @@ the compare pages all read it.
 | 11 invoice languages, 38 currencies | "135 currencies", "any currency" |
 | Dashboard (Starter and Pro), up to 3 business profiles (Pro) | Team members, assistant logins, multi-user |
 | Data on servers in Germany; needs an internet connection | Offline mode, background sync |
-| In-app feedback to a real person | Live chat, phone support |
-| Free: 3 invoices, no watermark; trials 3 days (monthly) / 7 days (yearly) | Unlimited invoices on any plan; estimates/quotes; CSV import/export; photo attachments; e-signatures |
+| In-app feedback and email, read by the team (replies can take a few days) | Live chat, phone support, a response-time promise |
+| Free: 3 invoices, no watermark **in the app** (the future web generator will watermark), no subscription needed. Trials: 3 days (monthly) / 7 days (yearly), started with the Apple ID (Apple needs a payment method and charges after the trial unless cancelled) | Unlimited invoices on any plan; estimates/quotes; CSV import/export; photo attachments; e-signatures |

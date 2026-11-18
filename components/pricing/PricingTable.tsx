@@ -54,8 +54,9 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
         ))}
       </div>
       <p className="text-small text-subtle mt-10 text-center">
-        Prices in {PRICING.currency}. Subscriptions are billed and managed by Apple; cancel any time
-        in your iPhone settings. Yearly saves {YEARLY_SAVING_PERCENT}% against paying monthly.
+        Prices in {PRICING.currency}. The free plan needs no subscription. Free trials start with
+        your Apple ID, and Apple bills after the trial unless you cancel (any time, in your iPhone
+        settings). Yearly saves {YEARLY_SAVING_PERCENT}% against paying monthly.
       </p>
     </div>
   );
@@ -78,7 +79,7 @@ function PlanInvoice({
   const yearly = period === "yearly" && !free;
 
   const items = free
-    ? [{ description: "Free plan", detail: "No card needed", amount: formatPrice(0) }]
+    ? [{ description: "Free plan", detail: "No subscription needed", amount: formatPrice(0) }]
     : yearly
       ? [
           {
@@ -165,6 +166,9 @@ function PlanInvoice({
       >
         {free ? "Download free" : `Start ${days}-day free trial`}
       </a>
+      <p className="text-small text-subtle mt-2 text-center">
+        {free ? "No subscription, no payment" : "Billed by Apple after the trial unless you cancel"}
+      </p>
     </InvoicePaper>
   );
 }

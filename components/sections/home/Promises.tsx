@@ -10,7 +10,7 @@ const PROMISES = [
   {
     icon: BadgeCheck,
     title: "Free means free",
-    text: `Your first ${FREE_INVOICES} invoices are free, with no watermark and no card needed. No trial that turns into a paywall halfway through your first invoice.`,
+    text: `Your first ${FREE_INVOICES} invoices are free, with no watermark and no subscription. No trial that turns into a paywall halfway through your first invoice.`,
   },
   {
     icon: Banknote,
@@ -19,8 +19,8 @@ const PROMISES = [
   },
   {
     icon: MessageCircle,
-    title: "A real person answers",
-    text: "Questions and feedback go straight from the app to the people who build it. No bots, no endless ticket queue.",
+    title: "Real people, not bots",
+    text: "Every message from the app or by email is read by the people who build Invoicor. Replies can take a few days, but nothing gets lost in a bot.",
   },
 ];
 

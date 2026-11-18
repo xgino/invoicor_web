@@ -241,7 +241,7 @@ export default function BrandPage() {
             <div className="grid gap-2 sm:grid-cols-[8rem_1fr] sm:items-baseline">
               <p className="text-small text-subtle font-mono">Small</p>
               <p className="text-small text-muted">
-                3 invoices free. No watermark. No card needed.
+                3 invoices free. No watermark. No subscription needed.
               </p>
             </div>
             <div className="grid gap-2 sm:grid-cols-[8rem_1fr] sm:items-baseline">

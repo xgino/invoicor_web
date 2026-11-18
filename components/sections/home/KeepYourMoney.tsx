@@ -32,7 +32,8 @@ export function KeepYourMoney() {
           </Heading>
           <Text size="lead" className="mt-5">
             Many invoicing apps take a percentage of every card payment, on top of their
-            subscription. We think that&apos;s wrong. Invoicor never touches your money.
+            subscription. We think that&apos;s wrong. Invoicor isn&apos;t a payment gateway: it
+            makes your invoice, you add your own payment link, and your client pays you directly.
           </Text>
           <ul className="mt-9 space-y-6">
             {POINTS.map((p) => (

@@ -64,7 +64,7 @@ const HIGHLIGHTS = [
   { icon: Moon, title: "Earn while you sleep", text: "Commissions run 24/7" },
   { icon: Repeat, title: "Paid every month", text: "Not a one-time payout" },
   { icon: TrendingUp, title: "No earning cap", text: "Refer 1 or 1,000" },
-  { icon: Smartphone, title: "Easy sell", text: `${FREE_INVOICES} free invoices, no card` },
+  { icon: Smartphone, title: "Easy sell", text: `${FREE_INVOICES} free invoices, no subscription` },
 ];
 
 const STEPS = [
@@ -104,7 +104,7 @@ const REASONS = [
   {
     icon: Target,
     title: "Easy to recommend",
-    text: `${FREE_INVOICES} free invoices, no watermark, no card needed. Your audience tries it risk-free; you earn when they upgrade.`,
+    text: `${FREE_INVOICES} free invoices, no watermark, no subscription needed. Your audience tries it risk-free; you earn when they upgrade.`,
   },
   {
     icon: Users,

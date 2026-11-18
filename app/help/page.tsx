@@ -41,7 +41,7 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
       },
       {
         q: "Is Invoicor free to use?",
-        a: "Yes. You can create up to 3 invoices for free with no time limit. Free invoices include all features — templates, PDF export, client management, and status tracking. No watermark on any plan.",
+        a: "Yes. You can create up to 3 invoices for free with no time limit and no subscription. Free invoices include the free templates, PDF export, client management and status tracking. There is no watermark in the app, on any plan.",
       },
       {
         q: "Which devices are supported?",
@@ -129,6 +129,10 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
         a: "Invoicor offers Starter and Pro plans, billed monthly or yearly through the Apple App Store. All billing is handled by Apple — we never see or store your payment information. You can manage or cancel your subscription in your iPhone's Settings → Apple ID → Subscriptions.",
       },
       {
+        q: "Do I need a card for the free trial?",
+        a: "Not for the free plan: your first 3 invoices need no subscription and no payment. The free trials of Starter and Pro run through Apple: you confirm with your Apple ID, which needs a payment method, and Apple only charges after the trial if you don't cancel. Invoicor never sees your card.",
+      },
+      {
         q: "Can I cancel my subscription?",
         a: "Yes, anytime. Go to your iPhone Settings → Apple ID → Subscriptions → Invoicor → Cancel. Your plan stays active until the end of the current billing period. You won't be charged again.",
       },
@@ -199,7 +203,7 @@ export default function HelpPage() {
         crumbs={[{ name: "Home", href: "/" }, { name: "Help" }]}
         eyebrow="Support"
         title="Help Center"
-        subtitle="Everything you need to know about Invoicor. Can't find your answer? A real person reads every message."
+        subtitle="Everything you need to know about Invoicor. Can't find your answer? Real people read every message."
       />
       <ArticleLayout toc={SECTIONS.map((s) => ({ id: s.id, label: s.title }))}>
         {SECTIONS.map((section) => (
@@ -219,7 +223,8 @@ export default function HelpPage() {
             />
             <h2 className="font-heading text-h3 text-ink mt-4">Still have a question?</h2>
             <p className="text-muted mx-auto mt-2 max-w-md">
-              Send us a message from inside the app, or email us. A real person reads every message.
+              Send us a message from inside the app, or email us. Real people read every message;
+              replies can take a few days.
             </p>
             <a
               href={`mailto:${CONTACT_EMAIL}`}

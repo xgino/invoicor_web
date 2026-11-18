@@ -11,7 +11,7 @@ export function FinalCta() {
           Send your next invoice <Gradient>today.</Gradient>
         </Heading>
         <Text size="lead" className="mx-auto mt-5 max-w-lg">
-          {FREE_INVOICES} invoices free. No watermark, no card, no cut of your money.
+          {FREE_INVOICES} invoices free. No watermark, no subscription, no cut of your money.
         </Text>
         <div className="mt-9 flex justify-center">
           <AppStoreBadge campaign="final" />
