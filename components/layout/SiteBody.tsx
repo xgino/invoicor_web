@@ -7,6 +7,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { AUTO_LANGUAGE_SCRIPT } from "@/lib/i18n/auto-switch";
 import { Footer } from "./Footer";
 import { HashOpener } from "./HashOpener";
+import { LanguageMemory } from "./LanguageMemory";
 import { Navbar } from "./Navbar";
 import { RevealObserver } from "./RevealObserver";
 import { StickyCta } from "./StickyCta";
@@ -37,6 +38,7 @@ export function SiteBody({ locale, children }: { locale: Locale; children: React
       <Footer locale={locale} />
       <RevealObserver />
       <HashOpener />
+      <LanguageMemory locale={locale} />
       <StickyCta t={t.sticky} />
       <Analytics />
       <ConsentBanner t={t.consent} />

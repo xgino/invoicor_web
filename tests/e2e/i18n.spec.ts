@@ -20,7 +20,7 @@ const CHROME_UA =
 test.describe("German browser", () => {
   test.use({ locale: "de-DE", userAgent: CHROME_UA });
 
-  test("switches to the German page once, then never again", async ({ page }) => {
+  test("switches to German on the first visit and remembers it", async ({ page }) => {
     await trackAnalytics(page);
     await asRealBrowser(page);
     await page.goto("/android");
@@ -29,9 +29,24 @@ test.describe("German browser", () => {
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(
       "Invoicor für Android ist unterwegs.",
     );
-    // Second visit: the choice is remembered, no automatic switch.
-    await page.goto("/android");
+    // Later visits keep German wherever the page exists in German.
+    await page.goto("/");
+    await expect(page).toHaveURL(/\/de$/);
+    // An English-only page stays English, and its links lead back to German pages.
+    await page.goto("/templates");
+    await expect(page).toHaveURL(/\/templates$/);
+    await page.getByRole("banner").getByRole("link").first().click(); // the logo: a client-side link to "/"
+    await expect(page).toHaveURL(/\/de$/);
+  });
+
+  test("choosing English in the switcher is remembered too", async ({ page }) => {
+    await trackAnalytics(page);
+    await asRealBrowser(page);
+    await page.goto("/de/android");
+    await page.getByRole("contentinfo").getByRole("link", { name: "English", exact: true }).click();
     await expect(page).toHaveURL(/\/android$/);
+    await page.goto("/");
+    await expect(page).toHaveURL(/\/$/);
     await expect(page.locator("html")).toHaveAttribute("lang", "en");
   });
 
@@ -42,7 +57,10 @@ test.describe("German browser", () => {
     await page.getByRole("contentinfo").getByRole("link", { name: "Français" }).click();
     await expect(page).toHaveURL(/\/fr\/android$/);
     await page.goto("/android");
-    await expect(page).toHaveURL(/\/android$/); // no switch back to German
+    await expect(page).toHaveURL(/\/fr\/android$/); // French is remembered, not German
+    // A link from another site to a German page keeps German.
+    await page.goto("/de", { referer: "https://www.google.com/" });
+    await expect(page).toHaveURL(/\/de$/);
   });
 
   test("search engines and test browsers are never redirected", async ({ page }) => {
