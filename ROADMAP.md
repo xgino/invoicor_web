@@ -139,12 +139,32 @@ _The original plan, still valid. Details below in [Planned chunks](#planned-chun
 
 **Stage H: Languages, all 11 app languages** (your choices 2026-11-18: all 11 at once, switch
 automatically once, everything translated). 36 and 37 are done (see Done); still open:
-- [ ] **H3** 🤖 The free generator in 11 languages: the form, preview, download panel and picker
-  (~130 strings), its 1,250-word guide written per country (local required invoice fields, e.g.
-  German *Pflichtangaben*, French *mentions obligatoires*), and local defaults (currency, date
-  format, invoice language). URLs are already chosen (`GENERATOR_SLUGS` in `lib/i18n/routes.ts`:
-  `/de/rechnung-erstellen`, `/nl/gratis-factuur-maken`, `/fr/creer-une-facture`…). Until then the
-  menus link to the English generator with the invoice language preset (`?lang=de`).
+**Translation list** (2026-11-18). Every English page, and the languages it's still missing.
+Languages: nl, de, fr, es, it, pt, pl, sv, da, nb (10). Done in all 10: Home, Android. Done in the
+order below, one commit per step; a page only goes live in a language once it's really written
+(the language memory then picks it up by itself).
+
+| # | Page(s) | Pages × 10 languages | Status |
+|---|---|---|---|
+| HL1 | Free invoice generator (+ its guide, written per country) | 1 → 10 | ✅ 2026-11-18 |
+| HL2 | Free tools hub + VAT, hours and hourly rate calculators | 4 → 40 | ⏳ next |
+| HL3 | Help & FAQ | 1 → 10 | planned |
+| HL4 | Templates hub + 20 template pages | 21 → 210 | planned (H4) |
+| HL5 | Industries hub + 20 industry pages | 21 → 210 | planned (H4) |
+| HL6 | Affiliate | 1 → 10 | planned |
+| HL7 | Privacy and Terms (English stays the binding version) + German *Impressum* (H7) | 2 → 20 | planned |
+| HL8 | Compare hub + 20 compares | 21 → 210 | 👤 decide: the 20 competitors are mostly US/UK apps; per country, local rivals (e.g. Moneybird for NL, lexoffice for DE) make more sense than a translation |
+| — | Brand page (internal) | stays English | — |
+
+- [x] **H3** 🤖 The free generator in 11 languages (HL1, 2026-11-18): every text of the tool in a
+  dictionary (`lib/i18n/pages/generator/`), 10 local URLs (`/de/rechnung-erstellen`,
+  `/nl/gratis-factuur-maken`…), local starting values (currency, date format, invoice language,
+  invoice number, payment terms, thank-you note) and a guide per country with its own required
+  invoice details (§ 14 UStG, mentions obligatoires, RD 1619/2012, art. 21 DPR 633/72, art. 106e…).
+  Honest where a PDF isn't enough: Italy (SDI), Portugal (certified software), Poland (KSeF), and
+  the e-invoicing timelines in DE/FR/ES/BE, the same as the home pages. 👤 H5 review: you for
+  Dutch; open points for a native reviewer: FR delivery-address line, ES/IT/PL payment-term
+  limits, the "one invoice per VAT rate" advice (DE/NL/SV), German date format (DD/MM vs DD.MM).
 - [ ] **H4** 👥 The 60 SEO pages, 3 hubs and Help in 10 languages (~800,000 words). Plan: per
   language, keyword research first (local search words, not translations), then a translation
   pipeline into `content/{locale}/*.json` with local examples and rules, `content:check` and the

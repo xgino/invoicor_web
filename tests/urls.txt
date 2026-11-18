@@ -94,3 +94,13 @@
 /tools/vat-calculator
 /tools/hours-calculator
 /tools/hourly-rate-calculator
+/nl/gratis-factuur-maken
+/de/rechnung-erstellen
+/fr/creer-une-facture
+/es/crear-factura
+/it/crea-fattura
+/pt/criar-fatura
+/pl/wystaw-fakture
+/sv/skapa-faktura
+/da/lav-faktura
+/nb/lag-faktura

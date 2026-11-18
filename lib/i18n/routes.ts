@@ -26,6 +26,16 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   },
   generator: {
     en: "/free-invoice-generator",
+    nl: "/nl/gratis-factuur-maken",
+    de: "/de/rechnung-erstellen",
+    fr: "/fr/creer-une-facture",
+    es: "/es/crear-factura",
+    it: "/it/crea-fattura",
+    pt: "/pt/criar-fatura",
+    pl: "/pl/wystaw-fakture",
+    sv: "/sv/skapa-faktura",
+    da: "/da/lav-faktura",
+    nb: "/nb/lag-faktura",
   },
   android: {
     en: "/android",
@@ -40,20 +50,6 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
     da: "/da/android",
     nb: "/nb/android",
   },
-};
-
-/** Planned generator URLs (live once the generator is translated, ROADMAP 36/38). */
-export const GENERATOR_SLUGS: Record<Exclude<Locale, "en">, string> = {
-  nl: "/nl/gratis-factuur-maken",
-  de: "/de/rechnung-erstellen",
-  fr: "/fr/creer-une-facture",
-  es: "/es/crear-factura",
-  it: "/it/crea-fattura",
-  pt: "/pt/criar-fatura",
-  pl: "/pl/wystaw-fakture",
-  sv: "/sv/skapa-faktura",
-  da: "/da/lav-faktura",
-  nb: "/nb/lag-faktura",
 };
 
 export function pathFor(key: PageKey, locale: Locale): string | undefined {

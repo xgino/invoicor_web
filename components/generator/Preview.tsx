@@ -13,6 +13,7 @@ import {
 import { cx } from "@/components/ui/cx";
 import type { Draft } from "@/lib/generator/draft";
 import { type FillData, fillDraft, loadFillData, loadTemplate } from "@/lib/generator/fill";
+import { useGt } from "./text";
 
 const A4 = { width: 794, height: 1123 };
 const BLANK = "<!doctype html><html><head></head><body></body></html>";
@@ -64,6 +65,7 @@ function paintFrame(
  * no reload and no flicker while typing. Everything people type is escaped before it goes in.
  */
 export function Preview({ draft, footer }: { draft: Draft; footer?: ReactNode }) {
+  const { t } = useGt();
   const box = useRef<HTMLDivElement>(null);
   const frame = useRef<HTMLIFrameElement>(null);
   const shown = useRef({ head: "", html: "" });
@@ -140,7 +142,7 @@ export function Preview({ draft, footer }: { draft: Draft; footer?: ReactNode })
       >
         <iframe
           ref={frame}
-          title="Invoice preview"
+          title={t.previewFrame}
           srcDoc={BLANK}
           sandbox="allow-same-origin"
           onLoad={() => {
@@ -162,9 +164,7 @@ export function Preview({ draft, footer }: { draft: Draft; footer?: ReactNode })
             className="bg-surface/90 shadow-card ring-line absolute inset-x-4 top-4 flex gap-2 rounded-xl p-3 text-left ring-1 backdrop-blur"
           >
             <AlertCircle aria-hidden className="text-danger mt-0.5 size-4 shrink-0" />
-            <p className="text-small text-ink">
-              The preview couldn&apos;t load. Check your connection; your form is saved.
-            </p>
+            <p className="text-small text-ink">{t.previewError}</p>
           </div>
         )}
       </div>
@@ -175,8 +175,7 @@ export function Preview({ draft, footer }: { draft: Draft; footer?: ReactNode })
         >
           <TriangleAlert aria-hidden className="text-brand-700 mt-0.5 size-4 shrink-0" />
           <span>
-            <strong>This no longer fits on one page.</strong> The bottom of the invoice (notes, bank
-            details) would be cut off. Shorten the item details or use fewer lines.
+            <strong>{t.overflowTitle}</strong> {t.overflowText}
           </span>
         </p>
       )}

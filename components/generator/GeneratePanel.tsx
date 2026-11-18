@@ -8,6 +8,8 @@ import { track } from "@/lib/analytics";
 import { type Draft, filledItems } from "@/lib/generator/draft";
 import { makePdf } from "@/lib/generator/pdf";
 import type { Action } from "./reducer";
+import { gf, useGt } from "./text";
+import { FREE_INVOICES } from "@/lib/pricing";
 
 /** A short pause before "Create another", so a double click doesn't wipe the form by accident. */
 const COOLDOWN_MS = 1500;
@@ -37,6 +39,7 @@ export function GeneratePanel({
   onGenerated?: () => void;
   appCta?: ReactNode;
 }) {
+  const { t } = useGt();
   const [state, setState] = useState<"idle" | "working" | "done">("idle");
   const [error, setError] = useState<string | null>(null);
   const [cooling, setCooling] = useState(false);
@@ -62,8 +65,8 @@ export function GeneratePanel({
     try {
       const blob = await makePdf(draft);
       if (file.current) URL.revokeObjectURL(file.current.url);
-      const safe = draft.invoice_number.replace(/[^A-Za-z0-9_-]/g, "-") || "invoice";
-      file.current = { url: URL.createObjectURL(blob), name: `invoice-${safe}.pdf` };
+      const safe = draft.invoice_number.replace(/[^A-Za-z0-9_-]/g, "-") || t.fileName;
+      file.current = { url: URL.createObjectURL(blob), name: `${t.fileName}-${safe}.pdf` };
       save(file.current.url, file.current.name);
       setFileName(file.current.name);
       track("gen_download");
@@ -73,9 +76,7 @@ export function GeneratePanel({
       window.setTimeout(() => setCooling(false), COOLDOWN_MS);
     } catch (e) {
       track("gen_error", { code: (e as Error)?.name || "unknown" });
-      setError(
-        "This browser couldn't create the PDF. Please try again, or try another browser. Your form is saved.",
-      );
+      setError(t.pdfError);
       setState("idle");
     }
   }
@@ -92,18 +93,16 @@ export function GeneratePanel({
           >
             {state === "working" ? (
               <>
-                <Loader2 aria-hidden className="size-5 animate-spin" /> Creating your PDF…
+                <Loader2 aria-hidden className="size-5 animate-spin" /> {t.creating}
               </>
             ) : (
               <>
-                <Download aria-hidden className="size-5" /> Download PDF
+                <Download aria-hidden className="size-5" /> {t.download}
               </>
             )}
           </button>
           <p className="text-small text-subtle mt-2 text-center">
-            {ready
-              ? "Free. The PDF has a small “Created with invoicor.com” line at the bottom."
-              : "Add at least one line with a description to download."}
+            {ready ? t.downloadNote : t.downloadNeedsItem}
           </p>
         </>
       ) : (
@@ -117,21 +116,19 @@ export function GeneratePanel({
             rotate={-8}
             className="absolute top-4 right-4 text-[0.8125rem]"
           >
-            Ready
+            {t.ready}
           </Stamp>
           <p className="text-ink flex items-center gap-2 font-bold">
-            <CircleCheck aria-hidden className="text-success size-5" /> Your invoice is downloaded
+            <CircleCheck aria-hidden className="text-success size-5" /> {t.doneTitle}
           </p>
-          <p className="text-small text-muted mt-1 pr-20">
-            Check your Downloads folder for {fileName}.
-          </p>
+          <p className="text-small text-muted mt-1 pr-20">{gf(t.doneText, { file: fileName })}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => file.current && save(file.current.url, file.current.name)}
               className={buttonClass({ variant: "secondary", size: "sm" })}
             >
-              <Download aria-hidden className="size-4" /> Download again
+              <Download aria-hidden className="size-4" /> {t.downloadAgain}
             </button>
             <button
               type="button"
@@ -142,16 +139,13 @@ export function GeneratePanel({
               }}
               className={buttonClass({ variant: "ghost", size: "sm" })}
             >
-              <FilePlus2 aria-hidden className="size-4" /> Create another
+              <FilePlus2 aria-hidden className="size-4" /> {t.createAnother}
             </button>
           </div>
           {appCta && (
             <div className="border-line mt-5 border-t pt-5">
-              <p className="text-ink font-bold">Next time, send it from your phone.</p>
-              <p className="text-small text-muted mt-1">
-                The Invoicor app saves this client and your items, keeps every invoice with its
-                status, and has no watermark. 3 invoices free.
-              </p>
+              <p className="text-ink font-bold">{t.appTitle}</p>
+              <p className="text-small text-muted mt-1">{gf(t.appText, { n: FREE_INVOICES })}</p>
               <div className="mt-4">{appCta}</div>
             </div>
           )}

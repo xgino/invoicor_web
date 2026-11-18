@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
+import { GeneratorPage } from "@/components/sections/generator/GeneratorPage";
 import { HomePage } from "@/components/sections/home/HomePage";
 import { HOME } from "@/lib/i18n/pages/home";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
+import { GENERATOR } from "@/lib/i18n/pages/generator";
 import { type PageKey, alternatesFor, localizedPaths } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo";
 
@@ -40,7 +42,10 @@ const PAGES: Record<
     render: (l) => <HomePage t={HOME[l]} locale={l} />,
     meta: (l) => ({ title: HOME[l].meta.title, description: HOME[l].meta.description }),
   },
-  generator: {},
+  generator: {
+    render: (l) => <GeneratorPage locale={l} />,
+    meta: (l) => GENERATOR[l].page.meta,
+  },
   android: {
     render: (l) => <AndroidPage locale={l} />,
     meta: (l) => ({ title: ANDROID[l].metaTitle, description: ANDROID[l].metaDescription }),

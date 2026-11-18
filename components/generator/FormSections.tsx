@@ -22,6 +22,7 @@ import {
 } from "@/lib/generator/draft";
 import { formatMoney } from "@/lib/generator/totals";
 import type { Action } from "./reducer";
+import { gf, useGt } from "./text";
 
 export interface Option {
   code: string;
@@ -147,12 +148,13 @@ export function SetupArea({
   templateName: string;
   onBrowse: () => void;
 }) {
+  const { t } = useGt();
   const ids = { cur: useId(), lang: useId(), fmt: useId() };
   const set = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
   return (
-    <Area step={1} title="Invoice setup" hint="Design, language and currency">
+    <Area step={1} title={t.setupTitle} hint={t.setupHint}>
       <div className="flex flex-col gap-1.5 sm:col-span-2">
-        <span className="text-small text-ink font-bold">Template</span>
+        <span className="text-small text-ink font-bold">{t.templateLabel}</span>
         <button
           type="button"
           onClick={onBrowse}
@@ -160,11 +162,11 @@ export function SetupArea({
         >
           <span className="text-ink truncate font-medium">{templateName}</span>
           <span className="text-small text-brand-700 inline-flex shrink-0 items-center gap-1.5 font-bold">
-            <LayoutTemplate aria-hidden className="size-4" /> Change
+            <LayoutTemplate aria-hidden className="size-4" /> {t.change}
           </span>
         </button>
       </div>
-      <Field id={ids.lang} label="Invoice language">
+      <Field id={ids.lang} label={t.invoiceLanguage}>
         <Select
           id={ids.lang}
           value={draft.language}
@@ -177,7 +179,7 @@ export function SetupArea({
           ))}
         </Select>
       </Field>
-      <Field id={ids.cur} label="Currency">
+      <Field id={ids.cur} label={t.currency}>
         <Select
           id={ids.cur}
           value={draft.currency}
@@ -190,7 +192,7 @@ export function SetupArea({
           ))}
         </Select>
       </Field>
-      <Field id={ids.fmt} label="Date format">
+      <Field id={ids.fmt} label={t.dateFormat}>
         <Select
           id={ids.fmt}
           value={draft.date_format}
@@ -210,18 +212,19 @@ export function SetupArea({
 // ── 2. Invoice details ───────────────────────────────────────────────────────
 
 export function DetailsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const ids = { issue: useId(), due: useId() };
   const set = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
   return (
-    <Area step={2} title="Invoice details" hint="Number, dates and when you want to be paid">
+    <Area step={2} title={t.detailsTitle} hint={t.detailsHint}>
       <TextField
-        label="Invoice number"
+        label={t.invoiceNumber}
         value={draft.invoice_number}
         onChange={set("invoice_number")}
-        hint="Use a running number, like INV-0001, INV-0002"
+        hint={t.invoiceNumberHint}
         wide
       />
-      <Field id={ids.issue} label="Issue date">
+      <Field id={ids.issue} label={t.issueDate}>
         <Input
           id={ids.issue}
           type="date"
@@ -229,7 +232,7 @@ export function DetailsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispa
           onChange={(e) => set("issue_date")(e.target.value)}
         />
       </Field>
-      <Field id={ids.due} label="Due date">
+      <Field id={ids.due} label={t.dueDate}>
         <Input
           id={ids.due}
           type="date"
@@ -238,10 +241,10 @@ export function DetailsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispa
         />
       </Field>
       <TextField
-        label="Payment terms"
+        label={t.paymentTerms}
         value={draft.payment_terms}
         onChange={set("payment_terms")}
-        placeholder="e.g. Due within 14 days"
+        placeholder={t.paymentTermsPlaceholder}
         wide
       />
     </Area>
@@ -251,62 +254,63 @@ export function DetailsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispa
 // ── 3. Your business ─────────────────────────────────────────────────────────
 
 export function BusinessArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const s = draft.sender;
   const set = (key: keyof Draft["sender"]) => (value: string) =>
     dispatch({ type: "sender", key, value });
   return (
-    <Area step={3} title="Your business" hint="Who the invoice is from">
+    <Area step={3} title={t.businessTitle} hint={t.businessHint}>
       <LogoField value={s.logo} onChange={set("logo")} />
       <TextField
-        label="Business name"
+        label={t.businessName}
         value={s.company_name}
         onChange={set("company_name")}
         wide
         autoComplete="organization"
       />
       <TextField
-        label="Email"
+        label={t.email}
         type="email"
         value={s.email}
         onChange={set("email")}
         autoComplete="email"
       />
       <TextField
-        label="Phone"
+        label={t.phone}
         type="tel"
         value={s.phone}
         onChange={set("phone")}
         autoComplete="tel"
       />
       <TextField
-        label="Address"
+        label={t.address}
         value={s.address_line_1}
         onChange={set("address_line_1")}
         wide
         autoComplete="street-address"
       />
-      <TextField label="Postal code" value={s.postal_code} onChange={set("postal_code")} />
-      <TextField label="City" value={s.city} onChange={set("city")} />
-      <TextField label="Country" value={s.country} onChange={set("country")} wide />
+      <TextField label={t.postalCode} value={s.postal_code} onChange={set("postal_code")} />
+      <TextField label={t.city} value={s.city} onChange={set("city")} />
+      <TextField label={t.country} value={s.country} onChange={set("country")} wide />
       <TextField
-        label="Tax / VAT ID"
+        label={t.taxId}
         value={s.tax_id}
         onChange={set("tax_id")}
-        placeholder="e.g. NL123456789B01"
+        placeholder={t.taxIdPlaceholder}
       />
       <TextField
-        label="Registration number"
+        label={t.registration}
         value={s.registration_number}
         onChange={set("registration_number")}
-        placeholder="e.g. KVK, company number"
+        placeholder={t.registrationPlaceholder}
       />
       <SubGroup
         icon={<Landmark aria-hidden className="text-brand-600 size-4" />}
-        title="Bank details"
+        title={t.bankDetails}
       >
-        <TextField label="Bank name" value={s.bank_name} onChange={set("bank_name")} wide />
-        <TextField label="IBAN / account number" value={s.iban} onChange={set("iban")} />
-        <TextField label="SWIFT / BIC" value={s.swift_code} onChange={set("swift_code")} />
+        <TextField label={t.bankName} value={s.bank_name} onChange={set("bank_name")} wide />
+        <TextField label={t.iban} value={s.iban} onChange={set("iban")} />
+        <TextField label={t.swift} value={s.swift_code} onChange={set("swift_code")} />
       </SubGroup>
     </Area>
   );
@@ -315,35 +319,26 @@ export function BusinessArea({ draft, dispatch }: { draft: Draft; dispatch: Disp
 // ── 4. Client ────────────────────────────────────────────────────────────────
 
 export function ClientArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const c = draft.client;
   const set = (key: keyof Draft["client"]) => (value: string) =>
     dispatch({ type: "client", key, value });
   return (
-    <Area step={4} title="Bill to" hint="Who you're billing">
+    <Area step={4} title={t.clientTitle} hint={t.clientHint}>
+      <TextField label={t.clientName} value={c.company_name} onChange={set("company_name")} wide />
       <TextField
-        label="Client or company name"
-        value={c.company_name}
-        onChange={set("company_name")}
-        wide
-      />
-      <TextField
-        label="Contact person"
+        label={t.contactPerson}
         value={c.contact_name}
         onChange={set("contact_name")}
         wide
       />
-      <TextField label="Email" type="email" value={c.email} onChange={set("email")} />
-      <TextField label="Phone" type="tel" value={c.phone} onChange={set("phone")} />
-      <TextField label="Address" value={c.address_line_1} onChange={set("address_line_1")} wide />
-      <TextField label="Postal code" value={c.postal_code} onChange={set("postal_code")} />
-      <TextField label="City" value={c.city} onChange={set("city")} />
-      <TextField label="Country" value={c.country} onChange={set("country")} />
-      <TextField
-        label="Tax / VAT ID"
-        value={c.tax_id}
-        onChange={set("tax_id")}
-        hint="Needed for business clients in the EU"
-      />
+      <TextField label={t.email} type="email" value={c.email} onChange={set("email")} />
+      <TextField label={t.phone} type="tel" value={c.phone} onChange={set("phone")} />
+      <TextField label={t.address} value={c.address_line_1} onChange={set("address_line_1")} wide />
+      <TextField label={t.postalCode} value={c.postal_code} onChange={set("postal_code")} />
+      <TextField label={t.city} value={c.city} onChange={set("city")} />
+      <TextField label={t.country} value={c.country} onChange={set("country")} />
+      <TextField label={t.taxId} value={c.tax_id} onChange={set("tax_id")} hint={t.clientTaxHint} />
     </Area>
   );
 }
@@ -351,9 +346,10 @@ export function ClientArea({ draft, dispatch }: { draft: Draft; dispatch: Dispat
 // ── 5. Items ─────────────────────────────────────────────────────────────────
 
 export function ItemsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const full = draft.items.length >= MAX_ITEMS;
   return (
-    <Area step={5} title="Items" hint={`What you're charging for, up to ${MAX_ITEMS} lines`}>
+    <Area step={5} title={t.itemsTitle} hint={gf(t.itemsHint, { max: MAX_ITEMS })}>
       <ol className="space-y-3 sm:col-span-2">
         {draft.items.map((item, index) => (
           <ItemRow
@@ -372,13 +368,9 @@ export function ItemsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatc
           onClick={() => dispatch({ type: "addItem" })}
           className="text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 inline-flex items-center gap-1.5 rounded-xl px-4 py-2 font-bold ring-1 transition-colors disabled:pointer-events-none disabled:opacity-50"
         >
-          <Plus aria-hidden className="size-4" /> Add line
+          <Plus aria-hidden className="size-4" /> {t.addLine}
         </button>
-        {full && (
-          <p className="text-small text-muted">
-            That&apos;s the free limit. The Invoicor app lets you add more.
-          </p>
-        )}
+        {full && <p className="text-small text-muted">{t.itemsLimit}</p>}
       </div>
     </Area>
   );
@@ -395,6 +387,7 @@ function ItemRow({
   dispatch: Dispatcher;
   last: boolean;
 }) {
+  const { t, intl } = useGt();
   const item = draft.items[index]!;
   const ids = { name: useId(), desc: useId(), qty: useId(), price: useId() };
   const set = (key: "name" | "description" | "quantity" | "unit_price") => (value: string) =>
@@ -405,24 +398,24 @@ function ItemRow({
   return (
     <li className="bg-tint ring-line rounded-2xl p-4 ring-1">
       <div className="mb-3 flex items-center justify-between gap-2">
-        <span className="text-eyebrow text-subtle uppercase">Line {n}</span>
+        <span className="text-eyebrow text-subtle uppercase">{gf(t.line, { line: n })}</span>
         <div className="flex items-center gap-1">
           <IconButton
-            label={`Move line ${n} up`}
+            label={gf(t.moveUp, { line: n })}
             disabled={index === 0}
             onClick={() => dispatch({ type: "moveItem", id: item.id, by: -1 })}
           >
             <ArrowUp className="size-4" />
           </IconButton>
           <IconButton
-            label={`Move line ${n} down`}
+            label={gf(t.moveDown, { line: n })}
             disabled={last}
             onClick={() => dispatch({ type: "moveItem", id: item.id, by: 1 })}
           >
             <ArrowDown className="size-4" />
           </IconButton>
           <IconButton
-            label={`Remove line ${n}`}
+            label={gf(t.removeLine, { line: n })}
             onClick={() => dispatch({ type: "removeItem", id: item.id })}
           >
             <Trash2 className="size-4" />
@@ -430,22 +423,22 @@ function ItemRow({
         </div>
       </div>
       <div className="grid gap-3 sm:grid-cols-[1fr_5.5rem_7.5rem]">
-        <Field id={ids.name} label="Item">
+        <Field id={ids.name} label={t.item}>
           <Input
             id={ids.name}
             value={item.name}
-            placeholder="e.g. Kitchen tap repair"
+            placeholder={t.itemPlaceholder}
             onChange={(e) => set("name")(e.target.value)}
           />
         </Field>
-        <Field id={ids.qty} label="Qty">
+        <Field id={ids.qty} label={t.qty}>
           <NumberInput
             id={ids.qty}
             value={item.quantity}
             onChange={(e) => set("quantity")(e.target.value)}
           />
         </Field>
-        <Field id={ids.price} label="Price">
+        <Field id={ids.price} label={t.price}>
           <NumberInput
             id={ids.price}
             value={item.unit_price}
@@ -453,18 +446,18 @@ function ItemRow({
             onChange={(e) => set("unit_price")(e.target.value)}
           />
         </Field>
-        <Field id={ids.desc} label="Details (optional)" className="sm:col-span-2">
+        <Field id={ids.desc} label={t.details} className="sm:col-span-2">
           <Input
             id={ids.desc}
             value={item.description}
-            placeholder="Shown on its own line under the item"
+            placeholder={t.detailsPlaceholder}
             onChange={(e) => set("description")(e.target.value)}
           />
         </Field>
         <div className="flex flex-col justify-end">
-          <span className="text-small text-ink font-bold">Amount</span>
+          <span className="text-small text-ink font-bold">{t.amount}</span>
           <span className="text-ink flex h-11 items-center justify-end font-bold tabular-nums">
-            {formatMoney(amount, draft.currency)}
+            {formatMoney(amount, draft.currency, intl)}
           </span>
         </div>
       </div>
@@ -500,12 +493,13 @@ function IconButton({
 // ── 6. Tax & discount ────────────────────────────────────────────────────────
 
 export function TaxArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const ids = { rate: useId(), incl: useId(), dtype: useId(), dval: useId() };
   const set = (key: keyof Draft) => (value: Draft[keyof Draft]) =>
     dispatch({ type: "field", key, value });
   return (
-    <Area step={6} title="Tax & discount" hint="One tax rate for the whole invoice">
-      <Field id={ids.rate} label="Tax rate">
+    <Area step={6} title={t.taxTitle} hint={t.taxHint}>
+      <Field id={ids.rate} label={t.taxRate}>
         <NumberInput
           id={ids.rate}
           suffix="%"
@@ -525,24 +519,24 @@ export function TaxArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatche
             onChange={(e) => set("tax_inclusive")(e.target.checked)}
             className="accent-brand-600 size-4"
           />
-          Prices already include tax
+          {t.taxInclusive}
         </label>
       </div>
-      <Field id={ids.dtype} label="Discount">
+      <Field id={ids.dtype} label={t.discount}>
         <Select
           id={ids.dtype}
           value={draft.discount_type}
           onChange={(e) => set("discount_type")(e.target.value)}
         >
-          <option value="none">No discount</option>
-          <option value="percent">Percentage (%)</option>
-          <option value="fixed">Fixed amount</option>
+          <option value="none">{t.discountNone}</option>
+          <option value="percent">{t.discountPercent}</option>
+          <option value="fixed">{t.discountFixed}</option>
         </Select>
       </Field>
       {draft.discount_type !== "none" && (
         <Field
           id={ids.dval}
-          label={draft.discount_type === "percent" ? "Discount %" : "Discount amount"}
+          label={draft.discount_type === "percent" ? t.discountPct : t.discountAmount}
         >
           <NumberInput
             id={ids.dval}
@@ -559,10 +553,11 @@ export function TaxArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatche
 // ── 7. Notes ─────────────────────────────────────────────────────────────────
 
 export function NotesArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const id = useId();
   return (
-    <Area step={7} title="Notes" hint="A thank-you, warranty terms or anything else">
-      <Field id={id} label="Notes" className="sm:col-span-2">
+    <Area step={7} title={t.notesTitle} hint={t.notesHint}>
+      <Field id={id} label={t.notesTitle} className="sm:col-span-2">
         <Textarea
           id={id}
           rows={3}
@@ -577,19 +572,16 @@ export function NotesArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatc
 // ── 8. Payment link ──────────────────────────────────────────────────────────
 
 export function PaymentLinkArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const { t } = useGt();
   const id = useId();
   const badLink = draft.payment_url !== "" && !/^https?:\/\/\S+$/i.test(draft.payment_url.trim());
   return (
-    <Area
-      step={8}
-      title="Online payment link"
-      hint="Optional. Your client pays you directly, never through us"
-    >
+    <Area step={8} title={t.payTitle} hint={t.payHint}>
       <Field
         id={id}
-        label="Your payment link"
-        hint="Your own PayPal, Stripe or other link. It shows as a “Pay online” button."
-        error={badLink ? "Start the link with https://" : undefined}
+        label={t.payLabel}
+        hint={t.payFieldHint}
+        error={badLink ? t.payError : undefined}
         className="sm:col-span-2"
       >
         <Input
@@ -608,31 +600,31 @@ export function PaymentLinkArea({ draft, dispatch }: { draft: Draft; dispatch: D
 // ── Logo ─────────────────────────────────────────────────────────────────────
 
 function LogoField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const { t } = useGt();
   const id = useId();
   const [error, setError] = useState("");
 
   function pick(file: File | undefined) {
     setError("");
     if (!file) return;
-    if (!["image/png", "image/jpeg"].includes(file.type))
-      return setError("Use a PNG or JPG image.");
-    if (file.size > MAX_LOGO_BYTES) return setError("The logo must be 500 KB or smaller.");
+    if (!["image/png", "image/jpeg"].includes(file.type)) return setError(t.logoErrType);
+    if (file.size > MAX_LOGO_BYTES) return setError(t.logoErrSize);
     const reader = new FileReader();
     reader.onload = () => onChange(String(reader.result ?? ""));
-    reader.onerror = () => setError("That image couldn't be read.");
+    reader.onerror = () => setError(t.logoErrRead);
     reader.readAsDataURL(file);
   }
 
   return (
     <div className="sm:col-span-2">
-      <span className="text-small text-ink mb-1.5 block font-bold">Logo (optional)</span>
+      <span className="text-small text-ink mb-1.5 block font-bold">{t.logo}</span>
       <div className="flex flex-wrap items-center gap-3">
         {value ? (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element -- local data URI preview */}
             <img
               src={value}
-              alt="Your logo"
+              alt={t.logoAlt}
               className="ring-line bg-surface h-12 max-w-32 rounded-lg object-contain p-1 ring-1"
             />
             <button
@@ -640,7 +632,7 @@ function LogoField({ value, onChange }: { value: string; onChange: (v: string) =
               onClick={() => onChange("")}
               className="text-small text-muted hover:text-ink focus-visible:focus-ring inline-flex items-center gap-1 rounded-lg px-2 py-1"
             >
-              <X aria-hidden className="size-4" /> Remove
+              <X aria-hidden className="size-4" /> {t.logoRemove}
             </button>
           </>
         ) : (
@@ -651,7 +643,7 @@ function LogoField({ value, onChange }: { value: string; onChange: (v: string) =
             )}
           >
             <ImagePlus aria-hidden className="text-brand-600 size-4" />
-            Upload logo
+            {t.logoUpload}
             <input
               id={id}
               type="file"
@@ -661,9 +653,7 @@ function LogoField({ value, onChange }: { value: string; onChange: (v: string) =
             />
           </label>
         )}
-        <span className="text-small text-subtle">
-          PNG or JPG, up to 500 KB. Replaces the name at the top.
-        </span>
+        <span className="text-small text-subtle">{t.logoHint}</span>
       </div>
       {error && (
         <p role="alert" className="text-small text-danger mt-1.5 font-medium">

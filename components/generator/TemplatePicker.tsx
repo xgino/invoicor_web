@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Badge } from "@/components/ui/content";
 import { cx } from "@/components/ui/cx";
 import { API_URL, appStoreLink } from "@/lib/config";
+import { gf, useGt } from "./text";
 
 export interface GeneratorTemplate {
   slug: string;
@@ -29,6 +30,7 @@ export function TemplatePicker({
   onClose: () => void;
   onPick: (slug: string) => void;
 }) {
+  const { t: tx } = useGt();
   const dialog = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -53,17 +55,19 @@ export function TemplatePicker({
       <div className="border-line bg-surface/95 sticky top-0 z-10 flex items-center justify-between gap-4 border-b px-6 py-4 backdrop-blur">
         <div>
           <h2 id="tpl-title" className="font-heading text-h4 text-ink flex items-center gap-2">
-            <LayoutTemplate aria-hidden className="text-brand-600 size-5" /> Choose a template
+            <LayoutTemplate aria-hidden className="text-brand-600 size-5" /> {tx.pickerTitle}
           </h2>
           <p className="text-small text-muted">
-            {templates.filter((t) => t.tier === "free").length} free here · all {templates.length}{" "}
-            in the app
+            {gf(tx.pickerCount, {
+              free: templates.filter((t) => t.tier === "free").length,
+              all: templates.length,
+            })}
           </p>
         </div>
         <button
           type="button"
           onClick={onClose}
-          aria-label="Close"
+          aria-label={tx.close}
           className="text-muted hover:bg-tint hover:text-ink focus-visible:focus-ring grid size-10 place-items-center rounded-xl"
         >
           <X aria-hidden className="size-5" />
@@ -92,9 +96,9 @@ export function TemplatePicker({
                 <span className="flex items-center justify-between gap-2 px-3 py-2.5">
                   <span className="text-small text-ink truncate font-bold">{t.name}</span>
                   {free ? (
-                    <Badge tone="free">Free</Badge>
+                    <Badge tone="free">{tx.free}</Badge>
                   ) : (
-                    <Badge tone={t.tier === "pro" ? "pro" : "starter"}>In the app</Badge>
+                    <Badge tone={t.tier === "pro" ? "pro" : "starter"}>{tx.inApp}</Badge>
                   )}
                 </span>
               </>
@@ -125,7 +129,7 @@ export function TemplatePicker({
                     data-track="gen_app_click"
                     data-track-section="template_locked"
                     className={cls}
-                    aria-label={`${t.name}: available in the Invoicor app`}
+                    aria-label={gf(tx.lockedAria, { name: t.name })}
                   >
                     {thumb}
                   </a>
@@ -158,6 +162,7 @@ function fetchPreview(slug: string): Promise<string> {
  * srcDoc (the API forbids being framed directly), scaled to the card width.
  */
 function Thumb({ slug, name }: { slug: string; name: string }) {
+  const { t } = useGt();
   const box = useRef<HTMLSpanElement>(null);
   const [html, setHtml] = useState("");
   const [scale, setScale] = useState(0.25);
@@ -190,7 +195,7 @@ function Thumb({ slug, name }: { slug: string; name: string }) {
       {html ? (
         <iframe
           srcDoc={html}
-          title={`${name} template`}
+          title={gf(t.thumbTitle, { name })}
           sandbox=""
           tabIndex={-1}
           className="pointer-events-none absolute top-0 left-0 h-[1123px] w-[794px] origin-top-left scale-(--s) border-0"

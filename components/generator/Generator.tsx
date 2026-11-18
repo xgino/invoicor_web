@@ -32,6 +32,9 @@ import { GeneratePanel } from "./GeneratePanel";
 import { Preview } from "./Preview";
 import { reducer } from "./reducer";
 import { type GeneratorTemplate, TemplatePicker } from "./TemplatePicker";
+import { GeneratorTextProvider, gf } from "./text";
+import type { GeneratorUi } from "@/lib/i18n/pages/generator/en";
+import type { DraftDefaults } from "@/lib/generator/defaults";
 
 /**
  * The free invoice generator (ROADMAP chunks 32–35). Everything runs in the browser: the form,
@@ -43,7 +46,16 @@ export function Generator({
   languages,
   examples = {},
   appCta,
+  t,
+  intl = "en-US",
+  defaults,
 }: {
+  /** The tool's text in the page's language (lib/i18n/pages/generator). */
+  t: GeneratorUi;
+  /** Number formatting for the on-screen totals. */
+  intl?: string;
+  /** Local starting values; a saved draft always wins. */
+  defaults?: DraftDefaults;
   templates: GeneratorTemplate[];
   currencies: Option[];
   languages: Option[];
@@ -52,7 +64,8 @@ export function Generator({
   /** Server-rendered App Store badge + QR code, shown after a download (chunk 34). */
   appCta?: ReactNode;
 }) {
-  const [draft, dispatch] = useReducer(reducer, undefined, () => newDraft());
+  const fresh = useCallback(() => ({ ...newDraft(), ...defaults }), [defaults]);
+  const [draft, dispatch] = useReducer(reducer, undefined, fresh);
   const ready = useRef(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [tab, setTab] = useState<"form" | "preview">("form");
@@ -67,7 +80,7 @@ export function Generator({
   // Restore the saved draft, then apply deep-link params (?template=&currency=&lang=&example=).
   useEffect(() => {
     const saved = loadDraft();
-    const next = saved ?? newDraft();
+    const next = saved ?? fresh();
     const params = new URLSearchParams(window.location.search);
     const tpl = params.get("template");
     if (tpl && templates.some((t) => t.slug === tpl && t.tier === "free")) next.template_slug = tpl;
@@ -88,7 +101,7 @@ export function Generator({
     }
     dispatch({ type: "replace", draft: next });
     ready.current = true;
-  }, [templates, currencies, languages, examples]);
+  }, [templates, currencies, languages, examples, fresh]);
 
   // Autosave (debounced) and the first-edit analytics event.
   useEffect(() => {
@@ -114,167 +127,174 @@ export function Generator({
   }
 
   return (
-    <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)] xl:gap-12">
-      {/* Phone: switch between the form and the preview */}
-      <div
-        className="bg-tint ring-line sticky top-[4.5rem] z-20 flex gap-1 rounded-xl p-1 ring-1 lg:hidden"
-        role="tablist"
-        aria-label="Generator view"
-      >
-        {(
-          [
-            ["form", "Form", PencilLine],
-            ["preview", "Preview", Eye],
-          ] as const
-        ).map(([key, label, Icon]) => (
-          <button
-            key={key}
-            type="button"
-            role="tab"
-            aria-selected={tab === key}
-            onClick={() => setTab(key)}
-            className={cx(
-              "text-small focus-visible:focus-ring flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 font-bold transition-colors",
-              tab === key ? "bg-surface text-ink shadow-soft" : "text-muted",
-            )}
-          >
-            <Icon aria-hidden className="size-4" /> {label}
-          </button>
-        ))}
-      </div>
-
-      {/* Form */}
-      <div className={cx(tab === "preview" && "hidden lg:block")}>
-        {offer && (
-          <div
-            role="status"
-            className="bg-brand-50 ring-brand-200 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl p-4 ring-1"
-          >
-            <p className="text-small text-ink flex-1">
-              <Sparkles aria-hidden className="text-brand-600 mr-1.5 inline size-4" />
-              <strong>Load the {offer.example.niche.toLowerCase()} example?</strong> It replaces
-              your current items and notes; your business and client stay.
-            </p>
-            <div className="flex gap-2">
-              <button
-                type="button"
-                onClick={() => {
-                  update({ type: "replace", draft: withExample(draft, offer.example) });
-                  track("gen_example", { example: offer.slug });
-                  setOffer(null);
-                }}
-                className="text-small bg-brand-600 hover:bg-brand-700 focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold text-white"
-              >
-                Load example
-              </button>
-              <button
-                type="button"
-                onClick={() => setOffer(null)}
-                className="text-small text-muted hover:text-ink focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold"
-              >
-                Keep mine
-              </button>
-            </div>
-          </div>
-        )}
-        <SaveBar
-          saved={saved}
-          onNew={() => {
-            update({ type: "newInvoice" });
-            track("gen_new_invoice");
-          }}
-          onClear={() => {
-            if (
-              !window.confirm(
-                "Clear everything? This removes your business details, client and items from this browser.",
-              )
-            )
-              return;
-            clearDraft();
-            dispatch({ type: "reset" });
-            setSaved("idle");
-          }}
-        />
-        <div className="bg-surface ring-line shadow-card overflow-hidden rounded-2xl ring-1">
-          <SetupArea
-            draft={draft}
-            dispatch={update}
-            currencies={currencies}
-            languages={languages}
-            templateName={template?.name ?? draft.template_slug}
-            onBrowse={() => setPickerOpen(true)}
-          />
-          <DetailsArea draft={draft} dispatch={update} />
-          <BusinessArea draft={draft} dispatch={update} />
-          <ClientArea draft={draft} dispatch={update} />
-          <ItemsArea draft={draft} dispatch={update} />
-          <TaxArea draft={draft} dispatch={update} />
-          <NotesArea draft={draft} dispatch={update} />
-          <PaymentLinkArea draft={draft} dispatch={update} />
-        </div>
-      </div>
-
-      {/* Preview + summary + generate */}
-      <aside
-        aria-label="Invoice preview"
-        className={cx("lg:sticky lg:top-24", tab === "form" && "hidden lg:block")}
-      >
-        <div className="mb-3 flex items-center justify-between gap-3">
-          <div className="min-w-0">
-            <p className="text-eyebrow text-subtle uppercase">Template</p>
-            <p className="text-ink truncate font-bold">{template?.name ?? draft.template_slug}</p>
-          </div>
-          <button
-            type="button"
-            onClick={() => setPickerOpen(true)}
-            className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 font-bold ring-1"
-          >
-            <LayoutTemplate aria-hidden className="size-4" /> Browse templates
-          </button>
+    <GeneratorTextProvider value={{ t, intl }}>
+      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,30rem)] xl:gap-12">
+        {/* Phone: switch between the form and the preview */}
+        <div
+          className="bg-tint ring-line sticky top-[4.5rem] z-20 flex gap-1 rounded-xl p-1 ring-1 lg:hidden"
+          role="tablist"
+          aria-label={t.viewAria}
+        >
+          {(
+            [
+              ["form", t.tabForm, PencilLine],
+              ["preview", t.tabPreview, Eye],
+            ] as const
+          ).map(([key, label, Icon]) => (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              aria-selected={tab === key}
+              onClick={() => setTab(key)}
+              className={cx(
+                "text-small focus-visible:focus-ring flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 font-bold transition-colors",
+                tab === key ? "bg-surface text-ink shadow-soft" : "text-muted",
+              )}
+            >
+              <Icon aria-hidden className="size-4" /> {label}
+            </button>
+          ))}
         </div>
 
-        <Preview draft={draft} />
-
-        <dl className="bg-surface ring-line mt-5 space-y-1.5 rounded-2xl p-4 tabular-nums ring-1">
-          <div className="text-small text-muted flex justify-between">
-            <dt>Subtotal</dt>
-            <dd>{formatMoney(totals.subtotal, draft.currency)}</dd>
-          </div>
-          {totals.discount > 0 && (
-            <div className="text-small text-brand-700 flex justify-between">
-              <dt>Discount</dt>
-              <dd>−{formatMoney(totals.discount, draft.currency)}</dd>
+        {/* Form */}
+        <div className={cx(tab === "preview" && "hidden lg:block")}>
+          {offer && (
+            <div
+              role="status"
+              className="bg-brand-50 ring-brand-200 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl p-4 ring-1"
+            >
+              <p className="text-small text-ink flex-1">
+                <Sparkles aria-hidden className="text-brand-600 mr-1.5 inline size-4" />
+                <strong>
+                  {gf(t.offerTitle, { niche: offer.example.niche.toLowerCase() })}
+                </strong>{" "}
+                {t.offerText}
+              </p>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    update({ type: "replace", draft: withExample(draft, offer.example) });
+                    track("gen_example", { example: offer.slug });
+                    setOffer(null);
+                  }}
+                  className="text-small bg-brand-600 hover:bg-brand-700 focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold text-white"
+                >
+                  {t.offerLoad}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setOffer(null)}
+                  className="text-small text-muted hover:text-ink focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold"
+                >
+                  {t.offerKeep}
+                </button>
+              </div>
             </div>
           )}
-          <div className="text-small text-muted flex justify-between">
-            <dt>Tax{draft.tax_inclusive ? " (included)" : ""}</dt>
-            <dd>{formatMoney(totals.tax, draft.currency)}</dd>
+          <SaveBar
+            t={t}
+            saved={saved}
+            onNew={() => {
+              update({ type: "newInvoice" });
+              track("gen_new_invoice");
+            }}
+            onClear={() => {
+              if (!window.confirm(t.clearConfirm)) return;
+              clearDraft();
+              dispatch({ type: "replace", draft: fresh() });
+              setSaved("idle");
+            }}
+          />
+          <div className="bg-surface ring-line shadow-card overflow-hidden rounded-2xl ring-1">
+            <SetupArea
+              draft={draft}
+              dispatch={update}
+              currencies={currencies}
+              languages={languages}
+              templateName={template?.name ?? draft.template_slug}
+              onBrowse={() => setPickerOpen(true)}
+            />
+            <DetailsArea draft={draft} dispatch={update} />
+            <BusinessArea draft={draft} dispatch={update} />
+            <ClientArea draft={draft} dispatch={update} />
+            <ItemsArea draft={draft} dispatch={update} />
+            <TaxArea draft={draft} dispatch={update} />
+            <NotesArea draft={draft} dispatch={update} />
+            <PaymentLinkArea draft={draft} dispatch={update} />
           </div>
-          <div className="border-ink text-ink flex justify-between border-t-2 pt-2 font-bold">
-            <dt>Total</dt>
-            <dd className="font-heading text-h4">{formatMoney(totals.total, draft.currency)}</dd>
-          </div>
-        </dl>
-        <GeneratePanel draft={draft} dispatch={update} appCta={appCta} />
-      </aside>
+        </div>
 
-      <TemplatePicker
-        templates={templates}
-        value={draft.template_slug}
-        open={pickerOpen}
-        onClose={() => setPickerOpen(false)}
-        onPick={pickTemplate}
-      />
-    </div>
+        {/* Preview + summary + generate */}
+        <aside
+          aria-label={t.previewAria}
+          className={cx("lg:sticky lg:top-24", tab === "form" && "hidden lg:block")}
+        >
+          <div className="mb-3 flex items-center justify-between gap-3">
+            <div className="min-w-0">
+              <p className="text-eyebrow text-subtle uppercase">{t.templateLabel}</p>
+              <p className="text-ink truncate font-bold">{template?.name ?? draft.template_slug}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setPickerOpen(true)}
+              className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 font-bold ring-1"
+            >
+              <LayoutTemplate aria-hidden className="size-4" /> {t.browseTemplates}
+            </button>
+          </div>
+
+          <Preview draft={draft} />
+
+          <dl className="bg-surface ring-line mt-5 space-y-1.5 rounded-2xl p-4 tabular-nums ring-1">
+            <div className="text-small text-muted flex justify-between">
+              <dt>{t.subtotal}</dt>
+              <dd>{formatMoney(totals.subtotal, draft.currency, intl)}</dd>
+            </div>
+            {totals.discount > 0 && (
+              <div className="text-small text-brand-700 flex justify-between">
+                <dt>{t.discount}</dt>
+                <dd>−{formatMoney(totals.discount, draft.currency, intl)}</dd>
+              </div>
+            )}
+            <div className="text-small text-muted flex justify-between">
+              <dt>
+                {t.tax}
+                {draft.tax_inclusive ? t.taxIncluded : ""}
+              </dt>
+              <dd>{formatMoney(totals.tax, draft.currency, intl)}</dd>
+            </div>
+            <div className="border-ink text-ink flex justify-between border-t-2 pt-2 font-bold">
+              <dt>{t.total}</dt>
+              <dd className="font-heading text-h4">
+                {formatMoney(totals.total, draft.currency, intl)}
+              </dd>
+            </div>
+          </dl>
+          <GeneratePanel draft={draft} dispatch={update} appCta={appCta} />
+        </aside>
+
+        <TemplatePicker
+          templates={templates}
+          value={draft.template_slug}
+          open={pickerOpen}
+          onClose={() => setPickerOpen(false)}
+          onPick={pickTemplate}
+        />
+      </div>
+    </GeneratorTextProvider>
   );
 }
 
 /** Shows that the draft is kept in this browser, with the two ways to start over (ROADMAP 35b i). */
 function SaveBar({
+  t,
   saved,
   onNew,
   onClear,
 }: {
+  t: GeneratorUi;
   saved: "idle" | "saved" | "blocked";
   onNew: () => void;
   onClear: () => void;
@@ -285,12 +305,12 @@ function SaveBar({
         {saved === "blocked" ? (
           <>
             <CloudOff aria-hidden className="text-subtle size-4" />
-            Not saved: this browser blocks storage
+            {t.savedBlocked}
           </>
         ) : (
           <>
             <CircleCheck aria-hidden className="text-success size-4" />
-            Saved in this browser only. Nobody else can see it.
+            {t.savedOk}
           </>
         )}
       </p>
@@ -299,16 +319,16 @@ function SaveBar({
           type="button"
           onClick={onNew}
           className="text-small text-ink hover:bg-tint focus-visible:focus-ring inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-bold"
-          title="Keeps your business details, clears the client and items"
+          title={t.newInvoiceTitle}
         >
-          <FilePlus2 aria-hidden className="text-brand-600 size-4" /> New invoice
+          <FilePlus2 aria-hidden className="text-brand-600 size-4" /> {t.newInvoice}
         </button>
         <button
           type="button"
           onClick={onClear}
           className="text-small text-muted hover:bg-tint hover:text-ink focus-visible:focus-ring inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-bold"
         >
-          <Trash2 aria-hidden className="size-4" /> Clear everything
+          <Trash2 aria-hidden className="size-4" /> {t.clearAll}
         </button>
       </div>
     </div>

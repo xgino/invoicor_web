@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { CHROME } from "@/lib/i18n/chrome";
 import { LOCALES } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
+import { GENERATOR } from "@/lib/i18n/pages/generator";
 import { HOME } from "@/lib/i18n/pages/home";
 import { ROUTES, pageForPath } from "@/lib/i18n/routes";
 import { PLANS } from "@/lib/pricing";
@@ -69,5 +70,46 @@ describe("translations", () => {
         expect(pageForPath(path)).toEqual({ key, locale });
       }
     }
+  });
+});
+
+describe("free generator translations (HL1)", () => {
+  const placeholders = (s: string) => (s.match(/\{\w+\}/g) ?? []).sort().join(",");
+
+  it("cover all 11 languages", () => {
+    expect(Object.keys(GENERATOR).sort()).toEqual([...LOCALES].sort());
+  });
+
+  it.each(LOCALES)("%s: title and description fit in search results", (l) => {
+    const { title, description } = GENERATOR[l].page.meta;
+    expect(title.length, title).toBeLessThanOrEqual(60);
+    expect(description.length, description).toBeLessThanOrEqual(155);
+  });
+
+  it.each(LOCALES)("%s: every interface text keeps its placeholders", (l) => {
+    for (const [key, text] of Object.entries(GENERATOR.en.ui))
+      expect(placeholders(GENERATOR[l].ui[key as keyof typeof GENERATOR.en.ui]), key).toBe(
+        placeholders(text),
+      );
+  });
+
+  it.each(LOCALES)("%s: same structure as English, links unchanged", (l) => {
+    const t = GENERATOR[l].page;
+    expect(t.steps).toHaveLength(3);
+    expect(t.types).toHaveLength(3);
+    expect(t.tips).toHaveLength(3);
+    expect(t.faqs).toHaveLength(10);
+    expect(t.compare).toHaveLength(7);
+    expect(t.mustHave.length).toBeGreaterThanOrEqual(6);
+    expect(t.useCases.map((u) => u.href)).toEqual(GENERATOR.en.page.useCases.map((u) => u.href));
+    expect(GENERATOR[l].ui.fileName).toMatch(/^[a-z]+$/);
+    if (l !== "en") expect(t.moreEnglishNote).not.toBe("");
+  });
+
+  it.each(LOCALES)("%s: no claims the generator can't keep", (l) => {
+    const all = JSON.stringify(GENERATOR[l]);
+    // The app's facts, as numbers: 21 free / 31 templates, 38 currencies, 11 languages, 10 lines.
+    expect(all).not.toMatch(/\b(unlimited|unbegrenzt|illimit|ilimitad|onbeperkt)/i);
+    for (const n of ["21", "31", "38", "11"]) expect(all).toContain(n);
   });
 });
