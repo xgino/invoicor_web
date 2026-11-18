@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** your steps **Y13 → Y1 → Y2** (verify Search Console by DNS, export the baseline, deploy). Stage D (brand system) is done: tokens, SVG logo and share images, UI kit, all on the hidden `/brand` page. Next for Claude: chunk 17.1 (tests), then 17.2 (invoice-style components), then Stage E from chunk 18. Your ideas from 2026-11-18 are collected in [R10](#r10-your-ideas-2026-11-18); pricing is decision D14. Open decisions: D6–D12, D14 and D15 in [Decisions for you](#decisions-for-you).
+**Next up:** Stages C–F are built and tested on `dev` (2026-11-18): light invoice-style redesign of every page, tests in CI, staging + launch runbook. **Your steps, in order: Y13 → Y1 → Y17 → Y2** (verify Search Console by DNS, export the baseline, set up staging and run [seo/QA.md](seo/QA.md), then launch with DEPLOY.md section C). Waiting on you: About + Contact pages (D6, D7), pricing (D14), template titles (D15), competitor facts (Y16). Your ideas from 2026-11-18 are in [R10](#r10-your-ideas-2026-11-18). Next for Claude after launch: chunk 29 (post-launch watch), then Stage G (free invoice generator, needs D10).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -55,7 +55,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 **Stage A: Clean repo, baseline & deploy**
 - [x] 1. Clean up the repo
 - [ ] 2. Map the server & write DEPLOY.md _(DEPLOY.md + nginx config for 1.24 written; server paths are checked during Y2)_
-- [ ] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger)_
+- [x] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger, plus `--staging` and `--rollback`)_
 - [ ] 4. SEO baseline & quick fixes on the live site _(www redirect + /pricing are in `deploy/nginx/`; baseline export still to do **before** deploying Next.js)_
 
 **Stage B: Strategy (decide before building)**
@@ -70,7 +70,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md) + `content/pricing.json`; `content/en/` comes with chunk 36)_
 - [x] 12. Metadata & structured data helpers
 - [x] 13. Sitemap, robots & indexing _(sitemap, robots with all AI bots allowed (D3), `/llms.txt`, IndexNow in `deploy.sh`)_
-- [ ] 14. Analytics, cookie consent & App Store attribution _(✅ GA4 + PostHog load only after "Accept"; StatsUp and Ahrefs removed; privacy policy states analytics run in the US, app data in Germany; session replay off. Left: provider token (Y6), `seo/TRACKING.md`)_
+- [ ] 14. Analytics, cookie consent & App Store attribution _(✅ GA4 + PostHog load only after "Accept"; StatsUp and Ahrefs removed; privacy policy states analytics run in the US, app data in Germany; session replay off. Left: provider token (Y6); events and campaigns documented in [seo/TRACKING.md](seo/TRACKING.md))_
 
 **Stage D: Brand system**
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
@@ -90,10 +90,10 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 25. Motion & micro-interactions _(✅ 2026-11-18: CSS-only, reduced-motion safe; old landing CSS deleted)_
 
 **Stage F: Switch to Next.js**
-- [ ] 26. Staging site & QA
-- [ ] 27. URL parity check & redirect map
-- [ ] 28. Launch day
-- [ ] 29. Post-launch watch (4 weeks)
+- [ ] 26. Staging site & QA _(✅ prepared 2026-11-18: `deploy.sh --staging`, nginx staging config, [seo/QA.md](seo/QA.md). Left: Y17 server setup, then run the QA)_
+- [x] 27. URL parity check & redirect map _(✅ 2026-11-18: `npm run parity`, 0 failures vs the live site; rerun on staging)_
+- [ ] 28. Launch day _(✅ runbook ready (DEPLOY.md C). Left: you run it (Y2))_
+- [ ] 29. Post-launch watch (4 weeks) _(starts after launch)_
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -672,68 +672,50 @@ _See [R7](#r7-migration-strategy) for the strategy summary._
 ### 26. Staging site & QA
 **Goal:** the new site running on the real server, privately, before the switch.
 
-- [ ] a. DNS: add `staging.invoicor.com` (an A record to the same server) + a certbot certificate.
-- [ ] b. Server: install Node LTS + PM2. Clone the repo into a staging folder, build `web/` with `NEXT_PUBLIC_ENV=staging`, and run it as PM2 `invoicor-web-staging` on its own port.
-- [ ] c. nginx for `staging.`: basic-auth password, `X-Robots-Tag: noindex` header, `/api/` proxied to Django as on production.
-- [ ] d. Add a `--staging` mode to `deploy.sh` (deploys the `dev` branch to staging).
-- [ ] e. **QA checklist** (`seo/QA.md`), run on staging:
-  - every page type on iPhone Safari, Android Chrome, desktop Chrome/Safari/Firefox
-  - Lighthouse mobile ≥ 90 on home, a template page, an industry page
-  - broken-link check (e.g. `linkinator`)
-  - Rich Results Test on 1 page of each type
-  - forms, the consent banner, analytics events
-  - 404 page and status
-  - the `www`/`http` redirects
-  - OG previews
-- [ ] f. Fix everything the checklist finds.
+_Rewritten 2026-11-18 for the static export: staging is a second folder behind a password, not a
+Node/PM2 process._
+
+- [ ] a. DNS: `staging.invoicor.com` A record → the server, plus a certbot certificate. _(your step Y17)_
+- [x] b. ~~Node + PM2~~ Not needed: staging serves the same static `out/` from `$STAGING_DIR/site`.
+- [x] c. nginx for `staging.`: password (basic auth), `X-Robots-Tag: noindex`, the same redirects and `try_files` as production. _(`deploy/nginx/staging.invoicor.com.conf`; installing it is Y17)_
+- [x] d. `bash deploy/deploy.sh --staging` deploys the current branch to staging.
+- [x] e. **QA checklist** in [seo/QA.md](seo/QA.md): automated part (`npm run check`, parity script, CI) + devices, Lighthouse, Rich Results, consent, redirects by hand.
+- [ ] f. Fix everything the checklist finds. _(after Y17)_
 
 **Done when:** the whole QA checklist passes on staging.
 
 ### 27. URL parity check & redirect map
 **Goal:** prove that no URL, title or ranking signal gets lost in the switch.
 
-- [ ] a. `scripts/parity-check.ts`: for every URL in the baseline (chunk 4d), fetch it on staging and compare the status, title, meta description, canonical URL and H1. It outputs a report.
-- [ ] b. Every old URL must return 200 with the same canonical URL, or 301 to its new home. Zero 404s for URLs that used to work.
-- [ ] c. Changed titles or descriptions are fine if they're intentional improvements. List them in the report.
-- [ ] d. Redirect map in `next.config.ts` `redirects()` (permanent) for anything renamed or merged. Trailing-slash variants redirect automatically.
-- [ ] e. Compare the new sitemap with the old one: every old URL is present or redirected.
+- [x] a. `scripts/parity-check.mjs` (`npm run parity`): every URL in the live sitemap + `tests/urls.txt` + the nginx redirects, fetched on the old and new site; compares status, title, description, canonical and H1; writes `seo/parity/<date>-<host>.md`. _Add the Search Console baseline URLs (Y1) to `tests/urls.txt` once exported._
+- [x] b. _(✅ 2026-11-18 against the local build: 46 URLs, 0 failures; the nginx redirects are verified on staging)_ Every old URL must return 200 with the same canonical URL, or 301 to its new home. Zero 404s for URLs that used to work.
+- [x] c. Changed titles or descriptions are fine if they're intentional improvements. List them in the report.
+- [x] d. Redirect map: in **nginx** (static export has no `redirects()`): `/pricing`, `/register`, old image and favicon URLs, trailing slashes. Nothing was renamed or merged.
+- [x] e. Old sitemap (35 URLs) vs new (40): every old URL is present except `/pricing` (301 → `/#pricing`); new: help, affiliate, privacy, terms (they existed but weren't in the old sitemap).
 
 **Done when:** the parity report shows no unexpected differences, and every old URL resolves.
 
 ### 28. Launch day
 **Goal:** production switches from Vite to Next.js with a rollback ready.
 
-- [ ] a. Before the switch:
-  - merge `dev` → `main`
-  - confirm the latest parity report is green
-  - save the current nginx config as `invoicor.com.conf.vite-backup`
-- [ ] b. Server:
-  - clone/pull into the production folder
-  - build `web/` with `NEXT_PUBLIC_ENV=production`
-  - start PM2 `invoicor-web` (e.g. port 3020)
-  - `pm2 save` + `pm2 startup` (survives reboots)
-- [ ] c. nginx:
-  - `/api/`, `/admin/`, `/static/` stay on Django
-  - `/_next/static/` gets long cache headers
-  - everything else proxies to `127.0.0.1:3020`
-  - `nginx -t` → reload
-- [ ] d. Smoke test right away:
-  - `curl` the home page, 3 templates, 3 industries, 2 compare pages, a fake URL (expect 404)
-  - check the `www` and `http` redirects
-  - `/sitemap.xml`, `/robots.txt`
-- [ ] e. **Rollback** (if anything is badly wrong): restore the `.vite-backup` config, reload nginx (under 1 minute). Write this in `DEPLOY.md`.
-- [ ] f. Update `deploy.sh --server` for production: `npm ci` → `npm run build` → `pm2 reload invoicor-web` → IndexNow ping.
-- [ ] g. Search Console + Bing Webmaster:
-  - resubmit the sitemap
-  - URL Inspection → "Request indexing" for the home page and the top 10 pages from the baseline
-- [ ] h. Remove the old Vite files from the repo root (`src/`, `index.html`, `vite.config.ts`, the old `package.json`, `public/` once moved). Commit "chore: remove Vite app".
+_Rewritten 2026-11-18 for the static export. The step-by-step runbook is DEPLOY.md section C._
+
+- [x] a. Runbook: before (Y13, Y1, staging QA, parity 0 failures), backup of the Vite site and nginx config, deploy, nginx switch, checks. _(DEPLOY.md C)_
+- [x] b. ~~PM2 / Node on the server~~ Not needed: `deploy.sh` uploads `out/`, nginx serves it.
+- [x] c. nginx config: `deploy/nginx/invoicor.com.conf` (Django `/api/` untouched, `_next/static` cached a year, HTML revalidated, security headers, redirects, real 404).
+- [x] d. Smoke test: built into `deploy.sh` (home 200, unknown page 404) + the "after launch" part of [seo/QA.md](seo/QA.md).
+- [x] e. **Rollback** to the Vite site documented (restore the nginx backup, under a minute); later rollbacks: `deploy.sh --rollback`.
+- [x] f. IndexNow ping after every production deploy (`scripts/indexnow.mjs` in `deploy.sh`).
+- [ ] g. Search Console + Bing: resubmit the sitemap, request indexing for the home page and top 10 pages. _(your step, DEPLOY.md D)_
+- [x] h. Old Vite files: already gone from `dev`; merging `dev` into `main` removes them from `main` (and with them the old starter-template README GitHub shows today).
+- [ ] i. **Do the launch.** _(your step Y2: merge `dev` → `main`, run the runbook)_
 
 **Done when:** invoicor.com is served by Next.js, the smoke test passes, and the rollback is documented and tested on staging.
 
 ### 29. Post-launch watch (4 weeks)
 **Goal:** catch any SEO drop early.
 
-- [ ] a. **Daily for the first week:** the nginx error log + 404 log, PM2 status, an uptime check.
+- [ ] a. **Daily for the first week:** the nginx error log + 404 log (`sudo tail -f /var/log/nginx/error.log`; 404s: `grep '" 404 ' /var/log/nginx/access.log`), an uptime check. _(No PM2: nothing to restart.)_
 - [ ] b. **Weekly, compared with the baseline:**
   - Search Console: indexed pages, coverage errors, impressions and clicks for the top pages
   - Bing: the same
@@ -1501,3 +1483,4 @@ _Things Claude can't do from here (they need your accounts, your server, your ph
 | Y14 | **Check two homepage claims:** time yourself creating a real invoice with a saved client and items. If it takes about 5 seconds, keep "takes 5 seconds"; otherwise Claude changes it to "in seconds". Same for "80% auto-fill" (decision D12). | your iPhone | 19 | n/a |
 | Y15 | **If you change prices (D14):** create or edit the subscription products in App Store Connect (and the Unlimited product plus its limit in the API, if you add it), then tell Claude the new prices; the website follows from `content/pricing.json`. | App Store Connect, invoicor_api | 20c | the pricing redesign going live |
 | Y16 | **Check the competitor facts on the 10 compare pages** (prices, plan limits like "30 invoices a year", "70% less than HoneyBook", "50% savings vs Bonsai", "$300+ vs QuickBooks"). Claude can draft each with its source URL if you OK web research, but a person should confirm before relying on them (legal safety). | competitor websites | 23b | nothing; recommended before promoting the compare pages |
+| Y17 | **Set up staging** (DEPLOY.md A.4, ~15 min): DNS A record `staging`, `htpasswd`, copy `deploy/nginx/staging.invoicor.com.conf`, `certbot`, add `STAGING_DIR` + `STAGING_AUTH` to `deploy/.env`. Then `bash deploy/deploy.sh --staging` and `npm run parity -- --new https://staging.invoicor.com --auth invoicor:pw`. | DNS + server | 26 | a safe launch (recommended before Y2) |

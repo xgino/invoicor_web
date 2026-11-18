@@ -15,6 +15,8 @@ VPS:  nginx ─┬─ /api/, /admin/ ...  ──> Django (unchanged)
 | Previous version (for rollback) | `$SITE_DIR/site-prev` |
 | nginx config (reference copy) | `deploy/nginx/invoicor.com.conf` |
 | Deploy settings (not in git) | `deploy/.env` |
+| Staging (password-protected, noindex) | `$STAGING_DIR/site`, served at https://staging.invoicor.com |
+| QA checklist | [seo/QA.md](seo/QA.md) |
 
 ---
 
@@ -62,6 +64,34 @@ sudo nginx -t && sudo systemctl reload nginx
 
 ---
 
+### 4. Staging (once, recommended before the first Next.js deploy)
+
+A private copy of the site to check before going live. Same static files, behind a password,
+hidden from search engines.
+
+```bash
+# DNS (where invoicor.com's DNS is managed): A record  staging  ->  your server IP
+# On the server:
+sudo apt install apache2-utils
+sudo htpasswd -c /etc/nginx/.htpasswd-staging invoicor          # choose a password
+sudo cp staging.invoicor.com.conf /etc/nginx/sites-available/     # from deploy/nginx/
+sudo ln -s /etc/nginx/sites-available/staging.invoicor.com.conf /etc/nginx/sites-enabled/
+sudo certbot --nginx -d staging.invoicor.com
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+On your Mac, add `STAGING_DIR` and `STAGING_AUTH` (`invoicor:yourpassword`) to `deploy/.env`.
+Then, from `dev`:
+
+```bash
+bash deploy/deploy.sh --staging
+node scripts/parity-check.mjs --new https://staging.invoicor.com --auth invoicor:yourpassword
+```
+
+Work through [seo/QA.md](seo/QA.md) on staging.
+
+---
+
 ## B. Every deploy
 
 ```bash
@@ -76,7 +106,7 @@ git pull
 git merge dev
 git push
 
-# 3. Build, upload and switch live (runs lint + typecheck + build first; stops on any error)
+# 3. Build, upload and switch live (runs all checks and tests first; stops on any error)
 bash deploy/deploy.sh
 
 # 4. Back to dev for the next change
@@ -97,7 +127,24 @@ This swaps back to the previous upload. Fix the problem on `dev`, then deploy ag
 
 ---
 
-## C. After the first Next.js deploy (one time)
+## C. Launch day: switching from the old Vite site (one time)
+
+1. **Before:** Search Console verified by DNS (Y13), baseline exported (Y1), staging QA green
+   ([seo/QA.md](seo/QA.md)), parity report with 0 failures.
+2. **Back up** the current site and nginx config on the server:
+   ```bash
+   sudo cp /etc/nginx/sites-enabled/<that-file> ~/nginx-invoicor-vite-backup.conf
+   sudo cp -a <current root folder> ~/invoicor-vite-site-backup      # the "root" from A.2
+   ```
+3. Merge `dev` into `main` and run `bash deploy/deploy.sh` (section B).
+4. Update nginx as in A.3 (the new `root` exists now), `sudo nginx -t && sudo systemctl reload nginx`.
+5. Run the checks below and the "after launch" part of [seo/QA.md](seo/QA.md).
+
+**Rollback to the Vite site** (if something is badly wrong, under a minute):
+`sudo cp ~/nginx-invoicor-vite-backup.conf /etc/nginx/sites-enabled/<that-file> && sudo nginx -t && sudo systemctl reload nginx`.
+After that first launch, `bash deploy/deploy.sh --rollback` switches between Next.js versions.
+
+## D. After the first Next.js deploy (one time)
 
 > **Before** the first deploy: verify Google Search Console with a DNS TXT record (Domain property),
 > and export the SEO baseline (ROADMAP Your steps Y13 and Y1). Search Console may be verified through
@@ -113,7 +160,7 @@ This swaps back to the previous upload. Fix the problem on `dev`, then deploy ag
    then "Inspect URL" → "Request indexing" for the home page and your top pages.
 6. Keep an eye on Search Console → Pages for 2–4 weeks (see ROADMAP chunk 29).
 
-## Without the script (manual fallback)
+## E. Without the script (manual fallback)
 
 ```bash
 npm ci && npm run check
