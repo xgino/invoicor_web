@@ -118,7 +118,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [x] P3. "How it works" as a visible path
 - [x] P4. Promises that stand out
-- [ ] P5. Fee calculator, rewritten as a gain
+- [x] P5. Fee calculator, rewritten as a gain
 - [ ] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
 - [ ] P7. Premium motion: drawn underlines, moving background, glows
 - [ ] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
@@ -950,7 +950,7 @@ _✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in
   hover, and a short "proof" line under each.
 
 ### P5. Fee calculator, rewritten as a gain
-- [ ] Your remark: at first sight it looked like *you* lose money with Invoicor, so the negativity sticks
+- [x] _(✅ 2026-11-18: average invoice + invoices per month + fee slider with Low 1% / Common 2.9% / High 3.5% presets; the result leads with "+$2,088 more in your pocket every year"; "an app taking 2.9% would keep" is a small, labelled line; honest footnote)_ Your remark: at first sight it looked like *you* lose money with Invoicor, so the negativity sticks
   to us. Rebuild it:
   - inputs people know: **average invoice amount** and **invoices per month**
   - "Fee other apps take per payment" as a slider with marked points ("low 1%", "common 2.9%",
