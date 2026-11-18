@@ -83,3 +83,20 @@ describe("sitemap, robots and hidden pages", () => {
     expect(existsSync(join(OUT, "404.html"))).toBe(true);
   });
 });
+
+describe("App Store links carry Apple's campaign tracking (ROADMAP X10)", () => {
+  it.each(URLS)("%s", (path) => {
+    const html = htmlFor(path);
+    // Every clickable App Store link (href), not the plain address in structured data.
+    const links = [...html.matchAll(/href="(https:\/\/apps\.apple\.com[^"]*)"/g)].map((m) =>
+      m[1]!.replaceAll("&amp;", "&"),
+    );
+    for (const link of links) {
+      const q = new URL(link).searchParams;
+      expect(q.get("pt"), link).toBe("128750110");
+      expect(q.get("mt"), link).toBe("8");
+      expect(q.get("ct")?.length ?? 0, link).toBeGreaterThan(0);
+      expect(q.get("ct")!.length, link).toBeLessThanOrEqual(40);
+    }
+  });
+});
