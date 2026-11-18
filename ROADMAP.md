@@ -117,7 +117,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [x] P3. "How it works" as a visible path
-- [ ] P4. Promises that stand out
+- [x] P4. Promises that stand out
 - [ ] P5. Fee calculator, rewritten as a gain
 - [ ] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
 - [ ] P7. Premium motion: drawn underlines, moving background, glows
@@ -945,7 +945,7 @@ _✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in
   Vertical on phones, horizontal on desktop.
 
 ### P4. Promises that stand out
-- [ ] Your remark: the cards are nice but the eye scans over them. Give them more weight: a highlighted
+- [x] _(✅ 2026-11-18: one big fact per card ($0 · 0% · 100%), gradient icon tiles, a proof line, the money promise raised as "Our core promise", gradient edge + lift on hover, soft glow behind the section)_ Your remark: the cards are nice but the eye scans over them. Give them more weight: a highlighted
   band, a large icon tile in the brand gradient, one bold key phrase per card, a gradient border on
   hover, and a short "proof" line under each.
 

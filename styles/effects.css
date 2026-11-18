@@ -65,6 +65,30 @@
   transform: none;
 }
 
+/* ── Card with a gradient edge on hover (promises, featured cards) ── */
+.promise-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--brand-gradient);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.25s var(--ease-brand);
+  pointer-events: none;
+}
+.promise-card:hover::before {
+  opacity: 1;
+}
+.promise-card:hover {
+  transform: translateY(-4px);
+}
+
 /* ── Accordion: smooth height where the browser supports it (Chrome 131+); snaps elsewhere ── */
 @supports (interpolate-size: allow-keywords) {
   :root {
