@@ -115,7 +115,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X16. 🟠 Fix two claims in your App Store screenshots ("Estimates", "Trusted by businesses worldwide")
 - [ ] X17. 🟢 Send fresh app screenshots
 
-**Stage P: Polish from your review (2026-11-18)** _(P1–P10 done; round 2: P11–P18; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
+**Stage P: Polish from your review (2026-11-18)** _(✅ P1–P20 done; open: lawyer review (X15), App Store screenshot fixes (X16), fresh screenshots (X17); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [x] P3. "How it works" as a visible path
@@ -133,7 +133,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P15. Real app screens in an iPhone frame
 - [x] P16. Sticky "Get the app" bar on phones
 - [x] P17. QR code for desktop visitors
-- [ ] P18. Mobile and speed recheck
+- [x] P18. Mobile and speed recheck
 - [x] P19. FAQ audit: every answer matches its question and the app _(✅ 2026-11-18)_
 - [x] P20. Plain, true security wording; Google sign-in in Privacy; positive trial line _(✅ 2026-11-18)_
 
@@ -1077,7 +1077,7 @@ on desktop.
 - [x] Build it. _(✅ 2026-11-18: `lib/qr.ts` + `components/ui/QrDownload.tsx` (qrcode 1.5.4, SVG at build time, desktop only) next to the App Store badge in the final CTA, the app preview and every SEO page's closing CTA; decoded in Chrome from the built pages to the App Store link; campaign `qr_*` once the provider token is set (X10))_
 
 **P18. Mobile and speed recheck** after P11–P17 (same measurement as P10).
-- [ ] Measure and fix.
+- [x] Measure and fix. _(✅ 2026-11-18, home page as a mid-range phone: largest paint **0.67–0.80 s** (P10: 0.59–0.75 s), layout shift **0**, JavaScript **619 KB** raw (+24 KB: sticky bar, calculator), HTML **44 KB** compressed; real app screens 33 KB and lazy-loaded; template previews still wait until you scroll near them. At 390 px nothing makes the page scroll sideways.)_
 
 **P19. FAQ audit** _(✅ 2026-11-18, your remark: "Is my data safe?" answered a different question)._
 Checked all ~170 FAQs (home 7, help 32, affiliate 5, templates 36, industries 50, compare 30) for
