@@ -8,6 +8,7 @@ import { buttonClass } from "@/components/ui/Button";
 import { cx } from "@/components/ui/cx";
 import { appStoreLink } from "@/lib/config";
 import { getServerConsent, readConsent, subscribeConsent } from "@/lib/consent";
+import { CHROME, fill, type ChromeDict } from "@/lib/i18n/chrome";
 import { FREE_INVOICES } from "@/lib/pricing";
 
 /**
@@ -15,7 +16,7 @@ import { FREE_INVOICES } from "@/lib/pricing";
  * any element marked `data-hide-sticky` (closing CTAs, footer) is on screen and while the cookie
  * banner is open, so it never doubles a button or covers the banner. Hidden from md up.
  */
-export function StickyCta() {
+export function StickyCta({ t = CHROME.en.sticky }: { t?: ChromeDict["sticky"] }) {
   const pathname = usePathname();
   const consent = useSyncExternalStore(subscribeConsent, readConsent, getServerConsent);
   const [scrolled, setScrolled] = useState(false);
@@ -56,10 +57,8 @@ export function StickyCta() {
       <div className="flex items-center gap-3">
         <LogoMark size={36} />
         <div className="min-w-0 flex-1 leading-tight">
-          <p className="text-ink text-small truncate font-bold">Invoicor for iPhone</p>
-          <p className="text-subtle truncate text-[0.75rem]">
-            {FREE_INVOICES} invoices free · no subscription
-          </p>
+          <p className="text-ink text-small truncate font-bold">{t.title}</p>
+          <p className="text-subtle truncate text-[0.75rem]">{fill(t.sub, { n: FREE_INVOICES })}</p>
         </div>
         <a
           href={appStoreLink("sticky_mobile")}
@@ -71,7 +70,7 @@ export function StickyCta() {
           className={buttonClass({ size: "sm" })}
         >
           <AppleIcon size={13} />
-          Get the app
+          {t.cta}
         </a>
       </div>
     </div>

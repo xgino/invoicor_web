@@ -11,13 +11,14 @@ import {
   type Consent,
 } from "@/lib/consent";
 import { buttonClass } from "@/components/ui/Button";
+import { CHROME, type ChromeDict } from "@/lib/i18n/chrome";
 
 /**
  * Small consent card, bottom of the screen. Shown until the visitor chooses; re-opened from
  * the footer. States plainly that website analytics run on US services while app data stays
  * in Germany. Decline and Accept look the same on purpose: no nudging (EU consent guidance).
  */
-export function ConsentBanner() {
+export function ConsentBanner({ t = CHROME.en.consent }: { t?: ChromeDict["consent"] }) {
   const consent = useSyncExternalStore(subscribeConsent, readConsent, getServerConsent);
   const [reopened, setReopened] = useState(false);
 
@@ -43,17 +44,16 @@ export function ConsentBanner() {
       className="border-line bg-surface/95 text-small text-muted shadow-float fixed inset-x-4 bottom-4 z-50 mx-auto max-w-lg rounded-2xl border p-5 backdrop-blur sm:inset-x-auto sm:right-6 sm:bottom-6"
     >
       <p id="consent-title" className="text-ink mb-1 font-bold">
-        Cookies for website analytics?
+        {t.title}
       </p>
       <p className="mb-4 leading-relaxed">
-        With your OK we use Google Analytics and PostHog to see which pages help people. Both are US
-        services, so this website usage data is processed in the US. Your account and invoice data
-        in the app always stays on our servers in Germany.{" "}
+        {t.text}{" "}
         <Link
           href="/privacy#cookies"
+          hrefLang="en"
           className="text-brand-700 focus-visible:focus-ring rounded font-medium underline underline-offset-2"
         >
-          Privacy policy
+          {t.privacy}
         </Link>
       </p>
       <div className="flex gap-3">
@@ -62,14 +62,14 @@ export function ConsentBanner() {
           onClick={() => choose("denied")}
           className={buttonClass({ variant: "secondary", className: "flex-1" })}
         >
-          Decline
+          {t.decline}
         </button>
         <button
           type="button"
           onClick={() => choose("granted")}
           className={buttonClass({ variant: "secondary", className: "flex-1" })}
         >
-          Accept
+          {t.accept}
         </button>
       </div>
     </div>

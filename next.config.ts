@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
   reactStrictMode: true,
+  // A branded 404 across both root layouts (app/global-not-found.tsx, ROADMAP 36).
+  experimental: { globalNotFound: true },
   images: {
     // No image server in a static export; images are pre-sized files in /public.
     unoptimized: true,

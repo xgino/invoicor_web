@@ -1,17 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Analytics } from "@/components/analytics/Analytics";
-import { ConsentBanner } from "@/components/consent/ConsentBanner";
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
-import { HashOpener } from "@/components/layout/HashOpener";
-import { RevealObserver } from "@/components/layout/RevealObserver";
-import { StickyCta } from "@/components/layout/StickyCta";
-import { SvgDefs } from "@/components/ui/layout";
+import { BODY_CLASS, JS_CLASS_SCRIPT, SiteBody } from "@/components/layout/SiteBody";
 import { APP_STORE_ID, SITE_NAME, SITE_URL } from "@/lib/config";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { THEME_COLOR } from "@/lib/theme";
-import { cabinet, satoshi } from "./fonts";
-import "./globals.css";
+import { cabinet, satoshi } from "../fonts";
+import "../globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -51,29 +44,14 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-/**
- * Adds the `js` class before first paint so below-the-fold reveal animations start hidden.
- * Safety net: if the reveal script never loads, the class is removed after 3s so nothing
- * stays invisible.
- */
-const jsClassScript = `(function(d){d.classList.add('js');setTimeout(function(){if(!d.classList.contains('reveal-ready'))d.classList.remove('js')},3000)})(document.documentElement)`;
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${satoshi.variable} ${cabinet.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: jsClassScript }} />
+        <script dangerouslySetInnerHTML={{ __html: JS_CLASS_SCRIPT }} />
       </head>
-      <body className="bg-surface text-ink selection:bg-brand-100 selection:text-brand-900 flex min-h-screen flex-col font-sans">
-        <SvgDefs />
-        <Navbar />
-        <main className="grow">{children}</main>
-        <Footer />
-        <RevealObserver />
-        <HashOpener />
-        <StickyCta />
-        <Analytics />
-        <ConsentBanner />
+      <body className={BODY_CLASS}>
+        <SiteBody locale="en">{children}</SiteBody>
       </body>
     </html>
   );

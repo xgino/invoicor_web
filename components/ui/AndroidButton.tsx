@@ -7,10 +7,22 @@ import { cx } from "./cx";
  * yet, so it leads to /android (what's coming, plus the visit counter), never to a store.
  * Same size as the App Store badge, but quiet: the App Store stays the main action.
  */
-export function AndroidButton({ campaign, className }: { campaign: string; className?: string }) {
+export function AndroidButton({
+  campaign,
+  className,
+  href = "/android",
+  top = "Coming soon",
+  label = "Android",
+}: {
+  campaign: string;
+  className?: string;
+  href?: string;
+  top?: string;
+  label?: string;
+}) {
   return (
     <Link
-      href="/android"
+      href={href}
       data-track="android_click"
       data-track-section={campaign}
       className={cx(
@@ -20,8 +32,8 @@ export function AndroidButton({ campaign, className }: { campaign: string; class
     >
       <Smartphone aria-hidden className="text-brand-600 size-6" />
       <span className="flex flex-col leading-none">
-        <span className="text-muted text-[0.6875rem] font-medium">Coming soon</span>
-        <span className="mt-0.5 text-[1.25rem] font-bold tracking-tight">Android</span>
+        <span className="text-muted text-[0.6875rem] font-medium">{top}</span>
+        <span className="mt-0.5 text-[1.25rem] font-bold tracking-tight">{label}</span>
       </span>
     </Link>
   );

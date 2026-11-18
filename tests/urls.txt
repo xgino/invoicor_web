@@ -70,3 +70,13 @@
 /compare/servicem8
 /compare/billdu
 /compare/zervant
+/nl/android
+/de/android
+/fr/android
+/es/android
+/it/android
+/pt/android
+/pl/android
+/sv/android
+/da/android
+/nb/android

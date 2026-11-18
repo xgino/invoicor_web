@@ -11,7 +11,7 @@ const ROOT = process.cwd();
 
 /** Files that work with raw values on purpose. */
 const ALLOWED = [
-  "app/brand/", // the token showcase prints the raw values
+  "app/(en)/brand/", // the token showcase prints the raw values
   "components/brand/", // the logo is drawn with exact colors and sizes
 ];
 

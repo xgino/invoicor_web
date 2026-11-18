@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl } from "@/lib/config";
 import { CONTENT_UPDATED_AT, getComparisons, getIndustries, getTemplates } from "@/lib/content";
+import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
+import { ROUTES, type PageKey } from "@/lib/i18n/routes";
 
 // Required for `output: "export"`: render once at build time into out/sitemap.xml.
 export const dynamic = "force-static";
@@ -10,7 +12,28 @@ export const dynamic = "force-static";
  * so search engines only recrawl when something actually changed.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const page = (path: string, date: string) => ({ url: absoluteUrl(path), lastModified: date });
+  // Pages that exist in several languages carry all their language versions (ROADMAP 36d).
+  const languagesOf = (path: string) => {
+    const key = (Object.keys(ROUTES) as PageKey[]).find((k) =>
+      Object.values(ROUTES[k]).includes(path),
+    );
+    const versions = key ? ROUTES[key] : {};
+    if (Object.keys(versions).length < 2) return undefined;
+    return {
+      languages: Object.fromEntries(
+        Object.entries(versions).map(([l, p]) => [l, absoluteUrl(p as string)]),
+      ),
+    };
+  };
+  const page = (path: string, date: string) => {
+    const alternates = languagesOf(path);
+    return { url: absoluteUrl(path), lastModified: date, ...(alternates ? { alternates } : {}) };
+  };
+  const translated = (Object.keys(ROUTES) as PageKey[]).flatMap((key) =>
+    (Object.entries(ROUTES[key]) as [Locale, string][])
+      .filter(([l]) => l !== DEFAULT_LOCALE)
+      .map(([, path]) => page(path, CONTENT_UPDATED_AT.site)),
+  );
 
   return [
     page("/", CONTENT_UPDATED_AT.site),
@@ -26,5 +49,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/affiliate", CONTENT_UPDATED_AT.site),
     page("/terms", CONTENT_UPDATED_AT.legal),
     page("/privacy", CONTENT_UPDATED_AT.privacy),
+    ...translated,
   ];
 }

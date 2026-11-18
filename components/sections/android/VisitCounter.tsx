@@ -8,7 +8,15 @@ import { countAndroidVisit } from "@/lib/android";
  * The number is a count of visits, not of people, and the label says so.
  * If the counter service can't be reached, the number is simply left out.
  */
-export function VisitCounter() {
+export function VisitCounter({
+  intl = "en-US",
+  counting = "Counting your visit…",
+  label = "visits to this page so far, including yours",
+}: {
+  intl?: string;
+  counting?: string;
+  label?: string;
+}) {
   const [count, setCount] = useState<number | null>(null);
   const [failed, setFailed] = useState(false);
   const counted = useRef(false);
@@ -29,12 +37,10 @@ export function VisitCounter() {
             className="inline-block h-[1em] w-[3ch] animate-pulse rounded-xl bg-stone-100"
           />
         ) : (
-          count.toLocaleString("en-US")
+          count.toLocaleString(intl)
         )}
       </p>
-      <p className="text-muted mt-3 font-medium">
-        {count === null ? "Counting your visit…" : "visits to this page so far, including yours"}
-      </p>
+      <p className="text-muted mt-3 font-medium">{count === null ? counting : label}</p>
     </div>
   );
 }

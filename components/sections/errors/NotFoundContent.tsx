@@ -1,13 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { buttonClass } from "@/components/ui/Button";
 import { InvoicePaper, LineItems, PaperLabel, Stamp } from "@/components/ui/invoice";
 import { Container } from "@/components/ui/layout";
-
-export const metadata: Metadata = {
-  title: { absolute: "Page not found | Invoicor" },
-  robots: { index: false, follow: true },
-};
 
 const LINKS = [
   { href: "/templates", label: "Invoice templates" },
@@ -17,7 +11,7 @@ const LINKS = [
 ];
 
 /** Branded 404 (ROADMAP chunk 24e). Exported as out/404.html; nginx serves it with status 404. */
-export default function NotFound() {
+export function NotFoundContent() {
   return (
     <Container className="pt-nav pb-section grid items-center gap-14 lg:grid-cols-2">
       <div className="pt-16">

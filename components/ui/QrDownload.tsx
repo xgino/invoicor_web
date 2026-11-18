@@ -8,9 +8,16 @@ import { cx } from "./cx";
 export async function QrDownload({
   campaign,
   className,
+  t = {
+    title: "On a computer?",
+    line1: "Scan with your iPhone camera",
+    line2: "to open the App Store.",
+    aria: "QR code that opens Invoicor in the App Store",
+  },
 }: {
   campaign?: string;
   className?: string;
+  t?: { title: string; line1: string; line2: string; aria: string };
 }) {
   const svg = await appStoreQrSvg(campaign);
   return (
@@ -22,16 +29,16 @@ export async function QrDownload({
     >
       <div
         role="img"
-        aria-label="QR code that opens Invoicor in the App Store"
+        aria-label={t.aria}
         className="size-24 shrink-0 [&_svg]:size-full"
         dangerouslySetInnerHTML={{ __html: svg }}
       />
       <div className="leading-snug">
-        <p className="text-small text-ink font-bold">On a computer?</p>
+        <p className="text-small text-ink font-bold">{t.title}</p>
         <p className="text-small text-muted">
-          Scan with your iPhone camera
+          {t.line1}
           <br />
-          to open the App Store.
+          {t.line2}
         </p>
       </div>
     </div>

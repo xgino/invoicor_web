@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
-import { NAV_LINKS, isActive } from "./nav-links";
+import { type NavLink, isActive } from "./nav-links";
 
 /**
  * The navbar's interactive parts (ROADMAP chunk 18). The bar gets a border and stronger blur once
@@ -33,11 +33,11 @@ export function NavShell({ children }: { children: ReactNode }) {
   );
 }
 
-export function DesktopLinks() {
+export function DesktopLinks({ links }: { links: readonly NavLink[] }) {
   const pathname = usePathname();
   return (
     <ul className="hidden items-center gap-1 md:flex">
-      {NAV_LINKS.map((link) => {
+      {links.map((link) => {
         const active = isActive(pathname, link.href);
         return (
           <li key={link.href}>
@@ -66,7 +66,17 @@ export function DesktopLinks() {
 }
 
 /** Slide-down menu for phones: focus stays inside, Esc and link clicks close it. */
-export function MobileMenu({ cta }: { cta: ReactNode }) {
+export function MobileMenu({
+  links,
+  cta,
+  openLabel,
+  closeLabel,
+}: {
+  links: readonly NavLink[];
+  cta: ReactNode;
+  openLabel: string;
+  closeLabel: string;
+}) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const panel = useRef<HTMLDivElement>(null);
@@ -120,7 +130,7 @@ export function MobileMenu({ cta }: { cta: ReactNode }) {
         type="button"
         aria-expanded={open}
         aria-controls="mobile-menu"
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? closeLabel : openLabel}
         onClick={() => setOpen((o) => !o)}
         className="text-ink hover:bg-tint focus-visible:focus-ring -mr-2 grid size-10 place-items-center rounded-lg"
       >
@@ -133,7 +143,7 @@ export function MobileMenu({ cta }: { cta: ReactNode }) {
         className="bg-surface border-line shadow-float absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto border-t px-4 pt-4 pb-10"
       >
         <ul className="space-y-1">
-          {NAV_LINKS.map((link) => (
+          {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}

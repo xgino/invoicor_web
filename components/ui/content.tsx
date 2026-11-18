@@ -75,7 +75,16 @@ export function Badge({
  * The App Store download button. Black, per Apple's badge guidelines, so it stays recognisable on
  * the light site. `campaign` becomes the App Store `ct` value for attribution.
  */
-export function AppStoreBadge({ campaign, className }: { campaign: string; className?: string }) {
+export function AppStoreBadge({
+  campaign,
+  className,
+  top = "Download on the",
+}: {
+  campaign: string;
+  className?: string;
+  /** The small line above "App Store", in Apple's wording for the page's language. */
+  top?: string;
+}) {
   return (
     <a
       href={appStoreLink(campaign)}
@@ -90,7 +99,7 @@ export function AppStoreBadge({ campaign, className }: { campaign: string; class
     >
       <AppleIcon size={26} />
       <span className="flex flex-col leading-none">
-        <span className="text-[0.6875rem] font-medium">Download on the</span>
+        <span className="text-[0.6875rem] font-medium">{top}</span>
         <span className="mt-0.5 text-[1.25rem] font-bold tracking-tight">App Store</span>
       </span>
     </a>

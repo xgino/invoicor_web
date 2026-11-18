@@ -234,6 +234,12 @@ export default function PrivacyPage() {
           settings&quot; at the bottom of every page. We do not use advertising cookies or
           cross-site tracking.
         </P>
+        <P>
+          <B>Language:</B> the website is available in 11 languages. On your first visit it opens
+          the page in your browser&apos;s language, if we have it, and remembers your language in
+          your browser&apos;s local storage (not a cookie, and never sent to us). Choosing a
+          language in the language menu replaces it.
+        </P>
       </S>
 
       <S n="12" t="Changes to This Policy">

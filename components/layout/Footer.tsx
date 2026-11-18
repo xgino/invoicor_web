@@ -8,6 +8,10 @@ import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
+import { CHROME } from "@/lib/i18n/chrome";
+import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
+import { ROUTES } from "@/lib/i18n/routes";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 /**
  * Site footer (ROADMAP chunk 18d): light, with a brand-gradient hairline on top. Columns link
@@ -53,7 +57,9 @@ function AllLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
-export function Footer() {
+export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
+  if (locale !== DEFAULT_LOCALE)
+    return <LocalizedFooter locale={locale as Exclude<Locale, "en">} />;
   const templates = getTemplates().slice(0, 6);
   const industries = getIndustries().slice(0, 6);
   const comparisons = getComparisons().slice(0, 6);
@@ -138,7 +144,11 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="border-line text-small text-subtle mt-14 flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="border-line mt-14 border-t pt-8">
+          <LanguageSwitcher locale={locale} label={CHROME.en.switcher.label} variant="list" />
+        </div>
+
+        <div className="border-line text-small text-subtle mt-8 flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} Invoicor. All rights reserved.</p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             <Item href="/privacy" track="privacy">
@@ -154,5 +164,114 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+/**
+ * Footer in another language (ROADMAP 36e): links to the pages that exist in that language, the
+ * English hubs under a clear "In English" heading, and a note that legal pages are in English.
+ */
+function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
+  const t = CHROME[locale].footer;
+  const home = ROUTES.home[locale];
+  const year = new Date().getFullYear();
+  return (
+    <footer data-hide-sticky className="bg-tint relative">
+      <div aria-hidden className="bg-brand-gradient absolute inset-x-0 top-0 h-px opacity-60" />
+      <div className="max-w-page px-gutter mx-auto pt-16 pb-10 sm:px-6">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_3fr]">
+          <div className="max-w-xs">
+            <Link
+              href={home ?? "/"}
+              aria-label={CHROME[locale].nav.homeAria}
+              className="text-ink focus-visible:focus-ring inline-block rounded-lg"
+            >
+              <Logo size={32} />
+            </Link>
+            <p className="text-small text-muted mt-4 leading-relaxed">{t.tagline}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <AppStoreBadge
+                campaign={`footer_${locale}`}
+                top={CHROME[locale].badges.appStoreTop}
+              />
+              <AndroidButton
+                campaign={`footer_${locale}`}
+                href={ROUTES.android[locale] ?? "/android"}
+                top={CHROME[locale].badges.androidTop}
+                label={CHROME[locale].badges.android}
+              />
+            </div>
+            <p className="text-small text-muted mt-6 flex items-center gap-2">
+              <ShieldCheck aria-hidden className="text-brand-700 size-4 shrink-0" />
+              {t.dataGermany}
+            </p>
+          </div>
+
+          <nav aria-label={t.aria} className="grid grid-cols-2 gap-10 sm:grid-cols-3">
+            <Column title={t.colInvoicor}>
+              <Item
+                href={ROUTES.generator[locale] ?? `/free-invoice-generator?lang=${locale}`}
+                track="generator"
+              >
+                {t.generator}
+              </Item>
+              <Item href={home ? `${home}#pricing` : "/#pricing"} track="pricing">
+                {t.pricing}
+              </Item>
+              <Item href={ROUTES.android[locale] ?? "/android"} track="android">
+                {t.android}
+              </Item>
+              <li>
+                <a
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className={LINK}
+                  data-track="footer_click"
+                  data-track-link="email"
+                >
+                  {CONTACT_EMAIL}
+                </a>
+              </li>
+            </Column>
+            <Column title={t.colEnglish}>
+              <EnglishItem href="/templates">{t.templates}</EnglishItem>
+              <EnglishItem href="/industries">{t.industries}</EnglishItem>
+              <EnglishItem href="/compare">{t.compare}</EnglishItem>
+              <EnglishItem href="/help">{t.help}</EnglishItem>
+            </Column>
+            <div className="col-span-2 sm:col-span-1">
+              <LanguageSwitcher
+                locale={locale}
+                label={CHROME[locale].switcher.label}
+                variant="list"
+              />
+            </div>
+          </nav>
+        </div>
+
+        <div className="border-line text-small text-subtle mt-14 flex flex-col gap-4 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            © {year} Invoicor. {t.rights} <span className="block sm:inline">{t.legalNote}</span>
+          </p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            <EnglishItem href="/privacy">{t.privacy}</EnglishItem>
+            <EnglishItem href="/terms">{t.terms}</EnglishItem>
+            <li>
+              <CookieSettingsButton className={LINK} label={t.cookies} />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/** A link to an English page from a translated page: marked with hreflang and lang. */
+function EnglishItem({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <li>
+      <Link href={href} hrefLang="en" className={LINK}>
+        {children}
+      </Link>
+    </li>
   );
 }
