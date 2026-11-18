@@ -3,9 +3,10 @@ import { Analytics } from "@/components/analytics/Analytics";
 import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { RevealObserver } from "@/components/RevealObserver";
+import { RevealObserver } from "@/components/layout/RevealObserver";
 import { APP_STORE_ID, SITE_NAME, SITE_URL } from "@/lib/config";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
+import { THEME_COLOR } from "@/lib/theme";
 import { cabinet, satoshi } from "./fonts";
 import "./globals.css";
 
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
+  themeColor: THEME_COLOR,
   width: "device-width",
   initialScale: 1,
 };

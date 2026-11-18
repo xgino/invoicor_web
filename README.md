@@ -38,40 +38,41 @@ Every page is pre-rendered, so search engines get the full content, titles and s
 
 ```
 app/                     routes (one folder per URL) + site-wide files
-  layout.tsx             <html>, fonts, navbar, footer, analytics (every page)
+  layout.tsx             <html>, fonts, navbar, footer, analytics, consent (every page)
   page.tsx               home page
   templates/ industries/ compare/   hub page + [slug] detail pages
   help/ affiliate/ terms/ privacy/
   brand/                 hidden brand reference: every token and component (noindex)
-  not-found.tsx          branded 404 (exported as out/404.html)
+  not-found.tsx error.tsx  branded 404 (out/404.html) and error page
   sitemap.ts robots.ts manifest.ts llms.txt/  generated at build time
-  og.png/route.tsx       default social share image (out/og.png)
+  og.png/route.tsx       default share image (out/og.png)
   og/[collection]/[slug]/og.png/   per-page share images (templates, industries, compare)
   icon.svg icon.png apple-icon.png  favicons, generated from the SVG logo
   fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
-  globals.css            Tailwind + keyframes + hover/reveal helpers
-styles/tokens.css        brand tokens: colors, gradients, type scale, shadows, motion (see BRAND.md §7)
-styles/effects.css       stamp, sheen, steam, glow drift, paper edge (all off under reduced motion)
+  globals.css            imports Tailwind and styles/
+styles/
+  tokens.css             brand tokens: colors, gradients, type scale, shadows, spacing (BRAND.md §7)
+  effects.css            motion and paper effects (all off under reduced motion)
 components/
-  brand/                 Logo, LogoMark (SVG)
-  ui/                    UI kit: Button, Section, Heading, Card, Badge, Breadcrumbs, form parts, Accordion, Tabs… (see /brand)
-  layout/                Navbar, Footer
+  ui/                    UI kit: Button, Section, Heading, Card, Badge, Breadcrumbs, form parts,
+                         Accordion, Tabs, invoice parts (InvoicePaper, LineItems, Stamp)… see /brand
+  brand/                 Logo, LogoMark, AppleIcon (SVG)
+  layout/                Navbar, Footer, RevealObserver
   sections/home/         home page sections (hero, pricing, fee calculator, FAQ…)
+  sections/content/      shared blocks for SEO pages (header, article + TOC, FAQ, hub, legal)
   pricing/               PricingTable: every plan as an invoice
-  content/               shared blocks for SEO pages (breadcrumbs, FAQ, TOC, CTAs)
-  affiliate/  analytics/  seo/
-content/                 templates.json, industries.json, comparisons.json (page content)
+  affiliate/ analytics/ consent/ seo/
+content/                 templates.json, industries.json, comparisons.json, pricing.json
 lib/
   config.ts              every URL, ID and key in one place
-  content.ts             typed + validated access to content/*.json
-  seo.ts jsonld.ts       page metadata and structured data helpers
+  content.ts pricing.ts  typed + validated access to content/*.json
+  seo.ts jsonld.ts og.tsx  page metadata, structured data, share images
   api.ts                 build-time calls to the Invoicor API
 assets/og-fonts/         TTF copies of the site fonts for the share images (the renderer can't read woff2)
-public/                  static files copied as-is (icons, images, BingSiteAuth.xml, IndexNow key)
+public/                  static files copied as-is (icons, BingSiteAuth.xml, IndexNow key)
 scripts/                 content-check.mjs, indexnow.mjs, serve-out.mjs (local nginx-like server)
-tests/                   unit/, site/ (checks out/), e2e/ (Playwright), urls.txt (every public URL, frozen)
+tests/                   unit/ (incl. style guard), site/ (checks out/), e2e/ (Playwright), urls.txt
 types/                   api.generated.ts (from the API's OpenAPI schema)
-deploy/                  deploy script + nginx config
 ```
 
 ## Adding or editing an SEO page

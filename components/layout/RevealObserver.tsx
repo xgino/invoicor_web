@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 /**
- * Scroll-reveal for elements with the `reveal` class (see globals.css).
+ * Scroll-reveal for elements with the `reveal` class (see styles/effects.css).
  * Content is visible in the HTML for crawlers and no-JS visitors; the hidden start state only
  * applies once <html> has the `js` class (set by an inline script in app/layout.tsx, which also
  * removes it again after 3s if this component never loads). Re-scans on every navigation.

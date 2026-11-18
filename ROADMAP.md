@@ -76,7 +76,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
 - [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
 - [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
-- [x] 17.1 Tests: the safety net before the rebuild _(✅ 2026-11-18: 14 unit, 42 built-site, 56 browser tests in CI; style guard (e) follows Stage E)_
+- [x] 17.1 Tests: the safety net before the rebuild _(✅ 2026-11-18: unit (incl. style guard), built-site and browser tests in CI)_
 - [x] 17.2 Invoice-style premium components _(✅ 2026-11-18: paper, line items, stamp, billing switch, invoice-shaped pricing; on `/brand`)_
 
 **Stage E: Rebuild the pages (in the new brand)**
@@ -87,7 +87,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
 - [ ] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Left: sources + dates for competitor facts (Y16), more competitors (23c))_
 - [ ] 24. About, contact, help, affiliate & legal _(✅ 2026-11-18: help, affiliate, legal, 404, error page rebuilt. Left: About + Contact, which need D6/D7)_
-- [ ] 25. Motion & micro-interactions
+- [x] 25. Motion & micro-interactions _(✅ 2026-11-18: CSS-only, reduced-motion safe; old landing CSS deleted)_
 
 **Stage F: Switch to Next.js**
 - [ ] 26. Staging site & QA
@@ -498,7 +498,7 @@ tests come first: they prove no URL, title or price breaks during the rebuild._
   (Decline → no analytics requests; Accept → GA + PostHog load), the pricing toggle.
 - [x] d. **Accessibility test**: axe-core on one page of each type (same approach as the `/brand`
   check in chunk 17g); fail on serious or critical issues. _Pages on the old design are listed in `NOT_REBUILT_YET` (expected to fail); each Stage E chunk removes its pages from that list._
-- [ ] e. _(after Stage E, when the old pages are gone)_ **Style guard**: fail on hex colors or inline `style=` in pages and components outside
+- [x] e. _(✅ 2026-11-18, `tests/unit/style-guard.test.ts`)_ **Style guard**: fail on hex colors or inline `style=` in pages and components outside
   `styles/tokens.css`, `lib/og.tsx` and `components/brand/` (turns "unified styling" into a rule).
 - [x] f. Add `npm test` to `npm run check` and the GitHub Actions workflow.
 
@@ -645,19 +645,19 @@ _✅ 2026-11-18: Help (grouped accordions, sticky topic list, fixed facts: 31 te
 **Done when:** no page uses the old styling, a wrong URL shows the branded 404 with **status 404**, and the privacy policy matches what the site actually does.
 
 ### 25. Motion & micro-interactions
-**Goal:** the site feels alive, without getting in the way. Uses the `motion` package (in client components only).
+**Goal:** the site feels alive, without getting in the way. _Done with CSS only (`styles/effects.css`), no `motion` package: smaller, works without JavaScript._
 
-- [ ] a. `<Reveal>` component: fade + 12 px rise on scroll, 60 ms stagger for lists. Used on section headings and card grids.
-- [ ] b. Hero: staggered headline entrance, a gently floating mockup, slow drift on the glow.
-- [ ] c. Buttons: 1 px lift on hover, a gradient sheen sweep on the primary CTA, `scale(.97)` on press.
-- [ ] d. Cards: lift + shadow on hover; slight tilt on template thumbnails (desktop only).
-- [ ] e. Navbar: a sliding underline under the active/hovered link. Accordion: smooth height animation. Count-up stats.
-- [ ] e2. **Premium polish** (your request: "slight gradients and small movements so it feels high class"):
+- [x] a. Scroll reveal (`.reveal` + RevealObserver): fade + rise on scroll, staggered lists. Used on section headings and card grids.
+- [x] b. Hero: staggered headline entrance, a gently floating mockup, slow drift on the glow.
+- [x] c. Buttons: lift on hover, a sheen sweep on every primary button.
+- [x] d. Cards: lift + shadow on hover. _(No tilt: one moving thing per screen.)_
+- [x] e. Navbar: a sliding underline under the active/hovered link. Accordion: smooth height animation (CSS `interpolate-size`, Chrome 131+; snaps elsewhere). Count-up stats.
+- [x] e2. **Premium polish** (your request: "slight gradients and small movements so it feels high class"):
   - very subtle gradient surfaces: warm white → white section backgrounds, a gradient hairline on the popular card and the footer top
   - a slow, barely visible glow drift behind the hero (20 s+ loop)
   - invoice moments: the stamp landing, totals counting up, line items appearing one by one in the hero invoice
   - keep it rare: one moving thing per screen at most; motion should feel expensive, not busy
-- [ ] f. Guardrails:
+- [x] f. Guardrails:
   - everything off under `prefers-reduced-motion`
   - animate only `transform` and `opacity`
   - content is visible without JavaScript (crawlers must see the text, not wait for a reveal)

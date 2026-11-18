@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { B, H, LEGAL_LINK, LegalPage, P, S } from "@/components/content/legal";
+import { B, H, LEGAL_LINK, LegalPage, P, S } from "@/components/sections/content/legal";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { buildMetadata } from "@/lib/seo";
 
