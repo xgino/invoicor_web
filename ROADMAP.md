@@ -1,1369 +1,283 @@
 # Invoicor Web Roadmap
 
-_Last updated: 2026-11-17 (revision 5: Stage C finished, Stage B drafted, decisions collected at the end)_
+_Last updated: 2026-11-18 (revision 6: split into **Planned** and **Done**)_
 
-Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Google, Bing and AI assistants)**, and turn visitors into app users through a **free invoice generator**.
+Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Google, Bing and AI
+assistants)**, and turn visitors into app users through the **free invoice generator**.
 
-## How to use this file
+## How this file works
 
-- The work is split into **60 numbered chunks** in **two tracks**. Each chunk is roughly **one working session** (2–6 hours) and ends in something you can check.
-  - **Build track (Stages A–I, chunks 1–46):** do these **in order**. A chunk only depends on chunks with a lower number. Chunks marked ⇄ can run in parallel with the stage before them.
-  - **Growth track (Stage J, chunks 47–60):** runs **in parallel from week 1**. Each chunk says when it can start (“Start:”). Don't wait for the rebuild to start growing: App Store search, reviews, social and links take months to compound, so they start now.
-- How the channels compare (expected impact and time to results) is in [R8](#r8-growth-model).
-- Each chunk has: **Goal**, steps **a, b, c…**, and **Done when** (the check that closes it).
-- Tick the steps as you go, and tick the chunk in the overview when its "Done when" passes.
-- Background is in **Reference** at the bottom (R1–R7). Chunks link there instead of repeating it.
-- Steps only you can do (accounts, server, App Store, opinions) are collected in [Your steps](#your-steps) at the end.
-- Decisions to make are marked **🟡 Decide:** and collected in [Decisions for you](#decisions-for-you) at the end. Write the answer there, so the file stays the single source of truth.
+- **Two parts.** [Part 1: Planned](#part-1-planned) is everything still open, in the order to do
+  it. [Part 2: Done](#part-2-done) is one line per finished item. When something is finished, move
+  its line from Planned to Done, with the date.
+- **One ID per item, kept forever** (code comments and commits point to them):
+  chunks `1–60` · `P` polish · `X` your steps · `S` Search Console rounds · `L` learn.invoicor.com ·
+  `W` web app · `D` decisions.
+- **Who:** 👤 you (accounts, server, App Store, opinions) · 🤖 Claude · 👥 both.
+  **Priority:** 🔴 essential · 🟠 important, soon · 🟢 when there's time.
+- **The full step-by-step history** of everything finished (and the old Y-numbers) is in
+  [docs/roadmap-archive-2026-11-18.md](docs/roadmap-archive-2026-11-18.md), unchanged.
+- Background (API, design, languages, SEO rules, growth model) is in [Reference](#reference) at the end.
 
----
+## Where things live
 
-## Status (2026-11-17)
-
-**Done:** chunk 1 (repo cleanup), Stage C (chunks 8–12; 13 and 14 wait on decisions), first drafts of Stage B ([BRAND.md](BRAND.md), [seo/keyword-map.csv](seo/keyword-map.csv), [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md)), and the Next.js rebuild of every existing page, at the same URLs and with the same look. It covers most of chunks 8–13, plus parts of 14, 16, 21–24 and 28 (see the ✅ notes in each chunk). It's on the `dev` branch and **not live yet**: deploy with [DEPLOY.md](DEPLOY.md).
-
-**2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
-
-**Next up:** Stages A–F are built, tested and ticked off on `dev` (2026-11-18). Everything that needs you is collected, in order and with how-to steps, in **[Stage X](#stage-x-your-leftovers-from-stages-af)**. Essential before launch: **X1, X2, X3, X5, X6** (X4 strongly recommended); after launch: **X13**; legal: **X7**. Next for Claude: X7/X9/X12 as soon as you send the input, then Stage G (free invoice generator, needs D10).
-
-**Decisions made during the migration** (they replace what some older chunks say):
-
-| Decision | Why | Affects |
+| What | Where | Notes |
 |---|---|---|
-| **Static export** (`output: "export"`): `npm run build` → `out/` → upload; nginx serves it. **No Node/PM2 on the server.** | You deploy by hand; a folder of HTML is the simplest and most reliable thing to host. Nothing can crash. | Chunks 3, 19, 26, 28, 29 |
-| The Next.js app lives at the **repo root** (not in `web/`). | The old Vite app is gone from `dev`; `main` still holds it until you deploy. | R5, R7 |
-| No server-side features: no ISR/on-demand revalidation, no `proxy.ts`, no next.config redirects. | Not available in a static export. Redirects live in nginx (`deploy/nginx/`). Fresh API data = rebuild + deploy. | Chunks 11e, 13, 37 |
-| Language detection (chunk 37) becomes a **client-side banner** (reads the browser language), not `proxy.ts`. Language URLs (`/de/…`) are still separate static pages. | Same SEO result (Google never gets redirected); works on static hosting. | Chunks 8d, 36, 37 |
-| `next-intl` and `[locale]` routing are **not** set up yet; add them in chunk 36, when the first translation is ready. | Avoids complexity before there's a second language. | Chunk 8d |
-| Visual design: migrated first, then redesigned light in Stage E (2026-11-18). Inline styles and hard-coded colors are now blocked by the style guard test (`tests/unit/style-guard.test.ts`). | Migrate first, then redesign; one risk at a time. | Chunks 9b, 15–25 |
-| Upgrade path: if we ever need server features, remove `output: "export"` and run `next start` behind nginx. | No code rewrite needed. | n/a |
+| **invoicor.com** (marketing site, free generator, templates, industries, compares) | this repo, Next.js static export | Built on `dev`; `main` = what's deployed. Deploy by hand: [DEPLOY.md](DEPLOY.md) |
+| **learn.invoicor.com** (blog: 17 how-to articles about the iPhone app) | a separate site, not in this repo | Own sitemap (`/sitemap.xml`). Plans in [L](#l-learninvoicorcom-the-blog) |
+| **The API** (accounts, invoices, templates, PDFs, subscriptions) | `invoicor_api` (Django), servers in Germany | Reference: [R2](#r2-the-api) |
+| **The iPhone app** | `invoicor_ios` + App Store | Facts the site may claim: [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this) |
+| Page content (30 SEO pages) · keyword plan | `content/*.json` · `seo/keyword-map.csv` | How to edit: [CONTENT.md](CONTENT.md) |
 
-**Found and fixed during the migration:**
-- `node_modules/` (9,104 files) and `.vite/` were committed to git; now untracked.
-- The schema markup claimed **4.8★ from 347 ratings**; the App Store shows **2 ratings** → removed (Google penalises fake ratings). Add it back once you have real volume.
-- The CTAs on the template, industry and compare pages linked to `/register`, which doesn't exist; they now go to the App Store.
-- Two template pages linked to a non-existent `/templates/electrician` (removed). The build now skips and warns about broken related links.
-- The affiliate calculator slider's fill bar was wrong (it filled up after 100 of 10,000).
-- FAQ markup sat on every page without a visible FAQ → the home page now shows those FAQs; the Help and Affiliate pages got FAQ markup for their visible questions.
+## Now (2026-11-18)
 
-**Still open:** every decision waiting on you is listed in [Decisions for you](#decisions-for-you) at the end of this file.
+- **The new site is finished on `dev` but not live.** invoicor.com still runs the old site, so the
+  rankings in Search Console are the old pages. Everything built since (redesign, free generator,
+  the S1 SEO upgrade) only reaches Google after the launch: **X1–X6 are the one real blocker.**
+- **Built and tested on `dev`:** Stages A–F, polish P1–P20, the free invoice generator (Stage G,
+  fully in the browser), the Android "coming soon" page, and the S1 upgrade of all 30 SEO pages.
+- **Next, in order:** 👤 launch (X1 → X6) · 👤 Search Console exports (X2) so 🤖 can do X9 and S1-k ·
+  🤖 S1 leftovers and the L items · later: languages (Stage H) and growth (Stages I–J).
 
 ---
 
-## Overview (the todo list)
+# Part 1: Planned
 
-**Stage A: Clean repo, baseline & deploy**
-- [x] 1. Clean up the repo
-- [x] 2. Map the server & write DEPLOY.md _(DEPLOY.md + nginx config written. Checking the real server: **X3**)_
-- [x] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger, plus `--staging` and `--rollback`)_
-- [x] 4. SEO baseline & quick fixes on the live site _(fixes are in the new site and nginx config. Baseline export: **X2**)_
+## 1. Your steps 👤 (in this order)
 
-**Stage B: Strategy (decide before building)**
-- [x] 5. Brand strategy _(draft in [BRAND.md](BRAND.md). Your approval: **X8**)_
-- [x] 6. SEO strategy: keyword map & URL plan _([seo/keyword-map.csv](seo/keyword-map.csv). Positions and 6-month targets after the baseline: **X9**)_
-- [x] 7. Page-type blueprints & content quality rules _([seo/BLUEPRINTS.md](seo/BLUEPRINTS.md). Trust details: **X7**)_
+_Only you can do these: they need your accounts, your server, your company details or your opinion.
+Claude prepares everything around them. The old "Your steps" (Y) and open decisions are merged in
+here; the old number is in brackets._
 
-**Stage C: Next.js foundation**
-- [x] 8. Create the Next.js app skeleton _(static export at repo root; i18n moved to chunk 36)_
-- [x] 9. Tooling & CI checks _(pre-commit hook + GitHub Actions `check.yml`; the no-inline-style rule comes with Stage E)_
-- [x] 10. Config, types & API client _(`npm run api:types`; the API schema doesn't describe template/currency/language responses, so `lib/api.ts` validates them with zod)_
-- [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md) + `content/pricing.json`; `content/en/` comes with chunk 36)_
-- [x] 12. Metadata & structured data helpers
-- [x] 13. Sitemap, robots & indexing _(sitemap, robots with all AI bots allowed (D3), `/llms.txt`, IndexNow in `deploy.sh`)_
-- [x] 14. Analytics, cookie consent & App Store attribution _(GA4 + PostHog after consent, [seo/TRACKING.md](seo/TRACKING.md). Provider token: **X10**)_
+**Before and at launch** (do these together):
 
-**Stage D: Brand system**
-- [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
-- [x] 16. Logo, icons & OG images _(✅ 2026-11-18: SVG logo traced from the app icon, all icons regenerated from it, light share cards in the brand fonts, one per page)_
-- [x] 17. UI components kit _(✅ 2026-11-18: `components/ui/`, all on `/brand`, axe-clean)_
-- [x] 17.1 Tests: the safety net before the rebuild _(✅ 2026-11-18: unit (incl. style guard), built-site and browser tests in CI)_
-- [x] 17.2 Invoice-style premium components _(✅ 2026-11-18: paper, line items, stamp, billing switch, invoice-shaped pricing; on `/brand`)_
+| ID | Step | Time | Why / how |
+|---|---|---|---|
+| X1 | 🔴 Verify Google Search Console **by DNS** [Y13] | 10 min | GA now loads only after consent, so the old verification may break. Add a **Domain** property for `invoicor.com`, put its `google-site-verification` TXT record in DNS, verify. It also covers learn.invoicor.com. |
+| X2 | 🔴 Export the SEO baseline [Y1] | 20 min | Search Console → Performance (3 months, CSV), Pages, Links; Bing the same. Put them in `seo/baseline/2026-11/`. Without a "before", nobody can tell if the launch helped. |
+| X3 | 🔴 Check the server and merge the nginx config [Y2] | 30 min | DEPLOY.md A, steps 1–3. Paste the output of `grep -rln invoicor /etc/nginx/sites-enabled/` and `nginx -v` to Claude for the exact merged file. Same session as X5. |
+| X4 | 🟠 Staging + QA checklist [Y17] | 45 min | DEPLOY.md A.4, then `bash deploy/deploy.sh --staging`, `npm run parity -- --new https://staging.invoicor.com …` and [seo/QA.md](seo/QA.md). Recommended for the first launch. |
+| X5 | 🔴 Launch: merge `dev` → `main`, deploy [Y2] | 15 min | DEPLOY.md C. Rollback is one command. |
+| X6 | 🔴 Tell Google and Bing [Y3] | 15 min | Submit `sitemap.xml` in both. URL Inspection → **Request indexing** for the home page, the generator and the 6 pages from S1 (plumbing, HVAC, freelance design templates; lawn care, electricians industries; Invoice2go compare). |
+| X13 | 🔴 Post-launch watch, 4 weeks | 10 min/week | Week 1 daily: server 404s (`grep '" 404 ' /var/log/nginx/access.log \| tail -50`). Weekly: Search Console vs X2. Send Claude the 404s and exports. |
 
-**Stage E: Rebuild the pages (in the new brand)**
-- [x] 18. Navbar & footer _(✅ 2026-11-18: light, mobile menu, footer links into every hub; contrast fixed)_
-- [x] 19. Landing page, part 1 (hero → how it works) _(✅ 2026-11-18: light hero with a real sample invoice and PAID stamp, true-numbers band, live template gallery, 3 steps)_
-- [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
-- [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
-- [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
-- [x] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Competitor facts: **X11**; more competitors: **X12**)_
-- [x] 24. About, contact, help, affiliate & legal _(✅ 2026-11-18: help, affiliate, legal, 404, error page. About + Contact: **X7**)_
-- [x] 25. Motion & micro-interactions _(✅ 2026-11-18: CSS-only, reduced-motion safe; old landing CSS deleted)_
+**Trust and legal** (soon after launch):
 
-**Stage F: Switch to Next.js**
-- [x] 26. Staging site & QA _(✅ prepared: `deploy.sh --staging`, nginx staging config, [seo/QA.md](seo/QA.md). Server setup + running the QA: **X4**)_
-- [x] 27. URL parity check & redirect map _(✅ 2026-11-18: `npm run parity`, 0 failures vs the live site; rerun on staging)_
-- [x] 28. Launch day _(✅ runbook ready, DEPLOY.md C. Doing the launch: **X5**, **X6**)_
-- ➜ 29. Post-launch watch (4 weeks) _(moved to **X13**: starts after launch)_
+| ID | Step | Why / how |
+|---|---|---|
+| X7 | 🟠 Company details + your story [D6, Y4] | A Dutch business must show its KvK number. Send: legal name, KvK, (VAT), city, 3–5 sentences about you. Claude builds `/about`, `/contact` and the footer line. |
+| X15 | 🟠 Lawyer review of Terms and Privacy | They now cover payments, fraud, US analytics and the Android counter. A fixed-price review is enough. |
+| X16 | 🟠 Fix 2 claims in the App Store screenshots | Screenshot 2 says "Estimates" (doesn't exist) and "Trusted by businesses worldwide" (no proof). Apple guideline 2.3. |
+| X11 | 🟠 OK the competitor facts [Y16] | Invoice2go and Wave are now sourced (S1). The other 8 compares are S1-l; confirm Claude's sourced drafts before promoting them. |
 
+**When you have time:**
 
-**Stage X: Your leftovers from Stages A–F** _(everything Claude can't do: your accounts, server, decisions. Details in [Stage X](#stage-x-your-leftovers-from-stages-af))_
-- [ ] X1. 🔴 Verify Google Search Console by DNS
-- [ ] X2. 🔴 Export the SEO baseline
-- [ ] X3. 🔴 Check the server and install the nginx config
-- [ ] X4. 🟠 Set up staging and run the QA checklist
-- [ ] X5. 🔴 Launch: merge to `main` and deploy
-- [ ] X6. 🔴 Tell Google and Bing (same day as X5)
-- [ ] X7. 🟠 Company details + your story → About, Contact, footer
-- [ ] X8. 🟢 Approve the brand draft
-- [ ] X9. 🟢 Send Claude the baseline → keyword positions and targets
-- [ ] X10. 🟢 App Store provider token (install tracking per page)
-- [ ] X11. 🟠 Confirm the competitor facts on the compare pages
-- [ ] X12. 🟢 OK for Claude to research and write more compare pages
-- [ ] X13. 🔴 Post-launch watch (4 weeks)
-- [ ] X14. 🟢 Small decisions that change page text (D12, D14, D15)
-- [ ] X15. 🟠 Have a lawyer review Terms and Privacy
-- [ ] X16. 🟠 Fix two claims in your App Store screenshots ("Estimates", "Trusted by businesses worldwide")
-- [ ] X17. 🟢 Send fresh app screenshots
-- [ ] X18. 🟡 Deploy the API template fixes (for the app; the website no longer needs it)
-- [x] X19. ~~Turn on the bot check~~: not needed any more, the website makes PDFs in the browser (35c)
+| ID | Step | Why / how |
+|---|---|---|
+| X8 | 🟢 Approve the brand draft [D7, Y5] | Read [BRAND.md](BRAND.md) §1–6, change what doesn't sound like you, mark it "Approved". |
+| X10 | 🟢 App Store provider token [Y6] | App Store Connect → App Analytics → Campaigns → copy `pt=`. Then installs per page show up. |
+| X12 | 🟢 OK for more compare pages | Invoice Simple, Invoice Fly, Bookipi, Joist, Invoice Home. Say "go"; same fact check as X11. |
+| X14 | 🟢 Small decisions that change page text [Y14, Y15] | D12 (time a real invoice: "5 seconds"?) and D14 (prices). See [Decisions](#3-decisions-still-open). |
+| X17 | 🟢 Fresh app screenshots | Dashboard, new invoice, template picker, preview, share sheet → `assets/app-screens/`. |
+| X18 | 🟡 Deploy the API template fixes | Branch `feature/public-generator` in `invoicor_api`: VAT ID, registration number, client email/phone, item details on their own line, 2-decimal money **in the app's PDFs**. Merge, `createcachetable`, restart, check one app PDF. The website doesn't need it. |
+| X20 | 🟢 Move PostHog to its EU cloud [Y12] | New project on eu.posthog.com, send Claude the key; then only GA4 leaves the EU. |
+| X21 | 🟢 iOS: brand accent color + rating prompt [D11, Y7] | `AccentColor` = `#E95D05`; the review prompt from chunk 50a; the generator → app hand-off from 34d (opening a draft in the app). |
 
-**Stage P: Polish from your review (2026-11-18)** _(✅ P1–P20 done; open: lawyer review (X15), App Store screenshot fixes (X16), fresh screenshots (X17); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
-- [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
-- [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
-- [x] P3. "How it works" as a visible path
-- [x] P4. Promises that stand out
-- [x] P5. Fee calculator, rewritten as a gain
-- [x] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
-- [x] P7. Premium motion: drawn underlines, moving background, glows
-- [x] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
-- [x] P9. FAQ search optimisation
-- [x] P10. Mobile and speed pass
-- [x] P11. Price anchors per plan (coffee as a saying, a unique one for Pro)
-- [x] P12. Monthly price first, "billed yearly" below; local currency note
-- [x] P13. Hand-drawn doodles: arrows and circles that draw themselves
-- [x] P14. "Who it's for": the people Invoicor is built for
-- [x] P15. Real app screens in an iPhone frame
-- [x] P16. Sticky "Get the app" bar on phones
-- [x] P17. QR code for desktop visitors
-- [x] P18. Mobile and speed recheck
-- [x] P19. FAQ audit: every answer matches its question and the app _(✅ 2026-11-18)_
-- [x] P20. Plain, true security wording; Google sign-in in Privacy; positive trial line _(✅ 2026-11-18)_
+_Your parts of the growth chunks (ASO listing 48–49 [Y8], profiles 51 [Y9], outreach 45/52/57 [Y10])
+are listed inside those chunks: Claude drafts, you post or submit._
 
-**Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
-- [x] 30. API: public render endpoint _(✅ 2026-11-18, `invoicor_api` branch `feature/public-generator`)_
-- [x] 31. API: public PDF + watermark + abuse limits _(✅ 2026-11-18, same branch; Turnstile on with X19)_
-- [x] 32. Generator page: form _(✅ 2026-11-18)_
-- [x] 33. Generator page: live preview & template picker _(✅ 2026-11-18)_
-- [x] 34. Generate flow, watermark reveal & signup handoff _(✅ 2026-11-18; the app handoff needs an iOS update)_
-- [ ] 35. Generator SEO content & launch
+## 2. Next up for Claude 🤖
 
-**Stage H: Languages**
+_No input needed unless noted. In order._
+
+**S1 leftovers** (from the Search Console round, details in [S1](#s1-search-console-round-1-2026-11-18)):
+- [ ] **S1-k** Re-measure on **2026-12-16** (or 4 weeks after X5): same report vs the baseline in `seo/keyword-map.csv`. _Needs your export._
+- [ ] **S1-l** Source the prices of the other 8 compare competitors (QuickBooks, FreshBooks, Xero, Zoho, Square, HoneyBook, Bonsai, Stripe) on their pricing pages; add a "{Competitor} pricing" FAQ where people search for it. _Closes X11 with your OK._
+- [ ] **S1-m** "Unlimited clients on every plan" (FreshBooks and other compares) isn't in the BRAND.md §10 fact sheet: verify in the app/API, then add it to the fact sheet or remove it.
+- [ ] **S1-n** Rewrite the "Which file format?" section on template pages around the PDF from the generator; it still talks about Word and Excel, which we don't offer (chunk 53 would add real downloads).
+- [ ] **S1-o** A real image of the filled-in template on each template page (Google Images + a reason to stay). Merges chunk 54a.
+- [ ] **S1-p** If "air conditioning invoice" / "heating and cooling invoice" grow, a dedicated section on `/templates/hvac` first.
+- [ ] **S1-q** Lawn care and electricians rank on page 5–6 for "… invoice app": track after S1-k; needs trust signals (reviews 50, profiles 51, links 57).
+
+**After the launch:**
+- [ ] **X9** Fill in current positions in `seo/keyword-map.csv` and propose 10 priority keywords with 6-month targets. _After X2._
+- [ ] **46** Set up the monthly 30-minute monitoring routine (Search Console, PostHog funnel, App Store installs).
+
+## 3. Decisions still open
+
+| ID | Decision | Recommendation | Blocks |
+|---|---|---|---|
+| D12 | "5 seconds" and "80% auto-fill" claims | Only with a real test (time a real invoice). Until then "in seconds". | hero copy |
+| D14 | Raise prices? (Starter $4.99 → ~$7.99, Pro $7.99 → $14.99, new Unlimited $19.99) | Raise once, for new customers only; keep an entry tier; Unlimited only when the App Store product and API limit exist. Check trial → paid conversion first. Full reasoning in the archive. | pricing, ASO |
+| D16 | Where do how-to guides live: learn.invoicor.com or a new `/guides` on the main site (chunk 42)? | **learn.invoicor.com.** It already has 17 articles and its own sitemap; a second blog would compete for the same searches. Chunk 42 becomes [L4](#l-learninvoicorcom-the-blog). | 42, L4 |
+| D17 | When to start the web app ([W](#w-web-app-invoice-maker-and-accounts-in-the-browser))? | Not now. Start when one of the triggers in W is hit. | W |
+| D9 | Shrink git history (228 MB of old `node_modules`) | Optional, low priority: `git filter-repo` + force-push. | n/a |
+
+## L. learn.invoicor.com (the blog)
+
+_A separate site with 17 how-to articles, all about using the iPhone app ("How to create an invoice
+on iPhone in seconds", "What is an invoice maker", "How to send an invoice from iPhone by email"…).
+Today the main site doesn't link to it, and it isn't in the keyword plan._
+
+- [ ] **L1** 🤖 **Fact-check the 17 articles against BRAND.md §10.** Titles like "How auto-fill helps you create invoices faster", "How to create a receipt on iPhone" and "How a tax calculator helps" may promise things the app doesn't do (no receipts or estimates; one tax rate per invoice). List every claim to fix; 👤 you edit the blog.
+- [ ] **L2** 🤖 **Link both ways.** Main site: a "Learn" link in the footer (and nav if it earns it), and 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
+- [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. Add every article to `seo/keyword-map.csv`, so a blog post and a template page never target the same search (one search intent = one URL).
+- [ ] **L4** 🤖 **Guides go to the blog** (replaces chunk 42, after D16): write the planned how-to guides there (how to write an invoice, invoice numbering, payment terms explained, invoice vs receipt, how to invoice as a freelancer, late invoices), each with a FAQ, "last updated" and a link to the generator.
+- [ ] **L5** 🤖 Mention learn.invoicor.com in `llms.txt` and the Organization JSON-LD, so AI assistants connect the two sites.
+
+## 4. Later: growth and scale
+
+_The original plan, still valid. Details below in [Planned chunks](#planned-chunks-details)._
+
+**Stage H: Languages** (after the launch has settled)
 - [ ] 36. Translation setup & language switcher
-- [ ] 37. Auto-detect language
+- [ ] 37. Auto-detect language (banner, never a redirect)
 - [ ] 38. German
 - [ ] 39. Spanish
 - [ ] 40. French, Portuguese, Italian, Dutch
 
 **Stage I: Scale & grow**
 - [ ] 41. Performance & security hardening
-- [ ] 42. Guides hub (informational content)
-- [ ] 43. Country generator pages
-- [ ] 44. More free tools (receipt, estimate)
-- [ ] 45. Launch & backlinks
+- ~~42. Guides hub~~ → moved to the blog: **L4** (D16)
+- [ ] 43. Country generator pages (UK VAT, EU reverse charge, Australia GST, Canada GST/HST)
+- [ ] 44. More free tools: receipt and estimate generators
+- [ ] 45. Launch & backlinks (listings, embed snippet, roundups)
 - [ ] 46. Monthly monitoring routine
 
-**Stage J: Growth track (parallel, from week 1)**
-- [ ] 47. Competitor SEO & link gap analysis _(start: now)_
-- [ ] 48. App Store Optimization: the listing _(start: now)_
-- [ ] 49. App Store Optimization: localized listings _(start: after 48)_
-- [ ] 50. Ratings & reviews engine _(start: now)_
-- [ ] 51. Brand entity & profiles _(start: now)_
-- [ ] 52. Social, video & communities _(start: now)_
-- [ ] 53. Downloadable templates (Word, Excel, Google Docs, PDF) _(start: after 21)_
-- [ ] 54. Image & video SEO _(start: after 21)_
-- [ ] 55. Free micro-tools (link magnets) _(start: after 35)_
-- [ ] 56. Scale the programmatic content _(start: after 42)_
-- [ ] 57. Digital PR & link building _(start: after 35)_
-- [ ] 58. Email capture & lifecycle _(start: after 34)_
-- [ ] 59. Affiliate & partner program _(start: after 24)_
-- [ ] 60. Conversion experiments _(start: after 35)_
+**Stage J: Growth track** (can run in parallel any time)
+- [ ] 47. Competitor SEO & link gap analysis
+- [ ] 48. App Store Optimization: the listing 👥
+- [ ] 49. App Store Optimization: localized listings 👥
+- [ ] 50. Ratings & reviews engine (iOS)
+- [ ] 51. Brand entity & profiles 👥
+- [ ] 52. Social, video & communities 👥
+- [ ] 53. Downloadable templates (Word, Excel, Google Docs, PDF)
+- [ ] 54. Image & video SEO (54a is S1-o)
+- [ ] 55. Free micro-tools (link magnets)
+- [ ] 56. Scale the programmatic content
+- [ ] 57. Digital PR & link building 👥
+- [ ] 58. Email capture & lifecycle
+- [ ] 59. Affiliate & partner program 👥
+- [ ] 60. Conversion experiments
+
+## W. Web app: invoice maker and accounts in the browser
+
+**Big, and not essential at this stage** (D17). Today Invoicor is an iPhone app; the website has a
+free generator for one-off invoices that saves nothing to an account. The web app would let people
+**sign in on the web** and do what the app does: saved clients and products, business profiles,
+invoice history with statuses, PDFs without a watermark, the same subscription.
+
+**Why it's interesting:** Android users (the [/android](app/android/page.tsx) counter measures how many
+ask), people who invoice from a laptop, and generator users who want to keep their invoices. Almost
+everything it needs already exists in **our own API** (accounts, Apple/Google sign-in, invoices,
+clients, products, profiles, render/PDF, subscriptions: see [R2](#r2-the-api)), so it's a second
+front end, not a new product.
+
+**Why not now:** it's a second app to build, test and support, and the iPhone app plus the launch
+(X1–X6) and SEO bring more for the effort today. The free generator already covers "I need one
+invoice now".
+
+**Start when one of these happens** (check at S1-k and in the monthly routine, chunk 46):
+- the Android counter passes a clear number of visits (e.g. 1,000), or
+- generator users often ask to "save" their invoices or create an account, or
+- a large share of installs comes from people who first used the generator on a computer.
+
+**Rough plan, when it starts:**
+- [ ] **W1** 👥 Scope and billing: which features first; how web subscriptions work next to App Store ones (one account, one plan, wherever it was bought; e.g. RevenueCat web billing or Stripe), and the price.
+- [ ] **W2** 🤖 Where it lives: `app.invoicor.com`, separate from the static marketing site (it needs sign-in, so it can't be a static export); same brand components.
+- [ ] **W3** 🤖 Sign-in on the web: email + password, Sign in with Apple and Google, through the API; session handling, CORS and security headers checked; password reset.
+- [ ] **W4** 🤖 Invoices: list with statuses, create/edit/duplicate, PDF from the API (no watermark), share or email. Reuse the generator's form and preview.
+- [ ] **W5** 🤖 Clients, products and business profiles, the same limits per plan as the app (API `subscriptions/limits.py`).
+- [ ] **W6** 👥 API work: check every endpoint the web needs exists and is safe for browser use (rate limits, CORS, token storage); add what's missing in `invoicor_api`.
+- [ ] **W7** 🤖 Privacy policy, terms and BRAND.md §10 updated; GDPR export and account deletion on the web.
+- [ ] **W8** 🤖 Launch: "Save this invoice to a free account" in the generator, the /android page offers the web app, App Store and web accounts stay one account.
+- An installable web app (PWA) could also be the first answer to Android, before a native Android app.
 
 ---
 
-## Stage A: Clean repo, baseline & deploy
-_Done in the current Vite repo. Don't tidy the old code itself; it gets rebuilt in Stage C–E._
+# Part 2: Done
 
-### 1. Clean up the repo
-**Goal:** the repo holds only source code, with no starter-template leftovers. _(✅ done on `dev`; GitHub shows `main`, which still has the old README until `dev` is merged and deployed (Y2).)_
+_One line per finished item, newest first. Full details: [the archive](docs/roadmap-archive-2026-11-18.md)._
 
-- [x] a. Work on the `dev` branch from now on (`main` = production). _`dev` already exists._
-- [x] b. Add `.gitignore`: `node_modules/`, `dist/`, `.next/`, `out/`, `.vite/`, `.env*`, `!.env.example`, `.DS_Store`, `*.log`.
-- [x] c. Take the built output and Mac files out of git: `git rm -r --cached dist`, plus `git rm --cached` on every `.DS_Store`.
-- [x] d. Remove the starter-template leftovers (template metadata, an unused API-key define, six unused packages).
-- [x] e. Rename the package to `invoicor-web`.
-- [x] f. Rewrite `README.md`: what this is, `npm install`, `npm run dev`, `npm run build`, and links to `ROADMAP.md` and `DEPLOY.md`.
-- [x] g. Commit on `dev`.
+### S1. Search Console round 1 (2026-11-18)
 
-**Done when:** `npm run build` still works, `git status` is clean after a build, and `git ls-files | grep -E "dist/|DS_Store"` returns nothing.
+Data (Search Console, 28 days to 2026-11-18): almost all impressions went to 6 pages on positions
+25–55. Baseline per page is in `seo/keyword-map.csv`.
 
-### 2. Map the server & write DEPLOY.md
-**Goal:** know exactly how invoicor.com is served today, written down.
-
-- ➜ a. SSH into the Hetzner server and run `grep -rn "invoicor" /etc/nginx/sites-enabled/`. **→ moved to Stage X, [X3](#x3)**
-- ➜ b. Write down: **→ moved to Stage X, [X3](#x3)**
-  - the site folder
-  - which folder nginx serves (`dist/`?)
-  - how `/api/` is proxied to Django
-  - the `server_name` lines (apex and `www`)
-  - where the SSL certificates live
-- ➜ c. Check how the site is updated today (`git pull` + `dist/`? copied files?). **→ moved to Stage X, [X3](#x3)**
-- [x] d. Back up the nginx config into the repo as `deploy/nginx/invoicor.com.conf` (no secrets in it). _(done: `deploy/nginx/invoicor.com.conf` (reference, nginx 1.24))_
-- [x] e. Write `DEPLOY.md` in the style of `vindevent/DEPLOY.md`: a request-flow diagram, a "what / where" table, "every update" steps and "rollback" steps. _(done: DEPLOY.md)_
-
-**Done when:** someone else could deploy and roll back using only `DEPLOY.md`.
-
-### 3. Set up auto-deploy (dev → main → live)
-**Goal:** one command on the Mac takes `dev` to production, safely.
-
-- [x] a. Copy `seedtorank/.github/workflows/deploy.yml` and cut it down to a single **web build** job, followed by the **deploy** job (only on `main`, only when the build is green, no concurrent deploys). _(done: not used: deploying stays one manual command from your Mac (your choice))_
-- [x] b. Write `deploy/deploy.sh`:
-  - **Mac mode:** push `dev`, open a PR into `main` and merge it (`gh pr create` + `gh pr merge`).
-  - **Server mode (`--server`):** `git pull` → `npm ci` → `npm run build` → `sudo nginx -t && sudo systemctl reload nginx`.
-- [x] c. Add the GitHub repo secrets the workflow needs (SSH host, user and key), the same as seedtorank. _(done: not needed: no GitHub deploy)_
-- ➜ d. Test it: change one word on `dev`, run `bash deploy/deploy.sh` and watch the GitHub Action. **→ moved to Stage X, [X5](#x5)**
-- [x] e. Add the commands and a rollback step (`git revert` + redeploy) to `DEPLOY.md`. _(done: `deploy.sh --rollback`, DEPLOY.md)_
-
-**Done when:** a change on `dev` is live after one command, and a failing build never reaches the server.
-
-### 4. SEO baseline & quick fixes on the live site
-**Goal:** record where we stand before the migration, and fix the issues that take only minutes.
-
-- [x] a. **Duplicate host:** `https://www.invoicor.com` returns 200 (a full duplicate of the site). Add an nginx `server` block that sends `www` → `https://invoicor.com$request_uri` with a 301. Check that `/api/` keeps working. _(done: in the nginx config; goes live with X3)_
-- [x] b. Change the landing page API base from `https://www.invoicor.com/api` to `https://invoicor.com/api`, so it doesn't pass through that redirect. _(done: `lib/config.ts` uses `https://invoicor.com/api`)_
-- [x] c. Sitemap fixes: _(done: `app/sitemap.ts`)_
-  - remove `/pricing` (no such route: it renders an empty page)
-  - add `/help`, `/affiliate`, `/terms`, `/privacy`
-  - redeploy
-- ➜ d. **Baseline export** into `seo/baseline/2026-11/` (commit it): **→ moved to Stage X, [X2](#x2)**
-  - Search Console: Performance (queries + pages, last 3 months, as CSV), Pages/indexing report, links report
-  - Bing Webmaster: the same where available
-  - the list of every live URL with its title, meta description, canonical URL and H1 (a small script or Screaming Frog), which chunk 27 compares against
-- [x] e. Note the known issues that only the migration fixes (so we don't fight them twice): _(done: R1; all three fixed by the static export + nginx)_
-  - empty HTML for crawlers
-  - unknown URLs (`/does-not-exist`) return 200 instead of 404 (soft 404s)
-  - `/templates/classic/` and `/templates/classic` both return 200 (no trailing-slash rule)
-
-**Done when:** `www` redirects with a 301, the sitemap only lists real pages, and the baseline files are committed.
-
----
-
-## Stage B: Strategy (decide before building)
-_No code. These three chunks decide what the pages say and which searches they target, so the rebuild is done once._
-
-### 5. Brand strategy
-**Goal:** a written brand that the website, the iOS app and the App Store listing all follow.
-
-- [x] a. **Inputs:** `invoicor_api/docs/strategy.md`, `competitor_research.md`, `price_analysis.md`, and the App Store reviews. _(done: draft in BRAND.md; your approval is X8)_
-  - The competitor reviews show where they fail: deceptive "free" paywalls (19 mentions), no human support (17), payment funds held (13), accounts locked without reason (10).
-  - Those failures **are** the positioning: _honestly free (3 real invoices, no watermark), no payment processing that can hold your money, a real human answers_. Build the messaging on them, and only claim what's true.
-- [x] b. **Positioning:** one sentence. Draft: _“The fastest native invoice app for freelancers and small businesses: an invoice in seconds, in any language and currency, with zero payment fees.”_ _(done: draft in BRAND.md; your approval is X8)_
-- [x] c. **Audience:** 2–3 short profiles (e.g. a solo freelancer, a tradesperson, a small agency), each with the main pain point and the trigger moment ("I need to send an invoice now"). _(done: draft in BRAND.md; your approval is X8)_
-- [x] d. **Messaging pillars** (3–4), each with proof points: _(done: draft in BRAND.md; your approval is X8)_
-  - Speed (auto-fill, under 5 seconds)
-  - Global (currencies and languages)
-  - Professional look (templates)
-  - Privacy (EU servers, no fees)
-- [x] e. **Differentiation:** a "why us vs X" table for the top 5 competitors. It feeds the compare pages (chunk 23). _(done: draft in BRAND.md; your approval is X8)_
-- [x] f. **Tagline** + 3 headline variants for the hero. _(done: draft in BRAND.md; your approval is X8)_
-- [x] g. **Voice:** 5 rules (e.g. short sentences, no jargon, confident not hype), plus words to use and words to avoid. _(done: draft in BRAND.md; your approval is X8)_
-- [x] h. **Visual direction** (the details come in chunk 15): _(done: draft in BRAND.md; your approval is X8)_
-  - the logo orange/red as the only brand color, light-first (see [R3](#r3-design-decisions))
-  - icon style: Lucide, 1.5 px stroke
-  - illustration and screenshot style: real app screens in an iPhone frame, no stock photos
-- [x] i. **App consistency:** _(done: draft in BRAND.md; your approval is X8)_
-  - the iOS app's `AccentColor` asset is **empty** (system blue); set it to the brand orange
-  - App Store screenshots and description use the same pillars and colors
-- [x] j. **Pricing source of truth:** `strategy.md` lists 4 tiers (Free, Starter $4.99, Pro $7.99, Business $19.99), but the website shows 3. 🟡 Decide which tiers are live, and write them down once (they become `content/pricing.json` in chunk 11). _(done: D1, `content/pricing.json`)_
-- [x] k. Save all of this as `BRAND.md` (strategy part). _(done: draft in BRAND.md; your approval is X8)_
-
-**Done when:** `BRAND.md` answers "who is it for, why us, how do we sound, what do we look like", and the pricing is confirmed.
-
-### 6. SEO strategy: keyword map & URL plan
-**Goal:** every page targets one search intent, and no two pages compete with each other.
-
-- [x] a. **Inputs:**
-  - the competitor gap analysis (chunk 47): what Invoice Simple, Invoice Home, Zoho, Bookipi and Invoice Fly rank for
-  - the baseline from chunk 4 (which queries already get impressions)
-  - `pseo_engine/google_page_ideas.ipynb`
-  - Google autocomplete / "People also ask"
-  - a keyword tool (Ahrefs free tools, Google Keyword Planner)
-- [x] b. **Keyword clusters:** group the keywords by search intent. Examples:
-  - free generator ("free invoice generator", "create invoice online")
-  - templates ("invoice template pdf", "{style} invoice template")
-  - industry ("{profession} invoice")
-  - comparison ("{competitor} alternative")
-  - how-to ("how to write an invoice")
-  - country/tax ("UK VAT invoice")
-- ➜ c. **Keyword map** (`seo/keyword-map.csv`): **one cluster → one URL**, with primary keyword, secondary keywords, intent, page type and the current position (from the baseline). **→ moved to Stage X, [X9](#x9)**
-- [x] d. **Cannibalization rule:** two URLs never target the same intent. Also follow the doorway-page rules in `pseo_engine/docs/seo_strategy.md`. That means:
-  - **no** `/free-invoice-generator/freelancer`, because `/industries/freelancer` owns that intent; the industry page embeds the generator preset instead
-  - **no** `/invoice-generator-pdf` next to `/free-invoice-generator`
-- [x] e. **URL conventions** (see [R6](#r6-seo-rules)): apex `https://invoicor.com`, lowercase, kebab-case, **no trailing slash**, English slugs at `/`, translated slugs under `/de/` etc.
-- [x] f. **Site structure:** home → hubs (`/templates`, `/industries`, `/compare`, `/guides`) → detail pages, with every page at most 3 clicks from home.
-- [x] g. **AI search (ChatGPT, Perplexity, Claude, Google AI Overviews).** `robots.txt` currently blocks `GPTBot`, `Google-Extended` and `CCBot`. _(done: D3: all AI bots allowed)_
-  - 🟡 Decide. Recommendation:
-    - allow the **search/answer** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so assistants can cite and recommend Invoicor
-    - training bots (`GPTBot`, `ClaudeBot`, `CCBot`, `Google-Extended`) are your choice
-    - blocking `Google-Extended` doesn't affect normal Google ranking
-  - Write pages in a format that's easy to quote: a short, clear answer under each heading, plus FAQs.
-  - Add `llms.txt` (a short site summary + key links) in chunk 13.
-- ➜ h. **Targets:** pick 10 priority keywords and set a 6-month goal for each. Be realistic about difficulty: **→ moved to Stage X, [X9](#x9)**
-  - **Head terms** ("free invoice generator", "invoice template") are owned by sites with thousands of backlinks (Invoice Simple, Zoho, Canva, Shopify, Square). For a young domain they're 12–18-month goals that need links (chunk 57).
-  - **Quick wins (3–6 months):** long-tail terms ("{profession} invoice template", "how to invoice in {country}"), non-English searches (Stage H), and template **file format** searches ("invoice template word / excel / google docs", chunk 53).
-  - Order the work by **traffic potential ÷ difficulty**, not by search volume alone.
-
-**Done when:** `seo/keyword-map.csv` covers every existing and planned URL, with no intent claimed twice.
-
-### 7. Page-type blueprints & content quality rules
-**Goal:** a fixed recipe for each page type, so generated pages are useful and never thin.
-
-- [x] a. **One blueprint per page type** (home, generator, template, industry, compare, guide, hub, legal). Each one lists: _(done: seo/BLUEPRINTS.md)_
-  - its sections in order
-  - the title formula, e.g. `{Template} Invoice Template – Free PDF | Invoicor` (≤60 characters)
-  - the meta description formula (≤155 characters, includes a benefit + CTA)
-  - the H1 formula, and the rule of one H1 per page
-  - the required JSON-LD
-  - internal links: which related pages and how many
-  - the CTA (generator or App Store)
-- [x] b. **Quality rules** (from `pseo_engine/docs/seo_strategy.md`): _(done: `content:check` + tests)_
-  - at least 20% unique content per programmatic page
-  - unique intro, FAQs and examples per page
-  - minimum word counts per page type
-  - no hidden text
-  - no keyword stuffing
-- ➜ c. **E-E-A-T (trust signals):** **→ moved to Stage X, [X7](#x7)**
-  - an About page (who's behind Invoicor, why)
-  - a Contact page
-  - company/legal details as your country requires (🟡 Decide: e.g. KvK number in NL)
-  - "last updated" dates on content pages
-  - author or reviewer lines on guides
-- [x] d. **Content fields** each page type needs. These become the schemas in chunk 11, e.g. `slug`, `title`, `metaDescription`, `h1`, `intro`, `sections[]`, `faqs[]`, `related[]`, `updatedAt`, `noindex`.
-- [x] e. Write it up as `seo/BLUEPRINTS.md`.
-
-**Done when:** for every page type, you could hand the blueprint to a writer and get a page that passes the quality rules.
-
----
-
-## Stage C: Next.js foundation
-_✅ Done on 2026-11-17, as a **static export at the repo root** (see "Decisions made during the migration" at the top). Steps below that mention `web/`, PM2, `proxy.ts` or revalidation describe the original plan; the decision table at the top wins._
-
-### 8. Create the Next.js app skeleton
-**Goal:** an empty Next.js app with the final folder structure.
-
-- [x] a. `cd web && npx create-next-app@latest .`: TypeScript, Tailwind, App Router, ESLint, no `src/` folder, alias `@/*`. Use the current stable Next.js and pin it exactly in `package.json`. _(done: at the repo root, not `web/`)_
-- [x] b. Turn on `"strict": true` and `"noUncheckedIndexedAccess": true` in `tsconfig.json`.
-- [x] c. Create the folder structure from [R5](#r5-target-folder-structure), with `.gitkeep` files in empty folders.
-- [x] d. Set up `next-intl`: _(done: moved to chunk 36, when the first translation exists)_
-  - `i18n/routing.ts` (locales: only `en` for now; `localePrefix: 'as-needed'`, so English has no prefix)
-  - `i18n/request.ts`
-  - the `proxy.ts` file (called `middleware.ts` before Next.js 16)
-  - `app/[locale]/layout.tsx`
-- [x] e. `next.config.ts`:
-  - `trailingSlash: false`
-  - `images.remotePatterns` for `invoicor.com`
-  - `poweredByHeader: false`
-- [x] f. A placeholder home page that renders "Invoicor" at `/`.
-
-**Done when:** `npm run dev` in `web/` shows the placeholder at `/`, and `npm run build` passes.
-
-### 9. Tooling & CI checks
-**Goal:** messy code can't get in.
-
-- [x] a. Prettier + `prettier-plugin-tailwindcss` (sorts classes).
-- [x] b. ESLint with Next's config, plus a rule that forbids inline `style={{}}` (`react/forbid-dom-props` / `forbid-component-props` for `style`). _(done: as a test instead of a lint rule: `tests/unit/style-guard.test.ts`)_
-- [x] c. Scripts: `dev`, `build`, `start`, `lint`, `typecheck` (`tsc --noEmit`), `format`, `content:check` (added in chunk 11).
-- [x] d. Pre-commit hook: `husky` + `lint-staged`.
-- [x] e. CI (the workflow from chunk 3) gets a `web` job: `npm ci` → `lint` → `typecheck` → `content:check` → `build`. _(done: `.github/workflows/check.yml`, now with tests)_
-
-**Done when:** a commit with an inline style or a type error is blocked, and CI shows all the steps green.
-
-### 10. Config, types & API client
-**Goal:** every setting has one home, and the API is typed.
-
-- [x] a. `lib/config.ts`:
-  - `SITE_URL`, `API_URL`, `APP_STORE_URL`, `APP_STORE_ID`, social profile URLs
-  - read from `NEXT_PUBLIC_*` env vars and validated with `zod` at startup
-- [x] b. `.env.example` with every variable and a comment for each.
-- [x] c. `types/api.ts`: `ApiTemplate`, `Currency`, `Language`, `TemplateFields`. Generate these from the OpenAPI schema (`openapi-typescript https://invoicor.com/api/schema/`) so they never drift from the API. _(done: `types/api.generated.ts`, `npm run api:types`)_
-- [x] d. `lib/api.ts`:
-  - a typed wrapper with `getTemplates()`, `getTemplate(slug)`, `getTemplatePreview(slug)`, `getCurrencies()`, `getLanguages()`
-  - uses `fetch` with `next: { revalidate: 3600, tags: ['templates'] }`
-  - a timeout, and a typed error
-
-**Done when:** a test page lists every template from the API with full type safety.
-
-### 11. Content pipeline & page generation
-**Goal:** adding a programmatic page means adding one JSON entry, and bad content can't be published.
-
-- [x] a. Move `templates.json`, `industries.json` and `comparisons.json` into `content/en/`. Add `pricing.json` (from chunk 5j) and `faqs/` (shared FAQ sets). _(done: `content/` (the `en/` level comes with chunk 36))_
-- [x] b. A `zod` schema per content type in `content/schemas.ts`, using the fields from the blueprints (chunk 7d), including `updatedAt` and `noindex`. _(done: schemas in `lib/content.ts`)_
-- [x] c. `lib/content.ts`:
-  - `getAll(type, locale)` and `getBySlug(type, slug, locale)`
-  - validated, typed, and falls back to English when a translation is missing
-- [x] d. **Static generation for every detail route:**
-  - `generateStaticParams()` from the content
-  - `export const dynamicParams = false`, so unknown slugs return a **real 404** (fixes the soft 404s)
-  - `notFound()` for missing entries
-- [x] e. **Keep API data fresh:** pages that show live template data revalidate every hour, plus **on-demand** refresh: _(done: not applicable to a static export: fresh data = rebuild + deploy)_
-  - `app/api/revalidate/route.ts`, protected with a secret header, calls `revalidateTag('templates')`
-  - Django calls it whenever a template changes (a small task in `invoicor_api`)
-- [x] f. **`scripts/content-check.ts`** (`npm run content:check`, run in CI). It fails on: _(done: `scripts/content-check.mjs`)_
-  - schema errors
-  - duplicate titles, meta descriptions or H1s
-  - titles over 60 characters or descriptions over 155
-  - pages below the minimum word count
-  - two pages more than 80% alike (simple text-similarity check)
-  - `related[]` links that point to slugs that don't exist
-- [x] g. `CONTENT.md`: how to add or edit a template, industry or compare page, step by step.
-
-**Done when:** adding a test entry to `industries.json` creates a new static page after `build`, and a deliberately duplicated title fails CI.
-
-### 12. Metadata & structured data helpers
-**Goal:** every page gets complete, correct SEO with one function call.
-
-- [x] a. `lib/seo.ts` → `buildMetadata({ title, description, path, locale, image, noindex })`. It returns:
-  - title, description
-  - canonical URL (absolute, apex, no trailing slash)
-  - OG/Twitter tags
-  - `alternates.languages` (hreflang for live locales + `x-default`)
-  - `robots`
-- [x] b. A root `metadataBase` = `SITE_URL`, a title template `%s | Invoicor`, and the default OG image.
-- [x] c. JSON-LD builders in `lib/jsonld.ts`:
-  - `organizationLd()` with `sameAs` (App Store, socials) and logo
-  - `websiteLd()`, `breadcrumbLd()`, `faqLd()`, `howToLd()`, `softwareAppLd()` (iOS app), `webAppLd()` (the generator)
-- [x] d. A `<JsonLd data={…}>` component (a server component with safe serialization).
-- [x] e. Rule: JSON-LD only describes what's visible on that page. FAQ markup only when the FAQ is shown.
-- [x] f. Check the real App Store rating: use it in `softwareAppLd()`, or leave the rating out. _(done: rating removed until there are ≥ 10 real ratings (chunk 50))_
-
-**Done when:** a test page's raw HTML has a correct canonical URL, hreflang and JSON-LD that pass Google's Rich Results Test.
-
-### 13. Sitemap, robots & indexing
-**Goal:** search engines find every page that should be indexed, and none of the rest.
-
-- [x] a. `app/sitemap.ts`, generated from the routes + the content (it replaces `scripts/generate-sitemap.cjs`):
-  - split it with `generateSitemaps()` into `pages`, `templates`, `industries`, `compare`, `guides` (plus a sitemap index)
-  - `lastModified` = the content's real `updatedAt`, **not** the build date
-  - each URL lists its language versions (`alternates.languages`) once there are more locales
-  - template pages include their preview image (`images` in the sitemap entry), so they can show up in Google Images
-  - leave out: `noindex` pages, redirects, `/brand`, the API
-  - drop `priority` and `changefreq` (Google ignores them)
-- [x] b. `app/robots.ts`:
-  - disallow `/api/`, `/admin/`, `/brand`
-  - the AI-bot rules from chunk 6g
-  - the sitemap URL
-- [x] c. `app/llms.txt/route.ts`: a short plain-text summary of Invoicor + the links to the main pages.
-- [x] d. **IndexNow** (Bing, Yandex, Seznam): host the key file, and after each deploy ping it with the changed URLs (a step in `deploy.sh`).
-- [x] e. Keep `BingSiteAuth.xml` in `web/public/`. Check that the Google verification still works (DNS or meta tag). _(done: Bing kept; Google by DNS is X1)_
-- [x] f. A `noindex` rule for preview and staging environments: if `NEXT_PUBLIC_ENV !== 'production'`, add a `noindex` robots tag to every page and block everything in robots. _(done: staging gets `noindex` from its nginx config)_
-
-**Done when:** `/sitemap.xml` lists exactly the indexable URLs with real dates, and `/robots.txt` and `/llms.txt` render correctly.
-
-### 14. Analytics, cookie consent & App Store attribution
-**Goal:** measure what matters, legally, and know which pages bring app installs.
-
-- [x] a. 🟡 Decide on the tools. Recommendation: _(done: D4)_
-  - **PostHog** (product funnel) + **GA4** only if you use its reports
-  - drop StatsUp and Ahrefs Web Analytics unless you check them weekly
-  - Search Console + Bing Webmaster for search
-- [x] b. **Cookie consent (EU/GDPR):** _(done: D5)_
-  - a small branded consent banner
-  - GA4 with Consent Mode v2 (no cookies until accepted)
-  - PostHog in cookieless/memory mode until consent
-  - remember the choice
-- [x] c. `lib/analytics.ts` → `track(event, props)`, the only place that talks to PostHog/GA. Event names follow `area_action` (e.g. `gen_generate`, `nav_app_click`).
-- [x] d. Load the scripts with `next/script` (`afterInteractive`), and only after consent.
-- ➜ e. **App Store attribution:** every App Store link goes through `appStoreLink(campaign)`, which adds `pt` (provider token) and `ct` (campaign = page type or slug). App Store Connect then shows which page drives installs. **→ moved to Stage X, [X10](#x10)**
-- [x] f. UTM convention for outside links (social, listings, outreach), written in `seo/TRACKING.md`. _(done: seo/TRACKING.md)_
-
-**Done when:** no analytics cookies are set before consent, events arrive after consent, and an App Store link from a template page carries `ct=template-{slug}`.
-
----
-
-## Stage D: Brand system
-_See [R3](#r3-design-decisions) and `BRAND.md` from chunk 5._
-
-### 15. Brand tokens (colors, gradient, type, spacing)
-**Goal:** one file defines how Invoicor looks.
-
-- [x] a. `styles/tokens.css` _(✅ 2026-11-18; also semantic roles `ink`/`muted`/`subtle`/`tint`/`line`, and a deeper **CTA gradient** `#CC4A04 → #C23003` because white on the logo orange is only 3.5:1)_ with Tailwind v4 `@theme`:
-  - **Brand colors:** a scale from `brand-50` to `brand-950`, generated from `#E95D05` (500) and `#DC3002` (600).
-  - **Neutrals:** a warm stone scale `#FAFAF9 → #0C0A09`.
-  - **Semantic colors:** success `#16A34A`, warning `#D97706`, danger `#DC2626`, info `#2563EB`.
-- [x] b. Gradients:
-  - `--brand-gradient: linear-gradient(135deg, #F07A1A 0%, #E95D05 45%, #DC3002 100%)`
-  - `--brand-glow: radial-gradient(60% 50% at 50% 0%, rgb(233 93 5 / .12), transparent 70%)`
-- [x] c. Fonts: Cabinet Grotesk and Satoshi `woff2`, loaded with `next/font/local` (`app/fonts.ts`, done during the migration). Set a type scale with `clamp()`: display, h1–h4, body, small.
-- [x] d. Radius (8/12/16/24), 3 shadow levels with a slight warm tint, hairline border `rgb(0 0 0 / .06)`, and a spacing rhythm for sections.
-- [x] e. Motion tokens: durations 150/250/400 ms, easing `cubic-bezier(.22,1,.36,1)`.
-- [x] f. Add the visual rules to `BRAND.md`: where the gradient is allowed (primary CTA, one word per headline, the popular pricing card, the hero glow) and where it isn't.
-- [x] g. A hidden `/brand` page (`noindex`) showing every token.
-
-**Done when:** `/brand` shows every color, the gradient, all type sizes and all shadows, and they look right together.
-
-### 16. Logo, icons & OG images
-**Goal:** sharp brand assets everywhere, and no 364 KB JPGs.
-
-- [x] a. Redraw the logo as **SVG**: the mark (white arrow on the orange gradient), mark + wordmark, and a one-color version for small or monochrome use. Add it as a `<Logo>` component.
-- [x] b. App icons with Next file conventions: `app/icon.svg`, `app/apple-icon.png` (180×180), `app/manifest.ts` (name, colors, icons).
-- [x] c. A branded 1200×630 share card: light background, orange glow, logo, page title.
-- [x] d. Per-page OG images for templates, industries and compare pages (`app/og/[collection]/[slug]/og.png`, title + eyebrow). _Template preview images and guides come with chunks 21 and 42._
-- [x] e. Delete the duplicated `icon.jpg`, `logo.jpg` and `og-image.jpg` once nothing uses them.
-
-**Done when:** pasting a template-page URL into WhatsApp or Slack, or into an OG debugger, shows a branded card with the right title.
-
-### 17. UI components kit
-**Goal:** pages are built from shared parts, never one-off styles.
-
-- [x] a. `Button`: primary (gradient), secondary, ghost; sizes sm/md/lg; loading state; works as a link.
-- [x] b. `Container`, `Section` (white / tint / glow variants, all light), `Heading` (with an optional gradient word), `Text`, `Prose` (long-form content).
-- [x] c. `Card`, `Badge` (free/starter/pro), `AppStoreBadge`, `Breadcrumbs` (with `breadcrumbLd()` built in).
-- [x] d. Form parts for the generator later: `Input`, `Textarea`, `Select`, `Field` (label + error), `NumberInput`.
-- [x] e. `Accordion` (FAQ, with `faqLd()` support), `Tabs`, `Skeleton`, `RelatedLinks`.
-- [x] Also: the cookie banner now uses the kit (light, Decline and Accept styled the same: no nudging).
-- [x] f. Show every component on `/brand`.
-- [x] g. Accessibility: visible focus rings in brand color, AA contrast (orange text on white uses `brand-700`), keyboard support. _(✅ axe-core on `/brand`: every kit component passes; the only failures are in the **old dark footer** (grey on black, 2.67:1), fixed by the chunk 18 rebuild. A full Lighthouse run is part of chunk 26 QA.)_
-
-**Done when:** every component is on `/brand`, works with the keyboard and passes an axe/Lighthouse accessibility check.
-
-### 17.1 Tests: the safety net before the rebuild
-_Added 2026-11-18 (your question "do we have tests?"). Today there are **no automated tests**, only
-checks: lint, typecheck, `content:check` (SEO rules) and the build. Stage E rewrites every page, so
-tests come first: they prove no URL, title or price breaks during the rebuild._
-
-**Goal:** CI fails if a page disappears, a price is wrong, or accessibility gets worse.
-
-- [x] a. **Vitest unit tests** for the logic: `lib/pricing.ts` (prices, trial text, yearly saving),
-  `lib/seo.ts` (canonical, OG image per page), `lib/content.ts` (schema), `lib/consent.ts`
-  (nothing loads before Accept).
-- [x] b. **URL parity test** (runs on `out/`): every URL from the old site (the 3 hubs, 30 detail
-  pages, home, help, affiliate, terms, privacy) exists, has one H1, a canonical and an OG image.
-  The list is frozen in `tests/urls.txt`; removing a URL needs a redirect in nginx first.
-- [x] c. **Playwright smoke tests** _(✅ 2026-11-18: desktop + mobile, using the installed Chrome; plus trailing-slash redirect and "Decline and Accept look the same")_: home, one page of each type, the 404 page, the consent banner
-  (Decline → no analytics requests; Accept → GA + PostHog load), the pricing toggle.
-- [x] d. **Accessibility test**: axe-core on one page of each type (same approach as the `/brand`
-  check in chunk 17g); fail on serious or critical issues. _Pages on the old design are listed in `NOT_REBUILT_YET` (expected to fail); each Stage E chunk removes its pages from that list._
-- [x] e. _(✅ 2026-11-18, `tests/unit/style-guard.test.ts`)_ **Style guard**: fail on hex colors or inline `style=` in pages and components outside
-  `styles/tokens.css`, `lib/og.tsx` and `components/brand/` (turns "unified styling" into a rule).
-- [x] f. Add `npm test` to `npm run check` and the GitHub Actions workflow.
-
-**Done when:** `npm run check` runs the tests locally and in CI, and they pass on the current site.
-
-### 17.2 Invoice-style premium components
-_Added 2026-11-18 (your feedback: "it looks like a toy; make it high class, more invoice-like,
-tailored to the people who use it, with reusable invoice-style parts")._
-
-**Goal:** a visual language that only an invoicing brand could have, so the site looks like a
-serious business tool and the price reads as a great deal instead of "cheap".
-
-- [x] a. `InvoicePaper`: a white "sheet" card with a subtle paper shadow and an optional
-  perforated or torn bottom edge; the base for hero mockups, pricing and examples.
-- [x] b. `LineItems`: an invoice table (item, qty, price, total) with tabular figures, a hairline
-  ruler and a subtotal / tax / **Total** footer. Used for examples, pricing and the fee comparison.
-- [x] c. `Stamp`: a "PAID" / "2 MONTHS FREE" / "0% FEES" rubber stamp that lands with a small
-  scale-and-rotate animation once, when scrolled into view.
-- [x] d. `PricingTable` (`components/pricing/`), each plan as an invoice: the pricing card shows the plan as line items ending in
-  "Total $4.99 / month", the yearly card adds a discount line ("2 months free −$9.89").
-- [x] e. `BillingSwitch`: the monthly / yearly toggle styled as a physical switch; flipping it to
-  yearly animates the price down (count-down number), slides in the discount line and stamps
-  "SAVE 16%". Keyboard and screen-reader friendly (`role="switch"`).
-- [x] f. An invoice-style CTA variant: every primary button gets a light sheen sweep on hover (`.sheen`).
-- [x] g. Typography for money: tabular numbers everywhere a price or total appears; amounts in
-  the heading font.
-- [x] h. Show all of them on `/brand`, with axe checks.
-
-_✅ 2026-11-18: `components/ui/invoice.tsx` (InvoicePaper, PaperLabel, LineItems, Money, Stamp, CoffeeCup), `BillingSwitch`, `Counter`, `styles/effects.css` (stamp, sheen, steam, glow drift, float; all off under reduced motion). Savings come from `yearlySaving()` in `lib/pricing.ts`, never typed by hand._
-
-**Done when:** `/brand` shows every invoice component, and a pricing card built from them looks
-like a real invoice at phone and desktop width.
-
----
-
-## Stage E: Rebuild the pages (in the new brand)
-_Light only: white and warm off-white sections, a soft orange glow on light for the hero and final CTA (see R3). **Premium, not playful**: invoice-style components from chunk 17.2, subtle gradients and small motion (see [R10](#r10-your-ideas-2026-11-18)). Every existing URL keeps working: the URL test from chunk 17.1 must pass after each chunk. Each page follows its blueprint (chunk 7). Port the **content**, not the old code. Keep every URL the same._
-
-### 18. Navbar & footer
-**Goal:** clear navigation and strong internal linking on every page.
-
-- [x] a. Navbar links _(the generator link is added in chunk 35, when it exists)_: Free Invoice Generator · Templates · Industries · Pricing (`/#pricing`) · Help, plus the App Store CTA. Leave a slot for the language switcher.
-- [x] b. Light (white, translucent with blur once you scroll, hairline border). No dark variant.
-- [x] c. Mobile: a hamburger opening a slide-out menu, with the focus kept inside it and closing on Esc.
-- [x] d. Footer columns: Templates (top 6), Industries (top 6), Compare (top 6), Company (pricing, help, affiliate, email), plus Privacy, Terms and Cookie settings. _Free tools, Guides, About and Contact are added when those pages exist (chunks 24, 35, 42)._ Brand gradient hairline at the top, App Store badge.
-- [x] e. Both are server components; only the mobile menu toggle is a client component.
-
-_✅ 2026-11-18: `components/layout/` (Navbar server component; NavClient for scroll state, active-link underline and the mobile menu with focus trap and Esc). The footer contrast failure is gone: the templates and compare hubs now pass axe._
-
-**Done when:** every page is reachable within 3 clicks from home, on desktop and mobile.
-
-### 19. Landing page, part 1 (hero → how it works)
-**Goal:** a premium first impression.
-
-- [x] a. Split it into one file per section in `components/sections/`.
-- [x] b. **Hero:**
-  - light (warm white) with the soft orange glow behind the phone
-  - the headline from chunk 5f, with one gradient word
-  - two CTAs: “Create a free invoice” → generator, “Get the app” → App Store
-  - an iPhone/invoice mockup: the phone plus a real invoice on `InvoicePaper` sliding out of it, with a "PAID" `Stamp`
-  - written for the tradesperson and the freelancer (BRAND.md §2): their jobs, their line items, their currency
-- [x] c. Trust strip: true numbers (31 templates, 38 currencies, 11 languages, 0% fees). _The App Store rating joins once there are ≥ 10 real ratings (chunk 50)._
-- [x] d. Templates carousel: live from the API, with skeletons while loading and a fallback if the API fails.
-- [x] e. How it works: 3 steps with icons.
-
-**Done when:** the top half of the page looks finished on mobile and desktop, with no layout shift.
-
-### 20. Landing page, part 2 (features → final CTA)
-**Goal:** the full landing page, with SEO.
-
-- [x] a. Features grid, built from the messaging pillars (chunk 5d).
-- [x] b. Currencies & languages + "Your data stays in Europe" (security).
-- [x] c. Pricing from `content/pricing.json`: monthly/yearly toggle, the popular card with a gradient border. Make sure the tiers match the app exactly.
-  - built from the invoice components (chunk 17.2): each plan as an invoice, `BillingSwitch` for monthly / yearly
-  - **yearly as the better deal:** default the switch to yearly, show "2 months free" / "save 16%" (true: 12 × $4.99 = $59.88 vs $49.99) with the stamp and count-down animation
-  - **price anchor:** a small line next to Starter, "less than one coffee a month" (or "$0.17 a day"), with a tiny animated coffee cup (steam rising; static under reduced motion). Test it against no anchor in chunk 60, because a coffee comparison can also make a premium tool feel cheap.
-  - no permanent discounts (they teach people to wait); use App Store introductory offers or the trials instead (decision D14)
-- [x] d. Testimonials: **real ones only**; until then the "Promises" section stands in.
-- [x] d2. **"We never take a cut" section** (your core belief; heroic but professional). Headline idea: _"You did the work. You keep the money."_ Content:
-  - Invoicor takes **0% of your payments**. No platform fee, no per-invoice fee, ever. You pay a flat subscription, that's it.
-  - Many invoicing apps charge a percentage per payment on top of the subscription; name them only on the compare pages, with a source and a date (chunk 23)
-  - a small "fee calculator" built from `LineItems`: drag your yearly revenue, see what a 2.9% + 30¢ style fee would cost vs $0 with Invoicor
-  - **honesty rule:** if a customer pastes their own PayPal or Stripe link, PayPal / Stripe still charge their own fees. Say "Invoicor adds 0%", never "you keep 100%".
-  - reuse the same block on the compare pages and in the App Store screenshots (chunk 48)
-- [x] e. A visible FAQ (Accordion) + matching `faqLd()`.
-- [x] f. Final CTA section (light, `brand-50` tint + glow).
-- [x] g. Metadata + `organizationLd()` + `websiteLd()` + `mobileAppLd()`, on this page only. _The hero says "in seconds" until decision D12 (the "5 seconds" claim) is made._
-
-**Done when:** `curl /` shows all the text, and the Rich Results Test passes.
-
-### 21. Template pages + hub
-**Goal:** `/templates` and `/templates/[slug]` rebuilt following the template blueprint.
-
-- [x] a. A static page for each template (chunk 11d). _(Static export: new content = rebuild + deploy.)_
-- [x] b. Template page:
-  - breadcrumbs
-  - branded hero with the page's own sample invoice (from `sample_breakdown_rows`) as `InvoicePaper`
-  - CTA "Create it in the app" (App Store until the generator ships, then `/free-invoice-generator?template={slug}`); _a sticky CTA bar follows with the generator (chunk 34)_
-  - the existing long-form content
-  - FAQ
-  - related templates _(links to the matching industry page need a template ↔ industry mapping in the content: chunk 56)_
-- [x] c. Hub: a card grid of every template, an explainer and CollectionPage JSON-LD. _A free / starter / pro filter isn't useful here: these are trade guides, not app templates._
-- [x] d. Metadata, OG image, JSON-LD for each page.
-
-_✅ 2026-11-18: shared SEO-page blocks in `components/sections/content/` (PageHeader, ArticleLayout with a sticky TOC, Block, PointList, NoteList, Callout, FaqBlock, ClosingCta, HubPage). Removed a leftover false claim from the closing CTA ("get paid by Apple Pay on the spot")._
-
-**Done when:** every old `/templates/*` URL renders its full content in the raw HTML, styled in the new brand, and `content:check` passes.
-
-### 22. Industry pages + hub
-**Goal:** the same treatment for `/industries` and `/industries/[slug]`.
-
-- [x] a. Page sections: breadcrumbs, hero with the industry snapshot as an invoice sheet, billing mistakes, how Invoicor helps, a real scenario, expert tip, common line items, glossary (DefinedTermSet), tax notes, FAQ, related. _Recommended templates and the generator preset CTA (`?industry={slug}`) follow with chunk 34._
-- [x] b. Hub grid with icons + intro.
-- [x] c. Metadata, OG images, JSON-LD.
-
-_✅ 2026-11-18. The rebuild exposed **33 more false claims** the 2026-11-17 audit missed (automatic recurring invoices, per-line tax flags, Apple Pay / Google Pay tap-to-pay, 135+ currencies, overdue notifications, brand hex colors, auto-updating milestones, "watermarks on premium plans"). All rewritten to what the app does; a unit test now blocks these phrases in the "How Invoicor helps" cards, subtitles and descriptions._
-
-**Done when:** every old `/industries/*` URL works and its content is in the raw HTML.
-
-### 23. Compare pages + hub
-**Goal:** the same treatment for `/compare` and `/compare/[slug]`.
-
-- [x] a. A comparison table component (✓/✗, prices), with a "last checked" date, a verdict box and a CTA. Use the differentiation work from chunk 5e.
-- ➜ b.  Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up. **→ moved to Stage X, [X11](#x11)**
-- ➜ c. Cover every competitor with real search demand: `/compare/{competitor}-alternative` for the top 10 (Invoice Simple, Invoice2go, Invoice Fly, Bookipi, Zoho Invoice, Wave, FreshBooks, QuickBooks, Joist, Invoice Home), plus the most-searched "{A} vs {B}" pairs. People searching these are ready to switch. **→ moved to Stage X, [X12](#x12)**
-- [x] d. Hub grid + intro.
-- [x] e. Metadata, OG images, JSON-LD.
-
-_✅ 2026-11-18: rebuilt on shared blocks (at-a-glance stats as an invoice sheet, accessible ✓/— table, who-each-is-for, approach, honest price comparison with Invoicor's prices from `pricing.json`, 3 switching steps, FAQ). Fixed Invoicor claims: unmeasured "60s"/"10s" stats → "0 setup" and "1 tap" duplicate; "connects to your bank" (Stripe page); "get paid immediately"; "fastest on the market"; the "Invoicer" typo. Every competitor price box now says prices change and to check their site. Remaining in (b) and (c)._
-
-**Done when:** every old `/compare/*` URL works, its content is in the raw HTML, and the top 10 competitors each have an alternative page.
-
-### 24. About, contact, help, affiliate & legal
-**Goal:** the remaining pages, plus the trust pages Google looks for.
-
-- ➜ a.  **New: About** (the story, who's behind it, EU hosting, the mission) and **Contact** (email/form, response time, company details). Both feed the trust signals (chunk 7c). **→ moved to Stage X, [X7](#x7)**
-- [x] b. Help: FAQ accordion + search filter + contact link.
-- [x] c. Affiliate: rebuilt with the shared sections.
-- [x] d. Terms & Privacy: light reading layout, numbered sections, a "last updated" date. _(Turnstile and generator wording follows in Stage G.)_ **Update the privacy policy** for analytics + consent, Turnstile, and the generator ("we don't store invoice data").
-- [x] e. A branded 404 (`not-found.tsx`) with links to the main pages, and an error page (`error.tsx`).
-
-_✅ 2026-11-18: Help (grouped accordions, sticky topic list, fixed facts: 31 templates, 38 currencies, 11 languages, **line items per invoice 10 / 25 / 50 by plan (was "7")**, removed the unconfirmed "we respond within 24 hours"), Affiliate (calculator as a commission statement, no unsourced "100M+ freelancers" or "fastest app"), Terms and Privacy on the light layout (legal text unchanged), invoice-style 404 ("VOID") and `error.tsx`. Every page now passes axe; the "not rebuilt yet" test list is gone._
-
-**Done when:** no page uses the old styling, a wrong URL shows the branded 404 with **status 404**, and the privacy policy matches what the site actually does.
-
-### 25. Motion & micro-interactions
-**Goal:** the site feels alive, without getting in the way. _Done with CSS only (`styles/effects.css`), no `motion` package: smaller, works without JavaScript._
-
-- [x] a. Scroll reveal (`.reveal` + RevealObserver): fade + rise on scroll, staggered lists. Used on section headings and card grids.
-- [x] b. Hero: staggered headline entrance, a gently floating mockup, slow drift on the glow.
-- [x] c. Buttons: lift on hover, a sheen sweep on every primary button.
-- [x] d. Cards: lift + shadow on hover. _(No tilt: one moving thing per screen.)_
-- [x] e. Navbar: a sliding underline under the active/hovered link. Accordion: smooth height animation (CSS `interpolate-size`, Chrome 131+; snaps elsewhere). Count-up stats.
-- [x] e2. **Premium polish** (your request: "slight gradients and small movements so it feels high class"):
-  - very subtle gradient surfaces: warm white → white section backgrounds, a gradient hairline on the popular card and the footer top
-  - a slow, barely visible glow drift behind the hero (20 s+ loop)
-  - invoice moments: the stamp landing, totals counting up, line items appearing one by one in the hero invoice
-  - keep it rare: one moving thing per screen at most; motion should feel expensive, not busy
-- [x] f. Guardrails:
-  - everything off under `prefers-reduced-motion`
-  - animate only `transform` and `opacity`
-  - content is visible without JavaScript (crawlers must see the text, not wait for a reveal)
-
-**Done when:** it looks good with motion on, works with reduced motion on, CLS stays at 0, and `curl` still shows all the text.
-
----
-
-## Stage F: Switch to Next.js
-_See [R7](#r7-migration-strategy) for the strategy summary._
-
-### 26. Staging site & QA
-**Goal:** the new site running on the real server, privately, before the switch.
-
-_Rewritten 2026-11-18 for the static export: staging is a second folder behind a password, not a
-Node/PM2 process._
-
-- ➜ a. DNS: `staging.invoicor.com` A record → the server, plus a certbot certificate. **→ moved to Stage X, [X4](#x4)**
-- [x] b. ~~Node + PM2~~ Not needed: staging serves the same static `out/` from `$STAGING_DIR/site`.
-- [x] c. nginx for `staging.`: password (basic auth), `X-Robots-Tag: noindex`, the same redirects and `try_files` as production. _(`deploy/nginx/staging.invoicor.com.conf`; installing it is Y17)_
-- [x] d. `bash deploy/deploy.sh --staging` deploys the current branch to staging.
-- [x] e. **QA checklist** in [seo/QA.md](seo/QA.md): automated part (`npm run check`, parity script, CI) + devices, Lighthouse, Rich Results, consent, redirects by hand.
-- ➜ f. Fix everything the checklist finds. **→ moved to Stage X, [X4](#x4)**
-
-**Done when:** the whole QA checklist passes on staging.
-
-### 27. URL parity check & redirect map
-**Goal:** prove that no URL, title or ranking signal gets lost in the switch.
-
-- [x] a. `scripts/parity-check.mjs` (`npm run parity`): every URL in the live sitemap + `tests/urls.txt` + the nginx redirects, fetched on the old and new site; compares status, title, description, canonical and H1; writes `seo/parity/<date>-<host>.md`. _Add the Search Console baseline URLs (Y1) to `tests/urls.txt` once exported._
-- [x] b. _(✅ 2026-11-18 against the local build: 46 URLs, 0 failures; the nginx redirects are verified on staging)_ Every old URL must return 200 with the same canonical URL, or 301 to its new home. Zero 404s for URLs that used to work.
-- [x] c. Changed titles or descriptions are fine if they're intentional improvements. List them in the report.
-- [x] d. Redirect map: in **nginx** (static export has no `redirects()`): `/pricing`, `/register`, old image and favicon URLs, trailing slashes. Nothing was renamed or merged.
-- [x] e. Old sitemap (35 URLs) vs new (40): every old URL is present except `/pricing` (301 → `/#pricing`); new: help, affiliate, privacy, terms (they existed but weren't in the old sitemap).
-
-**Done when:** the parity report shows no unexpected differences, and every old URL resolves.
-
-### 28. Launch day
-**Goal:** production switches from Vite to Next.js with a rollback ready.
-
-_Rewritten 2026-11-18 for the static export. The step-by-step runbook is DEPLOY.md section C._
-
-- [x] a. Runbook: before (Y13, Y1, staging QA, parity 0 failures), backup of the Vite site and nginx config, deploy, nginx switch, checks. _(DEPLOY.md C)_
-- [x] b. ~~PM2 / Node on the server~~ Not needed: `deploy.sh` uploads `out/`, nginx serves it.
-- [x] c. nginx config: `deploy/nginx/invoicor.com.conf` (Django `/api/` untouched, `_next/static` cached a year, HTML revalidated, security headers, redirects, real 404).
-- [x] d. Smoke test: built into `deploy.sh` (home 200, unknown page 404) + the "after launch" part of [seo/QA.md](seo/QA.md).
-- [x] e. **Rollback** to the Vite site documented (restore the nginx backup, under a minute); later rollbacks: `deploy.sh --rollback`.
-- [x] f. IndexNow ping after every production deploy (`scripts/indexnow.mjs` in `deploy.sh`).
-- ➜ g. Search Console + Bing: resubmit the sitemap, request indexing for the home page and top 10 pages. **→ moved to Stage X, [X6](#x6)**
-- [x] h. Old Vite files: already gone from `dev`; merging `dev` into `main` removes them from `main` (and with them the old starter-template README GitHub shows today).
-- ➜ i. **Do the launch.** **→ moved to Stage X, [X5](#x5)**
-
-**Done when:** invoicor.com is served by Next.js, the smoke test passes, and the rollback is documented and tested on staging.
-
-### 29. Post-launch watch (4 weeks)
-**Goal:** catch any SEO drop early.
-
-- ➜ a. **Daily for the first week:** the nginx error log + 404 log (`sudo tail -f /var/log/nginx/error.log`; 404s: `grep '" 404 ' /var/log/nginx/access.log`), an uptime check. _(No PM2: nothing to restart.)_ **→ moved to Stage X, [X13](#x13)**
-- ➜ b. **Weekly, compared with the baseline:** **→ moved to Stage X, [X13](#x13)**
-  - Search Console: indexed pages, coverage errors, impressions and clicks for the top pages
-  - Bing: the same
-- ➜ c. Add redirects for any 404 URLs that real visitors or Google hit. **→ moved to Stage X, [X13](#x13)**
-- ➜ d. A small temporary dip in rankings is normal for 2–4 weeks. Investigate if it lasts longer than that, or if pages fall out of the index. **→ moved to Stage X, [X13](#x13)**
-- ➜ e. After 4 weeks, write a short summary of indexed pages, impressions and clicks vs the baseline in `seo/baseline/`. **→ moved to Stage X, [X13](#x13)**
-
-**Done when:** 4 weeks after launch, the indexed pages and impressions are at or above the baseline.
-
----
-
-## Stage X: Your leftovers from Stages A–F
-
-_Everything from Stages A–F that Claude can't do from here: it needs your accounts, your server, your
-company details or your decision. Everything else in A–F is done and tested on `dev` (2026-11-18).
-Do them top to bottom. The same items also appear in [Your steps](#your-steps) and
-[Decisions for you](#decisions-for-you); this is the ordered "how to" view._
-
-**How essential:** 🔴 essential, the launch isn't safe without it · 🟠 important, do it soon (legal or
-trust risk) · 🟢 nice to have, whenever you have time.
-
-**The short version:** before launch you **must** do X1, X2, X3, X5, X6 (and X4 is strongly
-recommended). After launch, X13 for four weeks. X7 is a legal point for a Dutch business. The rest
-can wait.
-
-<a id="x1"></a>
-
-### X1. 🔴 Verify Google Search Console by DNS _(≈ 10 min, before launch · was Y13)_
-**Why:** Search Console is probably verified through the Google Analytics tag today. GA now only
-loads after cookie consent, so after the launch Google may stop seeing the verification and you lose
-access to your search data.
-**How:**
-1. search.google.com/search-console → *Add property* → **Domain** → `invoicor.com`.
-2. Google shows a `google-site-verification=…` TXT record. Add it at your DNS provider (where
-   invoicor.com's DNS is managed): type **TXT**, name **@** (or empty), value = the full string.
-3. Wait 5–30 minutes, click *Verify*. Keep the old property; the new one shows all subdomains too.
-
-<a id="x2"></a>
-
-### X2. 🔴 Export the SEO baseline _(≈ 20 min, before launch · was Y1, chunk 4d)_
-**Why:** without a "before" snapshot nobody can tell whether the switch hurt or helped your rankings.
-**How:**
-1. Search Console → *Performance* → last 3 months → *Export* → CSV (it includes queries and pages).
-2. Search Console → *Pages* (indexing) → *Export*. Search Console → *Links* → *Export*.
-3. Bing Webmaster Tools: the same exports where available.
-4. Put the files in `seo/baseline/2026-11/` and tell Claude: Claude commits them, adds any extra URLs
-   to `tests/urls.txt` (so they're protected), and does X9.
-
-<a id="x3"></a>
-
-### X3. 🔴 Check the server and install the nginx config _(≈ 30 min, at launch · chunk 2a–c, DEPLOY.md A)_
-**Why:** the new site is a folder of HTML that nginx serves; your current nginx config is set up
-for the old Vite build. Only you can log in to the server.
-**How:** DEPLOY.md section A, steps 1–3:
-1. `cp deploy/.env.example deploy/.env`, fill in `SSH_TARGET` and `SITE_DIR`; check `ssh … 'echo ok'`.
-2. On the server: `grep -rln invoicor /etc/nginx/sites-enabled/` → note the file, the `root` line and
-   the `/api/` block. Check `nginx -v` (the config is written for 1.24).
-3. Back it up, then merge in `deploy/nginx/invoicor.com.conf` (keep your SSL and `/api/` lines).
-   Do this in the same session as X5, because the new `root` folder only exists after the first upload.
-_Tip: paste the output of step 2 to Claude and it writes the exact merged file for you._
-
-<a id="x4"></a>
-
-### X4. 🟠 Set up staging and run the QA checklist _(≈ 15 min setup + 30 min QA · was Y17, chunk 26a/f)_
-**Why:** a private copy on the real server catches problems before visitors and Google see them.
-Not strictly required (all automated tests already pass), but strongly recommended for the first launch.
-**How:** DEPLOY.md section A.4 (DNS record `staging`, `htpasswd`, copy the staging nginx file,
-`certbot`), then `bash deploy/deploy.sh --staging`, then
-`npm run parity -- --new https://staging.invoicor.com --auth invoicor:yourpassword` and the
-by-hand list in [seo/QA.md](seo/QA.md). Send Claude anything that looks wrong.
-
-<a id="x5"></a>
-
-### X5. 🔴 Launch: merge to `main` and deploy _(≈ 15 min · was Y2, chunks 3d, 28i)_
-**Why:** this is the switch. Only you deploy (your choice: manual, never automatic).
-**How:** DEPLOY.md section C: back up the old site and nginx config → `git checkout main && git merge
-dev && git push` → `bash deploy/deploy.sh` → reload nginx (X3) → the checks in seo/QA.md
-"after launch". Rollback to the old site is one command (in DEPLOY.md C).
-_After this, GitHub's `main` shows the new README; the old starter-template files are gone from `main`._
-
-<a id="x6"></a>
-
-### X6. 🔴 Tell Google and Bing _(≈ 10 min, same day as X5 · chunk 28g)_
-**How:** Search Console and Bing Webmaster → *Sitemaps* → submit `https://invoicor.com/sitemap.xml`.
-Then *URL Inspection* → *Request indexing* for the home page and your top 10 pages (from X2).
-(Bing, Yandex and Seznam are also pinged automatically by `deploy.sh` via IndexNow.)
-
-<a id="x7"></a>
-
-### X7. 🟠 Company details + your story → About, Contact, footer _(≈ 10 min of your time · D6, D7, chunks 7c, 24a)_
-**Why:** trust (Google's E-E-A-T, B2B buyers want to know who's behind an invoicing app) and law:
-a Dutch business has to show its KvK number on its website. The terms already say "operated from
-the Netherlands".
-**How:** send Claude: legal company name, KvK number, (optionally) VAT number, city or "registered
-in", and 3–5 sentences on why you built Invoicor and who you are (a photo is optional). Claude then
-builds `/about` and `/contact`, adds the details to the footer, and updates the structured data.
-
-<a id="x8"></a>
-
-### X8. 🟢 Approve the brand draft _(≈ 20 min reading · D7, chunk 5)_
-**How:** read [BRAND.md](BRAND.md) sections 1–6 (positioning, audience, pillars, tagline, voice).
-Change anything that doesn't sound like you, or tell Claude what to change, then set the status line
-to "Approved". The site already follows the draft.
-
-<a id="x9"></a>
-
-### X9. 🟢 Keyword positions and 6-month targets _(Claude does it, after X2 · chunks 6c, 6h)_
-**How:** nothing extra: once the baseline files from X2 are in the repo, Claude fills in the current
-positions in `seo/keyword-map.csv` and proposes 10 priority keywords with realistic targets.
-
-<a id="x10"></a>
-
-### X10. 🟢 App Store provider token _(≈ 5 min · was Y6, chunk 14e)_
-**Why:** every App Store link already carries a campaign name per page, but Apple only counts it
-when your provider token is in the link. Then App Store Connect shows which page brings installs.
-**How:** App Store Connect → *App Analytics* → *Campaigns* → *Generate a campaign link*, copy the
-`pt=` value, send it to Claude (it goes into the build as `NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN`).
-
-<a id="x11"></a>
-
-### X11. 🟠 Confirm the competitor facts on the compare pages _(≈ 1 h · was Y16, chunk 23b)_
-**Why:** statements about other companies' prices and limits must be true and dated (legal safety).
-Invoicor's own claims are already fixed; the competitors' prices aren't sourced yet.
-**How:** either check the 10 competitors' pricing pages yourself and note any wrong number, or give
-Claude the OK to research them on the web: Claude drafts each fact with its source link and date,
-you confirm. Do this before you promote the compare pages.
-
-<a id="x12"></a>
-
-### X12. 🟢 More compare pages _(Claude, after your OK · chunk 23c)_
-**What:** pages for Invoice Simple, Invoice Fly, Bookipi, Joist and Invoice Home (people searching
-"{competitor} alternative" are ready to switch). **How:** say "go" and allow web research; same fact
-check as X11 before publishing.
-
-<a id="x13"></a>
-
-### X13. 🔴 Post-launch watch _(4 weeks, starts after X5 · chunk 29)_
-**How:** first week, daily: the 404s on the server
-(`grep '" 404 ' /var/log/nginx/access.log | tail -50`) and an uptime check. Weekly: Search Console
-→ *Pages* and *Performance*, compared with X2. Send Claude the exports or the 404 list: Claude adds
-redirects for real old URLs and writes the 4-week summary in `seo/baseline/`. A small dip for 2–4
-weeks is normal; longer than that, investigate.
-
-<a id="x14"></a>
-
-### X14. 🟢 Small decisions that change page text _(see [Decisions for you](#decisions-for-you))_
-- **D12 / Y14:** time a real invoice; if it's about 5 seconds, the hero can say "5 seconds" again.
-- **D14:** raise prices or not (needs the App Store change first).
-- **D15:** template titles promise "(PDF, Word, Excel)" downloads that don't exist yet.
-- **Y12 (🟠 privacy):** move PostHog to its EU cloud, so only Google Analytics leaves the EU.
-
-<a id="x15"></a>
-
-### X15. 🟠 Have a lawyer review Terms and Privacy _(once · from P8c)_
-**Why:** the Terms now cover payments, fraud and liability, and the Privacy policy covers US
-analytics. Claude wrote careful drafts, but only a lawyer can confirm they hold up for a Dutch company
-selling worldwide. **How:** send `/terms` and `/privacy` to a lawyer (many offer a fixed-price review
-for small SaaS companies) and give Claude their changes.
-
-<a id="x16"></a>
-
-### X16. 🟠 Fix two claims in your App Store screenshots _(≈ 30 min)_
-**Why:** screenshot 2 lists **"Estimates"**, but neither the app nor the API has estimates
-(checked 2026-11-18), and it says **"Trusted by businesses worldwide"** without proof. Apple's
-review guideline 2.3 requires accurate metadata, and it's the same honesty issue we fixed on the
-website. **How:** replace "Estimates" with a real feature (e.g. "Saved clients" or "11 languages")
-and "Trusted by businesses worldwide" with something true (e.g. "3 invoices free"), then upload the
-new screenshots in App Store Connect with the next app update.
-
-<a id="x17"></a>
-
-### X17. 🟢 Send fresh app screenshots _(≈ 15 min)_
-**Why:** P15 uses screens cropped from the App Store marketing images. Clean screenshots straight from
-the app (iPhone, light mode, realistic demo data, no personal data) look sharper.
-**How:** on an iPhone, take screenshots of: the dashboard, a new invoice being filled in, the
-template picker, an invoice preview, the share sheet. AirDrop them to your Mac and put them in
-`assets/app-screens/` (Claude converts and swaps them in).
-
-<a id="x18"></a>
-
-### X18. 🟡 Deploy the API template fixes _(≈ 15 min, for the app)_
-**Why:** since 35c the website makes the PDF in the browser, so **the website does not need this**.
-Branch `feature/public-generator` in `invoicor_api` still has the template fixes for the app (35b):
-VAT ID, registration number, client email and phone on the invoice; item details on their own line;
-money with 2 decimals. It also has the public endpoints, which nothing uses now (harmless; they can
-stay as a backup or be dropped before merging).
-**How:** merge into `main`, pull on the server, run `python manage.py createcachetable` (needed by
-the endpoints' rate limits), restart the API. **Then check one invoice PDF from the app.** Details
-in `invoicor_api/docs/PUBLIC_GENERATOR.md`.
-
-<a id="x19"></a>
-
-### X19. ~~Turn on the bot check (Cloudflare Turnstile)~~ ✅ not needed
-The website no longer calls the API to make PDFs (35c), so there is nothing for bots to use up.
-
----
-
-## Stage P: Polish from your review (2026-11-18)
-
-_Your remarks after seeing the redesign, each with the answer or recommendation, then built.
-Mobile layout and loading speed are checked for every chunk (P10 at the end measures it)._
-
-### P1. Honest wording
-_✅ 2026-11-18: "No card needed" → "No subscription needed" everywhere; a billing line under every trial button; a new FAQ "Do I need a card for the free trial?" (home + help); "Real people, not bots: replies can take a few days"; "not a payment gateway" on the home page and in the fees FAQ; Help no longer says free includes "all features"; BRAND.md §10 updated._
-- [x] a. **Free trial and card.** Your remark: "I think we do require a card for the free trial."
-  Answer: Apple handles it. To start a free trial, the user confirms the subscription with their
-  Apple ID, which needs a payment method on file; Apple charges after the trial unless they cancel.
-  We never see the card. So: the **Free plan** (3 invoices) needs no subscription and no payment, but
-  the **trials** do need Apple payment details. Change "No card needed" to "No subscription needed"
-  (true for Free) and add "Billed by Apple after the trial unless you cancel" under every trial button.
-- [x] b. **Watermark.** The app has no watermark on any plan; the future web generator (Stage G)
-  will. Say "No watermark in the app" where it could be read as the web version, and record the
-  difference in BRAND.md §10.
-- [x] c. **Support.** Your remark: you read every message, but not fast. Change "A real person
-  answers" to "Real people, not bots: we read every message" and set expectations ("replies can take
-  a few days"). Never promise a response time we can't keep.
-- [x] d. **Not a payment gateway.** Say plainly: Invoicor doesn't sit between you and your client.
-  It makes the invoice; you add your own payment link or bank details; your client pays you directly.
-
-### P2. Trust row: "send it anywhere"
-_✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in "You keep the money" (pay). Names with neutral icons, no third-party logos._
-- [x] a. Your idea: use WhatsApp, PDF and other well-known icons to borrow credibility.
-  Recommendation: **show the names, not the logos.** Other companies' logos on our site can read as a
-  partnership or endorsement, and most brand guidelines (WhatsApp, PayPal, Stripe) restrict that use.
-  Generic, recognisable icons with the names give the same instant recognition without the risk:
-  PDF · Mail · Messages · WhatsApp · AirDrop, and "works with your own PayPal, Stripe, Wise or bank
-  link". The App Store badge is the one official logo we may use (Apple allows it).
-- [x] b. Placed under the hero and in the "You keep the money" section (where the payment message belongs); reusable component.
-
-### P3. "How it works" as a path
-- [x] _(✅ 2026-11-18: four stops incl. "Get paid", a line that draws itself (horizontal desktop, segments on phones), mini invoice visual per step whose math matches the hero invoice)_ Your remark: the three steps are easy to overlook. Make them a connected path: numbered nodes on
-  a line that draws itself as you scroll, each step with a small invoice visual, ending at "Paid".
-  Vertical on phones, horizontal on desktop.
-
-### P4. Promises that stand out
-- [x] _(✅ 2026-11-18: one big fact per card ($0 · 0% · 100%), gradient icon tiles, a proof line, the money promise raised as "Our core promise", gradient edge + lift on hover, soft glow behind the section)_ Your remark: the cards are nice but the eye scans over them. Give them more weight: a highlighted
-  band, a large icon tile in the brand gradient, one bold key phrase per card, a gradient border on
-  hover, and a short "proof" line under each.
-
-### P5. Fee calculator, rewritten as a gain
-- [x] _(✅ 2026-11-18: average invoice + invoices per month + fee slider with Low 1% / Common 2.9% / High 3.5% presets; the result leads with "+$2,088 more in your pocket every year"; "an app taking 2.9% would keep" is a small, labelled line; honest footnote)_ Your remark: at first sight it looked like *you* lose money with Invoicor, so the negativity sticks
-  to us. Rebuild it:
-  - inputs people know: **average invoice amount** and **invoices per month**
-  - "Fee other apps take per payment" as a slider with marked points ("low 1%", "common 2.9%",
-    "high 3.5%"); no competitor names, no negative branding
-  - the result is a **gain**, big and positive: "**+$1,740** more in your pocket every year with
-    Invoicor". The "what you'd pay elsewhere" figure is secondary and clearly labelled "other apps".
-  - a short honest note: your own PayPal or Stripe link still has its own fee, as anywhere.
-
-### P6. Pricing
-_✅ 2026-11-18: equal-height cards with buttons aligned; Pro has a "★ Most popular" ribbon in both modes, a brand glow, a ring, sits raised on desktop and comes first on phones; limits phrased as "Up to 50 invoices every month" / "3 invoices to try, no time limit"; an "Included on every plan" strip (unlimited clients, no watermark, your own payment link, 0% fees, data in Germany)._
-- [x] a. **Same height** for all plan cards (buttons aligned at the bottom).
-- [x] b. **Pro as the clear favourite:** "Most popular" badge in both monthly and yearly, a soft glow,
-  slightly raised on desktop.
-- [x] c. **Positive limits.** Your idea: "unlimited". We can't say unlimited invoices (the plans have
-  limits: 3 / 10 / 50), but we can say what *is* unlimited and phrase limits as what you get:
-  "Up to 50 invoices every month", plus "Unlimited clients · every PDF yours to send" on every plan.
-  An unlimited tier is decision D14.
-
-### P7. Premium motion
-_✅ 2026-11-18: `<Gradient underline>` draws a hand-drawn line under the hero word on load and under "You keep the money." / "today." on scroll; a faint drifting dot grid behind the hero; `shadow-brand-lg` glow on primary buttons; promises glow (P4). All in `styles/effects.css`, off under reduced motion._
-- [x] a. A hand-drawn underline that draws itself under the gradient word in big headlines.
-- [x] b. A slow, subtle moving background in the hero (drifting glow + faint dot grid).
-- [x] c. Glow on the Pro card and the main buttons on hover.
-- [x] d. Guardrails: CSS only, `transform`/`opacity`/SVG stroke only, off under reduced motion, no
-  layout shift, no extra JavaScript.
-
-### P8. Legal: payments, fraud and safety
-_✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fraud" (not a payment service; payment links are third parties; what recipients should check; no liability for fraud, scams, misdirected payments or disputes, as far as the law allows; reporting; "by using the Service you agree"); Privacy note on payment links; Help "Safety & Scams" section (5 questions). Both pages dated 2026-11-18._
-- [x] a. Terms: a clear section that Invoicor only makes invoices: we don't process, hold or check
-  payments; users are responsible for the details on their invoices and the payment links they add;
-  recipients should check an invoice before paying; we're not liable for fraud, scams or disputes
-  between users and their clients; by using the service you agree. Plus a short note in Privacy.
-- [x] b. Help: a "Safety" section with practical checks for people who *receive* an invoice
-  (check the sender, the amount, the payment details; call if bank details change).
-- ➜ c. Have a lawyer review Terms and Privacy once (Stage X, **X15**). Claude's text is a careful
-  draft, not legal advice.
-
-### P9. FAQ search optimisation
-- [x] _(✅ 2026-11-18: every FAQ question is a real heading with a stable id from its text (e.g. `/help#how-do-i-pay-an-invoice-safely`), `HashOpener` opens a linked answer, FAQPage JSON-LD kept, a built-site test checks ids are unique on every page. Questions are already phrased the way people ask; refine with Search Console queries after X2.)_ Your question: is the FAQ optimised for search? Answer: partly. Every FAQ already has matching
-  FAQPage structured data. But Google only shows FAQ rich results for well-known government and health
-  sites since 2023, so the value now is: questions phrased the way people search, answers that are
-  in the HTML (they are), question headings, and deep links per question (good for "People also
-  ask" and AI answers that quote one answer). Add: each question as a heading with its own link,
-  and question wording checked against searches.
-
-### P10. Mobile and speed pass
-- [x] _(✅ 2026-11-18. Measured on the home page as a mid-range phone (4× slower CPU, fast 4G): largest paint **0.59–0.75 s before → 0.66–0.75 s after**, layout shift **0** both times, JavaScript **595 → 599 KB** raw (~200 KB compressed, mostly the Next.js/React runtime), HTML 34 KB compressed. Improvement: the 12 template previews now load only when you scroll near the gallery (**0 API requests on the first screen**, was 12). Every changed section checked at 390 px and 1280 px.)_ Screenshots of every changed section at phone width, and a measurement of page weight and
-  loading (JavaScript size, largest paint) on the home page, before and after Stage P.
-
-### P11–P18. Round 2 of your review (2026-11-18)
-
-**P11. Price anchors.** Your remark: coffee prices differ per country, and copying it to Pro makes it
-feel less unique. Answer: it works as a saying ("about the price of a coffee"), not a price claim,
-so soften it to **"About one coffee a month"** on Starter. Pro gets its **own** anchor from real
-math: **"$0.22 a day"** on yearly / "$0.27 a day" monthly (calculated from the price, never typed).
-Free: "No subscription, no payment details, no catch" (its features already say 3 invoices). Each plan has one anchor, none repeated.
-- [x] Build it. _(✅ 2026-11-18: `pricePerDay()` in `lib/pricing.ts`, tested)_
-
-**P12. Monthly price first.** Show what people compare: **"$6.67 /month"** big on the yearly plans,
-with **"billed $79.99 once a year"** right under it (both always visible: clear for buyers and
-consumer law). The invoice lines below stay as the breakdown. Plus a note: "Prices in USD. The App
-Store shows your local price, set by Apple, which may include local taxes." (Apple converts prices
-per country; we don't control or know each local price.)
-- [x] Build it. _(✅ 2026-11-18; the trial line now says "7-day free trial, then $79.99 a year")_
-
-**P13. Hand-drawn doodles.** You love the drawn lines. Add a small kit (`DrawnArrow`, `DrawnCircle`)
-that draws itself on scroll, used in 3 places only so it stays premium: a circle around **0%** in
-the promises, an arrow pointing at **"2 months free"** on the billing switch, an arrow from the hero
-CTA towards the invoice ("ready to send").
-- [x] Build it. _(✅ 2026-11-18: `components/ui/doodles.tsx`; arrow in the hero (xl screens), arrow + "best value" at the billing switch (md+), circle around 0%. Same drawing CSS as the underline; off under reduced motion)_
-
-**P14. "Who it's for".** Help visitors picture themselves: three people, each with the moment they
-reach for the app and what they get, linking to their industry pages (good for SEO too):
-the tradesperson (invoice from the driveway before leaving the job), the freelancer (clients abroad:
-their language and currency), the small studio (several businesses, one app). Positive only:
-"Not accounting software. Just invoices." Accountant hand-off stays truthful: "send the PDFs to
-your accountant" (there is no data export feature; BRAND.md §10).
-- [x] Build it. _(✅ 2026-11-18: `components/sections/home/WhoItsFor.tsx`, after "How it works"; 9 links into industry pages)_
-
-**P15. Real app screens.** The site shows no real app screen yet: the strongest missing trust and
-conversion piece. Crop the real screens (dashboard, new invoice, share) from the App Store images in
-`invoicor_api/logo/images v1.6.3/eng/` into a CSS iPhone frame, as optimised WebP. Better later:
-fresh screenshots straight from the app (X17).
-- [x] Build it. _(✅ 2026-11-18: "Know where your money is, always." section with the real dashboard in `IPhoneFrame` and a real sent invoice floating beside it (26 KB + 8 KB WebP). Not used: the new-invoice screen (only marketing artwork below the header) and the share sheet (stock-photo faces).)_
-
-**P16. Sticky "Get the app" bar on phones.** After the hero scrolls away, a slim bar at the bottom
-of the screen keeps the download one tap away (hidden on desktop, hidden near the final CTA).
-- [x] Build it. _(✅ 2026-11-18: `components/layout/StickyCta.tsx`; hides over pricing, closing CTAs and the footer (`data-hide-sticky`) and while the cookie banner is open; safe-area aware; 2 browser tests)_
-
-**P17. QR code for desktop visitors.** People on a laptop can't install an iPhone app directly. A
-"scan with your iPhone" QR code (generated at build time, no tracking) next to the App Store button
-on desktop.
-- [x] Build it. _(✅ 2026-11-18: `lib/qr.ts` + `components/ui/QrDownload.tsx` (qrcode 1.5.4, SVG at build time, desktop only) next to the App Store badge in the final CTA, the app preview and every SEO page's closing CTA; decoded in Chrome from the built pages to the App Store link; campaign `qr_*` once the provider token is set (X10))_
-
-**P18. Mobile and speed recheck** after P11–P17 (same measurement as P10).
-- [x] Measure and fix. _(✅ 2026-11-18, home page as a mid-range phone: largest paint **0.67–0.80 s** (P10: 0.59–0.75 s), layout shift **0**, JavaScript **619 KB** raw (+24 KB: sticky bar, calculator), HTML **44 KB** compressed; real app screens 33 KB and lazy-loaded; template previews still wait until you scroll near them. At 390 px nothing makes the page scroll sideways.)_
-
-**P19. FAQ audit** _(✅ 2026-11-18, your remark: "Is my data safe?" answered a different question)._
-Checked all ~170 FAQs (home 7, help 32, affiliate 5, templates 36, industries 50, compare 30) for
-two things: does the answer answer the question, and is it true for the app.
-- **Answered the wrong question:** "Is my data safe?" (talked about location and analytics),
-  "Does Invoicor need an internet connection?" (dodged the yes), "How fast…?" ("Fast.").
-- **Described another product (31 fixed):** a "secure web portal" where clients pay with Apple Pay,
-  per-line tax flags, automatic recurring / Friday billing, partial-payment requests, techs sharing
-  one profile, "Invoicor links are secure", "client data is encrypted", brand colors, custom fields,
-  "Paid via Check", Stripe tips, "all use Invoicor", "3 seconds" / "about a minute".
-- **Help:** iPad is native (was "compatibility mode"), "we share your data with no one" was false
-  (processors), downgrade answer now explains the 3-invoice total, current cancel path in Settings.
-- A unit test now blocks these phrases in every content FAQ.
-
-**P20. Security wording and trial line** _(✅ 2026-11-18)_.
-- Privacy section 5 states only what's verified in the API: HTTPS enforced, hashed passwords, token
-  sign-in, restricted server access. Removed "enterprise-grade", "encryption at rest" and "regular
-  security reviews" (not verified). Honest: "no service is completely secure" + breach notification.
-- Privacy now lists **Sign in with Google** (the app offers it; the policy only named Apple).
-- Terms section 8: a security paragraph (not liable for incidents despite standard measures, as far
-  as the law allows). Both go to the lawyer review (X15).
-- Trial line: "Cancel before the trial ends and you pay nothing" (was "Billed by Apple after the trial
-  unless you cancel").
-
----
-
-## Stage G: Free invoice generator
-_Chunks 30–31 are in the **invoicor_api** (Django) repo, branch `feature/public-generator` (deploy guide:
-`invoicor_api/docs/PUBLIC_GENERATOR.md`). Chunks 32–35 are this website. **Deploy the API (X18) before
-the website goes live with the generator.**_
-
-**Your question (2026-11-18): how do we rate-limit safely?** A timer or disabled button on the website
-is only for a nice experience: anyone can call the API directly and skip the website. Real protection
-lives on the server:
-- **Typing costs nothing:** the form and totals run in the browser; no API call per keystroke.
-- **Live preview** is filled in the browser, so typing costs nothing on the server. `public/render` stays available (120 per minute per visitor) but the website no longer uses it.
-- **PDF download** (`public/pdf`) is the expensive part (wkhtmltopdf): 10 per hour per visitor, plus
-  300 per hour for all visitors together, so a flood can't overload the server.
-- Counts live in a **shared database table** (all gunicorn workers count together), and Django reads
-  the visitor's **real IP** from nginx (`NUM_PROXIES=1`); otherwise every visitor would share one limit.
-- Input limits: free templates only, ≤ 10 line items (the app's free plan), ≤ 1 MB request, logo
-  PNG/JPEG ≤ 500 KB checked by its file signature, all text escaped, no local file access in the PDF.
-- Optional: Cloudflare Turnstile bot check on PDFs (X19) and an nginx `limit_req` outer layer.
-- On the website, the Generate button also cools down and explains a 429 in plain words (UX only).
-
-### 30. API: public render endpoint
-**Goal:** visitors can get a filled invoice preview without an account.
-
-- [ ] a. A serializer for the public invoice input:
-  - `template_slug`, `language`, `currency`
-  - `sender{}`, `client{}`, `items[]{description, qty, unit_price}`
-  - `tax_rate`, `discount`, `notes`, `payment_terms`, `bank{}`, `due_date`, `issue_date`, `invoice_number`, `logo` (base64)
-- [ ] b. Reuse the existing render logic (the one behind `/invoices/{id}/render/`), but take the serializer data instead of a saved invoice. **Nothing is stored.**
-- [ ] c. `POST /api/invoices/public/render/` returns HTML.
-- [ ] d. Only `tier: free` templates; others get a 403 `{"code": "template_locked"}`.
-- [ ] e. Limits: body ≤ 200 KB, ≤ 50 items, logo ≤ 500 KB and PNG/JPG/sanitized SVG only, rate 60/minute per IP (DRF throttle). CORS allows `https://invoicor.com` only.
-- [ ] f. Tests: a happy path, a locked template, an oversized request, the throttle. Add the endpoint to the OpenAPI docs, then regenerate the web types (chunk 10c).
-
-**Done when:** `curl -X POST …/public/render/` with sample JSON returns a correct invoice in HTML.
-
-### 31. API: public PDF + watermark + abuse limits
-**Goal:** visitors can download a PDF that carries your brand.
-
-- [ ] a. `POST /api/invoices/public/pdf/`: same input, rendered to PDF with the existing PDF engine.
-- [ ] b. The watermark, added **only in this endpoint** and on the server: a footer line “Created with invoicor.com” linking to `https://invoicor.com/?ref=pdf`, small, grey, the same position on every template.
-- [ ] c. Cloudflare Turnstile: the endpoint requires a valid token (verified on the server).
-- [ ] d. Rate limit 10 PDFs/hour per IP.
-- [ ] e. Count generated PDFs by template, currency and language (no personal data). Optional `GET /api/invoices/public/stats/` for "X invoices created".
-- [ ] f. Housekeeping: remove `/api/subscriptions/debug/`, and pin `swagger-ui-dist` to a fixed version.
-- [ ] g. Tests + docs.
-
-**Done when:** a PDF downloads with the watermark link working, and the 11th request in an hour is refused.
-
-### 32. Generator page: form
-**Goal:** `/free-invoice-generator` with a complete, pleasant form.
-
-- [x] a. Route + layout: the form on the left, a preview slot on the right; stacked on mobile, with a Form / Preview tab switch. The page shell and SEO content are server-rendered; only the tool is a client component.
-- [x] b. Sections (collapsible): Your business · Client · Invoice details · Line items · Tax & discount · Payment (terms, bank, payment link) · Notes · Logo.
-- [x] c. Line items: add, remove and reorder rows; quantity × price; live subtotal, tax, discount and total, formatted with `Intl.NumberFormat` in the chosen currency.
-- [x] d. State in one typed store (`useReducer`, `components/generator/reducer.ts`); the shape mirrors the API serializer, which validates on the server.
-- [x] e. Autosave the draft to `localStorage` (wrapped in try/catch), plus a "Clear form" option.
-- [x] f. Currency and language dropdowns from the public API.
-
-**Done when:** you can fill in a full invoice, the totals are right, and a page refresh keeps the draft.
-
-### 33. Generator page: live preview & template picker
-**Goal:** the visitor sees the real invoice update as they type.
-
-- [x] a. Preview: filled **in the browser on every keystroke** (`lib/generator/fill.ts`, a port of the API's `build_replacement_map`), shown in a script-free sandboxed `iframe` scaled to fit A4; only the page body is swapped, so there's no reload or flicker. Typing makes no API calls. (First version called `public/render` 500 ms after typing stopped: too slow, and it broke whenever the API was down.)
-  - The 21 free templates, labels and currency symbols are copied into `public/generator/` by `scripts/sync-generator-templates.py` (run with the API's Python). **Re-run it whenever a template, label or currency changes in the API.**
-  - `tests/unit/generator-fill.test.ts` compares the browser fill with HTML filled by the real API code (all 21 templates × 11 languages matched when this was built), so the preview looks like the PDF.
-- [x] b. A loading shimmer during updates, and a crossfade when the template changes.
-- [x] c. Template picker: a thumbnail grid; the 21 free ones selectable, starter/pro shown locked with an "In the app" badge (→ App Store with `ct=gen-locked`).
-- [x] d. Deep links prefill the form: `?template=classic&currency=EUR&lang=de`; the canonical stays the clean `/free-invoice-generator`. _(`industry=` presets come later, with industry-specific sample lines.)_
-- [x] e. Error states: API down → a friendly message, and the form keeps working.
-
-**Done when:** typing updates the preview within about half a second, and switching templates works on mobile.
-
-### 34. Generate flow, watermark reveal & signup handoff
-**Goal:** the generate moment turns visitors into users.
-
-- [x] a. The **Generate invoice** button runs Turnstile, then `public/pdf`, then downloads `invoice-{number}.pdf`.
-- [x] b. Animation: the invoice “prints” and slides out; **then** “Created with invoicor.com” fades in under the preview. That line appears **only after generating**, matching the PDF.
-- [x] c. Success panel: Download again · Create another · **“Save this client & send it from your phone, free in the app”** (App Store + QR code on desktop) · “Create a free account”.
-- ➜ d. _(needs an app update: the onboarding endpoints track the app's own sign-up funnel and can't carry an invoice draft yet; idea for the iOS roadmap, R9)_ Handoff: create an `onboarding/session` with the draft, so that after signing up `onboarding/link` attaches the client and business details to the new account. Check what the iOS app needs for this.
-- [x] e. Analytics through `track()`: `gen_form_start`, `gen_template_change`, `gen_generate`, `gen_download`, `gen_app_click`, `gen_signup_click`.
-
-_✅ 2026-11-18: `components/generator/GeneratePanel.tsx`: bot check (when X19 is on) → PDF → download `invoice-{number}.pdf` → "Created with invoicor.com" fades in under the preview → success panel (Download again from the same file, no extra API call · Create another, keeps your business and bumps the number · app pitch with App Store badge and QR). 5 s cooldown + plain-language errors (UX only). Browser tests with a mocked API._
-
-**Done when:** a full run (fill → generate → PDF → app click) works, and every event shows up in PostHog.
-
-### 35. Generator SEO content & launch
-**Goal:** the page ranks for “free invoice generator”.
-
-- [x] a. Follow the generator blueprint (chunk 7):
-  - H1 “Free Invoice Generator”
-  - subtitle: the “60 seconds” claim was dropped (not measured, D12 honesty rule); it says no signup and PDF download instead
-  - title `Free Invoice Generator: Create & Download a PDF | Invoicor`
-- [x] b. About 1,250 words below the tool:
-  - how to create an invoice in 3 steps
-  - what an invoice must include (a checklist)
-  - invoice vs. receipt vs. estimate
-  - payment terms
-  - numbering, sending and follow-up tips
-  - generator vs. app comparison (facts from BRAND.md §10)
-  - template and industry links
-  - 10 FAQs
-- [x] c. JSON-LD: `webAppLd()` (price 0), `howToLd()`, FAQ (via `Accordion structuredData`), breadcrumbs.
-- [x] d. Its own share image (`/og-generator.png`).
-- [x] e. **Internal links:** home hero (“Create one online”), navbar (“Free generator”), footer, and a “Create one free online” CTA on every template and industry page. No `?template=` prefill: those pages are about professions, not the API's design templates. The generator itself accepts `?template=`, `?currency=` and `?lang=`.
-- ➜ f. In the sitemap and `llms.txt` ✅. Ping IndexNow and request indexing in Search Console after the deploy (your step, with X18).
-- [x] g. Privacy policy §5: what the generator sends, that nothing is stored, the local draft, and the short-lived rate-limit counter.
-
-**Done when:** the page is live, indexed, and linked from every page on the site.
-
-### 35b. Generator feedback round (2026-11-18)
-**Goal:** what people type is what the invoice shows, and the form is calm and in a natural order.
-
-Invoice output (fixed in the API on `feature/public-generator`, so the app's PDFs get it too):
-- [x] a. Tax / VAT ID and registration number (KVK, company number…) shown under the business; client email, phone and VAT ID shown under the client. The 31 templates had no spot for them.
-- [x] b. Item details on their own line under the item name (they were glued to it: “Copper pipe15 mm”).
-- [x] c. Money always has the currency's decimals (`€415.80`, not `€415.8`; `¥1,234` for yen).
-- [x] d. The preview shows the same “Created with invoicor.com” line as the PDF (it was only a small line under the preview).
-- [x] e. Warn when the invoice no longer fits on one page (all 31 templates are one A4 page; with every field filled about 7 lines with details fit, more without details).
-
-Download:
-- ➜ f. “The invoice service isn't available”: the live API answers 404 for `public/pdf/` because the generator API isn't deployed yet. Not a template problem. Fixed by **X18** (deploy the API).
-
-Form:
-- [x] g. New order: invoice setup first (template, language, currency, date format), then invoice details, your business (with tax ID, reg. number and bank details), client, items, tax & discount, notes, and the payment link last.
-- [x] h. Fixed, always-open areas instead of fold-away sections; less important fields grouped, nothing printed that isn't on the form and nothing on the form that isn't printed (Website removed: no template shows it).
-- [x] i. Saving made visible: “Saved in this browser” status. The draft lives only in that browser (every visitor has their own, nobody else sees it). Two clear actions: “New invoice” (keeps your business details) and “Clear everything” (removes all saved data from this browser).
-
-Built 2026-11-18. The browser fill was re-synced (`scripts/sync-generator-templates.py`) and still matches the API for all 21 free templates × 11 languages. API commit `467a4c84` on `feature/public-generator` (deploys with X18; it also improves the app's PDFs).
-
-**Done when:** a filled-in form shows every field on the preview, the numbers look like money, and the form reads top to bottom like the invoice.
-
-### 35c. PDF made in the browser (2026-11-18)
-**Why:** you asked whether the generator could work without touching the API at all. It can: the
-preview was already filled in the browser (33a), so the browser now turns that same page into the PDF.
-
-- [x] a. `lib/generator/pdf.ts`: the filled invoice is drawn in a hidden A4 frame at about 200 dpi
-  (`modern-screenshot`) and saved as a one-page A4 PDF (`jspdf`), 150–250 KB, in well under a second.
-  Both libraries load only when someone clicks Download.
-- [x] b. Links stay clickable (the “Pay online” button, invoicor.com); the watermark line is the
-  same as in the preview.
-- [x] c. Checked in Chrome and Safari (iPhone and desktop), light and dark templates. Capturing
-  `<html>` instead of `<body>` was needed: `<body>` shifted the page a few pixels in every browser.
-- [x] d. No API calls at all for the preview or the PDF; the e2e test fails if one happens. The
-  public API client, the bot check and the “wait a little” rate-limit message were removed.
-- [x] e. FAQ and privacy policy now say what's true: what you type never leaves your browser.
-- Trade-off: the PDF's text is part of an image, so it can't be selected or searched (said in the
-  FAQ). The app's PDFs have real text. Typing and downloading cost the server nothing, so the
-  rate-limit worries from Stage G no longer apply to the website.
-
-### 35d. Android: coming soon, with a visit counter (2026-11-18)
-**Why:** there's no Android app yet, but you're working on one. Android visitors get an honest
-“coming soon” page, a way to use Invoicor today (the free web generator), and every visit is
-counted as a simple signal of how many people want it.
-
-- [x] a. “Android · Coming soon” button next to the App Store badge (home app preview, final CTA,
-  every page's closing CTA, footer) and an “On Android? It's coming soon” link under the home hero.
-  No Google Play badge: that's only allowed for a real listing.
-- [x] b. `/android`: says we're working on it (no date promised), points Android users to the free
-  generator, iPhone users to the App Store, and shows the live counter. In the sitemap and `llms.txt`.
-- [x] c. Counter: every page view adds one (your choice), stored by **Abacus**
-  (`abacus.jasoncameron.dev`, free, counter `invoicor-web/android-page`). The label says “visits”,
-  not people. If the service is down, the number is just left out. Automated browsers (tests, many
-  bots) only read it, and every e2e test blocks it, so CI never inflates it.
-- [x] d. Privacy policy §6: the counter service, that it sees the visitor's IP like any website, may
-  be outside the EU, no cookie.
-- [x] e. Tracking: `android_click` with the `section` it came from (see `seo/TRACKING.md`).
-- ➜ Keep the counter's **admin key** safe (password manager). It's the only way to reset or delete
-  the counter (`Authorization: Bearer <key>`); it is not in this repo. The counter is kept as long
-  as it's visited at least once every 6 months.
-
----
-
-### 36. Search Console round 1: more clicks from pages that already rank (2026-11-18)
-**Data:** Search Console, last 28 days. Almost all impressions go to 6 pages, but they sit on
-**positions 25–55** (page 3–6), so they get almost no clicks. The home page ranks #4 for its brand.
-
-| Page | Impr. | Pos. | Searches it shows for |
+| Page | Impr. | Pos. | Searches the page didn't answer |
 |---|---|---|---|
-| `/templates/plumbing` | 573 | 26.8 | plumbing/plumbers invoice template, **plumbing bill template**, **plumbing invoice sample/examples** |
-| `/industries/landscaping-lawn-care` | 432 | 51.5 | **lawn care invoice app**, lawn care invoice/billing software, **landscape billing** |
-| `/templates/hvac` | 368 | 54.0 | hvac invoice template, **air conditioning invoice** (88), **hvac service invoice**, **heating and cooling invoice**, hvac invoice example |
-| `/templates/freelance-design` | 237 | 30.0 | **how to write an invoice for freelance design**, freelance graphic design invoice, **freelance artist invoice template** |
-| `/templates` | 149 | 10.0 | (hub) |
-| `/compare/invoice2go` | 101 | 24.0 | **invoice2go pricing** |
-| `/industries/electricians` | 64 | 46.0 | **electricians billing software** |
-| `/compare/wave` · `/industries/freelance-designers` | 38 · 31 | 31 · 19 | |
+| `/templates/plumbing` | 573 | 26.8 | plumbing bill template, plumbing invoice sample / examples |
+| `/industries/landscaping-lawn-care` | 432 | 51.5 | lawn care invoice app, lawn care billing software, landscape billing |
+| `/templates/hvac` | 368 | 54.0 | air conditioning invoice, hvac service invoice, heating and cooling invoice, hvac invoice example |
+| `/templates/freelance-design` | 237 | 30.0 | how to write an invoice for freelance design, freelance artist invoice template |
+| `/compare/invoice2go` | 101 | 24.0 | invoice2go pricing |
+| `/industries/electricians` | 64 | 46.0 | electricians billing software |
 
-**What the analysis found** (bold above = words the page didn't contain in its title or headings):
-1. Searchers want **a template they can use and an example**; the pages had neither: the buttons went
-   to the App Store or an empty generator, and “sample” / “example” / “bill” weren't in the titles.
-2. Industry and compare pages used **slogans as H1** (“Bill your entire route in minutes, not
-   hours.”), so Google saw no “lawn care invoice app” or “Invoice2go alternative” in the main heading.
-3. 5 template titles promised **“(PDF, Word, Excel)”** files that don't exist; 8 compare titles
-   were too long (cut off in Google).
-4. Invoice2go was listed at **$39.99/mo; it's $44.99** now, and two Invoice2go and Wave claims had
-   no source (“renewal price increases”, “Stop waiting 5 days for your money to settle”, “web wrapper”).
-5. Template, industry and compare pages didn't link to each other, and showed no “updated” date.
+- [x] a. "Use this template free" on all 10 template pages: the generator opens with that page's example filled in (`?example=slug`); "Fill in this example online" under each example; industry pages open their template's example.
+- [x] b. Titles, H1s and descriptions rewritten per type for real searches; keyword H1s instead of slogans on industry and compare pages.
+- [x] c. "{Niche} invoice example" sections; "(PDF, Word, Excel)" removed from template titles (closes D15).
+- [x] d. New FAQs for unanswered searches (plumbing, HVAC, freelance design, lawn care, Invoice2go, Wave).
+- [x] e. Invoice2go ($44.99, not $39.99) and Wave prices sourced from their pricing pages; unsourced claims replaced.
+- [x] f. Template ↔ industry cross-links (`industry` field in `content/templates.json`).
+- [x] g. Visible "Updated" date on all template, industry and compare pages.
+- [x] h. `content:check`: 0 warnings (was 25). i. Tracking: `template_use`, `gen_example`.
 
-**Done** (same direction for every page of a type, so all 30 pages improve, not only these 6):
-- [x] a. **“Use this template free”** is the main button on all 10 template pages: the free
-  generator opens **with that page's example already filled in** (`?example=plumbing`), plus a
-  “Fill in this example online” button under each example. Industry pages' “Create one free online”
-  opens their template's example too. Someone's own saved items are never replaced without a click.
-- [x] b. Titles, H1s and descriptions rewritten for what people search, in one pattern per type:
-  templates “{Niche} Invoice Template & Example (Free PDF)”, industries “{Industry} Invoice App &
-  Billing Software”, compares “{Competitor} Alternative …” with a keyword H1.
-- [x] c. Example sections renamed “{Niche} invoice example”.
-- [x] d. New FAQs where searches had no answer: plumbing (example, bill vs invoice), HVAC (air
-  conditioning service invoice, heating & cooling maintenance, example), freelance design (how to
-  write one, artists and illustrators), lawn care (simplest billing), Invoice2go (what it costs, is
-  there a free version), Wave (what it costs).
-- [x] e. Invoice2go and Wave prices and fees **checked on their own pricing pages** (Nov 2026) and
-  sourced on the page; unsourced claims replaced with sourced facts (card fees, approval for card
-  payments, recurring invoices are Premium-only).
-- [x] f. Cross-links: every template page links to its industry page (“The … invoice app”), every
-  industry page to its free template(s). New field `industry` in `content/templates.json`.
-- [x] g. Visible “Updated November 18, 2026” on all template, industry and compare pages.
-- [x] h. `content:check`: 0 errors, **0 warnings** (was 25): every title ≤ 60, every description ≤ 155.
-- [x] i. Tracking: `template_use` (which page) and `gen_example` (example opened in the generator).
+### Stage G: Free invoice generator (2026-11-18)
+- [x] 35d. Android "coming soon" button and `/android` page with a public visit counter (Abacus). _Keep the counter's admin key in your password manager._
+- [x] 35c. PDF made in the browser (no API needed; Chrome and Safari tested; links stay clickable).
+- [x] 35b. Feedback round: VAT/registration numbers, client email/phone, item details on their own line, 2-decimal money, the watermark in the preview, one-page warning, calmer form in invoice order, "Saved in this browser".
+- [x] 35. SEO content (1,250 words, 10 FAQs), JSON-LD, share image, links from every page, privacy policy.
+- [x] 34. Download flow, success panel, app hand-off copy. _Opening a draft in the app needs iOS work: X21._
+- [x] 33. Live preview filled in the browser on every keystroke (matches the API for all 21 free templates × 11 languages); template picker.
+- [x] 32. Form, draft model, totals (same math as the app), autosave.
+- [x] 30–31. API public render/PDF endpoints with rate limits [Y11]: built on `feature/public-generator`, then **made unnecessary** by 33 and 35c (the branch's template fixes are X18).
+- [x] X19. Bot check (Turnstile): not needed any more (35c).
 
-**To do:**
-- [ ] j. **You:** in Search Console, “Request indexing” for the 6 pages above (URL Inspection), so
-  Google sees the new titles within days instead of weeks.
-- [ ] k. **Re-measure on 2026-12-16** (4 weeks): same report, compare positions and clicks per page
-  with the table above (baseline also in `seo/keyword-map.csv`). Expect titles to move first.
-- [ ] l. Check the other 8 compare pages' competitor prices on their pricing pages (only Invoice2go
-  and Wave were verified this round); add a “{Competitor} pricing” FAQ where people search for it.
-- [ ] m. Verify “unlimited clients on every plan” (FreshBooks and other compare pages): it's not in
-  the BRAND.md §10 fact sheet yet. Add it there if true, remove it if not.
-- [ ] n. The “Which file format?” section on template pages talks about Word and Excel, which we
-  don't offer. Rewrite it around the PDF from the generator (or offer real .docx/.xlsx downloads).
-- [ ] o. Add a real picture of the filled-in template (from the generator) to each template page:
-  Google Images traffic for “… invoice template” and a reason to stay on the page.
-- [ ] p. If “air conditioning invoice” / “heating and cooling invoice” keep growing, give them their
-  own section on `/templates/hvac` first; a separate page only when the data shows a different intent
-  (one search intent = one URL).
-- [ ] q. Lawn care and electricians rank on page 5–6 for “… invoice app/software”: the page itself
-  is now right, but app-intent searches also need trust signals (App Store reviews, links from other
-  sites). Track; revisit after k.
+### Stage P: Polish from your review (2026-11-18)
+- [x] P1–P10. Honest wording · "send it anywhere" trust row · "How it works" path · promises · fee calculator as a gain · pricing layout · premium motion · legal (payments, fraud) · FAQ search optimisation · mobile and speed.
+- [x] P11–P20. Price anchors · monthly price first · hand-drawn doodles · "Who it's for" · real app screens in an iPhone frame · sticky "Get the app" bar · QR code for desktop · speed recheck (LCP ≈ 0.7 s, CLS 0) · FAQ audit · plain security wording.
+
+### Stage F: Switch to Next.js (prepared 2026-11-18; the launch itself is X3–X6)
+- [x] 26. Staging config, `deploy.sh --staging`, [seo/QA.md](seo/QA.md) (running it: X4).
+- [x] 27. URL parity check: `npm run parity`, 0 failures against the live site.
+- [x] 28. Launch runbook (DEPLOY.md C). 29 → X13.
+
+### Stage E: Rebuild the pages in the new brand (2026-11-18)
+- [x] 18. Navbar & footer · 19–20. Landing page (real sample invoice hero, fee calculator, invoice-style pricing, FAQ) · 21–23. Template, industry and compare pages + hubs (33 false claims fixed) · 24. Help, affiliate, legal, 404 · 25. Motion (CSS only, reduced-motion safe).
+
+### Stage D: Brand system (2026-11-18)
+- [x] 15. Tokens (`styles/tokens.css`) · 16. Logo, icons, share images · 17. UI kit (`components/ui/`, on `/brand`) · 17.1 Tests (unit, style guard, built-site, browser, accessibility) · 17.2 Invoice-style components.
+
+### Stage C: Next.js foundation (2026-11-17)
+- [x] 8. App skeleton (static export) · 9. Tooling & CI · 10. Typed API client · 11. Content pipeline + `content:check` · 12. Metadata & JSON-LD · 13. Sitemap, robots (AI bots allowed), `llms.txt`, IndexNow · 14. GA4 + PostHog after consent, App Store campaign links.
+
+### Stage B: Strategy (2026-11-17)
+- [x] 5. [BRAND.md](BRAND.md) (approval: X8) · 6. [seo/keyword-map.csv](seo/keyword-map.csv) · 7. [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md).
+
+### Stage A: Clean repo, baseline & deploy (2026-11-17)
+- [x] 1. Repo cleanup · 2. [DEPLOY.md](DEPLOY.md) + nginx config (server check: X3) · 3. `deploy/deploy.sh` (manual, with staging and rollback) · 4. SEO fixes (baseline export: X2).
+
+### Decisions made
+
+| ID | Decision | Date |
+|---|---|---|
+| D1 | Prices = what the App Store charges, one source (`content/pricing.json`): Free (3 invoices), Starter $4.99/mo or $49.99/yr, Pro $7.99/mo or $79.99/yr; trials 3 days (monthly) / 7 days (yearly) | 2026-11-17 |
+| D2 | No fake social proof; true facts until real reviews | 2026-11-17 |
+| D3 | All AI bots allowed (search and training) | 2026-11-17 |
+| D4 | PostHog + GA4 only | 2026-11-17 |
+| D5 | Branded consent banner; nothing with cookies before Accept | 2026-11-17 |
+| D8 | Templates hub title "Free Invoice Templates by Industry" kept | 2026-11-17 |
+| D10 | Build the free generator (Stage G) | 2026-11-18 |
+| D13 | Light only, no dark sections | 2026-11-18 |
+| D15 | Template titles no longer promise Word/Excel (S1); real downloads stay chunk 53 | 2026-11-18 |
+| — | Static export, no Node on the server; redirects in nginx; language detection as a banner, never a redirect | 2026-11-17 |
+| — | The generator runs fully in the browser (preview and PDF); no API calls, no rate limits needed | 2026-11-18 |
 
 ---
+
+# Planned chunks (details)
+
+_The step-by-step plans for the chunks listed in [Later: growth and scale](#4-later-growth-and-scale)._
 
 ## Stage H: Languages
 _See [R4](#r4-language-strategy) for the strategy._
@@ -1383,7 +297,7 @@ _See [R4](#r4-language-strategy) for the strategy._
 ### 37. Auto-detect language
 **Goal:** visitors are offered their language without hurting SEO.
 
-- [ ] a. In `proxy.ts`: on the **first visit to `/` only**, read `Accept-Language`. Use the country header from nginx GeoIP2 as a fallback (optional).
+- [ ] a. In the browser (a static site has no `proxy.ts`): on the **first visit to `/` only**, read `navigator.languages`.
 - [ ] b. **Don't redirect.** Show a small banner: “🇩🇪 Diese Seite auf Deutsch ansehen?” → Ja / No thanks. (Turn off next-intl's automatic locale redirect.)
 - [ ] c. Save the choice in a `lang` cookie (1 year), and never ask again.
 - [ ] d. Check that Googlebot (no `Accept-Language`) always gets the page it asked for.
@@ -1420,8 +334,6 @@ _See [R4](#r4-language-strategy) for the strategy._
 
 **Done when:** all four are live and indexed.
 
----
-
 ## Stage I: Scale & grow
 
 ### 41. Performance & security hardening
@@ -1437,7 +349,7 @@ _See [R4](#r4-language-strategy) for the strategy._
 - [ ] d. nginx: Brotli/gzip on, long cache headers for `/_next/static/`, HTTP/2 or HTTP/3.
 - [ ] e. Security headers:
   - `Strict-Transport-Security`
-  - `Content-Security-Policy` (allow only your analytics, Turnstile and the API)
+  - `Content-Security-Policy` (allow only the analytics, the API for template thumbnails, and the Android counter at abacus.jasoncameron.dev)
   - `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`
   - `frame-ancestors` (allow embedding only for the embed widget route)
 - [ ] f. Monitoring:
@@ -1447,22 +359,8 @@ _See [R4](#r4-language-strategy) for the strategy._
 
 **Done when:** all four pages hit the targets, securityheaders.com gives an A, and you get an alert when the site is down.
 
-### 42. Guides hub (informational content)
-**Goal:** rank for "how to" searches, and give the commercial pages links and authority.
-
-- [ ] a. `/guides` hub + `/guides/[slug]` (MDX in `content/en/guides/`), following the guide blueprint (author or reviewer line, "last updated", table of contents, FAQ, a CTA to the generator).
-- [ ] b. The first 6 guides, from the "how-to" cluster in the keyword map, e.g.:
-  - how to write an invoice
-  - invoice number format
-  - payment terms explained
-  - invoice vs receipt
-  - how to invoice as a freelancer
-  - what to do when an invoice is late
-- [ ] c. Each guide links to 2–3 templates/industries + the generator. Templates and industry pages link back to the related guides.
-- [ ] d. `howToLd()` / `faqLd()` where the content fits. Add the guides to the sitemap.
-- [ ] e. Plan for 2 new guides a month (tracked in `seo/keyword-map.csv`).
-
-**Done when:** 6 guides are live, indexed, and linked from related pages.
+### 42. ~~Guides hub~~ → L4
+The how-to guides go to learn.invoicor.com instead of a new `/guides` section (D16). See [L](#l-learninvoicorcom-the-blog).
 
 ### 43. Country generator pages
 **Goal:** win country/tax searches with a different intent from the main generator (no doorway pages, see chunk 6d).
@@ -1480,7 +378,7 @@ _See [R4](#r4-language-strategy) for the strategy._
 ### 44. More free tools (receipt, estimate)
 **Goal:** more entry points from the same engine.
 
-- [ ] a. API: support `document_type: receipt | estimate` in the public endpoints (different title and fields).
+- [ ] a. Generator: a `document_type` (receipt | estimate) with its own title label and fields, filled in the browser like the invoice (no API needed). Check BRAND.md §10 first: the app itself has no receipts or estimates, so say so on the pages.
 - [ ] b. `/free-receipt-generator` and `/free-estimate-generator` reuse the generator components, each with its own blueprint and content.
 - [ ] c. A "Free tools" footer column + a navbar dropdown (the calculators come in chunk 55).
 
@@ -1515,10 +413,8 @@ _See [R4](#r4-language-strategy) for the strategy._
 
 **Done when:** it's a recurring calendar item (or a scheduled Claude task).
 
----
-
-## Stage J: Growth track (parallel, from week 1)
-_Inbound (people find you: SEO, App Store search, content) and outbound (you go to them: social, communities, PR, partners). These chunks don't wait for the rebuild unless "Start:" says so. Paid channels (Apple Search Ads, the Meta ads in `invoicor_api/docs/meta/`) are outside this roadmap, but use their keyword and creative data to guide the organic work._
+## Stage J: Growth track
+_Inbound (people find you) and outbound (you go to them). Paid channels (Apple Search Ads, the Meta ads in `invoicor_api/docs/meta/`) are outside this roadmap, but use their data to guide the organic work._
 
 ### 47. Competitor SEO & link gap analysis
 **Start:** now. **Goal:** know exactly what the leaders rank for and where their links come from, so we copy what works and target what they miss.
@@ -1617,7 +513,7 @@ _Inbound (people find you: SEO, App Store search, content) and outbound (you go 
 - [ ] c. Pages:
   - `/templates/word`, `/templates/excel`, `/templates/google-docs`, `/templates/pdf` (one page per format: a different search intent each)
   - download buttons on every template page
-- [ ] d. Every download page also offers "or fill it online in 60 seconds" → the generator, and "or on your phone" → the App Store.
+- [ ] d. Every download page also offers "or fill it in online" → the generator (with that template's example, like S1-a), and "or on your phone" → the App Store.
 - [ ] e. Track downloads as `tpl_download` events with the format.
 - [ ] f. Add the format pages to the keyword map and the sitemap.
 
@@ -1726,59 +622,7 @@ _Inbound (people find you: SEO, App Store search, content) and outbound (you go 
 
 ## Reference
 
-### R1. Audit (2026-11-17)
-
-| Area | Score | Summary |
-|---|---|---|
-| SEO crawlability | 🔴 1/5 | Every page ships an empty `<div id="root">` with the homepage title |
-| Technical SEO | 🔴 1/5 | `www` duplicate (200), soft 404s, trailing-slash duplicates, a sitemap listing a page that doesn't exist |
-| Branding | 🔴 1/5 | The logo is orange/red, but the site is indigo/violet/blue; the iOS AccentColor isn't set |
-| Design consistency | 🟠 2/5 | Two separate design systems (dark inline styles vs. light Tailwind) |
-| Navigation | 🟠 2/5 | The navbar has no links: only the logo and an App Store button |
-| Motion / “alive” feel | 🟡 3/5 | Landing has animations; the other 32 SEO pages have none |
-| Performance | 🟡 3/5 | 364 KB logo JPG, 4 analytics scripts, fonts loaded per page |
-| Languages | 🔴 0/5 | English only, although the app supports many languages |
-| Content depth (SEO pages) | 🟢 4/5 | Good long-form template, industry and compare pages |
-| Trust pages | 🔴 1/5 | No About or Contact page; unverified rating markup |
-| Code health | 🔴 2/5 | Starter-template leftovers, a 588-line landing file, inline styles, no lint/types/CI |
-| Deploy | 🔴 1/5 | Manual; built `dist/` was committed; no CI |
-
-**Findings:**
-
-1. **Google sees blank pages.** The site is a client-side Vite SPA served by nginx. `curl https://invoicor.com/templates/classic` returns `<div id="root"></div>` and the home title.
-2. **Technical SEO:**
-   - `https://www.invoicor.com` → 200 (a duplicate of the whole site; `http` correctly redirects with a 301)
-   - `/does-not-exist` → 200 (soft 404)
-   - `/templates/classic/` and `/templates/classic` both → 200
-   - The sitemap (35 URLs) lists `/pricing`, which has no route, and leaves out `/help`, `/affiliate`, `/terms` and `/privacy`. Every `lastmod` is the build date.
-   - `robots.txt` blocks `GPTBot`, `Google-Extended` and `CCBot` (a decision is needed, see chunk 6g).
-3. **Brand mismatch.**
-   - The logo is `#E95D05 → #DC3002`; the site uses `#6366f1` / `#7c3aed` / `#60a5fa` / `blue-600`.
-   - The iOS `AccentColor` asset is empty.
-   - Pricing on the website (3 tiers) doesn't match `strategy.md` (4 tiers).
-4. **Two design systems.**
-   - Landing, Affiliate, Help, Terms, Privacy and Footer: dark, about 300 inline styles.
-   - Template, Industry and Compare: light Tailwind, system font.
-   - Fonts load in only 4 pages.
-5. **Meta problems:**
-   - the default OG image `/default-og-image.jpg` doesn't exist
-   - the OG image is a square logo
-   - FAQ + app JSON-LD is sent on every route
-   - `aggregateRating` 4.8/347 is unverified
-   - `site.webmanifest` is missing; the favicons are JPG
-6. **No navigation links**, no mobile menu, no About/Contact pages.
-7. **Code health:**
-   - The project started from a Vite + React 19 + React Router starter, **not Next.js**.
-   - Leftovers from the starter template: its README, metadata and unused packages.
-   - No `.gitignore`; `dist/` and `.DS_Store` were committed.
-   - `Landing.tsx` is 588 lines, with 9 components inside it.
-   - Duplicated constants, font links and images.
-   - No `strict` TypeScript.
-8. **Other:**
-   - 4 analytics tools and no cookie consent (EU)
-   - `/api/subscriptions/debug/` is marked temporary
-   - the API docs load `swagger-ui-dist@latest`
-   - hosting: a Hetzner VPS, nginx 1.24 on Ubuntu
+_R1 (the first audit), R5 (target folder structure), R7 (migration steps) and R10 (your ideas of 2026-11-18, all handled) are in the [archive](docs/roadmap-archive-2026-11-18.md)._
 
 ### R2. The API
 
@@ -1798,12 +642,15 @@ Full schema: `https://invoicor.com/api/schema/` (49 endpoints).
 
 **Auth required:** invoices (CRUD, duplicate, `render`, `pdf`), clients, products, business profiles, `me`, feedback, subscriptions.
 
-**Gap:** nothing renders a visitor's own data without login. Filling templates in the browser doesn't work well:
-- `{{ITEM_ROWS}}` is HTML built on the server.
-- The `{{t.*}}` translations aren't public.
-- A watermark added in the browser is easy to remove.
+**How the free generator uses it (2026-11-18):** not at all at runtime, except the template
+thumbnails (`/preview/`). The 21 free templates, the labels and currency data are copied into
+`public/generator/` by `scripts/sync-generator-templates.py` (run it again after a template, label
+or currency change in the API); the browser fills them and makes the PDF. A unit test checks that the
+browser fill matches the API's own fill. The public render/PDF endpoints on `feature/public-generator`
+are unused (see X18).
 
-That's why chunks 30–31 add the public endpoints.
+**For the web app (W):** everything signed-in users need exists behind auth (invoices, clients,
+products, profiles, render/PDF, subscriptions); W6 checks it's safe for browser use.
 
 ### R3. Design decisions
 
@@ -1828,67 +675,6 @@ That's why chunks 30–31 add the public endpoints.
 - **Switcher:** a globe menu in the navbar and footer, going to the same page in the other language.
 - **Rollout:** EN → DE → ES → FR, PT, IT, NL, guided by the Search Console data.
 
-### R5. Target folder structure
-
-> **Current state:** the app lives at the repo root (no `web/` level). The actual layout is described in [README.md](README.md#project-structure). The tree below is the long-term target; read it without the `web/` level. `proxy.ts` and `api/revalidate` only apply if we ever leave static export.
-
-```
-invoicor_web/                     repo root (after launch: only these)
-  web/                            the Next.js app
-    app/
-      [locale]/
-        layout.tsx                html lang, fonts, Navbar/Footer, consent, analytics
-        page.tsx                  landing
-        free-invoice-generator/page.tsx
-        templates/page.tsx  templates/[slug]/page.tsx
-        industries/…  compare/…  guides/…
-        about/  contact/  help/  affiliate/
-        (legal)/terms/  (legal)/privacy/
-        brand/                    noindex: tokens + component showcase
-        not-found.tsx  error.tsx  opengraph-image.tsx
-      api/revalidate/route.ts     on-demand refresh (secret)
-      llms.txt/route.ts
-      sitemap.ts  robots.ts  manifest.ts  icon.svg  apple-icon.png
-    components/
-      ui/                         Button, Card, Badge, Input, Accordion, Breadcrumbs…
-      layout/                     Navbar, Footer, LanguageSwitcher, Logo, ConsentBanner
-      sections/                   Hero, Pricing, FAQ, TemplateCarousel… one file each
-      generator/                  form, preview, line items, template picker
-      seo/                        JsonLd
-    content/
-      schemas.ts                  zod schemas for every content type
-      en/                         templates.json, industries.json, comparisons.json,
-                                  pricing.json, faqs/, guides/*.mdx
-      de/ es/ …                   translations (fallback to en)
-    i18n/                         routing.ts, request.ts
-    messages/                     en.json, de.json… (UI strings)
-    lib/
-      config.ts                   SITE_URL, API_URL, APP_STORE_URL… (zod-validated env)
-      api.ts                      typed client for invoicor.com/api
-      content.ts                  getAll / getBySlug
-      seo.ts  jsonld.ts           metadata + structured data
-      analytics.ts                track(), appStoreLink()
-    styles/                       tokens.css, globals.css
-    types/                        api.ts (generated from OpenAPI), shared types
-    scripts/                      content-check.ts, parity-check.ts
-    tests/e2e/                    Playwright smoke tests
-    public/                       BingSiteAuth.xml, IndexNow key, static images
-    proxy.ts                      locale handling + language banner signal
-    next.config.ts
-  deploy/                         deploy.sh, nginx/ configs, .env.example
-  seo/                            keyword-map.csv, BLUEPRINTS.md, TRACKING.md, QA.md, baseline/
-  .github/workflows/deploy.yml
-  ROADMAP.md  BRAND.md  CONTENT.md  DEPLOY.md  README.md
-```
-
-**Code rules:**
-- One component per file, under about 200 lines.
-- No inline `style={{}}`; Tailwind + tokens only.
-- Server components by default; `"use client"` only where there's interaction (generator, carousel, menus, consent).
-- All content is typed, validated and checked in CI.
-- PascalCase components, kebab-case routes, named exports (except pages/layouts).
-- Every setting in `lib/config.ts`; every tracking call through `lib/analytics.ts`; every App Store link through `appStoreLink()`.
-
 ### R6. SEO rules
 
 - **Canonical host:** `https://invoicor.com` (no `www`), lowercase, kebab-case, **no trailing slash**. Everything else 301s there.
@@ -1908,15 +694,6 @@ invoicor_web/                     repo root (after launch: only these)
 - **AI search:** allow the answer/search bots, keep `llms.txt` up to date, write clear answers under each heading.
 - **Truth:** every claim about Invoicor matches the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this). `content:check` can't catch a false claim; this rule is the only guard.
 
-### R7. Migration strategy
-
-1. **Build on `dev`** ✅: the Next.js app replaced the Vite app on `dev`; `main` (and the live site) still run Vite until you deploy.
-2. **Baseline first** (chunk 4): record every URL, title and ranking **before** the first Next.js deploy.
-3. **Check locally** ✅: `npm run build && npm run preview`. All 35 old sitemap URLs (minus the nonexistent `/pricing`) return 200; unknown URLs return 404. A separate staging server (chunk 26) is optional for a static site.
-4. **Parity** (chunk 27): compare the baseline titles/canonicals against `out/` before deploying.
-5. **Switch** (chunk 28): `bash deploy/deploy.sh` uploads `out/` and swaps folders; nginx `root` points at `$SITE_DIR/site`. Rollback = `bash deploy/deploy.sh --rollback` (under a minute).
-6. **Watch** (chunk 29): 4 weeks of comparison against the baseline; redirect anything that 404s (in nginx).
-
 ### R8. Growth model
 
 **Channels, ranked by expected impact and time to results** (for a young iOS app with a new website):
@@ -1924,7 +701,7 @@ invoicor_web/                     repo root (after launch: only these)
 | # | Channel | Type | Time to results | Why |
 |---|---|---|---|---|
 | 1 | App Store search (ASO) | Inbound | 2–6 weeks | People search the App Store ready to install; no website needed (chunks 48–50) |
-| 2 | Generator + PDF watermark loop | Inbound / viral | 1–3 months, compounding | Every invoice sent shows invoicor.com to a new business (chunks 30–35) |
+| 2 | Generator + PDF watermark loop | Inbound / viral | 1–3 months, compounding | Every invoice sent shows invoicor.com to a new business (Stage G) |
 | 3 | Long-tail + non-English SEO | Inbound | 3–6 months | Lower competition; profession, country and language pages (Stages E, H, chunk 56) |
 | 4 | Template downloads & free tools | Inbound + links | 3–6 months | Huge search volume, and the assets other sites link to (chunks 53, 55) |
 | 5 | Social, video, communities | Outbound | Weeks, steady | Reach, brand searches and links; YouTube also ranks in Google (chunk 52) |
@@ -1963,72 +740,3 @@ _The old SEO pages kept promising features the app doesn't have. That's a signal
 
 When one ships: update BRAND.md §10 first, then the pages.
 
----
-
-### R10. Your ideas (2026-11-18)
-
-_Everything you raised on 2026-11-18, with the answer or the recommendation and where it now lives
-in this file. Nothing here is dropped; each point links to the chunk that builds it._
-
-| # | Your point | Answer / recommendation | Where |
-|---|---|---|---|
-| 1 | **Do we have tests?** | No automated tests yet, only lint, typecheck, the SEO content check and the build (all in CI). Add unit, URL-parity, smoke and accessibility tests **before** the page rebuild. | Chunk 17.1 |
-| 2 | **Slight gradients and small animations, so it feels premium?** | Not applied to the pages yet. The tokens exist (chunk 15: gradients, glow, warm shadows, motion timings); the live landing page is still the old dark design until Stage E. Premium polish is added to chunk 25 (e2). | Chunks 19, 20, 25 |
-| 3 | **An animated coffee near the price ("less than a coffee")** | Yes, small and next to Starter only: "less than one coffee a month" or "$0.17 a day", steam animation, static under reduced motion. A/B test it, because for a premium positioning it can also cheapen. | Chunk 20c, 60 |
-| 4 | **Competitors take a percentage of each payment; we don't. "You work hard, you keep it all." Heroic but professional.** | A dedicated section: "You did the work. You keep the money." Invoicor takes 0%, a fee calculator, sourced competitor fees on the compare pages. Honesty rule: PayPal / Stripe still charge their own fees when a customer uses their link, so say "Invoicor adds 0%", never "keep 100%". | Chunk 20d2, 23, 48 |
-| 5 | **Did the hub pages break? Do the URLs still work?** | No, nothing broke. Checked 2026-11-18: all 3 hubs (`/templates`, `/industries`, `/compare`) and all 30 detail pages exist with exactly the same slugs as the live site; old `/pricing` and `/register` redirect in nginx. Chunk 17.1b freezes this list in a test. | Chunk 17.1b, 27 |
-| 6 | **The page data came from a CSV; keep it as it is.** | The live site's data was `src/data/*.json` (no CSV in the repo, now or in history). It moved unchanged to `content/*.json`, with only the false claims corrected (2026-11-17). Kept as it is: one JSON file per page type, edited as described in [CONTENT.md](CONTENT.md). If you have a CSV elsewhere, send it and Claude compares it. | `content/`, CONTENT.md |
-| 7 | **Unified styling, from one place, consistent everywhere?** | The one place exists: `styles/tokens.css` + `components/ui/` (shown on `/brand`). The old pages don't use it yet; Stage E moves every page onto it, and the style guard test (17.1e) blocks one-off colors afterwards. | Chunks 15, 17, 17.1e, Stage E |
-| 8 | **It looks like a toy; make it high class, invoice-like, tailored to the users, so the price looks like a great deal.** | Agreed. New invoice-style components (paper sheet, line items, stamp, invoice-shaped pricing, billing switch), the hero showing a real invoice, copy written for the tradesperson and freelancer. | Chunks 17.2, 19, 20 |
-| 9 | **Maybe raise prices** (Starter $4.99 → $7.99, Pro $7.99 → $14.99, new Unlimited $19.99); competitors charge about that; you're in the red; discounts or not? | A decision for you, with a recommendation: decision D14. The website only ever shows what the App Store charges. | D14, Y15 |
-| 10 | **Make yearly feel like the better deal, animated: "2 months free", a switch or a bulb, modern.** | `BillingSwitch` styled as a physical switch; flipping to yearly counts the price down and stamps "SAVE 16%". "2 months free" is true (yearly = 10.02 monthly payments). Default to yearly. | Chunks 17.2e, 20c |
-| 11 | **Invoice-style buttons and items, reusable** | Part of the invoice components, shown on `/brand` and used across pages. | Chunk 17.2 |
-| 12 | **The README still shows the old starter template; remove every trace.** | Done on `dev` (2026-11-18): README, package and files are clean, and the roadmap no longer names the template. GitHub shows the `main` branch, which still has the old README until `dev` is merged and deployed (Y2). Old commits still contain it; only a history rewrite removes that (D9, optional). | Chunk 1, Y2, D9 |
-
-## Decisions for you
-
-_The open questions in one place. Each has a recommendation; write your answer in the **Your call** column (or just tell Claude) and the matching chunk can go ahead. Ordered by what blocks the most._
-
-| # | Decision | Recommendation | Blocks | Your call |
-|---|---|---|---|---|
-| D1 | **Which price tiers are live?** Website: Free / Starter $4.99 / Pro $7.99 (yearly $49.99 / $79.99). `strategy.md`: also Business $19.99 and yearly $49 / $79. Affiliate calculator: Starter €4.99 / Pro €9.99. The iOS app only sells Starter and Pro (no Business product). **All 10 compare pages say Invoicor is "$12/mo flat, unlimited invoices"**, which matches no plan. Also: is there a free trial? The buttons say "Start Free Trial". | Use what the **App Store actually charges** as the only truth. Put it in `content/pricing.json` and let the home page, affiliate calculator **and compare pages** all read it. Fix the compare pages first: a wrong price is a trust and legal risk. | 5j, 11a, 20, 23, 24, 48 | ✅ **2026-11-17:** Free (3 invoices, lifetime) · Starter $4.99/mo or $49.99/yr (10/mo) · Pro $7.99/mo or $79.99/yr (50/mo). Monthly plans: **3-day free trial**; yearly: **7-day free trial**; cancel any time. No Business tier. |
-| D2 | **Fake social proof.** Hero avatars are random faces from pravatar.cc, and the three testimonials aren't real customers. | Remove both now. Replace with true claims ("31 templates", "6 languages", "EU servers") until you have real reviews (chunk 50), then quote real App Store reviews with permission. | 19, 20 | ✅ **2026-11-17:** remove; use true facts until real reviews exist. |
-| D3 | **AI bots in robots.txt.** `GPTBot`, `Google-Extended` and `CCBot` are blocked. | Allow the **answer/search** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so ChatGPT, Perplexity and Claude can recommend Invoicor. Training bots: allow too (more mentions in answers), unless you object. | 6g, 13b | ✅ **2026-11-17:** allow all AI bots (search and training). |
-| D4 | **Analytics tools.** 4 tools load today: GA4, PostHog, StatsUp, Ahrefs. | Keep **PostHog** (funnels) + Search Console/Bing. Keep GA4 only if you open it. Drop StatsUp and Ahrefs Web Analytics. Fewer tools = faster pages and a smaller consent banner. | 14a, 14b | ✅ **2026-11-17:** keep PostHog + GA4; drop StatsUp and Ahrefs Web Analytics. |
-| D5 | **Cookie consent.** No banner today, but GA4/PostHog set cookies (EU users). | A small branded banner; nothing loads until "Accept"; PostHog cookieless before consent. Needed before more EU traffic (Stage H). | 14b, 36 | ✅ **2026-11-17:** yes, branded consent banner; nothing with cookies before Accept. |
-| D6 | **Legal/company details** for About, Contact and the footer (company name, KvK number, address or "registered in"). | Show the legal name + KvK number in the footer and on the About page. Needed for trust (E-E-A-T) and EU rules. | 7c, 24 | |
-| D7 | **Brand strategy draft** (`BRAND.md`): positioning, audience, pillars, voice, tagline. | Review the draft, change what doesn't sound like you, then mark it approved. | 5, 15–25 | |
-| D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
-| D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
-| D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | ✅ **2026-11-18:** yes, build it (Stage G). API on branch `feature/public-generator` in `invoicor_api`; deploying it is X18. |
-| D12 | **"5 seconds" and "80% auto-fill"** were on the hero, stats band, FAQ and meta description, but nothing measures them. _Since 2026-11-18 the site says "in seconds" and no longer claims 80%; restore a number only after Y14._ | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
-| D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
-| D14 | **Raise prices?** Idea (2026-11-18): Starter $4.99 → $7.99, Pro $7.99 → $14.99, a new **Unlimited** tier at $19.99. You're early and in the red, and competitors charge around those prices. Discounts or not? | **Recommendation: raise, in one careful step, for new customers only.** (1) A $4.99 B2B tool reads as cheap; the premium redesign (17.2, Stage E) supports a higher price. (2) Keep an entry tier so the free → paid step stays easy: e.g. Starter $6.99–7.99. (3) Unlimited at $19.99 is sensible: heavy users care least about price. It needs an App Store product and API limits first, and "unlimited" may only appear once it's real (BRAND.md §10). (4) Existing subscribers keep their price (Apple lets you keep them on it). (5) No permanent discounts; use App Store introductory offers or the free trials. (6) Before deciding, look at trial → paid conversion and cost per install; if few people convert, the price isn't the main problem. Website change is small: edit `content/pricing.json` once the App Store prices change. | 20c, 48, 60 | |
-| D15 | **Template titles promise "(PDF, Word, Excel)"**, but the pages offer no download yet; they explain the formats. Visitors searching "plumbing invoice template word" may bounce. | Build real downloads (chunk 53: Word, Excel, Google Docs, PDF per template); that fixes it and wins those searches. Until then keep the titles (changing them risks rankings). If chunk 53 is far off, change the titles to "Free {Niche} Invoice Template & Guide". | 21, 53 | |
-| D11 | **iOS AccentColor** is empty (system blue). | Set it to brand orange `#E95D05` in the next app update, so the app matches the site. | 5i | |
-
----
-
-## Your steps
-
-_Things Claude can't do from here (they need your accounts, your server, your phone or your opinion). Everything else in this file Claude can build. Do them in this order when you have time; none of them blocks the build track except where noted._
-
-| # | Step | Where | Chunk | Blocks |
-|---|---|---|---|---|
-| Y1 | **Export the SEO baseline** before the first Next.js deploy: Search Console Performance (queries + pages, 3 months, CSV), Pages report, Links report; Bing the same. Drop the files in `seo/baseline/2026-11/` (Claude commits and analyses them). | Search Console, Bing Webmaster | 4d | the first deploy |
-| Y2 | **Server setup + first deploy:** `deploy/.env`, merge the nginx config, `sudo nginx -t`, `bash deploy/deploy.sh` (see DEPLOY.md A–C). | VPS | 2, 28 | going live |
-| Y3 | **After going live:** resubmit the sitemap in Search Console and Bing, request indexing for the top pages. | Search Console, Bing | 28, 29 | n/a |
-| Y4 | **Answer D6:** legal company name, KvK number, and what address or city to show. | this file | 7c, 24 | About, Contact, footer |
-| Y5 | **Review BRAND.md** (D7): change what doesn't sound like you, mark it approved. | BRAND.md | 5 | final copy in Stage E |
-| Y6 | **App Store provider token:** App Store Connect → Analytics → Campaigns → copy the provider token (`pt`) into `NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN`, so installs per page show up. | App Store Connect | 14e | install attribution |
-| Y7 | **iOS app:** set `AccentColor` to `#E95D05` (D11); review prompt triggers (chunk 50). | Xcode | 5i, 50 | n/a |
-| Y8 | **App Store listing:** name, subtitle, keywords, screenshots (Claude drafts the text and screenshot copy). | App Store Connect | 48, 49 | n/a |
-| Y9 | **Profiles in your name:** Google Business Profile, Crunchbase, Product Hunt, LinkedIn page, X, YouTube; send Claude the URLs for `sameAs`. | each site | 51, 52 | n/a |
-| Y10 | **Outreach and PR:** sending emails, posting in communities, launches (Claude drafts them). | email, Reddit, Product Hunt | 45, 52, 57 | n/a |
-| Y11 | **Public generator API** (D10): approve, then it's built in `invoicor_api` and deployed on the server. | invoicor_api | 30, 31 | Stage G |
-| Y12 | **Recommended: move PostHog to the EU cloud.** Website analytics now go to PostHog **US** (`us.i.posthog.com`), while app data is in Germany. Create a new PostHog project in the EU region (eu.posthog.com), send Claude the new key, and the site switches to `eu.i.posthog.com`: then only GA4 leaves the EU. Session replay is off in code; turning it on needs a privacy policy update first. | posthog.com | 14 | n/a |
-| Y13 | **Verify Search Console by DNS (before deploying).** No Google verification file or DNS record exists, so Search Console was probably verified through the Google Analytics tag. GA4 now only loads after cookie consent, so that verification can break. Add a **Domain property** in Search Console and put its `google-site-verification` TXT record in DNS (where invoicor.com's DNS is managed). | Search Console + DNS | 4, 13e | the baseline export (Y1) |
-| Y14 | **Check two homepage claims:** time yourself creating a real invoice with a saved client and items. If it takes about 5 seconds, keep "takes 5 seconds"; otherwise Claude changes it to "in seconds". Same for "80% auto-fill" (decision D12). | your iPhone | 19 | n/a |
-| Y15 | **If you change prices (D14):** create or edit the subscription products in App Store Connect (and the Unlimited product plus its limit in the API, if you add it), then tell Claude the new prices; the website follows from `content/pricing.json`. | App Store Connect, invoicor_api | 20c | the pricing redesign going live |
-| Y16 | **Check the competitor facts on the 10 compare pages** (prices, plan limits like "30 invoices a year", "70% less than HoneyBook", "50% savings vs Bonsai", "$300+ vs QuickBooks"). Claude can draft each with its source URL if you OK web research, but a person should confirm before relying on them (legal safety). | competitor websites | 23b | nothing; recommended before promoting the compare pages |
-| Y17 | **Set up staging** (DEPLOY.md A.4, ~15 min): DNS A record `staging`, `htpasswd`, copy `deploy/nginx/staging.invoicor.com.conf`, `certbot`, add `STAGING_DIR` + `STAGING_AUTH` to `deploy/.env`. Then `bash deploy/deploy.sh --staging` and `npm run parity -- --new https://staging.invoicor.com --auth invoicor:pw`. | DNS + server | 26 | a safe launch (recommended before Y2) |

@@ -147,7 +147,7 @@ After that first launch, `bash deploy/deploy.sh --rollback` switches between Nex
 ## D. After the first Next.js deploy (one time)
 
 > **Before** the first deploy: verify Google Search Console with a DNS TXT record (Domain property),
-> and export the SEO baseline (ROADMAP Your steps Y13 and Y1). Search Console may be verified through
+> and export the SEO baseline (ROADMAP X1 and X2). Search Console may be verified through
 > the Google Analytics tag today, which now only loads after cookie consent.
 
 1. Check a few pages in the browser and with `curl -s https://invoicor.com/templates/plumbing | grep "<h1"`:

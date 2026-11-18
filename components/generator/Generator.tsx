@@ -47,7 +47,7 @@ export function Generator({
   templates: GeneratorTemplate[];
   currencies: Option[];
   languages: Option[];
-  /** Example invoices from the template pages, for ?example=plumbing (ROADMAP 36a). */
+  /** Example invoices from the template pages, for ?example=plumbing (ROADMAP S1-a). */
   examples?: Record<string, GeneratorExample>;
   /** Server-rendered App Store badge + QR code, shown after a download (chunk 34). */
   appCta?: ReactNode;

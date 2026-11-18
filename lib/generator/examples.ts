@@ -2,7 +2,7 @@ import type { TemplateEntry } from "@/lib/content";
 
 /**
  * The example invoice of each template page (content/templates.json), turned into generator line
- * items, so "Use this template" opens the generator already filled in (ROADMAP 36a).
+ * items, so "Use this template" opens the generator already filled in (ROADMAP S1-a).
  * Built at build time; only the fields the generator needs.
  */
 export interface GeneratorExample {
