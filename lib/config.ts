@@ -44,7 +44,12 @@ export const POSTHOG_HOST = "https://us.i.posthog.com";
  */
 export function appStoreLink(campaign?: string): string {
   if (!campaign || !APP_STORE_PROVIDER_TOKEN) return APP_STORE_URL;
-  const params = new URLSearchParams({ pt: APP_STORE_PROVIDER_TOKEN, ct: campaign, mt: "8" });
+  // Apple accepts campaign names of up to 40 characters.
+  const params = new URLSearchParams({
+    pt: APP_STORE_PROVIDER_TOKEN,
+    ct: campaign.slice(0, 40),
+    mt: "8",
+  });
   return `${APP_STORE_URL}?${params.toString()}`;
 }
 

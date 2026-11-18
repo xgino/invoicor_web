@@ -77,7 +77,7 @@ here; the old number is in brackets._
 | ID | Step | Why / how |
 |---|---|---|
 | X8 | 🟢 Approve the brand draft [D7, Y5] | Read [BRAND.md](BRAND.md) §1–6, change what doesn't sound like you, mark it "Approved". |
-| X10 | 🟢 App Store provider token [Y6] | App Store Connect → App Analytics → Campaigns → copy `pt=`. Then installs per page show up. |
+| X10 | ✅ App Store provider token (2026-11-18) | n/a | `pt=128750110`, set as the GitHub variable `APP_STORE_PROVIDER_TOKEN`. From the next deploy every App Store button carries its own campaign (`hero`, `template-plumbing`, `gen_success`, `footer_de`…), so App Store Connect → App Analytics → Campaigns shows installs per page and button. Data shows up 1–2 days later, and Apple hides campaigns with very few users (privacy threshold). |
 | X12 | 🟢 Check 4 competitors by hand | Invoice Fly, Bookipi and Joist are live (E1). **Invoice Simple and PayPal block automated reading, Moon Invoice and Invoice Home show no prices in their page text**, so they can't be sourced by Claude. Open their pricing pages in a browser and send the plans and prices (or screenshots); Claude writes the pages. |
 | X14 | 🟢 Small decisions that change page text [Y14, Y15] | D12 (time a real invoice: "5 seconds"?) and D14 (prices). See [Decisions](#3-decisions-still-open). |
 | X17 | 🟢 Fresh app screenshots | Dashboard, new invoice, template picker, preview, share sheet → `assets/app-screens/`. |
