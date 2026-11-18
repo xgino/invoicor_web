@@ -103,11 +103,11 @@ export default function PrivacyPage() {
           and access to the servers is restricted to what is needed to run Invoicor.
         </P>
         <P>
-          <B>Free invoice generator (invoicor.com/free-invoice-generator):</B> what you type is sent
-          to our servers in Germany only to create the preview and the PDF, and is not stored there.
-          Your draft is kept in your own browser (local storage) so you can continue later;
-          &quot;Clear form&quot; deletes it. To keep the free tool available for everyone, we count
-          requests per IP address in a short-lived rate-limit counter that expires on its own.
+          <B>Free invoice generator (invoicor.com/free-invoice-generator):</B> the preview and the
+          PDF are created in your browser, so what you type is not sent to us. Your draft is kept in
+          your own browser (local storage) so you can continue later; &quot;Clear everything&quot;
+          deletes it. To show the template thumbnails, your browser loads sample invoices from our
+          server; those contain no data of yours.
         </P>
         <P>
           No service connected to the internet can be made completely secure, so we cannot guarantee

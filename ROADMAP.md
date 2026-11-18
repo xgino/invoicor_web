@@ -114,8 +114,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X15. 🟠 Have a lawyer review Terms and Privacy
 - [ ] X16. 🟠 Fix two claims in your App Store screenshots ("Estimates", "Trusted by businesses worldwide")
 - [ ] X17. 🟢 Send fresh app screenshots
-- [ ] X18. 🔴 Deploy the generator API (before the website shows the generator)
-- [ ] X19. 🟢 Turn on the bot check (Cloudflare Turnstile), optional
+- [ ] X18. 🟡 Deploy the API template fixes (for the app; the website no longer needs it)
+- [x] X19. ~~Turn on the bot check~~: not needed any more, the website makes PDFs in the browser (35c)
 
 **Stage P: Polish from your review (2026-11-18)** _(✅ P1–P20 done; open: lawyer review (X15), App Store screenshot fixes (X16), fresh screenshots (X17); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
@@ -940,27 +940,20 @@ template picker, an invoice preview, the share sheet. AirDrop them to your Mac a
 
 <a id="x18"></a>
 
-### X18. 🔴 Deploy the generator API _(≈ 20 min, before the website shows the generator)_
-**Why:** the website's free invoice generator calls two new API endpoints. They're on branch
-`feature/public-generator` in `invoicor_api`, tested (17 tests) but not deployed. Until then
-“Download PDF” shows “The invoice service isn't available right now” (the live API answers 404).
-The same branch also fixes the templates for the app (35b): VAT ID, registration number, client email
-and phone on the invoice; item details on their own line; money with 2 decimals. **Check one app
-invoice PDF after deploying**, since those changes reach the app too.
-**How:** follow `invoicor_api/docs/PUBLIC_GENERATOR.md`: merge the branch into `main`, pull on the
-server, run `python manage.py createcachetable` (rate-limit table), restart the API, and check that the
-`/api/` nginx block has `include proxy_params;` (so rate limits see real visitor IPs). Then the curl
-check in that file.
+### X18. 🟡 Deploy the API template fixes _(≈ 15 min, for the app)_
+**Why:** since 35c the website makes the PDF in the browser, so **the website does not need this**.
+Branch `feature/public-generator` in `invoicor_api` still has the template fixes for the app (35b):
+VAT ID, registration number, client email and phone on the invoice; item details on their own line;
+money with 2 decimals. It also has the public endpoints, which nothing uses now (harmless; they can
+stay as a backup or be dropped before merging).
+**How:** merge into `main`, pull on the server, run `python manage.py createcachetable` (needed by
+the endpoints' rate limits), restart the API. **Then check one invoice PDF from the app.** Details
+in `invoicor_api/docs/PUBLIC_GENERATOR.md`.
 
 <a id="x19"></a>
 
-### X19. 🟢 Turn on the bot check (Cloudflare Turnstile) _(≈ 10 min, optional)_
-**Why:** the rate limits already protect the API; Turnstile also stops scripted bots from burning
-the PDF quota. Free, privacy-friendly, usually invisible to people.
-**How:** Cloudflare dashboard → Turnstile → add site `invoicor.com` (mode "Managed"). Put the
-**secret key** in the API `.env` as `TURNSTILE_SECRET_KEY` and send Claude the **site key** (it's
-public; it goes into the website build as `NEXT_PUBLIC_TURNSTILE_SITE_KEY`). Claude then adds a line
-to the privacy policy.
+### X19. ~~Turn on the bot check (Cloudflare Turnstile)~~ ✅ not needed
+The website no longer calls the API to make PDFs (35c), so there is nothing for bots to use up.
 
 ---
 
@@ -1260,6 +1253,24 @@ Form:
 Built 2026-11-18. The browser fill was re-synced (`scripts/sync-generator-templates.py`) and still matches the API for all 21 free templates × 11 languages. API commit `467a4c84` on `feature/public-generator` (deploys with X18; it also improves the app's PDFs).
 
 **Done when:** a filled-in form shows every field on the preview, the numbers look like money, and the form reads top to bottom like the invoice.
+
+### 35c. PDF made in the browser (2026-11-18)
+**Why:** you asked whether the generator could work without touching the API at all. It can: the
+preview was already filled in the browser (33a), so the browser now turns that same page into the PDF.
+
+- [x] a. `lib/generator/pdf.ts`: the filled invoice is drawn in a hidden A4 frame at about 200 dpi
+  (`modern-screenshot`) and saved as a one-page A4 PDF (`jspdf`), 150–250 KB, in well under a second.
+  Both libraries load only when someone clicks Download.
+- [x] b. Links stay clickable (the “Pay online” button, invoicor.com); the watermark line is the
+  same as in the preview.
+- [x] c. Checked in Chrome and Safari (iPhone and desktop), light and dark templates. Capturing
+  `<html>` instead of `<body>` was needed: `<body>` shifted the page a few pixels in every browser.
+- [x] d. No API calls at all for the preview or the PDF; the e2e test fails if one happens. The
+  public API client, the bot check and the “wait a little” rate-limit message were removed.
+- [x] e. FAQ and privacy policy now say what's true: what you type never leaves your browser.
+- Trade-off: the PDF's text is part of an image, so it can't be selected or searched (said in the
+  FAQ). The app's PDFs have real text. Typing and downloading cost the server nothing, so the
+  rate-limit worries from Stage G no longer apply to the website.
 
 ---
 

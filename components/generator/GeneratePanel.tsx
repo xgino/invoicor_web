@@ -5,12 +5,12 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { buttonClass } from "@/components/ui/Button";
 import { Stamp } from "@/components/ui/invoice";
 import { track } from "@/lib/analytics";
-import { GeneratorApiError, downloadPdf } from "@/lib/generator/api";
-import { type Draft, filledItems, toPayload } from "@/lib/generator/draft";
-import { turnstileToken } from "@/lib/generator/turnstile";
+import { type Draft, filledItems } from "@/lib/generator/draft";
+import { makePdf } from "@/lib/generator/pdf";
 import type { Action } from "./reducer";
 
-const COOLDOWN_MS = 5000;
+/** A short pause before "Create another", so a double click doesn't wipe the form by accident. */
+const COOLDOWN_MS = 1500;
 
 function save(url: string, filename: string) {
   const a = document.createElement("a");
@@ -22,9 +22,9 @@ function save(url: string, filename: string) {
 }
 
 /**
- * Generate flow (ROADMAP chunk 34): bot check (if on), PDF from the API, download, then the
- * hand-off to the app. "Download again" reuses the same
- * file, so it costs no API call. The cooldown is UX only; the real limits are on the server.
+ * Generate flow (ROADMAP chunk 34, 35c): the PDF is made in this browser from the filled template
+ * (lib/generator/pdf.ts), downloaded, then the hand-off to the app. Nothing is sent to a server.
+ * "Download again" reuses the same file.
  */
 export function GeneratePanel({
   draft,
@@ -42,7 +42,6 @@ export function GeneratePanel({
   const [cooling, setCooling] = useState(false);
   const [fileName, setFileName] = useState("");
   const file = useRef<{ url: string; name: string } | null>(null);
-  const botBox = useRef<HTMLDivElement>(null);
   const ready = filledItems(draft).length > 0;
 
   useEffect(
@@ -61,8 +60,7 @@ export function GeneratePanel({
       language: draft.language,
     });
     try {
-      const token = botBox.current ? await turnstileToken(botBox.current) : undefined;
-      const blob = await downloadPdf(toPayload(draft, token ? { turnstile_token: token } : {}));
+      const blob = await makePdf(draft);
       if (file.current) URL.revokeObjectURL(file.current.url);
       const safe = draft.invoice_number.replace(/[^A-Za-z0-9_-]/g, "-") || "invoice";
       file.current = { url: URL.createObjectURL(blob), name: `invoice-${safe}.pdf` };
@@ -74,12 +72,10 @@ export function GeneratePanel({
       setCooling(true);
       window.setTimeout(() => setCooling(false), COOLDOWN_MS);
     } catch (e) {
-      const message =
-        e instanceof GeneratorApiError
-          ? e.message
-          : "Something went wrong while creating the PDF. Please try again.";
-      track("gen_error", { code: e instanceof GeneratorApiError ? e.detail.code : "unknown" });
-      setError(message);
+      track("gen_error", { code: (e as Error)?.name || "unknown" });
+      setError(
+        "This browser couldn't create the PDF. Please try again, or try another browser. Your form is saved.",
+      );
       setState("idle");
     }
   }
@@ -166,7 +162,6 @@ export function GeneratePanel({
           {error}
         </p>
       )}
-      <div ref={botBox} className="mt-3 flex justify-center empty:hidden" />
     </div>
   );
 }

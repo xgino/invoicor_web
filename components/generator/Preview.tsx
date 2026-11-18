@@ -57,8 +57,8 @@ function paintFrame(
 /**
  * Live preview (ROADMAP 33a/b): the real template, filled in the browser on every keystroke
  * (lib/generator/fill.ts, checked against the API's own fill), shown in a sandboxed iframe scaled
- * to fit, with the same watermark line as the PDF. No API calls while typing; only the PDF comes
- * from the server.
+ * to fit, with the same watermark line as the PDF. No API calls: the PDF is made in the browser
+ * too (lib/generator/pdf.ts).
  *
  * The iframe may not run scripts. It is same-origin only so we can swap the page body in place:
  * no reload and no flicker while typing. Everything people type is escaped before it goes in.

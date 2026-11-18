@@ -47,7 +47,7 @@ export const GENERATOR_FAQS = [
   {
     question: "Do you store my invoice?",
     answer:
-      "No. What you type is sent to our servers in Germany only to build the preview and the PDF, and it isn't saved there. The draft lives in your browser; “Clear form” removes it.",
+      "No. The preview and the PDF are made right in your browser, so what you type never leaves your device. Your draft is saved in this browser only; “Clear everything” removes it.",
   },
   {
     question: "Which currencies and languages can I use?",
@@ -79,9 +79,9 @@ export const GENERATOR_FAQS = [
       "A PDF isn't meant to be edited. Change the form and download a new one; your draft is still there. To keep every invoice with its status and resend it later, use the Invoicor app.",
   },
   {
-    question: "Why can't I download more right now?",
+    question: "Can I copy text from the PDF?",
     answer:
-      "To keep the free tool fast for everyone, there's a limit on how many PDFs one person can create per hour. Wait a little and try again.",
+      "No. The PDF is made in your browser as a sharp image of the invoice, so its text can't be selected or searched. Your payment link and the other links still work. The Invoicor app makes PDFs with selectable text.",
   },
 ];
 

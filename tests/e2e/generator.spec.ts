@@ -1,22 +1,22 @@
+import { readFileSync } from "node:fs";
 import { expect, test, type Page } from "@playwright/test";
 import { trackAnalytics } from "./helpers";
 
 /**
- * The free invoice generator (ROADMAP Stage G) with a mocked API, so this runs in CI before the
- * real API is deployed. The API itself is tested in invoicor_api (invoices/test_public.py).
+ * The free invoice generator (ROADMAP Stage G, 35b/35c). Everything happens in the browser: the
+ * preview and the PDF. These tests fail if the generator calls our API at all (the template picker's
+ * thumbnails are the one exception; they're stubbed here).
  */
-async function mockApi(page: Page, pdfStatus = 200) {
-  let pdfCalls = 0;
-  await page.route(/\/api\/invoices\/public\/pdf\/$/, (route) => {
-    pdfCalls++;
-    return pdfStatus === 200
-      ? route.fulfill({ contentType: "application/pdf", body: "%PDF-1.4 test" })
-      : route.fulfill({ status: pdfStatus, contentType: "application/json", body: "{}" });
-  });
+async function mockApi(page: Page) {
+  const calls: string[] = [];
   await page.route(/\/api\/invoices\/templates\/[^/]+\/preview\/$/, (route) =>
     route.fulfill({ contentType: "text/html", body: "<html><body>template</body></html>" }),
   );
-  return () => pdfCalls;
+  page.on("request", (r) => {
+    if (r.url().includes("/api/") && !/\/templates\/[^/]+\/preview\/$/.test(r.url()))
+      calls.push(r.url());
+  });
+  return () => calls;
 }
 
 async function fillInvoice(page: Page) {
@@ -31,11 +31,11 @@ test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem("invoicor-consent-v1", "denied"));
 });
 
-test("fill, preview with the watermark line, download, download again for free", async ({
+test("fill, preview with the watermark line, download a real PDF made in the browser", async ({
   page,
   isMobile,
 }) => {
-  const pdfCalls = await mockApi(page);
+  const apiCalls = await mockApi(page);
   await page.goto("/free-invoice-generator");
   await fillInvoice(page);
   if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
@@ -48,13 +48,17 @@ test("fill, preview with the watermark line, download, download again for free",
 
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download PDF" }).click();
-  expect((await download).suggestedFilename()).toBe("invoice-INV-0001.pdf");
+  const file = await download;
+  expect(file.suggestedFilename()).toBe("invoice-INV-0001.pdf");
+  const bytes = readFileSync((await file.path())!);
+  expect(bytes.subarray(0, 5).toString()).toBe("%PDF-");
+  expect(bytes.length).toBeGreaterThan(20_000); // a real page image, not an empty file
   await expect(page.getByText("Your invoice is downloaded")).toBeVisible();
 
   const again = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download again" }).click();
   await again;
-  expect(pdfCalls()).toBe(1);
+  expect(apiCalls()).toEqual([]);
 });
 
 test("the preview updates while typing, without calling the API", async ({ page, isMobile }) => {
@@ -126,15 +130,6 @@ test("New invoice keeps the business and clears the client and items", async ({ 
   await expect(page.getByLabel("Client or company name")).toHaveValue("");
   await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue("");
   await expect(page.getByLabel("Invoice number")).toHaveValue("INV-0002");
-});
-
-test("explains the rate limit in plain words", async ({ page, isMobile }) => {
-  await mockApi(page, 429);
-  await page.goto("/free-invoice-generator");
-  await fillInvoice(page);
-  if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
-  await page.getByRole("button", { name: "Download PDF" }).click();
-  await expect(page.getByText(/wait a little/)).toBeVisible();
 });
 
 test("the download button waits for at least one line", async ({ page, isMobile }) => {
