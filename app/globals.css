@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/effects.css";
+
+/* Base. Everything visual lives in styles/: tokens.css (brand tokens) and effects.css (motion). */
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem; /* anchor links land below the fixed navbar */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

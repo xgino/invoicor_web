@@ -1,0 +1,78 @@
+import { APP_STORE_URL, BLOG_URL, CONTACT_EMAIL, absoluteUrl } from "@/lib/config";
+import { LOCALE_INFO, PREFIXED_LOCALES } from "@/lib/i18n/config";
+import { ROUTES } from "@/lib/i18n/routes";
+import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
+
+// Rendered once at build time into out/llms.txt.
+export const dynamic = "force-static";
+
+/**
+ * llms.txt (https://llmstxt.org): a short, plain summary of the site for AI assistants,
+ * with links to the pages worth reading. Generated from the content, so it never goes stale.
+ */
+export function GET() {
+  const list = (items: { title: string; path: string }[]) =>
+    items.map((i) => `- [${i.title}](${absoluteUrl(i.path)})`).join("\n");
+
+  const body = `# Invoicor
+
+> Invoicor is an iPhone app for freelancers and small businesses to create professional PDF invoices in seconds, in many languages and currencies, with no payment processing fees. Free plan: 3 invoices, no watermark.
+
+- App Store: ${APP_STORE_URL}
+- Website: ${absoluteUrl("/")}
+- Blog with how-to articles: ${BLOG_URL}
+- Contact: ${CONTACT_EMAIL}
+
+## Main pages
+
+${list([
+  { title: "Home: features and pricing", path: "/" },
+  { title: "Free invoice generator (online, PDF, no signup)", path: "/free-invoice-generator" },
+  { title: "Free tools: VAT, hours and hourly rate calculators", path: "/tools" },
+  { title: "VAT calculator (add or remove VAT, 19 countries)", path: "/tools/vat-calculator" },
+  { title: "Hours calculator (hours worked, decimal hours)", path: "/tools/hours-calculator" },
+  { title: "Freelance hourly rate calculator", path: "/tools/hourly-rate-calculator" },
+  { title: "Invoice templates by industry", path: "/templates" },
+  { title: "Invoicing guides by industry", path: "/industries" },
+  { title: "Invoicor compared with other invoice apps", path: "/compare" },
+  { title: "Help and FAQ", path: "/help" },
+  { title: "Android (coming soon)", path: "/android" },
+])}
+
+## Guides and how-to articles
+
+The blog at ${BLOG_URL} (a separate site, same company) has how-to articles about invoicing and the
+Invoicor app. Its own sitemap: ${BLOG_URL}sitemap.xml
+
+## Other languages
+
+The home page, the free invoice generator and the free tools also exist in ${PREFIXED_LOCALES.length} other languages, written for each country (local invoice rules, VAT rates, currency):
+
+${PREFIXED_LOCALES.map(
+  (l) =>
+    `- ${LOCALE_INFO[l].english}: [home](${absoluteUrl(ROUTES.home[l]!)}), [invoice generator](${absoluteUrl(ROUTES.generator[l]!)}), [free tools](${absoluteUrl(ROUTES.tools[l]!)})`,
+).join("\n")}
+
+## Invoice templates
+
+${list(getTemplates().map((t) => ({ title: t.h1, path: `/templates/${t.slug}` })))}
+
+## Industry guides
+
+${list(getIndustries().map((i) => ({ title: i.h1, path: `/industries/${i.slug}` })))}
+
+## Comparisons
+
+${list(getComparisons().map((c) => ({ title: c.h1, path: `/compare/${c.slug}` })))}
+
+## Optional
+
+${list([
+  { title: "Affiliate program", path: "/affiliate" },
+  { title: "Terms of service", path: "/terms" },
+  { title: "Privacy policy", path: "/privacy" },
+])}
+`;
+
+  return new Response(body, { headers: { "Content-Type": "text/plain; charset=utf-8" } });
+}

@@ -1,0 +1,368 @@
+import type { HomeDict } from "./en";
+
+/** Home, Polish. Informal "Ty" (capitalised), as Polish apps write. Honest about KSeF. */
+export const pl: HomeDict = {
+  meta: {
+    title: "Darmowa aplikacja do faktur na iPhone'a | Invoicor",
+    description:
+      "Wystawiaj profesjonalne faktury w kilka sekund na iPhonie. 31 wzorów, 38 walut, 11 języków. 3 faktury za darmo i bez prowizji od Twoich płatności.",
+  },
+  hero: {
+    eyebrow: "Aplikacja do faktur na iPhone'a",
+    titleA: "Profesjonalne faktury, wysłane",
+    titleB: "w kilka sekund.",
+    lead: "Dane firmy, klienci i ceny uzupełniają się same. Wybierz wzór i stuknij Wyślij. Czysty PDF w języku i walucie Twojego klienta, prosto z telefonu.",
+    cta: "Pobierz za darmo na iOS",
+    online: "Wystaw fakturę online",
+    androidQ: "Masz Androida?",
+    androidLink: "Już wkrótce",
+    doodle: "gotowa do wysłania",
+    promisesAria: "Co dostajesz za darmo",
+    promises: ["{n} faktury za darmo", "Bez znaku wodnego", "Bez abonamentu"],
+    sent: "Wysłana jako PDF e-mailem",
+  },
+  sample: {
+    number: "Faktura nr 0042",
+    business: "Hydraulika Nowak",
+    issued: "Wystawiona dziś · termin płatności 14 dni",
+    stamp: "Zapłacona",
+    billTo: "Nabywca",
+    client: "Anna Kowalska · ul. Lipowa 18, Kraków",
+    clientName: "Anna Kowalska",
+    clientInitials: "AK",
+    items: [
+      { description: "Wyjazd awaryjny", detail: "Sobota", short: "Wyjazd", amount: 380 },
+      {
+        description: "Robocizna, 2 godz.",
+        detail: "Wymiana baterii kuchennej",
+        short: "Robocizna, 2 godz.",
+        amount: 680,
+      },
+      { description: "Bateria i złączki", detail: "", short: "Bateria i złączki", amount: 854 },
+    ],
+    subtotal: "Wartość netto",
+    taxLabel: "VAT 23%",
+    taxRate: 23,
+    total: "Do zapłaty",
+  },
+  trust: {
+    send: "Wyślij jako PDF przez",
+    pay: "Otrzymuj płatności przez własny link",
+    messages: "Wiadomości",
+    bank: "Przelew",
+  },
+  proof: {
+    aria: "Invoicor w liczbach",
+    templates: "Wzory faktur",
+    currencies: "Waluty",
+    languages: "Języki faktur",
+    fees: "Prowizji od Twoich płatności",
+    percent: "%",
+  },
+  templates: {
+    eyebrow: "31 wzorów · 21 za darmo",
+    titleA: "Faktury, które klienci",
+    titleB: "traktują poważnie.",
+    lead: "Żadnego wyglądu arkusza kalkulacyjnego. Twoje logo, przejrzysty układ i wszystkie dane, których oczekuje klient i księgowa.",
+    browse: "Wybierz wzór",
+    galleryAria: "Podgląd wzorów faktur",
+    preview: "wzór faktury, podgląd",
+  },
+  how: {
+    eyebrow: "Jak to działa",
+    titleA: "Od skończonej pracy do",
+    titleB: "zapłaty.",
+    lead: "Ustawiasz firmę raz. Potem każda faktura to kilka stuknięć.",
+    step: "Krok",
+    steps: [
+      {
+        title: "Wybierz klienta",
+        text: "Zapisanego klienta albo nowego. Nazwa, adres i e-mail uzupełniają się same.",
+      },
+      {
+        title: "Dodaj pozycje",
+        text: "Stuknij zapisane produkty albo wpisz pozycję. VAT, rabat i suma liczą się na bieżąco.",
+      },
+      {
+        title: "Wyślij PDF",
+        text: "Udostępnij przez e-mail, WhatsApp, Wiadomości lub AirDrop, z linkiem do płatności.",
+      },
+      {
+        title: "Odbierz zapłatę",
+        text: "Klient płaci bezpośrednio Tobie. Oznacz jako zapłaconą i zobacz od razu, co jeszcze czeka na płatność.",
+      },
+    ],
+    savedClient: "Zapisany klient",
+    total: "Razem",
+    paidToYou: "Zapłacone Tobie",
+  },
+  who: {
+    eyebrow: "Dla kogo",
+    titleA: "Dla ludzi, którzy wolą",
+    titleB: "pracować.",
+    lead: "Jeśli wystawiasz faktury między zleceniami, z telefonu, Invoicor jest dla Ciebie.",
+    people: [
+      {
+        who: "Fachowcy",
+        examples: "Hydraulicy, elektrycy, firmy sprzątające, ogrodnicy",
+        moment: "Zlecenie skończone, a klient stoi obok.",
+        gain: "Wyślij profesjonalną fakturę jeszcze przed odjazdem. Koniec z papierami wieczorem.",
+        scene: ["Zlecenie skończone", "Faktura wysłana"],
+      },
+      {
+        who: "Freelancerzy",
+        examples: "Graficy, fotografowie, konsultanci, coachowie",
+        moment: "Projekt oddany, a klient jest za granicą.",
+        gain: "Wystaw fakturę w jego języku i walucie, z układem, który wygląda tak dobrze jak Twoja praca.",
+        scene: ["Projekt oddany", "Zapłacone w EUR"],
+      },
+      {
+        who: "Małe firmy",
+        examples: "Studia, firmy budowlane, właściciele kilku działalności",
+        moment: "Koniec miesiąca: wielu klientów, może dwie firmy.",
+        gain: "Do 3 profili firmy w planie Pro, każdy z własnym logo i danymi. Duplikuj faktury z poprzedniego miesiąca jednym stuknięciem.",
+        scene: ["Koniec miesiąca", "Wszystko wysłane"],
+      },
+    ],
+    notAccountingA: "To nie program księgowy.",
+    notAccountingB: "Po prostu faktury.",
+    notAccounting: [
+      "Bez księgowań i kreatorów konfiguracji",
+      "Wyślij PDF-y swojej księgowej",
+      "Na Twoim iPhonie, gdziekolwiek jest zlecenie",
+    ],
+  },
+  app: {
+    eyebrow: "Aplikacja",
+    titleA: "Wiedz, gdzie są Twoje pieniądze,",
+    titleB: "zawsze.",
+    lead: "Invoicor nie służy tylko do wysyłania. Trzyma każdą fakturę, klienta i status płatności w jednym miejscu w telefonie.",
+    points: [
+      "Zapłacone, oczekujące i wysłane w jednym spojrzeniu, miesiąc po miesiącu (Starter i Pro).",
+      "Każda faktura pokazuje swój status: szkic, wysłana, zapłacona lub po terminie.",
+      "Otwórz dowolną fakturę później i udostępnij PDF ponownie jednym stuknięciem.",
+      "Zaloguj się na innym iPhonie i wszystko tam jest.",
+    ],
+    altDashboard:
+      "Panel Invoicor z kwotami zapłaconymi i oczekującymi, wykresem przychodów miesięcznych i ostatnimi fakturami",
+    altSent: "Wysłana faktura w Invoicor, oznaczona jako wysłana",
+    demo: "Prawdziwe ekrany aplikacji (po angielsku), z przykładowymi danymi.",
+  },
+  features: {
+    eyebrow: "Wszystko, czego potrzebuje faktura",
+    title: "Dla pracy, nie dla księgowych.",
+    lead: "Bez księgowań i kreatorów konfiguracji. Te części fakturowania, których naprawdę używasz, zrobione porządnie.",
+    fast: "Szybko",
+    fastText:
+      "Zapisani klienci i produkty uzupełniają się same. Suma, VAT i rabaty liczą się w trakcie pisania. Duplikuj fakturę z poprzedniego miesiąca jednym stuknięciem.",
+    paid: "Zapłacona",
+    sent: "Wysłana",
+    draft: "Szkic",
+    global: "Międzynarodowo",
+    globalText:
+      "Wystawiaj faktury klientom na całym świecie: 38 walut i 11 języków. Klient czyta fakturę w swoim języku.",
+    currenciesAria: "Niektóre obsługiwane waluty",
+    languagesAria: "Niektóre języki faktur",
+    professional: "Profesjonalnie",
+    professionalText:
+      "31 wzorów (21 za darmo) z Twoim logo. Do 3 profili firmy w planie Pro i panel przychodów, który pokazuje, co zapłacone, a co jeszcze nie.",
+    honest: "Uczciwie",
+    honestList: [
+      "3 faktury za darmo, bez znaku wodnego",
+      "Bez abonamentu na start",
+      "0% Twoich płatności, nigdy",
+      "Dane przechowywane w Niemczech (RODO)",
+      "Jasne ceny, rezygnujesz kiedy chcesz",
+      "Każdą wiadomość czyta człowiek",
+    ],
+  },
+  keep: {
+    eyebrow: "0% Twoich płatności. Nigdy.",
+    titleA: "Twoja praca.",
+    titleB: "Twoje pieniądze.",
+    lead: "Wiele aplikacji do faktur pobiera procent od każdej płatności kartą, oprócz abonamentu. Uważamy, że to nie w porządku. Invoicor nie jest bramką płatności: tworzy fakturę, Ty dodajesz własny link do płatności, a klient płaci bezpośrednio Tobie.",
+    points: [
+      {
+        title: "Bez prowizji i opłat za fakturę",
+        text: "Płacisz jeden stały abonament. To, co płaci klient, należy do Ciebie.",
+      },
+      {
+        title: "Prosto na Twoje konto",
+        text: "Dodaj do faktury własny link do płatności. Pieniądze nigdy nie przechodzą przez nas, więc nie da się ich wstrzymać ani zablokować.",
+      },
+      {
+        title: "Uczciwie",
+        text: "Jeśli używasz linku PayPal lub Stripe, pobierają oni własną opłatę, jak wszędzie. Invoicor dolicza 0%.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0% prowizji",
+    label: "Ile zostaje Ci z Invoicor",
+    average: "Średnia faktura",
+    perMonth: "Faktur miesięcznie",
+    feeLabel: "Prowizja innych aplikacji od płatności",
+    marks: ["Niska", "Typowa", "Wysoka"],
+    marksAria: "Przykładowe poziomy prowizji",
+    keep: "Z Invoicor zostaje Ci",
+    pocket: "więcej w kieszeni co roku",
+    perYear: "Fakturujesz rocznie",
+    wouldKeep: "Aplikacja z prowizją {fee} zabrałaby",
+    takes: "Invoicor zabiera",
+    note: "Przykład. Niektóre aplikacje do faktur pobierają prowizję od każdej płatności oprócz abonamentu; stawki są różne. Jeśli dodasz własny link PayPal lub Stripe, pobiorą oni własną opłatę, jak wszędzie. Invoicor nie dolicza nic.",
+  },
+  pricing: {
+    eyebrow: "Cennik",
+    title: "Jasne ceny. Nic z Twoich płatności.",
+    lead: "Zacznij za darmo. Zmień plan, gdy wysyłasz więcej. Zrezygnuj w każdej chwili przez Apple.",
+  },
+  table: {
+    monthly: "Miesięcznie",
+    yearly: "Rocznie",
+    billYearly: "Płatność roczna",
+    monthsFree: "{n} miesiące gratis",
+    bestValue: "najkorzystniej",
+    everyPlan: "W każdym planie",
+    everyList: [
+      "Nieograniczona liczba klientów",
+      "Bez znaku wodnego",
+      "Twój własny link do płatności",
+      "0% prowizji od Twoich płatności",
+      "Dane przechowywane w Niemczech",
+    ],
+    note: "Ceny w {currency}. App Store pokazuje cenę lokalną ustaloną przez Apple, z ewentualnymi lokalnymi podatkami. Darmowy plan nie wymaga abonamentu. Darmowe okresy próbne rozpoczynasz swoim Apple ID; zrezygnuj przed ich końcem (w ustawieniach iPhone'a), a nic nie zapłacisz. Plan roczny jest tańszy o {pct}% od miesięcznego.",
+    popular: "★ Najczęściej wybierany",
+    save: "Oszczędzasz {pct}%",
+    invoiceNo: "Faktura nr",
+    perMonth: "/mies.",
+    freeBilled: "Bez abonamentu, bez opłat",
+    billedYearly: "{price} raz w roku",
+    billedMonthly: "Płatność co miesiąc",
+    freePlan: "Plan darmowy",
+    freePlanDetail: "Bez abonamentu",
+    plan12: "Plan {plan}, 12 miesięcy",
+    discount: "Rabat roczny",
+    plan1: "Plan {plan}, 1 miesiąc",
+    total: "Razem",
+    mo: "/mies.",
+    yr: "/rok",
+    freeNote: "Bez znaku wodnego. Zmień plan dopiero, gdy wysyłasz więcej.",
+    trialYear: "{days} dni za darmo, potem {price} rocznie.",
+    trialMonth: "{days} dni za darmo, potem {price} miesięcznie.",
+    anchorStarter: "Mniej więcej jedna kawa w miesiącu.",
+    anchorPro: "Tylko {price} dziennie.",
+    anchorFree: "Bez abonamentu, bez danych płatniczych, bez haczyków.",
+    ctaFree: "Pobierz za darmo",
+    ctaTrial: "Wypróbuj przez {days} dni za darmo",
+    subFree: "Bez abonamentu, bez płatności",
+    subTrial: "Zrezygnuj przed końcem okresu próbnego i nic nie płacisz",
+    plans: {
+      free: {
+        description: "Wypróbuj na prawdziwych zleceniach",
+        features: [
+          "3 faktury na próbę, bez limitu czasu",
+          "Nieograniczona liczba klientów",
+          "1 profil firmy",
+          "Darmowe wzory",
+          "Eksport do PDF, bez znaku wodnego",
+        ],
+      },
+      starter: {
+        description: "Dla działalności dodatkowej",
+        features: [
+          "Do 10 faktur miesięcznie",
+          "Nieograniczona liczba klientów",
+          "1 profil firmy",
+          "Wszystkie wzory",
+          "Panel przychodów",
+        ],
+      },
+      pro: {
+        description: "Dla rozwijających się firm",
+        features: [
+          "Do 50 faktur miesięcznie",
+          "Nieograniczona liczba klientów",
+          "3 profile firmy",
+          "Wzory premium",
+          "Tryb porównania",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "Nasze obietnice",
+    titleA: "Bez sztuczek.",
+    titleB: "Po prostu faktury.",
+    lead: "Za co inne aplikacje do faktur dostają najgorsze opinie, tego obiecujemy nie robić.",
+    core: "Nasza najważniejsza obietnica",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "za pierwsze {n} faktury",
+        title: "Za darmo znaczy za darmo",
+        text: "Bez znaku wodnego i bez abonamentu. Żadnego okresu próbnego, który w połowie pierwszej faktury zamienia się w płatną ścianę.",
+        proof: "Zmień plan dopiero, gdy wysyłasz więcej",
+      },
+      {
+        fact: "0%",
+        factLabel: "Twoich płatności, nigdy",
+        title: "Nigdy nie dotykamy Twoich pieniędzy",
+        text: "Invoicor nie jest bramką płatności, więc nie może niczego wstrzymać, zablokować ani pobrać. Klient płaci bezpośrednio Tobie, przez Twój własny link.",
+        proof: "Jeden stały abonament, nic za fakturę",
+      },
+      {
+        fact: "100%",
+        factLabel: "wiadomości czytają ludzie",
+        title: "Prawdziwi ludzie, nie boty",
+        text: "Opinie z aplikacji i e-maile trafiają do ludzi, którzy tworzą Invoicor. Odpowiedź może zająć kilka dni; nic nie ginie w bocie.",
+        proof: "Bez automatów i gotowych odpowiedzi",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "Najczęstsze pytania",
+    title: "Pytania i odpowiedzi.",
+    items: [
+      {
+        question: "Czy Invoicor jest darmowy?",
+        answer:
+          "Tak. Darmowy plan obejmuje {n} faktury bez znaku wodnego i bez abonamentu, do tego darmowe wzory i eksport do PDF. Płatne plany zaczynają się od {price} miesięcznie, z {monthly} dniami za darmo ({yearly} dni w planach rocznych). Zrezygnujesz w każdej chwili przez Apple.",
+      },
+      {
+        question: "Czy faktura z Invoicor zastępuje fakturę w KSeF?",
+        answer:
+          "Nie. W Polsce faktury między firmami (B2B) wystawia się w Krajowym Systemie e-Faktur: obowiązkowo od 1 lutego 2026 r. dla największych firm i od 1 kwietnia 2026 r. dla pozostałych, a dla najmniejszych od 2027 r. Invoicor tworzy faktury w PDF i nie jest połączony z KSeF. Dla klientów prywatnych (konsumentów) faktura w PDF jest nadal w porządku. W razie wątpliwości zapytaj księgową.",
+      },
+      {
+        question: "Czy Invoicor pobiera prowizję od moich płatności?",
+        answer:
+          "Nie. Invoicor nie jest bramką płatności: nie przetwarza Twoich płatności, nie wstrzymuje ich i nie zabiera z nich nic, i nigdy nie stoi między Tobą a klientem. Płacisz stały abonament i tyle. Dodaj do faktury własny link do płatności (PayPal, Stripe) lub numer konta, a klient zapłaci bezpośrednio Tobie; obowiązują tylko opłaty tego dostawcy.",
+      },
+      {
+        question: "Czy mogę wystawiać faktury w innych walutach i językach?",
+        answer:
+          "Tak. Invoicor obsługuje 38 walut i 11 języków faktur, więc klient czyta fakturę w swoim języku i płaci w swojej walucie.",
+      },
+      {
+        question: "Czy Invoicor liczy VAT i rabaty?",
+        answer:
+          "Tak. Ustaw stawkę VAT (brutto lub netto) i rabat, a Invoicor policzy wartość netto, VAT i kwotę do zapłaty.",
+      },
+      {
+        question: "Jak szybko wystawię fakturę?",
+        answer:
+          "Gdy dane firmy, klienci i produkty są zapisane, nowa faktura to kilka stuknięć: wybierz klienta, dodaj zapisane pozycje, a suma i VAT policzą się same. Potem udostępnij PDF z iPhone'a przez e-mail, WhatsApp lub AirDrop.",
+      },
+      {
+        question: "Czy moje dane są bezpieczne?",
+        answer:
+          "Chronimy je standardowymi metodami: dane konta i faktury są przechowywane na serwerach w Niemczech, zgodnie z unijnymi zasadami ochrony danych (RODO), każde połączenie jest szyfrowane (HTTPS), hasła są przechowywane w postaci zaszyfrowanej i nigdy nie sprzedajemy Twoich danych. Żadna usługa online nie zagwarantuje pełnego bezpieczeństwa, ale robimy wszystko, by nikt nie uzyskał do nich dostępu bez zgody.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Wyślij swoją następną fakturę",
+    titleB: "jeszcze dziś.",
+    text: "{n} faktury za darmo. Bez znaku wodnego, bez abonamentu, bez prowizji od Twoich pieniędzy.",
+  },
+};

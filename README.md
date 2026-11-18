@@ -1,22 +1,102 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# invoicor-web
 
-# Run and deploy your AI Studio app
+The marketing website for [Invoicor](https://invoicor.com), the iPhone invoice app.
 
-This contains everything you need to run your app locally.
+Built with **Next.js 16** (App Router, TypeScript, Tailwind CSS v4) as a **static export**:
+`npm run build` produces a plain HTML/CSS/JS site in `out/`, which nginx serves on the VPS.
+Every page is pre-rendered, so search engines get the full content, titles and structured data.
 
-View your app in AI Studio: https://ai.studio/apps/a436eef2-7846-4bd5-8266-bd31239742b3
+- Plan and progress: [ROADMAP.md](ROADMAP.md)
+- How to put it live: [DEPLOY.md](DEPLOY.md)
+- How to add or edit SEO pages: [CONTENT.md](CONTENT.md)
+- Brand and SEO strategy: [BRAND.md](BRAND.md), [seo/](seo/) (keyword map, page blueprints, QA checklist, tracking)
 
-## Run Locally
+## Requirements
 
-**Prerequisites:**  Node.js
+- Node.js 20.9 or newer (`node -v`)
+- npm
 
+## Commands
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+| Command | What it does |
+|---|---|
+| `npm install` | Install dependencies (first time, or after `package.json` changes) |
+| `npm run dev` | Local dev server with hot reload at http://localhost:3000 |
+| `npm run build` | Production build into `out/` |
+| `npm run preview` | Serve `out/` locally the way nginx does (clean URLs, real 404s) at http://127.0.0.1:4173 |
+| `npm run lint` | ESLint |
+| `npm run typecheck` | TypeScript, no output |
+| `npm run format` | Format all code with Prettier |
+| `npm run content:check` | SEO rules for `content/*.json` (duplicates, word counts, broken links) |
+| `npm run test:unit` | Unit tests for pricing, SEO, consent and content (Vitest) |
+| `npm run test:site` | Checks the build in `out/`: every URL in `tests/urls.txt` exists with one H1, canonical and share image |
+| `npm run test:e2e` | Browser tests with your installed Chrome: page loads, consent banner, 404, accessibility (axe) |
+| `npm run api:types` | Regenerate `types/api.generated.ts` from the live API schema |
+| `npm run check` | everything above, in order: lint, typecheck, content:check, unit tests, build, site tests, browser tests (run before every deploy; CI runs the same) |
 
-`npm run sitemap`
+## Project structure
+
+```
+app/                     routes (one folder per URL) + site-wide files
+  layout.tsx             <html>, fonts, navbar, footer, analytics, consent (every page)
+  page.tsx               home page
+  templates/ industries/ compare/   hub page + [slug] detail pages
+  help/ affiliate/ terms/ privacy/
+  brand/                 hidden brand reference: every token and component (noindex)
+  not-found.tsx error.tsx  branded 404 (out/404.html) and error page
+  sitemap.ts robots.ts manifest.ts llms.txt/  generated at build time
+  og.png/route.tsx       default share image (out/og.png)
+  og/[collection]/[slug]/og.png/   per-page share images (templates, industries, compare)
+  icon.svg icon.png apple-icon.png  favicons, generated from the SVG logo
+  fonts/ fonts.ts        self-hosted Satoshi + Cabinet Grotesk
+  globals.css            imports Tailwind and styles/
+styles/
+  tokens.css             brand tokens: colors, gradients, type scale, shadows, spacing (BRAND.md §7)
+  effects.css            motion and paper effects (all off under reduced motion)
+components/
+  ui/                    UI kit: Button, Section, Heading, Card, Badge, Breadcrumbs, form parts,
+                         Accordion, Tabs, invoice parts (InvoicePaper, LineItems, Stamp)… see /brand
+  brand/                 Logo, LogoMark, AppleIcon (SVG)
+  layout/                Navbar, Footer, RevealObserver
+  sections/home/         home page sections (hero, pricing, fee calculator, FAQ…)
+  sections/content/      shared blocks for SEO pages (header, article + TOC, FAQ, hub, legal)
+  pricing/               PricingTable: every plan as an invoice
+  affiliate/ analytics/ consent/ seo/
+content/                 templates.json, industries.json, comparisons.json, pricing.json
+lib/
+  config.ts              every URL, ID and key in one place
+  content.ts pricing.ts  typed + validated access to content/*.json
+  seo.ts jsonld.ts og.tsx  page metadata, structured data, share images
+  api.ts                 build-time calls to the Invoicor API
+assets/og-fonts/         TTF copies of the site fonts for the share images (the renderer can't read woff2)
+public/                  static files copied as-is (icons, BingSiteAuth.xml, IndexNow key)
+scripts/                 content-check.mjs, indexnow.mjs, serve-out.mjs (local nginx-like server)
+tests/                   unit/ (incl. style guard), site/ (checks out/), e2e/ (Playwright), urls.txt
+types/                   api.generated.ts (from the API's OpenAPI schema)
+```
+
+## Adding or editing an SEO page
+
+See [CONTENT.md](CONTENT.md): add one JSON entry, run `npm run content:check`, done.
+
+## Configuration
+
+All values have production defaults in `lib/config.ts`, so no `.env` file is needed.
+To override something locally, copy `.env.example` to `.env.local`.
+
+## Git hooks and CI
+
+`npm install` sets up a pre-commit hook (husky + lint-staged): staged files are linted and
+formatted, content JSON is checked, and the project is type-checked. GitHub Actions
+(`.github/workflows/check.yml`) runs everything `npm run check` runs (lint, types, content rules,
+unit tests, build, built-site tests and browser tests with Chrome) on every push to `dev` and
+`main`. On `main` only, and only when all of that passed, its `deploy` job uploads the site to the
+VPS. Going live is one command, `bash deploy/deploy.sh`; the one-time setup is
+`bash deploy/setup.sh` ([DEPLOY.md](DEPLOY.md)).
+
+## Design system
+
+One source for the look: `styles/tokens.css` (colors, type, shadows, spacing) and `components/ui/`
+(buttons, cards, invoice parts). Run `npm run dev` and open http://localhost:3000/brand to see all
+of it. The style guard test fails on hard-coded colors or inline styles, so new pages stay
+consistent. Rules for using the brand: [BRAND.md](BRAND.md) section 7.

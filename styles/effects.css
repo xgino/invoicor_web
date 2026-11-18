@@ -1,0 +1,324 @@
+/*
+ * Brand effects and motion (ROADMAP chunks 17.2 and 25). Small, fast, transform and opacity only.
+ * Every animation here is switched off under prefers-reduced-motion (bottom of this file), and
+ * content is always visible without JavaScript: hidden start states only apply under `.js`.
+ */
+
+/* ── Page entrance: pure CSS, runs on first paint, no JavaScript needed ── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.anim-up {
+  animation: fade-up 0.7s var(--ease-brand) both;
+}
+.anim-phone {
+  animation: rise-in 0.9s 0.25s var(--ease-brand) both;
+}
+
+/* ── Scroll reveal (components/layout/RevealObserver.tsx). Delay: style={{ "--d": "0.1s" }}.
+ * Content is in the HTML for crawlers; the hidden start state only applies under `.js`, which
+ * app/layout.tsx removes again after 3 s if the observer never loads. ── */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s var(--d, 0s) var(--ease-brand),
+    transform 0.7s var(--d, 0s) var(--ease-brand);
+}
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Drawn lines: a path that draws itself when revealed (How it works) ── */
+.js .reveal.draw-x {
+  opacity: 1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.4s 0.2s var(--ease-brand);
+}
+.js .reveal.draw-y {
+  opacity: 1;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 1.4s 0.2s var(--ease-brand);
+}
+.js .reveal.draw-x.in,
+.js .reveal.draw-y.in {
+  transform: none;
+}
+
+/* ── Card with a gradient edge on hover (promises, featured cards) ── */
+.promise-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--brand-gradient);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.25s var(--ease-brand);
+  pointer-events: none;
+}
+.promise-card:hover::before {
+  opacity: 1;
+}
+.promise-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ── Hand-drawn lines: underline (Gradient underline), doodles (components/ui/doodles.tsx).
+ *    Underline under a headline word (Gradient underline="load" | "reveal" → .on-load / .on-reveal) ── */
+@keyframes draw-stroke {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.draw-underline path,
+.drawn path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.js .draw-underline.on-load path,
+.js .drawn.on-load path {
+  animation: draw-stroke 0.9s 0.7s var(--ease-brand) both;
+}
+.js .draw-underline.on-reveal path,
+.js .drawn.on-reveal path {
+  stroke-dashoffset: 1;
+}
+.js .reveal.in .draw-underline.on-reveal path,
+.js .reveal.in .drawn.on-reveal path {
+  animation: draw-stroke 0.9s 0.5s var(--ease-brand) both;
+}
+
+/* ── Faint moving dot grid (hero background) ── */
+@keyframes grid-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-24px, -24px, 0);
+  }
+}
+.dot-grid {
+  background-image: radial-gradient(rgb(28 25 23 / 0.09) 1px, transparent 1.2px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(70% 60% at 50% 30%, #000 30%, transparent 75%);
+  animation: grid-drift 6s linear infinite;
+}
+
+/* ── Accordion: smooth height where the browser supports it (Chrome 131+); snaps elsewhere ── */
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+  details::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size 0.3s var(--ease-brand),
+      content-visibility 0.3s allow-discrete;
+  }
+  details[open]::details-content {
+    block-size: auto;
+  }
+}
+
+/* ── Invoice paper: perforated (tear-off) bottom edge ── */
+.perforated-edge {
+  background: radial-gradient(circle at 6px 0, transparent 5px, var(--color-surface) 5.5px) 0 0 /
+    12px 8px repeat-x;
+  filter: drop-shadow(0 2px 1px rgb(68 32 10 / 0.06));
+}
+
+/* ── Stamp: lands once when scrolled into view (RevealObserver adds `.in`) ── */
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.8) rotate(var(--stamp-rotate, -8deg));
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.94) rotate(var(--stamp-rotate, -8deg));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(var(--stamp-rotate, -8deg));
+  }
+}
+.stamp {
+  transform: rotate(var(--stamp-rotate, -8deg));
+}
+.js .reveal.stamp {
+  opacity: 0;
+  transition: none;
+  transform: scale(1.8) rotate(var(--stamp-rotate, -8deg));
+}
+.js .reveal.stamp.in,
+.stamp-now {
+  animation: stamp-in 0.5s var(--d, 0.2s) var(--ease-brand) both;
+}
+
+/* ── Primary button sheen: one light sweep on hover ── */
+.sheen {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgb(255 255 255 / 0.28) 50%,
+    transparent 65%
+  );
+  transform: translateX(-110%);
+  transition: transform 0.7s var(--ease-brand);
+}
+.sheen:hover::after {
+  transform: translateX(110%);
+}
+
+/* ── Coffee steam (pricing anchor) ── */
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(2px) scaleY(0.8);
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-7px) scaleY(1.1);
+  }
+}
+.steam {
+  animation: steam 2.4s var(--d, 0s) ease-out infinite;
+  transform-origin: bottom;
+}
+
+/* ── Slow glow drift behind the hero ── */
+@keyframes glow-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, 2%, 0) scale(1.06);
+  }
+}
+.glow-drift {
+  animation: glow-drift 22s ease-in-out infinite;
+}
+
+/* ── Line items appearing one by one (hero invoice) ── */
+.js .reveal.line-in {
+  transform: translateY(8px);
+  transition:
+    opacity 0.45s var(--d, 0s) var(--ease-brand),
+    transform 0.45s var(--d, 0s) var(--ease-brand);
+}
+
+/* ── Gentle float (phone mockup) ── */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.float-soft {
+  animation: float-soft 7s ease-in-out infinite;
+}
+
+/* ── Price change in the billing switch ── */
+@keyframes price-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.price-in {
+  animation: price-in 0.3s var(--ease-brand) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .draw-underline path,
+  .js .reveal.in .draw-underline path,
+  .js .drawn path,
+  .js .reveal.in .drawn path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .dot-grid {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .js .reveal.stamp,
+  .js .reveal.stamp.in,
+  .stamp-now {
+    opacity: 1;
+    animation: none;
+    transform: rotate(var(--stamp-rotate, -8deg));
+  }
+  .steam,
+  .glow-drift,
+  .float-soft,
+  .price-in {
+    animation: none;
+  }
+  .steam {
+    opacity: 0.5;
+  }
+  .sheen::after {
+    display: none;
+  }
+}

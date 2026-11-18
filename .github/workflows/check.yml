@@ -1,0 +1,132 @@
+# Runs the same checks as `npm run check` on every push and pull request.
+# Browser tests use the Google Chrome that GitHub's Ubuntu runners have installed.
+# The deploy job (DEPLOY.md section F) runs only on a push to main, and only after every check passed:
+# it builds out/, uploads the files over SSH into the website folder on the VPS (e.g.
+# /var/www/invoicor.com/web), checks the live site and rolls back by itself if it fails.
+# The site is static: the VPS only needs nginx; no Node.js, no .env on the server. The API has its
+# own repo and deploy; this never touches it. Until the secrets exist, the job skips with a note.
+name: check
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+
+jobs:
+  check:
+    # A newer push cancels older checks of the same branch…
+    concurrency:
+      group: check-${{ github.ref }}
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run content:check
+      - run: npm run test:unit
+      - run: npm run build
+      - run: npm run test:site
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-traces
+          path: test-results/
+          retention-days: 7
+
+  deploy:
+    needs: check
+    # …but never a deploy that's running: deploys wait for each other.
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    # Only a push to main goes live (after every check above passed). dev and pull requests: checks only.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    env:
+      SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      SSH_TARGET: ${{ secrets.DEPLOY_SSH_TARGET }}
+      KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+      # The website folder on the VPS, e.g. /var/www/invoicor.com/web. Inside it: current/ (nginx root),
+      # new/ during an upload, prev/ the previous version. The deploy user may only write this folder.
+      WEB_PATH: ${{ secrets.DEPLOY_WEB_PATH }}
+      SITE: https://invoicor.com
+      # Repository variable, "true" once nginx serves the new site (set by `bash deploy/setup.sh launch`, DEPLOY.md F.3).
+      # Before that, a run only uploads: the live checks would test the old site.
+      LIVE: ${{ vars.PRODUCTION_LIVE == 'true' }}
+    steps:
+      - name: Deploy secrets set?
+        id: ready
+        run: |
+          if [ -z "$SSH_KEY" ] || [ -z "$SSH_TARGET" ] || [ -z "$KNOWN_HOSTS" ] || [ -z "$WEB_PATH" ]; then
+            echo "::notice::Deploy skipped: the secrets aren't set yet (DEPLOY.md section F)."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.ready.outputs.go == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.ready.outputs.go == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build
+        if: steps.ready.outputs.go == 'true'
+        env:
+          NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN: ${{ vars.APP_STORE_PROVIDER_TOKEN }}
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
+      - name: SSH key
+        if: steps.ready.outputs.go == 'true'
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Remember the live sitemap (for IndexNow)
+        if: steps.ready.outputs.go == 'true' && env.LIVE == 'true'
+        run: curl -s --max-time 15 "$SITE/sitemap.xml" -o /tmp/prev-sitemap.xml || true
+
+      - name: Upload and switch
+        if: steps.ready.outputs.go == 'true'
+        run: |
+          SSH="ssh -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes"
+          # new/ is uploaded next to current/, then swapped in by renaming: visitors never see a
+          # half-uploaded site, and the previous version stays as prev/.
+          rsync -az --delete -e "$SSH" out/ "$SSH_TARGET:$WEB_PATH/new/"
+          $SSH "$SSH_TARGET" "set -e; cd '$WEB_PATH'; rm -rf prev; if [ -d current ]; then mv current prev; fi; mv new current"
+
+      - name: Check the live site (roll back on failure)
+        if: steps.ready.outputs.go == 'true' && env.LIVE == 'true'
+        run: |
+          ok="$(curl -s -o /dev/null -w '%{http_code}' "$SITE/")"
+          page="$(curl -s -o /dev/null -w '%{http_code}' "$SITE/templates/plumbing")"
+          missing="$(curl -s -o /dev/null -w '%{http_code}' "$SITE/this-page-does-not-exist")"
+          echo "home -> $ok, a template page -> $page (expect 200), unknown page -> $missing (expect 404)"
+          if [ "$ok" != "200" ] || [ "$page" != "200" ] || [ "$missing" != "404" ]; then
+            echo "::error::The new version doesn't answer as expected. Rolling back to the previous one."
+            ssh -i "$HOME/.ssh/deploy_key" -o IdentitiesOnly=yes -o BatchMode=yes "$SSH_TARGET" \
+              "set -e; cd '$WEB_PATH'; test -d prev; mv current failed-\$(date +%Y%m%d-%H%M%S); mv prev current"
+            exit 1
+          fi
+
+      - name: Tell search engines what changed (IndexNow)
+        if: steps.ready.outputs.go == 'true' && env.LIVE == 'true'
+        run: node scripts/indexnow.mjs /tmp/prev-sitemap.xml out/sitemap.xml || true

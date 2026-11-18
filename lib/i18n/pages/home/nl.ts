@@ -1,0 +1,373 @@
+import type { HomeDict } from "./en";
+
+/** Home, Dutch (NL and Flanders). Informal "je", as Dutch apps write. */
+export const nl: HomeDict = {
+  meta: {
+    title: "Factuur app voor iPhone | Snel facturen maken | Invoicor",
+    description:
+      "Maak professionele facturen in seconden op je iPhone. 31 templates, 38 valuta, 11 talen. 3 facturen gratis en nooit kosten op je betalingen.",
+  },
+  hero: {
+    eyebrow: "Factuur-app voor iPhone",
+    titleA: "Professionele facturen, verstuurd",
+    titleB: "in seconden.",
+    lead: "Je bedrijfsgegevens, klanten en prijzen vullen zichzelf in. Kies een template, tik op versturen. Een strakke pdf in de taal en valuta van je klant, rechtstreeks vanaf je telefoon.",
+    cta: "Gratis downloaden voor iOS",
+    online: "Maak er online een",
+    androidQ: "Android?",
+    androidLink: "Komt binnenkort",
+    doodle: "klaar om te versturen",
+    promisesAria: "Wat je gratis krijgt",
+    promises: ["{n} facturen gratis", "Geen watermerk", "Geen abonnement nodig"],
+    sent: "Als pdf verstuurd per e-mail",
+  },
+  sample: {
+    number: "Factuur nr. 0042",
+    business: "Jansen Installatietechniek",
+    issued: "Vandaag verstuurd · betalen binnen 14 dagen",
+    stamp: "Betaald",
+    billTo: "Factuur aan",
+    client: "Sanne de Vries · Lindelaan 18, Utrecht",
+    clientName: "Sanne de Vries",
+    clientInitials: "SV",
+    items: [
+      { description: "Spoedservice", detail: "Zaterdag", short: "Spoedservice", amount: 95 },
+      {
+        description: "Arbeid, 2 uur",
+        detail: "Keukenkraan vervangen",
+        short: "Arbeid, 2 uur",
+        amount: 170,
+      },
+      {
+        description: "Kraan en koppelingen",
+        detail: "",
+        short: "Kraan en koppelingen",
+        amount: 213.5,
+      },
+    ],
+    subtotal: "Subtotaal",
+    taxLabel: "Btw 21%",
+    taxRate: 21,
+    total: "Te betalen",
+  },
+  trust: {
+    send: "Verstuur als pdf via",
+    pay: "Laat je betalen via je eigen link",
+    messages: "Berichten",
+    bank: "Overboeking",
+  },
+  proof: {
+    aria: "Invoicor in cijfers",
+    templates: "Factuurtemplates",
+    currencies: "Valuta",
+    languages: "Factuurtalen",
+    fees: "Kosten op je betalingen",
+    percent: "%",
+  },
+  templates: {
+    eyebrow: "31 templates · 21 gratis",
+    titleA: "Facturen die je klanten",
+    titleB: "serieus nemen.",
+    lead: "Geen spreadsheet-uitstraling. Je logo, een rustige opmaak en alle gegevens die een klant of boekhouder verwacht.",
+    browse: "Kies een template",
+    galleryAria: "Voorbeelden van factuurtemplates",
+    preview: "factuurtemplate, voorbeeld",
+  },
+  how: {
+    eyebrow: "Zo werkt het",
+    titleA: "Van klus geklaard tot",
+    titleB: "betaald.",
+    lead: "Je stelt je bedrijf één keer in. Daarna is elke factuur een paar tikken.",
+    step: "Stap",
+    steps: [
+      {
+        title: "Kies je klant",
+        text: "Kies een opgeslagen klant of voeg een nieuwe toe. Naam, adres en e-mail vullen zichzelf in.",
+      },
+      {
+        title: "Voeg je regels toe",
+        text: "Tik op opgeslagen producten of typ een regel. Btw, korting en totaal tellen meteen mee.",
+      },
+      {
+        title: "Verstuur de pdf",
+        text: "Deel hem via e-mail, WhatsApp, Berichten of AirDrop, met je betaallink erop.",
+      },
+      {
+        title: "Krijg betaald",
+        text: "Je klant betaalt jou direct. Markeer de factuur als betaald en zie in één oogopslag wat er nog openstaat.",
+      },
+    ],
+    savedClient: "Opgeslagen klant",
+    total: "Totaal",
+    paidToYou: "Aan jou betaald",
+  },
+  who: {
+    eyebrow: "Voor wie",
+    titleA: "Gemaakt voor mensen die liever",
+    titleB: "aan het werk zijn.",
+    lead: "Verstuur je facturen tussen de klussen door, vanaf je telefoon? Dan is Invoicor voor jou gemaakt.",
+    people: [
+      {
+        who: "Vakmensen",
+        examples: "Loodgieters, elektriciens, schoonmakers, hoveniers",
+        moment: "De klus is klaar en de klant staat naast je.",
+        gain: "Verstuur een professionele factuur vanaf de oprit, voordat je wegrijdt. Geen papierwerk meer 's avonds.",
+        scene: ["Klus klaar", "Factuur verstuurd"],
+      },
+      {
+        who: "Zzp'ers en freelancers",
+        examples: "Ontwerpers, fotografen, adviseurs, coaches",
+        moment: "Het project is opgeleverd en de klant zit in het buitenland.",
+        gain: "Factureer in hun taal en valuta, met een opmaak die net zo goed oogt als je werk.",
+        scene: ["Project opgeleverd", "Betaald in USD"],
+      },
+      {
+        who: "Kleine bedrijven",
+        examples: "Studio's, aannemers, ondernemers met meer dan één bedrijf",
+        moment: "Eind van de maand: meerdere klanten, misschien twee bedrijven.",
+        gain: "Tot 3 bedrijfsprofielen met Pro, elk met eigen logo en gegevens. Dupliceer de facturen van vorige maand met één tik.",
+        scene: ["Einde maand", "Alles verstuurd"],
+      },
+    ],
+    notAccountingA: "Geen boekhoudpakket.",
+    notAccountingB: "Gewoon facturen.",
+    notAccounting: [
+      "Geen grootboek, geen installatiewizard",
+      "Stuur de pdf's naar je boekhouder",
+      "Werkt op je iPhone, waar de klus ook is",
+    ],
+  },
+  app: {
+    eyebrow: "De app",
+    titleA: "Weet waar je geld is,",
+    titleB: "altijd.",
+    lead: "Invoicor is er niet alleen om te versturen. Elke factuur, klant en betaalstatus staat op één plek op je telefoon.",
+    points: [
+      "Betaald, openstaand en verstuurd in één oogopslag, per maand (Starter en Pro).",
+      "Elke factuur toont zijn status: concept, verstuurd, betaald of te laat.",
+      "Open later elke factuur en deel de pdf opnieuw met één tik.",
+      "Log in op een andere iPhone en alles staat er.",
+    ],
+    altDashboard:
+      "Invoicor-dashboard met betaalde en openstaande bedragen, omzetgrafiek per maand en recente facturen",
+    altSent: "Een verstuurde factuur in Invoicor, gemarkeerd als verstuurd",
+    demo: "Echte schermen uit de app (Engelstalig), met voorbeeldgegevens.",
+  },
+  features: {
+    eyebrow: "Alles wat een factuur nodig heeft",
+    title: "Gemaakt voor het werk, niet voor boekhouders.",
+    lead: "Geen grootboek, geen installatiewizard. De onderdelen van factureren die je echt gebruikt, goed gedaan.",
+    fast: "Snel",
+    fastText:
+      "Opgeslagen klanten en producten vullen zichzelf in. Totaal, btw en korting rekenen mee terwijl je typt. Dupliceer de factuur van vorige maand met één tik.",
+    paid: "Betaald",
+    sent: "Verstuurd",
+    draft: "Concept",
+    global: "Internationaal",
+    globalText:
+      "Factureer elke klant, waar ook ter wereld: 38 valuta en 11 factuurtalen. Je klant leest de factuur in zijn eigen taal.",
+    currenciesAria: "Een paar ondersteunde valuta",
+    languagesAria: "Een paar factuurtalen",
+    professional: "Professioneel",
+    professionalText:
+      "31 templates (21 gratis) met je logo. Tot 3 bedrijfsprofielen met Pro, en een omzetdashboard dat laat zien wat betaald is en wat nog openstaat.",
+    honest: "Eerlijk",
+    honestList: [
+      "3 facturen gratis, zonder watermerk",
+      "Geen abonnement nodig om te beginnen",
+      "0% van je betalingen, nooit",
+      "Gegevens opgeslagen in Duitsland (AVG)",
+      "Duidelijke prijzen, altijd opzegbaar",
+      "Elk bericht wordt door mensen gelezen",
+    ],
+  },
+  keep: {
+    eyebrow: "0% van je betalingen. Nooit.",
+    titleA: "Jij deed het werk.",
+    titleB: "Jij houdt het geld.",
+    lead: "Veel factuur-apps nemen een percentage van elke kaartbetaling, bovenop hun abonnement. Dat vinden wij niet eerlijk. Invoicor is geen betaaldienst: het maakt je factuur, jij zet je eigen betaallink erop en je klant betaalt jou direct.",
+    points: [
+      {
+        title: "Geen percentage, geen kosten per factuur",
+        text: "Je betaalt één vast abonnement. Wat je klant betaalt, is van jou.",
+      },
+      {
+        title: "Direct op je eigen rekening",
+        text: "Zet je eigen betaallink op de factuur. Het geld komt nooit langs ons, dus het kan niet worden vastgehouden of geblokkeerd.",
+      },
+      {
+        title: "Eerlijk erover",
+        text: "Gebruik je een link van PayPal of Stripe, dan rekenen zij hun eigen kosten, zoals overal. Invoicor rekent 0%.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0% kosten",
+    label: "Wat je overhoudt met Invoicor",
+    average: "Gemiddelde factuur",
+    perMonth: "Facturen per maand",
+    feeLabel: "Kosten die andere apps per betaling nemen",
+    marks: ["Laag", "Gebruikelijk", "Hoog"],
+    marksAria: "Voorbeelden van kostenniveaus",
+    keep: "Met Invoicor houd je over",
+    pocket: "extra in je zak, elk jaar",
+    perYear: "Je factureert per jaar",
+    wouldKeep: "Een app die {fee} neemt, houdt",
+    takes: "Invoicor neemt",
+    note: "Voorbeeld. Sommige factuur-apps nemen kosten van elke betaling bovenop hun abonnement; de tarieven verschillen. Zet je je eigen PayPal- of Stripe-link op de factuur, dan rekenen zij hun eigen kosten, zoals overal. Invoicor rekent niets.",
+  },
+  pricing: {
+    eyebrow: "Prijzen",
+    title: "Duidelijke prijzen. Niets van je betalingen.",
+    lead: "Begin gratis. Upgrade als je meer verstuurt. Altijd opzegbaar via Apple.",
+  },
+  table: {
+    monthly: "Maandelijks",
+    yearly: "Jaarlijks",
+    billYearly: "Jaarlijks betalen",
+    monthsFree: "{n} maanden gratis",
+    bestValue: "voordeligst",
+    everyPlan: "Bij elk abonnement inbegrepen",
+    everyList: [
+      "Onbeperkt klanten",
+      "Geen watermerk",
+      "Je eigen betaallink",
+      "0% kosten op je betalingen",
+      "Gegevens opgeslagen in Duitsland",
+    ],
+    note: "Prijzen in {currency}. De App Store toont je lokale prijs, vastgesteld door Apple, eventueel inclusief lokale belastingen. Voor het gratis abonnement heb je geen abonnement nodig. Gratis proefperiodes start je met je Apple ID; zeg je op voordat de proefperiode eindigt (in de instellingen van je iPhone), dan betaal je niets. Jaarlijks bespaar je {pct}% ten opzichte van maandelijks.",
+    popular: "★ Meest gekozen",
+    save: "Bespaar {pct}%",
+    invoiceNo: "Factuur nr.",
+    perMonth: "/maand",
+    freeBilled: "Geen abonnement, niets in rekening gebracht",
+    billedYearly: "Eén keer per jaar {price}",
+    billedMonthly: "Maandelijks gefactureerd",
+    freePlan: "Gratis abonnement",
+    freePlanDetail: "Geen abonnement nodig",
+    plan12: "{plan}, 12 maanden",
+    discount: "Jaarkorting",
+    plan1: "{plan}, 1 maand",
+    total: "Totaal",
+    mo: "/mnd",
+    yr: "/jaar",
+    freeNote: "Geen watermerk. Upgrade pas als je meer verstuurt.",
+    trialYear: "{days} dagen gratis proberen, daarna {price} per jaar.",
+    trialMonth: "{days} dagen gratis proberen, daarna {price} per maand.",
+    anchorStarter: "Ongeveer één kop koffie per maand.",
+    anchorPro: "Maar {price} per dag.",
+    anchorFree: "Geen abonnement, geen betaalgegevens, geen addertje.",
+    ctaFree: "Gratis downloaden",
+    ctaTrial: "Start {days} dagen gratis",
+    subFree: "Geen abonnement, geen betaling",
+    subTrial: "Zeg op voor het einde van de proefperiode en je betaalt niets",
+    plans: {
+      free: {
+        description: "Probeer het op echte klussen",
+        features: [
+          "3 facturen om te proberen, geen tijdslimiet",
+          "Onbeperkt klanten",
+          "1 bedrijfsprofiel",
+          "Gratis templates",
+          "Pdf-export, geen watermerk",
+        ],
+      },
+      starter: {
+        description: "Voor je bijbaan of zijproject",
+        features: [
+          "Tot 10 facturen per maand",
+          "Onbeperkt klanten",
+          "1 bedrijfsprofiel",
+          "Alle templates",
+          "Omzetdashboard",
+        ],
+      },
+      pro: {
+        description: "Voor groeiende bedrijven",
+        features: [
+          "Tot 50 facturen per maand",
+          "Onbeperkt klanten",
+          "3 bedrijfsprofielen",
+          "Premium templates",
+          "Vergelijkmodus",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "Onze beloftes",
+    titleA: "Geen trucjes.",
+    titleB: "Gewoon facturen.",
+    lead: "Waar andere factuur-apps de slechtste reviews voor krijgen, beloven wij niet te doen.",
+    core: "Onze kernbelofte",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "voor je eerste {n} facturen",
+        title: "Gratis is gratis",
+        text: "Geen watermerk en geen abonnement. Geen proefperiode die halverwege je eerste factuur in een betaalmuur verandert.",
+        proof: "Upgrade pas als je meer verstuurt",
+      },
+      {
+        fact: "0%",
+        factLabel: "van je betalingen, nooit",
+        title: "We komen nooit aan je geld",
+        text: "Invoicor is geen betaaldienst, dus het kan je geld niet vasthouden, blokkeren of er een deel van nemen. Je klant betaalt jou direct, via je eigen link.",
+        proof: "Eén vast abonnement, niets per factuur",
+      },
+      {
+        fact: "100%",
+        factLabel: "van de berichten gelezen door mensen",
+        title: "Echte mensen, geen bots",
+        text: "Feedback uit de app en e-mails komen bij de mensen die Invoicor bouwen. Een antwoord kan een paar dagen duren; er raakt niets zoek in een bot.",
+        proof: "Geen ticketrobots, geen standaardantwoorden",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "Veelgestelde vragen",
+    title: "Vragen, beantwoord.",
+    items: [
+      {
+        question: "Is Invoicor gratis?",
+        answer:
+          "Ja. Het gratis abonnement bevat {n} facturen zonder watermerk en zonder abonnement, plus gratis templates en pdf-export. Betaalde abonnementen beginnen bij {price} per maand, met {monthly} dagen gratis proberen ({yearly} dagen bij een jaarabonnement). Altijd opzegbaar via Apple.",
+      },
+      {
+        question: "Neemt Invoicor een deel van mijn betalingen?",
+        answer:
+          "Nee. Invoicor is geen betaaldienst: het verwerkt je betalingen niet, houdt ze niet vast en neemt er niets van, en het staat nooit tussen jou en je klant. Je betaalt een vast abonnement en dat is het. Zet je eigen betaallink (bijvoorbeeld een Tikkie, PayPal- of Stripe-link) of je IBAN op de factuur en je klant betaalt jou direct; alleen de kosten van die aanbieder zelf gelden.",
+      },
+      {
+        question: "Heb ik een betaalkaart nodig voor de proefperiode?",
+        answer:
+          "Niet voor het gratis abonnement: je eerste {n} facturen vragen geen abonnement en geen betaling. De gratis proefperiodes van Starter en Pro ({monthly} dagen maandelijks, {yearly} dagen jaarlijks) lopen via Apple: je start ze met je Apple ID, waar een betaalmethode aan gekoppeld is. Zeg je op voordat de proefperiode eindigt, dan betaal je niets. Invoicor ziet je kaart nooit.",
+      },
+      {
+        question: "Kan ik in andere valuta en talen factureren?",
+        answer:
+          "Ja. Invoicor ondersteunt 38 valuta en 11 factuurtalen, dus je klant leest de factuur in zijn eigen taal en betaalt in zijn eigen valuta.",
+      },
+      {
+        question: "Kan ik btw en mijn KvK-nummer op de factuur zetten?",
+        answer:
+          "Ja. Je stelt één btw-tarief per factuur in, inclusief of exclusief, en Invoicor rekent subtotaal, btw en totaal uit. In de gratis online factuurgenerator komen je btw-id, je KvK-nummer en het btw-id van je zakelijke klant op de factuur.",
+      },
+      {
+        question: "Moet ik in België e-facturen via Peppol sturen?",
+        answer:
+          "Voor zakelijke klanten in België wel: sinds 1 januari 2026 moeten facturen tussen Belgische bedrijven elektronisch via Peppol. Een pdf van Invoicor is dan niet genoeg als officiële factuur. Voor particulieren en voor klanten in Nederland en daarbuiten kun je de pdf gewoon gebruiken. Twijfel je, vraag het je boekhouder.",
+      },
+      {
+        question: "Zijn mijn gegevens veilig?",
+        answer:
+          "We beschermen ze met de gebruikelijke maatregelen: je account- en factuurgegevens staan op servers in Duitsland onder de Europese privacyregels (AVG), elke verbinding is versleuteld (HTTPS), wachtwoorden worden versleuteld opgeslagen en we verkopen je gegevens nooit. Geen enkele online dienst kan perfecte beveiliging beloven, maar we doen ons best om je gegevens te beschermen tegen toegang zonder toestemming.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Verstuur je volgende factuur",
+    titleB: "vandaag.",
+    text: "{n} facturen gratis. Geen watermerk, geen abonnement, geen deel van je geld.",
+  },
+};

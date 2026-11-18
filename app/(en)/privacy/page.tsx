@@ -1,0 +1,278 @@
+import type { Metadata } from "next";
+import { B, H, LEGAL_LINK, LegalPage, P, S } from "@/components/sections/content/legal";
+import { CONTACT_EMAIL } from "@/lib/config";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Privacy Policy | Invoicor",
+  description:
+    "How Invoicor collects, stores and protects your data: servers in Germany, GDPR rights, no selling of personal data, and the third parties we use.",
+  path: "/privacy",
+});
+
+export default function PrivacyPage() {
+  return (
+    <LegalPage
+      eyebrow="Privacy"
+      title="Privacy Policy"
+      intro={
+        <>
+          Last updated: November 18, 2026 &middot; Invoicor &middot; Operated from the Netherlands
+        </>
+      }
+    >
+      <S n="1" t="Our Core Principle">
+        <H>
+          We do not sell, rent, or trade your personal data or your clients&apos; data to
+          third-party advertisers, data brokers, or any other entity. The data we collect is used
+          exclusively to provide and improve the Service.
+        </H>
+        <P>
+          Invoicor is built on the principle that your financial data belongs to you. We collect
+          only what is necessary to operate the Service, and we are transparent about how we use it.
+        </P>
+      </S>
+
+      <S n="2" t="Who We Are">
+        <P>
+          Invoicor is operated from the Netherlands. For the purposes of the General Data Protection
+          Regulation (GDPR), Invoicor is the data controller for the personal data processed through
+          the Service. You can reach us at {CONTACT_EMAIL} for any privacy-related inquiries.
+        </P>
+      </S>
+
+      <S n="3" t="Data We Collect">
+        <P>
+          <B>Account data:</B> When you register, we collect your email address and a password,
+          which is stored hashed (scrambled, so nobody can read it). If you use Sign in with Apple
+          or Sign in with Google, that service gives us a verified email address (with Apple, a
+          private relay address if you choose to hide your email) and no password is stored.
+        </P>
+        <P>
+          <B>Business data:</B> Information you enter into your business profiles, including company
+          name, address, tax ID, banking details, and logo. This data is used to populate your
+          invoices.
+        </P>
+        <P>
+          <B>Client data:</B> Contact information for your clients that you enter into the app,
+          including names, email addresses, phone numbers, and addresses. This data is stored to
+          enable invoice creation.
+        </P>
+        <P>
+          <B>Invoice data:</B> The content of invoices you create, including line items, amounts,
+          dates, and payment status. This data is processed to render and deliver your invoices.
+        </P>
+        <P>
+          <B>Usage data:</B> We collect anonymized usage metrics such as which features are used,
+          how often invoices are created, and general app interaction patterns. This helps us
+          improve the Service. We do not track individual user behavior for advertising purposes.
+        </P>
+        <P>
+          <B>Device data:</B> When you submit feedback, we may collect your device model, OS
+          version, and app version to help diagnose issues. This data is only collected when you
+          explicitly submit feedback.
+        </P>
+      </S>
+
+      <S n="4" t="How We Use Your Data">
+        <P>We use your data exclusively for the following purposes:</P>
+        <P>
+          Providing the Service: creating, rendering, storing, and delivering your invoices and
+          managing your account. Improving the Service: understanding usage patterns to prioritize
+          features and fix issues. Communication: sending you important service updates, security
+          alerts, or responding to your inquiries. Legal compliance: fulfilling our obligations
+          under applicable law, including GDPR.
+        </P>
+        <P>
+          We do not use your data for targeted advertising, profiling, or automated decision-making.
+        </P>
+      </S>
+
+      <S n="5" t="Data Storage and Security">
+        <H>
+          Your account and invoice data (invoices, clients, business profiles) is stored on servers
+          in Germany, in the European Union, and handled under the GDPR.
+        </H>
+        <P>
+          Invoicor does not permanently store data on your iPhone. The app loads your data from our
+          servers over encrypted connections (HTTPS).
+        </P>
+        <P>
+          We use standard protection measures: every connection to our servers is encrypted (HTTPS),
+          passwords are stored hashed, sign-in uses secure tokens (or Sign in with Apple or Google),
+          and access to the servers is restricted to what is needed to run Invoicor.
+        </P>
+        <P>
+          <B>Free invoice generator (invoicor.com/free-invoice-generator):</B> the preview and the
+          PDF are created in your browser, so what you type is not sent to us. Your draft is kept in
+          your own browser (local storage) so you can continue later; &quot;Clear everything&quot;
+          deletes it. To show the template thumbnails, your browser loads sample invoices from our
+          server; those contain no data of yours.
+        </P>
+        <P>
+          No service connected to the internet can be made completely secure, so we cannot guarantee
+          that your data will never be accessed without permission. We work to prevent it, and if a
+          breach affecting your personal data happens, we will inform you and the authorities as the
+          law requires.
+        </P>
+      </S>
+
+      <S n="6" t="Third-Party Services">
+        <P>
+          To provide the Service, we integrate with the following third-party services. Each
+          operates under their own privacy policies:
+        </P>
+        <P>
+          <B>Apple (Authentication &amp; Payments):</B> If you use Sign in with Apple, Apple
+          authenticates your identity and shares basic profile information. All financial
+          transactions are processed by Apple through the App Store. We never see, process, or store
+          your payment information.
+        </P>
+        <P>
+          <B>Google (Sign in with Google):</B> If you choose Sign in with Google, Google confirms
+          your identity and shares your name and email address with us. Google does not receive your
+          invoice data.
+        </P>
+        <P>
+          <B>RevenueCat (Subscription Management):</B> We use RevenueCat to validate your
+          subscription status. RevenueCat receives anonymous app user IDs and purchase receipts.
+          They do not receive your email or personal details.
+        </P>
+        <P>
+          <B>Hosting Provider:</B> Our servers are hosted by a German infrastructure provider. They
+          process data on our behalf under a Data Processing Agreement (DPA) compliant with GDPR
+          Article 28.
+        </P>
+        <P>
+          <B>Website analytics (invoicor.com only, with your consent):</B> If you click
+          &quot;Accept&quot; in the cookie banner, our website uses Google Analytics 4 (Google LLC,
+          USA) and PostHog (PostHog Inc., US cloud) to measure which pages are visited and which
+          buttons are clicked. This website usage data is processed in the United States. Neither
+          service receives your account or invoice data from the app. If you click
+          &quot;Decline&quot;, neither is loaded.
+        </P>
+        <P>
+          <B>Android interest counter (invoicor.com/android only):</B> when you open that page, your
+          browser adds one to a public visit counter run by Abacus (abacus.jasoncameron.dev), a free
+          counter service. We send it no personal data, only the request to count. Like any website
+          you load, the service can see your IP address; it uses IP addresses to limit how often one
+          visitor can call it. It may be hosted outside the European Union. No cookie is set.
+        </P>
+        <P>
+          <B>Payment links on your invoices:</B> Invoicor does not process payments. If you add a
+          payment link or bank details to an invoice, your client uses that third-party service (for
+          example PayPal, Stripe, Wise or a bank) directly; its own privacy policy applies, and we
+          receive no payment data from it.
+        </P>
+        <P>
+          We do not share your data with advertising networks or data brokers, and we do not use
+          advertising cookies.
+        </P>
+      </S>
+
+      <S n="7" t="Data Retention">
+        <P>
+          We retain your data for as long as your account is active. If you delete your account, we
+          will permanently delete all your data from our servers within 30 days, except where we are
+          required by law to retain certain records (e.g., for tax or legal compliance purposes).
+        </P>
+        <P>
+          Anonymized, aggregated data that cannot be used to identify you may be retained
+          indefinitely for analytical purposes.
+        </P>
+      </S>
+
+      <S n="8" t="Your GDPR Rights">
+        <P>
+          Under the General Data Protection Regulation (GDPR), you have the following rights
+          regarding your personal data:
+        </P>
+        <P>
+          <B>Right of Access:</B> You can request a copy of all personal data we hold about you.{" "}
+          <B>Right to Rectification:</B> You can correct inaccurate data directly in the app or by
+          contacting us. <B>Right to Erasure:</B> You can delete your account and all associated
+          data at any time through the app settings. <B>Right to Data Portability:</B> You can
+          request your data in a machine-readable format. <B>Right to Restrict Processing:</B> You
+          can request that we limit how we use your data. <B>Right to Object:</B> You can object to
+          certain processing activities.
+        </P>
+        <P>
+          To exercise any of these rights, contact us at {CONTACT_EMAIL}. We will respond within 30
+          days as required by GDPR. If you believe your data protection rights have been violated,
+          you have the right to lodge a complaint with the Dutch Data Protection Authority
+          (Autoriteit Persoonsgegevens).
+        </P>
+      </S>
+
+      <S n="9" t="Children's Privacy">
+        <P>
+          The Service is not intended for use by anyone under the age of 18. We do not knowingly
+          collect personal data from minors. If we become aware that we have collected data from
+          someone under 18, we will take steps to delete it promptly.
+        </P>
+      </S>
+
+      <S n="10" t="International Data Transfers">
+        <P>
+          Your account and invoice data is stored and processed within the European Union (Germany).
+          It is not transferred outside the EU/EEA unless required by a third-party service (e.g.,
+          Apple&apos;s servers).
+        </P>
+        <P>
+          Website analytics on invoicor.com (Google Analytics and PostHog, only after you accept
+          cookies) are processed in the United States. These transfers rely on the EU–US Data
+          Privacy Framework and/or Standard Contractual Clauses.
+        </P>
+      </S>
+
+      <S n="11" t="Cookies and Tracking" id="cookies">
+        <P>
+          The Invoicor iOS app does not use cookies. Our website (invoicor.com) only sets analytics
+          cookies (Google Analytics and PostHog, both US services) after you click
+          &quot;Accept&quot; in the cookie banner. If you decline, no analytics scripts are loaded.
+          Your choice is saved in your browser, and you can change it any time with &quot;Cookie
+          settings&quot; at the bottom of every page. We do not use advertising cookies or
+          cross-site tracking.
+        </P>
+        <P>
+          <B>Language:</B> the website is available in 11 languages. On your first visit it opens
+          the page in your browser&apos;s language, if we have it, and remembers your language in
+          your browser&apos;s local storage (not a cookie, and never sent to us). Choosing a
+          language in the language menu replaces it.
+        </P>
+      </S>
+
+      <S n="12" t="Changes to This Policy">
+        <P>
+          We may update this Privacy Policy to reflect changes in our practices, services, or legal
+          requirements. When we make material changes, we will notify you through the app or via
+          email. We encourage you to review this page periodically. Your continued use of the
+          Service after changes constitutes your acceptance of the updated policy.
+        </P>
+      </S>
+
+      <S n="13" t="Contact">
+        <P>
+          For privacy inquiries, data requests, or concerns, contact us at{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} className={LEGAL_LINK}>
+            {CONTACT_EMAIL}
+          </a>
+          .
+        </P>
+        <P>Data Controller: Invoicor, the Netherlands.</P>
+        <P>
+          Supervisory Authority: Autoriteit Persoonsgegevens (Dutch Data Protection Authority),{" "}
+          <a
+            href="https://autoriteitpersoonsgegevens.nl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={LEGAL_LINK}
+          >
+            autoriteitpersoonsgegevens.nl
+          </a>
+          .
+        </P>
+      </S>
+    </LegalPage>
+  );
+}
