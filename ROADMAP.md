@@ -114,6 +114,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X15. 🟠 Have a lawyer review Terms and Privacy
 - [ ] X16. 🟠 Fix two claims in your App Store screenshots ("Estimates", "Trusted by businesses worldwide")
 - [ ] X17. 🟢 Send fresh app screenshots
+- [ ] X18. 🔴 Deploy the generator API (before the website shows the generator)
+- [ ] X19. 🟢 Turn on the bot check (Cloudflare Turnstile), optional
 
 **Stage P: Polish from your review (2026-11-18)** _(✅ P1–P20 done; open: lawyer review (X15), App Store screenshot fixes (X16), fresh screenshots (X17); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
@@ -138,8 +140,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P20. Plain, true security wording; Google sign-in in Privacy; positive trial line _(✅ 2026-11-18)_
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
-- [ ] 30. API: public render endpoint
-- [ ] 31. API: public PDF + watermark + abuse limits
+- [x] 30. API: public render endpoint _(✅ 2026-11-18, `invoicor_api` branch `feature/public-generator`)_
+- [x] 31. API: public PDF + watermark + abuse limits _(✅ 2026-11-18, same branch; Turnstile on with X19)_
 - [ ] 32. Generator page: form
 - [ ] 33. Generator page: live preview & template picker
 - [ ] 34. Generate flow, watermark reveal & signup handoff
@@ -936,6 +938,26 @@ the app (iPhone, light mode, realistic demo data, no personal data) look sharper
 template picker, an invoice preview, the share sheet. AirDrop them to your Mac and put them in
 `assets/app-screens/` (Claude converts and swaps them in).
 
+<a id="x18"></a>
+
+### X18. 🔴 Deploy the generator API _(≈ 20 min, before the website shows the generator)_
+**Why:** the website's free invoice generator calls two new API endpoints. They're on branch
+`feature/public-generator` in `invoicor_api`, tested (15 tests) but not deployed.
+**How:** follow `invoicor_api/docs/PUBLIC_GENERATOR.md`: merge the branch into `main`, pull on the
+server, run `python manage.py createcachetable` (rate-limit table), restart the API, and check that the
+`/api/` nginx block has `include proxy_params;` (so rate limits see real visitor IPs). Then the curl
+check in that file.
+
+<a id="x19"></a>
+
+### X19. 🟢 Turn on the bot check (Cloudflare Turnstile) _(≈ 10 min, optional)_
+**Why:** the rate limits already protect the API; Turnstile also stops scripted bots from burning
+the PDF quota. Free, privacy-friendly, usually invisible to people.
+**How:** Cloudflare dashboard → Turnstile → add site `invoicor.com` (mode "Managed"). Put the
+**secret key** in the API `.env` as `TURNSTILE_SECRET_KEY` and send Claude the **site key** (it's
+public; it goes into the website build as `NEXT_PUBLIC_TURNSTILE_SITE_KEY`). Claude then adds a line
+to the privacy policy.
+
 ---
 
 ## Stage P: Polish from your review (2026-11-18)
@@ -1105,7 +1127,23 @@ two things: does the answer answer the question, and is it true for the app.
 ---
 
 ## Stage G: Free invoice generator
-_Chunks 30–31 are in the **invoicor_api** (Django) repo and can start any time ⇄. Chunks 32+ need chunk 28 done._
+_Chunks 30–31 are in the **invoicor_api** (Django) repo, branch `feature/public-generator` (deploy guide:
+`invoicor_api/docs/PUBLIC_GENERATOR.md`). Chunks 32–35 are this website. **Deploy the API (X18) before
+the website goes live with the generator.**_
+
+**Your question (2026-11-18): how do we rate-limit safely?** A timer or disabled button on the website
+is only for a nice experience: anyone can call the API directly and skip the website. Real protection
+lives on the server:
+- **Typing costs nothing:** the form and totals run in the browser; no API call per keystroke.
+- **Live preview** (`public/render`) is cheap (the server fills a template): 120 per minute per visitor.
+- **PDF download** (`public/pdf`) is the expensive part (wkhtmltopdf): 10 per hour per visitor, plus
+  300 per hour for all visitors together, so a flood can't overload the server.
+- Counts live in a **shared database table** (all gunicorn workers count together), and Django reads
+  the visitor's **real IP** from nginx (`NUM_PROXIES=1`); otherwise every visitor would share one limit.
+- Input limits: free templates only, ≤ 10 line items (the app's free plan), ≤ 1 MB request, logo
+  PNG/JPEG ≤ 500 KB checked by its file signature, all text escaped, no local file access in the PDF.
+- Optional: Cloudflare Turnstile bot check on PDFs (X19) and an nginx `limit_req` outer layer.
+- On the website, the Generate button also cools down and explains a 429 in plain words (UX only).
 
 ### 30. API: public render endpoint
 **Goal:** visitors can get a filled invoice preview without an account.
@@ -1829,7 +1867,7 @@ _The open questions in one place. Each has a recommendation; write your answer i
 | D7 | **Brand strategy draft** (`BRAND.md`): positioning, audience, pillars, voice, tagline. | Review the draft, change what doesn't sound like you, then mark it approved. | 5, 15–25 | |
 | D8 | **Templates hub title.** Changed from the old title to "Free Invoice Templates by Industry \| Invoicor" during the migration. | Keep it: it targets what people search. Revert if you prefer the old one. | n/a | |
 | D9 | **Git history is 228 MB** (old `node_modules` and `dist` are still in history). | Optional: rewrite history with `git filter-repo` to shrink it. Needs a force-push and re-clone everywhere. Low priority. | n/a | |
-| D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | |
+| D10 | **Public generator backend** (chunks 30–31): a public render + PDF endpoint with watermark and rate limits in `invoicor_api`. | Yes. It's growth channel #2 in [R8](#r8-growth-model). Needs Django work, so plan it in the API repo. | 30–35 | ✅ **2026-11-18:** yes, build it (Stage G). API on branch `feature/public-generator` in `invoicor_api`; deploying it is X18. |
 | D12 | **"5 seconds" and "80% auto-fill"** were on the hero, stats band, FAQ and meta description, but nothing measures them. _Since 2026-11-18 the site says "in seconds" and no longer claims 80%; restore a number only after Y14._ | Keep only if a real test supports it (Y14); otherwise "in seconds" and drop the 80%. Unprovable numbers are what the honesty pillar argues against. | 19 | |
 | D13 | **Dark or light site?** The current landing page, navbar and footer are fully dark (`#09090b`) with indigo accents; the SEO pages are light. | Light only. B2B buyers trust bright, calm pages, and invoices are white paper. Keep the orange gradient for accents only. | R3, 15–25 | ✅ **2026-11-18:** light only, no dark sections (your call: dark scares B2B buyers off). |
 | D14 | **Raise prices?** Idea (2026-11-18): Starter $4.99 → $7.99, Pro $7.99 → $14.99, a new **Unlimited** tier at $19.99. You're early and in the red, and competitors charge around those prices. Discounts or not? | **Recommendation: raise, in one careful step, for new customers only.** (1) A $4.99 B2B tool reads as cheap; the premium redesign (17.2, Stage E) supports a higher price. (2) Keep an entry tier so the free → paid step stays easy: e.g. Starter $6.99–7.99. (3) Unlimited at $19.99 is sensible: heavy users care least about price. It needs an App Store product and API limits first, and "unlimited" may only appear once it's real (BRAND.md §10). (4) Existing subscribers keep their price (Apple lets you keep them on it). (5) No permanent discounts; use App Store introductory offers or the free trials. (6) Before deciding, look at trial → paid conversion and cost per install; if few people convert, the price isn't the main problem. Website change is small: edit `content/pricing.json` once the App Store prices change. | 20c, 48, 60 | |
