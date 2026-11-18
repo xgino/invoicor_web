@@ -77,3 +77,9 @@ export function yearlySaving(plan: Plan) {
 /** The smallest saving across paid plans, so a shared "save X%" label is true for every plan. */
 export const YEARLY_SAVING_PERCENT = Math.min(...PAID_PLANS.map((p) => yearlySaving(p).percent));
 export const YEARLY_MONTHS_FREE = Math.min(...PAID_PLANS.map((p) => yearlySaving(p).months));
+
+/** Price per day, from the real price: yearly ÷ 365, or monthly × 12 ÷ 365 (e.g. Pro yearly $0.22). */
+export function pricePerDay(plan: Plan, period: "monthly" | "yearly"): number {
+  const perYear = period === "yearly" ? plan.yearly : plan.monthly * 12;
+  return Math.round((perYear / 365) * 100) / 100;
+}

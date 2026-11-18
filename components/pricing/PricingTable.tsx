@@ -1,6 +1,6 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { Check, Gift, Sun } from "lucide-react";
 import { useState } from "react";
 import { BillingSwitch, type Period } from "@/components/ui/BillingSwitch";
 import { buttonClass } from "@/components/ui/Button";
@@ -21,6 +21,7 @@ import {
   YEARLY_MONTHS_FREE,
   YEARLY_SAVING_PERCENT,
   formatPrice,
+  pricePerDay,
   type Plan,
   yearlySaving,
 } from "@/lib/pricing";
@@ -165,7 +166,7 @@ function PlanInvoice({
 
         <p className="text-small text-muted mt-3 min-h-10">
           {free ? (
-            `${FREE_INVOICES} invoices, no watermark. Upgrade only if you need more.`
+            "No watermark. Upgrade only when you send more."
           ) : yearly ? (
             <>
               That&apos;s <Money>{formatPrice(saving.perMonth)}</Money> a month. {days}-day free
@@ -178,12 +179,21 @@ function PlanInvoice({
           )}
         </p>
 
-        {plan.id === "starter" && (
-          <p className="text-small text-brand-800 bg-brand-50 mt-3 flex items-center gap-2 rounded-lg px-3 py-2">
+        {/* One price anchor per plan, never repeated (ROADMAP P11) */}
+        <p className="text-small text-brand-800 bg-brand-50 mt-3 flex items-center gap-2 rounded-lg px-3 py-2">
+          {plan.id === "starter" ? (
             <CoffeeCup className="text-brand-700 size-5 shrink-0" />
-            Less than one coffee a month.
-          </p>
-        )}
+          ) : plan.id === "pro" ? (
+            <Sun aria-hidden className="text-brand-700 size-5 shrink-0" />
+          ) : (
+            <Gift aria-hidden className="text-brand-700 size-5 shrink-0" />
+          )}
+          {plan.id === "starter"
+            ? "About one coffee a month."
+            : plan.id === "pro"
+              ? `Just ${formatPrice(pricePerDay(plan, free ? "monthly" : period))} a day.`
+              : `Free for your first ${FREE_INVOICES} invoices, no time limit.`}
+        </p>
 
         <ul className="text-small mt-5 mb-6 space-y-2">
           {plan.features.map((f) => (

@@ -9,6 +9,7 @@ import {
   trialNote,
   YEARLY_MONTHS_FREE,
   YEARLY_SAVING_PERCENT,
+  pricePerDay,
   yearlySaving,
 } from "@/lib/pricing";
 
@@ -64,5 +65,12 @@ describe("yearly saving", () => {
   it("only claims what every plan delivers", () => {
     expect(YEARLY_SAVING_PERCENT).toBe(16);
     expect(YEARLY_MONTHS_FREE).toBe(2);
+  });
+});
+
+describe("price per day", () => {
+  it("comes from the real price", () => {
+    expect(pricePerDay(getPlan("pro"), "yearly")).toBe(0.22);
+    expect(pricePerDay(getPlan("pro"), "monthly")).toBe(0.26);
   });
 });
