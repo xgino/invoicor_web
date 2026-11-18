@@ -1,6 +1,7 @@
 import { BarChart3, CircleCheck, FileText, RefreshCw } from "lucide-react";
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { IPhoneFrame } from "@/components/ui/IPhoneFrame";
 import { QrDownload } from "@/components/ui/QrDownload";
@@ -46,6 +47,7 @@ export function AppPreview() {
           </ul>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <AppStoreBadge campaign="app_preview" />
+            <AndroidButton campaign="app_preview" />
             <QrDownload campaign="qr_app_preview" />
           </div>
         </div>

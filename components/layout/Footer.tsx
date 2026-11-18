@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { AFFILIATE } from "@/components/affiliate/config";
 import { Logo } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
+import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
@@ -75,7 +76,10 @@ export function Footer() {
               Professional invoices from your iPhone, for freelancers and small businesses. No fees
               on your payments, ever.
             </p>
-            <AppStoreBadge campaign="footer" className="mt-6" />
+            <div className="mt-6 flex flex-wrap gap-3">
+              <AppStoreBadge campaign="footer" />
+              <AndroidButton campaign="footer" />
+            </div>
             <p className="text-small text-muted mt-6 flex items-center gap-2">
               <ShieldCheck aria-hidden className="text-brand-700 size-4 shrink-0" />
               Your app data is stored in Germany.

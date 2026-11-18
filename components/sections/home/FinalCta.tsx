@@ -1,3 +1,4 @@
+import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { QrDownload } from "@/components/ui/QrDownload";
 import { Container, Gradient, Heading, Section, Text } from "@/components/ui/layout";
@@ -16,6 +17,7 @@ export function FinalCta() {
         </Text>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-5">
           <AppStoreBadge campaign="final" />
+          <AndroidButton campaign="final" />
           <QrDownload campaign="qr_final" />
         </div>
       </Container>

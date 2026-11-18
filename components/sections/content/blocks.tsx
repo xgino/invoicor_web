@@ -1,6 +1,7 @@
 import { CircleCheck, CircleX, Info, Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
 import { Accordion } from "@/components/ui/Accordion";
+import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge, Breadcrumbs } from "@/components/ui/content";
 import { QrDownload } from "@/components/ui/QrDownload";
 import { cx } from "@/components/ui/cx";
@@ -235,6 +236,7 @@ export function ClosingCta({
           <>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
               <AppStoreBadge campaign={campaign} />
+              <AndroidButton campaign={campaign} />
               <QrDownload campaign={`qr_${campaign}`} />
             </div>
             <p className="text-small text-subtle mt-4">

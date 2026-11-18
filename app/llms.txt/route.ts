@@ -29,6 +29,7 @@ ${list([
   { title: "Invoicing guides by industry", path: "/industries" },
   { title: "Invoicor compared with other invoice apps", path: "/compare" },
   { title: "Help and FAQ", path: "/help" },
+  { title: "Android (coming soon)", path: "/android" },
 ])}
 
 ## Invoice templates

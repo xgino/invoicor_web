@@ -56,6 +56,17 @@ export function Hero() {
               Create one online <ArrowRight aria-hidden className="size-4" />
             </Link>
           </div>
+          <p className="text-small text-muted mt-4">
+            On Android?{" "}
+            <Link
+              href="/android"
+              data-track="android_click"
+              data-track-section="hero"
+              className="text-brand-700 focus-visible:focus-ring rounded font-bold underline-offset-4 hover:underline"
+            >
+              It&apos;s coming soon
+            </Link>
+          </p>
           {/* Hand-drawn pointer to the invoice (desktop) */}
           <div
             aria-hidden

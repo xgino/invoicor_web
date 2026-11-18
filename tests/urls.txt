@@ -36,6 +36,7 @@
 /compare/bonsai
 /compare/stripe-invoices
 /help
+/android
 /affiliate
 /terms
 /privacy

@@ -13,6 +13,7 @@ export const PAGE_TYPES = {
   "compare hub": "/compare",
   compare: "/compare/quickbooks",
   help: "/help",
+  android: "/android",
   affiliate: "/affiliate",
   privacy: "/privacy",
   terms: "/terms",
@@ -20,9 +21,13 @@ export const PAGE_TYPES = {
 
 const ANALYTICS = /googletagmanager\.com|google-analytics\.com|posthog\.com/;
 
+/** The Android visit counter: never touched by tests unless a test stubs it itself. */
+const COUNTER = /abacus\.jasoncameron\.dev/;
+
 /** Blocks analytics requests (tests never send data) and records which were attempted. */
 export async function trackAnalytics(page: Page) {
   const attempted: string[] = [];
+  await page.route(COUNTER, (route) => route.abort());
   await page.route(ANALYTICS, (route) => {
     attempted.push(route.request().url());
     return route.abort();

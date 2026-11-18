@@ -152,6 +152,13 @@ export default function PrivacyPage() {
           &quot;Decline&quot;, neither is loaded.
         </P>
         <P>
+          <B>Android interest counter (invoicor.com/android only):</B> when you open that page, your
+          browser adds one to a public visit counter run by Abacus (abacus.jasoncameron.dev), a free
+          counter service. We send it no personal data, only the request to count. Like any website
+          you load, the service can see your IP address; it uses IP addresses to limit how often one
+          visitor can call it. It may be hosted outside the European Union. No cookie is set.
+        </P>
+        <P>
           <B>Payment links on your invoices:</B> Invoicor does not process payments. If you add a
           payment link or bank details to an invoice, your client uses that third-party service (for
           example PayPal, Stripe, Wise or a bank) directly; its own privacy policy applies, and we

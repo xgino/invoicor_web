@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/compare", CONTENT_UPDATED_AT.comparisons),
     ...getComparisons().map((c) => page(`/compare/${c.slug}`, CONTENT_UPDATED_AT.comparisons)),
     page("/help", CONTENT_UPDATED_AT.site),
+    page("/android", CONTENT_UPDATED_AT.site),
     page("/affiliate", CONTENT_UPDATED_AT.site),
     page("/terms", CONTENT_UPDATED_AT.legal),
     page("/privacy", CONTENT_UPDATED_AT.privacy),

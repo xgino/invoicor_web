@@ -1272,6 +1272,27 @@ preview was already filled in the browser (33a), so the browser now turns that s
   FAQ). The app's PDFs have real text. Typing and downloading cost the server nothing, so the
   rate-limit worries from Stage G no longer apply to the website.
 
+### 35d. Android: coming soon, with a visit counter (2026-11-18)
+**Why:** there's no Android app yet, but you're working on one. Android visitors get an honest
+“coming soon” page, a way to use Invoicor today (the free web generator), and every visit is
+counted as a simple signal of how many people want it.
+
+- [x] a. “Android · Coming soon” button next to the App Store badge (home app preview, final CTA,
+  every page's closing CTA, footer) and an “On Android? It's coming soon” link under the home hero.
+  No Google Play badge: that's only allowed for a real listing.
+- [x] b. `/android`: says we're working on it (no date promised), points Android users to the free
+  generator, iPhone users to the App Store, and shows the live counter. In the sitemap and `llms.txt`.
+- [x] c. Counter: every page view adds one (your choice), stored by **Abacus**
+  (`abacus.jasoncameron.dev`, free, counter `invoicor-web/android-page`). The label says “visits”,
+  not people. If the service is down, the number is just left out. Automated browsers (tests, many
+  bots) only read it, and every e2e test blocks it, so CI never inflates it.
+- [x] d. Privacy policy §6: the counter service, that it sees the visitor's IP like any website, may
+  be outside the EU, no cookie.
+- [x] e. Tracking: `android_click` with the `section` it came from (see `seo/TRACKING.md`).
+- ➜ Keep the counter's **admin key** safe (password manager). It's the only way to reset or delete
+  the counter (`Authorization: Bearer <key>`); it is not in this repo. The counter is kept as long
+  as it's visited at least once every 6 months.
+
 ---
 
 ## Stage H: Languages
