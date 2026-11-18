@@ -134,12 +134,28 @@ Today the main site doesn't link to it, and it isn't in the keyword plan._
 
 _The original plan, still valid. Details below in [Planned chunks](#planned-chunks-details)._
 
-**Stage H: Languages** (after the launch has settled)
-- [ ] 36. Translation setup & language switcher
-- [ ] 37. Auto-detect language (banner, never a redirect)
-- [ ] 38. German
-- [ ] 39. Spanish
-- [ ] 40. French, Portuguese, Italian, Dutch
+**Stage H: Languages, all 11 app languages** (your choices 2026-11-18: all 11 at once, switch
+automatically once, everything translated). 36 and 37 are done (see Done); still open:
+- [ ] **H3** 🤖 The free generator in 11 languages: the form, preview, download panel and picker
+  (~130 strings), its 1,250-word guide written per country (local required invoice fields, e.g.
+  German *Pflichtangaben*, French *mentions obligatoires*), and local defaults (currency, date
+  format, invoice language). URLs are already chosen (`GENERATOR_SLUGS` in `lib/i18n/routes.ts`:
+  `/de/rechnung-erstellen`, `/nl/gratis-factuur-maken`, `/fr/creer-une-facture`…). Until then the
+  menus link to the English generator with the invoice language preset (`?lang=de`).
+- [ ] **H4** 👥 The 60 SEO pages, 3 hubs and Help in 10 languages (~800,000 words). Plan: per
+  language, keyword research first (local search words, not translations), then a translation
+  pipeline into `content/{locale}/*.json` with local examples and rules, `content:check` and the
+  claim tests per language, and a native-speaker review of a sample before publishing. A page
+  only appears in a language once its JSON exists. 👤 Decide: Claude writes them in batches over
+  several sessions, or a scripted pipeline with the Claude API (needs an API key and budget).
+- [ ] **H5** 👤 Native-speaker review: you for Dutch; for the other 9 a freelance reviewer per
+  language (or trusted users). Start with the home page and the e-invoicing FAQs (they state
+  local rules: SDI, KSeF, certified software in Portugal, E-Rechnung, Peppol).
+- [ ] **H6** 🤖 After the launch: Search Console per language (impressions on `/de`, `/fr`…),
+  hreflang errors report, and which languages earn traffic first; translate those pages first.
+- [ ] **H7** 👤 Germany: an *Impressum* is legally required for business sites aimed at Germany
+  (company name, address, contact, register and VAT number). Part of X7 (company details).
+- Legal pages (Privacy, Terms) stay English as the binding version; the translated pages say so.
 
 **Stage I: Scale & grow**
 - [ ] 41. Performance & security hardening
@@ -203,6 +219,13 @@ invoice now".
 # Part 2: Done
 
 _One line per finished item, newest first. Full details: [the archive](docs/roadmap-archive-2026-11-18.md)._
+
+### Stage H: Languages, steps 1–2 (2026-11-18)
+- [x] 36. **Language system** for all 11 app languages (en, nl, de, fr, es, it, pt, pl, sv, da, nb): English stays at `/` (no URL changes, rankings safe); every other language has its own URLs with translated slugs (`lib/i18n/routes.ts`); two root layouts (`app/(en)`, `app/[locale]`) for the right `<html lang>`; hreflang + x-default on every translated page and in the sitemap; branded 404 via `global-not-found`. A page only exists in a language once it's really translated.
+- [x] 36e. **Language switcher**: globe menu in the navbar, full list in the footer, languages in their own names, same page in the other language (or its home), choice remembered.
+- [x] 37. **Automatic switch once** (your choice): on the very first visit, the browser language decides; remembered, so the switcher always wins; never for bots, previews or test browsers; stays on the current host. Privacy policy updated (local storage, no cookie).
+- [x] 38–40 (part). **Home, Android page, menu, footer, cookie banner, sticky bar and badges in all 11 languages**, written per country, not word-for-word: a local sample invoice (business, client, VAT rate, currency and number format), local search phrasing in titles, the polite form where business software uses it (DE, FR), Apple's own badge wording, and an honest local FAQ about each country's invoicing rules (Kleinunternehmer and E-Rechnung, micro-entrepreneur and e-invoicing, IRPF and VeriFactu, SDI, certified software in Portugal, KSeF, Peppol in Belgium, F-skatt and ROT, CVR, org.nr. MVA). Prices stay in USD with the "App Store shows your local price" note.
+- [x] Tests: translations cover all 11 languages, plan features keep pricing.json's numbers, lists and placeholders match English, sample invoices keep proportions, URLs round-trip, and browser tests for the switch, the switcher and hreflang.
 
 ### E1. pSEO to 20 templates, 20 industries, 20 compares (2026-11-18)
 
