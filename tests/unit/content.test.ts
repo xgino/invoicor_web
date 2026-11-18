@@ -2,9 +2,9 @@ import { describe, expect, it } from "vitest";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
 
 describe("content", () => {
-  it("loads all 30 pages with valid, unique slugs", () => {
+  it("loads all 60 pages with valid, unique slugs", () => {
     for (const list of [getTemplates(), getIndustries(), getComparisons()]) {
-      expect(list).toHaveLength(10);
+      expect(list).toHaveLength(20);
       const slugs = list.map((e) => e.slug);
       expect(new Set(slugs).size).toBe(slugs.length);
     }

@@ -35,8 +35,6 @@ url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_po
 /compare/bonsai,live,compare,bonsai alternative,bonsai vs invoicor; apps like bonsai,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/stripe-invoices,live,compare,stripe invoicing alternative,stripe invoicing vs invoicor; apps like stripe invoicing,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/invoice-simple,planned,compare,invoice simple alternative,invoice simple vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
-/compare/invoice-fly,planned,compare,invoice fly alternative,invoice fly vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
-/compare/bookipi,planned,compare,bookipi alternative,bookipi vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
 /help,live,support,invoicor help,invoicor faq,support,24,,
 /affiliate,live,program,invoicor affiliate program,invoice app affiliate program,program,24 / 59,,
 /about,planned,trust,about invoicor,,brand / trust,24,,E-E-A-T
@@ -59,3 +57,33 @@ url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_po
 /templates/invoice-template-pdf,planned,template (file format),invoice template pdf,,download,53,,Big-volume quick wins
 /free-receipt-generator,planned,generator,free receipt generator,,tool (do),44,,
 /free-estimate-generator,planned,generator,free estimate generator,,tool (do),44,,
+/templates/electrician,live,template,electrician invoice template,electrical invoice template; electrician invoice example,template (download/fill),36+ (2026-11-18),,Takes 'electrician invoice template' over from /industries/electricians
+/templates/construction,live,template,construction invoice template,contractor invoice template; progress billing invoice,template (download/fill),36+ (2026-11-18),,
+/templates/roofing,live,template,roofing invoice template,roofer invoice template; roof replacement invoice,template (download/fill),36+ (2026-11-18),,
+/templates/painting,live,template,painting invoice template,painter invoice template; house painting invoice,template (download/fill),36+ (2026-11-18),,
+/templates/web-development,live,template,web development invoice template,web developer invoice template; freelance developer invoice,template (download/fill),36+ (2026-11-18),,
+/templates/personal-training,live,template,personal trainer invoice template,personal training invoice; fitness coach invoice,template (download/fill),36+ (2026-11-18),,Takes 'personal trainer invoice template' over from /industries/personal-trainers
+/templates/tutoring,live,template,tutoring invoice template,tutor invoice template; private lesson invoice,template (download/fill),36+ (2026-11-18),,
+/templates/catering,live,template,catering invoice template,catering invoice example; event catering invoice,template (download/fill),36+ (2026-11-18),,
+/templates/moving,live,template,moving company invoice template,movers invoice template; moving invoice,template (download/fill),36+ (2026-11-18),,
+/templates/pest-control,live,template,pest control invoice template,exterminator invoice template,template (download/fill),36+ (2026-11-18),,
+/industries/roofers,live,industry,roofing invoice app,roofing invoicing software; roofer billing app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/roofing
+/industries/painters,live,industry,invoice app for painters,painting contractor invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/painting
+/industries/web-developers,live,industry,invoice app for freelance developers,invoicing for web developers,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/web-development
+/industries/tutors,live,industry,invoice app for tutors,tutoring billing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/tutoring
+/industries/caterers,live,industry,invoice app for caterers,catering invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/catering
+/industries/movers,live,industry,invoice app for movers,moving company invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/moving
+/industries/pest-control,live,industry,pest control invoicing software,pest control invoice app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/pest-control
+/industries/virtual-assistants,live,industry,invoice app for virtual assistants,va invoicing software,software (commercial),36+ (2026-11-18),,
+/industries/pet-care,live,industry,invoice app for dog walkers,pet sitting invoice app; dog grooming invoice,software (commercial),36+ (2026-11-18),,
+/industries/hair-makeup-artists,live,industry,invoice app for makeup artists,hair stylist invoice app; bridal makeup invoice,software (commercial),36+ (2026-11-18),,
+/compare/invoice-fly,live,compare,invoice fly alternative,invoice fly pricing; invoice fly vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/bookipi,live,compare,bookipi alternative,bookipi pricing; bookipi vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/joist,live,compare,joist alternative,joist pricing; joist vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/jobber,live,compare,jobber alternative,jobber pricing; jobber vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/housecall-pro,live,compare,housecall pro alternative,housecall pro pricing; housecall pro vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/invoice-ninja,live,compare,invoice ninja alternative,invoice ninja pricing; invoice ninja vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/harvest,live,compare,harvest alternative,harvest pricing; harvest vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/servicem8,live,compare,servicem8 alternative,servicem8 pricing; servicem8 vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/billdu,live,compare,billdu alternative,billdu pricing; billdu vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/compare/zervant,live,compare,zervant alternative,zervant pricing; zervant vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18

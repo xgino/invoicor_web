@@ -76,7 +76,7 @@ here; the old number is in brackets._
 |---|---|---|
 | X8 | 🟢 Approve the brand draft [D7, Y5] | Read [BRAND.md](BRAND.md) §1–6, change what doesn't sound like you, mark it "Approved". |
 | X10 | 🟢 App Store provider token [Y6] | App Store Connect → App Analytics → Campaigns → copy `pt=`. Then installs per page show up. |
-| X12 | 🟢 OK for more compare pages | Invoice Simple, Invoice Fly, Bookipi, Joist, Invoice Home. Say "go"; same fact check as X11. |
+| X12 | 🟢 Check 4 competitors by hand | Invoice Fly, Bookipi and Joist are live (E1). **Invoice Simple and PayPal block automated reading, Moon Invoice and Invoice Home show no prices in their page text**, so they can't be sourced by Claude. Open their pricing pages in a browser and send the plans and prices (or screenshots); Claude writes the pages. |
 | X14 | 🟢 Small decisions that change page text [Y14, Y15] | D12 (time a real invoice: "5 seconds"?) and D14 (prices). See [Decisions](#3-decisions-still-open). |
 | X17 | 🟢 Fresh app screenshots | Dashboard, new invoice, template picker, preview, share sheet → `assets/app-screens/`. |
 | X18 | 🟡 Deploy the API template fixes | Branch `feature/public-generator` in `invoicor_api`: VAT ID, registration number, client email/phone, item details on their own line, 2-decimal money **in the app's PDFs**. Merge, `createcachetable`, restart, check one app PDF. The website doesn't need it. |
@@ -98,6 +98,11 @@ _No input needed unless noted. In order._
 - [ ] **S1-o** A real image of the filled-in template on each template page (Google Images + a reason to stay). Merges chunk 54a.
 - [ ] **S1-p** If "air conditioning invoice" / "heating and cooling invoice" grow, a dedicated section on `/templates/hvac` first.
 - [ ] **S1-q** Lawn care and electricians rank on page 5–6 for "… invoice app": track after S1-k; needs trust signals (reviews 50, profiles 51, links 57).
+
+**E1 follow-ups** (the 30 new pages, see [E1](#e1-pseo-to-20-templates-20-industries-20-compares-2026-11-18)):
+- [ ] **E1-a** **Measure in ~3 months (around 2027-02-18, or 3 months after X5):** per new page, impressions, average position and clicks in Search Console; and `template_use` / `gen_example` events per template in PostHog. Improve the 5 weakest the same way as S1 (titles and FAQs for the searches they show up for).
+- [ ] **E1-b** Re-check the 10 new competitors' prices every 3 months (they change): Invoice Fly, Bookipi, Joist, Jobber, Housecall Pro, Invoice Ninja, Harvest, ServiceM8, Billdu, Zervant. Update `pricing_them_subtext` and the FAQ, with the new date.
+- [ ] **E1-c** "Unlimited clients on every plan" is now used on 4 compare pages (from `content/pricing.json`, decision D1). Confirm it in the app/API and add it to the BRAND.md §10 fact sheet (closes S1-m).
 
 **After the launch:**
 - [ ] **X9** Fill in current positions in `seo/keyword-map.csv` and propose 10 priority keywords with 6-month targets. _After X2._
@@ -198,6 +203,23 @@ invoice now".
 # Part 2: Done
 
 _One line per finished item, newest first. Full details: [the archive](docs/roadmap-archive-2026-11-18.md)._
+
+### E1. pSEO to 20 templates, 20 industries, 20 compares (2026-11-18)
+
+30 new pages, each for a search the site didn't cover yet, with the same structure as the S1-upgraded pages
+(example invoice that opens in the generator, keyword H1, FAQs, "Updated" date, cross-links):
+
+| Type | New pages |
+|---|---|
+| Templates | electrician, construction (progress billing), roofing, painting, web development, personal training, tutoring, catering, moving, pest control |
+| Industries | roofers, painters, web developers, tutors, caterers, movers, pest control, virtual assistants, pet care, hair & makeup artists |
+| Compares | Invoice Fly, Bookipi, Joist, Jobber, Housecall Pro, Invoice Ninja, Harvest, ServiceM8, Billdu, Zervant |
+
+- [x] Every template example adds up (checked line by line), and opens filled in via "Use this template free". New templates have no "Which file format?" section (no Word/Excel promises).
+- [x] Template ↔ industry pairs: 7 new pairs, and the electrician, construction and personal training templates give the existing electricians, general contractors and personal trainers pages a template at last.
+- [x] Compare facts read from each competitor's own pricing page on 2026-11-18 and dated on the page. Where they're stronger (estimates, scheduling, Android, teams), the page says so. 5 comparison rows I couldn't source were replaced by sourced ones.
+- [x] Old pages link to the new ones (related links on 10 templates, 8 industries and 8 compares); 30 rows added to `seo/keyword-map.csv`; `tests/urls.txt` protects all 72 URLs.
+- [x] `content:check`: 60 pages, 0 errors, 0 warnings (every page ≥ 500 words, no near-duplicates, titles ≤ 60, descriptions ≤ 155). The claim tests cover all 60 pages.
 
 ### S1. Search Console round 1 (2026-11-18)
 

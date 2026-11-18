@@ -135,6 +135,10 @@
       {
         "name": "Freelance Design",
         "slug": "freelance-design"
+      },
+      {
+        "name": "Catering",
+        "slug": "catering"
       }
     ],
     "industry": "photographers-videographers"
@@ -277,6 +281,10 @@
       {
         "name": "Handyman",
         "slug": "handyman"
+      },
+      {
+        "name": "Electrician",
+        "slug": "electrician"
       }
     ],
     "industry": "plumbers-hvac"
@@ -405,6 +413,10 @@
       {
         "name": "Handyman",
         "slug": "handyman"
+      },
+      {
+        "name": "Electrician",
+        "slug": "electrician"
       }
     ],
     "industry": "plumbers-hvac"
@@ -523,6 +535,10 @@
       {
         "name": "Photography",
         "slug": "photography"
+      },
+      {
+        "name": "Web development",
+        "slug": "web-development"
       }
     ],
     "industry": "freelance-designers"
@@ -635,6 +651,10 @@
       {
         "name": "Plumbing",
         "slug": "plumbing"
+      },
+      {
+        "name": "Painting",
+        "slug": "painting"
       }
     ],
     "industry": "general-contractors"
@@ -757,6 +777,10 @@
       {
         "name": "Freelance Design",
         "slug": "freelance-design"
+      },
+      {
+        "name": "Catering",
+        "slug": "catering"
       }
     ],
     "industry": "photographers-videographers"
@@ -873,6 +897,10 @@
       {
         "name": "Cleaning Services",
         "slug": "cleaning-services"
+      },
+      {
+        "name": "Pest control",
+        "slug": "pest-control"
       }
     ],
     "industry": "landscaping-lawn-care"
@@ -987,6 +1015,10 @@
       {
         "name": "Photography",
         "slug": "photography"
+      },
+      {
+        "name": "Tutoring",
+        "slug": "tutoring"
       }
     ],
     "industry": "consultants-coaches"
@@ -1095,6 +1127,10 @@
       {
         "name": "Handyman",
         "slug": "handyman"
+      },
+      {
+        "name": "Moving",
+        "slug": "moving"
       }
     ],
     "industry": "cleaning-services"
@@ -1211,8 +1247,1292 @@
       {
         "name": "Handyman",
         "slug": "handyman"
+      },
+      {
+        "name": "Moving",
+        "slug": "moving"
       }
     ],
     "industry": "auto-detailing-mechanics"
+  },
+  {
+    "slug": "electrician",
+    "niche": "Electrician",
+    "industry": "electricians",
+    "title": "Electrician Invoice Template & Example (Free PDF) | Invoicor",
+    "meta_description": "Free electrician invoice template with a filled-in example. Itemize labor, wire, breakers and permit fees, then fill it in online and download a PDF.",
+    "h1": "Free Electrician Invoice Template & Example",
+    "subtitle": "A practical template for residential and light-commercial electricians: how to bill service calls, labor, materials and permits so the customer understands the price and the inspector's paperwork lines up.",
+    "intro_paragraph": "Electrical work is expensive in the customer's eyes and invisible once the drywall is closed. The invoice is the only lasting record of what you installed, which circuit it's on and which permit covered it. A clear electrician invoice gets paid faster, survives a home sale or an insurance claim years later, and shows that a licensed professional did the job.",
+    "what_to_include_intro": "Homeowners compare your invoice with the quote they remember, so the structure should make each part of the price easy to recognize. These are the fields that matter most on an electrical invoice.",
+    "req_1_title": "Service call or trip charge first",
+    "req_1_text": "If you charge for showing up and diagnosing, put it on the first line with a clear name ('Service call and troubleshooting'). Customers accept a diagnostic fee much more easily when it's named and separate than when it's hidden inside the hourly rate.",
+    "req_2_title": "Labor with hours and rate",
+    "req_2_text": "Show the hours and your hourly rate, or a flat rate per task ('Install dedicated 20A circuit'). Both work; mixing them on one job confuses people. If an apprentice worked alongside you, list their hours on a separate line at their own rate.",
+    "req_3_title": "Materials by item, not 'misc. parts'",
+    "req_3_text": "Name the breaker size, the cable type and length, the number of receptacles or fixtures. A line like '12/2 NM cable, 50 ft' answers the question before it's asked, and it gives the next electrician a head start if they ever work on the same circuit.",
+    "req_4_title": "Permit and inspection fees",
+    "req_4_text": "When you pull a permit for the customer, list the fee as its own line and mention the permit number in the notes. It shows the work was done to code and lets the homeowner find the permit record later.",
+    "req_5_title": "Where the work was done",
+    "req_5_text": "Write the circuits or rooms affected ('Kitchen counter receptacles, circuit 14'). Updating the panel directory and repeating it on the invoice saves the customer a confusing afternoon the next time a breaker trips.",
+    "req_6_title": "License number and warranty",
+    "req_6_text": "Put your electrical contractor license number and your workmanship warranty (for example, one year on labor) in the footer. Many states and provinces require the license number on invoices and estimates; it's also a strong trust signal.",
+    "what_to_include_outro": "With these six parts in place, the invoice reads as a short report of the job: what was wrong, what you did, what it cost and how long you stand behind it.",
+    "sample_breakdown_title": "Electrician invoice example",
+    "sample_breakdown_intro": "A typical residential job: adding a dedicated circuit and two GFCI receptacles in a garage workshop, with a permit. Sales tax applies to the materials in this example; check your own state's rules.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Service call and troubleshooting",
+        "qty": "1",
+        "rate": "$95.00",
+        "amount": "$95.00"
+      },
+      {
+        "description": "Labor: new 20A circuit and 2 GFCI receptacles (3 hrs)",
+        "qty": "3",
+        "rate": "$110.00/hr",
+        "amount": "$330.00"
+      },
+      {
+        "description": "20A single-pole breaker",
+        "qty": "1",
+        "rate": "$18.00",
+        "amount": "$18.00"
+      },
+      {
+        "description": "12/2 NM cable",
+        "qty": "50 ft",
+        "rate": "$0.85/ft",
+        "amount": "$42.50"
+      },
+      {
+        "description": "GFCI receptacles, 20A, weather-resistant",
+        "qty": "2",
+        "rate": "$24.00",
+        "amount": "$48.00"
+      },
+      {
+        "description": "Electrical permit (city, pass-through)",
+        "qty": "1",
+        "rate": "$75.00",
+        "amount": "$75.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$608.50",
+    "sample_breakdown_tax_label": "Sales tax (7% on $108.50 materials)",
+    "sample_breakdown_tax": "$7.60",
+    "sample_breakdown_balance": "$616.10",
+    "sample_breakdown_notes": "Work on circuit 14 (garage). Panel directory updated. Permit #E-2026-0412, inspection passed. 1-year warranty on workmanship. License #EC-XXXXX. Payment due within 7 days.",
+    "industry_notes_title": "Electrical billing notes",
+    "industry_notes": [
+      {
+        "title": "Flat rate or time and materials",
+        "text": "Flat-rate pricing (a fixed price per task) is easier to sell and protects you on jobs that go smoothly; time and materials protects you on old houses where nothing is where it should be. Pick one per job, write it on the quote, and invoice the same way, so the invoice never surprises anyone."
+      },
+      {
+        "title": "Materials markup",
+        "text": "Marking up materials is normal: you source them, carry them and warranty the installation. You don't have to show your wholesale cost. If a customer asks, explain that the price includes sourcing and the warranty rather than editing the line on the spot."
+      },
+      {
+        "title": "Tax on materials and labor",
+        "text": "In many US states materials are taxable and installation labor isn't, but the rules differ by state and by job type (repair versus new construction). Invoicor applies one tax rate per invoice, so when only part of a job is taxable, many electricians either include the tax in the material prices or bill taxable materials on a separate invoice."
+      },
+      {
+        "title": "Commercial clients and PO numbers",
+        "text": "Property managers and general contractors often can't pay an invoice without their purchase order number. Ask for it before you start and put it at the top of the notes; it's the most common reason commercial invoices sit unpaid."
+      }
+    ],
+    "mistakes_title": "Three invoicing mistakes electricians make",
+    "mistakes": [
+      {
+        "title": "One line for the whole job",
+        "text": "'Electrical work: $616' invites a phone call. The same total split into a service call, labor, named parts and a permit reads as fair, because the customer can see where each dollar went."
+      },
+      {
+        "title": "Forgetting the permit fee",
+        "text": "Permits are easy to pay up front and forget to bill. Add the permit line the moment you pull it, so it can't slip through when you write the invoice at the end of a long day."
+      },
+      {
+        "title": "Invoicing days later",
+        "text": "The best moment to get paid is in the driveway, right after you show the customer the working circuit. Every day you wait, the work feels smaller to them and the invoice feels bigger."
+      }
+    ],
+    "pro_tip": "Take a photo of the open panel and the new breaker before you close up, and text it to the customer with the invoice PDF. It costs you ten seconds, answers 'what did you actually do?' before it's asked, and helps the next electrician who opens that panel.",
+    "faqs": [
+      {
+        "question": "What should an electrician invoice include?",
+        "answer": "Your business name and license number, the customer and job address, the date and invoice number, a service call or diagnostic fee if you charge one, labor (hours and rate or a flat price per task), each material with its size or length, any permit fees, tax, the total and your payment terms. Add the circuits worked on and your warranty in the notes."
+      },
+      {
+        "question": "Should electricians charge for a service call?",
+        "answer": "Most do, because travel and diagnosis take real time even when the fix is small. Name it clearly on the first line. Some electricians credit the service call against the repair if the customer goes ahead with the work; if you do, show it as a discount so the customer sees the gesture."
+      },
+      {
+        "question": "How do I invoice an electrical job with a permit?",
+        "answer": "Add the permit fee as its own line (a pass-through cost, often without markup) and put the permit number and the inspection result in the notes. If the inspection is scheduled after you're paid, say so in the payment terms."
+      },
+      {
+        "question": "Do I have to show my material costs?",
+        "answer": "No. You can bill materials at your price, which normally includes a markup for sourcing and warranty. What you should show is what was installed: the breaker size, cable type and length, and the number of devices."
+      },
+      {
+        "question": "Can I use this electrician invoice template for free?",
+        "answer": "Yes. Open the example in the free online generator, change the lines to your job, and download it as a PDF (with a small invoicor.com line at the bottom). For invoicing every week, the Invoicor iPhone app saves your customers and standard items and has no watermark; the first 3 invoices are free."
+      }
+    ],
+    "related": [
+      {
+        "name": "HVAC",
+        "slug": "hvac"
+      },
+      {
+        "name": "Construction",
+        "slug": "construction"
+      }
+    ]
+  },
+  {
+    "slug": "construction",
+    "niche": "Construction",
+    "industry": "general-contractors",
+    "title": "Construction Invoice Template & Example (Free) | Invoicor",
+    "meta_description": "Free construction invoice template with a progress billing example: deposits, completed phases, change orders and materials. Fill it in online as a PDF.",
+    "h1": "Free Construction Invoice Template & Example",
+    "subtitle": "For general contractors and remodelers who bill in stages: how to invoice deposits, completed phases, change orders and materials so every payment matches the contract and the client never has to guess what's left.",
+    "intro_paragraph": "Construction jobs rarely end with one invoice. A kitchen remodel or an extension is billed in stages: a deposit when the contract is signed, then payments as phases are finished, then a final invoice at handover. The job of each invoice is to show where the project stands, what this payment covers and how much is still to come.",
+    "what_to_include_intro": "Clients pay progress invoices quickly when they can match every line to the contract. These are the parts a construction invoice needs.",
+    "req_1_title": "Project name, address and contract reference",
+    "req_1_text": "Name the project ('Smith kitchen remodel, 14 Oak Lane') and the contract or quote it belongs to. On longer jobs, also number the invoice in the payment schedule ('Progress invoice 2 of 4'), so nobody wonders whether something was billed twice.",
+    "req_2_title": "Completed work by phase",
+    "req_2_text": "Bill what is actually finished: 'Demolition and haul-away, complete' or 'Drywall, 60% complete'. Percent-complete lines are standard on progress invoices and protect both sides: the client never pays far ahead of the work, and you're paid as you go.",
+    "req_3_title": "Materials and allowances",
+    "req_3_text": "List materials bought for the job, especially big items like cabinets or windows that need a deposit to order. If the contract had allowances (a budget for tiles or fixtures), show what was spent against them.",
+    "req_4_title": "Change orders as their own lines",
+    "req_4_text": "Every change the client asked for after signing gets its own line with the change order number and a short description ('CO #1: add outlet in pantry'). It's the single most important habit for avoiding arguments at the end of a job.",
+    "req_5_title": "Deposits and earlier payments",
+    "req_5_text": "Subtract the deposit and earlier progress payments so the balance due is unmistakable. A client who sees the running total pays the current invoice; a client who has to work it out puts it on hold.",
+    "req_6_title": "License, insurance and lien information",
+    "req_6_text": "Show your contractor license number and insurance, and follow your state's rules on lien notices or waivers. Commercial clients often ask for a lien waiver with each payment, so keep the form ready.",
+    "what_to_include_outro": "Laid out this way, each invoice doubles as a progress report: what's done, what changed and what remains, in the client's own contract language.",
+    "sample_breakdown_title": "Construction progress invoice example",
+    "sample_breakdown_intro": "Progress invoice 2 of 4 for a kitchen remodel. The client paid a $3,000 deposit at signing; this invoice covers the work completed since then, one change order and the cabinet deposit.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Demolition and haul-away (complete)",
+        "qty": "1",
+        "rate": "$1,800.00",
+        "amount": "$1,800.00"
+      },
+      {
+        "description": "Framing and rough-in, plumbing and electrical (complete)",
+        "qty": "1",
+        "rate": "$4,200.00",
+        "amount": "$4,200.00"
+      },
+      {
+        "description": "Drywall: hang, tape and finish (60% of $3,000)",
+        "qty": "0.6",
+        "rate": "$3,000.00",
+        "amount": "$1,800.00"
+      },
+      {
+        "description": "Cabinet order deposit (supplier invoice attached)",
+        "qty": "1",
+        "rate": "$2,500.00",
+        "amount": "$2,500.00"
+      },
+      {
+        "description": "Change order #1: added pantry outlet",
+        "qty": "1",
+        "rate": "$350.00",
+        "amount": "$350.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$10,650.00",
+    "sample_breakdown_deposit_label": "Deposit received at signing",
+    "sample_breakdown_deposit": "-$3,000.00",
+    "sample_breakdown_balance": "$7,650.00",
+    "sample_breakdown_notes": "Contract #2026-031, progress invoice 2 of 4. Remaining after this payment: $11,850 (drywall balance, cabinets install, finishes, final clean). Payment due within 10 days. License #GC-XXXXX, insured.",
+    "industry_notes_title": "Construction billing notes",
+    "industry_notes": [
+      {
+        "title": "Payment schedules",
+        "text": "Agree the schedule in the contract: for example 20% at signing, payments at rough-in and drywall, and the rest at completion. Then each invoice simply follows the schedule. Many states cap the deposit on home improvement contracts, so check your local rule before you set it."
+      },
+      {
+        "title": "Retainage on commercial jobs",
+        "text": "Commercial contracts often hold back retainage (commonly 5–10%) from each progress payment until the project is complete. Show the retained amount on every invoice and keep a running total, so the final release invoice is a formality."
+      },
+      {
+        "title": "Subcontractor costs",
+        "text": "You can bill your subcontractors' work as your own line items; the client's contract is with you. Keep their invoices in your records, because you'll need them if a change order or warranty claim is ever disputed."
+      },
+      {
+        "title": "Taxes",
+        "text": "Sales tax on construction varies widely: some states tax materials, some the whole contract, some treat repairs and new construction differently. Ask your accountant once, then set up your invoices the same way on every job."
+      }
+    ],
+    "mistakes_title": "Three mistakes contractors make on invoices",
+    "mistakes": [
+      {
+        "title": "Billing change orders at the end",
+        "text": "A change approved in week two and billed in week twelve feels like a surprise. Put each change order on the next progress invoice, while everyone still remembers asking for it."
+      },
+      {
+        "title": "Getting far ahead of the work",
+        "text": "Billing 70% when the job is 40% done is the fastest way to lose a client's trust and the hardest position to defend in a dispute. Bill what is complete, and use the deposit to cover materials."
+      },
+      {
+        "title": "No running balance",
+        "text": "Without 'remaining after this payment', every invoice raises the question of what's still coming. One line in the notes answers it."
+      }
+    ],
+    "pro_tip": "Send the progress invoice from the site, the moment you walk the client through the finished phase. They've just seen the work with their own eyes, which is when a payment request feels most fair.",
+    "faqs": [
+      {
+        "question": "What is a progress invoice in construction?",
+        "answer": "A progress invoice bills the part of the project that's finished, usually by phase or as a percentage of each line in the contract. The client pays as the work advances instead of all at the end, and each invoice shows what's done, what changed and what remains."
+      },
+      {
+        "question": "How do I invoice a change order?",
+        "answer": "Add it as its own line with the change order number, a short description and the agreed price, on the next progress invoice after the client approved it in writing. Never fold it into an existing line."
+      },
+      {
+        "question": "How much deposit can a contractor ask for?",
+        "answer": "It depends on where you work: several US states limit deposits on home improvement contracts (for example to 10% or a fixed amount), while others leave it to the contract. Check your state's rule, put the deposit in the contract and show it as received on every invoice."
+      },
+      {
+        "question": "What's retainage on a construction invoice?",
+        "answer": "Retainage is a percentage (often 5–10%) the client holds back from each progress payment until the project is complete and accepted. Show the amount retained on each invoice and bill its release at the end."
+      },
+      {
+        "question": "Can I make construction invoices on my phone?",
+        "answer": "Yes. Use the free online generator for a one-off invoice, or the Invoicor iPhone app to save clients and your usual line items. Invoicor doesn't track percent-complete across invoices for you, so keep the contract schedule next to it and copy each phase's figure."
+      }
+    ],
+    "related": [
+      {
+        "name": "Handyman",
+        "slug": "handyman"
+      },
+      {
+        "name": "Roofing",
+        "slug": "roofing"
+      }
+    ]
+  },
+  {
+    "slug": "roofing",
+    "niche": "Roofing",
+    "industry": "roofers",
+    "title": "Roofing Invoice Template & Example (Free PDF) | Invoicor",
+    "meta_description": "Free roofing invoice template with a full roof replacement example: squares, tear-off, shingles, underlayment, flashing and disposal. Download a PDF.",
+    "h1": "Free Roofing Invoice Template & Example",
+    "subtitle": "How to invoice roof replacements and repairs in squares, with tear-off, materials, flashing and disposal on separate lines, so homeowners and insurance adjusters can follow every number.",
+    "intro_paragraph": "A roof is one of the largest bills a homeowner ever pays, and often an insurance company reads the invoice too. That makes clarity your best sales tool. A roofing invoice that speaks in squares, names every material and separates tear-off from installation gets approved and paid; a lump sum gets questioned.",
+    "what_to_include_intro": "Roofing invoices are read by homeowners, adjusters and sometimes mortgage lenders. These fields make yours easy for all three.",
+    "req_1_title": "Measurements in squares",
+    "req_1_text": "Bill roofing by the square (100 square feet) and state how many squares the roof measured, plus the waste factor on materials. It's the unit adjusters use, so their estimate and your invoice can be compared line by line.",
+    "req_2_title": "Tear-off separate from installation",
+    "req_2_text": "Removing the old roof is its own job with its own price, especially with more than one layer. Separate lines for tear-off and installation also make it obvious if an extra layer was found once the work started.",
+    "req_3_title": "Every material named",
+    "req_3_text": "Shingle type and brand, underlayment, ice and water shield, drip edge, flashing, vents and ridge cap. Named materials prove you used what you quoted, and they're needed for the manufacturer's warranty registration.",
+    "req_4_title": "Decking and other surprises",
+    "req_4_text": "Rotten decking is only visible after tear-off. Agree a price per sheet in the contract and invoice the number of sheets replaced as a separate line, with photos, so the extra cost is documented, not argued.",
+    "req_5_title": "Disposal and permits",
+    "req_5_text": "Dumpster, haul-away and landfill fees, plus the permit if your area needs one. These are real costs that homeowners forget, so name them instead of spreading them over other lines.",
+    "req_6_title": "Warranty terms",
+    "req_6_text": "State your workmanship warranty (years and what it covers) and that the manufacturer's material warranty applies separately. Homeowners selling the house later will look for exactly this line.",
+    "what_to_include_outro": "An invoice built like this is also your best defense if a claim or a complaint ever comes back: it records what was found, what was replaced and what was promised.",
+    "sample_breakdown_title": "Roofing invoice example",
+    "sample_breakdown_intro": "A full replacement of a 24-square asphalt roof (26 squares of shingles with waste). The homeowner paid a $3,000 deposit when signing. Material prices include sales tax in this example.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Tear-off, 1 layer asphalt shingles",
+        "qty": "24 sq",
+        "rate": "$95.00/sq",
+        "amount": "$2,280.00"
+      },
+      {
+        "description": "Architectural shingles incl. 8% waste",
+        "qty": "26 sq",
+        "rate": "$135.00/sq",
+        "amount": "$3,510.00"
+      },
+      {
+        "description": "Synthetic underlayment",
+        "qty": "24 sq",
+        "rate": "$28.00/sq",
+        "amount": "$672.00"
+      },
+      {
+        "description": "Ice and water shield, eaves and valleys",
+        "qty": "4 rolls",
+        "rate": "$110.00",
+        "amount": "$440.00"
+      },
+      {
+        "description": "Drip edge, step flashing and ridge vent",
+        "qty": "1",
+        "rate": "$385.00",
+        "amount": "$385.00"
+      },
+      {
+        "description": "Installation labor",
+        "qty": "24 sq",
+        "rate": "$120.00/sq",
+        "amount": "$2,880.00"
+      },
+      {
+        "description": "Dumpster, haul-away and disposal",
+        "qty": "1",
+        "rate": "$450.00",
+        "amount": "$450.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$10,617.00",
+    "sample_breakdown_deposit_label": "Deposit received",
+    "sample_breakdown_deposit": "-$3,000.00",
+    "sample_breakdown_balance": "$7,617.00",
+    "sample_breakdown_notes": "No decking replacement needed. 10-year workmanship warranty; manufacturer's shingle warranty registered separately. Permit #R-2026-118. Balance due on completion. License #RC-XXXXX, insured.",
+    "industry_notes_title": "Roofing billing notes",
+    "industry_notes": [
+      {
+        "title": "Insurance claims",
+        "text": "On storm jobs the insurer pays based on its own estimate, often in two parts (the actual cash value first, the rest after the work is done). Use the adjuster's line descriptions where you can, keep the claim number in the notes and invoice the homeowner for their deductible separately."
+      },
+      {
+        "title": "Deposits and material orders",
+        "text": "Most roofers take a deposit to order materials. Show it as received on the final invoice. Some states limit deposits on home improvement contracts, so check your local rule."
+      },
+      {
+        "title": "Repairs versus replacements",
+        "text": "For small repairs a flat price ('Replace 12 shingles and reseal pipe boot') is clearer than squares. Add a photo of the damaged area to the message you send with the invoice."
+      }
+    ],
+    "mistakes_title": "Three mistakes roofers make on invoices",
+    "mistakes": [
+      {
+        "title": "Lump-sum pricing",
+        "text": "'Roof replacement: $10,617' gives an adjuster nothing to approve and a homeowner nothing to check. Squares and named materials do."
+      },
+      {
+        "title": "Undocumented extras",
+        "text": "Extra decking or a second layer without photos and a per-unit price from the contract becomes a negotiation. With both, it's just another line."
+      },
+      {
+        "title": "No warranty line",
+        "text": "Homeowners keep roofing invoices for years. If the warranty isn't on it, you'll be explaining it again when they sell the house."
+      }
+    ],
+    "pro_tip": "Measure and photograph the roof before tear-off and attach the photos to the message you send with the final invoice. It turns 'why did it cost more?' into 'thanks for showing me'.",
+    "faqs": [
+      {
+        "question": "What is a square in roofing?",
+        "answer": "A square is 100 square feet of roof surface. Roofers price tear-off, materials and labor per square, and add a waste factor (often 5–15%, depending on the roof's shape) to the materials."
+      },
+      {
+        "question": "How do I invoice a roof replacement covered by insurance?",
+        "answer": "Invoice the work with the same line items the adjuster used, put the claim number in the notes, and bill the homeowner for their deductible. The insurer usually pays in parts, so record each payment as it arrives."
+      },
+      {
+        "question": "Should rotten decking be on a separate line?",
+        "answer": "Yes. Agree a price per sheet in the contract, then invoice the number of sheets replaced with photos. It's the most common surprise on a roof, and a separate, documented line keeps it from becoming a dispute."
+      },
+      {
+        "question": "Do roofers charge sales tax?",
+        "answer": "It depends on the state: in some, roofers pay tax on materials when they buy them and don't charge it to the homeowner; in others the job is taxable. Check your state's rule and keep it the same on every invoice."
+      },
+      {
+        "question": "Is this roofing invoice template free?",
+        "answer": "Yes. Open the example in the free online generator, change it to your job and download a PDF. For regular invoicing, the Invoicor iPhone app saves your customers and standard items; the first 3 invoices are free and have no watermark."
+      }
+    ],
+    "related": [
+      {
+        "name": "Construction",
+        "slug": "construction"
+      },
+      {
+        "name": "Handyman",
+        "slug": "handyman"
+      }
+    ]
+  },
+  {
+    "slug": "painting",
+    "niche": "Painting",
+    "industry": "painters",
+    "title": "Painting Invoice Template & Example (Free PDF) | Invoicor",
+    "meta_description": "Free painting invoice template for painters and decorators: prep, square footage, ceilings, trim and paint itemized in a filled-in example. Get a PDF.",
+    "h1": "Free Painting Invoice Template & Example",
+    "subtitle": "For house painters and decorators: how to invoice prep work, walls by the square foot, ceilings, trim and paint, so the customer sees the care behind the finish they're looking at.",
+    "intro_paragraph": "Good painting is mostly preparation the customer never sees: patching, sanding, caulking, masking. If the invoice only shows 'Paint living room', the price looks high for what seems like a weekend job. A painting invoice that separates prep, coats, surfaces and materials explains the price and makes the customer proud of what they paid for.",
+    "what_to_include_intro": "Painting invoices work best when they follow the rooms and surfaces the customer walked through with you. Include these parts.",
+    "req_1_title": "Prep work as its own line",
+    "req_1_text": "Patching, sanding, caulking, masking and moving furniture take hours. Bill them separately (by the hour or as a flat prep fee), so the customer sees the work that makes the finish last.",
+    "req_2_title": "Surfaces by area or count",
+    "req_2_text": "Walls and ceilings by the square foot (or by room), trim by the linear foot, doors and windows by the piece. Name the rooms. It matches how you quoted and makes the invoice easy to check.",
+    "req_3_title": "Number of coats",
+    "req_3_text": "'Two coats' is part of the product. Write it on each surface line, especially when a color change or fresh drywall needed a primer coat.",
+    "req_4_title": "Paint and materials",
+    "req_4_text": "Name the paint line and sheen, and the quantity. Customers like to know what's on their walls, and the next time they need a touch-up they'll know exactly what to buy (or whom to call).",
+    "req_5_title": "Deposit and balance",
+    "req_5_text": "Most painters take a deposit to buy paint and secure the dates. Show it as received on the final invoice so the balance is clear.",
+    "req_6_title": "Colors and care notes",
+    "req_6_text": "List the color names and codes per room in the notes, and how long to wait before washing the walls. It's the most useful thing on the invoice a year later.",
+    "what_to_include_outro": "A painting invoice like this reads like a finished job sheet: every room, every surface and every color, ready for the customer's records.",
+    "sample_breakdown_title": "Painting invoice example",
+    "sample_breakdown_intro": "Interior repaint of a living and dining room with ceilings, trim and six doors. The customer paid a 30% deposit when booking.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Prep: patch, sand, caulk and mask",
+        "qty": "6 hrs",
+        "rate": "$55.00/hr",
+        "amount": "$330.00"
+      },
+      {
+        "description": "Walls, 2 coats: living and dining room",
+        "qty": "850 sq ft",
+        "rate": "$1.75/sq ft",
+        "amount": "$1,487.50"
+      },
+      {
+        "description": "Ceilings, 1 coat flat white",
+        "qty": "400 sq ft",
+        "rate": "$1.25/sq ft",
+        "amount": "$500.00"
+      },
+      {
+        "description": "Doors and frames, 2 coats semi-gloss",
+        "qty": "6",
+        "rate": "$65.00",
+        "amount": "$390.00"
+      },
+      {
+        "description": "Premium eggshell paint and primer",
+        "qty": "9 gal",
+        "rate": "$58.00/gal",
+        "amount": "$522.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$3,229.50",
+    "sample_breakdown_deposit_label": "Deposit received (30%)",
+    "sample_breakdown_deposit": "-$970.00",
+    "sample_breakdown_balance": "$2,259.50",
+    "sample_breakdown_notes": "Colors: walls 'Agreeable Gray' (eggshell), ceilings flat white, doors 'Pure White' semi-gloss. Leftover paint labeled in the garage. Wait 2 weeks before washing walls. 2-year warranty on peeling. Balance due on completion.",
+    "industry_notes_title": "Painting billing notes",
+    "industry_notes": [
+      {
+        "title": "Pricing by area, room or hour",
+        "text": "Per square foot is easiest to compare, per room is easiest to sell, per hour is safest for repairs and touch-ups. Use one per job and keep the invoice in the same unit as the quote."
+      },
+      {
+        "title": "Exterior jobs and weather days",
+        "text": "On exteriors, agree in the quote that weather delays don't change the price. If power washing, scraping or wood repair turn out larger than expected, add them as separate lines with photos."
+      },
+      {
+        "title": "Who buys the paint",
+        "text": "If the customer supplies the paint, say so in the notes and leave the materials line out; your warranty may not cover a product you didn't choose."
+      }
+    ],
+    "mistakes_title": "Three mistakes painters make on invoices",
+    "mistakes": [
+      {
+        "title": "Hiding the prep",
+        "text": "If prep is folded into 'walls', customers compare your price with a cheaper quote that skipped it. Showing it separately makes your quality visible."
+      },
+      {
+        "title": "No color record",
+        "text": "Without color names on the invoice, the customer can't touch up a scuff or order the same shade, and they won't think of you when they need more."
+      },
+      {
+        "title": "Waiting to invoice",
+        "text": "Do the final walk-through, fix the little things on the spot and send the invoice before you pack the drop cloths. That's when the customer is happiest with the room."
+      }
+    ],
+    "pro_tip": "Leave a labeled can of each color with the room name written on the lid, and mention it in the invoice notes. Customers remember the painter who did that, and they call the same one for the next room.",
+    "faqs": [
+      {
+        "question": "How do painters calculate an invoice?",
+        "answer": "Most measure the wall and ceiling area in square feet, count doors and windows, and add prep time and materials. Others price per room or per hour. Whichever unit you quote in, use the same unit on the invoice."
+      },
+      {
+        "question": "Should a painting invoice list the paint brand?",
+        "answer": "Yes. Name the paint line, sheen and color per room. It shows the quality you used and lets the customer buy the right paint for touch-ups."
+      },
+      {
+        "question": "How much deposit do painters take?",
+        "answer": "Commonly 20–50%, enough to buy materials and book the dates. Show it as received on the final invoice. Some states limit deposits on home improvement work, so check your local rule."
+      },
+      {
+        "question": "How do I invoice extra prep work I didn't quote?",
+        "answer": "Stop and agree it with the customer before you do it (a text is fine), then add it as a separate line on the invoice with the hours or the agreed price. Undocumented extras are the most common painting dispute."
+      },
+      {
+        "question": "Can I fill in this painting invoice online?",
+        "answer": "Yes. Open the example in the free generator, change the rooms, areas and prices, and download a PDF. The Invoicor iPhone app saves your usual line items and customers if you invoice every week."
+      }
+    ],
+    "related": [
+      {
+        "name": "Handyman",
+        "slug": "handyman"
+      },
+      {
+        "name": "Construction",
+        "slug": "construction"
+      }
+    ]
+  },
+  {
+    "slug": "web-development",
+    "niche": "Web Development",
+    "industry": "web-developers",
+    "title": "Web Developer Invoice Template & Example (Free) | Invoicor",
+    "meta_description": "Free web development invoice template for freelance developers: milestones, out-of-scope hours, hosting and deposits in a filled-in example PDF.",
+    "h1": "Free Web Development Invoice Template & Example",
+    "subtitle": "For freelance web developers and small studios: how to invoice milestones, extra hours, hosting and licenses so clients approve the payment quickly and scope creep is visible, not silent.",
+    "intro_paragraph": "Web projects drift. A five-page site becomes six, a contact form needs a CRM connection, and 'small tweaks' add up to a day. A web development invoice is where scope gets written down: what was delivered in this milestone, what was extra and what the client is paying for every month after launch.",
+    "what_to_include_intro": "Clients approve developer invoices faster when every line maps to something they can open in a browser. These fields do that.",
+    "req_1_title": "Milestones tied to deliverables",
+    "req_1_text": "Bill by milestone ('Design system and 5 page templates, approved'), each with a short description that matches the proposal. Milestones are easier to approve than hours because the client can see the result.",
+    "req_2_title": "Out-of-scope work, separately",
+    "req_2_text": "Anything not in the proposal goes on its own line with hours and rate, plus a reference to the email or ticket where the client asked for it. This keeps the relationship friendly and the scope honest.",
+    "req_3_title": "Reimbursable costs",
+    "req_3_text": "Domains, hosting, premium plugins, fonts and stock images you bought for the client are separate, reimbursable lines. State the period for subscriptions ('12 months').",
+    "req_4_title": "Deposit and payment schedule",
+    "req_4_text": "Most developers ask 25–50% up front. Subtract it on later invoices and show the remaining balance, so the client always knows what's left.",
+    "req_5_title": "Ownership and handover terms",
+    "req_5_text": "State when the code and content transfer to the client, usually on full payment. It protects your work and gives the client a clear reason to pay the final invoice.",
+    "req_6_title": "Ongoing support or maintenance",
+    "req_6_text": "If you maintain the site after launch, bill it as a clearly named monthly line ('Maintenance: updates, backups, 2 hrs support') with what's included, so it never looks like a surprise fee.",
+    "what_to_include_outro": "With these parts, each invoice is also a short project report the client can forward to their boss without explaining anything.",
+    "sample_breakdown_title": "Web development invoice example",
+    "sample_breakdown_intro": "The second invoice for a small business website. The client paid a $2,700 deposit at the start; this invoice covers the delivered milestones, one extra request and a year of hosting.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Discovery, sitemap and content plan (approved)",
+        "qty": "1",
+        "rate": "$1,200.00",
+        "amount": "$1,200.00"
+      },
+      {
+        "description": "Design system and 5 page templates (approved)",
+        "qty": "1",
+        "rate": "$3,000.00",
+        "amount": "$3,000.00"
+      },
+      {
+        "description": "Front-end build, 5 pages, responsive",
+        "qty": "1",
+        "rate": "$4,500.00",
+        "amount": "$4,500.00"
+      },
+      {
+        "description": "CMS setup and editor training",
+        "qty": "2 hrs",
+        "rate": "$150.00/hr",
+        "amount": "$300.00"
+      },
+      {
+        "description": "Out of scope: contact form to CRM (ticket #14)",
+        "qty": "3 hrs",
+        "rate": "$120.00/hr",
+        "amount": "$360.00"
+      },
+      {
+        "description": "Hosting, 12 months (reimbursable)",
+        "qty": "1",
+        "rate": "$240.00",
+        "amount": "$240.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$9,600.00",
+    "sample_breakdown_deposit_label": "Deposit received",
+    "sample_breakdown_deposit": "-$2,700.00",
+    "sample_breakdown_balance": "$6,900.00",
+    "sample_breakdown_notes": "Staging: staging.example.com. Code repository and admin access transfer on full payment. 30 days of bug fixes included after launch. Payment due within 14 days.",
+    "industry_notes_title": "Billing notes for developers",
+    "industry_notes": [
+      {
+        "title": "Fixed price or hourly",
+        "text": "Fixed price per milestone works when the scope is clear; hourly (or a weekly rate) works for open-ended product work. Many developers combine them: fixed milestones plus an hourly rate for anything outside the proposal."
+      },
+      {
+        "title": "Retainers",
+        "text": "For ongoing work, a monthly retainer with a fixed number of hours gives you predictable income. Bill it at the start of the month and list hours used in the notes, so unused or extra hours are visible."
+      },
+      {
+        "title": "International clients",
+        "text": "Invoice in the client's currency when you can, put your bank details (IBAN and SWIFT) on the invoice, and check whether VAT rules require the client's VAT ID or a reverse-charge note for business clients in other countries."
+      }
+    ],
+    "mistakes_title": "Three mistakes developers make on invoices",
+    "mistakes": [
+      {
+        "title": "Silent scope creep",
+        "text": "Doing the extra request for free 'just this once' trains the client to ask again. Bill it, even at a friendly rate, and it stays a conversation instead of an expectation."
+      },
+      {
+        "title": "Handing over before payment",
+        "text": "Once the client has the admin login and the repository, the final invoice loses its urgency. Make handover the last step after payment."
+      },
+      {
+        "title": "Vague line names",
+        "text": "'Development work: $4,500' gets forwarded to finance with questions. 'Front-end build, 5 pages, responsive' gets approved."
+      }
+    ],
+    "pro_tip": "Send the invoice with a link to the staging site or a short screen recording of what was delivered. Clients approve faster when they can see the milestone, and the recording doubles as a record if questions come up later.",
+    "faqs": [
+      {
+        "question": "How do I write an invoice for web development?",
+        "answer": "Put your business and the client's details at the top, then the delivered milestones with short descriptions that match the proposal, any out-of-scope hours with their rate, reimbursable costs like hosting or licenses, the deposit already paid and the balance due. Add handover terms and the due date in the notes."
+      },
+      {
+        "question": "Should freelance developers charge hourly or per project?",
+        "answer": "Per project (by milestone) when the scope is clear, hourly when it isn't. Many developers quote a fixed price for the defined work and add an hourly rate for anything outside it."
+      },
+      {
+        "question": "How much deposit should a web developer ask for?",
+        "answer": "Commonly 25–50% before starting, or the first milestone up front. It covers your time on discovery and filters out clients who aren't committed."
+      },
+      {
+        "question": "How do I invoice hosting and domains?",
+        "answer": "As separate reimbursable lines with the period ('Hosting, 12 months'). If you resell hosting with a markup or a maintenance package, name it clearly as your service."
+      },
+      {
+        "question": "Can I invoice international clients in their currency?",
+        "answer": "Yes. Invoicor supports 38 currencies and 11 invoice languages, in the app and in the free online generator. Add your bank details so the client can pay by transfer."
+      }
+    ],
+    "related": [
+      {
+        "name": "Freelance design",
+        "slug": "freelance-design"
+      },
+      {
+        "name": "Consulting",
+        "slug": "consulting"
+      }
+    ]
+  },
+  {
+    "slug": "personal-training",
+    "niche": "Personal Training",
+    "industry": "personal-trainers",
+    "title": "Personal Trainer Invoice Template & Example | Invoicor",
+    "meta_description": "Free personal trainer invoice template: session packages, nutrition consults and online coaching in a filled-in example. Fill it in online as a PDF.",
+    "h1": "Free Personal Training Invoice Template & Example",
+    "subtitle": "For personal trainers and online coaches: how to invoice session packages, consultations and products so clients commit up front and your cancellation policy is written down every time.",
+    "intro_paragraph": "Personal training lives on commitment. A client who prepays twelve sessions shows up; a client who pays per session cancels when it rains. A clear personal training invoice sells the package, records what's included and puts your cancellation policy in writing, without an awkward conversation on the gym floor.",
+    "what_to_include_intro": "A trainer's invoice is short, but a few details make the difference between a payment and a dispute.",
+    "req_1_title": "The package, named and dated",
+    "req_1_text": "'12-session package, 60 minutes, valid 8 weeks from 3 March'. The number of sessions, the length and the expiry date belong in the line itself, so there's never a question about what was bought.",
+    "req_2_title": "Extras on their own lines",
+    "req_2_text": "Assessments, nutrition consultations and programs for training alone are separate services with their own price. Listing them shows the full value of what you offer.",
+    "req_3_title": "Products separate from services",
+    "req_3_text": "Bands, supplements or apparel are goods and may be taxed differently from training. Put them on their own lines (or their own invoice) so the tax is easy to get right.",
+    "req_4_title": "Cancellation and refund policy",
+    "req_4_text": "Write your rules in the notes: how much notice a cancellation needs, what happens to a missed session and whether packages are refundable. Having it on every invoice ends most arguments before they start.",
+    "req_5_title": "Where the sessions happen",
+    "req_5_text": "Gym, park, the client's home or online. It matters for travel fees and, in some places, for tax. A word in the line description is enough.",
+    "req_6_title": "Business payment details",
+    "req_6_text": "A payment link or business bank details, not a personal payment app. It looks professional and keeps your business income separate for tax time.",
+    "what_to_include_outro": "Short, clear and the same every time: that's what makes clients see you as a business and pay like one.",
+    "sample_breakdown_title": "Personal training invoice example",
+    "sample_breakdown_intro": "A new client starting with a 12-session package, a nutrition consultation, a body composition assessment and a set of resistance bands for training at home.",
+    "sample_breakdown_rows": [
+      {
+        "description": "12-session package, 60 min, valid 8 weeks",
+        "qty": "1",
+        "rate": "$900.00",
+        "amount": "$900.00"
+      },
+      {
+        "description": "Nutrition strategy consultation, 90 min",
+        "qty": "1",
+        "rate": "$120.00",
+        "amount": "$120.00"
+      },
+      {
+        "description": "Body composition assessment",
+        "qty": "1",
+        "rate": "$45.00",
+        "amount": "$45.00"
+      },
+      {
+        "description": "Resistance band set (taxable)",
+        "qty": "1",
+        "rate": "$35.00",
+        "amount": "$35.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$1,100.00",
+    "sample_breakdown_tax_label": "Sales tax (6% on $35.00 bands)",
+    "sample_breakdown_tax": "$2.10",
+    "sample_breakdown_balance": "$1,102.10",
+    "sample_breakdown_notes": "Sessions at Northside Gym. Cancellations need 24 hours' notice; later cancellations count as a used session. Packages are non-refundable but can be paused once for illness. Payment due before the first session.",
+    "industry_notes_title": "Billing notes for trainers",
+    "industry_notes": [
+      {
+        "title": "Packages beat single sessions",
+        "text": "Prepaid packages improve attendance and smooth your income. A small discount per session for larger packages rewards commitment without cutting your hourly rate much."
+      },
+      {
+        "title": "Online coaching",
+        "text": "For monthly programming and check-ins, send one invoice at the start of each month. Duplicate last month's invoice and change the date; it's quicker than writing a new one."
+      },
+      {
+        "title": "Gym rent and fees",
+        "text": "If you pay a gym a floor fee or a percentage, that's your cost, not a line for the client. Keep it in your own records for taxes."
+      }
+    ],
+    "mistakes_title": "Three mistakes trainers make on invoices",
+    "mistakes": [
+      {
+        "title": "Taking payment by personal app",
+        "text": "Personal payment apps don't produce proper records, and using them for business can break their terms. An invoice with a business payment link solves both."
+      },
+      {
+        "title": "No expiry date on packages",
+        "text": "Without an end date, a 10-session package can stretch over a year. Put the validity in the line description."
+      },
+      {
+        "title": "Policy only on the website",
+        "text": "Clients don't reread your website before cancelling. They do read the invoice they paid."
+      }
+    ],
+    "pro_tip": "Send the package invoice right after the free consultation, while the client is still in the gym and motivated. Paying on the spot turns 'I'll think about it' into a booked first session.",
+    "faqs": [
+      {
+        "question": "What should a personal training invoice include?",
+        "answer": "Your business name and contact details, the client's name, the date and invoice number, the package or sessions (number, length and expiry), any extra services or products, tax where it applies, the total, how to pay and your cancellation policy."
+      },
+      {
+        "question": "Should personal trainers charge sales tax?",
+        "answer": "Training services are often not taxed, but products like supplements or equipment usually are, and some places tax digital programs. Rules differ by state and country, so check yours and keep products on separate lines."
+      },
+      {
+        "question": "How do I invoice a session package?",
+        "answer": "One line for the package with the number of sessions, their length and how long the package is valid, paid before the first session. Track used sessions in your calendar or training app."
+      },
+      {
+        "question": "How do I bill online coaching clients every month?",
+        "answer": "Send an invoice at the start of each month. In the Invoicor app you duplicate last month's invoice in one tap and update the date; Invoicor doesn't send invoices automatically, so you stay in control."
+      },
+      {
+        "question": "Is this personal trainer invoice template free?",
+        "answer": "Yes. Open the example in the free online generator, edit it and download a PDF. The Invoicor iPhone app adds saved clients and packages; the first 3 invoices are free."
+      }
+    ],
+    "related": [
+      {
+        "name": "Consulting",
+        "slug": "consulting"
+      },
+      {
+        "name": "Tutoring",
+        "slug": "tutoring"
+      }
+    ]
+  },
+  {
+    "slug": "tutoring",
+    "niche": "Tutoring",
+    "industry": "tutors",
+    "title": "Tutoring Invoice Template & Example (Free PDF) | Invoicor",
+    "meta_description": "Free tutoring invoice template for private tutors: monthly sessions, test prep, materials and missed lessons in a filled-in example parents understand.",
+    "h1": "Free Tutoring Invoice Template & Example",
+    "subtitle": "For private tutors and small tutoring businesses: how to invoice parents for sessions, test prep and materials each month, with a missed-lesson policy that's fair to both sides.",
+    "intro_paragraph": "Tutoring is usually paid by parents who weren't in the room. Your invoice is how they see what their money bought: how many sessions, which subject, what was covered. A clear tutoring invoice builds the trust that keeps a student with you for years, and it settles questions about missed lessons before they turn awkward.",
+    "what_to_include_intro": "Parents scan a tutoring invoice in seconds. Make these parts easy to find.",
+    "req_1_title": "Student name and subject",
+    "req_1_text": "Bill the parent, but name the student and the subject on every line ('Emma, algebra'). Families with more than one child, or with grandparents paying, will thank you.",
+    "req_2_title": "Sessions with dates",
+    "req_2_text": "List the number of sessions and their dates (in the line or the notes). It's the first thing a parent checks against the family calendar.",
+    "req_3_title": "Test prep and assessments",
+    "req_3_text": "Practice tests, essay reviews and progress reports take extra time. Bill them as separate services so parents see the full picture.",
+    "req_4_title": "Materials and workbooks",
+    "req_4_text": "Books, printed materials or platform subscriptions you bought for the student go on their own lines.",
+    "req_5_title": "Missed-session policy",
+    "req_5_text": "State the notice you need to cancel (24 hours is common) and what happens to a late cancellation. When it applies, add it as a line on the invoice, so it's transparent rather than a surprise.",
+    "req_6_title": "A short progress note",
+    "req_6_text": "One or two sentences on what was covered and what's next. It's not required, but it's the part parents read most, and the best reason they keep booking.",
+    "what_to_include_outro": "An invoice like this tells parents what happened this month and why it was worth it, which is what turns one term into a school year.",
+    "sample_breakdown_title": "Tutoring invoice example",
+    "sample_breakdown_intro": "A monthly invoice for one student: weekly math sessions, a practice test with review, a workbook, and one lesson cancelled without notice.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Math tutoring 1:1, 60 min (Mar 2, 4, 9, 11, 16, 18, 23, 25)",
+        "qty": "8",
+        "rate": "$60.00",
+        "amount": "$480.00"
+      },
+      {
+        "description": "SAT practice test and review session",
+        "qty": "1",
+        "rate": "$95.00",
+        "amount": "$95.00"
+      },
+      {
+        "description": "SAT math workbook",
+        "qty": "1",
+        "rate": "$28.00",
+        "amount": "$28.00"
+      },
+      {
+        "description": "Late cancellation, Mar 30 (under 24 hours' notice)",
+        "qty": "1",
+        "rate": "$60.00",
+        "amount": "$60.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$663.00",
+    "sample_breakdown_balance": "$663.00",
+    "sample_breakdown_notes": "Student: Emma R. This month: linear equations, systems of equations, first full SAT practice test (math 640). Next: functions and word problems. Payment due by April 5.",
+    "industry_notes_title": "Billing notes for tutors",
+    "industry_notes": [
+      {
+        "title": "Monthly in arrears or in advance",
+        "text": "Billing at the end of the month for sessions held is simplest. Billing at the start for the month ahead improves attendance and cash flow. Pick one, tell families, and keep it the same."
+      },
+      {
+        "title": "Packages and discounts",
+        "text": "A small discount for a prepaid block of sessions rewards commitment. Show it as a discount on the invoice, so the full value stays visible."
+      },
+      {
+        "title": "Online sessions",
+        "text": "For online tutoring, mention the platform in the notes. If students are in other countries, you can invoice in their currency and language."
+      }
+    ],
+    "mistakes_title": "Three mistakes tutors make on invoices",
+    "mistakes": [
+      {
+        "title": "No dates",
+        "text": "'8 sessions' leads to 'we only had 7'. Dates in the invoice end that conversation."
+      },
+      {
+        "title": "Waiving every missed session",
+        "text": "Being kind once is fine; never charging makes your policy meaningless. Apply it consistently and say so on the invoice."
+      },
+      {
+        "title": "Invoicing irregularly",
+        "text": "Families budget monthly. An invoice that arrives on the same day every month gets paid like a bill; one that arrives whenever gets forgotten."
+      }
+    ],
+    "pro_tip": "End every invoice with one specific win ('Emma solved her first full SAT section under time'). Parents forward those to the other parent, and that's how tutors get referrals.",
+    "faqs": [
+      {
+        "question": "How do tutors invoice parents?",
+        "answer": "Most send one invoice per month per family, listing each student, subject and session date, any test prep or materials, and the total. Add your missed-session policy and how to pay in the notes."
+      },
+      {
+        "question": "Should I charge for missed tutoring sessions?",
+        "answer": "A common, fair policy is to charge for sessions cancelled with less than 24 hours' notice and reschedule anything earlier. Write it on every invoice and apply it consistently."
+      },
+      {
+        "question": "Do tutors need to charge sales tax?",
+        "answer": "In many places tutoring is a service without sales tax, but rules differ, and VAT may apply in other countries above a turnover threshold. Check your local rule; materials you sell can be taxed differently."
+      },
+      {
+        "question": "Can I invoice in another currency for online students?",
+        "answer": "Yes. Invoicor supports 38 currencies and 11 invoice languages, in the app and the free online generator."
+      },
+      {
+        "question": "Is this tutoring invoice template free?",
+        "answer": "Yes. Open the example in the free generator, change the student, sessions and prices, and download the PDF. For monthly invoicing, the Invoicor iPhone app saves families and your usual sessions."
+      }
+    ],
+    "related": [
+      {
+        "name": "Consulting",
+        "slug": "consulting"
+      },
+      {
+        "name": "Personal training",
+        "slug": "personal-training"
+      }
+    ]
+  },
+  {
+    "slug": "catering",
+    "niche": "Catering",
+    "industry": "caterers",
+    "title": "Catering Invoice Template & Example (Free PDF) | Invoicor",
+    "meta_description": "Free catering invoice template: per-guest pricing, staff, rentals, service charge, deposit and tax in a filled-in wedding example. Download a PDF.",
+    "h1": "Free Catering Invoice Template & Example",
+    "subtitle": "For caterers and private chefs: how to invoice per-guest menus, staff hours, rentals, service charges and deposits, so the final bill matches the event the client planned.",
+    "intro_paragraph": "Catering invoices carry a lot: a menu priced per guest, staff by the hour, rentals, a service charge, a deposit paid months ago and tax on top. Clients planning a wedding or a company event are already juggling budgets, so an invoice that lays every part out clearly is part of the service, and it's what gets the final balance paid on time.",
+    "what_to_include_intro": "Event clients compare the invoice with the proposal they signed. These parts keep the two aligned.",
+    "req_1_title": "Event details at the top",
+    "req_1_text": "Event name, date, venue and the final guest count. Most disputes are about the guest count, so state the number the client confirmed and when.",
+    "req_2_title": "Food priced per guest",
+    "req_2_text": "Menu items or packages per guest ('Plated dinner, 3 courses × 120 guests'). It's how you quoted, and it lets the client see the effect of a changed headcount immediately.",
+    "req_3_title": "Staff and service hours",
+    "req_3_text": "Servers, bartenders and chefs on site, with the number of staff and hours. Overtime past the agreed end time goes on its own line.",
+    "req_4_title": "Rentals and extras",
+    "req_4_text": "Linens, china, glassware, equipment and fees like cake cutting or corkage, each named. Clients often don't realize how much of an event is rentals until they see it listed.",
+    "req_5_title": "Service charge, explained",
+    "req_5_text": "If you add a service charge, state the percentage and what it's based on, and be clear that it isn't a tip if it isn't. Unexplained service charges are a common source of complaints.",
+    "req_6_title": "Deposit, tax and final balance",
+    "req_6_text": "Subtract the deposit, add tax as your state requires (often including the service charge), and make the balance and its due date unmistakable.",
+    "what_to_include_outro": "When the invoice mirrors the proposal line for line, the client signs off without a meeting, which is exactly what they want the week after their event.",
+    "sample_breakdown_title": "Catering invoice example",
+    "sample_breakdown_intro": "A wedding dinner for 120 guests with passed appetizers, six staff for six hours, rentals, a 20% service charge on food, and a $3,000 deposit paid at booking. Tax rules for catering vary; this example taxes everything at 8%.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Plated dinner, 3 courses",
+        "qty": "120",
+        "rate": "$48.00",
+        "amount": "$5,760.00"
+      },
+      {
+        "description": "Passed appetizers, 1 hour",
+        "qty": "120",
+        "rate": "$9.00",
+        "amount": "$1,080.00"
+      },
+      {
+        "description": "Service staff (6 staff × 6 hrs)",
+        "qty": "36 hrs",
+        "rate": "$35.00/hr",
+        "amount": "$1,260.00"
+      },
+      {
+        "description": "Rentals: linens, china and glassware",
+        "qty": "120",
+        "rate": "$6.50",
+        "amount": "$780.00"
+      },
+      {
+        "description": "Cake cutting and plating",
+        "qty": "120",
+        "rate": "$2.00",
+        "amount": "$240.00"
+      },
+      {
+        "description": "Service charge, 20% of food ($6,840)",
+        "qty": "1",
+        "rate": "$1,368.00",
+        "amount": "$1,368.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$10,488.00",
+    "sample_breakdown_deposit_label": "Deposit received at booking",
+    "sample_breakdown_deposit": "-$3,000.00",
+    "sample_breakdown_tax_label": "Sales tax (8% of $10,488)",
+    "sample_breakdown_tax": "$839.04",
+    "sample_breakdown_balance": "$8,327.04",
+    "sample_breakdown_notes": "Event: Lee & Patel wedding, June 14, Riverside Barn. Final guest count of 120 confirmed May 31. The service charge covers event staffing costs and is not a gratuity. Balance due within 7 days of the event.",
+    "industry_notes_title": "Catering billing notes",
+    "industry_notes": [
+      {
+        "title": "Final guest count deadline",
+        "text": "Set a date (often 7–14 days before the event) after which the guest count can go up but not down. Put it in the contract and repeat it on the invoice."
+      },
+      {
+        "title": "Deposits",
+        "text": "Deposits of 25–50% at booking are common for events, sometimes non-refundable to cover dates you turned down. Show each payment as received."
+      },
+      {
+        "title": "Tax on catering",
+        "text": "Many US states tax catering, and often the service charge too, while a voluntary tip isn't taxed. Rules differ widely, so check yours. Invoicor applies one tax rate per invoice, which fits most catering jobs."
+      }
+    ],
+    "mistakes_title": "Three mistakes caterers make on invoices",
+    "mistakes": [
+      {
+        "title": "Lump-sum event pricing",
+        "text": "'Wedding catering: $11,327' makes the client wonder what changed since the proposal. Per-guest lines show it."
+      },
+      {
+        "title": "Unexplained service charges",
+        "text": "Guests and clients often read a service charge as a tip. Say what it is in one sentence."
+      },
+      {
+        "title": "Forgetting overtime",
+        "text": "When the party runs an hour late, add the extra staff hours to the invoice with the agreed rate, instead of absorbing them."
+      }
+    ],
+    "pro_tip": "Send the final invoice within two days of the event with one photo of the table setup. Clients pay faster while the memory is fresh, and the photo often ends up on social media with your name.",
+    "faqs": [
+      {
+        "question": "What should a catering invoice include?",
+        "answer": "The event name, date, venue and final guest count; food per guest; staff and hours; rentals and extra fees; any service charge with its percentage; the deposit received; tax; the balance due and its due date."
+      },
+      {
+        "question": "Is a catering service charge the same as a tip?",
+        "answer": "Not necessarily. A service charge is a fee you set (often 18–22%) that may cover staffing costs; a tip is voluntary. Say on the invoice which one it is, because tax and how it's shared with staff can differ."
+      },
+      {
+        "question": "How do I invoice a catering deposit?",
+        "answer": "Send a deposit invoice at booking for the agreed share of the estimated total, then subtract it on the final invoice after the event, once the guest count and extras are final."
+      },
+      {
+        "question": "Do caterers charge sales tax?",
+        "answer": "In many US states yes, on food and often on the service charge and rentals. Rules vary by state and venue, so check yours and treat every event the same way."
+      },
+      {
+        "question": "Can I make this catering invoice online for free?",
+        "answer": "Yes. Open the example in the free generator, change the menu, guest count and prices, and download a PDF. The Invoicor iPhone app saves clients and your menu items for repeat events."
+      }
+    ],
+    "related": [
+      {
+        "name": "Photography",
+        "slug": "photography"
+      },
+      {
+        "name": "Cleaning services",
+        "slug": "cleaning-services"
+      }
+    ]
+  },
+  {
+    "slug": "moving",
+    "niche": "Moving",
+    "industry": "movers",
+    "title": "Moving Company Invoice Template & Example (Free) | Invoicor",
+    "meta_description": "Free moving invoice template for movers: crew hours, travel fee, packing materials and special items like pianos in a filled-in local move example.",
+    "h1": "Free Moving Company Invoice Template & Example",
+    "subtitle": "For local movers and small moving companies: how to invoice crew hours, travel, packing materials and special items so customers see exactly what moving day cost.",
+    "intro_paragraph": "Moving day is stressful, and the invoice arrives at the end of it, when the customer is tired and the boxes are everywhere. A clear moving invoice that shows crew size, start and finish times, materials and extras gets paid on the spot. A vague one starts an argument about the clock.",
+    "what_to_include_intro": "Movers are paid on trust. These parts make the invoice something the customer can check in a minute.",
+    "req_1_title": "Crew size, hours and rate",
+    "req_1_text": "State the number of movers, the truck and the hourly rate, plus the start and finish times. Hourly moves are where disputes happen, so write the times down when you start and when you finish.",
+    "req_2_title": "Travel or trip fee",
+    "req_2_text": "If you charge for driving to the first address and back from the last, say how: a flat fee or travel time. Customers accept it when it's named and was on the quote.",
+    "req_3_title": "Packing materials",
+    "req_3_text": "Boxes, tape, wrap, wardrobe boxes and mattress bags, itemized or as one materials line. It's a real cost, and itemizing it shows you didn't pad the hours.",
+    "req_4_title": "Special items and access",
+    "req_4_text": "Pianos, safes, stairs, long carries and elevator waits are extra work. List them as separate lines with the agreed price.",
+    "req_5_title": "Deposit and how it was paid",
+    "req_5_text": "Subtract the booking deposit and state how the customer can pay the balance today.",
+    "req_6_title": "Valuation and claims",
+    "req_6_text": "State the liability coverage the customer chose and how to report damage (and by when). In the US, interstate movers have specific federal rules on this; local moves follow state rules.",
+    "what_to_include_outro": "The best moving invoices take less than a minute to read, which is about how long a tired customer will give them.",
+    "sample_breakdown_title": "Moving invoice example",
+    "sample_breakdown_intro": "A local move from a third-floor apartment to a house, with a three-person crew, packing materials and an upright piano. The customer paid a $200 deposit when booking.",
+    "sample_breakdown_rows": [
+      {
+        "description": "3 movers and 26 ft truck (8:00 to 13:00)",
+        "qty": "5 hrs",
+        "rate": "$165.00/hr",
+        "amount": "$825.00"
+      },
+      {
+        "description": "Travel fee, flat",
+        "qty": "1",
+        "rate": "$95.00",
+        "amount": "$95.00"
+      },
+      {
+        "description": "Packing materials: boxes, tape and stretch wrap",
+        "qty": "1",
+        "rate": "$140.00",
+        "amount": "$140.00"
+      },
+      {
+        "description": "Upright piano handling",
+        "qty": "1",
+        "rate": "$175.00",
+        "amount": "$175.00"
+      },
+      {
+        "description": "Stairs fee, third-floor walk-up",
+        "qty": "1",
+        "rate": "$75.00",
+        "amount": "$75.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$1,310.00",
+    "sample_breakdown_deposit_label": "Deposit received",
+    "sample_breakdown_deposit": "-$200.00",
+    "sample_breakdown_balance": "$1,110.00",
+    "sample_breakdown_notes": "From 12 Elm St, apt 3C to 48 Birch Rd. Basic released-value coverage ($0.60 per lb per item) as chosen at booking. Report any damage within 9 months. Balance due on delivery.",
+    "industry_notes_title": "Billing notes for movers",
+    "industry_notes": [
+      {
+        "title": "Hourly versus flat-rate moves",
+        "text": "Hourly pricing is standard for local moves; flat or weight-based pricing is common for long distance. Whatever you quote, the invoice should use the same basis and show any changes."
+      },
+      {
+        "title": "Minimum hours",
+        "text": "Many movers have a minimum (often 2–3 hours). If the move is shorter, bill the minimum and say so in the line description."
+      },
+      {
+        "title": "Long-distance moves",
+        "text": "Interstate moves in the US have federal rules on estimates, valuation and paperwork. If you move across state lines, follow them closely; this template is built for local moves."
+      }
+    ],
+    "mistakes_title": "Three mistakes movers make on invoices",
+    "mistakes": [
+      {
+        "title": "No start and finish times",
+        "text": "Without times, every hourly invoice becomes 'you were only here four hours'. Write them on the invoice."
+      },
+      {
+        "title": "Surprise extras",
+        "text": "A piano or a fourth-floor walk-up discovered on moving day should be priced before you lift it, then listed on the invoice."
+      },
+      {
+        "title": "Collecting payment later",
+        "text": "Ask for the balance on delivery, as agreed at booking. Chasing a payment after the truck has left is slow and uncertain."
+      }
+    ],
+    "pro_tip": "Walk through the new home with the customer before you hand over the invoice, and ask if everything is where they want it. Two minutes of moving a sofa again earns more goodwill (and reviews) than any discount.",
+    "faqs": [
+      {
+        "question": "What should a moving company invoice include?",
+        "answer": "Your business and license details, the customer, both addresses and the date, the crew size, truck and hourly rate with start and finish times, travel fees, packing materials, special items, the deposit paid, the balance and how damage claims work."
+      },
+      {
+        "question": "How do movers charge for travel time?",
+        "answer": "Either a flat travel fee or the time to drive to the first address and back from the last, billed at the hourly rate. Put the method on the quote and use the same one on the invoice."
+      },
+      {
+        "question": "Should packing materials be on a separate line?",
+        "answer": "Yes. Boxes, tape and wrap are a real cost; listing them separately shows the hourly charge is only for labor."
+      },
+      {
+        "question": "When should a customer pay the movers?",
+        "answer": "Most local movers take a small deposit at booking and the balance on delivery. Say so on the quote and the invoice, and accept a payment method that works on the doorstep, like your own payment link."
+      },
+      {
+        "question": "Can I fill in this moving invoice for free?",
+        "answer": "Yes. Open the example in the free online generator, change the crew, hours and extras, and download the PDF. The Invoicor iPhone app saves customers and your standard items if you move people every week."
+      }
+    ],
+    "related": [
+      {
+        "name": "Cleaning services",
+        "slug": "cleaning-services"
+      },
+      {
+        "name": "Handyman",
+        "slug": "handyman"
+      }
+    ]
+  },
+  {
+    "slug": "pest-control",
+    "niche": "Pest Control",
+    "industry": "pest-control",
+    "title": "Pest Control Invoice Template & Example (Free) | Invoicor",
+    "meta_description": "Free pest control invoice template: inspections, treatments, bait stations and follow-up visits in a filled-in example with products and warranty notes.",
+    "h1": "Free Pest Control Invoice Template & Example",
+    "subtitle": "For exterminators and pest control companies: how to invoice inspections, treatments, bait stations and service plans, with the product and safety notes customers expect.",
+    "intro_paragraph": "Customers call pest control when something is already wrong, and they want proof it's fixed. A pest control invoice does more than ask for money: it records what was found, what was applied where, how long to stay off treated areas and what the guarantee covers. That record is also what many landlords, schools and food businesses need for their own inspections.",
+    "what_to_include_intro": "A good pest control invoice is part bill, part service report. Include these parts.",
+    "req_1_title": "Inspection findings",
+    "req_1_text": "A short line on what you found ('German cockroach activity, kitchen and bathroom'). It justifies the treatment and becomes part of the property's pest history.",
+    "req_2_title": "Treatment by area",
+    "req_2_text": "Name the treatment and where it was applied (interior, exterior perimeter, garage). Customers like to know which rooms were treated, especially with children or pets at home.",
+    "req_3_title": "Products used",
+    "req_3_text": "The product names (and registration numbers where your state requires them) and the target pest. Many states require applicators to provide this information to the customer.",
+    "req_4_title": "Devices and stations",
+    "req_4_text": "Bait stations, traps or monitors with the count and location. They stay on the property, so the customer should know what they are and that they're yours to service.",
+    "req_5_title": "Follow-up visits and plans",
+    "req_5_text": "If the treatment includes a follow-up, say when. For quarterly or monthly plans, name the plan and the period the invoice covers.",
+    "req_6_title": "Safety and guarantee notes",
+    "req_6_text": "Re-entry times, what to avoid (for example, mopping treated areas for a few days), and your service guarantee: what it covers and for how long.",
+    "what_to_include_outro": "Written this way, the invoice is something your customer keeps, shows their landlord or inspector, and rereads when they wonder whether to call you again.",
+    "sample_breakdown_title": "Pest control invoice example",
+    "sample_breakdown_intro": "An initial service for a house with ants and signs of rodents: inspection, a general interior and exterior treatment, termite spot treatment in the garage and four rodent bait stations. Tax rules vary; this example taxes the whole service at 6%.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Inspection and findings report",
+        "qty": "1",
+        "rate": "$75.00",
+        "amount": "$75.00"
+      },
+      {
+        "description": "General pest treatment, interior and exterior perimeter",
+        "qty": "1",
+        "rate": "$185.00",
+        "amount": "$185.00"
+      },
+      {
+        "description": "Termite spot treatment, garage sill plate",
+        "qty": "20 ft",
+        "rate": "$12.00/ft",
+        "amount": "$240.00"
+      },
+      {
+        "description": "Rodent bait stations, tamper-resistant (installed)",
+        "qty": "4",
+        "rate": "$35.00",
+        "amount": "$140.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$640.00",
+    "sample_breakdown_tax_label": "Sales tax (6%)",
+    "sample_breakdown_tax": "$38.40",
+    "sample_breakdown_balance": "$678.40",
+    "sample_breakdown_notes": "Found: odorous house ants (kitchen), rodent droppings (garage). Stay off treated floors until dry (about 2 hours). Bait stations on the garage and side wall remain company property. Follow-up visit in 14 days included. 30-day service guarantee.",
+    "industry_notes_title": "Pest control billing notes",
+    "industry_notes": [
+      {
+        "title": "Initial service plus plan",
+        "text": "Many companies charge a higher initial service and then a lower recurring price for quarterly or monthly visits. Make the plan and its price clear on the first invoice, so later invoices are expected."
+      },
+      {
+        "title": "Commercial accounts",
+        "text": "Restaurants, food producers and property managers often need a service report with every visit for their own audits. Keep the invoice notes consistent, and use the client's purchase order number if they have one."
+      },
+      {
+        "title": "Taxes",
+        "text": "Some US states tax pest control services and some don't; a few treat residential and commercial differently. Check your state's rule once and apply it to every invoice."
+      }
+    ],
+    "mistakes_title": "Three mistakes pest control companies make on invoices",
+    "mistakes": [
+      {
+        "title": "No record of products",
+        "text": "Leaving out what you applied can break state rules and leaves customers worried. Name the products every time."
+      },
+      {
+        "title": "Unclear guarantees",
+        "text": "'Guaranteed' without a period or scope leads to free callbacks forever. State what's covered and for how long."
+      },
+      {
+        "title": "Forgetting the devices",
+        "text": "Bait stations left without explanation get thrown away or moved. List them with their locations."
+      }
+    ],
+    "pro_tip": "Add a photo of the activity you found and of each bait station's location to the message with the invoice. It proves the problem was real, and it helps your technician (or a colleague) on the follow-up visit.",
+    "faqs": [
+      {
+        "question": "What should a pest control invoice include?",
+        "answer": "Your business name and license number, the customer and service address, the date, what you found, the treatments by area, the products used, any devices installed, follow-up visits or the plan, tax where it applies, the total, re-entry and safety notes, and your guarantee."
+      },
+      {
+        "question": "Do pest control companies have to list the chemicals used?",
+        "answer": "In many US states, licensed applicators must give customers information about the pesticides applied, such as the product name and sometimes the registration number. Check your state's rules; listing them on the invoice is an easy way to comply."
+      },
+      {
+        "question": "How do I invoice a quarterly pest control plan?",
+        "answer": "Send an invoice after each visit (or at the start of each period) naming the plan, the period and the visit. In the Invoicor app you duplicate the last invoice and change the date; it doesn't send invoices automatically."
+      },
+      {
+        "question": "Is pest control taxable?",
+        "answer": "It depends on the state: some tax pest control services, others don't, and some treat commercial work differently. Check your state's rule and keep it the same on every invoice."
+      },
+      {
+        "question": "Can I use this pest control invoice template for free?",
+        "answer": "Yes. Open the example in the free online generator, change it to your job and download the PDF. The Invoicor iPhone app saves customers and your standard treatments for repeat visits."
+      }
+    ],
+    "related": [
+      {
+        "name": "Cleaning services",
+        "slug": "cleaning-services"
+      },
+      {
+        "name": "Landscaping",
+        "slug": "landscaping"
+      }
+    ]
   }
 ]

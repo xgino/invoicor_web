@@ -78,6 +78,10 @@
       {
         "name": "Invoice2go",
         "slug": "invoice2go"
+      },
+      {
+        "name": "Jobber",
+        "slug": "jobber"
       }
     ]
   },
@@ -160,6 +164,10 @@
       {
         "name": "Invoice2go",
         "slug": "invoice2go"
+      },
+      {
+        "name": "Harvest",
+        "slug": "harvest"
       }
     ]
   },
@@ -246,6 +254,10 @@
       {
         "name": "FreshBooks",
         "slug": "freshbooks"
+      },
+      {
+        "name": "Invoice Fly",
+        "slug": "invoice-fly"
       }
     ]
   },
@@ -320,6 +332,10 @@
       {
         "name": "FreshBooks",
         "slug": "freshbooks"
+      },
+      {
+        "name": "Invoice Ninja",
+        "slug": "invoice-ninja"
       }
     ]
   },
@@ -390,6 +406,10 @@
       {
         "name": "Wave",
         "slug": "wave"
+      },
+      {
+        "name": "Zervant",
+        "slug": "zervant"
       }
     ]
   },
@@ -460,6 +480,10 @@
       {
         "name": "Invoice2go",
         "slug": "invoice2go"
+      },
+      {
+        "name": "Invoice Ninja",
+        "slug": "invoice-ninja"
       }
     ]
   },
@@ -530,6 +554,10 @@
       {
         "name": "Stripe Invoicing",
         "slug": "stripe-invoices"
+      },
+      {
+        "name": "Housecall Pro",
+        "slug": "housecall-pro"
       }
     ]
   },
@@ -600,6 +628,10 @@
       {
         "name": "Invoice2go",
         "slug": "invoice2go"
+      },
+      {
+        "name": "Bookipi",
+        "slug": "bookipi"
       }
     ]
   },
@@ -742,5 +774,825 @@
         "slug": "wave"
       }
     ]
+  },
+  {
+    "slug": "invoice-fly",
+    "competitor": "Invoice Fly",
+    "title": "Invoice Fly Alternative: No Weekly Plan Needed | Invoicor",
+    "meta_description": "Invoice Fly costs $8.99 a week or $98.99 a year. Compare it with Invoicor: a free plan, monthly prices from $4.99 and no fees on your payments.",
+    "badge_text": "Mobile Invoice Apps",
+    "h1": "An Invoice Fly alternative with a free plan and monthly pricing.",
+    "subtitle": "Invoice Fly sells a weekly plan at $8.99 or a yearly plan at $98.99, with a card needed to start the trial. Invoicor has a free plan with 3 invoices, monthly plans from $4.99, and takes nothing from your payments.",
+    "mistake_1_title": "Weekly billing adds up.",
+    "mistake_1_text": "Invoice Fly's pricing page lists a Weekly Plan at $8.99 a week. Over a month that's roughly $39, and over a year far more than its $98.99 yearly plan. If you only want to try an invoice app for a few weeks, a weekly price looks small but grows fast.",
+    "mistake_2_title": "A card to start the trial.",
+    "mistake_2_text": "Invoice Fly's FAQ says you need to provide a credit card for the free trial (it isn't charged during the trial). Invoicor's free plan needs no subscription: 3 invoices to try on real jobs, without a time limit.",
+    "mistake_3_title": "One business per account.",
+    "mistake_3_text": "Invoice Fly's FAQ answers 'Not yet' to managing more than one business from one account. Invoicor Pro includes up to 3 business profiles, each with its own details and logo.",
+    "feature_compare_1_name": "Free Plan (No Trial Card)",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Monthly Plan Option",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "Multiple Business Profiles",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Estimates",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Android App",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Pay for the months you use",
+    "policy_text": "Weekly subscriptions are designed to feel cheap at the checkout. For a business tool you use every month, a monthly or yearly price is easier to budget and usually costs less. Invoicor's prices are monthly or yearly only, cancel any time through Apple.",
+    "solution_h2": "Simple pricing, no cut of your money",
+    "solution_text": "Invoicor makes clean invoices on your iPhone, with saved clients and items, 31 templates, 11 invoice languages and 38 currencies. You add your own payment link; your client pays you directly and Invoicor takes nothing from the payment.",
+    "stat_1_value": "$4.99",
+    "stat_1_desc": "Invoicor Starter per month, for 10 invoices a month. Invoice Fly's weekly plan is $8.99 a week.",
+    "stat_2_value": "3",
+    "stat_2_desc": "Free invoices on Invoicor, with no watermark and no card or trial needed.",
+    "pricing_them": "$8.99/week",
+    "pricing_them_subtext": "Invoice Fly's Weekly Plan is $8.99 a week; the Yearly Plan is $98.99 a year. There's no free plan, and the trial needs a credit card. Source: invoicefly.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "iPhone users who want clean invoices, a real free plan, monthly pricing and no fees on their payments.",
+    "target_audience_them": "People who need estimates and an Android or web app as well, and are happy with a yearly plan.",
+    "step_1_title": "Try it free",
+    "step_1_text": "Download Invoicor and make 3 invoices on real jobs, free and without a watermark.",
+    "step_2_title": "Add your clients and items",
+    "step_2_text": "Save your regular clients and line items once; every next invoice takes a few taps.",
+    "step_3_title": "Pick a plan when you're ready",
+    "step_3_text": "Starter or Pro, monthly or yearly, cancel any time through Apple.",
+    "faqs": [
+      {
+        "question": "How much does Invoice Fly cost?",
+        "answer": "According to its pricing page (November 2026), Invoice Fly has a Weekly Plan at $8.99 a week and a Yearly Plan at $98.99 a year (USD). There's no free plan, and starting the trial needs a credit card."
+      },
+      {
+        "question": "Is there a free Invoice Fly alternative?",
+        "answer": "Yes. Invoicor has a free plan with 3 invoices and no watermark, plus a free online invoice generator for one-off invoices."
+      },
+      {
+        "question": "Does Invoicor make estimates like Invoice Fly?",
+        "answer": "Not yet: Invoicor makes invoices only. If you send many estimates, keep that in mind."
+      },
+      {
+        "question": "Is Invoicor on Android?",
+        "answer": "Not yet. Invoicor is an iPhone app; an Android version is in the works. Android users can use the free online generator today."
+      },
+      {
+        "question": "How do my clients pay?",
+        "answer": "You add your own payment link (PayPal, Stripe or similar) and bank details. Your client pays you directly; Invoicor takes nothing."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Invoice2go",
+        "slug": "invoice2go"
+      },
+      {
+        "name": "Bookipi",
+        "slug": "bookipi"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/invoice-fly"
+  },
+  {
+    "slug": "bookipi",
+    "competitor": "Bookipi",
+    "title": "Bookipi Alternative: Simple iPhone Invoicing | Invoicor",
+    "meta_description": "Compare Bookipi and Invoicor: free plans, Starter and Pro prices, invoice limits and what each app is best at. Prices checked November 2026.",
+    "badge_text": "Free Invoice Apps",
+    "h1": "A Bookipi alternative for clean, simple invoicing on iPhone.",
+    "subtitle": "Bookipi's free plan allows 3 documents a month, and its paid plans are $9.99 and $52 a month. Invoicor's free plan has 3 invoices to try, and Pro is $7.99 a month for 50 invoices a month. Here's how they really compare.",
+    "mistake_1_title": "Free, but 3 documents a month.",
+    "mistake_1_text": "Bookipi's free plan allows up to 3 invoices a month, and that count includes quotations, credit notes and estimates. It resets every 30 days. Generous to start, but a busy week uses it up.",
+    "mistake_2_title": "A big step from Starter to Professional.",
+    "mistake_2_text": "Bookipi Starter is $9.99 a month ($91.20 a year); Professional is $52 a month ($468 a year). Invoicor's plans are $4.99 and $7.99 a month.",
+    "mistake_3_title": "More than an invoicing app.",
+    "mistake_3_text": "Bookipi's pricing page also sells an AI website builder, an AI receptionist and contract packs. If you only need invoices, that's a lot of product to look past.",
+    "feature_compare_1_name": "Free Plan",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": true,
+    "feature_compare_2_name": "Paid Plan Under $8/Month",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Fees Taken From Payments",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Estimates & Quotes",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Recurring Invoices",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Two different philosophies",
+    "policy_text": "Bookipi bundles card payments, e-signatures, recurring invoices and reminders into a broad small-business platform, and offers card payments with fees that depend on the country. Invoicor does one thing: it makes a professional invoice fast, and leaves payments to your own provider, so it never takes a cut.",
+    "solution_h2": "Invoicing, done fast and well",
+    "solution_text": "Invoicor focuses on the invoice itself: 31 templates (21 free), your logo, saved clients and items, one-tap duplicates, 11 languages and 38 currencies, and statuses from draft to paid.",
+    "stat_1_value": "$7.99",
+    "stat_1_desc": "Invoicor Pro per month: 50 invoices a month, 3 business profiles, premium templates. Bookipi Professional is $52 a month.",
+    "stat_2_value": "0%",
+    "stat_2_desc": "What Invoicor takes from your payments. Your client pays you through your own payment link.",
+    "pricing_them": "$9.99/mo",
+    "pricing_them_subtext": "Bookipi Free: up to 3 documents a month. Starter: $9.99 a month or $91.20 a year. Professional: $52 a month or $468 a year. Card fees depend on the country. Source: bookipi.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Tradespeople and freelancers on iPhone who want polished invoices quickly, simple prices, and payments straight to their own account.",
+    "target_audience_them": "Small businesses that want quotes, e-signatures, recurring invoices and card payments in one platform on web and mobile.",
+    "step_1_title": "Start free",
+    "step_1_text": "Make your first 3 invoices free, with no watermark.",
+    "step_2_title": "Bring your clients",
+    "step_2_text": "Add your clients and usual items once; Invoicor fills them in on every invoice.",
+    "step_3_title": "Send and get paid directly",
+    "step_3_text": "Share the PDF by email, iMessage or WhatsApp with your own payment link.",
+    "faqs": [
+      {
+        "question": "How much does Bookipi cost?",
+        "answer": "According to Bookipi's pricing page (November 2026): Free (up to 3 documents a month), Starter at $9.99 a month or $91.20 a year, and Professional at $52 a month or $468 a year (USD)."
+      },
+      {
+        "question": "Does Bookipi's free plan include estimates?",
+        "answer": "Yes, but they count toward the same limit: Bookipi's free plan allows 3 documents a month in total, including quotations, credit notes and estimates."
+      },
+      {
+        "question": "What does Invoicor not do that Bookipi does?",
+        "answer": "Invoicor has no estimates, recurring invoices, automatic reminders, e-signatures or built-in card payments, and no Android app yet. It focuses on fast, professional invoices on iPhone."
+      },
+      {
+        "question": "Is Invoicor cheaper than Bookipi?",
+        "answer": "Invoicor's paid plans are $4.99 and $7.99 a month; Bookipi's are $9.99 and $52 a month. Which is better value depends on whether you need Bookipi's extra features."
+      },
+      {
+        "question": "Can my clients pay by card with Invoicor?",
+        "answer": "Yes, through your own payment link (Stripe, PayPal or similar). The money goes straight to you; Invoicor takes no fee."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Invoice Fly",
+        "slug": "invoice-fly"
+      },
+      {
+        "name": "Zervant",
+        "slug": "zervant"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/bookipi"
+  },
+  {
+    "slug": "joist",
+    "competitor": "Joist",
+    "title": "Joist Alternative: Free Plan for Contractors | Invoicor",
+    "meta_description": "Joist dropped its free plan; Basics allows 5 documents a month. Compare it with Invoicor's free plan and $7.99 Pro for 50 invoices a month.",
+    "badge_text": "Contractor Invoicing",
+    "h1": "A Joist alternative for contractors who want a free plan back.",
+    "subtitle": "Joist's free plan is no longer available, and its Basics plan allows 5 documents a month. Invoicor still has a free plan, and Pro is $7.99 a month for 50 invoices a month with your logo on every one.",
+    "mistake_1_title": "The free plan is gone.",
+    "mistake_1_text": "Joist's FAQ states that its free plan is no longer available. New users start with a 14-day trial and then pick a paid plan.",
+    "mistake_2_title": "5 documents a month on Basics.",
+    "mistake_2_text": "Joist Basics ($10 a month, or $8.34 a month billed yearly) allows up to 5 documents a month. A contractor sending a quote and an invoice per job hits that after a few jobs.",
+    "mistake_3_title": "Your logo costs extra.",
+    "mistake_3_text": "On Joist's pricing page, adding your logo and branding is listed from the Pro plan ($17 a month). On Invoicor, your logo is on every plan, including free.",
+    "feature_compare_1_name": "Free Plan",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Logo on the Cheapest Plan",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Fees Taken From Payments",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Estimates",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Android & Web App",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "What contractors actually need from an invoice app",
+    "policy_text": "Joist has grown into a contractor suite: estimates, financing, deposits, an AI receptionist, and a 'Run' plan at $100 a month. That suits companies that want one system. Many tradespeople just need a clean invoice from the truck, with their logo, saved items and a payment link, at a small monthly price.",
+    "solution_h2": "Built for the invoice from the driveway",
+    "solution_text": "Invoicor saves your clients and line items, duplicates last week's invoice in one tap, shows each invoice's status, and puts your own payment link on the PDF. Invoicor never takes a cut of what your client pays.",
+    "stat_1_value": "50",
+    "stat_1_desc": "Invoices a month on Invoicor Pro at $7.99. Joist Basics allows 5 documents a month.",
+    "stat_2_value": "$0",
+    "stat_2_desc": "To start on Invoicor: 3 free invoices, logo included, no watermark.",
+    "pricing_them": "$10/mo",
+    "pricing_them_subtext": "Joist Basics: $10 a month ($8.34 billed yearly), up to 5 documents a month. Pro: $17 ($14.17). Elite: $32 ($26.67). Run: $100 a month. No free plan; 14-day trial. Source: joist.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Tradespeople and contractors on iPhone who want professional invoices with their logo, saved items and payments straight to their account.",
+    "target_audience_them": "Contractors who quote every job in the app, want customer financing and deposits built in, and use Android or the web.",
+    "step_1_title": "Start free",
+    "step_1_text": "Make 3 invoices free with your logo and no watermark.",
+    "step_2_title": "Save your price list",
+    "step_2_text": "Add your usual services and materials once, then build each invoice in a few taps.",
+    "step_3_title": "Send from the site",
+    "step_3_text": "Share the PDF by text or email with your payment link before you drive off.",
+    "faqs": [
+      {
+        "question": "Does Joist still have a free plan?",
+        "answer": "No. Joist's FAQ says its free plan is no longer available (November 2026); new users get a 14-day trial."
+      },
+      {
+        "question": "How much does Joist cost?",
+        "answer": "According to its pricing page (November 2026): Basics $10 a month ($8.34 billed yearly, 5 documents a month), Pro $17 ($14.17), Elite $32 ($26.67) and Run $100 a month, in USD."
+      },
+      {
+        "question": "Can Invoicor make estimates like Joist?",
+        "answer": "Not yet; Invoicor makes invoices only. Contractors who quote every job in the same app may prefer Joist for that."
+      },
+      {
+        "question": "Can I add my logo on Invoicor's free plan?",
+        "answer": "Yes. Your logo appears on every invoice on every plan, including the free one."
+      },
+      {
+        "question": "How do clients pay with Invoicor?",
+        "answer": "Through your own payment link (Stripe, PayPal or similar) or bank transfer. Invoicor takes no fee."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Jobber",
+        "slug": "jobber"
+      },
+      {
+        "name": "Housecall Pro",
+        "slug": "housecall-pro"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/joist"
+  },
+  {
+    "slug": "jobber",
+    "competitor": "Jobber",
+    "title": "Jobber Alternative for Simple Invoicing | Invoicor",
+    "meta_description": "Jobber starts at $29 a month billed yearly, plus card fees. If you mainly need invoices, compare it with Invoicor: free plan, $7.99 Pro, no fees.",
+    "badge_text": "Field Service Software",
+    "h1": "A Jobber alternative for when you just need to send invoices.",
+    "subtitle": "Jobber is a full field-service platform: quotes, scheduling, a client hub and payments, from $29 a month billed yearly ($49 without a commitment). If your real need is a clean invoice from your phone, Invoicor does that from free.",
+    "mistake_1_title": "Paying for scheduling you don't use.",
+    "mistake_1_text": "Jobber's Core plan bundles quotes, invoices, scheduling, a website and reporting. Valuable for a team with dispatch, but a solo tradesperson who books jobs by phone pays for a lot they never open.",
+    "mistake_2_title": "Fees on every card payment.",
+    "mistake_2_text": "Jobber lists card payments at 2.9% + 30¢ and bank payments at 1%. On a $2,000 job paid by card, that's $58.30. Invoicor doesn't process payments, so it takes nothing; your own provider's fees apply.",
+    "mistake_3_title": "Prices that grow with your team.",
+    "mistake_3_text": "Jobber's higher plans are priced by team size, and extra users are $29 a month each. Invoicor's prices don't depend on how many people are on your crew.",
+    "feature_compare_1_name": "Free Plan",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Under $10/Month",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Fees Taken From Payments",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Scheduling & Dispatch",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Quotes",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "A platform or a tool?",
+    "policy_text": "Jobber is excellent when you run a crew: scheduling, routing, quotes and payments in one place. The cost is a monthly subscription that starts at $29 billed yearly and rises with plans and users, plus processing fees. Invoicor is a tool, not a platform: it makes the invoice, fast, and gets out of the way.",
+    "solution_h2": "The invoice part, without the rest",
+    "solution_text": "Invoicor gives solo tradespeople and small teams saved clients and items, one-tap duplicates, 31 templates, invoice statuses and a dashboard, with their own payment link on every PDF.",
+    "stat_1_value": "$7.99",
+    "stat_1_desc": "Invoicor Pro per month (50 invoices a month). Jobber Core is $29 a month billed yearly, $49 with no commitment.",
+    "stat_2_value": "0%",
+    "stat_2_desc": "Invoicor's cut of your payments. Jobber lists 2.9% + 30¢ per card payment.",
+    "pricing_them": "$29/mo",
+    "pricing_them_subtext": "Jobber Core (1 user): $29 a month billed yearly, $39 with a 1-year commitment, $49 with no commitment. Connect from $99, Grow from $149, Plus from $399 (billed yearly). Extra users $29/mo. Cards 2.9% + 30¢. Source: getjobber.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Solo tradespeople and small crews who book jobs themselves and want to invoice from their phone without a monthly platform bill.",
+    "target_audience_them": "Service businesses with several technicians who need scheduling, dispatch, quotes, a client hub and online payments in one system.",
+    "step_1_title": "Keep your booking routine",
+    "step_1_text": "Book jobs the way you already do; Invoicor handles the invoice.",
+    "step_2_title": "Save your services",
+    "step_2_text": "Add your standard services, materials and clients once.",
+    "step_3_title": "Invoice after each job",
+    "step_3_text": "Send the PDF from the driveway with your own payment link.",
+    "faqs": [
+      {
+        "question": "How much does Jobber cost?",
+        "answer": "According to Jobber's pricing page (November 2026), Core for 1 user is $29 a month billed yearly ($39 with a 1-year commitment, $49 with no commitment). Higher plans start at $99, $149 and $399 a month billed yearly, extra users are $29 a month, and card payments cost 2.9% + 30¢."
+      },
+      {
+        "question": "Does Jobber have a free plan?",
+        "answer": "No, but it offers a 14-day free trial of its Grow plan without a credit card, according to its pricing page."
+      },
+      {
+        "question": "Is Invoicor a replacement for Jobber?",
+        "answer": "Only for the invoicing part. Invoicor has no scheduling, dispatch, quotes or client hub. If you need those, Jobber is the stronger choice; if you mainly send invoices, Invoicor is much simpler and cheaper."
+      },
+      {
+        "question": "Does Invoicor charge payment fees?",
+        "answer": "No. You add your own payment link or bank details; your client pays you directly and Invoicor takes nothing."
+      },
+      {
+        "question": "Can my team use one Invoicor account?",
+        "answer": "Invoicor is made for one user; it has no team logins. Pro includes up to 3 business profiles."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Housecall Pro",
+        "slug": "housecall-pro"
+      },
+      {
+        "name": "ServiceM8",
+        "slug": "servicem8"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/jobber"
+  },
+  {
+    "slug": "housecall-pro",
+    "competitor": "Housecall Pro",
+    "title": "Housecall Pro Alternative for Invoicing | Invoicor",
+    "meta_description": "Housecall Pro starts at $59 a month billed yearly. If you mostly need invoices, compare it with Invoicor: a free plan, $7.99 Pro and no payment fees.",
+    "badge_text": "Home Service Software",
+    "h1": "A Housecall Pro alternative for tradespeople who just need invoices.",
+    "subtitle": "Housecall Pro is a home-service platform with scheduling, dispatch, booking and payments, from $59 a month billed yearly ($79 monthly). Invoicor does the invoice part from free, without taking a cut of your payments.",
+    "mistake_1_title": "A platform price for a simple need.",
+    "mistake_1_text": "Housecall Pro Basic is $59 a month billed yearly, or $79 month to month, for one user. If you only need to send invoices, that's a lot each month for features you won't use.",
+    "mistake_2_title": "Processing fees on every payment.",
+    "mistake_2_text": "Housecall Pro's pricing page says card processing starts at 2.59% and bank payments cost 1%. Invoicor doesn't process payments, so it takes nothing.",
+    "mistake_3_title": "Users priced by plan.",
+    "mistake_3_text": "Basic includes 1 user, Essentials 5 and Max 8, with extra users on Max at $35 a month each. Invoicor's price doesn't depend on users; it's made for one person.",
+    "feature_compare_1_name": "Free Plan",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Under $10/Month",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Fees Taken From Payments",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Scheduling & Online Booking",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Spanish App Interface",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "When a full platform makes sense",
+    "policy_text": "Housecall Pro is built for growing home-service companies: online booking, dispatch, a price book, job costing, financing and review management. For a team of technicians that's worth the subscription. For a one-person business, the invoice is often the only part used daily.",
+    "solution_h2": "Professional invoices, nothing more to pay for",
+    "solution_text": "Invoicor makes the invoice in seconds from saved clients and items, in 31 templates, 11 invoice languages (Spanish included) and 38 currencies, with your own payment link and statuses from draft to paid.",
+    "stat_1_value": "$7.99",
+    "stat_1_desc": "Invoicor Pro per month. Housecall Pro Basic is $59 a month billed yearly, $79 month to month.",
+    "stat_2_value": "11",
+    "stat_2_desc": "Invoice languages in Invoicor, including Spanish, so your customer reads the invoice in theirs.",
+    "pricing_them": "$59/mo",
+    "pricing_them_subtext": "Housecall Pro Basic: $59 a month billed yearly or $79 monthly (1 user). Essentials: $149 / $189 (5 users). Max: $299 / $329 (8 users, extra $35/mo each). Cards from 2.59%, bank payments 1%. Source: housecallpro.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Independent tradespeople who schedule their own jobs and want quick, professional invoices from their iPhone at a small price.",
+    "target_audience_them": "Home-service companies with technicians in the field who need booking, dispatch, a price book and payments in one system.",
+    "step_1_title": "Start free",
+    "step_1_text": "Make 3 invoices free, no watermark.",
+    "step_2_title": "Save clients and items",
+    "step_2_text": "Add your customers and services once.",
+    "step_3_title": "Invoice from the job",
+    "step_3_text": "Send the PDF with your payment link before you leave.",
+    "faqs": [
+      {
+        "question": "How much does Housecall Pro cost?",
+        "answer": "According to its pricing page (November 2026), Basic is $59 a month billed yearly or $79 monthly (1 user), Essentials $149 or $189 (5 users), and Max $299 or $329 (8 users), in USD. Card processing starts at 2.59%."
+      },
+      {
+        "question": "Does Housecall Pro have a free plan?",
+        "answer": "No; it offers a 14-day free trial without a credit card, according to its pricing page."
+      },
+      {
+        "question": "Is Invoicor a full Housecall Pro replacement?",
+        "answer": "No. Invoicor has no scheduling, dispatch, online booking or price-book features. It replaces only the invoicing, at a much lower price."
+      },
+      {
+        "question": "Can I invoice in Spanish with Invoicor?",
+        "answer": "Yes. Invoices can be in 11 languages, including Spanish; the app itself is in English."
+      },
+      {
+        "question": "Does Invoicor take a percentage of payments?",
+        "answer": "No. Your client pays you through your own payment link or bank details, and Invoicor takes nothing."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Jobber",
+        "slug": "jobber"
+      },
+      {
+        "name": "ServiceM8",
+        "slug": "servicem8"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/housecall-pro"
+  },
+  {
+    "slug": "invoice-ninja",
+    "competitor": "Invoice Ninja",
+    "title": "Invoice Ninja Alternative for iPhone | Invoicor",
+    "meta_description": "Invoice Ninja's free plan allows 5 clients; Pro is $14 a month. Compare it with Invoicor: unlimited clients on every plan and $7.99 Pro on iPhone.",
+    "badge_text": "Free Invoicing Software",
+    "h1": "An Invoice Ninja alternative made for invoicing from your iPhone.",
+    "subtitle": "Invoice Ninja is a powerful invoicing system with a free plan for up to 5 clients and Pro at $14 a month. Invoicor is a focused iPhone app: unlimited clients on every plan, Pro at $7.99, and invoices in a few taps.",
+    "mistake_1_title": "5 clients on the free plan.",
+    "mistake_1_text": "Invoice Ninja's free plan has no invoice limit but allows up to 5 clients. Most freelancers and tradespeople pass 5 clients within weeks.",
+    "mistake_2_title": "Branding removal is paid.",
+    "mistake_2_text": "On Invoice Ninja's pricing page, removing its branding and custom invoice designs aren't part of the free plan. Invoicor's free invoices carry no watermark.",
+    "mistake_3_title": "A system to set up.",
+    "mistake_3_text": "Invoice Ninja does a lot: client portal, gateways, recurring invoices, an API and automations. That power takes setup. If you want to send an invoice today from your phone, simpler can be faster.",
+    "feature_compare_1_name": "Unlimited Clients on Free",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "No Watermark on Free",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "Native iPhone App",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": true,
+    "feature_compare_4_name": "Recurring Invoices",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Desktop & Web Apps",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Powerful versus quick",
+    "policy_text": "Invoice Ninja is a strong choice for businesses that want a full invoicing back office, with apps on desktop, web and mobile and an option to self-host. Invoicor chooses the opposite: fewer features, chosen for the moment you finish a job and want the invoice sent.",
+    "solution_h2": "Fast on the phone you already carry",
+    "solution_text": "Saved clients and items, one-tap duplicates, 31 templates, 11 languages, 38 currencies and statuses from draft to paid. Your own payment link on every invoice, and no fee from Invoicor.",
+    "stat_1_value": "Unlimited",
+    "stat_1_desc": "Clients on every Invoicor plan, including free. Invoice Ninja's free plan allows 5.",
+    "stat_2_value": "$7.99",
+    "stat_2_desc": "Invoicor Pro per month. Invoice Ninja Pro is $14 a month ($140 a year).",
+    "pricing_them": "$14/mo",
+    "pricing_them_subtext": "Invoice Ninja Free: $0, up to 5 clients. Ninja Pro: $14 a month or $140 a year. Enterprise from $18 a month for 1–2 users. Source: invoiceninja.com/pricing-plans, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Freelancers and tradespeople who invoice from their iPhone and want it done in a few taps, with no client limits.",
+    "target_audience_them": "Businesses that want a full invoicing system with a client portal, automations, an API and apps on every platform.",
+    "step_1_title": "Download and try",
+    "step_1_text": "3 invoices free, every client you need, no watermark.",
+    "step_2_title": "Add your logo and items",
+    "step_2_text": "Set up your business profile once.",
+    "step_3_title": "Send and get paid",
+    "step_3_text": "Share the PDF with your own payment link.",
+    "faqs": [
+      {
+        "question": "How much does Invoice Ninja cost?",
+        "answer": "According to its pricing page (November 2026): Free ($0, up to 5 clients), Ninja Pro at $14 a month or $140 a year, and Enterprise from $18 a month for 1–2 users, in USD."
+      },
+      {
+        "question": "What's the client limit on Invoice Ninja's free plan?",
+        "answer": "Up to 5 clients, with no limit on invoices, according to Invoice Ninja's pricing page."
+      },
+      {
+        "question": "What does Invoice Ninja do that Invoicor doesn't?",
+        "answer": "Recurring invoices, a client portal, automations, an API, and desktop and web apps. Invoicor is an iPhone app focused on making and sending invoices quickly."
+      },
+      {
+        "question": "Does Invoicor limit clients?",
+        "answer": "No. Every Invoicor plan, including free, allows unlimited clients; the plans differ in invoices per month."
+      },
+      {
+        "question": "Can I use Invoicor on Android or a computer?",
+        "answer": "The app is iPhone only for now. On any computer or Android phone you can use the free online invoice generator."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Zoho Invoice",
+        "slug": "zoho-invoice"
+      },
+      {
+        "name": "Wave",
+        "slug": "wave"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/invoice-ninja"
+  },
+  {
+    "slug": "harvest",
+    "competitor": "Harvest",
+    "title": "Harvest Alternative for Simple Invoicing | Invoicor",
+    "meta_description": "Harvest is time tracking with invoicing, from $9 per seat a month billed yearly. If you mostly need invoices, compare it with Invoicor's $7.99 Pro.",
+    "badge_text": "Time Tracking & Invoicing",
+    "h1": "A Harvest alternative for freelancers who need invoices, not timesheets.",
+    "subtitle": "Harvest is a time-tracking tool that also makes invoices, priced per seat from $9 a month billed yearly. If you bill fixed prices or projects rather than tracked hours, Invoicor is a simpler, invoice-first app on your iPhone.",
+    "mistake_1_title": "Paying for time tracking you don't need.",
+    "mistake_1_text": "Harvest is built around timesheets, projects and reports. If you charge per project or per job, most of what you pay for sits unused.",
+    "mistake_2_title": "Free means 1 seat and 2 projects.",
+    "mistake_2_text": "Harvest's free plan includes 1 seat and 2 projects. Fine for trying it, tight for a freelancer with several clients.",
+    "mistake_3_title": "Per-seat pricing.",
+    "mistake_3_text": "Harvest Teams is $11 per seat a month ($108 per seat a year) and Enterprise $17.50 ($168 a year). Invoicor has one price per account.",
+    "feature_compare_1_name": "Invoice-First Design",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Free Plan",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": true,
+    "feature_compare_3_name": "One Price per Account (Not per Seat)",
+    "feature_compare_3_us": true,
+    "feature_compare_3_them": false,
+    "feature_compare_4_name": "Time Tracking",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Team Seats",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Hours or deliverables?",
+    "policy_text": "If your clients pay for hours, a time tracker that turns timesheets into invoices is ideal, and Harvest is one of the best known. If they pay for jobs, milestones or packages, the timesheet is overhead; the invoice is what matters.",
+    "solution_h2": "Invoices that look like your work",
+    "solution_text": "Invoicor gives you 31 templates, your logo, saved clients and items, 11 invoice languages and 38 currencies, plus statuses and a dashboard to see what's paid, on the iPhone in your pocket.",
+    "stat_1_value": "$7.99",
+    "stat_1_desc": "Invoicor Pro per month, for one account. Harvest Teams is $11 per seat a month, or $108 per seat a year.",
+    "stat_2_value": "11",
+    "stat_2_desc": "Invoice languages in Invoicor, for clients abroad.",
+    "pricing_them": "$11/seat/mo",
+    "pricing_them_subtext": "Harvest Free: 1 seat, 2 projects. Teams: $11 per seat a month or $108 per seat a year. Enterprise: $17.50 or $168 per seat a year. 30-day trial. Source: getharvest.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Freelancers and small businesses that bill per project, job or package and want polished invoices from their phone.",
+    "target_audience_them": "Agencies and teams that bill by the hour and need timesheets, project budgets and reports.",
+    "step_1_title": "Start free",
+    "step_1_text": "3 invoices free, no watermark.",
+    "step_2_title": "Save what you sell",
+    "step_2_text": "Add your packages, milestones or hourly rate as items.",
+    "step_3_title": "Send in your client's language",
+    "step_3_text": "Choose the currency and language per invoice.",
+    "faqs": [
+      {
+        "question": "How much does Harvest cost?",
+        "answer": "According to Harvest's pricing page (November 2026): Free (1 seat, 2 projects), Teams at $11 per seat a month or $108 per seat a year, and Enterprise at $17.50 per seat a month or $168 a year, in USD."
+      },
+      {
+        "question": "Can Invoicor track time like Harvest?",
+        "answer": "No. Invoicor has no time tracker. If you bill by the hour, track time in your usual tool and enter the hours on the invoice."
+      },
+      {
+        "question": "Who should choose Harvest over Invoicor?",
+        "answer": "Teams and agencies that bill tracked hours and need project budgets and reports. Invoicor is for invoicing fixed prices, packages and jobs."
+      },
+      {
+        "question": "Does Invoicor work for clients in other countries?",
+        "answer": "Yes: 38 currencies and 11 invoice languages, with your bank details on the invoice."
+      },
+      {
+        "question": "How do clients pay?",
+        "answer": "Through your own payment link or bank transfer; Invoicor takes no fee."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "FreshBooks",
+        "slug": "freshbooks"
+      },
+      {
+        "name": "Bonsai",
+        "slug": "bonsai"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/harvest"
+  },
+  {
+    "slug": "servicem8",
+    "competitor": "ServiceM8",
+    "title": "ServiceM8 Alternative Without Job Limits | Invoicor",
+    "meta_description": "ServiceM8 prices by jobs per month: 30 free, then $29 for 50. Compare it with Invoicor for tradies who mainly invoice: $7.99 for 50 invoices a month.",
+    "badge_text": "Trades Job Management",
+    "h1": "A ServiceM8 alternative for tradespeople who mainly need invoicing.",
+    "subtitle": "ServiceM8 is job management for trades, priced by jobs per month: 30 on the free plan, 50 for $29, 150 for $79. If invoicing is what you use most, Invoicor Pro gives you 50 invoices a month for $7.99.",
+    "mistake_1_title": "Paying by the job.",
+    "mistake_1_text": "ServiceM8's plans are measured in jobs per month: Free 30, Starter 50 ($29), Growing 150 ($79), Premium 500 ($149). Busy months push you up a tier.",
+    "mistake_2_title": "One user on the free plan.",
+    "mistake_2_text": "ServiceM8's free plan is for 1 user and 30 jobs a month; SMS costs 10c each on that plan. Paid plans add unlimited users.",
+    "mistake_3_title": "A lot to learn for an invoice.",
+    "mistake_3_text": "Scheduling, GPS time tracking, booking reminders and job cards are great for a team. For a solo tradie who only needs to bill, it's a bigger system than the job needs.",
+    "feature_compare_1_name": "Under $10/Month",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Free Plan",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": true,
+    "feature_compare_3_name": "Unlimited Users on Paid Plans",
+    "feature_compare_3_us": false,
+    "feature_compare_3_them": true,
+    "feature_compare_4_name": "Scheduling & Job Cards",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Quotes",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Job management or invoicing?",
+    "policy_text": "ServiceM8 shines when you dispatch staff, track time on site and manage jobs from quote to completion. If you work alone and book your own jobs, the part you need every day is the invoice, and that shouldn't cost you per job.",
+    "solution_h2": "The invoice, done in the driveway",
+    "solution_text": "Invoicor saves your clients and items, duplicates last week's invoice, shows statuses and a dashboard, and puts your payment link on the PDF. Pro covers 50 invoices a month for $7.99.",
+    "stat_1_value": "$7.99",
+    "stat_1_desc": "Invoicor Pro for 50 invoices a month. ServiceM8 Starter is $29 a month for 50 jobs.",
+    "stat_2_value": "0%",
+    "stat_2_desc": "What Invoicor takes from your payments: your client pays you through your own payment link.",
+    "pricing_them": "$29/mo",
+    "pricing_them_subtext": "ServiceM8 Free: 1 user, 30 jobs a month. Starter: $29 a month (50 jobs). Growing: $79 (150). Premium: $149 (500). Premium Plus: $349 (1,500+). 14-day trial. Source: servicem8.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Solo tradespeople and small crews who handle their own bookings and want fast, professional invoices on iPhone.",
+    "target_audience_them": "Trade businesses with staff in the field who need scheduling, job cards, time tracking and quotes in one system.",
+    "step_1_title": "Try it free",
+    "step_1_text": "3 invoices free, no watermark.",
+    "step_2_title": "Save your services",
+    "step_2_text": "Add your call-out fee, labor rate and parts once.",
+    "step_3_title": "Invoice every job",
+    "step_3_text": "Send it before you leave the site, with your payment link.",
+    "faqs": [
+      {
+        "question": "How much does ServiceM8 cost?",
+        "answer": "According to ServiceM8's pricing page (November 2026): Free (1 user, 30 jobs a month), Starter $29 a month (50 jobs), Growing $79 (150), Premium $149 (500) and Premium Plus $349 (1,500+), in USD."
+      },
+      {
+        "question": "Does ServiceM8 have a free plan?",
+        "answer": "Yes: 1 user and 30 jobs a month, according to its pricing page, with a 14-day trial of the paid features."
+      },
+      {
+        "question": "Is Invoicor a full ServiceM8 replacement?",
+        "answer": "No. Invoicor has no scheduling, job cards, time tracking or quotes. It replaces the invoicing, at a lower price."
+      },
+      {
+        "question": "How many invoices does Invoicor allow?",
+        "answer": "3 to try on the free plan, 10 a month on Starter ($4.99) and 50 a month on Pro ($7.99)."
+      },
+      {
+        "question": "Can I invoice my customers in their language?",
+        "answer": "Yes, in 11 languages and 38 currencies."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Jobber",
+        "slug": "jobber"
+      },
+      {
+        "name": "Housecall Pro",
+        "slug": "housecall-pro"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/servicem8"
+  },
+  {
+    "slug": "billdu",
+    "competitor": "Billdu",
+    "title": "Billdu Alternative With a Free Plan | Invoicor",
+    "meta_description": "Billdu has no free plan and limits clients per tier (10, 50, unlimited). Compare it with Invoicor: free plan and unlimited clients on every plan.",
+    "badge_text": "Mobile Invoicing",
+    "h1": "A Billdu alternative with a free plan and no client limits.",
+    "subtitle": "Billdu starts at $4.99 a month on a yearly plan, with 10 clients on Lite and 50 on Standard, and only a 7-day trial. Invoicor has a free plan, and every plan, including free, allows unlimited clients.",
+    "mistake_1_title": "Client limits per plan.",
+    "mistake_1_text": "Billdu Lite allows 10 clients and Standard 50; only Premium has unlimited clients. If your business grows, so does your plan.",
+    "mistake_2_title": "No free plan.",
+    "mistake_2_text": "Billdu offers a 7-day free trial, then a paid plan. Invoicor's free plan lets you make 3 invoices without a time limit.",
+    "mistake_3_title": "Estimates and reminders start on Standard.",
+    "mistake_3_text": "On Billdu's pricing page, estimates and payment reminders begin at Standard and recurring invoices at Premium. Lite is invoices only.",
+    "feature_compare_1_name": "Free Plan",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "Unlimited Clients on Every Plan",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "No Monthly Invoice Cap on the Cheapest Plan",
+    "feature_compare_3_us": false,
+    "feature_compare_3_them": true,
+    "feature_compare_4_name": "Estimates",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "Android & Web App",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Grow without changing plans",
+    "policy_text": "Client limits feel fine on day one and become a reason to upgrade on day ninety. Invoicor's plans are set by invoices per month, not by how many clients you have, so a new customer never costs you a plan change.",
+    "solution_h2": "Clean invoices, simple plans",
+    "solution_text": "31 templates, your logo, saved clients and items, one-tap duplicates, 11 languages and 38 currencies. Starter is $4.99 a month; Pro is $7.99 for 50 invoices a month.",
+    "stat_1_value": "Unlimited",
+    "stat_1_desc": "Clients on every Invoicor plan. Billdu Lite allows 10, Standard 50.",
+    "stat_2_value": "3",
+    "stat_2_desc": "Free invoices to try Invoicor, without a time limit.",
+    "pricing_them": "$4.99/mo",
+    "pricing_them_subtext": "Billdu Lite from $4.99, Standard $9.99, Premium $19.99 a month (average monthly prices on a yearly plan; same in USD and EUR). Clients: 10 / 50 / unlimited. 7-day trial. Source: billdu.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Freelancers and tradespeople on iPhone who want a free start, no client limits and professional invoices in a few taps.",
+    "target_audience_them": "Small businesses that want estimates, reminders and team members, on iPhone, Android and the web.",
+    "step_1_title": "Start free",
+    "step_1_text": "3 invoices free, all your clients, no watermark.",
+    "step_2_title": "Set up once",
+    "step_2_text": "Logo, business details and your usual items.",
+    "step_3_title": "Send and get paid",
+    "step_3_text": "PDF by email or message, with your payment link.",
+    "faqs": [
+      {
+        "question": "How much does Billdu cost?",
+        "answer": "Billdu's pricing page (November 2026) shows Lite from $4.99, Standard $9.99 and Premium $19.99 a month as average monthly prices on a yearly plan, the same in USD and EUR, with higher prices for monthly billing."
+      },
+      {
+        "question": "Does Billdu have a free plan?",
+        "answer": "No, it offers a 7-day free trial without a card, according to its pricing page."
+      },
+      {
+        "question": "How many clients can I have on Invoicor?",
+        "answer": "Unlimited, on every plan including free. Plans differ in invoices per month: 3 to try, 10 on Starter, 50 on Pro."
+      },
+      {
+        "question": "What does Billdu have that Invoicor doesn't?",
+        "answer": "Estimates and reminders (from Standard), recurring invoices (Premium), team members and Android and web apps. Invoicor is iPhone-only and invoice-focused."
+      },
+      {
+        "question": "Does Invoicor take a cut of my payments?",
+        "answer": "No. Clients pay you directly through your own payment link or bank details."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Zervant",
+        "slug": "zervant"
+      },
+      {
+        "name": "Bookipi",
+        "slug": "bookipi"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/billdu"
+  },
+  {
+    "slug": "zervant",
+    "competitor": "Zervant",
+    "title": "Zervant Alternative for Invoicing in Europe | Invoicor",
+    "meta_description": "Zervant's free plan allows 5 customers and 5 invoices a month. Compare it with Invoicor: unlimited clients, 11 languages and no payment fees.",
+    "badge_text": "European Invoicing",
+    "h1": "A Zervant alternative with no customer limits and 11 invoice languages.",
+    "subtitle": "Zervant's free plan allows 5 customers and 5 invoices a month, and paid plans start at €9.99 a month billed yearly. Invoicor allows unlimited clients on every plan, invoices in 11 languages and stores your data in Germany.",
+    "mistake_1_title": "5 customers on the free plan.",
+    "mistake_1_text": "Zervant Free allows 5 customers and 5 invoices a month; Starter allows 30 customers. Unlimited customers start at Pro.",
+    "mistake_2_title": "Fees on online payments.",
+    "mistake_2_text": "Zervant's pricing page lists card payments at about 2% (1.9% for European cards) plus €0.25 per invoice, and bank payments at €0.99 per invoice. Invoicor takes nothing; your own provider's fees apply.",
+    "mistake_3_title": "Prices exclude VAT.",
+    "mistake_3_text": "Zervant's prices are shown excluding VAT, so the amount on your card statement is higher. Invoicor's prices are what Apple charges in your country.",
+    "feature_compare_1_name": "Unlimited Clients on Free",
+    "feature_compare_1_us": true,
+    "feature_compare_1_them": false,
+    "feature_compare_2_name": "No Fees Taken From Payments",
+    "feature_compare_2_us": true,
+    "feature_compare_2_them": false,
+    "feature_compare_3_name": "Built-in Online Card Payments",
+    "feature_compare_3_us": false,
+    "feature_compare_3_them": true,
+    "feature_compare_4_name": "Estimates",
+    "feature_compare_4_us": false,
+    "feature_compare_4_them": true,
+    "feature_compare_5_name": "E-invoicing & Post Delivery",
+    "feature_compare_5_us": false,
+    "feature_compare_5_them": true,
+    "policy_h2": "Made in Europe, both of them",
+    "policy_text": "Zervant serves freelancers across Europe with estimates, time tracking, reminders and e-invoice delivery. Invoicor is a lighter iPhone app with data in Germany, for people who want the invoice done quickly in their client's language, with no limit on clients.",
+    "solution_h2": "Invoices for clients anywhere in Europe",
+    "solution_text": "11 invoice languages, 38 currencies including EUR, GBP, SEK, DKK, NOK, CHF and PLN, your VAT ID and IBAN on every invoice, and one tax rate per invoice, inclusive or added on top.",
+    "stat_1_value": "11",
+    "stat_1_desc": "Invoice languages in Invoicor, including German, French, Dutch, Swedish and Polish.",
+    "stat_2_value": "0%",
+    "stat_2_desc": "Invoicor's cut of your payments. Zervant lists about 2% + €0.25 per card-paid invoice.",
+    "pricing_them": "€9.99/mo",
+    "pricing_them_subtext": "Zervant Free: 5 customers, 5 invoices a month. Starter: €9.99 a month billed yearly (€11.99 monthly), 30 customers. Pro: €17.99 (€20.99). Growth: €41.99 (€47.99). Excl. VAT. Source: zervant.com/pricing, November 2026.",
+    "target_audience_title": "Who is each app built for?",
+    "target_audience_us": "Freelancers and tradespeople on iPhone who invoice clients across Europe and want no client limits and no fees on payments.",
+    "target_audience_them": "European small businesses that want estimates, time tracking, reminders and e-invoice or postal delivery, on web and mobile.",
+    "step_1_title": "Start free",
+    "step_1_text": "3 invoices free, unlimited clients.",
+    "step_2_title": "Add your VAT ID and IBAN",
+    "step_2_text": "Set up your business profile once.",
+    "step_3_title": "Invoice in their language",
+    "step_3_text": "Pick the language and currency per invoice.",
+    "faqs": [
+      {
+        "question": "How much does Zervant cost?",
+        "answer": "According to Zervant's pricing page (November 2026): Free (5 customers, 5 invoices a month), Starter €9.99 a month billed yearly or €11.99 monthly, Pro €17.99 or €20.99, and Growth €41.99 or €47.99, all excluding VAT."
+      },
+      {
+        "question": "What are Zervant's payment fees?",
+        "answer": "Zervant's pricing page lists card payments at about 2% (1.9% for European cards) plus €0.25 per invoice, and bank payments at €0.99 per invoice."
+      },
+      {
+        "question": "Where does Invoicor store my data?",
+        "answer": "On servers in Germany, under the GDPR."
+      },
+      {
+        "question": "Can Invoicor handle EU VAT?",
+        "answer": "Yes, with one tax rate per invoice (inclusive or added on top), your VAT ID and your client's, and a note for reverse charge where it applies."
+      },
+      {
+        "question": "What does Zervant do that Invoicor doesn't?",
+        "answer": "Estimates, time tracking, payment reminders, recurring invoices on higher plans, and e-invoice or postal delivery. Invoicor focuses on fast invoices on iPhone."
+      }
+    ],
+    "related_comparisons": [
+      {
+        "name": "Billdu",
+        "slug": "billdu"
+      },
+      {
+        "name": "Xero",
+        "slug": "xero"
+      }
+    ],
+    "canonical": "https://invoicor.com/compare/zervant"
   }
 ]
