@@ -13,8 +13,17 @@ VPS  nginx ─┬─ /api/, /admin/ …  ──> Django   (the invoicor_api repo
             └─ everything else   ──> /var/www/invoicor.com/web   (this repo)
 ```
 
-The website and the API are separate: this repo only ever writes `web`, `web-new` and `web-prev`,
-never the API. nginx is the only shared piece.
+The website and the API are separate. `/var/www/invoicor.com` is the API (Django). The website
+lives only in its own folder inside it, owned by its own deploy user, who can't write anything else:
+
+```
+/var/www/invoicor.com/web/current   what nginx serves
+/var/www/invoicor.com/web/new       during an upload
+/var/www/invoicor.com/web/prev      the previous version (rollback)
+```
+
+The old Vite site (`/var/www/invoicor.com/dist`) is never touched; undoing the launch only means
+putting the old nginx file back. nginx is the only shared piece.
 
 ---
 
@@ -103,16 +112,17 @@ ssh root@SERVER_IP                    # must log in without a password (else: ss
 3. `bash deploy/setup.sh info`: writes `deploy/server-info.txt` (the current nginx file and
    folders) and prints the `NGINX_SITE=` line for `deploy/.env`. Tell Claude: it writes the new nginx
    file into `deploy/nginx/invoicor.com.conf`, keeping your certificates and `/api/` blocks.
-4. Don't run `deploy.sh` before launch day: the first deploy replaces the old site in `web`.
+4. A deploy before launch day is harmless: it fills `web/current`, but nginx keeps serving the old
+   site until `setup.sh launch`.
 
 ### F.3 Launch day
 
 ```bash
-bash deploy/deploy.sh          # tests, then the new site goes into web (the old one moves to web-prev)
+bash deploy/deploy.sh          # tests, then the new site goes into web/current (the old site keeps running)
 bash deploy/setup.sh launch    # right after: backups, the new nginx file, tested, PRODUCTION_LIVE on
 ```
 
-`launch` backs up the nginx file and the old site, installs the new nginx file, tests it and checks
+`launch` backs up the nginx file, installs the new one (root `web/current`), tests it and checks
 the live site. If anything fails it puts the old nginx file back by itself. Then section D.
 
 Undo the whole launch (old site and old nginx file back): `bash deploy/setup.sh undo-launch`.

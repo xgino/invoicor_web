@@ -2,8 +2,8 @@
 # deploy/setup.sh: once, on your Mac in the repo root (safe to run again, it skips what exists).
 #   bash deploy/setup.sh               the server user, its key and the GitHub secrets. Changes nothing
 #                                      the visitors see: not nginx, not the live site, not the API.
-#   bash deploy/setup.sh info          writes deploy/server-info.txt (the nginx details Claude needs
-#                                      to write the new nginx file) and prints NGINX_SITE
+#   bash deploy/setup.sh info          writes deploy/server-info.txt: the nginx details Claude needs
+#                                      to write the new nginx file
 #   bash deploy/setup.sh launch        launch day, after the first deploy: the new nginx file goes
 #                                      live (backup first, tested, undone by itself if the site fails)
 #   bash deploy/setup.sh undo-launch   back to the old site and the old nginx file
@@ -49,8 +49,8 @@ checks() {
 # ---------- once: server user, key, GitHub secrets ----------
 
 setup() {
-    # 1. the deploy user: may create and rename web, web-new and web-prev in the domain folder,
-    #    nothing else (no sudo, no access to the API)
+    # 1. the deploy user: owns only the website folder (current/, new/, prev/ inside it), nothing
+    #    else (no sudo, no write access to the API next to it)
     remote "$SUDO bash -s" <<REMOTE
 set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
@@ -58,13 +58,14 @@ missing=""
 for pkg in rsync acl; do dpkg -s \$pkg > /dev/null 2>&1 || missing="\$missing \$pkg"; done
 [ -z "\$missing" ] || { apt-get update -qq && apt-get install -y -qq \$missing; }
 id -u $DEPLOY_USER > /dev/null 2>&1 || useradd --system --create-home --shell /bin/bash $DEPLOY_USER
-mkdir -p "$PARENT"
-setfacl -m u:$DEPLOY_USER:rwx "$PARENT"
-# the current website folder (the old site) becomes the deploy user's, so it can be swapped out
-for d in "$WEB_PATH" "$WEB_PATH-prev" "$WEB_PATH-new"; do [ -d "\$d" ] && chown -R $DEPLOY_USER:$DEPLOY_USER "\$d"; done
+# an earlier version of this script gave the deploy user write access to the domain folder: undo it
+setfacl -x u:$DEPLOY_USER "$PARENT" 2>/dev/null || true
+mkdir -p "$WEB_PATH"
+chown $DEPLOY_USER:$DEPLOY_USER "$WEB_PATH"
+chmod 755 "$WEB_PATH"
 sudo -u $DEPLOY_USER -H bash -c 'mkdir -p ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
 REMOTE
-    say "server user $DEPLOY_USER ready (writes only $PARENT/web*)"
+    say "server user $DEPLOY_USER ready (writes only $WEB_PATH)"
 
     # 2. a key for GitHub, made here and never stored on your Mac
     local tmp
@@ -74,8 +75,8 @@ REMOTE
 mv ~/.ssh/ak.tmp ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 echo \"$(cat "$tmp/key.pub")\" >> ~/.ssh/authorized_keys'"
     ssh -i "$tmp/key" -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=accept-new \
-        "$DEPLOY_USER@$SERVER_IP" "test -w '$PARENT'" \
-        || { echo "!!! $DEPLOY_USER can't log in or can't write $PARENT"; rm -rf "$tmp"; exit 1; }
+        "$DEPLOY_USER@$SERVER_IP" "test -w '$WEB_PATH' && ! test -w '$PARENT'" \
+        || { echo "!!! $DEPLOY_USER can't log in, can't write $WEB_PATH, or can still write $PARENT"; rm -rf "$tmp"; exit 1; }
     say "GitHub's key works for $DEPLOY_USER@$SERVER_IP"
 
     # 3. the GitHub environment "production": only main may deploy
@@ -108,18 +109,18 @@ info() {
     local out="$DIR/server-info.txt"
     remote "$SUDO bash -s" > "$out" <<REMOTE
 echo "== nginx -v"; nginx -v 2>&1
-echo; echo "== files in sites-enabled that serve $DOMAIN"
-grep -rl "server_name[^;]*$DOMAIN" /etc/nginx/sites-enabled/ 2>/dev/null | while read -r f; do echo "\$f -> \$(readlink -f "\$f")"; done
-for f in \$(grep -rl "server_name[^;]*$DOMAIN" /etc/nginx/sites-enabled/ 2>/dev/null); do
-  echo; echo "== content of \$(readlink -f "\$f")"; cat "\$f"
+echo; echo "== nginx files that mention $DOMAIN"
+grep -rl "$DOMAIN" /etc/nginx/ 2>/dev/null | while read -r f; do echo "\$f -> \$(readlink -f "\$f")"; done
+for f in \$(grep -rl "$DOMAIN" /etc/nginx/ 2>/dev/null | xargs -r -n1 readlink -f | sort -u); do
+  echo; echo "== content of \$f"; cat "\$f"
 done
+echo; echo "== the whole loaded config: files, server names, roots"
+nginx -T 2>/dev/null | grep -nE "^# configuration file|server_name|^[[:space:]]*root|^[[:space:]]*listen|proxy_pass|alias" | head -80
 echo; echo "== ls -la $PARENT"; ls -la "$PARENT"
-echo; echo "== what's in $WEB_PATH"; ls "$WEB_PATH" 2>/dev/null | head -20
+echo; echo "== ls -la $PARENT/dist (the old site?)"; ls -la "$PARENT/dist" 2>/dev/null | head -20
+echo; echo "== ls -la $WEB_PATH"; ls -la "$WEB_PATH" 2>/dev/null
 REMOTE
     say "written to deploy/server-info.txt (not in git). Tell Claude: \"server-info is there\"."
-    local site
-    site="$(grep -A1 "files in sites-enabled" "$out" | tail -1 | sed 's/.*-> //')"
-    [ -n "$site" ] && say "put this in deploy/.env: NGINX_SITE=$site"
 }
 
 # ---------- launch day ----------
@@ -137,12 +138,11 @@ launch() {
     : "${NGINX_SITE:?run bash deploy/setup.sh info first and put NGINX_SITE in deploy/.env}"
     local conf="$DIR/nginx/$DOMAIN.conf"
     [ -f "$conf" ] || { echo "$conf is missing (Claude writes it from deploy/server-info.txt)"; exit 1; }
-    remote "test -f '$WEB_PATH/index.html' && test -f '$WEB_PATH/404.html'" \
+    remote "test -f '$WEB_PATH/current/index.html' && test -f '$WEB_PATH/current/404.html'" \
         || { echo "the new site isn't uploaded yet: run bash deploy/deploy.sh first"; exit 1; }
 
-    say "backups: the nginx file and the old site"
-    remote "$SUDO bash -c 'set -e; [ -f ~/nginx-$DOMAIN-before-launch.conf ] || cp \"$NGINX_SITE\" ~/nginx-$DOMAIN-before-launch.conf
-[ -d \"$WEB_PATH-prev\" ] && [ ! -d ~/web-old-site-backup ] && cp -a \"$WEB_PATH-prev\" ~/web-old-site-backup || true'"
+    say "backup of the nginx file (the old site itself stays where it is, untouched)"
+    remote "$SUDO bash -c '[ -f ~/nginx-$DOMAIN-before-launch.conf ] || cp \"$NGINX_SITE\" ~/nginx-$DOMAIN-before-launch.conf'"
 
     say "new nginx file"
     scp -q "$conf" "$ADMIN:/tmp/$DOMAIN.conf"
@@ -164,13 +164,11 @@ launch() {
 }
 
 undo_launch() {
-    say "back to the old nginx file and the old site"
-    remote "$SUDO bash -c 'set -e; cp ~/nginx-$DOMAIN-before-launch.conf \"$NGINX_SITE\"
-if [ -d ~/web-old-site-backup ]; then rm -rf \"$WEB_PATH-new-site\"; mv \"$WEB_PATH\" \"$WEB_PATH-new-site\"; cp -a ~/web-old-site-backup \"$WEB_PATH\"; fi
-nginx -t -q && systemctl reload nginx'"
+    say "back to the old nginx file, so the old site is served again"
+    remote "$SUDO bash -c 'cp ~/nginx-$DOMAIN-before-launch.conf \"$NGINX_SITE\" && nginx -t -q && systemctl reload nginx'"
     REPO="${REPO:-$(gh repo view --json nameWithOwner -q .nameWithOwner)}"
     gh variable set PRODUCTION_LIVE --repo "$REPO" --body false
-    say "old site back. The new one is kept as $WEB_PATH-new-site."
+    say "old site back. The new one stays in $WEB_PATH/current for the next try."
 }
 
 load_settings

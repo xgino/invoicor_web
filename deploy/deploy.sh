@@ -36,9 +36,9 @@ page_text() {
 }
 
 rollback() {
-    ssh "$ADMIN" "$SUDO bash -c 'set -e; test -d \"$WEB_PATH-prev\" || { echo \"No previous version to roll back to.\"; exit 1; }
-mv \"$WEB_PATH\" \"$WEB_PATH-rolled-back-\$(date +%Y%m%d-%H%M%S)\"; mv \"$WEB_PATH-prev\" \"$WEB_PATH\"'"
-    echo "--- rolled back. The bad version is kept on the server as $WEB_PATH-rolled-back-<date>."
+    ssh "$ADMIN" "$SUDO bash -c 'set -e; cd \"$WEB_PATH\"; test -d prev || { echo \"No previous version to roll back to.\"; exit 1; }
+mv current rolled-back-\$(date +%Y%m%d-%H%M%S); mv prev current'"
+    echo "--- rolled back. The bad version is kept on the server in $WEB_PATH/rolled-back-<date>."
 }
 
 direct() {
@@ -48,9 +48,9 @@ direct() {
     fi
     npm ci --no-audit --no-fund
     npm run check
-    rsync -az --delete out/ "$ADMIN:$WEB_PATH-new/"
-    ssh "$ADMIN" "$SUDO bash -c 'set -e; chown -R $DEPLOY_USER:$DEPLOY_USER \"$WEB_PATH-new\"; rm -rf \"$WEB_PATH-prev\"
-[ -d \"$WEB_PATH\" ] && mv \"$WEB_PATH\" \"$WEB_PATH-prev\"; mv \"$WEB_PATH-new\" \"$WEB_PATH\"'"
+    rsync -az --delete out/ "$ADMIN:$WEB_PATH/new/"
+    ssh "$ADMIN" "$SUDO bash -c 'set -e; cd \"$WEB_PATH\"; chown -R $DEPLOY_USER:$DEPLOY_USER new; rm -rf prev
+if [ -d current ]; then mv current prev; fi; mv new current'"
     echo "--- uploaded. Undo with: bash deploy/deploy.sh --rollback"
 }
 

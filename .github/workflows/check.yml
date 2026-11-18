@@ -57,7 +57,8 @@ jobs:
       SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
       SSH_TARGET: ${{ secrets.DEPLOY_SSH_TARGET }}
       KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
-      # The website folder on the VPS, e.g. /var/www/invoicor.com/web (nginx root points here).
+      # The website folder on the VPS, e.g. /var/www/invoicor.com/web. Inside it: current/ (nginx root),
+      # new/ during an upload, prev/ the previous version. The deploy user may only write this folder.
       WEB_PATH: ${{ secrets.DEPLOY_WEB_PATH }}
       SITE: https://invoicor.com
       # Repository variable, "true" once nginx serves the new site (set by `bash deploy/setup.sh launch`, DEPLOY.md F.3).
@@ -107,10 +108,10 @@ jobs:
         if: steps.ready.outputs.go == 'true'
         run: |
           SSH="ssh -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes"
-          # web-new is uploaded next to web, then swapped in by renaming: visitors never see a
-          # half-uploaded site, and the previous version stays as web-prev.
-          rsync -az --delete -e "$SSH" out/ "$SSH_TARGET:$WEB_PATH-new/"
-          $SSH "$SSH_TARGET" "set -e; rm -rf '$WEB_PATH-prev'; if [ -d '$WEB_PATH' ]; then mv '$WEB_PATH' '$WEB_PATH-prev'; fi; mv '$WEB_PATH-new' '$WEB_PATH'"
+          # new/ is uploaded next to current/, then swapped in by renaming: visitors never see a
+          # half-uploaded site, and the previous version stays as prev/.
+          rsync -az --delete -e "$SSH" out/ "$SSH_TARGET:$WEB_PATH/new/"
+          $SSH "$SSH_TARGET" "set -e; cd '$WEB_PATH'; rm -rf prev; if [ -d current ]; then mv current prev; fi; mv new current"
 
       - name: Check the live site (roll back on failure)
         if: steps.ready.outputs.go == 'true' && env.LIVE == 'true'
@@ -122,7 +123,7 @@ jobs:
           if [ "$ok" != "200" ] || [ "$page" != "200" ] || [ "$missing" != "404" ]; then
             echo "::error::The new version doesn't answer as expected. Rolling back to the previous one."
             ssh -i "$HOME/.ssh/deploy_key" -o IdentitiesOnly=yes -o BatchMode=yes "$SSH_TARGET" \
-              "set -e; test -d '$WEB_PATH-prev'; mv '$WEB_PATH' '$WEB_PATH-failed-\$(date +%Y%m%d-%H%M%S)'; mv '$WEB_PATH-prev' '$WEB_PATH'"
+              "set -e; cd '$WEB_PATH'; test -d prev; mv current failed-\$(date +%Y%m%d-%H%M%S); mv prev current"
             exit 1
           fi
 
