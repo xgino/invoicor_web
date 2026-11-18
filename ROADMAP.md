@@ -153,8 +153,9 @@ order below, one commit per step; a page only goes live in a language once it's 
 | HL5 | Industries hub + 20 industry pages | 21 → 210 | planned (H4) |
 | HL6 | Affiliate | 1 → 10 | planned |
 | HL7 | Privacy and Terms (English stays the binding version) + German *Impressum* (H7) | 2 → 20 | planned |
-| HL8 | Compare hub + 20 compares | 21 → 210 | 👤 decide: the 20 competitors are mostly US/UK apps; per country, local rivals (e.g. Moneybird for NL, lexoffice for DE) make more sense than a translation |
+| HL8 | Compare hub + 20 compares | stays English | ❌ not translated (your choice 2026-11-18): they compare US/UK apps, which mean little to a visitor in Poland or Italy. Local comparisons are a separate later item (HL9) |
 | — | Brand page (internal) | stays English | — |
+| HL9 | **Later: local pages per country** (not translations) | new pages | planned: comparisons with local rivals (e.g. Moneybird, e-Boekhouden for NL; lexoffice, sevDesk for DE; Fiken for NO; Billy for DK; Fortnox for SE; Facture.net for FR; Holded for ES; Fatture in Cloud for IT; InvoiceXpress for PT; wFirma, inFakt for PL), each with sourced facts, the same rules as the English compares. Start with the languages that get traffic first (H6) |
 
 - [x] **H3** 🤖 The free generator in 11 languages (HL1, 2026-11-18): every text of the tool in a
   dictionary (`lib/i18n/pages/generator/`), 10 local URLs (`/de/rechnung-erstellen`,
@@ -764,9 +765,13 @@ products, profiles, render/PDF, subscriptions); W6 checks it's safe for browser 
   - `/` = English (no prefix), `/de/`, `/es/`… with translated slugs (next-intl `pathnames`)
   - every language version has its own indexable URL, `hreflang` and sitemap entry
 - **Keywords per language:** research each language separately, don't just translate the English keywords.
-- **Detection:** the browser language first (location ≠ language). Offer the language through a banner, **never a forced redirect**. Remember the choice in a cookie.
+- **Detection:** the browser language decides on the first visit only (location ≠ language), never for search engines. The choice is remembered (local storage, no cookie) and applies on every page that exists in it; the switcher always wins (37, 37b).
 - **Switcher:** a globe menu in the navbar and footer, going to the same page in the other language.
 - **Rollout:** EN → DE → ES → FR, PT, IT, NL, guided by the Search Console data.
+- **Rule for every new page (your choice, 2026-11-18): localize only what makes sense to that visitor.** Before a new page ships, decide per page:
+  - *Useful everywhere* (tools, the generator, help, guides about invoicing in general): add its URL per language to `lib/i18n/routes.ts` and write it per country, with local rules, examples, currency and search words. Not word-for-word.
+  - *Only meaningful in one market* (comparisons with US/UK apps, US-only rules): keep it English, and if the topic matters elsewhere, plan a **local** page instead (HL9), e.g. a comparison with that country's own rivals.
+  - A page appears in a language only once it's really written there; the language memory and hreflang then pick it up by themselves. Note the decision in the translation list (HL table in section 4).
 
 ### R6. SEO rules
 
