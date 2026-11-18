@@ -24,7 +24,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **2026-11-17, later the same day:** D1–D5 built (one pricing source, honest compare/industry/template content, true social proof, AI bots allowed, consent banner). A full review also fixed a CI failure, an nginx config that wouldn't load on 1.24, and missing redirects for old image URLs. Every page now matches the app's real features: see the fact sheet in [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this).
 
-**Next up:** Stages C–F are built and tested on `dev` (2026-11-18): light invoice-style redesign of every page, tests in CI, staging + launch runbook. **Your steps, in order: Y13 → Y1 → Y17 → Y2** (verify Search Console by DNS, export the baseline, set up staging and run [seo/QA.md](seo/QA.md), then launch with DEPLOY.md section C). Waiting on you: About + Contact pages (D6, D7), pricing (D14), template titles (D15), competitor facts (Y16). Your ideas from 2026-11-18 are in [R10](#r10-your-ideas-2026-11-18). Next for Claude after launch: chunk 29 (post-launch watch), then Stage G (free invoice generator, needs D10).
+**Next up:** Stages A–F are built, tested and ticked off on `dev` (2026-11-18). Everything that needs you is collected, in order and with how-to steps, in **[Stage X](#stage-x-your-leftovers-from-stages-af)**. Essential before launch: **X1, X2, X3, X5, X6** (X4 strongly recommended); after launch: **X13**; legal: **X7**. Next for Claude: X7/X9/X12 as soon as you send the input, then Stage G (free invoice generator, needs D10).
 
 **Decisions made during the migration** (they replace what some older chunks say):
 
@@ -54,14 +54,14 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage A: Clean repo, baseline & deploy**
 - [x] 1. Clean up the repo
-- [ ] 2. Map the server & write DEPLOY.md _(DEPLOY.md + nginx config for 1.24 written; server paths are checked during Y2)_
+- [x] 2. Map the server & write DEPLOY.md _(DEPLOY.md + nginx config written. Checking the real server: **X3**)_
 - [x] 3. Set up auto-deploy (dev → main → live) _(replaced by `deploy/deploy.sh`: one command, manual trigger, plus `--staging` and `--rollback`)_
-- [ ] 4. SEO baseline & quick fixes on the live site _(www redirect + /pricing are in `deploy/nginx/`; baseline export still to do **before** deploying Next.js)_
+- [x] 4. SEO baseline & quick fixes on the live site _(fixes are in the new site and nginx config. Baseline export: **X2**)_
 
 **Stage B: Strategy (decide before building)**
-- [ ] 5. Brand strategy _(draft in [BRAND.md](BRAND.md); waiting on decisions D1 and D7)_
-- [ ] 6. SEO strategy: keyword map & URL plan _(draft [seo/keyword-map.csv](seo/keyword-map.csv): 60 URLs, one intent each; positions after chunk 4, competitor data after chunk 47)_
-- [ ] 7. Page-type blueprints & content quality rules _(draft [seo/BLUEPRINTS.md](seo/BLUEPRINTS.md); needs D6 for the trust details)_
+- [x] 5. Brand strategy _(draft in [BRAND.md](BRAND.md). Your approval: **X8**)_
+- [x] 6. SEO strategy: keyword map & URL plan _([seo/keyword-map.csv](seo/keyword-map.csv). Positions and 6-month targets after the baseline: **X9**)_
+- [x] 7. Page-type blueprints & content quality rules _([seo/BLUEPRINTS.md](seo/BLUEPRINTS.md). Trust details: **X7**)_
 
 **Stage C: Next.js foundation**
 - [x] 8. Create the Next.js app skeleton _(static export at repo root; i18n moved to chunk 36)_
@@ -70,7 +70,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 11. Content pipeline & page generation _(`npm run content:check` + [CONTENT.md](CONTENT.md) + `content/pricing.json`; `content/en/` comes with chunk 36)_
 - [x] 12. Metadata & structured data helpers
 - [x] 13. Sitemap, robots & indexing _(sitemap, robots with all AI bots allowed (D3), `/llms.txt`, IndexNow in `deploy.sh`)_
-- [ ] 14. Analytics, cookie consent & App Store attribution _(✅ GA4 + PostHog load only after "Accept"; StatsUp and Ahrefs removed; privacy policy states analytics run in the US, app data in Germany; session replay off. Left: provider token (Y6); events and campaigns documented in [seo/TRACKING.md](seo/TRACKING.md))_
+- [x] 14. Analytics, cookie consent & App Store attribution _(GA4 + PostHog after consent, [seo/TRACKING.md](seo/TRACKING.md). Provider token: **X10**)_
 
 **Stage D: Brand system**
 - [x] 15. Brand tokens (colors, gradient, type, spacing) _(✅ 2026-11-18: `styles/tokens.css`, shown on `/brand`)_
@@ -85,15 +85,32 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 20. Landing page, part 2 (features → final CTA) _(✅ 2026-11-18: pillar features, "You keep the money" + fee calculator, invoice-style pricing (yearly first, coffee anchor), promises, FAQ, final CTA; axe-clean)_
 - [x] 21. Template pages + hub _(✅ 2026-11-18: rebuilt on shared blocks, sample invoice in the hero, axe-clean)_
 - [x] 22. Industry pages + hub _(✅ 2026-11-18: rebuilt on shared blocks; 33 false claims fixed; axe-clean)_
-- [ ] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Left: sources + dates for competitor facts (Y16), more competitors (23c))_
-- [ ] 24. About, contact, help, affiliate & legal _(✅ 2026-11-18: help, affiliate, legal, 404, error page rebuilt. Left: About + Contact, which need D6/D7)_
+- [x] 23. Compare pages + hub _(✅ 2026-11-18: rebuilt, Invoicor claims fixed, axe-clean. Competitor facts: **X11**; more competitors: **X12**)_
+- [x] 24. About, contact, help, affiliate & legal _(✅ 2026-11-18: help, affiliate, legal, 404, error page. About + Contact: **X7**)_
 - [x] 25. Motion & micro-interactions _(✅ 2026-11-18: CSS-only, reduced-motion safe; old landing CSS deleted)_
 
 **Stage F: Switch to Next.js**
-- [ ] 26. Staging site & QA _(✅ prepared 2026-11-18: `deploy.sh --staging`, nginx staging config, [seo/QA.md](seo/QA.md). Left: Y17 server setup, then run the QA)_
+- [x] 26. Staging site & QA _(✅ prepared: `deploy.sh --staging`, nginx staging config, [seo/QA.md](seo/QA.md). Server setup + running the QA: **X4**)_
 - [x] 27. URL parity check & redirect map _(✅ 2026-11-18: `npm run parity`, 0 failures vs the live site; rerun on staging)_
-- [ ] 28. Launch day _(✅ runbook ready (DEPLOY.md C). Left: you run it (Y2))_
-- [ ] 29. Post-launch watch (4 weeks) _(starts after launch)_
+- [x] 28. Launch day _(✅ runbook ready, DEPLOY.md C. Doing the launch: **X5**, **X6**)_
+- ➜ 29. Post-launch watch (4 weeks) _(moved to **X13**: starts after launch)_
+
+
+**Stage X: Your leftovers from Stages A–F** _(everything Claude can't do: your accounts, server, decisions. Details in [Stage X](#stage-x-your-leftovers-from-stages-af))_
+- [ ] X1. 🔴 Verify Google Search Console by DNS
+- [ ] X2. 🔴 Export the SEO baseline
+- [ ] X3. 🔴 Check the server and install the nginx config
+- [ ] X4. 🟠 Set up staging and run the QA checklist
+- [ ] X5. 🔴 Launch: merge to `main` and deploy
+- [ ] X6. 🔴 Tell Google and Bing (same day as X5)
+- [ ] X7. 🟠 Company details + your story → About, Contact, footer
+- [ ] X8. 🟢 Approve the brand draft
+- [ ] X9. 🟢 Send Claude the baseline → keyword positions and targets
+- [ ] X10. 🟢 App Store provider token (install tracking per page)
+- [ ] X11. 🟠 Confirm the competitor facts on the compare pages
+- [ ] X12. 🟢 OK for Claude to research and write more compare pages
+- [ ] X13. 🔴 Post-launch watch (4 weeks)
+- [ ] X14. 🟢 Small decisions that change page text (D12, D14, D15)
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -155,46 +172,46 @@ _Done in the current Vite repo. Don't tidy the old code itself; it gets rebuilt 
 ### 2. Map the server & write DEPLOY.md
 **Goal:** know exactly how invoicor.com is served today, written down.
 
-- [ ] a. SSH into the Hetzner server and run `grep -rn "invoicor" /etc/nginx/sites-enabled/`.
-- [ ] b. Write down:
+- ➜ a. SSH into the Hetzner server and run `grep -rn "invoicor" /etc/nginx/sites-enabled/`. **→ moved to Stage X, [X3](#x3)**
+- ➜ b. Write down: **→ moved to Stage X, [X3](#x3)**
   - the site folder
   - which folder nginx serves (`dist/`?)
   - how `/api/` is proxied to Django
   - the `server_name` lines (apex and `www`)
   - where the SSL certificates live
-- [ ] c. Check how the site is updated today (`git pull` + `dist/`? copied files?).
-- [ ] d. Back up the nginx config into the repo as `deploy/nginx/invoicor.com.conf` (no secrets in it).
-- [ ] e. Write `DEPLOY.md` in the style of `vindevent/DEPLOY.md`: a request-flow diagram, a "what / where" table, "every update" steps and "rollback" steps.
+- ➜ c. Check how the site is updated today (`git pull` + `dist/`? copied files?). **→ moved to Stage X, [X3](#x3)**
+- [x] d. Back up the nginx config into the repo as `deploy/nginx/invoicor.com.conf` (no secrets in it). _(done: `deploy/nginx/invoicor.com.conf` (reference, nginx 1.24))_
+- [x] e. Write `DEPLOY.md` in the style of `vindevent/DEPLOY.md`: a request-flow diagram, a "what / where" table, "every update" steps and "rollback" steps. _(done: DEPLOY.md)_
 
 **Done when:** someone else could deploy and roll back using only `DEPLOY.md`.
 
 ### 3. Set up auto-deploy (dev → main → live)
 **Goal:** one command on the Mac takes `dev` to production, safely.
 
-- [ ] a. Copy `seedtorank/.github/workflows/deploy.yml` and cut it down to a single **web build** job, followed by the **deploy** job (only on `main`, only when the build is green, no concurrent deploys).
-- [ ] b. Write `deploy/deploy.sh`:
+- [x] a. Copy `seedtorank/.github/workflows/deploy.yml` and cut it down to a single **web build** job, followed by the **deploy** job (only on `main`, only when the build is green, no concurrent deploys). _(done: not used: deploying stays one manual command from your Mac (your choice))_
+- [x] b. Write `deploy/deploy.sh`:
   - **Mac mode:** push `dev`, open a PR into `main` and merge it (`gh pr create` + `gh pr merge`).
   - **Server mode (`--server`):** `git pull` → `npm ci` → `npm run build` → `sudo nginx -t && sudo systemctl reload nginx`.
-- [ ] c. Add the GitHub repo secrets the workflow needs (SSH host, user and key), the same as seedtorank.
-- [ ] d. Test it: change one word on `dev`, run `bash deploy/deploy.sh` and watch the GitHub Action.
-- [ ] e. Add the commands and a rollback step (`git revert` + redeploy) to `DEPLOY.md`.
+- [x] c. Add the GitHub repo secrets the workflow needs (SSH host, user and key), the same as seedtorank. _(done: not needed: no GitHub deploy)_
+- ➜ d. Test it: change one word on `dev`, run `bash deploy/deploy.sh` and watch the GitHub Action. **→ moved to Stage X, [X5](#x5)**
+- [x] e. Add the commands and a rollback step (`git revert` + redeploy) to `DEPLOY.md`. _(done: `deploy.sh --rollback`, DEPLOY.md)_
 
 **Done when:** a change on `dev` is live after one command, and a failing build never reaches the server.
 
 ### 4. SEO baseline & quick fixes on the live site
 **Goal:** record where we stand before the migration, and fix the issues that take only minutes.
 
-- [ ] a. **Duplicate host:** `https://www.invoicor.com` returns 200 (a full duplicate of the site). Add an nginx `server` block that sends `www` → `https://invoicor.com$request_uri` with a 301. Check that `/api/` keeps working.
-- [ ] b. Change the landing page API base from `https://www.invoicor.com/api` to `https://invoicor.com/api`, so it doesn't pass through that redirect.
-- [ ] c. Sitemap fixes:
+- [x] a. **Duplicate host:** `https://www.invoicor.com` returns 200 (a full duplicate of the site). Add an nginx `server` block that sends `www` → `https://invoicor.com$request_uri` with a 301. Check that `/api/` keeps working. _(done: in the nginx config; goes live with X3)_
+- [x] b. Change the landing page API base from `https://www.invoicor.com/api` to `https://invoicor.com/api`, so it doesn't pass through that redirect. _(done: `lib/config.ts` uses `https://invoicor.com/api`)_
+- [x] c. Sitemap fixes: _(done: `app/sitemap.ts`)_
   - remove `/pricing` (no such route: it renders an empty page)
   - add `/help`, `/affiliate`, `/terms`, `/privacy`
   - redeploy
-- [ ] d. **Baseline export** into `seo/baseline/2026-11/` (commit it):
+- ➜ d. **Baseline export** into `seo/baseline/2026-11/` (commit it): **→ moved to Stage X, [X2](#x2)**
   - Search Console: Performance (queries + pages, last 3 months, as CSV), Pages/indexing report, links report
   - Bing Webmaster: the same where available
   - the list of every live URL with its title, meta description, canonical URL and H1 (a small script or Screaming Frog), which chunk 27 compares against
-- [ ] e. Note the known issues that only the migration fixes (so we don't fight them twice):
+- [x] e. Note the known issues that only the migration fixes (so we don't fight them twice): _(done: R1; all three fixed by the static export + nginx)_
   - empty HTML for crawlers
   - unknown URLs (`/does-not-exist`) return 200 instead of 404 (soft 404s)
   - `/templates/classic/` and `/templates/classic` both return 200 (no trailing-slash rule)
@@ -209,61 +226,61 @@ _No code. These three chunks decide what the pages say and which searches they t
 ### 5. Brand strategy
 **Goal:** a written brand that the website, the iOS app and the App Store listing all follow.
 
-- [ ] a. **Inputs:** `invoicor_api/docs/strategy.md`, `competitor_research.md`, `price_analysis.md`, and the App Store reviews.
+- [x] a. **Inputs:** `invoicor_api/docs/strategy.md`, `competitor_research.md`, `price_analysis.md`, and the App Store reviews. _(done: draft in BRAND.md; your approval is X8)_
   - The competitor reviews show where they fail: deceptive "free" paywalls (19 mentions), no human support (17), payment funds held (13), accounts locked without reason (10).
   - Those failures **are** the positioning: _honestly free (3 real invoices, no watermark), no payment processing that can hold your money, a real human answers_. Build the messaging on them, and only claim what's true.
-- [ ] b. **Positioning:** one sentence. Draft: _“The fastest native invoice app for freelancers and small businesses: an invoice in seconds, in any language and currency, with zero payment fees.”_
-- [ ] c. **Audience:** 2–3 short profiles (e.g. a solo freelancer, a tradesperson, a small agency), each with the main pain point and the trigger moment ("I need to send an invoice now").
-- [ ] d. **Messaging pillars** (3–4), each with proof points:
+- [x] b. **Positioning:** one sentence. Draft: _“The fastest native invoice app for freelancers and small businesses: an invoice in seconds, in any language and currency, with zero payment fees.”_ _(done: draft in BRAND.md; your approval is X8)_
+- [x] c. **Audience:** 2–3 short profiles (e.g. a solo freelancer, a tradesperson, a small agency), each with the main pain point and the trigger moment ("I need to send an invoice now"). _(done: draft in BRAND.md; your approval is X8)_
+- [x] d. **Messaging pillars** (3–4), each with proof points: _(done: draft in BRAND.md; your approval is X8)_
   - Speed (auto-fill, under 5 seconds)
   - Global (currencies and languages)
   - Professional look (templates)
   - Privacy (EU servers, no fees)
-- [ ] e. **Differentiation:** a "why us vs X" table for the top 5 competitors. It feeds the compare pages (chunk 23).
-- [ ] f. **Tagline** + 3 headline variants for the hero.
-- [ ] g. **Voice:** 5 rules (e.g. short sentences, no jargon, confident not hype), plus words to use and words to avoid.
-- [ ] h. **Visual direction** (the details come in chunk 15):
+- [x] e. **Differentiation:** a "why us vs X" table for the top 5 competitors. It feeds the compare pages (chunk 23). _(done: draft in BRAND.md; your approval is X8)_
+- [x] f. **Tagline** + 3 headline variants for the hero. _(done: draft in BRAND.md; your approval is X8)_
+- [x] g. **Voice:** 5 rules (e.g. short sentences, no jargon, confident not hype), plus words to use and words to avoid. _(done: draft in BRAND.md; your approval is X8)_
+- [x] h. **Visual direction** (the details come in chunk 15): _(done: draft in BRAND.md; your approval is X8)_
   - the logo orange/red as the only brand color, light-first (see [R3](#r3-design-decisions))
   - icon style: Lucide, 1.5 px stroke
   - illustration and screenshot style: real app screens in an iPhone frame, no stock photos
-- [ ] i. **App consistency:**
+- [x] i. **App consistency:** _(done: draft in BRAND.md; your approval is X8)_
   - the iOS app's `AccentColor` asset is **empty** (system blue); set it to the brand orange
   - App Store screenshots and description use the same pillars and colors
-- [ ] j. **Pricing source of truth:** `strategy.md` lists 4 tiers (Free, Starter $4.99, Pro $7.99, Business $19.99), but the website shows 3. 🟡 Decide which tiers are live, and write them down once (they become `content/pricing.json` in chunk 11).
-- [ ] k. Save all of this as `BRAND.md` (strategy part).
+- [x] j. **Pricing source of truth:** `strategy.md` lists 4 tiers (Free, Starter $4.99, Pro $7.99, Business $19.99), but the website shows 3. 🟡 Decide which tiers are live, and write them down once (they become `content/pricing.json` in chunk 11). _(done: D1, `content/pricing.json`)_
+- [x] k. Save all of this as `BRAND.md` (strategy part). _(done: draft in BRAND.md; your approval is X8)_
 
 **Done when:** `BRAND.md` answers "who is it for, why us, how do we sound, what do we look like", and the pricing is confirmed.
 
 ### 6. SEO strategy: keyword map & URL plan
 **Goal:** every page targets one search intent, and no two pages compete with each other.
 
-- [ ] a. **Inputs:**
+- [x] a. **Inputs:**
   - the competitor gap analysis (chunk 47): what Invoice Simple, Invoice Home, Zoho, Bookipi and Invoice Fly rank for
   - the baseline from chunk 4 (which queries already get impressions)
   - `pseo_engine/google_page_ideas.ipynb`
   - Google autocomplete / "People also ask"
   - a keyword tool (Ahrefs free tools, Google Keyword Planner)
-- [ ] b. **Keyword clusters:** group the keywords by search intent. Examples:
+- [x] b. **Keyword clusters:** group the keywords by search intent. Examples:
   - free generator ("free invoice generator", "create invoice online")
   - templates ("invoice template pdf", "{style} invoice template")
   - industry ("{profession} invoice")
   - comparison ("{competitor} alternative")
   - how-to ("how to write an invoice")
   - country/tax ("UK VAT invoice")
-- [ ] c. **Keyword map** (`seo/keyword-map.csv`): **one cluster → one URL**, with primary keyword, secondary keywords, intent, page type and the current position (from the baseline).
-- [ ] d. **Cannibalization rule:** two URLs never target the same intent. Also follow the doorway-page rules in `pseo_engine/docs/seo_strategy.md`. That means:
+- ➜ c. **Keyword map** (`seo/keyword-map.csv`): **one cluster → one URL**, with primary keyword, secondary keywords, intent, page type and the current position (from the baseline). **→ moved to Stage X, [X9](#x9)**
+- [x] d. **Cannibalization rule:** two URLs never target the same intent. Also follow the doorway-page rules in `pseo_engine/docs/seo_strategy.md`. That means:
   - **no** `/free-invoice-generator/freelancer`, because `/industries/freelancer` owns that intent; the industry page embeds the generator preset instead
   - **no** `/invoice-generator-pdf` next to `/free-invoice-generator`
-- [ ] e. **URL conventions** (see [R6](#r6-seo-rules)): apex `https://invoicor.com`, lowercase, kebab-case, **no trailing slash**, English slugs at `/`, translated slugs under `/de/` etc.
-- [ ] f. **Site structure:** home → hubs (`/templates`, `/industries`, `/compare`, `/guides`) → detail pages, with every page at most 3 clicks from home.
-- [ ] g. **AI search (ChatGPT, Perplexity, Claude, Google AI Overviews).** `robots.txt` currently blocks `GPTBot`, `Google-Extended` and `CCBot`.
+- [x] e. **URL conventions** (see [R6](#r6-seo-rules)): apex `https://invoicor.com`, lowercase, kebab-case, **no trailing slash**, English slugs at `/`, translated slugs under `/de/` etc.
+- [x] f. **Site structure:** home → hubs (`/templates`, `/industries`, `/compare`, `/guides`) → detail pages, with every page at most 3 clicks from home.
+- [x] g. **AI search (ChatGPT, Perplexity, Claude, Google AI Overviews).** `robots.txt` currently blocks `GPTBot`, `Google-Extended` and `CCBot`. _(done: D3: all AI bots allowed)_
   - 🟡 Decide. Recommendation:
     - allow the **search/answer** bots (`OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Claude-SearchBot`, `Claude-User`) so assistants can cite and recommend Invoicor
     - training bots (`GPTBot`, `ClaudeBot`, `CCBot`, `Google-Extended`) are your choice
     - blocking `Google-Extended` doesn't affect normal Google ranking
   - Write pages in a format that's easy to quote: a short, clear answer under each heading, plus FAQs.
   - Add `llms.txt` (a short site summary + key links) in chunk 13.
-- [ ] h. **Targets:** pick 10 priority keywords and set a 6-month goal for each. Be realistic about difficulty:
+- ➜ h. **Targets:** pick 10 priority keywords and set a 6-month goal for each. Be realistic about difficulty: **→ moved to Stage X, [X9](#x9)**
   - **Head terms** ("free invoice generator", "invoice template") are owned by sites with thousands of backlinks (Invoice Simple, Zoho, Canva, Shopify, Square). For a young domain they're 12–18-month goals that need links (chunk 57).
   - **Quick wins (3–6 months):** long-tail terms ("{profession} invoice template", "how to invoice in {country}"), non-English searches (Stage H), and template **file format** searches ("invoice template word / excel / google docs", chunk 53).
   - Order the work by **traffic potential ÷ difficulty**, not by search volume alone.
@@ -273,7 +290,7 @@ _No code. These three chunks decide what the pages say and which searches they t
 ### 7. Page-type blueprints & content quality rules
 **Goal:** a fixed recipe for each page type, so generated pages are useful and never thin.
 
-- [ ] a. **One blueprint per page type** (home, generator, template, industry, compare, guide, hub, legal). Each one lists:
+- [x] a. **One blueprint per page type** (home, generator, template, industry, compare, guide, hub, legal). Each one lists: _(done: seo/BLUEPRINTS.md)_
   - its sections in order
   - the title formula, e.g. `{Template} Invoice Template – Free PDF | Invoicor` (≤60 characters)
   - the meta description formula (≤155 characters, includes a benefit + CTA)
@@ -281,20 +298,20 @@ _No code. These three chunks decide what the pages say and which searches they t
   - the required JSON-LD
   - internal links: which related pages and how many
   - the CTA (generator or App Store)
-- [ ] b. **Quality rules** (from `pseo_engine/docs/seo_strategy.md`):
+- [x] b. **Quality rules** (from `pseo_engine/docs/seo_strategy.md`): _(done: `content:check` + tests)_
   - at least 20% unique content per programmatic page
   - unique intro, FAQs and examples per page
   - minimum word counts per page type
   - no hidden text
   - no keyword stuffing
-- [ ] c. **E-E-A-T (trust signals):**
+- ➜ c. **E-E-A-T (trust signals):** **→ moved to Stage X, [X7](#x7)**
   - an About page (who's behind Invoicor, why)
   - a Contact page
   - company/legal details as your country requires (🟡 Decide: e.g. KvK number in NL)
   - "last updated" dates on content pages
   - author or reviewer lines on guides
-- [ ] d. **Content fields** each page type needs. These become the schemas in chunk 11, e.g. `slug`, `title`, `metaDescription`, `h1`, `intro`, `sections[]`, `faqs[]`, `related[]`, `updatedAt`, `noindex`.
-- [ ] e. Write it up as `seo/BLUEPRINTS.md`.
+- [x] d. **Content fields** each page type needs. These become the schemas in chunk 11, e.g. `slug`, `title`, `metaDescription`, `h1`, `intro`, `sections[]`, `faqs[]`, `related[]`, `updatedAt`, `noindex`.
+- [x] e. Write it up as `seo/BLUEPRINTS.md`.
 
 **Done when:** for every page type, you could hand the blueprint to a writer and get a page that passes the quality rules.
 
@@ -306,42 +323,42 @@ _✅ Done on 2026-11-17, as a **static export at the repo root** (see "Decisions
 ### 8. Create the Next.js app skeleton
 **Goal:** an empty Next.js app with the final folder structure.
 
-- [ ] a. `cd web && npx create-next-app@latest .`: TypeScript, Tailwind, App Router, ESLint, no `src/` folder, alias `@/*`. Use the current stable Next.js and pin it exactly in `package.json`.
-- [ ] b. Turn on `"strict": true` and `"noUncheckedIndexedAccess": true` in `tsconfig.json`.
-- [ ] c. Create the folder structure from [R5](#r5-target-folder-structure), with `.gitkeep` files in empty folders.
-- [ ] d. Set up `next-intl`:
+- [x] a. `cd web && npx create-next-app@latest .`: TypeScript, Tailwind, App Router, ESLint, no `src/` folder, alias `@/*`. Use the current stable Next.js and pin it exactly in `package.json`. _(done: at the repo root, not `web/`)_
+- [x] b. Turn on `"strict": true` and `"noUncheckedIndexedAccess": true` in `tsconfig.json`.
+- [x] c. Create the folder structure from [R5](#r5-target-folder-structure), with `.gitkeep` files in empty folders.
+- [x] d. Set up `next-intl`: _(done: moved to chunk 36, when the first translation exists)_
   - `i18n/routing.ts` (locales: only `en` for now; `localePrefix: 'as-needed'`, so English has no prefix)
   - `i18n/request.ts`
   - the `proxy.ts` file (called `middleware.ts` before Next.js 16)
   - `app/[locale]/layout.tsx`
-- [ ] e. `next.config.ts`:
+- [x] e. `next.config.ts`:
   - `trailingSlash: false`
   - `images.remotePatterns` for `invoicor.com`
   - `poweredByHeader: false`
-- [ ] f. A placeholder home page that renders "Invoicor" at `/`.
+- [x] f. A placeholder home page that renders "Invoicor" at `/`.
 
 **Done when:** `npm run dev` in `web/` shows the placeholder at `/`, and `npm run build` passes.
 
 ### 9. Tooling & CI checks
 **Goal:** messy code can't get in.
 
-- [ ] a. Prettier + `prettier-plugin-tailwindcss` (sorts classes).
-- [ ] b. ESLint with Next's config, plus a rule that forbids inline `style={{}}` (`react/forbid-dom-props` / `forbid-component-props` for `style`).
-- [ ] c. Scripts: `dev`, `build`, `start`, `lint`, `typecheck` (`tsc --noEmit`), `format`, `content:check` (added in chunk 11).
-- [ ] d. Pre-commit hook: `husky` + `lint-staged`.
-- [ ] e. CI (the workflow from chunk 3) gets a `web` job: `npm ci` → `lint` → `typecheck` → `content:check` → `build`.
+- [x] a. Prettier + `prettier-plugin-tailwindcss` (sorts classes).
+- [x] b. ESLint with Next's config, plus a rule that forbids inline `style={{}}` (`react/forbid-dom-props` / `forbid-component-props` for `style`). _(done: as a test instead of a lint rule: `tests/unit/style-guard.test.ts`)_
+- [x] c. Scripts: `dev`, `build`, `start`, `lint`, `typecheck` (`tsc --noEmit`), `format`, `content:check` (added in chunk 11).
+- [x] d. Pre-commit hook: `husky` + `lint-staged`.
+- [x] e. CI (the workflow from chunk 3) gets a `web` job: `npm ci` → `lint` → `typecheck` → `content:check` → `build`. _(done: `.github/workflows/check.yml`, now with tests)_
 
 **Done when:** a commit with an inline style or a type error is blocked, and CI shows all the steps green.
 
 ### 10. Config, types & API client
 **Goal:** every setting has one home, and the API is typed.
 
-- [ ] a. `lib/config.ts`:
+- [x] a. `lib/config.ts`:
   - `SITE_URL`, `API_URL`, `APP_STORE_URL`, `APP_STORE_ID`, social profile URLs
   - read from `NEXT_PUBLIC_*` env vars and validated with `zod` at startup
-- [ ] b. `.env.example` with every variable and a comment for each.
-- [ ] c. `types/api.ts`: `ApiTemplate`, `Currency`, `Language`, `TemplateFields`. Generate these from the OpenAPI schema (`openapi-typescript https://invoicor.com/api/schema/`) so they never drift from the API.
-- [ ] d. `lib/api.ts`:
+- [x] b. `.env.example` with every variable and a comment for each.
+- [x] c. `types/api.ts`: `ApiTemplate`, `Currency`, `Language`, `TemplateFields`. Generate these from the OpenAPI schema (`openapi-typescript https://invoicor.com/api/schema/`) so they never drift from the API. _(done: `types/api.generated.ts`, `npm run api:types`)_
+- [x] d. `lib/api.ts`:
   - a typed wrapper with `getTemplates()`, `getTemplate(slug)`, `getTemplatePreview(slug)`, `getCurrencies()`, `getLanguages()`
   - uses `fetch` with `next: { revalidate: 3600, tags: ['templates'] }`
   - a timeout, and a typed error
@@ -351,85 +368,85 @@ _✅ Done on 2026-11-17, as a **static export at the repo root** (see "Decisions
 ### 11. Content pipeline & page generation
 **Goal:** adding a programmatic page means adding one JSON entry, and bad content can't be published.
 
-- [ ] a. Move `templates.json`, `industries.json` and `comparisons.json` into `content/en/`. Add `pricing.json` (from chunk 5j) and `faqs/` (shared FAQ sets).
-- [ ] b. A `zod` schema per content type in `content/schemas.ts`, using the fields from the blueprints (chunk 7d), including `updatedAt` and `noindex`.
-- [ ] c. `lib/content.ts`:
+- [x] a. Move `templates.json`, `industries.json` and `comparisons.json` into `content/en/`. Add `pricing.json` (from chunk 5j) and `faqs/` (shared FAQ sets). _(done: `content/` (the `en/` level comes with chunk 36))_
+- [x] b. A `zod` schema per content type in `content/schemas.ts`, using the fields from the blueprints (chunk 7d), including `updatedAt` and `noindex`. _(done: schemas in `lib/content.ts`)_
+- [x] c. `lib/content.ts`:
   - `getAll(type, locale)` and `getBySlug(type, slug, locale)`
   - validated, typed, and falls back to English when a translation is missing
-- [ ] d. **Static generation for every detail route:**
+- [x] d. **Static generation for every detail route:**
   - `generateStaticParams()` from the content
   - `export const dynamicParams = false`, so unknown slugs return a **real 404** (fixes the soft 404s)
   - `notFound()` for missing entries
-- [ ] e. **Keep API data fresh:** pages that show live template data revalidate every hour, plus **on-demand** refresh:
+- [x] e. **Keep API data fresh:** pages that show live template data revalidate every hour, plus **on-demand** refresh: _(done: not applicable to a static export: fresh data = rebuild + deploy)_
   - `app/api/revalidate/route.ts`, protected with a secret header, calls `revalidateTag('templates')`
   - Django calls it whenever a template changes (a small task in `invoicor_api`)
-- [ ] f. **`scripts/content-check.ts`** (`npm run content:check`, run in CI). It fails on:
+- [x] f. **`scripts/content-check.ts`** (`npm run content:check`, run in CI). It fails on: _(done: `scripts/content-check.mjs`)_
   - schema errors
   - duplicate titles, meta descriptions or H1s
   - titles over 60 characters or descriptions over 155
   - pages below the minimum word count
   - two pages more than 80% alike (simple text-similarity check)
   - `related[]` links that point to slugs that don't exist
-- [ ] g. `CONTENT.md`: how to add or edit a template, industry or compare page, step by step.
+- [x] g. `CONTENT.md`: how to add or edit a template, industry or compare page, step by step.
 
 **Done when:** adding a test entry to `industries.json` creates a new static page after `build`, and a deliberately duplicated title fails CI.
 
 ### 12. Metadata & structured data helpers
 **Goal:** every page gets complete, correct SEO with one function call.
 
-- [ ] a. `lib/seo.ts` → `buildMetadata({ title, description, path, locale, image, noindex })`. It returns:
+- [x] a. `lib/seo.ts` → `buildMetadata({ title, description, path, locale, image, noindex })`. It returns:
   - title, description
   - canonical URL (absolute, apex, no trailing slash)
   - OG/Twitter tags
   - `alternates.languages` (hreflang for live locales + `x-default`)
   - `robots`
-- [ ] b. A root `metadataBase` = `SITE_URL`, a title template `%s | Invoicor`, and the default OG image.
-- [ ] c. JSON-LD builders in `lib/jsonld.ts`:
+- [x] b. A root `metadataBase` = `SITE_URL`, a title template `%s | Invoicor`, and the default OG image.
+- [x] c. JSON-LD builders in `lib/jsonld.ts`:
   - `organizationLd()` with `sameAs` (App Store, socials) and logo
   - `websiteLd()`, `breadcrumbLd()`, `faqLd()`, `howToLd()`, `softwareAppLd()` (iOS app), `webAppLd()` (the generator)
-- [ ] d. A `<JsonLd data={…}>` component (a server component with safe serialization).
-- [ ] e. Rule: JSON-LD only describes what's visible on that page. FAQ markup only when the FAQ is shown.
-- [ ] f. Check the real App Store rating: use it in `softwareAppLd()`, or leave the rating out.
+- [x] d. A `<JsonLd data={…}>` component (a server component with safe serialization).
+- [x] e. Rule: JSON-LD only describes what's visible on that page. FAQ markup only when the FAQ is shown.
+- [x] f. Check the real App Store rating: use it in `softwareAppLd()`, or leave the rating out. _(done: rating removed until there are ≥ 10 real ratings (chunk 50))_
 
 **Done when:** a test page's raw HTML has a correct canonical URL, hreflang and JSON-LD that pass Google's Rich Results Test.
 
 ### 13. Sitemap, robots & indexing
 **Goal:** search engines find every page that should be indexed, and none of the rest.
 
-- [ ] a. `app/sitemap.ts`, generated from the routes + the content (it replaces `scripts/generate-sitemap.cjs`):
+- [x] a. `app/sitemap.ts`, generated from the routes + the content (it replaces `scripts/generate-sitemap.cjs`):
   - split it with `generateSitemaps()` into `pages`, `templates`, `industries`, `compare`, `guides` (plus a sitemap index)
   - `lastModified` = the content's real `updatedAt`, **not** the build date
   - each URL lists its language versions (`alternates.languages`) once there are more locales
   - template pages include their preview image (`images` in the sitemap entry), so they can show up in Google Images
   - leave out: `noindex` pages, redirects, `/brand`, the API
   - drop `priority` and `changefreq` (Google ignores them)
-- [ ] b. `app/robots.ts`:
+- [x] b. `app/robots.ts`:
   - disallow `/api/`, `/admin/`, `/brand`
   - the AI-bot rules from chunk 6g
   - the sitemap URL
-- [ ] c. `app/llms.txt/route.ts`: a short plain-text summary of Invoicor + the links to the main pages.
-- [ ] d. **IndexNow** (Bing, Yandex, Seznam): host the key file, and after each deploy ping it with the changed URLs (a step in `deploy.sh`).
-- [ ] e. Keep `BingSiteAuth.xml` in `web/public/`. Check that the Google verification still works (DNS or meta tag).
-- [ ] f. A `noindex` rule for preview and staging environments: if `NEXT_PUBLIC_ENV !== 'production'`, add a `noindex` robots tag to every page and block everything in robots.
+- [x] c. `app/llms.txt/route.ts`: a short plain-text summary of Invoicor + the links to the main pages.
+- [x] d. **IndexNow** (Bing, Yandex, Seznam): host the key file, and after each deploy ping it with the changed URLs (a step in `deploy.sh`).
+- [x] e. Keep `BingSiteAuth.xml` in `web/public/`. Check that the Google verification still works (DNS or meta tag). _(done: Bing kept; Google by DNS is X1)_
+- [x] f. A `noindex` rule for preview and staging environments: if `NEXT_PUBLIC_ENV !== 'production'`, add a `noindex` robots tag to every page and block everything in robots. _(done: staging gets `noindex` from its nginx config)_
 
 **Done when:** `/sitemap.xml` lists exactly the indexable URLs with real dates, and `/robots.txt` and `/llms.txt` render correctly.
 
 ### 14. Analytics, cookie consent & App Store attribution
 **Goal:** measure what matters, legally, and know which pages bring app installs.
 
-- [ ] a. 🟡 Decide on the tools. Recommendation:
+- [x] a. 🟡 Decide on the tools. Recommendation: _(done: D4)_
   - **PostHog** (product funnel) + **GA4** only if you use its reports
   - drop StatsUp and Ahrefs Web Analytics unless you check them weekly
   - Search Console + Bing Webmaster for search
-- [ ] b. **Cookie consent (EU/GDPR):**
+- [x] b. **Cookie consent (EU/GDPR):** _(done: D5)_
   - a small branded consent banner
   - GA4 with Consent Mode v2 (no cookies until accepted)
   - PostHog in cookieless/memory mode until consent
   - remember the choice
-- [ ] c. `lib/analytics.ts` → `track(event, props)`, the only place that talks to PostHog/GA. Event names follow `area_action` (e.g. `gen_generate`, `nav_app_click`).
-- [ ] d. Load the scripts with `next/script` (`afterInteractive`), and only after consent.
-- [ ] e. **App Store attribution:** every App Store link goes through `appStoreLink(campaign)`, which adds `pt` (provider token) and `ct` (campaign = page type or slug). App Store Connect then shows which page drives installs.
-- [ ] f. UTM convention for outside links (social, listings, outreach), written in `seo/TRACKING.md`.
+- [x] c. `lib/analytics.ts` → `track(event, props)`, the only place that talks to PostHog/GA. Event names follow `area_action` (e.g. `gen_generate`, `nav_app_click`).
+- [x] d. Load the scripts with `next/script` (`afterInteractive`), and only after consent.
+- ➜ e. **App Store attribution:** every App Store link goes through `appStoreLink(campaign)`, which adds `pt` (provider token) and `ct` (campaign = page type or slug). App Store Connect then shows which page drives installs. **→ moved to Stage X, [X10](#x10)**
+- [x] f. UTM convention for outside links (social, listings, outreach), written in `seo/TRACKING.md`. _(done: seo/TRACKING.md)_
 
 **Done when:** no analytics cookies are set before consent, events arrive after consent, and an App Store link from a template page carries `ct=template-{slug}`.
 
@@ -622,8 +639,8 @@ _✅ 2026-11-18. The rebuild exposed **33 more false claims** the 2026-11-17 aud
 **Goal:** the same treatment for `/compare` and `/compare/[slug]`.
 
 - [x] a. A comparison table component (✓/✗, prices), with a "last checked" date, a verdict box and a CTA. Use the differentiation work from chunk 5e.
-- [ ] b. _(partly: Invoicor's own claims fixed 2026-11-18; competitor prices and facts still need a source + date each, see Y16)_ Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up.
-- [ ] c. Cover every competitor with real search demand: `/compare/{competitor}-alternative` for the top 10 (Invoice Simple, Invoice2go, Invoice Fly, Bookipi, Zoho Invoice, Wave, FreshBooks, QuickBooks, Joist, Invoice Home), plus the most-searched "{A} vs {B}" pairs. People searching these are ready to switch.
+- ➜ b.  Keep the claims about competitors factual and dated (legal safety). Use the real complaint themes from `competitor_research.md` (paywalls, support, payment holds) as comparison rows, phrased as facts you can back up. **→ moved to Stage X, [X11](#x11)**
+- ➜ c. Cover every competitor with real search demand: `/compare/{competitor}-alternative` for the top 10 (Invoice Simple, Invoice2go, Invoice Fly, Bookipi, Zoho Invoice, Wave, FreshBooks, QuickBooks, Joist, Invoice Home), plus the most-searched "{A} vs {B}" pairs. People searching these are ready to switch. **→ moved to Stage X, [X12](#x12)**
 - [x] d. Hub grid + intro.
 - [x] e. Metadata, OG images, JSON-LD.
 
@@ -634,7 +651,7 @@ _✅ 2026-11-18: rebuilt on shared blocks (at-a-glance stats as an invoice sheet
 ### 24. About, contact, help, affiliate & legal
 **Goal:** the remaining pages, plus the trust pages Google looks for.
 
-- [ ] a. _(needs your input: D6 company details, D7 story; Claude builds both pages as soon as you answer)_ **New: About** (the story, who's behind it, EU hosting, the mission) and **Contact** (email/form, response time, company details). Both feed the trust signals (chunk 7c).
+- ➜ a.  **New: About** (the story, who's behind it, EU hosting, the mission) and **Contact** (email/form, response time, company details). Both feed the trust signals (chunk 7c). **→ moved to Stage X, [X7](#x7)**
 - [x] b. Help: FAQ accordion + search filter + contact link.
 - [x] c. Affiliate: rebuilt with the shared sections.
 - [x] d. Terms & Privacy: light reading layout, numbered sections, a "last updated" date. _(Turnstile and generator wording follows in Stage G.)_ **Update the privacy policy** for analytics + consent, Turnstile, and the generator ("we don't store invoice data").
@@ -675,12 +692,12 @@ _See [R7](#r7-migration-strategy) for the strategy summary._
 _Rewritten 2026-11-18 for the static export: staging is a second folder behind a password, not a
 Node/PM2 process._
 
-- [ ] a. DNS: `staging.invoicor.com` A record → the server, plus a certbot certificate. _(your step Y17)_
+- ➜ a. DNS: `staging.invoicor.com` A record → the server, plus a certbot certificate. **→ moved to Stage X, [X4](#x4)**
 - [x] b. ~~Node + PM2~~ Not needed: staging serves the same static `out/` from `$STAGING_DIR/site`.
 - [x] c. nginx for `staging.`: password (basic auth), `X-Robots-Tag: noindex`, the same redirects and `try_files` as production. _(`deploy/nginx/staging.invoicor.com.conf`; installing it is Y17)_
 - [x] d. `bash deploy/deploy.sh --staging` deploys the current branch to staging.
 - [x] e. **QA checklist** in [seo/QA.md](seo/QA.md): automated part (`npm run check`, parity script, CI) + devices, Lighthouse, Rich Results, consent, redirects by hand.
-- [ ] f. Fix everything the checklist finds. _(after Y17)_
+- ➜ f. Fix everything the checklist finds. **→ moved to Stage X, [X4](#x4)**
 
 **Done when:** the whole QA checklist passes on staging.
 
@@ -706,24 +723,166 @@ _Rewritten 2026-11-18 for the static export. The step-by-step runbook is DEPLOY.
 - [x] d. Smoke test: built into `deploy.sh` (home 200, unknown page 404) + the "after launch" part of [seo/QA.md](seo/QA.md).
 - [x] e. **Rollback** to the Vite site documented (restore the nginx backup, under a minute); later rollbacks: `deploy.sh --rollback`.
 - [x] f. IndexNow ping after every production deploy (`scripts/indexnow.mjs` in `deploy.sh`).
-- [ ] g. Search Console + Bing: resubmit the sitemap, request indexing for the home page and top 10 pages. _(your step, DEPLOY.md D)_
+- ➜ g. Search Console + Bing: resubmit the sitemap, request indexing for the home page and top 10 pages. **→ moved to Stage X, [X6](#x6)**
 - [x] h. Old Vite files: already gone from `dev`; merging `dev` into `main` removes them from `main` (and with them the old starter-template README GitHub shows today).
-- [ ] i. **Do the launch.** _(your step Y2: merge `dev` → `main`, run the runbook)_
+- ➜ i. **Do the launch.** **→ moved to Stage X, [X5](#x5)**
 
 **Done when:** invoicor.com is served by Next.js, the smoke test passes, and the rollback is documented and tested on staging.
 
 ### 29. Post-launch watch (4 weeks)
 **Goal:** catch any SEO drop early.
 
-- [ ] a. **Daily for the first week:** the nginx error log + 404 log (`sudo tail -f /var/log/nginx/error.log`; 404s: `grep '" 404 ' /var/log/nginx/access.log`), an uptime check. _(No PM2: nothing to restart.)_
-- [ ] b. **Weekly, compared with the baseline:**
+- ➜ a. **Daily for the first week:** the nginx error log + 404 log (`sudo tail -f /var/log/nginx/error.log`; 404s: `grep '" 404 ' /var/log/nginx/access.log`), an uptime check. _(No PM2: nothing to restart.)_ **→ moved to Stage X, [X13](#x13)**
+- ➜ b. **Weekly, compared with the baseline:** **→ moved to Stage X, [X13](#x13)**
   - Search Console: indexed pages, coverage errors, impressions and clicks for the top pages
   - Bing: the same
-- [ ] c. Add redirects for any 404 URLs that real visitors or Google hit.
-- [ ] d. A small temporary dip in rankings is normal for 2–4 weeks. Investigate if it lasts longer than that, or if pages fall out of the index.
-- [ ] e. After 4 weeks, write a short summary of indexed pages, impressions and clicks vs the baseline in `seo/baseline/`.
+- ➜ c. Add redirects for any 404 URLs that real visitors or Google hit. **→ moved to Stage X, [X13](#x13)**
+- ➜ d. A small temporary dip in rankings is normal for 2–4 weeks. Investigate if it lasts longer than that, or if pages fall out of the index. **→ moved to Stage X, [X13](#x13)**
+- ➜ e. After 4 weeks, write a short summary of indexed pages, impressions and clicks vs the baseline in `seo/baseline/`. **→ moved to Stage X, [X13](#x13)**
 
 **Done when:** 4 weeks after launch, the indexed pages and impressions are at or above the baseline.
+
+---
+
+## Stage X: Your leftovers from Stages A–F
+
+_Everything from Stages A–F that Claude can't do from here: it needs your accounts, your server, your
+company details or your decision. Everything else in A–F is done and tested on `dev` (2026-11-18).
+Do them top to bottom. The same items also appear in [Your steps](#your-steps) and
+[Decisions for you](#decisions-for-you); this is the ordered "how to" view._
+
+**How essential:** 🔴 essential, the launch isn't safe without it · 🟠 important, do it soon (legal or
+trust risk) · 🟢 nice to have, whenever you have time.
+
+**The short version:** before launch you **must** do X1, X2, X3, X5, X6 (and X4 is strongly
+recommended). After launch, X13 for four weeks. X7 is a legal point for a Dutch business. The rest
+can wait.
+
+<a id="x1"></a>
+
+### X1. 🔴 Verify Google Search Console by DNS _(≈ 10 min, before launch · was Y13)_
+**Why:** Search Console is probably verified through the Google Analytics tag today. GA now only
+loads after cookie consent, so after the launch Google may stop seeing the verification and you lose
+access to your search data.
+**How:**
+1. search.google.com/search-console → *Add property* → **Domain** → `invoicor.com`.
+2. Google shows a `google-site-verification=…` TXT record. Add it at your DNS provider (where
+   invoicor.com's DNS is managed): type **TXT**, name **@** (or empty), value = the full string.
+3. Wait 5–30 minutes, click *Verify*. Keep the old property; the new one shows all subdomains too.
+
+<a id="x2"></a>
+
+### X2. 🔴 Export the SEO baseline _(≈ 20 min, before launch · was Y1, chunk 4d)_
+**Why:** without a "before" snapshot nobody can tell whether the switch hurt or helped your rankings.
+**How:**
+1. Search Console → *Performance* → last 3 months → *Export* → CSV (it includes queries and pages).
+2. Search Console → *Pages* (indexing) → *Export*. Search Console → *Links* → *Export*.
+3. Bing Webmaster Tools: the same exports where available.
+4. Put the files in `seo/baseline/2026-11/` and tell Claude: Claude commits them, adds any extra URLs
+   to `tests/urls.txt` (so they're protected), and does X9.
+
+<a id="x3"></a>
+
+### X3. 🔴 Check the server and install the nginx config _(≈ 30 min, at launch · chunk 2a–c, DEPLOY.md A)_
+**Why:** the new site is a folder of HTML that nginx serves; your current nginx config is set up
+for the old Vite build. Only you can log in to the server.
+**How:** DEPLOY.md section A, steps 1–3:
+1. `cp deploy/.env.example deploy/.env`, fill in `SSH_TARGET` and `SITE_DIR`; check `ssh … 'echo ok'`.
+2. On the server: `grep -rln invoicor /etc/nginx/sites-enabled/` → note the file, the `root` line and
+   the `/api/` block. Check `nginx -v` (the config is written for 1.24).
+3. Back it up, then merge in `deploy/nginx/invoicor.com.conf` (keep your SSL and `/api/` lines).
+   Do this in the same session as X5, because the new `root` folder only exists after the first upload.
+_Tip: paste the output of step 2 to Claude and it writes the exact merged file for you._
+
+<a id="x4"></a>
+
+### X4. 🟠 Set up staging and run the QA checklist _(≈ 15 min setup + 30 min QA · was Y17, chunk 26a/f)_
+**Why:** a private copy on the real server catches problems before visitors and Google see them.
+Not strictly required (all automated tests already pass), but strongly recommended for the first launch.
+**How:** DEPLOY.md section A.4 (DNS record `staging`, `htpasswd`, copy the staging nginx file,
+`certbot`), then `bash deploy/deploy.sh --staging`, then
+`npm run parity -- --new https://staging.invoicor.com --auth invoicor:yourpassword` and the
+by-hand list in [seo/QA.md](seo/QA.md). Send Claude anything that looks wrong.
+
+<a id="x5"></a>
+
+### X5. 🔴 Launch: merge to `main` and deploy _(≈ 15 min · was Y2, chunks 3d, 28i)_
+**Why:** this is the switch. Only you deploy (your choice: manual, never automatic).
+**How:** DEPLOY.md section C: back up the old site and nginx config → `git checkout main && git merge
+dev && git push` → `bash deploy/deploy.sh` → reload nginx (X3) → the checks in seo/QA.md
+"after launch". Rollback to the old site is one command (in DEPLOY.md C).
+_After this, GitHub's `main` shows the new README; the old starter-template files are gone from `main`._
+
+<a id="x6"></a>
+
+### X6. 🔴 Tell Google and Bing _(≈ 10 min, same day as X5 · chunk 28g)_
+**How:** Search Console and Bing Webmaster → *Sitemaps* → submit `https://invoicor.com/sitemap.xml`.
+Then *URL Inspection* → *Request indexing* for the home page and your top 10 pages (from X2).
+(Bing, Yandex and Seznam are also pinged automatically by `deploy.sh` via IndexNow.)
+
+<a id="x7"></a>
+
+### X7. 🟠 Company details + your story → About, Contact, footer _(≈ 10 min of your time · D6, D7, chunks 7c, 24a)_
+**Why:** trust (Google's E-E-A-T, B2B buyers want to know who's behind an invoicing app) and law:
+a Dutch business has to show its KvK number on its website. The terms already say "operated from
+the Netherlands".
+**How:** send Claude: legal company name, KvK number, (optionally) VAT number, city or "registered
+in", and 3–5 sentences on why you built Invoicor and who you are (a photo is optional). Claude then
+builds `/about` and `/contact`, adds the details to the footer, and updates the structured data.
+
+<a id="x8"></a>
+
+### X8. 🟢 Approve the brand draft _(≈ 20 min reading · D7, chunk 5)_
+**How:** read [BRAND.md](BRAND.md) sections 1–6 (positioning, audience, pillars, tagline, voice).
+Change anything that doesn't sound like you, or tell Claude what to change, then set the status line
+to "Approved". The site already follows the draft.
+
+<a id="x9"></a>
+
+### X9. 🟢 Keyword positions and 6-month targets _(Claude does it, after X2 · chunks 6c, 6h)_
+**How:** nothing extra: once the baseline files from X2 are in the repo, Claude fills in the current
+positions in `seo/keyword-map.csv` and proposes 10 priority keywords with realistic targets.
+
+<a id="x10"></a>
+
+### X10. 🟢 App Store provider token _(≈ 5 min · was Y6, chunk 14e)_
+**Why:** every App Store link already carries a campaign name per page, but Apple only counts it
+when your provider token is in the link. Then App Store Connect shows which page brings installs.
+**How:** App Store Connect → *App Analytics* → *Campaigns* → *Generate a campaign link*, copy the
+`pt=` value, send it to Claude (it goes into the build as `NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN`).
+
+<a id="x11"></a>
+
+### X11. 🟠 Confirm the competitor facts on the compare pages _(≈ 1 h · was Y16, chunk 23b)_
+**Why:** statements about other companies' prices and limits must be true and dated (legal safety).
+Invoicor's own claims are already fixed; the competitors' prices aren't sourced yet.
+**How:** either check the 10 competitors' pricing pages yourself and note any wrong number, or give
+Claude the OK to research them on the web: Claude drafts each fact with its source link and date,
+you confirm. Do this before you promote the compare pages.
+
+<a id="x12"></a>
+
+### X12. 🟢 More compare pages _(Claude, after your OK · chunk 23c)_
+**What:** pages for Invoice Simple, Invoice Fly, Bookipi, Joist and Invoice Home (people searching
+"{competitor} alternative" are ready to switch). **How:** say "go" and allow web research; same fact
+check as X11 before publishing.
+
+<a id="x13"></a>
+
+### X13. 🔴 Post-launch watch _(4 weeks, starts after X5 · chunk 29)_
+**How:** first week, daily: the 404s on the server
+(`grep '" 404 ' /var/log/nginx/access.log | tail -50`) and an uptime check. Weekly: Search Console
+→ *Pages* and *Performance*, compared with X2. Send Claude the exports or the 404 list: Claude adds
+redirects for real old URLs and writes the 4-week summary in `seo/baseline/`. A small dip for 2–4
+weeks is normal; longer than that, investigate.
+
+<a id="x14"></a>
+
+### X14. 🟢 Small decisions that change page text _(see [Decisions for you](#decisions-for-you))_
+- **D12 / Y14:** time a real invoice; if it's about 5 seconds, the hero can say "5 seconds" again.
+- **D14:** raise prices or not (needs the App Store change first).
+- **D15:** template titles promise "(PDF, Word, Excel)" downloads that don't exist yet.
+- **Y12 (🟠 privacy):** move PostHog to its EU cloud, so only Google Analytics leaves the EU.
 
 ---
 

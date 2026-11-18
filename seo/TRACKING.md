@@ -46,3 +46,19 @@ show installs per placement. **This only works once the provider token is set** 
 `$pageview` (any page) → `cta_click` → App Store page → install (App Store Connect, by `ct`) →
 trial → paid (app analytics). The website owns the first two steps; compare `cta_click` rate per
 `section` to see which placements work, and per page type to see which SEO pages convert.
+
+## UTM links for outside traffic
+
+Links you post elsewhere (social, directories, outreach, newsletters) get UTM tags, so GA4 and
+PostHog show where visitors came from. Lowercase, dashes, no spaces.
+
+| Parameter | Use | Examples |
+|---|---|---|
+| `utm_source` | the site or platform | `reddit`, `producthunt`, `linkedin`, `newsletter`, `g2` |
+| `utm_medium` | the type of link | `social`, `referral`, `email`, `listing`, `affiliate` |
+| `utm_campaign` | what it's for | `launch-2026`, `templates-plumbing`, `compare-quickbooks` |
+| `utm_content` | optional: which post or link | `post-1`, `bio-link` |
+
+Example: `https://invoicor.com/templates/plumbing?utm_source=reddit&utm_medium=social&utm_campaign=templates-plumbing`
+
+Never tag internal links (between invoicor.com pages): it overwrites the real source.
