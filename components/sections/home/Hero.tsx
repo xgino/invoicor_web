@@ -7,6 +7,7 @@ import { Container, Eyebrow, Gradient } from "@/components/ui/layout";
 import { appStoreLink } from "@/lib/config";
 import { FREE_INVOICES } from "@/lib/pricing";
 import { TrustRow } from "@/components/ui/TrustRow";
+import { DrawnArrow } from "@/components/ui/doodles";
 
 const PROMISES = [`${FREE_INVOICES} invoices free`, "No watermark", "No subscription needed"];
 
@@ -26,7 +27,7 @@ export function Hero() {
         <div className="dot-grid absolute -inset-12" />
       </div>
       <Container className="pt-nav grid items-center gap-14 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pb-28">
-        <div className="anim-up pt-12 lg:pt-20">
+        <div className="anim-up relative pt-12 lg:pt-20">
           <Eyebrow>Invoice maker for iPhone</Eyebrow>
           <h1 className="font-heading text-display text-ink text-balance">
             Professional invoices, sent <Gradient underline="load">in seconds.</Gradient>
@@ -50,6 +51,16 @@ export function Hero() {
             <a href="#pricing" className={buttonClass({ variant: "secondary", size: "lg" })}>
               See pricing <ArrowRight aria-hidden className="size-4" />
             </a>
+          </div>
+          {/* Hand-drawn pointer to the invoice (desktop) */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -right-10 bottom-14 hidden flex-col items-center xl:flex"
+          >
+            <span className="font-heading text-small text-brand-700 rotate-[-8deg] font-bold whitespace-nowrap">
+              ready to send
+            </span>
+            <DrawnArrow when="load" className="h-12 w-20 -rotate-[25deg]" />
           </div>
           <ul aria-label="What you get for free" className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
             {PROMISES.map((p) => (

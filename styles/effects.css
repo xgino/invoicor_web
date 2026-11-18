@@ -89,7 +89,8 @@
   transform: translateY(-4px);
 }
 
-/* ── Hand-drawn underline under a headline word (Gradient underline="load" | "reveal" → .on-load / .on-reveal) ── */
+/* ── Hand-drawn lines: underline (Gradient underline), doodles (components/ui/doodles.tsx).
+ *    Underline under a headline word (Gradient underline="load" | "reveal" → .on-load / .on-reveal) ── */
 @keyframes draw-stroke {
   from {
     stroke-dashoffset: 1;
@@ -98,17 +99,21 @@
     stroke-dashoffset: 0;
   }
 }
-.draw-underline path {
+.draw-underline path,
+.drawn path {
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
 }
-.js .draw-underline.on-load path {
+.js .draw-underline.on-load path,
+.js .drawn.on-load path {
   animation: draw-stroke 0.9s 0.7s var(--ease-brand) both;
 }
-.js .draw-underline.on-reveal path {
+.js .draw-underline.on-reveal path,
+.js .drawn.on-reveal path {
   stroke-dashoffset: 1;
 }
-.js .reveal.in .draw-underline.on-reveal path {
+.js .reveal.in .draw-underline.on-reveal path,
+.js .reveal.in .drawn.on-reveal path {
   animation: draw-stroke 0.9s 0.5s var(--ease-brand) both;
 }
 
@@ -276,7 +281,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .js .draw-underline path,
-  .js .reveal.in .draw-underline path {
+  .js .reveal.in .draw-underline path,
+  .js .drawn path,
+  .js .reveal.in .drawn path {
     animation: none;
     stroke-dashoffset: 0;
   }

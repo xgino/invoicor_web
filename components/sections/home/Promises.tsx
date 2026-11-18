@@ -1,6 +1,7 @@
 import { BadgeCheck, Banknote, MessageCircle } from "lucide-react";
 import type { CSSProperties } from "react";
 import { cx } from "@/components/ui/cx";
+import { DrawnCircle } from "@/components/ui/doodles";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 import { FREE_INVOICES } from "@/lib/pricing";
 
@@ -78,8 +79,11 @@ export function Promises() {
                   <p.icon aria-hidden className="size-6" strokeWidth={2} />
                 </span>
                 <p className="mt-6 flex shrink-0 flex-wrap items-baseline gap-x-2 gap-y-1">
-                  <span className="font-heading text-ink text-[2.75rem] leading-none font-extrabold tracking-tight tabular-nums">
+                  <span className="font-heading text-ink relative text-[2.75rem] leading-none font-extrabold tracking-tight tabular-nums">
                     {p.fact}
+                    {p.featured && (
+                      <DrawnCircle className="absolute -top-3 -left-4 h-[calc(100%+1.5rem)] w-[calc(100%+2rem)]" />
+                    )}
                   </span>
                   <span className="text-small text-muted font-medium">{p.factLabel}</span>
                 </p>

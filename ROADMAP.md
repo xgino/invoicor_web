@@ -128,7 +128,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P10. Mobile and speed pass
 - [x] P11. Price anchors per plan (coffee as a saying, a unique one for Pro)
 - [x] P12. Monthly price first, "billed yearly" below; local currency note
-- [ ] P13. Hand-drawn doodles: arrows and circles that draw themselves
+- [x] P13. Hand-drawn doodles: arrows and circles that draw themselves
 - [ ] P14. "Who it's for": the people Invoicor is built for
 - [ ] P15. Real app screens in an iPhone frame
 - [ ] P16. Sticky "Get the app" bar on phones
@@ -1048,8 +1048,8 @@ per country; we don't control or know each local price.)
 **P13. Hand-drawn doodles.** You love the drawn lines. Add a small kit (`DrawnArrow`, `DrawnCircle`)
 that draws itself on scroll, used in 3 places only so it stays premium: a circle around **0%** in
 the promises, an arrow pointing at **"2 months free"** on the billing switch, an arrow from the hero
-CTA towards the invoice ("made in seconds").
-- [ ] Build it.
+CTA towards the invoice ("ready to send").
+- [x] Build it. _(✅ 2026-11-18: `components/ui/doodles.tsx`; arrow in the hero (xl screens), arrow + "best value" at the billing switch (md+), circle around 0%. Same drawing CSS as the underline; off under reduced motion)_
 
 **P14. "Who it's for".** Help visitors picture themselves: three people, each with the moment they
 reach for the app and what they get, linking to their industry pages (good for SEO too):

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { BillingSwitch, type Period } from "@/components/ui/BillingSwitch";
 import { buttonClass } from "@/components/ui/Button";
 import { cx } from "@/components/ui/cx";
+import { DrawnArrow } from "@/components/ui/doodles";
 import {
   CoffeeCup,
   InvoicePaper,
@@ -15,7 +16,6 @@ import {
 } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
 import {
-  FREE_INVOICES,
   PLANS,
   PRICING,
   YEARLY_MONTHS_FREE,
@@ -45,12 +45,22 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
 
   return (
     <div>
-      <div className="mb-10 flex justify-center">
+      <div className="reveal relative mb-10 flex justify-center">
         <BillingSwitch
           value={period}
           onChange={setPeriod}
           savingLabel={`${YEARLY_MONTHS_FREE} months free`}
         />
+        {/* Hand-drawn hint at the yearly saving (desktop): arrow down-left onto the badge */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute top-1/2 left-1/2 hidden translate-x-[9.75rem] -translate-y-[80%] items-start gap-1 md:flex"
+        >
+          <DrawnArrow className="mt-2 h-8 w-12 rotate-[200deg]" />
+          <span className="font-heading text-small text-brand-700 -rotate-6 font-bold whitespace-nowrap">
+            best value
+          </span>
+        </div>
       </div>
       <div className="grid gap-8 pt-4 lg:grid-cols-3 lg:gap-6">
         {PLANS.map((plan, i) => (
