@@ -112,8 +112,10 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X13. 🔴 Post-launch watch (4 weeks)
 - [ ] X14. 🟢 Small decisions that change page text (D12, D14, D15)
 - [ ] X15. 🟠 Have a lawyer review Terms and Privacy
+- [ ] X16. 🟠 Fix two claims in your App Store screenshots ("Estimates", "Trusted by businesses worldwide")
+- [ ] X17. 🟢 Send fresh app screenshots
 
-**Stage P: Polish from your review (2026-11-18)** _(✅ done, except the lawyer review (X15); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
+**Stage P: Polish from your review (2026-11-18)** _(P1–P10 done; round 2: P11–P18; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [x] P3. "How it works" as a visible path
@@ -124,6 +126,14 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
 - [x] P9. FAQ search optimisation
 - [x] P10. Mobile and speed pass
+- [ ] P11. Price anchors per plan (coffee as a saying, a unique one for Pro)
+- [ ] P12. Monthly price first, "billed yearly" below; local currency note
+- [ ] P13. Hand-drawn doodles: arrows and circles that draw themselves
+- [ ] P14. "Who it's for": the people Invoicor is built for
+- [ ] P15. Real app screens in an iPhone frame
+- [ ] P16. Sticky "Get the app" bar on phones
+- [ ] P17. QR code for desktop visitors
+- [ ] P18. Mobile and speed recheck
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -905,6 +915,25 @@ analytics. Claude wrote careful drafts, but only a lawyer can confirm they hold 
 selling worldwide. **How:** send `/terms` and `/privacy` to a lawyer (many offer a fixed-price review
 for small SaaS companies) and give Claude their changes.
 
+<a id="x16"></a>
+
+### X16. 🟠 Fix two claims in your App Store screenshots _(≈ 30 min)_
+**Why:** screenshot 2 lists **"Estimates"**, but neither the app nor the API has estimates
+(checked 2026-11-18), and it says **"Trusted by businesses worldwide"** without proof. Apple's
+review guideline 2.3 requires accurate metadata, and it's the same honesty issue we fixed on the
+website. **How:** replace "Estimates" with a real feature (e.g. "Saved clients" or "11 languages")
+and "Trusted by businesses worldwide" with something true (e.g. "3 invoices free"), then upload the
+new screenshots in App Store Connect with the next app update.
+
+<a id="x17"></a>
+
+### X17. 🟢 Send fresh app screenshots _(≈ 15 min)_
+**Why:** P15 uses screens cropped from the App Store marketing images. Clean screenshots straight from
+the app (iPhone, light mode, realistic demo data, no personal data) look sharper.
+**How:** on an iPhone, take screenshots of: the dashboard, a new invoice being filled in, the
+template picker, an invoice preview, the share sheet. AirDrop them to your Mac and put them in
+`assets/app-screens/` (Claude converts and swaps them in).
+
 ---
 
 ## Stage P: Polish from your review (2026-11-18)
@@ -999,6 +1028,54 @@ _✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fra
 ### P10. Mobile and speed pass
 - [x] _(✅ 2026-11-18. Measured on the home page as a mid-range phone (4× slower CPU, fast 4G): largest paint **0.59–0.75 s before → 0.66–0.75 s after**, layout shift **0** both times, JavaScript **595 → 599 KB** raw (~200 KB compressed, mostly the Next.js/React runtime), HTML 34 KB compressed. Improvement: the 12 template previews now load only when you scroll near the gallery (**0 API requests on the first screen**, was 12). Every changed section checked at 390 px and 1280 px.)_ Screenshots of every changed section at phone width, and a measurement of page weight and
   loading (JavaScript size, largest paint) on the home page, before and after Stage P.
+
+### P11–P18. Round 2 of your review (2026-11-18)
+
+**P11. Price anchors.** Your remark: coffee prices differ per country, and copying it to Pro makes it
+feel less unique. Answer: it works as a saying ("about the price of a coffee"), not a price claim,
+so soften it to **"About one coffee a month"** on Starter. Pro gets its **own** anchor from real
+math: **"$0.22 a day"** on yearly / "$0.27 a day" monthly (calculated from the price, never typed).
+Free: "Free for your first 3 invoices, forever". Each plan has one anchor, none repeated.
+- [ ] Build it.
+
+**P12. Monthly price first.** Show what people compare: **"$6.67 /month"** big on the yearly plans,
+with **"billed $79.99 once a year"** right under it (both always visible: clear for buyers and
+consumer law). The invoice lines below stay as the breakdown. Plus a note: "Prices in USD. The App
+Store shows your local price, set by Apple, which may include local taxes." (Apple converts prices
+per country; we don't control or know each local price.)
+- [ ] Build it.
+
+**P13. Hand-drawn doodles.** You love the drawn lines. Add a small kit (`DrawnArrow`, `DrawnCircle`)
+that draws itself on scroll, used in 3 places only so it stays premium: a circle around **0%** in
+the promises, an arrow pointing at **"2 months free"** on the billing switch, an arrow from the hero
+CTA towards the invoice ("made in seconds").
+- [ ] Build it.
+
+**P14. "Who it's for".** Help visitors picture themselves: three people, each with the moment they
+reach for the app and what they get, linking to their industry pages (good for SEO too):
+the tradesperson (invoice from the driveway before leaving the job), the freelancer (clients abroad:
+their language and currency), the small studio (several businesses, one app). Positive only:
+"Not accounting software. Just invoices." Accountant hand-off stays truthful: "send the PDFs to
+your accountant" (there is no data export feature; BRAND.md §10).
+- [ ] Build it.
+
+**P15. Real app screens.** The site shows no real app screen yet: the strongest missing trust and
+conversion piece. Crop the real screens (dashboard, new invoice, share) from the App Store images in
+`invoicor_api/logo/images v1.6.3/eng/` into a CSS iPhone frame, as optimised WebP. Better later:
+fresh screenshots straight from the app (X17).
+- [ ] Build it.
+
+**P16. Sticky "Get the app" bar on phones.** After the hero scrolls away, a slim bar at the bottom
+of the screen keeps the download one tap away (hidden on desktop, hidden near the final CTA).
+- [ ] Build it.
+
+**P17. QR code for desktop visitors.** People on a laptop can't install an iPhone app directly. A
+"scan with your iPhone" QR code (generated at build time, no tracking) next to the App Store button
+on desktop.
+- [ ] Build it.
+
+**P18. Mobile and speed recheck** after P11–P17 (same measurement as P10).
+- [ ] Measure and fix.
 
 ---
 
