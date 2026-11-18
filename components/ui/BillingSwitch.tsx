@@ -14,7 +14,9 @@ export function BillingSwitch({
   onChange,
   savingLabel,
   className,
+  labels = { monthly: "Monthly", yearly: "Yearly", toggle: "Bill yearly" },
 }: {
+  labels?: { monthly: string; yearly: string; toggle: string };
   value: Period;
   onChange: (value: Period) => void;
   /** Shown next to "Yearly", e.g. "2 months free". */
@@ -41,13 +43,13 @@ export function BillingSwitch({
 
   return (
     <div className={cx("inline-flex items-center gap-3", className)}>
-      {label("monthly", "Monthly")}
+      {label("monthly", labels.monthly)}
       <button
         type="button"
         role="switch"
         id={id}
         aria-checked={yearly}
-        aria-label="Bill yearly"
+        aria-label={labels.toggle}
         onClick={() => onChange(yearly ? "monthly" : "yearly")}
         className={cx(
           "focus-visible:focus-ring relative h-8 w-14 shrink-0 rounded-full p-1 shadow-inner transition-colors duration-250",
@@ -62,7 +64,7 @@ export function BillingSwitch({
           )}
         />
       </button>
-      {label("yearly", "Yearly")}
+      {label("yearly", labels.yearly)}
       {savingLabel && (
         <span
           className={cx(

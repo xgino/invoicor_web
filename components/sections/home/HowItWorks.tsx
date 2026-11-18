@@ -2,102 +2,111 @@ import { FileText, Mail, MessagesSquare, Send, UserRound } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
 import { Stamp } from "@/components/ui/invoice";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
+import { formatMoney } from "@/lib/i18n/money";
+import { sampleTotals } from "./Hero";
+import type { Locale } from "@/lib/i18n/config";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
 
 /**
  * How it works as a path (ROADMAP P3): four numbered stops on a line that draws itself when
  * scrolled into view (horizontal on desktop, vertical on phones), each with a small invoice
  * visual, ending at "Paid". CSS only; static under reduced motion.
  */
-const STEPS: Array<{ title: string; text: string; visual: ReactNode }> = [
-  {
-    title: "Pick your client",
-    text: "Choose a saved client or add a new one. Name, address and email fill in for you.",
-    visual: (
-      <div className="flex items-center gap-2.5">
-        <span className="bg-brand-gradient grid size-8 place-items-center rounded-full text-[0.75rem] font-bold text-white">
-          SM
-        </span>
-        <div className="leading-tight">
-          <p className="text-small text-ink font-bold">Sarah Mitchell</p>
-          <p className="text-subtle text-[0.75rem]">Saved client</p>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "Add your items",
-    text: "Tap saved products or type a line. Tax, discount and totals add up as you go.",
-    visual: (
-      <ul className="text-small space-y-1 tabular-nums">
-        {[
-          ["Call-out", "$95.00"],
-          ["Labor, 2 h", "$170.00"],
-          ["Faucet and fittings", "$213.50"],
-          ["Tax 8%", "$38.28"],
-        ].map(([label, amount]) => (
-          <li key={label} className="flex justify-between gap-4">
-            <span className="text-muted">{label}</span>
-            <span className="text-ink font-medium">{amount}</span>
-          </li>
-        ))}
-        <li className="border-line text-ink flex justify-between gap-4 border-t pt-1.5 font-bold">
-          <span>Total</span>
-          <span>$516.78</span>
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: "Send the PDF",
-    text: "Share it by email, WhatsApp, Messages or AirDrop, with your payment link on it.",
-    visual: (
-      <div className="flex flex-wrap gap-1.5">
-        {[
-          { icon: FileText, label: "PDF" },
-          { icon: MessagesSquare, label: "WhatsApp" },
-          { icon: Mail, label: "Mail" },
-        ].map((c) => (
-          <span
-            key={c.label}
-            className="bg-tint ring-line text-ink flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.75rem] font-medium ring-1"
-          >
-            <c.icon aria-hidden className="text-brand-700 size-3" />
-            {c.label}
+function steps(
+  t: HomeDict,
+  locale: Locale,
+): Array<{ title: string; text: string; visual: ReactNode }> {
+  const h = t.how;
+  const sample = t.sample;
+  const sums = sampleTotals(sample);
+  const money = (n: number) => formatMoney(n, locale);
+  return [
+    {
+      ...h.steps[0]!,
+      visual: (
+        <div className="flex items-center gap-2.5">
+          <span className="bg-brand-gradient grid size-8 place-items-center rounded-full text-[0.75rem] font-bold text-white">
+            {sample.clientInitials}
           </span>
-        ))}
-      </div>
-    ),
-  },
-  {
-    title: "Get paid",
-    text: "Your client pays you directly. Mark it paid and see what's still out at a glance.",
-    visual: (
-      <div className="flex items-center justify-between gap-3">
-        <div className="leading-tight">
-          <p className="text-ink font-heading text-h4 tabular-nums">$516.78</p>
-          <p className="text-subtle text-[0.75rem]">Paid to you</p>
+          <div className="leading-tight">
+            <p className="text-small text-ink font-bold">{sample.clientName}</p>
+            <p className="text-subtle text-[0.75rem]">{h.savedClient}</p>
+          </div>
         </div>
-        <Stamp tone="success" rotate={-8} delay={1.4} className="text-[0.8125rem]">
-          Paid
-        </Stamp>
-      </div>
-    ),
-  },
-];
+      ),
+    },
+    {
+      ...h.steps[1]!,
+      visual: (
+        <ul className="text-small space-y-1 tabular-nums">
+          {[
+            ...sample.items.map((i) => [i.short, money(i.amount)]),
+            [sample.taxLabel, money(sums.tax)],
+          ].map(([label, amount]) => (
+            <li key={label} className="flex justify-between gap-4">
+              <span className="text-muted">{label}</span>
+              <span className="text-ink font-medium">{amount}</span>
+            </li>
+          ))}
+          <li className="border-line text-ink flex justify-between gap-4 border-t pt-1.5 font-bold">
+            <span>{h.total}</span>
+            <span>{money(sums.total)}</span>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      ...h.steps[2]!,
+      visual: (
+        <div className="flex flex-wrap gap-1.5">
+          {[
+            { icon: FileText, label: "PDF" },
+            { icon: MessagesSquare, label: "WhatsApp" },
+            { icon: Mail, label: "Mail" },
+          ].map((c) => (
+            <span
+              key={c.label}
+              className="bg-tint ring-line text-ink flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.75rem] font-medium ring-1"
+            >
+              <c.icon aria-hidden className="text-brand-700 size-3" />
+              {c.label}
+            </span>
+          ))}
+        </div>
+      ),
+    },
+    {
+      ...h.steps[3]!,
+      visual: (
+        <div className="flex items-center justify-between gap-3">
+          <div className="leading-tight">
+            <p className="text-ink font-heading text-h4 tabular-nums">{money(sums.total)}</p>
+            <p className="text-subtle text-[0.75rem]">{h.paidToYou}</p>
+          </div>
+          <Stamp tone="success" rotate={-8} delay={1.4} className="text-[0.8125rem]">
+            {sample.stamp}
+          </Stamp>
+        </div>
+      ),
+    },
+  ];
+}
 
 const ICONS = [UserRound, FileText, Send, null];
 
-export function HowItWorks() {
+export function HowItWorks({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const h = t.how;
+  const STEPS = steps(t, locale);
   return (
     <Section tone="tint" aria-labelledby="how-title">
       <Container>
         <div className="reveal mx-auto max-w-2xl text-center">
-          <Eyebrow>How it works</Eyebrow>
+          <Eyebrow>{h.eyebrow}</Eyebrow>
           <Heading id="how-title">
-            From job done to <Gradient>paid.</Gradient>
+            {h.titleA} <Gradient>{h.titleB}</Gradient>
           </Heading>
           <Text size="lead" className="mt-4">
-            Set up your business once. After that, every invoice is a few taps.
+            {h.lead}
           </Text>
         </div>
 
@@ -135,10 +144,14 @@ export function HowItWorks() {
                   ) : (
                     <span className="font-heading text-[1.1rem] font-extrabold">✓</span>
                   )}
-                  <span className="sr-only">Step {i + 1}</span>
+                  <span className="sr-only">
+                    {h.step} {i + 1}
+                  </span>
                 </span>
                 <div className="bg-surface ring-line shadow-card h-full rounded-2xl p-5 ring-1 lg:text-center">
-                  <p className="text-eyebrow text-brand-700 uppercase">Step {i + 1}</p>
+                  <p className="text-eyebrow text-brand-700 uppercase">
+                    {h.step} {i + 1}
+                  </p>
                   <h3 className="font-heading text-h4 text-ink mt-1">{step.title}</h3>
                   <p className="text-small text-muted mt-1.5 leading-relaxed">{step.text}</p>
                   <div className="bg-tint/70 ring-line mt-4 rounded-xl p-3 text-left ring-1">

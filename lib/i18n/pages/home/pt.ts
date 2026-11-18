@@ -1,0 +1,373 @@
+import type { HomeDict } from "./en";
+
+/** Home, European Portuguese. Polite "você" forms kept implicit, as Portuguese apps write. */
+export const pt: HomeDict = {
+  meta: {
+    title: "App de faturas para iPhone | Faturas em segundos | Invoicor",
+    description:
+      "Crie faturas profissionais em segundos no iPhone. 31 modelos, 38 moedas, 11 idiomas. 3 faturas grátis e sem comissões sobre os seus pagamentos.",
+  },
+  hero: {
+    eyebrow: "App de faturas para iPhone",
+    titleA: "Faturas profissionais, enviadas",
+    titleB: "em segundos.",
+    lead: "Os dados da sua empresa, os clientes e os preços preenchem-se sozinhos. Escolha um modelo e toque em enviar. Um PDF cuidado no idioma e na moeda do seu cliente, diretamente do telemóvel.",
+    cta: "Descarregar grátis para iOS",
+    online: "Criar uma online",
+    androidQ: "Tem Android?",
+    androidLink: "Chega em breve",
+    doodle: "pronta a enviar",
+    promisesAria: "O que tem grátis",
+    promises: ["{n} faturas grátis", "Sem marca de água", "Sem subscrição"],
+    sent: "Enviada em PDF por WhatsApp",
+  },
+  sample: {
+    number: "Fatura n.º 0042",
+    business: "Canalizações Silva",
+    issued: "Emitida hoje · vence em 14 dias",
+    stamp: "Paga",
+    billTo: "Faturar a",
+    client: "Ana Costa · Rua das Tílias 18, Porto",
+    clientName: "Ana Costa",
+    clientInitials: "AC",
+    items: [
+      { description: "Deslocação urgente", detail: "Sábado", short: "Deslocação", amount: 95 },
+      {
+        description: "Mão de obra, 2 h",
+        detail: "Substituição da torneira da cozinha",
+        short: "Mão de obra, 2 h",
+        amount: 170,
+      },
+      {
+        description: "Torneira e acessórios",
+        detail: "",
+        short: "Torneira e acessórios",
+        amount: 213.5,
+      },
+    ],
+    subtotal: "Subtotal",
+    taxLabel: "IVA 23%",
+    taxRate: 23,
+    total: "Total a pagar",
+  },
+  trust: {
+    send: "Envie-a em PDF por",
+    pay: "Receba com o seu próprio link",
+    messages: "Mensagens",
+    bank: "Transferência",
+  },
+  proof: {
+    aria: "Invoicor em números",
+    templates: "Modelos de fatura",
+    currencies: "Moedas",
+    languages: "Idiomas de fatura",
+    fees: "Comissões sobre os seus pagamentos",
+    percent: "%",
+  },
+  templates: {
+    eyebrow: "31 modelos · 21 grátis",
+    titleA: "Faturas que os seus clientes",
+    titleB: "levam a sério.",
+    lead: "Nada de aspeto de folha de cálculo. O seu logótipo, um design limpo e todos os dados que um cliente ou contabilista espera.",
+    browse: "Escolher modelo",
+    galleryAria: "Pré-visualização dos modelos de fatura",
+    preview: "modelo de fatura, pré-visualização",
+  },
+  how: {
+    eyebrow: "Como funciona",
+    titleA: "Do trabalho feito à fatura",
+    titleB: "paga.",
+    lead: "Configure a sua empresa uma vez. Depois, cada fatura são poucos toques.",
+    step: "Passo",
+    steps: [
+      {
+        title: "Escolha o cliente",
+        text: "Um cliente guardado ou um novo. Nome, morada e e-mail preenchem-se sozinhos.",
+      },
+      {
+        title: "Adicione as linhas",
+        text: "Toque em produtos guardados ou escreva uma linha. IVA, desconto e total calculam-se à medida.",
+      },
+      {
+        title: "Envie o PDF",
+        text: "Partilhe por e-mail, WhatsApp, Mensagens ou AirDrop, com o seu link de pagamento.",
+      },
+      {
+        title: "Receba",
+        text: "O cliente paga-lhe diretamente. Marque como paga e veja num relance o que falta receber.",
+      },
+    ],
+    savedClient: "Cliente guardado",
+    total: "Total",
+    paidToYou: "Pago a si",
+  },
+  who: {
+    eyebrow: "Para quem",
+    titleA: "Feito para quem prefere",
+    titleB: "estar a trabalhar.",
+    lead: "Se fatura entre trabalhos, a partir do telemóvel, a Invoicor foi feita para si.",
+    people: [
+      {
+        who: "Profissionais de serviços",
+        examples: "Canalizadores, eletricistas, limpezas, jardinagem",
+        moment: "O trabalho está feito e o cliente está ali.",
+        gain: "Envie uma fatura profissional à porta, antes de sair. Acabou a papelada à noite.",
+        scene: ["Trabalho feito", "Fatura enviada"],
+      },
+      {
+        who: "Trabalhadores independentes",
+        examples: "Designers, fotógrafos, consultores, coaches",
+        moment: "O projeto está entregue e o cliente está noutro país.",
+        gain: "Fature no idioma e na moeda dele, com um design à altura do seu trabalho.",
+        scene: ["Projeto entregue", "Pago em USD"],
+      },
+      {
+        who: "Pequenas empresas",
+        examples: "Estúdios, empreiteiros, donos de mais de um negócio",
+        moment: "Fim do mês: vários clientes, talvez duas empresas.",
+        gain: "Até 3 perfis de empresa com o Pro, cada um com o seu logótipo e dados. Duplique as faturas do mês passado com um toque.",
+        scene: ["Fim do mês", "Tudo enviado"],
+      },
+    ],
+    notAccountingA: "Não é um programa de contabilidade.",
+    notAccountingB: "Só faturas.",
+    notAccounting: [
+      "Sem lançamentos nem assistentes de configuração",
+      "Envie os PDF ao seu contabilista",
+      "No seu iPhone, onde quer que esteja o trabalho",
+    ],
+  },
+  app: {
+    eyebrow: "A app",
+    titleA: "Saiba onde está o seu dinheiro,",
+    titleB: "sempre.",
+    lead: "A Invoicor não serve só para enviar. Guarda cada fatura, cliente e estado de pagamento num só lugar no telemóvel.",
+    points: [
+      "Pago, por receber e enviado num relance, mês a mês (Starter e Pro).",
+      "Cada fatura mostra o seu estado: rascunho, enviada, paga ou em atraso.",
+      "Abra qualquer fatura mais tarde e volte a partilhar o PDF com um toque.",
+      "Inicie sessão noutro iPhone e está tudo lá.",
+    ],
+    altDashboard:
+      "Painel da Invoicor com valores pagos e por receber, gráfico da faturação mensal e faturas recentes",
+    altSent: "Uma fatura enviada na Invoicor, marcada como enviada",
+    demo: "Ecrãs reais da app (em inglês), com dados de exemplo.",
+  },
+  features: {
+    eyebrow: "Tudo o que uma fatura precisa",
+    title: "Feito para o trabalho, não para contabilistas.",
+    lead: "Sem lançamentos nem assistentes de configuração. As partes da faturação que usa mesmo, bem feitas.",
+    fast: "Rápido",
+    fastText:
+      "Clientes e produtos guardados preenchem-se sozinhos. Totais, IVA e descontos calculam-se enquanto escreve. Duplique a fatura do mês passado com um toque.",
+    paid: "Paga",
+    sent: "Enviada",
+    draft: "Rascunho",
+    global: "Internacional",
+    globalText:
+      "Fature a qualquer cliente, em qualquer lugar: 38 moedas e 11 idiomas de fatura. O cliente lê a fatura no seu idioma.",
+    currenciesAria: "Algumas moedas suportadas",
+    languagesAria: "Alguns idiomas de fatura",
+    professional: "Profissional",
+    professionalText:
+      "31 modelos (21 grátis) com o seu logótipo. Até 3 perfis de empresa com o Pro e um painel de faturação para ver o que está pago e o que falta.",
+    honest: "Honesto",
+    honestList: [
+      "3 faturas grátis, sem marca de água",
+      "Sem subscrição para começar",
+      "0% dos seus pagamentos, nunca",
+      "Dados guardados na Alemanha (RGPD)",
+      "Preços claros, cancele quando quiser",
+      "Cada mensagem é lida por uma pessoa",
+    ],
+  },
+  keep: {
+    eyebrow: "0% dos seus pagamentos. Nunca.",
+    titleA: "O trabalho foi seu.",
+    titleB: "O dinheiro também.",
+    lead: "Muitas apps de faturação ficam com uma percentagem de cada pagamento com cartão, além da subscrição. Achamos isso injusto. A Invoicor não é um serviço de pagamentos: cria a sua fatura, adiciona o seu próprio link de pagamento e o cliente paga-lhe diretamente.",
+    points: [
+      {
+        title: "Sem comissão nem custo por fatura",
+        text: "Paga uma subscrição fixa. O que o cliente paga é seu.",
+      },
+      {
+        title: "Pago diretamente a si",
+        text: "Adicione o seu link de pagamento à fatura. O dinheiro nunca passa por nós, por isso não pode ser retido nem bloqueado.",
+      },
+      {
+        title: "Com toda a transparência",
+        text: "Se usar um link do PayPal ou da Stripe, eles cobram a sua própria comissão, como em qualquer lado. A Invoicor acrescenta 0%.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0% comissões",
+    label: "O que fica consigo com a Invoicor",
+    average: "Fatura média",
+    perMonth: "Faturas por mês",
+    feeLabel: "Comissão de outras apps por pagamento",
+    marks: ["Baixa", "Habitual", "Alta"],
+    marksAria: "Exemplos de níveis de comissão",
+    keep: "Com a Invoicor fica com",
+    pocket: "a mais no bolso todos os anos",
+    perYear: "Fatura por ano",
+    wouldKeep: "Uma app com {fee} ficaria com",
+    takes: "A Invoicor fica com",
+    note: "Exemplo. Algumas apps de faturação cobram uma comissão em cada pagamento, além da subscrição; as percentagens variam. Se adicionar o seu link do PayPal ou da Stripe, eles cobram a sua própria comissão, como em qualquer lado. A Invoicor não acrescenta nada.",
+  },
+  pricing: {
+    eyebrow: "Preços",
+    title: "Preços claros. Nada dos seus pagamentos.",
+    lead: "Comece grátis. Mude de plano quando enviar mais. Cancele quando quiser através da Apple.",
+  },
+  table: {
+    monthly: "Mensal",
+    yearly: "Anual",
+    billYearly: "Pagamento anual",
+    monthsFree: "{n} meses grátis",
+    bestValue: "melhor opção",
+    everyPlan: "Incluído em todos os planos",
+    everyList: [
+      "Clientes ilimitados",
+      "Sem marca de água",
+      "O seu próprio link de pagamento",
+      "0% de comissões sobre os pagamentos",
+      "Dados guardados na Alemanha",
+    ],
+    note: "Preços em {currency}. A App Store mostra o preço local, definido pela Apple, eventualmente com impostos locais. O plano grátis não exige subscrição. Os períodos de teste começam com o seu ID Apple; cancele antes do fim do teste (nas definições do iPhone) e não paga nada. O plano anual poupa {pct}% face ao mensal.",
+    popular: "★ O mais escolhido",
+    save: "Poupe {pct}%",
+    invoiceNo: "Fatura n.º",
+    perMonth: "/mês",
+    freeBilled: "Sem subscrição, sem cobranças",
+    billedYearly: "{price} uma vez por ano",
+    billedMonthly: "Cobrança mensal",
+    freePlan: "Plano grátis",
+    freePlanDetail: "Sem subscrição",
+    plan12: "Plano {plan}, 12 meses",
+    discount: "Desconto anual",
+    plan1: "Plano {plan}, 1 mês",
+    total: "Total",
+    mo: "/mês",
+    yr: "/ano",
+    freeNote: "Sem marca de água. Mude de plano só quando enviar mais.",
+    trialYear: "{days} dias de teste grátis, depois {price} por ano.",
+    trialMonth: "{days} dias de teste grátis, depois {price} por mês.",
+    anchorStarter: "Mais ou menos um café por mês.",
+    anchorPro: "Só {price} por dia.",
+    anchorFree: "Sem subscrição, sem dados de pagamento, sem truques.",
+    ctaFree: "Descarregar grátis",
+    ctaTrial: "Experimentar {days} dias grátis",
+    subFree: "Sem subscrição, sem pagamento",
+    subTrial: "Cancele antes do fim do teste e não paga nada",
+    plans: {
+      free: {
+        description: "Experimente em trabalhos reais",
+        features: [
+          "3 faturas para experimentar, sem limite de tempo",
+          "Clientes ilimitados",
+          "1 perfil de empresa",
+          "Modelos grátis",
+          "Exportação em PDF, sem marca de água",
+        ],
+      },
+      starter: {
+        description: "Para uma atividade secundária",
+        features: [
+          "Até 10 faturas por mês",
+          "Clientes ilimitados",
+          "1 perfil de empresa",
+          "Todos os modelos",
+          "Painel de faturação",
+        ],
+      },
+      pro: {
+        description: "Para negócios em crescimento",
+        features: [
+          "Até 50 faturas por mês",
+          "Clientes ilimitados",
+          "3 perfis de empresa",
+          "Modelos premium",
+          "Modo de comparação",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "As nossas promessas",
+    titleA: "Sem truques.",
+    titleB: "Só faturas.",
+    lead: "Aquilo que dá às outras apps de faturas as piores avaliações, prometemos não fazer.",
+    core: "A nossa promessa principal",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "pelas suas primeiras {n} faturas",
+        title: "Grátis é mesmo grátis",
+        text: "Sem marca de água e sem subscrição. Nenhum teste que se transforma num pagamento obrigatório a meio da sua primeira fatura.",
+        proof: "Mude de plano só quando enviar mais",
+      },
+      {
+        fact: "0%",
+        factLabel: "dos seus pagamentos, nunca",
+        title: "Nunca tocamos no seu dinheiro",
+        text: "A Invoicor não é um serviço de pagamentos, por isso não pode reter, bloquear nem ficar com uma parte. O cliente paga-lhe diretamente, através do seu link.",
+        proof: "Uma subscrição fixa, nada por fatura",
+      },
+      {
+        fact: "100%",
+        factLabel: "das mensagens lidas por pessoas",
+        title: "Pessoas reais, não bots",
+        text: "As sugestões feitas na app e os e-mails chegam a quem faz a Invoicor. A resposta pode demorar alguns dias; nada se perde num bot.",
+        proof: "Sem robôs de tickets nem respostas feitas",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "Perguntas frequentes",
+    title: "As suas perguntas, respondidas.",
+    items: [
+      {
+        question: "A Invoicor é grátis?",
+        answer:
+          "Sim. O plano grátis inclui {n} faturas sem marca de água e sem subscrição, com modelos grátis e exportação em PDF. Os planos pagos começam em {price} por mês, com {monthly} dias de teste grátis ({yearly} dias nos planos anuais). Cancele quando quiser através da Apple.",
+      },
+      {
+        question: "A Invoicor serve como programa de faturação certificado?",
+        answer:
+          "Não. Em Portugal, as faturas de uma empresa com sede ou atividade no país têm de ser emitidas num programa certificado pela Autoridade Tributária (ou no Portal das Finanças), com ATCUD e código QR. A Invoicor não é um programa certificado. Se a sua empresa não estiver estabelecida em Portugal, por exemplo se fatura a clientes portugueses a partir do estrangeiro, o PDF da Invoicor serve. Em caso de dúvida, fale com o seu contabilista.",
+      },
+      {
+        question: "A Invoicor fica com uma comissão dos meus pagamentos?",
+        answer:
+          "Não. A Invoicor não é um serviço de pagamentos: não processa os seus pagamentos, não os retém nem fica com nada, e nunca se mete entre si e o cliente. Paga uma subscrição fixa e mais nada. Adicione o seu link de pagamento (PayPal, Stripe) ou o seu IBAN à fatura e o cliente paga-lhe diretamente; só se aplicam as comissões desse serviço.",
+      },
+      {
+        question: "Posso faturar noutras moedas e idiomas?",
+        answer:
+          "Sim. A Invoicor suporta 38 moedas e 11 idiomas de fatura, por isso o cliente lê a fatura no seu idioma e paga na sua moeda.",
+      },
+      {
+        question: "A Invoicor calcula o IVA e os descontos?",
+        answer:
+          "Sim. Indique uma taxa de IVA (incluída ou acrescida) e um desconto, e a Invoicor calcula o subtotal, o IVA e o total.",
+      },
+      {
+        question: "Quanto tempo demora a criar uma fatura?",
+        answer:
+          "Com os dados da empresa, os clientes e os produtos guardados, uma nova fatura são poucos toques: escolha o cliente, adicione as linhas guardadas e os totais e o IVA calculam-se sozinhos. Depois partilhe o PDF do iPhone por e-mail, WhatsApp ou AirDrop.",
+      },
+      {
+        question: "Os meus dados estão seguros?",
+        answer:
+          "Protegemo-los com as medidas habituais: os dados da sua conta e as faturas ficam em servidores na Alemanha, segundo as regras europeias de proteção de dados (RGPD), cada ligação é cifrada (HTTPS), as palavras-passe são guardadas cifradas e nunca vendemos os seus dados. Nenhum serviço online pode prometer segurança perfeita, mas trabalhamos para impedir acessos não autorizados.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Envie a sua próxima fatura",
+    titleB: "hoje mesmo.",
+    text: "{n} faturas grátis. Sem marca de água, sem subscrição, sem comissão sobre o seu dinheiro.",
+  },
+};

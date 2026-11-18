@@ -4,16 +4,11 @@ import { TrendingUp } from "lucide-react";
 import { useId, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { InvoicePaper, PaperLabel, Stamp } from "@/components/ui/invoice";
-
-const money = (n: number) =>
-  n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+import { fill } from "@/lib/i18n/chrome";
+import { en as EN_HOME, type HomeDict } from "@/lib/i18n/pages/home/en";
 
 /** Marked points on the fee slider. Examples, not named competitors. */
-const MARKS = [
-  { value: 1, label: "Low" },
-  { value: 2.9, label: "Common" },
-  { value: 3.5, label: "High" },
-];
+const MARK_VALUES = [1, 2.9, 3.5];
 
 function Slider({
   id,
@@ -67,8 +62,30 @@ function Slider({
  * Honest by design: "other apps" are examples with a rate you choose, and your own PayPal/Stripe
  * link still has its own fee.
  */
-export function FeeCalculator() {
-  const [invoice, setInvoice] = useState(500);
+export function FeeCalculator({
+  t = EN_HOME.fee,
+  intl = "en-US",
+  currency = "USD",
+  scale = 1,
+}: {
+  t?: HomeDict["fee"];
+  intl?: string;
+  currency?: string;
+  /** Local money per "dollar" of invoice size (SEK, NOK ×10, DKK ×7, PLN ×4). */
+  scale?: number;
+}) {
+  const money = (n: number) =>
+    n.toLocaleString(intl, { style: "currency", currency, maximumFractionDigits: 0 });
+  const pct = (n: number) =>
+    n.toLocaleString(intl, {
+      style: "percent",
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1,
+    });
+  const markPct = (n: number) =>
+    n.toLocaleString(intl, { style: "percent", maximumFractionDigits: 1 });
+  const MARKS = MARK_VALUES.map((value, i) => ({ value, label: t.marks[i]! }));
+  const [invoice, setInvoice] = useState(500 * scale);
   const [perMonth, setPerMonth] = useState(12);
   const [fee, setFee] = useState(2.9);
   const ids = { invoice: useId(), perMonth: useId(), fee: useId() };
@@ -79,24 +96,24 @@ export function FeeCalculator() {
   return (
     <InvoicePaper highlight edge="perforated" className="relative p-6 sm:p-8">
       <Stamp className="absolute top-6 right-6" rotate={-10}>
-        0% fees
+        {t.stamp}
       </Stamp>
-      <PaperLabel className="pr-28">What you keep with Invoicor</PaperLabel>
+      <PaperLabel className="pr-28">{t.label}</PaperLabel>
 
       <div className="mt-6 space-y-6">
         <Slider
           id={ids.invoice}
-          label="Average invoice"
+          label={t.average}
           value={invoice}
           display={money(invoice)}
-          min={50}
-          max={5000}
-          step={50}
+          min={50 * scale}
+          max={5000 * scale}
+          step={50 * scale}
           onChange={setInvoice}
         />
         <Slider
           id={ids.perMonth}
-          label="Invoices per month"
+          label={t.perMonth}
           value={perMonth}
           display={String(perMonth)}
           min={1}
@@ -106,15 +123,15 @@ export function FeeCalculator() {
         />
         <Slider
           id={ids.fee}
-          label="Fee other apps take per payment"
+          label={t.feeLabel}
           value={fee}
-          display={`${fee.toFixed(1)}%`}
+          display={pct(fee / 100)}
           min={0.5}
           max={5}
           step={0.1}
           onChange={setFee}
         >
-          <div className="mt-2 flex flex-wrap gap-1.5" role="group" aria-label="Example fee levels">
+          <div className="mt-2 flex flex-wrap gap-1.5" role="group" aria-label={t.marksAria}>
             {MARKS.map((m) => {
               const active = Math.abs(fee - m.value) < 0.05;
               return (
@@ -130,7 +147,7 @@ export function FeeCalculator() {
                       : "bg-tint text-muted ring-line hover:text-ink ring-1",
                   )}
                 >
-                  {m.label} {m.value}%
+                  {m.label} {markPct(m.value / 100)}
                 </button>
               );
             })}
@@ -142,34 +159,30 @@ export function FeeCalculator() {
       <div className="bg-brand-50 ring-brand-200 mt-8 rounded-2xl p-5 ring-1">
         <p className="text-small text-brand-800 flex items-center gap-1.5 font-bold">
           <TrendingUp aria-hidden className="size-4" />
-          With Invoicor you keep
+          {t.keep}
         </p>
         <p className="font-heading text-gradient mt-1 text-[2.75rem] leading-none font-extrabold tracking-tight tabular-nums">
           +{money(kept)}
         </p>
-        <p className="text-small text-muted mt-1">more in your pocket every year</p>
+        <p className="text-small text-muted mt-1">{t.pocket}</p>
       </div>
 
       <dl className="text-small mt-5 space-y-2">
         <div className="flex justify-between gap-4">
-          <dt className="text-muted">You invoice per year</dt>
+          <dt className="text-muted">{t.perYear}</dt>
           <dd className="text-ink font-medium tabular-nums">{money(yearly)}</dd>
         </div>
         <div className="flex justify-between gap-4">
-          <dt className="text-muted">An app taking {fee.toFixed(1)}% would keep</dt>
+          <dt className="text-muted">{fill(t.wouldKeep, { fee: pct(fee / 100) })}</dt>
           <dd className="text-muted tabular-nums">{money(kept)}</dd>
         </div>
         <div className="border-line flex justify-between gap-4 border-t pt-2">
-          <dt className="text-ink font-bold">Invoicor takes</dt>
-          <dd className="text-ink font-bold tabular-nums">$0</dd>
+          <dt className="text-ink font-bold">{t.takes}</dt>
+          <dd className="text-ink font-bold tabular-nums">{money(0)}</dd>
         </div>
       </dl>
 
-      <p className="text-subtle mt-4 text-[0.75rem] leading-relaxed">
-        Example. Some invoicing apps take a fee from every payment on top of their subscription;
-        rates vary. If you add your own PayPal or Stripe link, they charge their own fee, as they
-        would anywhere. Invoicor adds nothing.
-      </p>
+      <p className="text-subtle mt-4 text-[0.75rem] leading-relaxed">{t.note}</p>
     </InvoicePaper>
   );
 }

@@ -1,0 +1,373 @@
+import type { HomeDict } from "./en";
+
+/** Home, Italian. Informal "tu", as Italian apps write. Honest about SDI e-invoicing. */
+export const it: HomeDict = {
+  meta: {
+    title: "App per fatture su iPhone, gratis per iniziare | Invoicor",
+    description:
+      "Crea fatture professionali in pochi secondi su iPhone. 31 modelli, 38 valute, 11 lingue. 3 fatture gratis e nessuna commissione sui tuoi incassi.",
+  },
+  hero: {
+    eyebrow: "App per fatture su iPhone",
+    titleA: "Fatture professionali, inviate",
+    titleB: "in pochi secondi.",
+    lead: "I dati della tua attività, i clienti e i prezzi si compilano da soli. Scegli un modello e tocca Invia. Un PDF curato nella lingua e nella valuta del tuo cliente, direttamente dal telefono.",
+    cta: "Scarica gratis su iOS",
+    online: "Creane una online",
+    androidQ: "Hai Android?",
+    androidLink: "Arriva presto",
+    doodle: "pronta da inviare",
+    promisesAria: "Cosa ottieni gratis",
+    promises: ["{n} fatture gratis", "Nessuna filigrana", "Nessun abbonamento"],
+    sent: "Inviata in PDF su WhatsApp",
+  },
+  sample: {
+    number: "Fattura n. 0042",
+    business: "Idraulica Rossi",
+    issued: "Emessa oggi · scadenza a 14 giorni",
+    stamp: "Pagata",
+    billTo: "Intestata a",
+    client: "Giulia Bianchi · Via dei Tigli 18, Bologna",
+    clientName: "Giulia Bianchi",
+    clientInitials: "GB",
+    items: [
+      { description: "Intervento urgente", detail: "Sabato", short: "Uscita", amount: 95 },
+      {
+        description: "Manodopera, 2 ore",
+        detail: "Sostituzione rubinetto cucina",
+        short: "Manodopera, 2 ore",
+        amount: 170,
+      },
+      {
+        description: "Rubinetto e raccordi",
+        detail: "",
+        short: "Rubinetto e raccordi",
+        amount: 213.5,
+      },
+    ],
+    subtotal: "Imponibile",
+    taxLabel: "IVA 22%",
+    taxRate: 22,
+    total: "Totale",
+  },
+  trust: {
+    send: "Inviala in PDF con",
+    pay: "Fatti pagare con il tuo link",
+    messages: "Messaggi",
+    bank: "Bonifico",
+  },
+  proof: {
+    aria: "Invoicor in numeri",
+    templates: "Modelli di fattura",
+    currencies: "Valute",
+    languages: "Lingue delle fatture",
+    fees: "Commissioni sui tuoi incassi",
+    percent: "%",
+  },
+  templates: {
+    eyebrow: "31 modelli · 21 gratis",
+    titleA: "Fatture che i tuoi clienti",
+    titleB: "prendono sul serio.",
+    lead: "Niente aspetto da foglio di calcolo. Il tuo logo, un layout pulito e tutti i dati che si aspettano un cliente o il commercialista.",
+    browse: "Scegli un modello",
+    galleryAria: "Anteprime dei modelli di fattura",
+    preview: "modello di fattura, anteprima",
+  },
+  how: {
+    eyebrow: "Come funziona",
+    titleA: "Dal lavoro finito alla fattura",
+    titleB: "pagata.",
+    lead: "Configuri la tua attività una volta sola. Poi ogni fattura è questione di pochi tocchi.",
+    step: "Passo",
+    steps: [
+      {
+        title: "Scegli il cliente",
+        text: "Un cliente salvato o uno nuovo. Nome, indirizzo ed email si compilano da soli.",
+      },
+      {
+        title: "Aggiungi le voci",
+        text: "Tocca i prodotti salvati o scrivi una riga. IVA, sconto e totale si calcolano man mano.",
+      },
+      {
+        title: "Invia il PDF",
+        text: "Condividilo via email, WhatsApp, Messaggi o AirDrop, con il tuo link di pagamento.",
+      },
+      {
+        title: "Incassa",
+        text: "Il cliente paga direttamente te. Segnala come pagata e vedi a colpo d'occhio cosa manca.",
+      },
+    ],
+    savedClient: "Cliente salvato",
+    total: "Totale",
+    paidToYou: "Pagato a te",
+  },
+  who: {
+    eyebrow: "Per chi è",
+    titleA: "Fatto per chi preferisce",
+    titleB: "lavorare.",
+    lead: "Se emetti fatture tra un lavoro e l'altro, dal telefono, Invoicor è fatto per te.",
+    people: [
+      {
+        who: "Artigiani",
+        examples: "Idraulici, elettricisti, imprese di pulizia, giardinieri",
+        moment: "Il lavoro è finito e il cliente è lì davanti.",
+        gain: "Invia una fattura professionale dal vialetto, prima di andare via. Niente più scartoffie la sera.",
+        scene: ["Lavoro finito", "Fattura inviata"],
+      },
+      {
+        who: "Freelance",
+        examples: "Designer, fotografi, consulenti, coach",
+        moment: "Il progetto è consegnato e il cliente è all'estero.",
+        gain: "Fattura nella sua lingua e nella sua valuta, con un layout bello quanto il tuo lavoro.",
+        scene: ["Progetto consegnato", "Pagato in USD"],
+      },
+      {
+        who: "Piccole imprese",
+        examples: "Studi, imprese edili, titolari di più attività",
+        moment: "Fine mese: tanti clienti, magari due attività.",
+        gain: "Fino a 3 profili aziendali con Pro, ciascuno con logo e dati propri. Duplica le fatture del mese scorso con un tocco.",
+        scene: ["Fine mese", "Tutto inviato"],
+      },
+    ],
+    notAccountingA: "Non è un gestionale contabile.",
+    notAccountingB: "Solo fatture.",
+    notAccounting: [
+      "Niente scritture contabili, niente configurazioni guidate",
+      "Manda i PDF al tuo commercialista",
+      "Sul tuo iPhone, ovunque sia il lavoro",
+    ],
+  },
+  app: {
+    eyebrow: "L'app",
+    titleA: "Sai dove sono i tuoi soldi,",
+    titleB: "sempre.",
+    lead: "Invoicor non serve solo a inviare. Tiene ogni fattura, cliente e stato del pagamento in un unico posto sul telefono.",
+    points: [
+      "Pagato, da incassare e inviato a colpo d'occhio, mese per mese (Starter e Pro).",
+      "Ogni fattura mostra il suo stato: bozza, inviata, pagata o scaduta.",
+      "Riapri qualsiasi fattura e condividi di nuovo il PDF con un tocco.",
+      "Accedi da un altro iPhone e trovi tutto.",
+    ],
+    altDashboard:
+      "Dashboard di Invoicor con importi pagati e da incassare, grafico del fatturato mensile e ultime fatture",
+    altSent: "Una fattura inviata in Invoicor, segnata come inviata",
+    demo: "Schermate reali dell'app (in inglese), con dati di esempio.",
+  },
+  features: {
+    eyebrow: "Tutto ciò che serve a una fattura",
+    title: "Pensato per il lavoro, non per i contabili.",
+    lead: "Niente scritture contabili, niente configurazioni guidate. Le parti della fatturazione che usi davvero, fatte bene.",
+    fast: "Veloce",
+    fastText:
+      "Clienti e prodotti salvati si compilano da soli. Totali, IVA e sconti si calcolano mentre scrivi. Duplica la fattura del mese scorso con un tocco.",
+    paid: "Pagata",
+    sent: "Inviata",
+    draft: "Bozza",
+    global: "Internazionale",
+    globalText:
+      "Fattura a qualsiasi cliente, ovunque: 38 valute e 11 lingue. Il cliente legge la fattura nella sua lingua.",
+    currenciesAria: "Alcune valute supportate",
+    languagesAria: "Alcune lingue delle fatture",
+    professional: "Professionale",
+    professionalText:
+      "31 modelli (21 gratis) con il tuo logo. Fino a 3 profili aziendali con Pro e una dashboard per vedere cosa è pagato e cosa manca.",
+    honest: "Onesto",
+    honestList: [
+      "3 fatture gratis, senza filigrana",
+      "Nessun abbonamento per iniziare",
+      "0% dei tuoi incassi, mai",
+      "Dati conservati in Germania (GDPR)",
+      "Prezzi chiari, disdici quando vuoi",
+      "Ogni messaggio lo legge una persona",
+    ],
+  },
+  keep: {
+    eyebrow: "0% dei tuoi incassi. Mai.",
+    titleA: "Il lavoro l'hai fatto tu.",
+    titleB: "I soldi restano a te.",
+    lead: "Molte app di fatturazione trattengono una percentuale su ogni pagamento con carta, oltre all'abbonamento. Per noi non è giusto. Invoicor non è un servizio di pagamento: crea la tua fattura, tu aggiungi il tuo link di pagamento e il cliente paga direttamente te.",
+    points: [
+      {
+        title: "Nessuna commissione, nessun costo a fattura",
+        text: "Paghi un abbonamento fisso. Quello che paga il cliente è tuo.",
+      },
+      {
+        title: "Pagato direttamente a te",
+        text: "Aggiungi il tuo link di pagamento alla fattura. I soldi non passano mai da noi, quindi non possono essere trattenuti o bloccati.",
+      },
+      {
+        title: "In tutta trasparenza",
+        text: "Se usi un link PayPal o Stripe, loro applicano le proprie commissioni, come ovunque. Invoicor aggiunge lo 0%.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0% commissioni",
+    label: "Quello che tieni con Invoicor",
+    average: "Fattura media",
+    perMonth: "Fatture al mese",
+    feeLabel: "Commissione delle altre app per pagamento",
+    marks: ["Bassa", "Comune", "Alta"],
+    marksAria: "Esempi di commissioni",
+    keep: "Con Invoicor ti restano",
+    pocket: "in più in tasca ogni anno",
+    perYear: "Fatturi all'anno",
+    wouldKeep: "Un'app al {fee} tratterrebbe",
+    takes: "Invoicor trattiene",
+    note: "Esempio. Alcune app di fatturazione trattengono una commissione su ogni pagamento, oltre all'abbonamento; le percentuali variano. Se aggiungi il tuo link PayPal o Stripe, loro applicano le proprie commissioni, come ovunque. Invoicor non aggiunge nulla.",
+  },
+  pricing: {
+    eyebrow: "Prezzi",
+    title: "Prezzi chiari. Niente sui tuoi incassi.",
+    lead: "Inizia gratis. Passa a un piano superiore quando invii di più. Disdici quando vuoi tramite Apple.",
+  },
+  table: {
+    monthly: "Mensile",
+    yearly: "Annuale",
+    billYearly: "Pagamento annuale",
+    monthsFree: "{n} mesi gratis",
+    bestValue: "più conveniente",
+    everyPlan: "Incluso in ogni piano",
+    everyList: [
+      "Clienti illimitati",
+      "Nessuna filigrana",
+      "Il tuo link di pagamento",
+      "0% di commissioni sui tuoi incassi",
+      "Dati conservati in Germania",
+    ],
+    note: "Prezzi in {currency}. L'App Store mostra il prezzo locale, fissato da Apple, eventualmente con le imposte locali. Il piano gratuito non richiede abbonamento. Le prove gratuite si avviano con il tuo ID Apple; disdici prima della fine della prova (nelle impostazioni dell'iPhone) e non paghi nulla. L'annuale fa risparmiare il {pct}% rispetto al mensile.",
+    popular: "★ Il più scelto",
+    save: "Risparmi il {pct}%",
+    invoiceNo: "Fattura n.",
+    perMonth: "/mese",
+    freeBilled: "Nessun abbonamento, nessun addebito",
+    billedYearly: "{price} una volta all'anno",
+    billedMonthly: "Addebito mensile",
+    freePlan: "Piano gratuito",
+    freePlanDetail: "Nessun abbonamento",
+    plan12: "Piano {plan}, 12 mesi",
+    discount: "Sconto annuale",
+    plan1: "Piano {plan}, 1 mese",
+    total: "Totale",
+    mo: "/mese",
+    yr: "/anno",
+    freeNote: "Nessuna filigrana. Passa a un piano superiore solo se invii di più.",
+    trialYear: "{days} giorni di prova gratis, poi {price} all'anno.",
+    trialMonth: "{days} giorni di prova gratis, poi {price} al mese.",
+    anchorStarter: "Circa un caffè al mese.",
+    anchorPro: "Solo {price} al giorno.",
+    anchorFree: "Nessun abbonamento, nessun dato di pagamento, nessuna sorpresa.",
+    ctaFree: "Scarica gratis",
+    ctaTrial: "Prova gratis per {days} giorni",
+    subFree: "Nessun abbonamento, nessun pagamento",
+    subTrial: "Disdici prima della fine della prova e non paghi nulla",
+    plans: {
+      free: {
+        description: "Provalo su lavori veri",
+        features: [
+          "3 fatture di prova, senza limiti di tempo",
+          "Clienti illimitati",
+          "1 profilo aziendale",
+          "Modelli gratuiti",
+          "Esportazione PDF, senza filigrana",
+        ],
+      },
+      starter: {
+        description: "Per un'attività secondaria",
+        features: [
+          "Fino a 10 fatture al mese",
+          "Clienti illimitati",
+          "1 profilo aziendale",
+          "Tutti i modelli",
+          "Dashboard del fatturato",
+        ],
+      },
+      pro: {
+        description: "Per le attività che crescono",
+        features: [
+          "Fino a 50 fatture al mese",
+          "Clienti illimitati",
+          "3 profili aziendali",
+          "Modelli premium",
+          "Modalità confronto",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "Le nostre promesse",
+    titleA: "Niente trucchi.",
+    titleB: "Solo fatture.",
+    lead: "Quello per cui le altre app di fatture prendono le recensioni peggiori, promettiamo di non farlo.",
+    core: "La nostra promessa principale",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "per le tue prime {n} fatture",
+        title: "Gratis vuol dire gratis",
+        text: "Nessuna filigrana e nessun abbonamento. Nessuna prova che si trasforma in un pagamento obbligatorio a metà della tua prima fattura.",
+        proof: "Passa a un piano superiore solo se invii di più",
+      },
+      {
+        fact: "0%",
+        factLabel: "dei tuoi incassi, mai",
+        title: "Non tocchiamo mai i tuoi soldi",
+        text: "Invoicor non è un servizio di pagamento: non può trattenere, bloccare né prendere una parte. Il cliente paga direttamente te, con il tuo link.",
+        proof: "Un abbonamento fisso, niente a fattura",
+      },
+      {
+        fact: "100%",
+        factLabel: "dei messaggi letti da persone",
+        title: "Persone vere, non bot",
+        text: "I feedback dall'app e le email arrivano a chi sviluppa Invoicor. La risposta può richiedere qualche giorno; niente si perde in un bot.",
+        proof: "Niente risponditori automatici, niente risposte preconfezionate",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "Domande frequenti",
+    title: "Le tue domande, le nostre risposte.",
+    items: [
+      {
+        question: "Invoicor è gratis?",
+        answer:
+          "Sì. Il piano gratuito comprende {n} fatture senza filigrana e senza abbonamento, con modelli gratuiti ed esportazione in PDF. I piani a pagamento partono da {price} al mese, con {monthly} giorni di prova gratis ({yearly} giorni con i piani annuali). Disdici quando vuoi tramite Apple.",
+      },
+      {
+        question: "Posso usare Invoicor al posto della fattura elettronica?",
+        answer:
+          "No. In Italia le fatture emesse da chi ha un'attività in Italia vanno trasmesse elettronicamente tramite il Sistema di Interscambio (SDI), dal 2024 anche in regime forfettario. Invoicor crea fatture in PDF: puoi usarle come copia di cortesia da mandare al cliente, ma la fattura elettronica va emessa con un programma collegato allo SDI. Se la tua attività non è in Italia, ad esempio fatturi a clienti italiani dall'estero, il PDF di Invoicor va bene. Nel dubbio, chiedi al tuo commercialista.",
+      },
+      {
+        question: "Invoicor trattiene una commissione sui miei incassi?",
+        answer:
+          "No. Invoicor non è un servizio di pagamento: non elabora i tuoi incassi, non li trattiene e non ne prende una parte, e non si mette mai tra te e il cliente. Paghi un abbonamento fisso e basta. Aggiungi il tuo link di pagamento (PayPal, Stripe) o il tuo IBAN alla fattura e il cliente paga direttamente te; valgono solo le commissioni di quel servizio.",
+      },
+      {
+        question: "Posso fatturare in altre valute e lingue?",
+        answer:
+          "Sì. Invoicor supporta 38 valute e 11 lingue, quindi il cliente legge la fattura nella sua lingua e paga nella sua valuta.",
+      },
+      {
+        question: "Invoicor calcola IVA e sconti?",
+        answer:
+          "Sì. Imposta un'aliquota IVA (inclusa o esclusa) e uno sconto, e Invoicor calcola imponibile, IVA e totale.",
+      },
+      {
+        question: "Quanto ci vuole a creare una fattura?",
+        answer:
+          "Una volta salvati i dati della tua attività, i clienti e i prodotti, una nuova fattura è questione di pochi tocchi: scegli il cliente, aggiungi le voci salvate e totali e IVA si calcolano da soli. Poi condividi il PDF dal tuo iPhone via email, WhatsApp o AirDrop.",
+      },
+      {
+        question: "I miei dati sono al sicuro?",
+        answer:
+          "Li proteggiamo con le misure abituali: i dati del tuo account e le fatture sono conservati su server in Germania, secondo le norme europee sulla protezione dei dati (GDPR), ogni connessione è cifrata (HTTPS), le password sono salvate cifrate e non vendiamo mai i tuoi dati. Nessun servizio online può promettere una sicurezza perfetta, ma lavoriamo per impedire accessi non autorizzati.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Invia la tua prossima fattura",
+    titleB: "oggi stesso.",
+    text: "{n} fatture gratis. Nessuna filigrana, nessun abbonamento, nessuna commissione sui tuoi soldi.",
+  },
+};

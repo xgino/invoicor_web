@@ -2,71 +2,51 @@ import { ArrowRight, Briefcase, Check, Globe2, Wrench } from "lucide-react";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
+import type { Locale } from "@/lib/i18n/config";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
 
 /**
  * Who Invoicor is for (ROADMAP P14): the audience profiles from BRAND.md §2, so visitors can picture
  * themselves. Each card: the moment they reach for the app, what they get, and links to their
  * industry pages (internal links for SEO). Only true claims (BRAND.md §10).
  */
-const PEOPLE = [
-  {
-    icon: Wrench,
-    who: "Tradespeople",
-    examples: "Plumbers, electricians, cleaners, landscapers",
-    moment: "The job is done and the client is standing right there.",
-    gain: "Send a professional invoice from the driveway, before you leave. No evening paperwork.",
-    scene: ["Job done", "Invoice sent"],
-    links: [
-      { href: "/industries/plumbers-hvac", label: "Plumbers & HVAC" },
-      { href: "/industries/electricians", label: "Electricians" },
-      { href: "/industries/landscaping-lawn-care", label: "Landscaping" },
-    ],
-  },
-  {
-    icon: Globe2,
-    who: "Freelancers",
-    examples: "Designers, photographers, consultants, coaches",
-    moment: "The project is delivered, and the client is in another country.",
-    gain: "Invoice them in their language and currency, with a layout that looks as good as your work.",
-    scene: ["Project delivered", "Paid in EUR"],
-    links: [
-      { href: "/industries/freelance-designers", label: "Designers" },
-      { href: "/industries/photographers-videographers", label: "Photographers" },
-      { href: "/industries/consultants-coaches", label: "Consultants" },
-    ],
-  },
-  {
-    icon: Briefcase,
-    who: "Small businesses",
-    examples: "Studios, contractors, owners of more than one business",
-    moment: "End of the month: several clients, maybe two businesses.",
-    gain: "Up to 3 business profiles on Pro, each with its own logo and details. Duplicate last month's invoices in a tap.",
-    scene: ["Month end", "All sent"],
-    links: [
-      { href: "/industries/general-contractors", label: "Contractors" },
-      { href: "/industries/cleaning-services", label: "Cleaning" },
-      { href: "/industries/auto-detailing-mechanics", label: "Auto & mobile" },
-    ],
-  },
+/** Industry links per card; English only until the industry pages are translated. */
+const ICONS = [Wrench, Globe2, Briefcase];
+const LINKS = [
+  [
+    { href: "/industries/plumbers-hvac", label: "Plumbers & HVAC" },
+    { href: "/industries/electricians", label: "Electricians" },
+    { href: "/industries/landscaping-lawn-care", label: "Landscaping" },
+  ],
+  [
+    { href: "/industries/freelance-designers", label: "Designers" },
+    { href: "/industries/photographers-videographers", label: "Photographers" },
+    { href: "/industries/consultants-coaches", label: "Consultants" },
+  ],
+  [
+    { href: "/industries/general-contractors", label: "Contractors" },
+    { href: "/industries/cleaning-services", label: "Cleaning" },
+    { href: "/industries/auto-detailing-mechanics", label: "Auto & mobile" },
+  ],
 ];
 
-const NOT_ACCOUNTING = [
-  "No ledgers, no setup wizard",
-  "Send the PDFs to your accountant",
-  "Works on your iPhone, wherever the job is",
-];
-
-export function WhoItsFor() {
+export function WhoItsFor({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const w = t.who;
+  const PEOPLE = w.people.map((p, i) => ({
+    ...p,
+    icon: ICONS[i]!,
+    links: locale === "en" ? LINKS[i]! : [],
+  }));
   return (
     <Section aria-labelledby="who-title">
       <Container>
         <div className="reveal mx-auto max-w-2xl text-center">
-          <Eyebrow>Who it&apos;s for</Eyebrow>
+          <Eyebrow>{w.eyebrow}</Eyebrow>
           <Heading id="who-title">
-            Built for people who&apos;d rather <Gradient>be working.</Gradient>
+            {w.titleA} <Gradient>{w.titleB}</Gradient>
           </Heading>
           <Text size="lead" className="mt-4">
-            If you send invoices between jobs, from your phone, Invoicor was made for you.
+            {w.lead}
           </Text>
         </div>
 
@@ -99,18 +79,20 @@ export function WhoItsFor() {
                 <p className="text-ink mt-5 font-medium">{p.moment}</p>
                 <p className="text-muted mt-2 grow leading-relaxed">{p.gain}</p>
 
-                <ul className="border-line mt-6 flex flex-wrap gap-2 border-t pt-5">
-                  {p.links.map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 rounded-full px-3 py-1 font-bold ring-1 transition-colors"
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                {p.links.length > 0 && (
+                  <ul className="border-line mt-6 flex flex-wrap gap-2 border-t pt-5">
+                    {p.links.map((l) => (
+                      <li key={l.href}>
+                        <Link
+                          href={l.href}
+                          className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 rounded-full px-3 py-1 font-bold ring-1 transition-colors"
+                        >
+                          {l.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </article>
             </li>
           ))}
@@ -118,13 +100,13 @@ export function WhoItsFor() {
 
         <div className="reveal bg-brand-50 ring-brand-200 mt-10 flex flex-col items-center gap-4 rounded-2xl px-6 py-5 ring-1 md:flex-row md:justify-between">
           <p className="font-heading text-h4 text-ink shrink-0 text-center md:text-left lg:whitespace-nowrap">
-            Not accounting software. <span className="text-brand-700">Just invoices.</span>
+            {w.notAccountingA} <span className="text-brand-700">{w.notAccountingB}</span>
           </p>
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 md:justify-end">
-            {NOT_ACCOUNTING.map((t) => (
-              <li key={t} className="text-small text-ink flex items-center gap-1.5 font-medium">
+            {w.notAccounting.map((line) => (
+              <li key={line} className="text-small text-ink flex items-center gap-1.5 font-medium">
                 <Check aria-hidden className="text-brand-600 size-4" />
-                {t}
+                {line}
               </li>
             ))}
           </ul>

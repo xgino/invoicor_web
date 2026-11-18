@@ -100,8 +100,11 @@ export function LineItems({
   showQty = false,
   animate = false,
   className,
+  headers = { description: "Description", amount: "Amount" },
 }: {
   items: LineItem[];
+  /** Column headings, in the page's language. */
+  headers?: { description: string; amount: string };
   /** Lines between the items and the total, e.g. subtotal and tax. */
   totals?: Array<{ label: ReactNode; amount: ReactNode }>;
   total?: { label: ReactNode; amount: ReactNode };
@@ -117,9 +120,9 @@ export function LineItems({
   return (
     <div className={cx("text-small", className)}>
       <div className="text-subtle border-line-strong flex border-b pb-2 text-[0.6875rem] font-bold tracking-[0.12em] uppercase">
-        <span className="flex-1">Description</span>
+        <span className="flex-1">{headers.description}</span>
         {showQty && <span className="w-12 text-right">Qty</span>}
-        <span className="w-24 text-right">Amount</span>
+        <span className="w-24 text-right">{headers.amount}</span>
       </div>
       <ul>
         {items.map((item, i) => (

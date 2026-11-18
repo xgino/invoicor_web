@@ -80,3 +80,13 @@
 /sv/android
 /da/android
 /nb/android
+/nl
+/de
+/fr
+/es
+/it
+/pt
+/pl
+/sv
+/da
+/nb

@@ -3,6 +3,9 @@ import type { ReactNode } from "react";
 import { Badge } from "@/components/ui/content";
 import { cx } from "@/components/ui/cx";
 import { Container, Eyebrow, Heading, Section, Text } from "@/components/ui/layout";
+import { formatMoney } from "@/lib/i18n/money";
+import type { Locale } from "@/lib/i18n/config";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
 
 /**
  * Features by messaging pillar (BRAND.md §3, ROADMAP chunk 20a/b). Every proof point is on the
@@ -56,34 +59,32 @@ const LANGUAGES = [
   "Italiano",
   "Português",
 ];
-const STATUSES = [
-  { client: "Studio Nova", amount: "$3,080.00", status: "Paid", tone: "success" as const },
-  { client: "Acme Corp", amount: "$1,200.00", status: "Sent", tone: "neutral" as const },
-  { client: "Bright Agency", amount: "$750.00", status: "Draft", tone: "free" as const },
-];
-
-export function Features() {
+export function Features({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const f = t.features;
+  const money = (n: number) => formatMoney(n, locale);
+  const STATUSES = [
+    { client: "Studio Nova", amount: money(3080), status: f.paid, tone: "success" as const },
+    { client: "Acme Corp", amount: money(1200), status: f.sent, tone: "neutral" as const },
+    { client: "Bright Agency", amount: money(750), status: f.draft, tone: "free" as const },
+  ];
   return (
     <Section aria-labelledby="features-title">
       <Container>
         <div className="reveal mx-auto max-w-2xl text-center">
-          <Eyebrow>Everything an invoice needs</Eyebrow>
-          <Heading id="features-title">Built for the job, not for accountants.</Heading>
+          <Eyebrow>{f.eyebrow}</Eyebrow>
+          <Heading id="features-title">{f.title}</Heading>
           <Text size="lead" className="mt-4">
-            No ledgers, no setup wizard. The parts of invoicing you actually use, done properly.
+            {f.lead}
           </Text>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-6">
           <Card
             icon={<Zap aria-hidden className="size-5" />}
-            title="Fast"
+            title={f.fast}
             className="lg:col-span-3"
           >
-            <p className="text-muted mt-2">
-              Saved clients and products fill in for you. Totals, tax and discounts add up as you
-              type. Duplicate last month&apos;s invoice with one tap.
-            </p>
+            <p className="text-muted mt-2">{f.fastText}</p>
             <ul className="mt-6 space-y-2">
               {STATUSES.map((s) => (
                 <li
@@ -102,15 +103,12 @@ export function Features() {
 
           <Card
             icon={<Globe2 aria-hidden className="size-5" />}
-            title="Global"
+            title={f.global}
             className="lg:col-span-3"
             delay={0.08}
           >
-            <p className="text-muted mt-2">
-              Invoice any client, anywhere: 38 currencies and 11 invoice languages. Your client
-              reads it in their own language.
-            </p>
-            <ul aria-label="Some supported currencies" className="mt-6 flex flex-wrap gap-2">
+            <p className="text-muted mt-2">{f.globalText}</p>
+            <ul aria-label={f.currenciesAria} className="mt-6 flex flex-wrap gap-2">
               {CURRENCIES.map((c) => (
                 <li
                   key={c}
@@ -120,7 +118,7 @@ export function Features() {
                 </li>
               ))}
             </ul>
-            <ul aria-label="Some invoice languages" className="mt-2 flex flex-wrap gap-2">
+            <ul aria-label={f.languagesAria} className="mt-2 flex flex-wrap gap-2">
               {LANGUAGES.map((l) => (
                 <li
                   key={l}
@@ -134,36 +132,26 @@ export function Features() {
 
           <Card
             icon={<Layers aria-hidden className="size-5" />}
-            title="Professional"
+            title={f.professional}
             className="lg:col-span-2"
             delay={0.12}
           >
-            <p className="text-muted mt-2">
-              31 templates (21 free) with your logo. Up to 3 business profiles on Pro, and a revenue
-              dashboard to see what&apos;s paid and what&apos;s still out.
-            </p>
+            <p className="text-muted mt-2">{f.professionalText}</p>
           </Card>
 
           <Card
             icon={<BadgeCheck aria-hidden className="size-5" />}
-            title="Honest"
+            title={f.honest}
             className="lg:col-span-4"
             delay={0.16}
           >
             <ul className="text-muted mt-3 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-              {[
-                "3 invoices free, no watermark",
-                "No subscription needed to start",
-                "0% of your payments, ever",
-                "Data stored in Germany (GDPR)",
-                "Clear prices, cancel any time",
-                "Real people read every message",
-              ].map((t) => (
-                <li key={t} className="flex gap-2">
+              {f.honestList.map((line) => (
+                <li key={line} className="flex gap-2">
                   <span aria-hidden className="text-brand-600">
                     ✓
                   </span>
-                  {t}
+                  {line}
                 </li>
               ))}
             </ul>

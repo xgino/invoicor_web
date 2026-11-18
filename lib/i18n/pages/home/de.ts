@@ -1,0 +1,373 @@
+import type { HomeDict } from "./en";
+
+/** Home, German (DE, AT, CH). Polite "Sie", as German business software writes. */
+export const de: HomeDict = {
+  meta: {
+    title: "Rechnungs-App für iPhone | Rechnungen schreiben | Invoicor",
+    description:
+      "Professionelle Rechnungen in Sekunden auf dem iPhone erstellen. 31 Vorlagen, 38 Währungen, 11 Sprachen. 3 Rechnungen kostenlos, keine Zahlungsgebühren.",
+  },
+  hero: {
+    eyebrow: "Rechnungs-App für das iPhone",
+    titleA: "Professionelle Rechnungen, versendet",
+    titleB: "in Sekunden.",
+    lead: "Ihre Firmendaten, Kunden und Preise füllen sich von selbst aus. Vorlage wählen, auf Senden tippen. Ein sauberes PDF in der Sprache und Währung Ihres Kunden, direkt vom Smartphone.",
+    cta: "Kostenlos für iOS laden",
+    online: "Online erstellen",
+    androidQ: "Android?",
+    androidLink: "Kommt bald",
+    doodle: "bereit zum Senden",
+    promisesAria: "Was Sie kostenlos bekommen",
+    promises: ["{n} Rechnungen kostenlos", "Kein Wasserzeichen", "Kein Abo nötig"],
+    sent: "Als PDF per WhatsApp gesendet",
+  },
+  sample: {
+    number: "Rechnung Nr. 0042",
+    business: "Schneider Haustechnik",
+    issued: "Heute gestellt · zahlbar in 14 Tagen",
+    stamp: "Bezahlt",
+    billTo: "Rechnung an",
+    client: "Anna Becker · Lindenweg 18, Köln",
+    clientName: "Anna Becker",
+    clientInitials: "AB",
+    items: [
+      { description: "Notdienst-Anfahrt", detail: "Samstag", short: "Anfahrt", amount: 95 },
+      {
+        description: "Arbeitszeit, 2 Std.",
+        detail: "Küchenarmatur getauscht",
+        short: "Arbeitszeit, 2 Std.",
+        amount: 170,
+      },
+      {
+        description: "Armatur und Anschlüsse",
+        detail: "",
+        short: "Armatur und Anschlüsse",
+        amount: 213.5,
+      },
+    ],
+    subtotal: "Zwischensumme",
+    taxLabel: "MwSt. 19 %",
+    taxRate: 19,
+    total: "Gesamtbetrag",
+  },
+  trust: {
+    send: "Als PDF senden per",
+    pay: "Bezahlt werden über Ihren eigenen Link",
+    messages: "Nachrichten",
+    bank: "Überweisung",
+  },
+  proof: {
+    aria: "Invoicor in Zahlen",
+    templates: "Rechnungsvorlagen",
+    currencies: "Währungen",
+    languages: "Rechnungssprachen",
+    fees: "Gebühren auf Ihre Zahlungen",
+    percent: " %",
+  },
+  templates: {
+    eyebrow: "31 Vorlagen · 21 kostenlos",
+    titleA: "Rechnungen, die Ihre Kunden",
+    titleB: "ernst nehmen.",
+    lead: "Kein Tabellen-Look. Ihr Logo, ein klares Layout und alle Angaben, die Kunden und Steuerberater erwarten.",
+    browse: "Vorlage wählen",
+    galleryAria: "Vorschau der Rechnungsvorlagen",
+    preview: "Rechnungsvorlage, Vorschau",
+  },
+  how: {
+    eyebrow: "So funktioniert's",
+    titleA: "Vom fertigen Auftrag zum",
+    titleB: "Zahlungseingang.",
+    lead: "Einmal Ihre Firma einrichten. Danach ist jede Rechnung nur ein paar Fingertipps.",
+    step: "Schritt",
+    steps: [
+      {
+        title: "Kunden wählen",
+        text: "Gespeicherten Kunden wählen oder neu anlegen. Name, Adresse und E-Mail füllen sich aus.",
+      },
+      {
+        title: "Positionen hinzufügen",
+        text: "Gespeicherte Artikel antippen oder eine Zeile eingeben. MwSt., Rabatt und Summe rechnen sofort mit.",
+      },
+      {
+        title: "PDF senden",
+        text: "Per E-Mail, WhatsApp, Nachrichten oder AirDrop teilen, mit Ihrem Zahlungslink darauf.",
+      },
+      {
+        title: "Geld erhalten",
+        text: "Ihr Kunde zahlt direkt an Sie. Als bezahlt markieren und auf einen Blick sehen, was noch offen ist.",
+      },
+    ],
+    savedClient: "Gespeicherter Kunde",
+    total: "Summe",
+    paidToYou: "An Sie gezahlt",
+  },
+  who: {
+    eyebrow: "Für wen",
+    titleA: "Gemacht für Menschen, die lieber",
+    titleB: "arbeiten.",
+    lead: "Wenn Sie Rechnungen zwischen zwei Aufträgen vom Smartphone schreiben, ist Invoicor für Sie gemacht.",
+    people: [
+      {
+        who: "Handwerker",
+        examples: "Installateure, Elektriker, Reinigungskräfte, Gärtner",
+        moment: "Der Auftrag ist erledigt und der Kunde steht daneben.",
+        gain: "Schicken Sie die Rechnung noch in der Einfahrt, bevor Sie losfahren. Kein Papierkram am Abend.",
+        scene: ["Auftrag erledigt", "Rechnung gesendet"],
+      },
+      {
+        who: "Selbstständige und Freelancer",
+        examples: "Designer, Fotografen, Berater, Coaches",
+        moment: "Das Projekt ist geliefert, der Kunde sitzt im Ausland.",
+        gain: "Rechnen Sie in seiner Sprache und Währung ab, mit einem Layout, das so gut aussieht wie Ihre Arbeit.",
+        scene: ["Projekt geliefert", "Bezahlt in USD"],
+      },
+      {
+        who: "Kleine Unternehmen",
+        examples: "Studios, Bauunternehmen, Inhaber mehrerer Firmen",
+        moment: "Monatsende: mehrere Kunden, vielleicht zwei Firmen.",
+        gain: "Bis zu 3 Firmenprofile mit Pro, jedes mit eigenem Logo und eigenen Daten. Rechnungen vom Vormonat mit einem Tipp duplizieren.",
+        scene: ["Monatsende", "Alles gesendet"],
+      },
+    ],
+    notAccountingA: "Keine Buchhaltungssoftware.",
+    notAccountingB: "Einfach Rechnungen.",
+    notAccounting: [
+      "Keine Buchungssätze, kein Einrichtungsassistent",
+      "PDFs an Ihren Steuerberater senden",
+      "Läuft auf Ihrem iPhone, wo auch immer der Auftrag ist",
+    ],
+  },
+  app: {
+    eyebrow: "Die App",
+    titleA: "Wissen, wo Ihr Geld ist,",
+    titleB: "jederzeit.",
+    lead: "Mit Invoicor versenden Sie nicht nur. Jede Rechnung, jeder Kunde und jeder Zahlungsstatus liegt an einem Ort auf Ihrem Smartphone.",
+    points: [
+      "Bezahlt, offen und gesendet auf einen Blick, Monat für Monat (Starter und Pro).",
+      "Jede Rechnung zeigt ihren Status: Entwurf, gesendet, bezahlt oder überfällig.",
+      "Jede Rechnung später öffnen und das PDF mit einem Tipp erneut teilen.",
+      "Auf einem anderen iPhone anmelden, und alles ist da.",
+    ],
+    altDashboard:
+      "Invoicor-Dashboard mit bezahlten und offenen Beträgen, Umsatzdiagramm pro Monat und letzten Rechnungen",
+    altSent: "Eine gesendete Rechnung in Invoicor, als gesendet markiert",
+    demo: "Echte Bildschirme aus der App (auf Englisch), mit Beispieldaten.",
+  },
+  features: {
+    eyebrow: "Alles, was eine Rechnung braucht",
+    title: "Für die Arbeit gemacht, nicht für Buchhalter.",
+    lead: "Keine Buchungssätze, kein Einrichtungsassistent. Die Teile der Rechnungsstellung, die Sie wirklich nutzen, richtig gemacht.",
+    fast: "Schnell",
+    fastText:
+      "Gespeicherte Kunden und Artikel füllen sich aus. Summe, MwSt. und Rabatt rechnen beim Tippen mit. Die Rechnung vom Vormonat mit einem Tipp duplizieren.",
+    paid: "Bezahlt",
+    sent: "Gesendet",
+    draft: "Entwurf",
+    global: "International",
+    globalText:
+      "Rechnungen an Kunden überall: 38 Währungen und 11 Rechnungssprachen. Ihr Kunde liest die Rechnung in seiner eigenen Sprache.",
+    currenciesAria: "Einige unterstützte Währungen",
+    languagesAria: "Einige Rechnungssprachen",
+    professional: "Professionell",
+    professionalText:
+      "31 Vorlagen (21 kostenlos) mit Ihrem Logo. Bis zu 3 Firmenprofile mit Pro und ein Umsatz-Dashboard, das zeigt, was bezahlt und was noch offen ist.",
+    honest: "Ehrlich",
+    honestList: [
+      "3 Rechnungen kostenlos, ohne Wasserzeichen",
+      "Kein Abo nötig, um anzufangen",
+      "0 % Ihrer Zahlungen, niemals",
+      "Daten in Deutschland gespeichert (DSGVO)",
+      "Klare Preise, jederzeit kündbar",
+      "Jede Nachricht lesen echte Menschen",
+    ],
+  },
+  keep: {
+    eyebrow: "0 % Ihrer Zahlungen. Niemals.",
+    titleA: "Sie haben die Arbeit gemacht.",
+    titleB: "Sie behalten das Geld.",
+    lead: "Viele Rechnungs-Apps nehmen zusätzlich zum Abo einen Prozentsatz jeder Kartenzahlung. Das finden wir falsch. Invoicor ist kein Zahlungsdienstleister: Es erstellt Ihre Rechnung, Sie fügen Ihren eigenen Zahlungslink hinzu, und Ihr Kunde zahlt direkt an Sie.",
+    points: [
+      {
+        title: "Keine Provision, keine Gebühr pro Rechnung",
+        text: "Sie zahlen ein festes Abo. Was Ihr Kunde zahlt, gehört Ihnen.",
+      },
+      {
+        title: "Direkt auf Ihr Konto",
+        text: "Fügen Sie Ihren eigenen Zahlungslink zur Rechnung hinzu. Das Geld läuft nie über uns, es kann also nicht zurückgehalten oder eingefroren werden.",
+      },
+      {
+        title: "Ehrlich dazu",
+        text: "Wenn Sie einen PayPal- oder Stripe-Link nutzen, berechnen diese ihre eigene Gebühr, wie überall. Invoicor berechnet 0 %.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0 % Gebühren",
+    label: "Was Sie mit Invoicor behalten",
+    average: "Durchschnittliche Rechnung",
+    perMonth: "Rechnungen pro Monat",
+    feeLabel: "Gebühr anderer Apps pro Zahlung",
+    marks: ["Niedrig", "Üblich", "Hoch"],
+    marksAria: "Beispielhafte Gebührenstufen",
+    keep: "Mit Invoicor behalten Sie",
+    pocket: "mehr pro Jahr in Ihrer Tasche",
+    perYear: "Sie stellen pro Jahr in Rechnung",
+    wouldKeep: "Eine App mit {fee} würde behalten",
+    takes: "Invoicor nimmt",
+    note: "Beispiel. Manche Rechnungs-Apps nehmen zusätzlich zum Abo eine Gebühr von jeder Zahlung; die Sätze sind unterschiedlich. Wenn Sie Ihren eigenen PayPal- oder Stripe-Link verwenden, berechnen diese ihre eigene Gebühr, wie überall. Invoicor berechnet nichts.",
+  },
+  pricing: {
+    eyebrow: "Preise",
+    title: "Klare Preise. Nichts von Ihren Zahlungen.",
+    lead: "Kostenlos starten. Upgraden, wenn Sie mehr versenden. Jederzeit über Apple kündbar.",
+  },
+  table: {
+    monthly: "Monatlich",
+    yearly: "Jährlich",
+    billYearly: "Jährlich zahlen",
+    monthsFree: "{n} Monate gratis",
+    bestValue: "am günstigsten",
+    everyPlan: "In jedem Tarif enthalten",
+    everyList: [
+      "Unbegrenzt viele Kunden",
+      "Kein Wasserzeichen",
+      "Ihr eigener Zahlungslink",
+      "0 % Gebühren auf Ihre Zahlungen",
+      "Daten in Deutschland gespeichert",
+    ],
+    note: "Preise in {currency}. Der App Store zeigt Ihren lokalen Preis, festgelegt von Apple, gegebenenfalls inklusive Steuern. Der kostenlose Tarif braucht kein Abo. Kostenlose Testphasen starten Sie mit Ihrer Apple-ID; kündigen Sie vor dem Ende (in den iPhone-Einstellungen), zahlen Sie nichts. Jährlich sparen Sie {pct} % gegenüber monatlicher Zahlung.",
+    popular: "★ Am beliebtesten",
+    save: "{pct} % sparen",
+    invoiceNo: "Rechnung Nr.",
+    perMonth: "/Monat",
+    freeBilled: "Kein Abo, nichts berechnet",
+    billedYearly: "Einmal jährlich {price}",
+    billedMonthly: "Monatliche Abrechnung",
+    freePlan: "Kostenloser Tarif",
+    freePlanDetail: "Kein Abo nötig",
+    plan12: "{plan}, 12 Monate",
+    discount: "Jahresrabatt",
+    plan1: "{plan}, 1 Monat",
+    total: "Gesamt",
+    mo: "/Monat",
+    yr: "/Jahr",
+    freeNote: "Kein Wasserzeichen. Erst upgraden, wenn Sie mehr versenden.",
+    trialYear: "{days} Tage kostenlos testen, danach {price} pro Jahr.",
+    trialMonth: "{days} Tage kostenlos testen, danach {price} pro Monat.",
+    anchorStarter: "Etwa ein Kaffee im Monat.",
+    anchorPro: "Nur {price} am Tag.",
+    anchorFree: "Kein Abo, keine Zahlungsdaten, kein Haken.",
+    ctaFree: "Kostenlos laden",
+    ctaTrial: "{days} Tage kostenlos testen",
+    subFree: "Kein Abo, keine Zahlung",
+    subTrial: "Vor Ende der Testphase kündigen und nichts zahlen",
+    plans: {
+      free: {
+        description: "An echten Aufträgen ausprobieren",
+        features: [
+          "3 Rechnungen zum Testen, ohne Zeitlimit",
+          "Unbegrenzt viele Kunden",
+          "1 Firmenprofil",
+          "Kostenlose Vorlagen",
+          "PDF-Export, kein Wasserzeichen",
+        ],
+      },
+      starter: {
+        description: "Für den Nebenerwerb",
+        features: [
+          "Bis zu 10 Rechnungen pro Monat",
+          "Unbegrenzt viele Kunden",
+          "1 Firmenprofil",
+          "Alle Vorlagen",
+          "Umsatz-Dashboard",
+        ],
+      },
+      pro: {
+        description: "Für wachsende Unternehmen",
+        features: [
+          "Bis zu 50 Rechnungen pro Monat",
+          "Unbegrenzt viele Kunden",
+          "3 Firmenprofile",
+          "Premium-Vorlagen",
+          "Vergleichsmodus",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "Unsere Versprechen",
+    titleA: "Keine Tricks.",
+    titleB: "Einfach Rechnungen.",
+    lead: "Wofür andere Rechnungs-Apps die schlechtesten Bewertungen bekommen, versprechen wir, nicht zu tun.",
+    core: "Unser Kernversprechen",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "für Ihre ersten {n} Rechnungen",
+        title: "Kostenlos heißt kostenlos",
+        text: "Kein Wasserzeichen und kein Abo. Keine Testphase, die mitten in Ihrer ersten Rechnung zur Bezahlschranke wird.",
+        proof: "Erst upgraden, wenn Sie mehr versenden",
+      },
+      {
+        fact: "0 %",
+        factLabel: "Ihrer Zahlungen, niemals",
+        title: "Wir berühren Ihr Geld nie",
+        text: "Invoicor ist kein Zahlungsdienstleister, kann also nichts zurückhalten, einfrieren oder einbehalten. Ihr Kunde zahlt direkt an Sie, über Ihren eigenen Link.",
+        proof: "Ein festes Abo, nichts pro Rechnung",
+      },
+      {
+        fact: "100 %",
+        factLabel: "der Nachrichten von Menschen gelesen",
+        title: "Echte Menschen, keine Bots",
+        text: "Feedback aus der App und E-Mails landen bei den Menschen, die Invoicor entwickeln. Antworten können ein paar Tage dauern; nichts geht in einem Bot verloren.",
+        proof: "Keine Ticket-Roboter, keine Textbausteine",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "FAQ",
+    title: "Fragen und Antworten.",
+    items: [
+      {
+        question: "Ist Invoicor kostenlos?",
+        answer:
+          "Ja. Der kostenlose Tarif umfasst {n} Rechnungen ohne Wasserzeichen und ohne Abo, dazu kostenlose Vorlagen und PDF-Export. Bezahlte Tarife beginnen bei {price} pro Monat, mit {monthly} Tagen kostenlosem Test ({yearly} Tage bei Jahrestarifen). Jederzeit über Apple kündbar.",
+      },
+      {
+        question: "Nimmt Invoicor eine Gebühr von meinen Zahlungen?",
+        answer:
+          "Nein. Invoicor ist kein Zahlungsdienstleister: Es verarbeitet Ihre Zahlungen nicht, hält sie nicht zurück und nimmt keinen Anteil, und es steht nie zwischen Ihnen und Ihrem Kunden. Sie zahlen ein festes Abo, sonst nichts. Fügen Sie Ihren eigenen Zahlungslink (PayPal, Stripe) oder Ihre IBAN zur Rechnung hinzu, und Ihr Kunde zahlt direkt an Sie; es gelten nur die Gebühren dieses Anbieters.",
+      },
+      {
+        question: "Kann ich als Kleinunternehmer Rechnungen ohne Umsatzsteuer schreiben?",
+        answer:
+          "Ja. Setzen Sie den Steuersatz der Rechnung auf 0 % und schreiben Sie den Hinweis in die Notizen, zum Beispiel: „Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.“ Ob die Kleinunternehmerregelung für Sie gilt, klärt Ihr Steuerberater.",
+      },
+      {
+        question: "Ist eine PDF-Rechnung wegen der E-Rechnungspflicht noch erlaubt?",
+        answer:
+          "Für Privatkunden ja, ohne Einschränkung. Zwischen Unternehmen (B2B) in Deutschland müssen Sie seit 2025 E-Rechnungen empfangen können; das Ausstellen wird schrittweise Pflicht. Bis Ende 2026 dürfen Sie Geschäftskunden noch Papier- oder, mit deren Zustimmung, PDF-Rechnungen schicken, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen im Format XRechnung oder ZUGFeRD. Im Zweifel fragen Sie Ihren Steuerberater.",
+      },
+      {
+        question: "Kann ich in anderen Währungen und Sprachen abrechnen?",
+        answer:
+          "Ja. Invoicor unterstützt 38 Währungen und 11 Rechnungssprachen, Ihr Kunde liest die Rechnung also in seiner eigenen Sprache und zahlt in seiner eigenen Währung.",
+      },
+      {
+        question: "Berechnet Invoicor Mehrwertsteuer und Rabatte?",
+        answer:
+          "Ja. Legen Sie einen Steuersatz fest (brutto oder netto) und einen Rabatt, und Invoicor berechnet Zwischensumme, Steuer und Gesamtbetrag für Sie.",
+      },
+      {
+        question: "Sind meine Daten sicher?",
+        answer:
+          "Wir schützen sie mit üblichen Maßnahmen: Ihre Konto- und Rechnungsdaten liegen auf Servern in Deutschland nach den EU-Datenschutzregeln (DSGVO), jede Verbindung ist verschlüsselt (HTTPS), Passwörter werden nur verschlüsselt gespeichert, und wir verkaufen Ihre Daten nie. Kein Onlinedienst kann perfekte Sicherheit versprechen, aber wir arbeiten daran, Ihre Daten vor unbefugtem Zugriff zu schützen.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Senden Sie Ihre nächste Rechnung",
+    titleB: "noch heute.",
+    text: "{n} Rechnungen kostenlos. Kein Wasserzeichen, kein Abo, kein Anteil an Ihrem Geld.",
+  },
+};

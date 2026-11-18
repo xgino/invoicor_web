@@ -8,6 +8,7 @@ import type { Locale } from "./config";
  * `{n}` is replaced with the number of free invoices.
  */
 const en = {
+  invoice: { description: "Description", amount: "Amount" },
   nav: {
     generator: "Free generator",
     pricing: "Pricing",
@@ -66,6 +67,7 @@ const en = {
 export type ChromeDict = typeof en;
 
 const nl: ChromeDict = {
+  invoice: { description: "Omschrijving", amount: "Bedrag" },
   nav: {
     generator: "Gratis factuur maken",
     pricing: "Prijzen",
@@ -122,6 +124,7 @@ const nl: ChromeDict = {
 };
 
 const de: ChromeDict = {
+  invoice: { description: "Beschreibung", amount: "Betrag" },
   nav: {
     generator: "Rechnung erstellen",
     pricing: "Preise",
@@ -178,6 +181,7 @@ const de: ChromeDict = {
 };
 
 const fr: ChromeDict = {
+  invoice: { description: "Désignation", amount: "Montant" },
   nav: {
     generator: "Créer une facture",
     pricing: "Tarifs",
@@ -234,6 +238,7 @@ const fr: ChromeDict = {
 };
 
 const es: ChromeDict = {
+  invoice: { description: "Concepto", amount: "Importe" },
   nav: {
     generator: "Crear factura",
     pricing: "Precios",
@@ -290,6 +295,7 @@ const es: ChromeDict = {
 };
 
 const it: ChromeDict = {
+  invoice: { description: "Descrizione", amount: "Importo" },
   nav: {
     generator: "Crea fattura",
     pricing: "Prezzi",
@@ -346,6 +352,7 @@ const it: ChromeDict = {
 };
 
 const pt: ChromeDict = {
+  invoice: { description: "Descrição", amount: "Valor" },
   nav: {
     generator: "Criar fatura",
     pricing: "Preços",
@@ -402,6 +409,7 @@ const pt: ChromeDict = {
 };
 
 const pl: ChromeDict = {
+  invoice: { description: "Opis", amount: "Kwota" },
   nav: {
     generator: "Wystaw fakturę",
     pricing: "Cennik",
@@ -458,6 +466,7 @@ const pl: ChromeDict = {
 };
 
 const sv: ChromeDict = {
+  invoice: { description: "Beskrivning", amount: "Belopp" },
   nav: {
     generator: "Skapa faktura",
     pricing: "Priser",
@@ -514,6 +523,7 @@ const sv: ChromeDict = {
 };
 
 const da: ChromeDict = {
+  invoice: { description: "Beskrivelse", amount: "Beløb" },
   nav: {
     generator: "Lav faktura",
     pricing: "Priser",
@@ -570,6 +580,7 @@ const da: ChromeDict = {
 };
 
 const nb: ChromeDict = {
+  invoice: { description: "Beskrivelse", amount: "Beløp" },
   nav: {
     generator: "Lag faktura",
     pricing: "Priser",

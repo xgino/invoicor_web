@@ -13,6 +13,16 @@ export type PageKey = "home" | "generator" | "android";
 export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   home: {
     en: "/",
+    nl: "/nl",
+    de: "/de",
+    fr: "/fr",
+    es: "/es",
+    it: "/it",
+    pt: "/pt",
+    pl: "/pl",
+    sv: "/sv",
+    da: "/da",
+    nb: "/nb",
   },
   generator: {
     en: "/free-invoice-generator",

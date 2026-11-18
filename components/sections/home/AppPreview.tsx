@@ -6,34 +6,33 @@ import { AppStoreBadge } from "@/components/ui/content";
 import { IPhoneFrame } from "@/components/ui/IPhoneFrame";
 import { QrDownload } from "@/components/ui/QrDownload";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
+import { CHROME } from "@/lib/i18n/chrome";
+import { ROUTES } from "@/lib/i18n/routes";
+import type { Locale } from "@/lib/i18n/config";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
 
 /**
  * Real app screens (ROADMAP P15): the dashboard in an iPhone frame, with a sent invoice floating
  * beside it. Cropped from the App Store screenshots (invoicor_api/logo/images v1.6.3); replace with
  * fresh screenshots when available (Stage X, X17). Demo data only.
  */
-const POINTS = [
-  {
-    icon: BarChart3,
-    text: "Paid, outstanding and sent at a glance, month by month (Starter and Pro).",
-  },
-  { icon: CircleCheck, text: "Every invoice shows its status: draft, sent, paid or overdue." },
-  { icon: FileText, text: "Open any invoice later and share the PDF again in a tap." },
-  { icon: RefreshCw, text: "Sign in on another iPhone and everything is there." },
-];
+const ICONS = [BarChart3, CircleCheck, FileText, RefreshCw];
 
-export function AppPreview() {
+export function AppPreview({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const a = t.app;
+  const POINTS = a.points.map((text, i) => ({ text, icon: ICONS[i]! }));
+  const c = CHROME[locale];
+  const campaign = (name: string) => (locale === "en" ? name : `${name}_${locale}`);
   return (
     <Section tone="tint" aria-labelledby="app-title" className="overflow-hidden">
       <Container className="grid items-center gap-16 lg:grid-cols-2">
         <div className="reveal">
-          <Eyebrow>The app</Eyebrow>
+          <Eyebrow>{a.eyebrow}</Eyebrow>
           <Heading id="app-title">
-            Know where your money is, <Gradient underline="reveal">always.</Gradient>
+            {a.titleA} <Gradient underline="reveal">{a.titleB}</Gradient>
           </Heading>
           <Text size="lead" className="mt-5">
-            Invoicor isn&apos;t only for sending. It keeps every invoice, client and payment status
-            in one place on your phone.
+            {a.lead}
           </Text>
           <ul className="mt-8 space-y-4">
             {POINTS.map((p) => (
@@ -46,9 +45,14 @@ export function AppPreview() {
             ))}
           </ul>
           <div className="mt-9 flex flex-wrap items-center gap-5">
-            <AppStoreBadge campaign="app_preview" />
-            <AndroidButton campaign="app_preview" />
-            <QrDownload campaign="qr_app_preview" />
+            <AppStoreBadge campaign={campaign("app_preview")} top={c.badges.appStoreTop} />
+            <AndroidButton
+              campaign={campaign("app_preview")}
+              href={ROUTES.android[locale] ?? "/android"}
+              top={c.badges.androidTop}
+              label={c.badges.android}
+            />
+            <QrDownload campaign={campaign("qr_app_preview")} t={c.qr} />
           </div>
         </div>
 
@@ -64,7 +68,7 @@ export function AppPreview() {
             <div className="relative h-[33rem] overflow-hidden">
               <Image
                 src="/images/app/dashboard-600.webp"
-                alt="Invoicor dashboard with paid and outstanding amounts, monthly revenue chart and recent invoices"
+                alt={a.altDashboard}
                 width={300}
                 height={543}
                 className="w-full"
@@ -78,15 +82,13 @@ export function AppPreview() {
           <div className="bg-surface ring-line shadow-float absolute -bottom-6 -left-4 w-60 overflow-hidden rounded-2xl ring-1 sm:-left-16">
             <Image
               src="/images/app/invoice-sent-720.webp"
-              alt="A sent invoice in Invoicor, marked Sent"
+              alt={a.altSent}
               width={360}
               height={297}
               className="w-full"
             />
           </div>
-          <p className="text-small text-subtle mt-16 text-center sm:mt-12 sm:pl-24">
-            Real screens from the app, with demo data.
-          </p>
+          <p className="text-small text-subtle mt-16 text-center sm:mt-12 sm:pl-24">{a.demo}</p>
         </div>
       </Container>
     </Section>

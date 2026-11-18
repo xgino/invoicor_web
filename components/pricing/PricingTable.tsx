@@ -15,6 +15,8 @@ import {
   Stamp,
 } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
+import { fill } from "@/lib/i18n/chrome";
+import { en as EN_HOME, type HomeDict } from "@/lib/i18n/pages/home/en";
 import {
   PLANS,
   PRICING,
@@ -26,22 +28,38 @@ import {
   yearlySaving,
 } from "@/lib/pricing";
 
-/** True on every plan (BRAND.md §10; clients are unlimited in the API's plan limits). */
-const EVERY_PLAN = [
-  "Unlimited clients",
-  "No watermark",
-  "Your own payment link",
-  "0% fees on your payments",
-  "Data stored in Germany",
-];
+type TableText = HomeDict["table"];
+
+/** USD prices in the page's language: "$4.99" (English, as in pricing.json), "4,99 $", "US$ 4,99". */
+function priceFormatter(intl: string) {
+  if (intl === "en-US") return formatPrice;
+  return (amount: number) =>
+    new Intl.NumberFormat(intl, {
+      style: "currency",
+      currency: PRICING.currency,
+      minimumFractionDigits: Number.isInteger(amount) ? 0 : 2,
+      maximumFractionDigits: 2,
+    }).format(amount);
+}
 
 /**
  * The pricing table, with every plan written out as an invoice (ROADMAP chunks 17.2d and 20c).
  * Prices come from content/pricing.json. Yearly is the default because it's the better deal;
  * the saving is calculated, never typed. All prices are in the static HTML.
  */
-export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
+export function PricingTable({
+  campaign = "pricing",
+  t = EN_HOME.table,
+  intl = "en-US",
+  headers,
+}: {
+  campaign?: string;
+  t?: TableText;
+  intl?: string;
+  headers?: { description: string; amount: string };
+}) {
   const [period, setPeriod] = useState<Period>("yearly");
+  const fmt = priceFormatter(intl);
 
   return (
     <div>
@@ -49,7 +67,8 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
         <BillingSwitch
           value={period}
           onChange={setPeriod}
-          savingLabel={`${YEARLY_MONTHS_FREE} months free`}
+          savingLabel={fill(t.monthsFree, { n: YEARLY_MONTHS_FREE })}
+          labels={{ monthly: t.monthly, yearly: t.yearly, toggle: t.billYearly }}
         />
         {/* Hand-drawn hint at the yearly saving (desktop): arrow down-left onto the badge */}
         <div
@@ -58,7 +77,7 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
         >
           <DrawnArrow className="mt-2 h-8 w-12 rotate-[200deg]" />
           <span className="font-heading text-small text-brand-700 -rotate-6 font-bold whitespace-nowrap">
-            best value
+            {t.bestValue}
           </span>
         </div>
       </div>
@@ -70,13 +89,16 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
             period={period}
             number={i + 1}
             campaign={campaign}
+            t={t}
+            fmt={fmt}
+            headers={headers}
           />
         ))}
       </div>
       <div className="bg-surface ring-line shadow-soft mt-12 rounded-2xl p-5 ring-1">
-        <p className="text-eyebrow text-brand-700 text-center uppercase">Included on every plan</p>
+        <p className="text-eyebrow text-brand-700 text-center uppercase">{t.everyPlan}</p>
         <ul className="mt-3 flex flex-wrap justify-center gap-x-6 gap-y-2">
-          {EVERY_PLAN.map((f) => (
+          {t.everyList.map((f) => (
             <li key={f} className="text-small text-ink flex items-center gap-1.5 font-medium">
               <Check aria-hidden className="text-brand-600 size-4" />
               {f}
@@ -85,10 +107,7 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
         </ul>
       </div>
       <p className="text-small text-subtle mt-6 text-center">
-        Prices in {PRICING.currency}. The App Store shows your local price, set by Apple, which may
-        include local taxes. The free plan needs no subscription. Free trials start with your Apple
-        ID; cancel before a trial ends (in your iPhone settings) and you pay nothing. Yearly saves{" "}
-        {YEARLY_SAVING_PERCENT}% against paying monthly.
+        {fill(t.note, { currency: PRICING.currency, pct: YEARLY_SAVING_PERCENT })}
       </p>
     </div>
   );
@@ -99,38 +118,45 @@ function PlanInvoice({
   period,
   number,
   campaign,
+  t,
+  fmt,
+  headers,
 }: {
   plan: Plan;
   period: Period;
   number: number;
   campaign: string;
+  t: TableText;
+  fmt: (n: number) => string;
+  headers?: { description: string; amount: string };
 }) {
+  const local = t.plans?.[plan.id];
+  const description = local?.description ?? plan.description;
+  const features = local?.features ?? plan.features;
   const free = plan.monthly === 0;
   const saving = yearlySaving(plan);
   const days = PRICING.trial_days[period];
   const yearly = period === "yearly" && !free;
 
   const items = free
-    ? [{ description: "Free plan", detail: "No subscription needed", amount: formatPrice(0) }]
+    ? [{ description: t.freePlan, detail: t.freePlanDetail, amount: fmt(0) }]
     : yearly
       ? [
           {
-            description: `${plan.name} plan, 12 months`,
-            detail: `12 × ${formatPrice(plan.monthly)}`,
-            amount: formatPrice(saving.twelveMonths),
+            description: fill(t.plan12, { plan: plan.name }),
+            detail: `12 × ${fmt(plan.monthly)}`,
+            amount: fmt(saving.twelveMonths),
           },
           {
-            description: `${saving.months} months free`,
-            detail: "Yearly discount",
-            amount: `−${formatPrice(saving.amount)}`,
+            description: fill(t.monthsFree, { n: saving.months }),
+            detail: t.discount,
+            amount: `−${fmt(saving.amount)}`,
             discount: true,
           },
         ]
-      : [{ description: `${plan.name} plan, 1 month`, amount: formatPrice(plan.monthly) }];
+      : [{ description: fill(t.plan1, { plan: plan.name }), amount: fmt(plan.monthly) }];
 
-  const total = free
-    ? formatPrice(0)
-    : `${formatPrice(plan[period])}${period === "monthly" ? "/mo" : "/yr"}`;
+  const total = free ? fmt(0) : `${fmt(plan[period])}${period === "monthly" ? t.mo : t.yr}`;
 
   return (
     <div
@@ -147,7 +173,7 @@ function PlanInvoice({
             className="bg-brand-gradient absolute -inset-1 -z-10 rounded-3xl opacity-25 blur-2xl"
           />
           <span className="bg-brand-cta shadow-brand absolute -top-3.5 left-1/2 z-10 -translate-x-1/2 rounded-full px-3.5 py-1 text-[0.75rem] font-bold whitespace-nowrap text-white">
-            ★ Most popular
+            {t.popular}
           </span>
         </>
       )}
@@ -158,15 +184,17 @@ function PlanInvoice({
       >
         {yearly && plan.popular && (
           <Stamp trigger="mount" className="absolute top-5 right-5" rotate={-10}>
-            Save {saving.percent}%
+            {fill(t.save, { pct: saving.percent })}
           </Stamp>
         )}
 
         <div className="mb-6 flex items-start justify-between gap-3">
           <div>
-            <PaperLabel>Invoice № {String(number).padStart(3, "0")}</PaperLabel>
+            <PaperLabel>
+              {t.invoiceNo} {String(number).padStart(3, "0")}
+            </PaperLabel>
             <h3 className="font-heading text-h3 text-ink mt-1">{plan.name}</h3>
-            <p className="text-small text-muted">{plan.description}</p>
+            <p className="text-small text-muted">{description}</p>
           </div>
         </div>
 
@@ -175,35 +203,30 @@ function PlanInvoice({
           {/* The price people compare: per month, with what is billed right under it (P12) */}
           <p className="flex items-baseline gap-1.5">
             <span className="font-heading text-ink text-[2.75rem] leading-none font-extrabold tracking-tight tabular-nums">
-              {formatPrice(free ? 0 : yearly ? saving.perMonth : plan.monthly)}
+              {fmt(free ? 0 : yearly ? saving.perMonth : plan.monthly)}
             </span>
-            <span className="text-muted font-medium">/month</span>
+            <span className="text-muted font-medium">{t.perMonth}</span>
           </p>
           <p className="text-small text-muted mt-1.5 mb-5">
             {free ? (
-              "No subscription, nothing billed"
+              t.freeBilled
             ) : yearly ? (
-              <>
-                Billed <Money>{formatPrice(plan.yearly)}</Money> once a year
-              </>
+              <WithMoney text={t.billedYearly} price={fmt(plan.yearly)} />
             ) : (
-              "Billed monthly"
+              t.billedMonthly
             )}
           </p>
-          <LineItems items={items} total={{ label: "Total", amount: total }} />
+          <LineItems items={items} headers={headers} total={{ label: t.total, amount: total }} />
         </div>
 
         <p className="text-small text-muted mt-3 min-h-10">
           {free ? (
-            "No watermark. Upgrade only when you send more."
-          ) : yearly ? (
-            <>
-              {days}-day free trial, then <Money>{formatPrice(plan.yearly)}</Money> a year.
-            </>
+            t.freeNote
           ) : (
-            <>
-              {days}-day free trial, then <Money>{formatPrice(plan.monthly)}</Money> a month.
-            </>
+            <WithMoney
+              text={fill(yearly ? t.trialYear : t.trialMonth, { days })}
+              price={fmt(yearly ? plan.yearly : plan.monthly)}
+            />
           )}
         </p>
 
@@ -217,14 +240,14 @@ function PlanInvoice({
             <Gift aria-hidden className="text-brand-700 size-5 shrink-0" />
           )}
           {plan.id === "starter"
-            ? "About one coffee a month."
+            ? t.anchorStarter
             : plan.id === "pro"
-              ? `Just ${formatPrice(pricePerDay(plan, free ? "monthly" : period))} a day.`
-              : "No subscription, no payment details, no catch."}
+              ? fill(t.anchorPro, { price: fmt(pricePerDay(plan, free ? "monthly" : period)) })
+              : t.anchorFree}
         </p>
 
         <ul className="text-small mt-5 mb-6 space-y-2">
-          {plan.features.map((f) => (
+          {features.map((f) => (
             <li key={f} className="text-ink flex gap-2">
               <Check aria-hidden className="text-brand-600 mt-0.5 size-4 shrink-0" />
               {f}
@@ -243,14 +266,22 @@ function PlanInvoice({
             className: "mt-auto w-full",
           })}
         >
-          {free ? "Download free" : `Start ${days}-day free trial`}
+          {free ? t.ctaFree : fill(t.ctaTrial, { days })}
         </a>
-        <p className="text-small text-subtle mt-2 text-center">
-          {free
-            ? "No subscription, no payment"
-            : "Cancel before the trial ends and you pay nothing"}
-        </p>
+        <p className="text-small text-subtle mt-2 text-center">{free ? t.subFree : t.subTrial}</p>
       </InvoicePaper>
     </div>
+  );
+}
+
+/** A sentence with one highlighted price: "Billed {price} once a year". */
+function WithMoney({ text, price }: { text: string; price: string }) {
+  const [before, after = ""] = text.split("{price}");
+  return (
+    <>
+      {before}
+      <Money>{price}</Money>
+      {after}
+    </>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
+import { HomePage } from "@/components/sections/home/HomePage";
+import { HOME } from "@/lib/i18n/pages/home";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
 import { type PageKey, alternatesFor, localizedPaths } from "@/lib/i18n/routes";
@@ -34,7 +36,10 @@ const PAGES: Record<
     meta?: (l: Locale) => { title: string; description: string };
   }
 > = {
-  home: {},
+  home: {
+    render: (l) => <HomePage t={HOME[l]} locale={l} />,
+    meta: (l) => ({ title: HOME[l].meta.title, description: HOME[l].meta.description }),
+  },
   generator: {},
   android: {
     render: (l) => <AndroidPage locale={l} />,

@@ -9,15 +9,31 @@ import { appStoreLink } from "@/lib/config";
 import { FREE_INVOICES } from "@/lib/pricing";
 import { TrustRow } from "@/components/ui/TrustRow";
 import { DrawnArrow } from "@/components/ui/doodles";
+import { CHROME, fill } from "@/lib/i18n/chrome";
+import type { Locale } from "@/lib/i18n/config";
+import { cents, formatMoney } from "@/lib/i18n/money";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
+import { ROUTES } from "@/lib/i18n/routes";
 
-const PROMISES = [`${FREE_INVOICES} invoices free`, "No watermark", "No subscription needed"];
+/** The sample invoice's totals, calculated from the language's own items and tax rate. */
+export function sampleTotals(t: HomeDict["sample"]) {
+  const subtotal = cents(t.items.reduce((s, i) => s + i.amount, 0));
+  const tax = cents((subtotal * t.taxRate) / 100);
+  return { subtotal, tax, total: cents(subtotal + tax) };
+}
 
 /**
  * Home hero (ROADMAP chunk 19b): light, a soft orange glow, one gradient word, and a real
  * invoice instead of a fake dashboard. The invoice is a sample job for the core audience
  * (BRAND.md §2: the tradesperson); its math adds up.
  */
-export function Hero() {
+export function Hero({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const h = t.hero;
+  const sample = t.sample;
+  const sums = sampleTotals(sample);
+  const money = (n: number) => formatMoney(n, locale);
+  const generator = ROUTES.generator[locale] ?? `/free-invoice-generator?lang=${locale}`;
+  const promises = h.promises.map((p) => fill(p, { n: FREE_INVOICES }));
   return (
     <section className="bg-surface relative isolate overflow-hidden">
       <div
@@ -29,17 +45,14 @@ export function Hero() {
       </div>
       <Container className="pt-nav grid items-center gap-14 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pb-28">
         <div className="anim-up relative pt-12 lg:pt-20">
-          <Eyebrow>Invoice maker for iPhone</Eyebrow>
+          <Eyebrow>{h.eyebrow}</Eyebrow>
           <h1 className="font-heading text-display text-ink text-balance">
-            Professional invoices, sent <Gradient underline="load">in seconds.</Gradient>
+            {h.titleA} <Gradient underline="load">{h.titleB}</Gradient>
           </h1>
-          <p className="text-lead text-muted mt-6 max-w-xl">
-            Your business details, clients and prices fill in for you. Pick a template, tap send. A
-            clean PDF in your client&apos;s language and currency, straight from your phone.
-          </p>
+          <p className="text-lead text-muted mt-6 max-w-xl">{h.lead}</p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
-              href={appStoreLink("hero")}
+              href={appStoreLink(locale === "en" ? "hero" : `hero_${locale}`)}
               target="_blank"
               rel="noopener noreferrer"
               data-track="cta_click"
@@ -47,24 +60,21 @@ export function Hero() {
               className={buttonClass({ size: "lg" })}
             >
               <AppleIcon size={18} />
-              Download free on iOS
+              {h.cta}
             </a>
-            <Link
-              href="/free-invoice-generator"
-              className={buttonClass({ variant: "secondary", size: "lg" })}
-            >
-              Create one online <ArrowRight aria-hidden className="size-4" />
+            <Link href={generator} className={buttonClass({ variant: "secondary", size: "lg" })}>
+              {h.online} <ArrowRight aria-hidden className="size-4" />
             </Link>
           </div>
           <p className="text-small text-muted mt-4">
-            On Android?{" "}
+            {h.androidQ}{" "}
             <Link
-              href="/android"
+              href={ROUTES.android[locale] ?? "/android"}
               data-track="android_click"
               data-track-section="hero"
               className="text-brand-700 focus-visible:focus-ring rounded font-bold underline-offset-4 hover:underline"
             >
-              It&apos;s coming soon
+              {h.androidLink}
             </Link>
           </p>
           {/* Hand-drawn pointer to the invoice (desktop) */}
@@ -73,12 +83,12 @@ export function Hero() {
             className="pointer-events-none absolute -right-10 bottom-14 hidden flex-col items-center xl:flex"
           >
             <span className="font-heading text-small text-brand-700 rotate-[-8deg] font-bold whitespace-nowrap">
-              ready to send
+              {h.doodle}
             </span>
             <DrawnArrow when="load" className="h-12 w-20 -rotate-[25deg]" />
           </div>
-          <ul aria-label="What you get for free" className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
-            {PROMISES.map((p) => (
+          <ul aria-label={h.promisesAria} className="mt-8 flex flex-wrap gap-x-6 gap-y-2">
+            {promises.map((p) => (
               <li key={p} className="text-small text-muted flex items-center gap-2 font-medium">
                 <CircleCheck aria-hidden className="text-brand-600 size-4" />
                 {p}
@@ -96,32 +106,29 @@ export function Hero() {
             <InvoicePaper highlight edge="perforated" className="p-6 sm:p-8">
               <div className="mb-6 flex items-start justify-between gap-4">
                 <div>
-                  <PaperLabel>Invoice № 0042</PaperLabel>
-                  <p className="font-heading text-h4 text-ink mt-1">Rivera Plumbing</p>
-                  <p className="text-small text-subtle">Issued today · Due in 14 days</p>
+                  <PaperLabel>{sample.number}</PaperLabel>
+                  <p className="font-heading text-h4 text-ink mt-1">{sample.business}</p>
+                  <p className="text-small text-subtle">{sample.issued}</p>
                 </div>
                 <Stamp tone="success" rotate={-12} delay={0.9}>
-                  Paid
+                  {sample.stamp}
                 </Stamp>
               </div>
-              <PaperLabel className="mb-1">Bill to</PaperLabel>
-              <p className="text-small text-ink mb-6">Sarah Mitchell · 18 Oak Lane, Austin TX</p>
+              <PaperLabel className="mb-1">{sample.billTo}</PaperLabel>
+              <p className="text-small text-ink mb-6">{sample.client}</p>
               <LineItems
                 animate
-                items={[
-                  { description: "Emergency call-out", detail: "Saturday", amount: "$95.00" },
-                  {
-                    description: "Labor, 2 hours",
-                    detail: "Replace kitchen faucet",
-                    amount: "$170.00",
-                  },
-                  { description: "Faucet and fittings", amount: "$213.50" },
-                ]}
+                headers={CHROME[locale].invoice}
+                items={sample.items.map((i) => ({
+                  description: i.description,
+                  detail: i.detail || undefined,
+                  amount: money(i.amount),
+                }))}
                 totals={[
-                  { label: "Subtotal", amount: "$478.50" },
-                  { label: "Tax 8%", amount: "$38.28" },
+                  { label: sample.subtotal, amount: money(sums.subtotal) },
+                  { label: sample.taxLabel, amount: money(sums.tax) },
                 ]}
-                total={{ label: "Total due", amount: "$516.78" }}
+                total={{ label: sample.total, amount: money(sums.total) }}
               />
             </InvoicePaper>
           </div>
@@ -134,12 +141,12 @@ export function Hero() {
             <span className="bg-brand-50 text-brand-700 grid size-8 place-items-center rounded-full">
               <Send aria-hidden className="size-4" />
             </span>
-            Sent via WhatsApp as PDF
+            {h.sent}
           </div>
         </div>
       </Container>
       <Container className="pb-14">
-        <TrustRow className="reveal border-line border-t pt-8" />
+        <TrustRow t={t.trust} className="reveal border-line border-t pt-8" />
       </Container>
     </section>
   );

@@ -16,7 +16,15 @@ export interface GalleryTemplate {
  * skeletons while loading, and only once the gallery is near the screen. If the build-time call
  * failed, the list is fetched in the browser.
  */
-export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
+export function TemplateGallery({
+  initial,
+  label = "Invoice template previews",
+  previewLabel = "invoice template preview",
+}: {
+  initial: GalleryTemplate[];
+  label?: string;
+  previewLabel?: string;
+}) {
   const [templates, setTemplates] = useState(initial);
   const [previews, setPreviews] = useState<Record<string, string>>({});
   const [near, setNear] = useState(false);
@@ -76,7 +84,7 @@ export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
     <div
       ref={ref}
       role="region"
-      aria-label="Invoice template previews"
+      aria-label={label}
       tabIndex={0}
       className="no-scrollbar focus-visible:focus-ring -mx-4 overflow-x-auto rounded-2xl px-4 pt-2 pb-8 sm:-mx-6 sm:px-6"
     >
@@ -92,7 +100,7 @@ export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
                 {html ? (
                   <iframe
                     srcDoc={html}
-                    title={`${t.name} invoice template preview`}
+                    title={`${t.name} ${previewLabel}`}
                     loading="lazy"
                     sandbox=""
                     tabIndex={-1}

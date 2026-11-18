@@ -1,0 +1,373 @@
+import type { HomeDict } from "./en";
+
+/** Home, Norwegian (Bokmål). "du", as all Norwegian apps write. */
+export const nb: HomeDict = {
+  meta: {
+    title: "Faktura-app for iPhone | Lag fakturaer raskt | Invoicor",
+    description:
+      "Lag profesjonelle fakturaer på noen sekunder på iPhonen. 31 maler, 38 valutaer, 11 språk. 3 fakturaer gratis og ingen gebyrer på betalingene dine.",
+  },
+  hero: {
+    eyebrow: "Faktura-app for iPhone",
+    titleA: "Profesjonelle fakturaer, sendt",
+    titleB: "på sekunder.",
+    lead: "Firmaopplysningene, kundene og prisene dine fylles ut automatisk. Velg en mal og trykk send. En ryddig PDF på kundens språk og i kundens valuta, rett fra mobilen.",
+    cta: "Last ned gratis for iOS",
+    online: "Lag en på nett",
+    androidQ: "Har du Android?",
+    androidLink: "Kommer snart",
+    doodle: "klar til å sendes",
+    promisesAria: "Dette får du gratis",
+    promises: ["{n} fakturaer gratis", "Ingen vannmerke", "Ingen abonnement"],
+    sent: "Sendt som PDF via WhatsApp",
+  },
+  sample: {
+    number: "Faktura nr. 0042",
+    business: "Berg Rør",
+    issued: "Utstedt i dag · forfaller om 14 dager",
+    stamp: "Betalt",
+    billTo: "Faktureres til",
+    client: "Ingrid Hansen · Lindeveien 18, Bergen",
+    clientName: "Ingrid Hansen",
+    clientInitials: "IH",
+    items: [
+      { description: "Hasteutrykning", detail: "Lørdag", short: "Utrykning", amount: 950 },
+      {
+        description: "Arbeid, 2 timer",
+        detail: "Bytte av kjøkkenbatteri",
+        short: "Arbeid, 2 timer",
+        amount: 1700,
+      },
+      {
+        description: "Batteri og koblinger",
+        detail: "",
+        short: "Batteri og koblinger",
+        amount: 2135,
+      },
+    ],
+    subtotal: "Sum eks. mva.",
+    taxLabel: "MVA 25 %",
+    taxRate: 25,
+    total: "Å betale",
+  },
+  trust: {
+    send: "Send som PDF via",
+    pay: "Få betalt via din egen lenke",
+    messages: "Meldinger",
+    bank: "Bankoverføring",
+  },
+  proof: {
+    aria: "Invoicor i tall",
+    templates: "Fakturamaler",
+    currencies: "Valutaer",
+    languages: "Fakturaspråk",
+    fees: "Gebyrer på betalingene dine",
+    percent: " %",
+  },
+  templates: {
+    eyebrow: "31 maler · 21 gratis",
+    titleA: "Fakturaer kundene dine",
+    titleB: "tar på alvor.",
+    lead: "Ikke noe regnearkpreg. Logoen din, en ryddig layout og alle opplysningene kunder og regnskapsførere forventer.",
+    browse: "Velg mal",
+    galleryAria: "Forhåndsvisning av fakturamaler",
+    preview: "fakturamal, forhåndsvisning",
+  },
+  how: {
+    eyebrow: "Slik fungerer det",
+    titleA: "Fra ferdig jobb til",
+    titleB: "betalt.",
+    lead: "Sett opp firmaet ditt én gang. Etter det er hver faktura noen få trykk.",
+    step: "Steg",
+    steps: [
+      {
+        title: "Velg kunde",
+        text: "En lagret kunde eller en ny. Navn, adresse og e-post fylles ut automatisk.",
+      },
+      {
+        title: "Legg til linjer",
+        text: "Trykk på lagrede varer eller skriv en linje. MVA, rabatt og sum regnes ut med en gang.",
+      },
+      {
+        title: "Send PDF-en",
+        text: "Del den via e-post, WhatsApp, Meldinger eller AirDrop, med betalingslenken din på.",
+      },
+      {
+        title: "Få betalt",
+        text: "Kunden betaler direkte til deg. Merk den som betalt og se med en gang hva som gjenstår.",
+      },
+    ],
+    savedClient: "Lagret kunde",
+    total: "Sum",
+    paidToYou: "Betalt til deg",
+  },
+  who: {
+    eyebrow: "For hvem",
+    titleA: "Laget for folk som heller vil",
+    titleB: "jobbe.",
+    lead: "Sender du fakturaer mellom jobbene, fra mobilen? Da er Invoicor laget for deg.",
+    people: [
+      {
+        who: "Håndverkere",
+        examples: "Rørleggere, elektrikere, renholdere, anleggsgartnere",
+        moment: "Jobben er ferdig, og kunden står rett ved siden av.",
+        gain: "Send en profesjonell faktura fra oppkjørselen før du drar. Slutt på papirarbeid om kvelden.",
+        scene: ["Jobben ferdig", "Faktura sendt"],
+      },
+      {
+        who: "Frilansere",
+        examples: "Designere, fotografer, konsulenter, coacher",
+        moment: "Prosjektet er levert, og kunden er i et annet land.",
+        gain: "Fakturer på kundens språk og i kundens valuta, med en layout like fin som arbeidet ditt.",
+        scene: ["Prosjekt levert", "Betalt i EUR"],
+      },
+      {
+        who: "Små bedrifter",
+        examples: "Studioer, entreprenører, deg som driver mer enn én bedrift",
+        moment: "Månedsslutt: flere kunder, kanskje to bedrifter.",
+        gain: "Opptil 3 firmaprofiler med Pro, hver med egen logo og egne opplysninger. Dupliser forrige måneds fakturaer med ett trykk.",
+        scene: ["Månedsslutt", "Alt sendt"],
+      },
+    ],
+    notAccountingA: "Ikke et regnskapsprogram.",
+    notAccountingB: "Bare fakturaer.",
+    notAccounting: [
+      "Ingen bilagsføring, ingen oppsettsveiviser",
+      "Send PDF-ene til regnskapsføreren din",
+      "Fungerer på iPhonen din, uansett hvor jobben er",
+    ],
+  },
+  app: {
+    eyebrow: "Appen",
+    titleA: "Vit hvor pengene dine er,",
+    titleB: "alltid.",
+    lead: "Invoicor er ikke bare for å sende. Hver faktura, kunde og betalingsstatus samles på ett sted på mobilen.",
+    points: [
+      "Betalt, utestående og sendt med et blikk, måned for måned (Starter og Pro).",
+      "Hver faktura viser statusen sin: utkast, sendt, betalt eller forfalt.",
+      "Åpne hvilken som helst faktura senere og del PDF-en igjen med ett trykk.",
+      "Logg inn på en annen iPhone, så er alt der.",
+    ],
+    altDashboard:
+      "Invoicors oversikt med betalte og utestående beløp, omsetningsgraf per måned og siste fakturaer",
+    altSent: "En sendt faktura i Invoicor, merket som sendt",
+    demo: "Ekte skjermbilder fra appen (på engelsk), med eksempeldata.",
+  },
+  features: {
+    eyebrow: "Alt en faktura trenger",
+    title: "Laget for jobben, ikke for regnskapsførere.",
+    lead: "Ingen bilagsføring, ingen oppsettsveiviser. De delene av faktureringen du faktisk bruker, gjort ordentlig.",
+    fast: "Raskt",
+    fastText:
+      "Lagrede kunder og varer fylles ut automatisk. Sum, MVA og rabatter regnes ut mens du skriver. Dupliser forrige måneds faktura med ett trykk.",
+    paid: "Betalt",
+    sent: "Sendt",
+    draft: "Utkast",
+    global: "Internasjonalt",
+    globalText:
+      "Fakturer kunder hvor som helst: 38 valutaer og 11 fakturaspråk. Kunden leser fakturaen på sitt eget språk.",
+    currenciesAria: "Noen støttede valutaer",
+    languagesAria: "Noen fakturaspråk",
+    professional: "Profesjonelt",
+    professionalText:
+      "31 maler (21 gratis) med logoen din. Opptil 3 firmaprofiler med Pro og en omsetningsoversikt som viser hva som er betalt og hva som gjenstår.",
+    honest: "Ærlig",
+    honestList: [
+      "3 fakturaer gratis, uten vannmerke",
+      "Ingen abonnement for å komme i gang",
+      "0 % av betalingene dine, aldri",
+      "Data lagret i Tyskland (GDPR)",
+      "Tydelige priser, si opp når du vil",
+      "Hver melding leses av et menneske",
+    ],
+  },
+  keep: {
+    eyebrow: "0 % av betalingene dine. Aldri.",
+    titleA: "Du gjorde jobben.",
+    titleB: "Du beholder pengene.",
+    lead: "Mange faktura-apper tar en prosentandel av hver kortbetaling, i tillegg til abonnementet. Det synes vi er feil. Invoicor er ikke en betalingstjeneste: appen lager fakturaen din, du legger til din egen betalingslenke, og kunden betaler direkte til deg.",
+    points: [
+      {
+        title: "Ingen provisjon, ingen avgift per faktura",
+        text: "Du betaler ett fast abonnement. Det kunden betaler, er ditt.",
+      },
+      {
+        title: "Betalt direkte til deg",
+        text: "Legg til din egen betalingslenke på fakturaen. Pengene går aldri gjennom oss, så de kan ikke holdes tilbake eller fryses.",
+      },
+      {
+        title: "Ærlige om det",
+        text: "Bruker du en lenke fra PayPal eller Stripe, tar de sitt eget gebyr, som overalt ellers. Invoicor legger til 0 %.",
+      },
+    ],
+  },
+  fee: {
+    stamp: "0 % gebyr",
+    label: "Det du beholder med Invoicor",
+    average: "Gjennomsnittlig faktura",
+    perMonth: "Fakturaer i måneden",
+    feeLabel: "Gebyr andre apper tar per betaling",
+    marks: ["Lavt", "Vanlig", "Høyt"],
+    marksAria: "Eksempler på gebyrnivåer",
+    keep: "Med Invoicor beholder du",
+    pocket: "mer i lommen hvert år",
+    perYear: "Du fakturerer per år",
+    wouldKeep: "En app som tar {fee}, ville beholdt",
+    takes: "Invoicor tar",
+    note: "Eksempel. Noen faktura-apper tar et gebyr av hver betaling i tillegg til abonnementet; satsene varierer. Legger du til din egen lenke fra PayPal eller Stripe, tar de sitt eget gebyr, som overalt ellers. Invoicor legger ikke til noe.",
+  },
+  pricing: {
+    eyebrow: "Priser",
+    title: "Tydelige priser. Ingenting av betalingene dine.",
+    lead: "Start gratis. Oppgrader når du sender flere. Si opp når som helst via Apple.",
+  },
+  table: {
+    monthly: "Månedlig",
+    yearly: "Årlig",
+    billYearly: "Betal årlig",
+    monthsFree: "{n} måneder gratis",
+    bestValue: "best verdi",
+    everyPlan: "Inkludert i alle abonnementer",
+    everyList: [
+      "Ubegrenset antall kunder",
+      "Ingen vannmerke",
+      "Din egen betalingslenke",
+      "0 % gebyr på betalingene dine",
+      "Data lagret i Tyskland",
+    ],
+    note: "Priser i {currency}. App Store viser din lokale pris, satt av Apple, eventuelt med lokal mva. Gratisabonnementet krever ikke abonnement. Gratis prøveperioder starter du med Apple-ID-en din; si opp før prøveperioden er over (i iPhone-innstillingene), så betaler du ingenting. Årlig sparer du {pct} % sammenlignet med månedlig.",
+    popular: "★ Mest valgt",
+    save: "Spar {pct} %",
+    invoiceNo: "Faktura nr.",
+    perMonth: "/mnd.",
+    freeBilled: "Ingen abonnement, ingenting belastet",
+    billedYearly: "{price} én gang i året",
+    billedMonthly: "Belastes hver måned",
+    freePlan: "Gratisabonnement",
+    freePlanDetail: "Ingen abonnement",
+    plan12: "{plan}, 12 måneder",
+    discount: "Årsrabatt",
+    plan1: "{plan}, 1 måned",
+    total: "Sum",
+    mo: "/mnd.",
+    yr: "/år",
+    freeNote: "Ingen vannmerke. Oppgrader først når du sender flere.",
+    trialYear: "{days} dager gratis, deretter {price} per år.",
+    trialMonth: "{days} dager gratis, deretter {price} per måned.",
+    anchorStarter: "Omtrent én kopp kaffe i måneden.",
+    anchorPro: "Bare {price} om dagen.",
+    anchorFree: "Ingen abonnement, ingen betalingsopplysninger, ingen skjulte kostnader.",
+    ctaFree: "Last ned gratis",
+    ctaTrial: "Prøv {days} dager gratis",
+    subFree: "Ingen abonnement, ingen betaling",
+    subTrial: "Si opp før prøveperioden er over, så betaler du ingenting",
+    plans: {
+      free: {
+        description: "Prøv det på ekte jobber",
+        features: [
+          "3 fakturaer å prøve, uten tidsbegrensning",
+          "Ubegrenset antall kunder",
+          "1 firmaprofil",
+          "Gratis maler",
+          "PDF-eksport, ingen vannmerke",
+        ],
+      },
+      starter: {
+        description: "For sidejobben",
+        features: [
+          "Opptil 10 fakturaer i måneden",
+          "Ubegrenset antall kunder",
+          "1 firmaprofil",
+          "Alle maler",
+          "Omsetningsoversikt",
+        ],
+      },
+      pro: {
+        description: "For bedrifter i vekst",
+        features: [
+          "Opptil 50 fakturaer i måneden",
+          "Ubegrenset antall kunder",
+          "3 firmaprofiler",
+          "Premiummaler",
+          "Sammenligningsmodus",
+        ],
+      },
+    },
+  },
+  promises: {
+    eyebrow: "Våre løfter",
+    titleA: "Ingen triks.",
+    titleB: "Bare fakturaer.",
+    lead: "Det andre faktura-apper får de dårligste anmeldelsene for, lover vi å ikke gjøre.",
+    core: "Vårt viktigste løfte",
+    items: [
+      {
+        fact: "{zero}",
+        factLabel: "for de første {n} fakturaene dine",
+        title: "Gratis betyr gratis",
+        text: "Ingen vannmerke og ingen abonnement. Ingen prøveperiode som blir til en betalingsmur midt i den første fakturaen din.",
+        proof: "Oppgrader først når du sender flere",
+      },
+      {
+        fact: "0 %",
+        factLabel: "av betalingene dine, aldri",
+        title: "Vi rører aldri pengene dine",
+        text: "Invoicor er ikke en betalingstjeneste, så appen kan ikke holde tilbake, fryse eller ta en del. Kunden betaler direkte til deg, via din egen lenke.",
+        proof: "Ett fast abonnement, ingenting per faktura",
+      },
+      {
+        fact: "100 %",
+        factLabel: "av meldingene leses av mennesker",
+        title: "Ekte mennesker, ikke roboter",
+        text: "Tilbakemeldinger fra appen og e-poster går til dem som lager Invoicor. Et svar kan ta noen dager; ingenting forsvinner i en robot.",
+        proof: "Ingen saksroboter, ingen standardsvar",
+      },
+    ],
+  },
+  faq: {
+    eyebrow: "Vanlige spørsmål",
+    title: "Spørsmål og svar.",
+    items: [
+      {
+        question: "Er Invoicor gratis?",
+        answer:
+          "Ja. Gratisabonnementet inneholder {n} fakturaer uten vannmerke og uten abonnement, i tillegg til gratis maler og PDF-eksport. Betalte abonnementer starter på {price} i måneden, med {monthly} dagers gratis prøveperiode ({yearly} dager på årsabonnementer). Si opp når som helst via Apple.",
+      },
+      {
+        question: "Kan jeg skrive org.nr. og MVA på fakturaen?",
+        answer:
+          "Ja. Skriv for eksempel «Org.nr. 123 456 789 MVA» i notatene, så kommer det med på hver faktura. Du velger også én mva-sats per faktura, og Invoicor regner ut sum, mva og totalbeløp.",
+      },
+      {
+        question: "Tar Invoicor et gebyr av betalingene mine?",
+        answer:
+          "Nei. Invoicor er ikke en betalingstjeneste: appen håndterer ikke betalingene dine, holder dem ikke tilbake og tar ingenting av dem, og står aldri mellom deg og kunden. Du betaler et fast abonnement, og det er alt. Legg til din egen betalingslenke eller kontonummeret ditt på fakturaen, så betaler kunden direkte til deg.",
+      },
+      {
+        question: "Er Invoicor et regnskapssystem?",
+        answer:
+          "Nei. Invoicor lager og sender fakturaer, men fører ikke regnskap. Send PDF-fakturaene til regnskapsprogrammet eller regnskapsføreren din.",
+      },
+      {
+        question: "Kan jeg fakturere i andre valutaer og på andre språk?",
+        answer:
+          "Ja. Invoicor støtter 38 valutaer og 11 fakturaspråk, så kunden leser fakturaen på sitt eget språk og betaler i sin egen valuta.",
+      },
+      {
+        question: "Hvor raskt lager jeg en faktura?",
+        answer:
+          "Når firmaopplysningene, kundene og varene dine er lagret, er en ny faktura noen få trykk: velg kunde, legg til lagrede linjer, så regnes sum og mva ut. Del så PDF-en fra iPhonen via e-post, WhatsApp eller AirDrop.",
+      },
+      {
+        question: "Er dataene mine trygge?",
+        answer:
+          "Vi beskytter dem med vanlige tiltak: konto- og fakturadataene dine lagres på servere i Tyskland etter EUs personvernregler (GDPR), hver tilkobling er kryptert (HTTPS), passord lagres kryptert, og vi selger aldri dataene dine. Ingen nettjeneste kan love perfekt sikkerhet, men vi jobber for at ingen skal få tilgang uten tillatelse.",
+      },
+    ],
+  },
+  final: {
+    titleA: "Send den neste fakturaen din",
+    titleB: "allerede i dag.",
+    text: "{n} fakturaer gratis. Ingen vannmerke, ingen abonnement, ingen bit av pengene dine.",
+  },
+};

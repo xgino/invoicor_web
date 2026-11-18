@@ -18,19 +18,32 @@ import { cx } from "./cx";
  */
 type Item = { label: string; icon: ComponentType<{ className?: string; "aria-hidden"?: boolean }> };
 
-const SEND: Item[] = [
+export interface TrustText {
+  send: string;
+  pay: string;
+  messages: string;
+  bank: string;
+}
+const EN: TrustText = {
+  send: "Send it as a PDF via",
+  pay: "Get paid with your own link",
+  messages: "Messages",
+  bank: "Bank transfer",
+};
+
+const send = (t: TrustText): Item[] => [
   { label: "PDF", icon: FileText },
   { label: "Mail", icon: Mail },
-  { label: "Messages", icon: MessageCircle },
+  { label: t.messages, icon: MessageCircle },
   { label: "WhatsApp", icon: MessagesSquare },
   { label: "AirDrop", icon: Share },
 ];
 
-const PAY: Item[] = [
+const pay = (t: TrustText): Item[] => [
   { label: "PayPal", icon: Link2 },
   { label: "Stripe", icon: Link2 },
   { label: "Wise", icon: Link2 },
-  { label: "Bank transfer", icon: Landmark },
+  { label: t.bank, icon: Landmark },
 ];
 
 function Chips({ items }: { items: Item[] }) {
@@ -54,22 +67,24 @@ function Chips({ items }: { items: Item[] }) {
 export function TrustRow({
   className,
   show = "both",
+  t = EN,
 }: {
   className?: string;
   show?: "both" | "send" | "pay";
+  t?: TrustText;
 }) {
   return (
     <div className={cx("grid gap-5 sm:gap-8", show === "both" && "sm:grid-cols-2", className)}>
       {show !== "pay" && (
         <div>
-          <p className="text-eyebrow text-subtle mb-2.5 uppercase">Send it as a PDF via</p>
-          <Chips items={SEND} />
+          <p className="text-eyebrow text-subtle mb-2.5 uppercase">{t.send}</p>
+          <Chips items={send(t)} />
         </div>
       )}
       {show !== "send" && (
         <div>
-          <p className="text-eyebrow text-subtle mb-2.5 uppercase">Get paid with your own link</p>
-          <Chips items={PAY} />
+          <p className="text-eyebrow text-subtle mb-2.5 uppercase">{t.pay}</p>
+          <Chips items={pay(t)} />
         </div>
       )}
     </div>

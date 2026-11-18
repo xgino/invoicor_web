@@ -1,47 +1,18 @@
 import type { Metadata } from "next";
-import { AppPreview } from "@/components/sections/home/AppPreview";
-import { Features } from "@/components/sections/home/Features";
-import { FinalCta } from "@/components/sections/home/FinalCta";
-import { Hero } from "@/components/sections/home/Hero";
-import { HomeFaq } from "@/components/sections/home/HomeFaq";
-import { HowItWorks } from "@/components/sections/home/HowItWorks";
-import { KeepYourMoney } from "@/components/sections/home/KeepYourMoney";
-import { PricingSection } from "@/components/sections/home/PricingSection";
-import { Promises } from "@/components/sections/home/Promises";
-import { ProofBand } from "@/components/sections/home/ProofBand";
-import { Templates } from "@/components/sections/home/Templates";
-import { WhoItsFor } from "@/components/sections/home/WhoItsFor";
-import { JsonLd } from "@/components/seo/JsonLd";
-import { mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
+import { HomePage } from "@/components/sections/home/HomePage";
+import { HOME } from "@/lib/i18n/pages/home";
+import { en } from "@/lib/i18n/pages/home/en";
+import { alternatesFor } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Invoice Maker for iPhone | Create Invoices in Seconds | Invoicor",
-  description:
-    "Create professional invoices in seconds on your iPhone. 31 templates, 38 currencies, 11 languages. 3 invoices free, and no fees on your payments.",
+  title: en.meta.title,
+  description: en.meta.description,
   path: "/",
+  languages: alternatesFor("home"),
 });
 
-/**
- * Home page (ROADMAP chunks 19–20), light and invoice-styled. Sections live in
- * components/sections/home/. The FAQPage JSON-LD comes from the FAQ section itself.
- */
-export default function HomePage() {
-  return (
-    <>
-      <JsonLd data={[organizationLd(), websiteLd(), mobileAppLd()]} />
-      <Hero />
-      <ProofBand />
-      <Templates />
-      <HowItWorks />
-      <WhoItsFor />
-      <AppPreview />
-      <Features />
-      <KeepYourMoney />
-      <PricingSection />
-      <Promises />
-      <HomeFaq />
-      <FinalCta />
-    </>
-  );
+/** Home page (ROADMAP chunks 19–20), light and invoice-styled; text in lib/i18n/pages/home. */
+export default function Page() {
+  return <HomePage t={HOME.en} locale="en" />;
 }

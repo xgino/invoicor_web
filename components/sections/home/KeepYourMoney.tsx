@@ -2,39 +2,28 @@ import { HandCoins, Landmark, ShieldCheck } from "lucide-react";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 import { TrustRow } from "@/components/ui/TrustRow";
 import { FeeCalculator } from "./FeeCalculator";
+import { CALCULATOR_SCALE } from "@/lib/i18n/money";
+import { LOCALE_INFO } from "@/lib/i18n/config";
+import type { Locale } from "@/lib/i18n/config";
+import type { HomeDict } from "@/lib/i18n/pages/home/en";
 
-const POINTS = [
-  {
-    icon: HandCoins,
-    title: "No cut, no per-invoice fee",
-    text: "You pay one flat subscription. What your client pays is yours.",
-  },
-  {
-    icon: Landmark,
-    title: "Paid straight to you",
-    text: "Add your own payment link to the invoice. The money never passes through us, so it can't be held or frozen.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Honest about it",
-    text: "If you use a PayPal or Stripe link, they charge their own fee, as they would anywhere. Invoicor adds 0%.",
-  },
-];
+const ICONS = [HandCoins, Landmark, ShieldCheck];
 
 /** "You did the work. You keep the money." (ROADMAP chunk 20d2, BRAND.md pillar: Honest) */
-export function KeepYourMoney() {
+export function KeepYourMoney({ t, locale }: { t: HomeDict; locale: Locale }) {
+  const k = t.keep;
+  const POINTS = k.points.map((p, i) => ({ ...p, icon: ICONS[i]! }));
+  const currency = LOCALE_INFO[locale].currency;
   return (
     <Section tone="brand" aria-labelledby="keep-title">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <div className="reveal">
-          <Eyebrow>0% of your payments. Ever.</Eyebrow>
+          <Eyebrow>{k.eyebrow}</Eyebrow>
           <Heading id="keep-title">
-            You did the work. <Gradient underline="reveal">You keep the money.</Gradient>
+            {k.titleA} <Gradient underline="reveal">{k.titleB}</Gradient>
           </Heading>
           <Text size="lead" className="mt-5">
-            Many invoicing apps take a percentage of every card payment, on top of their
-            subscription. We think that&apos;s wrong. Invoicor isn&apos;t a payment gateway: it
-            makes your invoice, you add your own payment link, and your client pays you directly.
+            {k.lead}
           </Text>
           <ul className="mt-9 space-y-6">
             {POINTS.map((p) => (
@@ -49,13 +38,18 @@ export function KeepYourMoney() {
               </li>
             ))}
           </ul>
-          <TrustRow show="pay" className="mt-9" />
+          <TrustRow show="pay" t={t.trust} className="mt-9" />
         </div>
         <div
           className="reveal mx-auto w-full max-w-md"
           style={{ "--d": "0.1s" } as React.CSSProperties}
         >
-          <FeeCalculator />
+          <FeeCalculator
+            t={t.fee}
+            intl={LOCALE_INFO[locale].intl}
+            currency={currency}
+            scale={CALCULATOR_SCALE[currency] ?? 1}
+          />
         </div>
       </Container>
     </Section>
