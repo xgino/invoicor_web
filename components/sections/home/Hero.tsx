@@ -1,4 +1,5 @@
 import { ArrowRight, CircleCheck, Send } from "lucide-react";
+import Link from "next/link";
 import { AppleIcon } from "@/components/brand/AppleIcon";
 import { buttonClass } from "@/components/ui/Button";
 import { cx } from "@/components/ui/cx";
@@ -48,9 +49,12 @@ export function Hero() {
               <AppleIcon size={18} />
               Download free on iOS
             </a>
-            <a href="#pricing" className={buttonClass({ variant: "secondary", size: "lg" })}>
-              See pricing <ArrowRight aria-hidden className="size-4" />
-            </a>
+            <Link
+              href="/free-invoice-generator"
+              className={buttonClass({ variant: "secondary", size: "lg" })}
+            >
+              Create one online <ArrowRight aria-hidden className="size-4" />
+            </Link>
           </div>
           {/* Hand-drawn pointer to the invoice (desktop) */}
           <div

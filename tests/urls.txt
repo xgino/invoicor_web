@@ -1,6 +1,7 @@
 # Every public URL of invoicor.com (frozen 2026-11-18 from the live site's routes + content slugs).
 # A URL may only leave this list after a 301 redirect for it exists in deploy/nginx/ (see CONTENT.md).
 /
+/free-invoice-generator
 /templates
 /templates/photography
 /templates/plumbing

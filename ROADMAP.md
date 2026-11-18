@@ -1212,23 +1212,24 @@ _✅ 2026-11-18: `components/generator/GeneratePanel.tsx`: bot check (when X19 i
 ### 35. Generator SEO content & launch
 **Goal:** the page ranks for “free invoice generator”.
 
-- [ ] a. Follow the generator blueprint (chunk 7):
+- [x] a. Follow the generator blueprint (chunk 7):
   - H1 “Free Invoice Generator”
-  - subtitle “Create a professional invoice in 60 seconds: no signup, download PDF.”
-  - title `Free Invoice Generator – Create & Download PDF | Invoicor`
-- [ ] b. About 1,200–1,800 words below the tool:
+  - subtitle: the “60 seconds” claim was dropped (not measured, D12 honesty rule); it says no signup and PDF download instead
+  - title `Free Invoice Generator: Create & Download a PDF | Invoicor`
+- [x] b. About 1,250 words below the tool:
   - how to create an invoice in 3 steps
   - what an invoice must include (a checklist)
   - invoice vs. receipt vs. estimate
   - payment terms
-  - a template gallery
-  - use cases by industry
-  - 8–12 FAQs
-- [ ] c. JSON-LD: `webAppLd()` (price 0), `howToLd()`, `faqLd()`, `breadcrumbLd()`.
-- [ ] d. Its own OG image showing the generator.
-- [ ] e. **Internal links:** the hero CTA on the home page, the navbar, the footer, and the CTAs on every template and industry page now point here (with `?template=` / `?industry=` prefilled).
-- [ ] f. Add it to the sitemap, ping IndexNow, request indexing in Search Console.
-- [ ] g. Update the privacy policy if anything changed.
+  - numbering, sending and follow-up tips
+  - generator vs. app comparison (facts from BRAND.md §10)
+  - template and industry links
+  - 10 FAQs
+- [x] c. JSON-LD: `webAppLd()` (price 0), `howToLd()`, FAQ (via `Accordion structuredData`), breadcrumbs.
+- [x] d. Its own share image (`/og-generator.png`).
+- [x] e. **Internal links:** home hero (“Create one online”), navbar (“Free generator”), footer, and a “Create one free online” CTA on every template and industry page. No `?template=` prefill: those pages are about professions, not the API's design templates. The generator itself accepts `?template=`, `?currency=` and `?lang=`.
+- ➜ f. In the sitemap and `llms.txt` ✅. Ping IndexNow and request indexing in Search Console after the deploy (your step, with X18).
+- [x] g. Privacy policy §5: what the generator sends, that nothing is stored, the local draft, and the short-lived rate-limit counter.
 
 **Done when:** the page is live, indexed, and linked from every page on the site.
 

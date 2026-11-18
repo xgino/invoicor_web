@@ -155,3 +155,20 @@ export function collectionLd(
     },
   };
 }
+
+/** The free invoice generator as a free web app (ROADMAP 35c). */
+export function webAppLd(): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Invoicor Free Invoice Generator",
+    url: absoluteUrl("/free-invoice-generator"),
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Any (web browser)",
+    browserRequirements: "Requires JavaScript",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    description:
+      "Create a professional invoice online and download it as a PDF. Free, no signup, 38 currencies and 11 invoice languages.",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}

@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     page("/", CONTENT_UPDATED_AT.site),
+    page("/free-invoice-generator", "2026-11-18"),
     page("/templates", CONTENT_UPDATED_AT.templates),
     ...getTemplates().map((t) => page(`/templates/${t.slug}`, CONTENT_UPDATED_AT.templates)),
     page("/industries", CONTENT_UPDATED_AT.industries),

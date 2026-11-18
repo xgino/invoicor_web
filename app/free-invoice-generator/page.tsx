@@ -3,7 +3,10 @@ import { Generator } from "@/components/generator/Generator";
 import { Container } from "@/components/ui/layout";
 import { AppStoreBadge, Breadcrumbs } from "@/components/ui/content";
 import { QrDownload } from "@/components/ui/QrDownload";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { getApiCurrencies, getApiLanguages, getApiTemplates } from "@/lib/api";
+import { howToLd, webAppLd } from "@/lib/jsonld";
+import { GeneratorContent, STEPS } from "./content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -11,6 +14,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Create a professional invoice online for free: pick a template, add your items and download a PDF. No signup. 38 currencies, 11 languages.",
   path: "/free-invoice-generator",
+  image: "/og-generator.png",
 });
 
 /** Fallbacks if the API can't be reached at build time (the tool still works with these). */
@@ -31,6 +35,16 @@ export default async function FreeInvoiceGeneratorPage() {
 
   return (
     <>
+      <JsonLd
+        data={[
+          webAppLd(),
+          howToLd(
+            "How to create an invoice in 3 steps",
+            "Create a professional invoice online and download it as a PDF.",
+            STEPS.map((step) => ({ name: step.name, text: step.text })),
+          ),
+        ]}
+      />
       <section className="bg-surface relative isolate">
         <div aria-hidden className="bg-brand-glow absolute inset-x-0 top-0 -z-10 h-[28rem]" />
         <Container className="pt-nav pb-section">
@@ -59,6 +73,7 @@ export default async function FreeInvoiceGeneratorPage() {
           />
         </Container>
       </section>
+      <GeneratorContent />
     </>
   );
 }

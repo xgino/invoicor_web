@@ -55,7 +55,9 @@ test("fill, preview, download, reveal the watermark line, download again for fre
   await page.getByRole("button", { name: "Download PDF" }).click();
   expect((await download).suggestedFilename()).toBe("invoice-INV-0001.pdf");
   await expect(page.getByText("Your invoice is downloaded")).toBeVisible();
-  await expect(page.getByText("Created with")).toBeVisible();
+  await expect(
+    page.locator("aside").getByText("Created with", { exact: false }).first(),
+  ).toBeVisible();
 
   const again = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download again" }).click();

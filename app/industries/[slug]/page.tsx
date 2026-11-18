@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppleIcon } from "@/components/brand/AppleIcon";
 import {
@@ -88,17 +89,25 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
         title={d.h1}
         subtitle={d.subtitle}
         actions={
-          <a
-            href={appStoreLink(`industry-${d.slug}`)}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-track="cta_click"
-            data-track-section={`industry-${d.slug}`}
-            className={buttonClass({ size: "lg" })}
-          >
-            <AppleIcon size={17} />
-            Start free on iOS
-          </a>
+          <>
+            <a
+              href={appStoreLink(`industry-${d.slug}`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="cta_click"
+              data-track-section={`industry-${d.slug}`}
+              className={buttonClass({ size: "lg" })}
+            >
+              <AppleIcon size={17} />
+              Start free on iOS
+            </a>
+            <Link
+              href="/free-invoice-generator"
+              className={buttonClass({ variant: "secondary", size: "lg" })}
+            >
+              Create one free online
+            </Link>
+          </>
         }
         aside={
           d.industry_stats.length > 0 && (

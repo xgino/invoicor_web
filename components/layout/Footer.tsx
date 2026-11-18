@@ -108,6 +108,9 @@ export function Footer() {
               <AllLink href="/compare">All comparisons</AllLink>
             </Column>
             <Column title="Company">
+              <Item href="/free-invoice-generator" track="generator">
+                Free invoice generator
+              </Item>
               <Item href="/#pricing" track="pricing">
                 Pricing
               </Item>

@@ -1,5 +1,6 @@
-/** Main navigation (ROADMAP chunk 18a). The generator link is added when it ships (chunk 35). */
+/** Main navigation (ROADMAP chunks 18a, 35e). */
 export const NAV_LINKS = [
+  { href: "/free-invoice-generator", label: "Free generator" },
   { href: "/templates", label: "Templates" },
   { href: "/industries", label: "Industries" },
   { href: "/compare", label: "Compare" },

@@ -1,5 +1,6 @@
-import { ArrowDown, File, FileSpreadsheet, FileText } from "lucide-react";
+import { File, FileSpreadsheet, FileText } from "lucide-react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppleIcon } from "@/components/brand/AppleIcon";
 import {
@@ -129,12 +130,12 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
               <AppleIcon size={17} />
               Create it in the app
             </a>
-            <a
-              href="#what-to-include"
+            <Link
+              href="/free-invoice-generator"
               className={buttonClass({ variant: "secondary", size: "lg" })}
             >
-              Read the guide <ArrowDown aria-hidden className="size-4" />
-            </a>
+              Create one free online
+            </Link>
           </>
         }
         aside={

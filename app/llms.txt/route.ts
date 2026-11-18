@@ -24,6 +24,7 @@ export function GET() {
 
 ${list([
   { title: "Home: features and pricing", path: "/" },
+  { title: "Free invoice generator (online, PDF, no signup)", path: "/free-invoice-generator" },
   { title: "Invoice templates by industry", path: "/templates" },
   { title: "Invoicing guides by industry", path: "/industries" },
   { title: "Invoicor compared with other invoice apps", path: "/compare" },
