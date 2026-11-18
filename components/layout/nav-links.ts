@@ -35,6 +35,7 @@ export function navLinksFor(locale: Locale): readonly NavLink[] {
     },
     ...(ROUTES.tools[locale] ? [{ href: ROUTES.tools[locale]!, label: t.tools }] : []),
     { href: home ? `${home}#pricing` : "/#pricing", label: t.pricing },
+    ...(ROUTES.help[locale] ? [{ href: ROUTES.help[locale]!, label: t.help }] : []),
   ];
 }
 

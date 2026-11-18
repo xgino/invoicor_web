@@ -127,7 +127,8 @@ _A separate site with 17 how-to articles, all about using the iPhone app ("How t
 on iPhone in seconds", "What is an invoice maker", "How to send an invoice from iPhone by email"…).
 Today the main site doesn't link to it, and it isn't in the keyword plan._
 
-- [ ] **L1** 🤖 **Fact-check the 17 articles against BRAND.md §10.** Titles like "How auto-fill helps you create invoices faster", "How to create a receipt on iPhone" and "How a tax calculator helps" may promise things the app doesn't do (no receipts or estimates; one tax rate per invoice). List every claim to fix; 👤 you edit the blog.
+- [x] **L1** 🤖 **Fact-check the 17 articles against BRAND.md §10.** Titles like "How auto-fill helps you create invoices faster", "How to create a receipt on iPhone" and "How a tax calculator helps" may promise things the app doesn't do (no receipts or estimates; one tax rate per invoice). List every claim to fix; 👤 you edit the blog. ✅ 2026-11-18 (Claude's part): all 17 articles checked, 129 spots in [docs/blog-fact-check-2026-11.md](docs/blog-fact-check-2026-11.md). Most are 5 repeated "stock lines" ("under 5 seconds", "80% auto fill", "tax calculator", "free to start" without the 3-invoice limit, "multi-currency" without a number): replace those once across all articles.
+- [ ] **L1-b** 👤 Fix the blog with that list. The worst 3 first: unpublish or rewrite "How to Create a Receipt on iPhone" (the app makes no receipts; rewrite as "mark an invoice as paid"); the checklist article shows raw code (`{'text': …, 'title': …}`) for all 13 items, a template bug; and the 5 stock lines. While editing, add one in-text link per article to the matching invoicor.com page (listed per article; this is the blog half of L2).
 - [ ] **L2** 🤖 **Link both ways.** ✅ Done in the nav (Blog) and footer (Blog & guides). Still to do: 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
 - [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. Add every article to `seo/keyword-map.csv`, so a blog post and a template page never target the same search (one search intent = one URL).
 - [ ] **L4** 🤖 **Guides go to the blog** (replaces chunk 42, after D16): write the planned how-to guides there (how to write an invoice, invoice numbering, payment terms explained, invoice vs receipt, how to invoice as a freelancer, late invoices), each with a FAQ, "last updated" and a link to the generator.
@@ -148,8 +149,8 @@ order below, one commit per step; a page only goes live in a language once it's 
 |---|---|---|---|
 | HL1 | Free invoice generator (+ its guide, written per country) | 1 → 10 | ✅ 2026-11-18 |
 | HL2 | Free tools hub + VAT, hours and hourly rate calculators | 4 → 40 | ✅ 2026-11-18 |
-| HL3 | Help & FAQ | 1 → 10 | ⏳ next |
-| HL4 | Templates hub + 20 template pages | 21 → 210 | planned (H4) |
+| HL3 | Help & FAQ | 1 → 10 | ✅ 2026-11-18 (`/de/hilfe`, `/fr/aide`…; app buttons quoted in English, since the app's screens are English; iPhone settings paths in the local language) |
+| HL4 | Templates hub + 20 template pages | 21 → 210 | planned (H4), after the launch, languages with traffic first (H6) |
 | HL5 | Industries hub + 20 industry pages | 21 → 210 | planned (H4) |
 | HL6 | Affiliate | 1 → 10 | planned |
 | HL7 | Privacy and Terms (English stays the binding version) + German *Impressum* (H7) | 2 → 20 | planned |

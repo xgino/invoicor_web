@@ -237,6 +237,11 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
                   {CHROME[locale].nav.tools}
                 </Item>
               )}
+              {ROUTES.help[locale] && (
+                <Item href={ROUTES.help[locale]!} track="help">
+                  {t.help}
+                </Item>
+              )}
               <Item href={home ? `${home}#pricing` : "/#pricing"} track="pricing">
                 {t.pricing}
               </Item>
@@ -258,7 +263,6 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               <EnglishItem href="/templates">{t.templates}</EnglishItem>
               <EnglishItem href="/industries">{t.industries}</EnglishItem>
               <EnglishItem href="/compare">{t.compare}</EnglishItem>
-              <EnglishItem href="/help">{t.help}</EnglishItem>
               <li>
                 <a href={BLOG_URL} hrefLang="en" className={LINK}>
                   Blog

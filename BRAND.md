@@ -161,7 +161,7 @@ the compare pages all read it.
 | Subtotal, discount, **one tax rate per invoice** (inclusive or exclusive) | Per-line tax / taxable toggles per item |
 | Status: draft, sent, paid, overdue, cancelled (a sent invoice is locked; duplicate to change it) | Read receipts, "client opened it" tracking, push notifications on payment, overdue reminders to clients |
 | Line items per invoice: Free 10, Starter 25, Pro 50 (API `subscriptions/limits.py`) | "Unlimited line items" |
-| 11 invoice languages, 38 currencies | "135 currencies", "any currency" |
+| 11 invoice languages, 38 currencies. **The app's own screens are in English** (checked in `invoicor_ios` 2026-11-18: no translations); only the invoices come in 11 languages | "135 currencies", "any currency"; "the app in your language" (say "invoices in your language") |
 | Dashboard (Starter and Pro), up to 3 business profiles (Pro) | Team members, assistant logins, multi-user |
 | Data on servers in Germany; needs an internet connection | Offline mode, background sync |
 | In-app feedback and email, read by the team (replies can take a few days) | Live chat, phone support, a response-time promise |

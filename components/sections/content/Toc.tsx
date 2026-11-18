@@ -12,7 +12,14 @@ export interface TocSection {
  * "On this page" list: a sticky sidebar on large screens that highlights the section in view.
  * Hidden on small screens (the page reads top to bottom there).
  */
-export function Toc({ sections }: { sections: TocSection[] }) {
+export function Toc({
+  sections,
+  label = "On this page",
+}: {
+  sections: TocSection[];
+  /** The heading, in the page's language. */
+  label?: string;
+}) {
   const [active, setActive] = useState("");
 
   useEffect(() => {
@@ -36,9 +43,9 @@ export function Toc({ sections }: { sections: TocSection[] }) {
   if (sections.length === 0) return <div className="hidden lg:block" />;
 
   return (
-    <nav aria-label="On this page" className="hidden lg:block">
+    <nav aria-label={label} className="hidden lg:block">
       <div className="sticky top-24 pt-14">
-        <p className="text-eyebrow text-subtle mb-3 uppercase">On this page</p>
+        <p className="text-eyebrow text-subtle mb-3 uppercase">{label}</p>
         <ul className="border-line space-y-0.5 border-l">
           {sections.map((s) => (
             <li key={s.id}>

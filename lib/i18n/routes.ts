@@ -8,7 +8,8 @@ import { DEFAULT_LOCALE, LOCALES, type Locale } from "./config";
  *
  * Client-safe (no server imports): the language switcher reads this table in the browser.
  */
-export type PageKey = "home" | "generator" | "android" | "tools" | "vat" | "hours" | "rate";
+export type PageKey =
+  "home" | "generator" | "android" | "tools" | "vat" | "hours" | "rate" | "help";
 
 export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   home: {
@@ -36,6 +37,19 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
     sv: "/sv/skapa-faktura",
     da: "/da/lav-faktura",
     nb: "/nb/lag-faktura",
+  },
+  help: {
+    en: "/help",
+    nl: "/nl/help",
+    de: "/de/hilfe",
+    fr: "/fr/aide",
+    es: "/es/ayuda",
+    it: "/it/aiuto",
+    pt: "/pt/ajuda",
+    pl: "/pl/pomoc",
+    sv: "/sv/hjalp",
+    da: "/da/hjaelp",
+    nb: "/nb/hjelp",
   },
   android: {
     en: "/android",

@@ -3,6 +3,7 @@ import { CHROME } from "@/lib/i18n/chrome";
 import { LOCALES } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
+import { HELP } from "@/lib/i18n/pages/help";
 import { HOME } from "@/lib/i18n/pages/home";
 import { TOOLS_TEXT } from "@/lib/i18n/pages/tools";
 import { STANDARD_RATES, hourlyRate } from "@/lib/tools/math";
@@ -159,5 +160,43 @@ describe("free tools translations (HL2)", () => {
     });
     expect(r, "the default inputs must give a result").not.toBeNull();
     expect(t.tools.generator.name).toBe(GENERATOR[l].page.crumb);
+  });
+});
+
+describe("help center translations (HL3)", () => {
+  it("cover all 11 languages", () => {
+    expect(Object.keys(HELP).sort()).toEqual([...LOCALES].sort());
+  });
+
+  it.each(LOCALES)("%s: same sections and questions as English", (l) => {
+    const t = HELP[l];
+    expect(t.meta.title.length, t.meta.title).toBeLessThanOrEqual(60);
+    expect(t.meta.description.length, t.meta.description).toBeLessThanOrEqual(155);
+    expect(t.sections.map((s) => s.id)).toEqual(HELP.en.sections.map((s) => s.id));
+    t.sections.forEach((s, i) =>
+      expect(s.items, s.id).toHaveLength(HELP.en.sections[i]!.items.length),
+    );
+  });
+
+  it.each(LOCALES)("%s: links sit in their answer, lists and the email stay", (l) => {
+    const items = HELP[l].sections.flatMap((s) => s.items);
+    const en = HELP.en.sections.flatMap((s) => s.items);
+    items.forEach((item, i) => {
+      const source = en[i]!;
+      if (source.link) {
+        expect(item.link, item.q).toBeDefined();
+        expect(item.a, item.q).toContain(item.link!.text);
+        expect(item.link!.page).toBe(source.link.page);
+      }
+      if (source.list) expect(item.list, item.q).toHaveLength(source.list.length);
+      expect(item.a.includes("{email}"), item.q).toBe(source.a.includes("{email}"));
+    });
+  });
+
+  it.each(LOCALES.filter((l) => l !== "en"))("%s: says the app's screens are in English", (l) => {
+    const devices = HELP[l].sections[0]!.items[3]!.a;
+    expect(devices).toMatch(
+      /English|Engels|Englisch|anglais|inglés|inglese|inglês|angielsk|engelsk/i,
+    );
   });
 });

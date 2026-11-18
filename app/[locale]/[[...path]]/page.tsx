@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
 import { GeneratorPage } from "@/components/sections/generator/GeneratorPage";
+import { HelpPage } from "@/components/sections/help/HelpPage";
 import { HomePage } from "@/components/sections/home/HomePage";
 import { ToolPage, ToolsHub } from "@/components/tools/ToolPage";
 import { HOME } from "@/lib/i18n/pages/home";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
+import { HELP } from "@/lib/i18n/pages/help";
 import { TOOLS_TEXT } from "@/lib/i18n/pages/tools";
 import { type PageKey, alternatesFor, localizedPaths } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo";
@@ -63,6 +65,10 @@ const PAGES: Record<
   rate: {
     render: (l) => <ToolPage tool="rate" locale={l} />,
     meta: (l) => TOOLS_TEXT[l].rate.meta,
+  },
+  help: {
+    render: (l) => <HelpPage locale={l} />,
+    meta: (l) => HELP[l].meta,
   },
   android: {
     render: (l) => <AndroidPage locale={l} />,

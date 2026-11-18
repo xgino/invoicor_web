@@ -73,10 +73,19 @@ export function PageHeader({
 }
 
 /** Article body with a sticky "On this page" list beside it on large screens. */
-export function ArticleLayout({ toc, children }: { toc: TocSection[]; children: ReactNode }) {
+export function ArticleLayout({
+  toc,
+  tocLabel,
+  children,
+}: {
+  toc: TocSection[];
+  /** "On this page" in the page's language. */
+  tocLabel?: string;
+  children: ReactNode;
+}) {
   return (
     <Container className="grid gap-12 pb-8 lg:grid-cols-[13rem_1fr] lg:gap-16">
-      <Toc sections={toc} />
+      <Toc sections={toc} label={tocLabel} />
       <div className="max-w-3xl min-w-0">{children}</div>
     </Container>
   );

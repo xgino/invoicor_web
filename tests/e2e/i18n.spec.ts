@@ -110,3 +110,24 @@ test.describe("English browser", () => {
     );
   });
 });
+
+test("the help center exists in every language, in that language", async ({ request }) => {
+  for (const [path, lang] of [
+    ["/nl/help", "nl"],
+    ["/de/hilfe", "de"],
+    ["/fr/aide", "fr"],
+    ["/es/ayuda", "es"],
+    ["/it/aiuto", "it"],
+    ["/pt/ajuda", "pt"],
+    ["/pl/pomoc", "pl"],
+    ["/sv/hjalp", "sv"],
+    ["/da/hjaelp", "da"],
+    ["/nb/hjelp", "nb"],
+  ]) {
+    const res = await request.get(path!);
+    expect(res.status(), path).toBe(200);
+    const html = await res.text();
+    expect(html, path).toContain(`lang="${lang}"`);
+    expect(html, path).toContain('"@type":"FAQPage"');
+  }
+});

@@ -144,3 +144,13 @@
 /sv/verktyg/rakna-ut-timpris
 /da/vaerktoejer/beregn-timepris
 /nb/verktoy/beregn-timepris
+/nl/help
+/de/hilfe
+/fr/aide
+/es/ayuda
+/it/aiuto
+/pt/ajuda
+/pl/pomoc
+/sv/hjalp
+/da/hjaelp
+/nb/hjelp
