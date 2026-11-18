@@ -130,7 +130,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P12. Monthly price first, "billed yearly" below; local currency note
 - [x] P13. Hand-drawn doodles: arrows and circles that draw themselves
 - [x] P14. "Who it's for": the people Invoicor is built for
-- [ ] P15. Real app screens in an iPhone frame
+- [x] P15. Real app screens in an iPhone frame
 - [ ] P16. Sticky "Get the app" bar on phones
 - [ ] P17. QR code for desktop visitors
 - [ ] P18. Mobile and speed recheck
@@ -1065,7 +1065,7 @@ your accountant" (there is no data export feature; BRAND.md §10).
 conversion piece. Crop the real screens (dashboard, new invoice, share) from the App Store images in
 `invoicor_api/logo/images v1.6.3/eng/` into a CSS iPhone frame, as optimised WebP. Better later:
 fresh screenshots straight from the app (X17).
-- [ ] Build it.
+- [x] Build it. _(✅ 2026-11-18: "Know where your money is, always." section with the real dashboard in `IPhoneFrame` and a real sent invoice floating beside it (26 KB + 8 KB WebP). Not used: the new-invoice screen (only marketing artwork below the header) and the share sheet (stock-photo faces).)_
 
 **P16. Sticky "Get the app" bar on phones.** After the hero scrolls away, a slim bar at the bottom
 of the screen keeps the download one tap away (hidden on desktop, hidden near the final CTA).

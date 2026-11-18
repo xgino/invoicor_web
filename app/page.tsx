@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { AppPreview } from "@/components/sections/home/AppPreview";
 import { Features } from "@/components/sections/home/Features";
 import { FinalCta } from "@/components/sections/home/FinalCta";
 import { Hero } from "@/components/sections/home/Hero";
@@ -34,6 +35,7 @@ export default function HomePage() {
       <Templates />
       <HowItWorks />
       <WhoItsFor />
+      <AppPreview />
       <Features />
       <KeepYourMoney />
       <PricingSection />
