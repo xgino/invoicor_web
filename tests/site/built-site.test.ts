@@ -38,6 +38,11 @@ describe("every public URL still exists", () => {
     const canonical = attr(html, /<link rel="canonical" href="([^"]+)"/);
     expect(canonical).toBe(path === "/" ? SITE : `${SITE}${path}`);
 
+    // Unique ids (FAQ deep links, anchors)
+    const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
+    const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
+    expect(dupes, "duplicate ids").toEqual([]);
+
     // Indexable
     expect(html).not.toMatch(/<meta name="robots" content="noindex/);
 

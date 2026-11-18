@@ -3,6 +3,7 @@ import { Analytics } from "@/components/analytics/Analytics";
 import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { HashOpener } from "@/components/layout/HashOpener";
 import { RevealObserver } from "@/components/layout/RevealObserver";
 import { SvgDefs } from "@/components/ui/layout";
 import { APP_STORE_ID, SITE_NAME, SITE_URL } from "@/lib/config";
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="grow">{children}</main>
         <Footer />
         <RevealObserver />
+        <HashOpener />
         <Analytics />
         <ConsentBanner />
       </body>

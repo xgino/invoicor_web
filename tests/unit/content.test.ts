@@ -41,3 +41,11 @@ describe("what the industry pages say Invoicor does", () => {
     for (const [key, value] of fields) expect(String(value), key).not.toMatch(claims);
   });
 });
+
+describe("FAQ deep links", () => {
+  it("turns questions into stable, readable ids", async () => {
+    const { questionId } = await import("@/components/ui/Accordion");
+    expect(questionId("How do I pay an invoice safely?")).toBe("how-do-i-pay-an-invoice-safely");
+    expect(questionId("Sending & Tracking: what's new?")).toBe("sending-and-tracking-what-s-new");
+  });
+});

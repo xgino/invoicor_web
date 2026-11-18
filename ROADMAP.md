@@ -122,7 +122,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
 - [x] P7. Premium motion: drawn underlines, moving background, glows
 - [x] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
-- [ ] P9. FAQ search optimisation
+- [x] P9. FAQ search optimisation
 - [ ] P10. Mobile and speed pass
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
@@ -989,7 +989,7 @@ _✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fra
   draft, not legal advice.
 
 ### P9. FAQ search optimisation
-- [ ] Your question: is the FAQ optimised for search? Answer: partly. Every FAQ already has matching
+- [x] _(✅ 2026-11-18: every FAQ question is a real heading with a stable id from its text (e.g. `/help#how-do-i-pay-an-invoice-safely`), `HashOpener` opens a linked answer, FAQPage JSON-LD kept, a built-site test checks ids are unique on every page. Questions are already phrased the way people ask; refine with Search Console queries after X2.)_ Your question: is the FAQ optimised for search? Answer: partly. Every FAQ already has matching
   FAQPage structured data. But Google only shows FAQ rich results for well-known government and health
   sites since 2023, so the value now is: questions phrased the way people search, answers that are
   in the HTML (they are), question headings, and deep links per question (good for "People also
