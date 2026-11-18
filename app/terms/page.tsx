@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LegalPage, H, P, S, LEGAL_LINK } from "@/components/sections/content/legal";
+import { B, H, LEGAL_LINK, LegalPage, P, S } from "@/components/sections/content/legal";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { buildMetadata } from "@/lib/seo";
 
@@ -167,6 +167,14 @@ export default function TermsPage() {
           We do not warrant that calculations will be error-free, that the Service will meet your
           specific requirements, or that it will be compatible with all devices or network
           configurations.
+        </P>
+        <P>
+          <B>Security.</B> We protect the Service with standard security measures (encrypted
+          connections, hashed passwords, restricted server access). No online service is completely
+          secure. To the maximum extent permitted by applicable law, Invoicor is not liable for
+          damage caused by hacking, unauthorized access or other security incidents that happen
+          despite these measures. You are responsible for keeping your device and sign-in details
+          secure.
         </P>
       </S>
 

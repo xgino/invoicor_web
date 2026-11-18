@@ -18,7 +18,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     question: "Do I need a card for the free trial?",
-    answer: `Not for the free plan: your first ${FREE_INVOICES} invoices need no subscription and no payment. The free trials of Starter and Pro (${PRICING.trial_days.monthly} days monthly, ${PRICING.trial_days.yearly} days yearly) run through Apple: you confirm with your Apple ID, which needs a payment method, and Apple only charges after the trial if you don't cancel. Invoicor never sees your card.`,
+    answer: `Not for the free plan: your first ${FREE_INVOICES} invoices need no subscription and no payment. The free trials of Starter and Pro (${PRICING.trial_days.monthly} days monthly, ${PRICING.trial_days.yearly} days yearly) run through Apple: you start them with your Apple ID, which needs a payment method. Cancel before the trial ends and you pay nothing. Invoicor never sees your card.`,
   },
   {
     question: "Can I invoice in other currencies and languages?",
@@ -28,12 +28,12 @@ export const HOME_FAQS: Faq[] = [
   {
     question: "How fast can I create an invoice?",
     answer:
-      "Fast. Your business details, saved clients and saved products fill in for you, totals and tax are calculated as you go, and you share the PDF straight from your iPhone by email, WhatsApp or AirDrop.",
+      "Once your business details, clients and products are saved, a new invoice is a few taps: pick the client, add saved items, and totals and tax are calculated for you. Then share the PDF straight from your iPhone by email, WhatsApp or AirDrop.",
   },
   {
     question: "Is my data safe?",
     answer:
-      "Your account and invoice data is stored on servers in Germany, under EU data protection rules (GDPR). We never sell your data. Website analytics only run if you accept cookies.",
+      "We protect it with standard measures: your account and invoice data is stored on servers in Germany under EU data protection rules (GDPR), every connection is encrypted (HTTPS), passwords are stored hashed, and we never sell your data. No online service can promise perfect security, but we work to keep your data from being accessed without permission.",
   },
   {
     question: "Does Invoicor calculate tax and discounts?",

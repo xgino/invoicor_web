@@ -43,9 +43,10 @@ export default function PrivacyPage() {
 
       <S n="3" t="Data We Collect">
         <P>
-          <B>Account data:</B> When you register, we collect your email address and an encrypted
-          password. If you use Sign in with Apple, Apple provides us with a verified email address
-          (or a private relay address if you choose to hide your email).
+          <B>Account data:</B> When you register, we collect your email address and a password,
+          which is stored hashed (scrambled, so nobody can read it). If you use Sign in with Apple
+          or Sign in with Google, that service gives us a verified email address (with Apple, a
+          private relay address if you choose to hide your email) and no password is stored.
         </P>
         <P>
           <B>Business data:</B> Information you enter into your business profiles, including company
@@ -89,19 +90,23 @@ export default function PrivacyPage() {
 
       <S n="5" t="Data Storage and Security">
         <H>
-          All user-generated content (invoices, client details, business profiles) is stored on
-          enterprise-grade servers located in Germany. We rely on German infrastructure to ensure
-          your data benefits from the rigorous privacy standards of the European Union.
+          Your account and invoice data (invoices, clients, business profiles) is stored on servers
+          in Germany, in the European Union, and handled under the GDPR.
         </H>
         <P>
-          Invoicor does not permanently store data locally on your iOS device. The app functions by
-          securely fetching your data in real-time from our servers via encrypted API connections
-          (HTTPS/TLS).
+          Invoicor does not permanently store data on your iPhone. The app loads your data from our
+          servers over encrypted connections (HTTPS).
         </P>
         <P>
-          We implement industry-standard security measures including encryption in transit and at
-          rest, access controls, and regular security reviews. However, no digital system is
-          impenetrable, and we cannot guarantee absolute security.
+          We use standard protection measures: every connection to our servers is encrypted (HTTPS),
+          passwords are stored hashed, sign-in uses secure tokens (or Sign in with Apple or Google),
+          and access to the servers is restricted to what is needed to run Invoicor.
+        </P>
+        <P>
+          No service connected to the internet can be made completely secure, so we cannot guarantee
+          that your data will never be accessed without permission. We work to prevent it, and if a
+          breach affecting your personal data happens, we will inform you and the authorities as the
+          law requires.
         </P>
       </S>
 
@@ -115,6 +120,11 @@ export default function PrivacyPage() {
           authenticates your identity and shares basic profile information. All financial
           transactions are processed by Apple through the App Store. We never see, process, or store
           your payment information.
+        </P>
+        <P>
+          <B>Google (Sign in with Google):</B> If you choose Sign in with Google, Google confirms
+          your identity and shares your name and email address with us. Google does not receive your
+          invoice data.
         </P>
         <P>
           <B>RevenueCat (Subscription Management):</B> We use RevenueCat to validate your

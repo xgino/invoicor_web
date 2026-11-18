@@ -45,7 +45,7 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
       },
       {
         q: "Which devices are supported?",
-        a: "Invoicor is available for iPhone running iOS 17.6 or later. iPad is supported in compatibility mode. A web version is not currently available — your data is accessed through the iOS app.",
+        a: "Invoicor runs on iPhone and iPad with iOS or iPadOS 17.6 or later. A web version is not available yet; your data is accessed through the app.",
       },
     ],
   },
@@ -126,19 +126,19 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
     items: [
       {
         q: "How do subscriptions work?",
-        a: "Invoicor offers Starter and Pro plans, billed monthly or yearly through the Apple App Store. All billing is handled by Apple — we never see or store your payment information. You can manage or cancel your subscription in your iPhone's Settings → Apple ID → Subscriptions.",
+        a: "Invoicor offers Starter and Pro plans, billed monthly or yearly through the Apple App Store. All billing is handled by Apple — we never see or store your payment information. You can manage or cancel your subscription in your iPhone's Settings → your name → Subscriptions.",
       },
       {
         q: "Do I need a card for the free trial?",
-        a: "Not for the free plan: your first 3 invoices need no subscription and no payment. The free trials of Starter and Pro run through Apple: you confirm with your Apple ID, which needs a payment method, and Apple only charges after the trial if you don't cancel. Invoicor never sees your card.",
+        a: "Not for the free plan: your first 3 invoices need no subscription and no payment. The free trials of Starter and Pro run through Apple: you start them with your Apple ID, which needs a payment method. Cancel before the trial ends and you pay nothing. Invoicor never sees your card.",
       },
       {
         q: "Can I cancel my subscription?",
-        a: "Yes, anytime. Go to your iPhone Settings → Apple ID → Subscriptions → Invoicor → Cancel. Your plan stays active until the end of the current billing period. You won't be charged again.",
+        a: "Yes, anytime. Go to your iPhone Settings → your name → Subscriptions → Invoicor → Cancel. Your plan stays active until the end of the current billing period. You won't be charged again.",
       },
       {
         q: "What happens if I downgrade to Free?",
-        a: "Your existing invoices, clients, and data remain intact. You can still view, share, and track all previously created invoices. You just won't be able to create new invoices beyond the free limit until you resubscribe.",
+        a: "Your existing invoices, clients and data stay intact, and you can still view, share and track every invoice you made. The free plan includes 3 invoices in total, so if you've already created 3 or more, you'll need a plan again to create new ones.",
       },
       {
         q: "How do I delete my account?",
@@ -166,15 +166,20 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
     items: [
       {
         q: "Where is my data stored?",
-        a: "Your account and invoice data is stored on secure servers in Germany, within the European Union, under GDPR. Website analytics on invoicor.com (Google Analytics and PostHog, US services) only run if you accept cookies.",
+        a: "Your account and invoice data is stored on servers in Germany, in the European Union, under the GDPR. Website analytics on invoicor.com (Google Analytics and PostHog, US services) only run if you accept cookies.",
+      },
+      {
+        q: "How do you protect my data?",
+        a: "With standard protection measures: every connection between the app and our servers is encrypted (HTTPS), passwords are stored hashed, sign-in uses secure tokens (or Sign in with Apple or Google), and access to our servers in Germany is restricted. No online service can be completely secure, but we work to keep your data from being accessed without permission.",
       },
       {
         q: "Do you sell my data?",
-        a: "No. We do not sell, rent, or share your personal data or your clients' data with anyone. Read our full Privacy Policy.",
+        a: "No. We never sell or rent your data or your clients' data. We only share what is needed with the services that run Invoicor (our hosting provider in Germany, Apple or Google if you sign in with them, and our subscription service), each listed in our Privacy Policy.",
         rich: (
           <>
-            No. We do not sell, rent, or share your personal data or your clients&apos; data with
-            anyone. Read our full{" "}
+            No. We never sell or rent your data or your clients&apos; data. We only share what is
+            needed with the services that run Invoicor (our hosting provider in Germany, Apple or
+            Google if you sign in with them, and our subscription service), each listed in our{" "}
             <Link
               href="/privacy"
               className="text-brand-700 font-medium underline underline-offset-2"

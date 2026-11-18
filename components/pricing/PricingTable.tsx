@@ -87,8 +87,8 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
       <p className="text-small text-subtle mt-6 text-center">
         Prices in {PRICING.currency}. The App Store shows your local price, set by Apple, which may
         include local taxes. The free plan needs no subscription. Free trials start with your Apple
-        ID, and Apple bills after the trial unless you cancel (any time, in your iPhone settings).
-        Yearly saves {YEARLY_SAVING_PERCENT}% against paying monthly.
+        ID; cancel before a trial ends (in your iPhone settings) and you pay nothing. Yearly saves{" "}
+        {YEARLY_SAVING_PERCENT}% against paying monthly.
       </p>
     </div>
   );
@@ -248,7 +248,7 @@ function PlanInvoice({
         <p className="text-small text-subtle mt-2 text-center">
           {free
             ? "No subscription, no payment"
-            : "Billed by Apple after the trial unless you cancel"}
+            : "Cancel before the trial ends and you pay nothing"}
         </p>
       </InvoicePaper>
     </div>
