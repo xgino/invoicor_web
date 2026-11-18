@@ -90,7 +90,9 @@ To override something locally, copy `.env.example` to `.env.local`.
 formatted, content JSON is checked, and the project is type-checked. GitHub Actions
 (`.github/workflows/check.yml`) runs everything `npm run check` runs (lint, types, content rules,
 unit tests, build, built-site tests and browser tests with Chrome) on every push to `dev` and
-`main`. It never deploys.
+`main`. On `main` only, and only when all of that passed, its `deploy` job uploads the site to the
+VPS. Going live is one command, `bash deploy/deploy.sh`; the one-time setup is
+`bash deploy/setup.sh` ([DEPLOY.md](DEPLOY.md)).
 
 ## Design system
 

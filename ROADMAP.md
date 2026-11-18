@@ -334,7 +334,7 @@ Data (Search Console, 28 days to 2026-11-18): almost all impressions went to 6 p
 - [x] P11–P20. Price anchors · monthly price first · hand-drawn doodles · "Who it's for" · real app screens in an iPhone frame · sticky "Get the app" bar · QR code for desktop · speed recheck (LCP ≈ 0.7 s, CLS 0) · FAQ audit · plain security wording.
 
 ### Stage F: Switch to Next.js (prepared 2026-11-18; the launch itself is X3–X6)
-- [x] 26. Staging config, `deploy.sh --staging`, [seo/QA.md](seo/QA.md) (running it: X4).
+- [x] 26. Staging config and [seo/QA.md](seo/QA.md) (staging dropped 2026-11-18, your choice: QA runs on a local preview, X4; deploys via `deploy/setup.sh` + `deploy/deploy.sh`, X22).
 - [x] 27. URL parity check: `npm run parity`, 0 failures against the live site.
 - [x] 28. Launch runbook (DEPLOY.md C). 29 → X13.
 
