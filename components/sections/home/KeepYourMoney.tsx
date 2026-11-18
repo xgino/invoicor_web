@@ -1,5 +1,6 @@
 import { HandCoins, Landmark, ShieldCheck } from "lucide-react";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
+import { TrustRow } from "@/components/ui/TrustRow";
 import { FeeCalculator } from "./FeeCalculator";
 
 const POINTS = [
@@ -48,6 +49,7 @@ export function KeepYourMoney() {
               </li>
             ))}
           </ul>
+          <TrustRow show="pay" className="mt-9" />
         </div>
         <div
           className="reveal mx-auto w-full max-w-md"

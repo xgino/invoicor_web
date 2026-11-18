@@ -6,6 +6,7 @@ import { InvoicePaper, LineItems, PaperLabel, Stamp } from "@/components/ui/invo
 import { Container, Eyebrow, Gradient } from "@/components/ui/layout";
 import { appStoreLink } from "@/lib/config";
 import { FREE_INVOICES } from "@/lib/pricing";
+import { TrustRow } from "@/components/ui/TrustRow";
 
 const PROMISES = [`${FREE_INVOICES} invoices free`, "No watermark", "No subscription needed"];
 
@@ -107,6 +108,9 @@ export function Hero() {
             Sent via WhatsApp as PDF
           </div>
         </div>
+      </Container>
+      <Container className="pb-14">
+        <TrustRow className="reveal border-line border-t pt-8" />
       </Container>
     </section>
   );

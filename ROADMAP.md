@@ -115,7 +115,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 
 **Stage P: Polish from your review (2026-11-18)** _(your remarks on the new site; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
-- [ ] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
+- [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [ ] P3. "How it works" as a visible path
 - [ ] P4. Promises that stand out
 - [ ] P5. Fee calculator, rewritten as a gain
@@ -930,13 +930,14 @@ _✅ 2026-11-18: "No card needed" → "No subscription needed" everywhere; a bil
   It makes the invoice; you add your own payment link or bank details; your client pays you directly.
 
 ### P2. Trust row: "send it anywhere"
-- [ ] a. Your idea: use WhatsApp, PDF and other well-known icons to borrow credibility.
+_✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in "You keep the money" (pay). Names with neutral icons, no third-party logos._
+- [x] a. Your idea: use WhatsApp, PDF and other well-known icons to borrow credibility.
   Recommendation: **show the names, not the logos.** Other companies' logos on our site can read as a
   partnership or endorsement, and most brand guidelines (WhatsApp, PayPal, Stripe) restrict that use.
   Generic, recognisable icons with the names give the same instant recognition without the risk:
   PDF · Mail · Messages · WhatsApp · AirDrop, and "works with your own PayPal, Stripe, Wise or bank
   link". The App Store badge is the one official logo we may use (Apple allows it).
-- [ ] b. Place it under the hero and on the pricing section; reusable component.
+- [x] b. Placed under the hero and in the "You keep the money" section (where the payment message belongs); reusable component.
 
 ### P3. "How it works" as a path
 - [ ] Your remark: the three steps are easy to overlook. Make them a connected path: numbered nodes on
