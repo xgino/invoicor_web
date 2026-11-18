@@ -6,7 +6,7 @@ import { Logo } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
-import { CONTACT_EMAIL } from "@/lib/config";
+import { BLOG_URL, CONTACT_EMAIL } from "@/lib/config";
 import { getTemplates } from "@/lib/content";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
@@ -56,9 +56,6 @@ function AllLink({ href, children }: { href: string; children: ReactNode }) {
     </li>
   );
 }
-
-/** learn.invoicor.com: the blog with how-to articles (ROADMAP L2: link both ways). */
-export const BLOG_URL = "https://learn.invoicor.com/";
 
 /**
  * The 3 templates with the most search impressions (Search Console, 28 days to 2026-11-18;

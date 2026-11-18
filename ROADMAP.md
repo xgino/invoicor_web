@@ -131,7 +131,7 @@ Today the main site doesn't link to it, and it isn't in the keyword plan._
 - [ ] **L2** 🤖 **Link both ways.** ✅ Done in the nav (Blog) and footer (Blog & guides). Still to do: 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
 - [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. Add every article to `seo/keyword-map.csv`, so a blog post and a template page never target the same search (one search intent = one URL).
 - [ ] **L4** 🤖 **Guides go to the blog** (replaces chunk 42, after D16): write the planned how-to guides there (how to write an invoice, invoice numbering, payment terms explained, invoice vs receipt, how to invoice as a freelancer, late invoices), each with a FAQ, "last updated" and a link to the generator.
-- [ ] **L5** 🤖 Mention learn.invoicor.com in `llms.txt` and the Organization JSON-LD, so AI assistants connect the two sites.
+- [x] **L5** 🤖 Mention learn.invoicor.com in `llms.txt` and the Organization JSON-LD, so AI assistants connect the two sites. ✅ 2026-11-18: `llms.txt` names the blog and its sitemap and lists the home, generator and tools pages in all 10 other languages; the home page has a `Blog` JSON-LD node published by the Invoicor organization. `BLOG_URL` lives in `lib/config.ts`.
 
 ## 4. Later: growth and scale
 

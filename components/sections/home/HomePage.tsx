@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/seo/JsonLd";
 import type { Locale } from "@/lib/i18n/config";
 import type { HomeDict } from "@/lib/i18n/pages/home/en";
-import { mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
+import { blogLd, mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
 import { AppPreview } from "./AppPreview";
 import { Features } from "./Features";
 import { FinalCta } from "./FinalCta";
@@ -23,7 +23,7 @@ export function HomePage({ t, locale }: { t: HomeDict; locale: Locale }) {
   const p = { t, locale };
   return (
     <>
-      <JsonLd data={[organizationLd(), websiteLd(), mobileAppLd()]} />
+      <JsonLd data={[organizationLd(), websiteLd(), mobileAppLd(), blogLd()]} />
       <Hero {...p} />
       <ProofBand {...p} />
       <Templates {...p} />

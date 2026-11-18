@@ -17,6 +17,9 @@ export const API_URL = stripTrailingSlash(
 );
 
 export const SITE_NAME = "Invoicor";
+/** The blog with how-to articles (ROADMAP L), a separate site on its own subdomain. */
+export const BLOG_URL = "https://learn.invoicor.com/";
+
 export const CONTACT_EMAIL = "info@invoicor.com";
 
 export const APP_STORE_ID = "6761840276";
