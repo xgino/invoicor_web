@@ -25,6 +25,7 @@ import {
   PaymentSection,
   TaxSection,
 } from "./FormSections";
+import { GeneratePanel } from "./GeneratePanel";
 import { Preview } from "./Preview";
 import { reducer } from "./reducer";
 import { type GeneratorTemplate, TemplatePicker } from "./TemplatePicker";
@@ -49,7 +50,6 @@ export function Generator({
   const ready = useRef(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [tab, setTab] = useState<"form" | "preview">("form");
-  const [previewError, setPreviewError] = useState<string | null>(null);
   const [generated, setGenerated] = useState(false);
   const started = useRef(false);
 
@@ -87,7 +87,6 @@ export function Generator({
   const payload = useMemo(() => JSON.stringify(toPayload(draft)), [draft]);
   const totals = computeTotals(draft);
   const template = templates.find((t) => t.slug === draft.template_slug);
-  const onPreviewError = useCallback((m: string | null) => setPreviewError(m), []);
 
   function pickTemplate(slug: string) {
     track("gen_template_change", { template: slug });
@@ -175,7 +174,6 @@ export function Generator({
 
         <Preview
           payload={payload}
-          onError={onPreviewError}
           footer={
             <p
               className={cx(
@@ -209,11 +207,12 @@ export function Generator({
             <dd className="font-heading text-h4">{formatMoney(totals.total, draft.currency)}</dd>
           </div>
         </dl>
-
-        {/* Generate flow: chunk 34 */}
-        <div data-generated={generated} data-preview-error={previewError ?? ""} hidden>
-          {appCta}
-        </div>
+        <GeneratePanel
+          draft={draft}
+          dispatch={update}
+          onGenerated={() => setGenerated(true)}
+          appCta={appCta}
+        />
       </aside>
 
       <TemplatePicker

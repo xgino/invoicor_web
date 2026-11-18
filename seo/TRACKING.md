@@ -22,6 +22,12 @@ place that sends events), `components/analytics/ClickTracker.tsx` (clicks).
 | `$pageview` (PostHog) / `page_view` (GA4) | every page | automatic |
 | `cta_click` | any App Store or sign-up button | `section`: where it was clicked (see campaigns below) |
 | `footer_click` | footer links to pricing, help, affiliate, email, privacy, terms | `link` |
+| `gen_form_start` | first edit in the free invoice generator | none |
+| `gen_template_change` | a template picked in the generator | `template` |
+| `gen_generate` | "Download PDF" clicked | `template`, `currency`, `language` (no invoice content) |
+| `gen_download` | the PDF downloaded | none |
+| `gen_error` | the PDF couldn't be made | `code` (`rate_limited`, `bot_check`, `unavailable`, …) |
+| `gen_app_click` | a locked template clicked (goes to the App Store) | `section` |
 
 Add tracking to a link with attributes, no JavaScript needed:
 `<a data-track="cta_click" data-track-section="hero">`.
@@ -40,6 +46,7 @@ show installs per placement. **This only works once the provider token is set** 
 | `industry-{slug}`, `industry-{slug}-footer` | industry pages |
 | `compare-{slug}`, `compare-{slug}-footer` | compare pages |
 | `templates-hub`, `industries-hub`, `compare-hub` | hub pages |
+| `gen_success`, `qr_gen_success`, `gen-locked` | generator: after a download, QR code, locked template |
 
 ## The funnel to watch (PostHog)
 

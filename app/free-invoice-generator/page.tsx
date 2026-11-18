@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Generator } from "@/components/generator/Generator";
 import { Container } from "@/components/ui/layout";
-import { Breadcrumbs } from "@/components/ui/content";
+import { AppStoreBadge, Breadcrumbs } from "@/components/ui/content";
+import { QrDownload } from "@/components/ui/QrDownload";
 import { getApiCurrencies, getApiLanguages, getApiTemplates } from "@/lib/api";
 import { buildMetadata } from "@/lib/seo";
 
@@ -49,6 +50,12 @@ export default async function FreeInvoiceGeneratorPage() {
             templates={templates.map(({ slug, name, tier }) => ({ slug, name, tier }))}
             currencies={currencies.length > 0 ? currencies : FALLBACK_CURRENCIES}
             languages={languages.length > 0 ? languages : FALLBACK_LANGUAGES}
+            appCta={
+              <div className="flex flex-wrap items-center gap-4">
+                <AppStoreBadge campaign="gen_success" />
+                <QrDownload campaign="qr_gen_success" />
+              </div>
+            }
           />
         </Container>
       </section>

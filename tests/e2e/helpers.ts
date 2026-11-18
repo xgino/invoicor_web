@@ -5,6 +5,7 @@ import type { Page } from "@playwright/test";
 /** One page of each type: the accessibility and smoke tests run on these. */
 export const PAGE_TYPES = {
   home: "/",
+  generator: "/free-invoice-generator",
   "templates hub": "/templates",
   template: "/templates/plumbing",
   "industries hub": "/industries",

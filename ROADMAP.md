@@ -144,7 +144,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] 31. API: public PDF + watermark + abuse limits _(✅ 2026-11-18, same branch; Turnstile on with X19)_
 - [x] 32. Generator page: form _(✅ 2026-11-18)_
 - [x] 33. Generator page: live preview & template picker _(✅ 2026-11-18)_
-- [ ] 34. Generate flow, watermark reveal & signup handoff
+- [x] 34. Generate flow, watermark reveal & signup handoff _(✅ 2026-11-18; the app handoff needs an iOS update)_
 - [ ] 35. Generator SEO content & launch
 
 **Stage H: Languages**
@@ -1199,11 +1199,13 @@ lives on the server:
 ### 34. Generate flow, watermark reveal & signup handoff
 **Goal:** the generate moment turns visitors into users.
 
-- [ ] a. The **Generate invoice** button runs Turnstile, then `public/pdf`, then downloads `invoice-{number}.pdf`.
-- [ ] b. Animation: the invoice “prints” and slides out; **then** “Created with invoicor.com” fades in under the preview. That line appears **only after generating**, matching the PDF.
-- [ ] c. Success panel: Download again · Create another · **“Save this client & send it from your phone, free in the app”** (App Store + QR code on desktop) · “Create a free account”.
-- [ ] d. Handoff: create an `onboarding/session` with the draft, so that after signing up `onboarding/link` attaches the client and business details to the new account. Check what the iOS app needs for this.
-- [ ] e. Analytics through `track()`: `gen_form_start`, `gen_template_change`, `gen_generate`, `gen_download`, `gen_app_click`, `gen_signup_click`.
+- [x] a. The **Generate invoice** button runs Turnstile, then `public/pdf`, then downloads `invoice-{number}.pdf`.
+- [x] b. Animation: the invoice “prints” and slides out; **then** “Created with invoicor.com” fades in under the preview. That line appears **only after generating**, matching the PDF.
+- [x] c. Success panel: Download again · Create another · **“Save this client & send it from your phone, free in the app”** (App Store + QR code on desktop) · “Create a free account”.
+- ➜ d. _(needs an app update: the onboarding endpoints track the app's own sign-up funnel and can't carry an invoice draft yet; idea for the iOS roadmap, R9)_ Handoff: create an `onboarding/session` with the draft, so that after signing up `onboarding/link` attaches the client and business details to the new account. Check what the iOS app needs for this.
+- [x] e. Analytics through `track()`: `gen_form_start`, `gen_template_change`, `gen_generate`, `gen_download`, `gen_app_click`, `gen_signup_click`.
+
+_✅ 2026-11-18: `components/generator/GeneratePanel.tsx`: bot check (when X19 is on) → PDF → download `invoice-{number}.pdf` → "Created with invoicor.com" fades in under the preview → success panel (Download again from the same file, no extra API call · Create another, keeps your business and bumps the number · app pitch with App Store badge and QR). 5 s cooldown + plain-language errors (UX only). Browser tests with a mocked API._
 
 **Done when:** a full run (fill → generate → PDF → app click) works, and every event shows up in PostHog.
 
