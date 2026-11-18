@@ -127,7 +127,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P9. FAQ search optimisation
 - [x] P10. Mobile and speed pass
 - [x] P11. Price anchors per plan (coffee as a saying, a unique one for Pro)
-- [ ] P12. Monthly price first, "billed yearly" below; local currency note
+- [x] P12. Monthly price first, "billed yearly" below; local currency note
 - [ ] P13. Hand-drawn doodles: arrows and circles that draw themselves
 - [ ] P14. "Who it's for": the people Invoicor is built for
 - [ ] P15. Real app screens in an iPhone frame
@@ -1035,7 +1035,7 @@ _✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fra
 feel less unique. Answer: it works as a saying ("about the price of a coffee"), not a price claim,
 so soften it to **"About one coffee a month"** on Starter. Pro gets its **own** anchor from real
 math: **"$0.22 a day"** on yearly / "$0.27 a day" monthly (calculated from the price, never typed).
-Free: "Free for your first 3 invoices, no time limit". Each plan has one anchor, none repeated.
+Free: "No subscription, no payment details, no catch" (its features already say 3 invoices). Each plan has one anchor, none repeated.
 - [x] Build it. _(✅ 2026-11-18: `pricePerDay()` in `lib/pricing.ts`, tested)_
 
 **P12. Monthly price first.** Show what people compare: **"$6.67 /month"** big on the yearly plans,
@@ -1043,7 +1043,7 @@ with **"billed $79.99 once a year"** right under it (both always visible: clear 
 consumer law). The invoice lines below stay as the breakdown. Plus a note: "Prices in USD. The App
 Store shows your local price, set by Apple, which may include local taxes." (Apple converts prices
 per country; we don't control or know each local price.)
-- [ ] Build it.
+- [x] Build it. _(✅ 2026-11-18; the trial line now says "7-day free trial, then $79.99 a year")_
 
 **P13. Hand-drawn doodles.** You love the drawn lines. Add a small kit (`DrawnArrow`, `DrawnCircle`)
 that draws itself on scroll, used in 3 places only so it stays premium: a circle around **0%** in

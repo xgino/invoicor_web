@@ -75,9 +75,10 @@ export function PricingTable({ campaign = "pricing" }: { campaign?: string }) {
         </ul>
       </div>
       <p className="text-small text-subtle mt-6 text-center">
-        Prices in {PRICING.currency}. The free plan needs no subscription. Free trials start with
-        your Apple ID, and Apple bills after the trial unless you cancel (any time, in your iPhone
-        settings). Yearly saves {YEARLY_SAVING_PERCENT}% against paying monthly.
+        Prices in {PRICING.currency}. The App Store shows your local price, set by Apple, which may
+        include local taxes. The free plan needs no subscription. Free trials start with your Apple
+        ID, and Apple bills after the trial unless you cancel (any time, in your iPhone settings).
+        Yearly saves {YEARLY_SAVING_PERCENT}% against paying monthly.
       </p>
     </div>
   );
@@ -161,6 +162,24 @@ function PlanInvoice({
 
         {/* key: re-run the small price animation when the period changes */}
         <div key={period} className="price-in">
+          {/* The price people compare: per month, with what is billed right under it (P12) */}
+          <p className="flex items-baseline gap-1.5">
+            <span className="font-heading text-ink text-[2.75rem] leading-none font-extrabold tracking-tight tabular-nums">
+              {formatPrice(free ? 0 : yearly ? saving.perMonth : plan.monthly)}
+            </span>
+            <span className="text-muted font-medium">/month</span>
+          </p>
+          <p className="text-small text-muted mt-1.5 mb-5">
+            {free ? (
+              "No subscription, nothing billed"
+            ) : yearly ? (
+              <>
+                Billed <Money>{formatPrice(plan.yearly)}</Money> once a year
+              </>
+            ) : (
+              "Billed monthly"
+            )}
+          </p>
           <LineItems items={items} total={{ label: "Total", amount: total }} />
         </div>
 
@@ -169,8 +188,7 @@ function PlanInvoice({
             "No watermark. Upgrade only when you send more."
           ) : yearly ? (
             <>
-              That&apos;s <Money>{formatPrice(saving.perMonth)}</Money> a month. {days}-day free
-              trial.
+              {days}-day free trial, then <Money>{formatPrice(plan.yearly)}</Money> a year.
             </>
           ) : (
             <>
@@ -192,7 +210,7 @@ function PlanInvoice({
             ? "About one coffee a month."
             : plan.id === "pro"
               ? `Just ${formatPrice(pricePerDay(plan, free ? "monthly" : period))} a day.`
-              : `Free for your first ${FREE_INVOICES} invoices, no time limit.`}
+              : "No subscription, no payment details, no catch."}
         </p>
 
         <ul className="text-small mt-5 mb-6 space-y-2">
