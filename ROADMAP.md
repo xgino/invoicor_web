@@ -116,7 +116,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 **Stage P: Polish from your review (2026-11-18)** _(your remarks on the new site; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
-- [ ] P3. "How it works" as a visible path
+- [x] P3. "How it works" as a visible path
 - [ ] P4. Promises that stand out
 - [ ] P5. Fee calculator, rewritten as a gain
 - [ ] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
@@ -940,7 +940,7 @@ _✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in
 - [x] b. Placed under the hero and in the "You keep the money" section (where the payment message belongs); reusable component.
 
 ### P3. "How it works" as a path
-- [ ] Your remark: the three steps are easy to overlook. Make them a connected path: numbered nodes on
+- [x] _(✅ 2026-11-18: four stops incl. "Get paid", a line that draws itself (horizontal desktop, segments on phones), mini invoice visual per step whose math matches the hero invoice)_ Your remark: the three steps are easy to overlook. Make them a connected path: numbered nodes on
   a line that draws itself as you scroll, each step with a small invoice visual, ending at "Paid".
   Vertical on phones, horizontal on desktop.
 

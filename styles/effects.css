@@ -47,6 +47,24 @@
   transform: none;
 }
 
+/* ── Drawn lines: a path that draws itself when revealed (How it works) ── */
+.js .reveal.draw-x {
+  opacity: 1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.4s 0.2s var(--ease-brand);
+}
+.js .reveal.draw-y {
+  opacity: 1;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 1.4s 0.2s var(--ease-brand);
+}
+.js .reveal.draw-x.in,
+.js .reveal.draw-y.in {
+  transform: none;
+}
+
 /* ── Accordion: smooth height where the browser supports it (Chrome 131+); snaps elsewhere ── */
 @supports (interpolate-size: allow-keywords) {
   :root {
