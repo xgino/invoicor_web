@@ -52,15 +52,15 @@
     "faqs": [
       {
         "question": "Can I separate parts and labor on the invoice with different tax rates?",
-        "answer": "Yes. Every line item has its own tax flag, so you can mark materials (PVC, copper pipe, HVAC units, refrigerant) as taxable and labor lines as non-taxable, exactly matching your state's rules. The tax total at the bottom of the invoice only applies to the lines you marked as taxable."
+        "answer": "You can list parts and labor on separate lines, so the homeowner sees exactly what's what. Invoicor applies one tax rate per invoice (included or added on top), not a different rate per line. If only your parts are taxable in your state, check with your accountant whether to invoice parts and labor separately."
       },
       {
         "question": "How do I handle large deposits for HVAC installs?",
-        "answer": "For high-ticket jobs like a full furnace or AC unit installation, create an invoice for the total amount and send a partial-payment request for the deposit (commonly 50%). The customer pays the deposit via card to lock in the install date. After completion, you send a second invoice for the balance, or convert the original to mark the deposit as received and bill the remaining amount."
+        "answer": "For high-ticket jobs like a furnace or AC install, send a deposit invoice first (commonly 50%) with your payment link, so the customer can pay to lock in the install date. After completion, duplicate it into the balance invoice and list the deposit already received."
       },
       {
         "question": "Can homeowners pay without downloading an app?",
-        "answer": "Yes. The payment link goes to a secure web portal that opens in any phone or laptop browser. The homeowner taps the link, sees the full invoice, and pays with their credit card, Apple Pay, or Google Pay. No account creation, no app install, no friction. This matters for older homeowners who won't download a billing app."
+        "answer": "Yes. They receive a normal PDF invoice. If you add your own payment link (PayPal, Stripe or similar), it opens your provider's payment page in their browser, where they can pay by card or a phone wallet if your provider offers it. No app or Invoicor account needed."
       },
       {
         "question": "What if I need to invoice a commercial property manager instead of a homeowner?",
@@ -68,7 +68,7 @@
       },
       {
         "question": "Does Invoicor handle multi-truck or multi-tech operations?",
-        "answer": "Yes. If you run multiple trucks under the same business, all your techs can send invoices that flow into the same business profile, so your accounts receivable view shows every open invoice across the operation. If you run completely separate businesses (e.g. plumbing LLC and HVAC LLC under different EINs), use multi-business profile switching to keep them isolated with their own logos, tax setups, and client lists."
+        "answer": "Not with separate logins per tech yet: Invoicor is one account per business owner, and you can sign in on more than one iPhone. If you run separate businesses (for example a plumbing LLC and an HVAC LLC), the Pro plan gives you up to 3 business profiles, each with its own logo and details."
       }
     ],
     "related": [
@@ -130,7 +130,7 @@
     "faqs": [
       {
         "question": "Can I attach my design contract or SOW to the invoice?",
-        "answer": "Yes. You can attach PDFs of your Master Services Agreement, Statement of Work, or signed contract directly to the invoice email. Larger clients with formal PO systems often require the SOW number printed on the invoice itself; you can add this as a custom field that appears at the top of the document."
+        "answer": "Yes. You can attach PDFs of your Master Services Agreement, Statement of Work, or signed contract directly to the invoice email. Larger clients with formal PO systems often require the SOW number printed on the invoice itself; you can add it to the invoice notes."
       },
       {
         "question": "How do I charge international clients without losing money on FX?",
@@ -208,11 +208,11 @@
     "faqs": [
       {
         "question": "Can I set up automatic weekly billing for my route?",
-        "answer": "Yes. You can configure recurring invoices to generate automatically every week or month. It takes the manual work out of your recurring route."
+        "answer": "Not automatically yet. Your route clients and services are saved, so each week you duplicate the last invoice with one tap, check the date and send it. A full route takes minutes, not your weekend."
       },
       {
         "question": "Does Invoicor help me track who hasn't paid yet?",
-        "answer": "Absolutely. The dashboard clearly highlights Overdue and Unpaid invoices, so you know exactly which clients need a reminder before you mow their lawn again."
+        "answer": "Yes. Every invoice has a status (draft, sent, paid or overdue), and on Starter and Pro the dashboard shows what's still outstanding, so you know which clients to remind before you mow their lawn again."
       },
       {
         "question": "Can I add photos of the completed yard work to the invoice?",
@@ -220,11 +220,11 @@
       },
       {
         "question": "How do I handle clients who still want to pay by check?",
-        "answer": "You can manually mark an invoice as 'Paid via Check' in the app when you receive it. This keeps your records accurate even if they don't use the digital payment link."
+        "answer": "When the check arrives, mark the invoice as paid in the app. Your records stay accurate even if the client doesn't use your payment link."
       },
       {
-        "question": "What if rain delays my weekly recurring invoice?",
-        "answer": "If you bill per-cut and a rain delay happens, you can easily pause or adjust the date of the recurring invoice for that specific client before it sends."
+        "question": "What if rain delays a weekly job?",
+        "answer": "Nothing goes out on its own, so simply send that week's invoice when the job is done, with the right date. If you bill monthly, list only the cuts that actually happened."
       }
     ],
     "related": [
@@ -298,11 +298,11 @@
       },
       {
         "question": "How do commercial clients pay?",
-        "answer": "The payment link includes options for Credit Card and Apple Pay, but you can also include your ACH routing details directly on the invoice for large commercial GCs who prefer bank transfers."
+        "answer": "That depends on your own payment provider: add your payment link (for example Stripe or PayPal) for card or phone-wallet payments, and put your bank details on the invoice for large commercial GCs who prefer bank transfers."
       },
       {
         "question": "Do I need a signal to use Invoicor?",
-        "answer": "Yes. Invoicor saves your invoices on secure servers in Germany, so it needs an internet connection (mobile data or Wi-Fi). In a basement without signal, finish the invoice in the driveway: with saved clients and items it takes about a minute."
+        "answer": "Yes. Invoicor saves your invoices on secure servers in Germany, so it needs an internet connection (mobile data or Wi-Fi). In a basement without signal, finish the invoice in the driveway: with saved clients and items it's a few taps."
       }
     ],
     "related": [
@@ -363,8 +363,8 @@
     "tax_or_compliance_text": "In the construction industry, clear invoicing protects your right to file a mechanic's lien if you aren't paid. Conversely, when a client pays a massive invoice, they often want a 'lien waiver' proving you won't sue them later. Having a clean, digital paper trail in Invoicor showing exactly which draw was billed, and exactly when it was marked 'Paid', makes providing these waivers to nervous homeowners or commercial GCs much easier.",
     "faqs": [
       {
-        "question": "Can I process $50,000 invoices through the app?",
-        "answer": "Yes, but for very large amounts, credit card fees (typically ~2.9%) become prohibitive. For these, it's best to include your bank wire or ACH routing details on the Invoicor PDF and have the client pay via bank transfer."
+        "question": "Can I send $50,000 invoices from the app?",
+        "answer": "Yes. Invoicor has no limit on invoice amounts and doesn't process the payment. For very large amounts, card fees (often around 2.9%) add up, so add your bank details to the invoice and let the client pay by bank transfer."
       },
       {
         "question": "How do I handle 'Allowances' in Invoicor?",
@@ -372,7 +372,7 @@
       },
       {
         "question": "Can I attach my sub-contractor receipts to the invoice?",
-        "answer": "You can absolutely attach photos or PDFs of receipts to the email you send to the client alongside the Invoicor payment link to justify T&M expenses."
+        "answer": "You can absolutely attach photos or PDFs of receipts to the email you send to the client alongside the Invoicor PDF to justify T&M expenses."
       },
       {
         "question": "Is it better to bill hourly or flat-rate for handyman work?",
@@ -442,11 +442,11 @@
     "faqs": [
       {
         "question": "Can I separate the retainer from the final balance?",
-        "answer": "Yes. Most photographers send Invoice #1 for the retainer to lock the date, and Invoice #2 for the balance due before the shoot. You can clone the first invoice to make creating the second one take 3 seconds."
+        "answer": "Yes. Most photographers send Invoice #1 for the retainer to lock the date, and Invoice #2 for the balance due before the shoot. Duplicate the first invoice with one tap to create the second."
       },
       {
         "question": "Do Invoicor templates look professional enough for luxury brides?",
-        "answer": "Absolutely. You can choose from elegant, minimalist templates, upload your high-res logo, and match your brand colors. It looks like bespoke stationery, not a spreadsheet."
+        "answer": "Absolutely. You can choose from elegant, minimalist templates, and upload your high-res logo. It looks like bespoke stationery, not a spreadsheet."
       },
       {
         "question": "Can clients pay via credit card to get their credit card points?",
@@ -597,7 +597,7 @@
     "faqs": [
       {
         "question": "Can I bill all my residential clients on Friday automatically?",
-        "answer": "Yes. Set up recurring invoices to fire off on Friday afternoon, so everyone is billed for the week's work simultaneously."
+        "answer": "Not automatically yet. On Friday, duplicate each client's last invoice with one tap and send it; saved clients and services fill in the rest, so the whole week is billed in a few minutes."
       },
       {
         "question": "What if a client adds a service on the day of the clean?",
@@ -605,7 +605,7 @@
       },
       {
         "question": "Do my clients need an app to pay me?",
-        "answer": "No. The payment link opens directly in their phone's web browser, allowing them to pay securely via Apple Pay or credit card in seconds."
+        "answer": "No. They receive a PDF invoice. If you add your own payment link (PayPal, Stripe or similar), it opens in their phone's browser and they pay through your provider, by card or a phone wallet if your provider offers it."
       },
       {
         "question": "Can I track which of my crew members did the clean on the invoice?",
@@ -613,7 +613,7 @@
       },
       {
         "question": "Is it safe to email invoices to clients?",
-        "answer": "Yes. Invoicor links are secure, hosted on encrypted servers, ensuring that your clients' payment details and your business data are protected."
+        "answer": "Yes, as safe as any business email. Invoicor makes the PDF and you send it from your own email, WhatsApp or messages. To help clients spot fake invoices, always send from the same address or number, keep your payment details the same, and tell clients you will never change bank details by email."
       }
     ],
     "related": [
@@ -682,15 +682,15 @@
       },
       {
         "question": "Why shouldn't I just use Venmo?",
-        "answer": "Venmo doesn't generate professional receipts, makes year-end tax accounting difficult, and personal Venmo accounts can be frozen if they suspect you are running a business without paying their merchant fees. Invoicor is built for real businesses."
+        "answer": "Venmo doesn't generate professional receipts, makes year-end tax accounting difficult, and using a personal account for business payments can break the provider's rules and get the account limited. Invoicor is built for real businesses."
       },
       {
         "question": "Can I add discounts for military or students?",
-        "answer": "Yes, you can easily add a discount line item to any invoice before sending it."
+        "answer": "Yes. Add a percentage or fixed discount to any invoice before you send it."
       },
       {
         "question": "Is my client data secure?",
-        "answer": "Absolutely. Client data is encrypted and stored securely, ensuring privacy for your high-profile or sensitive clients."
+        "answer": "We protect it with standard measures: client data is stored on servers in Germany under the GDPR, every connection is encrypted (HTTPS), and access to the servers is restricted. No online service can promise perfect security, but we work to keep your data private."
       }
     ],
     "related": [
@@ -756,7 +756,7 @@
       },
       {
         "question": "Can customers tip me through the payment link?",
-        "answer": "If you process payments via Stripe, tipping options can be configured so satisfied customers can add 15% or 20% right from their phone."
+        "answer": "That depends on your payment provider, because Invoicor doesn't process payments. Some providers let you add tips or let the customer choose the amount on their payment page; check your provider's settings."
       },
       {
         "question": "How do I handle fleet contracts?",
@@ -768,7 +768,7 @@
       },
       {
         "question": "Can I use it for mobile window tinting?",
-        "answer": "Absolutely. Mobile tinters, PDR (paintless dent repair) techs, and windshield replacement pros all use Invoicor to bill directly on-site."
+        "answer": "Absolutely. Mobile tinters, PDR (paintless dent repair) techs, and windshield replacement pros can use Invoicor to bill directly on-site."
       }
     ],
     "related": [

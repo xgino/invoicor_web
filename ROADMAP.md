@@ -134,6 +134,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] P16. Sticky "Get the app" bar on phones
 - [ ] P17. QR code for desktop visitors
 - [ ] P18. Mobile and speed recheck
+- [x] P19. FAQ audit: every answer matches its question and the app _(✅ 2026-11-18)_
+- [x] P20. Plain, true security wording; Google sign-in in Privacy; positive trial line _(✅ 2026-11-18)_
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -1076,6 +1078,29 @@ on desktop.
 
 **P18. Mobile and speed recheck** after P11–P17 (same measurement as P10).
 - [ ] Measure and fix.
+
+**P19. FAQ audit** _(✅ 2026-11-18, your remark: "Is my data safe?" answered a different question)._
+Checked all ~170 FAQs (home 7, help 32, affiliate 5, templates 36, industries 50, compare 30) for
+two things: does the answer answer the question, and is it true for the app.
+- **Answered the wrong question:** "Is my data safe?" (talked about location and analytics),
+  "Does Invoicor need an internet connection?" (dodged the yes), "How fast…?" ("Fast.").
+- **Described another product (31 fixed):** a "secure web portal" where clients pay with Apple Pay,
+  per-line tax flags, automatic recurring / Friday billing, partial-payment requests, techs sharing
+  one profile, "Invoicor links are secure", "client data is encrypted", brand colors, custom fields,
+  "Paid via Check", Stripe tips, "all use Invoicor", "3 seconds" / "about a minute".
+- **Help:** iPad is native (was "compatibility mode"), "we share your data with no one" was false
+  (processors), downgrade answer now explains the 3-invoice total, current cancel path in Settings.
+- A unit test now blocks these phrases in every content FAQ.
+
+**P20. Security wording and trial line** _(✅ 2026-11-18)_.
+- Privacy section 5 states only what's verified in the API: HTTPS enforced, hashed passwords, token
+  sign-in, restricted server access. Removed "enterprise-grade", "encryption at rest" and "regular
+  security reviews" (not verified). Honest: "no service is completely secure" + breach notification.
+- Privacy now lists **Sign in with Google** (the app offers it; the policy only named Apple).
+- Terms section 8: a security paragraph (not liable for incidents despite standard measures, as far
+  as the law allows). Both go to the lawyer review (X15).
+- Trial line: "Cancel before the trial ends and you pay nothing" (was "Billed by Apple after the trial
+  unless you cancel").
 
 ---
 

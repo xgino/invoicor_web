@@ -49,3 +49,15 @@ describe("FAQ deep links", () => {
     expect(questionId("Sending & Tracking: what's new?")).toBe("sending-and-tracking-what-s-new");
   });
 });
+
+describe("FAQ answers only describe what the app does", () => {
+  // Found in the 2026-11-18 FAQ audit: answers that described a different product.
+  const claims =
+    /secure web portal|payment portal|its own tax flag|tax flag|partial-payment request|configure recurring|set up recurring invoices|recurring invoices to fire|encrypted and stored|Invoicor links are secure|match your brand colors|custom field|take 3 seconds|about a minute/i;
+  const all = [...getTemplates(), ...getIndustries(), ...getComparisons()];
+
+  it.each(all.map((e) => [e.slug, e] as const))("%s", (_slug, e) => {
+    // Answers only: a question may fairly ask about something the app doesn't do.
+    for (const f of e.faqs) expect(f.answer, f.question).not.toMatch(claims);
+  });
+});

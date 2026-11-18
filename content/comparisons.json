@@ -59,7 +59,7 @@
       },
       {
         "question": "Does Invoicor handle sales tax or VAT?",
-        "answer": "Yes. You can configure default tax rates per business profile (useful if you operate across multiple regions), and tax rows automatically show or hide on the invoice depending on whether tax applies. For complex multi-jurisdiction tax filings, you'll still want a dedicated accountant or tax software at year-end."
+        "answer": "Yes. Set a tax rate (included or added on top) in your business profile and change it per invoice when needed; Invoicor calculates the tax and the total. For complex multi-jurisdiction tax filings, you'll still want an accountant or tax software."
       },
       {
         "question": "What happens if I outgrow Invoicor and need real accounting software later?",
@@ -207,7 +207,7 @@
       },
       {
         "question": "Does Invoicor need an internet connection?",
-        "answer": "Invoicor saves your invoices to secure servers in Germany, so you can pick up where you left off on any iPhone you sign in to. For the smoothest experience, create and send invoices with a connection."
+        "answer": "Yes. Invoicor saves your invoices on servers in Germany, so it needs an internet connection (mobile data or Wi-Fi) to create and send them. The upside: sign in on any iPhone and your invoices are there."
       },
       {
         "question": "Will my Invoice2go data transfer over?",
@@ -282,8 +282,8 @@
         "answer": "Yes. Many people create and send invoices in Invoicor for the faster mobile experience, and keep their bookkeeping in Wave. Your invoices are standard PDFs you can file anywhere."
       },
       {
-        "question": "Is Invoicor really faster than Wave on mobile?",
-        "answer": "Yes. Because Invoicor is a native Swift application, it doesn't have to load web pages in the background. Everything is rendered natively by your iPhone's processor."
+        "question": "Is Invoicor faster than Wave on mobile?",
+        "answer": "Invoicor is a native iPhone app built with Apple's SwiftUI and made only for invoicing, so there are fewer screens between you and a sent invoice. The best test is your own: try both on your next invoice. Invoicor's first 3 invoices are free."
       }
     ],
     "related_comparisons": [
@@ -407,7 +407,7 @@
     "faqs": [
       {
         "question": "Is Invoicor's customer support better than Zoho's?",
-        "answer": "Invoicor is one product, and a real person answers your questions. You can send feedback or a question from inside the app."
+        "answer": "Invoicor is one small, focused product. Questions and feedback from inside the app or by email are read by the people who build it; replies can take a few days, but every message gets read."
       },
       {
         "question": "Can I import my Zoho clients?",

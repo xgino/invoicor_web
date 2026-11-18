@@ -60,7 +60,7 @@
       },
       {
         "question": "How do I charge for travel time and mileage on an invoice?",
-        "answer": "There are three common approaches. The simplest is the IRS standard mileage rate (currently $0.67/mile in 2024, check the current year), multiplied by round-trip distance. The second is a flat travel fee based on distance bands ('within 20 miles: included; 20-50 miles: $75; 50-100 miles: $150'). The third is hourly travel time on top of mileage, used for shoots requiring long drives or overnight stays. Pick one approach and use it consistently."
+        "answer": "There are three common approaches. The simplest is the IRS standard mileage rate (the IRS publishes it each year; check the current rate on irs.gov), multiplied by round-trip distance. The second is a flat travel fee based on distance bands ('within 20 miles: included; 20-50 miles: $75; 50-100 miles: $150'). The third is hourly travel time on top of mileage, used for shoots requiring long drives or overnight stays. Pick one approach and use it consistently."
       },
       {
         "question": "What's the difference between a deposit and a retainer on a photography invoice?",
@@ -140,7 +140,7 @@
     "faqs": [
       {
         "question": "Do I have to charge sales tax on plumbing services?",
-        "answer": "It depends on your state. Most US states tax materials but not labor; a few (Hawaii, New Mexico, South Dakota, West Virginia) tax both. The cleanest approach is to tag each line item on your invoice as either 'parts' (taxable) or 'labor' (non-taxable), so the total calculates correctly by default. Check your state's department of revenue page for the exact rules — and never apply a single tax rate to the full subtotal, because you'll either overcharge the customer or under-remit to the state."
+        "answer": "It depends on your state. Most US states tax materials but not labor; a few (Hawaii, New Mexico, South Dakota, West Virginia) tax both. The cleanest approach is to list parts and labor on separate lines, so it's clear what was taxed. Invoicor applies one tax rate per invoice, so if only your parts are taxable, check with your accountant how to show that. Check your state's department of revenue page for the exact rules — and never apply a single tax rate to the full subtotal, because you'll either overcharge the customer or under-remit to the state."
       },
       {
         "question": "Can I accept credit card payments in the field?",
@@ -642,7 +642,7 @@
     "faqs": [
       {
         "question": "Can I set up automatic billing for weekly clients?",
-        "answer": "Yes. Using modern invoicing software, you can set up a recurring invoice that automatically emails the client every Friday, or even auto-charges their card on file."
+        "answer": "Not automatically in Invoicor (yet). Weekly clients get nearly the same invoice every time, so duplicate last week's invoice with one tap, check the date and send it; saved clients and services fill in the rest. Some tools auto-charge a card on file, but that means a payment company holds your client's card and takes a fee."
       },
       {
         "question": "Should I invoice before or after the clean?",
@@ -713,7 +713,7 @@
     "faqs": [
       {
         "question": "Can I use an invoice as a repair estimate?",
-        "answer": "Yes. Many mobile mechanics draft the invoice with all parts and labor, title it 'Estimate', have the customer approve it, and then convert it to a final 'Invoice' once the work is complete."
+        "answer": "Many mobile mechanics send a written estimate first and the invoice once the work is done. Invoicor makes invoices, not estimates: for now, write 'Estimate' in the notes of a draft and get the customer's OK, then update the date and send it as the invoice when the job is finished."
       },
       {
         "question": "Do I need to list part numbers?",
