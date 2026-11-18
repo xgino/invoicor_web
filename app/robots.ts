@@ -24,7 +24,8 @@ const AI_BOTS = [
   "CCBot",
 ];
 
-const PRIVATE = ["/api/", "/admin/"];
+// /generator/ holds the raw template files the free generator fills in the browser.
+const PRIVATE = ["/api/", "/admin/", "/generator/"];
 
 export default function robots(): MetadataRoute.Robots {
   return {

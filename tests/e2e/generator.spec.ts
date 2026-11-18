@@ -7,12 +7,6 @@ import { trackAnalytics } from "./helpers";
  */
 async function mockApi(page: Page, pdfStatus = 200) {
   let pdfCalls = 0;
-  await page.route(/\/api\/invoices\/public\/render\/$/, (route) =>
-    route.fulfill({
-      contentType: "text/html",
-      body: "<html><body><h1>Rivera Plumbing</h1><p>INVOICE</p></body></html>",
-    }),
-  );
   await page.route(/\/api\/invoices\/public\/pdf\/$/, (route) => {
     pdfCalls++;
     return pdfStatus === 200
@@ -47,7 +41,7 @@ test("fill, preview, download, reveal the watermark line, download again for fre
   if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
 
   await expect(
-    page.frameLocator('iframe[title="Invoice preview"]').getByText("Rivera Plumbing"),
+    page.frameLocator('iframe[title="Invoice preview"]').getByText("Rivera Plumbing").first(),
   ).toBeVisible();
   await expect(page.getByText("Total", { exact: true }).locator("..")).toContainText("$95.00");
 
@@ -63,6 +57,23 @@ test("fill, preview, download, reveal the watermark line, download again for fre
   await page.getByRole("button", { name: "Download again" }).click();
   await again;
   expect(pdfCalls()).toBe(1);
+});
+
+test("the preview updates while typing, without calling the API", async ({ page, isMobile }) => {
+  await mockApi(page);
+  const apiCalls: string[] = [];
+  page.on("request", (r) => {
+    if (r.url().includes("/api/invoices/public/")) apiCalls.push(r.url());
+  });
+  await page.goto("/free-invoice-generator");
+  await fillInvoice(page);
+  await page.getByLabel("Business name").fill("Rivera Plumbing & Sons <LLC>");
+  if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
+  const preview = page.frameLocator('iframe[title="Invoice preview"]');
+  await expect(preview.getByText("Rivera Plumbing & Sons <LLC>").first()).toBeVisible();
+  await expect(preview.getByText("Emergency call-out")).toBeVisible();
+  await expect(preview.getByText("$95").first()).toBeVisible();
+  expect(apiCalls).toEqual([]);
 });
 
 test("explains the rate limit in plain words", async ({ page, isMobile }) => {

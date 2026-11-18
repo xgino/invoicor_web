@@ -1135,7 +1135,7 @@ the website goes live with the generator.**_
 is only for a nice experience: anyone can call the API directly and skip the website. Real protection
 lives on the server:
 - **Typing costs nothing:** the form and totals run in the browser; no API call per keystroke.
-- **Live preview** (`public/render`) is cheap (the server fills a template): 120 per minute per visitor.
+- **Live preview** is filled in the browser, so typing costs nothing on the server. `public/render` stays available (120 per minute per visitor) but the website no longer uses it.
 - **PDF download** (`public/pdf`) is the expensive part (wkhtmltopdf): 10 per hour per visitor, plus
   300 per hour for all visitors together, so a flood can't overload the server.
 - Counts live in a **shared database table** (all gunicorn workers count together), and Django reads
@@ -1188,7 +1188,9 @@ lives on the server:
 ### 33. Generator page: live preview & template picker
 **Goal:** the visitor sees the real invoice update as they type.
 
-- [x] a. Preview: a debounced (500 ms) call to `public/render`, older calls cancelled, shown in a sandboxed `iframe` scaled to fit A4.
+- [x] a. Preview: filled **in the browser on every keystroke** (`lib/generator/fill.ts`, a port of the API's `build_replacement_map`), shown in a script-free sandboxed `iframe` scaled to fit A4; only the page body is swapped, so there's no reload or flicker. Typing makes no API calls. (First version called `public/render` 500 ms after typing stopped: too slow, and it broke whenever the API was down.)
+  - The 21 free templates, labels and currency symbols are copied into `public/generator/` by `scripts/sync-generator-templates.py` (run with the API's Python). **Re-run it whenever a template, label or currency changes in the API.**
+  - `tests/unit/generator-fill.test.ts` compares the browser fill with HTML filled by the real API code (all 21 templates × 11 languages matched when this was built), so the preview looks like the PDF.
 - [x] b. A loading shimmer during updates, and a crossfade when the template changes.
 - [x] c. Template picker: a thumbnail grid; the 21 free ones selectable, starter/pro shown locked with an "In the app" badge (→ App Store with `ct=gen-locked`).
 - [x] d. Deep links prefill the form: `?template=classic&currency=EUR&lang=de`; the canonical stays the clean `/free-invoice-generator`. _(`industry=` presets come later, with industry-specific sample lines.)_

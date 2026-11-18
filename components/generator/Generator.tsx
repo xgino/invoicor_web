@@ -1,18 +1,10 @@
 "use client";
 
 import { Eye, LayoutTemplate, PencilLine, RotateCcw } from "lucide-react";
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useReducer,
-  useRef,
-  useState,
-  type ReactNode,
-} from "react";
+import { useCallback, useEffect, useReducer, useRef, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { track } from "@/lib/analytics";
-import { newDraft, toPayload } from "@/lib/generator/draft";
+import { newDraft } from "@/lib/generator/draft";
 import { clearDraft, loadDraft, saveDraft } from "@/lib/generator/storage";
 import { computeTotals, formatMoney } from "@/lib/generator/totals";
 import {
@@ -32,7 +24,7 @@ import { type GeneratorTemplate, TemplatePicker } from "./TemplatePicker";
 
 /**
  * The free invoice generator (ROADMAP chunks 32–34). The form and totals run in the browser; the
- * API is only called for the live preview (debounced) and the PDF. The draft autosaves locally.
+ * preview is filled in the browser too; the API is only called for the PDF. The draft autosaves locally.
  */
 export function Generator({
   templates,
@@ -84,7 +76,6 @@ export function Generator({
     dispatch(action);
   }, []);
 
-  const payload = useMemo(() => JSON.stringify(toPayload(draft)), [draft]);
   const totals = computeTotals(draft);
   const template = templates.find((t) => t.slug === draft.template_slug);
 
@@ -173,7 +164,7 @@ export function Generator({
         </div>
 
         <Preview
-          payload={payload}
+          draft={draft}
           footer={
             <p
               className={cx(

@@ -70,11 +70,6 @@ async function post(path: string, body: unknown, signal?: AbortSignal): Promise<
   });
 }
 
-/** Filled invoice HTML for the live preview. */
-export async function renderPreview(payload: unknown, signal?: AbortSignal): Promise<string> {
-  return (await post("/render/", payload, signal)).text();
-}
-
 /** The PDF (with the "Created with invoicor.com" line, added by the server). */
 export async function downloadPdf(payload: unknown): Promise<Blob> {
   return (await post("/pdf/", payload)).blob();

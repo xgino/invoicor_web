@@ -119,7 +119,7 @@ export function filledItems(draft: Draft): DraftItem[] {
   return draft.items.filter((i) => i.name.trim() !== "");
 }
 
-/** The JSON body for POST /api/invoices/public/render/ and /pdf/. */
+/** The JSON body for POST /api/invoices/public/pdf/ (and the browser fill, lib/generator/fill.ts). */
 export function toPayload(draft: Draft, extra: Record<string, string> = {}) {
   const items = filledItems(draft).map((i) => ({
     name: i.name.trim(),
