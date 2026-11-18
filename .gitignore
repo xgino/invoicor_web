@@ -31,3 +31,6 @@ npm-debug.log*
 
 # Local helper scripts (screenshots etc.)
 /.shot*.mjs
+
+# deploy: server details for Claude (deploy/setup.sh info)
+/deploy/server-info.txt

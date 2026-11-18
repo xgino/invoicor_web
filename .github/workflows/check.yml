@@ -60,7 +60,7 @@ jobs:
       # The website folder on the VPS, e.g. /var/www/invoicor.com/web (nginx root points here).
       WEB_PATH: ${{ secrets.DEPLOY_WEB_PATH }}
       SITE: https://invoicor.com
-      # Repository variable, "true" once nginx serves the new site (launch day, DEPLOY.md F.5).
+      # Repository variable, "true" once nginx serves the new site (set by `bash deploy/setup.sh launch`, DEPLOY.md F.3).
       # Before that, a run only uploads: the live checks would test the old site.
       LIVE: ${{ vars.PRODUCTION_LIVE == 'true' }}
     steps:

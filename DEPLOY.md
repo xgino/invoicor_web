@@ -39,25 +39,21 @@ deployed. After uploading, it checks the live site (home 200, a template page 20
 ## B. Every change
 
 ```bash
-# work on dev, commit, push: GitHub runs all checks (see the Actions tab)
-git checkout dev && git push
+# on dev, as often as you like (GitHub runs all checks, nothing is deployed)
+git add . && git commit -m "what you did" && git push
 
-# going live = merging into main (when the checks on dev are green)
-git checkout main && git pull && git merge dev && git push
-git checkout dev
+# go live
+bash deploy/deploy.sh
 ```
 
-The push to `main` deploys by itself. Before a big change, look at it locally first:
-`npm run build && npm run preview` → http://localhost:4173 (the same files that go live).
+`deploy.sh` merges `dev` into `main` with a pull request and waits for GitHub: every check and test,
+then the upload. You see each job's result and which text changed on the home page. Red means
+nothing changed on the server, and it prints the command that shows why. Before a big change, look
+at it locally first: `npm run build && npm run preview` → http://localhost:4173.
 
 ## C. Rollback
 
-Automatic when the live check fails. By hand (under a minute), from your Mac:
-`bash deploy/deploy.sh --rollback`, or on the server:
-
-```bash
-cd /var/www/invoicor.com && mv web web-bad && mv web-prev web
-```
+Automatic when the live check after a deploy fails. By hand: `bash deploy/deploy.sh --rollback`.
 
 ## D. After the first deploy (one time)
 
@@ -70,107 +66,53 @@ cd /var/www/invoicor.com && mv web web-bad && mv web-prev web
    "Inspect URL" → "Request indexing" for the home page and the top pages (ROADMAP X6).
 6. Watch Search Console → Pages for 2–4 weeks (ROADMAP X13).
 
-## E. Manual fallback (without GitHub)
+## E. Without GitHub
 
-`bash deploy/deploy.sh` from your Mac on `main`: runs all checks, builds, uploads and switches the
-same way. Needs `deploy/.env` (copy `deploy/.env.example`: `SSH_TARGET` and `WEB_PATH`).
+`bash deploy/deploy.sh --direct` on `main`: every check and test on your Mac, then the same upload.
 
 ---
 
 ## F. One-time setup
 
-### F.1 What goes where
+Everything is done by `deploy/setup.sh`, like in the other projects: it makes the server user and
+its key and puts the secrets in GitHub. You never copy a key.
 
 | Where | What |
 |---|---|
-| **VPS** | Nothing for the website: no `.env`, no Node.js. Only a `deploy` user (F.2) and nginx (F.5). |
-| **GitHub → repo `invoicor_web` → Settings → Environments → `production` → Environment secrets** | `DEPLOY_SSH_KEY`, `DEPLOY_SSH_TARGET`, `DEPLOY_KNOWN_HOSTS`, `DEPLOY_WEB_PATH` (F.4) |
-| **GitHub → Settings → Secrets and variables → Actions → Variables tab** | `PRODUCTION_LIVE` = `true` (only from launch day, F.5). Later, optional: `APP_STORE_PROVIDER_TOKEN` (ROADMAP X10). |
-| **Your Mac, `deploy/.env`** | Only for the manual fallback (E). Never committed. |
+| **VPS** | Nothing to configure for the website: no `.env`, no Node.js. `setup.sh` adds a user (`invoicor_web`) that may only write the website folder. |
+| **GitHub** | Filled in by `setup.sh`: environment `production` (deploys only from `main`) with `DEPLOY_SSH_KEY`, `DEPLOY_SSH_TARGET`, `DEPLOY_KNOWN_HOSTS`, `DEPLOY_WEB_PATH`; the variable `PRODUCTION_LIVE` on launch day. |
+| **Your Mac, `deploy/.env`** | `SERVER_IP`, `DOMAIN`, and after step 3 `NGINX_SITE` (see `deploy/.env.example`). |
 
-The build settings have the right defaults and need nothing: `NEXT_PUBLIC_SITE_URL`
-(`https://invoicor.com`) and `NEXT_PUBLIC_API_URL` (`https://invoicor.com/api`). Only set them as
-GitHub variables if the domain or the API address ever changes.
+Build settings need nothing: `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_API_URL` default to
+`https://invoicor.com` and `https://invoicor.com/api`. Google Analytics, PostHog and IndexNow IDs are
+in `lib/config.ts` (public IDs, not secrets). Optional later: the GitHub variable
+`APP_STORE_PROVIDER_TOKEN` (ROADMAP X10).
 
-### F.2 On the VPS: a deploy user (5 min)
-
-A separate user, so the GitHub key can only write the website folder, nothing else on the server.
-Replace `/var/www/invoicor.com` if your domain folder lives somewhere else.
+### F.1 Once per Mac
 
 ```bash
-sudo adduser --disabled-password --gecos "" deploy
-sudo apt install -y acl rsync
-# deploy may create and rename web, web-new and web-prev inside the domain folder,
-# without changing the owner of anything that's there (the API, the old site):
-sudo setfacl -m u:deploy:rwx /var/www/invoicor.com
-# nginx must be able to read what deploy uploads (normally already the case):
-ls -ld /var/www/invoicor.com
+brew install gh && gh auth login     # GitHub.com, HTTPS, log in with the browser
+ssh root@SERVER_IP                    # must log in without a password (else: ssh-copy-id root@SERVER_IP)
 ```
 
-### F.3 On your Mac: a key only for deploys (5 min)
+### F.2 Once for this project
+
+1. `cp deploy/.env.example deploy/.env` and fill in `SERVER_IP` (and `DOMAIN=invoicor.com`).
+2. `bash deploy/setup.sh`: the server user, its key and the GitHub secrets. Nothing visitors see
+   changes (not nginx, not the live site, not the API). Safe to run again.
+3. `bash deploy/setup.sh info`: writes `deploy/server-info.txt` (the current nginx file and
+   folders) and prints the `NGINX_SITE=` line for `deploy/.env`. Tell Claude: it writes the new nginx
+   file into `deploy/nginx/invoicor.com.conf`, keeping your certificates and `/api/` blocks.
+4. Don't run `deploy.sh` before launch day: the first deploy replaces the old site in `web`.
+
+### F.3 Launch day
 
 ```bash
-ssh-keygen -t ed25519 -f ~/.ssh/invoicor_deploy -N "" -C "github-deploy-invoicor-web"
-
-# Put the public half on the server, for the deploy user (replace you@SERVER_IP with your own login):
-cat ~/.ssh/invoicor_deploy.pub | ssh you@SERVER_IP \
-  'sudo mkdir -p /home/deploy/.ssh && sudo tee -a /home/deploy/.ssh/authorized_keys >/dev/null && sudo chown -R deploy:deploy /home/deploy/.ssh && sudo chmod 700 /home/deploy/.ssh && sudo chmod 600 /home/deploy/.ssh/authorized_keys'
-
-# Test: must print "ok" without asking for a password
-ssh -i ~/.ssh/invoicor_deploy deploy@SERVER_IP 'echo ok'
-
-# The server's fingerprint (for DEPLOY_KNOWN_HOSTS)
-ssh-keyscan -t ed25519 SERVER_IP
+bash deploy/deploy.sh          # tests, then the new site goes into web (the old one moves to web-prev)
+bash deploy/setup.sh launch    # right after: backups, the new nginx file, tested, PRODUCTION_LIVE on
 ```
 
-### F.4 On GitHub: the secrets (5 min)
+`launch` backs up the nginx file and the old site, installs the new nginx file, tests it and checks
+the live site. If anything fails it puts the old nginx file back by itself. Then section D.
 
-Repo `invoicor_web` → **Settings → Environments → `production`** (it exists already; else **New
-environment**) → **Add environment secret**, four times:
-
-| Name | Value |
-|---|---|
-| `DEPLOY_SSH_KEY` | The whole private key: `pbcopy < ~/.ssh/invoicor_deploy`, then paste (including the `-----BEGIN` and `-----END` lines) |
-| `DEPLOY_SSH_TARGET` | `deploy@SERVER_IP` |
-| `DEPLOY_KNOWN_HOSTS` | The line `ssh-keyscan` printed (starts with the IP, then `ssh-ed25519 …`) |
-| `DEPLOY_WEB_PATH` | `/var/www/invoicor.com/web` |
-
-In the same `production` page, under **Deployment branches and tags**, choose **Selected branches**
-→ add `main`. Optional: **Required reviewers** → you, so every live deploy waits for one click.
-
-From the next push to `main`, the deploy uploads. Until launch day it **only uploads** (no live
-checks), because nginx still serves the old site.
-
-### F.5 nginx and launch day (one time)
-
-nginx needs a few changes for the new site (pages as `.html` files, real 404s, caching, old-URL
-redirects). The reference is `deploy/nginx/invoicor.com.conf`. Claude writes your exact file from
-these outputs (ROADMAP X3):
-
-```bash
-grep -rln invoicor /etc/nginx/sites-enabled/
-sudo cat /etc/nginx/sites-enabled/<the file from above>
-nginx -v
-ls -la /var/www/invoicor.com
-```
-
-Launch day (ROADMAP X5):
-
-1. Back up: `sudo cp /etc/nginx/sites-enabled/<file> ~/nginx-invoicor-backup.conf` and
-   `sudo cp -a /var/www/invoicor.com/web ~/web-old-site-backup`.
-2. Merge `dev` into `main` and push. The deploy uploads the new site into `web` (the old one moves
-   to `web-prev`).
-3. Put the new nginx file in place: `sudo nginx -t && sudo systemctl reload nginx`. Steps 2 and 3
-   right after each other: between them, deep links of the new site don't work yet.
-4. GitHub → Settings → Secrets and variables → Actions → **Variables** → `PRODUCTION_LIVE` = `true`.
-   From now on every deploy checks the live site, rolls back on failure and tells search engines
-   what changed (IndexNow).
-5. Section D.
-
-**Undo the whole launch** (back to the old site, under a minute):
-
-```bash
-sudo cp ~/nginx-invoicor-backup.conf /etc/nginx/sites-enabled/<file>
-cd /var/www/invoicor.com && mv web web-new-site && mv web-prev web
-sudo nginx -t && sudo systemctl reload nginx
-```
+Undo the whole launch (old site and old nginx file back): `bash deploy/setup.sh undo-launch`.
