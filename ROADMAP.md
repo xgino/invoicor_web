@@ -31,7 +31,7 @@ assistants)**, and turn visitors into app users through the **free invoice gener
 
 ## Now (2026-11-18)
 
-- **The new site is finished on `dev` but not live.** invoicor.com still runs the old site, so the
+- **The new site is live since 2026-11-18** (X5). Old note: invoicor.com still runs the old site, so the
   rankings in Search Console are the old pages. Everything built since (redesign, free generator,
   the S1 SEO upgrade) only reaches Google after the launch: **X1–X6 are the one real blocker.**
 - **Built and tested on `dev`:** Stages A–F, polish P1–P20, the free invoice generator (Stage G,
@@ -58,7 +58,7 @@ here; the old number is in brackets._
 | X22 | ✅ Automatic deploys set up (2026-11-18) | 10 min | DEPLOY.md F: `deploy/.env` with `SERVER_IP`, then `bash deploy/setup.sh` (makes the server user and its key, fills in the GitHub secrets, like your other projects). No `.env` on the VPS. After that `bash deploy/deploy.sh` is the only command: dev → main, all checks and tests, then the upload into `/var/www/invoicor.com/web/current` (the website's own folder inside the API folder; its deploy user can write nothing else). |
 | X3 | ✅ nginx details sent (2026-11-18) | n/a | Claude wrote the new file: `deploy/nginx/invoicor.com.conf` (from `sites-available/invoicor`, the enabled one; keeps the certificates, `/api/`, `/admin/`, `/static/`, `/media/`). Put `NGINX_SITE=/etc/nginx/sites-available/invoicor` in `deploy/.env`. Unused leftover on the server: `sites-available/invoicor.com` (not enabled; can be deleted). |
 | X4 | 🟠 QA on a local preview [Y17] | 30 min | `npm run build && npm run preview` → http://localhost:4173, then [seo/QA.md](seo/QA.md) and `node scripts/parity-check.mjs --new http://localhost:4173`. Replaces staging. |
-| X5 | 🔴 Launch [Y2] | 10 min | `bash deploy/deploy.sh` (fills `web/current`; the old site keeps running), then `bash deploy/setup.sh launch` (backups, new nginx file, tested, undone by itself on failure). Undo: `bash deploy/setup.sh undo-launch`. |
+| X5 | ✅ Launched 2026-11-18 | n/a | The new site is live from `/var/www/invoicor.com/web/current`, deployed through GitHub (PR #1). Checked after launch: pages 200, unknown page 404, www and http → https://invoicor.com, `/pricing` redirect, API (`/api/…`, `/admin/`, `/static/`) all fine, the other sites on the VPS unchanged. `PRODUCTION_LIVE` = true: every deploy is now checked and rolled back by itself. Found on the side: **hoverlab.co** has no DNS record and an expired certificate (not caused by this launch). |
 | X6 | 🔴 Tell Google and Bing [Y3] | 15 min | Submit `sitemap.xml` in both. URL Inspection → **Request indexing** for the home page, the generator and the 6 pages from S1 (plumbing, HVAC, freelance design templates; lawn care, electricians industries; Invoice2go compare). |
 | X13 | 🔴 Post-launch watch, 4 weeks | 10 min/week | Week 1 daily: server 404s (`grep '" 404 ' /var/log/nginx/access.log \| tail -50`). Weekly: Search Console vs X2. Send Claude the 404s and exports. |
 | X23 | 🟢 Remove the old site, ~2 weeks after launch | 1 min | `bash deploy/setup.sh cleanup`: deletes `dist/` (the old Vite site), the unused nginx copy and the launch backup. Then only `web/` and the API are in `/var/www/invoicor.com`. |
