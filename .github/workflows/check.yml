@@ -1,6 +1,11 @@
 # Runs the same checks as `npm run check` on every push and pull request.
 # Browser tests use the Google Chrome that GitHub's Ubuntu runners have installed.
-# It doesn't deploy: deploying stays manual (see DEPLOY.md).
+# The deploy job runs after the checks pass on a push (DEPLOY.md section F):
+#   dev  -> staging.invoicor.com   (password-protected, no analytics)
+#   main -> invoicor.com           (production; checks the live site and rolls back if it fails)
+# The site is static: the job builds out/ and uploads the files over SSH. The VPS only needs nginx
+# and a folder; no Node.js, no .env on the server. Until the deploy secrets exist in the GitHub
+# environment ("staging" or "production"), the job skips with a note and never fails.
 name: check
 
 on:
@@ -8,12 +13,12 @@ on:
     branches: [dev, main]
   pull_request:
 
-concurrency:
-  group: check-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   check:
+    # A newer push cancels older checks of the same branch…
+    concurrency:
+      group: check-${{ github.ref }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -37,3 +42,95 @@ jobs:
           name: playwright-traces
           path: test-results/
           retention-days: 7
+
+  deploy:
+    needs: check
+    # …but never a deploy that's running: deploys of a branch wait for each other.
+    concurrency:
+      group: deploy-${{ github.ref }}
+      cancel-in-progress: false
+    # Only pushes to dev and main, never pull requests.
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+    env:
+      MODE: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
+      SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      SSH_TARGET: ${{ secrets.DEPLOY_SSH_TARGET }}
+      KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+      DIR: ${{ secrets.DEPLOY_DIR }}
+      STAGING_AUTH: ${{ secrets.STAGING_AUTH }}
+      SITE: ${{ github.ref_name == 'main' && 'https://invoicor.com' || 'https://staging.invoicor.com' }}
+      # Repository variable, set to "true" once nginx serves the new folder (launch day, DEPLOY.md F.6).
+      # Before that, a production run only uploads: the live checks would test the old site.
+      LIVE: ${{ github.ref_name != 'main' || vars.PRODUCTION_LIVE == 'true' }}
+    steps:
+      - name: Deploy secrets set?
+        id: ready
+        run: |
+          if [ -z "$SSH_KEY" ] || [ -z "$SSH_TARGET" ] || [ -z "$KNOWN_HOSTS" ] || [ -z "$DIR" ]; then
+            echo "::notice::Deploy to $MODE skipped: the secrets aren't set yet (DEPLOY.md section F)."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.ready.outputs.go == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.ready.outputs.go == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build
+        if: steps.ready.outputs.go == 'true'
+        env:
+          # Staging visits must not count in analytics.
+          NEXT_PUBLIC_ANALYTICS: ${{ github.ref_name == 'main' && 'true' || 'false' }}
+          NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN: ${{ vars.APP_STORE_PROVIDER_TOKEN }}
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
+      - name: SSH key
+        if: steps.ready.outputs.go == 'true'
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Remember the live sitemap (for IndexNow)
+        if: steps.ready.outputs.go == 'true' && env.MODE == 'production'
+        run: curl -s --max-time 15 "$SITE/sitemap.xml" -o /tmp/prev-sitemap.xml || true
+
+      - name: Upload and switch
+        if: steps.ready.outputs.go == 'true'
+        run: |
+          SSH="ssh -i $HOME/.ssh/deploy_key -o IdentitiesOnly=yes -o BatchMode=yes"
+          $SSH "$SSH_TARGET" "mkdir -p '$DIR'"
+          rsync -az --delete -e "$SSH" out/ "$SSH_TARGET:$DIR/site-new/"
+          # A folder rename: visitors never see a half-uploaded site. The previous version stays as site-prev.
+          $SSH "$SSH_TARGET" "set -e; cd '$DIR'; rm -rf site-prev; if [ -d site ]; then mv site site-prev; fi; mv site-new site"
+
+      - name: Check the site (roll back on failure)
+        if: steps.ready.outputs.go == 'true' && env.LIVE == 'true'
+        run: |
+          auth=()
+          if [ "$MODE" = "staging" ] && [ -n "$STAGING_AUTH" ]; then auth=(-u "$STAGING_AUTH"); fi
+          ok="$(curl -s "${auth[@]}" -o /dev/null -w '%{http_code}' "$SITE/")"
+          missing="$(curl -s "${auth[@]}" -o /dev/null -w '%{http_code}' "$SITE/this-page-does-not-exist")"
+          echo "$SITE/ -> $ok (expect 200), unknown page -> $missing (expect 404)"
+          if [ "$ok" != "200" ] || [ "$missing" != "404" ]; then
+            echo "::error::The new version doesn't answer as expected. Rolling back to the previous one."
+            ssh -i "$HOME/.ssh/deploy_key" -o IdentitiesOnly=yes -o BatchMode=yes "$SSH_TARGET" \
+              "set -e; cd '$DIR'; test -d site-prev; mv site site-failed-\$(date +%Y%m%d-%H%M%S); mv site-prev site"
+            exit 1
+          fi
+
+      - name: Tell search engines what changed (IndexNow)
+        if: steps.ready.outputs.go == 'true' && env.MODE == 'production' && env.LIVE == 'true'
+        run: node scripts/indexnow.mjs /tmp/prev-sitemap.xml out/sitemap.xml || true

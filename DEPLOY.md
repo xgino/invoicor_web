@@ -1,13 +1,19 @@
 # Deploying invoicor.com
 
-The site is a **static export**: you build it on your Mac and upload the `out/` folder.
-The server only runs nginx (no Node.js, no PM2, nothing to crash or restart).
+The site is a **static export**: it's built into plain files (`out/`) and uploaded to the VPS.
+The server only runs nginx for it (no Node.js, no PM2, nothing to crash or restart) and needs
+**no `.env` on the server**: the few settings are baked in at build time (section F.1).
 
 ```
-Mac:  dev ──merge──> main ──npm run check──> out/ ──rsync──> VPS
-VPS:  nginx ─┬─ /api/, /admin/ ...  ──> Django (unchanged)
-             └─ everything else     ──> /var/www/invoicor.com/site  (the uploaded out/)
+GitHub: push dev  ──check──> deploy ──rsync──> VPS /var/www/staging.invoicor.com/site   (staging)
+        push main ──check──> deploy ──rsync──> VPS /var/www/invoicor.com/site           (live)
+VPS:    nginx ─┬─ /api/, /admin/ ...  ──> Django (its own repo and deploy, unchanged)
+               └─ everything else     ──> /var/www/invoicor.com/site
 ```
+
+Deploys are **automatic** once set up (section F): every push to `dev` that passes the checks goes
+to staging, every push to `main` goes live. `bash deploy/deploy.sh` from your Mac (sections B, E)
+stays as the manual fallback.
 
 | What | Where |
 |---|---|
@@ -92,7 +98,7 @@ Work through [seo/QA.md](seo/QA.md) on staging.
 
 ---
 
-## B. Every deploy
+## B. Every deploy (manual, from your Mac)
 
 ```bash
 # 1. Finish work on dev, commit, push
@@ -106,7 +112,8 @@ git pull
 git merge dev
 git push
 
-# 3. Build, upload and switch live (runs all checks and tests first; stops on any error)
+# 3. With automatic deploys (F): nothing to do, the push to main deploys.
+#    Without them: build, upload and switch live (runs all checks and tests first)
 bash deploy/deploy.sh
 
 # 4. Back to dev for the next change
@@ -167,3 +174,95 @@ npm ci && npm run check
 rsync -az --delete out/ user@server:/var/www/invoicor.com/site-new/
 ssh user@server 'cd /var/www/invoicor.com && rm -rf site-prev && mv site site-prev && mv site-new site'
 ```
+
+---
+
+## F. Automatic deploys with GitHub Actions (one-time setup)
+
+The `deploy` job in `.github/workflows/check.yml` runs after the checks passed on a push:
+`dev` → staging, `main` → production. It builds on GitHub, uploads over SSH with its own key, switches
+folders (the previous version stays as `site-prev`), checks the site and **rolls back by itself** if
+the home page isn't 200 or an unknown page isn't 404. Until the secrets below exist, it skips with a
+note and never fails.
+
+**Why this works with a split project:** the website and the API are independent. The website only
+ever writes `site`, `site-new` and `site-prev` inside its folder; it never touches the API, the
+Django code or the old Vite files. nginx is the only shared piece: it sends `/api/` to Django and
+everything else to the website folder. The API keeps its own repo and its own deploy.
+
+### F.1 Settings: what goes where
+
+| Where | What | Notes |
+|---|---|---|
+| **VPS** | nothing | No `.env` for the website on the server. |
+| **GitHub → Settings → Environments → `production`** (secrets) | `DEPLOY_SSH_KEY`, `DEPLOY_SSH_TARGET`, `DEPLOY_KNOWN_HOSTS`, `DEPLOY_DIR` = `/var/www/invoicor.com` | See F.3 and F.4. |
+| **GitHub → Environments → `staging`** (secrets) | the same four, with `DEPLOY_DIR` = `/var/www/staging.invoicor.com`, plus `STAGING_AUTH` = `invoicor:<staging password>` | Same key and target as production. |
+| **GitHub → Settings → Secrets and variables → Actions → Variables** | `PRODUCTION_LIVE` = `true` (only from launch day, F.6); optional `APP_STORE_PROVIDER_TOKEN` (ROADMAP X10) | Variables, not secrets: they're not sensitive. |
+| **Your Mac, `deploy/.env`** | only for the manual fallback script | Copy of `deploy/.env.example`. |
+
+Build-time settings (already correct by default, change only if the domain or API moves):
+`NEXT_PUBLIC_SITE_URL` (default `https://invoicor.com`), `NEXT_PUBLIC_API_URL` (default
+`https://invoicor.com/api`), `NEXT_PUBLIC_ANALYTICS` (set to `false` for staging by the workflow),
+`NEXT_PUBLIC_APP_STORE_PROVIDER_TOKEN` (from the `APP_STORE_PROVIDER_TOKEN` variable).
+
+### F.2 On the VPS: a deploy user (5 min)
+
+A separate user that can only write the website folders, so the GitHub key can't touch anything else.
+
+```bash
+sudo adduser --disabled-password --gecos "" deploy
+sudo mkdir -p /var/www/invoicor.com /var/www/staging.invoicor.com
+# Let deploy create and rename folders in both, without changing who owns what's there now:
+sudo apt install -y acl rsync
+sudo setfacl -m u:deploy:rwx /var/www/invoicor.com /var/www/staging.invoicor.com
+sudo chown deploy:deploy /var/www/staging.invoicor.com
+```
+
+### F.3 On your Mac: a key just for deploys (5 min)
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/invoicor_deploy -N "" -C "github-deploy-invoicor-web"
+# Copy the public key to the server, for the deploy user:
+cat ~/.ssh/invoicor_deploy.pub | ssh <you>@<server-ip> \
+  'sudo mkdir -p /home/deploy/.ssh && sudo tee -a /home/deploy/.ssh/authorized_keys >/dev/null && sudo chown -R deploy:deploy /home/deploy/.ssh && sudo chmod 700 /home/deploy/.ssh && sudo chmod 600 /home/deploy/.ssh/authorized_keys'
+# Test (should print ok, with no password prompt):
+ssh -i ~/.ssh/invoicor_deploy deploy@<server-ip> 'echo ok'
+# The server's fingerprint, for DEPLOY_KNOWN_HOSTS:
+ssh-keyscan -t ed25519 <server-ip>
+```
+
+### F.4 On GitHub: two environments (10 min)
+
+Repo → **Settings → Environments → New environment**:
+
+1. **`staging`**. Add secrets:
+   - `DEPLOY_SSH_KEY`: the whole content of `~/.ssh/invoicor_deploy` (the private key, including the
+     `-----BEGIN` and `-----END` lines). `pbcopy < ~/.ssh/invoicor_deploy` copies it.
+   - `DEPLOY_SSH_TARGET`: `deploy@<server-ip>`
+   - `DEPLOY_KNOWN_HOSTS`: the line `ssh-keyscan` printed.
+   - `DEPLOY_DIR`: `/var/www/staging.invoicor.com`
+   - `STAGING_AUTH`: `invoicor:<the staging password from A.4>`
+2. **`production`**. The same first three secrets, and `DEPLOY_DIR` = `/var/www/invoicor.com`.
+   Recommended: under **Deployment branches**, allow only `main`. Optional: **Required reviewers**:
+   you. Then every live deploy waits for one click in the Actions tab.
+
+### F.5 Staging first
+
+Set up staging once (A.4: DNS record, password, nginx file, certificate). Then push anything to `dev`:
+the Actions tab shows `check`, then `deploy` to staging. Open https://staging.invoicor.com and work
+through [seo/QA.md](seo/QA.md).
+
+### F.6 Launch day (one time)
+
+1. Back up the current nginx file and site (C.2).
+2. Merge `dev` into `main` and push. The deploy uploads the new site to `/var/www/invoicor.com/site`,
+   but doesn't check the live site yet (`PRODUCTION_LIVE` isn't set), because nginx still serves
+   the old site.
+3. Switch nginx to the new folder (A.3, `root /var/www/invoicor.com/site;`),
+   `sudo nginx -t && sudo systemctl reload nginx`.
+4. Set the repository variable `PRODUCTION_LIVE` = `true`. From now on every live deploy is checked
+   (and rolled back by itself if it fails) and tells search engines what changed (IndexNow).
+5. Section D (checks after the first deploy).
+
+**Rollback by hand:** `bash deploy/deploy.sh --rollback` from your Mac, or on the server
+`cd /var/www/invoicor.com && mv site site-bad && mv site-prev site`.

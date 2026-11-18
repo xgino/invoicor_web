@@ -55,9 +55,10 @@ here; the old number is in brackets._
 |---|---|---|---|
 | X1 | ✅ Search Console verified by DNS (domain property; covers learn.invoicor.com too). Done, 2026-11-18 | n/a | Nothing left to do. |
 | X2 | 🔴 Export the SEO baseline [Y1] | 20 min | Before the launch, so we can prove what changed. Step by step in [seo/baseline/README.md](seo/baseline/README.md): Search Console Performance (3 and 16 months, CSV), Pages report, Links report; Bing Webmaster Tools the same. Files go in `seo/baseline/2026-11/`. |
-| X3 | 🔴 Check the server and merge the nginx config [Y2] | 30 min | DEPLOY.md A, steps 1–3. Paste the output of `grep -rln invoicor /etc/nginx/sites-enabled/` and `nginx -v` to Claude for the exact merged file. Same session as X5. |
+| X22 | 🔴 Set up automatic deploys [new] | 30 min | [DEPLOY.md F](DEPLOY.md#f-automatic-deploys-with-github-actions-one-time-setup): a `deploy` user on the VPS (F.2), a deploy key from your Mac (F.3), two GitHub environments with 4–5 secrets each (F.4). **No `.env` on the VPS.** After that: every push to `dev` goes to staging, every push to `main` goes live, checked and rolled back by itself if broken. The API stays separate. |
+| X3 | 🔴 Check the server and merge the nginx config [Y2] | 30 min | Send Claude the output of `grep -rln invoicor /etc/nginx/sites-enabled/`, `sudo cat` of that file, `nginx -v` and `ls -la /var/www/invoicor.com` for the exact merged file. Switch it on launch day (DEPLOY.md F.6). |
 | X4 | 🟠 Staging + QA checklist [Y17] | 45 min | DEPLOY.md A.4, then `bash deploy/deploy.sh --staging`, `npm run parity -- --new https://staging.invoicor.com …` and [seo/QA.md](seo/QA.md). Recommended for the first launch. |
-| X5 | 🔴 Launch: merge `dev` → `main`, deploy [Y2] | 15 min | DEPLOY.md C. Rollback is one command. |
+| X5 | 🔴 Launch: merge `dev` → `main` [Y2] | 15 min | DEPLOY.md F.6: merge and push (the deploy uploads), switch nginx, set `PRODUCTION_LIVE` = `true`. Rollback is one command. |
 | X6 | 🔴 Tell Google and Bing [Y3] | 15 min | Submit `sitemap.xml` in both. URL Inspection → **Request indexing** for the home page, the generator and the 6 pages from S1 (plumbing, HVAC, freelance design templates; lawn care, electricians industries; Invoice2go compare). |
 | X13 | 🔴 Post-launch watch, 4 weeks | 10 min/week | Week 1 daily: server 404s (`grep '" 404 ' /var/log/nginx/access.log \| tail -50`). Weekly: Search Console vs X2. Send Claude the 404s and exports. |
 
