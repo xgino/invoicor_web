@@ -48,10 +48,22 @@ it would break the URL and lose its ranking. If a URL really must change, add a 
 Don't delete pages that get search traffic. Improve them, or redirect them in nginx to the closest
 page. Remove the entry only after the redirect is in place, and remove any `related` links to it.
 
+## Only claim what the app does
+
+Every sentence that says what Invoicor does must match the fact sheet in [BRAND.md](BRAND.md)
+section 10. The unit tests block the claims found false before (Apple Pay checkout, automatic
+recurring invoices, per-line tax flags, "unlimited invoices", "135 currencies" and similar) in
+the fields that speak for the app. If a test fails after your edit, fix the sentence, not the test.
+
 ## What the checks enforce
 
 **`npm run build` fails** when a required field is missing or has the wrong type, or a slug is
 duplicated or not lowercase-with-dashes (`lib/content.ts`).
+
+**`npm run test:unit` fails** when a page repeats a claim the app can't back up (see above).
+
+**`npm run test:site` fails** (after a build) when a URL from `tests/urls.txt` is missing. Never remove
+a live URL from that list without a 301 redirect in `deploy/nginx/invoicor.com.conf`.
 
 **`npm run content:check` fails** (`scripts/content-check.mjs`) when:
 - two pages share a title, meta description or H1
@@ -79,7 +91,8 @@ Numbered fields (`req_1_title` … `req_6_title`) are optional: leave one out an
 **Comparisons:** `slug`, `competitor`, `title`, `meta_description`, `badge_text`, `h1`,
 `subtitle`, `mistake_1…3_*`, `feature_compare_1…5_name/us/them` (`us`/`them` are true/false),
 `policy_h2`, `policy_text`, `solution_h2`, `solution_text`, `stat_1…2_*`, `pricing_them*`,
-`pricing_us*`, `target_audience_*`, `step_1…3_*`, `faqs[]`, `related_comparisons[]`.
+`target_audience_*`, `step_1…3_*`, `faqs[]`, `related_comparisons[]`. Invoicor's own prices come
+from `content/pricing.json`, never from this file.
 
 Comparison pages: only state facts about competitors that you can source (their pricing page,
 App Store listing or public reviews), and re-check them every few months. Prices change.

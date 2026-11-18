@@ -35,7 +35,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 | No server-side features: no ISR/on-demand revalidation, no `proxy.ts`, no next.config redirects. | Not available in a static export. Redirects live in nginx (`deploy/nginx/`). Fresh API data = rebuild + deploy. | Chunks 11e, 13, 37 |
 | Language detection (chunk 37) becomes a **client-side banner** (reads the browser language), not `proxy.ts`. Language URLs (`/de/…`) are still separate static pages. | Same SEO result (Google never gets redirected); works on static hosting. | Chunks 8d, 36, 37 |
 | `next-intl` and `[locale]` routing are **not** set up yet; add them in chunk 36, when the first translation is ready. | Avoids complexity before there's a second language. | Chunk 8d |
-| Visual design is unchanged for now (inline styles kept on the landing page); the "no inline styles" lint rule comes with the redesign (Stage E). | Migrate first, then redesign; one risk at a time. | Chunk 9b |
+| Visual design: migrated first, then redesigned light in Stage E (2026-11-18). Inline styles and hard-coded colors are now blocked by the style guard test (`tests/unit/style-guard.test.ts`). | Migrate first, then redesign; one risk at a time. | Chunks 9b, 15–25 |
 | Upgrade path: if we ever need server features, remove `output: "export"` and run `next start` behind nginx. | No code rewrite needed. | n/a |
 
 **Found and fixed during the migration:**

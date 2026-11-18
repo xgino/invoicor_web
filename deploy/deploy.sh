@@ -48,6 +48,8 @@ if [ "$mode" = "--staging" ]; then
   echo "==> Staging build of '$(git rev-parse --abbrev-ref HEAD)'"
   npm ci --no-audit --no-fund
   npm run check
+  echo "==> Rebuilding without analytics (staging visits must not count)"
+  NEXT_PUBLIC_ANALYTICS=false npm run build
   upload_and_switch "$STAGING_DIR"
   auth=()
   if [ -n "${STAGING_AUTH:-}" ]; then auth=(-u "$STAGING_AUTH"); fi

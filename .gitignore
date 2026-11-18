@@ -28,3 +28,6 @@ npm-debug.log*
 # Test output
 /test-results/
 /playwright-report/
+
+# Local helper scripts (screenshots etc.)
+/.shot*.mjs

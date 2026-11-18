@@ -9,7 +9,7 @@ Every page is pre-rendered, so search engines get the full content, titles and s
 - Plan and progress: [ROADMAP.md](ROADMAP.md)
 - How to put it live: [DEPLOY.md](DEPLOY.md)
 - How to add or edit SEO pages: [CONTENT.md](CONTENT.md)
-- Brand and SEO strategy: [BRAND.md](BRAND.md), [seo/](seo/)
+- Brand and SEO strategy: [BRAND.md](BRAND.md), [seo/](seo/) (keyword map, page blueprints, QA checklist, tracking)
 
 ## Requirements
 
@@ -88,4 +88,13 @@ To override something locally, copy `.env.example` to `.env.local`.
 
 `npm install` sets up a pre-commit hook (husky + lint-staged): staged files are linted and
 formatted, content JSON is checked, and the project is type-checked. GitHub Actions
-(`.github/workflows/check.yml`) runs all checks on every push to `dev` and `main`. It never deploys.
+(`.github/workflows/check.yml`) runs everything `npm run check` runs (lint, types, content rules,
+unit tests, build, built-site tests and browser tests with Chrome) on every push to `dev` and
+`main`. It never deploys.
+
+## Design system
+
+One source for the look: `styles/tokens.css` (colors, type, shadows, spacing) and `components/ui/`
+(buttons, cards, invoice parts). Run `npm run dev` and open http://localhost:3000/brand to see all
+of it. The style guard test fails on hard-coded colors or inline styles, so new pages stay
+consistent. Rules for using the brand: [BRAND.md](BRAND.md) section 7.

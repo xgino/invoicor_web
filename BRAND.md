@@ -86,7 +86,7 @@ Hero headline options (pick one, A/B test the others in chunk 60):
 
 ## 7. Visual direction
 
-Details and tokens come in ROADMAP chunk 15; these are the rules.
+The tokens live in `styles/tokens.css` and are all shown on the hidden `/brand` page; these are the rules.
 
 - **One brand color:** the logo's orange-to-red, `#E95D05` → `#DC3002`. No indigo, violet or blue.
 - **Light only** (decided 2026-11-18). Invoicing is a B2B trust purchase and invoices are white paper;
@@ -118,7 +118,10 @@ backgrounds, body text, icons, borders of normal cards, or more than one button 
 - **Icons:** Lucide, 1.5 px stroke, one color.
 - **Images:** real app screens in an iPhone frame and real invoice templates. No stock photos, no
   fake faces, no AI-generated people.
-- **Motion:** small and fast (150–400 ms), `transform` and `opacity` only, off for reduced motion.
+- **Motion:** small and fast (150–400 ms), `transform` and `opacity` only, off for reduced motion
+  (`styles/effects.css`). One moving thing per screen; motion should feel expensive, not busy.
+- **Invoice language:** the visual signature is invoice paper: `InvoicePaper`, `LineItems`, `Stamp`
+  ("PAID", "SAVE 16%", "0% FEES"). Use real-looking line items whose math adds up.
 
 ## 8. App and App Store consistency
 
