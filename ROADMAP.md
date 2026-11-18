@@ -142,8 +142,8 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [x] 30. API: public render endpoint _(✅ 2026-11-18, `invoicor_api` branch `feature/public-generator`)_
 - [x] 31. API: public PDF + watermark + abuse limits _(✅ 2026-11-18, same branch; Turnstile on with X19)_
-- [ ] 32. Generator page: form
-- [ ] 33. Generator page: live preview & template picker
+- [x] 32. Generator page: form _(✅ 2026-11-18)_
+- [x] 33. Generator page: live preview & template picker _(✅ 2026-11-18)_
 - [ ] 34. Generate flow, watermark reveal & signup handoff
 - [ ] 35. Generator SEO content & launch
 
@@ -1176,23 +1176,23 @@ lives on the server:
 ### 32. Generator page: form
 **Goal:** `/free-invoice-generator` with a complete, pleasant form.
 
-- [ ] a. Route + layout: the form on the left, a preview slot on the right; stacked on mobile, with a Form / Preview tab switch. The page shell and SEO content are server-rendered; only the tool is a client component.
-- [ ] b. Sections (collapsible): Your business · Client · Invoice details · Line items · Tax & discount · Payment (terms, bank, payment link) · Notes · Logo.
-- [ ] c. Line items: add, remove and reorder rows; quantity × price; live subtotal, tax, discount and total, formatted with `Intl.NumberFormat` in the chosen currency.
-- [ ] d. State in one typed store (`useReducer` or Zustand), validated with `zod` (shared with the API input shape).
-- [ ] e. Autosave the draft to `localStorage` (wrapped in try/catch), plus a "Clear form" option.
-- [ ] f. Currency and language dropdowns from the public API.
+- [x] a. Route + layout: the form on the left, a preview slot on the right; stacked on mobile, with a Form / Preview tab switch. The page shell and SEO content are server-rendered; only the tool is a client component.
+- [x] b. Sections (collapsible): Your business · Client · Invoice details · Line items · Tax & discount · Payment (terms, bank, payment link) · Notes · Logo.
+- [x] c. Line items: add, remove and reorder rows; quantity × price; live subtotal, tax, discount and total, formatted with `Intl.NumberFormat` in the chosen currency.
+- [x] d. State in one typed store (`useReducer`, `components/generator/reducer.ts`); the shape mirrors the API serializer, which validates on the server.
+- [x] e. Autosave the draft to `localStorage` (wrapped in try/catch), plus a "Clear form" option.
+- [x] f. Currency and language dropdowns from the public API.
 
 **Done when:** you can fill in a full invoice, the totals are right, and a page refresh keeps the draft.
 
 ### 33. Generator page: live preview & template picker
 **Goal:** the visitor sees the real invoice update as they type.
 
-- [ ] a. Preview: a debounced (400 ms) call to `public/render`, shown in a sandboxed `iframe` scaled to fit A4.
-- [ ] b. A loading shimmer during updates, and a crossfade when the template changes.
-- [ ] c. Template picker: a thumbnail grid; the 21 free ones selectable, starter/pro shown locked with an "In the app" badge (→ App Store with `ct=gen-locked`).
-- [ ] d. Deep links prefill the form: `?template=classic&currency=EUR&lang=de&industry=freelancer`. These URLs get a canonical tag pointing to the clean `/free-invoice-generator`.
-- [ ] e. Error states: API down → a friendly message, and the form keeps working.
+- [x] a. Preview: a debounced (500 ms) call to `public/render`, older calls cancelled, shown in a sandboxed `iframe` scaled to fit A4.
+- [x] b. A loading shimmer during updates, and a crossfade when the template changes.
+- [x] c. Template picker: a thumbnail grid; the 21 free ones selectable, starter/pro shown locked with an "In the app" badge (→ App Store with `ct=gen-locked`).
+- [x] d. Deep links prefill the form: `?template=classic&currency=EUR&lang=de`; the canonical stays the clean `/free-invoice-generator`. _(`industry=` presets come later, with industry-specific sample lines.)_
+- [x] e. Error states: API down → a friendly message, and the form keeps working.
 
 **Done when:** typing updates the preview within about half a second, and switching templates works on mobile.
 
