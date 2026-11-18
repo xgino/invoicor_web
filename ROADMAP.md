@@ -119,7 +119,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P3. "How it works" as a visible path
 - [x] P4. Promises that stand out
 - [x] P5. Fee calculator, rewritten as a gain
-- [ ] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
+- [x] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
 - [ ] P7. Premium motion: drawn underlines, moving background, glows
 - [ ] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
 - [ ] P9. FAQ search optimisation
@@ -960,10 +960,11 @@ _✅ 2026-11-18: `components/ui/TrustRow.tsx` under the hero (send + pay) and in
   - a short honest note: your own PayPal or Stripe link still has its own fee, as anywhere.
 
 ### P6. Pricing
-- [ ] a. **Same height** for all plan cards (buttons aligned at the bottom).
-- [ ] b. **Pro as the clear favourite:** "Most popular" badge in both monthly and yearly, a soft glow,
+_✅ 2026-11-18: equal-height cards with buttons aligned; Pro has a "★ Most popular" ribbon in both modes, a brand glow, a ring, sits raised on desktop and comes first on phones; limits phrased as "Up to 50 invoices every month" / "3 invoices to try, no time limit"; an "Included on every plan" strip (unlimited clients, no watermark, your own payment link, 0% fees, data in Germany)._
+- [x] a. **Same height** for all plan cards (buttons aligned at the bottom).
+- [x] b. **Pro as the clear favourite:** "Most popular" badge in both monthly and yearly, a soft glow,
   slightly raised on desktop.
-- [ ] c. **Positive limits.** Your idea: "unlimited". We can't say unlimited invoices (the plans have
+- [x] c. **Positive limits.** Your idea: "unlimited". We can't say unlimited invoices (the plans have
   limits: 3 / 10 / 50), but we can say what *is* unlimited and phrase limits as what you get:
   "Up to 50 invoices every month", plus "Unlimited clients · every PDF yours to send" on every plan.
   An unlimited tier is decision D14.
