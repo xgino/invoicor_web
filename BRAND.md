@@ -150,14 +150,14 @@ the compare pages all read it.
 > The 2026-11-17 audit found the website promising features that don't exist (a $12 unlimited
 > plan, Apple Pay checkout, offline mode, recurring invoices, per-line tax, push notifications,
 > CSV import). Before publishing any page, check its claims here. Update this list when the app
-> changes. Verified against `invoicor_ios` and `invoicor_api` on 2026-11-17; statuses and item limits added 2026-11-18.
+> changes. Verified against `invoicor_ios` and `invoicor_api` on 2026-11-17; statuses and item limits added 2026-11-18; unlimited clients 2026-11-18.
 
 | Invoicor **does** | Invoicor **does not** (don't claim it) |
 |---|---|
 | Create invoices on iPhone; share the PDF via the iOS share sheet (email, iMessage, WhatsApp). **Not a payment gateway:** it never sits between the user and their client | Process payments, card readers, Apple Pay / Google Pay checkout, client payment portal |
 | A **payment link field**: you paste your own PayPal / Stripe / other link, shown on the PDF | Hold, route or take a cut of money; per-transaction fees |
 | 31 templates (21 free, 8 Starter, 2 Pro), your logo | Custom brand colors per template (unverified: don't claim) |
-| Saved clients and products; one-tap **duplicate** of an invoice | Automatic recurring invoices or scheduled sending |
+| Saved clients and products; one-tap **duplicate** of an invoice. **Unlimited clients on every plan**, Free included (API `subscriptions/limits.py`: `clients: None` for all tiers; checked 2026-11-18. The code says "for now": re-check before each big launch) | Automatic recurring invoices or scheduled sending |
 | Subtotal, discount, **one tax rate per invoice** (inclusive or exclusive) | Per-line tax / taxable toggles per item |
 | Status: draft, sent, paid, overdue, cancelled (a sent invoice is locked; duplicate to change it) | Read receipts, "client opened it" tracking, push notifications on payment, overdue reminders to clients |
 | Line items per invoice: Free 10, Starter 25, Pro 50 (API `subscriptions/limits.py`) | "Unlimited line items" |

@@ -53,8 +53,8 @@ here; the old number is in brackets._
 
 | ID | Step | Time | Why / how |
 |---|---|---|---|
-| X1 | 🔴 Verify Google Search Console **by DNS** [Y13] | 10 min | GA now loads only after consent, so the old verification may break. Add a **Domain** property for `invoicor.com`, put its `google-site-verification` TXT record in DNS, verify. It also covers learn.invoicor.com. |
-| X2 | 🔴 Export the SEO baseline [Y1] | 20 min | Search Console → Performance (3 months, CSV), Pages, Links; Bing the same. Put them in `seo/baseline/2026-11/`. Without a "before", nobody can tell if the launch helped. |
+| X1 | ✅ Search Console verified by DNS (domain property; covers learn.invoicor.com too). Done, 2026-11-18 | n/a | Nothing left to do. |
+| X2 | 🔴 Export the SEO baseline [Y1] | 20 min | Before the launch, so we can prove what changed. Step by step in [seo/baseline/README.md](seo/baseline/README.md): Search Console Performance (3 and 16 months, CSV), Pages report, Links report; Bing Webmaster Tools the same. Files go in `seo/baseline/2026-11/`. |
 | X3 | 🔴 Check the server and merge the nginx config [Y2] | 30 min | DEPLOY.md A, steps 1–3. Paste the output of `grep -rln invoicor /etc/nginx/sites-enabled/` and `nginx -v` to Claude for the exact merged file. Same session as X5. |
 | X4 | 🟠 Staging + QA checklist [Y17] | 45 min | DEPLOY.md A.4, then `bash deploy/deploy.sh --staging`, `npm run parity -- --new https://staging.invoicor.com …` and [seo/QA.md](seo/QA.md). Recommended for the first launch. |
 | X5 | 🔴 Launch: merge `dev` → `main`, deploy [Y2] | 15 min | DEPLOY.md C. Rollback is one command. |
@@ -93,7 +93,7 @@ _No input needed unless noted. In order._
 **S1 leftovers** (from the Search Console round, details in [S1](#s1-search-console-round-1-2026-11-18)):
 - [ ] **S1-k** Re-measure on **2026-12-16** (or 4 weeks after X5): same report vs the baseline in `seo/keyword-map.csv`. _Needs your export._
 - [ ] **S1-l** Source the prices of the other 8 compare competitors (QuickBooks, FreshBooks, Xero, Zoho, Square, HoneyBook, Bonsai, Stripe) on their pricing pages; add a "{Competitor} pricing" FAQ where people search for it. _Closes X11 with your OK._
-- [ ] **S1-m** "Unlimited clients on every plan" (FreshBooks and other compares) isn't in the BRAND.md §10 fact sheet: verify in the app/API, then add it to the fact sheet or remove it.
+- [x] **S1-m** "Unlimited clients on every plan" (FreshBooks and other compares) isn't in the BRAND.md §10 fact sheet: verify in the app/API, then add it to the fact sheet or remove it. ✅ 2026-11-18: confirmed in the API (`clients: None` on every tier) and added to the BRAND.md §10 fact sheet.
 - [ ] **S1-n** Rewrite the "Which file format?" section on template pages around the PDF from the generator; it still talks about Word and Excel, which we don't offer (chunk 53 would add real downloads).
 - [ ] **S1-o** A real image of the filled-in template on each template page (Google Images + a reason to stay). Merges chunk 54a.
 - [ ] **S1-p** If "air conditioning invoice" / "heating and cooling invoice" grow, a dedicated section on `/templates/hvac` first.
@@ -102,7 +102,7 @@ _No input needed unless noted. In order._
 **E1 follow-ups** (the 30 new pages, see [E1](#e1-pseo-to-20-templates-20-industries-20-compares-2026-11-18)):
 - [ ] **E1-a** **Measure in ~3 months (around 2027-02-18, or 3 months after X5):** per new page, impressions, average position and clicks in Search Console; and `template_use` / `gen_example` events per template in PostHog. Improve the 5 weakest the same way as S1 (titles and FAQs for the searches they show up for).
 - [ ] **E1-b** Re-check the 10 new competitors' prices every 3 months (they change): Invoice Fly, Bookipi, Joist, Jobber, Housecall Pro, Invoice Ninja, Harvest, ServiceM8, Billdu, Zervant. Update `pricing_them_subtext` and the FAQ, with the new date.
-- [ ] **E1-c** "Unlimited clients on every plan" is now used on 4 compare pages (from `content/pricing.json`, decision D1). Confirm it in the app/API and add it to the BRAND.md §10 fact sheet (closes S1-m).
+- [x] **E1-c** "Unlimited clients on every plan" is now used on 4 compare pages (from `content/pricing.json`, decision D1). Confirm it in the app/API and add it to the BRAND.md §10 fact sheet (closes S1-m). ✅ 2026-11-18: confirmed in the API (`clients: None` on every tier) and added to the BRAND.md §10 fact sheet.
 
 **After the launch:**
 - [ ] **X9** Fill in current positions in `seo/keyword-map.csv` and propose 10 priority keywords with 6-month targets. _After X2._
