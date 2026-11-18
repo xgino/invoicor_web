@@ -15,6 +15,9 @@ for (const [name, path] of Object.entries(PAGE_TYPES)) {
   test(`${name} (${path}) has no serious accessibility issues`, async ({ page }) => {
     // Reduced motion: measure final colors, not text that is still fading in.
     await page.emulateMedia({ reducedMotion: "reduce" });
+    // Block the live API so the page is checked in its worst case (no template previews), the
+    // same locally and in CI. A difference here once hid a failure that only CI saw.
+    await page.route(/invoicor\.com\/api\//, (route) => route.abort());
     await trackAnalytics(page);
     await page.goto(path);
     const violations = await axeViolations(page);

@@ -51,45 +51,53 @@ export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
   if (templates.length === 0) return null;
 
   return (
-    <ul className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pt-2 pb-8 sm:-mx-6 sm:px-6">
-      {templates.map((t) => {
-        const html = previews[t.slug];
-        return (
-          <li
-            key={t.slug}
-            className="bg-surface ring-line shadow-card ease-brand w-52 shrink-0 snap-start overflow-hidden rounded-2xl ring-1 transition-transform duration-250 hover:-translate-y-1.5"
-          >
-            <div className="bg-tint relative h-[17.5rem] w-52 overflow-hidden">
-              {html ? (
-                <iframe
-                  srcDoc={html}
-                  title={`${t.name} invoice template preview`}
-                  loading="lazy"
-                  sandbox=""
-                  tabIndex={-1}
-                  className="pointer-events-none absolute top-0 left-0 h-[1123px] w-[794px] origin-top-left scale-[0.262] border-0"
-                />
-              ) : (
-                <div className="space-y-3 p-5">
-                  <Skeleton className="h-8 w-16" />
-                  <Skeleton className="h-3 w-24" />
-                  <Skeleton className="mt-6 h-3 w-full" />
-                  <Skeleton className="h-3 w-5/6" />
-                  <Skeleton className="h-3 w-4/6" />
-                </div>
-              )}
-            </div>
-            <div className="border-line flex items-center justify-between gap-2 border-t px-4 py-3">
-              <p className="text-small text-ink truncate font-bold">{t.name}</p>
-              {t.tier && t.tier !== "free" && (
-                <Badge tone={t.tier === "pro" ? "pro" : "starter"} className="capitalize">
-                  {t.tier}
-                </Badge>
-              )}
-            </div>
-          </li>
-        );
-      })}
-    </ul>
+    // A focusable, labelled region, so keyboard users can scroll it with the arrow keys.
+    <div
+      role="region"
+      aria-label="Invoice template previews"
+      tabIndex={0}
+      className="no-scrollbar focus-visible:focus-ring -mx-4 overflow-x-auto rounded-2xl px-4 pt-2 pb-8 sm:-mx-6 sm:px-6"
+    >
+      <ul className="flex snap-x snap-mandatory gap-5">
+        {templates.map((t) => {
+          const html = previews[t.slug];
+          return (
+            <li
+              key={t.slug}
+              className="bg-surface ring-line shadow-card ease-brand w-52 shrink-0 snap-start overflow-hidden rounded-2xl ring-1 transition-transform duration-250 hover:-translate-y-1.5"
+            >
+              <div className="bg-tint relative h-[17.5rem] w-52 overflow-hidden">
+                {html ? (
+                  <iframe
+                    srcDoc={html}
+                    title={`${t.name} invoice template preview`}
+                    loading="lazy"
+                    sandbox=""
+                    tabIndex={-1}
+                    className="pointer-events-none absolute top-0 left-0 h-[1123px] w-[794px] origin-top-left scale-[0.262] border-0"
+                  />
+                ) : (
+                  <div className="space-y-3 p-5">
+                    <Skeleton className="h-8 w-16" />
+                    <Skeleton className="h-3 w-24" />
+                    <Skeleton className="mt-6 h-3 w-full" />
+                    <Skeleton className="h-3 w-5/6" />
+                    <Skeleton className="h-3 w-4/6" />
+                  </div>
+                )}
+              </div>
+              <div className="border-line flex items-center justify-between gap-2 border-t px-4 py-3">
+                <p className="text-small text-ink truncate font-bold">{t.name}</p>
+                {t.tier && t.tier !== "free" && (
+                  <Badge tone={t.tier === "pro" ? "pro" : "starter"} className="capitalize">
+                    {t.tier}
+                  </Badge>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
