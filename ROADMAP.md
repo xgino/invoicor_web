@@ -120,7 +120,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P4. Promises that stand out
 - [x] P5. Fee calculator, rewritten as a gain
 - [x] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
-- [ ] P7. Premium motion: drawn underlines, moving background, glows
+- [x] P7. Premium motion: drawn underlines, moving background, glows
 - [ ] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
 - [ ] P9. FAQ search optimisation
 - [ ] P10. Mobile and speed pass
@@ -970,10 +970,11 @@ _✅ 2026-11-18: equal-height cards with buttons aligned; Pro has a "★ Most po
   An unlimited tier is decision D14.
 
 ### P7. Premium motion
-- [ ] a. A hand-drawn underline that draws itself under the gradient word in big headlines.
-- [ ] b. A slow, subtle moving background in the hero (drifting glow + faint dot grid).
-- [ ] c. Glow on the Pro card and the main buttons on hover.
-- [ ] d. Guardrails: CSS only, `transform`/`opacity`/SVG stroke only, off under reduced motion, no
+_✅ 2026-11-18: `<Gradient underline>` draws a hand-drawn line under the hero word on load and under "You keep the money." / "today." on scroll; a faint drifting dot grid behind the hero; `shadow-brand-lg` glow on primary buttons; promises glow (P4). All in `styles/effects.css`, off under reduced motion._
+- [x] a. A hand-drawn underline that draws itself under the gradient word in big headlines.
+- [x] b. A slow, subtle moving background in the hero (drifting glow + faint dot grid).
+- [x] c. Glow on the Pro card and the main buttons on hover.
+- [x] d. Guardrails: CSS only, `transform`/`opacity`/SVG stroke only, off under reduced motion, no
   layout shift, no extra JavaScript.
 
 ### P8. Legal: payments, fraud and safety

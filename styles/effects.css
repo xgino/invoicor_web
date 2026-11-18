@@ -89,6 +89,45 @@
   transform: translateY(-4px);
 }
 
+/* ── Hand-drawn underline under a headline word (Gradient underline="load" | "reveal" → .on-load / .on-reveal) ── */
+@keyframes draw-stroke {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.draw-underline path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.js .draw-underline.on-load path {
+  animation: draw-stroke 0.9s 0.7s var(--ease-brand) both;
+}
+.js .draw-underline.on-reveal path {
+  stroke-dashoffset: 1;
+}
+.js .reveal.in .draw-underline.on-reveal path {
+  animation: draw-stroke 0.9s 0.5s var(--ease-brand) both;
+}
+
+/* ── Faint moving dot grid (hero background) ── */
+@keyframes grid-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-24px, -24px, 0);
+  }
+}
+.dot-grid {
+  background-image: radial-gradient(rgb(28 25 23 / 0.09) 1px, transparent 1.2px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(70% 60% at 50% 30%, #000 30%, transparent 75%);
+  animation: grid-drift 6s linear infinite;
+}
+
 /* ── Accordion: smooth height where the browser supports it (Chrome 131+); snaps elsewhere ── */
 @supports (interpolate-size: allow-keywords) {
   :root {
@@ -236,6 +275,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .js .draw-underline path,
+  .js .reveal.in .draw-underline path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .dot-grid {
+    animation: none;
+  }
   *,
   *::before,
   *::after {

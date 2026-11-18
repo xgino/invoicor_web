@@ -4,6 +4,7 @@ import { ConsentBanner } from "@/components/consent/ConsentBanner";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { RevealObserver } from "@/components/layout/RevealObserver";
+import { SvgDefs } from "@/components/ui/layout";
 import { APP_STORE_ID, SITE_NAME, SITE_URL } from "@/lib/config";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 import { THEME_COLOR } from "@/lib/theme";
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: jsClassScript }} />
       </head>
       <body className="bg-surface text-ink selection:bg-brand-100 selection:text-brand-900 flex min-h-screen flex-col font-sans">
+        <SvgDefs />
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />

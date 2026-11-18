@@ -29,7 +29,7 @@ export function KeepYourMoney() {
         <div className="reveal">
           <Eyebrow>0% of your payments. Ever.</Eyebrow>
           <Heading id="keep-title">
-            You did the work. <Gradient>You keep the money.</Gradient>
+            You did the work. <Gradient underline="reveal">You keep the money.</Gradient>
           </Heading>
           <Text size="lead" className="mt-5">
             Many invoicing apps take a percentage of every card payment, on top of their

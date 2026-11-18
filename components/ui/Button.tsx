@@ -15,7 +15,7 @@ const BASE =
 
 const VARIANTS: Record<Variant, string> = {
   primary:
-    "sheen bg-brand-cta text-white shadow-brand hover:-translate-y-0.5 hover:[background-image:var(--brand-gradient-cta-hover)] active:translate-y-0",
+    "sheen bg-brand-cta text-white shadow-brand hover:shadow-brand-lg hover:-translate-y-0.5 hover:[background-image:var(--brand-gradient-cta-hover)] active:translate-y-0",
   secondary:
     "bg-surface text-ink border border-line-strong shadow-soft hover:border-stone-400 hover:bg-tint",
   ghost: "text-brand-700 hover:bg-brand-50",

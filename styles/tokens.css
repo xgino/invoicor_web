@@ -80,6 +80,7 @@
   --shadow-card: 0 2px 4px rgb(68 32 10 / 0.04), 0 8px 24px -4px rgb(68 32 10 / 0.08);
   --shadow-float: 0 4px 8px rgb(68 32 10 / 0.04), 0 24px 48px -12px rgb(68 32 10 / 0.18);
   --shadow-brand: 0 6px 20px -6px rgb(220 48 2 / 0.45);
+  --shadow-brand-lg: 0 14px 34px -10px rgb(220 48 2 / 0.6);
 
   /* ── Spacing rhythm ── */
   --spacing-section: clamp(4rem, 2.5rem + 6vw, 7.5rem); /* py-section: between page sections */

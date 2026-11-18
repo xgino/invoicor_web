@@ -8,7 +8,7 @@ export function FinalCta() {
     <Section tone="glow" className="text-center" aria-labelledby="final-title">
       <Container narrow className="reveal">
         <Heading id="final-title" size="h1">
-          Send your next invoice <Gradient>today.</Gradient>
+          Send your next invoice <Gradient underline="reveal">today.</Gradient>
         </Heading>
         <Text size="lead" className="mx-auto mt-5 max-w-lg">
           {FREE_INVOICES} invoices free. No watermark, no subscription, no cut of your money.

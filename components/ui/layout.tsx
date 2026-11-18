@@ -103,8 +103,55 @@ export function Heading({
 }
 
 /** The one gradient word in a large headline. */
-export function Gradient({ children }: { children: ReactNode }) {
-  return <span className="text-gradient">{children}</span>;
+export function Gradient({
+  children,
+  underline,
+}: {
+  children: ReactNode;
+  /**
+   * A hand-drawn underline that draws itself: "load" when the heading is visible on arrival (hero),
+   * "reveal" inside a `.reveal` block (draws when scrolled into view). Use on 2–3 headlines at most.
+   */
+  underline?: "load" | "reveal";
+}) {
+  if (!underline) return <span className="text-gradient">{children}</span>;
+  return (
+    <span className="relative inline-block">
+      <span className="text-gradient">{children}</span>
+      <svg
+        aria-hidden
+        viewBox="0 0 300 20"
+        preserveAspectRatio="none"
+        className={cx(
+          "draw-underline absolute -bottom-[0.18em] left-0 h-[0.32em] w-full",
+          `on-${underline}`,
+        )}
+      >
+        <path
+          d="M4 14 C 70 4, 150 3, 296 9 M 30 17 C 110 11, 200 10, 270 14"
+          pathLength={1}
+          fill="none"
+          stroke="url(#brand-underline)"
+          strokeWidth="4"
+          strokeLinecap="round"
+        />
+      </svg>
+    </span>
+  );
+}
+
+/** Shared SVG gradient for the drawn underlines (rendered once in the root layout). */
+export function SvgDefs() {
+  return (
+    <svg aria-hidden width="0" height="0" className="absolute">
+      <defs>
+        <linearGradient id="brand-underline" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stopColor="var(--color-brand-400)" />
+          <stop offset="1" stopColor="var(--color-brand-600)" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
 }
 
 /** Small uppercase label above a heading. */

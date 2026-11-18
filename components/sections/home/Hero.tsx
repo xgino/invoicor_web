@@ -22,11 +22,14 @@ export function Hero() {
         aria-hidden
         className="bg-brand-glow glow-drift absolute inset-x-0 -top-24 -z-10 h-[46rem] opacity-90"
       />
+      <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="dot-grid absolute -inset-12" />
+      </div>
       <Container className="pt-nav grid items-center gap-14 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-10 lg:pb-28">
         <div className="anim-up pt-12 lg:pt-20">
           <Eyebrow>Invoice maker for iPhone</Eyebrow>
           <h1 className="font-heading text-display text-ink text-balance">
-            Professional invoices, sent <Gradient>in seconds.</Gradient>
+            Professional invoices, sent <Gradient underline="load">in seconds.</Gradient>
           </h1>
           <p className="text-lead text-muted mt-6 max-w-xl">
             Your business details, clients and prices fill in for you. Pick a template, tap send. A
