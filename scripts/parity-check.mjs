@@ -3,14 +3,14 @@
  * URL parity check (ROADMAP chunk 27): proves no URL or SEO signal is lost in the switch.
  *
  *   node scripts/parity-check.mjs --old https://invoicor.com --new http://127.0.0.1:4173
- *   node scripts/parity-check.mjs --old https://invoicor.com --new https://staging.invoicor.com --auth user:pass
+ *   node scripts/parity-check.mjs --old https://invoicor.com --new http://localhost:4173
  *
  * URLs checked: the old site's sitemap + tests/urls.txt + every redirect in deploy/nginx/.
  * For each it fetches both sites (without following redirects) and compares status, title,
  * meta description, canonical and H1. Writes seo/parity/<date>-<host>.md and exits 1 if an URL
  * that worked on the old site returns neither 200 nor the expected 301 on the new one.
  *
- * Note: nginx redirects only exist on staging/production. Against `npm run preview` they show as
+ * Note: nginx redirects only exist on production. Against `npm run preview` they show as
  * "nginx only" instead of failing.
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";

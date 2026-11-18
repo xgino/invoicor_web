@@ -1,6 +1,6 @@
 # QA checklist (before every launch)
 
-> ROADMAP chunk 26e. Run on **staging** (`bash deploy/deploy.sh --staging`) before merging to
+> ROADMAP chunk 26e. Run on a **local preview** of the production build (`npm run build && npm run preview`, then http://localhost:4173) before merging to
 > `main`. Most of it is automated; the rest takes about 20 minutes by hand.
 
 ## Automated (must be green)
@@ -8,7 +8,7 @@
 | Check | Command | Covers |
 |---|---|---|
 | Lint, types, SEO content rules, unit tests, build, built-site tests, browser tests | `npm run check` | every URL in `tests/urls.txt` exists with one H1, canonical and share image; consent banner; 404 status; axe accessibility on every page type (desktop + mobile); style guard; no banned claims |
-| URL parity against the live site | `node scripts/parity-check.mjs --new https://staging.invoicor.com --auth user:pass` | every old URL returns 200 or the expected 301; report in `seo/parity/` |
+| URL parity against the live site | `node scripts/parity-check.mjs --new http://localhost:4173` (nginx redirects show as 404 locally; they're checked after launch) | every old URL returns 200 or the expected 301; report in `seo/parity/` |
 | CI | GitHub → Actions → `check` on the commit | same as `npm run check` on a clean machine |
 
 ## By hand
@@ -25,11 +25,11 @@
 **Search**:
 - [ ] Rich Results Test (search.google.com/test/rich-results) on the home page (FAQ), one template
       (HowTo, FAQ, breadcrumbs), one industry (FAQ, breadcrumbs) and the templates hub
-- [ ] `curl -s https://staging.invoicor.com/templates/plumbing -u user:pass | grep "<h1"` shows the
+- [ ] `curl -s http://localhost:4173/templates/plumbing | grep "<h1"` shows the
       real heading in the raw HTML
 
 **Sharing**:
-- [ ] Paste a template URL into Slack or WhatsApp **after launch** (staging is password-protected,
+- [ ] Paste a template URL into Slack or WhatsApp **after launch** (a local preview isn't reachable from outside,
       so previews can't load there): branded card with the right title
 
 **Consent and analytics** (on production after launch, in a private window):
