@@ -131,7 +131,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P13. Hand-drawn doodles: arrows and circles that draw themselves
 - [x] P14. "Who it's for": the people Invoicor is built for
 - [x] P15. Real app screens in an iPhone frame
-- [ ] P16. Sticky "Get the app" bar on phones
+- [x] P16. Sticky "Get the app" bar on phones
 - [ ] P17. QR code for desktop visitors
 - [ ] P18. Mobile and speed recheck
 - [x] P19. FAQ audit: every answer matches its question and the app _(✅ 2026-11-18)_
@@ -1069,7 +1069,7 @@ fresh screenshots straight from the app (X17).
 
 **P16. Sticky "Get the app" bar on phones.** After the hero scrolls away, a slim bar at the bottom
 of the screen keeps the download one tap away (hidden on desktop, hidden near the final CTA).
-- [ ] Build it.
+- [x] Build it. _(✅ 2026-11-18: `components/layout/StickyCta.tsx`; hides over pricing, closing CTAs and the footer (`data-hide-sticky`) and while the cookie banner is open; safe-area aware; 2 browser tests)_
 
 **P17. QR code for desktop visitors.** People on a laptop can't install an iPhone app directly. A
 "scan with your iPhone" QR code (generated at build time, no tracking) next to the App Store button

@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { HashOpener } from "@/components/layout/HashOpener";
 import { RevealObserver } from "@/components/layout/RevealObserver";
+import { StickyCta } from "@/components/layout/StickyCta";
 import { SvgDefs } from "@/components/ui/layout";
 import { APP_STORE_ID, SITE_NAME, SITE_URL } from "@/lib/config";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo";
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <RevealObserver />
         <HashOpener />
+        <StickyCta />
         <Analytics />
         <ConsentBanner />
       </body>

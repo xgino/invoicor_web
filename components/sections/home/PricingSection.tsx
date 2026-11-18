@@ -4,7 +4,7 @@ import { Container, Eyebrow, Heading, Section, Text } from "@/components/ui/layo
 /** Pricing (ROADMAP chunk 20c): every plan as an invoice, yearly first. */
 export function PricingSection() {
   return (
-    <Section id="pricing" tone="tint" aria-labelledby="pricing-title">
+    <Section id="pricing" tone="tint" aria-labelledby="pricing-title" data-hide-sticky>
       <Container>
         <div className="reveal mx-auto mb-12 max-w-2xl text-center">
           <Eyebrow>Pricing</Eyebrow>

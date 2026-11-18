@@ -59,7 +59,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-tint relative">
+    <footer data-hide-sticky className="bg-tint relative">
       <div aria-hidden className="bg-brand-gradient absolute inset-x-0 top-0 h-px opacity-60" />
       <div className="max-w-page px-gutter mx-auto pt-16 pb-10 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_3fr]">

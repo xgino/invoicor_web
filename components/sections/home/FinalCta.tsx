@@ -5,7 +5,7 @@ import { FREE_INVOICES } from "@/lib/pricing";
 /** Final call to action (ROADMAP chunk 20f): light with the brand glow. */
 export function FinalCta() {
   return (
-    <Section tone="glow" className="text-center" aria-labelledby="final-title">
+    <Section tone="glow" className="text-center" aria-labelledby="final-title" data-hide-sticky>
       <Container narrow className="reveal">
         <Heading id="final-title" size="h1">
           Send your next invoice <Gradient underline="reveal">today.</Gradient>

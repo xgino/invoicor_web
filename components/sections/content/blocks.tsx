@@ -220,7 +220,7 @@ export function ClosingCta({
   action?: ReactNode;
 }) {
   return (
-    <Section tone="glow" className="text-center">
+    <Section tone="glow" className="text-center" data-hide-sticky>
       <Container narrow className="reveal">
         <Heading size="h1">
           {title} {gradient && <Gradient>{gradient}</Gradient>}
