@@ -61,6 +61,7 @@ here; the old number is in brackets._
 | X5 | 🔴 Launch [Y2] | 10 min | `bash deploy/deploy.sh` (fills `web/current`; the old site keeps running), then `bash deploy/setup.sh launch` (backups, new nginx file, tested, undone by itself on failure). Undo: `bash deploy/setup.sh undo-launch`. |
 | X6 | 🔴 Tell Google and Bing [Y3] | 15 min | Submit `sitemap.xml` in both. URL Inspection → **Request indexing** for the home page, the generator and the 6 pages from S1 (plumbing, HVAC, freelance design templates; lawn care, electricians industries; Invoice2go compare). |
 | X13 | 🔴 Post-launch watch, 4 weeks | 10 min/week | Week 1 daily: server 404s (`grep '" 404 ' /var/log/nginx/access.log \| tail -50`). Weekly: Search Console vs X2. Send Claude the 404s and exports. |
+| X23 | 🟢 Remove the old site, ~2 weeks after launch | 1 min | `bash deploy/setup.sh cleanup`: deletes `dist/` (the old Vite site), the unused nginx copy and the launch backup. Then only `web/` and the API are in `/var/www/invoicor.com`. |
 
 **Trust and legal** (soon after launch):
 

@@ -7,6 +7,9 @@
 #   bash deploy/setup.sh launch        launch day, after the first deploy: the new nginx file goes
 #                                      live (backup first, tested, undone by itself if the site fails)
 #   bash deploy/setup.sh undo-launch   back to the old site and the old nginx file
+#   bash deploy/setup.sh cleanup       ~2 weeks after a good launch: removes the old Vite site (dist/),
+#                                      the unused nginx copy and the launch backups. After this,
+#                                      undo-launch is no longer possible (rollback still is).
 #
 # The website is static files: the server needs no Node.js and no .env for it. The API is a separate
 # repo with its own deploy; nothing here touches it.
@@ -173,11 +176,30 @@ undo_launch() {
     say "old site back. The new one stays in $WEB_PATH/current for the next try."
 }
 
+cleanup() {
+    : "${NGINX_SITE:?set NGINX_SITE in deploy/.env}"
+    # only when the live nginx file serves web/current, so the old site really isn't used anymore
+    remote "grep -q 'root $WEB_PATH/current;' '$NGINX_SITE'" \
+        || { echo "nginx doesn't serve $WEB_PATH/current yet: launch first (bash deploy/setup.sh launch)"; exit 1; }
+    local old="$PARENT/dist" stale="/etc/nginx/sites-available/$DOMAIN"
+    echo "This removes for good:"
+    echo "  $old                 (the old Vite site)"
+    [ "$stale" != "$NGINX_SITE" ] && echo "  $stale   (an nginx copy that isn't enabled)"
+    echo "  ~/nginx-$DOMAIN-before-launch.conf   (the launch backup; undo-launch stops working)"
+    read -r -p "Type yes to continue: " answer
+    [ "$answer" = "yes" ] || { echo "Nothing removed."; exit 0; }
+    remote "$SUDO bash -c 'set -e; rm -rf \"$old\"; rm -f ~/nginx-$DOMAIN-before-launch.conf
+if [ \"$stale\" != \"$NGINX_SITE\" ] && [ -f \"$stale\" ] && ! readlink -f /etc/nginx/sites-enabled/* | grep -qx \"$stale\"; then rm -f \"$stale\"; fi
+nginx -t -q && systemctl reload nginx'"
+    say "old site removed. Only $WEB_PATH (the website) and the API are left in $PARENT."
+}
+
 load_settings
 case "${1:-}" in
     "") checks; setup ;;
     info) info ;;
     launch) checks; launch ;;
     undo-launch) checks; undo_launch ;;
-    *) echo "use: bash deploy/setup.sh [info | launch | undo-launch]"; exit 1 ;;
+    cleanup) checks; cleanup ;;
+    *) echo "use: bash deploy/setup.sh [info | launch | undo-launch | cleanup]"; exit 1 ;;
 esac

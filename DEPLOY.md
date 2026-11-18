@@ -126,3 +126,13 @@ bash deploy/setup.sh launch    # right after: backups, the new nginx file, teste
 the live site. If anything fails it puts the old nginx file back by itself. Then section D.
 
 Undo the whole launch (old site and old nginx file back): `bash deploy/setup.sh undo-launch`.
+
+### F.4 About two weeks after a good launch
+
+```bash
+bash deploy/setup.sh cleanup
+```
+
+Removes the old Vite site (`/var/www/invoicor.com/dist`), the nginx copy that isn't enabled
+(`sites-available/invoicor.com`) and the launch backup. It asks first and only works once nginx
+serves `web/current`. After this, `undo-launch` is gone; `deploy.sh --rollback` still works.
