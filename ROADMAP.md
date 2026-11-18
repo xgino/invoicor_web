@@ -111,6 +111,19 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X12. 🟢 OK for Claude to research and write more compare pages
 - [ ] X13. 🔴 Post-launch watch (4 weeks)
 - [ ] X14. 🟢 Small decisions that change page text (D12, D14, D15)
+- [ ] X15. 🟠 Have a lawyer review Terms and Privacy
+
+**Stage P: Polish from your review (2026-11-18)** _(your remarks on the new site; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
+- [ ] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
+- [ ] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
+- [ ] P3. "How it works" as a visible path
+- [ ] P4. Promises that stand out
+- [ ] P5. Fee calculator, rewritten as a gain
+- [ ] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
+- [ ] P7. Premium motion: drawn underlines, moving background, glows
+- [ ] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
+- [ ] P9. FAQ search optimisation
+- [ ] P10. Mobile and speed pass
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -883,6 +896,104 @@ weeks is normal; longer than that, investigate.
 - **D14:** raise prices or not (needs the App Store change first).
 - **D15:** template titles promise "(PDF, Word, Excel)" downloads that don't exist yet.
 - **Y12 (🟠 privacy):** move PostHog to its EU cloud, so only Google Analytics leaves the EU.
+
+<a id="x15"></a>
+
+### X15. 🟠 Have a lawyer review Terms and Privacy _(once · from P8c)_
+**Why:** the Terms now cover payments, fraud and liability, and the Privacy policy covers US
+analytics. Claude wrote careful drafts, but only a lawyer can confirm they hold up for a Dutch company
+selling worldwide. **How:** send `/terms` and `/privacy` to a lawyer (many offer a fixed-price review
+for small SaaS companies) and give Claude their changes.
+
+---
+
+## Stage P: Polish from your review (2026-11-18)
+
+_Your remarks after seeing the redesign, each with the answer or recommendation, then built.
+Mobile layout and loading speed are checked for every chunk (P10 at the end measures it)._
+
+### P1. Honest wording
+- [ ] a. **Free trial and card.** Your remark: "I think we do require a card for the free trial."
+  Answer: Apple handles it. To start a free trial, the user confirms the subscription with their
+  Apple ID, which needs a payment method on file; Apple charges after the trial unless they cancel.
+  We never see the card. So: the **Free plan** (3 invoices) needs no subscription and no payment, but
+  the **trials** do need Apple payment details. Change "No card needed" to "No subscription needed"
+  (true for Free) and add "Billed by Apple after the trial unless you cancel" under every trial button.
+- [ ] b. **Watermark.** The app has no watermark on any plan; the future web generator (Stage G)
+  will. Say "No watermark in the app" where it could be read as the web version, and record the
+  difference in BRAND.md §10.
+- [ ] c. **Support.** Your remark: you read every message, but not fast. Change "A real person
+  answers" to "Real people, not bots: we read every message" and set expectations ("replies can take
+  a few days"). Never promise a response time we can't keep.
+- [ ] d. **Not a payment gateway.** Say plainly: Invoicor doesn't sit between you and your client.
+  It makes the invoice; you add your own payment link or bank details; your client pays you directly.
+
+### P2. Trust row: "send it anywhere"
+- [ ] a. Your idea: use WhatsApp, PDF and other well-known icons to borrow credibility.
+  Recommendation: **show the names, not the logos.** Other companies' logos on our site can read as a
+  partnership or endorsement, and most brand guidelines (WhatsApp, PayPal, Stripe) restrict that use.
+  Generic, recognisable icons with the names give the same instant recognition without the risk:
+  PDF · Mail · Messages · WhatsApp · AirDrop, and "works with your own PayPal, Stripe, Wise or bank
+  link". The App Store badge is the one official logo we may use (Apple allows it).
+- [ ] b. Place it under the hero and on the pricing section; reusable component.
+
+### P3. "How it works" as a path
+- [ ] Your remark: the three steps are easy to overlook. Make them a connected path: numbered nodes on
+  a line that draws itself as you scroll, each step with a small invoice visual, ending at "Paid".
+  Vertical on phones, horizontal on desktop.
+
+### P4. Promises that stand out
+- [ ] Your remark: the cards are nice but the eye scans over them. Give them more weight: a highlighted
+  band, a large icon tile in the brand gradient, one bold key phrase per card, a gradient border on
+  hover, and a short "proof" line under each.
+
+### P5. Fee calculator, rewritten as a gain
+- [ ] Your remark: at first sight it looked like *you* lose money with Invoicor, so the negativity sticks
+  to us. Rebuild it:
+  - inputs people know: **average invoice amount** and **invoices per month**
+  - "Fee other apps take per payment" as a slider with marked points ("low 1%", "common 2.9%",
+    "high 3.5%"); no competitor names, no negative branding
+  - the result is a **gain**, big and positive: "**+$1,740** more in your pocket every year with
+    Invoicor". The "what you'd pay elsewhere" figure is secondary and clearly labelled "other apps".
+  - a short honest note: your own PayPal or Stripe link still has its own fee, as anywhere.
+
+### P6. Pricing
+- [ ] a. **Same height** for all plan cards (buttons aligned at the bottom).
+- [ ] b. **Pro as the clear favourite:** "Most popular" badge in both monthly and yearly, a soft glow,
+  slightly raised on desktop.
+- [ ] c. **Positive limits.** Your idea: "unlimited". We can't say unlimited invoices (the plans have
+  limits: 3 / 10 / 50), but we can say what *is* unlimited and phrase limits as what you get:
+  "Up to 50 invoices every month", plus "Unlimited clients · every PDF yours to send" on every plan.
+  An unlimited tier is decision D14.
+
+### P7. Premium motion
+- [ ] a. A hand-drawn underline that draws itself under the gradient word in big headlines.
+- [ ] b. A slow, subtle moving background in the hero (drifting glow + faint dot grid).
+- [ ] c. Glow on the Pro card and the main buttons on hover.
+- [ ] d. Guardrails: CSS only, `transform`/`opacity`/SVG stroke only, off under reduced motion, no
+  layout shift, no extra JavaScript.
+
+### P8. Legal: payments, fraud and safety
+- [ ] a. Terms: a clear section that Invoicor only makes invoices: we don't process, hold or check
+  payments; users are responsible for the details on their invoices and the payment links they add;
+  recipients should check an invoice before paying; we're not liable for fraud, scams or disputes
+  between users and their clients; by using the service you agree. Plus a short note in Privacy.
+- [ ] b. Help: a "Safety" section with practical checks for people who *receive* an invoice
+  (check the sender, the amount, the payment details; call if bank details change).
+- [ ] c. Have a lawyer review Terms and Privacy once (Stage X, **X15**). Claude's text is a careful
+  draft, not legal advice.
+
+### P9. FAQ search optimisation
+- [ ] Your question: is the FAQ optimised for search? Answer: partly. Every FAQ already has matching
+  FAQPage structured data. But Google only shows FAQ rich results for well-known government and health
+  sites since 2023, so the value now is: questions phrased the way people search, answers that are
+  in the HTML (they are), question headings, and deep links per question (good for "People also
+  ask" and AI answers that quote one answer). Add: each question as a heading with its own link,
+  and question wording checked against searches.
+
+### P10. Mobile and speed pass
+- [ ] Screenshots of every changed section at phone width, and a measurement of page weight and
+  loading (JavaScript size, largest paint) on the home page, before and after Stage P.
 
 ---
 
