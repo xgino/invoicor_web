@@ -1,4 +1,4 @@
-import { File, FileSpreadsheet, FileText } from "lucide-react";
+import { ArrowRight, File, FileSpreadsheet, FileText, PencilLine } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,7 +18,7 @@ import { buttonClass } from "@/components/ui/Button";
 import { RelatedLinks } from "@/components/ui/content";
 import { InvoicePaper, LineItems, PaperLabel } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
-import { getTemplate, getTemplates, text } from "@/lib/content";
+import { CONTENT_UPDATED_AT, getIndustry, getTemplate, getTemplates, text } from "@/lib/content";
 import { howToLd } from "@/lib/jsonld";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
@@ -80,11 +80,14 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
     return amount ? [{ label: t.label, amount }] : [];
   });
   const balance = text(d, "sample_breakdown_balance");
-  const sampleTitle = text(d, "sample_breakdown_title") ?? `Sample ${nicheLower} invoice`;
+  const sampleTitle = text(d, "sample_breakdown_title") ?? `${niche} invoice example`;
+  // "Use this template": the generator opens with this page's example already filled in (36a).
+  const useHref = `/free-invoice-generator?example=${d.slug}`;
+  const industry = d.industry ? getIndustry(d.industry) : undefined;
 
   const toc = [
     { id: "what-to-include", label: "What to include", show: !!whatToInclude },
-    { id: "sample", label: "Sample invoice", show: rows.length > 0 },
+    { id: "sample", label: "Invoice example", show: rows.length > 0 },
     { id: "notes", label: "Industry notes", show: d.industry_notes.length > 0 },
     { id: "mistakes", label: "Mistakes to avoid", show: d.mistakes.length > 0 },
     { id: "formats", label: "File formats", show: formats.length > 0 },
@@ -117,25 +120,29 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
         eyebrow="Free template & guide"
         title={d.h1}
         subtitle={d.subtitle}
+        updated={CONTENT_UPDATED_AT.templates}
         actions={
           <>
+            <Link
+              href={useHref}
+              data-track="template_use"
+              data-track-section={`template-${d.slug}`}
+              className={buttonClass({ size: "lg" })}
+            >
+              <PencilLine aria-hidden className="size-4.5" />
+              Use this template free
+            </Link>
             <a
               href={appStoreLink(`template-${d.slug}`)}
               target="_blank"
               rel="noopener noreferrer"
               data-track="cta_click"
               data-track-section={`template-${d.slug}`}
-              className={buttonClass({ size: "lg" })}
+              className={buttonClass({ variant: "secondary", size: "lg" })}
             >
               <AppleIcon size={17} />
               Create it in the app
             </a>
-            <Link
-              href="/free-invoice-generator"
-              className={buttonClass({ variant: "secondary", size: "lg" })}
-            >
-              Create one free online
-            </Link>
           </>
         }
         aside={
@@ -194,6 +201,20 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
                 </p>
               )}
             </InvoicePaper>
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+              <Link
+                href={useHref}
+                data-track="template_use"
+                data-track-section={`template-${d.slug}-example`}
+                className={buttonClass({ size: "md" })}
+              >
+                <PencilLine aria-hidden className="size-4" />
+                Fill in this example online
+              </Link>
+              <span className="text-small text-subtle">
+                Free, no signup. Change anything, then download the PDF.
+              </span>
+            </div>
           </Block>
         )}
 
@@ -246,6 +267,31 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
         )}
 
         <FaqBlock title={`${niche} invoicing FAQ`} faqs={d.faqs} />
+
+        {industry && (
+          <div className="border-line border-t py-14">
+            <Link
+              href={`/industries/${industry.slug}`}
+              className="group bg-tint ring-line hover:ring-brand-200 focus-visible:focus-ring flex items-center justify-between gap-6 rounded-2xl p-6 ring-1 transition sm:p-8"
+            >
+              <span>
+                <span className="text-eyebrow text-brand-700 block uppercase">
+                  Invoicing every week?
+                </span>
+                <span className="font-heading text-h4 text-ink mt-1 block font-bold">
+                  The {industry.industry.toLowerCase()} invoice app
+                </span>
+                <span className="text-muted mt-1 block">
+                  Save your clients and usual line items, and send each invoice from your phone.
+                </span>
+              </span>
+              <ArrowRight
+                aria-hidden
+                className="text-brand-700 size-5 shrink-0 transition group-hover:translate-x-1"
+              />
+            </Link>
+          </div>
+        )}
 
         {d.related.length > 0 && (
           <div className="border-line border-t py-14">

@@ -1,3 +1,4 @@
+import { formatUpdated } from "@/lib/content";
 import { CircleCheck, CircleX, Info, Lightbulb } from "lucide-react";
 import type { ReactNode } from "react";
 import { Accordion } from "@/components/ui/Accordion";
@@ -23,6 +24,7 @@ export function PageHeader({
   subtitle,
   actions,
   aside,
+  updated,
 }: {
   crumbs: Array<{ name: string; href?: string }>;
   eyebrow?: ReactNode;
@@ -30,6 +32,8 @@ export function PageHeader({
   subtitle?: ReactNode;
   actions?: ReactNode;
   aside?: ReactNode;
+  /** ISO date of the last content update, shown as "Updated November 18, 2026". */
+  updated?: string;
 }) {
   return (
     <header className="bg-surface relative isolate overflow-hidden">
@@ -51,6 +55,11 @@ export function PageHeader({
               </Text>
             )}
             {actions && <div className="mt-8 flex flex-wrap items-center gap-3">{actions}</div>}
+            {updated && (
+              <p className="text-small text-subtle mt-5">
+                Updated <time dateTime={updated}>{formatUpdated(updated)}</time>
+              </p>
+            )}
           </div>
           {aside && <div className="anim-phone mx-auto w-full max-w-md">{aside}</div>}
         </div>

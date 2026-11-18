@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -17,7 +18,13 @@ import { buttonClass } from "@/components/ui/Button";
 import { Badge, RelatedLinks } from "@/components/ui/content";
 import { InvoicePaper, PaperLabel } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
-import { getIndustries, getIndustry, text } from "@/lib/content";
+import {
+  CONTENT_UPDATED_AT,
+  getIndustries,
+  getIndustry,
+  getTemplatesForIndustry,
+  text,
+} from "@/lib/content";
 import { definedTermSetLd } from "@/lib/jsonld";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
@@ -64,6 +71,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
   const tax = text(d, "tax_or_compliance_text");
   const glossaryTitle = text(d, "industry_glossary_title") ?? `${industry} billing terms`;
 
+  const templates = getTemplatesForIndustry(d.slug);
   const toc = [
     { id: "mistakes", label: "Billing mistakes", show: mistakes.length > 0 },
     { id: "features", label: "How Invoicor helps", show: features.length > 0 },
@@ -88,6 +96,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
         eyebrow={text(d, "badge_text") ?? `Invoicing for ${industryLower}`}
         title={d.h1}
         subtitle={d.subtitle}
+        updated={CONTENT_UPDATED_AT.industries}
         actions={
           <>
             <a
@@ -102,7 +111,13 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
               Start free on iOS
             </a>
             <Link
-              href="/free-invoice-generator"
+              href={
+                templates[0]
+                  ? `/free-invoice-generator?example=${templates[0].slug}`
+                  : "/free-invoice-generator"
+              }
+              data-track="template_use"
+              data-track-section={`industry-${d.slug}`}
               className={buttonClass({ variant: "secondary", size: "lg" })}
             >
               Create one free online
@@ -229,6 +244,37 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
         )}
 
         <FaqBlock title={`Questions from ${industryLower}`} faqs={d.faqs} />
+
+        {templates.length > 0 && (
+          <div className="border-line border-t py-14">
+            <p className="text-eyebrow text-brand-700 uppercase">Free templates</p>
+            <h2 className="font-heading text-h3 text-ink mt-2 font-bold">
+              Need a single invoice right now?
+            </h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {templates.map((t) => (
+                <Link
+                  key={t.slug}
+                  href={`/templates/${t.slug}`}
+                  className="group bg-tint ring-line hover:ring-brand-200 focus-visible:focus-ring flex items-center justify-between gap-4 rounded-2xl p-5 ring-1 transition"
+                >
+                  <span>
+                    <span className="text-ink block font-bold">
+                      Free {t.niche.toLowerCase()} invoice template
+                    </span>
+                    <span className="text-small text-muted mt-0.5 block">
+                      With a filled-in example and what to include
+                    </span>
+                  </span>
+                  <ArrowRight
+                    aria-hidden
+                    className="text-brand-700 size-5 shrink-0 transition group-hover:translate-x-1"
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {d.related.length > 0 && (
           <div className="border-line border-t py-14">

@@ -6,13 +6,15 @@ import {
   Eye,
   FilePlus2,
   LayoutTemplate,
+  Sparkles,
   PencilLine,
   Trash2,
 } from "lucide-react";
 import { useCallback, useEffect, useReducer, useRef, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { track } from "@/lib/analytics";
-import { newDraft } from "@/lib/generator/draft";
+import { type Draft, filledItems, newDraft, newItemId } from "@/lib/generator/draft";
+import type { GeneratorExample } from "@/lib/generator/examples";
 import { clearDraft, loadDraft, saveDraft } from "@/lib/generator/storage";
 import { computeTotals, formatMoney } from "@/lib/generator/totals";
 import {
@@ -32,18 +34,21 @@ import { reducer } from "./reducer";
 import { type GeneratorTemplate, TemplatePicker } from "./TemplatePicker";
 
 /**
- * The free invoice generator (ROADMAP chunks 32–34). The form and totals run in the browser; the
- * preview is filled in the browser too; the API is only called for the PDF. The draft autosaves locally.
+ * The free invoice generator (ROADMAP chunks 32–35). Everything runs in the browser: the form,
+ * totals, preview and the PDF. The draft autosaves locally.
  */
 export function Generator({
   templates,
   currencies,
   languages,
+  examples = {},
   appCta,
 }: {
   templates: GeneratorTemplate[];
   currencies: Option[];
   languages: Option[];
+  /** Example invoices from the template pages, for ?example=plumbing (ROADMAP 36a). */
+  examples?: Record<string, GeneratorExample>;
   /** Server-rendered App Store badge + QR code, shown after a download (chunk 34). */
   appCta?: ReactNode;
 }) {
@@ -53,8 +58,13 @@ export function Generator({
   const [tab, setTab] = useState<"form" | "preview">("form");
   const [saved, setSaved] = useState<"idle" | "saved" | "blocked">("idle");
   const started = useRef(false);
+  // An example that would replace the visitor's own items waits for a click instead.
+  const [offer, setOffer] = useReducer(
+    (_: { slug: string; example: GeneratorExample } | null, next: typeof _) => next,
+    null,
+  );
 
-  // Restore the saved draft, then apply deep-link params (?template=&currency=&lang=).
+  // Restore the saved draft, then apply deep-link params (?template=&currency=&lang=&example=).
   useEffect(() => {
     const saved = loadDraft();
     const next = saved ?? newDraft();
@@ -65,9 +75,20 @@ export function Generator({
     if (cur && currencies.some((c) => c.code === cur)) next.currency = cur;
     const lang = params.get("lang");
     if (lang && languages.some((l) => l.code === lang)) next.language = lang;
+    const slug = params.get("example");
+    const example = slug ? examples[slug] : undefined;
+    if (slug && example) {
+      if (saved && filledItems(saved).length > 0) setOffer({ slug, example });
+      else {
+        dispatch({ type: "replace", draft: withExample(next, example) });
+        track("gen_example", { example: slug });
+        ready.current = true;
+        return;
+      }
+    }
     dispatch({ type: "replace", draft: next });
     ready.current = true;
-  }, [templates, currencies, languages]);
+  }, [templates, currencies, languages, examples]);
 
   // Autosave (debounced) and the first-edit analytics event.
   useEffect(() => {
@@ -124,6 +145,38 @@ export function Generator({
 
       {/* Form */}
       <div className={cx(tab === "preview" && "hidden lg:block")}>
+        {offer && (
+          <div
+            role="status"
+            className="bg-brand-50 ring-brand-200 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl p-4 ring-1"
+          >
+            <p className="text-small text-ink flex-1">
+              <Sparkles aria-hidden className="text-brand-600 mr-1.5 inline size-4" />
+              <strong>Load the {offer.example.niche.toLowerCase()} example?</strong> It replaces
+              your current items and notes; your business and client stay.
+            </p>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  update({ type: "replace", draft: withExample(draft, offer.example) });
+                  track("gen_example", { example: offer.slug });
+                  setOffer(null);
+                }}
+                className="text-small bg-brand-600 hover:bg-brand-700 focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold text-white"
+              >
+                Load example
+              </button>
+              <button
+                type="button"
+                onClick={() => setOffer(null)}
+                className="text-small text-muted hover:text-ink focus-visible:focus-ring rounded-lg px-3 py-1.5 font-bold"
+              >
+                Keep mine
+              </button>
+            </div>
+          </div>
+        )}
         <SaveBar
           saved={saved}
           onNew={() => {
@@ -260,4 +313,13 @@ function SaveBar({
       </div>
     </div>
   );
+}
+
+/** The draft with a template page's example items and notes (keeps business, client, settings). */
+function withExample(draft: Draft, example: GeneratorExample): Draft {
+  return {
+    ...draft,
+    items: example.items.map((i) => ({ id: newItemId(), description: "", ...i })),
+    notes: example.notes || draft.notes,
+  };
 }

@@ -5,6 +5,8 @@ import { AppStoreBadge, Breadcrumbs } from "@/components/ui/content";
 import { QrDownload } from "@/components/ui/QrDownload";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getApiCurrencies, getApiLanguages, getApiTemplates } from "@/lib/api";
+import { getTemplates } from "@/lib/content";
+import { examplesBySlug } from "@/lib/generator/examples";
 import { howToLd, webAppLd } from "@/lib/jsonld";
 import { GeneratorContent, STEPS } from "./content";
 import { buildMetadata } from "@/lib/seo";
@@ -61,6 +63,7 @@ export default async function FreeInvoiceGeneratorPage() {
             </p>
           </div>
           <Generator
+            examples={examplesBySlug(getTemplates())}
             templates={templates.map(({ slug, name, tier }) => ({ slug, name, tier }))}
             currencies={currencies.length > 0 ? currencies : FALLBACK_CURRENCIES}
             languages={languages.length > 0 ? languages : FALLBACK_LANGUAGES}

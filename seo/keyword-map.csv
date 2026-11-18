@@ -1,11 +1,11 @@
 url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_position,notes
-/,live,home,invoice app iphone,invoice maker app; invoicor,app / brand,19-20,,Brand + app intent. Not 'free invoice generator' (that's the generator page).
+/,live,home,invoice app iphone,invoice maker app; invoicor,app / brand,19-20,3.9 (GSC 28d to 2026-11-18),Brand + app intent. Not 'free invoice generator' (that's the generator page).
 /free-invoice-generator,planned,generator,free invoice generator,invoice generator; create invoice online; invoice maker online; invoice generator pdf,tool (do),30-35,,Owns all 'make an invoice online' intent. No variants like /invoice-generator-pdf.
-/templates,live,hub,invoice templates,free invoice template; invoice template by industry,browse,21,,
+/templates,live,hub,invoice templates,free invoice template; invoice template by industry,browse,21,10.0 (GSC 28d to 2026-11-18),
 /templates/photography,live,template,photography invoice template,photographer invoice; photography invoice pdf,template (download/fill),21,,
-/templates/plumbing,live,template,plumbing invoice template,plumber invoice template; plumbing invoice pdf,template (download/fill),21,,
-/templates/hvac,live,template,hvac invoice template,hvac service invoice; hvac invoice pdf,template (download/fill),21,,
-/templates/freelance-design,live,template,graphic design invoice template,freelance design invoice; designer invoice template,template (download/fill),21,,
+/templates/plumbing,live,template,plumbing invoice template,plumber invoice template; plumbing invoice pdf,template (download/fill),21,26.8 (GSC 28d to 2026-11-18),
+/templates/hvac,live,template,hvac invoice template,hvac service invoice; hvac invoice pdf,template (download/fill),21,54.0 (GSC 28d to 2026-11-18),
+/templates/freelance-design,live,template,graphic design invoice template,freelance design invoice; designer invoice template,template (download/fill),21,30.0 (GSC 28d to 2026-11-18),
 /templates/handyman,live,template,handyman invoice template,handyman invoice pdf; handyman receipt,template (download/fill),21,,
 /templates/videography,live,template,videography invoice template,videographer invoice template; video production invoice,template (download/fill),21,,
 /templates/landscaping,live,template,landscaping invoice template,lawn care invoice template; landscaping invoice pdf,template (download/fill),21,,
@@ -14,9 +14,9 @@ url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_po
 /templates/auto-detailing,live,template,auto repair invoice template,mechanic invoice template; auto detailing invoice,template (download/fill),21,,
 /industries,live,hub,invoicing software by industry,invoice app for small business,browse,22,,
 /industries/plumbers-hvac,live,industry,invoice app for plumbers,plumbing invoicing software; hvac invoicing software,software (commercial),22,,Template intent belongs to /templates/plumbing and /templates/hvac
-/industries/freelance-designers,live,industry,invoicing app for freelance designers,invoice software for creatives,software (commercial),22,,
-/industries/landscaping-lawn-care,live,industry,landscaping invoicing software,lawn care invoice app,software (commercial),22,,Template intent belongs to /templates/landscaping
-/industries/electricians,live,industry,invoice app for electricians,electrician invoicing software; electrician invoice template,software (commercial),22,,Owns 'electrician invoice template' until a /templates/electrician page exists
+/industries/freelance-designers,live,industry,invoicing app for freelance designers,invoice software for creatives,software (commercial),22,18.8 (GSC 28d to 2026-11-18),
+/industries/landscaping-lawn-care,live,industry,landscaping invoicing software,lawn care invoice app,software (commercial),22,51.5 (GSC 28d to 2026-11-18),Template intent belongs to /templates/landscaping
+/industries/electricians,live,industry,invoice app for electricians,electrician invoicing software; electrician invoice template,software (commercial),22,46.0 (GSC 28d to 2026-11-18),Owns 'electrician invoice template' until a /templates/electrician page exists
 /industries/general-contractors,live,industry,invoice app for contractors,contractor invoicing software; handyman invoice app,software (commercial),22,,Template intent belongs to /templates/handyman
 /industries/photographers-videographers,live,industry,invoicing software for photographers,photography invoice app,software (commercial),22,,Template intent belongs to /templates/photography
 /industries/consultants-coaches,live,industry,invoicing software for consultants,coaching invoice app,software (commercial),22,,Template intent belongs to /templates/consulting
@@ -26,8 +26,8 @@ url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_po
 /compare,live,hub,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,
 /compare/quickbooks,live,compare,quickbooks alternative,quickbooks vs invoicor; apps like quickbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/freshbooks,live,compare,freshbooks alternative,freshbooks vs invoicor; apps like freshbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/invoice2go,live,compare,invoice2go alternative,invoice2go vs invoicor; apps like invoice2go,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/wave,live,compare,wave alternative,wave vs invoicor; apps like wave,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/invoice2go,live,compare,invoice2go alternative,invoice2go vs invoicor; apps like invoice2go,compare,23,24.0 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
+/compare/wave,live,compare,wave alternative,wave vs invoicor; apps like wave,compare,23,31.4 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/xero,live,compare,xero alternative,xero vs invoicor; apps like xero,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/zoho-invoice,live,compare,zoho invoice alternative,zoho invoice vs invoicor; apps like zoho invoice,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
 /compare/square-invoices,live,compare,square invoices alternative,square invoices vs invoicor; apps like square invoices,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"

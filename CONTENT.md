@@ -81,7 +81,10 @@ Numbered fields (`req_1_title` … `req_6_title`) are optional: leave one out an
 `what_to_include_intro`, `req_1…6_title/text`, `what_to_include_outro`, `sample_breakdown_*`
 (the example invoice table), `industry_notes_title`, `industry_notes[]`, `mistakes_title`,
 `mistakes[]`, `pro_tip`, `when_to_use_each_format_title`, `format_pdf/word/excel_desc`, `faqs[]`,
-`related[]`.
+`related[]`, `industry` (slug of the matching industry page; both pages then link to each other).
+The `sample_breakdown_rows` are also the example the free generator opens with from “Use this
+template free” (`/free-invoice-generator?example={slug}`), so keep them realistic: up to 10 rows,
+a number in `qty` and in `rate`.
 
 **Industries:** `slug`, `industry`, `title`, `meta_description`, `icon`, `color`, `badge_text`,
 `h1`, `subtitle`, `industry_stats[]`, `industry_mistake_1…3_*`, `feature_1…3_*`, `expert_tip_*`,

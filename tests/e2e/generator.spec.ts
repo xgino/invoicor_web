@@ -147,3 +147,29 @@ test("keeps the draft after a refresh", async ({ page }) => {
   await page.reload();
   await expect(page.getByLabel("Business name")).toHaveValue("Rivera Plumbing");
 });
+
+test("“Use this template” opens the generator with the page's example filled in", async ({
+  page,
+}) => {
+  await mockApi(page);
+  await page.goto("/templates/plumbing");
+  await page.getByRole("link", { name: "Use this template free" }).first().click();
+  await expect(page).toHaveURL(/free-invoice-generator\?example=plumbing/);
+  await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue(
+    "Emergency callout fee (Saturday rate)",
+  );
+  await expect(page.getByLabel("Price").first()).toHaveValue("125.00");
+});
+
+test("an example never silently replaces the visitor's own items", async ({ page }) => {
+  await mockApi(page);
+  await page.goto("/free-invoice-generator");
+  await page.getByLabel("Item", { exact: true }).first().fill("My own line");
+  await page.waitForTimeout(700); // autosave
+  await page.goto("/free-invoice-generator?example=hvac");
+  await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue("My own line");
+  await page.getByRole("button", { name: "Load example" }).click();
+  await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue(
+    "Standard diagnostic / trip fee",
+  );
+});

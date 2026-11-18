@@ -16,7 +16,7 @@ import { RelatedLinks } from "@/components/ui/content";
 import { cx } from "@/components/ui/cx";
 import { InvoicePaper, LineItems, PaperLabel, Stamp } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
-import { flag, getComparison, getComparisons, text } from "@/lib/content";
+import { CONTENT_UPDATED_AT, flag, getComparison, getComparisons, text } from "@/lib/content";
 import { FREE_INVOICES, PAID_PLANS, PRICING, formatPrice } from "@/lib/pricing";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
@@ -111,6 +111,7 @@ export default async function ComparePage({ params }: PageProps<"/compare/[slug]
           { name: `vs ${competitor}` },
         ]}
         eyebrow={text(d, "badge_text") ?? `Invoicor vs ${competitor}`}
+        updated={CONTENT_UPDATED_AT.comparisons}
         title={d.h1}
         subtitle={d.subtitle}
         actions={

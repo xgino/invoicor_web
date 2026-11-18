@@ -25,6 +25,8 @@ const base = {
 const templateSchema = z.looseObject({
   ...base,
   niche: z.string().min(1),
+  /** Slug of the matching industry page (the "invoice app for …" page), for cross-links. */
+  industry: z.string().optional(),
   sample_breakdown_rows: z
     .array(
       z.object({ description: z.string(), qty: z.string(), rate: z.string(), amount: z.string() }),
@@ -98,15 +100,16 @@ function keepExistingLinks<T extends { slug: string; name: string }>(
   });
 }
 
-const rawTemplates = parseCollection("templates", templateSchema, templatesJson);
-const templateSlugs = new Set(rawTemplates.map((t) => t.slug));
-const templates: TemplateEntry[] = rawTemplates.map((t) => ({
-  ...t,
-  related: keepExistingLinks("templates", t.slug, t.related, templateSlugs),
-}));
-
 const rawIndustries = parseCollection("industries", industrySchema, industriesJson);
 const industrySlugs = new Set(rawIndustries.map((i) => i.slug));
+
+const rawTemplates = parseCollection("templates", templateSchema, templatesJson);
+const templateSlugs = new Set(rawTemplates.map((t) => t.slug));
+const templates: TemplateEntry[] = rawTemplates.map((t) => {
+  if (t.industry && !industrySlugs.has(t.industry))
+    throw new Error(`content/templates.json ${t.slug}: industry "${t.industry}" doesn't exist`);
+  return { ...t, related: keepExistingLinks("templates", t.slug, t.related, templateSlugs) };
+});
 const industries: IndustryEntry[] = rawIndustries.map((i) => ({
   ...i,
   related: keepExistingLinks("industries", i.slug, i.related, industrySlugs),
@@ -126,12 +129,26 @@ const comparisons: ComparisonEntry[] = rawComparisons.map((c) => ({
 
 export const getTemplates = () => templates;
 export const getTemplate = (slug: string) => templates.find((t) => t.slug === slug);
+/** Template pages that belong to an industry page (e.g. plumbing + hvac → plumbers-hvac). */
+export const getTemplatesForIndustry = (slug: string) =>
+  templates.filter((t) => t.industry === slug);
 export const getIndustries = () => industries;
 export const getIndustry = (slug: string) => industries.find((i) => i.slug === slug);
 export const getComparisons = () => comparisons;
 export const getComparison = (slug: string) => comparisons.find((c) => c.slug === slug);
 
 /** Read an optional, non-empty string field (e.g. `text(d, "req_1_title")`). */
+/** "2026-11-18" → "November 18, 2026" (the visible "Updated" line on content pages). */
+export function formatUpdated(iso: string): string {
+  const [y, m, d] = iso.split("-").map(Number) as [number, number, number];
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
 export function text(entry: Record<string, unknown>, key: string): string | undefined {
   const value = entry[key];
   return typeof value === "string" && value.trim() !== "" ? value : undefined;

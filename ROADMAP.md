@@ -1295,6 +1295,76 @@ counted as a simple signal of how many people want it.
 
 ---
 
+### 36. Search Console round 1: more clicks from pages that already rank (2026-11-18)
+**Data:** Search Console, last 28 days. Almost all impressions go to 6 pages, but they sit on
+**positions 25–55** (page 3–6), so they get almost no clicks. The home page ranks #4 for its brand.
+
+| Page | Impr. | Pos. | Searches it shows for |
+|---|---|---|---|
+| `/templates/plumbing` | 573 | 26.8 | plumbing/plumbers invoice template, **plumbing bill template**, **plumbing invoice sample/examples** |
+| `/industries/landscaping-lawn-care` | 432 | 51.5 | **lawn care invoice app**, lawn care invoice/billing software, **landscape billing** |
+| `/templates/hvac` | 368 | 54.0 | hvac invoice template, **air conditioning invoice** (88), **hvac service invoice**, **heating and cooling invoice**, hvac invoice example |
+| `/templates/freelance-design` | 237 | 30.0 | **how to write an invoice for freelance design**, freelance graphic design invoice, **freelance artist invoice template** |
+| `/templates` | 149 | 10.0 | (hub) |
+| `/compare/invoice2go` | 101 | 24.0 | **invoice2go pricing** |
+| `/industries/electricians` | 64 | 46.0 | **electricians billing software** |
+| `/compare/wave` · `/industries/freelance-designers` | 38 · 31 | 31 · 19 | |
+
+**What the analysis found** (bold above = words the page didn't contain in its title or headings):
+1. Searchers want **a template they can use and an example**; the pages had neither: the buttons went
+   to the App Store or an empty generator, and “sample” / “example” / “bill” weren't in the titles.
+2. Industry and compare pages used **slogans as H1** (“Bill your entire route in minutes, not
+   hours.”), so Google saw no “lawn care invoice app” or “Invoice2go alternative” in the main heading.
+3. 5 template titles promised **“(PDF, Word, Excel)”** files that don't exist; 8 compare titles
+   were too long (cut off in Google).
+4. Invoice2go was listed at **$39.99/mo; it's $44.99** now, and two Invoice2go and Wave claims had
+   no source (“renewal price increases”, “Stop waiting 5 days for your money to settle”, “web wrapper”).
+5. Template, industry and compare pages didn't link to each other, and showed no “updated” date.
+
+**Done** (same direction for every page of a type, so all 30 pages improve, not only these 6):
+- [x] a. **“Use this template free”** is the main button on all 10 template pages: the free
+  generator opens **with that page's example already filled in** (`?example=plumbing`), plus a
+  “Fill in this example online” button under each example. Industry pages' “Create one free online”
+  opens their template's example too. Someone's own saved items are never replaced without a click.
+- [x] b. Titles, H1s and descriptions rewritten for what people search, in one pattern per type:
+  templates “{Niche} Invoice Template & Example (Free PDF)”, industries “{Industry} Invoice App &
+  Billing Software”, compares “{Competitor} Alternative …” with a keyword H1.
+- [x] c. Example sections renamed “{Niche} invoice example”.
+- [x] d. New FAQs where searches had no answer: plumbing (example, bill vs invoice), HVAC (air
+  conditioning service invoice, heating & cooling maintenance, example), freelance design (how to
+  write one, artists and illustrators), lawn care (simplest billing), Invoice2go (what it costs, is
+  there a free version), Wave (what it costs).
+- [x] e. Invoice2go and Wave prices and fees **checked on their own pricing pages** (Nov 2026) and
+  sourced on the page; unsourced claims replaced with sourced facts (card fees, approval for card
+  payments, recurring invoices are Premium-only).
+- [x] f. Cross-links: every template page links to its industry page (“The … invoice app”), every
+  industry page to its free template(s). New field `industry` in `content/templates.json`.
+- [x] g. Visible “Updated November 18, 2026” on all template, industry and compare pages.
+- [x] h. `content:check`: 0 errors, **0 warnings** (was 25): every title ≤ 60, every description ≤ 155.
+- [x] i. Tracking: `template_use` (which page) and `gen_example` (example opened in the generator).
+
+**To do:**
+- [ ] j. **You:** in Search Console, “Request indexing” for the 6 pages above (URL Inspection), so
+  Google sees the new titles within days instead of weeks.
+- [ ] k. **Re-measure on 2026-12-16** (4 weeks): same report, compare positions and clicks per page
+  with the table above (baseline also in `seo/keyword-map.csv`). Expect titles to move first.
+- [ ] l. Check the other 8 compare pages' competitor prices on their pricing pages (only Invoice2go
+  and Wave were verified this round); add a “{Competitor} pricing” FAQ where people search for it.
+- [ ] m. Verify “unlimited clients on every plan” (FreshBooks and other compare pages): it's not in
+  the BRAND.md §10 fact sheet yet. Add it there if true, remove it if not.
+- [ ] n. The “Which file format?” section on template pages talks about Word and Excel, which we
+  don't offer. Rewrite it around the PDF from the generator (or offer real .docx/.xlsx downloads).
+- [ ] o. Add a real picture of the filled-in template (from the generator) to each template page:
+  Google Images traffic for “… invoice template” and a reason to stay on the page.
+- [ ] p. If “air conditioning invoice” / “heating and cooling invoice” keep growing, give them their
+  own section on `/templates/hvac` first; a separate page only when the data shows a different intent
+  (one search intent = one URL).
+- [ ] q. Lawn care and electricians rank on page 5–6 for “… invoice app/software”: the page itself
+  is now right, but app-intent searches also need trust signals (App Store reviews, links from other
+  sites). Track; revisit after k.
+
+---
+
 ## Stage H: Languages
 _See [R4](#r4-language-strategy) for the strategy._
 

@@ -2,17 +2,26 @@
   {
     "slug": "plumbers-hvac",
     "industry": "Plumbers & HVAC",
-    "title": "Invoicing Software for Plumbers & HVAC Contractors | Invoicor",
+    "title": "Plumbing & HVAC Invoice App and Billing Software | Invoicor",
     "meta_description": "The fastest invoicing app for plumbers and HVAC techs. Bill from the driveway, separate parts and labor, and let homeowners pay via credit card instantly.",
     "icon": "Droplets",
     "color": "blue",
     "badge_text": "Field Service Invoicing",
-    "h1": "Invoice from the driveway. Get paid before you leave.",
+    "h1": "The invoice app for plumbers & HVAC techs. Get paid before you leave.",
     "subtitle": "Plumbers and HVAC techs lose hours every week to evening paperwork. Invoicor lets you build a complete invoice from your phone while still on-site, separate dispatch fees from parts and labor cleanly, and text the homeowner a PDF with your payment link before you pull out of the driveway.",
     "industry_stats": [
-      { "label": "Typical service call value", "value": "$150 - $2,500" },
-      { "label": "Standard payment timeline", "value": "Same-day or net-15" },
-      { "label": "Preferred payment method", "value": "Card / Apple Pay" }
+      {
+        "label": "Typical service call value",
+        "value": "$150 - $2,500"
+      },
+      {
+        "label": "Standard payment timeline",
+        "value": "Same-day or net-15"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / Apple Pay"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that cost plumbers and HVAC techs money",
     "industry_mistake_1_title": "Bundling dispatch into labor.",
@@ -32,20 +41,59 @@
     "real_scenario_title": "A typical Saturday emergency callout",
     "real_scenario_text": "8:14 AM Saturday call: homeowner has a leaking water heater. You arrive at 8:45, diagnose a failed T&P relief valve in 15 minutes, drive to the supply house, return with the replacement part, complete the install and pressure test by 11:30. From the kitchen counter, you build the invoice in Invoicor: $95 emergency callout fee (weekend rate), $42 T&P relief valve, $180 install labor (1.5 hours at $120/hr). Total: $317. You text the PDF with your payment link to the homeowner, and she pays through it while you're loading the van. You're home for lunch by noon, paid in full.",
     "common_line_items": [
-      { "name": "Emergency Callout Fee", "desc": "Standard rate for after-hours, weekend, or holiday dispatch.", "type": "Flat Rate" },
-      { "name": "Diagnostic Fee", "desc": "Initial site visit, problem assessment, and quote preparation.", "type": "Flat Rate" },
-      { "name": "Refrigerant Recharge (R-410A)", "desc": "Refrigerant per pound, plus leak test and system performance check.", "type": "Materials + Labor" },
-      { "name": "Water Heater Flushing", "desc": "Annual maintenance: drain, flush, anode rod inspection, T&P test.", "type": "Flat Rate" },
-      { "name": "Drain Snake / Auger Service", "desc": "Mechanical clearing of clogged drain lines up to 50ft.", "type": "Hourly + Equipment" },
-      { "name": "Furnace Tune-Up", "desc": "Pre-season inspection: burner clean, filter change, safety controls test.", "type": "Flat Rate" }
+      {
+        "name": "Emergency Callout Fee",
+        "desc": "Standard rate for after-hours, weekend, or holiday dispatch.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Diagnostic Fee",
+        "desc": "Initial site visit, problem assessment, and quote preparation.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Refrigerant Recharge (R-410A)",
+        "desc": "Refrigerant per pound, plus leak test and system performance check.",
+        "type": "Materials + Labor"
+      },
+      {
+        "name": "Water Heater Flushing",
+        "desc": "Annual maintenance: drain, flush, anode rod inspection, T&P test.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Drain Snake / Auger Service",
+        "desc": "Mechanical clearing of clogged drain lines up to 50ft.",
+        "type": "Hourly + Equipment"
+      },
+      {
+        "name": "Furnace Tune-Up",
+        "desc": "Pre-season inspection: burner clean, filter change, safety controls test.",
+        "type": "Flat Rate"
+      }
     ],
     "industry_glossary_title": "Plumbing and HVAC billing terms explained",
     "industry_glossary": [
-      { "term": "Callout / Dispatch Fee", "definition": "A flat fee charged for the technician arriving on-site, separate from the cost of any work performed. Justifies vehicle, fuel, and travel time. Typically $75-$150 standard, $150-$300 emergency." },
-      { "term": "T&M (Time and Materials)", "definition": "A billing method where the customer pays the actual labor hours plus the cost of materials, rather than a single flat-rate quote. Common for diagnostic or open-ended repair work." },
-      { "term": "Flat-Rate Pricing", "definition": "A fixed price for a defined service (e.g. 'water heater flush: $189') regardless of actual time spent. Protects the tech if a job runs long and gives the customer price certainty." },
-      { "term": "Rough-In", "definition": "The plumbing work installed before walls are closed up on a new build or renovation. Usually invoiced as a milestone payment, not a flat rate." },
-      { "term": "T&P Valve", "definition": "Temperature and pressure relief valve on a water heater. A common high-frequency replacement part on emergency callouts." }
+      {
+        "term": "Callout / Dispatch Fee",
+        "definition": "A flat fee charged for the technician arriving on-site, separate from the cost of any work performed. Justifies vehicle, fuel, and travel time. Typically $75-$150 standard, $150-$300 emergency."
+      },
+      {
+        "term": "T&M (Time and Materials)",
+        "definition": "A billing method where the customer pays the actual labor hours plus the cost of materials, rather than a single flat-rate quote. Common for diagnostic or open-ended repair work."
+      },
+      {
+        "term": "Flat-Rate Pricing",
+        "definition": "A fixed price for a defined service (e.g. 'water heater flush: $189') regardless of actual time spent. Protects the tech if a job runs long and gives the customer price certainty."
+      },
+      {
+        "term": "Rough-In",
+        "definition": "The plumbing work installed before walls are closed up on a new build or renovation. Usually invoiced as a milestone payment, not a flat rate."
+      },
+      {
+        "term": "T&P Valve",
+        "definition": "Temperature and pressure relief valve on a water heater. A common high-frequency replacement part on emergency callouts."
+      }
     ],
     "tax_or_compliance_title": "Sales tax on plumbing and HVAC invoices",
     "tax_or_compliance_text": "In most US states, materials used in plumbing and HVAC work are subject to sales tax, while labor is not. A handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) tax both. The cleanest approach: always list parts and labor as separate line items, so it's clear what was taxed. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if only your parts are taxable, check with your accountant whether to bill parts and labor on separate invoices. Check your specific state's department of revenue for the exact rules; this is a common source of audit issues for trade businesses.",
@@ -72,25 +120,40 @@
       }
     ],
     "related": [
-      { "name": "Electricians", "slug": "electricians" },
-      { "name": "General Contractors", "slug": "general-contractors" }
+      {
+        "name": "Electricians",
+        "slug": "electricians"
+      },
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      }
     ]
   },
   {
     "slug": "freelance-designers",
     "industry": "Freelance Designers",
-    "title": "Invoicing Software for Freelance Designers & Creatives | Invoicor",
-    "meta_description": "Invoicor helps freelance designers send beautiful, premium invoices from their phone. Bill deposits upfront and add your own payment link to get paid faster.",
+    "title": "Invoice App for Freelance Designers & Creatives | Invoicor",
+    "meta_description": "Invoice app for freelance designers: send polished invoices from your phone, bill deposits upfront and add your own payment link to get paid faster.",
     "canonical": "https://invoicor.com/industries/freelance-designers",
     "icon": "Sparkles",
     "color": "pink",
     "badge_text": "Creative Professional Billing",
-    "h1": "Send invoices that look as good as your portfolio.",
+    "h1": "The invoice app for freelance designers: invoices as good as your portfolio.",
     "subtitle": "Freelance designers charge premium rates for premium work, then send the bill from a Word doc that looks like a 2008 tax form. Invoicor lets you send brand-matched invoices, lock 50% deposits before kicking off projects, and bill clients abroad in their own currency — all without breaking the design polish your work depends on.",
     "industry_stats": [
-      { "label": "Typical project value", "value": "$2,500 - $25,000" },
-      { "label": "Standard payment structure", "value": "50% upfront / 50% on delivery" },
-      { "label": "Preferred payment method", "value": "Card / bank transfer / Stripe" }
+      {
+        "label": "Typical project value",
+        "value": "$2,500 - $25,000"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "50% upfront / 50% on delivery"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / bank transfer / Stripe"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that cost freelance designers money",
     "industry_mistake_1_title": "Starting work before the deposit clears.",
@@ -110,20 +173,59 @@
     "real_scenario_title": "A typical brand identity project, billed",
     "real_scenario_text": "$8,000 brand identity project, four-week timeline. Contract signed Monday. You immediately send Deposit Invoice 1001-A: $4,000 with payment terms 'due before kickoff', your Stripe payment link, and your bank details for ACH/wire as a backup. Tuesday morning the deposit lands in your Stripe account; you mark the invoice as paid in Invoicor and open Figma. Weeks 1-2: discovery, moodboards, logo exploration. Week 3: client picks a direction, two revision rounds (within scope). Week 4: final delivery. On the delivery day, you send Balance Invoice 1001-B: $4,000 with payment terms 'due on receipt', files attached as a ZIP, terms note that 'usage rights transfer on final payment'. Client pays Friday afternoon. Project complete, paid in full, zero awkward follow-up emails.",
     "common_line_items": [
-      { "name": "Brand Strategy Discovery", "desc": "Stakeholder interviews, competitive audit, positioning workshop.", "type": "Phase 1" },
-      { "name": "Logo Design & Refinement", "desc": "Initial concepts (3 directions) plus two refinement rounds.", "type": "Milestone" },
-      { "name": "UI/UX Wireframing", "desc": "Low-fidelity structural wireframes for up to 5 core pages.", "type": "Milestone" },
-      { "name": "Hi-Fidelity Design", "desc": "Final pixel-perfect design files, ready for development handoff.", "type": "Milestone" },
-      { "name": "Additional Revision Round", "desc": "Hourly billing for revisions beyond the original scope.", "type": "Hourly" },
-      { "name": "Project Kill Fee", "desc": "Pre-agreed cancellation charge if the client terminates mid-project.", "type": "Flat Rate" }
+      {
+        "name": "Brand Strategy Discovery",
+        "desc": "Stakeholder interviews, competitive audit, positioning workshop.",
+        "type": "Phase 1"
+      },
+      {
+        "name": "Logo Design & Refinement",
+        "desc": "Initial concepts (3 directions) plus two refinement rounds.",
+        "type": "Milestone"
+      },
+      {
+        "name": "UI/UX Wireframing",
+        "desc": "Low-fidelity structural wireframes for up to 5 core pages.",
+        "type": "Milestone"
+      },
+      {
+        "name": "Hi-Fidelity Design",
+        "desc": "Final pixel-perfect design files, ready for development handoff.",
+        "type": "Milestone"
+      },
+      {
+        "name": "Additional Revision Round",
+        "desc": "Hourly billing for revisions beyond the original scope.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Project Kill Fee",
+        "desc": "Pre-agreed cancellation charge if the client terminates mid-project.",
+        "type": "Flat Rate"
+      }
     ],
     "industry_glossary_title": "Design billing terms explained",
     "industry_glossary": [
-      { "term": "Deposit / Retainer", "definition": "An upfront payment (typically 50% of total project value) collected before any work begins. Protects the designer if the client cancels or ghosts mid-project. Industry standard for any project over $1,000." },
-      { "term": "Kill Fee", "definition": "A pre-agreed payment owed to the designer if the client terminates the project before completion. Usually 25-50% of the remaining balance. Specified in the contract and surfaced on the invoice as a line-item placeholder." },
-      { "term": "Usage Rights / License", "definition": "What the client is allowed to do with the final design files (commercial use, geographic scope, time limit, exclusivity). Often a separate line item on the invoice, with rights transferring only on final payment." },
-      { "term": "Net 15 / Net 30", "definition": "Payment terms specifying how many days after invoice date the payment is due. Net 15 is common for smaller freelance projects; Net 30 is standard for agency and corporate clients. Anything beyond Net 30 should be negotiated, not assumed." },
-      { "term": "MSA / SOW", "definition": "Master Services Agreement (the umbrella contract) and Statement of Work (the per-project addendum that specifies deliverables and pricing). Reference the SOW number on every invoice so larger clients can match it to their PO system." }
+      {
+        "term": "Deposit / Retainer",
+        "definition": "An upfront payment (typically 50% of total project value) collected before any work begins. Protects the designer if the client cancels or ghosts mid-project. Industry standard for any project over $1,000."
+      },
+      {
+        "term": "Kill Fee",
+        "definition": "A pre-agreed payment owed to the designer if the client terminates the project before completion. Usually 25-50% of the remaining balance. Specified in the contract and surfaced on the invoice as a line-item placeholder."
+      },
+      {
+        "term": "Usage Rights / License",
+        "definition": "What the client is allowed to do with the final design files (commercial use, geographic scope, time limit, exclusivity). Often a separate line item on the invoice, with rights transferring only on final payment."
+      },
+      {
+        "term": "Net 15 / Net 30",
+        "definition": "Payment terms specifying how many days after invoice date the payment is due. Net 15 is common for smaller freelance projects; Net 30 is standard for agency and corporate clients. Anything beyond Net 30 should be negotiated, not assumed."
+      },
+      {
+        "term": "MSA / SOW",
+        "definition": "Master Services Agreement (the umbrella contract) and Statement of Work (the per-project addendum that specifies deliverables and pricing). Reference the SOW number on every invoice so larger clients can match it to their PO system."
+      }
     ],
     "tax_or_compliance_title": "VAT and tax for designers billing internationally",
     "tax_or_compliance_text": "Designers in the EU billing other EU businesses typically use the reverse-charge mechanism: your invoice excludes VAT but includes both VAT numbers and a note like 'VAT reverse-charged per Article 196 of the EU VAT Directive'. Designers in the US billing US clients generally don't charge sales tax on design services (most states classify them as non-taxable services), but a handful of states (notably Hawaii, New Mexico, South Dakota, West Virginia) do tax services — check your state's rules. UK designers post-Brexit charge VAT on UK clients only and zero-rate exports; the invoice must show your VAT number and the client's country to be compliant. In Invoicor you set the tax rate on each invoice and add the VAT numbers and reverse-charge note in the notes, so you can copy a correct invoice for the next client with one tap.",
@@ -150,25 +252,40 @@
       }
     ],
     "related": [
-      { "name": "Photographers", "slug": "photographers-videographers" },
-      { "name": "Consultants", "slug": "consultants-coaches" }
+      {
+        "name": "Photographers",
+        "slug": "photographers-videographers"
+      },
+      {
+        "name": "Consultants",
+        "slug": "consultants-coaches"
+      }
     ]
   },
   {
     "slug": "landscaping-lawn-care",
     "industry": "Landscaping & Lawn Care",
-    "title": "Invoicing Software for Landscaping & Lawn Care Businesses | Invoicor",
-    "meta_description": "The easiest way for landscapers to bill clients. Repeat weekly lawn care invoices in one tap, bill one-off mulch jobs, and send them from your phone.",
+    "title": "Lawn Care Invoice App & Billing Software | Invoicor",
+    "meta_description": "Lawn care invoice app and billing software for landscapers. Duplicate last week's invoice in one tap, bill one-off mulch jobs and send it from your phone.",
     "canonical": "https://invoicor.com/industries/landscaping-lawn-care",
     "icon": "Leaf",
     "color": "green",
     "badge_text": "Outdoor Service Billing",
-    "h1": "Bill your entire route in minutes, not hours.",
+    "h1": "The lawn care & landscaping invoice app: bill your route in minutes.",
     "subtitle": "Landscaping and lawn care businesses thrive on route density and recurring revenue, but manually creating 40 weekly invoices kills your weekend. With Invoicor you duplicate last week's invoice for a standard cut in one tap, and fire off custom invoices for one-off aeration or mulch jobs right from your truck.",
     "industry_stats": [
-      { "label": "Typical recurring cut value", "value": "$40 - $120" },
-      { "label": "Standard payment structure", "value": "Weekly or monthly" },
-      { "label": "Preferred payment method", "value": "Auto-pay Card" }
+      {
+        "label": "Typical recurring cut value",
+        "value": "$40 - $120"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "Weekly or monthly"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Auto-pay Card"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that cost landscapers money",
     "industry_mistake_1_title": "Forgetting to bill for extras.",
@@ -188,20 +305,59 @@
     "real_scenario_title": "A spring cleanout job",
     "real_scenario_text": "You finish a massive spring cleanout at a new property. It took 3 hours, required 5 yards of fresh mulch, and resulted in a trailer full of debris. From the cab of your truck, you open Invoicor. You tap your saved items: 'Spring Cleanup Labor' (3 hrs @ $75), 'Premium Cedar Mulch' (5 yds @ $60), and 'Yard Waste Disposal Fee' (Flat $80). Total: $605. You text the PDF with your payment link. The client pays through it before you even hit the dump.",
     "common_line_items": [
-      { "name": "Standard Lawn Maintenance", "desc": "Weekly mowing, edging, and debris blow-off.", "type": "Recurring" },
-      { "name": "Premium Mulch Installation", "desc": "Cost per cubic yard, including edge trenching and spreading.", "type": "Materials + Labor" },
-      { "name": "Core Aeration", "desc": "Mechanical core aeration of turf areas.", "type": "Flat Rate" },
-      { "name": "Debris Removal & Dump Fee", "desc": "Hauling and local municipal dump fees for yard waste.", "type": "Flat Rate" },
-      { "name": "Shrub & Hedge Trimming", "desc": "Pruning of ornamental bushes and cleanup.", "type": "Hourly" },
-      { "name": "Fertilizer Application", "desc": "Seasonal granular fertilizer and weed control.", "type": "Flat Rate" }
+      {
+        "name": "Standard Lawn Maintenance",
+        "desc": "Weekly mowing, edging, and debris blow-off.",
+        "type": "Recurring"
+      },
+      {
+        "name": "Premium Mulch Installation",
+        "desc": "Cost per cubic yard, including edge trenching and spreading.",
+        "type": "Materials + Labor"
+      },
+      {
+        "name": "Core Aeration",
+        "desc": "Mechanical core aeration of turf areas.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Debris Removal & Dump Fee",
+        "desc": "Hauling and local municipal dump fees for yard waste.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Shrub & Hedge Trimming",
+        "desc": "Pruning of ornamental bushes and cleanup.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Fertilizer Application",
+        "desc": "Seasonal granular fertilizer and weed control.",
+        "type": "Flat Rate"
+      }
     ],
     "industry_glossary_title": "Landscaping billing terms explained",
     "industry_glossary": [
-      { "term": "Per-Cut Billing", "definition": "Charging the client every time the property is serviced. Prone to disputes if weather delays a cut." },
-      { "term": "Seasonal Contract", "definition": "A flat fee divided evenly over 8-12 months, covering all specified maintenance regardless of how many visits actually occur." },
-      { "term": "Materials Markup", "definition": "The percentage added to the wholesale cost of plants, soil, or mulch to cover sourcing and transport before billing the client." },
-      { "term": "Hardscaping", "definition": "Non-plant construction like patios and retaining walls. Usually billed with milestone deposits due to high material costs." },
-      { "term": "Dump Fee", "definition": "The exact cost charged by the municipal waste facility to dump a trailer of yard debris, passed on to the client." }
+      {
+        "term": "Per-Cut Billing",
+        "definition": "Charging the client every time the property is serviced. Prone to disputes if weather delays a cut."
+      },
+      {
+        "term": "Seasonal Contract",
+        "definition": "A flat fee divided evenly over 8-12 months, covering all specified maintenance regardless of how many visits actually occur."
+      },
+      {
+        "term": "Materials Markup",
+        "definition": "The percentage added to the wholesale cost of plants, soil, or mulch to cover sourcing and transport before billing the client."
+      },
+      {
+        "term": "Hardscaping",
+        "definition": "Non-plant construction like patios and retaining walls. Usually billed with milestone deposits due to high material costs."
+      },
+      {
+        "term": "Dump Fee",
+        "definition": "The exact cost charged by the municipal waste facility to dump a trailer of yard debris, passed on to the client."
+      }
     ],
     "tax_or_compliance_title": "Navigating sales tax on landscaping services",
     "tax_or_compliance_text": "Taxation on lawn care is highly state-dependent. In places like Texas or New Jersey, landscaping and lawn care services are subject to state sales tax. In others, only tangible goods (like a tree you planted or mulch you laid) are taxed, but the labor to mow a lawn is exempt. You must know your local rules. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if the mulch is taxed but the mowing isn't, check with your accountant whether to bill materials on a separate invoice.",
@@ -225,28 +381,47 @@
       {
         "question": "What if rain delays a weekly job?",
         "answer": "Nothing goes out on its own, so simply send that week's invoice when the job is done, with the right date. If you bill monthly, list only the cuts that actually happened."
+      },
+      {
+        "question": "What's the simplest way to handle lawn care billing?",
+        "answer": "Pick one rhythm per client and stick to it: per visit for one-off and irregular jobs, or one invoice a month listing each cut for regular route clients. Save your standard services (weekly mow, edging, cleanup) and each client once, then duplicate last period's invoice, adjust the dates and extras, and send it. Invoicor doesn't send invoices automatically, so you stay in control when rain moves a job."
       }
     ],
     "related": [
-      { "name": "General Contractors", "slug": "general-contractors" },
-      { "name": "Cleaning Services", "slug": "cleaning-services" }
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      },
+      {
+        "name": "Cleaning Services",
+        "slug": "cleaning-services"
+      }
     ]
   },
   {
     "slug": "electricians",
     "industry": "Electricians",
-    "title": "Invoicing Software for Independent Electricians | Invoicor",
-    "meta_description": "Stop doing electrical billing at night. Invoicor lets electricians build accurate, itemized invoices on-site, including permit fees, and send them before leaving.",
+    "title": "Electrician Invoice App & Billing Software | Invoicor",
+    "meta_description": "Electrician invoice app and billing software. Build itemized invoices on site, with parts, labor and permit fees, and send them before you leave the job.",
     "canonical": "https://invoicor.com/industries/electricians",
     "icon": "Zap",
     "color": "yellow",
     "badge_text": "Trade Contractor Billing",
-    "h1": "Powerful invoicing that works where you do.",
+    "h1": "The invoice app for electricians, made for the job site.",
     "subtitle": "Electricians constantly balance high material costs (like copper wire and breaker panels) with skilled labor rates. When you rely on clunky desktop software, billing gets delayed. Invoicor gives you a mobile-first tool to itemize parts, labor, and permits perfectly from the job site, ensuring you never leave money on the table.",
     "industry_stats": [
-      { "label": "Typical residential job", "value": "$250 - $4,000" },
-      { "label": "Standard payment timeline", "value": "Due on receipt" },
-      { "label": "Preferred payment method", "value": "Card / Bank Transfer" }
+      {
+        "label": "Typical residential job",
+        "value": "$250 - $4,000"
+      },
+      {
+        "label": "Standard payment timeline",
+        "value": "Due on receipt"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / Bank Transfer"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that short-circuit your profits",
     "industry_mistake_1_title": "Swallowing permit and inspection fees.",
@@ -266,20 +441,59 @@
     "real_scenario_title": "The classic panel upgrade",
     "real_scenario_text": "You just finished a 200-Amp service upgrade. You're standing in the garage. You open Invoicor, select the client, and add your saved '200A Panel Upgrade Package' line item ($3,200). You add a second line for 'Town Permit Fee' ($150). You send the PDF by text message. The homeowner opens a clean, professional invoice with your payment link and pays before you even load the old panel into your van.",
     "common_line_items": [
-      { "name": "Diagnostic / Troubleshooting Fee", "desc": "Initial testing of circuits to locate faults.", "type": "Flat Rate" },
-      { "name": "200-Amp Service Upgrade", "desc": "Replacement of main panel, breakers, and grounding.", "type": "Package" },
-      { "name": "Recessed Lighting Install", "desc": "Per-fixture rate including wiring and LED trim.", "type": "Per Unit" },
-      { "name": "GFCI Receptacle Replacement", "desc": "Removal of old outlet and installation of GFCI protection.", "type": "Materials + Labor" },
-      { "name": "Permitting & Inspection Coordination", "desc": "Administrative fee for municipal paperwork.", "type": "Flat Rate" },
-      { "name": "EV Charger Installation", "desc": "Dedicated 240V circuit and wallbox mounting.", "type": "Flat Rate" }
+      {
+        "name": "Diagnostic / Troubleshooting Fee",
+        "desc": "Initial testing of circuits to locate faults.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "200-Amp Service Upgrade",
+        "desc": "Replacement of main panel, breakers, and grounding.",
+        "type": "Package"
+      },
+      {
+        "name": "Recessed Lighting Install",
+        "desc": "Per-fixture rate including wiring and LED trim.",
+        "type": "Per Unit"
+      },
+      {
+        "name": "GFCI Receptacle Replacement",
+        "desc": "Removal of old outlet and installation of GFCI protection.",
+        "type": "Materials + Labor"
+      },
+      {
+        "name": "Permitting & Inspection Coordination",
+        "desc": "Administrative fee for municipal paperwork.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "EV Charger Installation",
+        "desc": "Dedicated 240V circuit and wallbox mounting.",
+        "type": "Flat Rate"
+      }
     ],
     "industry_glossary_title": "Electrical billing terms explained",
     "industry_glossary": [
-      { "term": "Rough-In", "definition": "The stage where all cables are run in the wall framing before drywall. Often the trigger for a major milestone payment." },
-      { "term": "Trim-Out", "definition": "The final stage where switches, outlets, and fixtures are installed. Usually triggers the final balance invoice." },
-      { "term": "T&M (Time and Materials)", "definition": "Billing exactly for hours worked and parts used, plus markup. Safest for complex troubleshooting." },
-      { "term": "Change Order", "definition": "Any modification to the original agreed scope. Should always be documented as a new line item or a separate invoice." },
-      { "term": "Markup", "definition": "The percentage added to wholesale material costs to cover procurement, holding, and warranty risks (standard is 20-40%)." }
+      {
+        "term": "Rough-In",
+        "definition": "The stage where all cables are run in the wall framing before drywall. Often the trigger for a major milestone payment."
+      },
+      {
+        "term": "Trim-Out",
+        "definition": "The final stage where switches, outlets, and fixtures are installed. Usually triggers the final balance invoice."
+      },
+      {
+        "term": "T&M (Time and Materials)",
+        "definition": "Billing exactly for hours worked and parts used, plus markup. Safest for complex troubleshooting."
+      },
+      {
+        "term": "Change Order",
+        "definition": "Any modification to the original agreed scope. Should always be documented as a new line item or a separate invoice."
+      },
+      {
+        "term": "Markup",
+        "definition": "The percentage added to wholesale material costs to cover procurement, holding, and warranty risks (standard is 20-40%)."
+      }
     ],
     "tax_or_compliance_title": "Handling material markups and tax",
     "tax_or_compliance_text": "When you buy materials at a supply house, you often pay tax. When you resell them to the client with a markup, depending on your state, you may need to charge sales tax to the end consumer and claim a credit, or you operate as the 'end consumer' of the materials. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if only the materials are taxable, list them separately and check with your accountant whether to bill them on their own invoice. Always consult your CPA to set up your default tax rules for your specific state.",
@@ -306,25 +520,40 @@
       }
     ],
     "related": [
-      { "name": "Plumbers & HVAC", "slug": "plumbers-hvac" },
-      { "name": "General Contractors", "slug": "general-contractors" }
+      {
+        "name": "Plumbers & HVAC",
+        "slug": "plumbers-hvac"
+      },
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      }
     ]
   },
   {
     "slug": "general-contractors",
     "industry": "General Contractors",
-    "title": "Invoicing Software for General Contractors & Handymen | Invoicor",
+    "title": "Invoice App for Contractors & Handymen | Invoicor",
     "meta_description": "Keep cash flowing on big builds. Invoicor helps general contractors and handymen manage milestone billing, change orders, and upfront deposits flawlessly.",
     "canonical": "https://invoicor.com/industries/general-contractors",
     "icon": "Hammer",
     "color": "orange",
     "badge_text": "Construction & Remodeling",
-    "h1": "Stop financing your clients' renovations.",
+    "h1": "The invoice app for contractors: stop financing your clients' renovations.",
     "subtitle": "General contractors often end up floating tens of thousands of dollars in lumber and sub-contractor fees because their billing process is too slow. Invoicor makes it incredibly easy to issue milestone draw requests and request deposits right away, ensuring you are always operating on the client's money, not yours.",
     "industry_stats": [
-      { "label": "Typical project value", "value": "$5,000 - $150,000+" },
-      { "label": "Standard payment structure", "value": "Milestone Draws (e.g. 30/30/30/10)" },
-      { "label": "Preferred payment method", "value": "ACH / Bank Transfer / Check" }
+      {
+        "label": "Typical project value",
+        "value": "$5,000 - $150,000+"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "Milestone Draws (e.g. 30/30/30/10)"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "ACH / Bank Transfer / Check"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that ruin contractor cash flow",
     "industry_mistake_1_title": "Verbal change orders.",
@@ -344,20 +573,59 @@
     "real_scenario_title": "Managing a bathroom remodel",
     "real_scenario_text": "You win a $25,000 master bath remodel. Day 1: You send a 30% deposit invoice via Invoicor ($7,500) which funds demolition and material ordering. Week 2: Demolition and plumbing rough-in are done. You immediately fire off Draw #2 ($7,500) from the driveway. The client pays via bank transfer using the details at the bottom of the PDF. Week 4: Tile is done, vanity is in. You send the final balance invoice. Every step was documented, cash never ran negative, and the client felt secure seeing professional paperwork at every milestone.",
     "common_line_items": [
-      { "name": "Initial Project Deposit", "desc": "Required to secure schedule and order long-lead materials.", "type": "Milestone" },
-      { "name": "Demolition & Haul Away", "desc": "Removal of existing structures and dumpster fees.", "type": "Phase" },
-      { "name": "Rough Framing & Carpentry", "desc": "Structural modifications per architectural plans.", "type": "Phase" },
-      { "name": "Change Order: Material Upgrade", "desc": "Difference in cost for client-selected premium finishes.", "type": "Change Order" },
-      { "name": "General Labor (Hourly)", "desc": "Miscellaneous handyman tasks outside of fixed scope.", "type": "Hourly" },
-      { "name": "Final Punch-List Balance", "desc": "Remaining balance due upon final walkthrough.", "type": "Retainage" }
+      {
+        "name": "Initial Project Deposit",
+        "desc": "Required to secure schedule and order long-lead materials.",
+        "type": "Milestone"
+      },
+      {
+        "name": "Demolition & Haul Away",
+        "desc": "Removal of existing structures and dumpster fees.",
+        "type": "Phase"
+      },
+      {
+        "name": "Rough Framing & Carpentry",
+        "desc": "Structural modifications per architectural plans.",
+        "type": "Phase"
+      },
+      {
+        "name": "Change Order: Material Upgrade",
+        "desc": "Difference in cost for client-selected premium finishes.",
+        "type": "Change Order"
+      },
+      {
+        "name": "General Labor (Hourly)",
+        "desc": "Miscellaneous handyman tasks outside of fixed scope.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Final Punch-List Balance",
+        "desc": "Remaining balance due upon final walkthrough.",
+        "type": "Retainage"
+      }
     ],
     "industry_glossary_title": "Construction billing terms explained",
     "industry_glossary": [
-      { "term": "Draw Schedule", "definition": "A predetermined timeline of payments based on project milestones (e.g., Deposit, Framing, Drywall, Final)." },
-      { "term": "Change Order", "definition": "An amendment to the original contract that alters the scope of work and the total price." },
-      { "term": "Retainage", "definition": "A portion of the agreed contract price deliberately withheld until the work is substantially complete to assure the GC finishes the job." },
-      { "term": "Allowance", "definition": "A placeholder amount in the contract for items the client hasn't picked yet (like light fixtures). Reconciled on the final invoice." },
-      { "term": "Punch List", "definition": "A document prepared near the end of a project listing minor tasks to be completed before final payment is issued." }
+      {
+        "term": "Draw Schedule",
+        "definition": "A predetermined timeline of payments based on project milestones (e.g., Deposit, Framing, Drywall, Final)."
+      },
+      {
+        "term": "Change Order",
+        "definition": "An amendment to the original contract that alters the scope of work and the total price."
+      },
+      {
+        "term": "Retainage",
+        "definition": "A portion of the agreed contract price deliberately withheld until the work is substantially complete to assure the GC finishes the job."
+      },
+      {
+        "term": "Allowance",
+        "definition": "A placeholder amount in the contract for items the client hasn't picked yet (like light fixtures). Reconciled on the final invoice."
+      },
+      {
+        "term": "Punch List",
+        "definition": "A document prepared near the end of a project listing minor tasks to be completed before final payment is issued."
+      }
     ],
     "tax_or_compliance_title": "Lien waivers and clear invoicing",
     "tax_or_compliance_text": "In the construction industry, clear invoicing protects your right to file a mechanic's lien if you aren't paid. Conversely, when a client pays a massive invoice, they often want a 'lien waiver' proving you won't sue them later. Having a clean, digital paper trail in Invoicor showing exactly which draw was billed, and exactly when it was marked 'Paid', makes providing these waivers to nervous homeowners or commercial GCs much easier.",
@@ -384,25 +652,40 @@
       }
     ],
     "related": [
-      { "name": "Plumbers & HVAC", "slug": "plumbers-hvac" },
-      { "name": "Electricians", "slug": "electricians" }
+      {
+        "name": "Plumbers & HVAC",
+        "slug": "plumbers-hvac"
+      },
+      {
+        "name": "Electricians",
+        "slug": "electricians"
+      }
     ]
   },
   {
     "slug": "photographers-videographers",
     "industry": "Photographers & Videographers",
-    "title": "Invoicing Software for Photographers & Videographers | Invoicor",
+    "title": "Invoice App for Photographers & Videographers | Invoicor",
     "meta_description": "Lock in your booking dates with upfront retainers. Invoicor helps photographers send beautiful invoices and collect payments fast.",
     "canonical": "https://invoicor.com/industries/photographers-videographers",
     "icon": "Camera",
     "color": "purple",
     "badge_text": "Creative Booking Invoicing",
-    "h1": "Secure your dates with fast, elegant invoicing.",
+    "h1": "The invoice app for photographers: secure your dates with fast invoicing.",
     "subtitle": "A photographer's inventory is their time. If a client doesn't pay a retainer, the date isn't booked. Invoicor lets you send stunning, brand-aligned invoices that make paying the non-refundable deposit frictionless, so you can lock in your calendar and focus on the shoot.",
     "industry_stats": [
-      { "label": "Typical wedding/event value", "value": "$1,500 - $8,000+" },
-      { "label": "Standard payment structure", "value": "Retainer to book, balance before shoot" },
-      { "label": "Preferred payment method", "value": "Credit Card" }
+      {
+        "label": "Typical wedding/event value",
+        "value": "$1,500 - $8,000+"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "Retainer to book, balance before shoot"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Credit Card"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that leave photographers empty-handed",
     "industry_mistake_1_title": "Holding a date without a deposit.",
@@ -422,20 +705,59 @@
     "real_scenario_title": "Booking a high-end wedding",
     "real_scenario_text": "A couple says 'yes' to your $5,000 wedding package. You immediately pull out your iPhone, create a new invoice in Invoicor, add 'Wedding Collection II' and 'Second Shooter Add-on'. You adjust the total to a 50% Retainer ($2,500), add a note stating 'Remaining balance due 14 days prior to event', and hit send. They pay via credit card on their couch that night. The date is officially booked, and you didn't have to wait until you got back to your desktop to send the paperwork.",
     "common_line_items": [
-      { "name": "Non-Refundable Booking Retainer", "desc": "Secures the date and covers initial consultation.", "type": "Milestone" },
-      { "name": "Wedding Collection - Balance", "desc": "8 hours coverage, online gallery, high-res downloads.", "type": "Package" },
-      { "name": "Second Photographer Add-On", "desc": "Additional coverage for different angles and groom prep.", "type": "Add-On" },
-      { "name": "Travel / Mileage Fee", "desc": "Standard rate per mile outside the 50-mile inclusion zone.", "type": "Expense" },
-      { "name": "Commercial Licensing Buyout", "desc": "Full copyright transfer for commercial brand usage.", "type": "Licensing" },
-      { "name": "Rush Editing Fee", "desc": "Guaranteed 48-hour turnaround for final gallery delivery.", "type": "Rush Fee" }
+      {
+        "name": "Non-Refundable Booking Retainer",
+        "desc": "Secures the date and covers initial consultation.",
+        "type": "Milestone"
+      },
+      {
+        "name": "Wedding Collection - Balance",
+        "desc": "8 hours coverage, online gallery, high-res downloads.",
+        "type": "Package"
+      },
+      {
+        "name": "Second Photographer Add-On",
+        "desc": "Additional coverage for different angles and groom prep.",
+        "type": "Add-On"
+      },
+      {
+        "name": "Travel / Mileage Fee",
+        "desc": "Standard rate per mile outside the 50-mile inclusion zone.",
+        "type": "Expense"
+      },
+      {
+        "name": "Commercial Licensing Buyout",
+        "desc": "Full copyright transfer for commercial brand usage.",
+        "type": "Licensing"
+      },
+      {
+        "name": "Rush Editing Fee",
+        "desc": "Guaranteed 48-hour turnaround for final gallery delivery.",
+        "type": "Rush Fee"
+      }
     ],
     "industry_glossary_title": "Photography billing terms explained",
     "industry_glossary": [
-      { "term": "Retainer", "definition": "A fee paid upfront to secure a photographer's services for a specific date. Legally distinct from a 'deposit', retainers are generally non-refundable as they cover the opportunity cost of turning away other work." },
-      { "term": "Usage Rights", "definition": "The legal permission granted to the client dictating how they can use the images (e.g., personal use only, commercial print, worldwide digital)." },
-      { "term": "Day Rate", "definition": "A flat fee charged for a standard 8-10 hour day of shooting, common in commercial and editorial photography." },
-      { "term": "Kill Fee", "definition": "A percentage of the total project fee owed to the photographer if a commercial shoot is cancelled by the client at the last minute." },
-      { "term": "Deliverables", "definition": "The final products provided to the client (e.g., 500 edited JPEGs, 1 physical album, 1 highlight reel)." }
+      {
+        "term": "Retainer",
+        "definition": "A fee paid upfront to secure a photographer's services for a specific date. Legally distinct from a 'deposit', retainers are generally non-refundable as they cover the opportunity cost of turning away other work."
+      },
+      {
+        "term": "Usage Rights",
+        "definition": "The legal permission granted to the client dictating how they can use the images (e.g., personal use only, commercial print, worldwide digital)."
+      },
+      {
+        "term": "Day Rate",
+        "definition": "A flat fee charged for a standard 8-10 hour day of shooting, common in commercial and editorial photography."
+      },
+      {
+        "term": "Kill Fee",
+        "definition": "A percentage of the total project fee owed to the photographer if a commercial shoot is cancelled by the client at the last minute."
+      },
+      {
+        "term": "Deliverables",
+        "definition": "The final products provided to the client (e.g., 500 edited JPEGs, 1 physical album, 1 highlight reel)."
+      }
     ],
     "tax_or_compliance_title": "Sales tax on digital goods and photography",
     "tax_or_compliance_text": "Tax laws for photography are notoriously tricky. In some US states, if you deliver photos on a USB drive (a physical good), the entire shoot becomes subject to sales tax. If you deliver them via a digital download link, it might be exempt. Furthermore, sitting fees or session fees might be taxed differently than print sales. It is vital to consult your local tax authority. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if prints are taxed and the session fee isn't, ask your accountant whether to invoice them separately.",
@@ -462,25 +784,40 @@
       }
     ],
     "related": [
-      { "name": "Freelance Designers", "slug": "freelance-designers" },
-      { "name": "Consultants", "slug": "consultants-coaches" }
+      {
+        "name": "Freelance Designers",
+        "slug": "freelance-designers"
+      },
+      {
+        "name": "Consultants",
+        "slug": "consultants-coaches"
+      }
     ]
   },
   {
     "slug": "consultants-coaches",
     "industry": "Consultants & Coaches",
-    "title": "Invoicing Software for Consultants & Coaches | Invoicor",
+    "title": "Invoicing App for Consultants & Coaches | Invoicor",
     "meta_description": "Bill for your expertise effortlessly. Invoicor provides clean, professional invoicing for consultants, executive coaches, and strategy advisors.",
     "canonical": "https://invoicor.com/industries/consultants-coaches",
     "icon": "Briefcase",
     "color": "gray",
     "badge_text": "Professional Services",
-    "h1": "Look like an executive. Bill like an agency.",
+    "h1": "The invoicing app for consultants & coaches: bill like an agency.",
     "subtitle": "As a consultant or coach, you are selling high-level expertise and trust. Your billing process must reflect that professionalism. Invoicor allows you to send sleek, corporate-grade invoices for strategy retainers, hourly consulting, or coaching packages in seconds.",
     "industry_stats": [
-      { "label": "Typical retainer value", "value": "$1,000 - $10,000/mo" },
-      { "label": "Standard payment structure", "value": "Monthly Retainer or Net-30" },
-      { "label": "Preferred payment method", "value": "ACH / Wire / Card" }
+      {
+        "label": "Typical retainer value",
+        "value": "$1,000 - $10,000/mo"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "Monthly Retainer or Net-30"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "ACH / Wire / Card"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that undermine your authority",
     "industry_mistake_1_title": "Amateur invoice design.",
@@ -500,19 +837,54 @@
     "real_scenario_title": "Billing a corporate workshop",
     "real_scenario_text": "You just finished leading a 2-day leadership offsite for a tech startup. You open Invoicor and create the bill: '2-Day Executive Leadership Offsite' ($8,500), 'Travel & Accommodation Expense' ($1,240). You add a note at the bottom: 'Thank you for a highly productive offsite. Receipts for travel are attached to this email.' You send it to their VP of Finance. Because it looks incredibly professional and includes your wire transfer details, the startup's AP department processes it the next day.",
     "common_line_items": [
-      { "name": "Monthly Advisory Retainer", "desc": "Ongoing strategic guidance, email support, and bi-weekly calls.", "type": "Recurring" },
-      { "name": "Strategy Workshop Facilitation", "desc": "Full-day on-site leadership alignment workshop.", "type": "Flat Rate" },
-      { "name": "Hourly Consulting", "desc": "Ad-hoc strategic analysis outside of standard retainer scope.", "type": "Hourly" },
-      { "name": "Executive Coaching Package", "desc": "Block of 10 one-on-one leadership coaching sessions.", "type": "Package" },
-      { "name": "Travel & Expense Reimbursement", "desc": "Pre-approved out-of-pocket travel costs (receipts attached).", "type": "Expense" }
+      {
+        "name": "Monthly Advisory Retainer",
+        "desc": "Ongoing strategic guidance, email support, and bi-weekly calls.",
+        "type": "Recurring"
+      },
+      {
+        "name": "Strategy Workshop Facilitation",
+        "desc": "Full-day on-site leadership alignment workshop.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Hourly Consulting",
+        "desc": "Ad-hoc strategic analysis outside of standard retainer scope.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Executive Coaching Package",
+        "desc": "Block of 10 one-on-one leadership coaching sessions.",
+        "type": "Package"
+      },
+      {
+        "name": "Travel & Expense Reimbursement",
+        "desc": "Pre-approved out-of-pocket travel costs (receipts attached).",
+        "type": "Expense"
+      }
     ],
     "industry_glossary_title": "Consulting billing terms explained",
     "industry_glossary": [
-      { "term": "Retainer", "definition": "A fixed monthly fee paid by a client to guarantee a consultant's availability and a baseline of services." },
-      { "term": "Value-Based Pricing", "definition": "Charging based on the financial impact or value the project delivers to the client, rather than tracking hours." },
-      { "term": "Net-30", "definition": "Payment terms requiring the client to pay within 30 days of the invoice date. Standard in B2B consulting." },
-      { "term": "Scope Creep", "definition": "When a client asks for additional deliverables not covered in the original SOW. Should trigger a new invoice." },
-      { "term": "Accounts Payable (AP)", "definition": "The corporate department responsible for paying you. They require clear invoices, W-9s, and matched SOW numbers." }
+      {
+        "term": "Retainer",
+        "definition": "A fixed monthly fee paid by a client to guarantee a consultant's availability and a baseline of services."
+      },
+      {
+        "term": "Value-Based Pricing",
+        "definition": "Charging based on the financial impact or value the project delivers to the client, rather than tracking hours."
+      },
+      {
+        "term": "Net-30",
+        "definition": "Payment terms requiring the client to pay within 30 days of the invoice date. Standard in B2B consulting."
+      },
+      {
+        "term": "Scope Creep",
+        "definition": "When a client asks for additional deliverables not covered in the original SOW. Should trigger a new invoice."
+      },
+      {
+        "term": "Accounts Payable (AP)",
+        "definition": "The corporate department responsible for paying you. They require clear invoices, W-9s, and matched SOW numbers."
+      }
     ],
     "tax_or_compliance_title": "W-9s and 1099s for Independent Consultants",
     "tax_or_compliance_text": "In the United States, corporate clients will require a W-9 form from you before they pay your first invoice, and they will issue you a 1099-NEC at tax time if they paid you over $600. It is critical that the legal business name and address on your Invoicor invoice match your W-9 perfectly. If your invoice says 'Jane's Consulting' but your W-9 says 'Jane Doe LLC', corporate accounting will freeze your payment until the discrepancy is resolved.",
@@ -539,25 +911,40 @@
       }
     ],
     "related": [
-      { "name": "Freelance Designers", "slug": "freelance-designers" },
-      { "name": "Photographers", "slug": "photographers-videographers" }
+      {
+        "name": "Freelance Designers",
+        "slug": "freelance-designers"
+      },
+      {
+        "name": "Photographers",
+        "slug": "photographers-videographers"
+      }
     ]
   },
   {
     "slug": "cleaning-services",
     "industry": "Cleaners & Janitorial Services",
-    "title": "Invoicing Software for Cleaning Services | Invoicor",
+    "title": "Invoice App for Cleaning Businesses | Invoicor",
     "meta_description": "Streamline your cleaning business billing. Repeat invoices in one tap, charge for deep cleans, and get paid fast without chasing down checks.",
     "canonical": "https://invoicor.com/industries/cleaning-services",
     "icon": "Home",
     "color": "teal",
     "badge_text": "Residential & Commercial Cleaning",
-    "h1": "Clean houses. Send invoices. Get paid.",
+    "h1": "The invoice app for cleaning businesses. Clean, invoice, get paid.",
     "subtitle": "Whether you run a solo house cleaning service or a team of commercial janitors, cash flow is king. Stop leaving paper invoices on kitchen counters and waiting for checks in the mail. Invoicor lets you repeat your weekly billing in a tap and get paid through your own payment link.",
     "industry_stats": [
-      { "label": "Typical residential clean", "value": "$100 - $300" },
-      { "label": "Standard payment timeline", "value": "Due on day of service" },
-      { "label": "Preferred payment method", "value": "Card / Auto-Pay" }
+      {
+        "label": "Typical residential clean",
+        "value": "$100 - $300"
+      },
+      {
+        "label": "Standard payment timeline",
+        "value": "Due on day of service"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / Auto-Pay"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that sweep away your profits",
     "industry_mistake_1_title": "Chasing $150 checks.",
@@ -577,20 +964,59 @@
     "real_scenario_title": "A commercial office clean",
     "real_scenario_text": "You manage the janitorial contract for a local real estate office. They are on a $800/month retainer. On the 1st of the month, you duplicate last month's invoice in Invoicor, update the date, and email it. The office manager pays through your payment link with the corporate card, and the funds are in your account. It took you thirty seconds.",
     "common_line_items": [
-      { "name": "Standard Residential Clean", "desc": "Bi-weekly surface cleaning, vacuuming, and mopping.", "type": "Recurring" },
-      { "name": "Deep / Move-Out Clean", "desc": "Intensive scrubbing of baseboards, inside cabinets, and appliances.", "type": "Flat Rate" },
-      { "name": "Commercial Office Maintenance", "desc": "Nightly trash removal, restroom sanitation, and floor care.", "type": "Monthly Retainer" },
-      { "name": "Add-On: Inside Oven Clean", "desc": "Heavy degreasing of interior oven.", "type": "Add-On" },
-      { "name": "Add-On: Window Washing", "desc": "Interior glass cleaning per pane.", "type": "Add-On" },
-      { "name": "Late Cancellation Fee", "desc": "Fee applied for cancellations with less than 24 hours notice.", "type": "Penalty" }
+      {
+        "name": "Standard Residential Clean",
+        "desc": "Bi-weekly surface cleaning, vacuuming, and mopping.",
+        "type": "Recurring"
+      },
+      {
+        "name": "Deep / Move-Out Clean",
+        "desc": "Intensive scrubbing of baseboards, inside cabinets, and appliances.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Commercial Office Maintenance",
+        "desc": "Nightly trash removal, restroom sanitation, and floor care.",
+        "type": "Monthly Retainer"
+      },
+      {
+        "name": "Add-On: Inside Oven Clean",
+        "desc": "Heavy degreasing of interior oven.",
+        "type": "Add-On"
+      },
+      {
+        "name": "Add-On: Window Washing",
+        "desc": "Interior glass cleaning per pane.",
+        "type": "Add-On"
+      },
+      {
+        "name": "Late Cancellation Fee",
+        "desc": "Fee applied for cancellations with less than 24 hours notice.",
+        "type": "Penalty"
+      }
     ],
     "industry_glossary_title": "Cleaning industry billing terms",
     "industry_glossary": [
-      { "term": "Initial Clean", "definition": "The first time cleaning a home, always billed at a higher rate because it requires bringing the property up to a baseline standard." },
-      { "term": "Maintenance Clean", "definition": "Recurring weekly or bi-weekly service at a lower, predictable rate." },
-      { "term": "Square Footage Pricing", "definition": "Quoting commercial or empty residential jobs based on the size of the space (e.g., $0.10 per sq ft)." },
-      { "term": "Lockout Fee", "definition": "A charge applied when the crew arrives but cannot access the property to perform the work." },
-      { "term": "Walkthrough", "definition": "The initial visit to assess the property's condition before issuing a formal quote or invoice." }
+      {
+        "term": "Initial Clean",
+        "definition": "The first time cleaning a home, always billed at a higher rate because it requires bringing the property up to a baseline standard."
+      },
+      {
+        "term": "Maintenance Clean",
+        "definition": "Recurring weekly or bi-weekly service at a lower, predictable rate."
+      },
+      {
+        "term": "Square Footage Pricing",
+        "definition": "Quoting commercial or empty residential jobs based on the size of the space (e.g., $0.10 per sq ft)."
+      },
+      {
+        "term": "Lockout Fee",
+        "definition": "A charge applied when the crew arrives but cannot access the property to perform the work."
+      },
+      {
+        "term": "Walkthrough",
+        "definition": "The initial visit to assess the property's condition before issuing a formal quote or invoice."
+      }
     ],
     "tax_or_compliance_title": "Sales tax on janitorial and cleaning services",
     "tax_or_compliance_text": "In many states (like New York or Texas), commercial cleaning and janitorial services are subject to sales tax, while residential cleaning might be exempt—or vice versa depending on local laws. It is crucial to set the correct tax rate on each invoice for the type of client you're billing. You can save specific tax rates to different line items (e.g., 'Commercial Cleaning - Taxable') to make compliance foolproof.",
@@ -617,25 +1043,40 @@
       }
     ],
     "related": [
-      { "name": "Landscaping & Lawn Care", "slug": "landscaping-lawn-care" },
-      { "name": "General Contractors", "slug": "general-contractors" }
+      {
+        "name": "Landscaping & Lawn Care",
+        "slug": "landscaping-lawn-care"
+      },
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      }
     ]
   },
   {
     "slug": "personal-trainers",
     "industry": "Personal Trainers & Fitness Instructors",
-    "title": "Invoicing Software for Personal Trainers | Invoicor",
+    "title": "Invoice App for Personal Trainers | Invoicor",
     "meta_description": "Bill for your fitness coaching like a pro. Sell session packages, collect monthly programming retainers, and ditch the awkward gym-floor Venmo requests.",
     "canonical": "https://invoicor.com/industries/personal-trainers",
     "icon": "Activity",
     "color": "red",
     "badge_text": "Fitness & Coaching Billing",
-    "h1": "Train hard. Bill easy.",
+    "h1": "The invoice app for personal trainers. Train hard, bill easy.",
     "subtitle": "Asking clients for Venmo payments on the gym floor is awkward and makes you look like an amateur. Invoicor helps independent personal trainers and online fitness coaches send professional invoices for session packages and monthly programming.",
     "industry_stats": [
-      { "label": "Typical package value", "value": "$300 - $1,500" },
-      { "label": "Standard payment structure", "value": "Upfront package / Monthly" },
-      { "label": "Preferred payment method", "value": "Card / Apple Pay" }
+      {
+        "label": "Typical package value",
+        "value": "$300 - $1,500"
+      },
+      {
+        "label": "Standard payment structure",
+        "value": "Upfront package / Monthly"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / Apple Pay"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that kill fitness businesses",
     "industry_mistake_1_title": "Pay-per-session billing.",
@@ -655,19 +1096,54 @@
     "real_scenario_title": "Onboarding a new personal training client",
     "real_scenario_text": "You finish a free consultation with a lead. They want to train 3 days a week. Instead of saying 'just Venmo me', you open Invoicor, select your '12-Session Kickstart Package' ($1,200), and hit send. They receive a polished PDF via text with your payment link, pay through it, and the money is secured. You instantly established authority and professionalism.",
     "common_line_items": [
-      { "name": "10-Session Training Block", "desc": "10 hours of 1-on-1 coaching, valid for 60 days.", "type": "Package" },
-      { "name": "Monthly Online Programming", "desc": "Customized weekly workouts and macro-nutrient adjustments.", "type": "Recurring" },
-      { "name": "Drop-In / Single Session", "desc": "One hour of guided personal training.", "type": "Flat Rate" },
-      { "name": "Small Group Training (per person)", "desc": "Bootcamp style session for 2-4 individuals.", "type": "Flat Rate" },
-      { "name": "Nutrition Strategy Consultation", "desc": "90-minute deep dive into dietary habits and goal setting.", "type": "Consulting" }
+      {
+        "name": "10-Session Training Block",
+        "desc": "10 hours of 1-on-1 coaching, valid for 60 days.",
+        "type": "Package"
+      },
+      {
+        "name": "Monthly Online Programming",
+        "desc": "Customized weekly workouts and macro-nutrient adjustments.",
+        "type": "Recurring"
+      },
+      {
+        "name": "Drop-In / Single Session",
+        "desc": "One hour of guided personal training.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Small Group Training (per person)",
+        "desc": "Bootcamp style session for 2-4 individuals.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Nutrition Strategy Consultation",
+        "desc": "90-minute deep dive into dietary habits and goal setting.",
+        "type": "Consulting"
+      }
     ],
     "industry_glossary_title": "Fitness billing terms explained",
     "industry_glossary": [
-      { "term": "Session Package", "definition": "A block of training sessions sold together at a slight discount to secure client commitment upfront." },
-      { "term": "Online Programming", "definition": "Providing workout routines and check-ins digitally, usually billed as a monthly recurring subscription." },
-      { "term": "Gym Cut / Floor Fee", "definition": "The percentage or flat monthly fee an independent trainer pays the facility to train clients there." },
-      { "term": "Macro Coaching", "definition": "Providing nutritional guidance based on macronutrients, often billed separately from physical training." },
-      { "term": "Assessment / Consult", "definition": "The initial meeting to assess movement mechanics and goals. Often free to generate leads, but sometimes billed." }
+      {
+        "term": "Session Package",
+        "definition": "A block of training sessions sold together at a slight discount to secure client commitment upfront."
+      },
+      {
+        "term": "Online Programming",
+        "definition": "Providing workout routines and check-ins digitally, usually billed as a monthly recurring subscription."
+      },
+      {
+        "term": "Gym Cut / Floor Fee",
+        "definition": "The percentage or flat monthly fee an independent trainer pays the facility to train clients there."
+      },
+      {
+        "term": "Macro Coaching",
+        "definition": "Providing nutritional guidance based on macronutrients, often billed separately from physical training."
+      },
+      {
+        "term": "Assessment / Consult",
+        "definition": "The initial meeting to assess movement mechanics and goals. Often free to generate leads, but sometimes billed."
+      }
     ],
     "tax_or_compliance_title": "Tax considerations for online vs in-person training",
     "tax_or_compliance_text": "Generally, personal training services are not subject to sales tax, but selling physical goods (like supplements, resistance bands, or branded apparel) absolutely is. Furthermore, if you sell 'digital downloads' like a generic PDF workout program, some states tax that as a digital good. Keep your service billing (training) separate from product sales: Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so put supplements or gear on their own invoice if they're taxed differently.",
@@ -694,25 +1170,40 @@
       }
     ],
     "related": [
-      { "name": "Consultants", "slug": "consultants-coaches" },
-      { "name": "Cleaning Services", "slug": "cleaning-services" }
+      {
+        "name": "Consultants",
+        "slug": "consultants-coaches"
+      },
+      {
+        "name": "Cleaning Services",
+        "slug": "cleaning-services"
+      }
     ]
   },
   {
     "slug": "auto-detailing-mechanics",
     "industry": "Auto Detailing & Mobile Mechanics",
-    "title": "Invoicing Software for Mobile Detailers & Mechanics | Invoicor",
-    "meta_description": "Fast mobile invoicing for auto detailers and mechanics. Bill for ceramic coatings, track vehicle VINs, and get paid via card right in the customer's driveway.",
+    "title": "Invoice App for Mechanics & Mobile Detailers | Invoicor",
+    "meta_description": "Invoice app for mechanics and mobile detailers. Bill packages, add-ons and travel fees, and send the invoice from the customer's driveway.",
     "canonical": "https://invoicor.com/industries/auto-detailing-mechanics",
     "icon": "Car",
     "color": "cyan",
     "badge_text": "Mobile Auto Services",
-    "h1": "The ultimate tool for mobile automotive pros.",
+    "h1": "The invoice app for mechanics & mobile detailers.",
     "subtitle": "Mobile detailers and mechanics turn driveways into workshops. But when it's time to pay, fumbling with cash or clunky card readers slows you down. Invoicor lets you generate a detailed, professional invoice from your phone, complete with up-sells like paint correction or parts markup, and get paid on the spot through your own payment link.",
     "industry_stats": [
-      { "label": "Typical detail / repair", "value": "$150 - $1,200+" },
-      { "label": "Standard payment timeline", "value": "Due upon completion" },
-      { "label": "Preferred payment method", "value": "Card / Apple Pay" }
+      {
+        "label": "Typical detail / repair",
+        "value": "$150 - $1,200+"
+      },
+      {
+        "label": "Standard payment timeline",
+        "value": "Due upon completion"
+      },
+      {
+        "label": "Preferred payment method",
+        "value": "Card / Apple Pay"
+      }
     ],
     "industry_mistakes_title": "Billing mistakes that dent your margins",
     "industry_mistake_1_title": "Forgetting the travel fee.",
@@ -732,20 +1223,59 @@
     "real_scenario_title": "A premium driveway detail",
     "real_scenario_text": "You finish a full interior/exterior detail on a Ford F-150. The owner is thrilled. From your phone, you open Invoicor, add 'Full Size Truck Detail Package' ($250), and the 'Pet Hair Removal Add-On' ($40) that you agreed upon. You add the truck's plate number in the notes, hit send via SMS. The owner reviews it on their phone and pays through your payment link. You drive away with the money already on its way.",
     "common_line_items": [
-      { "name": "Full Interior/Exterior Detail", "desc": "Wash, wax, vacuum, and interior surface wipe down.", "type": "Package" },
-      { "name": "Paint Correction (1-Step)", "desc": "Machine polishing to remove light swirls and scratches.", "type": "Flat Rate" },
-      { "name": "Ceramic Coating Installation", "desc": "Multi-year paint protection coating (includes prep wash).", "type": "Premium Package" },
-      { "name": "Mobile Service Call Fee", "desc": "Travel fee for locations outside the standard 15-mile radius.", "type": "Fee" },
-      { "name": "Mobile Mechanic: Diagnostic", "desc": "OBD2 scan and mechanical troubleshooting.", "type": "Flat Rate" },
-      { "name": "Parts & Fluids", "desc": "Replacement brake pads, rotors, or synthetic oil.", "type": "Materials" }
+      {
+        "name": "Full Interior/Exterior Detail",
+        "desc": "Wash, wax, vacuum, and interior surface wipe down.",
+        "type": "Package"
+      },
+      {
+        "name": "Paint Correction (1-Step)",
+        "desc": "Machine polishing to remove light swirls and scratches.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Ceramic Coating Installation",
+        "desc": "Multi-year paint protection coating (includes prep wash).",
+        "type": "Premium Package"
+      },
+      {
+        "name": "Mobile Service Call Fee",
+        "desc": "Travel fee for locations outside the standard 15-mile radius.",
+        "type": "Fee"
+      },
+      {
+        "name": "Mobile Mechanic: Diagnostic",
+        "desc": "OBD2 scan and mechanical troubleshooting.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Parts & Fluids",
+        "desc": "Replacement brake pads, rotors, or synthetic oil.",
+        "type": "Materials"
+      }
     ],
     "industry_glossary_title": "Automotive billing terms explained",
     "industry_glossary": [
-      { "term": "Paint Correction", "definition": "The process of leveling clear coat to remove scratches. Often billed hourly due to unpredictable paint hardness." },
-      { "term": "Ceramic Coating", "definition": "A liquid polymer applied to the exterior. High ticket item that should always require a booking deposit." },
-      { "term": "Shop Supplies", "definition": "A standard percentage (often 5-10%) added to mechanic bills to cover un-trackable materials like brake cleaner, rags, and grease." },
-      { "term": "Labor Guide Time", "definition": "The industry-standard time allotted for a specific mechanical repair, used to quote flat-rate labor rather than clocking actual hours." },
-      { "term": "Core Charge", "definition": "A deposit paid on a part (like a battery or alternator) that is refunded when the old, broken part is returned for recycling." }
+      {
+        "term": "Paint Correction",
+        "definition": "The process of leveling clear coat to remove scratches. Often billed hourly due to unpredictable paint hardness."
+      },
+      {
+        "term": "Ceramic Coating",
+        "definition": "A liquid polymer applied to the exterior. High ticket item that should always require a booking deposit."
+      },
+      {
+        "term": "Shop Supplies",
+        "definition": "A standard percentage (often 5-10%) added to mechanic bills to cover un-trackable materials like brake cleaner, rags, and grease."
+      },
+      {
+        "term": "Labor Guide Time",
+        "definition": "The industry-standard time allotted for a specific mechanical repair, used to quote flat-rate labor rather than clocking actual hours."
+      },
+      {
+        "term": "Core Charge",
+        "definition": "A deposit paid on a part (like a battery or alternator) that is refunded when the old, broken part is returned for recycling."
+      }
     ],
     "tax_or_compliance_title": "Taxation on auto repair and detailing",
     "tax_or_compliance_text": "Automotive services are highly scrutinized by state tax boards. In states like California or New York, the rules regarding taxing auto repair labor versus parts can be extremely complex. Often, parts are taxable but repair labor is not, whereas detailing (washing/waxing) might be fully taxable as a maintenance service. You must separate your parts and labor into clear line items on your invoices to protect yourself in an audit. Invoicor applies one tax rate per invoice (tax-inclusive or added on top), so if parts and labor are taxed differently in your state, check with your accountant whether to bill them separately.",
@@ -772,8 +1302,14 @@
       }
     ],
     "related": [
-      { "name": "Landscaping & Lawn Care", "slug": "landscaping-lawn-care" },
-      { "name": "Plumbers & HVAC", "slug": "plumbers-hvac" }
+      {
+        "name": "Landscaping & Lawn Care",
+        "slug": "landscaping-lawn-care"
+      },
+      {
+        "name": "Plumbers & HVAC",
+        "slug": "plumbers-hvac"
+      }
     ]
   }
 ]
