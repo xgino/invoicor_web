@@ -19,7 +19,17 @@ async function mockApi(page: Page) {
   return () => calls;
 }
 
+/** The page is interactive once the preview has painted (it only paints after hydration). */
+async function ready(page: Page) {
+  await page
+    .frameLocator('iframe[title="Invoice preview"]')
+    .locator("body *")
+    .first()
+    .waitFor({ state: "attached" });
+}
+
 async function fillInvoice(page: Page) {
+  await ready(page);
   await page.getByLabel("Business name").fill("Rivera Plumbing");
   await page.getByLabel("Client or company name").fill("Sarah Mitchell");
   await page.getByLabel("Item", { exact: true }).first().fill("Emergency call-out");
@@ -37,6 +47,7 @@ test("fill, preview with the watermark line, download a real PDF made in the bro
 }) => {
   const apiCalls = await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await fillInvoice(page);
   if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
 
@@ -68,6 +79,7 @@ test("the preview updates while typing, without calling the API", async ({ page,
     if (r.url().includes("/api/invoices/public/")) apiCalls.push(r.url());
   });
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await fillInvoice(page);
   await page.getByLabel("Business name").fill("Rivera Plumbing & Sons <LLC>");
   if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
@@ -84,6 +96,7 @@ test("every field is printed: VAT IDs, registration number, client email and pho
 }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await fillInvoice(page);
   const business = page.getByRole("region", { name: "Your business" });
   await business.getByLabel("Tax / VAT ID").fill("NL123456789B01");
@@ -109,6 +122,7 @@ test("every field is printed: VAT IDs, registration number, client email and pho
 test("warns when the invoice no longer fits on one page", async ({ page, isMobile }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   for (let i = 0; i < 9; i++) await page.getByRole("button", { name: "Add line" }).click();
   const items = page.getByLabel("Item", { exact: true });
   const details = page.getByLabel("Details (optional)");
@@ -124,6 +138,7 @@ test("warns when the invoice no longer fits on one page", async ({ page, isMobil
 test("New invoice keeps the business and clears the client and items", async ({ page }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await fillInvoice(page);
   await page.getByRole("button", { name: "New invoice" }).click();
   await expect(page.getByLabel("Business name")).toHaveValue("Rivera Plumbing");
@@ -135,6 +150,7 @@ test("New invoice keeps the business and clears the client and items", async ({ 
 test("the download button waits for at least one line", async ({ page, isMobile }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   if (isMobile) await page.getByRole("tab", { name: "Preview" }).click();
   await expect(page.getByRole("button", { name: "Download PDF" })).toBeDisabled();
 });
@@ -142,6 +158,7 @@ test("the download button waits for at least one line", async ({ page, isMobile 
 test("keeps the draft after a refresh", async ({ page }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await page.getByLabel("Business name").fill("Rivera Plumbing");
   await page.waitForTimeout(700);
   await page.reload();
@@ -164,9 +181,11 @@ test("“Use this template” opens the generator with the page's example filled
 test("an example never silently replaces the visitor's own items", async ({ page }) => {
   await mockApi(page);
   await page.goto("/free-invoice-generator");
+  await ready(page);
   await page.getByLabel("Item", { exact: true }).first().fill("My own line");
   await page.waitForTimeout(700); // autosave
   await page.goto("/free-invoice-generator?example=hvac");
+  await ready(page);
   await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue("My own line");
   await page.getByRole("button", { name: "Load example" }).click();
   await expect(page.getByLabel("Item", { exact: true }).first()).toHaveValue(
