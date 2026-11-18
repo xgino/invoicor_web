@@ -4,6 +4,8 @@ import { LOCALES } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
 import { HOME } from "@/lib/i18n/pages/home";
+import { TOOLS_TEXT } from "@/lib/i18n/pages/tools";
+import { STANDARD_RATES, hourlyRate } from "@/lib/tools/math";
 import { ROUTES, pageForPath } from "@/lib/i18n/routes";
 import { PLANS } from "@/lib/pricing";
 
@@ -111,5 +113,51 @@ describe("free generator translations (HL1)", () => {
     // The app's facts, as numbers: 21 free / 31 templates, 38 currencies, 11 languages, 10 lines.
     expect(all).not.toMatch(/\b(unlimited|unbegrenzt|illimit|ilimitad|onbeperkt)/i);
     for (const n of ["21", "31", "38", "11"]) expect(all).toContain(n);
+  });
+});
+
+describe("free tools translations (HL2)", () => {
+  const placeholders = (s: string) => (s.match(/\{\w+\}/g) ?? []).sort().join(",");
+  const CODES = STANDARD_RATES.map((r) => r.code);
+
+  it("cover all 11 languages", () => {
+    expect(Object.keys(TOOLS_TEXT).sort()).toEqual([...LOCALES].sort());
+  });
+
+  it.each(LOCALES)("%s: titles and descriptions fit in search results", (l) => {
+    const t = TOOLS_TEXT[l];
+    for (const { title, description } of [t.hub.meta, t.vat.meta, t.hours.meta, t.rate.meta]) {
+      expect(title.length, title).toBeLessThanOrEqual(60);
+      expect(description.length, description).toBeLessThanOrEqual(155);
+    }
+  });
+
+  it.each(LOCALES)("%s: calculator texts keep their placeholders", (l) => {
+    for (const tool of ["vat", "hours", "rate"] as const)
+      for (const [key, text] of Object.entries(TOOLS_TEXT.en[tool].ui))
+        expect(
+          placeholders((TOOLS_TEXT[l][tool].ui as Record<string, string>)[key]!),
+          `${tool}.${key}`,
+        ).toBe(placeholders(text));
+    expect(TOOLS_TEXT[l].common.closing.text).toContain("{n}");
+  });
+
+  it.each(LOCALES)("%s: same structure, a real default country, sane defaults", (l) => {
+    const t = TOOLS_TEXT[l];
+    for (const tool of ["vat", "hours", "rate"] as const) {
+      expect(t[tool].sections).toHaveLength(3);
+      expect(t[tool].faqs).toHaveLength(5);
+    }
+    expect(CODES).toContain(t.vat.defaultCountry);
+    const d = t.rate.defaults;
+    const r = hourlyRate({
+      takeHome: Number(d.takeHome),
+      taxPercent: Number(d.tax),
+      costs: Number(d.costs),
+      weeksOff: Number(d.weeks),
+      billableHours: Number(d.hours),
+    });
+    expect(r, "the default inputs must give a result").not.toBeNull();
+    expect(t.tools.generator.name).toBe(GENERATOR[l].page.crumb);
   });
 });

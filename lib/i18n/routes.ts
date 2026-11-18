@@ -8,7 +8,7 @@ import { DEFAULT_LOCALE, LOCALES, type Locale } from "./config";
  *
  * Client-safe (no server imports): the language switcher reads this table in the browser.
  */
-export type PageKey = "home" | "generator" | "android";
+export type PageKey = "home" | "generator" | "android" | "tools" | "vat" | "hours" | "rate";
 
 export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   home: {
@@ -49,6 +49,58 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
     sv: "/sv/android",
     da: "/da/android",
     nb: "/nb/android",
+  },
+  tools: {
+    en: "/tools",
+    nl: "/nl/tools",
+    de: "/de/tools",
+    fr: "/fr/outils",
+    es: "/es/herramientas",
+    it: "/it/strumenti",
+    pt: "/pt/ferramentas",
+    pl: "/pl/narzedzia",
+    sv: "/sv/verktyg",
+    da: "/da/vaerktoejer",
+    nb: "/nb/verktoy",
+  },
+  vat: {
+    en: "/tools/vat-calculator",
+    nl: "/nl/tools/btw-berekenen",
+    de: "/de/tools/mehrwertsteuer-rechner",
+    fr: "/fr/outils/calcul-tva",
+    es: "/es/herramientas/calculadora-iva",
+    it: "/it/strumenti/calcolo-iva",
+    pt: "/pt/ferramentas/calcular-iva",
+    pl: "/pl/narzedzia/kalkulator-vat",
+    sv: "/sv/verktyg/momsraknare",
+    da: "/da/vaerktoejer/momsberegner",
+    nb: "/nb/verktoy/mva-kalkulator",
+  },
+  hours: {
+    en: "/tools/hours-calculator",
+    nl: "/nl/tools/uren-berekenen",
+    de: "/de/tools/stundenrechner",
+    fr: "/fr/outils/calcul-heures",
+    es: "/es/herramientas/calculadora-horas",
+    it: "/it/strumenti/calcolo-ore",
+    pt: "/pt/ferramentas/calculadora-horas",
+    pl: "/pl/narzedzia/kalkulator-godzin",
+    sv: "/sv/verktyg/timraknare",
+    da: "/da/vaerktoejer/timeberegner",
+    nb: "/nb/verktoy/timekalkulator",
+  },
+  rate: {
+    en: "/tools/hourly-rate-calculator",
+    nl: "/nl/tools/uurtarief-berekenen",
+    de: "/de/tools/stundensatz-rechner",
+    fr: "/fr/outils/calcul-taux-horaire",
+    es: "/es/herramientas/calcular-precio-hora",
+    it: "/it/strumenti/calcolo-tariffa-oraria",
+    pt: "/pt/ferramentas/calcular-preco-hora",
+    pl: "/pl/narzedzia/kalkulator-stawki-godzinowej",
+    sv: "/sv/verktyg/rakna-ut-timpris",
+    da: "/da/vaerktoejer/beregn-timepris",
+    nb: "/nb/verktoy/beregn-timepris",
   },
 };
 

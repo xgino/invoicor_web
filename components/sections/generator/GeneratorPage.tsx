@@ -7,6 +7,7 @@ import { QrDownload } from "@/components/ui/QrDownload";
 import { getApiCurrencies, getApiLanguages, getApiTemplates } from "@/lib/api";
 import { getTemplates } from "@/lib/content";
 import { examplesBySlug } from "@/lib/generator/examples";
+import { CHROME } from "@/lib/i18n/chrome";
 import { LOCALE_INFO, type Locale } from "@/lib/i18n/config";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
 import { ROUTES } from "@/lib/i18n/routes";
@@ -79,8 +80,8 @@ export async function GeneratorPage({ locale }: { locale: Locale }) {
             languages={languages}
             appCta={
               <div className="flex flex-wrap items-center gap-4">
-                <AppStoreBadge campaign="gen_success" />
-                <QrDownload campaign="qr_gen_success" />
+                <AppStoreBadge campaign="gen_success" top={CHROME[locale].badges.appStoreTop} />
+                <QrDownload campaign="qr_gen_success" t={CHROME[locale].qr} />
               </div>
             }
           />

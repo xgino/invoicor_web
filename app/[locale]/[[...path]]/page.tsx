@@ -3,10 +3,12 @@ import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
 import { GeneratorPage } from "@/components/sections/generator/GeneratorPage";
 import { HomePage } from "@/components/sections/home/HomePage";
+import { ToolPage, ToolsHub } from "@/components/tools/ToolPage";
 import { HOME } from "@/lib/i18n/pages/home";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { ANDROID } from "@/lib/i18n/pages/android";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
+import { TOOLS_TEXT } from "@/lib/i18n/pages/tools";
 import { type PageKey, alternatesFor, localizedPaths } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo";
 
@@ -45,6 +47,22 @@ const PAGES: Record<
   generator: {
     render: (l) => <GeneratorPage locale={l} />,
     meta: (l) => GENERATOR[l].page.meta,
+  },
+  tools: {
+    render: (l) => <ToolsHub locale={l} />,
+    meta: (l) => TOOLS_TEXT[l].hub.meta,
+  },
+  vat: {
+    render: (l) => <ToolPage tool="vat" locale={l} />,
+    meta: (l) => TOOLS_TEXT[l].vat.meta,
+  },
+  hours: {
+    render: (l) => <ToolPage tool="hours" locale={l} />,
+    meta: (l) => TOOLS_TEXT[l].hours.meta,
+  },
+  rate: {
+    render: (l) => <ToolPage tool="rate" locale={l} />,
+    meta: (l) => TOOLS_TEXT[l].rate.meta,
   },
   android: {
     render: (l) => <AndroidPage locale={l} />,

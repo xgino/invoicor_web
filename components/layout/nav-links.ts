@@ -33,6 +33,7 @@ export function navLinksFor(locale: Locale): readonly NavLink[] {
       href: ROUTES.generator[locale] ?? `/free-invoice-generator?lang=${locale}`,
       label: t.generator,
     },
+    ...(ROUTES.tools[locale] ? [{ href: ROUTES.tools[locale]!, label: t.tools }] : []),
     { href: home ? `${home}#pricing` : "/#pricing", label: t.pricing },
   ];
 }
@@ -42,5 +43,6 @@ export function isActive(pathname: string, href: string): boolean {
   if (href.includes("#") || href.includes("?") || href.startsWith("http")) return false;
   // The invoice generator is one of the free tools.
   if (href === "/tools" && pathname === "/free-invoice-generator") return true;
+  // A language's tools hub is the parent of its tool pages (/de/tools/…) but not its generator.
   return pathname === href || pathname.startsWith(`${href}/`);
 }

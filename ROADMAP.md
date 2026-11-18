@@ -147,8 +147,8 @@ order below, one commit per step; a page only goes live in a language once it's 
 | # | Page(s) | Pages × 10 languages | Status |
 |---|---|---|---|
 | HL1 | Free invoice generator (+ its guide, written per country) | 1 → 10 | ✅ 2026-11-18 |
-| HL2 | Free tools hub + VAT, hours and hourly rate calculators | 4 → 40 | ⏳ next |
-| HL3 | Help & FAQ | 1 → 10 | planned |
+| HL2 | Free tools hub + VAT, hours and hourly rate calculators | 4 → 40 | ✅ 2026-11-18 |
+| HL3 | Help & FAQ | 1 → 10 | ⏳ next |
 | HL4 | Templates hub + 20 template pages | 21 → 210 | planned (H4) |
 | HL5 | Industries hub + 20 industry pages | 21 → 210 | planned (H4) |
 | HL6 | Affiliate | 1 → 10 | planned |
@@ -215,7 +215,8 @@ done (see Done). Next tools, each a page with the tool, the math in plain words 
 - [ ] **T6** 👥 **Business number checker**: per-country registers (UK Companies House has a free API; the Dutch KvK API is paid; others vary). Start with the UK and NL, through the API.
 - [ ] **T7** 🤖 **Late payment interest and collection costs**, per country: in the EU, business-to-business late payments carry statutory interest (the ECB reference rate + 8 points in most countries, + 9 in Germany) and a fixed €40 compensation per invoice; consumer rules differ (e.g. the Dutch WIK collection-cost scale). Start with NL, DE, BE, FR, UK; every rate sourced and dated, re-checked every half year when the ECB rate changes.
 - [ ] **T8** 🤖 Smaller tools that rank and get linked: due date calculator (Net 15/30/60), invoice number generator, discount and markup calculator, profit margin calculator.
-- [ ] **T9** 🤖 The tools in the other 10 languages (with H3/H4); the VAT calculator first, with each country's own rate preselected.
+- [x] **T9** 🤖 The tools in the other 10 languages (HL2, 2026-11-18): local URLs (`/de/tools/mehrwertsteuer-rechner`, `/fr/outils/calcul-tva`…), the country's own VAT rate preselected, country and weekday names from the browser, local number format and currency, realistic local defaults for the hourly rate.
+- [x] **T10** 🤖 Tools that actually help (your review, 2026-11-18): the hours calculator works by date (add a day / a week, so a whole month works) with a clear "hours × rate = to invoice"; the rate calculator takes amounts per month or per year, shows the answer first and the steps in plain words, and says it's before VAT; every tool's button now really puts the result on an invoice (the generator reads `?item=&qty=&price=&tax=&currency=`, adds the line without replacing anything, then cleans the URL); the hub's first card is no longer cut off.
 
 ## P2. Partners and customers
 

@@ -33,29 +33,31 @@ export function vat(amount: number, ratePercent: number, mode: "add" | "remove")
 
 /**
  * Standard VAT/GST rates, November 2026. Reduced rates differ per product; the tool says so.
- * Check before changing: these are shown on a page that people rely on.
+ * Check before changing: these are shown on a page that people rely on. `code` is the ISO country
+ * code (the page shows the name in the visitor's language); `gst` marks GST instead of VAT.
  */
-export const STANDARD_RATES: Array<{ country: string; rate: number }> = [
-  { country: "Austria", rate: 20 },
-  { country: "Belgium", rate: 21 },
-  { country: "Denmark", rate: 25 },
-  { country: "Finland", rate: 25.5 },
-  { country: "France", rate: 20 },
-  { country: "Germany", rate: 19 },
-  { country: "Ireland", rate: 23 },
-  { country: "Italy", rate: 22 },
-  { country: "Netherlands", rate: 21 },
-  { country: "Norway", rate: 25 },
-  { country: "Poland", rate: 23 },
-  { country: "Portugal", rate: 23 },
-  { country: "Spain", rate: 21 },
-  { country: "Sweden", rate: 25 },
-  { country: "Switzerland", rate: 8.1 },
-  { country: "United Kingdom", rate: 20 },
-  { country: "Australia (GST)", rate: 10 },
-  { country: "Canada (GST)", rate: 5 },
-  { country: "New Zealand (GST)", rate: 15 },
-];
+export const STANDARD_RATES: Array<{ code: string; country: string; gst: boolean; rate: number }> =
+  [
+    { code: "AT", country: "Austria", gst: false, rate: 20 },
+    { code: "BE", country: "Belgium", gst: false, rate: 21 },
+    { code: "DK", country: "Denmark", gst: false, rate: 25 },
+    { code: "FI", country: "Finland", gst: false, rate: 25.5 },
+    { code: "FR", country: "France", gst: false, rate: 20 },
+    { code: "DE", country: "Germany", gst: false, rate: 19 },
+    { code: "IE", country: "Ireland", gst: false, rate: 23 },
+    { code: "IT", country: "Italy", gst: false, rate: 22 },
+    { code: "NL", country: "Netherlands", gst: false, rate: 21 },
+    { code: "NO", country: "Norway", gst: false, rate: 25 },
+    { code: "PL", country: "Poland", gst: false, rate: 23 },
+    { code: "PT", country: "Portugal", gst: false, rate: 23 },
+    { code: "ES", country: "Spain", gst: false, rate: 21 },
+    { code: "SE", country: "Sweden", gst: false, rate: 25 },
+    { code: "CH", country: "Switzerland", gst: false, rate: 8.1 },
+    { code: "GB", country: "United Kingdom", gst: false, rate: 20 },
+    { code: "AU", country: "Australia (GST)", gst: true, rate: 10 },
+    { code: "CA", country: "Canada (GST)", gst: true, rate: 5 },
+    { code: "NZ", country: "New Zealand (GST)", gst: true, rate: 15 },
+  ];
 
 // ── Hours ────────────────────────────────────────────────────────────────────
 

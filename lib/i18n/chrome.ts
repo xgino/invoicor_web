@@ -11,6 +11,7 @@ const en = {
   invoice: { description: "Description", amount: "Amount" },
   nav: {
     generator: "Free generator",
+    tools: "Free tools",
     pricing: "Pricing",
     templates: "Templates",
     industries: "Industries",
@@ -70,6 +71,7 @@ const nl: ChromeDict = {
   invoice: { description: "Omschrijving", amount: "Bedrag" },
   nav: {
     generator: "Gratis factuur maken",
+    tools: "Gratis tools",
     pricing: "Prijzen",
     templates: "Templates",
     industries: "Branches",
@@ -127,6 +129,7 @@ const de: ChromeDict = {
   invoice: { description: "Beschreibung", amount: "Betrag" },
   nav: {
     generator: "Rechnung erstellen",
+    tools: "Kostenlose Tools",
     pricing: "Preise",
     templates: "Vorlagen",
     industries: "Branchen",
@@ -184,6 +187,7 @@ const fr: ChromeDict = {
   invoice: { description: "Désignation", amount: "Montant" },
   nav: {
     generator: "Créer une facture",
+    tools: "Outils gratuits",
     pricing: "Tarifs",
     templates: "Modèles",
     industries: "Métiers",
@@ -241,6 +245,7 @@ const es: ChromeDict = {
   invoice: { description: "Concepto", amount: "Importe" },
   nav: {
     generator: "Crear factura",
+    tools: "Herramientas gratis",
     pricing: "Precios",
     templates: "Plantillas",
     industries: "Sectores",
@@ -298,6 +303,7 @@ const it: ChromeDict = {
   invoice: { description: "Descrizione", amount: "Importo" },
   nav: {
     generator: "Crea fattura",
+    tools: "Strumenti gratuiti",
     pricing: "Prezzi",
     templates: "Modelli",
     industries: "Settori",
@@ -355,6 +361,7 @@ const pt: ChromeDict = {
   invoice: { description: "Descrição", amount: "Valor" },
   nav: {
     generator: "Criar fatura",
+    tools: "Ferramentas grátis",
     pricing: "Preços",
     templates: "Modelos",
     industries: "Setores",
@@ -412,6 +419,7 @@ const pl: ChromeDict = {
   invoice: { description: "Opis", amount: "Kwota" },
   nav: {
     generator: "Wystaw fakturę",
+    tools: "Darmowe narzędzia",
     pricing: "Cennik",
     templates: "Wzory",
     industries: "Branże",
@@ -469,6 +477,7 @@ const sv: ChromeDict = {
   invoice: { description: "Beskrivning", amount: "Belopp" },
   nav: {
     generator: "Skapa faktura",
+    tools: "Gratis verktyg",
     pricing: "Priser",
     templates: "Mallar",
     industries: "Branscher",
@@ -526,6 +535,7 @@ const da: ChromeDict = {
   invoice: { description: "Beskrivelse", amount: "Beløb" },
   nav: {
     generator: "Lav faktura",
+    tools: "Gratis værktøjer",
     pricing: "Priser",
     templates: "Skabeloner",
     industries: "Brancher",
@@ -583,6 +593,7 @@ const nb: ChromeDict = {
   invoice: { description: "Beskrivelse", amount: "Beløp" },
   nav: {
     generator: "Lag faktura",
+    tools: "Gratis verktøy",
     pricing: "Priser",
     templates: "Maler",
     industries: "Bransjer",

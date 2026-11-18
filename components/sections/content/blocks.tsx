@@ -8,6 +8,10 @@ import { QrDownload } from "@/components/ui/QrDownload";
 import { cx } from "@/components/ui/cx";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 import { FREE_INVOICES } from "@/lib/pricing";
+import { CHROME, fill } from "@/lib/i18n/chrome";
+import type { Locale } from "@/lib/i18n/config";
+import { HOME } from "@/lib/i18n/pages/home";
+import { ROUTES } from "@/lib/i18n/routes";
 import { Toc, type TocSection } from "./Toc";
 
 /**
@@ -221,7 +225,10 @@ export function ClosingCta({
   text,
   campaign,
   action,
+  locale = "en",
 }: {
+  /** The page's language: badges and the free-plan line follow it. */
+  locale?: Locale;
   title: string;
   /** The one gradient word or phrase, appended to the title. */
   gradient?: string;
@@ -244,12 +251,19 @@ export function ClosingCta({
         ) : (
           <>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-5">
-              <AppStoreBadge campaign={campaign} />
-              <AndroidButton campaign={campaign} />
-              <QrDownload campaign={`qr_${campaign}`} />
+              <AppStoreBadge campaign={campaign} top={CHROME[locale].badges.appStoreTop} />
+              <AndroidButton
+                campaign={campaign}
+                href={ROUTES.android[locale] ?? "/android"}
+                top={CHROME[locale].badges.androidTop}
+                label={CHROME[locale].badges.android}
+              />
+              <QrDownload campaign={`qr_${campaign}`} t={CHROME[locale].qr} />
             </div>
             <p className="text-small text-subtle mt-4">
-              {FREE_INVOICES} invoices free · no watermark · no subscription needed
+              {locale === "en"
+                ? `${FREE_INVOICES} invoices free · no watermark · no subscription needed`
+                : HOME[locale].hero.promises.map((p) => fill(p, { n: FREE_INVOICES })).join(" · ")}
             </p>
           </>
         )}

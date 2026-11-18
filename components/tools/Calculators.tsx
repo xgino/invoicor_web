@@ -1,12 +1,13 @@
 "use client";
 
-import { Plus, Trash2 } from "lucide-react";
+import { CalendarPlus, Plus, Trash2 } from "lucide-react";
 import Link from "next/link";
-import { useId, useState, type ReactNode } from "react";
+import { useEffect, useId, useState, type ReactNode } from "react";
 import { buttonClass } from "@/components/ui/Button";
 import { cx } from "@/components/ui/cx";
 import { Field, Input, NumberInput, Select } from "@/components/ui/form";
 import { InvoicePaper, PaperLabel } from "@/components/ui/invoice";
+import type { HoursUi, RateUi, VatUi } from "@/lib/i18n/pages/tools/en";
 import {
   STANDARD_RATES,
   decimalHours,
@@ -20,24 +21,51 @@ import {
 
 /**
  * The free calculators (ROADMAP T1). Everything runs in the browser; nothing is sent anywhere.
- * Math lives in lib/tools/math.ts and is unit-tested.
+ * Math lives in lib/tools/math.ts and is unit-tested. Text, number format and starting values come
+ * from the page's language (lib/i18n/pages/tools), as props.
  */
 const CURRENCIES = ["USD", "EUR", "GBP", "CAD", "AUD", "CHF", "SEK", "NOK", "DKK", "PLN"];
 
-const money = (amount: number, currency: string, digits = 2) =>
-  new Intl.NumberFormat("en-US", {
+/** The language-dependent bits every calculator gets. */
+export interface CalcLocale {
+  /** BCP 47 tag for numbers, country and weekday names. */
+  intl: string;
+  currency: string;
+  /** "Currency" in the page's language. */
+  currencyLabel: string;
+  /** Where "put this on an invoice" leads: the generator in this language. */
+  generatorHref: string;
+}
+
+const fmt = (text: string, values: Record<string, string | number>) =>
+  text.replace(/\{(\w+)\}/g, (m, k: string) => (k in values ? String(values[k]) : m));
+
+const decimal = (n: number, intl: string) =>
+  new Intl.NumberFormat(intl, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
+
+const money = (amount: number, currency: string, intl: string, digits = 2) =>
+  new Intl.NumberFormat(intl, {
     style: "currency",
     currency,
     minimumFractionDigits: digits,
     maximumFractionDigits: digits,
   }).format(amount);
 
-function CurrencySelect({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+function CurrencySelect({
+  value,
+  onChange,
+  label,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  label: string;
+}) {
   const id = useId();
+  const options = CURRENCIES.includes(value) ? CURRENCIES : [value, ...CURRENCIES];
   return (
-    <Field id={id} label="Currency">
+    <Field id={id} label={label}>
       <Select id={id} value={value} onChange={(e) => onChange(e.target.value)}>
-        {CURRENCIES.map((c) => (
+        {options.map((c) => (
           <option key={c}>{c}</option>
         ))}
       </Select>
@@ -74,41 +102,106 @@ function Result({
   );
 }
 
-function GeneratorLink({ text }: { text: string }) {
+/**
+ * The generator URL with this result as an invoice line (the generator reads ?item=&qty=&price=
+ * &tax=&currency=, adds the line and removes the parameters again). Numbers use a dot.
+ */
+function prefill(
+  l: CalcLocale,
+  line: { item: string; qty: number; price: number; tax?: number; from: string },
+): string {
+  const q = new URLSearchParams({
+    item: line.item,
+    qty: String(Math.round(line.qty * 100) / 100),
+    price: String(Math.round(line.price * 100) / 100),
+    currency: l.currency,
+    from: line.from,
+  });
+  if (line.tax !== undefined) q.set("tax", String(line.tax));
+  return `${l.generatorHref}?${q.toString()}`;
+}
+
+function GeneratorLink({ text, href }: { text: string; href: string }) {
   return (
     <Link
-      href="/free-invoice-generator"
+      href={href}
       data-track="tool_to_generator"
-      className={buttonClass({ variant: "secondary", className: "mt-5 w-full" })}
+      className={buttonClass({ className: "mt-5 w-full" })}
     >
       {text}
     </Link>
   );
 }
 
+/** A small group heading inside a calculator. */
+function Group({ n, title, children }: { n: number; title: string; children: ReactNode }) {
+  return (
+    <fieldset className="mt-6 first:mt-5">
+      <legend className="text-ink mb-3 flex items-center gap-2 font-bold">
+        <span
+          aria-hidden
+          className="bg-brand-50 text-brand-700 ring-brand-200 text-small grid size-6 place-items-center rounded-full tabular-nums ring-1"
+        >
+          {n}
+        </span>
+        {title}
+      </legend>
+      <div className="grid gap-4 sm:grid-cols-2">{children}</div>
+    </fieldset>
+  );
+}
+
 // ── VAT calculator ───────────────────────────────────────────────────────────
 
-export function VatCalculator() {
+/** The country list in the page's language, sorted by name there. */
+function countries(intl: string, gst: string) {
+  let names: Intl.DisplayNames | null = null;
+  try {
+    names = new Intl.DisplayNames([intl], { type: "region" });
+  } catch {
+    // very old browsers: English names from the table
+  }
+  return STANDARD_RATES.map((c) => ({
+    ...c,
+    name: `${names?.of(c.code) ?? c.country.replace(/ \(GST\)$/, "")}${c.gst ? ` (${gst})` : ""}`,
+  })).sort((a, b) => a.name.localeCompare(b.name, intl));
+}
+
+export function VatCalculator({
+  t,
+  l,
+  defaultCountry,
+}: {
+  t: VatUi;
+  l: CalcLocale;
+  /** ISO code of the preselected country. */
+  defaultCountry: string;
+}) {
   const ids = { amount: useId(), rate: useId(), country: useId() };
+  const list = countries(l.intl, t.gst);
+  const start = list.find((c) => c.code === defaultCountry) ?? list[0]!;
   const [amount, setAmount] = useState("100");
-  const [rate, setRate] = useState("21");
+  const [rate, setRate] = useState(String(start.rate));
+  const [code, setCode] = useState(start.code);
   const [mode, setMode] = useState<"add" | "remove">("add");
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState(l.currency);
   const r = vat(num(amount), Math.min(num(rate), 100), mode);
-  const country = STANDARD_RATES.find((c) => String(c.rate) === rate)?.country ?? "";
+  // The chosen country stays selected while its rate is unchanged; another rate means "custom".
+  const country = list.find((c) => c.code === code && String(c.rate) === rate)?.code ?? "";
+  const money_ = (n: number) => money(n, currency, l.intl);
 
   return (
     <InvoicePaper highlight edge="perforated" className="p-6 sm:p-8">
-      <PaperLabel>VAT calculator</PaperLabel>
+      <PaperLabel>{t.label}</PaperLabel>
       <div
         role="radiogroup"
-        aria-label="What is the amount?"
+        aria-label={t.modeAria}
         className="bg-tint ring-line mt-5 grid grid-cols-2 gap-1 rounded-xl p-1 ring-1"
       >
         {(
           [
-            ["add", "Add VAT (amount is net)"],
-            ["remove", "Remove VAT (amount is gross)"],
+            ["add", t.add],
+            ["remove", t.remove],
           ] as const
         ).map(([key, label]) => (
           <button
@@ -127,31 +220,31 @@ export function VatCalculator() {
         ))}
       </div>
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
-        <Field
-          id={ids.amount}
-          label={mode === "add" ? "Amount without VAT" : "Amount including VAT"}
-        >
+        <Field id={ids.amount} label={mode === "add" ? t.amountNet : t.amountGross}>
           <NumberInput id={ids.amount} value={amount} onChange={(e) => setAmount(e.target.value)} />
         </Field>
-        <CurrencySelect value={currency} onChange={setCurrency} />
-        <Field id={ids.country} label="Country (standard rate)">
+        <CurrencySelect value={currency} onChange={setCurrency} label={l.currencyLabel} />
+        <Field id={ids.country} label={t.country}>
           <Select
             id={ids.country}
             value={country}
             onChange={(e) => {
-              const c = STANDARD_RATES.find((x) => x.country === e.target.value);
-              if (c) setRate(String(c.rate));
+              const c = list.find((x) => x.code === e.target.value);
+              if (c) {
+                setCode(c.code);
+                setRate(String(c.rate));
+              }
             }}
           >
-            <option value="">Custom rate</option>
-            {STANDARD_RATES.map((c) => (
-              <option key={c.country} value={c.country}>
-                {c.country}: {c.rate}%
+            <option value="">{t.custom}</option>
+            {list.map((c) => (
+              <option key={c.code} value={c.code}>
+                {c.name}: {c.rate.toLocaleString(l.intl)}%
               </option>
             ))}
           </Select>
         </Field>
-        <Field id={ids.rate} label="VAT rate">
+        <Field id={ids.rate} label={t.rate}>
           <NumberInput
             id={ids.rate}
             suffix="%"
@@ -163,13 +256,28 @@ export function VatCalculator() {
       <div className="mt-6">
         <Result
           rows={[
-            { label: "Net (without VAT)", value: money(r.net, currency) },
-            { label: `VAT ${num(rate)}%`, value: money(r.vat, currency) },
+            { label: t.net, value: money_(r.net) },
+            {
+              label: fmt(t.vatRow, { rate: num(rate).toLocaleString(l.intl) }),
+              value: money_(r.vat),
+            },
           ]}
-          total={{ label: "Gross (including VAT)", value: money(r.gross, currency) }}
+          total={{ label: t.gross, value: money_(r.gross) }}
         />
       </div>
-      <GeneratorLink text="Put this on an invoice" />
+      <GeneratorLink
+        text={t.cta}
+        href={prefill(
+          { ...l, currency },
+          {
+            item: t.invoiceItem,
+            qty: 1,
+            price: r.net,
+            tax: num(rate),
+            from: "vat",
+          },
+        )}
+      />
     </InvoicePaper>
   );
 }
@@ -178,70 +286,141 @@ export function VatCalculator() {
 
 interface Shift {
   id: number;
-  label: string;
+  /** YYYY-MM-DD; empty until the browser knows today's date (no mismatch with the static page). */
+  date: string;
   start: string;
   end: string;
   break: string;
 }
 
-const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 let nextId = 1;
-const shift = (label: string, start = "09:00", end = "17:00", br = "30"): Shift => ({
+const shift = (date: string, start = "09:00", end = "17:00", br = "30"): Shift => ({
   id: nextId++,
-  label,
+  date,
   start,
   end,
   break: br,
 });
 
-export function HoursCalculator() {
-  const [shifts, setShifts] = useState<Shift[]>(() => DAYS.slice(0, 5).map((d) => shift(d)));
+const iso = (d: Date) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+
+function addDays(date: string, days: number): string {
+  const d = date ? new Date(`${date}T12:00:00`) : new Date();
+  d.setDate(d.getDate() + days);
+  return iso(d);
+}
+
+/** The next working day after `date` (skips Saturday and Sunday). */
+function nextWorkday(date: string): string {
+  let next = addDays(date, 1);
+  while ([0, 6].includes(new Date(`${next}T12:00:00`).getDay())) next = addDays(next, 1);
+  return next;
+}
+
+/** Monday to Friday of the current week. */
+function thisWeek(): string[] {
+  const today = new Date();
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+  return Array.from({ length: 5 }, (_, i) => addDays(iso(monday), i));
+}
+
+export function HoursCalculator({ t, l }: { t: HoursUi; l: CalcLocale }) {
+  const [shifts, setShifts] = useState<Shift[]>(() => Array.from({ length: 5 }, () => shift("")));
   const [rate, setRate] = useState("");
-  const [currency, setCurrency] = useState("USD");
+  const [currency, setCurrency] = useState(l.currency);
   const [convert, setConvert] = useState("1:45");
   const rateId = useId();
   const convertId = useId();
 
+  // Fill in this week's dates once the page runs in the browser.
+  useEffect(() => {
+    const week = thisWeek();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- today's date only exists in the browser; the static page has none
+    setShifts((list) => list.map((x, i) => (x.date ? x : { ...x, date: week[i] ?? "" })));
+  }, []);
+
+  const dayName = (date: string) =>
+    date
+      ? new Intl.DateTimeFormat(l.intl, {
+          weekday: "short",
+          day: "numeric",
+          month: "short",
+        }).format(new Date(`${date}T12:00:00`))
+      : "";
+  const shortDate = (date: string) =>
+    date
+      ? new Intl.DateTimeFormat(l.intl, { day: "numeric", month: "short" }).format(
+          new Date(`${date}T12:00:00`),
+        )
+      : "";
+
   const minutes = shifts.reduce((s, x) => s + shiftMinutes(x.start, x.end, num(x.break)), 0);
   const hours = decimalHours(minutes);
-  const pay = Math.round(hours * num(rate) * 100) / 100;
+  const hourly = num(rate);
+  const pay = Math.round(hours * hourly * 100) / 100;
   const converted = parseDuration(convert);
+  const dates = shifts
+    .map((x) => x.date)
+    .filter(Boolean)
+    .sort();
+  const from = shortDate(dates[0] ?? "");
+  const to = shortDate(dates[dates.length - 1] ?? "");
   const set = (id: number, key: keyof Shift, value: string) =>
     setShifts((list) => list.map((x) => (x.id === id ? { ...x, [key]: value } : x)));
+  const last = () => shifts[shifts.length - 1];
+  const addDay = () =>
+    setShifts((list) => {
+      const prev = list[list.length - 1];
+      return [...list, shift(nextWorkday(prev?.date ?? ""), prev?.start, prev?.end, prev?.break)];
+    });
+  const addWeek = () =>
+    setShifts((list) => {
+      const out = [...list];
+      for (let i = 0; i < 5; i++) {
+        const prev = out[out.length - 1];
+        out.push(shift(nextWorkday(prev?.date ?? ""), prev?.start, prev?.end, prev?.break));
+      }
+      return out;
+    });
 
   return (
     <InvoicePaper highlight edge="perforated" className="p-6 sm:p-8">
-      <PaperLabel>Hours calculator</PaperLabel>
+      <PaperLabel>{t.label}</PaperLabel>
+      <p className="text-small text-muted mt-2">{t.intro}</p>
       <div className="mt-5 overflow-x-auto">
-        <table className="text-small w-full min-w-[30rem]">
+        <table className="text-small w-full min-w-[32rem]">
           <thead>
             <tr className="text-eyebrow text-subtle text-left uppercase">
-              <th className="pb-2 font-medium">Day</th>
-              <th className="pb-2 font-medium">Start</th>
-              <th className="pb-2 font-medium">End</th>
-              <th className="pb-2 font-medium">Break (min)</th>
-              <th className="pb-2 text-right font-medium">Hours</th>
+              <th className="pb-2 font-medium">{t.date}</th>
+              <th className="pb-2 font-medium">{t.start}</th>
+              <th className="pb-2 font-medium">{t.end}</th>
+              <th className="pb-2 font-medium">{t.break}</th>
+              <th className="pb-2 text-right font-medium">{t.hours}</th>
               <th className="pb-2">
-                <span className="sr-only">Remove</span>
+                <span className="sr-only">{t.remove}</span>
               </th>
             </tr>
           </thead>
           <tbody>
             {shifts.map((x) => {
               const m = shiftMinutes(x.start, x.end, num(x.break));
+              const name = dayName(x.date) || t.date;
               return (
                 <tr key={x.id} className="border-line border-t">
                   <td className="py-2 pr-2">
                     <Input
-                      aria-label="Day"
-                      value={x.label}
-                      onChange={(e) => set(x.id, "label", e.target.value)}
-                      className="h-9 w-28"
+                      aria-label={t.date}
+                      type="date"
+                      value={x.date}
+                      onChange={(e) => set(x.id, "date", e.target.value)}
+                      className="h-9 w-36"
                     />
                   </td>
                   <td className="py-2 pr-2">
                     <Input
-                      aria-label={`${x.label} start`}
+                      aria-label={fmt(t.startAria, { day: name })}
                       type="time"
                       value={x.start}
                       onChange={(e) => set(x.id, "start", e.target.value)}
@@ -250,7 +429,7 @@ export function HoursCalculator() {
                   </td>
                   <td className="py-2 pr-2">
                     <Input
-                      aria-label={`${x.label} end`}
+                      aria-label={fmt(t.endAria, { day: name })}
                       type="time"
                       value={x.end}
                       onChange={(e) => set(x.id, "end", e.target.value)}
@@ -259,7 +438,7 @@ export function HoursCalculator() {
                   </td>
                   <td className="py-2 pr-2">
                     <Input
-                      aria-label={`${x.label} break in minutes`}
+                      aria-label={fmt(t.breakAria, { day: name })}
                       inputMode="numeric"
                       value={x.break}
                       onChange={(e) => set(x.id, "break", e.target.value)}
@@ -270,8 +449,8 @@ export function HoursCalculator() {
                   <td className="py-2 pl-2 text-right">
                     <button
                       type="button"
-                      aria-label={`Remove ${x.label}`}
-                      onClick={() => setShifts((l) => l.filter((y) => y.id !== x.id))}
+                      aria-label={fmt(t.removeAria, { day: name })}
+                      onClick={() => setShifts((list) => list.filter((y) => y.id !== x.id))}
                       className="text-muted hover:text-ink focus-visible:focus-ring grid size-8 place-items-center rounded-lg"
                     >
                       <Trash2 aria-hidden className="size-4" />
@@ -283,43 +462,80 @@ export function HoursCalculator() {
           </tbody>
         </table>
       </div>
-      <button
-        type="button"
-        onClick={() => setShifts((l) => [...l, shift(DAYS[l.length % 7]!)])}
-        className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 mt-3 inline-flex items-center gap-1.5 rounded-xl px-4 py-2 font-bold ring-1"
-      >
-        <Plus aria-hidden className="size-4" /> Add a day
-      </button>
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          onClick={addDay}
+          className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 inline-flex items-center gap-1.5 rounded-xl px-4 py-2 font-bold ring-1"
+        >
+          <Plus aria-hidden className="size-4" /> {t.addDay}
+        </button>
+        <button
+          type="button"
+          onClick={addWeek}
+          className="text-small text-brand-700 hover:bg-brand-50 focus-visible:focus-ring ring-brand-200 inline-flex items-center gap-1.5 rounded-xl px-4 py-2 font-bold ring-1"
+        >
+          <CalendarPlus aria-hidden className="size-4" /> {t.addWeek}
+        </button>
+        {dates.length > 0 && last() && (
+          <span className="text-small text-subtle ml-auto">
+            {fmt(t.period, { days: shifts.length, from, to })}
+          </span>
+        )}
+      </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
-        <Field id={rateId} label="Hourly rate (optional)">
+        <Field id={rateId} label={t.rate}>
           <NumberInput
             id={rateId}
             value={rate}
-            placeholder="0.00"
+            placeholder={decimal(0, l.intl)}
             onChange={(e) => setRate(e.target.value)}
           />
         </Field>
-        <CurrencySelect value={currency} onChange={setCurrency} />
+        <CurrencySelect value={currency} onChange={setCurrency} label={l.currencyLabel} />
       </div>
       <div className="mt-6">
         <Result
           rows={[
-            { label: "Total time", value: hhmm(minutes) },
-            { label: "In decimal hours (for the invoice)", value: hours.toFixed(2) },
+            { label: t.totalTime, value: hhmm(minutes) },
+            { label: t.decimal, value: decimal(hours, l.intl) },
+            ...(hourly > 0
+              ? [
+                  {
+                    label: fmt(t.calc, {
+                      hours: decimal(hours, l.intl),
+                      rate: money(hourly, currency, l.intl),
+                    }),
+                    value: money(pay, currency, l.intl),
+                  },
+                ]
+              : []),
           ]}
           total={
-            num(rate) > 0
-              ? { label: "To invoice", value: money(pay, currency) }
-              : { label: "Total hours", value: hours.toFixed(2) }
+            hourly > 0
+              ? { label: t.toInvoice, value: money(pay, currency, l.intl) }
+              : { label: t.totalHours, value: decimal(hours, l.intl) }
           }
         />
       </div>
+      <GeneratorLink
+        text={t.cta}
+        href={prefill(
+          { ...l, currency },
+          {
+            item: fmt(t.invoiceItem, { from, to }),
+            qty: hours,
+            price: hourly,
+            from: "hours",
+          },
+        )}
+      />
 
       <div className="border-line mt-8 border-t pt-6">
-        <p className="text-ink font-bold">Quick convert: hours and minutes ⇄ decimal</p>
+        <p className="text-ink font-bold">{t.convertTitle}</p>
         <div className="mt-3 flex flex-wrap items-end gap-4">
-          <Field id={convertId} label="Time (1:45) or decimal (1.75)">
+          <Field id={convertId} label={t.convertLabel}>
             <Input
               id={convertId}
               value={convert}
@@ -329,101 +545,172 @@ export function HoursCalculator() {
           </Field>
           <p className="text-ink pb-2.5 font-medium tabular-nums" aria-live="polite">
             {converted === null
-              ? "Type a time like 1:45 or a number like 1.75"
-              : `${hhmm(converted)} = ${decimalHours(converted).toFixed(2)} hours`}
+              ? t.convertHint
+              : fmt(t.convertResult, {
+                  time: hhmm(converted),
+                  hours: decimal(decimalHours(converted), l.intl),
+                })}
           </p>
         </div>
       </div>
-      <GeneratorLink text="Invoice these hours" />
     </InvoicePaper>
   );
 }
 
 // ── Hourly rate calculator ───────────────────────────────────────────────────
 
-export function RateCalculator() {
+export function RateCalculator({
+  t,
+  l,
+  defaults,
+}: {
+  t: RateUi;
+  l: CalcLocale;
+  /** Yearly amounts. */
+  defaults: { takeHome: string; tax: string; costs: string; weeks: string; hours: string };
+}) {
   const ids = { takeHome: useId(), tax: useId(), costs: useId(), weeks: useId(), hours: useId() };
-  const [v, setV] = useState({
-    takeHome: "48000",
-    tax: "30",
-    costs: "6000",
-    weeks: "8",
-    hours: "25",
-  });
-  const [currency, setCurrency] = useState("USD");
+  const [v, setV] = useState(defaults);
+  const [period, setPeriod] = useState<"year" | "month">("year");
+  const [currency, setCurrency] = useState(l.currency);
   const set = (k: keyof typeof v) => (e: { target: { value: string } }) =>
     setV((s) => ({ ...s, [k]: e.target.value }));
+  const perYear = (value: string) => num(value) * (period === "month" ? 12 : 1);
+  // Switching keeps the same income: the amounts are converted, not reinterpreted.
+  function switchTo(next: "year" | "month") {
+    if (next === period) return;
+    const factor = next === "month" ? 1 / 12 : 12;
+    const conv = (value: string) => String(Math.round(num(value) * factor));
+    setV((s) => ({ ...s, takeHome: conv(s.takeHome), costs: conv(s.costs) }));
+    setPeriod(next);
+  }
   const r = hourlyRate({
-    takeHome: num(v.takeHome),
+    takeHome: perYear(v.takeHome),
     taxPercent: num(v.tax),
-    costs: num(v.costs),
+    costs: perYear(v.costs),
     weeksOff: num(v.weeks),
     billableHours: num(v.hours),
   });
+  const m = (n: number, digits = 0) => money(n, currency, l.intl, digits);
 
   return (
     <InvoicePaper highlight edge="perforated" className="p-6 sm:p-8">
-      <PaperLabel>Hourly rate calculator</PaperLabel>
-      <div className="mt-5 grid gap-4 sm:grid-cols-2">
-        <Field id={ids.takeHome} label="Income you want to keep per year" hint="After income tax">
+      <PaperLabel>{t.label}</PaperLabel>
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+        <div
+          role="radiogroup"
+          aria-label={t.periodAria}
+          className="bg-tint ring-line inline-grid grid-cols-2 gap-1 rounded-xl p-1 ring-1"
+        >
+          {(
+            [
+              ["month", t.perMonth],
+              ["year", t.perYear],
+            ] as const
+          ).map(([key, label]) => (
+            <button
+              key={key}
+              type="button"
+              role="radio"
+              aria-checked={period === key}
+              onClick={() => switchTo(key)}
+              className={cx(
+                "text-small focus-visible:focus-ring rounded-lg px-4 py-1.5 font-bold transition-colors",
+                period === key ? "bg-surface text-ink shadow-soft" : "text-muted hover:text-ink",
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className="w-40">
+          <CurrencySelect value={currency} onChange={setCurrency} label={l.currencyLabel} />
+        </div>
+      </div>
+
+      <Group n={1} title={t.earnTitle}>
+        <Field id={ids.takeHome} label={t.takeHome} hint={t.takeHomeHint}>
           <NumberInput id={ids.takeHome} value={v.takeHome} onChange={set("takeHome")} />
         </Field>
-        <CurrencySelect value={currency} onChange={setCurrency} />
-        <Field
-          id={ids.tax}
-          label="Tax and social contributions"
-          hint="Share of profit you set aside"
-        >
+      </Group>
+      <Group n={2} title={t.payTitle}>
+        <Field id={ids.tax} label={t.tax} hint={t.taxHint}>
           <NumberInput id={ids.tax} suffix="%" value={v.tax} onChange={set("tax")} />
         </Field>
-        <Field
-          id={ids.costs}
-          label="Business costs per year"
-          hint="Insurance, software, tools, accountant"
-        >
+        <Field id={ids.costs} label={t.costs} hint={t.costsHint}>
           <NumberInput id={ids.costs} value={v.costs} onChange={set("costs")} />
         </Field>
-        <Field
-          id={ids.weeks}
-          label="Weeks you don't bill per year"
-          hint="Holidays, sick days, quiet weeks"
-        >
+      </Group>
+      <Group n={3} title={t.billTitle}>
+        <Field id={ids.weeks} label={t.weeks} hint={t.weeksHint}>
           <NumberInput id={ids.weeks} value={v.weeks} onChange={set("weeks")} />
         </Field>
-        <Field
-          id={ids.hours}
-          label="Billable hours per week"
-          hint="Paid work only, not admin or travel"
-        >
+        <Field id={ids.hours} label={t.hours} hint={t.hoursHint}>
           <NumberInput id={ids.hours} value={v.hours} onChange={set("hours")} />
         </Field>
-      </div>
-      <div className="mt-6">
+      </Group>
+
+      <div className="mt-7" aria-live="polite">
         {r ? (
-          <Result
-            rows={[
-              { label: "Profit you need before tax", value: money(r.beforeTax, currency, 0) },
-              {
-                label: "Plus business costs = to invoice per year",
-                value: money(r.revenue, currency, 0),
-              },
-              { label: "That's per month", value: money(r.perMonth, currency, 0) },
-              {
-                label: "Billable hours per year",
-                value: r.billableHoursPerYear.toLocaleString("en-US"),
-              },
-              { label: "Day rate (8 billable hours)", value: money(r.daily, currency) },
-            ]}
-            total={{ label: "Your minimum hourly rate", value: money(r.hourly, currency) }}
-            note="A minimum: it covers your income, tax and costs, nothing more. Tax is a rough share; your accountant can give you the real figure."
-          />
+          <div className="bg-brand-50 ring-brand-200 rounded-2xl p-5 ring-1">
+            <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+              <div>
+                <p className="text-small text-muted">{t.total}</p>
+                <p className="font-heading text-ink text-h2 tabular-nums">{m(r.hourly, 2)}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-small text-muted">{t.day}</p>
+                <p className="text-ink text-h4 font-bold tabular-nums">{m(r.daily)}</p>
+              </div>
+            </div>
+            <div className="border-brand-200 mt-4 border-t pt-4">
+              <p className="text-small text-ink font-bold">{t.stepsTitle}</p>
+              <ol className="text-small text-muted mt-2 list-decimal space-y-1.5 pl-5">
+                <li>
+                  {fmt(t.step1, {
+                    takeHome: m(perYear(v.takeHome)),
+                    beforeTax: m(r.beforeTax),
+                    tax: num(v.tax).toLocaleString(l.intl),
+                  })}
+                </li>
+                <li>
+                  {fmt(t.step2, {
+                    costs: m(perYear(v.costs)),
+                    revenue: m(r.revenue),
+                    perMonth: m(r.perMonth),
+                  })}
+                </li>
+                <li>
+                  {fmt(t.step3, {
+                    weeks: (52 - Math.min(num(v.weeks), 52)).toLocaleString(l.intl),
+                    hours: num(v.hours).toLocaleString(l.intl),
+                    billable: r.billableHoursPerYear.toLocaleString(l.intl),
+                  })}
+                </li>
+                <li>
+                  {fmt(t.step4, {
+                    revenue: m(r.revenue),
+                    billable: r.billableHoursPerYear.toLocaleString(l.intl),
+                    hourly: m(r.hourly, 2),
+                  })}
+                </li>
+              </ol>
+            </div>
+            <p className="text-small text-subtle mt-4">{t.note}</p>
+          </div>
         ) : (
-          <p className="text-small text-muted bg-tint rounded-2xl p-5">
-            Add at least one billable hour per week and fewer than 52 weeks off.
-          </p>
+          <p className="text-small text-muted bg-tint rounded-2xl p-5">{t.invalid}</p>
         )}
       </div>
-      <GeneratorLink text="Make an invoice with this rate" />
+      {r && (
+        <GeneratorLink
+          text={t.cta}
+          href={prefill(
+            { ...l, currency },
+            { item: t.invoiceItem, qty: 1, price: r.hourly, from: "rate" },
+          )}
+        />
+      )}
     </InvoicePaper>
   );
 }

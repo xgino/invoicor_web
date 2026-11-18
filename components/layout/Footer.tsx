@@ -235,6 +235,11 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               >
                 {t.generator}
               </Item>
+              {ROUTES.tools[locale] && (
+                <Item href={ROUTES.tools[locale]!} track="tools">
+                  {CHROME[locale].nav.tools}
+                </Item>
+              )}
               <Item href={home ? `${home}#pricing` : "/#pricing"} track="pricing">
                 {t.pricing}
               </Item>

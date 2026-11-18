@@ -13,7 +13,7 @@ import {
 import { useCallback, useEffect, useReducer, useRef, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { track } from "@/lib/analytics";
-import { type Draft, filledItems, newDraft, newItemId } from "@/lib/generator/draft";
+import { type Draft, MAX_ITEMS, filledItems, newDraft, newItemId } from "@/lib/generator/draft";
 import type { GeneratorExample } from "@/lib/generator/examples";
 import { clearDraft, loadDraft, saveDraft } from "@/lib/generator/storage";
 import { computeTotals, formatMoney } from "@/lib/generator/totals";
@@ -88,6 +88,30 @@ export function Generator({
     if (cur && currencies.some((c) => c.code === cur)) next.currency = cur;
     const lang = params.get("lang");
     if (lang && languages.some((l) => l.code === lang)) next.language = lang;
+    // A line from a free tool (?item=&qty=&price=&tax=, ROADMAP T2): added to the invoice, never
+    // replacing what's there, then the parameters are removed so a reload doesn't add it twice.
+    const item = params.get("item")?.trim().slice(0, 200);
+    const price = params.get("price");
+    if (item && price !== null && Number.isFinite(Number(price))) {
+      const qty = params.get("qty");
+      const line = {
+        id: newItemId(),
+        name: item,
+        description: "",
+        quantity: qty && Number(qty) > 0 ? qty : "1",
+        unit_price: price,
+      };
+      const filled = filledItems(next);
+      if (filled.length === 0) next.items = [line];
+      else if (filled.length < MAX_ITEMS) next.items = [...filled, line];
+      const tax = Number(params.get("tax"));
+      if (params.has("tax") && Number.isFinite(tax) && tax >= 0 && tax <= 100)
+        next.tax_rate = String(tax);
+      track("gen_prefill", { from: params.get("from") ?? "unknown" });
+      for (const key of ["item", "qty", "price", "tax", "from", "currency"]) params.delete(key);
+      const rest = params.toString();
+      window.history.replaceState(null, "", window.location.pathname + (rest ? `?${rest}` : ""));
+    }
     const slug = params.get("example");
     const example = slug ? examples[slug] : undefined;
     if (slug && example) {
