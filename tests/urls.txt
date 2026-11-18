@@ -90,3 +90,7 @@
 /sv
 /da
 /nb
+/tools
+/tools/vat-calculator
+/tools/hours-calculator
+/tools/hourly-rate-calculator

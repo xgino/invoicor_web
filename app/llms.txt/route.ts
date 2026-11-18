@@ -25,6 +25,10 @@ export function GET() {
 ${list([
   { title: "Home: features and pricing", path: "/" },
   { title: "Free invoice generator (online, PDF, no signup)", path: "/free-invoice-generator" },
+  { title: "Free tools: VAT, hours and hourly rate calculators", path: "/tools" },
+  { title: "VAT calculator (add or remove VAT, 19 countries)", path: "/tools/vat-calculator" },
+  { title: "Hours calculator (hours worked, decimal hours)", path: "/tools/hours-calculator" },
+  { title: "Freelance hourly rate calculator", path: "/tools/hourly-rate-calculator" },
   { title: "Invoice templates by industry", path: "/templates" },
   { title: "Invoicing guides by industry", path: "/industries" },
   { title: "Invoicor compared with other invoice apps", path: "/compare" },

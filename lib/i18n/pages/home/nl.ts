@@ -19,7 +19,7 @@ export const nl: HomeDict = {
     doodle: "klaar om te versturen",
     promisesAria: "Wat je gratis krijgt",
     promises: ["{n} facturen gratis", "Geen watermerk", "Geen abonnement nodig"],
-    sent: "Als pdf verstuurd via WhatsApp",
+    sent: "Als pdf verstuurd per e-mail",
   },
   sample: {
     number: "Factuur nr. 0042",

@@ -22,7 +22,7 @@ export const en = {
     doodle: "ready to send",
     promisesAria: "What you get for free",
     promises: ["{n} invoices free", "No watermark", "No subscription needed"],
-    sent: "Sent via WhatsApp as PDF",
+    sent: "Sent by email as PDF",
   },
   sample: {
     number: "Invoice № 0042",

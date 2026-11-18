@@ -7,7 +7,7 @@ import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton"
 import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { CONTACT_EMAIL } from "@/lib/config";
-import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
+import { getTemplates } from "@/lib/content";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
 import { ROUTES } from "@/lib/i18n/routes";
@@ -57,12 +57,22 @@ function AllLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+/** learn.invoicor.com: the blog with how-to articles (ROADMAP L2: link both ways). */
+export const BLOG_URL = "https://learn.invoicor.com/";
+
+/**
+ * The 3 templates with the most search impressions (Search Console, 28 days to 2026-11-18;
+ * baseline in seo/keyword-map.csv). Update after each Search Console round.
+ */
+const POPULAR_SLUGS = ["plumbing", "hvac", "freelance-design"];
+const POPULAR_TEMPLATES = POPULAR_SLUGS.flatMap((slug) => {
+  const t = getTemplates().find((x) => x.slug === slug);
+  return t ? [t] : [];
+});
+
 export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
   if (locale !== DEFAULT_LOCALE)
     return <LocalizedFooter locale={locale as Exclude<Locale, "en">} />;
-  const templates = getTemplates().slice(0, 6);
-  const industries = getIndustries().slice(0, 6);
-  const comparisons = getComparisons().slice(0, 6);
   const year = new Date().getFullYear();
 
   return (
@@ -93,40 +103,50 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
           </div>
 
           <nav aria-label="Footer" className="grid grid-cols-2 gap-10 sm:grid-cols-4">
-            <Column title="Templates">
-              {templates.map((t) => (
+            <Column title="Product">
+              <Item href="/#pricing" track="pricing">
+                Pricing
+              </Item>
+              <Item href="/free-invoice-generator" track="generator">
+                Free invoice generator
+              </Item>
+              <Item href="/tools" track="tools">
+                Free tools
+              </Item>
+              <Item href="/android" track="android">
+                Android (coming soon)
+              </Item>
+            </Column>
+            <Column title="Popular templates">
+              {POPULAR_TEMPLATES.map((t) => (
                 <Item key={t.slug} href={`/templates/${t.slug}`}>
                   {t.niche} invoice
                 </Item>
               ))}
               <AllLink href="/templates">All templates</AllLink>
             </Column>
-            <Column title="Industries">
-              {industries.map((i) => (
-                <Item key={i.slug} href={`/industries/${i.slug}`}>
-                  {i.industry}
-                </Item>
-              ))}
-              <AllLink href="/industries">All industries</AllLink>
-            </Column>
-            <Column title="Compare">
-              {comparisons.map((c) => (
-                <Item key={c.slug} href={`/compare/${c.slug}`}>
-                  {c.competitor} alternative
-                </Item>
-              ))}
-              <AllLink href="/compare">All comparisons</AllLink>
-            </Column>
-            <Column title="Company">
-              <Item href="/free-invoice-generator" track="generator">
-                Free invoice generator
-              </Item>
-              <Item href="/#pricing" track="pricing">
-                Pricing
-              </Item>
+            <Column title="Resources">
+              <li>
+                <a
+                  href={BLOG_URL}
+                  className={LINK}
+                  data-track="footer_click"
+                  data-track-link="blog"
+                >
+                  Blog &amp; guides
+                </a>
+              </li>
               <Item href="/help" track="help">
                 Help &amp; FAQ
               </Item>
+              <Item href="/industries" track="industries">
+                Invoicing by industry
+              </Item>
+              <Item href="/compare" track="compare">
+                Compare invoice apps
+              </Item>
+            </Column>
+            <Column title="Company">
               <Item href="/affiliate" track="affiliate">
                 Affiliate program ({AFFILIATE.commission}%)
               </Item>
@@ -237,6 +257,11 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               <EnglishItem href="/industries">{t.industries}</EnglishItem>
               <EnglishItem href="/compare">{t.compare}</EnglishItem>
               <EnglishItem href="/help">{t.help}</EnglishItem>
+              <li>
+                <a href={BLOG_URL} hrefLang="en" className={LINK}>
+                  Blog
+                </a>
+              </li>
             </Column>
             <div className="col-span-2 sm:col-span-1">
               <LanguageSwitcher

@@ -19,7 +19,7 @@ export const da: HomeDict = {
     doodle: "klar til at sende",
     promisesAria: "Det får du gratis",
     promises: ["{n} fakturaer gratis", "Intet vandmærke", "Intet abonnement"],
-    sent: "Sendt som pdf via WhatsApp",
+    sent: "Sendt som pdf via e-mail",
   },
   sample: {
     number: "Faktura nr. 0042",

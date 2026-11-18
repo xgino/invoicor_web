@@ -19,7 +19,7 @@ export const it: HomeDict = {
     doodle: "pronta da inviare",
     promisesAria: "Cosa ottieni gratis",
     promises: ["{n} fatture gratis", "Nessuna filigrana", "Nessun abbonamento"],
-    sent: "Inviata in PDF su WhatsApp",
+    sent: "Inviata in PDF via email",
   },
   sample: {
     number: "Fattura n. 0042",

@@ -17,6 +17,7 @@ test("the Android button opens the page, which shows the count", async ({ page }
   await page
     .getByRole("contentinfo")
     .getByRole("link", { name: /Android/ })
+    .first()
     .click();
   await expect(page).toHaveURL(/\/android$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Android");

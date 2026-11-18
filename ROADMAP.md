@@ -117,6 +117,9 @@ _No input needed unless noted. In order._
 | D16 | Where do how-to guides live: learn.invoicor.com or a new `/guides` on the main site (chunk 42)? | **learn.invoicor.com.** It already has 17 articles and its own sitemap; a second blog would compete for the same searches. Chunk 42 becomes [L4](#l-learninvoicorcom-the-blog). | 42, L4 |
 | D17 | When to start the web app ([W](#w-web-app-invoice-maker-and-accounts-in-the-browser))? | Not now. Start when one of the triggers in W is hit. | W |
 | D9 | Shrink git history (228 MB of old `node_modules`) | Optional, low priority: `git filter-repo` + force-push. | n/a |
+| D18 | Show "5 stars on the App Store"? (2 ratings today) | **Not yet.** "5 stars" without the count misleads, and "5.0 from 2 ratings" looks thin. Show the rating once there are about 20+ real ratings (chunk 50 gets them), always with the count. | hero, schema |
+| D19 | Show usage numbers? (2026-11-18: 166 users, 137 business profiles, 105 invoices, 10 paid) | **Not yet.** Small numbers read as "new and untested". Show one once it's impressive and stays true: e.g. "10,000+ invoices created" at 10,000, rounded down. Then a public stats endpoint (SP1) keeps it current. Until then the true facts (31 templates, 11 languages, data in Germany, 0% fees) and the founder story (X7) do the job. Strongest now: ask the 10 paying users for a one-line quote (with permission). | hero, proof band |
+| D20 | Show the one-month-free code on the site? | **Not site-wide** (people wait for deals, and the site already offers 3 free invoices + a trial). Use it targeted and tracked: the generator's success panel, partners (P2), the email sequence (58) and launch posts. Create it as an *offer code* in App Store Connect (Subscriptions → Offer Codes) and track redemptions per channel. | 58, P2 |
 
 ## L. learn.invoicor.com (the blog)
 
@@ -125,7 +128,7 @@ on iPhone in seconds", "What is an invoice maker", "How to send an invoice from 
 Today the main site doesn't link to it, and it isn't in the keyword plan._
 
 - [ ] **L1** 🤖 **Fact-check the 17 articles against BRAND.md §10.** Titles like "How auto-fill helps you create invoices faster", "How to create a receipt on iPhone" and "How a tax calculator helps" may promise things the app doesn't do (no receipts or estimates; one tax rate per invoice). List every claim to fix; 👤 you edit the blog.
-- [ ] **L2** 🤖 **Link both ways.** Main site: a "Learn" link in the footer (and nav if it earns it), and 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
+- [ ] **L2** 🤖 **Link both ways.** ✅ Done in the nav (Blog) and footer (Blog & guides). Still to do: 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
 - [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. Add every article to `seo/keyword-map.csv`, so a blog post and a template page never target the same search (one search intent = one URL).
 - [ ] **L4** 🤖 **Guides go to the blog** (replaces chunk 42, after D16): write the planned how-to guides there (how to write an invoice, invoice numbering, payment terms explained, invoice vs receipt, how to invoice as a freelancer, late invoices), each with a FAQ, "last updated" and a link to the generator.
 - [ ] **L5** 🤖 Mention learn.invoicor.com in `llms.txt` and the Organization JSON-LD, so AI assistants connect the two sites.
@@ -181,6 +184,25 @@ automatically once, everything translated). 36 and 37 are done (see Done); still
 - [ ] 59. Affiliate & partner program 👥
 - [ ] 60. Conversion experiments
 
+## T. Free tools
+
+_T1 (VAT, hours and hourly rate calculators + the `/tools` hub) and T2 (cleaner nav and footer) are
+done (see Done). Next tools, each a page with the tool, the math in plain words and an FAQ:_
+
+- [ ] **T3** 🤖 **IBAN checker** (quick win): checks the format and the check digits in the browser (ISO 13616 mod-97) and shows the country and bank code. Honest label: it catches typos, it does **not** prove who owns the account.
+- [ ] **T4** 👥 **Bank account owner check** (Verification of Payee): since October 2025, EU banks check the name against the IBAN for SEPA transfers. Offering it ourselves needs a licensed provider's API (a bank or a payment service), a server and a privacy review. Research cost and providers first; maybe not worth it if the client's own bank already shows the match.
+- [ ] **T5** 👥 **EU VAT number checker**: the European Commission's VIES service confirms whether a VAT ID is valid (and often the company name). Needs a small server proxy in `invoicor_api` (browsers can't call it directly), with caching and rate limits.
+- [ ] **T6** 👥 **Business number checker**: per-country registers (UK Companies House has a free API; the Dutch KvK API is paid; others vary). Start with the UK and NL, through the API.
+- [ ] **T7** 🤖 **Late payment interest and collection costs**, per country: in the EU, business-to-business late payments carry statutory interest (the ECB reference rate + 8 points in most countries, + 9 in Germany) and a fixed €40 compensation per invoice; consumer rules differ (e.g. the Dutch WIK collection-cost scale). Start with NL, DE, BE, FR, UK; every rate sourced and dated, re-checked every half year when the ECB rate changes.
+- [ ] **T8** 🤖 Smaller tools that rank and get linked: due date calculator (Net 15/30/60), invoice number generator, discount and markup calculator, profit margin calculator.
+- [ ] **T9** 🤖 The tools in the other 10 languages (with H3/H4); the VAT calculator first, with each country's own rate preselected.
+
+## P2. Partners and customers
+
+- [ ] **P2a** 👥 **Partner page** (`/partners`): accountants, bookkeepers, freelancer associations, coworking spaces and banks for freelancers, each with a short description and a link. They link back (good for SEO), and their clients get a partner offer (D20). Builds on the affiliate program (59).
+- [ ] **P2b** 👥 **Customer showcase** ("Made with Invoicor"): businesses that use the app, with their logo, a one-line quote and a link to their site. **Only with written opt-in** (a sole trader's business name can be personal data under the GDPR, and some don't want competitors to know their tools). SEO: each gets a modest backlink from us; for us it's the social proof the site still lacks (D18, D19). Ask in the app or by email; start once there are 10 who say yes.
+- [ ] **SP1** 🤖 Public stats endpoint in `invoicor_api` (when D19 says yes): totals rounded down (e.g. "10,000+ invoices"), cached for a day, nothing per user. The site reads it at build time.
+
 ## W. Web app: invoice maker and accounts in the browser
 
 **Big, and not essential at this stage** (D17). Today Invoicor is an iPhone app; the website has a
@@ -219,6 +241,10 @@ invoice now".
 # Part 2: Done
 
 _One line per finished item, newest first. Full details: [the archive](docs/roadmap-archive-2026-11-18.md)._
+
+### T1–T2. Free tools and a cleaner nav and footer (2026-11-18)
+- [x] T1. `/tools` hub with the free invoice generator first, plus three calculators that run in the browser (math in `lib/tools/math.ts`, unit-tested): **VAT calculator** (add or remove VAT, standard rates of 19 countries as of Nov 2026), **hours calculator** (a week of shifts minus breaks, overnight shifts, 1:45 ⇄ 1.75), **hourly rate calculator** (from take-home income, tax share, costs, weeks off and billable hours to a minimum hourly and day rate). Each page explains the math and has an FAQ (FAQPage JSON-LD). In the sitemap, `llms.txt` and the keyword map.
+- [x] T2. Navbar down to five items: Templates, Free tools, Pricing, Blog (learn.invoicor.com), Help. Footer down from 28 links to four short columns: Product, Popular templates (the top 3 from Search Console), Resources (blog, help, industries, compare) and Company; the blog is linked from every page (L2). Hero: "Sent by email as PDF" instead of WhatsApp, in all 11 languages; the row below still shows every way to send.
 
 ### Stage H: Languages, steps 1–2 (2026-11-18)
 - [x] 36. **Language system** for all 11 app languages (en, nl, de, fr, es, it, pt, pl, sv, da, nb): English stays at `/` (no URL changes, rankings safe); every other language has its own URLs with translated slugs (`lib/i18n/routes.ts`); two root layouts (`app/(en)`, `app/[locale]`) for the right `<html lang>`; hreflang + x-default on every translated page and in the sitemap; branded 404 via `global-not-found`. A page only exists in a language once it's really translated.

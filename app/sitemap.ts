@@ -3,6 +3,7 @@ import { absoluteUrl } from "@/lib/config";
 import { CONTENT_UPDATED_AT, getComparisons, getIndustries, getTemplates } from "@/lib/content";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
 import { ROUTES, type PageKey } from "@/lib/i18n/routes";
+import { TOOLS } from "@/lib/tools/registry";
 
 // Required for `output: "export"`: render once at build time into out/sitemap.xml.
 export const dynamic = "force-static";
@@ -44,6 +45,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getIndustries().map((i) => page(`/industries/${i.slug}`, CONTENT_UPDATED_AT.industries)),
     page("/compare", CONTENT_UPDATED_AT.comparisons),
     ...getComparisons().map((c) => page(`/compare/${c.slug}`, CONTENT_UPDATED_AT.comparisons)),
+    page("/tools", "2026-11-18"),
+    ...TOOLS.filter((t) => t.href.startsWith("/tools/")).map((t) => page(t.href, "2026-11-18")),
     page("/help", CONTENT_UPDATED_AT.site),
     page("/android", CONTENT_UPDATED_AT.site),
     page("/affiliate", CONTENT_UPDATED_AT.site),

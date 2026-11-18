@@ -7,13 +7,15 @@ export interface NavLink {
   label: string;
 }
 
-/** Main navigation (ROADMAP chunks 18a, 35e). */
+/**
+ * Main navigation (ROADMAP chunks 18a, 35e, T2): five items. Industries and Compare live in the
+ * footer and on the hubs; the generator is the first of the free tools.
+ */
 export const NAV_LINKS: readonly NavLink[] = [
-  { href: "/free-invoice-generator", label: "Free generator" },
   { href: "/templates", label: "Templates" },
-  { href: "/industries", label: "Industries" },
-  { href: "/compare", label: "Compare" },
+  { href: "/tools", label: "Free tools" },
   { href: "/#pricing", label: "Pricing" },
+  { href: "https://learn.invoicor.com/", label: "Blog" },
   { href: "/help", label: "Help" },
 ] as const;
 
@@ -37,6 +39,8 @@ export function navLinksFor(locale: Locale): readonly NavLink[] {
 
 /** True when `pathname` is the link's page or one of its children. */
 export function isActive(pathname: string, href: string): boolean {
-  if (href.includes("#") || href.includes("?")) return false;
+  if (href.includes("#") || href.includes("?") || href.startsWith("http")) return false;
+  // The invoice generator is one of the free tools.
+  if (href === "/tools" && pathname === "/free-invoice-generator") return true;
   return pathname === href || pathname.startsWith(`${href}/`);
 }

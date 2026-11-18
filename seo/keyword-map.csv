@@ -87,3 +87,7 @@ url,status,page_type,primary_keyword,secondary_keywords,intent,chunk,baseline_po
 /compare/servicem8,live,compare,servicem8 alternative,servicem8 pricing; servicem8 vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
 /compare/billdu,live,compare,billdu alternative,billdu pricing; billdu vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
 /compare/zervant,live,compare,zervant alternative,zervant pricing; zervant vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
+/tools,live,tool,free invoicing tools,free business calculators; invoice tools,tool (do),T1 (2026-11-18),,
+/tools/vat-calculator,live,tool,vat calculator,add vat calculator; remove vat calculator; reverse vat calculator,tool (do),T1 (2026-11-18),,
+/tools/hours-calculator,live,tool,hours calculator,work hours calculator; time to decimal hours; timesheet calculator,tool (do),T1 (2026-11-18),,
+/tools/hourly-rate-calculator,live,tool,freelance hourly rate calculator,hourly rate calculator; day rate calculator; how much to charge per hour,tool (do),T1 (2026-11-18),,
