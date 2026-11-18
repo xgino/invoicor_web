@@ -1,4 +1,4 @@
-import { ArrowRight, File, FileSpreadsheet, FileText, PencilLine } from "lucide-react";
+import { ArrowRight, FileText, PencilLine } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -20,6 +20,7 @@ import { InvoicePaper, LineItems, PaperLabel } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
 import { CONTENT_UPDATED_AT, getIndustry, getTemplate, getTemplates, text } from "@/lib/content";
 import { howToLd } from "@/lib/jsonld";
+import { FREE_INVOICES } from "@/lib/pricing";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 // Only the slugs in content/templates.json exist; anything else is a real 404.
@@ -43,12 +44,6 @@ export async function generateMetadata({
   });
 }
 
-const FORMATS = [
-  { key: "format_pdf_desc", label: "PDF", icon: FileText },
-  { key: "format_word_desc", label: "Word", icon: File },
-  { key: "format_excel_desc", label: "Excel", icon: FileSpreadsheet },
-];
-
 /** Template page (ROADMAP chunk 21, blueprint "Template"). All text comes from content/templates.json. */
 export default async function TemplatePage({ params }: PageProps<"/templates/[slug]">) {
   const { slug } = await params;
@@ -62,10 +57,10 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
     return title ? [{ title, text: text(d, `req_${n}_text`) }] : [];
   });
   const whatToInclude = text(d, "what_to_include_intro");
-  const formats = FORMATS.flatMap((f) => {
-    const desc = text(d, f.key);
-    return desc ? [{ ...f, desc }] : [];
-  });
+  // Invoicor makes PDFs only (generator and app), so the page says so (ROADMAP S1-n).
+  const pdfDesc =
+    text(d, "format_pdf_desc") ??
+    `A PDF looks the same on every phone and computer, can't be changed by accident, and is what clients and accountants expect. It's the right format for every ${nicheLower} invoice you send.`;
   const proTip = text(d, "pro_tip");
   const rows = d.sample_breakdown_rows;
   const totals = [
@@ -90,7 +85,7 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
     { id: "sample", label: "Invoice example", show: rows.length > 0 },
     { id: "notes", label: "Industry notes", show: d.industry_notes.length > 0 },
     { id: "mistakes", label: "Mistakes to avoid", show: d.mistakes.length > 0 },
-    { id: "formats", label: "File formats", show: formats.length > 0 },
+    { id: "formats", label: "Send it as a PDF", show: true },
     { id: "tip", label: "Pro tip", show: !!proTip },
     { id: "faqs", label: "FAQ", show: d.faqs.length > 0 },
   ].filter((s) => s.show);
@@ -242,23 +237,55 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
           </Block>
         )}
 
-        {formats.length > 0 && (
-          <Block
-            id="formats"
-            eyebrow="Formats"
-            title={text(d, "when_to_use_each_format_title") ?? "Which file format should you use?"}
-          >
-            <ul className="grid gap-4 sm:grid-cols-3">
-              {formats.map((f) => (
-                <li key={f.key} className="bg-surface ring-line shadow-soft rounded-2xl p-6 ring-1">
-                  <f.icon aria-hidden className="text-brand-600 size-7" strokeWidth={1.75} />
-                  <h3 className="text-ink mt-4 font-bold">{f.label}</h3>
-                  <p className="text-muted mt-2 text-[0.9375rem] leading-relaxed">{f.desc}</p>
-                </li>
-              ))}
-            </ul>
-          </Block>
-        )}
+        <Block id="formats" eyebrow="Format" title="Send it as a PDF">
+          <ul className="grid gap-4 sm:grid-cols-3">
+            <li className="bg-surface ring-line shadow-soft rounded-2xl p-6 ring-1">
+              <FileText aria-hidden className="text-brand-600 size-7" strokeWidth={1.75} />
+              <h3 className="text-ink mt-4 font-bold">Why PDF</h3>
+              <p className="text-muted mt-2 text-[0.9375rem] leading-relaxed">{pdfDesc}</p>
+            </li>
+            <li className="bg-surface ring-line shadow-soft rounded-2xl p-6 ring-1">
+              <PencilLine aria-hidden className="text-brand-600 size-7" strokeWidth={1.75} />
+              <h3 className="text-ink mt-4 font-bold">Free, in your browser</h3>
+              <p className="text-muted mt-2 text-[0.9375rem] leading-relaxed">
+                Open this {nicheLower} template in the free generator: the example lines are already
+                filled in. Change them, add your logo and download the PDF. No signup.
+              </p>
+              <Link
+                href={useHref}
+                data-track="template_use"
+                data-track-section={`template-${d.slug}-format`}
+                className="text-brand-700 text-small mt-3 inline-flex items-center gap-1 font-bold"
+              >
+                Open the generator <ArrowRight aria-hidden className="size-4" />
+              </Link>
+            </li>
+            <li className="bg-surface ring-line shadow-soft rounded-2xl p-6 ring-1">
+              <span className="text-brand-600 block">
+                <AppleIcon size={26} />
+              </span>
+              <h3 className="text-ink mt-4 font-bold">From your iPhone</h3>
+              <p className="text-muted mt-2 text-[0.9375rem] leading-relaxed">
+                The Invoicor app makes the same PDF and sends it by email or message, with your
+                clients and usual items saved. {FREE_INVOICES} invoices free.
+              </p>
+              <a
+                href={appStoreLink(`template-${d.slug}-format`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-track="cta_click"
+                data-track-section={`template-${d.slug}-format`}
+                className="text-brand-700 text-small mt-3 inline-flex items-center gap-1 font-bold"
+              >
+                Get the app <ArrowRight aria-hidden className="size-4" />
+              </a>
+            </li>
+          </ul>
+          <p className="text-small text-muted mt-5">
+            Why not Word or Excel? Anyone who opens them can change the amounts, and a formula can
+            quietly break a total. Invoicor makes PDFs only.
+          </p>
+        </Block>
 
         {proTip && (
           <Block id="tip" eyebrow="Pro tip" title={`A tip for ${nicheLower} invoices`}>

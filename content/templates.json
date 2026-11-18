@@ -97,10 +97,7 @@
       }
     ],
     "pro_tip": "When a client questions your total, the answer is almost never 'lower the price' — it's 'itemize more'. Breaking a $4,000 wedding invoice into 6-8 line items (coverage, second shooter, hosting, travel, editing, license, etc.) makes the same total feel like a professional production cost rather than an arbitrary number. The price doesn't change; the perceived value does.",
-    "when_to_use_each_format_title": "Which file format should I use?",
-    "format_pdf_desc": "Use PDF for the final, signed-off invoice you send to the client. PDFs preserve formatting across every device, can't be edited by accident, and are the format every accounting system expects. This is the default for 95% of photography invoices.",
-    "format_word_desc": "Use Word (.docx) only when you need to embed a long licensing clause, model release reference, or custom contract terms directly into the invoice document. Keep in mind clients can edit Word files, which is a problem if they later claim the terms were different.",
-    "format_excel_desc": "Use Excel for high-volume commercial work (e.g. a publication that ordered 30 separate images at different per-image rates) where automatic per-row calculations are genuinely useful. For single-event invoices, Excel is overkill and looks unprofessional.",
+    "format_pdf_desc": "Use PDF for the final, signed-off invoice you send to the client. PDFs preserve formatting across every device, can't be edited by accident, and are the format every accounting system expects.",
     "faqs": [
       {
         "question": "Should I invoice photography clients before or after the shoot?",
@@ -235,10 +232,7 @@
       }
     ],
     "pro_tip": "For jobs over $500, require a signature on the invoice before you leave the property. This is a legal acknowledgment that the homeowner accepted the work as completed and agrees to the payment terms. It takes 10 seconds, but it's the difference between 'the homeowner is disputing this charge' and 'the homeowner signed the invoice confirming completion'. Most card readers and invoicing apps support signature capture directly.",
-    "when_to_use_each_format_title": "Which file format should I use?",
-    "format_pdf_desc": "Use PDF as your default for the invoice you leave with the homeowner. PDFs print cleanly on the kitchen counter, can't be modified after the fact, and are accepted by every accounting system at year-end. This is what 95% of your invoices should be.",
-    "format_word_desc": "Use Word (.docx) only when you need to manually type extensive fault descriptions or repair methodology for a complex job (e.g. detailed write-ups for insurance claims after water damage). For routine repair work, Word is unnecessary friction.",
-    "format_excel_desc": "Use Excel only for large commercial jobs where you're tracking hundreds of pipe fittings, bulk material quantities, or multi-day labor across several techs. For typical residential and light commercial calls, Excel is overkill and looks unprofessional next to a properly designed PDF invoice.",
+    "format_pdf_desc": "PDFs print cleanly on the kitchen counter, can't be modified after the fact, and are accepted by every accounting system at year-end.",
     "faqs": [
       {
         "question": "Do I have to charge sales tax on plumbing services?",
@@ -375,10 +369,7 @@
       }
     ],
     "pro_tip": "Use the notes section of every repair invoice to pitch your seasonal maintenance agreement. Write: 'Ask about our $15/month preventative maintenance club to receive 15% off today's repair!' It converts one-time emergency calls into recurring revenue.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is the gold standard. It locks your pricing, presents a clean, professional layout on the customer's phone or tablet, and is exactly what their home warranty company will require if they submit a claim.",
-    "format_word_desc": "Avoid Word unless you are drafting a highly custom, multi-page proposal for a massive commercial installation that requires extensive back-and-forth redlining.",
-    "format_excel_desc": "Only useful for commercial bids where you are calculating hundreds of feet of ductwork, grills, and registers. Not suitable for residential service calls.",
     "faqs": [
       {
         "question": "How do I invoice for a new system installation?",
@@ -501,10 +492,7 @@
       }
     ],
     "pro_tip": "If a client asks for a discount, never simply lower your price. Instead, remove a deliverable to match their budget. If they can't afford the $4,000 brand package, offer to remove the brand guidelines PDF and secondary logo marks to hit their $3,000 budget. This maintains your hourly value.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is mandatory for designers. Your invoice is a reflection of your brand; it must look visually perfect. PDFs ensure your fonts, logo, and layout render exactly as you designed them, no matter what device the client uses.",
-    "format_word_desc": "Never send a Word document. It looks amateurish, the formatting breaks easily, and clients can alter the numbers before paying.",
-    "format_excel_desc": "Avoid Excel unless you are attaching a separate, highly detailed timesheet showing minute-by-minute breakdowns for an enterprise client.",
     "faqs": [
       {
         "question": "How much should I ask for a deposit?",
@@ -629,10 +617,7 @@
       }
     ],
     "pro_tip": "If a customer asks for a 'quick favor' while you're packing up your tools (e.g., 'While you're here, can you look at this loose hinge?'), always say yes, but explicitly state, 'Sure, I can add that to the invoice for an extra half-hour of labor.' It stops scope creep dead in its tracks.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is the best choice. Generate it on your phone, email or text it to the homeowner, and let them pay via a link. It's clean, fast, and modern.",
-    "format_word_desc": "Word is not recommended for mobile work. It's too clunky to edit from the cab of a truck.",
-    "format_excel_desc": "Excel is unnecessary for small residential repairs and is difficult to use on a smartphone screen.",
     "faqs": [
       {
         "question": "Should I charge by the hour or flat rate?",
@@ -751,10 +736,7 @@
       }
     ],
     "pro_tip": "Use a platform like Frame.io for client reviews, and keep a subtle watermark on the video during the revision process. Only remove the watermark and provide the final download link after the Invoicor payment link has been paid. This guarantees you never have to chase a client for payment after they post the video to Instagram.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is standard. It is clean, locks the text, and looks professional. Attach it to your final delivery email or send it alongside your final Frame.io review link.",
-    "format_word_desc": "Not recommended. Clients can accidentally edit the terms or amounts, creating a legal grey area.",
-    "format_excel_desc": "Excel is great for pre-production budgeting (line-producing) on large commercial sets with dozens of crew members, but the final invoice presented to the client should still be a clean PDF.",
     "faqs": [
       {
         "question": "What is a 'Day Rate'?",
@@ -871,10 +853,7 @@
       }
     ],
     "pro_tip": "Move your recurring mowing clients to 'Auto-Pay' if your software supports it. Keep their card on file, automatically generate the invoice on the 1st of the month, and charge the card. It eliminates accounts receivable entirely for your baseline route.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is ideal. It presents a professional image and is easy to email or text to clients from your truck at the end of the day.",
-    "format_word_desc": "Word is not recommended as it's hard to format on mobile devices.",
-    "format_excel_desc": "Excel can be useful internally for routing and calculating total yards of mulch needed for the week, but the customer should always receive a locked PDF invoice.",
     "faqs": [
       {
         "question": "Should I bill weekly or monthly for mowing?",
@@ -989,10 +968,7 @@
       }
     ],
     "pro_tip": "Move from hourly billing to value-based retainers whenever possible. Instead of billing 20 hours at $250/hr, bill a flat $5,000 monthly retainer. It simplifies your invoice to a single line item, guarantees your income, and stops the client from micromanaging how many minutes you spent on a phone call.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is mandatory. It looks professional, locks the numbers, and is the universally accepted format for corporate Accounts Payable software (like Coupa or SAP).",
-    "format_word_desc": "Never use Word. It is unprofessional and insecure for financial documents.",
-    "format_excel_desc": "You can use Excel to build a detailed timesheet or expense report, but convert it to a PDF, or attach it as a secondary document behind your main PDF invoice.",
     "faqs": [
       {
         "question": "How do I invoice for a retainer?",
@@ -1101,10 +1077,7 @@
       }
     ],
     "pro_tip": "If a client is consistently happy with your work, use the invoice notes to ask for a referral: 'Love coming home to a clean house? Refer a neighbor and get $25 off your next clean!' It's a free marketing channel.",
-    "when_to_use_each_format_title": "Which file format should I use?",
     "format_pdf_desc": "PDF is the best. Generate it via a mobile app, email it to the client, and move on to the next house.",
-    "format_word_desc": "Do not use Word. It requires a desktop computer, which slows down your billing process.",
-    "format_excel_desc": "Excel is helpful internally for tracking which crew members cleaned which houses for payroll purposes, but the client should receive a PDF.",
     "faqs": [
       {
         "question": "Can I set up automatic billing for weekly clients?",
@@ -1221,10 +1194,7 @@
       }
     ],
     "pro_tip": "If you apply a ceramic coating, use the invoice to schedule the maintenance. Write in the notes: 'To maintain coating warranty, a maintenance wash is required every 6 months. We will contact you in November to schedule.' It creates a built-in pipeline for future work.",
-    "when_to_use_each_format_title": "Which file format should I use?",
-    "format_pdf_desc": "PDF is the only acceptable format. It looks great on a smartphone screen, which is where 99% of your mobile customers will view and pay it while standing in their driveway.",
-    "format_word_desc": "Word is entirely impractical for mobile businesses.",
-    "format_excel_desc": "Excel is not suitable for customer-facing automotive receipts, though it is useful internally for tracking parts inventory.",
+    "format_pdf_desc": "PDF is the only acceptable format. It looks great on a smartphone screen, which is where most of your mobile customers will view and pay it while standing in their driveway.",
     "faqs": [
       {
         "question": "Can I use an invoice as a repair estimate?",
