@@ -129,7 +129,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P11. Price anchors per plan (coffee as a saying, a unique one for Pro)
 - [x] P12. Monthly price first, "billed yearly" below; local currency note
 - [x] P13. Hand-drawn doodles: arrows and circles that draw themselves
-- [ ] P14. "Who it's for": the people Invoicor is built for
+- [x] P14. "Who it's for": the people Invoicor is built for
 - [ ] P15. Real app screens in an iPhone frame
 - [ ] P16. Sticky "Get the app" bar on phones
 - [ ] P17. QR code for desktop visitors
@@ -1057,7 +1057,7 @@ the tradesperson (invoice from the driveway before leaving the job), the freelan
 their language and currency), the small studio (several businesses, one app). Positive only:
 "Not accounting software. Just invoices." Accountant hand-off stays truthful: "send the PDFs to
 your accountant" (there is no data export feature; BRAND.md §10).
-- [ ] Build it.
+- [x] Build it. _(✅ 2026-11-18: `components/sections/home/WhoItsFor.tsx`, after "How it works"; 9 links into industry pages)_
 
 **P15. Real app screens.** The site shows no real app screen yet: the strongest missing trust and
 conversion piece. Crop the real screens (dashboard, new invoice, share) from the App Store images in

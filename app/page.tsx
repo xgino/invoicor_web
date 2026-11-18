@@ -9,6 +9,7 @@ import { PricingSection } from "@/components/sections/home/PricingSection";
 import { Promises } from "@/components/sections/home/Promises";
 import { ProofBand } from "@/components/sections/home/ProofBand";
 import { Templates } from "@/components/sections/home/Templates";
+import { WhoItsFor } from "@/components/sections/home/WhoItsFor";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { mobileAppLd, organizationLd, websiteLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
@@ -32,6 +33,7 @@ export default function HomePage() {
       <ProofBand />
       <Templates />
       <HowItWorks />
+      <WhoItsFor />
       <Features />
       <KeepYourMoney />
       <PricingSection />
