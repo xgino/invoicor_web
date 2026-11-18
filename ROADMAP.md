@@ -121,7 +121,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P5. Fee calculator, rewritten as a gain
 - [x] P6. Pricing: equal heights, Pro as the clear favourite, positive limits
 - [x] P7. Premium motion: drawn underlines, moving background, glows
-- [ ] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
+- [x] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
 - [ ] P9. FAQ search optimisation
 - [ ] P10. Mobile and speed pass
 
@@ -978,13 +978,14 @@ _✅ 2026-11-18: `<Gradient underline>` draws a hand-drawn line under the hero w
   layout shift, no extra JavaScript.
 
 ### P8. Legal: payments, fraud and safety
-- [ ] a. Terms: a clear section that Invoicor only makes invoices: we don't process, hold or check
+_✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fraud" (not a payment service; payment links are third parties; what recipients should check; no liability for fraud, scams, misdirected payments or disputes, as far as the law allows; reporting; "by using the Service you agree"); Privacy note on payment links; Help "Safety & Scams" section (5 questions). Both pages dated 2026-11-18._
+- [x] a. Terms: a clear section that Invoicor only makes invoices: we don't process, hold or check
   payments; users are responsible for the details on their invoices and the payment links they add;
   recipients should check an invoice before paying; we're not liable for fraud, scams or disputes
   between users and their clients; by using the service you agree. Plus a short note in Privacy.
-- [ ] b. Help: a "Safety" section with practical checks for people who *receive* an invoice
+- [x] b. Help: a "Safety" section with practical checks for people who *receive* an invoice
   (check the sender, the amount, the payment details; call if bank details change).
-- [ ] c. Have a lawyer review Terms and Privacy once (Stage X, **X15**). Claude's text is a careful
+- ➜ c. Have a lawyer review Terms and Privacy once (Stage X, **X15**). Claude's text is a careful
   draft, not legal advice.
 
 ### P9. FAQ search optimisation

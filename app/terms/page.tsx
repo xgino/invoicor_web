@@ -16,7 +16,9 @@ export default function TermsPage() {
       eyebrow="Legal"
       title="Terms of Service"
       intro={
-        <>Last updated: April 27, 2026 &middot; Invoicor &middot; Operated from the Netherlands</>
+        <>
+          Last updated: November 18, 2026 &middot; Invoicor &middot; Operated from the Netherlands
+        </>
       }
     >
       <S n="1" t="Agreement to Terms">
@@ -79,7 +81,42 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="5" t="Subscriptions and Payments">
+      <S n="5" t="Payments Between You and Your Clients, and Fraud" id="payments-and-fraud">
+        <P>
+          Invoicor is a tool for creating invoices. It is not a bank, payment service provider,
+          payment gateway or escrow service. We do not process, receive, hold, transfer or verify
+          any payment between you and your clients, and we do not check the payment links, bank
+          details or other payment instructions that a user adds to an invoice.
+        </P>
+        <P>
+          Payment links and payment details on an invoice are added by the user who created it and
+          lead to services we do not control (for example PayPal, Stripe, Wise or a bank). Those
+          services&apos; own terms and fees apply.
+        </P>
+        <H>
+          If you receive an invoice made with Invoicor: Invoicor did not write its contents and does
+          not guarantee that the sender, the amount or the payment details are genuine. Always check
+          an invoice before you pay it: that you ordered the work or goods, that the amount is
+          right, and that the payment details belong to the sender. If payment details have changed
+          or anything looks unusual, contact the sender through a phone number or address you
+          already know (not the details on the invoice) before paying.
+        </H>
+        <P>
+          To the maximum extent permitted by applicable law, Invoicor is not liable for fraud,
+          scams, phishing, impersonation, incorrect or misdirected payments, chargebacks, or any
+          other loss arising from an invoice created with the Service, or from disputes between
+          users and their clients or any other third party. You are responsible for the invoices you
+          send and for the payment details on them.
+        </P>
+        <P>
+          We may suspend or close accounts used to send fraudulent or misleading invoices and may
+          cooperate with law enforcement where required. To report a suspicious invoice made with
+          Invoicor, email us at the address in the Contact section. By using the Service, you agree
+          to this section.
+        </P>
+      </S>
+
+      <S n="6" t="Subscriptions and Payments">
         <P>
           Invoicor offers free and paid subscription plans. Paid plans are billed through the Apple
           App Store as auto-renewable subscriptions. All billing, payment processing, renewals, and
@@ -96,7 +133,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="6" t="Third-Party Services">
+      <S n="7" t="Third-Party Services">
         <P>
           The Service integrates with third-party platforms including Apple (authentication and
           payments), RevenueCat (subscription validation), and cloud infrastructure providers
@@ -114,7 +151,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="7" t="Service Availability and Disclaimer of Warranties">
+      <S n="8" t="Service Availability and Disclaimer of Warranties">
         <H>
           THE SERVICE IS PROVIDED ON AN &quot;AS-IS&quot; AND &quot;AS-AVAILABLE&quot; BASIS. TO THE
           MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, INVOICOR DISCLAIMS ALL WARRANTIES, EXPRESS OR
@@ -133,7 +170,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="8" t="Limitation of Liability">
+      <S n="9" t="Limitation of Liability">
         <H>
           TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, INVOICOR, ITS FOUNDERS, DIRECTORS,
           EMPLOYEES, AND AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
@@ -156,7 +193,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="9" t="Indemnification">
+      <S n="10" t="Indemnification">
         <P>
           You agree to indemnify, defend, and hold harmless Invoicor and its affiliates from any
           claims, losses, damages, liabilities, and expenses (including legal fees) arising from:
@@ -165,7 +202,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="10" t="Intellectual Property">
+      <S n="11" t="Intellectual Property">
         <P>
           The Service, including its design, code, templates, and branding, is the exclusive
           property of Invoicor. These Terms grant you only a limited right to use the Service as
@@ -174,7 +211,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="11" t="Acceptable Use">
+      <S n="12" t="Acceptable Use">
         <P>
           You agree not to: (a) use the Service for any unlawful purpose; (b) attempt unauthorized
           access to the Service or its infrastructure; (c) interfere with or disrupt the Service;
@@ -183,7 +220,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="12" t="Account Termination">
+      <S n="13" t="Account Termination">
         <P>
           You may delete your account at any time through the app. Upon deletion, your data will be
           permanently removed in accordance with our Privacy Policy.
@@ -195,7 +232,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="13" t="Governing Law and Disputes">
+      <S n="14" t="Governing Law and Disputes">
         <P>
           These Terms are governed by the laws of the Netherlands. Disputes shall be subject to the
           exclusive jurisdiction of the competent courts in the Netherlands.
@@ -207,7 +244,7 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="14" t="Severability">
+      <S n="15" t="Severability">
         <P>
           If any provision is found unenforceable, the remaining provisions continue in full force.
           The unenforceable provision shall be modified to the minimum extent necessary to preserve
@@ -215,14 +252,14 @@ export default function TermsPage() {
         </P>
       </S>
 
-      <S n="15" t="Entire Agreement">
+      <S n="16" t="Entire Agreement">
         <P>
           These Terms, together with our Privacy Policy, constitute the entire agreement between you
           and Invoicor regarding the Service.
         </P>
       </S>
 
-      <S n="16" t="Contact">
+      <S n="17" t="Contact">
         <P>
           Questions about these Terms? Contact us at{" "}
           <a href={`mailto:${CONTACT_EMAIL}`} className={LEGAL_LINK}>

@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       intro={
         <>
-          Last updated: November 17, 2026 &middot; Invoicor &middot; Operated from the Netherlands
+          Last updated: November 18, 2026 &middot; Invoicor &middot; Operated from the Netherlands
         </>
       }
     >
@@ -133,6 +133,12 @@ export default function PrivacyPage() {
           buttons are clicked. This website usage data is processed in the United States. Neither
           service receives your account or invoice data from the app. If you click
           &quot;Decline&quot;, neither is loaded.
+        </P>
+        <P>
+          <B>Payment links on your invoices:</B> Invoicor does not process payments. If you add a
+          payment link or bank details to an invoice, your client uses that third-party service (for
+          example PayPal, Stripe, Wise or a bank) directly; its own privacy policy applies, and we
+          receive no payment data from it.
         </P>
         <P>
           We do not share your data with advertising networks or data brokers, and we do not use

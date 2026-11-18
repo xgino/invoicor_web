@@ -191,6 +191,46 @@ const SECTIONS: Array<{ id: string; title: string; items: HelpItem[] }> = [
       },
     ],
   },
+  {
+    id: "safety",
+    title: "Safety & Scams",
+    items: [
+      {
+        q: "I received an invoice made with Invoicor. Is it genuine?",
+        a: "Invoicor is the tool the sender used to make the invoice; we don't write, send on anyone's behalf or verify the contents. Treat it like any invoice: check that you know the sender, that you ordered the work or goods, and that the amount is right before you pay.",
+      },
+      {
+        q: "How do I pay an invoice safely?",
+        a: "Check three things: the sender (a business you know), the amount (matches what you agreed), and the payment details (match what that business used before). If anything is unusual, contact the sender through a phone number or address you already know, not the details on the invoice.",
+      },
+      {
+        q: "The bank details or payment link on an invoice changed. What should I do?",
+        a: "Don't pay yet. Changed payment details are the most common invoice scam. Call the sender on a number you already have and confirm the new details with them before paying.",
+      },
+      {
+        q: "Does Invoicor handle or protect the payment?",
+        a: "No. Invoicor isn't a payment service or gateway: payments go directly from the client to the sender, through the sender's own payment link or bank details. Invoicor can't hold, reverse or refund a payment. Our Terms of Service explain this in section 5.",
+        rich: (
+          <>
+            No. Invoicor isn&apos;t a payment service or gateway: payments go directly from the
+            client to the sender, through the sender&apos;s own payment link or bank details.
+            Invoicor can&apos;t hold, reverse or refund a payment. Our{" "}
+            <Link
+              href="/terms#payments-and-fraud"
+              className="text-brand-700 font-medium underline underline-offset-2"
+            >
+              Terms of Service
+            </Link>{" "}
+            explain this in section 5.
+          </>
+        ),
+      },
+      {
+        q: "How do I report a suspicious invoice made with Invoicor?",
+        a: `Email ${CONTACT_EMAIL} with the invoice and how you received it. We can suspend accounts that send fraudulent invoices. If you've already paid a scammer, also contact your bank and the police straight away.`,
+      },
+    ],
+  },
 ];
 
 /** Help center (ROADMAP chunk 24b): questions grouped by topic, one FAQPage JSON-LD for all. */
