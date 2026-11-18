@@ -113,7 +113,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [ ] X14. 🟢 Small decisions that change page text (D12, D14, D15)
 - [ ] X15. 🟠 Have a lawyer review Terms and Privacy
 
-**Stage P: Polish from your review (2026-11-18)** _(your remarks on the new site; details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
+**Stage P: Polish from your review (2026-11-18)** _(✅ done, except the lawyer review (X15); details in [Stage P](#stage-p-polish-from-your-review-2026-11-18))_
 - [x] P1. Honest wording: free trial and Apple ID, watermark (app vs web), support speed, "not a payment gateway"
 - [x] P2. Trust row: "send it anywhere" and "your own payment link" (no borrowed logos)
 - [x] P3. "How it works" as a visible path
@@ -123,7 +123,7 @@ Goal: make invoicor.com **look premium and on-brand**, **rank well in search (Go
 - [x] P7. Premium motion: drawn underlines, moving background, glows
 - [x] P8. Legal: fraud and payment responsibility in the Terms, safety guidance
 - [x] P9. FAQ search optimisation
-- [ ] P10. Mobile and speed pass
+- [x] P10. Mobile and speed pass
 
 **Stage G: Free invoice generator** (⇄ 30–31 are backend and can start any time)
 - [ ] 30. API: public render endpoint
@@ -997,7 +997,7 @@ _✅ 2026-11-18: Terms section 5 "Payments Between You and Your Clients, and Fra
   and question wording checked against searches.
 
 ### P10. Mobile and speed pass
-- [ ] Screenshots of every changed section at phone width, and a measurement of page weight and
+- [x] _(✅ 2026-11-18. Measured on the home page as a mid-range phone (4× slower CPU, fast 4G): largest paint **0.59–0.75 s before → 0.66–0.75 s after**, layout shift **0** both times, JavaScript **595 → 599 KB** raw (~200 KB compressed, mostly the Next.js/React runtime), HTML 34 KB compressed. Improvement: the 12 template previews now load only when you scroll near the gallery (**0 API requests on the first screen**, was 12). Every changed section checked at 390 px and 1280 px.)_ Screenshots of every changed section at phone width, and a measurement of page weight and
   loading (JavaScript size, largest paint) on the home page, before and after Stage P.
 
 ---

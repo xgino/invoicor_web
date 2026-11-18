@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Badge, Skeleton } from "@/components/ui/content";
 import { API_URL } from "@/lib/config";
 
@@ -13,13 +13,34 @@ export interface GalleryTemplate {
 /**
  * Horizontal gallery of real templates (ROADMAP chunk 19d). Names come from the API at build time,
  * so they're in the HTML; the rendered previews load in the browser into sandboxed iframes, with
- * skeletons while loading. If the build-time call failed, the list is fetched in the browser.
+ * skeletons while loading, and only once the gallery is near the screen. If the build-time call
+ * failed, the list is fetched in the browser.
  */
 export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
   const [templates, setTemplates] = useState(initial);
   const [previews, setPreviews] = useState<Record<string, string>>({});
+  const [near, setNear] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Only start downloading previews when the gallery is close to the screen (speed on phones).
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !("IntersectionObserver" in window)) return setNear(true);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setNear(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "600px 0px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
+    if (!near) return;
     let cancelled = false;
     const controller = new AbortController();
     (async () => {
@@ -46,13 +67,14 @@ export function TemplateGallery({ initial }: { initial: GalleryTemplate[] }) {
       cancelled = true;
       controller.abort();
     };
-  }, [initial]);
+  }, [initial, near]);
 
   if (templates.length === 0) return null;
 
   return (
     // A focusable, labelled region, so keyboard users can scroll it with the arrow keys.
     <div
+      ref={ref}
       role="region"
       aria-label="Invoice template previews"
       tabIndex={0}
