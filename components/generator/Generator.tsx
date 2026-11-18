@@ -1,6 +1,14 @@
 "use client";
 
-import { Eye, LayoutTemplate, PencilLine, RotateCcw } from "lucide-react";
+import {
+  CircleCheck,
+  CloudOff,
+  Eye,
+  FilePlus2,
+  LayoutTemplate,
+  PencilLine,
+  Trash2,
+} from "lucide-react";
 import { useCallback, useEffect, useReducer, useRef, useState, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { track } from "@/lib/analytics";
@@ -8,14 +16,15 @@ import { newDraft } from "@/lib/generator/draft";
 import { clearDraft, loadDraft, saveDraft } from "@/lib/generator/storage";
 import { computeTotals, formatMoney } from "@/lib/generator/totals";
 import {
-  BusinessSection,
-  ClientSection,
-  DetailsSection,
-  ItemsSection,
-  NotesSection,
+  BusinessArea,
+  ClientArea,
+  DetailsArea,
+  ItemsArea,
+  NotesArea,
   type Option,
-  PaymentSection,
-  TaxSection,
+  PaymentLinkArea,
+  SetupArea,
+  TaxArea,
 } from "./FormSections";
 import { GeneratePanel } from "./GeneratePanel";
 import { Preview } from "./Preview";
@@ -42,7 +51,7 @@ export function Generator({
   const ready = useRef(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [tab, setTab] = useState<"form" | "preview">("form");
-  const [generated, setGenerated] = useState(false);
+  const [saved, setSaved] = useState<"idle" | "saved" | "blocked">("idle");
   const started = useRef(false);
 
   // Restore the saved draft, then apply deep-link params (?template=&currency=&lang=).
@@ -63,7 +72,7 @@ export function Generator({
   // Autosave (debounced) and the first-edit analytics event.
   useEffect(() => {
     if (!ready.current) return;
-    const t = window.setTimeout(() => saveDraft(draft), 400);
+    const t = window.setTimeout(() => setSaved(saveDraft(draft) ? "saved" : "blocked"), 400);
     return () => window.clearTimeout(t);
   }, [draft]);
 
@@ -72,7 +81,6 @@ export function Generator({
       started.current = true;
       track("gen_form_start");
     }
-    setGenerated(false);
     dispatch(action);
   }, []);
 
@@ -116,32 +124,41 @@ export function Generator({
 
       {/* Form */}
       <div className={cx(tab === "preview" && "hidden lg:block")}>
+        <SaveBar
+          saved={saved}
+          onNew={() => {
+            update({ type: "newInvoice" });
+            track("gen_new_invoice");
+          }}
+          onClear={() => {
+            if (
+              !window.confirm(
+                "Clear everything? This removes your business details, client and items from this browser.",
+              )
+            )
+              return;
+            clearDraft();
+            dispatch({ type: "reset" });
+            setSaved("idle");
+          }}
+        />
         <div className="bg-surface ring-line shadow-card overflow-hidden rounded-2xl ring-1">
-          <BusinessSection draft={draft} dispatch={update} />
-          <ClientSection draft={draft} dispatch={update} />
-          <DetailsSection
+          <SetupArea
             draft={draft}
             dispatch={update}
             currencies={currencies}
             languages={languages}
+            templateName={template?.name ?? draft.template_slug}
+            onBrowse={() => setPickerOpen(true)}
           />
-          <ItemsSection draft={draft} dispatch={update} />
-          <TaxSection draft={draft} dispatch={update} />
-          <PaymentSection draft={draft} dispatch={update} />
-          <NotesSection draft={draft} dispatch={update} />
+          <DetailsArea draft={draft} dispatch={update} />
+          <BusinessArea draft={draft} dispatch={update} />
+          <ClientArea draft={draft} dispatch={update} />
+          <ItemsArea draft={draft} dispatch={update} />
+          <TaxArea draft={draft} dispatch={update} />
+          <NotesArea draft={draft} dispatch={update} />
+          <PaymentLinkArea draft={draft} dispatch={update} />
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            if (!window.confirm("Clear the whole form? This can't be undone.")) return;
-            clearDraft();
-            dispatch({ type: "reset" });
-            setGenerated(false);
-          }}
-          className="text-small text-muted hover:text-ink focus-visible:focus-ring mt-4 inline-flex items-center gap-1.5 rounded-lg px-2 py-1"
-        >
-          <RotateCcw aria-hidden className="size-4" /> Clear form
-        </button>
       </div>
 
       {/* Preview + summary + generate */}
@@ -163,20 +180,7 @@ export function Generator({
           </button>
         </div>
 
-        <Preview
-          draft={draft}
-          footer={
-            <p
-              className={cx(
-                "text-small text-subtle mt-2 text-center transition-opacity duration-400",
-                generated ? "opacity-100" : "opacity-0",
-              )}
-              aria-hidden={!generated}
-            >
-              Created with <span className="text-brand-700 font-bold">invoicor.com</span>
-            </p>
-          }
-        />
+        <Preview draft={draft} />
 
         <dl className="bg-surface ring-line mt-5 space-y-1.5 rounded-2xl p-4 tabular-nums ring-1">
           <div className="text-small text-muted flex justify-between">
@@ -198,12 +202,7 @@ export function Generator({
             <dd className="font-heading text-h4">{formatMoney(totals.total, draft.currency)}</dd>
           </div>
         </dl>
-        <GeneratePanel
-          draft={draft}
-          dispatch={update}
-          onGenerated={() => setGenerated(true)}
-          appCta={appCta}
-        />
+        <GeneratePanel draft={draft} dispatch={update} appCta={appCta} />
       </aside>
 
       <TemplatePicker
@@ -213,6 +212,52 @@ export function Generator({
         onClose={() => setPickerOpen(false)}
         onPick={pickTemplate}
       />
+    </div>
+  );
+}
+
+/** Shows that the draft is kept in this browser, with the two ways to start over (ROADMAP 35b i). */
+function SaveBar({
+  saved,
+  onNew,
+  onClear,
+}: {
+  saved: "idle" | "saved" | "blocked";
+  onNew: () => void;
+  onClear: () => void;
+}) {
+  return (
+    <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+      <p className="text-small text-muted flex items-center gap-1.5" role="status">
+        {saved === "blocked" ? (
+          <>
+            <CloudOff aria-hidden className="text-subtle size-4" />
+            Not saved: this browser blocks storage
+          </>
+        ) : (
+          <>
+            <CircleCheck aria-hidden className="text-success size-4" />
+            Saved in this browser only. Nobody else can see it.
+          </>
+        )}
+      </p>
+      <div className="flex items-center gap-1">
+        <button
+          type="button"
+          onClick={onNew}
+          className="text-small text-ink hover:bg-tint focus-visible:focus-ring inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-bold"
+          title="Keeps your business details, clears the client and items"
+        >
+          <FilePlus2 aria-hidden className="text-brand-600 size-4" /> New invoice
+        </button>
+        <button
+          type="button"
+          onClick={onClear}
+          className="text-small text-muted hover:bg-tint hover:text-ink focus-visible:focus-ring inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-bold"
+        >
+          <Trash2 aria-hidden className="size-4" /> Clear everything
+        </button>
+      </div>
     </div>
   );
 }

@@ -942,7 +942,11 @@ template picker, an invoice preview, the share sheet. AirDrop them to your Mac a
 
 ### X18. 🔴 Deploy the generator API _(≈ 20 min, before the website shows the generator)_
 **Why:** the website's free invoice generator calls two new API endpoints. They're on branch
-`feature/public-generator` in `invoicor_api`, tested (15 tests) but not deployed.
+`feature/public-generator` in `invoicor_api`, tested (17 tests) but not deployed. Until then
+“Download PDF” shows “The invoice service isn't available right now” (the live API answers 404).
+The same branch also fixes the templates for the app (35b): VAT ID, registration number, client email
+and phone on the invoice; item details on their own line; money with 2 decimals. **Check one app
+invoice PDF after deploying**, since those changes reach the app too.
 **How:** follow `invoicor_api/docs/PUBLIC_GENERATOR.md`: merge the branch into `main`, pull on the
 server, run `python manage.py createcachetable` (rate-limit table), restart the API, and check that the
 `/api/` nginx block has `include proxy_params;` (so rate limits see real visitor IPs). Then the curl
@@ -1234,6 +1238,28 @@ _✅ 2026-11-18: `components/generator/GeneratePanel.tsx`: bot check (when X19 i
 - [x] g. Privacy policy §5: what the generator sends, that nothing is stored, the local draft, and the short-lived rate-limit counter.
 
 **Done when:** the page is live, indexed, and linked from every page on the site.
+
+### 35b. Generator feedback round (2026-11-18)
+**Goal:** what people type is what the invoice shows, and the form is calm and in a natural order.
+
+Invoice output (fixed in the API on `feature/public-generator`, so the app's PDFs get it too):
+- [x] a. Tax / VAT ID and registration number (KVK, company number…) shown under the business; client email, phone and VAT ID shown under the client. The 31 templates had no spot for them.
+- [x] b. Item details on their own line under the item name (they were glued to it: “Copper pipe15 mm”).
+- [x] c. Money always has the currency's decimals (`€415.80`, not `€415.8`; `¥1,234` for yen).
+- [x] d. The preview shows the same “Created with invoicor.com” line as the PDF (it was only a small line under the preview).
+- [x] e. Warn when the invoice no longer fits on one page (all 31 templates are one A4 page; with every field filled about 7 lines with details fit, more without details).
+
+Download:
+- ➜ f. “The invoice service isn't available”: the live API answers 404 for `public/pdf/` because the generator API isn't deployed yet. Not a template problem. Fixed by **X18** (deploy the API).
+
+Form:
+- [x] g. New order: invoice setup first (template, language, currency, date format), then invoice details, your business (with tax ID, reg. number and bank details), client, items, tax & discount, notes, and the payment link last.
+- [x] h. Fixed, always-open areas instead of fold-away sections; less important fields grouped, nothing printed that isn't on the form and nothing on the form that isn't printed (Website removed: no template shows it).
+- [x] i. Saving made visible: “Saved in this browser” status. The draft lives only in that browser (every visitor has their own, nobody else sees it). Two clear actions: “New invoice” (keeps your business details) and “Clear everything” (removes all saved data from this browser).
+
+Built 2026-11-18. The browser fill was re-synced (`scripts/sync-generator-templates.py`) and still matches the API for all 21 free templates × 11 languages. API commit `467a4c84` on `feature/public-generator` (deploys with X18; it also improves the app's PDFs).
+
+**Done when:** a filled-in form shows every field on the preview, the numbers look like money, and the form reads top to bottom like the invoice.
 
 ---
 

@@ -16,7 +16,7 @@ export interface Party {
 }
 
 export interface Sender extends Party {
-  website: string;
+  registration_number: string; // KVK, company number…
   bank_name: string;
   iban: string;
   swift_code: string;
@@ -102,7 +102,14 @@ export function newDraft(today = new Date()): Draft {
     tax_inclusive: false,
     discount_type: "none",
     discount_value: "0",
-    sender: { ...emptyParty(), website: "", bank_name: "", iban: "", swift_code: "", logo: "" },
+    sender: {
+      ...emptyParty(),
+      registration_number: "",
+      bank_name: "",
+      iban: "",
+      swift_code: "",
+      logo: "",
+    },
     client: emptyParty(),
     items: [emptyItem()],
   };

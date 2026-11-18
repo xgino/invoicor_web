@@ -10,6 +10,10 @@ export interface FillData {
   templates: string[];
   labels: Record<string, Record<string, string>>;
   symbols: Record<string, Record<string, string>>;
+  /** Decimals per currency (babel's get_currency_precision): 2 for EUR, 0 for JPY. */
+  digits: Record<string, number>;
+  /** The "Created with invoicor.com" line the API adds to every public PDF. */
+  watermark: string;
 }
 
 type Payload = ReturnType<typeof toPayload>;
@@ -51,6 +55,27 @@ function formatNumber(cents: number, lang: string): string {
     return String(cents / 100);
   }
 }
+
+/**
+ * utils/templates.format_money: the currency's decimals, always shown (415.80, not 415.8), locale
+ * grouping and decimal sign, half-even rounding like babel (only matters for 0-decimal currencies).
+ */
+function formatMoney(cents: number, lang: string, digits: number): string {
+  try {
+    return new Intl.NumberFormat(lang, {
+      minimumFractionDigits: digits,
+      maximumFractionDigits: digits,
+      useGrouping: "always",
+      roundingMode: "halfEven",
+    } as Intl.NumberFormatOptions).format(cents / 100);
+  } catch {
+    return (cents / 100).toFixed(digits);
+  }
+}
+
+/** Item details on their own line; the same inline style as the API (ITEM_DESC_STYLE). */
+const ITEM_DESC_STYLE =
+  "display:block;margin-top:2px;font-size:0.88em;font-weight:400;opacity:0.72;";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -124,6 +149,8 @@ export function buildReplacements(p: Payload, data: FillData, today = new Date()
   const client = p.client as unknown as Record<string, string>;
   const a = invoiceAmounts(p);
   const n = (cents: number) => formatNumber(cents, lang);
+  const digits = data.digits?.[p.currency] ?? 2;
+  const m = (cents: number) => formatMoney(cents, lang, digits);
   const r: Record<string, string> = {};
 
   for (const [key, text] of Object.entries(labels)) r[`t.${key}`] = safe(text);
@@ -170,6 +197,14 @@ export function buildReplacements(p: Payload, data: FillData, today = new Date()
     "country",
     "tax_id",
   ]);
+  // utils/templates.add_party_lines: labelled lines that only show when filled.
+  const line = (key: string, fallback: string, value?: string) => {
+    const v = (value ?? "").trim();
+    return v ? safe(`${labels[key] ?? fallback}: ${v}`) : "";
+  };
+  r.SENDER_TAX_LINE = line("TAX_ID", "Tax ID", sender.tax_id);
+  r.SENDER_REG_LINE = line("REGISTRATION_NUMBER", "Reg. Number", sender.registration_number);
+  r.CLIENT_TAX_LINE = line("TAX_ID", "Tax ID", client.tax_id);
 
   const issue = p.issue_date || isoDay(today);
   const dueDefault = new Date(today);
@@ -186,37 +221,39 @@ export function buildReplacements(p: Payload, data: FillData, today = new Date()
 
   r.DISCOUNT_TYPE = safe(a.discountType);
   r.DISCOUNT_VALUE = safe(n(a.discountValue));
-  r.DISCOUNT_AMOUNT = safe(n(a.discount));
+  r.DISCOUNT_AMOUNT = safe(m(a.discount));
   if (a.discountType === "percent" && a.discountValue > 0) {
     r.DISCOUNT_LABEL = safe(`${n(a.discountValue)}%`);
-    r.DISCOUNT_DISPLAY = safe(`-${symbol}${n(a.discount)}`);
+    r.DISCOUNT_DISPLAY = safe(`-${symbol}${m(a.discount)}`);
   } else if (a.discountType === "fixed" && a.discountValue > 0) {
-    r.DISCOUNT_LABEL = safe(`${symbol}${n(a.discountValue)}`);
-    r.DISCOUNT_DISPLAY = safe(`-${symbol}${n(a.discount)}`);
+    r.DISCOUNT_LABEL = safe(`${symbol}${m(a.discountValue)}`);
+    r.DISCOUNT_DISPLAY = safe(`-${symbol}${m(a.discount)}`);
   } else {
     r.DISCOUNT_LABEL = "";
     r.DISCOUNT_DISPLAY = "";
   }
 
-  r.SUBTOTAL = safe(n(a.subtotal));
+  r.SUBTOTAL = safe(m(a.subtotal));
   r.TAX_RATE = safe(n(a.taxRate));
   r.TAX_RATE_DISPLAY = safe(`${n(a.taxRate)}%`);
-  r.TAX_AMOUNT = safe(n(a.tax));
-  r.TOTAL = safe(n(a.total));
-  r.SUBTOTAL_DISPLAY = safe(`${symbol}${n(a.subtotal)}`);
-  r.TAX_AMOUNT_DISPLAY = safe(`${symbol}${n(a.tax)}`);
-  r.TOTAL_DISPLAY = safe(`${symbol}${n(a.total)}`);
+  r.TAX_AMOUNT = safe(m(a.tax));
+  r.TOTAL = safe(m(a.total));
+  r.SUBTOTAL_DISPLAY = safe(`${symbol}${m(a.subtotal)}`);
+  r.TAX_AMOUNT_DISPLAY = safe(`${symbol}${m(a.tax)}`);
+  r.TOTAL_DISPLAY = safe(`${symbol}${m(a.total)}`);
 
   // Same markup as build_item_rows_html(); the symbol is inserted as-is there too.
   r.ITEM_ROWS = a.items
     .map((i) => {
-      const desc = i.description ? `<span class="item-desc">${safe(i.description)}</span>` : "";
+      const desc = i.description
+        ? `<span class="item-desc" style="${ITEM_DESC_STYLE}">${safe(i.description)}</span>`
+        : "";
       return `
                 <tr>
                     <td><span class="item-name">${safe(i.name)}</span>${desc}</td>
                     <td class="center">${safe(n(i.q))}</td>
-                    <td class="right">${symbol}${safe(n(i.u))}</td>
-                    <td class="right">${symbol}${safe(n(i.amount))}</td>
+                    <td class="right">${symbol}${safe(m(i.u))}</td>
+                    <td class="right">${symbol}${safe(m(i.amount))}</td>
                 </tr>`;
     })
     .join("\n");
@@ -232,8 +269,13 @@ export function fillHtml(html: string, p: Payload, data: FillData, today?: Date)
   );
 }
 
+/** The filled preview, with the same watermark line the PDF gets (added before </body>). */
 export function fillDraft(html: string, draft: Draft, data: FillData): string {
-  return fillHtml(html, toPayload(draft), data);
+  const filled = fillHtml(html, toPayload(draft), data);
+  if (!data.watermark) return filled;
+  return filled.includes("</body>")
+    ? filled.replace("</body>", `${data.watermark}</body>`)
+    : filled + data.watermark;
 }
 
 // ── Loading the synced files (public/generator, see scripts/sync-generator-templates.py) ──

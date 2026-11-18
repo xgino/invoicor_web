@@ -24,6 +24,7 @@ place that sends events), `components/analytics/ClickTracker.tsx` (clicks).
 | `footer_click` | footer links to pricing, help, affiliate, email, privacy, terms | `link` |
 | `gen_form_start` | first edit in the free invoice generator | none |
 | `gen_template_change` | a template picked in the generator | `template` |
+| `gen_new_invoice` | “New invoice” clicked (keeps the business, clears client and items) | |
 | `gen_generate` | "Download PDF" clicked | `template`, `currency`, `language` (no invoice content) |
 | `gen_download` | the PDF downloaded | none |
 | `gen_error` | the PDF couldn't be made | `code` (`rate_limited`, `bot_check`, `unavailable`, …) |

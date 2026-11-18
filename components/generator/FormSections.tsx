@@ -1,6 +1,15 @@
 "use client";
 
-import { ArrowDown, ArrowUp, ChevronDown, ImagePlus, Plus, Trash2, X } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUp,
+  ImagePlus,
+  Landmark,
+  LayoutTemplate,
+  Plus,
+  Trash2,
+  X,
+} from "lucide-react";
 import { useId, useState, type Dispatch, type ReactNode } from "react";
 import { cx } from "@/components/ui/cx";
 import { Field, Input, NumberInput, Select, Textarea } from "@/components/ui/form";
@@ -20,36 +29,72 @@ export interface Option {
   symbol?: string;
 }
 
-/** A collapsible form section (native <details>: keyboard and screen reader friendly). */
-export function Section({
+type Dispatcher = Dispatch<Action>;
+
+/**
+ * One fixed area of the form (ROADMAP 35b): always open, numbered, in the same order as the
+ * invoice reads. Every field here is printed on the invoice, and nothing printed is missing.
+ */
+export function Area({
+  step,
   title,
   hint,
-  defaultOpen = false,
   children,
 }: {
+  step: number;
   title: string;
   hint?: string;
-  defaultOpen?: boolean;
   children: ReactNode;
 }) {
+  const id = useId();
   return (
-    <details open={defaultOpen} className="group border-line border-b last:border-b-0">
-      <summary className="hover:bg-tint focus-visible:focus-ring flex cursor-pointer list-none items-center justify-between gap-3 px-5 py-4 [&::-webkit-details-marker]:hidden">
-        <span>
-          <span className="text-ink block font-bold">{title}</span>
-          {hint && <span className="text-small text-subtle block">{hint}</span>}
-        </span>
-        <ChevronDown
+    <section
+      aria-labelledby={id}
+      className="border-line border-b px-5 py-6 last:border-b-0 sm:px-6"
+    >
+      <div className="mb-4 flex items-start gap-3">
+        <span
           aria-hidden
-          className="text-subtle size-5 shrink-0 transition-transform duration-250 group-open:rotate-180"
-        />
-      </summary>
-      <div className="grid gap-4 px-5 pt-1 pb-6 sm:grid-cols-2">{children}</div>
-    </details>
+          className="bg-brand-50 text-brand-700 ring-brand-200 text-small grid size-7 shrink-0 place-items-center rounded-full font-bold tabular-nums ring-1"
+        >
+          {step}
+        </span>
+        <div>
+          <h2 id={id} className="text-ink font-heading text-h4 leading-tight font-bold">
+            {title}
+          </h2>
+          {hint && <p className="text-small text-subtle mt-0.5">{hint}</p>}
+        </div>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2">{children}</div>
+    </section>
   );
 }
 
-type Dispatcher = Dispatch<Action>;
+/** A labelled group inside an area (bank details). */
+function SubGroup({
+  icon,
+  title,
+  children,
+}: {
+  icon: ReactNode;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <fieldset className="bg-tint ring-line grid gap-4 rounded-2xl p-4 ring-1 sm:col-span-2 sm:grid-cols-2">
+      <legend className="sr-only">{title}</legend>
+      <p
+        aria-hidden
+        className="text-small text-ink flex items-center gap-2 font-bold sm:col-span-2"
+      >
+        {icon}
+        {title}
+      </p>
+      {children}
+    </fieldset>
+  );
+}
 
 function TextField({
   label,
@@ -57,6 +102,7 @@ function TextField({
   onChange,
   type = "text",
   placeholder,
+  hint,
   wide = false,
   autoComplete,
 }: {
@@ -65,12 +111,13 @@ function TextField({
   onChange: (v: string) => void;
   type?: string;
   placeholder?: string;
+  hint?: string;
   wide?: boolean;
   autoComplete?: string;
 }) {
   const id = useId();
   return (
-    <Field id={id} label={label} className={wide ? "sm:col-span-2" : undefined}>
+    <Field id={id} label={label} hint={hint} className={wide ? "sm:col-span-2" : undefined}>
       <Input
         id={id}
         type={type}
@@ -83,12 +130,132 @@ function TextField({
   );
 }
 
-export function BusinessSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+// ── 1. Setup ─────────────────────────────────────────────────────────────────
+
+export function SetupArea({
+  draft,
+  dispatch,
+  currencies,
+  languages,
+  templateName,
+  onBrowse,
+}: {
+  draft: Draft;
+  dispatch: Dispatcher;
+  currencies: Option[];
+  languages: Option[];
+  templateName: string;
+  onBrowse: () => void;
+}) {
+  const ids = { cur: useId(), lang: useId(), fmt: useId() };
+  const set = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
+  return (
+    <Area step={1} title="Invoice setup" hint="Design, language and currency">
+      <div className="flex flex-col gap-1.5 sm:col-span-2">
+        <span className="text-small text-ink font-bold">Template</span>
+        <button
+          type="button"
+          onClick={onBrowse}
+          className="bg-surface border-line-strong shadow-soft hover:border-brand-600 focus-visible:focus-ring flex h-11 items-center justify-between gap-3 rounded-lg border px-3.5 text-left transition-colors"
+        >
+          <span className="text-ink truncate font-medium">{templateName}</span>
+          <span className="text-small text-brand-700 inline-flex shrink-0 items-center gap-1.5 font-bold">
+            <LayoutTemplate aria-hidden className="size-4" /> Change
+          </span>
+        </button>
+      </div>
+      <Field id={ids.lang} label="Invoice language">
+        <Select
+          id={ids.lang}
+          value={draft.language}
+          onChange={(e) => set("language")(e.target.value)}
+        >
+          {languages.map((l) => (
+            <option key={l.code} value={l.code}>
+              {l.name}
+            </option>
+          ))}
+        </Select>
+      </Field>
+      <Field id={ids.cur} label="Currency">
+        <Select
+          id={ids.cur}
+          value={draft.currency}
+          onChange={(e) => set("currency")(e.target.value)}
+        >
+          {currencies.map((c) => (
+            <option key={c.code} value={c.code}>
+              {c.code}: {c.name}
+            </option>
+          ))}
+        </Select>
+      </Field>
+      <Field id={ids.fmt} label="Date format">
+        <Select
+          id={ids.fmt}
+          value={draft.date_format}
+          onChange={(e) => set("date_format")(e.target.value)}
+        >
+          {DATE_FORMATS.map((f) => (
+            <option key={f} value={f}>
+              {f}
+            </option>
+          ))}
+        </Select>
+      </Field>
+    </Area>
+  );
+}
+
+// ── 2. Invoice details ───────────────────────────────────────────────────────
+
+export function DetailsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const ids = { issue: useId(), due: useId() };
+  const set = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
+  return (
+    <Area step={2} title="Invoice details" hint="Number, dates and when you want to be paid">
+      <TextField
+        label="Invoice number"
+        value={draft.invoice_number}
+        onChange={set("invoice_number")}
+        hint="Use a running number, like INV-0001, INV-0002"
+        wide
+      />
+      <Field id={ids.issue} label="Issue date">
+        <Input
+          id={ids.issue}
+          type="date"
+          value={draft.issue_date}
+          onChange={(e) => set("issue_date")(e.target.value)}
+        />
+      </Field>
+      <Field id={ids.due} label="Due date">
+        <Input
+          id={ids.due}
+          type="date"
+          value={draft.due_date}
+          onChange={(e) => set("due_date")(e.target.value)}
+        />
+      </Field>
+      <TextField
+        label="Payment terms"
+        value={draft.payment_terms}
+        onChange={set("payment_terms")}
+        placeholder="e.g. Due within 14 days"
+        wide
+      />
+    </Area>
+  );
+}
+
+// ── 3. Your business ─────────────────────────────────────────────────────────
+
+export function BusinessArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
   const s = draft.sender;
   const set = (key: keyof Draft["sender"]) => (value: string) =>
     dispatch({ type: "sender", key, value });
   return (
-    <Section title="Your business" hint="Who the invoice is from" defaultOpen>
+    <Area step={3} title="Your business" hint="Who the invoice is from">
       <LogoField value={s.logo} onChange={set("logo")} />
       <TextField
         label="Business name"
@@ -118,131 +285,75 @@ export function BusinessSection({ draft, dispatch }: { draft: Draft; dispatch: D
         wide
         autoComplete="street-address"
       />
-      <TextField label="City" value={s.city} onChange={set("city")} />
       <TextField label="Postal code" value={s.postal_code} onChange={set("postal_code")} />
-      <TextField label="Country" value={s.country} onChange={set("country")} />
-      <TextField label="Tax / VAT number" value={s.tax_id} onChange={set("tax_id")} />
+      <TextField label="City" value={s.city} onChange={set("city")} />
+      <TextField label="Country" value={s.country} onChange={set("country")} wide />
       <TextField
-        label="Website"
-        value={s.website}
-        onChange={set("website")}
-        wide
-        placeholder="https://"
+        label="Tax / VAT ID"
+        value={s.tax_id}
+        onChange={set("tax_id")}
+        placeholder="e.g. NL123456789B01"
       />
-    </Section>
+      <TextField
+        label="Registration number"
+        value={s.registration_number}
+        onChange={set("registration_number")}
+        placeholder="e.g. KVK, company number"
+      />
+      <SubGroup
+        icon={<Landmark aria-hidden className="text-brand-600 size-4" />}
+        title="Bank details"
+      >
+        <TextField label="Bank name" value={s.bank_name} onChange={set("bank_name")} wide />
+        <TextField label="IBAN / account number" value={s.iban} onChange={set("iban")} />
+        <TextField label="SWIFT / BIC" value={s.swift_code} onChange={set("swift_code")} />
+      </SubGroup>
+    </Area>
   );
 }
 
-export function ClientSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+// ── 4. Client ────────────────────────────────────────────────────────────────
+
+export function ClientArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
   const c = draft.client;
   const set = (key: keyof Draft["client"]) => (value: string) =>
     dispatch({ type: "client", key, value });
   return (
-    <Section title="Client" hint="Who you're billing" defaultOpen>
+    <Area step={4} title="Bill to" hint="Who you're billing">
       <TextField
         label="Client or company name"
         value={c.company_name}
         onChange={set("company_name")}
         wide
       />
-      <TextField label="Contact person" value={c.contact_name} onChange={set("contact_name")} />
-      <TextField label="Email" type="email" value={c.email} onChange={set("email")} />
-      <TextField label="Address" value={c.address_line_1} onChange={set("address_line_1")} wide />
-      <TextField label="City" value={c.city} onChange={set("city")} />
-      <TextField label="Postal code" value={c.postal_code} onChange={set("postal_code")} />
-      <TextField label="Country" value={c.country} onChange={set("country")} />
-      <TextField label="Tax / VAT number" value={c.tax_id} onChange={set("tax_id")} />
-    </Section>
-  );
-}
-
-export function DetailsSection({
-  draft,
-  dispatch,
-  currencies,
-  languages,
-}: {
-  draft: Draft;
-  dispatch: Dispatcher;
-  currencies: Option[];
-  languages: Option[];
-}) {
-  const ids = { cur: useId(), lang: useId(), fmt: useId(), issue: useId(), due: useId() };
-  const set = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
-  return (
-    <Section title="Invoice details" hint="Number, dates, currency and language" defaultOpen>
       <TextField
-        label="Invoice number"
-        value={draft.invoice_number}
-        onChange={set("invoice_number")}
+        label="Contact person"
+        value={c.contact_name}
+        onChange={set("contact_name")}
+        wide
       />
-      <Field id={ids.cur} label="Currency">
-        <Select
-          id={ids.cur}
-          value={draft.currency}
-          onChange={(e) => set("currency")(e.target.value)}
-        >
-          {currencies.map((c) => (
-            <option key={c.code} value={c.code}>
-              {c.code}: {c.name}
-            </option>
-          ))}
-        </Select>
-      </Field>
-      <Field id={ids.issue} label="Issue date">
-        <Input
-          id={ids.issue}
-          type="date"
-          value={draft.issue_date}
-          onChange={(e) => set("issue_date")(e.target.value)}
-        />
-      </Field>
-      <Field id={ids.due} label="Due date">
-        <Input
-          id={ids.due}
-          type="date"
-          value={draft.due_date}
-          onChange={(e) => set("due_date")(e.target.value)}
-        />
-      </Field>
-      <Field id={ids.lang} label="Invoice language">
-        <Select
-          id={ids.lang}
-          value={draft.language}
-          onChange={(e) => set("language")(e.target.value)}
-        >
-          {languages.map((l) => (
-            <option key={l.code} value={l.code}>
-              {l.name}
-            </option>
-          ))}
-        </Select>
-      </Field>
-      <Field id={ids.fmt} label="Date format">
-        <Select
-          id={ids.fmt}
-          value={draft.date_format}
-          onChange={(e) => set("date_format")(e.target.value)}
-        >
-          {DATE_FORMATS.map((f) => (
-            <option key={f} value={f}>
-              {f}
-            </option>
-          ))}
-        </Select>
-      </Field>
-    </Section>
+      <TextField label="Email" type="email" value={c.email} onChange={set("email")} />
+      <TextField label="Phone" type="tel" value={c.phone} onChange={set("phone")} />
+      <TextField label="Address" value={c.address_line_1} onChange={set("address_line_1")} wide />
+      <TextField label="Postal code" value={c.postal_code} onChange={set("postal_code")} />
+      <TextField label="City" value={c.city} onChange={set("city")} />
+      <TextField label="Country" value={c.country} onChange={set("country")} />
+      <TextField
+        label="Tax / VAT ID"
+        value={c.tax_id}
+        onChange={set("tax_id")}
+        hint="Needed for business clients in the EU"
+      />
+    </Area>
   );
 }
 
-export function ItemsSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+// ── 5. Items ─────────────────────────────────────────────────────────────────
+
+export function ItemsArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
   const full = draft.items.length >= MAX_ITEMS;
   return (
-    <Section
-      title="Line items"
-      hint={`Up to ${MAX_ITEMS} lines, like the app's free plan`}
-      defaultOpen
-    >
+    <Area step={5} title="Items" hint={`What you're charging for, up to ${MAX_ITEMS} lines`}>
       <ol className="space-y-3 sm:col-span-2">
         {draft.items.map((item, index) => (
           <ItemRow
@@ -269,7 +380,7 @@ export function ItemsSection({ draft, dispatch }: { draft: Draft; dispatch: Disp
           </p>
         )}
       </div>
-    </Section>
+    </Area>
   );
 }
 
@@ -318,12 +429,12 @@ function ItemRow({
           </IconButton>
         </div>
       </div>
-      <div className="grid gap-3 sm:grid-cols-[1fr_6rem_8rem]">
-        <Field id={ids.name} label="Description">
+      <div className="grid gap-3 sm:grid-cols-[1fr_5.5rem_7.5rem]">
+        <Field id={ids.name} label="Item">
           <Input
             id={ids.name}
             value={item.name}
-            placeholder="e.g. Labor, 2 hours"
+            placeholder="e.g. Kitchen tap repair"
             onChange={(e) => set("name")(e.target.value)}
           />
         </Field>
@@ -346,7 +457,7 @@ function ItemRow({
           <Input
             id={ids.desc}
             value={item.description}
-            placeholder="Shown under the line"
+            placeholder="Shown on its own line under the item"
             onChange={(e) => set("description")(e.target.value)}
           />
         </Field>
@@ -386,12 +497,14 @@ function IconButton({
   );
 }
 
-export function TaxSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+// ── 6. Tax & discount ────────────────────────────────────────────────────────
+
+export function TaxArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
   const ids = { rate: useId(), incl: useId(), dtype: useId(), dval: useId() };
   const set = (key: keyof Draft) => (value: Draft[keyof Draft]) =>
     dispatch({ type: "field", key, value });
   return (
-    <Section title="Tax & discount" hint="One tax rate for the whole invoice">
+    <Area step={6} title="Tax & discount" hint="One tax rate for the whole invoice">
       <Field id={ids.rate} label="Tax rate">
         <NumberInput
           id={ids.rate}
@@ -439,64 +552,16 @@ export function TaxSection({ draft, dispatch }: { draft: Draft; dispatch: Dispat
           />
         </Field>
       )}
-    </Section>
+    </Area>
   );
 }
 
-export function PaymentSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
-  const linkId = useId();
-  const setField = (key: keyof Draft) => (value: string) => dispatch({ type: "field", key, value });
-  const setSender = (key: keyof Draft["sender"]) => (value: string) =>
-    dispatch({ type: "sender", key, value });
-  const badLink = draft.payment_url !== "" && !/^https?:\/\/\S+$/i.test(draft.payment_url.trim());
-  return (
-    <Section title="Payment" hint="How your client pays you (directly, never through us)">
-      <TextField
-        label="Payment terms"
-        value={draft.payment_terms}
-        onChange={setField("payment_terms")}
-        wide
-        placeholder="e.g. Due within 14 days"
-      />
-      <Field
-        id={linkId}
-        label="Your payment link (optional)"
-        hint="Your own PayPal, Stripe or other link. It's printed on the invoice."
-        error={badLink ? "Start the link with https://" : undefined}
-        className="sm:col-span-2"
-      >
-        <Input
-          id={linkId}
-          type="url"
-          value={draft.payment_url}
-          invalid={badLink}
-          placeholder="https://"
-          onChange={(e) => setField("payment_url")(e.target.value)}
-        />
-      </Field>
-      <TextField
-        label="Bank name"
-        value={draft.sender.bank_name}
-        onChange={setSender("bank_name")}
-      />
-      <TextField
-        label="IBAN / account number"
-        value={draft.sender.iban}
-        onChange={setSender("iban")}
-      />
-      <TextField
-        label="SWIFT / BIC"
-        value={draft.sender.swift_code}
-        onChange={setSender("swift_code")}
-      />
-    </Section>
-  );
-}
+// ── 7. Notes ─────────────────────────────────────────────────────────────────
 
-export function NotesSection({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+export function NotesArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
   const id = useId();
   return (
-    <Section title="Notes" hint="A thank-you, warranty terms or anything else">
+    <Area step={7} title="Notes" hint="A thank-you, warranty terms or anything else">
       <Field id={id} label="Notes" className="sm:col-span-2">
         <Textarea
           id={id}
@@ -505,9 +570,42 @@ export function NotesSection({ draft, dispatch }: { draft: Draft; dispatch: Disp
           onChange={(e) => dispatch({ type: "field", key: "notes", value: e.target.value })}
         />
       </Field>
-    </Section>
+    </Area>
   );
 }
+
+// ── 8. Payment link ──────────────────────────────────────────────────────────
+
+export function PaymentLinkArea({ draft, dispatch }: { draft: Draft; dispatch: Dispatcher }) {
+  const id = useId();
+  const badLink = draft.payment_url !== "" && !/^https?:\/\/\S+$/i.test(draft.payment_url.trim());
+  return (
+    <Area
+      step={8}
+      title="Online payment link"
+      hint="Optional. Your client pays you directly, never through us"
+    >
+      <Field
+        id={id}
+        label="Your payment link"
+        hint="Your own PayPal, Stripe or other link. It shows as a “Pay online” button."
+        error={badLink ? "Start the link with https://" : undefined}
+        className="sm:col-span-2"
+      >
+        <Input
+          id={id}
+          type="url"
+          value={draft.payment_url}
+          invalid={badLink}
+          placeholder="https://"
+          onChange={(e) => dispatch({ type: "field", key: "payment_url", value: e.target.value })}
+        />
+      </Field>
+    </Area>
+  );
+}
+
+// ── Logo ─────────────────────────────────────────────────────────────────────
 
 function LogoField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
   const id = useId();
@@ -528,7 +626,7 @@ function LogoField({ value, onChange }: { value: string; onChange: (v: string) =
   return (
     <div className="sm:col-span-2">
       <span className="text-small text-ink mb-1.5 block font-bold">Logo (optional)</span>
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         {value ? (
           <>
             {/* eslint-disable-next-line @next/next/no-img-element -- local data URI preview */}
@@ -563,7 +661,9 @@ function LogoField({ value, onChange }: { value: string; onChange: (v: string) =
             />
           </label>
         )}
-        <span className="text-small text-subtle">PNG or JPG, up to 500 KB</span>
+        <span className="text-small text-subtle">
+          PNG or JPG, up to 500 KB. Replaces the name at the top.
+        </span>
       </div>
       {error && (
         <p role="alert" className="text-small text-danger mt-1.5 font-medium">

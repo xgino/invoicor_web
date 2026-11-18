@@ -7,6 +7,18 @@ import { type Draft, newDraft } from "./draft";
  */
 const KEY = "invoicor-generator-draft-v1";
 
+/** Known fields only, so an old draft can't carry hidden values onto the invoice. */
+function pick<T extends object>(base: T, saved: unknown): T {
+  const out = { ...base };
+  if (saved && typeof saved === "object") {
+    for (const key of Object.keys(base) as (keyof T)[]) {
+      const value = (saved as Record<string, unknown>)[key as string];
+      if (typeof value === "string") out[key] = value as T[keyof T];
+    }
+  }
+  return out;
+}
+
 export function loadDraft(): Draft | null {
   try {
     const raw = window.localStorage.getItem(KEY);
@@ -16,8 +28,8 @@ export function loadDraft(): Draft | null {
     return {
       ...base,
       ...parsed,
-      sender: { ...base.sender, ...(parsed.sender ?? {}) },
-      client: { ...base.client, ...(parsed.client ?? {}) },
+      sender: pick(base.sender, parsed.sender),
+      client: pick(base.client, parsed.client),
       items: Array.isArray(parsed.items) && parsed.items.length > 0 ? parsed.items : base.items,
     };
   } catch {
@@ -25,11 +37,13 @@ export function loadDraft(): Draft | null {
   }
 }
 
-export function saveDraft(draft: Draft): void {
+/** Saves the draft in this browser; false when storage is blocked or full. */
+export function saveDraft(draft: Draft): boolean {
   try {
     window.localStorage.setItem(KEY, JSON.stringify(draft));
+    return true;
   } catch {
-    // storage full or blocked: keep working without autosave
+    return false; // storage full or blocked: keep working without autosave
   }
 }
 

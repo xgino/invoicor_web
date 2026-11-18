@@ -23,7 +23,7 @@ function save(url: string, filename: string) {
 
 /**
  * Generate flow (ROADMAP chunk 34): bot check (if on), PDF from the API, download, then the
- * "Created with invoicor.com" reveal and the hand-off to the app. "Download again" reuses the same
+ * hand-off to the app. "Download again" reuses the same
  * file, so it costs no API call. The cooldown is UX only; the real limits are on the server.
  */
 export function GeneratePanel({
@@ -34,7 +34,7 @@ export function GeneratePanel({
 }: {
   draft: Draft;
   dispatch: (action: Action) => void;
-  onGenerated: () => void;
+  onGenerated?: () => void;
   appCta?: ReactNode;
 }) {
   const [state, setState] = useState<"idle" | "working" | "done">("idle");
@@ -69,7 +69,7 @@ export function GeneratePanel({
       save(file.current.url, file.current.name);
       setFileName(file.current.name);
       track("gen_download");
-      onGenerated();
+      onGenerated?.();
       setState("done");
       setCooling(true);
       window.setTimeout(() => setCooling(false), COOLDOWN_MS);

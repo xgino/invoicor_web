@@ -8,7 +8,8 @@ Run with the API's own Python (it needs Django and babel), from this repo's root
 
 Writes:
   public/generator/templates/<slug>.json   {"html": "..."}  (free templates only)
-  public/generator/data.json               labels per language, currency symbols per language
+  public/generator/data.json               labels and currency symbols per language, currency
+                                           decimals, the PDF watermark line
   tests/fixtures/generator-parity.json     sample invoices filled by the real API code, so
                                            tests/unit/generator-fill.test.ts proves the browser
                                            fill matches the PDF.
@@ -32,7 +33,8 @@ import django  # noqa: E402
 
 django.setup()
 
-from invoices.public import PublicInvoiceSerializer, build_public_invoice  # noqa: E402
+from babel.numbers import get_currency_precision  # noqa: E402
+from invoices.public import WATERMARK_HTML, PublicInvoiceSerializer, build_public_invoice  # noqa: E402
 from utils.currencies import ACTIVE_CODES, get_currency_info  # noqa: E402
 from utils.templates import fill_template, get_all_templates, get_template  # noqa: E402
 from utils.translations import get_labels, get_supported_languages  # noqa: E402
@@ -51,6 +53,8 @@ for slug in free:
 languages = [l["code"] for l in get_supported_languages()]
 data = {
     "templates": free,
+    "watermark": WATERMARK_HTML,
+    "digits": {code: get_currency_precision(code) for code in ACTIVE_CODES},
     "labels": {lang: get_labels(lang) for lang in languages},
     "symbols": {
         lang: {code: get_currency_info(code, locale=lang)["symbol"] for code in ACTIVE_CODES}
@@ -72,6 +76,7 @@ SENDER = {
     "postal_code": "78701",
     "country": "United States",
     "tax_id": "US-123",
+    "registration_number": "Reg 4455",
     "website": "rivera.example",
     "bank_name": "First Bank",
     "iban": "NL91 ABNA 0417 1643 00",
@@ -82,12 +87,12 @@ CLIENT = {
     "company_name": "Mitchell <Home> Co",
     "contact_name": "Sarah Mitchell",
     "email": "sarah@example.com",
-    "phone": "",
+    "phone": "+1 555 0199",
     "address_line_1": "4 Oak Ave",
     "city": "Denver",
     "postal_code": "80202",
     "country": "United States",
-    "tax_id": "",
+    "tax_id": "DE999 & co",
 }
 ITEMS = [
     {"name": "Emergency call-out", "description": "After hours", "quantity": "1.00", "unit_price": "95.00"},
@@ -104,6 +109,8 @@ CASES = [
      "discount_type": "none", "discount_value": "0.00"},
     {"template_slug": "classic", "language": "pl", "currency": "PLN", "date_format": "YYYY-MM-DD",
      "tax_rate": "23.00", "tax_inclusive": False, "discount_type": "percent", "discount_value": "12.50"},
+    {"template_slug": free[3], "language": "en", "currency": "JPY", "date_format": "DD/MM/YYYY",
+     "tax_rate": "10.00", "tax_inclusive": False, "discount_type": "fixed", "discount_value": "500.00"},
 ]
 fixtures = []
 for case in CASES:
