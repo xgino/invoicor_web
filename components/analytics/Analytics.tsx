@@ -12,6 +12,7 @@ import {
 } from "@/lib/config";
 import { getServerConsent, readConsent, subscribeConsent } from "@/lib/consent";
 import { ClickTracker } from "./ClickTracker";
+import { StatsUpPages } from "./StatsUpPages";
 
 /**
  * Website analytics. StatsUp, our own cookieless counter, runs for every visitor (no cookies, our
@@ -29,7 +30,12 @@ export function Analytics() {
   if (!ANALYTICS_ENABLED) return null;
 
   // Every visitor: cookieless page counts. Loaded when the browser is idle, never blocking the page.
-  const statsup = <Script src={STATSUP_SCRIPT} data-site={STATSUP_SITE_ID} strategy="lazyOnload" />;
+  const statsup = (
+    <>
+      <Script src={STATSUP_SCRIPT} data-site={STATSUP_SITE_ID} strategy="lazyOnload" />
+      <StatsUpPages />
+    </>
+  );
   if (consent !== "granted") return statsup;
 
   return (
