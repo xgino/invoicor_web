@@ -49,6 +49,13 @@ export const AFFILIATE_SIGNUP_URL =
 
 export const ANALYTICS_ENABLED = process.env.NEXT_PUBLIC_ANALYTICS !== "false";
 export const GA_MEASUREMENT_ID = "G-DX0880SW9D";
+/**
+ * StatsUp: our own cookieless visitor counter, on our server in Germany. It runs for every visitor,
+ * with or without cookie consent: no cookies, nothing sent to third parties; only a session ID and
+ * page number in sessionStorage (gone when the tab closes). See the privacy policy, section 9.
+ */
+export const STATSUP_SITE_ID = "a5a3e40b-d48f-4787-a0b9-a215ac4d2a4a";
+export const STATSUP_SCRIPT = "https://www.statsup.co/static/tracker/main.js";
 export const POSTHOG_KEY = "phc_Pc8MPW957gjYlwUzKVdGBfcWXc2k7Oy8aM7BHZsI0EV";
 /** PostHog US cloud. Moving to the EU cloud (eu.i.posthog.com) needs a new PostHog project (ROADMAP Y12). */
 export const POSTHOG_HOST = "https://us.i.posthog.com";

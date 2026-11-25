@@ -2,13 +2,21 @@
 
 import Script from "next/script";
 import { useEffect, useSyncExternalStore } from "react";
-import { ANALYTICS_ENABLED, GA_MEASUREMENT_ID, POSTHOG_HOST, POSTHOG_KEY } from "@/lib/config";
+import {
+  ANALYTICS_ENABLED,
+  GA_MEASUREMENT_ID,
+  POSTHOG_HOST,
+  POSTHOG_KEY,
+  STATSUP_SCRIPT,
+  STATSUP_SITE_ID,
+} from "@/lib/config";
 import { getServerConsent, readConsent, subscribeConsent } from "@/lib/consent";
 import { ClickTracker } from "./ClickTracker";
 
 /**
- * Website analytics (decision D4: GA4 + PostHog). Nothing loads until the visitor accepts
- * cookies in the consent banner (decision D5). Both services are US-based (see privacy policy).
+ * Website analytics. StatsUp, our own cookieless counter, runs for every visitor (no cookies, our
+ * server in Germany). GA4 and PostHog (both US services, with cookies) load only after the visitor
+ * accepts in the consent banner (decision D5). See the privacy policy, sections 9 and 11.
  */
 export function Analytics() {
   const consent = useSyncExternalStore(subscribeConsent, readConsent, getServerConsent);
@@ -18,10 +26,15 @@ export function Analytics() {
     if (consent === "denied") window.posthog?.opt_out_capturing?.();
   }, [consent]);
 
-  if (!ANALYTICS_ENABLED || consent !== "granted") return null;
+  if (!ANALYTICS_ENABLED) return null;
+
+  // Every visitor: cookieless page counts. Loaded when the browser is idle, never blocking the page.
+  const statsup = <Script src={STATSUP_SCRIPT} data-site={STATSUP_SITE_ID} strategy="lazyOnload" />;
+  if (consent !== "granted") return statsup;
 
   return (
     <>
+      {statsup}
       {/* Google Analytics 4, IP anonymized by GA4 by default */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
