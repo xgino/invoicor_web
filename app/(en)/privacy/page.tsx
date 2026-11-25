@@ -157,7 +157,7 @@ export default function PrivacyPage() {
           USA) and PostHog (PostHog Inc., US cloud) to measure which pages are visited and which
           buttons are clicked. This website usage data is processed in the United States. Neither
           service receives your account or invoice data from the app. If you click
-          &quot;Decline&quot;, neither is loaded, and we ask again at the earliest after 6 months.
+          &quot;Decline&quot;, neither is loaded, and we ask again at the earliest after 30 days.
         </P>
         <P>
           <B>Android interest counter (invoicor.com/android only):</B> when you open that page, your
@@ -240,7 +240,7 @@ export default function PrivacyPage() {
           &quot;Accept&quot; in the cookie banner. If you decline, they aren&apos;t loaded; only
           StatsUp, our own cookieless counter (section 9), runs. Your choice is saved in your
           browser, and you can change it any time with &quot;Cookie settings&quot; at the bottom of
-          every page. After a &quot;Decline&quot; we ask again at the earliest after 6 months. We do
+          every page. After a &quot;Decline&quot; we ask again at the earliest after 30 days. We do
           not use advertising cookies or cross-site tracking.
         </P>
         <P>

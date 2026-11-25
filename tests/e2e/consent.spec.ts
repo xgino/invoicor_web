@@ -55,12 +55,12 @@ test("StatsUp counts every visit, also without a choice or after Decline", async
   expect(attempted).toEqual([]); // still no Google Analytics or PostHog
 });
 
-test("after a Decline, the banner comes back after 6 months", async ({ page }) => {
+test("after a Decline, the banner comes back after 30 days", async ({ page }) => {
   await trackAnalytics(page);
-  const sevenMonthsAgo = Date.now() - 210 * 24 * 60 * 60 * 1000;
+  const fortyDaysAgo = Date.now() - 40 * 24 * 60 * 60 * 1000;
   await page.addInitScript(
     (at) => localStorage.setItem("invoicor-consent-v1", `denied:${at}`),
-    sevenMonthsAgo,
+    fortyDaysAgo,
   );
   await page.goto("/");
   await expect(page.getByRole("dialog", { name: /cookies/i })).toBeVisible();

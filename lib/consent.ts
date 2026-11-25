@@ -8,11 +8,11 @@ export type Consent = "granted" | "denied";
 
 const KEY = "invoicor-consent-v1";
 /**
- * Days before a visitor who declined is asked again. EU regulators (e.g. the French CNIL) expect a
- * refusal to be respected for months, not asked again every visit: repeated asking can make a later
- * "yes" invalid. 6 months is the usual figure.
+ * Days before a visitor who declined is asked again (owner's choice, 2026-11-25). Not every visit: EU
+ * regulators (e.g. the French CNIL) say repeated asking can make a later "yes" invalid, and they
+ * usually expect a refusal to be kept for months; 30 days is on the short side of that.
  */
-export const ASK_AGAIN_DAYS = 180;
+export const ASK_AGAIN_DAYS = 30;
 const DAY = 24 * 60 * 60 * 1000;
 export const CONSENT_EVENT = "invoicor:consent";
 export const OPEN_CONSENT_EVENT = "invoicor:consent-open";
