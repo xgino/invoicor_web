@@ -227,7 +227,7 @@ export function renderPagesMd(rows) {
     "Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per",
     "country in all 11 languages (local words, rules and examples, not word for word), **local** = only",
     "in its own language, **en-only** = stays English. The language versions still to write are on the",
-    "to-do list in [PLAN.md](PLAN.md#language-versions-to-write).",
+    "to-do list in [PLAN.md](PLAN.md#items-per-category).",
     "",
     "| Page type | Decision | English | Per other language | Still to write |",
     "|---|---|---|---|---|",
@@ -444,8 +444,8 @@ function renderChunks(rows) {
   out.push(
     "# Page plan: the road to 4,000 pages",
     "",
-    "> **Generated, don't edit by hand.** The to-do list in chunks. Each item is ~20 pages of one",
-    "> category; each translated item also has one language item per language (e.g. `1B-de`). Boxes",
+    "> **Generated, don't edit by hand.** The to-do list: chunks give the order, and every item is",
+    "> listed under its category with its pages below it. Each item is ~20 pages of one category; each translated item also has one language item per language (e.g. `1B-de`). Boxes",
     "> tick themselves when the pages are live. The briefs per page are in [plan/](plan/) (one file",
     "> per category, with its direction: what its pages can and can't do, and what's already done).",
     "> What exists today: [PAGES.md](PAGES.md). Plan data: [keyword-map.csv](keyword-map.csv)",
@@ -515,55 +515,78 @@ function renderChunks(rows) {
     "",
     "## Chunks",
     "",
-    "| Chunk | What | New English/local pages | Language pages to write | Total when done |",
-    "|---|---|---|---|---|",
+    "The order to build in. Every item is listed with its pages under its category (next section).",
+    "",
+    "| Chunk | What | Items | New English/local pages | Language pages to write | Total when done |",
+    "|---|---|---|---|---|---|",
     ...summary.map(
       (s) =>
-        `| [${s.ch.id}](#${anchor(`chunk ${s.ch.id} ${s.ch.title}`)}) | ${s.ch.title} | ${s.ch.id === "0" ? "built" : s.english} | ${s.langPages} | ${s.total.toLocaleString("en")} |`,
+        `| ${s.ch.id} | ${s.ch.title} | ${s.ch.items.map((it) => (it.task ? it.id : `[${it.id}](#${itemAnchor(it)})`)).join(" ")} | ${s.ch.id === "0" ? "built" : s.english} | ${s.langPages} | ${s.total.toLocaleString("en")} |`,
     ),
     "",
   );
 
-  for (const s of summary) {
-    const ch = s.ch;
-    out.push(`## Chunk ${ch.id}: ${ch.title}`, "", ch.goal, "");
-    for (const it of ch.items) {
-      if (it.task) {
-        out.push(`- ${box(it.done)} **${it.id}** (task) ${it.title}: ${it.text}`);
-        continue;
-      }
-      const { pages, parked, live: n } = itemStats(rows, it.id);
-      const cats = [...new Set(pages.map((r) => categoryOf(r)).filter(Boolean))];
+  // Tasks: code work, no pages, so no category
+  out.push("## Tasks (code, no pages)", "");
+  for (const ch of CHUNKS)
+    for (const it of ch.items.filter((i) => i.task))
+      out.push(`- ${box(it.done)} **${it.id}** (chunk ${ch.id}) ${it.title}: ${it.text}`);
+  out.push("");
+
+  // Per category: its items (by letter) and their pages
+  const chunkOf = (id) => CHUNKS.find((ch) => ch.items.some((i) => i.id === id));
+  const langChunkOf = (id) => CHUNKS.find((ch) => (ch.languages ?? []).includes(id));
+  out.push(
+    "## Items per category",
+    "",
+    `Each item with its pages below it. Language items in this order: ${LANGUAGE_ORDER.join(", ")}.`,
+    "",
+  );
+  for (const c of CATEGORIES) {
+    const items = CHUNKS.flatMap((ch) => ch.items.filter((i) => !i.task)).filter((it) =>
+      itemStats(rows, it.id)
+        .pages.concat(itemStats(rows, it.id).parked)
+        .some((r) => c.match(r)),
+    );
+    if (!items.length) continue;
+    out.push(`### ${c.title}`, "", `Direction and briefs: [plan/${c.id}.md](plan/${c.id}.md)`, "");
+    for (const it of items) {
+      const st = itemStats(rows, it.id);
+      const pages = st.pages.filter((r) => c.match(r));
+      const parked = st.parked.filter((r) => c.match(r));
+      const n = pages.filter((r) => r.status === "live").length;
+      const ch = chunkOf(it.id);
       out.push(
-        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** ${it.title} · ${n}/${pages.length} live${parked.length ? ` (${parked.length} parked)` : ""} · ${cats
-          .map((c) => `[${c.title}](plan/${c.id}.md)`)
-          .join(", ")}${it.text ? `. ${it.text}` : ""}`,
+        `#### ${it.id}: ${it.title}`,
+        "",
+        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · chunk ${ch.id} · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.text ? ` · ${it.text}` : ""}`,
+        "",
       );
       if (ch.id !== "0") {
         for (const r of pages)
           out.push(
-            `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${pageLink(r)}) ${r.primary_keyword}`,
+            `- ${box(r.status === "live")} [${shortUrl(r.url)}](${pageLink(r)}) ${r.primary_keyword}`,
           );
         for (const r of parked)
-          out.push(`  - ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
+          out.push(`- ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
+        out.push("");
       }
-    }
-    if (ch.languages?.length) {
-      out.push(
-        "",
-        `**Language items** (in this order per item: ${LANGUAGE_ORDER.join(", ")}):`,
-        "",
-      );
-      for (const id of ch.languages) {
-        const { pages } = itemStats(rows, id);
+      const lc = langChunkOf(it.id);
+      if (lc && pages.some((r) => r.localize === "yes")) {
         const cells = LANGUAGE_ORDER.map((l) => {
-          const st = languageStats(rows, pages, l);
-          return `${box(st.total > 0 && st.done === st.total)} ${id}-${l} ${st.done}/${st.total}`;
+          const x = languageStats(rows, pages, l);
+          return `${box(x.total > 0 && x.done === x.total)} ${it.id}-${l} ${x.done}/${x.total}`;
         });
-        out.push(`- **${id}:** ${cells.join(" · ")}`);
+        out.push(`**Languages** (chunk ${lc.id}): ${cells.join(" · ")}`, "");
+      } else if (ch.id !== "0" || lc) {
+        out.push(
+          pages.some((r) => r.localize === "yes")
+            ? "**Languages:** not scheduled yet."
+            : "**Languages:** none (English only or local).",
+          "",
+        );
       }
     }
-    out.push("");
   }
 
   // Not in a chunk
@@ -670,6 +693,10 @@ function renderCategory(rows, c) {
       "",
     );
   return out.join("\n");
+}
+
+function itemAnchor(it) {
+  return anchor(`${it.id} ${it.title}`);
 }
 
 function anchor(text) {
