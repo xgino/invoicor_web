@@ -10,6 +10,7 @@ import {
   LOCALIZE,
   parseCsv,
   renderPagesMd,
+  renderPlanMd,
   similarity,
 } from "../../scripts/pages-lib.mjs";
 
@@ -19,6 +20,7 @@ interface Row {
   status: string;
   added: string;
   localize: string;
+  brief: string;
   primary_keyword: string;
 }
 const csv = readFileSync(join(process.cwd(), "seo/keyword-map.csv"), "utf8");
@@ -73,6 +75,19 @@ describe("page log", () => {
     expect(readFileSync(join(process.cwd(), "seo/PAGES.md"), "utf8")).toBe(
       renderPagesMd(rows as unknown as Record<string, string>[]),
     );
+  });
+
+  it(`seo/PLAN.md is up to date (${FIX})`, () => {
+    expect(readFileSync(join(process.cwd(), "seo/PLAN.md"), "utf8")).toBe(
+      renderPlanMd(rows as unknown as Record<string, string>[]),
+    );
+  });
+
+  it("gives every planned page a brief, so the next batch can be built from PLAN.md", () => {
+    const noBrief = rows
+      .filter((r) => r.status === "planned" && !r.brief?.trim())
+      .map((r) => r.url);
+    expect(noBrief).toEqual([]);
   });
 
   it("scores keys by shared words, ignoring filler words and plurals", () => {

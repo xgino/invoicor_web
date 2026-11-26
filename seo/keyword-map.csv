@@ -1,288 +1,288 @@
-url,lang,status,added,page_type,localize,primary_keyword,secondary_keywords,intent,chunk,baseline_position,notes
-/,en,live,2026-11-18,home,yes,invoice app iphone,invoice maker app; invoicor,app / brand,19-20,3.9 (GSC 28d to 2026-11-18),Brand + app intent. Not 'free invoice generator' (that's the generator page).
-/free-invoice-generator,en,live,2026-11-18,generator,yes,free invoice generator,invoice generator; create invoice online; invoice maker online; invoice generator pdf,tool (do),30-35,,Owns all 'make an invoice online' intent. No variants like /invoice-generator-pdf.
-/templates,en,live,2026-11-18,hub,yes,invoice templates,free invoice template; invoice template by industry,browse,21,10.0 (GSC 28d to 2026-11-18),
-/templates/photography,en,live,2026-11-17,template,yes,photography invoice template,photographer invoice; photography invoice pdf,template (download/fill),21,,
-/templates/plumbing,en,live,2026-11-17,template,yes,plumbing invoice template,plumber invoice template; plumbing invoice pdf,template (download/fill),21,26.8 (GSC 28d to 2026-11-18),
-/templates/hvac,en,live,2026-11-17,template,yes,hvac invoice template,hvac service invoice; hvac invoice pdf,template (download/fill),21,54.0 (GSC 28d to 2026-11-18),
-/templates/freelance-design,en,live,2026-11-17,template,yes,graphic design invoice template,freelance design invoice; designer invoice template,template (download/fill),21,30.0 (GSC 28d to 2026-11-18),
-/templates/handyman,en,live,2026-11-17,template,yes,handyman invoice template,handyman invoice pdf; handyman receipt,template (download/fill),21,,
-/templates/videography,en,live,2026-11-17,template,yes,videography invoice template,videographer invoice template; video production invoice,template (download/fill),21,,
-/templates/landscaping,en,live,2026-11-17,template,yes,landscaping invoice template,lawn care invoice template; landscaping invoice pdf,template (download/fill),21,,
-/templates/consulting,en,live,2026-11-17,template,yes,consulting invoice template,consultant invoice template; consulting invoice word,template (download/fill),21,,
-/templates/cleaning-services,en,live,2026-11-17,template,yes,cleaning invoice template,cleaning service invoice; house cleaning invoice template,template (download/fill),21,,
-/templates/auto-detailing,en,live,2026-11-17,template,yes,auto repair invoice template,mechanic invoice template; auto detailing invoice,template (download/fill),21,,
-/industries,en,live,2026-11-18,hub,yes,invoicing software by industry,invoice app for small business,browse,22,,
-/industries/plumbers-hvac,en,live,2026-11-17,industry,yes,invoice app for plumbers,plumbing invoicing software; hvac invoicing software,software (commercial),22,,Template intent belongs to /templates/plumbing and /templates/hvac
-/industries/freelance-designers,en,live,2026-11-17,industry,yes,invoicing app for freelance designers,invoice software for creatives,software (commercial),22,18.8 (GSC 28d to 2026-11-18),
-/industries/landscaping-lawn-care,en,live,2026-11-17,industry,yes,landscaping invoicing software,lawn care invoice app,software (commercial),22,51.5 (GSC 28d to 2026-11-18),Template intent belongs to /templates/landscaping
-/industries/electricians,en,live,2026-11-17,industry,yes,invoice app for electricians,electrician invoicing software; electrician invoice template,software (commercial),22,46.0 (GSC 28d to 2026-11-18),Owns 'electrician invoice template' until a /templates/electrician page exists
-/industries/general-contractors,en,live,2026-11-17,industry,yes,invoice app for contractors,contractor invoicing software; handyman invoice app,software (commercial),22,,Template intent belongs to /templates/handyman
-/industries/photographers-videographers,en,live,2026-11-17,industry,yes,invoicing software for photographers,photography invoice app,software (commercial),22,,Template intent belongs to /templates/photography
-/industries/consultants-coaches,en,live,2026-11-17,industry,yes,invoicing software for consultants,coaching invoice app,software (commercial),22,,Template intent belongs to /templates/consulting
-/industries/cleaning-services,en,live,2026-11-17,industry,yes,invoice app for cleaning business,cleaning business invoicing software,software (commercial),22,,Template intent belongs to /templates/cleaning-services
-/industries/personal-trainers,en,live,2026-11-17,industry,yes,invoicing for personal trainers,personal trainer invoice template,software (commercial),22,,Owns 'personal trainer invoice template' until a template page exists
-/industries/auto-detailing-mechanics,en,live,2026-11-17,industry,yes,invoice app for mechanics,auto detailing invoicing software,software (commercial),22,,Template intent belongs to /templates/auto-detailing
-/compare,en,live,2026-11-18,hub,en-only,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,
-/compare/quickbooks,en,live,2026-11-17,compare,en-only,quickbooks alternative,quickbooks vs invoicor; apps like quickbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/freshbooks,en,live,2026-11-17,compare,en-only,freshbooks alternative,freshbooks vs invoicor; apps like freshbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/invoice2go,en,live,2026-11-17,compare,en-only,invoice2go alternative,invoice2go vs invoicor; apps like invoice2go,compare,23,24.0 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/wave,en,live,2026-11-17,compare,en-only,wave alternative,wave vs invoicor; apps like wave,compare,23,31.4 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/xero,en,live,2026-11-17,compare,en-only,xero alternative,xero vs invoicor; apps like xero,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/zoho-invoice,en,live,2026-11-17,compare,en-only,zoho invoice alternative,zoho invoice vs invoicor; apps like zoho invoice,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/square-invoices,en,live,2026-11-17,compare,en-only,square invoices alternative,square invoices vs invoicor; apps like square invoices,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/honeybook,en,live,2026-11-17,compare,en-only,honeybook alternative,honeybook vs invoicor; apps like honeybook,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/bonsai,en,live,2026-11-17,compare,en-only,bonsai alternative,bonsai vs invoicor; apps like bonsai,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/stripe-invoices,en,live,2026-11-17,compare,en-only,stripe invoicing alternative,stripe invoicing vs invoicor; apps like stripe invoicing,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1"
-/compare/invoice-simple,en,planned,,compare,en-only,invoice simple alternative,invoice simple vs invoicor,compare,23 / 56,,The biggest App Store competitors; missing today
-/help,en,live,2026-11-18,support,yes,invoicor help,invoicor faq,support,24,,
-/affiliate,en,live,2026-11-18,program,yes,invoicor affiliate program,invoice app affiliate program,program,24 / 59,,
-/about,en,planned,,trust,yes,about invoicor,,brand / trust,24,,E-E-A-T
-/contact,en,planned,,trust,yes,contact invoicor,,brand / trust,24,,E-E-A-T
-/terms,en,live,2026-11-18,legal,yes,invoicor terms of service,,legal,24,,Not targeted
-/privacy,en,live,2026-11-18,legal,yes,invoicor privacy policy,,legal,24,,Not targeted
-/guides,en,planned,,hub,en-only,invoicing guide,how to invoice,learn,42,,
-/guides/how-to-write-an-invoice,en,planned,,guide,en-only,how to write an invoice,,learn (how-to),42,,
-/guides/what-to-include-on-an-invoice,en,planned,,guide,en-only,what to include on an invoice,,learn (how-to),42,,
-/guides/invoice-vs-receipt,en,planned,,guide,en-only,invoice vs receipt,,learn (how-to),42,,
-/guides/invoice-payment-terms,en,planned,,guide,en-only,invoice payment terms,,learn (how-to),42,,
-/guides/how-to-number-invoices,en,planned,,guide,en-only,invoice numbering,,learn (how-to),42,,
-/guides/late-payment-email,en,planned,,guide,en-only,late payment email template,,learn (how-to),42,,
-/templates/invoice-template-word,en,planned,,template (file format),en-only,invoice template word,,download,53,,Big-volume quick wins
-/templates/invoice-template-excel,en,planned,,template (file format),en-only,invoice template excel,,download,53,,Big-volume quick wins
-/templates/invoice-template-google-docs,en,planned,,template (file format),en-only,invoice template google docs,,download,53,,Big-volume quick wins
-/templates/invoice-template-pdf,en,planned,,template (file format),en-only,invoice template pdf,,download,53,,Big-volume quick wins
-/free-receipt-generator,en,planned,,generator,yes,free receipt generator,,tool (do),44,,
-/free-estimate-generator,en,planned,,generator,yes,free estimate generator,,tool (do),44,,
-/templates/electrician,en,live,2026-11-18,template,yes,electrician invoice template,electrical invoice template; electrician invoice example,template (download/fill),36+ (2026-11-18),,Takes 'electrician invoice template' over from /industries/electricians
-/templates/construction,en,live,2026-11-18,template,yes,construction invoice template,contractor invoice template; progress billing invoice,template (download/fill),36+ (2026-11-18),,
-/templates/roofing,en,live,2026-11-18,template,yes,roofing invoice template,roofer invoice template; roof replacement invoice,template (download/fill),36+ (2026-11-18),,
-/templates/painting,en,live,2026-11-18,template,yes,painting invoice template,painter invoice template; house painting invoice,template (download/fill),36+ (2026-11-18),,
-/templates/web-development,en,live,2026-11-18,template,yes,web development invoice template,web developer invoice template; freelance developer invoice,template (download/fill),36+ (2026-11-18),,
-/templates/personal-training,en,live,2026-11-18,template,yes,personal trainer invoice template,personal training invoice; fitness coach invoice,template (download/fill),36+ (2026-11-18),,Takes 'personal trainer invoice template' over from /industries/personal-trainers
-/templates/tutoring,en,live,2026-11-18,template,yes,tutoring invoice template,tutor invoice template; private lesson invoice,template (download/fill),36+ (2026-11-18),,
-/templates/catering,en,live,2026-11-18,template,yes,catering invoice template,catering invoice example; event catering invoice,template (download/fill),36+ (2026-11-18),,
-/templates/moving,en,live,2026-11-18,template,yes,moving company invoice template,movers invoice template; moving invoice,template (download/fill),36+ (2026-11-18),,
-/templates/pest-control,en,live,2026-11-18,template,yes,pest control invoice template,exterminator invoice template,template (download/fill),36+ (2026-11-18),,
-/industries/roofers,en,live,2026-11-18,industry,yes,roofing invoice app,roofing invoicing software; roofer billing app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/roofing
-/industries/painters,en,live,2026-11-18,industry,yes,invoice app for painters,painting contractor invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/painting
-/industries/web-developers,en,live,2026-11-18,industry,yes,invoice app for freelance developers,invoicing for web developers,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/web-development
-/industries/tutors,en,live,2026-11-18,industry,yes,invoice app for tutors,tutoring billing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/tutoring
-/industries/caterers,en,live,2026-11-18,industry,yes,invoice app for caterers,catering invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/catering
-/industries/movers,en,live,2026-11-18,industry,yes,invoice app for movers,moving company invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/moving
-/industries/pest-control,en,live,2026-11-18,industry,yes,pest control invoicing software,pest control invoice app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/pest-control
-/industries/virtual-assistants,en,live,2026-11-18,industry,yes,invoice app for virtual assistants,va invoicing software,software (commercial),36+ (2026-11-18),,
-/industries/pet-care,en,live,2026-11-18,industry,yes,invoice app for dog walkers,pet sitting invoice app; dog grooming invoice,software (commercial),36+ (2026-11-18),,
-/industries/hair-makeup-artists,en,live,2026-11-18,industry,yes,invoice app for makeup artists,hair stylist invoice app; bridal makeup invoice,software (commercial),36+ (2026-11-18),,
-/compare/invoice-fly,en,live,2026-11-18,compare,en-only,invoice fly alternative,invoice fly pricing; invoice fly vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/bookipi,en,live,2026-11-18,compare,en-only,bookipi alternative,bookipi pricing; bookipi vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/joist,en,live,2026-11-18,compare,en-only,joist alternative,joist pricing; joist vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/jobber,en,live,2026-11-18,compare,en-only,jobber alternative,jobber pricing; jobber vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/housecall-pro,en,live,2026-11-18,compare,en-only,housecall pro alternative,housecall pro pricing; housecall pro vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/invoice-ninja,en,live,2026-11-18,compare,en-only,invoice ninja alternative,invoice ninja pricing; invoice ninja vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/harvest,en,live,2026-11-18,compare,en-only,harvest alternative,harvest pricing; harvest vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/servicem8,en,live,2026-11-18,compare,en-only,servicem8 alternative,servicem8 pricing; servicem8 vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/billdu,en,live,2026-11-18,compare,en-only,billdu alternative,billdu pricing; billdu vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/compare/zervant,en,live,2026-11-18,compare,en-only,zervant alternative,zervant pricing; zervant vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18
-/tools,en,live,2026-11-18,tool,yes,free invoicing tools,free business calculators; invoice tools,tool (do),T1 (2026-11-18),,
-/tools/vat-calculator,en,live,2026-11-18,tool,yes,vat calculator,add vat calculator; remove vat calculator; reverse vat calculator,tool (do),T1 (2026-11-18),,
-/tools/hours-calculator,en,live,2026-11-18,tool,yes,hours calculator,work hours calculator; time to decimal hours; timesheet calculator,tool (do),T1 (2026-11-18),,
-/tools/hourly-rate-calculator,en,live,2026-11-18,tool,yes,freelance hourly rate calculator,hourly rate calculator; day rate calculator; how much to charge per hour,tool (do),T1 (2026-11-18),,
-/android,en,live,2026-11-18,android,yes,invoicor for android: coming soon,,,,,key from the URL or title (npm run pages); check it
-/templates/virtual-assistant,en,live,2026-11-26,template,yes,virtual assistant invoice template,va invoice template; virtual assistant invoice pdf,template (download/fill),W1-A,,"gap: industry page exists, no template"
-/templates/pet-sitting,en,live,2026-11-26,template,yes,pet sitting invoice template,dog walking invoice template; pet sitter invoice,template (download/fill),W1-A,,gap: industry /industries/pet-care exists
-/templates/makeup-artist,en,live,2026-11-26,template,yes,makeup artist invoice template,hair and makeup invoice template; mua invoice,template (download/fill),W1-A,,gap: industry /industries/hair-makeup-artists exists
-/templates/carpentry,en,live,2026-11-26,template,yes,carpentry invoice template,carpenter invoice template; woodwork invoice,template (download/fill),W1-A,,
-/templates/flooring,en,live,2026-11-26,template,yes,flooring invoice template,flooring installation invoice; floor installer invoice,template (download/fill),W1-A,,
-/templates/tile-installation,en,live,2026-11-26,template,yes,tile installation invoice template,tiling invoice template; tiler invoice,template (download/fill),W1-A,,
-/templates/drywall,en,live,2026-11-26,template,yes,drywall invoice template,drywall contractor invoice; plastering invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
-/templates/masonry,en,live,2026-11-26,template,yes,masonry invoice template,bricklayer invoice template; concrete invoice,template (download/fill),W1-A,,
-/templates/fence-installation,en,live,2026-11-26,template,yes,fence installation invoice template,fencing invoice template; fence contractor invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
-/templates/pool-service,en,live,2026-11-26,template,yes,pool service invoice template,pool cleaning invoice; pool maintenance invoice,template (download/fill),W1-A,,
-/templates/window-cleaning,en,live,2026-11-26,template,yes,window cleaning invoice template,window cleaner invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways
-/templates/pressure-washing,en,live,2026-11-26,template,yes,pressure washing invoice template,power washing invoice template,template (download/fill),W1-A,,
-/templates/tree-service,en,live,2026-11-26,template,yes,tree service invoice template,tree removal invoice; arborist invoice template,template (download/fill),W1-A,,
-/templates/snow-removal,en,live,2026-11-26,template,yes,snow removal invoice template,snow plowing invoice template,template (download/fill),W1-A,,
-/templates/locksmith,en,live,2026-11-26,template,yes,locksmith invoice template,locksmith receipt,template (download/fill),W1-A,,
-/templates/appliance-repair,en,live,2026-11-26,template,yes,appliance repair invoice template,appliance repair receipt; repair technician invoice,template (download/fill),W1-A,,
-/templates/junk-removal,en,live,2026-11-26,template,yes,junk removal invoice template,hauling invoice template,template (download/fill),W1-A,,
-/templates/carpet-cleaning,en,live,2026-11-26,template,yes,carpet cleaning invoice template,upholstery cleaning invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways
-/templates/interior-design,en,live,2026-11-26,template,yes,interior design invoice template,interior designer invoice,template (download/fill),W1-A,,
-/templates/remodeling,en,live,2026-11-26,template,yes,remodeling invoice template,home renovation invoice template; kitchen remodel invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
-/templates/garage-door-repair,en,live,2026-11-26,template,yes,garage door repair invoice template,garage door installation invoice,template (download/fill),W1-A,,no industry page yet; auto repair is taken by /templates/auto-detailing
-/templates/dj,en,live,2026-11-26,template,yes,dj invoice template,dj services invoice; wedding dj invoice,template (download/fill),W1-A,,
-/templates/event-planning,en,live,2026-11-26,template,yes,event planner invoice template,event planning invoice; wedding planner invoice,template (download/fill),W1-A,,
-/templates/florist,en,live,2026-11-26,template,yes,florist invoice template,flower shop invoice; wedding florist invoice,template (download/fill),W1-A,,
-/templates/massage-therapy,en,live,2026-11-26,template,yes,massage therapy invoice template,massage therapist invoice; massage receipt,template (download/fill),W1-A,,
-/templates/translation,en,live,2026-11-26,template,yes,translation invoice template,translator invoice template,template (download/fill),W1-A,,
-/templates/copywriting,en,live,2026-11-26,template,yes,copywriter invoice template,freelance writer invoice template,template (download/fill),W1-A,,
-/templates/social-media-management,en,live,2026-11-26,template,yes,social media manager invoice template,social media marketing invoice,template (download/fill),W1-A,,
-/templates/music-lessons,en,live,2026-11-26,template,yes,music teacher invoice template,music lesson invoice; piano lesson invoice,template (download/fill),W1-A,,
-/templates/bookkeeping,en,live,2026-11-26,template,yes,bookkeeping invoice template,bookkeeper invoice template,template (download/fill),W1-A,,
-/industries/carpenters,en,live,2026-11-26,industry,yes,invoice app for carpenters,,app for my trade,W1-A,,
-/industries/flooring-installers,en,live,2026-11-26,industry,yes,invoice app for flooring installers,,app for my trade,W1-A,,
-/industries/tile-installers,en,live,2026-11-26,industry,yes,invoice app for tile installers,,app for my trade,W1-A,,
-/industries/masons,en,live,2026-11-26,industry,yes,invoice app for masons,,app for my trade,W1-A,,
-/industries/pool-service,en,live,2026-11-26,industry,yes,invoice app for pool service companies,,app for my trade,W1-A,,
-/industries/window-cleaners,en,live,2026-11-26,industry,yes,invoice app for window cleaners,,app for my trade,W1-A,,
-/industries/pressure-washing,en,live,2026-11-26,industry,yes,invoice app for pressure washing businesses,,app for my trade,W1-A,,
-/industries/tree-service,en,live,2026-11-26,industry,yes,invoice app for tree service companies,,app for my trade,W1-A,,
-/industries/snow-removal,en,live,2026-11-26,industry,yes,invoice app for snow removal businesses,,app for my trade,W1-A,,
-/industries/locksmiths,en,live,2026-11-26,industry,yes,invoice app for locksmiths,,app for my trade,W1-A,,
-/industries/appliance-repair,en,live,2026-11-26,industry,yes,invoice app for appliance repair technicians,,app for my trade,W1-A,,
-/industries/junk-removal,en,live,2026-11-26,industry,yes,invoice app for junk removal businesses,,app for my trade,W1-A,,
-/industries/carpet-cleaners,en,live,2026-11-26,industry,yes,invoice app for carpet cleaners,,app for my trade,W1-A,,
-/industries/interior-designers,en,live,2026-11-26,industry,yes,invoice app for interior designers,,app for my trade,W1-A,,
-/industries/djs,en,live,2026-11-26,industry,yes,invoice app for djs,,app for my trade,W1-A,,
-/industries/event-planners,en,live,2026-11-26,industry,yes,invoice app for event planners,,app for my trade,W1-A,,
-/industries/florists,en,live,2026-11-26,industry,yes,invoice app for florists,,app for my trade,W1-A,,
-/industries/massage-therapists,en,live,2026-11-26,industry,yes,invoice app for massage therapists,,app for my trade,W1-A,,
-/industries/translators,en,live,2026-11-26,industry,yes,invoice app for translators,,app for my trade,W1-A,,
-/industries/copywriters,en,live,2026-11-26,industry,yes,invoice app for copywriters,,app for my trade,W1-A,,
-/industries/social-media-managers,en,live,2026-11-26,industry,yes,invoice app for social media managers,,app for my trade,W1-A,,
-/industries/music-teachers,en,live,2026-11-26,industry,yes,invoice app for music teachers,,app for my trade,W1-A,,
-/industries/bookkeepers,en,live,2026-11-26,industry,yes,invoice app for bookkeepers,,app for my trade,W1-A,,
-/templates/photography-deposit-invoice,en,planned,,template (billing type),yes,photography deposit invoice,photographer deposit invoice; wedding photography deposit,template: deposit,W1-B,,
-/templates/catering-deposit-invoice,en,planned,,template (billing type),yes,catering deposit invoice,catering deposit invoice template,template: deposit,W1-B,,
-/templates/contractor-deposit-invoice,en,planned,,template (billing type),yes,contractor deposit invoice,construction deposit invoice; down payment invoice,template: deposit,W1-B,,
-/templates/roofing-deposit-invoice,en,planned,,template (billing type),yes,roofing deposit invoice,roofer deposit invoice,template: deposit,W1-B,,
-/templates/painting-deposit-invoice,en,planned,,template (billing type),yes,painting deposit invoice,painter deposit invoice,template: deposit,W1-B,,
-/templates/dj-deposit-invoice,en,planned,,template (billing type),yes,dj deposit invoice,wedding dj deposit,template: deposit,W1-B,,
-/templates/construction-progress-invoice,en,planned,,template (billing type),yes,construction progress invoice,progress billing invoice; progress payment invoice,template: progress,W1-B,,
-/templates/web-development-milestone-invoice,en,planned,,template (billing type),yes,web development milestone invoice,website project milestone invoice,template: progress,W1-B,,
-/templates/video-production-milestone-invoice,en,planned,,template (billing type),yes,video production milestone invoice,videographer milestone invoice,template: progress,W1-B,,
-/templates/consulting-hourly-invoice,en,planned,,template (billing type),yes,consulting hourly invoice,hourly consultant invoice,template: hourly,W1-B,,
-/templates/virtual-assistant-hourly-invoice,en,planned,,template (billing type),yes,virtual assistant hourly invoice,va hourly invoice,template: hourly,W1-B,,
-/templates/handyman-hourly-invoice,en,planned,,template (billing type),yes,handyman hourly invoice,handyman hourly rate invoice,template: hourly,W1-B,,
-/templates/bookkeeping-hourly-invoice,en,planned,,template (billing type),yes,bookkeeping hourly invoice,bookkeeper hourly invoice,template: hourly,W1-B,,
-/templates/plumbing-labor-and-materials-invoice,en,planned,,template (billing type),yes,plumbing labor and materials invoice,plumbing parts and labor invoice,template: labor and materials,W1-B,,
-/templates/electrical-labor-and-materials-invoice,en,planned,,template (billing type),yes,electrical labor and materials invoice,electrician parts and labor invoice,template: labor and materials,W1-B,,
-/templates/hvac-labor-and-materials-invoice,en,planned,,template (billing type),yes,hvac labor and materials invoice,hvac parts and labor invoice,template: labor and materials,W1-B,,
-/templates/landscaping-labor-and-materials-invoice,en,planned,,template (billing type),yes,landscaping labor and materials invoice,landscaping materials invoice,template: labor and materials,W1-B,,
-/templates/consulting-retainer-invoice,en,planned,,template (billing type),yes,consulting retainer invoice,retainer invoice template,template: retainer,W1-B,,
-/templates/social-media-retainer-invoice,en,planned,,template (billing type),yes,social media retainer invoice,monthly social media invoice,template: retainer,W1-B,,
-/templates/web-development-retainer-invoice,en,planned,,template (billing type),yes,website maintenance retainer invoice,web maintenance invoice,template: retainer,W1-B,,
-/invoice-generator-uk,en,planned,,country,en-only,uk vat invoice requirements,invoice generator uk; vat invoice template uk,country rules + generator preset,W1-C,,"GBP, 20/5/0% VAT, VAT number; replaces /guides/invoice-requirements-uk"
-/invoice-generator-ireland,en,planned,,country,en-only,vat invoice ireland,invoice template ireland; irish vat invoice requirements,country rules + generator preset,W1-C,,"EUR, 23/13.5/9% VAT"
-/invoice-generator-australia,en,planned,,country,en-only,tax invoice australia,abn invoice template; gst invoice australia,country rules + generator preset,W1-C,,"AUD, 10% GST, ABN"
-/invoice-generator-new-zealand,en,planned,,country,en-only,gst invoice nz,tax invoice nz; nz invoice template,country rules + generator preset,W1-C,,"NZD, 15% GST, GST number"
-/invoice-generator-canada,en,planned,,country,en-only,gst hst invoice canada,canada invoice template; invoice requirements canada,country rules + generator preset,W1-C,,"CAD, GST/HST/PST by province"
-/invoice-generator-south-africa,en,planned,,country,en-only,vat invoice south africa,tax invoice south africa; sars invoice requirements,country rules + generator preset,W1-C,,"ZAR, 15% VAT"
-/reverse-charge-invoice,en,planned,,country,en-only,eu reverse charge invoice,vat reverse charge invoice; intra eu invoice,country rules + generator preset,W1-C,,EU B2B: both VAT numbers + the reverse-charge note; chunk 43 called it /eu
-/nl,nl,live,2026-11-18,home,yes,factuur app voor iphone,,,,,key from the URL or title (npm run pages); check it
-/de,de,live,2026-11-18,home,yes,rechnungs-app für iphone,,,,,key from the URL or title (npm run pages); check it
-/fr,fr,live,2026-11-18,home,yes,application facture iphone,,,,,key from the URL or title (npm run pages); check it
-/es,es,live,2026-11-18,home,yes,app para hacer facturas gratis en iphone,,,,,key from the URL or title (npm run pages); check it
-/it,it,live,2026-11-18,home,yes,"app per fatture su iphone, gratis per iniziare",,,,,key from the URL or title (npm run pages); check it
-/pt,pt,live,2026-11-18,home,yes,app de faturas para iphone,,,,,key from the URL or title (npm run pages); check it
-/pl,pl,live,2026-11-18,home,yes,darmowa aplikacja do faktur na iphone'a,,,,,key from the URL or title (npm run pages); check it
-/sv,sv,live,2026-11-18,home,yes,fakturaapp för iphone,,,,,key from the URL or title (npm run pages); check it
-/da,da,live,2026-11-18,home,yes,faktura-app til iphone,,,,,key from the URL or title (npm run pages); check it
-/nb,nb,live,2026-11-18,home,yes,faktura-app for iphone,,,,,key from the URL or title (npm run pages); check it
-/nl/gratis-factuur-maken,nl,live,2026-11-18,generator,yes,gratis factuur maken,,,,,key from the URL or title (npm run pages); check it
-/de/rechnung-erstellen,de,live,2026-11-18,generator,yes,rechnung erstellen,,,,,key from the URL or title (npm run pages); check it
-/fr/creer-une-facture,fr,live,2026-11-18,generator,yes,creer une facture,,,,,key from the URL or title (npm run pages); check it
-/es/crear-factura,es,live,2026-11-18,generator,yes,crear factura,,,,,key from the URL or title (npm run pages); check it
-/it/crea-fattura,it,live,2026-11-18,generator,yes,crea fattura,,,,,key from the URL or title (npm run pages); check it
-/pt/criar-fatura,pt,live,2026-11-18,generator,yes,criar fatura,,,,,key from the URL or title (npm run pages); check it
-/pl/wystaw-fakture,pl,live,2026-11-18,generator,yes,wystaw fakture,,,,,key from the URL or title (npm run pages); check it
-/sv/skapa-faktura,sv,live,2026-11-18,generator,yes,skapa faktura,,,,,key from the URL or title (npm run pages); check it
-/da/lav-faktura,da,live,2026-11-18,generator,yes,lav faktura,,,,,key from the URL or title (npm run pages); check it
-/nb/lag-faktura,nb,live,2026-11-18,generator,yes,lag faktura,,,,,key from the URL or title (npm run pages); check it
-/nl/help,nl,live,2026-11-18,support,yes,help en veelgestelde vragen,,,,,key from the URL or title (npm run pages); check it
-/de/hilfe,de,live,2026-11-18,support,yes,hilfe und häufige fragen,,,,,key from the URL or title (npm run pages); check it
-/fr/aide,fr,live,2026-11-18,support,yes,aide et questions fréquentes,,,,,key from the URL or title (npm run pages); check it
-/es/ayuda,es,live,2026-11-18,support,yes,ayuda y preguntas frecuentes,,,,,key from the URL or title (npm run pages); check it
-/it/aiuto,it,live,2026-11-18,support,yes,centro assistenza e aiuto,,,,,key from the URL or title (npm run pages); check it
-/pt/ajuda,pt,live,2026-11-18,support,yes,ajuda e perguntas frequentes,,,,,key from the URL or title (npm run pages); check it
-/pl/pomoc,pl,live,2026-11-18,support,yes,pomoc i najczęstsze pytania,,,,,key from the URL or title (npm run pages); check it
-/sv/hjalp,sv,live,2026-11-18,support,yes,hjälp och vanliga frågor,,,,,key from the URL or title (npm run pages); check it
-/da/hjaelp,da,live,2026-11-18,support,yes,hjælp og ofte stillede spørgsmål,,,,,key from the URL or title (npm run pages); check it
-/nb/hjelp,nb,live,2026-11-18,support,yes,hjelp og vanlige spørsmål,,,,,key from the URL or title (npm run pages); check it
-/nl/android,nl,live,2026-11-18,android,yes,invoicor voor android: binnenkort,,,,,key from the URL or title (npm run pages); check it
-/de/android,de,live,2026-11-18,android,yes,invoicor für android: bald verfügbar,,,,,key from the URL or title (npm run pages); check it
-/fr/android,fr,live,2026-11-18,android,yes,invoicor pour android : bientôt disponible,,,,,key from the URL or title (npm run pages); check it
-/es/android,es,live,2026-11-18,android,yes,invoicor para android: muy pronto,,,,,key from the URL or title (npm run pages); check it
-/it/android,it,live,2026-11-18,android,yes,invoicor per android: in arrivo,,,,,key from the URL or title (npm run pages); check it
-/pt/android,pt,live,2026-11-18,android,yes,invoicor para android: em breve,,,,,key from the URL or title (npm run pages); check it
-/pl/android,pl,live,2026-11-18,android,yes,invoicor na androida: już wkrótce,,,,,key from the URL or title (npm run pages); check it
-/sv/android,sv,live,2026-11-18,android,yes,invoicor för android: kommer snart,,,,,key from the URL or title (npm run pages); check it
-/da/android,da,live,2026-11-18,android,yes,invoicor til android: kommer snart,,,,,key from the URL or title (npm run pages); check it
-/nb/android,nb,live,2026-11-18,android,yes,invoicor for android: kommer snart,,,,,key from the URL or title (npm run pages); check it
-/nl/tools,nl,live,2026-11-18,tool,yes,gratis tools voor zzp'ers: factuur en btw,,,,,key from the URL or title (npm run pages); check it
-/de/tools,de,live,2026-11-18,tool,yes,"kostenlose tools: rechnung, mwst-rechner & mehr",,,,,key from the URL or title (npm run pages); check it
-/fr/outils,fr,live,2026-11-18,tool,yes,"outils gratuits : facture, calcul tva, heures",,,,,key from the URL or title (npm run pages); check it
-/es/herramientas,es,live,2026-11-18,tool,yes,herramientas gratis para facturar,,,,,key from the URL or title (npm run pages); check it
-/it/strumenti,it,live,2026-11-18,tool,yes,"strumenti gratuiti: fattura, calcolo iva e ore",,,,,key from the URL or title (npm run pages); check it
-/pt/ferramentas,pt,live,2026-11-18,tool,yes,"ferramentas grátis: faturas, iva e horas",,,,,key from the URL or title (npm run pages); check it
-/pl/narzedzia,pl,live,2026-11-18,tool,yes,darmowe narzędzia: generator faktur i kalkulatory,,,,,key from the URL or title (npm run pages); check it
-/sv/verktyg,sv,live,2026-11-18,tool,yes,"gratis verktyg: faktura, momsräknare, timpris",,,,,key from the URL or title (npm run pages); check it
-/da/vaerktoejer,da,live,2026-11-18,tool,yes,gratis værktøjer: fakturagenerator og beregnere,,,,,key from the URL or title (npm run pages); check it
-/nb/verktoy,nb,live,2026-11-18,tool,yes,"gratis verktøy: faktura, mva og timepris",,,,,key from the URL or title (npm run pages); check it
-/nl/tools/btw-berekenen,nl,live,2026-11-18,tool,yes,btw berekenen,,,,,key from the URL or title (npm run pages); check it
-/de/tools/mehrwertsteuer-rechner,de,live,2026-11-18,tool,yes,mehrwertsteuer rechner,,,,,key from the URL or title (npm run pages); check it
-/fr/outils/calcul-tva,fr,live,2026-11-18,tool,yes,calcul tva,,,,,key from the URL or title (npm run pages); check it
-/es/herramientas/calculadora-iva,es,live,2026-11-18,tool,yes,calculadora iva,,,,,key from the URL or title (npm run pages); check it
-/it/strumenti/calcolo-iva,it,live,2026-11-18,tool,yes,calcolo iva,,,,,key from the URL or title (npm run pages); check it
-/pt/ferramentas/calcular-iva,pt,live,2026-11-18,tool,yes,calcular iva,,,,,key from the URL or title (npm run pages); check it
-/pl/narzedzia/kalkulator-vat,pl,live,2026-11-18,tool,yes,kalkulator vat,,,,,key from the URL or title (npm run pages); check it
-/sv/verktyg/momsraknare,sv,live,2026-11-18,tool,yes,momsräknare: räkna ut moms online gratis,,,,,key from the URL or title (npm run pages); check it
-/da/vaerktoejer/momsberegner,da,live,2026-11-18,tool,yes,momsberegner: beregn moms online (gratis),,,,,key from the URL or title (npm run pages); check it
-/nb/verktoy/mva-kalkulator,nb,live,2026-11-18,tool,yes,mva kalkulator,,,,,key from the URL or title (npm run pages); check it
-/nl/tools/uren-berekenen,nl,live,2026-11-18,tool,yes,uren berekenen,,,,,key from the URL or title (npm run pages); check it
-/de/tools/stundenrechner,de,live,2026-11-18,tool,yes,stundenrechner: arbeitsstunden für die rechnung,,,,,key from the URL or title (npm run pages); check it
-/fr/outils/calcul-heures,fr,live,2026-11-18,tool,yes,calcul heures,,,,,key from the URL or title (npm run pages); check it
-/es/herramientas/calculadora-horas,es,live,2026-11-18,tool,yes,calculadora horas,,,,,key from the URL or title (npm run pages); check it
-/it/strumenti/calcolo-ore,it,live,2026-11-18,tool,yes,calcolo ore,,,,,key from the URL or title (npm run pages); check it
-/pt/ferramentas/calculadora-horas,pt,live,2026-11-18,tool,yes,calculadora horas,,,,,key from the URL or title (npm run pages); check it
-/pl/narzedzia/kalkulator-godzin,pl,live,2026-11-18,tool,yes,kalkulator godzin,,,,,key from the URL or title (npm run pages); check it
-/sv/verktyg/timraknare,sv,live,2026-11-18,tool,yes,räkna timmar: gratis timräknare för fakturan,,,,,key from the URL or title (npm run pages); check it
-/da/vaerktoejer/timeberegner,da,live,2026-11-18,tool,yes,timeberegner: beregn timer til fakturaen,,,,,key from the URL or title (npm run pages); check it
-/nb/verktoy/timekalkulator,nb,live,2026-11-18,tool,yes,timekalkulator: regne ut timer til fakturaen,,,,,key from the URL or title (npm run pages); check it
-/nl/tools/uurtarief-berekenen,nl,live,2026-11-18,tool,yes,uurtarief berekenen,,,,,key from the URL or title (npm run pages); check it
-/de/tools/stundensatz-rechner,de,live,2026-11-18,tool,yes,stundensatz rechner,,,,,key from the URL or title (npm run pages); check it
-/fr/outils/calcul-taux-horaire,fr,live,2026-11-18,tool,yes,calcul taux horaire,,,,,key from the URL or title (npm run pages); check it
-/es/herramientas/calcular-precio-hora,es,live,2026-11-18,tool,yes,calcular precio hora,,,,,key from the URL or title (npm run pages); check it
-/it/strumenti/calcolo-tariffa-oraria,it,live,2026-11-18,tool,yes,calcolo tariffa oraria,,,,,key from the URL or title (npm run pages); check it
-/pt/ferramentas/calcular-preco-hora,pt,live,2026-11-18,tool,yes,calcular preco hora,,,,,key from the URL or title (npm run pages); check it
-/pl/narzedzia/kalkulator-stawki-godzinowej,pl,live,2026-11-18,tool,yes,kalkulator stawki godzinowej,,,,,key from the URL or title (npm run pages); check it
-/sv/verktyg/rakna-ut-timpris,sv,live,2026-11-18,tool,yes,rakna ut timpris,,,,,key from the URL or title (npm run pages); check it
-/da/vaerktoejer/beregn-timepris,da,live,2026-11-18,tool,yes,beregn timepris,,,,,key from the URL or title (npm run pages); check it
-/nb/verktoy/beregn-timepris,nb,live,2026-11-18,tool,yes,beregn timepris,,,,,key from the URL or title (npm run pages); check it
-/de/rechnung-pflichtangaben,de,planned,,country,local,pflichtangaben rechnung,rechnung pflichtangaben; was muss auf eine rechnung,country rules + generator preset,W1-C,,"§14 UStG, Kleinunternehmer §19; replaces /guides/invoice-requirements-germany; next to /de/rechnung-erstellen, must not compete with it"
-/nl/factuureisen,nl,planned,,country,local,factuureisen,wat moet er op een factuur; factuur eisen belastingdienst,country rules + generator preset,W1-C,,"btw-nummer, KvK, KOR; replaces /guides/invoice-requirements-netherlands"
-/fr/mentions-obligatoires-facture,fr,planned,,country,local,mentions obligatoires facture,facture mentions légales; mentions facture auto-entrepreneur,country rules + generator preset,W1-C,,"SIRET, TVA non applicable art. 293 B"
-https://learn.invoicor.com/how-to-use-an-invoice-maker-for-iphone,en,live,2026-11-10,blog,en-only,how to use an invoice maker for iphone,,learn,,,
-https://learn.invoicor.com/how-to-create-an-invoice-on-iphone-in-seconds,en,live,2026-11-10,blog,en-only,how to create an invoice on iphone in seconds,,learn,,,
-https://learn.invoicor.com/free-invoice-app-for-iphone-what-to-look-for,en,live,2026-11-11,blog,en-only,free invoice app for iphone what to look for,,learn,,,
-https://learn.invoicor.com/how-pdf-invoice-templates-work-on-iphone,en,live,2026-11-11,blog,en-only,how pdf invoice templates work on iphone,,learn,,,
-https://learn.invoicor.com/what-is-a-multi-currency-invoicing-app,en,live,2026-11-12,blog,en-only,what is a multi currency invoicing app,,learn,,,
-https://learn.invoicor.com/how-a-tax-calculator-helps-when-creating-invoices,en,live,2026-11-12,blog,en-only,how a tax calculator helps when creating invoices,,learn,,,
-https://learn.invoicor.com/how-to-share-an-invoice-pdf-from-iphone,en,live,2026-11-13,blog,en-only,how to share an invoice pdf from iphone,,learn,,,
-https://learn.invoicor.com/what-makes-an-invoice-look-professional,en,live,2026-11-13,blog,en-only,what makes an invoice look professional,,learn,,,
-https://learn.invoicor.com/invoice-creation-checklist-for-iphone-users,en,live,2026-11-14,blog,en-only,invoice creation checklist for iphone users,,learn,,,
-https://learn.invoicor.com/what-is-an-invoice-maker,en,live,2026-11-14,blog,en-only,what is an invoice maker,,learn,,,
-https://learn.invoicor.com/how-to-use-pdf-invoice-templates-on-iphone,en,live,2026-11-15,blog,en-only,how to use pdf invoice templates on iphone,,learn,,,
-https://learn.invoicor.com/how-to-calculate-tax-on-an-invoice-in-the-app,en,live,2026-11-15,blog,en-only,how to calculate tax on an invoice in the app,,learn,,,
-https://learn.invoicor.com/can-you-create-invoices-in-different-currencies,en,live,2026-11-16,blog,en-only,can you create invoices in different currencies,,learn,,,
-https://learn.invoicor.com/how-auto-fill-helps-you-create-invoices-faster,en,live,2026-11-16,blog,en-only,how auto fill helps you create invoices faster,,learn,,,
-https://learn.invoicor.com/how-to-share-invoices-instantly-from-iphone,en,live,2026-11-17,blog,en-only,how to share invoices instantly from iphone,,learn,,,
-https://learn.invoicor.com/how-to-create-a-receipt-on-iphone-in-minutes,en,live,2026-11-17,blog,en-only,how to create a receipt on iphone in minutes,,learn,,,
-https://learn.invoicor.com/how-to-send-an-invoice-from-iphone-by-email,en,live,2026-11-18,blog,en-only,how to send an invoice from iphone by email,,learn,,,
-https://learn.invoicor.com/how-to-save-an-invoice-as-a-pdf-on-iphone,en,live,2026-11-18,blog,en-only,how to save an invoice as a pdf on iphone,,learn,,,
-https://learn.invoicor.com/how-to-change-the-currency-on-an-invoice,en,live,2026-11-19,blog,en-only,how to change the currency on an invoice,,learn,,,
-https://learn.invoicor.com/how-to-reuse-invoice-details-on-iphone,en,live,2026-11-19,blog,en-only,how to reuse invoice details on iphone,,learn,,,
-https://learn.invoicor.com/how-to-number-invoices-on-iphone,en,live,2026-11-20,blog,en-only,how to number invoices on iphone,,learn,,,
-https://learn.invoicor.com/what-should-an-invoice-include,en,live,2026-11-20,blog,en-only,what should an invoice include,,learn,,,
-https://learn.invoicor.com/what-is-a-pdf-invoice,en,live,2026-11-21,blog,en-only,what is a pdf invoice,,learn,,,
-https://learn.invoicor.com/what-does-auto-fill-mean-in-an-invoice-app,en,live,2026-11-21,blog,en-only,what does auto fill mean in an invoice app,,learn,,,
-https://learn.invoicor.com/why-use-an-invoice-app-on-iphone,en,live,2026-11-22,blog,en-only,why use an invoice app on iphone,,learn,,,
-https://learn.invoicor.com/what-does-an-invoice-tax-calculator-do,en,live,2026-11-22,blog,en-only,what does an invoice tax calculator do,,learn,,,
-https://learn.invoicor.com/what-is-a-multi-currency-invoice,en,live,2026-11-23,blog,en-only,what is a multi currency invoice,,learn,,,
-https://learn.invoicor.com/best-invoice-app-features-for-freelancers-on-iphone,en,live,2026-11-23,blog,en-only,best invoice app features for freelancers on iphone,,learn,,,
-https://learn.invoicor.com/best-ways-to-send-invoices-from-iphone,en,live,2026-11-24,blog,en-only,best ways to send invoices from iphone,,learn,,,
-https://learn.invoicor.com/best-invoice-template-styles-for-mobile-use,en,live,2026-11-24,blog,en-only,best invoice template styles for mobile use,,learn,,,
-https://learn.invoicor.com/can-you-make-an-invoice-on-iphone-without-paper,en,live,2026-11-25,blog,en-only,can you make an invoice on iphone without paper,,learn,,,
-https://learn.invoicor.com/can-you-edit-an-invoice-after-saving-it,en,live,2026-11-25,blog,en-only,can you edit an invoice after saving it,,learn,,,
-https://learn.invoicor.com/can-you-send-an-invoice-as-a-pdf-from-iphone,en,live,2026-11-26,blog,en-only,can you send an invoice as a pdf from iphone,,learn,,,
-https://learn.invoicor.com/do-you-need-to-fill-every-invoice-field,en,live,2026-11-26,blog,en-only,do you need to fill every invoice field,,learn,,,
+url,lang,status,added,page_type,localize,primary_keyword,secondary_keywords,intent,chunk,baseline_position,notes,brief,avoid
+/,en,live,2026-11-18,home,yes,invoice app iphone,invoice maker app; invoicor,app / brand,19-20,3.9 (GSC 28d to 2026-11-18),Brand + app intent. Not 'free invoice generator' (that's the generator page).,,
+/free-invoice-generator,en,live,2026-11-18,generator,yes,free invoice generator,invoice generator; create invoice online; invoice maker online; invoice generator pdf,tool (do),30-35,,Owns all 'make an invoice online' intent. No variants like /invoice-generator-pdf.,,
+/templates,en,live,2026-11-18,hub,yes,invoice templates,free invoice template; invoice template by industry,browse,21,10.0 (GSC 28d to 2026-11-18),,,
+/templates/photography,en,live,2026-11-17,template,yes,photography invoice template,photographer invoice; photography invoice pdf,template (download/fill),21,,,,
+/templates/plumbing,en,live,2026-11-17,template,yes,plumbing invoice template,plumber invoice template; plumbing invoice pdf,template (download/fill),21,26.8 (GSC 28d to 2026-11-18),,,
+/templates/hvac,en,live,2026-11-17,template,yes,hvac invoice template,hvac service invoice; hvac invoice pdf,template (download/fill),21,54.0 (GSC 28d to 2026-11-18),,,
+/templates/freelance-design,en,live,2026-11-17,template,yes,graphic design invoice template,freelance design invoice; designer invoice template,template (download/fill),21,30.0 (GSC 28d to 2026-11-18),,,
+/templates/handyman,en,live,2026-11-17,template,yes,handyman invoice template,handyman invoice pdf; handyman receipt,template (download/fill),21,,,,
+/templates/videography,en,live,2026-11-17,template,yes,videography invoice template,videographer invoice template; video production invoice,template (download/fill),21,,,,
+/templates/landscaping,en,live,2026-11-17,template,yes,landscaping invoice template,lawn care invoice template; landscaping invoice pdf,template (download/fill),21,,,,
+/templates/consulting,en,live,2026-11-17,template,yes,consulting invoice template,consultant invoice template; consulting invoice word,template (download/fill),21,,,,
+/templates/cleaning-services,en,live,2026-11-17,template,yes,cleaning invoice template,cleaning service invoice; house cleaning invoice template,template (download/fill),21,,,,
+/templates/auto-detailing,en,live,2026-11-17,template,yes,auto repair invoice template,mechanic invoice template; auto detailing invoice,template (download/fill),21,,,,
+/industries,en,live,2026-11-18,hub,yes,invoicing software by industry,invoice app for small business,browse,22,,,,
+/industries/plumbers-hvac,en,live,2026-11-17,industry,yes,invoice app for plumbers,plumbing invoicing software; hvac invoicing software,software (commercial),22,,Template intent belongs to /templates/plumbing and /templates/hvac,,
+/industries/freelance-designers,en,live,2026-11-17,industry,yes,invoicing app for freelance designers,invoice software for creatives,software (commercial),22,18.8 (GSC 28d to 2026-11-18),,,
+/industries/landscaping-lawn-care,en,live,2026-11-17,industry,yes,landscaping invoicing software,lawn care invoice app,software (commercial),22,51.5 (GSC 28d to 2026-11-18),Template intent belongs to /templates/landscaping,,
+/industries/electricians,en,live,2026-11-17,industry,yes,invoice app for electricians,electrician invoicing software; electrician invoice template,software (commercial),22,46.0 (GSC 28d to 2026-11-18),Owns 'electrician invoice template' until a /templates/electrician page exists,,
+/industries/general-contractors,en,live,2026-11-17,industry,yes,invoice app for contractors,contractor invoicing software; handyman invoice app,software (commercial),22,,Template intent belongs to /templates/handyman,,
+/industries/photographers-videographers,en,live,2026-11-17,industry,yes,invoicing software for photographers,photography invoice app,software (commercial),22,,Template intent belongs to /templates/photography,,
+/industries/consultants-coaches,en,live,2026-11-17,industry,yes,invoicing software for consultants,coaching invoice app,software (commercial),22,,Template intent belongs to /templates/consulting,,
+/industries/cleaning-services,en,live,2026-11-17,industry,yes,invoice app for cleaning business,cleaning business invoicing software,software (commercial),22,,Template intent belongs to /templates/cleaning-services,,
+/industries/personal-trainers,en,live,2026-11-17,industry,yes,invoicing for personal trainers,personal trainer invoice template,software (commercial),22,,Owns 'personal trainer invoice template' until a template page exists,,
+/industries/auto-detailing-mechanics,en,live,2026-11-17,industry,yes,invoice app for mechanics,auto detailing invoicing software,software (commercial),22,,Template intent belongs to /templates/auto-detailing,,
+/compare,en,live,2026-11-18,hub,en-only,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,,,
+/compare/quickbooks,en,live,2026-11-17,compare,en-only,quickbooks alternative,quickbooks vs invoicor; apps like quickbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/freshbooks,en,live,2026-11-17,compare,en-only,freshbooks alternative,freshbooks vs invoicor; apps like freshbooks,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/invoice2go,en,live,2026-11-17,compare,en-only,invoice2go alternative,invoice2go vs invoicor; apps like invoice2go,compare,23,24.0 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/wave,en,live,2026-11-17,compare,en-only,wave alternative,wave vs invoicor; apps like wave,compare,23,31.4 (GSC 28d to 2026-11-18),"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/xero,en,live,2026-11-17,compare,en-only,xero alternative,xero vs invoicor; apps like xero,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/zoho-invoice,en,live,2026-11-17,compare,en-only,zoho invoice alternative,zoho invoice vs invoicor; apps like zoho invoice,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/square-invoices,en,live,2026-11-17,compare,en-only,square invoices alternative,square invoices vs invoicor; apps like square invoices,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/honeybook,en,live,2026-11-17,compare,en-only,honeybook alternative,honeybook vs invoicor; apps like honeybook,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/bonsai,en,live,2026-11-17,compare,en-only,bonsai alternative,bonsai vs invoicor; apps like bonsai,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/stripe-invoices,en,live,2026-11-17,compare,en-only,stripe invoicing alternative,stripe invoicing vs invoicor; apps like stripe invoicing,compare,23,,"Fix Invoicor price claims ($12/mo, unlimited) after decision D1",,
+/compare/invoice-simple,en,planned,,compare,en-only,invoice simple alternative,invoice simple vs invoicor,compare,later: compare,,The biggest App Store competitors; missing today,"Same blueprint as the other compares: Invoice Simple vs Invoicor, their prices and features from their own pricing page (sourced and dated), our facts from BRAND.md §10 and content/pricing.json.",
+/help,en,live,2026-11-18,support,yes,invoicor help,invoicor faq,support,24,,,,
+/affiliate,en,live,2026-11-18,program,yes,invoicor affiliate program,invoice app affiliate program,program,24 / 59,,,,
+/about,en,planned,,trust,yes,about invoicor,,brand / trust,later: trust pages (24),,E-E-A-T,"Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.",
+/contact,en,planned,,trust,yes,contact invoicor,,brand / trust,later: trust pages (24),,E-E-A-T,"How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).",
+/terms,en,live,2026-11-18,legal,yes,invoicor terms of service,,legal,24,,Not targeted,,
+/privacy,en,live,2026-11-18,legal,yes,invoicor privacy policy,,legal,24,,Not targeted,,
+/guides,en,planned,,hub,en-only,invoicing guide,how to invoice,learn,blog topics (L4),,,"Not on invoicor.com: guides go to the blog (decision D16, roadmap L4).",
+/guides/how-to-write-an-invoice,en,planned,,guide,en-only,how to write an invoice,,learn (how-to),blog topics (L4),,,Write on learn.invoicor.com (D16): a step-by-step how-to with a filled-in example and a link to the free generator.,Check the blog articles in PAGES.md (learn.invoicor.com section) first; e.g. learn:/how-to-create-an-invoice-on-iphone-in-seconds is close.
+/guides/what-to-include-on-an-invoice,en,planned,,guide,en-only,what to include on an invoice,,learn (how-to),blog topics (L4),,,"Write on the blog, but learn:/what-should-an-invoice-include already covers it: improve that article instead of a new one.",
+/guides/invoice-vs-receipt,en,planned,,guide,en-only,invoice vs receipt,,learn (how-to),blog topics (L4),,,"Write on the blog: the difference, when to send which; honest that Invoicor makes invoices (mark as paid), not receipts.",
+/guides/invoice-payment-terms,en,planned,,guide,en-only,invoice payment terms,,learn (how-to),blog topics (L4),,,"Write on the blog: Net 15/30/60, due on receipt, late fees, early-payment discounts, how to word them.",
+/guides/how-to-number-invoices,en,planned,,guide,en-only,invoice numbering,,learn (how-to),blog topics (L4),,,"Write on the blog, but learn:/how-to-number-invoices-on-iphone exists: improve that article instead.",
+/guides/late-payment-email,en,planned,,guide,en-only,late payment email template,,learn (how-to),blog topics (L4),,,"Write on the blog: friendly, firm and final reminder emails with templates; the app sends no reminders.",
+/templates/invoice-template-word,en,planned,,template (file format),en-only,invoice template word,,download,on hold: file downloads (53),,Big-volume quick wins,On hold: we don't offer a Word download (S1-n). Only build this when there's a real .docx file to download (chunk 53).,
+/templates/invoice-template-excel,en,planned,,template (file format),en-only,invoice template excel,,download,on hold: file downloads (53),,Big-volume quick wins,On hold: we don't offer an Excel download (S1-n). Only with a real .xlsx file (chunk 53).,
+/templates/invoice-template-google-docs,en,planned,,template (file format),en-only,invoice template google docs,,download,on hold: file downloads (53),,Big-volume quick wins,On hold: needs a real Google Docs copy link (chunk 53).,
+/templates/invoice-template-pdf,en,planned,,template (file format),en-only,invoice template pdf,,download,on hold: file downloads (53),,Big-volume quick wins,On hold: the generator already makes PDFs and the blog has PDF articles; check for overlap before building (chunk 53).,The free generator (/free-invoice-generator) and the blog's PDF articles.
+/free-receipt-generator,en,planned,,generator,yes,free receipt generator,,tool (do),later: needs code (44),,,"Needs code first (chunk 44): a receipt mode in the web generator. The page says plainly that the app itself makes invoices, not receipts.",
+/free-estimate-generator,en,planned,,generator,yes,free estimate generator,,tool (do),later: needs code (44),,,Needs code first (chunk 44): an estimate mode in the web generator. The page says plainly that the app has no estimates or quotes.,
+/templates/electrician,en,live,2026-11-18,template,yes,electrician invoice template,electrical invoice template; electrician invoice example,template (download/fill),36+ (2026-11-18),,Takes 'electrician invoice template' over from /industries/electricians,,
+/templates/construction,en,live,2026-11-18,template,yes,construction invoice template,contractor invoice template; progress billing invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/roofing,en,live,2026-11-18,template,yes,roofing invoice template,roofer invoice template; roof replacement invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/painting,en,live,2026-11-18,template,yes,painting invoice template,painter invoice template; house painting invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/web-development,en,live,2026-11-18,template,yes,web development invoice template,web developer invoice template; freelance developer invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/personal-training,en,live,2026-11-18,template,yes,personal trainer invoice template,personal training invoice; fitness coach invoice,template (download/fill),36+ (2026-11-18),,Takes 'personal trainer invoice template' over from /industries/personal-trainers,,
+/templates/tutoring,en,live,2026-11-18,template,yes,tutoring invoice template,tutor invoice template; private lesson invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/catering,en,live,2026-11-18,template,yes,catering invoice template,catering invoice example; event catering invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/moving,en,live,2026-11-18,template,yes,moving company invoice template,movers invoice template; moving invoice,template (download/fill),36+ (2026-11-18),,,,
+/templates/pest-control,en,live,2026-11-18,template,yes,pest control invoice template,exterminator invoice template,template (download/fill),36+ (2026-11-18),,,,
+/industries/roofers,en,live,2026-11-18,industry,yes,roofing invoice app,roofing invoicing software; roofer billing app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/roofing,,
+/industries/painters,en,live,2026-11-18,industry,yes,invoice app for painters,painting contractor invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/painting,,
+/industries/web-developers,en,live,2026-11-18,industry,yes,invoice app for freelance developers,invoicing for web developers,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/web-development,,
+/industries/tutors,en,live,2026-11-18,industry,yes,invoice app for tutors,tutoring billing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/tutoring,,
+/industries/caterers,en,live,2026-11-18,industry,yes,invoice app for caterers,catering invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/catering,,
+/industries/movers,en,live,2026-11-18,industry,yes,invoice app for movers,moving company invoicing software,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/moving,,
+/industries/pest-control,en,live,2026-11-18,industry,yes,pest control invoicing software,pest control invoice app,software (commercial),36+ (2026-11-18),,Template intent belongs to /templates/pest-control,,
+/industries/virtual-assistants,en,live,2026-11-18,industry,yes,invoice app for virtual assistants,va invoicing software,software (commercial),36+ (2026-11-18),,,,
+/industries/pet-care,en,live,2026-11-18,industry,yes,invoice app for dog walkers,pet sitting invoice app; dog grooming invoice,software (commercial),36+ (2026-11-18),,,,
+/industries/hair-makeup-artists,en,live,2026-11-18,industry,yes,invoice app for makeup artists,hair stylist invoice app; bridal makeup invoice,software (commercial),36+ (2026-11-18),,,,
+/compare/invoice-fly,en,live,2026-11-18,compare,en-only,invoice fly alternative,invoice fly pricing; invoice fly vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/bookipi,en,live,2026-11-18,compare,en-only,bookipi alternative,bookipi pricing; bookipi vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/joist,en,live,2026-11-18,compare,en-only,joist alternative,joist pricing; joist vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/jobber,en,live,2026-11-18,compare,en-only,jobber alternative,jobber pricing; jobber vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/housecall-pro,en,live,2026-11-18,compare,en-only,housecall pro alternative,housecall pro pricing; housecall pro vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/invoice-ninja,en,live,2026-11-18,compare,en-only,invoice ninja alternative,invoice ninja pricing; invoice ninja vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/harvest,en,live,2026-11-18,compare,en-only,harvest alternative,harvest pricing; harvest vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/servicem8,en,live,2026-11-18,compare,en-only,servicem8 alternative,servicem8 pricing; servicem8 vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/billdu,en,live,2026-11-18,compare,en-only,billdu alternative,billdu pricing; billdu vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/compare/zervant,en,live,2026-11-18,compare,en-only,zervant alternative,zervant pricing; zervant vs invoicor,compare,36+ (2026-11-18),,Prices sourced 2026-11-18,,
+/tools,en,live,2026-11-18,tool,yes,free invoicing tools,free business calculators; invoice tools,tool (do),T1 (2026-11-18),,,,
+/tools/vat-calculator,en,live,2026-11-18,tool,yes,vat calculator,add vat calculator; remove vat calculator; reverse vat calculator,tool (do),T1 (2026-11-18),,,,
+/tools/hours-calculator,en,live,2026-11-18,tool,yes,hours calculator,work hours calculator; time to decimal hours; timesheet calculator,tool (do),T1 (2026-11-18),,,,
+/tools/hourly-rate-calculator,en,live,2026-11-18,tool,yes,freelance hourly rate calculator,hourly rate calculator; day rate calculator; how much to charge per hour,tool (do),T1 (2026-11-18),,,,
+/android,en,live,2026-11-18,android,yes,invoicor for android: coming soon,,,,,key from the URL or title (npm run pages); check it,,
+/templates/virtual-assistant,en,live,2026-11-26,template,yes,virtual assistant invoice template,va invoice template; virtual assistant invoice pdf,template (download/fill),W1-A,,"gap: industry page exists, no template",,
+/templates/pet-sitting,en,live,2026-11-26,template,yes,pet sitting invoice template,dog walking invoice template; pet sitter invoice,template (download/fill),W1-A,,gap: industry /industries/pet-care exists,,
+/templates/makeup-artist,en,live,2026-11-26,template,yes,makeup artist invoice template,hair and makeup invoice template; mua invoice,template (download/fill),W1-A,,gap: industry /industries/hair-makeup-artists exists,,
+/templates/carpentry,en,live,2026-11-26,template,yes,carpentry invoice template,carpenter invoice template; woodwork invoice,template (download/fill),W1-A,,,,
+/templates/flooring,en,live,2026-11-26,template,yes,flooring invoice template,flooring installation invoice; floor installer invoice,template (download/fill),W1-A,,,,
+/templates/tile-installation,en,live,2026-11-26,template,yes,tile installation invoice template,tiling invoice template; tiler invoice,template (download/fill),W1-A,,,,
+/templates/drywall,en,live,2026-11-26,template,yes,drywall invoice template,drywall contractor invoice; plastering invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it,,
+/templates/masonry,en,live,2026-11-26,template,yes,masonry invoice template,bricklayer invoice template; concrete invoice,template (download/fill),W1-A,,,,
+/templates/fence-installation,en,live,2026-11-26,template,yes,fence installation invoice template,fencing invoice template; fence contractor invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it,,
+/templates/pool-service,en,live,2026-11-26,template,yes,pool service invoice template,pool cleaning invoice; pool maintenance invoice,template (download/fill),W1-A,,,,
+/templates/window-cleaning,en,live,2026-11-26,template,yes,window cleaning invoice template,window cleaner invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways,,
+/templates/pressure-washing,en,live,2026-11-26,template,yes,pressure washing invoice template,power washing invoice template,template (download/fill),W1-A,,,,
+/templates/tree-service,en,live,2026-11-26,template,yes,tree service invoice template,tree removal invoice; arborist invoice template,template (download/fill),W1-A,,,,
+/templates/snow-removal,en,live,2026-11-26,template,yes,snow removal invoice template,snow plowing invoice template,template (download/fill),W1-A,,,,
+/templates/locksmith,en,live,2026-11-26,template,yes,locksmith invoice template,locksmith receipt,template (download/fill),W1-A,,,,
+/templates/appliance-repair,en,live,2026-11-26,template,yes,appliance repair invoice template,appliance repair receipt; repair technician invoice,template (download/fill),W1-A,,,,
+/templates/junk-removal,en,live,2026-11-26,template,yes,junk removal invoice template,hauling invoice template,template (download/fill),W1-A,,,,
+/templates/carpet-cleaning,en,live,2026-11-26,template,yes,carpet cleaning invoice template,upholstery cleaning invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways,,
+/templates/interior-design,en,live,2026-11-26,template,yes,interior design invoice template,interior designer invoice,template (download/fill),W1-A,,,,
+/templates/remodeling,en,live,2026-11-26,template,yes,remodeling invoice template,home renovation invoice template; kitchen remodel invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it,,
+/templates/garage-door-repair,en,live,2026-11-26,template,yes,garage door repair invoice template,garage door installation invoice,template (download/fill),W1-A,,no industry page yet; auto repair is taken by /templates/auto-detailing,,
+/templates/dj,en,live,2026-11-26,template,yes,dj invoice template,dj services invoice; wedding dj invoice,template (download/fill),W1-A,,,,
+/templates/event-planning,en,live,2026-11-26,template,yes,event planner invoice template,event planning invoice; wedding planner invoice,template (download/fill),W1-A,,,,
+/templates/florist,en,live,2026-11-26,template,yes,florist invoice template,flower shop invoice; wedding florist invoice,template (download/fill),W1-A,,,,
+/templates/massage-therapy,en,live,2026-11-26,template,yes,massage therapy invoice template,massage therapist invoice; massage receipt,template (download/fill),W1-A,,,,
+/templates/translation,en,live,2026-11-26,template,yes,translation invoice template,translator invoice template,template (download/fill),W1-A,,,,
+/templates/copywriting,en,live,2026-11-26,template,yes,copywriter invoice template,freelance writer invoice template,template (download/fill),W1-A,,,,
+/templates/social-media-management,en,live,2026-11-26,template,yes,social media manager invoice template,social media marketing invoice,template (download/fill),W1-A,,,,
+/templates/music-lessons,en,live,2026-11-26,template,yes,music teacher invoice template,music lesson invoice; piano lesson invoice,template (download/fill),W1-A,,,,
+/templates/bookkeeping,en,live,2026-11-26,template,yes,bookkeeping invoice template,bookkeeper invoice template,template (download/fill),W1-A,,,,
+/industries/carpenters,en,live,2026-11-26,industry,yes,invoice app for carpenters,,app for my trade,W1-A,,,,
+/industries/flooring-installers,en,live,2026-11-26,industry,yes,invoice app for flooring installers,,app for my trade,W1-A,,,,
+/industries/tile-installers,en,live,2026-11-26,industry,yes,invoice app for tile installers,,app for my trade,W1-A,,,,
+/industries/masons,en,live,2026-11-26,industry,yes,invoice app for masons,,app for my trade,W1-A,,,,
+/industries/pool-service,en,live,2026-11-26,industry,yes,invoice app for pool service companies,,app for my trade,W1-A,,,,
+/industries/window-cleaners,en,live,2026-11-26,industry,yes,invoice app for window cleaners,,app for my trade,W1-A,,,,
+/industries/pressure-washing,en,live,2026-11-26,industry,yes,invoice app for pressure washing businesses,,app for my trade,W1-A,,,,
+/industries/tree-service,en,live,2026-11-26,industry,yes,invoice app for tree service companies,,app for my trade,W1-A,,,,
+/industries/snow-removal,en,live,2026-11-26,industry,yes,invoice app for snow removal businesses,,app for my trade,W1-A,,,,
+/industries/locksmiths,en,live,2026-11-26,industry,yes,invoice app for locksmiths,,app for my trade,W1-A,,,,
+/industries/appliance-repair,en,live,2026-11-26,industry,yes,invoice app for appliance repair technicians,,app for my trade,W1-A,,,,
+/industries/junk-removal,en,live,2026-11-26,industry,yes,invoice app for junk removal businesses,,app for my trade,W1-A,,,,
+/industries/carpet-cleaners,en,live,2026-11-26,industry,yes,invoice app for carpet cleaners,,app for my trade,W1-A,,,,
+/industries/interior-designers,en,live,2026-11-26,industry,yes,invoice app for interior designers,,app for my trade,W1-A,,,,
+/industries/djs,en,live,2026-11-26,industry,yes,invoice app for djs,,app for my trade,W1-A,,,,
+/industries/event-planners,en,live,2026-11-26,industry,yes,invoice app for event planners,,app for my trade,W1-A,,,,
+/industries/florists,en,live,2026-11-26,industry,yes,invoice app for florists,,app for my trade,W1-A,,,,
+/industries/massage-therapists,en,live,2026-11-26,industry,yes,invoice app for massage therapists,,app for my trade,W1-A,,,,
+/industries/translators,en,live,2026-11-26,industry,yes,invoice app for translators,,app for my trade,W1-A,,,,
+/industries/copywriters,en,live,2026-11-26,industry,yes,invoice app for copywriters,,app for my trade,W1-A,,,,
+/industries/social-media-managers,en,live,2026-11-26,industry,yes,invoice app for social media managers,,app for my trade,W1-A,,,,
+/industries/music-teachers,en,live,2026-11-26,industry,yes,invoice app for music teachers,,app for my trade,W1-A,,,,
+/industries/bookkeepers,en,live,2026-11-26,industry,yes,invoice app for bookkeepers,,app for my trade,W1-A,,,,
+/templates/photography-deposit-invoice,en,planned,,template (billing type),yes,photography deposit invoice,photographer deposit invoice; wedding photography deposit,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit (retainer) invoice a photographer sends when a client books a date: what it secures (the date, prep time), usual sizes (25–50%), non-refundable wording and the cancellation and reschedule policy, due before the date is held. Sample: a wedding booking deposit. Show how the balance invoice later lists the deposit as a negative line. FAQs: deposit vs retainer, refundable or not, rescheduling, how it appears on the final invoice.","General photography invoice fields, usage rights and licensing (owned by /templates/photography): one sentence and a link."
+/templates/catering-deposit-invoice,en,planned,,template (billing type),yes,catering deposit invoice,catering deposit invoice template,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit that locks a catering date: deposit size, the final headcount deadline and how the final invoice adjusts to the guaranteed count, a tasting fee credited against the deposit, cancellation windows. Sample: a 120-guest wedding deposit.","Per-head menu pricing, service charge vs gratuity, staffing lines (owned by /templates/catering)."
+/templates/contractor-deposit-invoice,en,planned,,template (billing type),yes,contractor deposit invoice,construction deposit invoice; down payment invoice,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The down payment a contractor takes before starting: what it pays for (materials, scheduling), how big it may be (some states cap home-improvement down payments, e.g. California: $1,000 or 10% of the contract price, whichever is less, Business and Professions Code §7159.5; verify and date it), a materials deposit vs a booking deposit, what the contract should say. Sample: a kitchen job deposit.",Progress billing and retainage (owned by /templates/construction-progress-invoice); general construction fields (/templates/construction).
+/templates/roofing-deposit-invoice,en,planned,,template (billing type),yes,roofing deposit invoice,roofer deposit invoice,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit before a roof job: ordering shingles and materials, scheduling around weather, insurance-claim jobs (homeowner deductible, insurer's first and final checks, hedged), what happens to the deposit if the job is delayed. Sample: a full re-roof materials deposit.","Roofing line items per square, tear-off and disposal (owned by /templates/roofing)."
+/templates/painting-deposit-invoice,en,planned,,template (billing type),yes,painting deposit invoice,painter deposit invoice,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit a painter takes for paint and the booked days: color selection before ordering, change orders after the deposit, interior vs exterior weather terms. Sample: an exterior repaint deposit.","Per-room and per-square-foot pricing, prep lines (owned by /templates/painting)."
+/templates/dj-deposit-invoice,en,planned,,template (billing type),yes,dj deposit invoice,wedding dj deposit,template: deposit,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The date-hold deposit for a DJ booking: deposit size, what it covers, non-refundable terms, balance due before the event, overtime rate agreed in advance. Sample: a wedding DJ deposit.","Full DJ invoice lines (hours, equipment, travel; owned by /templates/dj)."
+/templates/construction-progress-invoice,en,planned,,template (billing type),yes,construction progress invoice,progress billing invoice; progress payment invoice,template: progress,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Progress billing: invoicing by percentage complete or by milestone against a schedule of values, retainage (often 5–10% held until completion), change orders on their own lines, lien waivers (hedged, state rules vary); the AIA G702/G703 forms exist as an industry standard, but this is a plain invoice. Sample: the 3rd progress invoice of a home addition with previous payments shown.",Deposits and down payments (owned by /templates/contractor-deposit-invoice); general construction fields (/templates/construction).
+/templates/web-development-milestone-invoice,en,planned,,template (billing type),yes,web development milestone invoice,website project milestone invoice,template: progress,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Billing a website project in milestones (discovery, design, build, launch): what counts as done (acceptance), revision rounds, scope changes as new lines, deposit at the start. Sample: milestone 2 of 4.",Monthly maintenance retainers (owned by /templates/web-development-retainer-invoice); general web development fields (/templates/web-development).
+/templates/video-production-milestone-invoice,en,planned,,template (billing type),yes,video production milestone invoice,videographer milestone invoice,template: progress,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Billing a video project in stages: pre-production, shoot days, edit and revision rounds, delivery; what each milestone includes, extra revision rounds as lines, usage terms per stage. Sample: the post-production milestone.","Day rates, crew and usage rights (owned by /templates/videography)."
+/templates/consulting-hourly-invoice,en,planned,,template (billing type),yes,consulting hourly invoice,hourly consultant invoice,template: hourly,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly consulting invoices: hours × rate, billing increments (e.g. 0.25 h), how much detail per entry, minimum billing, travel time; hours come from your own timesheet (the app doesn't track time); link the free hours calculator. Sample: a month of advisory hours.",Retainers (owned by /templates/consulting-retainer-invoice); setting your rate (the rate calculator in /tools); general consulting fields (/templates/consulting).
+/templates/virtual-assistant-hourly-invoice,en,planned,,template (billing type),yes,virtual assistant hourly invoice,va hourly invoice,template: hourly,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly VA invoices: hours by task category, pre-paid blocks of hours vs billing after, time zones and response times, tools and subscriptions passed through. Sample: a two-week period for one client.",General VA fields (owned by /templates/virtual-assistant); the app pitch for VAs (/industries/virtual-assistants).
+/templates/handyman-hourly-invoice,en,planned,,template (billing type),yes,handyman hourly invoice,handyman hourly rate invoice,template: hourly,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly handyman billing: hourly vs flat per job, minimum charge (often 1–2 hours), trip charge, materials at cost or with a markup, rounding. Sample: a half-day of small repairs.",General handyman invoice fields (owned by /templates/handyman).
+/templates/bookkeeping-hourly-invoice,en,planned,,template (billing type),yes,bookkeeping hourly invoice,bookkeeper hourly invoice,template: hourly,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly bookkeeping: catch-up and clean-up work billed by the hour vs the usual monthly fixed fee, what to list per entry, year-end extras. Sample: a catch-up project of 3 months of books.",The monthly fixed-fee bookkeeping invoice (owned by /templates/bookkeeping).
+/templates/plumbing-labor-and-materials-invoice,en,planned,,template (billing type),yes,plumbing labor and materials invoice,plumbing parts and labor invoice,template: labor and materials,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Separating labor and parts: labor as hours × rate or a flat fee, each part on its own line, markup on parts (be transparent), parts vs workmanship warranty; sales tax on parts vs labor differs by state, and the app applies one tax rate per invoice (say how to handle it). Sample: a water heater replacement.",General plumbing invoice fields (owned by /templates/plumbing).
+/templates/electrical-labor-and-materials-invoice,en,planned,,template (billing type),yes,electrical labor and materials invoice,electrician parts and labor invoice,template: labor and materials,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for electricians: wire by the foot, devices and fixtures (supplied by you or the customer), permit fees as a pass-through line, labor hours; tax on materials vs labor (state rules, one tax rate per invoice). Sample: a panel upgrade.",General electrician invoice fields (owned by /templates/electrician).
+/templates/hvac-labor-and-materials-invoice,en,planned,,template (billing type),yes,hvac labor and materials invoice,hvac parts and labor invoice,template: labor and materials,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for HVAC: equipment, refrigerant by the pound, parts, labor hours, warranty registration, disposal of old units; tax rules hedged. Sample: an AC condenser replacement.",General HVAC invoice fields and maintenance plans (owned by /templates/hvac).
+/templates/landscaping-labor-and-materials-invoice,en,planned,,template (billing type),yes,landscaping labor and materials invoice,landscaping materials invoice,template: labor and materials,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for landscaping projects: plants, soil and mulch by the cubic yard, stone by the ton, crew hours, equipment and disposal fees. Sample: a new front-yard bed install.",Recurring lawn care visits and general landscaping fields (owned by /templates/landscaping).
+/templates/consulting-retainer-invoice,en,planned,,template (billing type),yes,consulting retainer invoice,retainer invoice template,template: retainer,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Monthly consulting retainers: paying for availability vs a block of hours, invoicing at the start of the month, unused hours (roll over or not), the overage rate; in the app, duplicate last month's invoice. Sample: a monthly advisory retainer with an overage line.",Hourly billing (owned by /templates/consulting-hourly-invoice); general consulting fields (/templates/consulting).
+/templates/social-media-retainer-invoice,en,planned,,template (billing type),yes,social media retainer invoice,monthly social media invoice,template: retainer,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Monthly social media retainers: the management fee, what's included (posts, platforms, reports), ad spend billed separately as a pass-through, extras (shoots, campaigns). Sample: a monthly retainer with ad spend on its own line.",General social media manager invoice fields (owned by /templates/social-media-management).
+/templates/web-development-retainer-invoice,en,planned,,template (billing type),yes,website maintenance retainer invoice,web maintenance invoice,template: retainer,W1-B,,,"Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Website maintenance retainers: hosting, updates and backups, a number of support hours, response times, extra hours at a set rate; billed monthly by duplicating the last invoice. Sample: a monthly care plan.",Project milestones (owned by /templates/web-development-milestone-invoice); general web development fields (/templates/web-development).
+/invoice-generator-uk,en,planned,,country,en-only,uk vat invoice requirements,invoice generator uk; vat invoice template uk,country rules + generator preset,W1-C,,"GBP, 20/5/0% VAT, VAT number; replaces /guides/invoice-requirements-uk","Needs page code (new page type, chunk 43): the free generator preset for the UK (GBP, the VAT rates) plus the UK rules. What a VAT invoice must show, full vs simplified invoices (under £250), the VAT number, rates 20/5/0%, the tax point, invoicing when you're not VAT-registered (no VAT shown). Every rule with its source on gov.uk and the date checked.",What every invoice includes in general (the blog: learn:/what-should-an-invoice-include); how to use the generator (/free-invoice-generator).
+/invoice-generator-ireland,en,planned,,country,en-only,vat invoice ireland,invoice template ireland; irish vat invoice requirements,country rules + generator preset,W1-C,,"EUR, 23/13.5/9% VAT","Needs page code (chunk 43): the generator preset for Ireland (EUR, the VAT rates) plus what a VAT invoice must show per Revenue, the VAT number, rates (23/13.5/9/0%, check and date them), credit notes, not registered = no VAT. Sources: revenue.ie.",General invoice fields (the blog); EU reverse charge (owned by /reverse-charge-invoice): one sentence and a link.
+/invoice-generator-australia,en,planned,,country,en-only,tax invoice australia,abn invoice template; gst invoice australia,country rules + generator preset,W1-C,,"AUD, 10% GST, ABN","Needs page code (chunk 43): the generator preset for Australia (AUD, 10% GST) plus the ATO tax invoice rules: the ABN, the words 'tax invoice', GST shown, the extra buyer details from A$1,000, not registered for GST = an 'invoice', not a tax invoice. Sources: ato.gov.au, dated.",General invoice fields (the blog).
+/invoice-generator-new-zealand,en,planned,,country,en-only,gst invoice nz,tax invoice nz; nz invoice template,country rules + generator preset,W1-C,,"NZD, 15% GST, GST number","Needs page code (chunk 43): the generator preset for New Zealand (NZD, 15% GST) plus the current IRD rules (since 2023 'taxable supply information' replaced the old tax invoice rules: check and explain), the GST number, thresholds. Sources: ird.govt.nz, dated.",General invoice fields (the blog).
+/invoice-generator-canada,en,planned,,country,en-only,gst hst invoice canada,canada invoice template; invoice requirements canada,country rules + generator preset,W1-C,,"CAD, GST/HST/PST by province","Needs page code (chunk 43): the generator preset for Canada (CAD) plus the GST/HST rules: the registration number, rates by province (GST 5%, HST provinces, PST and QST separate), the small-supplier threshold, the information required by invoice amount. The app applies one tax rate per invoice: explain how to show GST + PST honestly. Sources: canada.ca, dated.",General invoice fields (the blog); the VAT calculator (/tools/vat-calculator).
+/invoice-generator-south-africa,en,planned,,country,en-only,vat invoice south africa,tax invoice south africa; sars invoice requirements,country rules + generator preset,W1-C,,"ZAR, 15% VAT","Needs page code (chunk 43): the generator preset for South Africa (ZAR, 15% VAT) plus SARS tax invoice rules: full vs abridged tax invoices and their thresholds (check), the VAT number, the words 'tax invoice'. Sources: sars.gov.za, dated.",General invoice fields (the blog).
+/reverse-charge-invoice,en,planned,,country,en-only,eu reverse charge invoice,vat reverse charge invoice; intra eu invoice,country rules + generator preset,W1-C,,EU B2B: both VAT numbers + the reverse-charge note; chunk 43 called it /eu,"Needs page code (chunk 43): EU business-to-business invoices across borders: when the reverse charge applies (services and goods between VAT-registered businesses in different EU countries), both VAT numbers, no VAT charged, the reverse-charge note (VAT Directive art. 196), checking the client's VAT number in VIES. A generator preset with 0% and the note filled in. Sources: the EU's Your Europe pages, dated.",Country VAT rates (owned by /tools/vat-calculator); the Irish rules (/invoice-generator-ireland).
+/nl,nl,live,2026-11-18,home,yes,factuur app voor iphone,,,,,key from the URL or title (npm run pages); check it,,
+/de,de,live,2026-11-18,home,yes,rechnungs-app für iphone,,,,,key from the URL or title (npm run pages); check it,,
+/fr,fr,live,2026-11-18,home,yes,application facture iphone,,,,,key from the URL or title (npm run pages); check it,,
+/es,es,live,2026-11-18,home,yes,app para hacer facturas gratis en iphone,,,,,key from the URL or title (npm run pages); check it,,
+/it,it,live,2026-11-18,home,yes,"app per fatture su iphone, gratis per iniziare",,,,,key from the URL or title (npm run pages); check it,,
+/pt,pt,live,2026-11-18,home,yes,app de faturas para iphone,,,,,key from the URL or title (npm run pages); check it,,
+/pl,pl,live,2026-11-18,home,yes,darmowa aplikacja do faktur na iphone'a,,,,,key from the URL or title (npm run pages); check it,,
+/sv,sv,live,2026-11-18,home,yes,fakturaapp för iphone,,,,,key from the URL or title (npm run pages); check it,,
+/da,da,live,2026-11-18,home,yes,faktura-app til iphone,,,,,key from the URL or title (npm run pages); check it,,
+/nb,nb,live,2026-11-18,home,yes,faktura-app for iphone,,,,,key from the URL or title (npm run pages); check it,,
+/nl/gratis-factuur-maken,nl,live,2026-11-18,generator,yes,gratis factuur maken,,,,,key from the URL or title (npm run pages); check it,,
+/de/rechnung-erstellen,de,live,2026-11-18,generator,yes,rechnung erstellen,,,,,key from the URL or title (npm run pages); check it,,
+/fr/creer-une-facture,fr,live,2026-11-18,generator,yes,creer une facture,,,,,key from the URL or title (npm run pages); check it,,
+/es/crear-factura,es,live,2026-11-18,generator,yes,crear factura,,,,,key from the URL or title (npm run pages); check it,,
+/it/crea-fattura,it,live,2026-11-18,generator,yes,crea fattura,,,,,key from the URL or title (npm run pages); check it,,
+/pt/criar-fatura,pt,live,2026-11-18,generator,yes,criar fatura,,,,,key from the URL or title (npm run pages); check it,,
+/pl/wystaw-fakture,pl,live,2026-11-18,generator,yes,wystaw fakture,,,,,key from the URL or title (npm run pages); check it,,
+/sv/skapa-faktura,sv,live,2026-11-18,generator,yes,skapa faktura,,,,,key from the URL or title (npm run pages); check it,,
+/da/lav-faktura,da,live,2026-11-18,generator,yes,lav faktura,,,,,key from the URL or title (npm run pages); check it,,
+/nb/lag-faktura,nb,live,2026-11-18,generator,yes,lag faktura,,,,,key from the URL or title (npm run pages); check it,,
+/nl/help,nl,live,2026-11-18,support,yes,help en veelgestelde vragen,,,,,key from the URL or title (npm run pages); check it,,
+/de/hilfe,de,live,2026-11-18,support,yes,hilfe und häufige fragen,,,,,key from the URL or title (npm run pages); check it,,
+/fr/aide,fr,live,2026-11-18,support,yes,aide et questions fréquentes,,,,,key from the URL or title (npm run pages); check it,,
+/es/ayuda,es,live,2026-11-18,support,yes,ayuda y preguntas frecuentes,,,,,key from the URL or title (npm run pages); check it,,
+/it/aiuto,it,live,2026-11-18,support,yes,centro assistenza e aiuto,,,,,key from the URL or title (npm run pages); check it,,
+/pt/ajuda,pt,live,2026-11-18,support,yes,ajuda e perguntas frequentes,,,,,key from the URL or title (npm run pages); check it,,
+/pl/pomoc,pl,live,2026-11-18,support,yes,pomoc i najczęstsze pytania,,,,,key from the URL or title (npm run pages); check it,,
+/sv/hjalp,sv,live,2026-11-18,support,yes,hjälp och vanliga frågor,,,,,key from the URL or title (npm run pages); check it,,
+/da/hjaelp,da,live,2026-11-18,support,yes,hjælp og ofte stillede spørgsmål,,,,,key from the URL or title (npm run pages); check it,,
+/nb/hjelp,nb,live,2026-11-18,support,yes,hjelp og vanlige spørsmål,,,,,key from the URL or title (npm run pages); check it,,
+/nl/android,nl,live,2026-11-18,android,yes,invoicor voor android: binnenkort,,,,,key from the URL or title (npm run pages); check it,,
+/de/android,de,live,2026-11-18,android,yes,invoicor für android: bald verfügbar,,,,,key from the URL or title (npm run pages); check it,,
+/fr/android,fr,live,2026-11-18,android,yes,invoicor pour android : bientôt disponible,,,,,key from the URL or title (npm run pages); check it,,
+/es/android,es,live,2026-11-18,android,yes,invoicor para android: muy pronto,,,,,key from the URL or title (npm run pages); check it,,
+/it/android,it,live,2026-11-18,android,yes,invoicor per android: in arrivo,,,,,key from the URL or title (npm run pages); check it,,
+/pt/android,pt,live,2026-11-18,android,yes,invoicor para android: em breve,,,,,key from the URL or title (npm run pages); check it,,
+/pl/android,pl,live,2026-11-18,android,yes,invoicor na androida: już wkrótce,,,,,key from the URL or title (npm run pages); check it,,
+/sv/android,sv,live,2026-11-18,android,yes,invoicor för android: kommer snart,,,,,key from the URL or title (npm run pages); check it,,
+/da/android,da,live,2026-11-18,android,yes,invoicor til android: kommer snart,,,,,key from the URL or title (npm run pages); check it,,
+/nb/android,nb,live,2026-11-18,android,yes,invoicor for android: kommer snart,,,,,key from the URL or title (npm run pages); check it,,
+/nl/tools,nl,live,2026-11-18,tool,yes,gratis tools voor zzp'ers: factuur en btw,,,,,key from the URL or title (npm run pages); check it,,
+/de/tools,de,live,2026-11-18,tool,yes,"kostenlose tools: rechnung, mwst-rechner & mehr",,,,,key from the URL or title (npm run pages); check it,,
+/fr/outils,fr,live,2026-11-18,tool,yes,"outils gratuits : facture, calcul tva, heures",,,,,key from the URL or title (npm run pages); check it,,
+/es/herramientas,es,live,2026-11-18,tool,yes,herramientas gratis para facturar,,,,,key from the URL or title (npm run pages); check it,,
+/it/strumenti,it,live,2026-11-18,tool,yes,"strumenti gratuiti: fattura, calcolo iva e ore",,,,,key from the URL or title (npm run pages); check it,,
+/pt/ferramentas,pt,live,2026-11-18,tool,yes,"ferramentas grátis: faturas, iva e horas",,,,,key from the URL or title (npm run pages); check it,,
+/pl/narzedzia,pl,live,2026-11-18,tool,yes,darmowe narzędzia: generator faktur i kalkulatory,,,,,key from the URL or title (npm run pages); check it,,
+/sv/verktyg,sv,live,2026-11-18,tool,yes,"gratis verktyg: faktura, momsräknare, timpris",,,,,key from the URL or title (npm run pages); check it,,
+/da/vaerktoejer,da,live,2026-11-18,tool,yes,gratis værktøjer: fakturagenerator og beregnere,,,,,key from the URL or title (npm run pages); check it,,
+/nb/verktoy,nb,live,2026-11-18,tool,yes,"gratis verktøy: faktura, mva og timepris",,,,,key from the URL or title (npm run pages); check it,,
+/nl/tools/btw-berekenen,nl,live,2026-11-18,tool,yes,btw berekenen,,,,,key from the URL or title (npm run pages); check it,,
+/de/tools/mehrwertsteuer-rechner,de,live,2026-11-18,tool,yes,mehrwertsteuer rechner,,,,,key from the URL or title (npm run pages); check it,,
+/fr/outils/calcul-tva,fr,live,2026-11-18,tool,yes,calcul tva,,,,,key from the URL or title (npm run pages); check it,,
+/es/herramientas/calculadora-iva,es,live,2026-11-18,tool,yes,calculadora iva,,,,,key from the URL or title (npm run pages); check it,,
+/it/strumenti/calcolo-iva,it,live,2026-11-18,tool,yes,calcolo iva,,,,,key from the URL or title (npm run pages); check it,,
+/pt/ferramentas/calcular-iva,pt,live,2026-11-18,tool,yes,calcular iva,,,,,key from the URL or title (npm run pages); check it,,
+/pl/narzedzia/kalkulator-vat,pl,live,2026-11-18,tool,yes,kalkulator vat,,,,,key from the URL or title (npm run pages); check it,,
+/sv/verktyg/momsraknare,sv,live,2026-11-18,tool,yes,momsräknare: räkna ut moms online gratis,,,,,key from the URL or title (npm run pages); check it,,
+/da/vaerktoejer/momsberegner,da,live,2026-11-18,tool,yes,momsberegner: beregn moms online (gratis),,,,,key from the URL or title (npm run pages); check it,,
+/nb/verktoy/mva-kalkulator,nb,live,2026-11-18,tool,yes,mva kalkulator,,,,,key from the URL or title (npm run pages); check it,,
+/nl/tools/uren-berekenen,nl,live,2026-11-18,tool,yes,uren berekenen,,,,,key from the URL or title (npm run pages); check it,,
+/de/tools/stundenrechner,de,live,2026-11-18,tool,yes,stundenrechner: arbeitsstunden für die rechnung,,,,,key from the URL or title (npm run pages); check it,,
+/fr/outils/calcul-heures,fr,live,2026-11-18,tool,yes,calcul heures,,,,,key from the URL or title (npm run pages); check it,,
+/es/herramientas/calculadora-horas,es,live,2026-11-18,tool,yes,calculadora horas,,,,,key from the URL or title (npm run pages); check it,,
+/it/strumenti/calcolo-ore,it,live,2026-11-18,tool,yes,calcolo ore,,,,,key from the URL or title (npm run pages); check it,,
+/pt/ferramentas/calculadora-horas,pt,live,2026-11-18,tool,yes,calculadora horas,,,,,key from the URL or title (npm run pages); check it,,
+/pl/narzedzia/kalkulator-godzin,pl,live,2026-11-18,tool,yes,kalkulator godzin,,,,,key from the URL or title (npm run pages); check it,,
+/sv/verktyg/timraknare,sv,live,2026-11-18,tool,yes,räkna timmar: gratis timräknare för fakturan,,,,,key from the URL or title (npm run pages); check it,,
+/da/vaerktoejer/timeberegner,da,live,2026-11-18,tool,yes,timeberegner: beregn timer til fakturaen,,,,,key from the URL or title (npm run pages); check it,,
+/nb/verktoy/timekalkulator,nb,live,2026-11-18,tool,yes,timekalkulator: regne ut timer til fakturaen,,,,,key from the URL or title (npm run pages); check it,,
+/nl/tools/uurtarief-berekenen,nl,live,2026-11-18,tool,yes,uurtarief berekenen,,,,,key from the URL or title (npm run pages); check it,,
+/de/tools/stundensatz-rechner,de,live,2026-11-18,tool,yes,stundensatz rechner,,,,,key from the URL or title (npm run pages); check it,,
+/fr/outils/calcul-taux-horaire,fr,live,2026-11-18,tool,yes,calcul taux horaire,,,,,key from the URL or title (npm run pages); check it,,
+/es/herramientas/calcular-precio-hora,es,live,2026-11-18,tool,yes,calcular precio hora,,,,,key from the URL or title (npm run pages); check it,,
+/it/strumenti/calcolo-tariffa-oraria,it,live,2026-11-18,tool,yes,calcolo tariffa oraria,,,,,key from the URL or title (npm run pages); check it,,
+/pt/ferramentas/calcular-preco-hora,pt,live,2026-11-18,tool,yes,calcular preco hora,,,,,key from the URL or title (npm run pages); check it,,
+/pl/narzedzia/kalkulator-stawki-godzinowej,pl,live,2026-11-18,tool,yes,kalkulator stawki godzinowej,,,,,key from the URL or title (npm run pages); check it,,
+/sv/verktyg/rakna-ut-timpris,sv,live,2026-11-18,tool,yes,rakna ut timpris,,,,,key from the URL or title (npm run pages); check it,,
+/da/vaerktoejer/beregn-timepris,da,live,2026-11-18,tool,yes,beregn timepris,,,,,key from the URL or title (npm run pages); check it,,
+/nb/verktoy/beregn-timepris,nb,live,2026-11-18,tool,yes,beregn timepris,,,,,key from the URL or title (npm run pages); check it,,
+/de/rechnung-pflichtangaben,de,planned,,country,local,pflichtangaben rechnung,rechnung pflichtangaben; was muss auf eine rechnung,country rules + generator preset,W1-C,,"§14 UStG, Kleinunternehmer §19; replaces /guides/invoice-requirements-germany; next to /de/rechnung-erstellen, must not compete with it","Written in German for German businesses (page code, chunk 43, under the de routes): the mandatory invoice details (§14 Abs. 4 UStG), small invoices up to €250 (§33 UStDV), Kleinunternehmer (§19 UStG) and the note to use, the e-invoicing obligation from 2025 and its transition rules (be honest: Invoicor makes PDF invoices; say when a PDF is still allowed for B2B, check and date). Sources: Gesetze im Internet, BMF, dated.","How to make an invoice in the free generator (owned by /de/rechnung-erstellen): one sentence and a link. That page is 'make one', this page is 'what must be on it'."
+/nl/factuureisen,nl,planned,,country,local,factuureisen,wat moet er op een factuur; factuur eisen belastingdienst,country rules + generator preset,W1-C,,"btw-nummer, KvK, KOR; replaces /guides/invoice-requirements-netherlands","Written in Dutch for Dutch businesses (page code, chunk 43, under the nl routes): the Belastingdienst invoice requirements (factuureisen), the KvK number and btw-id, the KOR (small business scheme) and what to put on the invoice, 'btw verlegd', the 5-year/7-year retention rule. Sources: belastingdienst.nl, kvk.nl, dated.",How to make an invoice in the free generator (owned by /nl/gratis-factuur-maken).
+/fr/mentions-obligatoires-facture,fr,planned,,country,local,mentions obligatoires facture,facture mentions légales; mentions facture auto-entrepreneur,country rules + generator preset,W1-C,,"SIRET, TVA non applicable art. 293 B","Written in French for French businesses (page code, chunk 43, under the fr routes): the mandatory mentions (SIRET, TVA intracommunautaire, numbering, due date), 'TVA non applicable, art. 293 B du CGI' for micro-entrepreneurs, late-payment penalties and the €40 fixed compensation, the e-invoicing reform timetable (check and date). Sources: service-public.fr, economie.gouv.fr, dated.",How to make an invoice in the free generator (owned by /fr/creer-une-facture).
+https://learn.invoicor.com/how-to-use-an-invoice-maker-for-iphone,en,live,2026-11-10,blog,en-only,how to use an invoice maker for iphone,,learn,,,,,
+https://learn.invoicor.com/how-to-create-an-invoice-on-iphone-in-seconds,en,live,2026-11-10,blog,en-only,how to create an invoice on iphone in seconds,,learn,,,,,
+https://learn.invoicor.com/free-invoice-app-for-iphone-what-to-look-for,en,live,2026-11-11,blog,en-only,free invoice app for iphone what to look for,,learn,,,,,
+https://learn.invoicor.com/how-pdf-invoice-templates-work-on-iphone,en,live,2026-11-11,blog,en-only,how pdf invoice templates work on iphone,,learn,,,,,
+https://learn.invoicor.com/what-is-a-multi-currency-invoicing-app,en,live,2026-11-12,blog,en-only,what is a multi currency invoicing app,,learn,,,,,
+https://learn.invoicor.com/how-a-tax-calculator-helps-when-creating-invoices,en,live,2026-11-12,blog,en-only,how a tax calculator helps when creating invoices,,learn,,,,,
+https://learn.invoicor.com/how-to-share-an-invoice-pdf-from-iphone,en,live,2026-11-13,blog,en-only,how to share an invoice pdf from iphone,,learn,,,,,
+https://learn.invoicor.com/what-makes-an-invoice-look-professional,en,live,2026-11-13,blog,en-only,what makes an invoice look professional,,learn,,,,,
+https://learn.invoicor.com/invoice-creation-checklist-for-iphone-users,en,live,2026-11-14,blog,en-only,invoice creation checklist for iphone users,,learn,,,,,
+https://learn.invoicor.com/what-is-an-invoice-maker,en,live,2026-11-14,blog,en-only,what is an invoice maker,,learn,,,,,
+https://learn.invoicor.com/how-to-use-pdf-invoice-templates-on-iphone,en,live,2026-11-15,blog,en-only,how to use pdf invoice templates on iphone,,learn,,,,,
+https://learn.invoicor.com/how-to-calculate-tax-on-an-invoice-in-the-app,en,live,2026-11-15,blog,en-only,how to calculate tax on an invoice in the app,,learn,,,,,
+https://learn.invoicor.com/can-you-create-invoices-in-different-currencies,en,live,2026-11-16,blog,en-only,can you create invoices in different currencies,,learn,,,,,
+https://learn.invoicor.com/how-auto-fill-helps-you-create-invoices-faster,en,live,2026-11-16,blog,en-only,how auto fill helps you create invoices faster,,learn,,,,,
+https://learn.invoicor.com/how-to-share-invoices-instantly-from-iphone,en,live,2026-11-17,blog,en-only,how to share invoices instantly from iphone,,learn,,,,,
+https://learn.invoicor.com/how-to-create-a-receipt-on-iphone-in-minutes,en,live,2026-11-17,blog,en-only,how to create a receipt on iphone in minutes,,learn,,,,,
+https://learn.invoicor.com/how-to-send-an-invoice-from-iphone-by-email,en,live,2026-11-18,blog,en-only,how to send an invoice from iphone by email,,learn,,,,,
+https://learn.invoicor.com/how-to-save-an-invoice-as-a-pdf-on-iphone,en,live,2026-11-18,blog,en-only,how to save an invoice as a pdf on iphone,,learn,,,,,
+https://learn.invoicor.com/how-to-change-the-currency-on-an-invoice,en,live,2026-11-19,blog,en-only,how to change the currency on an invoice,,learn,,,,,
+https://learn.invoicor.com/how-to-reuse-invoice-details-on-iphone,en,live,2026-11-19,blog,en-only,how to reuse invoice details on iphone,,learn,,,,,
+https://learn.invoicor.com/how-to-number-invoices-on-iphone,en,live,2026-11-20,blog,en-only,how to number invoices on iphone,,learn,,,,,
+https://learn.invoicor.com/what-should-an-invoice-include,en,live,2026-11-20,blog,en-only,what should an invoice include,,learn,,,,,
+https://learn.invoicor.com/what-is-a-pdf-invoice,en,live,2026-11-21,blog,en-only,what is a pdf invoice,,learn,,,,,
+https://learn.invoicor.com/what-does-auto-fill-mean-in-an-invoice-app,en,live,2026-11-21,blog,en-only,what does auto fill mean in an invoice app,,learn,,,,,
+https://learn.invoicor.com/why-use-an-invoice-app-on-iphone,en,live,2026-11-22,blog,en-only,why use an invoice app on iphone,,learn,,,,,
+https://learn.invoicor.com/what-does-an-invoice-tax-calculator-do,en,live,2026-11-22,blog,en-only,what does an invoice tax calculator do,,learn,,,,,
+https://learn.invoicor.com/what-is-a-multi-currency-invoice,en,live,2026-11-23,blog,en-only,what is a multi currency invoice,,learn,,,,,
+https://learn.invoicor.com/best-invoice-app-features-for-freelancers-on-iphone,en,live,2026-11-23,blog,en-only,best invoice app features for freelancers on iphone,,learn,,,,,
+https://learn.invoicor.com/best-ways-to-send-invoices-from-iphone,en,live,2026-11-24,blog,en-only,best ways to send invoices from iphone,,learn,,,,,
+https://learn.invoicor.com/best-invoice-template-styles-for-mobile-use,en,live,2026-11-24,blog,en-only,best invoice template styles for mobile use,,learn,,,,,
+https://learn.invoicor.com/can-you-make-an-invoice-on-iphone-without-paper,en,live,2026-11-25,blog,en-only,can you make an invoice on iphone without paper,,learn,,,,,
+https://learn.invoicor.com/can-you-edit-an-invoice-after-saving-it,en,live,2026-11-25,blog,en-only,can you edit an invoice after saving it,,learn,,,,,
+https://learn.invoicor.com/can-you-send-an-invoice-as-a-pdf-from-iphone,en,live,2026-11-26,blog,en-only,can you send an invoice as a pdf from iphone,,learn,,,,,
+https://learn.invoicor.com/do-you-need-to-fill-every-invoice-field,en,live,2026-11-26,blog,en-only,do you need to fill every invoice field,,learn,,,,,

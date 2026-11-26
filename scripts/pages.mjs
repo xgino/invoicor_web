@@ -23,12 +23,14 @@ import {
   closest,
   parseCsv,
   renderPagesMd,
+  renderPlanMd,
   toCsv,
 } from "./pages-lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CSV = join(root, "seo/keyword-map.csv");
 const MD = join(root, "seo/PAGES.md");
+const PLAN = join(root, "seo/PLAN.md");
 const OUT = join(root, "out");
 const today = new Date().toISOString().slice(0, 10);
 
@@ -164,9 +166,10 @@ const order = (r) => (r.url.startsWith(BLOG_ORIGIN) ? 2 : r.lang === "en" ? 0 : 
 rows.sort((a, b) => order(a) - order(b));
 writeFileSync(CSV, toCsv(rows));
 writeFileSync(MD, renderPagesMd(rows));
+writeFileSync(PLAN, renderPlanMd(rows));
 console.log(changes.length ? changes.join("\n") : "No new or removed pages.");
 console.log(
-  `\nseo/keyword-map.csv and seo/PAGES.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
+  `\nseo/keyword-map.csv, seo/PAGES.md and seo/PLAN.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
 );
 
 // ── Helpers ──

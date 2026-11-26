@@ -54,6 +54,40 @@ competitor facts without a source.
 - **JSON-LD:** `BreadcrumbList`, `FAQPage`, `HowTo` (what to include).
 - **Min words:** 500 (target 900+).
 
+## Billing-type template `/templates/{trade}-{billing}-invoice`
+
+_Added 2026-11-26 for wave 1 batch B (ROADMAP W1). Briefs per page: [PLAN.md](PLAN.md)._
+
+- **Intent:** "{trade} {billing type} invoice" (deposit, progress/milestone, hourly, labor and
+  materials, retainer). A different question from the trade's main template: not "what goes on my
+  invoice" but "how do I bill this way".
+- **Data:** an entry in `content/templates.json` with the same fields as a template; `industry` =
+  the trade's industry page; `related` = the trade's main template + one other billing type.
+- **Sections:** as a template, but the intro, what-to-include, sample invoice, notes, mistakes and
+  FAQs are all about this billing type for this trade (e.g. deposit size and terms, retainage,
+  increments, unused hours). The trade's general fields get one sentence and a link to its template.
+- **Honest:** the app doesn't track deposits, partial payments or time and doesn't send recurring
+  invoices. A deposit is its own invoice, then a negative line or a note on the final one; monthly
+  work is "duplicate the last invoice".
+- **Min words:** 500 (target 900+). Must stay < 80% alike the trade's main template (`content:check`).
+
+## Country page `/invoice-generator-{country}` and local pages
+
+_Added 2026-11-26 for wave 1 batch C (roadmap chunk 43). Needs page code: a new page type._
+
+- **Intent:** "{country} invoice requirements / VAT (or GST) invoice". The visitor wants to know what
+  must be on an invoice in that country, then make one.
+- **Sections:** H1 + subtitle → the free generator preset for the country (currency, VAT/GST rate,
+  the fields the rules require) → what must be on the invoice (a checklist with each rule's source)
+  → thresholds and special cases (small invoices, not registered, small-business schemes, reverse
+  charge) → a sample invoice → FAQ (4–6) → links to the VAT calculator and the general generator.
+- **Facts:** every rule with its official source and the date it was checked; re-check every 6
+  months (rates and e-invoicing rules change). Hedge anything not in the source.
+- **Language:** English for English-speaking countries; local pages (`/de/…`, `/nl/…`, `/fr/…`) are
+  written in that language from the start (rule R4) and must not compete with that language's
+  generator page ("what must be on it" vs "make one").
+- **JSON-LD:** `BreadcrumbList`, `FAQPage`. **Min words:** 600.
+
 ## Industry `/industries/{slug}`
 
 - **Intent:** "invoice app for {profession}" (software, commercial). Not the template intent.

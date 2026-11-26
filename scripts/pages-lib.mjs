@@ -16,6 +16,8 @@ export const COLUMNS = [
   "chunk",
   "baseline_position",
   "notes",
+  "brief",
+  "avoid",
 ];
 
 /**
@@ -167,93 +169,67 @@ export function section(row) {
 
 const shortUrl = (url) => url.replace(BLOG_ORIGIN, "learn:");
 
-// ── PAGES.md ──
+// ── PAGES.md: what we have ──
 
 export function renderPagesMd(rows) {
   const live = rows.filter((r) => r.status === "live");
   const planned = rows.filter((r) => r.status === "planned");
   const out = [];
   out.push(
-    "# Page log",
+    "# Pages we have",
     "",
-    "> **Generated, don't edit by hand.** The data is [keyword-map.csv](keyword-map.csv): one row per",
-    "> page, with its language, status, the date it was made and its **key** (the search it's for).",
-    "> After adding or removing pages: `npm run build && npm run pages`. Before planning a new page:",
-    '> `npm run pages -- --check "plumbing deposit invoice"` (add `--lang de` for German) lists the',
-    "> pages with the closest keys. The site test fails when this file or the CSV is behind the site.",
+    "> **Generated, don't edit by hand.** Every live page on invoicor.com, its translations and the",
+    "> blog (learn.invoicor.com), with its **key** (the search it's for), its language decision and the",
+    "> date it was made. What we still want to build is in [PLAN.md](PLAN.md). The data for both is",
+    "> [keyword-map.csv](keyword-map.csv). After adding or removing pages: `npm run build && npm run pages`.",
+    '> Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).',
+    "> The site test fails when this file or the CSV is behind the site.",
     "",
-    `**${live.length} live pages** · ${planned.length} planned · last change ${latest(live)}`,
+    `**${live.length} live pages** · last change ${latest(live)} · ${planned.length} more planned in [PLAN.md](PLAN.md)`,
     "",
   );
 
   // Counts per section and per page type
-  out.push("## Counts", "", "| Section | Live | Planned | Page types |", "|---|---|---|---|");
-  const bySection = group(
-    rows.filter((r) => r.status !== "removed"),
-    section,
-  );
+  out.push("## Counts", "", "| Section | Live | Page types |", "|---|---|---|");
+  const bySection = group(live, section);
   for (const [name, list] of sortedSections(bySection)) {
-    const types = countBy(
-      list.filter((r) => r.status === "live"),
-      (r) => r.page_type,
-    );
-    out.push(
-      `| ${name} | ${list.filter((r) => r.status === "live").length} | ${
-        list.filter((r) => r.status === "planned").length || ""
-      } | ${types.map(([t, n]) => `${t} ${n}`).join(", ")} |`,
-    );
+    const types = countBy(list, (r) => r.page_type);
+    out.push(`| ${name} | ${list.length} | ${types.map(([t, n]) => `${t} ${n}`).join(", ")} |`);
   }
   out.push("");
 
-  // Languages: what still needs writing in the other 10 languages
+  // Languages
   out.push(
     "## Languages",
     "",
     "Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per",
     "country in all 11 languages (local words, rules and examples, not word for word), **local** = only",
-    "in its own language, **en-only** = stays English. Each batch decides this for its new pages and",
-    "writes its language versions as part of the batch.",
+    "in its own language, **en-only** = stays English. The language versions still to write are on the",
+    "to-do list in [PLAN.md](PLAN.md#language-versions-to-write).",
     "",
     "| Page type | Decision | English | Per other language | Still to write |",
     "|---|---|---|---|---|",
   );
-  const site = rows.filter((r) => !r.url.startsWith(BLOG_ORIGIN) && r.status !== "removed");
-  let todo = 0;
-  for (const t of [...new Set(site.filter((r) => r.lang === "en").map((r) => r.page_type))]) {
-    const en = site.filter((r) => r.lang === "en" && r.page_type === t);
-    const decisions = [...new Set(en.map((r) => r.localize || "?"))].join(", ");
-    const enLive = en.filter((r) => r.status === "live" && r.localize === "yes").length;
-    const enPlanned = en.filter((r) => r.status === "planned" && r.localize === "yes").length;
-    const per = LOCALES.slice(1).map(
-      (l) => site.filter((r) => r.lang === l && r.page_type === t && r.status === "live").length,
-    );
-    const missing = per.reduce((sum, n) => sum + Math.max(0, enLive - n), 0);
-    todo += missing;
-    const range =
-      Math.min(...per) === Math.max(...per)
-        ? `${per[0]}`
-        : `${Math.min(...per)}–${Math.max(...per)}`;
-    out.push(
-      `| ${t} | ${decisions} | ${en.filter((r) => r.status === "live").length}${enPlanned ? ` (+${enPlanned} planned)` : ""} | ${range} | ${missing || ""}${enPlanned ? `${missing ? " + " : ""}${enPlanned * 10} when the planned ones are live` : ""} |`,
-    );
-  }
-  out.push("", `**${todo} language versions still to write** for live pages.`, "");
+  const gaps = languageGaps(rows);
+  for (const g of gaps)
+    out.push(`| ${g.type} | ${g.decisions} | ${g.en} | ${g.range} | ${g.missing || ""} |`);
+  out.push(
+    "",
+    `**${gaps.reduce((s, g) => s + g.missing, 0)} language versions still to write** for live pages.`,
+    "",
+  );
 
   // Page type × language
-  const types = [
-    ...new Set(live.filter((r) => !r.url.startsWith(BLOG_ORIGIN)).map((r) => r.page_type)),
-  ];
+  const site = live.filter((r) => !r.url.startsWith(BLOG_ORIGIN));
   out.push(
     "### invoicor.com: page type × language",
     "",
     `| Type | ${LOCALES.join(" | ")} |`,
     `|---|${LOCALES.map(() => "---").join("|")}|`,
   );
-  for (const t of types) {
+  for (const t of [...new Set(site.map((r) => r.page_type))]) {
     const cells = LOCALES.map(
-      (l) =>
-        live.filter((r) => r.page_type === t && r.lang === l && !r.url.startsWith(BLOG_ORIGIN))
-          .length || "·",
+      (l) => site.filter((r) => r.page_type === t && r.lang === l).length || "·",
     );
     out.push(`| ${t} | ${cells.join(" | ")} |`);
   }
@@ -276,18 +252,17 @@ export function renderPagesMd(rows) {
             .join(", ")})`,
         ]
       : [];
-    const what = [...english, ...translated].join(", ");
-    out.push(`| ${date} | ${list.length} | ${what} |`);
+    out.push(`| ${date} | ${list.length} | ${[...english, ...translated].join(", ")} |`);
   }
   out.push("");
 
   // Overlaps
-  const pairs = overlaps(rows.filter((r) => r.status === "live" || r.status === "planned"));
+  const pairs = overlaps(live);
   out.push(
     "## Keys that are too close",
     "",
-    `Pages in the same language whose keys share most of their words (≥ ${TOO_CLOSE * 100}%). They`,
-    "may compete for the same search: merge them, or give one a clearly different key and intent.",
+    `Live pages in the same language whose keys share most of their words (≥ ${TOO_CLOSE * 100}%).`,
+    "They may compete for the same search: merge them, or give one a clearly different key and intent.",
     "",
   );
   if (!pairs.length) out.push("None.", "");
@@ -295,7 +270,7 @@ export function renderPagesMd(rows) {
     out.push("| Alike | Page | Key | Page | Key |", "|---|---|---|---|---|");
     for (const { a, b, score } of pairs)
       out.push(
-        `| ${Math.round(score * 100)}% | ${shortUrl(a.url)}${a.status === "planned" ? " _(planned)_" : ""} | ${a.primary_keyword} | ${shortUrl(b.url)}${b.status === "planned" ? " _(planned)_" : ""} | ${b.primary_keyword} |`,
+        `| ${Math.round(score * 100)}% | ${shortUrl(a.url)} | ${a.primary_keyword} | ${shortUrl(b.url)} | ${b.primary_keyword} |`,
       );
     out.push("");
   }
@@ -303,15 +278,193 @@ export function renderPagesMd(rows) {
   // Every page, per section
   out.push("## All pages", "");
   for (const [name, list] of sortedSections(bySection)) {
-    out.push(`### ${name} (${list.filter((r) => r.status === "live").length} live)`, "");
-    out.push("| URL | Key | Type | Made | Status |", "|---|---|---|---|---|");
-    for (const r of [...list].sort(byStatusThenUrl))
+    out.push(`### ${name} (${list.length})`, "");
+    out.push("| URL | Key | Type | Languages | Made |", "|---|---|---|---|---|");
+    for (const r of [...list].sort((a, b) => a.url.localeCompare(b.url)))
       out.push(
-        `| ${shortUrl(r.url)} | ${r.primary_keyword} | ${r.page_type} | ${r.added || ""} | ${r.status} |`,
+        `| ${shortUrl(r.url)} | ${r.primary_keyword} | ${r.page_type} | ${r.localize} | ${r.added || ""} |`,
       );
     out.push("");
   }
+  const removed = rows.filter((r) => r.status === "removed");
+  if (removed.length) {
+    out.push("## Removed pages (history)", "", "| URL | Key | Made |", "|---|---|---|");
+    for (const r of removed) out.push(`| ${shortUrl(r.url)} | ${r.primary_keyword} | ${r.added} |`);
+    out.push("");
+  }
   return out.join("\n");
+}
+
+/** Per English page type marked "yes": how many language versions are missing. */
+function languageGaps(rows) {
+  const site = rows.filter((r) => !r.url.startsWith(BLOG_ORIGIN) && r.status === "live");
+  return [...new Set(site.filter((r) => r.lang === "en").map((r) => r.page_type))].map((type) => {
+    const en = site.filter((r) => r.lang === "en" && r.page_type === type);
+    const yes = en.filter((r) => r.localize === "yes").length;
+    const per = LOCALES.slice(1).map(
+      (l) => site.filter((r) => r.lang === l && r.page_type === type).length,
+    );
+    const range =
+      Math.min(...per) === Math.max(...per)
+        ? `${per[0]}`
+        : `${Math.min(...per)}–${Math.max(...per)}`;
+    return {
+      type,
+      decisions: [...new Set(en.map((r) => r.localize || "?"))].join(", "),
+      en: en.length,
+      yes,
+      range,
+      missing: per.reduce((sum, n) => sum + Math.max(0, yes - n), 0),
+    };
+  });
+}
+
+// ── PLAN.md: what to build next (instructions) ──
+
+/** Where each page type's blueprint lives (seo/BLUEPRINTS.md). */
+const BLUEPRINT = {
+  template: "BLUEPRINTS.md#template-templatesslug",
+  "template (billing type)": "BLUEPRINTS.md#billing-type-template-templatestrade-billing-invoice",
+  industry: "BLUEPRINTS.md#industry-industriesslug",
+  compare: "BLUEPRINTS.md#compare-compareslug",
+  country: "BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages",
+  generator: "BLUEPRINTS.md#generator-free-invoice-generator-chunks-3035",
+  guide: "BLUEPRINTS.md#guide-guidesslug-chunk-42",
+  hub: "BLUEPRINTS.md#hub-templates-industries-compare-guides",
+  trust: "BLUEPRINTS.md#about-contact-help-affiliate-legal",
+};
+
+export function renderPlanMd(rows) {
+  const planned = rows.filter((r) => r.status === "planned");
+  const live = rows.filter((r) => r.status === "live");
+  const batches = group(planned, (r) => r.chunk || "unscheduled");
+  const order = [...batches.keys()].sort((a, b) => {
+    const w = (k) => (/^W\d/.test(k) ? 0 : 1);
+    return w(a) - w(b) || a.localeCompare(b, "en", { numeric: true });
+  });
+  const out = [];
+  out.push(
+    "# Page plan: what to build next",
+    "",
+    "> **Generated, don't edit by hand.** The instructions for whoever builds the next pages, a person",
+    "> or a model. Every planned page has a brief here: what to write, and which existing pages already",
+    "> cover nearby topics (link to those, don't repeat them). What exists today is in",
+    "> [PAGES.md](PAGES.md). To change a brief or plan a page, edit its row in",
+    "> [keyword-map.csv](keyword-map.csv) (`brief`, `avoid`, `chunk` = batch) and run `npm run pages`.",
+    "",
+    `**${planned.length} pages planned** in ${order.length} groups · ${live.length} live today`,
+    "",
+    "## How to build a batch",
+    "",
+    "1. **Take the first batch below that's ready** (the roadmap, W1, says when). Build all its pages",
+    "   in one go, then wait 2–3 weeks and check the indexed share in Search Console before the next.",
+    "2. **For each page read:** its brief below; the blueprint for its type (linked per page,",
+    "   [BLUEPRINTS.md](BLUEPRINTS.md)); the fact sheet [BRAND.md §10](../BRAND.md) (what the app does",
+    "   and doesn't do); one live page of the same type as the model for depth and fields.",
+    "3. **Don't repeat what another page owns.** Each brief lists the closest existing pages under",
+    '   "Already covered". Mention the topic in a sentence and link there; never write a second',
+    '   section about it. A new idea? Run `npm run pages -- --check "<key>"` first.',
+    "4. **Write it** in the right place: `content/templates.json` or `content/industries.json` for",
+    "   templates and industry pages ([CONTENT.md](../CONTENT.md)); other types need page code, the brief",
+    "   says so.",
+    "5. **Language step:** the page's `Languages` decision. **yes** = it gets its language versions as",
+    "   part of the batch (local words, rules and examples per country, not word for word); **local** =",
+    "   only in its own language; **en-only** = English only.",
+    "6. **Check and log:** `npm run content:check` → `npm run build` → `npm run pages` (the page moves from",
+    "   here to PAGES.md) → `npm run check`. Update ROADMAP.md, one commit per batch.",
+    "",
+    "## Rules for every page (learned in batch A)",
+    "",
+    "- Same fields and depth as the live pages of that type; about 900–1,200 words of real, trade-specific",
+    "  text (jobs, units, materials, terms, billing habits). Title ≤ 60 characters ending in `| Invoicor`,",
+    "  meta description ≤ 155, the key in the H1. No sentence copied from another page.",
+    "- Sample invoices: realistic prices, correct math (qty × rate, subtotal, tax, balance), a stated and",
+    '  hedged tax situation ("tax rules vary").',
+    "- Only claims the app backs up (BRAND.md §10). No estimates or quotes, no recurring or scheduled",
+    "  invoices, no reminders, no photo attachments, no deposit or partial-payment tracking, no time",
+    "  tracking, no offline use, one tax rate per invoice. Repeat work = duplicate the last invoice and",
+    "  change the date. A deposit = its own invoice, then a negative line or a note on the final invoice.",
+    '- Not too many "Can Invoicor do X? No." FAQs: at most one per page; spend the FAQs on the trade\'s',
+    "  own questions.",
+    '- Legal and tax points are hedged ("check your state\'s rule") unless the brief gives a sourced fact;',
+    "  a specific law only with its source and date.",
+    "- `related` links: 2 pages of the same collection; link the trade's other pages (template ↔ industry",
+    "  ↔ billing types) both ways.",
+    "",
+    "## Batches",
+    "",
+    "| Batch | Pages | Types | Languages |",
+    "|---|---|---|---|",
+  );
+  for (const k of order) {
+    const list = batches.get(k);
+    out.push(
+      `| [${k}](#${anchor(`batch ${k}`)}) | ${list.length} | ${countBy(list, (r) => r.page_type)
+        .map(([t, n]) => `${t} ${n}`)
+        .join(", ")} | ${countBy(list, (r) => r.localize || "?")
+        .map(([t, n]) => `${t} ${n}`)
+        .join(", ")} |`,
+    );
+  }
+  out.push("");
+
+  for (const k of order) {
+    out.push(`## Batch ${k}`, "");
+    for (const r of batches.get(k)) {
+      const near = closest(
+        live.filter((x) => x.url !== r.url),
+        r.primary_keyword,
+        r.lang,
+        4,
+      ).filter((m) => m.score >= CLOSE);
+      out.push(`### ${shortUrl(r.url)}`, "");
+      out.push(
+        `- **Key:** ${r.primary_keyword}${r.secondary_keywords ? ` · also: ${r.secondary_keywords}` : ""}`,
+      );
+      const bp = BLUEPRINT[r.page_type];
+      out.push(
+        `- **Type:** ${bp ? `[${r.page_type}](${bp})` : r.page_type}${r.intent ? ` · intent: ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
+      );
+      out.push(`- **Write about:** ${r.brief || "_no brief yet: write one before building_"}`);
+      if (r.avoid) out.push(`- **Don't write about:** ${r.avoid}`);
+      if (near.length)
+        out.push(
+          `- **Already covered (link, don't repeat):** ${near
+            .map((m) => `${shortUrl(m.row.url)} (“${m.row.primary_keyword}”)`)
+            .join(" · ")}`,
+        );
+      if (r.notes) out.push(`- **Notes:** ${r.notes}`);
+      out.push("");
+    }
+  }
+
+  // Language versions of live pages
+  out.push(
+    "## Language versions to write",
+    "",
+    "Live English pages marked **yes** that don't exist in every language yet. Pages that already have",
+    "their language versions (home, generator, tools, help, Android) aren't listed.",
+    "",
+    "| Page type | English pages | Missing language versions |",
+    "|---|---|---|",
+  );
+  for (const g of languageGaps(rows).filter((g) => g.missing))
+    out.push(`| ${g.type} | ${g.yes} | ${g.missing} |`);
+  out.push(
+    "",
+    "Before the first one: templates and industry pages have no language setup yet (roadmap H4: the page",
+    "labels per language, `content/{locale}/*.json`, local slugs and search words, hreflang). Start with",
+    "the languages that get traffic (German first, roadmap H6).",
+    "",
+  );
+  return out.join("\n");
+}
+
+function anchor(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, "")
+    .replace(/ /g, "-");
 }
 
 function latest(rows) {
@@ -348,10 +501,4 @@ function sortedSections(map) {
           ? 3
           : 2;
   return [...map].sort((a, b) => order(a[0]) - order(b[0]) || a[0].localeCompare(b[0]));
-}
-
-function byStatusThenUrl(a, b) {
-  return (
-    (a.status === "live" ? 0 : 1) - (b.status === "live" ? 0 : 1) || a.url.localeCompare(b.url)
-  );
 }
