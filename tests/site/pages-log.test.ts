@@ -5,18 +5,24 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-// @ts-expect-error plain JavaScript module, shared with scripts/pages.mjs
-import { BLOG_ORIGIN, parseCsv, renderPagesMd, similarity } from "../../scripts/pages-lib.mjs";
+import {
+  BLOG_ORIGIN,
+  LOCALIZE,
+  parseCsv,
+  renderPagesMd,
+  similarity,
+} from "../../scripts/pages-lib.mjs";
 
 interface Row {
   url: string;
   lang: string;
   status: string;
   added: string;
+  localize: string;
   primary_keyword: string;
 }
 const csv = readFileSync(join(process.cwd(), "seo/keyword-map.csv"), "utf8");
-const rows: Row[] = parseCsv(csv);
+const rows = parseCsv(csv) as unknown as Row[];
 const site = [
   ...readFileSync(join(process.cwd(), "out/sitemap.xml"), "utf8").matchAll(
     /<loc>https:\/\/invoicor\.com([^<]*)<\/loc>/g,
@@ -45,6 +51,13 @@ describe("page log", () => {
     expect(missing).toEqual([]);
   });
 
+  it("gives every page a language decision: yes, local or en-only (roadmap R4)", () => {
+    const undecided = rows
+      .filter((r) => r.status !== "removed" && !LOCALIZE.includes(r.localize))
+      .map((r) => r.url);
+    expect(undecided).toEqual([]);
+  });
+
   it("never gives two pages the same key in the same language", () => {
     const seen = new Map<string, string>();
     const dupes: string[] = [];
@@ -57,7 +70,9 @@ describe("page log", () => {
   });
 
   it(`seo/PAGES.md is up to date (${FIX})`, () => {
-    expect(readFileSync(join(process.cwd(), "seo/PAGES.md"), "utf8")).toBe(renderPagesMd(rows));
+    expect(readFileSync(join(process.cwd(), "seo/PAGES.md"), "utf8")).toBe(
+      renderPagesMd(rows as unknown as Record<string, string>[]),
+    );
   });
 
   it("scores keys by shared words, ignoring filler words and plurals", () => {

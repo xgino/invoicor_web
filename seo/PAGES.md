@@ -30,6 +30,34 @@
 | /sv | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
 | learn.invoicor.com (blog) | 34 |  | blog 34 |
 
+## Languages
+
+Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per
+country in all 11 languages (local words, rules and examples, not word for word), **local** = only
+in its own language, **en-only** = stays English. Each batch decides this for its new pages and
+writes its language versions as part of the batch.
+
+| Page type | Decision | English | Per other language | Still to write |
+|---|---|---|---|---|
+| home | yes | 1 | 1 |  |
+| generator | yes | 1 (+2 planned) | 1 | 20 when the planned ones are live |
+| hub | yes, en-only | 3 | 0 | 20 |
+| template | yes | 20 (+30 planned) | 0 | 200 + 300 when the planned ones are live |
+| industry | yes | 20 (+23 planned) | 0 | 200 + 230 when the planned ones are live |
+| compare | en-only | 20 | 0 |  |
+| support | yes | 1 | 1 |  |
+| program | yes | 1 | 0 | 10 |
+| trust | yes | 0 (+2 planned) | 0 | 20 when the planned ones are live |
+| legal | yes | 2 | 0 | 20 |
+| guide | en-only | 0 | 0 |  |
+| template (file format) | en-only | 0 | 0 |  |
+| tool | yes | 4 | 4 |  |
+| android | yes | 1 | 1 |  |
+| template (billing type) | yes | 0 (+20 planned) | 0 | 200 when the planned ones are live |
+| country | en-only | 0 | 0 |  |
+
+**450 language versions still to write** for live pages.
+
 ### invoicor.com: page type × language
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |

@@ -9,6 +9,7 @@ export const COLUMNS = [
   "status",
   "added",
   "page_type",
+  "localize",
   "primary_keyword",
   "secondary_keywords",
   "intent",
@@ -16,6 +17,13 @@ export const COLUMNS = [
   "baseline_position",
   "notes",
 ];
+
+/**
+ * The language decision per page (roadmap R4, "localize only what makes sense"):
+ * yes = written per country in every language · local = only in its own language ·
+ * en-only = stays English (US/UK-only topics, HL8; the blog is a separate site).
+ */
+export const LOCALIZE = ["yes", "local", "en-only"];
 
 export const LOCALES = ["en", "nl", "de", "fr", "es", "it", "pt", "pl", "sv", "da", "nb"];
 export const BLOG_ORIGIN = "https://learn.invoicor.com";
@@ -196,6 +204,40 @@ export function renderPagesMd(rows) {
     );
   }
   out.push("");
+
+  // Languages: what still needs writing in the other 10 languages
+  out.push(
+    "## Languages",
+    "",
+    "Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per",
+    "country in all 11 languages (local words, rules and examples, not word for word), **local** = only",
+    "in its own language, **en-only** = stays English. Each batch decides this for its new pages and",
+    "writes its language versions as part of the batch.",
+    "",
+    "| Page type | Decision | English | Per other language | Still to write |",
+    "|---|---|---|---|---|",
+  );
+  const site = rows.filter((r) => !r.url.startsWith(BLOG_ORIGIN) && r.status !== "removed");
+  let todo = 0;
+  for (const t of [...new Set(site.filter((r) => r.lang === "en").map((r) => r.page_type))]) {
+    const en = site.filter((r) => r.lang === "en" && r.page_type === t);
+    const decisions = [...new Set(en.map((r) => r.localize || "?"))].join(", ");
+    const enLive = en.filter((r) => r.status === "live" && r.localize === "yes").length;
+    const enPlanned = en.filter((r) => r.status === "planned" && r.localize === "yes").length;
+    const per = LOCALES.slice(1).map(
+      (l) => site.filter((r) => r.lang === l && r.page_type === t && r.status === "live").length,
+    );
+    const missing = per.reduce((sum, n) => sum + Math.max(0, enLive - n), 0);
+    todo += missing;
+    const range =
+      Math.min(...per) === Math.max(...per)
+        ? `${per[0]}`
+        : `${Math.min(...per)}–${Math.max(...per)}`;
+    out.push(
+      `| ${t} | ${decisions} | ${en.filter((r) => r.status === "live").length}${enPlanned ? ` (+${enPlanned} planned)` : ""} | ${range} | ${missing || ""}${enPlanned ? `${missing ? " + " : ""}${enPlanned * 10} when the planned ones are live` : ""} |`,
+    );
+  }
+  out.push("", `**${todo} language versions still to write** for live pages.`, "");
 
   // Page type × language
   const types = [

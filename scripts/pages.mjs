@@ -92,6 +92,8 @@ for (const url of siteUrls) {
       status: "live",
       added: "",
       page_type: type,
+      // A translation follows its English page; a new English page needs a decision (R4).
+      localize: enRow?.localize ?? "",
       primary_keyword: keyFrom(url, html),
       secondary_keywords: "",
       intent: "",
@@ -133,6 +135,7 @@ try {
       status: "live",
       added: p.date,
       page_type: "blog",
+      localize: "en-only",
       primary_keyword: p.url.split("/").pop().replace(/-/g, " "),
       secondary_keywords: "",
       intent: "learn",
