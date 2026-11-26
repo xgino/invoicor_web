@@ -10,10 +10,11 @@ import {
   LOCALIZE,
   parseCsv,
   renderPagesMd,
-  renderPlanMd,
+  renderPlanFiles,
   similarity,
 } from "../../scripts/pages-lib.mjs";
 import { CATEGORIES } from "../../scripts/pages-categories.mjs";
+import { CHUNKS } from "../../scripts/pages-chunks.mjs";
 
 interface Row {
   url: string;
@@ -78,10 +79,21 @@ describe("page log", () => {
     );
   });
 
-  it(`seo/PLAN.md is up to date (${FIX})`, () => {
-    expect(readFileSync(join(process.cwd(), "seo/PLAN.md"), "utf8")).toBe(
-      renderPlanMd(rows as unknown as Record<string, string>[]),
-    );
+  it(`seo/PLAN.md and seo/plan/*.md are up to date (${FIX})`, () => {
+    const files = renderPlanFiles(rows as unknown as Record<string, string>[]);
+    for (const [file, text] of Object.entries(files))
+      expect(readFileSync(join(process.cwd(), file), "utf8"), file).toBe(text);
+  });
+
+  it("keeps items the size one run builds well (at most 25 pages) and in a chunk", () => {
+    const ids = new Set(CHUNKS.flatMap((c) => c.items.map((i) => i.id)));
+    const sizes = new Map<string, number>();
+    for (const r of rows as unknown as Record<string, string>[])
+      if (r.item) sizes.set(r.item, (sizes.get(r.item) ?? 0) + 1);
+    expect([...sizes].filter(([, n]) => n > 25)).toEqual([]);
+    expect([...sizes.keys()].filter((id) => !ids.has(id))).toEqual([]);
+    const langs = CHUNKS.flatMap((c) => c.languages ?? []);
+    expect(langs.filter((id) => !sizes.has(id))).toEqual([]);
   });
 
   it("gives every planned page a brief, so the next batch can be built from PLAN.md", () => {

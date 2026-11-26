@@ -12,7 +12,7 @@
  * Rows without a date get the date from git history (the commit that added that page).
  */
 import { execFileSync } from "node:child_process";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -23,14 +23,13 @@ import {
   closest,
   parseCsv,
   renderPagesMd,
-  renderPlanMd,
+  renderPlanFiles,
   toCsv,
 } from "./pages-lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CSV = join(root, "seo/keyword-map.csv");
 const MD = join(root, "seo/PAGES.md");
-const PLAN = join(root, "seo/PLAN.md");
 const OUT = join(root, "out");
 const today = new Date().toISOString().slice(0, 10);
 
@@ -81,6 +80,11 @@ const siteUrls = [
 ].map((m) => m[1] || "/");
 
 for (const url of siteUrls) {
+  // A translation remembers its English page (hreflang="en"), so PLAN.md can tick off language items.
+  if (langOf(url) !== "en" && byUrl.get(url) && !byUrl.get(url).translation_of) {
+    const en = htmlOf(url).match(/hrefLang="en" href="https:\/\/invoicor\.com([^"]*)"/);
+    if (en) byUrl.get(url).translation_of = en[1] || "/";
+  }
   const row = byUrl.get(url);
   if (!row) {
     const html = htmlOf(url);
@@ -96,6 +100,8 @@ for (const url of siteUrls) {
       page_type: type,
       // A translation follows its English page; a new English page needs a decision (R4).
       localize: enRow?.localize ?? "",
+      translation_of: enRow ? en[1] || "/" : "",
+      item: "",
       primary_keyword: keyFrom(url, html),
       secondary_keywords: "",
       intent: "",
@@ -166,10 +172,13 @@ const order = (r) => (r.url.startsWith(BLOG_ORIGIN) ? 2 : r.lang === "en" ? 0 : 
 rows.sort((a, b) => order(a) - order(b));
 writeFileSync(CSV, toCsv(rows));
 writeFileSync(MD, renderPagesMd(rows));
-writeFileSync(PLAN, renderPlanMd(rows));
+for (const [file, text] of Object.entries(renderPlanFiles(rows))) {
+  mkdirSync(dirname(join(root, file)), { recursive: true });
+  writeFileSync(join(root, file), text);
+}
 console.log(changes.length ? changes.join("\n") : "No new or removed pages.");
 console.log(
-  `\nseo/keyword-map.csv, seo/PAGES.md and seo/PLAN.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
+  `\nseo/keyword-map.csv, seo/PAGES.md, seo/PLAN.md and seo/plan/ updated (${rows.filter((r) => r.status === "live").length} live pages).`,
 );
 
 // ── Helpers ──

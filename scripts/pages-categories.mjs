@@ -138,7 +138,8 @@ export const CATEGORIES = [
   {
     id: "local",
     title: "Local pages (in the country's own language)",
-    match: (r) => r.page_type === "country" && r.lang !== "en",
+    match: (r) =>
+      (r.page_type === "country" && r.lang !== "en") || r.page_type === "compare (local)",
     url: "`/{lang}/{local slug}`",
     key: 'the country\'s own search words (e.g. "pflichtangaben rechnung", "factuureisen")',
     blueprint: "BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages",

@@ -20,3 +20,4 @@ export function overlaps(rows: Row[]): Array<{ a: Row; b: Row; score: number }>;
 export function section(row: Row): string;
 export function renderPagesMd(rows: Row[]): string;
 export function renderPlanMd(rows: Row[]): string;
+export function renderPlanFiles(rows: Row[]): Record<string, string>;

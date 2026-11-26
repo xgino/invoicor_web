@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**241 live pages** · last change 2026-11-26 · 103 more planned in [PLAN.md](PLAN.md)
+**241 live pages** · last change 2026-11-26 · 346 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
