@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
 
-**50 done · 90 planned**
+**50 done · 106 planned**
 
 ## Direction
 
@@ -21,25 +21,26 @@
 
 **Can't do:**
 
-- A trade that's only a synonym or a sub-niche of a live one ("auto repair" is already the key of /templates/auto-detailing): improve that page instead.
+- A trade that's only a synonym or a sub-niche of a live one (wedding photography is part of /templates/photography, mobile mechanic of /templates/auto-repair): improve that page instead.
+- Two trades on one page: one trade, one key (auto detailing and auto repair are two searches, so two pages).
 - Word, Excel or Google Docs downloads: we don't offer those files (S1-n).
 - City or state versions of the same trade (doorway pages).
 - Billing-type questions in depth (deposits, retainers, hourly): those are their own pages, see Billing-type templates.
 
 ## Done (50): don't build these again
 
-`photography` photography invoice template · `plumbing` plumbing invoice template · `hvac` hvac invoice template · `freelance-design` graphic design invoice template · `handyman` handyman invoice template · `videography` videography invoice template · `landscaping` landscaping invoice template · `consulting` consulting invoice template · `cleaning-services` cleaning invoice template · `auto-detailing` auto repair invoice template · `electrician` electrician invoice template · `construction` construction invoice template · `roofing` roofing invoice template · `painting` painting invoice template · `web-development` web development invoice template · `personal-training` personal trainer invoice template · `tutoring` tutoring invoice template · `catering` catering invoice template · `moving` moving company invoice template · `pest-control` pest control invoice template · `virtual-assistant` virtual assistant invoice template · `pet-sitting` pet sitting invoice template · `makeup-artist` makeup artist invoice template · `carpentry` carpentry invoice template · `flooring` flooring invoice template · `tile-installation` tile installation invoice template · `drywall` drywall invoice template · `masonry` masonry invoice template · `fence-installation` fence installation invoice template · `pool-service` pool service invoice template · `window-cleaning` window cleaning invoice template · `pressure-washing` pressure washing invoice template · `tree-service` tree service invoice template · `snow-removal` snow removal invoice template · `locksmith` locksmith invoice template · `appliance-repair` appliance repair invoice template · `junk-removal` junk removal invoice template · `carpet-cleaning` carpet cleaning invoice template · `interior-design` interior design invoice template · `remodeling` remodeling invoice template · `garage-door-repair` garage door repair invoice template · `dj` dj invoice template · `event-planning` event planner invoice template · `florist` florist invoice template · `massage-therapy` massage therapy invoice template · `translation` translation invoice template · `copywriting` copywriter invoice template · `social-media-management` social media manager invoice template · `music-lessons` music teacher invoice template · `bookkeeping` bookkeeping invoice template
+`photography` photography invoice template · `plumbing` plumbing invoice template · `hvac` hvac invoice template · `freelance-design` graphic design invoice template · `handyman` handyman invoice template · `videography` videography invoice template · `landscaping` landscaping invoice template · `consulting` consulting invoice template · `cleaning-services` cleaning invoice template · `auto-detailing` auto detailing invoice template · `electrician` electrician invoice template · `construction` construction invoice template · `roofing` roofing invoice template · `painting` painting invoice template · `web-development` web development invoice template · `personal-training` personal trainer invoice template · `tutoring` tutoring invoice template · `catering` catering invoice template · `moving` moving company invoice template · `pest-control` pest control invoice template · `virtual-assistant` virtual assistant invoice template · `pet-sitting` pet sitting invoice template · `makeup-artist` makeup artist invoice template · `carpentry` carpentry invoice template · `flooring` flooring invoice template · `tile-installation` tile installation invoice template · `drywall` drywall invoice template · `masonry` masonry invoice template · `fence-installation` fence installation invoice template · `pool-service` pool service invoice template · `window-cleaning` window cleaning invoice template · `pressure-washing` pressure washing invoice template · `tree-service` tree service invoice template · `snow-removal` snow removal invoice template · `locksmith` locksmith invoice template · `appliance-repair` appliance repair invoice template · `junk-removal` junk removal invoice template · `carpet-cleaning` carpet cleaning invoice template · `interior-design` interior design invoice template · `remodeling` remodeling invoice template · `garage-door-repair` garage door repair invoice template · `dj` dj invoice template · `event-planning` event planner invoice template · `florist` florist invoice template · `massage-therapy` massage therapy invoice template · `translation` translation invoice template · `copywriting` copywriter invoice template · `social-media-management` social media manager invoice template · `music-lessons` music teacher invoice template · `bookkeeping` bookkeeping invoice template
 
-## Planned (90)
+## Planned (106)
 
 ### Item 1C (10)
 
 #### /templates/notary
 
 - **Key:** notary invoice template · also: mobile notary invoice; loan signing invoice
-- **Item:** 1C · **Intent:** template (download/fill) · **Languages:** yes
+- **Item:** 1C · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Mobile notaries and loan signing agents: fees per notarial act are capped by state law (each state publishes its maximum; check and say "check your state's fee schedule"), travel fees billed separately, loan signings paid by signing services or title companies (often net 30), printing and courier fees. Sample: a loan signing with travel and printing. FAQs: can I charge travel, what's the maximum fee, who pays a loan signing, what to put on the invoice.
-- **Notes:** industry: notaries
+- **Notes:** industry: notaries; en-only: in DE, FR, ES, IT and NL a notary is a state-appointed lawyer with fees set by law, not a mobile signing service
 
 #### /templates/home-inspection
 
@@ -161,7 +162,6 @@
 - **Item:** 2A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per linear foot or per box, removal of old cabinets, hardware, crown molding, who supplies the cabinets.
 - **Don't write about:** Full remodels (owned by /templates/remodeling).
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”) · /templates/fence-installation (“fence installation invoice template”)
 - **Notes:** industry: cabinet-installers
 
 #### /templates/countertop-installation
@@ -169,7 +169,6 @@
 - **Key:** countertop installation invoice template · also: granite countertop invoice; quartz countertop invoice
 - **Item:** 2A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Price per square foot of slab, templating visit, sink and cooktop cutouts, edge profiles, the deposit at templating, removal of old tops.
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”) · /templates/fence-installation (“fence installation invoice template”)
 - **Notes:** industry: countertop-installers
 
 #### /templates/insulation
@@ -184,7 +183,6 @@
 - **Key:** siding installation invoice template · also: siding contractor invoice
 - **Item:** 2A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Price per square (100 sq ft), material (vinyl, fiber cement, wood), trim and wrap, tear-off and disposal.
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”) · /templates/fence-installation (“fence installation invoice template”)
 - **Notes:** industry: siding-contractors
 
 #### /templates/window-installation
@@ -193,7 +191,7 @@
 - **Item:** 2A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Price per window by size and type, removal and disposal, capping and trim, glass options, permits where needed.
 - **Don't write about:** Window cleaning (owned by /templates/window-cleaning).
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”) · /templates/fence-installation (“fence installation invoice template”) · /templates/window-cleaning (“window cleaning invoice template”)
+- **Already covered (link, don't repeat):** /templates/window-cleaning (“window cleaning invoice template”) · /industries/window-cleaners (“invoice app for window cleaners”)
 - **Notes:** industry: window-installers
 
 #### /templates/asphalt-paving
@@ -223,7 +221,6 @@
 - **Item:** 2A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. System size in kW, panels and inverter, racking, permits and interconnection, progress payments; incentives change (hedge, check the current rules).
 - **Don't write about:** Electrical work in general (owned by /templates/electrician).
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”) · /templates/fence-installation (“fence installation invoice template”)
 - **Notes:** industry: solar-installers
 
 #### /templates/home-staging
@@ -312,7 +309,7 @@
 - **Key:** jewelry repair invoice template · also: jeweler invoice
 - **Item:** 3B · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Sizing, stone setting, soldering, cleaning, the item's description and insured value on the invoice (hedge appraisals).
-- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto repair invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
 - **Notes:** industry: jewelers
 
 #### /templates/bike-repair
@@ -320,7 +317,7 @@
 - **Key:** bike repair invoice template · also: bicycle repair invoice
 - **Item:** 3B · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Tune-up levels, parts and labor, e-bike work, pickup and delivery.
-- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto repair invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
 - **Notes:** industry: bike-mechanics
 
 #### /templates/small-engine-repair
@@ -335,7 +332,7 @@
 - **Key:** boat repair invoice template · also: marine service invoice
 - **Item:** 3B · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Haul-out and launch, engine hours, bottom paint, winterization, storage per month.
-- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto repair invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
 - **Notes:** industry: marine-mechanics
 
 #### /templates/rv-repair
@@ -343,7 +340,7 @@
 - **Key:** rv repair invoice template · also: mobile rv repair invoice
 - **Item:** 3B · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Mobile trip charge, roof sealing, appliances, parts with lead times.
-- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto repair invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
 - **Notes:** industry: rv-technicians
 
 #### /templates/towing
@@ -464,10 +461,11 @@
 #### /templates/tax-preparation
 
 - **Key:** tax preparation invoice template · also: tax preparer invoice
-- **Item:** 4B · **Intent:** template (download/fill) · **Languages:** yes
+- **Item:** 4B · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per return and per form or schedule, state returns, e-filing; preparers need a PTIN in the US (hedge).
 - **Don't write about:** Bookkeeping (owned by /templates/bookkeeping).
-- **Notes:** industry: tax-preparers
+- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”)
+- **Notes:** industry: tax-preparers; en-only: US-style tax preparation; elsewhere fees are often regulated (Germany: StBVV)
 
 #### /templates/attorney
 
@@ -689,7 +687,7 @@
 - **Item:** 5A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Glass by size and type, labor, board-ups and emergencies.
 - **Don't write about:** Window installation (owned by /templates/window-installation).
-- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto repair invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
 - **Notes:** industry: glaziers
 
 #### /templates/wildlife-removal
@@ -721,3 +719,137 @@
 - **Item:** 5A · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Hourly or per project, products bought, donation runs.
 - **Notes:** industry: professional-organizers
+
+### Item 6B (16)
+
+#### /templates/auto-repair
+
+- **Key:** auto repair invoice template · also: mechanic invoice template; car repair invoice; garage invoice template
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Shop or mobile mechanic: parts with part numbers (new, used, OEM or aftermarket), labor by book hours vs actual hours, diagnostic fee, shop supplies fee, the vehicle (year, make, model, VIN, odometer in and out), parts and labor warranty, old parts returned; some states require itemized repair invoices (hedge; e.g. California BAR: cite and date). When it goes live, move the mechanic content off /templates/auto-detailing.
+- **Don't write about:** Detailing (/templates/auto-detailing); body and paint (/templates/auto-body).
+- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto detailing invoice template”) · /templates/appliance-repair (“appliance repair invoice template”)
+- **Notes:** industry: auto-detailing-mechanics
+
+#### /templates/auto-body
+
+- **Key:** auto body invoice template · also: collision repair invoice; body shop invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Collision and paint: the insurance claim number and adjuster, the estimate vs supplements, the deductible the customer pays vs the insurer's share, paint and materials per hour, frame time, sublet work (glass, alignment), refinish hours. Sample: an insured repair with a $500 deductible.
+- **Don't write about:** Mechanical repair (/templates/auto-repair); detailing (/templates/auto-detailing).
+- **Already covered (link, don't repeat):** /templates/auto-detailing (“auto detailing invoice template”)
+- **Notes:** industry: auto-detailing-mechanics
+
+#### /templates/dog-grooming
+
+- **Key:** dog grooming invoice template · also: pet grooming invoice; grooming invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per dog by size and coat (bath, full groom, hand strip), add-ons (nails, teeth, de-shedding, flea bath), matting and behaviour surcharges, the mobile van fee, no-show policy, a multi-dog discount. Sample: two dogs.
+- **Don't write about:** Pet sitting and walking (/templates/pet-sitting); training (/templates/dog-training).
+- **Notes:** industry: pet-care
+
+#### /templates/hair-salon
+
+- **Key:** hair salon invoice template · also: salon invoice; hair stylist invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. When a salon or stylist invoices instead of ringing up at the till: bridal and event hair on location, B2B work (shoots, theatre), weekly booth or chair rent the owner invoices to renters, product sales taxed apart. Say plainly that everyday salon sales are till receipts. Sample: 4 weeks of booth rent + a wedding party.
+- **Don't write about:** Makeup (/templates/makeup-artist); barbering (/templates/barber).
+- **Notes:** industry: hair-makeup-artists
+
+#### /templates/architect
+
+- **Key:** architect invoice template · also: architectural services invoice; architecture invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Fees by phase (schematic design, design development, construction documents, bidding, construction administration) as a % of a fixed fee or of construction cost, or hourly; reimbursables at cost or with a multiplier; additional services by agreement. Sample: phase 2 at 40% of a $30,000 fee. Fee rules vary by country (Germany's HOAI: the local version; hedge).
+- **Don't write about:** Interior design (/templates/interior-design); construction billing (/templates/construction-progress-invoice).
+- **Notes:** industry: architects
+
+#### /templates/real-estate
+
+- **Key:** real estate invoice template · also: real estate commission invoice; realtor invoice template; commission invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Agents and brokers invoicing a brokerage, a seller or a developer: the property, sale price, commission rate and split (agent and brokerage, co-op), referral fees, closing date; or flat-fee services. Who pays and how much is negotiated and varies by state and country (US: buyer-agent pay since the 2024 NAR settlement: cite and date). Sample: a 2.5% side on a $400,000 sale, a 70/30 split.
+- **Don't write about:** Property management (/templates/property-management); rent (/templates/rent); the math (the commission calculator).
+- **Notes:** industry: real-estate-agents
+
+#### /templates/equipment-rental
+
+- **Key:** equipment rental invoice template · also: rental equipment invoice; tool rental invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Construction and tool rental: day, week and 4-week rates (and when the cheaper rate applies), delivery and pickup, fuel and cleaning charges, damage waiver, hour meter in and out, the deposit, late returns. Sample: a mini excavator for 9 days (a week + 2 days).
+- **Don't write about:** Party and event rentals (/templates/party-rentals); photo booths (/templates/photo-booth-rental).
+- **Notes:** industry: equipment-rental-companies
+
+#### /templates/private-investigator
+
+- **Key:** private investigator invoice template · also: pi invoice; investigation invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. A retainer, then hourly: surveillance hours, report writing, mileage, database search fees, court time; the licence number many US states require on documents (hedge per state); describe the work without exposing the subject. Sample: 12 h surveillance, 2 h report, 140 miles, database fees.
+- **Don't write about:** Security guards (/templates/security-guard).
+- **Notes:** industry: private-investigators
+
+#### /templates/phone-repair
+
+- **Key:** phone repair invoice template · also: cell phone repair invoice; screen repair invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per repair: the device (model, IMEI or serial), the fault, parts (OEM or aftermarket screen, battery), labor or a flat price, a diagnostic fee if not repaired, the part's warranty, data-loss and water-damage disclaimers. Sample: a screen + battery.
+- **Don't write about:** IT support for businesses (/templates/it-services); appliance repair (/templates/appliance-repair).
+- **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
+- **Notes:** industry: it-technicians
+
+#### /templates/furniture-assembly
+
+- **Key:** furniture assembly invoice template · also: flat pack assembly invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per item (bed, wardrobe, desk: the box's piece count as a guide) or hourly with a minimum, wall anchoring, packaging removal, travel; client-supplied items and missing parts in the terms. Sample: 4 items for a move-in.
+- **Don't write about:** Handyman work in general (/templates/handyman); custom furniture making (/templates/custom-furniture).
+- **Notes:** industry: none (link /templates/handyman as related)
+
+#### /templates/upholstery
+
+- **Key:** upholstery invoice template · also: reupholstery invoice; upholsterer invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Labor per piece by type (dining seat, armchair, sofa), fabric by the yard or metre (supplied, or the customer's own with a COM fee), foam and webbing, pickup and delivery, a deposit for the fabric. Sample: a sofa + 6 dining seats.
+- **Don't write about:** Furniture making (/templates/custom-furniture).
+- **Notes:** industry: furniture-makers
+
+#### /templates/life-coaching
+
+- **Key:** life coach invoice template · also: coaching invoice template; coaching session invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Packages (6 or 12 sessions), single sessions, programmes paid in instalments, cancellation and no-show rules, VAT on coaching (hedge). Not therapy: no health claims. Sample: a 6-session package in 2 instalments.
+- **Don't write about:** Business consulting (/templates/consulting); therapy (/templates/therapy); sports coaching (/templates/sports-coaching).
+- **Notes:** industry: consultants-coaches
+
+#### /templates/bartending
+
+- **Key:** bartending invoice template · also: bartender invoice; mobile bar invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Event bartending: hours × bartenders with a minimum, setup and breakdown, a bar package per guest when the bartender supplies the drinks (licensing rules vary: hedge), mixers and ice, glassware rental, travel, a gratuity line. Sample: a 120-guest wedding, 2 bartenders, 5 hours.
+- **Don't write about:** Catering food service (/templates/catering).
+- **Notes:** industry: caterers
+
+#### /templates/plastering
+
+- **Key:** plastering invoice template · also: plasterer invoice; stucco invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Skim coat vs full replaster by area, patching per item, ceilings and coving, drying time between coats, materials (bags, beads), access and scaffolding; UK and EU plastering, US stucco and veneer plaster. Sample: replaster a room and skim the ceiling.
+- **Don't write about:** Drywall hanging and taping (/templates/drywall).
+- **Notes:** industry: general-contractors
+
+#### /templates/concrete
+
+- **Key:** concrete invoice template · also: concrete contractor invoice; concrete work invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Flatwork: slab or driveway by square foot and thickness, cubic yards poured, rebar or mesh, forms, finish (broom, stamped, exposed aggregate), removing the old slab, pump-truck and short-load fees, curing time. Sample: a 600 sq ft driveway.
+- **Don't write about:** Brick, block and stone (/templates/masonry); the volume math (/tools/concrete-cost-calculator).
+- **Notes:** industry: masons
+
+#### /templates/event-venue
+
+- **Key:** event venue invoice template · also: venue rental invoice; venue hire invoice
+- **Item:** 6B · **Intent:** template (download/fill) · **Languages:** yes
+- **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Venue hire: date and hours (setup and breakdown time), the fee by day or hour, a food and beverage minimum, service charge vs gratuity, security and cleaning fees, the damage deposit, the payment schedule (deposit at booking, balance before the event). Sample: a Saturday wedding.
+- **Don't write about:** Event planning (/templates/event-planning); party rentals (/templates/party-rentals).
+- **Already covered (link, don't repeat):** /templates/event-planning (“event planner invoice template”)
+- **Notes:** industry: event-planners

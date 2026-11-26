@@ -105,7 +105,7 @@ export function tokens(text) {
  * "tree service invoice template" aren't called alike just because of "invoice template".
  */
 const COMMON = new Set(
-  "invoice invoicing template app software iphone free factuur rechnung facture factura fattura fatura faktura".split(
+  "invoice invoicing template app software iphone free factuur rechnung facture factura fattura fatura faktura calculator pricing cost installation estimate".split(
     " ",
   ),
 );
@@ -125,10 +125,27 @@ export function similarity(a, b) {
   return shared / all;
 }
 
-/** A trade's template and its "invoice app for …" page are a pair by design (a document vs an app). */
-const isPair = (a, b) =>
-  [a.page_type, b.page_type].includes("industry") &&
-  [a.page_type, b.page_type].some((t) => t.startsWith("template"));
+/**
+ * Pairs by design: a trade's template and its "invoice app for …" page (a document vs an app), and
+ * an invoice type and a trade's page ("deposit invoice" is the parent of "photography deposit
+ * invoice"; "service invoice" isn't "pool service invoice").
+ */
+const isPair = (a, b) => {
+  const types = [a.page_type, b.page_type];
+  if (types.includes("industry") && types.some((t) => t.startsWith("template"))) return true;
+  // A calculator and a template answer different searches ("… calculator" vs "… invoice template").
+  if (types.includes("tool") && types.some((t) => t.startsWith("template"))) return true;
+  // A trade's template and its own billing-type pages (/templates/dj and /templates/dj-deposit-invoice).
+  const slug = (r) => r.url.split("/").pop();
+  if (types.includes("template") && types.includes("template (billing type)")) {
+    const [t, bt] = a.page_type === "template" ? [a, b] : [b, a];
+    if (slug(bt).startsWith(`${slug(t)}-`) || slug(bt).includes(`-${slug(t)}-`)) return true;
+  }
+  return (
+    types.filter((t) => t === "template (invoice type)").length === 1 &&
+    types.every((t) => t.startsWith("template"))
+  );
+};
 
 /** The pages most like `keyword` in the same language, best first. */
 export function closest(rows, keyword, lang = "en", limit = 8) {
@@ -342,6 +359,16 @@ const PAGE_RULES = [
   "- Link the trade's pages both ways (template ↔ industry ↔ billing types); 2 `related` per page.",
   "- Never build a page that's in a category's **Done** list or whose key is taken",
   '  (`npm run pages -- --check "<key>"`): improve that page instead.',
+  "- **Demand first (the gate):** before writing, find evidence that people search for the page's",
+  '  key: Search Console queries, Google\'s autocomplete and "People also ask", or a keyword tool.',
+  "  No evidence: don't write it. Set its `status` to `parked` with the reason in `notes`. The item",
+  "  is done without it, and the key stays reserved so nobody plans it again.",
+  "- **Value of its own:** a page must answer something its neighbours don't. If the honest content",
+  "  is mostly the parent page with other nouns (a trade's billing type, a niche trade's app page),",
+  "  park it and improve the parent instead. 4,000 pages is a direction, not a quota: Google's",
+  "  scaled-content policy judges value per page, and weak pages pull the whole site down.",
+  "- **Release in waves:** at most ~150 new URLs per deploy, then watch indexing per page type in",
+  "  Search Console (sitemap per type, task 1A).",
 ];
 
 /** All plan files: seo/PLAN.md (the chunks) and seo/plan/{category}.md (the briefs). */
@@ -361,18 +388,28 @@ const pageLink = (r, fromPlan = true) => {
   return c ? `${fromPlan ? "plan/" : ""}${c.id}.md#${anchor(shortUrl(r.url))}` : "";
 };
 
+/** An item's pages to build; parked pages (no demand, see PAGE_RULES) don't count. */
 function itemStats(rows, itemId) {
-  const pages = rows.filter((r) => r.item === itemId && r.status !== "removed");
-  return { pages, live: pages.filter((r) => r.status === "live").length };
+  const all = rows.filter((r) => r.item === itemId && r.status !== "removed");
+  const pages = all.filter((r) => r.status !== "parked");
+  return {
+    pages,
+    parked: all.filter((r) => r.status === "parked"),
+    live: pages.filter((r) => r.status === "live").length,
+  };
 }
 
+/**
+ * An item's pages in one language. A page that doesn't fit that country (no local demand, a trade
+ * that works differently there) gets a row in that language with `status: parked` and
+ * `translation_of`: it's skipped.
+ */
 function languageStats(rows, pages, lang) {
   const yes = pages.filter((r) => r.localize === "yes");
   const urls = new Set(yes.map((r) => r.url));
-  const done = rows.filter(
-    (r) => r.lang === lang && r.status === "live" && urls.has(r.translation_of),
-  ).length;
-  return { total: yes.length, done };
+  const of = (status) =>
+    rows.filter((r) => r.lang === lang && r.status === status && urls.has(r.translation_of)).length;
+  return { total: yes.length - of("parked"), done: of("live") };
 }
 
 function renderChunks(rows) {
@@ -421,7 +458,8 @@ function renderChunks(rows) {
     "",
     'Say which items: "do 1B", or "do 1B, 1B-de, 1B-es". Then, per item:',
     "",
-    "1. **English item (e.g. 1B):** for each page listed under the item, read its brief (the link) and",
+    "1. **English item (e.g. 1B):** first the demand gate (rules below): park the pages nobody",
+    "   searches for. Then, for each page listed under the item, read its brief (the link) and",
     "   its category's direction in the same file, the blueprint, and the fact sheet",
     "   [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,",
     "   then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update",
@@ -429,7 +467,10 @@ function renderChunks(rows) {
     "2. **Language item (e.g. 1B-de):** the item's pages written for that language's country, not",
     "   translated word for word: local search words in the slug and title, local prices, currency,",
     "   number format, tax words and rules (the language table below). Needs task 1A done first.",
-    "   The same checks; each version links to its English page (hreflang).",
+    "   The same checks; each version links to its English page (hreflang). A page with no local",
+    "   search or a trade that works differently there (a notary in Germany is a state office with",
+    "   fixed fees) gets a `parked` row in that language (`translation_of` = the English URL, the",
+    "   reason in `notes`): skipped, not translated anyway.",
     "3. **Task (e.g. 1A):** code work, no pages. Tick it in `scripts/pages-chunks.mjs` (`done: true`).",
     "4. **Between chunks:** wait 2–3 weeks after a deploy and check in Search Console how many of the",
     "   new pages got indexed. A page type under ~50% indexed after 4 weeks: stop and improve it first.",
@@ -466,6 +507,10 @@ function renderChunks(rows) {
     "  a brief (`brief`) and what not to repeat (`avoid`) before they get an `item`.",
     "- **Proven types first:** a new page type (a new category) starts with one item of ≤ 10 pages and",
     "  grows only after it indexes.",
+    '- **Parents before children:** the general page ("deposit invoice") comes before or with its',
+    '  specific ones ("photography deposit invoice"), and the children link up to it.',
+    "- **Bigger searches first:** a new trade or topic must be a search of its own, not a sub-niche or a",
+    "  synonym of a planned one. Order items by expected demand, not by category.",
     "- **Re-plan after each chunk** with Search Console data: more of what ranks, less of what doesn't.",
     "",
     "## Chunks",
@@ -487,18 +532,21 @@ function renderChunks(rows) {
         out.push(`- ${box(it.done)} **${it.id}** (task) ${it.title}: ${it.text}`);
         continue;
       }
-      const { pages, live: n } = itemStats(rows, it.id);
+      const { pages, parked, live: n } = itemStats(rows, it.id);
       const cats = [...new Set(pages.map((r) => categoryOf(r)).filter(Boolean))];
       out.push(
-        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** ${it.title} · ${n}/${pages.length} live · ${cats
+        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** ${it.title} · ${n}/${pages.length} live${parked.length ? ` (${parked.length} parked)` : ""} · ${cats
           .map((c) => `[${c.title}](plan/${c.id}.md)`)
-          .join(", ")}`,
+          .join(", ")}${it.text ? `. ${it.text}` : ""}`,
       );
-      if (ch.id !== "0")
+      if (ch.id !== "0") {
         for (const r of pages)
           out.push(
             `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${pageLink(r)}) ${r.primary_keyword}`,
           );
+        for (const r of parked)
+          out.push(`  - ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
+      }
     }
     if (ch.languages?.length) {
       out.push(
@@ -541,6 +589,7 @@ function renderCategory(rows, c) {
   const list = site.filter(c.match);
   const done = list.filter((r) => r.status === "live");
   const todo = list.filter((r) => r.status === "planned");
+  const parked = list.filter((r) => r.status === "parked");
   const live = rows.filter((r) => r.status === "live");
   const out = [
     `# ${c.title}`,
@@ -609,6 +658,17 @@ function renderCategory(rows, c) {
       out.push("");
     }
   }
+  if (parked.length)
+    out.push(
+      `## Parked (${parked.length}): not built, key reserved`,
+      "",
+      "No proven demand, or the parent page covers it. Unpark (`status: planned`) only with new evidence.",
+      "",
+      ...parked.map(
+        (r) => `- \`${shortUrl(r.url)}\` ${r.primary_keyword}: ${r.notes || "no reason given"}`,
+      ),
+      "",
+    );
   return out.join("\n");
 }
 

@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
 
-**0 done · 30 planned**
+**0 done · 35 planned**
 
 ## Direction
 
@@ -16,6 +16,7 @@
 
 - Written in the language from the start (rule R4): local invoice rules, small-business schemes, local wording and examples.
 - Later: comparisons with that country's own rivals (HL9).
+- Local topics that have no English parent (`local topic`): rules only that country has, e.g. the German Kleinbetragsrechnung (≤ 250 €), the Swedish ROT/RUT deduction on the invoice.
 
 **Can't do:**
 
@@ -26,7 +27,7 @@
 
 _None yet._
 
-## Planned (30)
+## Planned (35)
 
 ### Item 1E (3)
 
@@ -206,6 +207,43 @@ _None yet._
 - **Key:** conta alternativ
 - **Item:** 3D · **Intent:** compare · **Languages:** local (written in nb)
 - **Write about:** Written in the language (HL9): a fair comparison with a local rival, their prices from their own site (source and date), and honestly where they're better (most local tools do e-invoicing, bookkeeping and bank links that Invoicor doesn't). Rival: Conta; check it still exists and its current plans.
+
+### Item 6D (5)
+
+#### /de/kleinbetragsrechnung
+
+- **Key:** kleinbetragsrechnung · also: kleinbetragsrechnung vorlage; rechnung unter 250 euro
+- **Item:** 6D · **Intent:** local rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Germany: what a small invoice up to €250 gross must show and what it may leave out (§33 UStDV: cite and date), with Austria's €400 rule as a box. A generator example.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice).
+
+#### /de/handwerkerrechnung
+
+- **Key:** handwerkerrechnung steuer absetzen · also: handwerkerleistungen rechnung; lohnkosten auf rechnung ausweisen
+- **Item:** 6D · **Intent:** local rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German: the client can deduct part of the labor cost (§35a EStG: check the share and the yearly cap) only when the invoice shows labor, travel and machine costs apart from materials and the client pays by bank transfer. How to lay out the lines; a sample. The same for household services.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice).
+
+#### /es/factura-simplificada
+
+- **Key:** factura simplificada · also: factura simplificada requisitos; ticket o factura
+- **Item:** 6D · **Intent:** local rules · **Languages:** local (written in es)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Spanish, for Spain: when a simplified invoice is allowed (the €400 limit and the €3,000 sectors in Real Decreto 1619/2012: check), what it must show, when the customer can ask for a full invoice; Verifactu (check if and when it applies).
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice).
+
+#### /sv/rot-och-rut-avdrag-faktura
+
+- **Key:** rot avdrag faktura · also: rut avdrag faktura; faktura med rotavdrag
+- **Item:** 6D · **Intent:** local rules · **Languages:** local (written in sv)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Swedish: with ROT and RUT the business invoices the customer only their share and claims the rest from Skatteverket; the invoice shows labor apart, the deduction, the customer's personal number (and property for ROT); the current shares and caps (check, they changed in 2025). Paid electronically. Cite Skatteverket and date it.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice).
+
+#### /da/haandvaerkerfradrag-faktura
+
+- **Key:** håndværkerfradrag faktura · also: servicefradrag faktura; krav til faktura håndværkerfradrag
+- **Item:** 6D · **Intent:** local rules · **Languages:** local (written in da)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Danish: what the invoice must show so the customer can claim the deduction (labor apart, the address of the work, the CVR number, paid electronically) and which work qualifies now (it has changed several times: check skat.dk and date it).
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice).
 
 ### on hold: e-invoicing (3)
 

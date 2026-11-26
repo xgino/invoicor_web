@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**241 live pages** · last change 2026-11-26 · 346 more planned in [PLAN.md](PLAN.md)
+**241 live pages** · last change 2026-11-26 · 420 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -197,7 +197,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 |---|---|---|---|---|
 | /templates | invoice templates | hub | yes | 2026-11-18 |
 | /templates/appliance-repair | appliance repair invoice template | template | yes | 2026-11-26 |
-| /templates/auto-detailing | auto repair invoice template | template | yes | 2026-11-17 |
+| /templates/auto-detailing | auto detailing invoice template | template | yes | 2026-11-17 |
 | /templates/bookkeeping | bookkeeping invoice template | template | yes | 2026-11-26 |
 | /templates/carpentry | carpentry invoice template | template | yes | 2026-11-26 |
 | /templates/carpet-cleaning | carpet cleaning invoice template | template | yes | 2026-11-26 |

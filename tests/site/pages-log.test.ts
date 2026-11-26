@@ -23,6 +23,7 @@ interface Row {
   added: string;
   localize: string;
   brief: string;
+  notes: string;
   primary_keyword: string;
 }
 const csv = readFileSync(join(process.cwd(), "seo/keyword-map.csv"), "utf8");
@@ -94,6 +95,14 @@ describe("page log", () => {
     expect([...sizes.keys()].filter((id) => !ids.has(id))).toEqual([]);
     const langs = CHUNKS.flatMap((c) => c.languages ?? []);
     expect(langs.filter((id) => !sizes.has(id))).toEqual([]);
+  });
+
+  it("uses only known statuses, and says why a page is parked (the demand gate)", () => {
+    const known = ["live", "planned", "parked", "removed"];
+    expect(rows.filter((r) => !known.includes(r.status)).map((r) => r.url)).toEqual([]);
+    expect(rows.filter((r) => r.status === "parked" && !r.notes?.trim()).map((r) => r.url)).toEqual(
+      [],
+    );
   });
 
   it("gives every planned page a brief, so the next batch can be built from PLAN.md", () => {

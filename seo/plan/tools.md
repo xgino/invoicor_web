@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
 
-**4 done · 21 planned**
+**4 done · 41 planned**
 
 ## Direction
 
@@ -17,18 +17,20 @@
 - A tool that works in the browser and gives a real answer (a number, a check), with the steps in plain words.
 - A button that puts the result on an invoice in the free generator (`?item=&qty=&price=&tax=&currency=`).
 - Country presets per language (rates, number format, currency).
+- Pricing calculators for a trade ("house cleaning pricing calculator"): the pro enters their own rates, the tool does the trade's math (square feet, coats, visits, loads, guests), then puts the price on an invoice.
 
 **Can't do:**
 
 - Rates or rules without a source and a date (VAT, late-payment interest): re-check every 6 months.
 - Claims a check can't back up: an IBAN check catches typos, it doesn't prove who owns the account.
 - Tools that need our server or a paid API without a decision first (VAT number check, business register: T5, T6).
+- Market prices as facts ("house cleaning costs $150"): default inputs are labelled as examples to replace, and a price range appears only with its source and date.
 
 ## Done (4): don't build these again
 
 `/tools` free invoicing tools · `vat-calculator` vat calculator · `hours-calculator` hours calculator · `hourly-rate-calculator` freelance hourly rate calculator
 
-## Planned (21)
+## Planned (41)
 
 ### Item 1D (11)
 
@@ -127,14 +129,12 @@
 - **Key:** hourly to salary calculator · also: hourly rate to annual salary
 - **Item:** 4A · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts per language (lib/i18n/pages/tools). Hourly rate × hours × weeks = yearly, and back; link the hourly rate calculator (that one is for freelancers setting a rate).
-- **Already covered (link, don't repeat):** /tools/hourly-rate-calculator (“freelance hourly rate calculator”)
 
 #### /tools/day-rate-calculator
 
 - **Key:** day rate calculator · also: freelance day rate
 - **Item:** 4A · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts per language (lib/i18n/pages/tools). A day rate from an hourly rate or a yearly target; half days; link the hourly rate calculator.
-- **Already covered (link, don't repeat):** /tools/hourly-rate-calculator (“freelance hourly rate calculator”)
 
 #### /tools/overtime-calculator
 
@@ -177,4 +177,178 @@
 - **Key:** utilization rate calculator · also: billable hours calculator
 - **Item:** 4A · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts per language (lib/i18n/pages/tools). Billable vs total hours = utilization, and the income at a rate; link the hours calculator.
-- **Already covered (link, don't repeat):** /tools/hourly-rate-calculator (“freelance hourly rate calculator”)
+
+### Item 6A (20)
+
+#### /tools/house-cleaning-pricing-calculator
+
+- **Key:** house cleaning pricing calculator · also: how much to charge for house cleaning; cleaning price calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. By hours (home size → hours × rate × cleaners) or by square feet; extras (oven, fridge, inside windows) as add-ons; first deep clean vs regular visit; supplies. Price per visit and per month.
+- **Don't write about:** The cleaning-services template's content (link it: /templates/cleaning-services); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: cleaning-services; language versions in metric units with local currency
+
+#### /tools/lawn-mowing-pricing-calculator
+
+- **Key:** lawn mowing pricing calculator · also: lawn care pricing calculator; how much to charge to mow a lawn
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Lot size minus house and drive → mowing time per 1,000 sq ft × rate, trimming and edging, travel, a minimum charge; per cut and per month (weekly or every two weeks).
+- **Don't write about:** The landscaping template's content (link it: /templates/landscaping); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: landscaping; language versions in metric units with local currency
+
+#### /tools/pressure-washing-pricing-calculator
+
+- **Key:** pressure washing pricing calculator · also: power washing price calculator; how much to charge for pressure washing
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Per square foot by surface (driveway, deck, siding, roof soft wash) at the pro's rate per surface, chemicals, a minimum job charge; total and per square foot.
+- **Don't write about:** The pressure-washing template's content (link it: /templates/pressure-washing); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/pressure-washing (“pressure washing invoice template”) · /industries/pressure-washing (“invoice app for pressure washing businesses”)
+- **Notes:** template: pressure-washing; language versions in metric units with local currency
+
+#### /tools/painting-cost-calculator
+
+- **Key:** painting cost calculator · also: house painting price calculator; interior painting estimate calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Wall area from room sizes minus doors and windows, coats, coverage per gallon (or litre) → paint needed and its cost, labor per square foot or hour, prep and trim, markup on paint.
+- **Don't write about:** The painting template's content (link it: /templates/painting); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/painting (“painting invoice template”)
+- **Notes:** template: painting; language versions in metric units with local currency
+
+#### /tools/window-cleaning-pricing-calculator
+
+- **Key:** window cleaning pricing calculator · also: how much to charge for window cleaning
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Per window or pane by type (standard, French, skylight), inside and out, height surcharge per storey, screens and tracks, a minimum charge.
+- **Don't write about:** The window-cleaning template's content (link it: /templates/window-cleaning); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/window-cleaning (“window cleaning invoice template”)
+- **Notes:** template: window-cleaning; language versions in metric units with local currency
+
+#### /tools/snow-removal-pricing-calculator
+
+- **Key:** snow plowing pricing calculator · also: snow removal price calculator; how much to charge for snow plowing
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Per push, per event or per season: driveway size, depth triggers (over 2 in, over 6 in), salt per bag, walks by hand; a season price = expected events × price per push (hedge: weather varies).
+- **Don't write about:** The snow-removal template's content (link it: /templates/snow-removal); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: snow-removal; language versions in metric units with local currency
+
+#### /tools/carpet-cleaning-pricing-calculator
+
+- **Key:** carpet cleaning pricing calculator · also: how much to charge for carpet cleaning
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Per room or per square foot, stairs per step, stain and pet treatment, upholstery pieces, a minimum charge.
+- **Don't write about:** The carpet-cleaning template's content (link it: /templates/carpet-cleaning); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/carpet-cleaning (“carpet cleaning invoice template”)
+- **Notes:** template: carpet-cleaning; language versions in metric units with local currency
+
+#### /tools/moving-company-pricing-calculator
+
+- **Key:** moving company pricing calculator · also: how much to charge for moving; mover price calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Hourly crew pricing: movers × hours × rate + truck fee + travel time, stairs and long carries, packing materials; local moves only (US interstate moves are regulated: hedge, FMCSA).
+- **Don't write about:** The moving template's content (link it: /templates/moving); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/moving (“moving company invoice template”)
+- **Notes:** template: moving; language versions in metric units with local currency
+
+#### /tools/junk-removal-pricing-calculator
+
+- **Key:** junk removal pricing calculator · also: how much to charge for junk removal
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. By truck volume (an eighth up to a full load × the pro's full-load price), heavy items and dump fees per ton, items with their own fees (mattresses, tires, fridges), labor for hard access.
+- **Don't write about:** The junk-removal template's content (link it: /templates/junk-removal); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/junk-removal (“junk removal invoice template”) · /industries/junk-removal (“invoice app for junk removal businesses”)
+- **Notes:** template: junk-removal; language versions in metric units with local currency
+
+#### /tools/photography-pricing-calculator
+
+- **Key:** photography pricing calculator · also: how much to charge for photography; photographer rate calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Cost of doing business: yearly costs (gear, software, insurance) + target income ÷ sessions a year → price per session; editing hours per session; prints and travel as extras. Link the hourly rate calculator.
+- **Don't write about:** The photography template's content (link it: /templates/photography); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/photography (“photography invoice template”)
+- **Notes:** template: photography; language versions in metric units with local currency
+
+#### /tools/drywall-estimate-calculator
+
+- **Key:** drywall estimate calculator · also: drywall cost calculator; drywall price per square foot
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Sheets from wall and ceiling area + waste, mud, tape and screws per sheet (stated assumptions), hang and finish labor per sheet or square foot, a price step per finish level.
+- **Don't write about:** The drywall template's content (link it: /templates/drywall); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/drywall (“drywall invoice template”)
+- **Notes:** template: drywall; language versions in metric units with local currency
+
+#### /tools/flooring-installation-cost-calculator
+
+- **Key:** flooring installation cost calculator · also: flooring labor cost calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Area + waste by layout (straight, diagonal, herringbone), material per square foot (pro- or client-supplied), underlayment, removing the old floor, labor per square foot, transitions and stairs.
+- **Don't write about:** The flooring template's content (link it: /templates/flooring); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/flooring (“flooring invoice template”)
+- **Notes:** template: flooring; language versions in metric units with local currency
+
+#### /tools/tile-installation-cost-calculator
+
+- **Key:** tile installation cost calculator · also: tile labor cost calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Area + waste by tile size and pattern, tiles per box, thinset and grout bags (assumptions), labor per square foot by surface (floor, wall, shower), prep (backer board, waterproofing).
+- **Don't write about:** The tile-installation template's content (link it: /templates/tile-installation); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”)
+- **Notes:** template: tile-installation; language versions in metric units with local currency
+
+#### /tools/fence-installation-cost-calculator
+
+- **Key:** fence installation cost calculator · also: fence cost per foot calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Length → posts at a spacing, panels or pickets, concrete bags per post, gates; material per foot at the pro's prices, labor per foot, removing the old fence, a permit line.
+- **Don't write about:** The fence-installation template's content (link it: /templates/fence-installation); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/fence-installation (“fence installation invoice template”)
+- **Notes:** template: fence-installation; language versions in metric units with local currency
+
+#### /tools/deck-building-cost-calculator
+
+- **Key:** deck cost calculator · also: deck building cost calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Deck area, joists at spacing, decking boards, footings, railing per linear foot, stairs per step; material at the pro's prices (pressure-treated or composite), labor per square foot, permit.
+- **Don't write about:** The deck-building template's content (link it: /templates/deck-building); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: deck-building; language versions in metric units with local currency
+
+#### /tools/roofing-estimate-calculator
+
+- **Key:** roofing estimate calculator · also: roof replacement cost calculator; roofing squares calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Footprint × pitch factor → squares, waste by roof complexity, bundles per square, underlayment, tear-off layers, flashing and ridge, labor per square.
+- **Don't write about:** The roofing template's content (link it: /templates/roofing); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/roofing (“roofing invoice template”) · /industries/roofers (“roofing invoice app”)
+- **Notes:** template: roofing; language versions in metric units with local currency
+
+#### /tools/concrete-cost-calculator
+
+- **Key:** concrete cost calculator · also: concrete slab cost calculator; cubic yards of concrete calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Slab volume (length × width × thickness → cubic yards or m³, + waste), ready-mix per yard or bags, rebar or mesh, forms, finish, labor per square foot, a short-load fee under the supplier's minimum.
+- **Don't write about:** The concrete template's content (link it: /templates/concrete); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: concrete; language versions in metric units with local currency
+
+#### /tools/pool-cleaning-pricing-calculator
+
+- **Key:** pool cleaning pricing calculator · also: how much to charge for pool cleaning
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. A monthly route price: visits a month × time per visit × rate, chemicals included or billed, pool size and screen enclosure, travel; a green-to-clean as its own price.
+- **Don't write about:** The pool-service template's content (link it: /templates/pool-service); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: pool-service; language versions in metric units with local currency
+
+#### /tools/catering-cost-calculator
+
+- **Key:** catering cost calculator · also: catering price per person calculator
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Per guest: food cost per head ÷ the target food-cost share (e.g. 30%) → menu price, staff hours × rate, rentals, travel, service charge and gratuity as their own lines, the deposit share.
+- **Don't write about:** The catering template's content (link it: /templates/catering); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Already covered (link, don't repeat):** /templates/catering (“catering invoice template”)
+- **Notes:** template: catering; language versions in metric units with local currency
+
+#### /tools/cake-pricing-calculator
+
+- **Key:** cake pricing calculator · also: how much to charge for a cake
+- **Item:** 6A · **Intent:** tool · **Languages:** yes
+- **Write about:** Needs code: one calculator engine with a config per trade (6A). The pro enters their own rates (defaults are labelled examples, no market prices as facts); the steps in plain words; 'Put on an invoice' fills the generator. Ingredients per recipe (the baker's costs), boxes and boards, decorating hours × hourly rate, overhead per order, margin → price per cake and per serving; cottage-food rules vary (hedge).
+- **Don't write about:** The bakery template's content (link it: /templates/bakery); price-per-square-foot math in general (/tools/price-per-square-foot-calculator).
+- **Notes:** template: bakery; language versions in metric units with local currency

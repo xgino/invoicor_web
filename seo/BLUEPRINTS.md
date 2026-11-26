@@ -71,6 +71,36 @@ _Added 2026-11-26 for wave 1 batch B (ROADMAP W1). Briefs per page: [PLAN.md](PL
   work is "duplicate the last invoice".
 - **Min words:** 500 (target 900+). Must stay < 80% alike the trade's main template (`content:check`).
 
+## Invoice-type template `/templates/{type}-invoice`
+
+_Added 2026-11-26 for item 1F ([PLAN.md](PLAN.md)). The parents of the billing-type pages._
+
+- **Intent:** "{deposit | final | hourly | commercial | freelance …} invoice template". The general
+  document, not a trade: what makes this kind of invoice different and how it relates to the others
+  (a deposit invoice → the final invoice that subtracts it).
+- **Data:** an entry in `content/templates.json` with the same fields as a template; `industry`
+  empty; `related` = 2 other invoice types. A "by trade" section lists that type's billing-type pages.
+- **Sections:** as a template; what-to-include, the sample, notes, mistakes and FAQs are about the
+  document type. Tax and legal points per country hedged or sourced; the local versions carry the
+  country's own rules (Anzahlungsrechnung, Kleinunternehmer).
+- **Honest:** the app makes the invoice; it doesn't track deposits or partial payments, send
+  recurring invoices or make customs forms.
+- **Min words:** 600 (target 1,000+): these are bigger searches than the trade pages.
+
+## Pricing calculator `/tools/{trade}-pricing-calculator`
+
+_Added 2026-11-26 for item 6A. Needs code: one calculator engine with a config per trade._
+
+- **Intent:** "{trade} pricing calculator", "how much to charge for {job}". The pro wants a price.
+- **The tool:** inputs in the trade's units (square feet, rooms, visits, loads, guests), the pro's own
+  rates (defaults are labelled examples), the result with each step shown, and "Put on an invoice"
+  (the generator with `?item=&qty=&price=`). Metric units and local currency in the language versions.
+- **Below the tool:** how pros in that trade price (the methods, what to add, common mistakes), 3–5
+  FAQs, links to the trade's template and the general tools.
+- **Never:** market prices as facts (a range only with its source and date); a promise that the result
+  is the "right" price.
+- **JSON-LD:** `WebApplication`, `FAQPage`, `BreadcrumbList`. **Min words (below the tool):** 500.
+
 ## Country page `/invoice-generator-{country}` and local pages
 
 _Added 2026-11-26 for wave 1 batch C (roadmap chunk 43). Needs page code: a new page type._

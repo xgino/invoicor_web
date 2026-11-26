@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
 
-**43 done · 90 planned**
+**43 done · 94 planned**
 
 ## Direction
 
@@ -23,20 +23,22 @@
 - A profession a live page already covers (drywall, fencing and remodeling sit under /industries/general-contractors).
 - Features outside BRAND.md §10 in the feature cards (no estimates, scheduling, reminders, payments, photo attachments, time tracking).
 - "The app in your language": the app's screens are English; say "invoices in 11 languages".
+- A niche trade's app page without its own "invoice app / software for …" search: the template links to the nearest broader industry page instead (auto body → mechanics, plastering → contractors). The app's features are the same everywhere, so these pages differ only in the trade, which makes them weak (doorway risk).
 
 ## Done (43): don't build these again
 
 `plumbers-hvac` invoice app for plumbers · `freelance-designers` invoicing app for freelance designers · `landscaping-lawn-care` landscaping invoicing software · `electricians` invoice app for electricians · `general-contractors` invoice app for contractors · `photographers-videographers` invoicing software for photographers · `consultants-coaches` invoicing software for consultants · `cleaning-services` invoice app for cleaning business · `personal-trainers` invoicing for personal trainers · `auto-detailing-mechanics` invoice app for mechanics · `roofers` roofing invoice app · `painters` invoice app for painters · `web-developers` invoice app for freelance developers · `tutors` invoice app for tutors · `caterers` invoice app for caterers · `movers` invoice app for movers · `pest-control` pest control invoicing software · `virtual-assistants` invoice app for virtual assistants · `pet-care` invoice app for dog walkers · `hair-makeup-artists` invoice app for makeup artists · `carpenters` invoice app for carpenters · `flooring-installers` invoice app for flooring installers · `tile-installers` invoice app for tile installers · `masons` invoice app for masons · `pool-service` invoice app for pool service companies · `window-cleaners` invoice app for window cleaners · `pressure-washing` invoice app for pressure washing businesses · `tree-service` invoice app for tree service companies · `snow-removal` invoice app for snow removal businesses · `locksmiths` invoice app for locksmiths · `appliance-repair` invoice app for appliance repair technicians · `junk-removal` invoice app for junk removal businesses · `carpet-cleaners` invoice app for carpet cleaners · `interior-designers` invoice app for interior designers · `djs` invoice app for djs · `event-planners` invoice app for event planners · `florists` invoice app for florists · `massage-therapists` invoice app for massage therapists · `translators` invoice app for translators · `copywriters` invoice app for copywriters · `social-media-managers` invoice app for social media managers · `music-teachers` invoice app for music teachers · `bookkeepers` invoice app for bookkeepers
 
-## Planned (90)
+## Planned (94)
 
 ### Item 1C (10)
 
 #### /industries/notaries
 
 - **Key:** invoice app for notaries · also: mobile notary invoicing app
-- **Item:** 1C · **Intent:** app for my trade · **Languages:** yes
+- **Item:** 1C · **Intent:** app for my trade · **Languages:** en-only
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. A mobile notary's day: invoicing each signing from the car, per-act fees within the state cap, travel lines, signing companies that pay net 30, statuses to see who still owes.
+- **Notes:** en-only: see /templates/notary
 
 #### /industries/home-inspectors
 
@@ -437,10 +439,10 @@
 #### /industries/tax-preparers
 
 - **Key:** invoice app for tax preparers
-- **Item:** 4C · **Intent:** app for my trade · **Languages:** yes
+- **Item:** 4C · **Intent:** app for my trade · **Languages:** en-only
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: per return and per form or schedule, state returns, e-filing; preparers need a PTIN in the US (hedge). Show it as their real week of invoicing from the iPhone.
-- **Already covered (link, don't repeat):** learn:/how-to-calculate-tax-on-an-invoice-in-the-app (“how to calculate tax on an invoice in the app”)
-- **Notes:** template: tax-preparation
+- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”) · learn:/how-to-calculate-tax-on-an-invoice-in-the-app (“how to calculate tax on an invoice in the app”)
+- **Notes:** template: tax-preparation; en-only: see /templates/tax-preparation
 
 #### /industries/lawyers
 
@@ -687,3 +689,37 @@
 - **Item:** 5B · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: hourly or per project, products bought, donation runs. Show it as their real week of invoicing from the iPhone.
 - **Notes:** template: professional-organizing
+
+### Item 6B (4)
+
+#### /industries/architects
+
+- **Key:** invoice app for architects · also: architect invoicing software; invoicing for architecture firms
+- **Item:** 6B · **Intent:** app for my trade · **Languages:** yes
+- **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Solo architects and small practices: phase billing, reimbursables, invoicing after a site visit from the iPhone. Honest: no time tracking or project accounting (link the Harvest and QuickBooks compares).
+- **Don't write about:** The template's content (/templates/architect).
+- **Notes:** template: architect
+
+#### /industries/real-estate-agents
+
+- **Key:** invoice app for real estate agents · also: invoicing software for realtors
+- **Item:** 6B · **Intent:** app for my trade · **Languages:** yes
+- **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Commission invoices to the brokerage, referral fees to other agents, flat-fee services. The app makes the invoice; it isn't a transaction or CRM tool.
+- **Don't write about:** The template's content (/templates/real-estate).
+- **Notes:** template: real-estate
+
+#### /industries/private-investigators
+
+- **Key:** invoice app for private investigators · also: pi invoicing software
+- **Item:** 6B · **Intent:** app for my trade · **Languages:** yes
+- **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Invoicing from the field after a surveillance shift; a retainer invoice, then hourly; discreet line descriptions.
+- **Don't write about:** The template's content (/templates/private-investigator).
+- **Notes:** template: private-investigator
+
+#### /industries/equipment-rental-companies
+
+- **Key:** invoice app for equipment rental companies · also: equipment rental invoicing software
+- **Item:** 6B · **Intent:** app for my trade · **Languages:** yes
+- **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
+- **Don't write about:** The template's content (/templates/equipment-rental).
+- **Notes:** template: equipment-rental

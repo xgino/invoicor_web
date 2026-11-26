@@ -14,7 +14,8 @@
 
 Say which items: "do 1B", or "do 1B, 1B-de, 1B-es". Then, per item:
 
-1. **English item (e.g. 1B):** for each page listed under the item, read its brief (the link) and
+1. **English item (e.g. 1B):** first the demand gate (rules below): park the pages nobody
+   searches for. Then, for each page listed under the item, read its brief (the link) and
    its category's direction in the same file, the blueprint, and the fact sheet
    [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,
    then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update
@@ -22,7 +23,10 @@ Say which items: "do 1B", or "do 1B, 1B-de, 1B-es". Then, per item:
 2. **Language item (e.g. 1B-de):** the item's pages written for that language's country, not
    translated word for word: local search words in the slug and title, local prices, currency,
    number format, tax words and rules (the language table below). Needs task 1A done first.
-   The same checks; each version links to its English page (hreflang).
+   The same checks; each version links to its English page (hreflang). A page with no local
+   search or a trade that works differently there (a notary in Germany is a state office with
+   fixed fees) gets a `parked` row in that language (`translation_of` = the English URL, the
+   reason in `notes`): skipped, not translated anyway.
 3. **Task (e.g. 1A):** code work, no pages. Tick it in `scripts/pages-chunks.mjs` (`done: true`).
 4. **Between chunks:** wait 2–3 weeks after a deploy and check in Search Console how many of the
    new pages got indexed. A page type under ~50% indexed after 4 weeks: stop and improve it first.
@@ -44,6 +48,16 @@ Say which items: "do 1B", or "do 1B, 1B-de, 1B-es". Then, per item:
 - Link the trade's pages both ways (template ↔ industry ↔ billing types); 2 `related` per page.
 - Never build a page that's in a category's **Done** list or whose key is taken
   (`npm run pages -- --check "<key>"`): improve that page instead.
+- **Demand first (the gate):** before writing, find evidence that people search for the page's
+  key: Search Console queries, Google's autocomplete and "People also ask", or a keyword tool.
+  No evidence: don't write it. Set its `status` to `parked` with the reason in `notes`. The item
+  is done without it, and the key stays reserved so nobody plans it again.
+- **Value of its own:** a page must answer something its neighbours don't. If the honest content
+  is mostly the parent page with other nouns (a trade's billing type, a niche trade's app page),
+  park it and improve the parent instead. 4,000 pages is a direction, not a quota: Google's
+  scaled-content policy judges value per page, and weak pages pull the whole site down.
+- **Release in waves:** at most ~150 new URLs per deploy, then watch indexing per page type in
+  Search Console (sitemap per type, task 1A).
 
 ## Rules for language items
 
@@ -79,6 +93,10 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
   a brief (`brief`) and what not to repeat (`avoid`) before they get an `item`.
 - **Proven types first:** a new page type (a new category) starts with one item of ≤ 10 pages and
   grows only after it indexes.
+- **Parents before children:** the general page ("deposit invoice") comes before or with its
+  specific ones ("photography deposit invoice"), and the children link up to it.
+- **Bigger searches first:** a new trade or topic must be a search of its own, not a sub-niche or a
+  synonym of a planned one. Order items by expected demand, not by category.
 - **Re-plan after each chunk** with Search Console data: more of what ranks, less of what doesn't.
 
 ## Chunks
@@ -86,11 +104,12 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | Chunk | What | New English/local pages | Language pages to write | Total when done |
 |---|---|---|---|---|
 | [0](#chunk-0-built-so-far-english) | Built so far (English) | built | 0 | 241 |
-| [1](#chunk-1-foundation-languages-for-templates-billing-types-tools-countries) | Foundation: languages for templates, billing types, tools, countries | 61 | 890 | 1,192 |
-| [2](#chunk-2-home-and-property-trades-compares-more-countries) | Home and property trades, compares, more countries | 70 | 700 | 1,962 |
-| [3](#chunk-3-billing-types-ii-makers-and-transport-local-rivals) | Billing types II, makers and transport, local rivals | 80 | 830 | 2,872 |
-| [4](#chunk-4-tools-ii-and-generators-professional-and-wellness-trades) | Tools II and generators, professional and wellness trades | 74 | 720 | 3,666 |
-| [5](#chunk-5-beauty-creative-and-specialist-trades) | Beauty, creative and specialist trades | 40 | 400 | 4,106 |
+| [1](#chunk-1-foundation-languages-for-templates-billing-types-tools-countries) | Foundation: languages for templates, billing types, tools, countries | 83 | 1040 | 1,364 |
+| [2](#chunk-2-home-and-property-trades-compares-more-countries) | Home and property trades, compares, more countries | 70 | 710 | 2,144 |
+| [3](#chunk-3-billing-types-ii-makers-and-transport-local-rivals) | Billing types II, makers and transport, local rivals | 80 | 830 | 3,054 |
+| [4](#chunk-4-tools-ii-and-generators-professional-and-wellness-trades) | Tools II and generators, professional and wellness trades | 73 | 690 | 3,817 |
+| [5](#chunk-5-beauty-creative-and-specialist-trades) | Beauty, creative and specialist trades | 40 | 400 | 4,257 |
+| [6](#chunk-6-pricing-calculators-more-trades-europe-in-english-local-tax-rules) | Pricing calculators, more trades, Europe in English, local tax rules | 55 | 400 | 4,712 |
 
 ## Chunk 0: Built so far (English)
 
@@ -108,7 +127,7 @@ The pages that exist. Their language versions are scheduled in chunks 1–3.
 
 The language setup first, then billing types, 10 trades, tools and countries, with their language versions and those of the first 40 pages.
 
-- [ ] **1A** (task) Language setup for templates and industry pages (roadmap H4): Code, no pages: the template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, the sitemap. Every language item below waits for this.
+- [ ] **1A** (task) Language setup for templates and industry pages (roadmap H4): Code, no pages: the template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, and the sitemap split per page type (a sitemap index, so Search Console shows indexing per type: needed for the indexing check between chunks). Every language item below waits for this.
 - [ ] **1B** Billing-type templates I · 0/20 live · [Billing-type templates](plan/billing.md)
   - [ ] [/templates/photography-deposit-invoice](plan/billing.md#templatesphotography-deposit-invoice) photography deposit invoice
   - [ ] [/templates/catering-deposit-invoice](plan/billing.md#templatescatering-deposit-invoice) catering deposit invoice
@@ -174,14 +193,39 @@ The language setup first, then billing types, 10 trades, tools and countries, wi
   - [ ] [/de/rechnung-pflichtangaben](plan/local.md#derechnung-pflichtangaben) pflichtangaben rechnung
   - [ ] [/nl/factuureisen](plan/local.md#nlfactuureisen) factuureisen
   - [ ] [/fr/mentions-obligatoires-facture](plan/local.md#frmentions-obligatoires-facture) mentions obligatoires facture
+- [ ] **1F** Invoice types: the general documents · 0/20 live · [Invoice types (general documents)](plan/types.md). The parents of the billing-type pages (deposit, final, hourly, retainer …) and the who-invoices types (freelance, subcontractor). Bigger searches than the trade versions: build before or with 1B, and link 1B's pages up to these
+  - [ ] [/templates/deposit-invoice](plan/types.md#templatesdeposit-invoice) deposit invoice template
+  - [ ] [/templates/final-invoice](plan/types.md#templatesfinal-invoice) final invoice template
+  - [ ] [/templates/milestone-invoice](plan/types.md#templatesmilestone-invoice) milestone invoice template
+  - [ ] [/templates/hourly-invoice](plan/types.md#templateshourly-invoice) hourly invoice template
+  - [ ] [/templates/day-rate-invoice](plan/types.md#templatesday-rate-invoice) day rate invoice template
+  - [ ] [/templates/retainer-invoice](plan/types.md#templatesretainer-invoice) retainer invoice template
+  - [ ] [/templates/monthly-invoice](plan/types.md#templatesmonthly-invoice) monthly invoice template
+  - [ ] [/templates/labor-and-materials-invoice](plan/types.md#templateslabor-and-materials-invoice) labor and materials invoice template
+  - [ ] [/templates/service-invoice](plan/types.md#templatesservice-invoice) service invoice template
+  - [ ] [/templates/sales-invoice](plan/types.md#templatessales-invoice) sales invoice template
+  - [ ] [/templates/commercial-invoice](plan/types.md#templatescommercial-invoice) commercial invoice template
+  - [ ] [/templates/past-due-invoice](plan/types.md#templatespast-due-invoice) past due invoice template
+  - [ ] [/templates/mileage-invoice](plan/types.md#templatesmileage-invoice) mileage invoice template
+  - [ ] [/templates/expense-reimbursement-invoice](plan/types.md#templatesexpense-reimbursement-invoice) reimbursement invoice template
+  - [ ] [/templates/no-vat-invoice](plan/types.md#templatesno-vat-invoice) invoice without vat template
+  - [ ] [/templates/freelance-invoice](plan/types.md#templatesfreelance-invoice) freelance invoice template
+  - [ ] [/templates/independent-contractor-invoice](plan/types.md#templatesindependent-contractor-invoice) independent contractor invoice template
+  - [ ] [/templates/subcontractor-invoice](plan/types.md#templatessubcontractor-invoice) subcontractor invoice template
+  - [ ] [/templates/personal-invoice](plan/types.md#templatespersonal-invoice) invoice template for individuals
+  - [ ] [/templates/international-invoice](plan/types.md#templatesinternational-invoice) international invoice template
+- [ ] **1G** Trust pages (E-E-A-T: who's behind the site) · 0/2 live · [Core pages, hubs, trust and legal](plan/core.md)
+  - [ ] [/about](plan/core.md#about) about invoicor
+  - [ ] [/contact](plan/core.md#contact) contact invoicor
 
 **Language items** (in this order per item: de, es, fr, nl, sv, da, nb, it, pt, pl):
 
 - **0A:** [ ] 0A-de 0/20 · [ ] 0A-es 0/20 · [ ] 0A-fr 0/20 · [ ] 0A-nl 0/20 · [ ] 0A-sv 0/20 · [ ] 0A-da 0/20 · [ ] 0A-nb 0/20 · [ ] 0A-it 0/20 · [ ] 0A-pt 0/20 · [ ] 0A-pl 0/20
 - **0B:** [ ] 0B-de 0/20 · [ ] 0B-es 0/20 · [ ] 0B-fr 0/20 · [ ] 0B-nl 0/20 · [ ] 0B-sv 0/20 · [ ] 0B-da 0/20 · [ ] 0B-nb 0/20 · [ ] 0B-it 0/20 · [ ] 0B-pt 0/20 · [ ] 0B-pl 0/20
 - **1B:** [ ] 1B-de 0/20 · [ ] 1B-es 0/20 · [ ] 1B-fr 0/20 · [ ] 1B-nl 0/20 · [ ] 1B-sv 0/20 · [ ] 1B-da 0/20 · [ ] 1B-nb 0/20 · [ ] 1B-it 0/20 · [ ] 1B-pt 0/20 · [ ] 1B-pl 0/20
-- **1C:** [ ] 1C-de 0/20 · [ ] 1C-es 0/20 · [ ] 1C-fr 0/20 · [ ] 1C-nl 0/20 · [ ] 1C-sv 0/20 · [ ] 1C-da 0/20 · [ ] 1C-nb 0/20 · [ ] 1C-it 0/20 · [ ] 1C-pt 0/20 · [ ] 1C-pl 0/20
+- **1C:** [ ] 1C-de 0/18 · [ ] 1C-es 0/18 · [ ] 1C-fr 0/18 · [ ] 1C-nl 0/18 · [ ] 1C-sv 0/18 · [ ] 1C-da 0/18 · [ ] 1C-nb 0/18 · [ ] 1C-it 0/18 · [ ] 1C-pt 0/18 · [ ] 1C-pl 0/18
 - **1D:** [ ] 1D-de 0/9 · [ ] 1D-es 0/9 · [ ] 1D-fr 0/9 · [ ] 1D-nl 0/9 · [ ] 1D-sv 0/9 · [ ] 1D-da 0/9 · [ ] 1D-nb 0/9 · [ ] 1D-it 0/9 · [ ] 1D-pt 0/9 · [ ] 1D-pl 0/9
+- **1F:** [ ] 1F-de 0/17 · [ ] 1F-es 0/17 · [ ] 1F-fr 0/17 · [ ] 1F-nl 0/17 · [ ] 1F-sv 0/17 · [ ] 1F-da 0/17 · [ ] 1F-nb 0/17 · [ ] 1F-it 0/17 · [ ] 1F-pt 0/17 · [ ] 1F-pl 0/17
 
 ## Chunk 2: Home and property trades, compares, more countries
 
@@ -261,11 +305,13 @@ New trades and their industry pages, compares and countries; language versions f
   - [ ] [/sv/vad-ska-sta-pa-en-faktura](plan/local.md#svvad-ska-sta-pa-en-faktura) vad ska stå på en faktura
   - [ ] [/da/krav-til-faktura](plan/local.md#dakrav-til-faktura) krav til faktura
   - [ ] [/nb/krav-til-faktura](plan/local.md#nbkrav-til-faktura) krav til faktura
+- [ ] **2E** (task) Hubs at scale: Code, no pages: with 150+ templates the hubs need groups (home services, trades, creative, professional, invoice types, billing types) with anchors and a short intro each, so every page is at most 2 clicks from its hub and the hub stays useful to read. No thin sub-hub URLs: groups are sections of the one hub.
 
 **Language items** (in this order per item: de, es, fr, nl, sv, da, nb, it, pt, pl):
 
 - **0D:** [ ] 0D-de 0/15 · [ ] 0D-es 0/15 · [ ] 0D-fr 0/15 · [ ] 0D-nl 0/15 · [ ] 0D-sv 0/15 · [ ] 0D-da 0/15 · [ ] 0D-nb 0/15 · [ ] 0D-it 0/15 · [ ] 0D-pt 0/15 · [ ] 0D-pl 0/15
 - **0E:** [ ] 0E-de 0/15 · [ ] 0E-es 0/15 · [ ] 0E-fr 0/15 · [ ] 0E-nl 0/15 · [ ] 0E-sv 0/15 · [ ] 0E-da 0/15 · [ ] 0E-nb 0/15 · [ ] 0E-it 0/15 · [ ] 0E-pt 0/15 · [ ] 0E-pl 0/15
+- **1E:** [ ] 1E-de 0/1 · [ ] 1E-es 0/1 · [ ] 1E-fr 0/1 · [ ] 1E-nl 0/1 · [ ] 1E-sv 0/1 · [ ] 1E-da 0/1 · [ ] 1E-nb 0/1 · [ ] 1E-it 0/1 · [ ] 1E-pt 0/1 · [ ] 1E-pl 0/1
 - **2A:** [ ] 2A-de 0/20 · [ ] 2A-es 0/20 · [ ] 2A-fr 0/20 · [ ] 2A-nl 0/20 · [ ] 2A-sv 0/20 · [ ] 2A-da 0/20 · [ ] 2A-nb 0/20 · [ ] 2A-it 0/20 · [ ] 2A-pt 0/20 · [ ] 2A-pl 0/20
 - **2B:** [ ] 2B-de 0/20 · [ ] 2B-es 0/20 · [ ] 2B-fr 0/20 · [ ] 2B-nl 0/20 · [ ] 2B-sv 0/20 · [ ] 2B-da 0/20 · [ ] 2B-nb 0/20 · [ ] 2B-it 0/20 · [ ] 2B-pt 0/20 · [ ] 2B-pl 0/20
 
@@ -427,7 +473,7 @@ Tools and generators (code), new trades and billing types, with their language v
   - [ ] [/industries/caregivers](plan/industries.md#industriescaregivers) invoice app for caregivers
   - [ ] [/industries/doulas](plan/industries.md#industriesdoulas) invoice app for doulas
   - [ ] [/industries/barbers](plan/industries.md#industriesbarbers) invoice app for barbers
-- [ ] **4D** Billing-type templates III · 0/20 live · [Billing-type templates](plan/billing.md)
+- [ ] **4D** Billing-type templates III · 0/19 live (1 parked) · [Billing-type templates](plan/billing.md)
   - [ ] [/templates/monthly-lawn-care-invoice](plan/billing.md#templatesmonthly-lawn-care-invoice) monthly lawn care invoice
   - [ ] [/templates/commercial-cleaning-monthly-invoice](plan/billing.md#templatescommercial-cleaning-monthly-invoice) monthly cleaning invoice
   - [ ] [/templates/seasonal-snow-removal-invoice](plan/billing.md#templatesseasonal-snow-removal-invoice) seasonal snow removal invoice
@@ -444,17 +490,17 @@ Tools and generators (code), new trades and billing types, with their language v
   - [ ] [/templates/appliance-repair-service-call-invoice](plan/billing.md#templatesappliance-repair-service-call-invoice) appliance repair service call invoice
   - [ ] [/templates/emergency-locksmith-invoice](plan/billing.md#templatesemergency-locksmith-invoice) emergency locksmith invoice
   - [ ] [/templates/moving-hourly-invoice](plan/billing.md#templatesmoving-hourly-invoice) moving hourly invoice
-  - [ ] [/templates/consulting-project-invoice](plan/billing.md#templatesconsulting-project-invoice) consulting project invoice
   - [ ] [/templates/graphic-design-deposit-invoice](plan/billing.md#templatesgraphic-design-deposit-invoice) graphic design deposit invoice
   - [ ] [/templates/virtual-assistant-retainer-invoice](plan/billing.md#templatesvirtual-assistant-retainer-invoice) virtual assistant retainer invoice
   - [ ] [/templates/handyman-labor-and-materials-invoice](plan/billing.md#templateshandyman-labor-and-materials-invoice) handyman labor and materials invoice
+  - ~~/templates/consulting-project-invoice~~ parked: a 3rd billing type for consulting (the rule is at most 2); a fixed-fee project is the consulting template's default case: cover it there
 
 **Language items** (in this order per item: de, es, fr, nl, sv, da, nb, it, pt, pl):
 
 - **4A:** [ ] 4A-de 0/12 · [ ] 4A-es 0/12 · [ ] 4A-fr 0/12 · [ ] 4A-nl 0/12 · [ ] 4A-sv 0/12 · [ ] 4A-da 0/12 · [ ] 4A-nb 0/12 · [ ] 4A-it 0/12 · [ ] 4A-pt 0/12 · [ ] 4A-pl 0/12
-- **4B:** [ ] 4B-de 0/20 · [ ] 4B-es 0/20 · [ ] 4B-fr 0/20 · [ ] 4B-nl 0/20 · [ ] 4B-sv 0/20 · [ ] 4B-da 0/20 · [ ] 4B-nb 0/20 · [ ] 4B-it 0/20 · [ ] 4B-pt 0/20 · [ ] 4B-pl 0/20
-- **4C:** [ ] 4C-de 0/20 · [ ] 4C-es 0/20 · [ ] 4C-fr 0/20 · [ ] 4C-nl 0/20 · [ ] 4C-sv 0/20 · [ ] 4C-da 0/20 · [ ] 4C-nb 0/20 · [ ] 4C-it 0/20 · [ ] 4C-pt 0/20 · [ ] 4C-pl 0/20
-- **4D:** [ ] 4D-de 0/20 · [ ] 4D-es 0/20 · [ ] 4D-fr 0/20 · [ ] 4D-nl 0/20 · [ ] 4D-sv 0/20 · [ ] 4D-da 0/20 · [ ] 4D-nb 0/20 · [ ] 4D-it 0/20 · [ ] 4D-pt 0/20 · [ ] 4D-pl 0/20
+- **4B:** [ ] 4B-de 0/19 · [ ] 4B-es 0/19 · [ ] 4B-fr 0/19 · [ ] 4B-nl 0/19 · [ ] 4B-sv 0/19 · [ ] 4B-da 0/19 · [ ] 4B-nb 0/19 · [ ] 4B-it 0/19 · [ ] 4B-pt 0/19 · [ ] 4B-pl 0/19
+- **4C:** [ ] 4C-de 0/19 · [ ] 4C-es 0/19 · [ ] 4C-fr 0/19 · [ ] 4C-nl 0/19 · [ ] 4C-sv 0/19 · [ ] 4C-da 0/19 · [ ] 4C-nb 0/19 · [ ] 4C-it 0/19 · [ ] 4C-pt 0/19 · [ ] 4C-pl 0/19
+- **4D:** [ ] 4D-de 0/19 · [ ] 4D-es 0/19 · [ ] 4D-fr 0/19 · [ ] 4D-nl 0/19 · [ ] 4D-sv 0/19 · [ ] 4D-da 0/19 · [ ] 4D-nb 0/19 · [ ] 4D-it 0/19 · [ ] 4D-pt 0/19 · [ ] 4D-pl 0/19
 
 ## Chunk 5: Beauty, creative and specialist trades
 
@@ -508,12 +554,80 @@ The last trades of this plan and their language versions: past 4,000.
 - **5A:** [ ] 5A-de 0/20 · [ ] 5A-es 0/20 · [ ] 5A-fr 0/20 · [ ] 5A-nl 0/20 · [ ] 5A-sv 0/20 · [ ] 5A-da 0/20 · [ ] 5A-nb 0/20 · [ ] 5A-it 0/20 · [ ] 5A-pt 0/20 · [ ] 5A-pl 0/20
 - **5B:** [ ] 5B-de 0/20 · [ ] 5B-es 0/20 · [ ] 5B-fr 0/20 · [ ] 5B-nl 0/20 · [ ] 5B-sv 0/20 · [ ] 5B-da 0/20 · [ ] 5B-nb 0/20 · [ ] 5B-it 0/20 · [ ] 5B-pt 0/20 · [ ] 5B-pl 0/20
 
+## Chunk 6: Pricing calculators, more trades, Europe in English, local tax rules
+
+Pages with their own value: calculators that do a trade's math, trades with real search demand that were missing, country rules in English for foreign freelancers, and rules only one country has.
+
+- [ ] **6A** 20 pricing calculators for trades (needs code: one calculator engine, a config per trade) · 0/20 live · [Free tools](plan/tools.md)
+  - [ ] [/tools/house-cleaning-pricing-calculator](plan/tools.md#toolshouse-cleaning-pricing-calculator) house cleaning pricing calculator
+  - [ ] [/tools/lawn-mowing-pricing-calculator](plan/tools.md#toolslawn-mowing-pricing-calculator) lawn mowing pricing calculator
+  - [ ] [/tools/pressure-washing-pricing-calculator](plan/tools.md#toolspressure-washing-pricing-calculator) pressure washing pricing calculator
+  - [ ] [/tools/painting-cost-calculator](plan/tools.md#toolspainting-cost-calculator) painting cost calculator
+  - [ ] [/tools/window-cleaning-pricing-calculator](plan/tools.md#toolswindow-cleaning-pricing-calculator) window cleaning pricing calculator
+  - [ ] [/tools/snow-removal-pricing-calculator](plan/tools.md#toolssnow-removal-pricing-calculator) snow plowing pricing calculator
+  - [ ] [/tools/carpet-cleaning-pricing-calculator](plan/tools.md#toolscarpet-cleaning-pricing-calculator) carpet cleaning pricing calculator
+  - [ ] [/tools/moving-company-pricing-calculator](plan/tools.md#toolsmoving-company-pricing-calculator) moving company pricing calculator
+  - [ ] [/tools/junk-removal-pricing-calculator](plan/tools.md#toolsjunk-removal-pricing-calculator) junk removal pricing calculator
+  - [ ] [/tools/photography-pricing-calculator](plan/tools.md#toolsphotography-pricing-calculator) photography pricing calculator
+  - [ ] [/tools/drywall-estimate-calculator](plan/tools.md#toolsdrywall-estimate-calculator) drywall estimate calculator
+  - [ ] [/tools/flooring-installation-cost-calculator](plan/tools.md#toolsflooring-installation-cost-calculator) flooring installation cost calculator
+  - [ ] [/tools/tile-installation-cost-calculator](plan/tools.md#toolstile-installation-cost-calculator) tile installation cost calculator
+  - [ ] [/tools/fence-installation-cost-calculator](plan/tools.md#toolsfence-installation-cost-calculator) fence installation cost calculator
+  - [ ] [/tools/deck-building-cost-calculator](plan/tools.md#toolsdeck-building-cost-calculator) deck cost calculator
+  - [ ] [/tools/roofing-estimate-calculator](plan/tools.md#toolsroofing-estimate-calculator) roofing estimate calculator
+  - [ ] [/tools/concrete-cost-calculator](plan/tools.md#toolsconcrete-cost-calculator) concrete cost calculator
+  - [ ] [/tools/pool-cleaning-pricing-calculator](plan/tools.md#toolspool-cleaning-pricing-calculator) pool cleaning pricing calculator
+  - [ ] [/tools/catering-cost-calculator](plan/tools.md#toolscatering-cost-calculator) catering cost calculator
+  - [ ] [/tools/cake-pricing-calculator](plan/tools.md#toolscake-pricing-calculator) cake pricing calculator
+- [ ] **6B** 16 trades with their own demand + 4 industry pages · 0/20 live · [Trade templates](plan/templates.md), [Industry pages ("invoice app for …")](plan/industries.md)
+  - [ ] [/templates/auto-repair](plan/templates.md#templatesauto-repair) auto repair invoice template
+  - [ ] [/templates/auto-body](plan/templates.md#templatesauto-body) auto body invoice template
+  - [ ] [/templates/dog-grooming](plan/templates.md#templatesdog-grooming) dog grooming invoice template
+  - [ ] [/templates/hair-salon](plan/templates.md#templateshair-salon) hair salon invoice template
+  - [ ] [/templates/architect](plan/templates.md#templatesarchitect) architect invoice template
+  - [ ] [/templates/real-estate](plan/templates.md#templatesreal-estate) real estate invoice template
+  - [ ] [/templates/equipment-rental](plan/templates.md#templatesequipment-rental) equipment rental invoice template
+  - [ ] [/templates/private-investigator](plan/templates.md#templatesprivate-investigator) private investigator invoice template
+  - [ ] [/templates/phone-repair](plan/templates.md#templatesphone-repair) phone repair invoice template
+  - [ ] [/templates/furniture-assembly](plan/templates.md#templatesfurniture-assembly) furniture assembly invoice template
+  - [ ] [/templates/upholstery](plan/templates.md#templatesupholstery) upholstery invoice template
+  - [ ] [/templates/life-coaching](plan/templates.md#templateslife-coaching) life coach invoice template
+  - [ ] [/templates/bartending](plan/templates.md#templatesbartending) bartending invoice template
+  - [ ] [/templates/plastering](plan/templates.md#templatesplastering) plastering invoice template
+  - [ ] [/templates/concrete](plan/templates.md#templatesconcrete) concrete invoice template
+  - [ ] [/templates/event-venue](plan/templates.md#templatesevent-venue) event venue invoice template
+  - [ ] [/industries/architects](plan/industries.md#industriesarchitects) invoice app for architects
+  - [ ] [/industries/real-estate-agents](plan/industries.md#industriesreal-estate-agents) invoice app for real estate agents
+  - [ ] [/industries/private-investigators](plan/industries.md#industriesprivate-investigators) invoice app for private investigators
+  - [ ] [/industries/equipment-rental-companies](plan/industries.md#industriesequipment-rental-companies) invoice app for equipment rental companies
+- [ ] **6C** European countries in English (for foreign freelancers) · 0/10 live · [Country pages (English)](plan/country.md)
+  - [ ] [/invoice-generator-germany](plan/country.md#invoice-generator-germany) invoice requirements germany
+  - [ ] [/invoice-generator-netherlands](plan/country.md#invoice-generator-netherlands) invoice requirements netherlands
+  - [ ] [/invoice-generator-france](plan/country.md#invoice-generator-france) invoice requirements france
+  - [ ] [/invoice-generator-spain](plan/country.md#invoice-generator-spain) invoice requirements spain
+  - [ ] [/invoice-generator-austria](plan/country.md#invoice-generator-austria) invoice requirements austria
+  - [ ] [/invoice-generator-sweden](plan/country.md#invoice-generator-sweden) invoice requirements sweden
+  - [ ] [/invoice-generator-denmark](plan/country.md#invoice-generator-denmark) invoice requirements denmark
+  - [ ] [/invoice-generator-norway](plan/country.md#invoice-generator-norway) invoice requirements norway
+  - [ ] [/invoice-generator-finland](plan/country.md#invoice-generator-finland) invoice requirements finland
+  - [ ] [/invoice-generator-cyprus](plan/country.md#invoice-generator-cyprus) invoice requirements cyprus
+- [ ] **6D** Local tax rules (in their own language, no English parent) · 0/5 live · [Local pages (in the country's own language)](plan/local.md)
+  - [ ] [/de/kleinbetragsrechnung](plan/local.md#dekleinbetragsrechnung) kleinbetragsrechnung
+  - [ ] [/de/handwerkerrechnung](plan/local.md#dehandwerkerrechnung) handwerkerrechnung steuer absetzen
+  - [ ] [/es/factura-simplificada](plan/local.md#esfactura-simplificada) factura simplificada
+  - [ ] [/sv/rot-och-rut-avdrag-faktura](plan/local.md#svrot-och-rut-avdrag-faktura) rot avdrag faktura
+  - [ ] [/da/haandvaerkerfradrag-faktura](plan/local.md#dahaandvaerkerfradrag-faktura) håndværkerfradrag faktura
+
+**Language items** (in this order per item: de, es, fr, nl, sv, da, nb, it, pt, pl):
+
+- **6A:** [ ] 6A-de 0/20 · [ ] 6A-es 0/20 · [ ] 6A-fr 0/20 · [ ] 6A-nl 0/20 · [ ] 6A-sv 0/20 · [ ] 6A-da 0/20 · [ ] 6A-nb 0/20 · [ ] 6A-it 0/20 · [ ] 6A-pt 0/20 · [ ] 6A-pl 0/20
+- **6B:** [ ] 6B-de 0/20 · [ ] 6B-es 0/20 · [ ] 6B-fr 0/20 · [ ] 6B-nl 0/20 · [ ] 6B-sv 0/20 · [ ] 6B-da 0/20 · [ ] 6B-nb 0/20 · [ ] 6B-it 0/20 · [ ] 6B-pt 0/20 · [ ] 6B-pl 0/20
+
 ## Not in a chunk yet
 
 Blog topics (you write them on learn.invoicor.com), pages that need a decision or code first,
 and pages on hold, with the reason in their brief.
 
-- **later: trust pages (24)** (2): [/about](plan/core.md#about) · [/contact](plan/core.md#contact)
 - **on hold: file downloads (53)** (4): [/templates/invoice-template-word](plan/core.md#templatesinvoice-template-word) · [/templates/invoice-template-excel](plan/core.md#templatesinvoice-template-excel) · [/templates/invoice-template-google-docs](plan/core.md#templatesinvoice-template-google-docs) · [/templates/invoice-template-pdf](plan/core.md#templatesinvoice-template-pdf)
 - **on hold: e-invoicing** (3): [/it/fattura-elementi-obbligatori](plan/local.md#itfattura-elementi-obbligatori) · [/pt/requisitos-fatura](plan/local.md#ptrequisitos-fatura) · [/pl/elementy-faktury](plan/local.md#plelementy-faktury)
 - **blog topics (L4)** (12): [learn:/how-to-write-an-invoice](plan/blog.md#learnhow-to-write-an-invoice) · [learn:/what-to-include-on-an-invoice](plan/blog.md#learnwhat-to-include-on-an-invoice) · [learn:/invoice-vs-receipt](plan/blog.md#learninvoice-vs-receipt) · [learn:/invoice-payment-terms](plan/blog.md#learninvoice-payment-terms) · [learn:/how-to-number-invoices](plan/blog.md#learnhow-to-number-invoices) · [learn:/late-payment-email](plan/blog.md#learnlate-payment-email) · [learn:/what-is-a-proforma-invoice](plan/blog.md#learnwhat-is-a-proforma-invoice) · [learn:/what-is-a-credit-note](plan/blog.md#learnwhat-is-a-credit-note) · [learn:/what-does-net-30-mean](plan/blog.md#learnwhat-does-net-30-mean) · [learn:/how-to-invoice-as-a-freelancer](plan/blog.md#learnhow-to-invoice-as-a-freelancer) · [learn:/what-to-do-when-a-client-doesnt-pay](plan/blog.md#learnwhat-to-do-when-a-client-doesnt-pay) · [learn:/how-to-charge-a-deposit](plan/blog.md#learnhow-to-charge-a-deposit)

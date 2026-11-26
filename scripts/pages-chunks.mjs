@@ -42,14 +42,20 @@ export const CHUNKS = [
         task: true,
         done: false,
         title: "Language setup for templates and industry pages (roadmap H4)",
-        text: "Code, no pages: the template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, the sitemap. Every language item below waits for this.",
+        text: "Code, no pages: the template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, and the sitemap split per page type (a sitemap index, so Search Console shows indexing per type: needed for the indexing check between chunks). Every language item below waits for this.",
       },
       { id: "1B", title: "Billing-type templates I" },
       { id: "1C", title: "10 trades: templates + industry pages" },
       { id: "1D", title: "Free tools I (needs code)" },
       { id: "1E", title: "Country pages I (needs code: the country page type)" },
+      {
+        id: "1F",
+        title: "Invoice types: the general documents",
+        text: "The parents of the billing-type pages (deposit, final, hourly, retainer …) and the who-invoices types (freelance, subcontractor). Bigger searches than the trade versions: build before or with 1B, and link 1B's pages up to these",
+      },
+      { id: "1G", title: "Trust pages (E-E-A-T: who's behind the site)" },
     ],
-    languages: ["0A", "0B", "1B", "1C", "1D"],
+    languages: ["0A", "0B", "1B", "1C", "1D", "1F"],
   },
   {
     id: "2",
@@ -60,8 +66,15 @@ export const CHUNKS = [
       { id: "2B", title: "20 industry pages: the same trades" },
       { id: "2C", title: "20 compares (English only)" },
       { id: "2D", title: "Country pages II" },
+      {
+        id: "2E",
+        task: true,
+        done: false,
+        title: "Hubs at scale",
+        text: "Code, no pages: with 150+ templates the hubs need groups (home services, trades, creative, professional, invoice types, billing types) with anchors and a short intro each, so every page is at most 2 clicks from its hub and the hub stays useful to read. No thin sub-hub URLs: groups are sections of the one hub.",
+      },
     ],
-    languages: ["0D", "0E", "2A", "2B"],
+    languages: ["0D", "0E", "1E", "2A", "2B"],
   },
   {
     id: "3",
@@ -96,6 +109,22 @@ export const CHUNKS = [
       { id: "5B", title: "20 industry pages: the same trades" },
     ],
     languages: ["5A", "5B"],
+  },
+  {
+    id: "6",
+    title: "Pricing calculators, more trades, Europe in English, local tax rules",
+    goal: "Pages with their own value: calculators that do a trade's math, trades with real search demand that were missing, country rules in English for foreign freelancers, and rules only one country has.",
+    items: [
+      {
+        id: "6A",
+        title:
+          "20 pricing calculators for trades (needs code: one calculator engine, a config per trade)",
+      },
+      { id: "6B", title: "16 trades with their own demand + 4 industry pages" },
+      { id: "6C", title: "European countries in English (for foreign freelancers)" },
+      { id: "6D", title: "Local tax rules (in their own language, no English parent)" },
+    ],
+    languages: ["6A", "6B"],
   },
 ];
 

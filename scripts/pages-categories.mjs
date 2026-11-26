@@ -21,7 +21,8 @@ export const CATEGORIES = [
       "Name the PDF: why a PDF works for this trade, and the free generator.",
     ],
     cannot: [
-      'A trade that\'s only a synonym or a sub-niche of a live one ("auto repair" is already the key of /templates/auto-detailing): improve that page instead.',
+      "A trade that's only a synonym or a sub-niche of a live one (wedding photography is part of /templates/photography, mobile mechanic of /templates/auto-repair): improve that page instead.",
+      "Two trades on one page: one trade, one key (auto detailing and auto repair are two searches, so two pages).",
       "Word, Excel or Google Docs downloads: we don't offer those files (S1-n).",
       "City or state versions of the same trade (doorway pages).",
       "Billing-type questions in depth (deposits, retainers, hourly): those are their own pages, see Billing-type templates.",
@@ -48,9 +49,35 @@ export const CATEGORIES = [
       "Repeat the trade's general fields: one sentence and a link to its template.",
       "Claim the app tracks deposits, partial payments or time, or sends recurring invoices (it doesn't).",
       "Every trade × every billing type: at most 2 billing types per trade, and only where the search is real.",
+      'Exist without its own demand: the general invoice type ("labor and materials invoice") covers a trade that only swaps the materials. No evidence at the demand gate: park it.',
     ],
-    links: "the trade's template (in `related`), its industry page, one other billing-type page.",
+    links:
+      "the trade's template (in `related`), the general invoice type (Invoice types), its industry page.",
     languages: "**yes**, with the trade templates.",
+  },
+  {
+    id: "types",
+    title: "Invoice types (general documents)",
+    match: (r) => r.page_type === "template (invoice type)",
+    url: "`/templates/{type}-invoice`",
+    key: '"{deposit | final | hourly | commercial | freelance …} invoice template"',
+    blueprint: "BLUEPRINTS.md#invoice-type-template-templatestype-invoice",
+    data: "`content/templates.json` (same fields as a template)",
+    can: [
+      "The general document behind many trades: what makes this kind of invoice different (what it must show, how it's numbered, how it relates to the other invoices), with a sample for a typical case.",
+      'Be the parent of the trade billing-type pages: list them ("by trade") and take the general search, so the trade pages only need the trade\'s specifics.',
+      "A who-invoices type (freelance, subcontractor, independent contractor) when the tax status changes the invoice (no VAT charged, CIS deduction, reverse charge, no tax withheld).",
+    ],
+    cannot: [
+      'Be a trade template under another name: "service invoice" is about invoicing services in general, not about any trade.',
+      "Synonyms as their own pages: down payment = advance payment = deposit; interim = progress (owned by /templates/construction-progress-invoice); time and materials = labor and materials; sole trader = self-employed = freelance.",
+      "Promise what the app can't: no deposit or partial-payment tracking, no recurring invoices, no customs forms; a commercial invoice is the document, not the carrier's paperwork.",
+      'The concept explained at length (what is a proforma, what does net 30 mean): the blog owns "what is"; this page is the document.',
+    ],
+    links:
+      "the trade billing-type pages of this type (both ways), the free generator, the blog explainer, one tool (deposit calculator, mileage calculator …).",
+    languages:
+      "**yes** for most: these are the big local searches (Anzahlungsrechnung, Schlussrechnung, factuur zzp). US-only ones (1099, mileage) stay **en-only**.",
   },
   {
     id: "industries",
@@ -69,6 +96,7 @@ export const CATEGORIES = [
       "A profession a live page already covers (drywall, fencing and remodeling sit under /industries/general-contractors).",
       "Features outside BRAND.md §10 in the feature cards (no estimates, scheduling, reminders, payments, photo attachments, time tracking).",
       '"The app in your language": the app\'s screens are English; say "invoices in 11 languages".',
+      "A niche trade's app page without its own \"invoice app / software for …\" search: the template links to the nearest broader industry page instead (auto body → mechanics, plastering → contractors). The app's features are the same everywhere, so these pages differ only in the trade, which makes them weak (doorway risk).",
     ],
     links: "the matching template(s), 2 related industries.",
     languages: "**yes**, after the language setup (H4).",
@@ -105,11 +133,13 @@ export const CATEGORIES = [
       "A tool that works in the browser and gives a real answer (a number, a check), with the steps in plain words.",
       "A button that puts the result on an invoice in the free generator (`?item=&qty=&price=&tax=&currency=`).",
       "Country presets per language (rates, number format, currency).",
+      'Pricing calculators for a trade ("house cleaning pricing calculator"): the pro enters their own rates, the tool does the trade\'s math (square feet, coats, visits, loads, guests), then puts the price on an invoice.',
     ],
     cannot: [
       "Rates or rules without a source and a date (VAT, late-payment interest): re-check every 6 months.",
       "Claims a check can't back up: an IBAN check catches typos, it doesn't prove who owns the account.",
       "Tools that need our server or a paid API without a decision first (VAT number check, business register: T5, T6).",
+      'Market prices as facts ("house cleaning costs $150"): default inputs are labelled as examples to replace, and a price range appears only with its source and date.',
     ],
     links: "the free generator, the other tools (hub), the related templates.",
     languages: "**yes**: every tool exists in all 11 languages with local presets (T9).",
@@ -125,6 +155,7 @@ export const CATEGORIES = [
     can: [
       "What must be on an invoice in that country, each rule with its official source and the date checked, plus the free generator preset (currency, rate).",
       "Countries whose rules differ in ways that matter (VAT/GST numbers, thresholds, required wording) and whose currency the generator supports (the API's 38).",
+      'European countries in English too, for the foreign freelancers there who search in English ("invoice requirements germany"): the same rules as the local page, paired with it by hreflang once both exist.',
     ],
     cannot: [
       "Countries where a PDF invoice from Invoicor isn't a valid invoice (mandatory e-invoicing or certified software, e.g. Italy's SdI, Portugal's certified software, Poland's KSeF from 2026, Kenya's eTIMS): no page that sends people to make one here.",
@@ -139,7 +170,8 @@ export const CATEGORIES = [
     id: "local",
     title: "Local pages (in the country's own language)",
     match: (r) =>
-      (r.page_type === "country" && r.lang !== "en") || r.page_type === "compare (local)",
+      (r.page_type === "country" && r.lang !== "en") ||
+      ["compare (local)", "local topic"].includes(r.page_type),
     url: "`/{lang}/{local slug}`",
     key: 'the country\'s own search words (e.g. "pflichtangaben rechnung", "factuureisen")',
     blueprint: "BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages",
@@ -147,6 +179,7 @@ export const CATEGORIES = [
     can: [
       "Written in the language from the start (rule R4): local invoice rules, small-business schemes, local wording and examples.",
       "Later: comparisons with that country's own rivals (HL9).",
+      "Local topics that have no English parent (`local topic`): rules only that country has, e.g. the German Kleinbetragsrechnung (≤ 250 €), the Swedish ROT/RUT deduction on the invoice.",
     ],
     cannot: [
       'Compete with that language\'s generator page: this is "what must be on it", the generator is "make one".',

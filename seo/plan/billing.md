@@ -3,13 +3,13 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
 
-**0 done · 60 planned**
+**0 done · 59 planned**
 
 ## Direction
 
 - **URL:** `/templates/{trade}-{billing}-invoice` · **Key:** "{trade} {deposit | progress | milestone | hourly | labor and materials | retainer} invoice"
 - **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#billing-type-template-templatestrade-billing-invoice) · **Where it's written:** `content/templates.json`
-- **Links to:** the trade's template (in `related`), its industry page, one other billing-type page.
+- **Links to:** the trade's template (in `related`), the general invoice type (Invoice types), its industry page.
 - **Languages:** **yes**, with the trade templates.
 
 **Can do:**
@@ -23,12 +23,13 @@
 - Repeat the trade's general fields: one sentence and a link to its template.
 - Claim the app tracks deposits, partial payments or time, or sends recurring invoices (it doesn't).
 - Every trade × every billing type: at most 2 billing types per trade, and only where the search is real.
+- Exist without its own demand: the general invoice type ("labor and materials invoice") covers a trade that only swaps the materials. No evidence at the demand gate: park it.
 
 ## Done (0): don't build these again
 
 _None yet._
 
-## Planned (60)
+## Planned (59)
 
 ### Item 1B (20)
 
@@ -82,11 +83,12 @@ _None yet._
 
 #### /templates/construction-progress-invoice
 
-- **Key:** construction progress invoice · also: progress billing invoice; progress payment invoice
+- **Key:** construction progress invoice · also: progress invoice template; progress billing invoice; progress payment invoice; interim invoice
 - **Item:** 1B · **Intent:** template: progress · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Progress billing: invoicing by percentage complete or by milestone against a schedule of values, retainage (often 5–10% held until completion), change orders on their own lines, lien waivers (hedged, state rules vary); the AIA G702/G703 forms exist as an industry standard, but this is a plain invoice. Sample: the 3rd progress invoice of a home addition with previous payments shown.
 - **Don't write about:** Deposits and down payments (owned by /templates/contractor-deposit-invoice); general construction fields (/templates/construction).
 - **Already covered (link, don't repeat):** /templates/construction (“construction invoice template”)
+- **Notes:** owns the general 'progress invoice' search (it's construction in practice), so there's no separate /templates/progress-invoice
 
 #### /templates/web-development-milestone-invoice
 
@@ -334,7 +336,7 @@ _None yet._
 - **Don't write about:** General fields of the trade (owned by /templates/pool-service): one sentence and a link.
 - **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /industries/pool-service (“invoice app for pool service companies”)
 
-### Item 4D (20)
+### Item 4D (19)
 
 #### /templates/monthly-lawn-care-invoice
 
@@ -457,14 +459,6 @@ _None yet._
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Crew size × hours, travel time, minimums.
 - **Don't write about:** General fields of the trade (owned by /templates/moving): one sentence and a link.
 
-#### /templates/consulting-project-invoice
-
-- **Key:** consulting project invoice · also: fixed fee consulting invoice
-- **Item:** 4D · **Intent:** template: billing type · **Languages:** yes
-- **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. A fixed-fee project, payment stages, expenses.
-- **Don't write about:** General fields of the trade (owned by /templates/consulting): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”)
-
 #### /templates/graphic-design-deposit-invoice
 
 - **Key:** graphic design deposit invoice · also: design deposit
@@ -487,3 +481,9 @@ _None yet._
 - **Item:** 4D · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Materials at cost or markup, labor, trip charge.
 - **Don't write about:** General fields of the trade (owned by /templates/handyman): one sentence and a link.
+
+## Parked (1): not built, key reserved
+
+No proven demand, or the parent page covers it. Unpark (`status: planned`) only with new evidence.
+
+- `/templates/consulting-project-invoice` consulting project invoice: a 3rd billing type for consulting (the rule is at most 2); a fixed-fee project is the consulting template's default case: cover it there

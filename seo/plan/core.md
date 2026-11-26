@@ -27,19 +27,19 @@
 
 ## Planned (6)
 
-### later: trust pages (24) (2)
+### Item 1G (2)
 
 #### /about
 
 - **Key:** about invoicor
-- **Item:** later: trust pages (24) · **Intent:** brand / trust · **Languages:** yes
+- **Item:** 1G · **Intent:** brand / trust · **Languages:** yes
 - **Write about:** Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
 - **Notes:** E-E-A-T
 
 #### /contact
 
 - **Key:** contact invoicor
-- **Item:** later: trust pages (24) · **Intent:** brand / trust · **Languages:** yes
+- **Item:** 1G · **Intent:** brand / trust · **Languages:** yes
 - **Write about:** How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).
 - **Notes:** E-E-A-T
 
