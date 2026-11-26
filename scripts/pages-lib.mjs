@@ -514,7 +514,7 @@ function renderPlan(rows) {
     "",
     "So the plan can keep growing (the goal of 4,000 can move up or down with the results):",
     "",
-    "- **One item = 15–25 pages of one category**, named with that category's letter and the next",
+    "- **One item = 10–25 pages of one category** (smaller rather than padded with sub-niches), named with that category's letter and the next",
     "  number (T10, B4 …). Add it at the end of `ITEMS` in `scripts/pages-items.mjs`; numbers never",
     "  change.",
     "- **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`:",

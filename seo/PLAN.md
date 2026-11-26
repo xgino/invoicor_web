@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 401 English and local pages + 4,140 language pages · **4,782 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 558 English and local pages + 5,590 language pages · **6,389 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -86,7 +86,7 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 
 So the plan can keep growing (the goal of 4,000 can move up or down with the results):
 
-- **One item = 15–25 pages of one category**, named with that category's letter and the next
+- **One item = 10–25 pages of one category** (smaller rather than padded with sub-niches), named with that category's letter and the next
   number (T10, B4 …). Add it at the end of `ITEMS` in `scripts/pages-items.mjs`; numbers never
   change.
 - **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`:
@@ -105,7 +105,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 
 | Category | Items | Pages done | Pages to build | Language items |
 |---|---|---|---|---|
-| [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 | 50 | 106 | 0/90 done |
+| [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 | 50 | 263 | 0/200 done |
 | [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 | 0 | 59 | 0/30 done |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 | 43 | 94 | 0/90 done |
@@ -116,7 +116,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L310 | 80 | 4140 | |
+| [Languages](#languages-l) | L1–L420 | 80 | 5590 | |
 
 ## Suggested order
 
@@ -124,7 +124,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20**
 
 ## Tasks (S): code, no pages
 
@@ -328,6 +328,207 @@ Direction (what these pages can and can't do) and every brief: [plan/templates.m
   - [ ] [/templates/plastering](plan/templates.md#templatesplastering) plastering invoice template
   - [ ] [/templates/concrete](plan/templates.md#templatesconcrete) concrete invoice template
   - [ ] [/templates/event-venue](plan/templates.md#templatesevent-venue) event venue invoice template
+
+### T10: Home systems and specialist contractors
+
+- [ ] **T10** · 0/18 live · languages: [L311–L320](#t10-in-every-language)
+  - [ ] [/templates/well-drilling](plan/templates.md#templateswell-drilling) well drilling invoice template
+  - [ ] [/templates/drain-cleaning](plan/templates.md#templatesdrain-cleaning) drain cleaning invoice template
+  - [ ] [/templates/gas-engineer](plan/templates.md#templatesgas-engineer) gas engineer invoice template
+  - [ ] [/templates/foundation-repair](plan/templates.md#templatesfoundation-repair) foundation repair invoice template
+  - [ ] [/templates/basement-waterproofing](plan/templates.md#templatesbasement-waterproofing) basement waterproofing invoice template
+  - [ ] [/templates/radon-mitigation](plan/templates.md#templatesradon-mitigation) radon mitigation invoice template
+  - [ ] [/templates/asbestos-removal](plan/templates.md#templatesasbestos-removal) asbestos removal invoice template
+  - [ ] [/templates/wallpaper-installation](plan/templates.md#templateswallpaper-installation) wallpaper installation invoice template
+  - [ ] [/templates/epoxy-flooring](plan/templates.md#templatesepoxy-flooring) epoxy flooring invoice template
+  - [ ] [/templates/window-treatments](plan/templates.md#templateswindow-treatments) window treatment invoice template
+  - [ ] [/templates/christmas-light-installation](plan/templates.md#templateschristmas-light-installation) christmas light installation invoice template
+  - [ ] [/templates/fire-protection](plan/templates.md#templatesfire-protection) fire protection invoice template
+  - [ ] [/templates/low-voltage-cabling](plan/templates.md#templateslow-voltage-cabling) low voltage cabling invoice template
+  - [ ] [/templates/gutter-installation](plan/templates.md#templatesgutter-installation) gutter installation invoice template
+  - [ ] [/templates/fireplace-installation](plan/templates.md#templatesfireplace-installation) fireplace installation invoice template
+  - [ ] [/templates/home-energy-audit](plan/templates.md#templateshome-energy-audit) home energy audit invoice template
+  - [ ] [/templates/sealcoating](plan/templates.md#templatessealcoating) sealcoating invoice template
+  - [ ] [/templates/parking-lot-striping](plan/templates.md#templatesparking-lot-striping) parking lot striping invoice template
+
+### T11: Property, waste and household services
+
+- [ ] **T11** · 0/18 live · languages: [L321–L330](#t11-in-every-language)
+  - [ ] [/templates/janitorial](plan/templates.md#templatesjanitorial) janitorial invoice template
+  - [ ] [/templates/hood-cleaning](plan/templates.md#templateshood-cleaning) hood cleaning invoice template
+  - [ ] [/templates/biohazard-cleanup](plan/templates.md#templatesbiohazard-cleanup) biohazard cleanup invoice template
+  - [ ] [/templates/laundry-service](plan/templates.md#templateslaundry-service) laundry service invoice template
+  - [ ] [/templates/dumpster-rental](plan/templates.md#templatesdumpster-rental) dumpster rental invoice template
+  - [ ] [/templates/portable-toilet-rental](plan/templates.md#templatesportable-toilet-rental) portable toilet rental invoice template
+  - [ ] [/templates/home-watch](plan/templates.md#templateshome-watch) home watch invoice template
+  - [ ] [/templates/estate-sale](plan/templates.md#templatesestate-sale) estate sale invoice template
+  - [ ] [/templates/self-storage](plan/templates.md#templatesself-storage) self storage invoice template
+  - [ ] [/templates/vacation-rental](plan/templates.md#templatesvacation-rental) vacation rental invoice template
+  - [ ] [/templates/graffiti-removal](plan/templates.md#templatesgraffiti-removal) graffiti removal invoice template
+  - [ ] [/templates/property-preservation](plan/templates.md#templatesproperty-preservation) property preservation invoice template
+  - [ ] [/templates/auctioneer](plan/templates.md#templatesauctioneer) auctioneer invoice template
+  - [ ] [/templates/appraisal](plan/templates.md#templatesappraisal) appraisal invoice template
+  - [ ] [/templates/concierge](plan/templates.md#templatesconcierge) concierge invoice template
+  - [ ] [/templates/personal-shopper](plan/templates.md#templatespersonal-shopper) personal shopper invoice template
+  - [ ] [/templates/house-sitting](plan/templates.md#templateshouse-sitting) house sitting invoice template
+  - [ ] [/templates/senior-move-management](plan/templates.md#templatessenior-move-management) senior move management invoice template
+
+### T12: Auto, transport and heavy equipment
+
+- [ ] **T12** · 0/15 live · languages: [L331–L340](#t12-in-every-language)
+  - [ ] [/templates/window-tinting](plan/templates.md#templateswindow-tinting) window tinting invoice template
+  - [ ] [/templates/auto-glass](plan/templates.md#templatesauto-glass) auto glass invoice template
+  - [ ] [/templates/paintless-dent-repair](plan/templates.md#templatespaintless-dent-repair) paintless dent repair invoice template
+  - [ ] [/templates/tire-service](plan/templates.md#templatestire-service) tire shop invoice template
+  - [ ] [/templates/car-hauling](plan/templates.md#templatescar-hauling) car hauling invoice template
+  - [ ] [/templates/motorcycle-repair](plan/templates.md#templatesmotorcycle-repair) motorcycle repair invoice template
+  - [ ] [/templates/heavy-equipment-repair](plan/templates.md#templatesheavy-equipment-repair) heavy equipment repair invoice template
+  - [ ] [/templates/freight-broker](plan/templates.md#templatesfreight-broker) freight broker invoice template
+  - [ ] [/templates/truck-dispatch](plan/templates.md#templatestruck-dispatch) truck dispatch invoice template
+  - [ ] [/templates/flight-instruction](plan/templates.md#templatesflight-instruction) flight instruction invoice template
+  - [ ] [/templates/valet-parking](plan/templates.md#templatesvalet-parking) valet parking invoice template
+  - [ ] [/templates/bus-charter](plan/templates.md#templatesbus-charter) bus charter invoice template
+  - [ ] [/templates/car-audio-installation](plan/templates.md#templatescar-audio-installation) car audio installation invoice template
+  - [ ] [/templates/aircraft-maintenance](plan/templates.md#templatesaircraft-maintenance) aircraft maintenance invoice template
+  - [ ] [/templates/crane-services](plan/templates.md#templatescrane-services) crane service invoice template
+
+### T13: Workshops, repair and industrial trades
+
+- [ ] **T13** · 0/15 live · languages: [L341–L350](#t13-in-every-language)
+  - [ ] [/templates/machining](plan/templates.md#templatesmachining) machining invoice template
+  - [ ] [/templates/sandblasting](plan/templates.md#templatessandblasting) sandblasting invoice template
+  - [ ] [/templates/powder-coating](plan/templates.md#templatespowder-coating) powder coating invoice template
+  - [ ] [/templates/scaffolding](plan/templates.md#templatesscaffolding) scaffolding invoice template
+  - [ ] [/templates/millwright](plan/templates.md#templatesmillwright) millwright invoice template
+  - [ ] [/templates/concrete-cutting](plan/templates.md#templatesconcrete-cutting) concrete cutting invoice template
+  - [ ] [/templates/environmental-consulting](plan/templates.md#templatesenvironmental-consulting) environmental consulting invoice template
+  - [ ] [/templates/commercial-refrigeration](plan/templates.md#templatescommercial-refrigeration) commercial refrigeration invoice template
+  - [ ] [/templates/restaurant-equipment-repair](plan/templates.md#templatesrestaurant-equipment-repair) restaurant equipment repair invoice template
+  - [ ] [/templates/shoe-repair](plan/templates.md#templatesshoe-repair) shoe repair invoice template
+  - [ ] [/templates/piano-tuning](plan/templates.md#templatespiano-tuning) piano tuning invoice template
+  - [ ] [/templates/instrument-repair](plan/templates.md#templatesinstrument-repair) instrument repair invoice template
+  - [ ] [/templates/furniture-refinishing](plan/templates.md#templatesfurniture-refinishing) furniture refinishing invoice template
+  - [ ] [/templates/gunsmith](plan/templates.md#templatesgunsmith) gunsmith invoice template
+  - [ ] [/templates/knife-sharpening](plan/templates.md#templatesknife-sharpening) knife sharpening invoice template
+
+### T14: Events, food, travel and entertainment
+
+- [ ] **T14** · 0/15 live · languages: [L351–L360](#t14-in-every-language)
+  - [ ] [/templates/balloon-decor](plan/templates.md#templatesballoon-decor) balloon decor invoice template
+  - [ ] [/templates/face-painting](plan/templates.md#templatesface-painting) face painting invoice template
+  - [ ] [/templates/entertainer](plan/templates.md#templatesentertainer) entertainer invoice template
+  - [ ] [/templates/audio-visual](plan/templates.md#templatesaudio-visual) audio visual invoice template
+  - [ ] [/templates/calligraphy](plan/templates.md#templatescalligraphy) calligraphy invoice template
+  - [ ] [/templates/wedding-invitations](plan/templates.md#templateswedding-invitations) wedding invitation invoice template
+  - [ ] [/templates/henna](plan/templates.md#templateshenna) henna invoice template
+  - [ ] [/templates/event-decor](plan/templates.md#templatesevent-decor) event decor invoice template
+  - [ ] [/templates/food-truck](plan/templates.md#templatesfood-truck) food truck invoice template
+  - [ ] [/templates/cooking-classes](plan/templates.md#templatescooking-classes) cooking class invoice template
+  - [ ] [/templates/meal-prep](plan/templates.md#templatesmeal-prep) meal prep invoice template
+  - [ ] [/templates/meat-processing](plan/templates.md#templatesmeat-processing) meat processing invoice template
+  - [ ] [/templates/referee](plan/templates.md#templatesreferee) referee invoice template
+  - [ ] [/templates/tour-guide](plan/templates.md#templatestour-guide) tour guide invoice template
+  - [ ] [/templates/travel-agent](plan/templates.md#templatestravel-agent) travel agent invoice template
+
+### T15: Professional services II
+
+- [ ] **T15** · 0/15 live · languages: [L361–L370](#t15-in-every-language)
+  - [ ] [/templates/accounting](plan/templates.md#templatesaccounting) accounting invoice template
+  - [ ] [/templates/financial-advisor](plan/templates.md#templatesfinancial-advisor) financial advisor invoice template
+  - [ ] [/templates/recruitment](plan/templates.md#templatesrecruitment) recruitment invoice template
+  - [ ] [/templates/staffing-agency](plan/templates.md#templatesstaffing-agency) staffing agency invoice template
+  - [ ] [/templates/grant-writing](plan/templates.md#templatesgrant-writing) grant writing invoice template
+  - [ ] [/templates/resume-writing](plan/templates.md#templatesresume-writing) resume writing invoice template
+  - [ ] [/templates/technical-writing](plan/templates.md#templatestechnical-writing) technical writing invoice template
+  - [ ] [/templates/transcription](plan/templates.md#templatestranscription) transcription invoice template
+  - [ ] [/templates/court-reporter](plan/templates.md#templatescourt-reporter) court reporter invoice template
+  - [ ] [/templates/interpreter](plan/templates.md#templatesinterpreter) interpreter invoice template
+  - [ ] [/templates/paralegal](plan/templates.md#templatesparalegal) paralegal invoice template
+  - [ ] [/templates/mediation](plan/templates.md#templatesmediation) mediation invoice template
+  - [ ] [/templates/expert-witness](plan/templates.md#templatesexpert-witness) expert witness invoice template
+  - [ ] [/templates/process-server](plan/templates.md#templatesprocess-server) process server invoice template
+  - [ ] [/templates/engineering](plan/templates.md#templatesengineering) engineering invoice template
+
+### T16: Digital and tech services
+
+- [ ] **T16** · 0/10 live · languages: [L371–L380](#t16-in-every-language)
+  - [ ] [/templates/cybersecurity](plan/templates.md#templatescybersecurity) cybersecurity invoice template
+  - [ ] [/templates/data-entry](plan/templates.md#templatesdata-entry) data entry invoice template
+  - [ ] [/templates/ppc-management](plan/templates.md#templatesppc-management) ppc management invoice template
+  - [ ] [/templates/web-hosting](plan/templates.md#templatesweb-hosting) web hosting invoice template
+  - [ ] [/templates/game-development](plan/templates.md#templatesgame-development) game development invoice template
+  - [ ] [/templates/animation](plan/templates.md#templatesanimation) animation invoice template
+  - [ ] [/templates/3d-rendering](plan/templates.md#templates3d-rendering) 3d rendering invoice template
+  - [ ] [/templates/photo-retouching](plan/templates.md#templatesphoto-retouching) photo retouching invoice template
+  - [ ] [/templates/livestream-production](plan/templates.md#templateslivestream-production) livestream production invoice template
+  - [ ] [/templates/virtual-tours](plan/templates.md#templatesvirtual-tours) virtual tour invoice template
+
+### T17: Creative, fashion and crafts
+
+- [ ] **T17** · 0/12 live · languages: [L381–L390](#t17-in-every-language)
+  - [ ] [/templates/film-production](plan/templates.md#templatesfilm-production) film production invoice template
+  - [ ] [/templates/actor](plan/templates.md#templatesactor) actor invoice template
+  - [ ] [/templates/model](plan/templates.md#templatesmodel) model invoice template
+  - [ ] [/templates/fashion-design](plan/templates.md#templatesfashion-design) fashion design invoice template
+  - [ ] [/templates/stylist](plan/templates.md#templatesstylist) stylist invoice template
+  - [ ] [/templates/muralist](plan/templates.md#templatesmuralist) muralist invoice template
+  - [ ] [/templates/pottery](plan/templates.md#templatespottery) pottery invoice template
+  - [ ] [/templates/jewelry-making](plan/templates.md#templatesjewelry-making) jewelry making invoice template
+  - [ ] [/templates/picture-framing](plan/templates.md#templatespicture-framing) picture framing invoice template
+  - [ ] [/templates/crafts](plan/templates.md#templatescrafts) craft invoice template
+  - [ ] [/templates/studio-rental](plan/templates.md#templatesstudio-rental) studio rental invoice template
+  - [ ] [/templates/stained-glass](plan/templates.md#templatesstained-glass) stained glass invoice template
+
+### T18: Health and wellness II
+
+- [ ] **T18** · 0/15 live · languages: [L391–L400](#t18-in-every-language)
+  - [ ] [/templates/acupuncture](plan/templates.md#templatesacupuncture) acupuncture invoice template
+  - [ ] [/templates/chiropractic](plan/templates.md#templateschiropractic) chiropractic invoice template
+  - [ ] [/templates/physiotherapy](plan/templates.md#templatesphysiotherapy) physical therapy invoice template
+  - [ ] [/templates/speech-therapy](plan/templates.md#templatesspeech-therapy) speech therapy invoice template
+  - [ ] [/templates/occupational-therapy](plan/templates.md#templatesoccupational-therapy) occupational therapy invoice template
+  - [ ] [/templates/reiki](plan/templates.md#templatesreiki) reiki invoice template
+  - [ ] [/templates/spray-tanning](plan/templates.md#templatesspray-tanning) spray tan invoice template
+  - [ ] [/templates/microblading](plan/templates.md#templatesmicroblading) microblading invoice template
+  - [ ] [/templates/hair-braiding](plan/templates.md#templateshair-braiding) hair braiding invoice template
+  - [ ] [/templates/locum](plan/templates.md#templateslocum) locum invoice template
+  - [ ] [/templates/nursing](plan/templates.md#templatesnursing) nursing invoice template
+  - [ ] [/templates/midwife](plan/templates.md#templatesmidwife) midwife invoice template
+  - [ ] [/templates/lactation-consultant](plan/templates.md#templateslactation-consultant) lactation consultant invoice template
+  - [ ] [/templates/sleep-consultant](plan/templates.md#templatessleep-consultant) sleep consultant invoice template
+  - [ ] [/templates/hypnotherapy](plan/templates.md#templateshypnotherapy) hypnotherapy invoice template
+
+### T19: Education and childcare
+
+- [ ] **T19** · 0/12 live · languages: [L401–L410](#t19-in-every-language)
+  - [ ] [/templates/daycare](plan/templates.md#templatesdaycare) daycare invoice template
+  - [ ] [/templates/after-school-program](plan/templates.md#templatesafter-school-program) after school program invoice template
+  - [ ] [/templates/summer-camp](plan/templates.md#templatessummer-camp) summer camp invoice template
+  - [ ] [/templates/language-lessons](plan/templates.md#templateslanguage-lessons) language lessons invoice template
+  - [ ] [/templates/art-lessons](plan/templates.md#templatesart-lessons) art lessons invoice template
+  - [ ] [/templates/corporate-training](plan/templates.md#templatescorporate-training) corporate training invoice template
+  - [ ] [/templates/public-speaking](plan/templates.md#templatespublic-speaking) speaker invoice template
+  - [ ] [/templates/horse-riding-lessons](plan/templates.md#templateshorse-riding-lessons) riding lessons invoice template
+  - [ ] [/templates/martial-arts](plan/templates.md#templatesmartial-arts) martial arts invoice template
+  - [ ] [/templates/college-admissions-consulting](plan/templates.md#templatescollege-admissions-consulting) college admissions consulting invoice template
+  - [ ] [/templates/cpr-training](plan/templates.md#templatescpr-training) cpr training invoice template
+  - [ ] [/templates/music-therapy](plan/templates.md#templatesmusic-therapy) music therapy invoice template
+
+### T20: Animals, farms and outdoors
+
+- [ ] **T20** · 0/12 live · languages: [L411–L420](#t20-in-every-language)
+  - [ ] [/templates/pet-boarding](plan/templates.md#templatespet-boarding) pet boarding invoice template
+  - [ ] [/templates/horse-boarding](plan/templates.md#templateshorse-boarding) horse boarding invoice template
+  - [ ] [/templates/farrier](plan/templates.md#templatesfarrier) farrier invoice template
+  - [ ] [/templates/pet-waste-removal](plan/templates.md#templatespet-waste-removal) pet waste removal invoice template
+  - [ ] [/templates/hunting-guide](plan/templates.md#templateshunting-guide) hunting guide invoice template
+  - [ ] [/templates/fishing-charter](plan/templates.md#templatesfishing-charter) fishing charter invoice template
+  - [ ] [/templates/custom-harvesting](plan/templates.md#templatescustom-harvesting) custom harvesting invoice template
+  - [ ] [/templates/land-clearing](plan/templates.md#templatesland-clearing) land clearing invoice template
+  - [ ] [/templates/logging](plan/templates.md#templateslogging) logging invoice template
+  - [ ] [/templates/firewood](plan/templates.md#templatesfirewood) firewood invoice template
+  - [ ] [/templates/pond-maintenance](plan/templates.md#templatespond-maintenance) pond maintenance invoice template
+  - [ ] [/templates/taxidermy](plan/templates.md#templatestaxidermy) taxidermy invoice template
 
 ## Billing-type templates (B)
 
@@ -1365,6 +1566,171 @@ Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 8 pa
 - [ ] [**L308**](plan/languages/it.md#l308-p0-in-italian) Italian · 3/8
 - [ ] [**L309**](plan/languages/pt.md#l309-p0-in-portuguese) Portuguese · 3/8
 - [ ] [**L310**](plan/languages/pl.md#l310-p0-in-polish) Polish · 3/8
+
+### T10 in every language
+
+Home systems and specialist contractors · 16 pages
+
+- [ ] [**L311**](plan/languages/de.md#l311-t10-in-german) German · 0/16
+- [ ] [**L312**](plan/languages/es.md#l312-t10-in-spanish) Spanish · 0/16
+- [ ] [**L313**](plan/languages/fr.md#l313-t10-in-french) French · 0/16
+- [ ] [**L314**](plan/languages/nl.md#l314-t10-in-dutch) Dutch · 0/16
+- [ ] [**L315**](plan/languages/sv.md#l315-t10-in-swedish) Swedish · 0/16
+- [ ] [**L316**](plan/languages/da.md#l316-t10-in-danish) Danish · 0/16
+- [ ] [**L317**](plan/languages/nb.md#l317-t10-in-norwegian-bokmål) Norwegian (Bokmål) · 0/16
+- [ ] [**L318**](plan/languages/it.md#l318-t10-in-italian) Italian · 0/16
+- [ ] [**L319**](plan/languages/pt.md#l319-t10-in-portuguese) Portuguese · 0/16
+- [ ] [**L320**](plan/languages/pl.md#l320-t10-in-polish) Polish · 0/16
+
+### T11 in every language
+
+Property, waste and household services · 14 pages
+
+- [ ] [**L321**](plan/languages/de.md#l321-t11-in-german) German · 0/14
+- [ ] [**L322**](plan/languages/es.md#l322-t11-in-spanish) Spanish · 0/14
+- [ ] [**L323**](plan/languages/fr.md#l323-t11-in-french) French · 0/14
+- [ ] [**L324**](plan/languages/nl.md#l324-t11-in-dutch) Dutch · 0/14
+- [ ] [**L325**](plan/languages/sv.md#l325-t11-in-swedish) Swedish · 0/14
+- [ ] [**L326**](plan/languages/da.md#l326-t11-in-danish) Danish · 0/14
+- [ ] [**L327**](plan/languages/nb.md#l327-t11-in-norwegian-bokmål) Norwegian (Bokmål) · 0/14
+- [ ] [**L328**](plan/languages/it.md#l328-t11-in-italian) Italian · 0/14
+- [ ] [**L329**](plan/languages/pt.md#l329-t11-in-portuguese) Portuguese · 0/14
+- [ ] [**L330**](plan/languages/pl.md#l330-t11-in-polish) Polish · 0/14
+
+### T12 in every language
+
+Auto, transport and heavy equipment · 14 pages
+
+- [ ] [**L331**](plan/languages/de.md#l331-t12-in-german) German · 0/14
+- [ ] [**L332**](plan/languages/es.md#l332-t12-in-spanish) Spanish · 0/14
+- [ ] [**L333**](plan/languages/fr.md#l333-t12-in-french) French · 0/14
+- [ ] [**L334**](plan/languages/nl.md#l334-t12-in-dutch) Dutch · 0/14
+- [ ] [**L335**](plan/languages/sv.md#l335-t12-in-swedish) Swedish · 0/14
+- [ ] [**L336**](plan/languages/da.md#l336-t12-in-danish) Danish · 0/14
+- [ ] [**L337**](plan/languages/nb.md#l337-t12-in-norwegian-bokmål) Norwegian (Bokmål) · 0/14
+- [ ] [**L338**](plan/languages/it.md#l338-t12-in-italian) Italian · 0/14
+- [ ] [**L339**](plan/languages/pt.md#l339-t12-in-portuguese) Portuguese · 0/14
+- [ ] [**L340**](plan/languages/pl.md#l340-t12-in-polish) Polish · 0/14
+
+### T13 in every language
+
+Workshops, repair and industrial trades · 14 pages
+
+- [ ] [**L341**](plan/languages/de.md#l341-t13-in-german) German · 0/14
+- [ ] [**L342**](plan/languages/es.md#l342-t13-in-spanish) Spanish · 0/14
+- [ ] [**L343**](plan/languages/fr.md#l343-t13-in-french) French · 0/14
+- [ ] [**L344**](plan/languages/nl.md#l344-t13-in-dutch) Dutch · 0/14
+- [ ] [**L345**](plan/languages/sv.md#l345-t13-in-swedish) Swedish · 0/14
+- [ ] [**L346**](plan/languages/da.md#l346-t13-in-danish) Danish · 0/14
+- [ ] [**L347**](plan/languages/nb.md#l347-t13-in-norwegian-bokmål) Norwegian (Bokmål) · 0/14
+- [ ] [**L348**](plan/languages/it.md#l348-t13-in-italian) Italian · 0/14
+- [ ] [**L349**](plan/languages/pt.md#l349-t13-in-portuguese) Portuguese · 0/14
+- [ ] [**L350**](plan/languages/pl.md#l350-t13-in-polish) Polish · 0/14
+
+### T14 in every language
+
+Events, food, travel and entertainment · 15 pages
+
+- [ ] [**L351**](plan/languages/de.md#l351-t14-in-german) German · 0/15
+- [ ] [**L352**](plan/languages/es.md#l352-t14-in-spanish) Spanish · 0/15
+- [ ] [**L353**](plan/languages/fr.md#l353-t14-in-french) French · 0/15
+- [ ] [**L354**](plan/languages/nl.md#l354-t14-in-dutch) Dutch · 0/15
+- [ ] [**L355**](plan/languages/sv.md#l355-t14-in-swedish) Swedish · 0/15
+- [ ] [**L356**](plan/languages/da.md#l356-t14-in-danish) Danish · 0/15
+- [ ] [**L357**](plan/languages/nb.md#l357-t14-in-norwegian-bokmål) Norwegian (Bokmål) · 0/15
+- [ ] [**L358**](plan/languages/it.md#l358-t14-in-italian) Italian · 0/15
+- [ ] [**L359**](plan/languages/pt.md#l359-t14-in-portuguese) Portuguese · 0/15
+- [ ] [**L360**](plan/languages/pl.md#l360-t14-in-polish) Polish · 0/15
+
+### T15 in every language
+
+Professional services II · 12 pages
+
+- [ ] [**L361**](plan/languages/de.md#l361-t15-in-german) German · 0/12
+- [ ] [**L362**](plan/languages/es.md#l362-t15-in-spanish) Spanish · 0/12
+- [ ] [**L363**](plan/languages/fr.md#l363-t15-in-french) French · 0/12
+- [ ] [**L364**](plan/languages/nl.md#l364-t15-in-dutch) Dutch · 0/12
+- [ ] [**L365**](plan/languages/sv.md#l365-t15-in-swedish) Swedish · 0/12
+- [ ] [**L366**](plan/languages/da.md#l366-t15-in-danish) Danish · 0/12
+- [ ] [**L367**](plan/languages/nb.md#l367-t15-in-norwegian-bokmål) Norwegian (Bokmål) · 0/12
+- [ ] [**L368**](plan/languages/it.md#l368-t15-in-italian) Italian · 0/12
+- [ ] [**L369**](plan/languages/pt.md#l369-t15-in-portuguese) Portuguese · 0/12
+- [ ] [**L370**](plan/languages/pl.md#l370-t15-in-polish) Polish · 0/12
+
+### T16 in every language
+
+Digital and tech services · 10 pages
+
+- [ ] [**L371**](plan/languages/de.md#l371-t16-in-german) German · 0/10
+- [ ] [**L372**](plan/languages/es.md#l372-t16-in-spanish) Spanish · 0/10
+- [ ] [**L373**](plan/languages/fr.md#l373-t16-in-french) French · 0/10
+- [ ] [**L374**](plan/languages/nl.md#l374-t16-in-dutch) Dutch · 0/10
+- [ ] [**L375**](plan/languages/sv.md#l375-t16-in-swedish) Swedish · 0/10
+- [ ] [**L376**](plan/languages/da.md#l376-t16-in-danish) Danish · 0/10
+- [ ] [**L377**](plan/languages/nb.md#l377-t16-in-norwegian-bokmål) Norwegian (Bokmål) · 0/10
+- [ ] [**L378**](plan/languages/it.md#l378-t16-in-italian) Italian · 0/10
+- [ ] [**L379**](plan/languages/pt.md#l379-t16-in-portuguese) Portuguese · 0/10
+- [ ] [**L380**](plan/languages/pl.md#l380-t16-in-polish) Polish · 0/10
+
+### T17 in every language
+
+Creative, fashion and crafts · 12 pages
+
+- [ ] [**L381**](plan/languages/de.md#l381-t17-in-german) German · 0/12
+- [ ] [**L382**](plan/languages/es.md#l382-t17-in-spanish) Spanish · 0/12
+- [ ] [**L383**](plan/languages/fr.md#l383-t17-in-french) French · 0/12
+- [ ] [**L384**](plan/languages/nl.md#l384-t17-in-dutch) Dutch · 0/12
+- [ ] [**L385**](plan/languages/sv.md#l385-t17-in-swedish) Swedish · 0/12
+- [ ] [**L386**](plan/languages/da.md#l386-t17-in-danish) Danish · 0/12
+- [ ] [**L387**](plan/languages/nb.md#l387-t17-in-norwegian-bokmål) Norwegian (Bokmål) · 0/12
+- [ ] [**L388**](plan/languages/it.md#l388-t17-in-italian) Italian · 0/12
+- [ ] [**L389**](plan/languages/pt.md#l389-t17-in-portuguese) Portuguese · 0/12
+- [ ] [**L390**](plan/languages/pl.md#l390-t17-in-polish) Polish · 0/12
+
+### T18 in every language
+
+Health and wellness II · 15 pages
+
+- [ ] [**L391**](plan/languages/de.md#l391-t18-in-german) German · 0/15
+- [ ] [**L392**](plan/languages/es.md#l392-t18-in-spanish) Spanish · 0/15
+- [ ] [**L393**](plan/languages/fr.md#l393-t18-in-french) French · 0/15
+- [ ] [**L394**](plan/languages/nl.md#l394-t18-in-dutch) Dutch · 0/15
+- [ ] [**L395**](plan/languages/sv.md#l395-t18-in-swedish) Swedish · 0/15
+- [ ] [**L396**](plan/languages/da.md#l396-t18-in-danish) Danish · 0/15
+- [ ] [**L397**](plan/languages/nb.md#l397-t18-in-norwegian-bokmål) Norwegian (Bokmål) · 0/15
+- [ ] [**L398**](plan/languages/it.md#l398-t18-in-italian) Italian · 0/15
+- [ ] [**L399**](plan/languages/pt.md#l399-t18-in-portuguese) Portuguese · 0/15
+- [ ] [**L400**](plan/languages/pl.md#l400-t18-in-polish) Polish · 0/15
+
+### T19 in every language
+
+Education and childcare · 11 pages
+
+- [ ] [**L401**](plan/languages/de.md#l401-t19-in-german) German · 0/11
+- [ ] [**L402**](plan/languages/es.md#l402-t19-in-spanish) Spanish · 0/11
+- [ ] [**L403**](plan/languages/fr.md#l403-t19-in-french) French · 0/11
+- [ ] [**L404**](plan/languages/nl.md#l404-t19-in-dutch) Dutch · 0/11
+- [ ] [**L405**](plan/languages/sv.md#l405-t19-in-swedish) Swedish · 0/11
+- [ ] [**L406**](plan/languages/da.md#l406-t19-in-danish) Danish · 0/11
+- [ ] [**L407**](plan/languages/nb.md#l407-t19-in-norwegian-bokmål) Norwegian (Bokmål) · 0/11
+- [ ] [**L408**](plan/languages/it.md#l408-t19-in-italian) Italian · 0/11
+- [ ] [**L409**](plan/languages/pt.md#l409-t19-in-portuguese) Portuguese · 0/11
+- [ ] [**L410**](plan/languages/pl.md#l410-t19-in-polish) Polish · 0/11
+
+### T20 in every language
+
+Animals, farms and outdoors · 12 pages
+
+- [ ] [**L411**](plan/languages/de.md#l411-t20-in-german) German · 0/12
+- [ ] [**L412**](plan/languages/es.md#l412-t20-in-spanish) Spanish · 0/12
+- [ ] [**L413**](plan/languages/fr.md#l413-t20-in-french) French · 0/12
+- [ ] [**L414**](plan/languages/nl.md#l414-t20-in-dutch) Dutch · 0/12
+- [ ] [**L415**](plan/languages/sv.md#l415-t20-in-swedish) Swedish · 0/12
+- [ ] [**L416**](plan/languages/da.md#l416-t20-in-danish) Danish · 0/12
+- [ ] [**L417**](plan/languages/nb.md#l417-t20-in-norwegian-bokmål) Norwegian (Bokmål) · 0/12
+- [ ] [**L418**](plan/languages/it.md#l418-t20-in-italian) Italian · 0/12
+- [ ] [**L419**](plan/languages/pt.md#l419-t20-in-portuguese) Portuguese · 0/12
+- [ ] [**L420**](plan/languages/pl.md#l420-t20-in-polish) Polish · 0/12
 
 ## Not in an item yet
 

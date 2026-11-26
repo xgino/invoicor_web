@@ -3308,3 +3308,1229 @@
 - **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
 - **Search words:** the Polish term for "invoicor for android: coming soon"
 - **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L320: T10 in Polish
+
+[ ] Home systems and specialist contractors · 0/16 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/well-drilling → Polish
+
+- [ ] **Live in pl**
+- **English page:** [well drilling invoice template](../templates.md#templateswell-drilling) (planned: write the English page first)
+- **Search words:** "wzór faktury [well drilling, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Drilling per foot (rate by rock or soil), casing per foot, the pump and pressure tank, the permit and water test, a dry-hole clause; deposits are common (link D1). Sample: a 220 ft residential well.
+- **Don't:** Plumbing repairs (/templates/plumbing).
+
+### /templates/drain-cleaning → Polish
+
+- [ ] **Live in pl**
+- **English page:** [drain cleaning invoice template](../templates.md#templatesdrain-cleaning) (planned: write the English page first)
+- **Search words:** "wzór faktury [drain cleaning, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per drain or per hour, snaking vs hydro jetting, camera inspection with the video as a deliverable, cleanout access, after-hours rates, the no-guarantee note on root intrusion. Sample: main line jetting + camera.
+- **Don't:** General plumbing (/templates/plumbing); septic pumping (/templates/septic-service).
+
+### /templates/gas-engineer → Polish
+
+- [ ] **Live in pl**
+- **English page:** [gas engineer invoice template](../templates.md#templatesgas-engineer) (planned: write the English page first)
+- **Search words:** "wzór faktury [gas engineer, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): UK and EU heating engineers: boiler service and repair, the gas safety record (CP12) for landlords, parts, call-out fee; the registration number on the invoice (Gas Safe in the UK: cite and date). Sample: annual service + landlord certificate.
+- **Don't:** HVAC in the US sense (/templates/hvac); plumbing (/templates/plumbing).
+
+### /templates/foundation-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [foundation repair invoice template](../templates.md#templatesfoundation-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [foundation repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Piers per unit (push, helical), crack repair per linear foot, engineer's report, permits, the transferable warranty, progress or deposit billing on big jobs (link B items). Sample: 8 helical piers.
+- **Don't:** Waterproofing (/templates/basement-waterproofing); concrete flatwork (/templates/concrete).
+
+### /templates/basement-waterproofing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [basement waterproofing invoice template](../templates.md#templatesbasement-waterproofing) (planned: write the English page first)
+- **Search words:** "wzór faktury [basement waterproofing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Interior drain tile per linear foot, sump pump and battery backup, wall membrane, exterior excavation if any, crawl space encapsulation, warranty terms. Sample: 60 ft drain tile + sump.
+- **Don't:** Foundation repair (/templates/foundation-repair); water damage cleanup (/templates/water-damage-restoration).
+
+### /templates/radon-mitigation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [radon mitigation invoice template](../templates.md#templatesradon-mitigation) (planned: write the English page first)
+- **Search words:** "wzór faktury [radon mitigation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Testing (short-term kit vs continuous monitor), the sub-slab system (fan, piping, sealing), post-mitigation test, the licence or certification many states and countries require (hedge; e.g. US EPA guidance, Sweden's radon rules: cite and date). Sample: test + system + retest.
+- **Don't:** Home inspection (/templates/home-inspection).
+
+### /templates/asbestos-removal → Polish
+
+- [ ] **Live in pl**
+- **English page:** [asbestos removal invoice template](../templates.md#templatesasbestos-removal) (planned: write the English page first)
+- **Search words:** "wzór faktury [asbestos removal, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Survey and sampling (lab fees per sample), containment, removal per square foot, licensed disposal with the waste consignment note, air clearance testing; licensing and notification rules (hedge, cite the regulator). Sample: survey + removal of a ceiling.
+- **Don't:** Demolition (/templates/demolition); mold (/templates/mold-remediation).
+
+### /templates/wallpaper-installation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [wallpaper installation invoice template](../templates.md#templateswallpaper-installation) (planned: write the English page first)
+- **Search words:** "wzór faktury [wallpaper installation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per roll or per wall, removal of old paper, wall prep and primer, pattern matching (more waste on large repeats), murals as a fixed price, client-supplied paper. Sample: a feature wall + a bathroom.
+- **Don't:** Painting (/templates/painting).
+
+### /templates/epoxy-flooring → Polish
+
+- [ ] **Live in pl**
+- **English page:** [epoxy flooring invoice template](../templates.md#templatesepoxy-flooring) (planned: write the English page first)
+- **Search words:** "wzór faktury [epoxy flooring, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per square foot by system (single coat, flake, metallic), grinding and crack repair, moisture testing, cure time before use, the coating warranty. Sample: a 2-car garage with flake.
+- **Don't:** Flooring installation (/templates/flooring); concrete pouring (/templates/concrete).
+
+### /templates/window-treatments → Polish
+
+- [ ] **Live in pl**
+- **English page:** [window treatment invoice template](../templates.md#templateswindow-treatments) (planned: write the English page first)
+- **Search words:** "wzór faktury [window treatment, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per window: measuring, the product (blinds, shades, shutters, curtains with rods), installation per unit, motorisation, the deposit when ordering custom products (link D1). Sample: 9 windows, 2 motorised.
+- **Don't:** Window installation (/templates/window-installation); interior design (/templates/interior-design).
+
+### /templates/fire-protection → Polish
+
+- [ ] **Live in pl**
+- **English page:** [fire protection invoice template](../templates.md#templatesfire-protection) (planned: write the English page first)
+- **Search words:** "wzór faktury [fire protection, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Inspections by schedule (sprinklers, alarms, extinguishers, hoods), deficiencies found and quoted separately, the inspection report as a deliverable, the licence number, code references (hedge, NFPA or the local code: cite). Sample: annual sprinkler + alarm inspection.
+- **Don't:** Security systems (/templates/security-system-installation); hood cleaning (/templates/hood-cleaning).
+
+### /templates/low-voltage-cabling → Polish
+
+- [ ] **Live in pl**
+- **English page:** [low voltage cabling invoice template](../templates.md#templateslow-voltage-cabling) (planned: write the English page first)
+- **Search words:** "wzór faktury [low voltage cabling, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per drop (Cat6, fibre), patch panel and rack work, testing and certification report, labelling, after-hours work in offices. Sample: 24 drops + a rack.
+- **Don't:** IT support (/templates/it-services); electrical work (/templates/electrician).
+
+### /templates/gutter-installation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [gutter installation invoice template](../templates.md#templatesgutter-installation) (planned: write the English page first)
+- **Search words:** "wzór faktury [gutter installation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per linear foot by material (aluminium, copper, steel), downspouts per unit, guards, removal of old gutters, fascia repair as found. Sample: 140 ft seamless + 4 downspouts.
+- **Don't:** Gutter cleaning (/templates/gutter-cleaning); roofing (/templates/roofing).
+
+### /templates/fireplace-installation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [fireplace installation invoice template](../templates.md#templatesfireplace-installation) (planned: write the English page first)
+- **Search words:** "wzór faktury [fireplace installation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The unit, the flue liner, hearth and surround, gas line or electrical by a licensed trade, the permit and inspection, commissioning. Sample: a wood stove with liner.
+- **Don't:** Chimney cleaning (/templates/chimney-sweep); masonry (/templates/masonry).
+
+### /templates/home-energy-audit → Polish
+
+- [ ] **Live in pl**
+- **English page:** [home energy audit invoice template](../templates.md#templateshome-energy-audit) (planned: write the English page first)
+- **Search words:** "wzór faktury [home energy audit, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The audit fee by home size, blower door and thermal imaging, the report with recommendations, rebate paperwork (programmes vary: hedge, cite); in the EU the energy certificate (Energieausweis, energielabel) as a local angle. Sample: a full audit + report.
+- **Don't:** Insulation work (/templates/insulation); home inspection (/templates/home-inspection).
+
+### /templates/parking-lot-striping → Polish
+
+- [ ] **Live in pl**
+- **English page:** [parking lot striping invoice template](../templates.md#templatesparking-lot-striping) (planned: write the English page first)
+- **Search words:** "wzór faktury [parking lot striping, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per stall or per linear foot, accessible stalls and signage (ADA in the US: hedge), stencils, arrows, curb painting, night work. Sample: a 60-stall lot restripe.
+- **Don't:** Sealcoating (/templates/sealcoating); paving (/templates/asphalt-paving).
+
+## L330: T11 in Polish
+
+[ ] Property, waste and household services · 0/14 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/janitorial → Polish
+
+- [ ] **Live in pl**
+- **English page:** [janitorial invoice template](../templates.md#templatesjanitorial) (planned: write the English page first)
+- **Search words:** "wzór faktury [janitorial, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Contract cleaning for businesses: the monthly contract price by square footage and frequency, supplies included or billed, extra services (carpets, windows, floor stripping) as lines, the service period. Repeat monthly by duplicating the invoice. Sample: an office, 5 nights a week.
+- **Don't:** House cleaning (/templates/cleaning-services); the monthly invoice in general (/templates/monthly-invoice).
+
+### /templates/hood-cleaning → Polish
+
+- [ ] **Live in pl**
+- **English page:** [hood cleaning invoice template](../templates.md#templateshood-cleaning) (planned: write the English page first)
+- **Search words:** "wzór faktury [hood cleaning, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hood system by size, ducts and fans, filters exchange, access panels installed, before-and-after photos and the certificate sticker, frequency by cooking type (NFPA 96 in the US: hedge, cite). Sample: a restaurant, 2 hoods.
+- **Don't:** Fire protection inspections (/templates/fire-protection); general cleaning (/templates/cleaning-services).
+
+### /templates/biohazard-cleanup → Polish
+
+- [ ] **Live in pl**
+- **English page:** [biohazard cleanup invoice template](../templates.md#templatesbiohazard-cleanup) (planned: write the English page first)
+- **Search words:** "wzór faktury [biohazard cleanup, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours by technician, PPE and disposal of regulated waste, odour treatment, materials removed, insurance billing (the claim number, the policyholder's share), discreet descriptions. Sample: an insured cleanup, 2 technicians.
+- **Don't:** Mold (/templates/mold-remediation); water damage (/templates/water-damage-restoration).
+
+### /templates/laundry-service → Polish
+
+- [ ] **Live in pl**
+- **English page:** [laundry service invoice template](../templates.md#templateslaundry-service) (planned: write the English page first)
+- **Search words:** "wzór faktury [laundry service, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per pound or kilo, per item for dry cleaning and linens, pickup and delivery, B2B accounts (salons, Airbnb hosts, gyms) billed monthly. Sample: a host's monthly linens.
+- **Don't:** Alterations (/templates/alterations).
+
+### /templates/dumpster-rental → Polish
+
+- [ ] **Live in pl**
+- **English page:** [dumpster rental invoice template](../templates.md#templatesdumpster-rental) (planned: write the English page first)
+- **Search words:** "wzór faktury [dumpster rental, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): By container size and rental period, tonnage included and overage per ton, prohibited items fees, extra days, the permit for street placement (UK: skip permit). Sample: a 20-yard for 7 days, 1.4 tons over.
+- **Don't:** Junk removal (/templates/junk-removal); equipment rental (/templates/equipment-rental).
+
+### /templates/portable-toilet-rental → Polish
+
+- [ ] **Live in pl**
+- **English page:** [portable toilet rental invoice template](../templates.md#templatesportable-toilet-rental) (planned: write the English page first)
+- **Search words:** "wzór faktury [portable toilet rental, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Units per event or per month for job sites, servicing frequency, handwash stations, delivery and pickup, damage. Sample: a construction site, 2 units, weekly service.
+- **Don't:** Septic pumping (/templates/septic-service); party rentals (/templates/party-rentals).
+
+### /templates/self-storage → Polish
+
+- [ ] **Live in pl**
+- **English page:** [self storage invoice template](../templates.md#templatesself-storage) (planned: write the English page first)
+- **Search words:** "wzór faktury [self storage, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Unit size and monthly rate, the rental period, insurance or protection plan, late fees per the lease (hedge: lien laws vary), a deposit; monthly by duplicating the invoice. Sample: a 10×10 unit for 3 months.
+- **Don't:** Rent (/templates/rent); equipment rental (/templates/equipment-rental).
+
+### /templates/vacation-rental → Polish
+
+- [ ] **Live in pl**
+- **English page:** [vacation rental invoice template](../templates.md#templatesvacation-rental) (planned: write the English page first)
+- **Search words:** "wzór faktury [vacation rental, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hosts billing guests directly (repeat guests, company stays): nights × rate, cleaning fee, deposit, tourist or occupancy tax as its own line (rules vary by city: hedge), the cancellation terms. Sample: 5 nights + cleaning + city tax.
+- **Don't:** Long-term rent (/templates/rent); property management fees (/templates/property-management).
+
+### /templates/graffiti-removal → Polish
+
+- [ ] **Live in pl**
+- **English page:** [graffiti removal invoice template](../templates.md#templatesgraffiti-removal) (planned: write the English page first)
+- **Search words:** "wzór faktury [graffiti removal, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per square foot by surface, the method (chemical, soda blasting, paint-out with colour match), anti-graffiti coating, recurring removal contracts for businesses and councils. Sample: a shopfront + coating.
+- **Don't:** Pressure washing (/templates/pressure-washing).
+
+### /templates/auctioneer → Polish
+
+- [ ] **Live in pl**
+- **English page:** [auctioneer invoice template](../templates.md#templatesauctioneer) (planned: write the English page first)
+- **Search words:** "wzór faktury [auctioneer, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The seller's commission, the buyer's premium (who pays what), lotting and cataloguing fees, advertising, the settlement to the seller after the sale; the licence where required (hedge). Sample: an equipment auction settlement.
+- **Don't:** Estate sales (/templates/estate-sale).
+
+### /templates/appraisal → Polish
+
+- [ ] **Live in pl**
+- **English page:** [appraisal invoice template](../templates.md#templatesappraisal) (planned: write the English page first)
+- **Search words:** "wzór faktury [appraisal, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The appraisal fee by property type and report form, rush fee, travel, the licence number, who ordered it (lender, AMC, private client); the fee must not depend on the value (hedge). Sample: a private single-family appraisal.
+- **Don't:** Home inspection (/templates/home-inspection); real estate agents (/templates/real-estate).
+
+### /templates/concierge → Polish
+
+- [ ] **Live in pl**
+- **English page:** [concierge invoice template](../templates.md#templatesconcierge) (planned: write the English page first)
+- **Search words:** "wzór faktury [concierge, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly membership or hourly, errands and bookings as lines, purchases passed on at cost (receipts; link the reimbursement invoice), a markup only by agreement. Sample: a monthly retainer + 4 errands.
+- **Don't:** Virtual assistants (/templates/virtual-assistant); personal shopping (/templates/personal-shopper).
+
+### /templates/personal-shopper → Polish
+
+- [ ] **Live in pl**
+- **English page:** [personal shopper invoice template](../templates.md#templatespersonal-shopper) (planned: write the English page first)
+- **Search words:** "wzór faktury [personal shopper, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hourly or per session, purchases on the client's card vs paid by you and rebilled, the wardrobe edit, returns handled. Sample: a 3-hour shopping session + items rebilled.
+- **Don't:** Fashion styling for shoots (/templates/stylist); concierge (/templates/concierge).
+
+### /templates/house-sitting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [house sitting invoice template](../templates.md#templateshouse-sitting) (planned: write the English page first)
+- **Search words:** "wzór faktury [house sitting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per night or per day, overnight vs drop-in, pets and plants, mail and bins, the key handover; holiday rates. Sample: 10 nights with one dog.
+- **Don't:** Pet sitting and dog walking (/templates/pet-sitting); home watch (/templates/home-watch).
+
+## L340: T12 in Polish
+
+[ ] Auto, transport and heavy equipment · 0/14 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/window-tinting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [window tinting invoice template](../templates.md#templateswindow-tinting) (planned: write the English page first)
+- **Search words:** "wzór faktury [window tinting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per window or per vehicle by film type (ceramic, carbon), windshield strips, removal of old tint, home and office film per square foot; legal tint limits vary by state and country (hedge). Sample: a sedan, ceramic.
+- **Don't:** Auto glass replacement (/templates/auto-glass); detailing (/templates/auto-detailing).
+
+### /templates/auto-glass → Polish
+
+- [ ] **Live in pl**
+- **English page:** [auto glass invoice template](../templates.md#templatesauto-glass) (planned: write the English page first)
+- **Search words:** "wzór faktury [auto glass, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Windshield replacement or chip repair, the glass part (OEM or aftermarket), moulding and adhesive, ADAS camera calibration, mobile service, insurance claim and deductible. Sample: a windshield with calibration, insured.
+- **Don't:** Window tint (/templates/window-tinting); body shop (/templates/auto-body).
+
+### /templates/paintless-dent-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [paintless dent repair invoice template](../templates.md#templatespaintless-dent-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [paintless dent repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per dent by size and location, hail damage per panel from a dent matrix, R&I of trims, insurance claims (supplements). Sample: a hail claim, 4 panels.
+- **Don't:** Body and paint (/templates/auto-body).
+
+### /templates/tire-service → Polish
+
+- [ ] **Live in pl**
+- **English page:** [tire shop invoice template](../templates.md#templatestire-service) (planned: write the English page first)
+- **Search words:** "wzór faktury [tire shop, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Tyres by size and brand, mounting and balancing per tyre, valve stems, disposal fees (often required by law: hedge), alignment, seasonal changeover and storage (EU). Sample: 4 tyres + alignment + disposal.
+- **Don't:** Mechanical repair (/templates/auto-repair).
+
+### /templates/car-hauling → Polish
+
+- [ ] **Live in pl**
+- **English page:** [car hauling invoice template](../templates.md#templatescar-hauling) (planned: write the English page first)
+- **Search words:** "wzór faktury [car hauling, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per vehicle by distance, open vs enclosed, the bill of lading and inspection, inoperable surcharge, terminal vs door-to-door, the carrier's authority number (US: hedge). Sample: 2 cars, 900 miles, open trailer.
+- **Don't:** Towing (/templates/towing); trucking freight (/templates/trucking).
+
+### /templates/motorcycle-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [motorcycle repair invoice template](../templates.md#templatesmotorcycle-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [motorcycle repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Labor by the hour or by book time, parts, tyres, scheduled service by mileage, storage fees, pickup. Sample: a major service + tyres.
+- **Don't:** Car repair (/templates/auto-repair); small engines (/templates/small-engine-repair).
+
+### /templates/heavy-equipment-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [heavy equipment repair invoice template](../templates.md#templatesheavy-equipment-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [heavy equipment repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Field service: travel time and mileage to the site, labor per hour (shop vs field rate), parts, fluids and filters, the machine's serial number and hour meter, diagnostic time. Sample: an excavator hydraulic repair in the field.
+- **Don't:** Small engines (/templates/small-engine-repair); equipment rental (/templates/equipment-rental).
+
+### /templates/freight-broker → Polish
+
+- [ ] **Live in pl**
+- **English page:** [freight broker invoice template](../templates.md#templatesfreight-broker) (planned: write the English page first)
+- **Search words:** "wzór faktury [freight broker, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The broker billing the shipper: load number, pickup and delivery, the rate confirmation, accessorials (detention, lumper, layover), the proof of delivery; the broker's authority number (US: hedge). Sample: one FTL load with detention.
+- **Don't:** The carrier's own invoice (/templates/trucking); dispatch fees (/templates/truck-dispatch).
+
+### /templates/flight-instruction → Polish
+
+- [ ] **Live in pl**
+- **English page:** [flight instruction invoice template](../templates.md#templatesflight-instruction) (planned: write the English page first)
+- **Search words:** "wzór faktury [flight instruction, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Instruction hours (flight and ground), aircraft rental per Hobbs or tach hour (wet or dry), fuel surcharge, checkride prep, the instructor's certificate number. Sample: 3 lessons, 4.2 flight hours.
+- **Don't:** Driving lessons (/templates/driving-instructor).
+
+### /templates/valet-parking → Polish
+
+- [ ] **Live in pl**
+- **English page:** [valet parking invoice template](../templates.md#templatesvalet-parking) (planned: write the English page first)
+- **Search words:** "wzór faktury [valet parking, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Events: attendants × hours with a minimum, the supervisor, signage and podium, insurance certificate, hosted vs guest-paid, gratuity line. Sample: a wedding, 4 attendants, 6 hours.
+- **Don't:** Event venue (/templates/event-venue); security (/templates/security-guard).
+
+### /templates/bus-charter → Polish
+
+- [ ] **Live in pl**
+- **English page:** [bus charter invoice template](../templates.md#templatesbus-charter) (planned: write the English page first)
+- **Search words:** "wzór faktury [bus charter, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hour or per day with a minimum, mileage over the allowance, driver hours and overnight costs, tolls and parking, the deposit and cancellation terms. Sample: a day trip, 56-seat coach.
+- **Don't:** Limousines and chauffeurs (/templates/limousine-service).
+
+### /templates/car-audio-installation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [car audio installation invoice template](../templates.md#templatescar-audio-installation) (planned: write the English page first)
+- **Search words:** "wzór faktury [car audio installation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Equipment (head unit, amp, speakers, wiring kits), labor per install, dash kits and harnesses, remote starters, the warranty on labor. Sample: head unit + amp + sub.
+- **Don't:** Repair (/templates/auto-repair).
+
+### /templates/aircraft-maintenance → Polish
+
+- [ ] **Live in pl**
+- **English page:** [aircraft maintenance invoice template](../templates.md#templatesaircraft-maintenance) (planned: write the English page first)
+- **Search words:** "wzór faktury [aircraft maintenance, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Annual or 100-hour inspections, squawks found and fixed, parts with traceability, labor hours, the logbook entry and the mechanic's certificate number (hedge on regulations). Sample: an annual + 3 squawks.
+- **Don't:** Flight lessons (/templates/flight-instruction).
+
+### /templates/crane-services → Polish
+
+- [ ] **Live in pl**
+- **English page:** [crane service invoice template](../templates.md#templatescrane-services) (planned: write the English page first)
+- **Search words:** "wzór faktury [crane service, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hour with a minimum (portal to portal), the operator and rigger, travel and setup time, permits, lift plans, overtime. Sample: a 4-hour minimum lift with rigger.
+- **Don't:** Equipment rental without an operator (/templates/equipment-rental).
+
+## L350: T13 in Polish
+
+[ ] Workshops, repair and industrial trades · 0/14 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/machining → Polish
+
+- [ ] **Live in pl**
+- **English page:** [machining invoice template](../templates.md#templatesmachining) (planned: write the English page first)
+- **Search words:** "wzór faktury [machining, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per part or per job: setup charge, machine hours, material, finishing and heat treat (outsourced), quantity breaks, the customer PO and drawing revision, inspection reports. Sample: 50 parts with setup.
+- **Don't:** Welding (/templates/welding); 3D printing (/templates/3d-printing).
+
+### /templates/sandblasting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [sandblasting invoice template](../templates.md#templatessandblasting) (planned: write the English page first)
+- **Search words:** "wzór faktury [sandblasting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per square foot or per hour by media, masking, containment and disposal, mobile vs shop, primer coat after blasting. Sample: a trailer frame, shop job.
+- **Don't:** Powder coating (/templates/powder-coating); pressure washing (/templates/pressure-washing).
+
+### /templates/powder-coating → Polish
+
+- [ ] **Live in pl**
+- **English page:** [powder coating invoice template](../templates.md#templatespowder-coating) (planned: write the English page first)
+- **Search words:** "wzór faktury [powder coating, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per part or per batch, stripping and blasting, colour changes, masking, multi-coat finishes, rush orders. Sample: a set of 4 wheels, two-tone.
+- **Don't:** Sandblasting (/templates/sandblasting).
+
+### /templates/scaffolding → Polish
+
+- [ ] **Live in pl**
+- **English page:** [scaffolding invoice template](../templates.md#templatesscaffolding) (planned: write the English page first)
+- **Search words:** "wzór faktury [scaffolding, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Erect and dismantle as a fixed price, hire per week after the included period, inspections (the inspection record: hedge per country), alterations, adaptations, transport. Sample: a house front, 6 weeks.
+- **Don't:** Equipment rental (/templates/equipment-rental); roofing (/templates/roofing).
+
+### /templates/millwright → Polish
+
+- [ ] **Live in pl**
+- **English page:** [millwright invoice template](../templates.md#templatesmillwright) (planned: write the English page first)
+- **Search words:** "wzór faktury [millwright, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Machinery moving and installation, alignment (laser), shutdown work at overtime rates, crew hours, rigging equipment, per diem on travel jobs. Sample: a conveyor install during a weekend shutdown.
+- **Don't:** Heavy equipment repair (/templates/heavy-equipment-repair); crane services (/templates/crane-services).
+
+### /templates/concrete-cutting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [concrete cutting invoice template](../templates.md#templatesconcrete-cutting) (planned: write the English page first)
+- **Search words:** "wzór faktury [concrete cutting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per linear foot by depth (wall sawing, flat sawing), core holes per diameter, water and slurry management, a minimum charge, scanning for rebar first. Sample: 3 cores + 20 ft of slab cut.
+- **Don't:** Pouring and flatwork (/templates/concrete); demolition (/templates/demolition).
+
+### /templates/environmental-consulting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [environmental consulting invoice template](../templates.md#templatesenvironmental-consulting) (planned: write the English page first)
+- **Search words:** "wzór faktury [environmental consulting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Phase I/II site assessments as a fixed fee, sampling and lab costs passed through, field hours, reports, regulator meetings; project numbers for the client's lender. Sample: a Phase I report + 2 samples.
+- **Don't:** General consulting (/templates/consulting); asbestos surveys (/templates/asbestos-removal).
+
+### /templates/commercial-refrigeration → Polish
+
+- [ ] **Live in pl**
+- **English page:** [commercial refrigeration invoice template](../templates.md#templatescommercial-refrigeration) (planned: write the English page first)
+- **Search words:** "wzór faktury [commercial refrigeration, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Service calls for restaurants and shops: emergency rates, refrigerant by the pound (the certification and logs where required: hedge), parts, preventive maintenance contracts. Sample: a walk-in cooler compressor repair, after hours.
+- **Don't:** Residential HVAC (/templates/hvac); kitchen equipment repair (/templates/restaurant-equipment-repair).
+
+### /templates/restaurant-equipment-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [restaurant equipment repair invoice template](../templates.md#templatesrestaurant-equipment-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [restaurant equipment repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Ovens, fryers, dishwashers, ice machines: trip charge, labor per hour, parts, after-hours rates, the asset's model and serial, a maintenance agreement. Sample: a fryer and an ice machine.
+- **Don't:** Home appliances (/templates/appliance-repair); refrigeration (/templates/commercial-refrigeration).
+
+### /templates/shoe-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [shoe repair invoice template](../templates.md#templatesshoe-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [shoe repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per job (heels, soles, stitching, stretching, polishing), boots and bags, the claim ticket number, pickup date and unclaimed-item policy, B2B work for shops. Sample: soles + heels on 2 pairs.
+- **Don't:** Alterations (/templates/alterations); leather furniture (/templates/upholstery).
+
+### /templates/piano-tuning → Polish
+
+- [ ] **Live in pl**
+- **English page:** [piano tuning invoice template](../templates.md#templatespiano-tuning) (planned: write the English page first)
+- **Search words:** "wzór faktury [piano tuning, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Tuning per visit, pitch raise, repairs and regulation per hour, travel zones, schools and venues on contract. Sample: a pitch raise + tuning.
+- **Don't:** Lessons (/templates/music-lessons); instrument repair (/templates/instrument-repair).
+
+### /templates/instrument-repair → Polish
+
+- [ ] **Live in pl**
+- **English page:** [instrument repair invoice template](../templates.md#templatesinstrument-repair) (planned: write the English page first)
+- **Search words:** "wzór faktury [instrument repair, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Setups, fretwork, electronics, brass and woodwind repad, parts, the instrument's make and serial, rush fees. Sample: a guitar setup + refret.
+- **Don't:** Piano tuning (/templates/piano-tuning).
+
+### /templates/furniture-refinishing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [furniture refinishing invoice template](../templates.md#templatesfurniture-refinishing) (planned: write the English page first)
+- **Search words:** "wzór faktury [furniture refinishing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per piece: stripping, repairs, stain and finish, hardware, veneer work, pickup and delivery; deposits on large pieces. Sample: a dining table + 6 chairs.
+- **Don't:** Upholstery (/templates/upholstery); new furniture (/templates/custom-furniture).
+
+### /templates/knife-sharpening → Polish
+
+- [ ] **Live in pl**
+- **English page:** [knife sharpening invoice template](../templates.md#templatesknife-sharpening) (planned: write the English page first)
+- **Search words:** "wzór faktury [knife sharpening, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per blade by type (kitchen, serrated, scissors, tools), restaurant routes on a rotation (knife rental vs sharpening), repairs of tips and chips. Sample: a restaurant's weekly rotation.
+- **Don't:** Restaurant equipment (/templates/restaurant-equipment-repair).
+
+## L360: T14 in Polish
+
+[ ] Events, food, travel and entertainment · 0/15 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/balloon-decor → Polish
+
+- [ ] **Live in pl**
+- **English page:** [balloon decor invoice template](../templates.md#templatesballoon-decor) (planned: write the English page first)
+- **Search words:** "wzór faktury [balloon decor, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per piece (garland per foot, arches, columns), setup and teardown time, delivery, venue restrictions, the deposit on booking. Sample: a 20 ft garland + 2 columns.
+- **Don't:** Event decor in general (/templates/event-decor); party rentals (/templates/party-rentals).
+
+### /templates/face-painting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [face painting invoice template](../templates.md#templatesface-painting) (planned: write the English page first)
+- **Search words:** "wzór faktury [face painting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hour with a minimum (faces per hour as a guide), travel, glitter tattoos as add-on, public events vs private parties, the deposit. Sample: a 2-hour birthday.
+- **Don't:** Henna (/templates/henna); entertainers (/templates/entertainer).
+
+### /templates/entertainer → Polish
+
+- [ ] **Live in pl**
+- **English page:** [entertainer invoice template](../templates.md#templatesentertainer) (planned: write the English page first)
+- **Search words:** "wzór faktury [entertainer, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per show or per hour, travel, sound equipment, the performance agreement (date, length, audience), the deposit and cancellation. Sample: a corporate magic show.
+- **Don't:** DJs (/templates/dj); musicians (/templates/musician).
+
+### /templates/audio-visual → Polish
+
+- [ ] **Live in pl**
+- **English page:** [audio visual invoice template](../templates.md#templatesaudio-visual) (planned: write the English page first)
+- **Search words:** "wzór faktury [audio visual, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Event AV: equipment by day (projectors, screens, mics, LED walls), technicians by hour, setup and strike, labor overtime, the venue's in-house AV fee. Sample: a 1-day conference.
+- **Don't:** Home theater installs (/templates/home-theater-installation); DJ (/templates/dj).
+
+### /templates/calligraphy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [calligraphy invoice template](../templates.md#templatescalligraphy) (planned: write the English page first)
+- **Search words:** "wzór faktury [calligraphy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per envelope or per piece, place cards, signage, live event calligraphy per hour, proof rounds, rush fees, client-supplied materials. Sample: 120 envelopes + 8 signs.
+- **Don't:** Wedding invitations (/templates/wedding-invitations); illustration (/templates/illustration).
+
+### /templates/wedding-invitations → Polish
+
+- [ ] **Live in pl**
+- **English page:** [wedding invitation invoice template](../templates.md#templateswedding-invitations) (planned: write the English page first)
+- **Search words:** "wzór faktury [wedding invitation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Design fee, printing per piece by method (digital, letterpress, foil), envelopes, proofs, rush, postage; the deposit on ordering. Sample: 100 invitations + RSVP cards.
+- **Don't:** Graphic design (/templates/freelance-design); printing (/templates/print-shop).
+
+### /templates/henna → Polish
+
+- [ ] **Live in pl**
+- **English page:** [henna invoice template](../templates.md#templateshenna) (planned: write the English page first)
+- **Search words:** "wzór faktury [henna, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Bridal henna per hands and feet, guests per hour, travel, aftercare, the deposit. Sample: bridal + 2 hours of guests.
+- **Don't:** Face painting (/templates/face-painting); tattoos (/templates/tattoo).
+
+### /templates/event-decor → Polish
+
+- [ ] **Live in pl**
+- **English page:** [event decor invoice template](../templates.md#templatesevent-decor) (planned: write the English page first)
+- **Search words:** "wzór faktury [event decor, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Design fee, rentals from your stock (linens, centrepieces, backdrops) per item, florals bought in, setup and teardown, damage and loss. Sample: a wedding reception for 120.
+- **Don't:** Event planning (/templates/event-planning); balloons (/templates/balloon-decor); florists (/templates/florist).
+
+### /templates/food-truck → Polish
+
+- [ ] **Live in pl**
+- **English page:** [food truck invoice template](../templates.md#templatesfood-truck) (planned: write the English page first)
+- **Search words:** "wzór faktury [food truck, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private events: a guaranteed minimum, per guest or per item menus, travel, service hours, the permit at the venue (hedge), gratuity. Sample: a company lunch, 80 guests.
+- **Don't:** Full-service catering (/templates/catering).
+
+### /templates/cooking-classes → Polish
+
+- [ ] **Live in pl**
+- **English page:** [cooking class invoice template](../templates.md#templatescooking-classes) (planned: write the English page first)
+- **Search words:** "wzór faktury [cooking class, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per person or per group, ingredients included, private and corporate team-building classes, the venue, cancellation. Sample: a corporate class for 12.
+- **Don't:** Private chef dinners (/templates/personal-chef).
+
+### /templates/meal-prep → Polish
+
+- [ ] **Live in pl**
+- **English page:** [meal prep invoice template](../templates.md#templatesmeal-prep) (planned: write the English page first)
+- **Search words:** "wzór faktury [meal prep, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly plans by meals, ingredients at cost or included, containers, delivery, dietary plans; weekly by duplicating the invoice. Sample: 10 meals a week for a month.
+- **Don't:** Private chef (/templates/personal-chef); catering (/templates/catering).
+
+### /templates/meat-processing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [meat processing invoice template](../templates.md#templatesmeat-processing) (planned: write the English page first)
+- **Search words:** "wzór faktury [meat processing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per pound hanging weight, kill fee, cut and wrap, sausage and jerky per pound, smoking, the animal's tag number; game vs livestock rules (hedge). Sample: a deer with 10 lb of sausage.
+- **Don't:** Farm sales (/templates/farm).
+
+### /templates/referee → Polish
+
+- [ ] **Live in pl**
+- **English page:** [referee invoice template](../templates.md#templatesreferee) (planned: write the English page first)
+- **Search words:** "wzór faktury [referee, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per game by level, mileage, tournaments per day, the assigner's fee, the league or school's vendor details. Sample: 6 youth games in a weekend.
+- **Don't:** Coaching (/templates/sports-coaching).
+
+### /templates/tour-guide → Polish
+
+- [ ] **Live in pl**
+- **English page:** [tour guide invoice template](../templates.md#templatestour-guide) (planned: write the English page first)
+- **Search words:** "wzór faktury [tour guide, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per tour or per day, group size tiers, entrance fees passed on, transport, the guide's licence where required (hedge), deposits from agencies. Sample: a full-day private tour for 6.
+- **Don't:** Travel agency fees (/templates/travel-agent).
+
+### /templates/travel-agent → Polish
+
+- [ ] **Live in pl**
+- **English page:** [travel agent invoice template](../templates.md#templatestravel-agent) (planned: write the English page first)
+- **Search words:** "wzór faktury [travel agent, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Planning fees, bookings passed on at cost vs commission from suppliers, service fees per ticket, deposits and final payment dates; seller of travel rules where they exist (hedge). Sample: a planning fee + a booked trip.
+- **Don't:** Tour guiding (/templates/tour-guide).
+
+## L370: T15 in Polish
+
+[ ] Professional services II · 0/12 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/accounting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [accounting invoice template](../templates.md#templatesaccounting) (planned: write the English page first)
+- **Search words:** "wzór faktury [accounting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Accountants and CPA firms: year-end accounts, tax returns, advisory by the hour or fixed fee, monthly packages, engagement letter reference, out-of-scope work billed apart. Sample: a year-end package + 3 advisory hours.
+- **Don't:** Bookkeeping (/templates/bookkeeping); tax preparation (/templates/tax-preparation).
+
+### /templates/financial-advisor → Polish
+
+- [ ] **Live in pl**
+- **English page:** [financial advisor invoice template](../templates.md#templatesfinancial-advisor) (planned: write the English page first)
+- **Search words:** "wzór faktury [financial advisor, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fee-only planners: a flat planning fee, hourly, or a retainer; the advisory fee as % of assets billed quarterly (often deducted from the account: say so); registration disclosures (hedge). Sample: a financial plan + quarterly fee.
+- **Don't:** Accounting (/templates/accounting); consulting (/templates/consulting).
+
+### /templates/recruitment → Polish
+
+- [ ] **Live in pl**
+- **English page:** [recruitment invoice template](../templates.md#templatesrecruitment) (planned: write the English page first)
+- **Search words:** "wzór faktury [recruitment, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Placement fees as % of first-year salary, retained search in stages, the guarantee or rebate period, the candidate and start date, VAT on fees. Sample: a 20% placement on a €60,000 role.
+- **Don't:** Temp staffing (/templates/staffing-agency).
+
+### /templates/staffing-agency → Polish
+
+- [ ] **Live in pl**
+- **English page:** [staffing agency invoice template](../templates.md#templatesstaffing-agency) (planned: write the English page first)
+- **Search words:** "wzór faktury [staffing agency, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Temp workers billed weekly: hours per worker from approved timesheets × bill rate, overtime rates, the markup inside the bill rate, the PO, temp-to-hire conversion fees. Sample: a week of 3 temps.
+- **Don't:** Permanent placement (/templates/recruitment); security staff (/templates/security-guard).
+
+### /templates/grant-writing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [grant writing invoice template](../templates.md#templatesgrant-writing) (planned: write the English page first)
+- **Search words:** "wzór faktury [grant writing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per proposal or hourly, research phase, budget preparation, rounds of edits; professional standards generally discourage commission on the award (hedge, cite the Grant Professionals Association). Sample: one federal proposal, fixed fee.
+- **Don't:** Copywriting (/templates/copywriting); technical writing (/templates/technical-writing).
+
+### /templates/resume-writing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [resume writing invoice template](../templates.md#templatesresume-writing) (planned: write the English page first)
+- **Search words:** "wzór faktury [resume writing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Packages (CV, cover letter, LinkedIn), per level (entry, executive), rush, revisions included. Sample: an executive package.
+- **Don't:** Copywriting (/templates/copywriting); coaching (/templates/life-coaching).
+
+### /templates/technical-writing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [technical writing invoice template](../templates.md#templatestechnical-writing) (planned: write the English page first)
+- **Search words:** "wzór faktury [technical writing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hourly or per deliverable (manuals, API docs, SOPs), research and SME interviews, revision cycles, tools and licences. Sample: a user manual by milestone.
+- **Don't:** Marketing copy (/templates/copywriting); proofreading (/templates/proofreading).
+
+### /templates/transcription → Polish
+
+- [ ] **Live in pl**
+- **English page:** [transcription invoice template](../templates.md#templatestranscription) (planned: write the English page first)
+- **Search words:** "wzór faktury [transcription, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per audio minute by turnaround and quality (clean vs verbatim), speakers, timestamps, difficult audio surcharge, legal and medical specialisms. Sample: 140 audio minutes, verbatim.
+- **Don't:** Court reporting (/templates/court-reporter); translation (/templates/translation).
+
+### /templates/interpreter → Polish
+
+- [ ] **Live in pl**
+- **English page:** [interpreter invoice template](../templates.md#templatesinterpreter) (planned: write the English page first)
+- **Search words:** "wzór faktury [interpreter, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hour with a 2-hour minimum or half/full day, travel time, cancellation fees, conference vs court vs medical settings. Sample: a half-day medical appointment + travel.
+- **Don't:** Written translation (/templates/translation).
+
+### /templates/mediation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [mediation invoice template](../templates.md#templatesmediation) (planned: write the English page first)
+- **Search words:** "wzór faktury [mediation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per session or per hour, split between the parties (who pays what share), prep time, the agreement drafting, cancellation. Sample: a full-day mediation split 50/50.
+- **Don't:** Attorneys (/templates/attorney).
+
+### /templates/expert-witness → Polish
+
+- [ ] **Live in pl**
+- **English page:** [expert witness invoice template](../templates.md#templatesexpert-witness) (planned: write the English page first)
+- **Search words:** "wzór faktury [expert witness, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The retainer, review hours, report writing, deposition and trial time at different rates, travel, the case caption. Sample: a retainer drawdown + 10 review hours.
+- **Don't:** Consulting (/templates/consulting).
+
+### /templates/engineering → Polish
+
+- [ ] **Live in pl**
+- **English page:** [engineering invoice template](../templates.md#templatesengineering) (planned: write the English page first)
+- **Search words:** "wzór faktury [engineering, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Consulting engineers: inspections and calculations as fixed fees, hourly design work, site visits, stamped drawings, reimbursables, project numbers. Sample: a structural inspection + beam calculation.
+- **Don't:** Architects (/templates/architect); land surveying (/templates/land-surveying).
+
+## L380: T16 in Polish
+
+[ ] Digital and tech services · 0/10 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/cybersecurity → Polish
+
+- [ ] **Live in pl**
+- **English page:** [cybersecurity invoice template](../templates.md#templatescybersecurity) (planned: write the English page first)
+- **Search words:** "wzór faktury [cybersecurity, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fixed-fee assessments (pen test, audit) by scope, retainers for incident response, hours, the report as a deliverable, confidentiality in the descriptions. Sample: an external pen test + retest.
+- **Don't:** IT support (/templates/it-services).
+
+### /templates/data-entry → Polish
+
+- [ ] **Live in pl**
+- **English page:** [data entry invoice template](../templates.md#templatesdata-entry) (planned: write the English page first)
+- **Search words:** "wzór faktury [data entry, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per record, per page or per hour, accuracy checks, file formats delivered, rush work, data protection note. Sample: 4,000 records at a per-record rate.
+- **Don't:** Virtual assistants (/templates/virtual-assistant); data analysis (/templates/data-analysis).
+
+### /templates/ppc-management → Polish
+
+- [ ] **Live in pl**
+- **English page:** [ppc management invoice template](../templates.md#templatesppc-management) (planned: write the English page first)
+- **Search words:** "wzór faktury [ppc management, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A management fee (flat, or % of ad spend with a minimum), setup fee, the ad spend billed by the platform or passed through, reporting period. Sample: a month at 12% of $8,000 spend.
+- **Don't:** SEO (/templates/seo-services); social media management (/templates/social-media-management).
+
+### /templates/web-hosting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [web hosting invoice template](../templates.md#templatesweb-hosting) (planned: write the English page first)
+- **Search words:** "wzór faktury [web hosting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hosting plans per month or year, domains, SSL, backups, care plans with included hours, the service period; annual renewals by duplicating last year's invoice. Sample: a yearly plan for 3 sites.
+- **Don't:** Building websites (/templates/web-development); retainers (/templates/web-development-retainer-invoice).
+
+### /templates/game-development → Polish
+
+- [ ] **Live in pl**
+- **English page:** [game development invoice template](../templates.md#templatesgame-development) (planned: write the English page first)
+- **Search words:** "wzór faktury [game development, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Milestones (prototype, vertical slice, alpha), art assets per piece, hourly contract work, licences and engines, publisher advances. Sample: a milestone + 12 asset pieces.
+- **Don't:** Apps (/templates/app-development); illustration (/templates/illustration).
+
+### /templates/animation → Polish
+
+- [ ] **Live in pl**
+- **English page:** [animation invoice template](../templates.md#templatesanimation) (planned: write the English page first)
+- **Search words:** "wzór faktury [animation, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per second of finished animation or per project, storyboards and animatics, revision rounds, voice and music licences passed through, usage rights. Sample: a 60-second explainer.
+- **Don't:** Video editing (/templates/video-editing); illustration (/templates/illustration).
+
+### /templates/3d-rendering → Polish
+
+- [ ] **Live in pl**
+- **English page:** [3d rendering invoice template](../templates.md#templates3d-rendering) (planned: write the English page first)
+- **Search words:** "wzór faktury [3d rendering, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per image by view and resolution, animations per second, modelling from plans, revision rounds, rush. Sample: 4 exterior + 2 interior renders.
+- **Don't:** 3D printing (/templates/3d-printing); architects (/templates/architect).
+
+### /templates/photo-retouching → Polish
+
+- [ ] **Live in pl**
+- **English page:** [photo retouching invoice template](../templates.md#templatesphoto-retouching) (planned: write the English page first)
+- **Search words:** "wzór faktury [photo retouching, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per image by level (basic, high-end), batch pricing, culling, rush, the photographer or brand as the client. Sample: 40 basic + 6 high-end edits.
+- **Don't:** Photography sessions (/templates/photography).
+
+### /templates/livestream-production → Polish
+
+- [ ] **Live in pl**
+- **English page:** [livestream production invoice template](../templates.md#templateslivestream-production) (planned: write the English page first)
+- **Search words:** "wzór faktury [livestream production, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per event: crew and cameras, the streaming platform, graphics, rehearsal, internet backup, the recording delivered after. Sample: a 3-camera church or conference stream.
+- **Don't:** Video production (/templates/videography); event AV (/templates/audio-visual).
+
+### /templates/virtual-tours → Polish
+
+- [ ] **Live in pl**
+- **English page:** [virtual tour invoice template](../templates.md#templatesvirtual-tours) (planned: write the English page first)
+- **Search words:** "wzór faktury [virtual tour, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per property by square footage, hosting per month or year, floor plans, extra photos, travel. Sample: a 2,500 sq ft listing + hosting.
+- **Don't:** Real estate photography in general (/templates/photography); drones (/templates/drone-services).
+
+## L390: T17 in Polish
+
+[ ] Creative, fashion and crafts · 0/12 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/film-production → Polish
+
+- [ ] **Live in pl**
+- **English page:** [film production invoice template](../templates.md#templatesfilm-production) (planned: write the English page first)
+- **Search words:** "wzór faktury [film production, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Production companies and crews: pre-production, shoot days by crew role, equipment packages, post-production, expenses and per diems, the production's PO and job number. Sample: a 2-day commercial shoot.
+- **Don't:** Small video jobs (/templates/videography); editing only (/templates/video-editing).
+
+### /templates/actor → Polish
+
+- [ ] **Live in pl**
+- **English page:** [actor invoice template](../templates.md#templatesactor) (planned: write the English page first)
+- **Search words:** "wzór faktury [actor, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Self-employed actors: day rate or session fee, usage and buyout, fittings and rehearsals, the agent's commission (who invoices whom), expenses. Sample: a 2-day commercial with a buyout.
+- **Don't:** Voice-over (/templates/voice-over); modelling (/templates/model).
+
+### /templates/model → Polish
+
+- [ ] **Live in pl**
+- **English page:** [model invoice template](../templates.md#templatesmodel) (planned: write the English page first)
+- **Search words:** "wzór faktury [model, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Day or half-day rate, usage rights by media and period, overtime, fittings, travel, the agency's commission and VAT. Sample: a half-day e-commerce shoot.
+- **Don't:** Acting (/templates/actor); stylists (/templates/stylist).
+
+### /templates/fashion-design → Polish
+
+- [ ] **Live in pl**
+- **English page:** [fashion design invoice template](../templates.md#templatesfashion-design) (planned: write the English page first)
+- **Search words:** "wzór faktury [fashion design, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Design fees, pattern making, samples, production per unit with quantity breaks, fabric deposits, tech packs. Sample: a design + 3 samples + 50 units.
+- **Don't:** Alterations (/templates/alterations); embroidery (/templates/embroidery).
+
+### /templates/stylist → Polish
+
+- [ ] **Live in pl**
+- **English page:** [stylist invoice template](../templates.md#templatesstylist) (planned: write the English page first)
+- **Search words:** "wzór faktury [stylist, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Shoots and clients: day rate, prep and shopping days, the wardrobe budget passed on with receipts, returns, kit fee. Sample: a 1-day editorial + a prep day.
+- **Don't:** Hair styling (/templates/hair-salon); personal shopping (/templates/personal-shopper).
+
+### /templates/muralist → Polish
+
+- [ ] **Live in pl**
+- **English page:** [muralist invoice template](../templates.md#templatesmuralist) (planned: write the English page first)
+- **Search words:** "wzór faktury [muralist, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per square foot or a project fee, the design fee and sketch rounds, materials and lifts, anti-graffiti coat, deposit and stage payments. Sample: a 300 sq ft exterior mural.
+- **Don't:** Commissions on canvas (/templates/art-commission); house painting (/templates/painting).
+
+### /templates/pottery → Polish
+
+- [ ] **Live in pl**
+- **English page:** [pottery invoice template](../templates.md#templatespottery) (planned: write the English page first)
+- **Search words:** "wzór faktury [pottery, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Wholesale orders to shops and restaurants (minimums, per-piece prices, lead times), custom commissions, classes, shipping and breakage terms. Sample: a restaurant order of 60 plates.
+- **Don't:** Selling goods in general (/templates/sales-invoice).
+
+### /templates/jewelry-making → Polish
+
+- [ ] **Live in pl**
+- **English page:** [jewelry making invoice template](../templates.md#templatesjewelry-making) (planned: write the English page first)
+- **Search words:** "wzór faktury [jewelry making, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Custom pieces: design fee, metal by weight at the day's price, stones with certificates, labour, a deposit for materials, wholesale to shops. Sample: a custom ring with a client's stone.
+- **Don't:** Repairs (/templates/jewelry-repair).
+
+### /templates/picture-framing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [picture framing invoice template](../templates.md#templatespicture-framing) (planned: write the English page first)
+- **Search words:** "wzór faktury [picture framing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Moulding per foot, mats, glazing (standard, UV, museum), mounting, hardware, art hanging, corporate orders. Sample: 3 pieces with museum glass.
+- **Don't:** Art commissions (/templates/art-commission).
+
+### /templates/crafts → Polish
+
+- [ ] **Live in pl**
+- **English page:** [craft invoice template](../templates.md#templatescrafts) (planned: write the English page first)
+- **Search words:** "wzór faktury [craft, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Makers selling to shops, markets and custom clients: per item, wholesale vs retail price, custom orders with deposits, shipping, sales tax or VAT on goods. Sample: a wholesale order to a gift shop.
+- **Don't:** Goods in general (/templates/sales-invoice); pottery (/templates/pottery).
+
+### /templates/studio-rental → Polish
+
+- [ ] **Live in pl**
+- **English page:** [studio rental invoice template](../templates.md#templatesstudio-rental) (planned: write the English page first)
+- **Search words:** "wzór faktury [studio rental, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per hour with a minimum, equipment add-ons (lights, backdrops), overtime, cleaning fee, the damage deposit. Sample: a 4-hour shoot with lighting.
+- **Don't:** Recording studios (/templates/recording-studio); event venues (/templates/event-venue).
+
+### /templates/stained-glass → Polish
+
+- [ ] **Live in pl**
+- **English page:** [stained glass invoice template](../templates.md#templatesstained-glass) (planned: write the English page first)
+- **Search words:** "wzór faktury [stained glass, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Commissions per square foot, design drawings, restoration (releading) of old windows, installation and protective glazing, deposits. Sample: a restored church panel.
+- **Don't:** Window glass (/templates/glazier).
+
+## L400: T18 in Polish
+
+[ ] Health and wellness II · 0/15 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/acupuncture → Polish
+
+- [ ] **Live in pl**
+- **English page:** [acupuncture invoice template](../templates.md#templatesacupuncture) (planned: write the English page first)
+- **Search words:** "wzór faktury [acupuncture, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per session (initial vs follow-up), packages, herbs as products, the licence number; for insurance reimbursement clients often need a superbill (link /templates/therapy). Sample: an initial + 3 follow-ups.
+- **Don't:** The superbill in depth (/templates/therapy); massage (/templates/massage-therapy).
+
+### /templates/chiropractic → Polish
+
+- [ ] **Live in pl**
+- **English page:** [chiropractic invoice template](../templates.md#templateschiropractic) (planned: write the English page first)
+- **Search words:** "wzór faktury [chiropractic, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Cash-pay visits: exams, adjustments, X-rays, packages and memberships, the provider's licence; insurance codes only on a superbill (hedge). Sample: an exam + X-ray + 2 adjustments.
+- **Don't:** The superbill (/templates/therapy); physical therapy (/templates/physiotherapy).
+
+### /templates/physiotherapy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [physical therapy invoice template](../templates.md#templatesphysiotherapy) (planned: write the English page first)
+- **Search words:** "wzór faktury [physical therapy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private practice: assessment and treatment sessions, home visits, packages, the therapist's registration; insurance or health-fund billing details vary by country (hedge). Sample: assessment + 4 sessions.
+- **Don't:** The superbill (/templates/therapy); occupational therapy (/templates/occupational-therapy).
+
+### /templates/speech-therapy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [speech therapy invoice template](../templates.md#templatesspeech-therapy) (planned: write the English page first)
+- **Search words:** "wzór faktury [speech therapy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private clients and schools: sessions, evaluations and reports, contract hours for schools, teletherapy, cancellations. Sample: an evaluation + 8 sessions.
+- **Don't:** The superbill (/templates/therapy).
+
+### /templates/occupational-therapy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [occupational therapy invoice template](../templates.md#templatesoccupational-therapy) (planned: write the English page first)
+- **Search words:** "wzór faktury [occupational therapy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Assessments, home or school visits, equipment recommendations, reports for funders, mileage. Sample: a home assessment + report.
+- **Don't:** Physiotherapy (/templates/physiotherapy).
+
+### /templates/reiki → Polish
+
+- [ ] **Live in pl**
+- **English page:** [reiki invoice template](../templates.md#templatesreiki) (planned: write the English page first)
+- **Search words:** "wzór faktury [reiki, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions, distance sessions, packages, classes and attunements; wording without health claims. Sample: 3 sessions + a level 1 class.
+- **Don't:** Massage (/templates/massage-therapy); coaching (/templates/life-coaching).
+
+### /templates/spray-tanning → Polish
+
+- [ ] **Live in pl**
+- **English page:** [spray tan invoice template](../templates.md#templatesspray-tanning) (planned: write the English page first)
+- **Search words:** "wzór faktury [spray tan, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per session, mobile fee, bridal parties, packages, the patch-test note. Sample: a bridal party of 6, mobile.
+- **Don't:** Skin care (/templates/esthetician).
+
+### /templates/microblading → Polish
+
+- [ ] **Live in pl**
+- **English page:** [microblading invoice template](../templates.md#templatesmicroblading) (planned: write the English page first)
+- **Search words:** "wzór faktury [microblading, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The procedure, the touch-up included or later, the deposit to book, consent forms, licensing (hedge per state or country). Sample: microblading + a 6-week touch-up.
+- **Don't:** Lashes (/templates/lash-extensions); makeup (/templates/makeup-artist).
+
+### /templates/hair-braiding → Polish
+
+- [ ] **Live in pl**
+- **English page:** [hair braiding invoice template](../templates.md#templateshair-braiding) (planned: write the English page first)
+- **Search words:** "wzór faktury [hair braiding, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per style by length and size, hair included or brought, take-down, the booking deposit, late and no-show policy. Sample: medium knotless + hair.
+- **Don't:** Salon services (/templates/hair-salon).
+
+### /templates/locum → Polish
+
+- [ ] **Live in pl**
+- **English page:** [locum invoice template](../templates.md#templateslocum) (planned: write the English page first)
+- **Search words:** "wzór faktury [locum, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Self-employed doctors, pharmacists or vets covering shifts: sessions or hours by date, the practice, travel, the registration number; pension and tax notes (UK: hedge, cite NHS guidance). Sample: 6 sessions in a month.
+- **Don't:** Nursing (/templates/nursing).
+
+### /templates/nursing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [nursing invoice template](../templates.md#templatesnursing) (planned: write the English page first)
+- **Search words:** "wzór faktury [nursing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Independent and agency nurses billing per shift or hour, the patient or facility, mileage, the licence number; private duty vs facility contracts. Sample: 4 private-duty shifts.
+- **Don't:** Home care (/templates/caregiving); locums (/templates/locum).
+
+### /templates/midwife → Polish
+
+- [ ] **Live in pl**
+- **English page:** [midwife invoice template](../templates.md#templatesmidwife) (planned: write the English page first)
+- **Search words:** "wzór faktury [midwife, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A global fee for prenatal, birth and postnatal care in stages, birth supplies, lab fees passed on, the licence; health-insurance billing differs by country (hedge). Sample: a home-birth package in 3 payments.
+- **Don't:** Doulas (/templates/doula).
+
+### /templates/lactation-consultant → Polish
+
+- [ ] **Live in pl**
+- **English page:** [lactation consultant invoice template](../templates.md#templateslactation-consultant) (planned: write the English page first)
+- **Search words:** "wzór faktury [lactation consultant, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Home or virtual consults, follow-ups, pump rentals, the certification; a superbill for insurance where it applies (link /templates/therapy). Sample: a home visit + a virtual follow-up.
+- **Don't:** Doulas (/templates/doula).
+
+### /templates/sleep-consultant → Polish
+
+- [ ] **Live in pl**
+- **English page:** [sleep consultant invoice template](../templates.md#templatessleep-consultant) (planned: write the English page first)
+- **Search words:** "wzór faktury [sleep consultant, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Packages (plan + 2 weeks of support), virtual or in-home, follow-up calls, extra weeks. Sample: a 2-week package.
+- **Don't:** Coaching (/templates/life-coaching).
+
+### /templates/hypnotherapy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [hypnotherapy invoice template](../templates.md#templateshypnotherapy) (planned: write the English page first)
+- **Search words:** "wzór faktury [hypnotherapy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions, programmes (smoking, weight) as packages, recordings, cancellations; no medical claims. Sample: a 4-session programme.
+- **Don't:** Counselling (/templates/therapy).
+
+## L410: T19 in Polish
+
+[ ] Education and childcare · 0/11 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/daycare → Polish
+
+- [ ] **Live in pl**
+- **English page:** [daycare invoice template](../templates.md#templatesdaycare) (planned: write the English page first)
+- **Search words:** "wzór faktury [daycare, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly or monthly tuition, registration fee, late pickup fees, meals, holidays and closures, the provider's licence and tax ID for the parents' tax credit or childcare subsidy (hedge per country). Sample: a month for 2 children.
+- **Don't:** Babysitting and nannies (/templates/babysitting).
+
+### /templates/after-school-program → Polish
+
+- [ ] **Live in pl**
+- **English page:** [after school program invoice template](../templates.md#templatesafter-school-program) (planned: write the English page first)
+- **Search words:** "wzór faktury [after school program, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per term or month, days per week, pickup from school, activities, late fees, sibling discount. Sample: a term, 3 days a week.
+- **Don't:** Daycare (/templates/daycare); tutoring (/templates/tutoring).
+
+### /templates/summer-camp → Polish
+
+- [ ] **Live in pl**
+- **English page:** [summer camp invoice template](../templates.md#templatessummer-camp) (planned: write the English page first)
+- **Search words:** "wzór faktury [summer camp, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per week per child, deposit on registration, extended care, trips, the refund policy, sibling discounts. Sample: 3 weeks for 2 children.
+- **Don't:** After-school care (/templates/after-school-program).
+
+### /templates/language-lessons → Polish
+
+- [ ] **Live in pl**
+- **English page:** [language lessons invoice template](../templates.md#templateslanguage-lessons) (planned: write the English page first)
+- **Search words:** "wzór faktury [language lessons, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per lesson or package, online vs in person, group classes, exam preparation, materials, company language training. Sample: 10 lessons + a business course.
+- **Don't:** Tutoring in school subjects (/templates/tutoring); translation (/templates/translation).
+
+### /templates/art-lessons → Polish
+
+- [ ] **Live in pl**
+- **English page:** [art lessons invoice template](../templates.md#templatesart-lessons) (planned: write the English page first)
+- **Search words:** "wzór faktury [art lessons, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per class or term, materials fee, private lessons, workshops and parties. Sample: a 6-week term + materials.
+- **Don't:** Music lessons (/templates/music-lessons).
+
+### /templates/corporate-training → Polish
+
+- [ ] **Live in pl**
+- **English page:** [corporate training invoice template](../templates.md#templatescorporate-training) (planned: write the English page first)
+- **Search words:** "wzór faktury [corporate training, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per day or per participant, design and preparation, materials and certificates, travel, online vs on site, the client's PO. Sample: a 2-day workshop for 15.
+- **Don't:** Consulting (/templates/consulting); public speaking (/templates/public-speaking).
+
+### /templates/public-speaking → Polish
+
+- [ ] **Live in pl**
+- **English page:** [speaker invoice template](../templates.md#templatespublic-speaking) (planned: write the English page first)
+- **Search words:** "wzór faktury [speaker, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The speaking fee, travel and accommodation (or a flat travel fee), book sales, recording rights, the deposit and balance; speakers' bureau commission. Sample: a keynote + travel.
+- **Don't:** Training workshops (/templates/corporate-training).
+
+### /templates/horse-riding-lessons → Polish
+
+- [ ] **Live in pl**
+- **English page:** [riding lessons invoice template](../templates.md#templateshorse-riding-lessons) (planned: write the English page first)
+- **Search words:** "wzór faktury [riding lessons, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per lesson (private, group), packages, horse use vs own horse, arena fees, shows and coaching at events. Sample: 8 lessons, school horse.
+- **Don't:** Boarding (/templates/horse-boarding).
+
+### /templates/martial-arts → Polish
+
+- [ ] **Live in pl**
+- **English page:** [martial arts invoice template](../templates.md#templatesmartial-arts) (planned: write the English page first)
+- **Search words:** "wzór faktury [martial arts, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Memberships per month, belt test fees, uniforms and gear, private lessons, family plans; monthly by duplicating the invoice. Sample: a family plan + a belt test.
+- **Don't:** Personal training (/templates/personal-training).
+
+### /templates/cpr-training → Polish
+
+- [ ] **Live in pl**
+- **English page:** [cpr training invoice template](../templates.md#templatescpr-training) (planned: write the English page first)
+- **Search words:** "wzór faktury [cpr training, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per participant with a class minimum, certification cards and the issuing body's fees, on-site group classes, equipment. Sample: a workplace class for 12.
+- **Don't:** Corporate training (/templates/corporate-training).
+
+### /templates/music-therapy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [music therapy invoice template](../templates.md#templatesmusic-therapy) (planned: write the English page first)
+- **Search words:** "wzór faktury [music therapy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions (individual, group), facility contracts per hour, assessments and reports, the credential (MT-BC in the US: hedge), funding or insurance notes. Sample: a care home's monthly group sessions.
+- **Don't:** Music lessons (/templates/music-lessons); counselling (/templates/therapy).
+
+## L420: T20 in Polish
+
+[ ] Animals, farms and outdoors · 0/12 live in pl
+
+- **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
+
+### /templates/pet-boarding → Polish
+
+- [ ] **Live in pl**
+- **English page:** [pet boarding invoice template](../templates.md#templatespet-boarding) (planned: write the English page first)
+- **Search words:** "wzór faktury [pet boarding, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per night by size, holiday surcharges, multiple pets, daycare days, bathing on checkout, medications, vaccination requirements in the terms. Sample: 6 nights for 2 dogs over a holiday.
+- **Don't:** Pet sitting in the owner's home (/templates/pet-sitting); grooming (/templates/dog-grooming).
+
+### /templates/horse-boarding → Polish
+
+- [ ] **Live in pl**
+- **English page:** [horse boarding invoice template](../templates.md#templateshorse-boarding) (planned: write the English page first)
+- **Search words:** "wzór faktury [horse boarding, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Monthly board by type (full, partial, pasture), feed and bedding extras, turnout, blanketing, farrier and vet visits passed on, the board agreement. Sample: a month of full board + farrier.
+- **Don't:** Farriers (/templates/farrier); lessons (/templates/horse-riding-lessons).
+
+### /templates/farrier → Polish
+
+- [ ] **Live in pl**
+- **English page:** [farrier invoice template](../templates.md#templatesfarrier) (planned: write the English page first)
+- **Search words:** "wzór faktury [farrier, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per horse: trim, front shoes, full set, specialty shoes, pads, a barn call fee shared across horses, missed appointments. Sample: 4 horses at one barn.
+- **Don't:** Horse boarding (/templates/horse-boarding).
+
+### /templates/pet-waste-removal → Polish
+
+- [ ] **Live in pl**
+- **English page:** [pet waste removal invoice template](../templates.md#templatespet-waste-removal) (planned: write the English page first)
+- **Search words:** "wzór faktury [pet waste removal, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly or twice-weekly service by number of dogs, initial cleanup fee, deodorising, commercial sites (HOAs, apartments); monthly by duplicating the invoice. Sample: a month, weekly, 2 dogs.
+- **Don't:** Pet sitting (/templates/pet-sitting); lawn care (/templates/landscaping).
+
+### /templates/hunting-guide → Polish
+
+- [ ] **Live in pl**
+- **English page:** [hunting guide invoice template](../templates.md#templateshunting-guide) (planned: write the English page first)
+- **Search words:** "wzór faktury [hunting guide, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Guided hunts per day or package, lodging and meals, trophy fees, processing passed on, licences and tags (the client buys them: hedge), the deposit and cancellation. Sample: a 3-day guided hunt.
+- **Don't:** Meat processing (/templates/meat-processing); fishing charters (/templates/fishing-charter).
+
+### /templates/fishing-charter → Polish
+
+- [ ] **Live in pl**
+- **English page:** [fishing charter invoice template](../templates.md#templatesfishing-charter) (planned: write the English page first)
+- **Search words:** "wzór faktury [fishing charter, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Half or full day, per person or per boat, bait and tackle, fish cleaning, the fuel surcharge, licences, the captain's licence, gratuity line. Sample: a full-day trip for 4.
+- **Don't:** Hunting guides (/templates/hunting-guide); boat repair (/templates/boat-repair).
+
+### /templates/custom-harvesting → Polish
+
+- [ ] **Live in pl**
+- **English page:** [custom harvesting invoice template](../templates.md#templatescustom-harvesting) (planned: write the English page first)
+- **Search words:** "wzór faktury [custom harvesting, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per acre by crop, per bushel or tonne hauling, fuel surcharge, the field names and acres, combine and trucks; contractor work for farms (Lohnunternehmer, loonwerker in local versions). Sample: 300 acres of wheat + hauling.
+- **Don't:** Farm sales (/templates/farm); land clearing (/templates/land-clearing).
+
+### /templates/land-clearing → Polish
+
+- [ ] **Live in pl**
+- **English page:** [land clearing invoice template](../templates.md#templatesland-clearing) (planned: write the English page first)
+- **Search words:** "wzór faktury [land clearing, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per acre or per hour by density, forestry mulching vs removal, stump grinding, hauling, permits and protected species (hedge). Sample: 2 acres of mulching.
+- **Don't:** Tree removal (/templates/tree-service); excavation (/templates/excavation).
+
+### /templates/logging → Polish
+
+- [ ] **Live in pl**
+- **English page:** [logging invoice template](../templates.md#templateslogging) (planned: write the English page first)
+- **Search words:** "wzór faktury [logging, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per tonne or per cord, stumpage paid to the owner vs cutting and hauling fees, scale tickets, the harvest plan. Sample: a timber sale settlement.
+- **Don't:** Tree service (/templates/tree-service); firewood (/templates/firewood).
+
+### /templates/firewood → Polish
+
+- [ ] **Live in pl**
+- **English page:** [firewood invoice template](../templates.md#templatesfirewood) (planned: write the English page first)
+- **Search words:** "wzór faktury [firewood, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per cord or cubic metre (face cord vs full cord: define it), seasoned vs green, delivery and stacking, kiln-dried. Sample: 2 cords delivered and stacked.
+- **Don't:** Logging (/templates/logging).
+
+### /templates/pond-maintenance → Polish
+
+- [ ] **Live in pl**
+- **English page:** [pond maintenance invoice template](../templates.md#templatespond-maintenance) (planned: write the English page first)
+- **Search words:** "wzór faktury [pond maintenance, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Spring and autumn cleanouts, monthly service, pumps and filters, plants and fish, algae treatment. Sample: a spring cleanout + monthly service.
+- **Don't:** Aquariums (/templates/aquarium-maintenance); pool service (/templates/pool-service).
+
+### /templates/taxidermy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [taxidermy invoice template](../templates.md#templatestaxidermy) (planned: write the English page first)
+- **Search words:** "wzór faktury [taxidermy, in Polish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per mount type (shoulder, full body, European, fish per inch), the deposit at drop-off, tanning, shipping, the tag or permit number (hedge: wildlife rules), pickup policy. Sample: a shoulder mount with deposit.
+- **Don't:** Meat processing (/templates/meat-processing).
