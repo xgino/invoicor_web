@@ -189,7 +189,16 @@ export function section(row) {
 const shortUrl = (url) => url.replace(BLOG_ORIGIN, "learn:");
 
 import { CATEGORIES } from "./pages-categories.mjs";
-import { CHUNKS, GOAL, LANGUAGE_ORDER, LANGUAGES } from "./pages-chunks.mjs";
+import {
+  GOAL,
+  ITEMS,
+  LANGUAGES,
+  LANGUAGE_ORDER,
+  LANGUAGE_SOURCES,
+  ORDER,
+  PREFIX,
+  TASKS,
+} from "./pages-items.mjs";
 
 // ── PAGES.md: what we have ──
 
@@ -227,7 +236,7 @@ export function renderPagesMd(rows) {
     "Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per",
     "country in all 11 languages (local words, rules and examples, not word for word), **local** = only",
     "in its own language, **en-only** = stays English. The language versions still to write are on the",
-    "to-do list in [PLAN.md](PLAN.md#items-per-category).",
+    "to-do list in [PLAN.md](PLAN.md#languages-l).",
     "",
     "| Page type | Decision | English | Per other language | Still to write |",
     "|---|---|---|---|---|",
@@ -368,18 +377,20 @@ const PAGE_RULES = [
   "  park it and improve the parent instead. 4,000 pages is a direction, not a quota: Google's",
   "  scaled-content policy judges value per page, and weak pages pull the whole site down.",
   "- **Release in waves:** at most ~150 new URLs per deploy, then watch indexing per page type in",
-  "  Search Console (sitemap per type, task 1A).",
+  "  Search Console (sitemap per type, task S1).",
 ];
 
-/** All plan files: seo/PLAN.md (the chunks) and seo/plan/{category}.md (the briefs). */
+/** All plan files: seo/PLAN.md (the items), seo/plan/{category}.md (the briefs) and
+ * seo/plan/languages/{lang}.md (every language item with its pages). */
 export function renderPlanFiles(rows) {
-  const files = { "seo/PLAN.md": renderChunks(rows) };
+  const files = { "seo/PLAN.md": renderPlan(rows) };
   for (const c of CATEGORIES) files[`seo/plan/${c.id}.md`] = renderCategory(rows, c);
+  for (const l of LANGUAGE_ORDER) files[`seo/plan/languages/${l}.md`] = renderLanguage(rows, l);
   return files;
 }
 
 export function renderPlanMd(rows) {
-  return renderChunks(rows);
+  return renderPlan(rows);
 }
 
 const categoryOf = (r) => CATEGORIES.find((c) => c.match(r));
@@ -387,6 +398,7 @@ const pageLink = (r, fromPlan = true) => {
   const c = categoryOf(r);
   return c ? `${fromPlan ? "plan/" : ""}${c.id}.md#${anchor(shortUrl(r.url))}` : "";
 };
+const box = (done) => (done ? "[x]" : "[ ]");
 
 /** An item's pages to build; parked pages (no demand, see PAGE_RULES) don't count. */
 function itemStats(rows, itemId) {
@@ -412,68 +424,67 @@ function languageStats(rows, pages, lang) {
   return { total: yes.length - of("parked"), done: of("live") };
 }
 
-function renderChunks(rows) {
+/** The language version of an English page, if planned, live or parked. */
+const versionOf = (rows, url, lang) =>
+  rows.find((r) => r.lang === lang && r.translation_of === url && r.status !== "removed");
+
+/** L1, L2 …: per source item (LANGUAGE_SOURCES), one per language; append-only numbering. */
+function languageItems(rows) {
+  const list = [];
+  for (const source of LANGUAGE_SOURCES) {
+    const yes = itemStats(rows, source).pages.filter((r) => r.localize === "yes");
+    if (!yes.length) continue;
+    for (const lang of LANGUAGE_ORDER)
+      list.push({ id: `L${list.length + 1}`, source, lang, pages: yes });
+  }
+  return list;
+}
+
+const itemOf = (id) => ITEMS.find((i) => i.id === id);
+const itemCategory = (rows, id) => {
+  const { pages, parked } = itemStats(rows, id);
+  return categoryOf([...pages, ...parked][0] ?? {}) ?? null;
+};
+const lAnchor = (li) => anchor(`${li.id} ${li.source} in ${LANGUAGES[li.lang].name}`);
+
+function renderPlan(rows) {
   const live = rows.filter((r) => r.status === "live");
-  const box = (done) => (done ? "[x]" : "[ ]");
+  const planned = rows.filter((r) => r.status === "planned");
+  const litems = languageItems(rows);
+  const lStats = litems.map((li) => ({ li, ...languageStats(rows, li.pages, li.lang) }));
+  const langTodo = lStats.reduce((n, s) => n + s.total - s.done, 0);
+  const total = live.length + planned.filter((r) => r.item).length + langTodo;
   const out = [];
-  // Totals per chunk
-  let running = live.length;
-  const summary = CHUNKS.map((ch) => {
-    let english = 0;
-    for (const it of ch.items.filter((i) => !i.task)) {
-      const { pages } = itemStats(rows, it.id);
-      english += pages.filter((r) => r.status === "planned").length;
-    }
-    let langPages = 0;
-    let langDone = 0;
-    for (const id of ch.languages ?? []) {
-      const { pages } = itemStats(rows, id);
-      for (const l of LANGUAGE_ORDER) {
-        const s = languageStats(rows, pages, l);
-        langPages += s.total - s.done;
-        langDone += s.done;
-      }
-    }
-    running += english + langPages;
-    const open = ch.items.filter((it) =>
-      it.task ? !it.done : itemStats(rows, it.id).pages.some((r) => r.status === "planned"),
-    ).length;
-    return { ch, english, langPages, langDone, total: running, open };
-  });
-  const next = summary.find((s) => s.ch.id !== "0" && (s.open || s.langPages));
   out.push(
     "# Page plan: the road to 4,000 pages",
     "",
-    "> **Generated, don't edit by hand.** The to-do list: chunks give the order, and every item is",
-    "> listed under its category with its pages below it. Each item is ~20 pages of one category; each translated item also has one language item per language (e.g. `1B-de`). Boxes",
-    "> tick themselves when the pages are live. The briefs per page are in [plan/](plan/) (one file",
-    "> per category, with its direction: what its pages can and can't do, and what's already done).",
-    "> What exists today: [PAGES.md](PAGES.md). Plan data: [keyword-map.csv](keyword-map.csv)",
-    "> (`item`, `brief`, `avoid`); chunks: `scripts/pages-chunks.mjs`; categories:",
+    "> **Generated, don't edit by hand.** Every item per category, with its pages below it: T1, T2 …",
+    "> for trade templates, I1 … for industry pages, and so on; L1, L2 … for the language versions",
+    "> (one language each). Boxes tick themselves when the pages are live. The brief per English page is",
+    "> in [plan/](plan/) (one file per category, with what its pages can and can't do); the",
+    "> instructions per language page are in [plan/languages/](plan/languages/) (one file per",
+    "> language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)",
+    "> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:",
     "> `scripts/pages-categories.mjs`. After any change: `npm run pages`.",
     "",
-    `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%)${next ? ` · next: **chunk ${next.ch.id}**` : ""}`,
+    `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%) · planned: ${planned.filter((r) => r.item).length} English and local pages + ${langTodo.toLocaleString("en")} language pages · **${total.toLocaleString("en")} when everything is built** (fewer after the demand gate parks the weak ones)`,
     "",
     "## How to run an item",
     "",
-    'Say which items: "do 1B", or "do 1B, 1B-de, 1B-es". Then, per item:',
+    'Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:',
     "",
-    "1. **English item (e.g. 1B):** first the demand gate (rules below): park the pages nobody",
-    "   searches for. Then, for each page listed under the item, read its brief (the link) and",
-    "   its category's direction in the same file, the blueprint, and the fact sheet",
+    "1. **English item (T5, B1 …):** first the demand gate (rules below): park the pages nobody",
+    "   searches for. Then, for each page listed under the item, read its brief (the link) and its",
+    "   category's direction in the same file, the blueprint and the fact sheet",
     "   [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,",
     "   then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update",
     "   ROADMAP.md; one commit per item.",
-    "2. **Language item (e.g. 1B-de):** the item's pages written for that language's country, not",
-    "   translated word for word: local search words in the slug and title, local prices, currency,",
-    "   number format, tax words and rules (the language table below). Needs task 1A done first.",
-    "   The same checks; each version links to its English page (hreflang). A page with no local",
-    "   search or a trade that works differently there (a notary in Germany is a state office with",
-    "   fixed fees) gets a `parked` row in that language (`translation_of` = the English URL, the",
-    "   reason in `notes`): skipped, not translated anyway.",
-    "3. **Task (e.g. 1A):** code work, no pages. Tick it in `scripts/pages-chunks.mjs` (`done: true`).",
-    "4. **Between chunks:** wait 2–3 weeks after a deploy and check in Search Console how many of the",
-    "   new pages got indexed. A page type under ~50% indexed after 4 weeks: stop and improve it first.",
+    "2. **Language item (L1 …):** one item's pages in one language, written for that country. Its",
+    "   instructions per page are in that language's file in [plan/languages/](plan/languages/).",
+    "   Needs task S1 for templates and industry pages, and the English pages live first.",
+    "3. **Task (S1 …):** code work, no pages. Tick it in `scripts/pages-items.mjs` (`done: true`).",
+    "4. **After each deploy:** wait 2–3 weeks and check in Search Console how many of the new pages got",
+    "   indexed. A page type under ~50% indexed after 4 weeks: stop and improve it before adding more.",
     "",
     "## Rules for every page",
     "",
@@ -482,27 +493,32 @@ function renderChunks(rows) {
     "## Rules for language items",
     "",
     "- Written for the country, by local search words (research them first), not word for word.",
-    "- The slug, title, H1 and examples in that language; prices and currency of that market.",
+    "- The slug, title, H1 and examples in that language; prices, currency and number format of that",
+    "  market (the table below).",
     "- Never claim the app's screens are in that language (they're English); say \"invoices in your",
     '  language".',
     "- The e-invoicing warnings below are part of the page where they apply (first paragraph).",
+    "- A page with no local search, or a trade that works differently there (a notary in Germany is a",
+    "  state office with fixed fees), gets a `parked` row in that language (`translation_of` = the",
+    "  English URL, the reason in `notes`): skipped, not translated anyway.",
     "- German first (it already gets clicks); Italian, Portuguese and Polish last (e-invoicing).",
     "",
-    "| Lang | Markets | Money | Tax words | Watch out |",
-    "|---|---|---|---|---|",
+    "| Lang | Markets | Money | Numbers | VAT | Tax words | Watch out |",
+    "|---|---|---|---|---|---|---|",
     ...LANGUAGE_ORDER.map((l) => {
       const x = LANGUAGES[l];
-      return `| ${l} ${x.name} | ${x.markets} | ${x.money} | ${x.tax} | ${x.watch} |`;
+      return `| [${l} ${x.name}](plan/languages/${l}.md) | ${x.markets} | ${x.money} | ${x.numbers} | ${x.rate} | ${x.tax} | ${x.watch} |`;
     }),
     "",
-    "## Rules for new chunks",
+    "## Rules for new items",
     "",
     "So the plan can keep growing (the goal of 4,000 can move up or down with the results):",
     "",
-    "- **One item = 15–25 pages of one category**, the size one run builds well. 3–5 English items per",
-    "  chunk, from different categories.",
-    "- **Languages in the same chunk:** every item whose pages are `yes` gets its 10 language items in",
-    "  the chunk; older pages' language versions are spread over the next chunks.",
+    "- **One item = 15–25 pages of one category**, named with that category's letter and the next",
+    "  number (T10, B4 …). Add it at the end of `ITEMS` in `scripts/pages-items.mjs`; numbers never",
+    "  change.",
+    "- **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`:",
+    "  its 10 L items appear by themselves, with the next free numbers.",
     "- **New page ideas** must fit a category's direction ([plan/](plan/)), pass the key check, and get",
     "  a brief (`brief`) and what not to repeat (`avoid`) before they get an `item`.",
     "- **Proven types first:** a new page type (a new category) starts with one item of ≤ 10 pages and",
@@ -510,100 +526,222 @@ function renderChunks(rows) {
     '- **Parents before children:** the general page ("deposit invoice") comes before or with its',
     '  specific ones ("photography deposit invoice"), and the children link up to it.',
     "- **Bigger searches first:** a new trade or topic must be a search of its own, not a sub-niche or a",
-    "  synonym of a planned one. Order items by expected demand, not by category.",
-    "- **Re-plan after each chunk** with Search Console data: more of what ranks, less of what doesn't.",
-    "",
-    "## Chunks",
-    "",
-    "The order to build in. Every item is listed with its pages under its category (next section).",
-    "",
-    "| Chunk | What | Items | New English/local pages | Language pages to write | Total when done |",
-    "|---|---|---|---|---|---|",
-    ...summary.map(
-      (s) =>
-        `| ${s.ch.id} | ${s.ch.title} | ${s.ch.items.map((it) => (it.task ? it.id : `[${it.id}](#${itemAnchor(it)})`)).join(" ")} | ${s.ch.id === "0" ? "built" : s.english} | ${s.langPages} | ${s.total.toLocaleString("en")} |`,
-    ),
+    "  synonym of a planned one.",
+    "- **Re-plan with Search Console data** every ~5 items: more of what ranks, less of what doesn't.",
     "",
   );
 
-  // Tasks: code work, no pages, so no category
-  out.push("## Tasks (code, no pages)", "");
-  for (const ch of CHUNKS)
-    for (const it of ch.items.filter((i) => i.task))
-      out.push(`- ${box(it.done)} **${it.id}** (chunk ${ch.id}) ${it.title}: ${it.text}`);
-  out.push("");
-
-  // Per category: its items (by letter) and their pages
-  const chunkOf = (id) => CHUNKS.find((ch) => ch.items.some((i) => i.id === id));
-  const langChunkOf = (id) => CHUNKS.find((ch) => (ch.languages ?? []).includes(id));
+  // Overview
   out.push(
-    "## Items per category",
+    "## Overview",
     "",
-    `Each item with its pages below it. Language items in this order: ${LANGUAGE_ORDER.join(", ")}.`,
-    "",
+    "| Category | Items | Pages done | Pages to build | Language items |",
+    "|---|---|---|---|---|",
   );
   for (const c of CATEGORIES) {
-    const items = CHUNKS.flatMap((ch) => ch.items.filter((i) => !i.task)).filter((it) =>
-      itemStats(rows, it.id)
-        .pages.concat(itemStats(rows, it.id).parked)
-        .some((r) => c.match(r)),
+    const ids = ITEMS.filter((it) => itemCategory(rows, it.id) === c).map((it) => it.id);
+    if (!ids.length) continue;
+    const pages = ids.flatMap((id) => itemStats(rows, id).pages);
+    const ls = lStats.filter((s) => ids.includes(s.li.source));
+    const lrange = ls.length
+      ? `${ls.filter((s) => s.total && s.done === s.total).length}/${ls.length} done`
+      : "none";
+    out.push(
+      `| [${c.title}](#${anchor(`${c.title} ${PREFIX[c.id]}`)}) | ${ids.join(" ")} | ${pages.filter((r) => r.status === "live").length} | ${pages.filter((r) => r.status === "planned").length} | ${lrange} |`,
     );
+  }
+  out.push(
+    `| [Languages](#languages-l) | L1–L${litems.length} | ${lStats.reduce((n, s) => n + s.done, 0)} | ${langTodo} | |`,
+    "",
+  );
+
+  // Suggested order
+  const doneId = (id) => {
+    const t = TASKS.find((x) => x.id === id);
+    if (t) return t.done;
+    const { pages, live: n } = itemStats(rows, id);
+    return pages.length > 0 && n === pages.length;
+  };
+  out.push(
+    "## Suggested order",
+    "",
+    "The English items and tasks in the order that pays off most (parents first, bigger searches first,",
+    "code before the pages that need it). Language items: in their number order, alongside, once their",
+    "English pages are live.",
+    "",
+    ORDER.map((id) => (doneId(id) ? `~~${id}~~` : `**${id}**`)).join(" → "),
+    "",
+    "## Tasks (S): code, no pages",
+    "",
+    ...TASKS.map((t) => `- ${box(t.done)} **${t.id}** ${t.title}: ${t.text}`),
+    "",
+  );
+
+  // Per category: its items and their pages
+  for (const c of CATEGORIES) {
+    const items = ITEMS.filter((it) => itemCategory(rows, it.id) === c);
     if (!items.length) continue;
-    out.push(`### ${c.title}`, "", `Direction and briefs: [plan/${c.id}.md](plan/${c.id}.md)`, "");
+    out.push(
+      `## ${c.title} (${PREFIX[c.id]})`,
+      "",
+      `Direction (what these pages can and can't do) and every brief: [plan/${c.id}.md](plan/${c.id}.md)`,
+      "",
+    );
     for (const it of items) {
-      const st = itemStats(rows, it.id);
-      const pages = st.pages.filter((r) => c.match(r));
-      const parked = st.parked.filter((r) => c.match(r));
-      const n = pages.filter((r) => r.status === "live").length;
-      const ch = chunkOf(it.id);
+      const { pages, parked, live: n } = itemStats(rows, it.id);
+      const ls = litems.filter((li) => li.source === it.id);
       out.push(
-        `#### ${it.id}: ${it.title}`,
+        `### ${it.id}: ${it.title}`,
         "",
-        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · chunk ${ch.id} · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.text ? ` · ${it.text}` : ""}`,
-        "",
+        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.text ? ` · ${it.text}` : ""}${ls.length ? ` · languages: [${ls[0].id}–${ls.at(-1).id}](#${anchor(`${it.id} in every language`)})` : ""}`,
       );
-      if (ch.id !== "0") {
-        for (const r of pages)
-          out.push(
-            `- ${box(r.status === "live")} [${shortUrl(r.url)}](${pageLink(r)}) ${r.primary_keyword}`,
-          );
-        for (const r of parked)
-          out.push(`- ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
-        out.push("");
-      }
-      const lc = langChunkOf(it.id);
-      if (lc && pages.some((r) => r.localize === "yes")) {
-        const cells = LANGUAGE_ORDER.map((l) => {
-          const x = languageStats(rows, pages, l);
-          return `${box(x.total > 0 && x.done === x.total)} ${it.id}-${l} ${x.done}/${x.total}`;
-        });
-        out.push(`**Languages** (chunk ${lc.id}): ${cells.join(" · ")}`, "");
-      } else if (ch.id !== "0" || lc) {
+      for (const r of pages)
         out.push(
-          pages.some((r) => r.localize === "yes")
-            ? "**Languages:** not scheduled yet."
-            : "**Languages:** none (English only or local).",
-          "",
+          `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${r.status === "live" ? `https://invoicor.com${r.url}` : pageLink(r)}) ${r.primary_keyword}`,
         );
-      }
+      for (const r of parked)
+        out.push(`  - ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
+      out.push("");
     }
   }
 
-  // Not in a chunk
-  const loose = rows.filter((r) => r.status === "planned" && !r.item);
+  // Languages
   out.push(
-    "## Not in a chunk yet",
+    "## Languages (L)",
+    "",
+    "One L item = one item's pages in one language. The instructions per page (search words, what to",
+    "write for that country, what not to) are in the language's file; the number links there.",
+    "",
+  );
+  for (const source of [...new Set(litems.map((li) => li.source))]) {
+    const it = itemOf(source);
+    out.push(
+      `### ${source} in every language`,
+      "",
+      `${it.title} · ${litems.find((li) => li.source === source).pages.length} pages`,
+      "",
+    );
+    for (const s of lStats.filter((x) => x.li.source === source))
+      out.push(
+        `- ${box(s.total > 0 && s.done === s.total)} [**${s.li.id}**](plan/languages/${s.li.lang}.md#${lAnchor(s.li)}) ${LANGUAGES[s.li.lang].name} · ${s.done}/${s.total}`,
+      );
+    out.push("");
+  }
+
+  // Not in an item
+  const loose = planned.filter((r) => !r.item);
+  out.push(
+    "## Not in an item yet",
     "",
     "Blog topics (you write them on learn.invoicor.com), pages that need a decision or code first,",
     "and pages on hold, with the reason in their brief.",
     "",
   );
-  for (const [g, list] of group(loose, (r) => r.chunk || "unsorted")) {
+  for (const [g, list] of group(loose, (r) => r.chunk || "unsorted"))
     out.push(
       `- **${g}** (${list.length}): ${list.map((r) => `[${shortUrl(r.url)}](${pageLink(r)})`).join(" · ")}`,
     );
-  }
   out.push("");
+  return out.join("\n");
+}
+
+/** What the page is about, in English, for the local search-word pattern ("plumbing", "plumbers"). */
+function subjectOf(r) {
+  return r.primary_keyword
+    .replace(/^invoice app for /, "")
+    .replace(/ (invoice template|invoice|calculator|checker|generator)$/, "")
+    .trim();
+}
+
+function localKey(r, lang) {
+  const keys = LANGUAGES[lang].keys;
+  const hint = (r.notes.match(/local: ([^;]*)/) ?? [])[1];
+  const pattern =
+    r.page_type === "template"
+      ? keys.template
+      : r.page_type === "industry"
+        ? keys.industry
+        : r.page_type === "tool"
+          ? keys.tool
+          : "";
+  const shape = pattern
+    ? `"${pattern.replace(/\{(trade|tool)\}/, `[${subjectOf(r)}, in ${LANGUAGES[lang].name}]`)}"`
+    : `the ${LANGUAGES[lang].name} term for "${r.primary_keyword}"`;
+  return hint ? `${shape}; known local terms: ${hint}` : shape;
+}
+
+/** What a language version of this kind of page must get right, beyond the page's own brief. */
+const TYPE_NOTES = {
+  template:
+    "A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.",
+  "template (billing type)":
+    "How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.",
+  "template (invoice type)":
+    "This document under that country's rules (the local terms list): what it must show there, the law or tax office as the source with the date checked.",
+  industry:
+    'A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".',
+  tool: "The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.",
+  generator: "The local document name and its rules there; the local generator presets.",
+  country:
+    "That country's own terms for the rule (the local terms list), with the local official source.",
+  trust: "The same facts (BRAND.md §10), written naturally in that language.",
+};
+
+function renderLanguage(rows, lang) {
+  const L = LANGUAGES[lang];
+  const items = languageItems(rows).filter((li) => li.lang === lang);
+  const out = [
+    `# ${L.name} (${lang}): language items`,
+    "",
+    "> **Generated, don't edit by hand.** Every L item in this language with its pages and what each",
+    "> page must do. Back to the [plan](../../PLAN.md#languages-l). Data: `seo/keyword-map.csv`; then",
+    "> `npm run pages`.",
+    "",
+    `## Writing for ${L.markets}`,
+    "",
+    `- **Money:** ${L.money} · **numbers:** ${L.numbers} · **VAT:** ${L.rate}`,
+    `- **Tax words:** ${L.tax}`,
+    `- **Watch out:** ${L.watch}`,
+    `- **Search words** usually look like: template "${L.keys.template}", app page "${L.keys.industry}", tool "${L.keys.tool}". Research the real local words first (the demand gate): Google in ${L.name} (autocomplete, "People also ask"), Search Console for the ${lang} pages.`,
+    "- **Every page:** written for the country, not word for word; slug, title, H1 and examples in",
+    `  ${L.name}; links to the English page (hreflang) and to the other ${lang} pages; the same depth and`,
+    "  honesty rules as the English page ([PLAN.md](../../PLAN.md#rules-for-every-page)).",
+    `- **Skip a page** that has no ${L.name} search or doesn't fit the country: a \`parked\` row in`,
+    `  \`${lang}\` with \`translation_of\` = the English URL and the reason in \`notes\`.`,
+    "",
+  ];
+  for (const li of items) {
+    const it = itemOf(li.source);
+    const s = languageStats(rows, li.pages, lang);
+    const types = [...new Set(li.pages.map((r) => r.page_type))];
+    out.push(
+      `## ${li.id}: ${li.source} in ${L.name}`,
+      "",
+      `${box(s.total > 0 && s.done === s.total)} ${it.title} · ${s.done}/${s.total} live in ${lang}`,
+      "",
+      ...types.map((t) => `- **For every ${t} page:** ${TYPE_NOTES[t] ?? TYPE_NOTES.trust}`),
+      "",
+    );
+    for (const r of li.pages) {
+      const v = versionOf(rows, r.url, lang);
+      const src = r.status === "live" ? `https://invoicor.com${r.url}` : `../${pageLink(r, false)}`;
+      if (v?.status === "parked") {
+        out.push(`- ~~${r.url}~~ skipped in ${lang}: ${v.notes || "no reason given"}`, "");
+        continue;
+      }
+      out.push(
+        `### ${r.url} → ${L.name}`,
+        "",
+        `- ${box(v?.status === "live")} **Live in ${lang}**${v ? `: ${v.url}` : ""}`,
+        `- **English page:** [${r.primary_keyword}](${src})${r.status === "live" ? " (live: use it as the source)" : " (planned: write the English page first)"}`,
+        `- **Search words:** ${localKey(r, lang)}`,
+        `- **Write:** ${r.brief ? "the English brief, adapted to the country (local rules, prices and units instead of US ones): " + r.brief.replace(/^(Same fields|Needs (page )?code)[\s\S]*?\.(?=\s[A-Z])\s*/, "") : `the live page rewritten for ${L.markets}: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.`}`,
+      );
+      if (r.avoid) out.push(`- **Don't:** ${r.avoid}`);
+      out.push("");
+    }
+  }
+  if (!items.length) out.push("_No language items yet._", "");
   return out.join("\n");
 }
 
@@ -618,7 +756,7 @@ function renderCategory(rows, c) {
     `# ${c.title}`,
     "",
     "> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:",
-    "> `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).",
+    "> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).",
     "",
     `**${done.length} done · ${todo.length} planned**`,
     "",
@@ -656,7 +794,7 @@ function renderCategory(rows, c) {
   for (const [item, items] of [...byItem].sort((a, b) =>
     a[0].localeCompare(b[0], "en", { numeric: true }),
   )) {
-    out.push(`### ${/^\d[A-Z]$/.test(item) ? `Item ${item}` : item} (${items.length})`, "");
+    out.push(`### ${/^[A-Z]+\d+$/.test(item) ? `Item ${item}` : item} (${items.length})`, "");
     for (const r of items) {
       const near = closest(
         live.filter((x) => x.url !== r.url),
@@ -695,14 +833,10 @@ function renderCategory(rows, c) {
   return out.join("\n");
 }
 
-function itemAnchor(it) {
-  return anchor(`${it.id} ${it.title}`);
-}
-
 function anchor(text) {
   return text
     .toLowerCase()
-    .replace(/[^a-z0-9 -]/g, "")
+    .replace(/[^\p{L}\p{N} -]/gu, "")
     .replace(/ /g, "-");
 }
 

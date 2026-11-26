@@ -1,7 +1,7 @@
 # Blog (learn.invoicor.com)
 
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
+> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **34 done · 12 planned**
 

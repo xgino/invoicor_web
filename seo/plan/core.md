@@ -1,7 +1,7 @@
 # Core pages, hubs, trust and legal
 
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [chunks](../PLAN.md).
+> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **9 done · 6 planned**
 
@@ -26,22 +26,6 @@
 `/` invoice app iphone · `/templates` invoice templates · `/industries` invoicing software by industry · `/compare` invoice app alternatives · `/help` invoicor help · `/affiliate` invoicor affiliate program · `/terms` invoicor terms of service · `/privacy` invoicor privacy policy · `/android` invoicor for android: coming soon
 
 ## Planned (6)
-
-### Item 1G (2)
-
-#### /about
-
-- **Key:** about invoicor
-- **Item:** 1G · **Intent:** brand / trust · **Languages:** yes
-- **Write about:** Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
-- **Notes:** E-E-A-T
-
-#### /contact
-
-- **Key:** contact invoicor
-- **Item:** 1G · **Intent:** brand / trust · **Languages:** yes
-- **Write about:** How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).
-- **Notes:** E-E-A-T
 
 ### on hold: file downloads (53) (4)
 
@@ -74,3 +58,19 @@
 - **Don't write about:** The free generator (/free-invoice-generator) and the blog's PDF articles.
 - **Already covered (link, don't repeat):** learn:/what-is-a-pdf-invoice (“what is a pdf invoice”) · learn:/how-pdf-invoice-templates-work-on-iphone (“how pdf invoice templates work on iphone”) · learn:/how-to-use-pdf-invoice-templates-on-iphone (“how to use pdf invoice templates on iphone”) · learn:/how-to-share-an-invoice-pdf-from-iphone (“how to share an invoice pdf from iphone”)
 - **Notes:** Big-volume quick wins
+
+### Item P1 (2)
+
+#### /about
+
+- **Key:** about invoicor
+- **Item:** P1 · **Intent:** brand / trust · **Languages:** yes
+- **Write about:** Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
+- **Notes:** E-E-A-T
+
+#### /contact
+
+- **Key:** contact invoicor
+- **Item:** P1 · **Intent:** brand / trust · **Languages:** yes
+- **Write about:** How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).
+- **Notes:** E-E-A-T

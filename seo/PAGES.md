@@ -35,7 +35,7 @@
 Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per
 country in all 11 languages (local words, rules and examples, not word for word), **local** = only
 in its own language, **en-only** = stays English. The language versions still to write are on the
-to-do list in [PLAN.md](PLAN.md#items-per-category).
+to-do list in [PLAN.md](PLAN.md#languages-l).
 
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
