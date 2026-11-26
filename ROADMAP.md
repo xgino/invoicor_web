@@ -24,10 +24,10 @@ assistants)**, and turn visitors into app users through the **free invoice gener
 | What | Where | Notes |
 |---|---|---|
 | **invoicor.com** (marketing site, free generator, templates, industries, compares) | this repo, Next.js static export | Built on `dev`; `main` = what's deployed. Deploy by hand: [DEPLOY.md](DEPLOY.md) |
-| **learn.invoicor.com** (blog: 17 how-to articles about the iPhone app) | a separate site, not in this repo | Own sitemap (`/sitemap.xml`). Plans in [L](#l-learninvoicorcom-the-blog) |
+| **learn.invoicor.com** (blog: 34 how-to articles about the iPhone app on 2026-11-26, about 2 new per day) | a separate site, not in this repo | Own sitemap (`/sitemap.xml`). Plans in [L](#l-learninvoicorcom-the-blog) |
 | **The API** (accounts, invoices, templates, PDFs, subscriptions) | `invoicor_api` (Django), servers in Germany | Reference: [R2](#r2-the-api) |
 | **The iPhone app** | `invoicor_ios` + App Store | Facts the site may claim: [BRAND.md §10](BRAND.md#10-fact-sheet-what-the-app-does-check-every-claim-against-this) |
-| Page content (30 SEO pages) · keyword plan | `content/*.json` · `seo/keyword-map.csv` | How to edit: [CONTENT.md](CONTENT.md) |
+| Page content (60 SEO pages) · keyword plan · **page log** | `content/*.json` · `seo/keyword-map.csv` · [seo/PAGES.md](seo/PAGES.md) | How to edit: [CONTENT.md](CONTENT.md). Every page (site, translations, blog) with its key and date: `npm run pages` |
 
 ## Now (2026-11-18)
 
@@ -90,6 +90,8 @@ are listed inside those chunks: Claude drafts, you post or submit._
 
 ## 2. Next up for Claude 🤖
 
+- [x] **PL1** 🤖 **Page log** (2026-11-26, your request): [seo/PAGES.md](seo/PAGES.md) shows every page on invoicor.com, its translations and the blog, with counts per section, page type × language, pages made per day, and the keys that are too close. The data is `seo/keyword-map.csv` (now with `lang` and `added` columns; dates before 2026-11-26 from git history, blog dates from its sitemap's `lastmod`). `npm run build && npm run pages` updates both; `npm run pages -- --check "plumbing deposit invoice" [--lang de]` lists the closest existing pages before a new one is planned. The site test fails when the log is behind the site, when a live page has no key or date, or when two pages share a key. Limit: it compares words, not meaning ("rechnung schreiben" vs "rechnung erstellen"), so synonyms still need a human look. The 10 planned `/guides/…` rows predate D16 (guides go to the blog, L4): treat them as blog topics.
+
 _No input needed unless noted. In order._
 
 **S1 leftovers** (from the Search Console round, details in [S1](#s1-search-console-round-1-2026-11-18)):
@@ -133,7 +135,7 @@ Today the main site doesn't link to it, and it isn't in the keyword plan._
 - [x] **L1** 🤖 **Fact-check the 17 articles against BRAND.md §10.** Titles like "How auto-fill helps you create invoices faster", "How to create a receipt on iPhone" and "How a tax calculator helps" may promise things the app doesn't do (no receipts or estimates; one tax rate per invoice). List every claim to fix; 👤 you edit the blog. ✅ 2026-11-18 (Claude's part): all 17 articles checked, 129 spots in [docs/blog-fact-check-2026-11.md](docs/blog-fact-check-2026-11.md). Most are 5 repeated "stock lines" ("under 5 seconds", "80% auto fill", "tax calculator", "free to start" without the 3-invoice limit, "multi-currency" without a number): replace those once across all articles.
 - [ ] **L1-b** 👤 Fix the blog with that list. The worst 3 first: unpublish or rewrite "How to Create a Receipt on iPhone" (the app makes no receipts; rewrite as "mark an invoice as paid"); the checklist article shows raw code (`{'text': …, 'title': …}`) for all 13 items, a template bug; and the 5 stock lines. While editing, add one in-text link per article to the matching invoicor.com page (listed per article; this is the blog half of L2).
 - [ ] **L2** 🤖 **Link both ways.** ✅ Done in the nav (Blog) and footer (Blog & guides). Still to do: 1–2 matching articles on each template, industry and generator page. Blog: every article links to the matching template page or the free generator. Internal links between the two sites help both rank.
-- [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. Add every article to `seo/keyword-map.csv`, so a blog post and a template page never target the same search (one search intent = one URL).
+- [ ] **L3** 👥 **Search Console and keyword plan.** The DNS domain property (X1) covers learn.invoicor.com; submit its sitemap there. ✅ 2026-11-26 (Claude's part): every article is in `seo/keyword-map.csv` (added by `npm run pages` from the blog's sitemap) and [seo/PAGES.md](seo/PAGES.md) lists the keys that are too close. Already 5 near-pairs among the articles (e.g. "how to share an invoice PDF from iPhone" / "how to share invoices instantly from iPhone"): 👤 before writing a new article, run `npm run pages -- --check "<topic>"`; merge or redirect the pairs.
 - [ ] **L4** 🤖 **Guides go to the blog** (replaces chunk 42, after D16): write the planned how-to guides there (how to write an invoice, invoice numbering, payment terms explained, invoice vs receipt, how to invoice as a freelancer, late invoices), each with a FAQ, "last updated" and a link to the generator.
 - [x] **L5** 🤖 Mention learn.invoicor.com in `llms.txt` and the Organization JSON-LD, so AI assistants connect the two sites. ✅ 2026-11-18: `llms.txt` names the blog and its sitemap and lists the home, generator and tools pages in all 10 other languages; the home page has a `Blog` JSON-LD node published by the Invoicor organization. `BLOG_URL` lives in `lib/config.ts`.
 
