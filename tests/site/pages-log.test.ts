@@ -13,6 +13,7 @@ import {
   renderPlanMd,
   similarity,
 } from "../../scripts/pages-lib.mjs";
+import { CATEGORIES } from "../../scripts/pages-categories.mjs";
 
 interface Row {
   url: string;
@@ -88,6 +89,14 @@ describe("page log", () => {
       .filter((r) => r.status === "planned" && !r.brief?.trim())
       .map((r) => r.url);
     expect(noBrief).toEqual([]);
+  });
+
+  it("puts every planned page in a category with a direction (seo/PLAN.md)", () => {
+    const loose = rows
+      .filter((r) => r.status === "planned")
+      .filter((r) => !CATEGORIES.some((c) => c.match(r as unknown as Record<string, string>)))
+      .map((r) => r.url);
+    expect(loose).toEqual([]);
   });
 
   it("scores keys by shared words, ignoring filler words and plurals", () => {

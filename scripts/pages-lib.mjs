@@ -169,6 +169,8 @@ export function section(row) {
 
 const shortUrl = (url) => url.replace(BLOG_ORIGIN, "learn:");
 
+import { CATEGORIES } from "./pages-categories.mjs";
+
 // ── PAGES.md: what we have ──
 
 export function renderPagesMd(rows) {
@@ -321,19 +323,6 @@ function languageGaps(rows) {
 
 // ── PLAN.md: what to build next (instructions) ──
 
-/** Where each page type's blueprint lives (seo/BLUEPRINTS.md). */
-const BLUEPRINT = {
-  template: "BLUEPRINTS.md#template-templatesslug",
-  "template (billing type)": "BLUEPRINTS.md#billing-type-template-templatestrade-billing-invoice",
-  industry: "BLUEPRINTS.md#industry-industriesslug",
-  compare: "BLUEPRINTS.md#compare-compareslug",
-  country: "BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages",
-  generator: "BLUEPRINTS.md#generator-free-invoice-generator-chunks-3035",
-  guide: "BLUEPRINTS.md#guide-guidesslug-chunk-42",
-  hub: "BLUEPRINTS.md#hub-templates-industries-compare-guides",
-  trust: "BLUEPRINTS.md#about-contact-help-affiliate-legal",
-};
-
 export function renderPlanMd(rows) {
   const planned = rows.filter((r) => r.status === "planned");
   const live = rows.filter((r) => r.status === "live");
@@ -356,9 +345,9 @@ export function renderPlanMd(rows) {
     "",
     "## How to build a batch",
     "",
-    "1. **Take the first batch below that's ready** (the roadmap, W1, says when). Build all its pages",
+    "1. **Take the first batch that's ready** (the table below; the roadmap, W1, says when). Build all its pages",
     "   in one go, then wait 2–3 weeks and check the indexed share in Search Console before the next.",
-    "2. **For each page read:** its brief below; the blueprint for its type (linked per page,",
+    "2. **For each page read:** its brief and its category's direction below; the blueprint (linked per category,",
     "   [BLUEPRINTS.md](BLUEPRINTS.md)); the fact sheet [BRAND.md §10](../BRAND.md) (what the app does",
     "   and doesn't do); one live page of the same type as the model for depth and fields.",
     "3. **Don't repeat what another page owns.** Each brief lists the closest existing pages under",
@@ -399,7 +388,7 @@ export function renderPlanMd(rows) {
   for (const k of order) {
     const list = batches.get(k);
     out.push(
-      `| [${k}](#${anchor(`batch ${k}`)}) | ${list.length} | ${countBy(list, (r) => r.page_type)
+      `| ${k} | ${list.length} | ${countBy(list, (r) => r.page_type)
         .map(([t, n]) => `${t} ${n}`)
         .join(", ")} | ${countBy(list, (r) => r.localize || "?")
         .map(([t, n]) => `${t} ${n}`)
@@ -408,22 +397,77 @@ export function renderPlanMd(rows) {
   }
   out.push("");
 
-  for (const k of order) {
-    out.push(`## Batch ${k}`, "");
-    for (const r of batches.get(k)) {
+  // Categories: direction, what's done, what's planned
+  const site = rows.filter((r) => r.status !== "removed");
+  out.push(
+    "## Categories",
+    "",
+    "Each category below has its **direction** (what its pages may and may not do), the pages that",
+    "are **done** (never build these again; improve them instead), and the **planned** pages with a",
+    "brief each. A new page idea must fit a category's direction; if it fits none, it needs a decision",
+    "first (a new category here).",
+    "",
+    "| Category | Live | Planned | Languages |",
+    "|---|---|---|---|",
+  );
+  for (const c of CATEGORIES) {
+    const list = site.filter(c.match);
+    out.push(
+      `| [${c.title}](#${anchor(c.title)}) | ${list.filter((r) => r.status === "live").length} | ${
+        list.filter((r) => r.status === "planned").length
+      } | ${c.languages.match(/\*\*(.+?)\*\*/)?.[1] ?? c.languages.split(/[:.;]/)[0]} |`,
+    );
+  }
+  out.push("");
+
+  for (const c of CATEGORIES) {
+    const list = site.filter(c.match);
+    const done = list.filter((r) => r.status === "live");
+    const todo = list.filter((r) => r.status === "planned");
+    out.push(`## ${c.title}`, "");
+    out.push(
+      `- **URL:** ${c.url} · **Key:** ${c.key}`,
+      `- **Blueprint:** [${c.blueprint.split("#")[0]}](${c.blueprint}) · **Where it's written:** ${c.data}`,
+      `- **Links to:** ${c.links}`,
+      `- **Languages:** ${c.languages}`,
+      "",
+      "**Can do:**",
+      "",
+      ...c.can.map((x) => `- ${x}`),
+      "",
+      "**Can't do:**",
+      "",
+      ...c.cannot.map((x) => `- ${x}`),
+      "",
+    );
+    out.push(
+      `### Done (${done.length}): don't build these again`,
+      "",
+      done.length
+        ? done
+            .map(
+              (r) =>
+                `\`${shortUrl(r.url).replace(/^\/(templates|industries|compare|tools)\//, "")}\` ${r.primary_keyword}`,
+            )
+            .join(" · ")
+        : "_None yet._",
+      "",
+    );
+    out.push(`### Planned (${todo.length})`, "");
+    if (!todo.length) out.push("_Nothing planned._", "");
+    for (const r of todo) {
       const near = closest(
         live.filter((x) => x.url !== r.url),
         r.primary_keyword,
         r.lang,
         4,
       ).filter((m) => m.score >= CLOSE);
-      out.push(`### ${shortUrl(r.url)}`, "");
+      out.push(`#### ${shortUrl(r.url)}`, "");
       out.push(
         `- **Key:** ${r.primary_keyword}${r.secondary_keywords ? ` · also: ${r.secondary_keywords}` : ""}`,
       );
-      const bp = BLUEPRINT[r.page_type];
       out.push(
-        `- **Type:** ${bp ? `[${r.page_type}](${bp})` : r.page_type}${r.intent ? ` · intent: ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
+        `- **Batch:** ${r.chunk || "unscheduled"}${r.intent ? ` · **Intent:** ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
       );
       out.push(`- **Write about:** ${r.brief || "_no brief yet: write one before building_"}`);
       if (r.avoid) out.push(`- **Don't write about:** ${r.avoid}`);
