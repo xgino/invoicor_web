@@ -6320,3 +6320,433 @@
 - **Search words:** the Portuguese term for "trucking rate per mile invoice"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Loaded miles × rate, deadhead, fuel surcharge, detention; the rate confirmation number.
 - **Don't:** General fields of the trade (owned by /templates/trucking): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+## L659: TL5 in Portuguese
+
+[ ] Tax tools for the self-employed · 0/3 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/vat-threshold-checker → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [vat threshold calculator](../tools.md#toolsvat-threshold-checker) (planned: write the English page first)
+- **Search words:** "calculadora de [vat threshold, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Rolling 12-month turnover against the threshold (UK first; each language version with its country's threshold and test), the date you'd cross it, what to do next. Source per country, dated.
+- **Don't:** What /templates/no-vat-invoice already explains (link it); rates without a source and date.
+
+### /tools/reverse-charge-checker → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [reverse charge checker](../tools.md#toolsreverse-charge-checker) (planned: write the English page first)
+- **Search words:** "calculadora de [reverse charge, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. A few questions (both businesses VAT-registered? in different EU countries? goods or services? B2B?) → whether the reverse charge applies and the wording to put on the invoice. Source: EU VAT Directive and the national tax offices.
+- **Don't:** What /reverse-charge-invoice already explains (link it); rates without a source and date.
+
+### /tools/invoice-requirements-checker → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice requirements checker](../tools.md#toolsinvoice-requirements-checker) (planned: write the English page first)
+- **Search words:** "calculadora de [invoice requirements, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Pick your country and situation (VAT registered or not, B2B or B2C, abroad) → the checklist of what your invoice must show, each item with its source; links to that country's page.
+- **Don't:** What /templates/no-vat-invoice already explains (link it); rates without a source and date.
+
+## L669: TL6 in Portuguese
+
+[ ] Payment fees, terms and payment details · 0/13 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/paypal-fee-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [paypal fee calculator](../tools.md#toolspaypal-fee-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [paypal fee, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. PayPal's fees by country and payment type (invoices, goods and services, international, currency conversion), and the reverse: how much to invoice to receive X. Fees from PayPal's own fee page with the date.
+- **Don't:** Rates without a source and date; claims the tool can't back up.
+
+### /tools/stripe-fee-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [stripe fee calculator](../tools.md#toolsstripe-fee-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [stripe fee, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Stripe's card fees by country, international and currency surcharges, invoicing fees, the gross-up. From Stripe's pricing page, dated.
+- **Don't:** What /compare/stripe-invoices already explains (link it); rates without a source and date.
+
+### /tools/square-fee-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [square fee calculator](../tools.md#toolssquare-fee-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [square fee, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Square's fees for invoices, card-present and online, by country, the gross-up. From Square's pricing page, dated.
+- **Don't:** What /compare/square-invoices already explains (link it); rates without a source and date.
+
+### /tools/credit-card-surcharge-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [credit card surcharge calculator](../tools.md#toolscredit-card-surcharge-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [credit card surcharge, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The surcharge to cover a card fee, capped at the actual cost, and where surcharges are banned or capped (EU consumer cards, some US states: hedge, cite).
+- **Don't:** What /tools/stripe-fee-calculator already explains (link it); rates without a source and date.
+
+### /tools/early-payment-discount-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [early payment discount calculator](../tools.md#toolsearly-payment-discount-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [early payment discount, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Terms like 2/10 net 30: the discounted amount, the last discount date, and the effective annual cost of not taking it.
+- **Don't:** What /tools/due-date-calculator already explains (link it); rates without a source and date.
+
+### /tools/invoice-factoring-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice factoring calculator](../tools.md#toolsinvoice-factoring-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [invoice factoring, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Advance rate, factoring fee per 30 days, reserve released on payment → what you receive and the effective cost. Not advice; terms vary.
+- **Don't:** What /templates/trucking already explains (link it); rates without a source and date.
+
+### /tools/prorated-invoice-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [prorated invoice calculator](../tools.md#toolsprorated-invoice-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [prorated invoice, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. A monthly or yearly price for part of a period: by days in the month or a 30-day month, start and end dates, the amount to invoice.
+- **Don't:** What /templates/monthly-invoice already explains (link it); rates without a source and date.
+
+### /tools/business-days-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [business days calculator](../tools.md#toolsbusiness-days-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [business days, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Business days between two dates or N business days from a date, without weekends and the public holidays of the chosen country (holiday lists sourced, per year).
+- **Don't:** What /tools/due-date-calculator already explains (link it); rates without a source and date.
+
+### /tools/dso-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [days sales outstanding calculator](../tools.md#toolsdso-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [days sales outstanding, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Receivables ÷ credit sales × days, what it means for a small business, a target by payment terms.
+- **Don't:** What /tools/late-payment-interest-calculator already explains (link it); rates without a source and date.
+
+### /tools/sepa-qr-code-generator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [sepa qr code generator](../tools.md#toolssepa-qr-code-generator) (planned: write the English page first)
+- **Search words:** "calculadora de [sepa qr code, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The EPC QR code (GiroCode) for a SEPA transfer: name, IBAN, BIC, amount, reference → a QR to put on the invoice; made in the browser, nothing sent. Spec: the European Payments Council guideline.
+- **Don't:** What /tools/iban-checker already explains (link it); rates without a source and date.
+
+### /tools/swiss-qr-bill-generator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [swiss qr bill generator](../tools.md#toolsswiss-qr-bill-generator) (planned: write the English page first)
+- **Search words:** "calculadora de [swiss qr bill, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The Swiss QR-bill payment part: creditor, QR-IBAN or IBAN, reference, amount → the payment slip as PDF/PNG. Spec: SIX Swiss Payment Standards, dated.
+- **Don't:** What /invoice-generator-switzerland already explains (link it); rates without a source and date.
+
+### /tools/amount-in-words-converter → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [amount in words converter](../tools.md#toolsamount-in-words-converter) (planned: write the English page first)
+- **Search words:** "calculadora de [amount in words converter, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. An amount → words with the currency ('one thousand two hundred euros and 50 cents'), in the page's language, for invoices and cheques where the words are expected.
+- **Don't:** Rates without a source and date; claims the tool can't back up.
+
+### /tools/invoice-currency-converter → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice currency converter](../tools.md#toolsinvoice-currency-converter) (planned: write the English page first)
+- **Search words:** "calculadora de [invoice currency converter, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Needs a decision first: the rate source (ECB daily reference rates are free). An amount at the day's reference rate with the date and source, for the 'converted at' note on an invoice.
+- **Don't:** What /templates/international-invoice already explains (link it); rates without a source and date.
+
+## L679: TL7 in Portuguese
+
+[ ] Job costing and materials for contractors · 0/13 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/job-costing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [job costing calculator](../tools.md#toolsjob-costing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [job costing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Revenue minus labour (hours × burdened rate), materials, subcontractors, equipment and overhead share → profit and margin per job.
+- **Don't:** What /tools/profit-margin-calculator already explains (link it); rates without a source and date.
+
+### /tools/overhead-rate-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [overhead rate calculator](../tools.md#toolsoverhead-rate-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [overhead rate, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Yearly overhead ÷ billable hours (or direct costs) → the overhead to add per hour or per job, plus the profit target.
+- **Don't:** What /tools/markup-calculator already explains (link it); rates without a source and date.
+
+### /tools/labor-burden-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [labor burden calculator](../tools.md#toolslabor-burden-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [labor burden, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wage + payroll taxes, insurance, benefits and paid time off ÷ productive hours → the true hourly cost of a worker (rates per country as examples, hedged).
+- **Don't:** What /tools/job-costing-calculator already explains (link it); rates without a source and date.
+
+### /tools/equipment-cost-per-hour-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [equipment cost per hour calculator](../tools.md#toolsequipment-cost-per-hour-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [equipment cost per hour, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Purchase price, life, resale, fuel, maintenance, insurance ÷ hours a year → the hourly rate to charge for a machine.
+- **Don't:** What /templates/equipment-rental already explains (link it); rates without a source and date.
+
+### /tools/insulation-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [insulation cost calculator](../tools.md#toolsinsulation-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [insulation cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area × the depth for the target R-value (or U-value) by material (batts, blown), bags or rolls needed, labour per square foot.
+- **Don't:** What /templates/insulation already explains (link it); rates without a source and date.
+
+### /tools/siding-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [siding cost calculator](../tools.md#toolssiding-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [siding cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wall area minus openings → squares + waste, trim and J-channel by linear foot, removal of old siding, labour per square.
+- **Don't:** What /templates/siding already explains (link it); rates without a source and date.
+
+### /tools/paver-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [paver cost calculator](../tools.md#toolspaver-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [paver cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → pavers by size + waste, base gravel and sand by depth, edging, labour per square foot.
+- **Don't:** What /templates/masonry already explains (link it); rates without a source and date.
+
+### /tools/retaining-wall-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [retaining wall cost calculator](../tools.md#toolsretaining-wall-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [retaining wall cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Length × height → blocks, caps, base and drainage gravel, labour per face foot; walls over a set height need an engineer (hedge).
+- **Don't:** What /templates/masonry already explains (link it); rates without a source and date.
+
+### /tools/landscape-material-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [landscape material calculator](../tools.md#toolslandscape-material-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [landscape material, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area × depth → cubic yards or m³ of mulch, gravel or topsoil, bags vs bulk, delivery, the price to put on the invoice.
+- **Don't:** What /templates/landscaping already explains (link it); rates without a source and date.
+
+### /tools/sod-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [sod cost calculator](../tools.md#toolssod-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [sod cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → pallets or rolls of sod, soil prep, labour per square foot, watering in.
+- **Don't:** What /templates/landscaping already explains (link it); rates without a source and date.
+
+### /tools/gutter-installation-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [gutter installation cost calculator](../tools.md#toolsgutter-installation-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [gutter installation cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Linear feet by material, downspouts by count and height, guards, removal of old gutters.
+- **Don't:** What /templates/gutter-installation already explains (link it); rates without a source and date.
+
+### /tools/epoxy-floor-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [epoxy floor cost calculator](../tools.md#toolsepoxy-floor-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [epoxy floor cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → kits or gallons by system and coats, grinding and crack repair, flakes, labour per square foot.
+- **Don't:** What /templates/epoxy-flooring already explains (link it); rates without a source and date.
+
+### /tools/wallpaper-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [wallpaper calculator](../tools.md#toolswallpaper-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [wallpaper, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wall area, roll size and pattern repeat → rolls needed + waste, removal and hanging labour per roll.
+- **Don't:** What /templates/wallpaper-installation already explains (link it); rates without a source and date.
+
+## L689: TL8 in Portuguese
+
+[ ] Pricing calculators II: services and transport · 0/14 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/janitorial-bidding-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [janitorial bidding calculator](../tools.md#toolsjanitorial-bidding-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [janitorial bidding, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Square feet ÷ production rate per hour by space type → hours per visit × visits a month × wage + burden, supplies, overhead and profit → the monthly bid.
+- **Don't:** What /templates/janitorial already explains (link it); rates without a source and date.
+
+### /tools/gutter-cleaning-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [gutter cleaning pricing calculator](../tools.md#toolsgutter-cleaning-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [gutter cleaning pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Linear feet by storey, downspouts, debris level, guards, a minimum.
+- **Don't:** What /templates/gutter-cleaning already explains (link it); rates without a source and date.
+
+### /tools/pest-control-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [pest control pricing calculator](../tools.md#toolspest-control-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [pest control pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Initial vs recurring service, home size, pest type, materials, quarterly vs monthly plans.
+- **Don't:** What /templates/pest-control already explains (link it); rates without a source and date.
+
+### /tools/pet-sitting-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [pet sitting pricing calculator](../tools.md#toolspet-sitting-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [pet sitting pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Visit length, pets, overnight stays, holidays and travel → per visit and per week.
+- **Don't:** What /templates/pet-sitting already explains (link it); rates without a source and date.
+
+### /tools/dog-grooming-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [dog grooming pricing calculator](../tools.md#toolsdog-grooming-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [dog grooming pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Size and coat → time × hourly rate, add-ons, matting and behaviour fees, mobile fee.
+- **Don't:** What /templates/dog-grooming already explains (link it); rates without a source and date.
+
+### /tools/auto-detailing-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [auto detailing pricing calculator](../tools.md#toolsauto-detailing-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [auto detailing pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Vehicle size and condition, package, add-ons (ceramic, odour), mobile fee → price per car.
+- **Don't:** What /templates/auto-detailing already explains (link it); rates without a source and date.
+
+### /tools/courier-delivery-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [courier delivery pricing calculator](../tools.md#toolscourier-delivery-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [courier delivery pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Base fee + distance × rate, weight and size, rush and waiting time, fuel surcharge.
+- **Don't:** What /templates/courier already explains (link it); rates without a source and date.
+
+### /tools/event-planner-fee-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [event planner fee calculator](../tools.md#toolsevent-planner-fee-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [event planner fee, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Flat fee vs % of the event budget vs hourly, compared side by side, with the deposit share.
+- **Don't:** What /templates/event-planning already explains (link it); rates without a source and date.
+
+### /tools/florist-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [florist pricing calculator](../tools.md#toolsflorist-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [florist pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wholesale cost × the markup (e.g. 3×) + labour %, hard goods at a lower markup → the retail price per arrangement.
+- **Don't:** What /templates/florist already explains (link it); rates without a source and date.
+
+### /tools/translation-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [translation cost calculator](../tools.md#toolstranslation-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [translation cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Words × rate per word by language pair and field, minimum fee, rush and certification fees.
+- **Don't:** What /templates/translation already explains (link it); rates without a source and date.
+
+### /tools/transcription-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [transcription cost calculator](../tools.md#toolstranscription-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [transcription cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Audio minutes × rate by turnaround and quality, speaker and timestamp add-ons.
+- **Don't:** What /templates/transcription already explains (link it); rates without a source and date.
+
+### /tools/voice-over-rate-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [voice over rate calculator](../tools.md#toolsvoice-over-rate-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [voice over rate, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Per word or finished minute + usage (media, region, term) → a fee range from the pro's own base rate.
+- **Don't:** What /templates/voice-over already explains (link it); rates without a source and date.
+
+### /tools/copywriting-rate-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [copywriting rate calculator](../tools.md#toolscopywriting-rate-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [copywriting rate, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Per word vs per hour vs per project: words, research and revision time, the hourly rate behind a per-word price.
+- **Don't:** What /templates/copywriting already explains (link it); rates without a source and date.
+
+### /tools/trucking-cost-per-mile-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [trucking cost per mile calculator](../tools.md#toolstrucking-cost-per-mile-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [trucking cost per mile, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Fixed costs (truck payment, insurance, permits) + variable (fuel, maintenance, tyres) ÷ miles (km in the language versions) → cost per mile and the minimum rate.
+- **Don't:** What /templates/trucking already explains (link it); rates without a source and date.
+
+## L699: TL9 in Portuguese
+
+[ ] Pricing calculators III: makers and production · 0/7 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/3d-printing-cost-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [3d printing cost calculator](../tools.md#tools3d-printing-cost-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [3d printing cost, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Filament or resin grams × price, machine hours × rate, electricity, failure rate, post-processing, margin.
+- **Don't:** What /templates/3d-printing already explains (link it); rates without a source and date.
+
+### /tools/screen-printing-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [screen printing pricing calculator](../tools.md#toolsscreen-printing-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [screen printing pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Quantity breaks, colours per location, screens and setup, blanks, extra locations → price per shirt.
+- **Don't:** What /templates/screen-printing already explains (link it); rates without a source and date.
+
+### /tools/embroidery-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [embroidery pricing calculator](../tools.md#toolsembroidery-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [embroidery pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Stitch count × rate per 1,000 stitches, digitising fee, quantity breaks, garments.
+- **Don't:** What /templates/embroidery already explains (link it); rates without a source and date.
+
+### /tools/wholesale-price-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [wholesale price calculator](../tools.md#toolswholesale-price-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [wholesale price, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Cost → wholesale (× 2) → retail (× 2, keystone) or by target margin, for makers selling to shops.
+- **Don't:** What /templates/crafts already explains (link it); rates without a source and date.
+
+### /tools/etsy-fee-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [etsy fee calculator](../tools.md#toolsetsy-fee-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [etsy fee, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Listing, transaction, payment processing and offsite-ads fees by country (from Etsy's fee page, dated) → profit per sale.
+- **Don't:** What /templates/crafts already explains (link it); rates without a source and date.
+
+### /tools/upholstery-fabric-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [upholstery fabric calculator](../tools.md#toolsupholstery-fabric-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [upholstery fabric, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Yards (metres) by piece type, pattern repeat, cushions → fabric needed and its cost.
+- **Don't:** What /templates/upholstery already explains (link it); rates without a source and date.
+
+### /tools/laser-engraving-pricing-calculator → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [laser engraving pricing calculator](../tools.md#toolslaser-engraving-pricing-calculator) (planned: write the English page first)
+- **Search words:** "calculadora de [laser engraving pricing, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Machine minutes × rate, material, setup, quantity breaks.
+- **Don't:** What /templates/laser-engraving already explains (link it); rates without a source and date.

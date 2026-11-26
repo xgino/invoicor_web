@@ -6320,3 +6320,433 @@
 - **Search words:** the Danish term for "trucking rate per mile invoice"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Loaded miles × rate, deadhead, fuel surcharge, detention; the rate confirmation number.
 - **Don't:** General fields of the trade (owned by /templates/trucking): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+## L656: TL5 in Danish
+
+[ ] Tax tools for the self-employed · 0/3 live in da
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/vat-threshold-checker → Danish
+
+- [ ] **Live in da**
+- **English page:** [vat threshold calculator](../tools.md#toolsvat-threshold-checker) (planned: write the English page first)
+- **Search words:** "beregn [vat threshold, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Rolling 12-month turnover against the threshold (UK first; each language version with its country's threshold and test), the date you'd cross it, what to do next. Source per country, dated.
+- **Don't:** What /templates/no-vat-invoice already explains (link it); rates without a source and date.
+
+### /tools/reverse-charge-checker → Danish
+
+- [ ] **Live in da**
+- **English page:** [reverse charge checker](../tools.md#toolsreverse-charge-checker) (planned: write the English page first)
+- **Search words:** "beregn [reverse charge, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. A few questions (both businesses VAT-registered? in different EU countries? goods or services? B2B?) → whether the reverse charge applies and the wording to put on the invoice. Source: EU VAT Directive and the national tax offices.
+- **Don't:** What /reverse-charge-invoice already explains (link it); rates without a source and date.
+
+### /tools/invoice-requirements-checker → Danish
+
+- [ ] **Live in da**
+- **English page:** [invoice requirements checker](../tools.md#toolsinvoice-requirements-checker) (planned: write the English page first)
+- **Search words:** "beregn [invoice requirements, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Pick your country and situation (VAT registered or not, B2B or B2C, abroad) → the checklist of what your invoice must show, each item with its source; links to that country's page.
+- **Don't:** What /templates/no-vat-invoice already explains (link it); rates without a source and date.
+
+## L666: TL6 in Danish
+
+[ ] Payment fees, terms and payment details · 0/13 live in da
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/paypal-fee-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [paypal fee calculator](../tools.md#toolspaypal-fee-calculator) (planned: write the English page first)
+- **Search words:** "beregn [paypal fee, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. PayPal's fees by country and payment type (invoices, goods and services, international, currency conversion), and the reverse: how much to invoice to receive X. Fees from PayPal's own fee page with the date.
+- **Don't:** Rates without a source and date; claims the tool can't back up.
+
+### /tools/stripe-fee-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [stripe fee calculator](../tools.md#toolsstripe-fee-calculator) (planned: write the English page first)
+- **Search words:** "beregn [stripe fee, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Stripe's card fees by country, international and currency surcharges, invoicing fees, the gross-up. From Stripe's pricing page, dated.
+- **Don't:** What /compare/stripe-invoices already explains (link it); rates without a source and date.
+
+### /tools/square-fee-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [square fee calculator](../tools.md#toolssquare-fee-calculator) (planned: write the English page first)
+- **Search words:** "beregn [square fee, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Square's fees for invoices, card-present and online, by country, the gross-up. From Square's pricing page, dated.
+- **Don't:** What /compare/square-invoices already explains (link it); rates without a source and date.
+
+### /tools/credit-card-surcharge-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [credit card surcharge calculator](../tools.md#toolscredit-card-surcharge-calculator) (planned: write the English page first)
+- **Search words:** "beregn [credit card surcharge, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The surcharge to cover a card fee, capped at the actual cost, and where surcharges are banned or capped (EU consumer cards, some US states: hedge, cite).
+- **Don't:** What /tools/stripe-fee-calculator already explains (link it); rates without a source and date.
+
+### /tools/early-payment-discount-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [early payment discount calculator](../tools.md#toolsearly-payment-discount-calculator) (planned: write the English page first)
+- **Search words:** "beregn [early payment discount, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Terms like 2/10 net 30: the discounted amount, the last discount date, and the effective annual cost of not taking it.
+- **Don't:** What /tools/due-date-calculator already explains (link it); rates without a source and date.
+
+### /tools/invoice-factoring-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [invoice factoring calculator](../tools.md#toolsinvoice-factoring-calculator) (planned: write the English page first)
+- **Search words:** "beregn [invoice factoring, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Advance rate, factoring fee per 30 days, reserve released on payment → what you receive and the effective cost. Not advice; terms vary.
+- **Don't:** What /templates/trucking already explains (link it); rates without a source and date.
+
+### /tools/prorated-invoice-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [prorated invoice calculator](../tools.md#toolsprorated-invoice-calculator) (planned: write the English page first)
+- **Search words:** "beregn [prorated invoice, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. A monthly or yearly price for part of a period: by days in the month or a 30-day month, start and end dates, the amount to invoice.
+- **Don't:** What /templates/monthly-invoice already explains (link it); rates without a source and date.
+
+### /tools/business-days-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [business days calculator](../tools.md#toolsbusiness-days-calculator) (planned: write the English page first)
+- **Search words:** "beregn [business days, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Business days between two dates or N business days from a date, without weekends and the public holidays of the chosen country (holiday lists sourced, per year).
+- **Don't:** What /tools/due-date-calculator already explains (link it); rates without a source and date.
+
+### /tools/dso-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [days sales outstanding calculator](../tools.md#toolsdso-calculator) (planned: write the English page first)
+- **Search words:** "beregn [days sales outstanding, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Receivables ÷ credit sales × days, what it means for a small business, a target by payment terms.
+- **Don't:** What /tools/late-payment-interest-calculator already explains (link it); rates without a source and date.
+
+### /tools/sepa-qr-code-generator → Danish
+
+- [ ] **Live in da**
+- **English page:** [sepa qr code generator](../tools.md#toolssepa-qr-code-generator) (planned: write the English page first)
+- **Search words:** "beregn [sepa qr code, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The EPC QR code (GiroCode) for a SEPA transfer: name, IBAN, BIC, amount, reference → a QR to put on the invoice; made in the browser, nothing sent. Spec: the European Payments Council guideline.
+- **Don't:** What /tools/iban-checker already explains (link it); rates without a source and date.
+
+### /tools/swiss-qr-bill-generator → Danish
+
+- [ ] **Live in da**
+- **English page:** [swiss qr bill generator](../tools.md#toolsswiss-qr-bill-generator) (planned: write the English page first)
+- **Search words:** "beregn [swiss qr bill, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. The Swiss QR-bill payment part: creditor, QR-IBAN or IBAN, reference, amount → the payment slip as PDF/PNG. Spec: SIX Swiss Payment Standards, dated.
+- **Don't:** What /invoice-generator-switzerland already explains (link it); rates without a source and date.
+
+### /tools/amount-in-words-converter → Danish
+
+- [ ] **Live in da**
+- **English page:** [amount in words converter](../tools.md#toolsamount-in-words-converter) (planned: write the English page first)
+- **Search words:** "beregn [amount in words converter, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. An amount → words with the currency ('one thousand two hundred euros and 50 cents'), in the page's language, for invoices and cheques where the words are expected.
+- **Don't:** Rates without a source and date; claims the tool can't back up.
+
+### /tools/invoice-currency-converter → Danish
+
+- [ ] **Live in da**
+- **English page:** [invoice currency converter](../tools.md#toolsinvoice-currency-converter) (planned: write the English page first)
+- **Search words:** "beregn [invoice currency converter, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Works in the browser; the steps in plain words; every rate or rule with its official source and the date checked (re-check every 6 months); 'Put on an invoice' fills the generator where the result is an amount. Needs a decision first: the rate source (ECB daily reference rates are free). An amount at the day's reference rate with the date and source, for the 'converted at' note on an invoice.
+- **Don't:** What /templates/international-invoice already explains (link it); rates without a source and date.
+
+## L676: TL7 in Danish
+
+[ ] Job costing and materials for contractors · 0/13 live in da
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/job-costing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [job costing calculator](../tools.md#toolsjob-costing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [job costing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Revenue minus labour (hours × burdened rate), materials, subcontractors, equipment and overhead share → profit and margin per job.
+- **Don't:** What /tools/profit-margin-calculator already explains (link it); rates without a source and date.
+
+### /tools/overhead-rate-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [overhead rate calculator](../tools.md#toolsoverhead-rate-calculator) (planned: write the English page first)
+- **Search words:** "beregn [overhead rate, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Yearly overhead ÷ billable hours (or direct costs) → the overhead to add per hour or per job, plus the profit target.
+- **Don't:** What /tools/markup-calculator already explains (link it); rates without a source and date.
+
+### /tools/labor-burden-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [labor burden calculator](../tools.md#toolslabor-burden-calculator) (planned: write the English page first)
+- **Search words:** "beregn [labor burden, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wage + payroll taxes, insurance, benefits and paid time off ÷ productive hours → the true hourly cost of a worker (rates per country as examples, hedged).
+- **Don't:** What /tools/job-costing-calculator already explains (link it); rates without a source and date.
+
+### /tools/equipment-cost-per-hour-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [equipment cost per hour calculator](../tools.md#toolsequipment-cost-per-hour-calculator) (planned: write the English page first)
+- **Search words:** "beregn [equipment cost per hour, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Purchase price, life, resale, fuel, maintenance, insurance ÷ hours a year → the hourly rate to charge for a machine.
+- **Don't:** What /templates/equipment-rental already explains (link it); rates without a source and date.
+
+### /tools/insulation-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [insulation cost calculator](../tools.md#toolsinsulation-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [insulation cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area × the depth for the target R-value (or U-value) by material (batts, blown), bags or rolls needed, labour per square foot.
+- **Don't:** What /templates/insulation already explains (link it); rates without a source and date.
+
+### /tools/siding-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [siding cost calculator](../tools.md#toolssiding-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [siding cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wall area minus openings → squares + waste, trim and J-channel by linear foot, removal of old siding, labour per square.
+- **Don't:** What /templates/siding already explains (link it); rates without a source and date.
+
+### /tools/paver-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [paver cost calculator](../tools.md#toolspaver-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [paver cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → pavers by size + waste, base gravel and sand by depth, edging, labour per square foot.
+- **Don't:** What /templates/masonry already explains (link it); rates without a source and date.
+
+### /tools/retaining-wall-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [retaining wall cost calculator](../tools.md#toolsretaining-wall-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [retaining wall cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Length × height → blocks, caps, base and drainage gravel, labour per face foot; walls over a set height need an engineer (hedge).
+- **Don't:** What /templates/masonry already explains (link it); rates without a source and date.
+
+### /tools/landscape-material-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [landscape material calculator](../tools.md#toolslandscape-material-calculator) (planned: write the English page first)
+- **Search words:** "beregn [landscape material, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area × depth → cubic yards or m³ of mulch, gravel or topsoil, bags vs bulk, delivery, the price to put on the invoice.
+- **Don't:** What /templates/landscaping already explains (link it); rates without a source and date.
+
+### /tools/sod-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [sod cost calculator](../tools.md#toolssod-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [sod cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → pallets or rolls of sod, soil prep, labour per square foot, watering in.
+- **Don't:** What /templates/landscaping already explains (link it); rates without a source and date.
+
+### /tools/gutter-installation-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [gutter installation cost calculator](../tools.md#toolsgutter-installation-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [gutter installation cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Linear feet by material, downspouts by count and height, guards, removal of old gutters.
+- **Don't:** What /templates/gutter-installation already explains (link it); rates without a source and date.
+
+### /tools/epoxy-floor-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [epoxy floor cost calculator](../tools.md#toolsepoxy-floor-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [epoxy floor cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Area → kits or gallons by system and coats, grinding and crack repair, flakes, labour per square foot.
+- **Don't:** What /templates/epoxy-flooring already explains (link it); rates without a source and date.
+
+### /tools/wallpaper-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [wallpaper calculator](../tools.md#toolswallpaper-calculator) (planned: write the English page first)
+- **Search words:** "beregn [wallpaper, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wall area, roll size and pattern repeat → rolls needed + waste, removal and hanging labour per roll.
+- **Don't:** What /templates/wallpaper-installation already explains (link it); rates without a source and date.
+
+## L686: TL8 in Danish
+
+[ ] Pricing calculators II: services and transport · 0/14 live in da
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/janitorial-bidding-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [janitorial bidding calculator](../tools.md#toolsjanitorial-bidding-calculator) (planned: write the English page first)
+- **Search words:** "beregn [janitorial bidding, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Square feet ÷ production rate per hour by space type → hours per visit × visits a month × wage + burden, supplies, overhead and profit → the monthly bid.
+- **Don't:** What /templates/janitorial already explains (link it); rates without a source and date.
+
+### /tools/gutter-cleaning-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [gutter cleaning pricing calculator](../tools.md#toolsgutter-cleaning-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [gutter cleaning pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Linear feet by storey, downspouts, debris level, guards, a minimum.
+- **Don't:** What /templates/gutter-cleaning already explains (link it); rates without a source and date.
+
+### /tools/pest-control-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [pest control pricing calculator](../tools.md#toolspest-control-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [pest control pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Initial vs recurring service, home size, pest type, materials, quarterly vs monthly plans.
+- **Don't:** What /templates/pest-control already explains (link it); rates without a source and date.
+
+### /tools/pet-sitting-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [pet sitting pricing calculator](../tools.md#toolspet-sitting-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [pet sitting pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Visit length, pets, overnight stays, holidays and travel → per visit and per week.
+- **Don't:** What /templates/pet-sitting already explains (link it); rates without a source and date.
+
+### /tools/dog-grooming-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [dog grooming pricing calculator](../tools.md#toolsdog-grooming-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [dog grooming pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Size and coat → time × hourly rate, add-ons, matting and behaviour fees, mobile fee.
+- **Don't:** What /templates/dog-grooming already explains (link it); rates without a source and date.
+
+### /tools/auto-detailing-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [auto detailing pricing calculator](../tools.md#toolsauto-detailing-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [auto detailing pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Vehicle size and condition, package, add-ons (ceramic, odour), mobile fee → price per car.
+- **Don't:** What /templates/auto-detailing already explains (link it); rates without a source and date.
+
+### /tools/courier-delivery-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [courier delivery pricing calculator](../tools.md#toolscourier-delivery-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [courier delivery pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Base fee + distance × rate, weight and size, rush and waiting time, fuel surcharge.
+- **Don't:** What /templates/courier already explains (link it); rates without a source and date.
+
+### /tools/event-planner-fee-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [event planner fee calculator](../tools.md#toolsevent-planner-fee-calculator) (planned: write the English page first)
+- **Search words:** "beregn [event planner fee, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Flat fee vs % of the event budget vs hourly, compared side by side, with the deposit share.
+- **Don't:** What /templates/event-planning already explains (link it); rates without a source and date.
+
+### /tools/florist-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [florist pricing calculator](../tools.md#toolsflorist-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [florist pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Wholesale cost × the markup (e.g. 3×) + labour %, hard goods at a lower markup → the retail price per arrangement.
+- **Don't:** What /templates/florist already explains (link it); rates without a source and date.
+
+### /tools/translation-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [translation cost calculator](../tools.md#toolstranslation-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [translation cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Words × rate per word by language pair and field, minimum fee, rush and certification fees.
+- **Don't:** What /templates/translation already explains (link it); rates without a source and date.
+
+### /tools/transcription-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [transcription cost calculator](../tools.md#toolstranscription-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [transcription cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Audio minutes × rate by turnaround and quality, speaker and timestamp add-ons.
+- **Don't:** What /templates/transcription already explains (link it); rates without a source and date.
+
+### /tools/voice-over-rate-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [voice over rate calculator](../tools.md#toolsvoice-over-rate-calculator) (planned: write the English page first)
+- **Search words:** "beregn [voice over rate, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Per word or finished minute + usage (media, region, term) → a fee range from the pro's own base rate.
+- **Don't:** What /templates/voice-over already explains (link it); rates without a source and date.
+
+### /tools/copywriting-rate-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [copywriting rate calculator](../tools.md#toolscopywriting-rate-calculator) (planned: write the English page first)
+- **Search words:** "beregn [copywriting rate, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Per word vs per hour vs per project: words, research and revision time, the hourly rate behind a per-word price.
+- **Don't:** What /templates/copywriting already explains (link it); rates without a source and date.
+
+### /tools/trucking-cost-per-mile-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [trucking cost per mile calculator](../tools.md#toolstrucking-cost-per-mile-calculator) (planned: write the English page first)
+- **Search words:** "beregn [trucking cost per mile, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Fixed costs (truck payment, insurance, permits) + variable (fuel, maintenance, tyres) ÷ miles (km in the language versions) → cost per mile and the minimum rate.
+- **Don't:** What /templates/trucking already explains (link it); rates without a source and date.
+
+## L696: TL9 in Danish
+
+[ ] Pricing calculators III: makers and production · 0/7 live in da
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools/3d-printing-cost-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [3d printing cost calculator](../tools.md#tools3d-printing-cost-calculator) (planned: write the English page first)
+- **Search words:** "beregn [3d printing cost, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Filament or resin grams × price, machine hours × rate, electricity, failure rate, post-processing, margin.
+- **Don't:** What /templates/3d-printing already explains (link it); rates without a source and date.
+
+### /tools/screen-printing-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [screen printing pricing calculator](../tools.md#toolsscreen-printing-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [screen printing pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Quantity breaks, colours per location, screens and setup, blanks, extra locations → price per shirt.
+- **Don't:** What /templates/screen-printing already explains (link it); rates without a source and date.
+
+### /tools/embroidery-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [embroidery pricing calculator](../tools.md#toolsembroidery-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [embroidery pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Stitch count × rate per 1,000 stitches, digitising fee, quantity breaks, garments.
+- **Don't:** What /templates/embroidery already explains (link it); rates without a source and date.
+
+### /tools/wholesale-price-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [wholesale price calculator](../tools.md#toolswholesale-price-calculator) (planned: write the English page first)
+- **Search words:** "beregn [wholesale price, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Cost → wholesale (× 2) → retail (× 2, keystone) or by target margin, for makers selling to shops.
+- **Don't:** What /templates/crafts already explains (link it); rates without a source and date.
+
+### /tools/etsy-fee-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [etsy fee calculator](../tools.md#toolsetsy-fee-calculator) (planned: write the English page first)
+- **Search words:** "beregn [etsy fee, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Listing, transaction, payment processing and offsite-ads fees by country (from Etsy's fee page, dated) → profit per sale.
+- **Don't:** What /templates/crafts already explains (link it); rates without a source and date.
+
+### /tools/upholstery-fabric-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [upholstery fabric calculator](../tools.md#toolsupholstery-fabric-calculator) (planned: write the English page first)
+- **Search words:** "beregn [upholstery fabric, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Yards (metres) by piece type, pattern repeat, cushions → fabric needed and its cost.
+- **Don't:** What /templates/upholstery already explains (link it); rates without a source and date.
+
+### /tools/laser-engraving-pricing-calculator → Danish
+
+- [ ] **Live in da**
+- **English page:** [laser engraving pricing calculator](../tools.md#toolslaser-engraving-pricing-calculator) (planned: write the English page first)
+- **Search words:** "beregn [laser engraving pricing, in Danish]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Machine minutes × rate, material, setup, quantity breaks.
+- **Don't:** What /templates/laser-engraving already explains (link it); rates without a source and date.

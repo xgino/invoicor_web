@@ -50,8 +50,8 @@ export const TASKS = [
   {
     id: "S4",
     done: false,
-    title: "Calculator engine (for TL3)",
-    text: "One calculator component driven by a config per trade (inputs, units, formula steps, the 'Put on an invoice' link), metric units per language. TL3 waits for this.",
+    title: "Calculator engine (for TL3, TL7–TL9)",
+    text: "One calculator component driven by a config per trade (inputs, units, formula steps, the 'Put on an invoice' link), metric units per language. TL3 and TL7–TL9 wait for this.",
   },
 ];
 
@@ -127,6 +127,12 @@ export const ITEMS = [
   { id: "TL1", title: "Free tools I" },
   { id: "TL2", title: "Free tools II" },
   { id: "TL3", title: "Pricing calculators for trades", text: "needs task S4" },
+  { id: "TL4", title: "VAT and GST calculators per country (English)" },
+  { id: "TL5", title: "Tax tools for the self-employed" },
+  { id: "TL6", title: "Payment fees, terms and payment details" },
+  { id: "TL7", title: "Job costing and materials for contractors", text: "needs task S4" },
+  { id: "TL8", title: "Pricing calculators II: services and transport", text: "needs task S4" },
+  { id: "TL9", title: "Pricing calculators III: makers and production", text: "needs task S4" },
   { id: "G0", title: "The free invoice generator (built)" },
   { id: "G1", title: "Document generators (receipt, estimate, proforma, credit note)" },
   {
@@ -229,6 +235,13 @@ export const LANGUAGE_SOURCES = [
   "B13",
   "B14",
   "B15",
+  // Free tools TL4–TL9 (added 2026-11-27).
+  "TL4",
+  "TL5",
+  "TL6",
+  "TL7",
+  "TL8",
+  "TL9",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */
@@ -298,6 +311,12 @@ export const ORDER = [
   "B13",
   "B14",
   "B15",
+  "TL4",
+  "TL5",
+  "TL6",
+  "TL7",
+  "TL8",
+  "TL9",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

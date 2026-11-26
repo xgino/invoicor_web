@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 778 English and local pages + 7,650 language pages · **8,669 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 846 English and local pages + 8,150 language pages · **9,237 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -110,13 +110,13 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
-| [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 | 4 | 41 | 10/40 done |
+| [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 | 0 | 23 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 | 0 | 32 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L650 | 80 | 7650 | |
+| [Languages](#languages-l) | L1–L700 | 80 | 8150 | |
 
 ## Suggested order
 
@@ -124,14 +124,14 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9**
 
 ## Tasks (S): code, no pages
 
 - [ ] **S1** Language setup for templates and industry pages (roadmap H4): The template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, and the sitemap split per page type (a sitemap index, so Search Console shows indexing per type). Every L item for templates and industry pages waits for this.
 - [ ] **S2** Hubs at scale: With 150+ templates the hubs need groups (home services, trades, creative, professional, invoice types, billing types) with anchors and a short intro each, so every page is at most 2 clicks from its hub. No thin sub-hub URLs: groups are sections of the one hub.
 - [ ] **S3** Country page type (roadmap chunk 43): The page code for country pages (CT items) and local rule pages (LO1): the generator preset per country plus the rules section. CT and LO1 wait for this.
-- [ ] **S4** Calculator engine (for TL3): One calculator component driven by a config per trade (inputs, units, formula steps, the 'Put on an invoice' link), metric units per language. TL3 waits for this.
+- [ ] **S4** Calculator engine (for TL3, TL7–TL9): One calculator component driven by a config per trade (inputs, units, formula steps, the 'Put on an invoice' link), metric units per language. TL3 and TL7–TL9 wait for this.
 
 ## Trade templates (T)
 
@@ -1239,6 +1239,98 @@ Direction (what these pages can and can't do) and every brief: [plan/tools.md](p
   - [ ] [/tools/pool-cleaning-pricing-calculator](plan/tools.md#toolspool-cleaning-pricing-calculator) pool cleaning pricing calculator
   - [ ] [/tools/catering-cost-calculator](plan/tools.md#toolscatering-cost-calculator) catering cost calculator
   - [ ] [/tools/cake-pricing-calculator](plan/tools.md#toolscake-pricing-calculator) cake pricing calculator
+
+### TL4: VAT and GST calculators per country (English)
+
+- [ ] **TL4** · 0/9 live
+  - [ ] [/tools/uk-vat-calculator](plan/tools.md#toolsuk-vat-calculator) uk vat calculator
+  - [ ] [/tools/ireland-vat-calculator](plan/tools.md#toolsireland-vat-calculator) ireland vat calculator
+  - [ ] [/tools/south-africa-vat-calculator](plan/tools.md#toolssouth-africa-vat-calculator) south africa vat calculator
+  - [ ] [/tools/uae-vat-calculator](plan/tools.md#toolsuae-vat-calculator) uae vat calculator
+  - [ ] [/tools/australia-gst-calculator](plan/tools.md#toolsaustralia-gst-calculator) australia gst calculator
+  - [ ] [/tools/nz-gst-calculator](plan/tools.md#toolsnz-gst-calculator) nz gst calculator
+  - [ ] [/tools/singapore-gst-calculator](plan/tools.md#toolssingapore-gst-calculator) singapore gst calculator
+  - [ ] [/tools/india-gst-calculator](plan/tools.md#toolsindia-gst-calculator) india gst calculator
+  - [ ] [/tools/canada-gst-hst-calculator](plan/tools.md#toolscanada-gst-hst-calculator) canada gst hst calculator
+
+### TL5: Tax tools for the self-employed
+
+- [ ] **TL5** · 0/8 live · languages: [L651–L660](#tl5-in-every-language)
+  - [ ] [/tools/self-employment-tax-calculator](plan/tools.md#toolsself-employment-tax-calculator) self employment tax calculator
+  - [ ] [/tools/quarterly-estimated-tax-calculator](plan/tools.md#toolsquarterly-estimated-tax-calculator) quarterly estimated tax calculator
+  - [ ] [/tools/1099-vs-w2-calculator](plan/tools.md#tools1099-vs-w2-calculator) 1099 vs w2 calculator
+  - [ ] [/tools/vat-threshold-checker](plan/tools.md#toolsvat-threshold-checker) vat threshold calculator
+  - [ ] [/tools/flat-rate-vat-calculator](plan/tools.md#toolsflat-rate-vat-calculator) flat rate vat calculator
+  - [ ] [/tools/cis-deduction-calculator](plan/tools.md#toolscis-deduction-calculator) cis deduction calculator
+  - [ ] [/tools/reverse-charge-checker](plan/tools.md#toolsreverse-charge-checker) reverse charge checker
+  - [ ] [/tools/invoice-requirements-checker](plan/tools.md#toolsinvoice-requirements-checker) invoice requirements checker
+
+### TL6: Payment fees, terms and payment details
+
+- [ ] **TL6** · 0/13 live · languages: [L661–L670](#tl6-in-every-language)
+  - [ ] [/tools/paypal-fee-calculator](plan/tools.md#toolspaypal-fee-calculator) paypal fee calculator
+  - [ ] [/tools/stripe-fee-calculator](plan/tools.md#toolsstripe-fee-calculator) stripe fee calculator
+  - [ ] [/tools/square-fee-calculator](plan/tools.md#toolssquare-fee-calculator) square fee calculator
+  - [ ] [/tools/credit-card-surcharge-calculator](plan/tools.md#toolscredit-card-surcharge-calculator) credit card surcharge calculator
+  - [ ] [/tools/early-payment-discount-calculator](plan/tools.md#toolsearly-payment-discount-calculator) early payment discount calculator
+  - [ ] [/tools/invoice-factoring-calculator](plan/tools.md#toolsinvoice-factoring-calculator) invoice factoring calculator
+  - [ ] [/tools/prorated-invoice-calculator](plan/tools.md#toolsprorated-invoice-calculator) prorated invoice calculator
+  - [ ] [/tools/business-days-calculator](plan/tools.md#toolsbusiness-days-calculator) business days calculator
+  - [ ] [/tools/dso-calculator](plan/tools.md#toolsdso-calculator) days sales outstanding calculator
+  - [ ] [/tools/sepa-qr-code-generator](plan/tools.md#toolssepa-qr-code-generator) sepa qr code generator
+  - [ ] [/tools/swiss-qr-bill-generator](plan/tools.md#toolsswiss-qr-bill-generator) swiss qr bill generator
+  - [ ] [/tools/amount-in-words-converter](plan/tools.md#toolsamount-in-words-converter) amount in words converter
+  - [ ] [/tools/invoice-currency-converter](plan/tools.md#toolsinvoice-currency-converter) invoice currency converter
+
+### TL7: Job costing and materials for contractors
+
+- [ ] **TL7** · 0/15 live · needs task S4 · languages: [L671–L680](#tl7-in-every-language)
+  - [ ] [/tools/job-costing-calculator](plan/tools.md#toolsjob-costing-calculator) job costing calculator
+  - [ ] [/tools/overhead-rate-calculator](plan/tools.md#toolsoverhead-rate-calculator) overhead rate calculator
+  - [ ] [/tools/labor-burden-calculator](plan/tools.md#toolslabor-burden-calculator) labor burden calculator
+  - [ ] [/tools/equipment-cost-per-hour-calculator](plan/tools.md#toolsequipment-cost-per-hour-calculator) equipment cost per hour calculator
+  - [ ] [/tools/board-feet-calculator](plan/tools.md#toolsboard-feet-calculator) board feet calculator
+  - [ ] [/tools/cubic-yard-calculator](plan/tools.md#toolscubic-yard-calculator) cubic yard calculator
+  - [ ] [/tools/insulation-cost-calculator](plan/tools.md#toolsinsulation-cost-calculator) insulation cost calculator
+  - [ ] [/tools/siding-cost-calculator](plan/tools.md#toolssiding-cost-calculator) siding cost calculator
+  - [ ] [/tools/paver-cost-calculator](plan/tools.md#toolspaver-cost-calculator) paver cost calculator
+  - [ ] [/tools/retaining-wall-cost-calculator](plan/tools.md#toolsretaining-wall-cost-calculator) retaining wall cost calculator
+  - [ ] [/tools/landscape-material-calculator](plan/tools.md#toolslandscape-material-calculator) landscape material calculator
+  - [ ] [/tools/sod-cost-calculator](plan/tools.md#toolssod-cost-calculator) sod cost calculator
+  - [ ] [/tools/gutter-installation-cost-calculator](plan/tools.md#toolsgutter-installation-cost-calculator) gutter installation cost calculator
+  - [ ] [/tools/epoxy-floor-cost-calculator](plan/tools.md#toolsepoxy-floor-cost-calculator) epoxy floor cost calculator
+  - [ ] [/tools/wallpaper-calculator](plan/tools.md#toolswallpaper-calculator) wallpaper calculator
+
+### TL8: Pricing calculators II: services and transport
+
+- [ ] **TL8** · 0/16 live · needs task S4 · languages: [L681–L690](#tl8-in-every-language)
+  - [ ] [/tools/janitorial-bidding-calculator](plan/tools.md#toolsjanitorial-bidding-calculator) janitorial bidding calculator
+  - [ ] [/tools/gutter-cleaning-pricing-calculator](plan/tools.md#toolsgutter-cleaning-pricing-calculator) gutter cleaning pricing calculator
+  - [ ] [/tools/pest-control-pricing-calculator](plan/tools.md#toolspest-control-pricing-calculator) pest control pricing calculator
+  - [ ] [/tools/pet-sitting-pricing-calculator](plan/tools.md#toolspet-sitting-pricing-calculator) pet sitting pricing calculator
+  - [ ] [/tools/dog-grooming-pricing-calculator](plan/tools.md#toolsdog-grooming-pricing-calculator) dog grooming pricing calculator
+  - [ ] [/tools/auto-detailing-pricing-calculator](plan/tools.md#toolsauto-detailing-pricing-calculator) auto detailing pricing calculator
+  - [ ] [/tools/courier-delivery-pricing-calculator](plan/tools.md#toolscourier-delivery-pricing-calculator) courier delivery pricing calculator
+  - [ ] [/tools/event-planner-fee-calculator](plan/tools.md#toolsevent-planner-fee-calculator) event planner fee calculator
+  - [ ] [/tools/florist-pricing-calculator](plan/tools.md#toolsflorist-pricing-calculator) florist pricing calculator
+  - [ ] [/tools/translation-cost-calculator](plan/tools.md#toolstranslation-cost-calculator) translation cost calculator
+  - [ ] [/tools/transcription-cost-calculator](plan/tools.md#toolstranscription-cost-calculator) transcription cost calculator
+  - [ ] [/tools/voice-over-rate-calculator](plan/tools.md#toolsvoice-over-rate-calculator) voice over rate calculator
+  - [ ] [/tools/copywriting-rate-calculator](plan/tools.md#toolscopywriting-rate-calculator) copywriting rate calculator
+  - [ ] [/tools/trucking-cost-per-mile-calculator](plan/tools.md#toolstrucking-cost-per-mile-calculator) trucking cost per mile calculator
+  - [ ] [/tools/fuel-surcharge-calculator](plan/tools.md#toolsfuel-surcharge-calculator) fuel surcharge calculator
+  - [ ] [/tools/detention-pay-calculator](plan/tools.md#toolsdetention-pay-calculator) detention pay calculator
+
+### TL9: Pricing calculators III: makers and production
+
+- [ ] **TL9** · 0/7 live · needs task S4 · languages: [L691–L700](#tl9-in-every-language)
+  - [ ] [/tools/3d-printing-cost-calculator](plan/tools.md#tools3d-printing-cost-calculator) 3d printing cost calculator
+  - [ ] [/tools/screen-printing-pricing-calculator](plan/tools.md#toolsscreen-printing-pricing-calculator) screen printing pricing calculator
+  - [ ] [/tools/embroidery-pricing-calculator](plan/tools.md#toolsembroidery-pricing-calculator) embroidery pricing calculator
+  - [ ] [/tools/wholesale-price-calculator](plan/tools.md#toolswholesale-price-calculator) wholesale price calculator
+  - [ ] [/tools/etsy-fee-calculator](plan/tools.md#toolsetsy-fee-calculator) etsy fee calculator
+  - [ ] [/tools/upholstery-fabric-calculator](plan/tools.md#toolsupholstery-fabric-calculator) upholstery fabric calculator
+  - [ ] [/tools/laser-engraving-pricing-calculator](plan/tools.md#toolslaser-engraving-pricing-calculator) laser engraving pricing calculator
 
 ## Country pages (English) (CT)
 
@@ -2388,6 +2480,81 @@ Per-unit billing: per word, mile and minute · 5 pages
 - [ ] [**L648**](plan/languages/it.md#l648-b15-in-italian) Italian · 0/5
 - [ ] [**L649**](plan/languages/pt.md#l649-b15-in-portuguese) Portuguese · 0/5
 - [ ] [**L650**](plan/languages/pl.md#l650-b15-in-polish) Polish · 0/5
+
+### TL5 in every language
+
+Tax tools for the self-employed · 3 pages
+
+- [ ] [**L651**](plan/languages/de.md#l651-tl5-in-german) German · 0/3
+- [ ] [**L652**](plan/languages/es.md#l652-tl5-in-spanish) Spanish · 0/3
+- [ ] [**L653**](plan/languages/fr.md#l653-tl5-in-french) French · 0/3
+- [ ] [**L654**](plan/languages/nl.md#l654-tl5-in-dutch) Dutch · 0/3
+- [ ] [**L655**](plan/languages/sv.md#l655-tl5-in-swedish) Swedish · 0/3
+- [ ] [**L656**](plan/languages/da.md#l656-tl5-in-danish) Danish · 0/3
+- [ ] [**L657**](plan/languages/nb.md#l657-tl5-in-norwegian-bokmål) Norwegian (Bokmål) · 0/3
+- [ ] [**L658**](plan/languages/it.md#l658-tl5-in-italian) Italian · 0/3
+- [ ] [**L659**](plan/languages/pt.md#l659-tl5-in-portuguese) Portuguese · 0/3
+- [ ] [**L660**](plan/languages/pl.md#l660-tl5-in-polish) Polish · 0/3
+
+### TL6 in every language
+
+Payment fees, terms and payment details · 13 pages
+
+- [ ] [**L661**](plan/languages/de.md#l661-tl6-in-german) German · 0/13
+- [ ] [**L662**](plan/languages/es.md#l662-tl6-in-spanish) Spanish · 0/13
+- [ ] [**L663**](plan/languages/fr.md#l663-tl6-in-french) French · 0/13
+- [ ] [**L664**](plan/languages/nl.md#l664-tl6-in-dutch) Dutch · 0/13
+- [ ] [**L665**](plan/languages/sv.md#l665-tl6-in-swedish) Swedish · 0/13
+- [ ] [**L666**](plan/languages/da.md#l666-tl6-in-danish) Danish · 0/13
+- [ ] [**L667**](plan/languages/nb.md#l667-tl6-in-norwegian-bokmål) Norwegian (Bokmål) · 0/13
+- [ ] [**L668**](plan/languages/it.md#l668-tl6-in-italian) Italian · 0/13
+- [ ] [**L669**](plan/languages/pt.md#l669-tl6-in-portuguese) Portuguese · 0/13
+- [ ] [**L670**](plan/languages/pl.md#l670-tl6-in-polish) Polish · 0/13
+
+### TL7 in every language
+
+Job costing and materials for contractors · 13 pages
+
+- [ ] [**L671**](plan/languages/de.md#l671-tl7-in-german) German · 0/13
+- [ ] [**L672**](plan/languages/es.md#l672-tl7-in-spanish) Spanish · 0/13
+- [ ] [**L673**](plan/languages/fr.md#l673-tl7-in-french) French · 0/13
+- [ ] [**L674**](plan/languages/nl.md#l674-tl7-in-dutch) Dutch · 0/13
+- [ ] [**L675**](plan/languages/sv.md#l675-tl7-in-swedish) Swedish · 0/13
+- [ ] [**L676**](plan/languages/da.md#l676-tl7-in-danish) Danish · 0/13
+- [ ] [**L677**](plan/languages/nb.md#l677-tl7-in-norwegian-bokmål) Norwegian (Bokmål) · 0/13
+- [ ] [**L678**](plan/languages/it.md#l678-tl7-in-italian) Italian · 0/13
+- [ ] [**L679**](plan/languages/pt.md#l679-tl7-in-portuguese) Portuguese · 0/13
+- [ ] [**L680**](plan/languages/pl.md#l680-tl7-in-polish) Polish · 0/13
+
+### TL8 in every language
+
+Pricing calculators II: services and transport · 14 pages
+
+- [ ] [**L681**](plan/languages/de.md#l681-tl8-in-german) German · 0/14
+- [ ] [**L682**](plan/languages/es.md#l682-tl8-in-spanish) Spanish · 0/14
+- [ ] [**L683**](plan/languages/fr.md#l683-tl8-in-french) French · 0/14
+- [ ] [**L684**](plan/languages/nl.md#l684-tl8-in-dutch) Dutch · 0/14
+- [ ] [**L685**](plan/languages/sv.md#l685-tl8-in-swedish) Swedish · 0/14
+- [ ] [**L686**](plan/languages/da.md#l686-tl8-in-danish) Danish · 0/14
+- [ ] [**L687**](plan/languages/nb.md#l687-tl8-in-norwegian-bokmål) Norwegian (Bokmål) · 0/14
+- [ ] [**L688**](plan/languages/it.md#l688-tl8-in-italian) Italian · 0/14
+- [ ] [**L689**](plan/languages/pt.md#l689-tl8-in-portuguese) Portuguese · 0/14
+- [ ] [**L690**](plan/languages/pl.md#l690-tl8-in-polish) Polish · 0/14
+
+### TL9 in every language
+
+Pricing calculators III: makers and production · 7 pages
+
+- [ ] [**L691**](plan/languages/de.md#l691-tl9-in-german) German · 0/7
+- [ ] [**L692**](plan/languages/es.md#l692-tl9-in-spanish) Spanish · 0/7
+- [ ] [**L693**](plan/languages/fr.md#l693-tl9-in-french) French · 0/7
+- [ ] [**L694**](plan/languages/nl.md#l694-tl9-in-dutch) Dutch · 0/7
+- [ ] [**L695**](plan/languages/sv.md#l695-tl9-in-swedish) Swedish · 0/7
+- [ ] [**L696**](plan/languages/da.md#l696-tl9-in-danish) Danish · 0/7
+- [ ] [**L697**](plan/languages/nb.md#l697-tl9-in-norwegian-bokmål) Norwegian (Bokmål) · 0/7
+- [ ] [**L698**](plan/languages/it.md#l698-tl9-in-italian) Italian · 0/7
+- [ ] [**L699**](plan/languages/pt.md#l699-tl9-in-portuguese) Portuguese · 0/7
+- [ ] [**L700**](plan/languages/pl.md#l700-tl9-in-polish) Polish · 0/7
 
 ## Not in an item yet
 
