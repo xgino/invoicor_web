@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 558 English and local pages + 5,590 language pages · **6,389 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 660 English and local pages + 6,470 language pages · **7,371 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -108,7 +108,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 | 50 | 263 | 0/200 done |
 | [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 | 0 | 59 | 0/30 done |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
-| [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 | 43 | 94 | 0/90 done |
+| [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 | 4 | 41 | 10/40 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 | 0 | 23 | 0/10 done |
@@ -116,7 +116,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L420 | 80 | 5590 | |
+| [Languages](#languages-l) | L1–L530 | 80 | 6470 | |
 
 ## Suggested order
 
@@ -124,7 +124,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20**
 
 ## Tasks (S): code, no pages
 
@@ -810,6 +810,152 @@ Direction (what these pages can and can't do) and every brief: [plan/industries.
   - [ ] [/industries/real-estate-agents](plan/industries.md#industriesreal-estate-agents) invoice app for real estate agents
   - [ ] [/industries/private-investigators](plan/industries.md#industriesprivate-investigators) invoice app for private investigators
   - [ ] [/industries/equipment-rental-companies](plan/industries.md#industriesequipment-rental-companies) invoice app for equipment rental companies
+
+### I10: One trade per page: split the combined industry pages
+
+- [ ] **I10** · 0/6 live · each split narrows its old combined page when it goes live (see the briefs) · languages: [L421–L430](#i10-in-every-language)
+  - [ ] [/industries/hvac-companies](plan/industries.md#industrieshvac-companies) invoice app for hvac companies
+  - [ ] [/industries/auto-detailers](plan/industries.md#industriesauto-detailers) invoice app for auto detailers
+  - [ ] [/industries/videographers](plan/industries.md#industriesvideographers) invoice app for videographers
+  - [ ] [/industries/lawn-care-companies](plan/industries.md#industrieslawn-care-companies) invoice app for lawn care companies
+  - [ ] [/industries/life-coaches](plan/industries.md#industrieslife-coaches) invoice app for life coaches
+  - [ ] [/industries/hair-stylists](plan/industries.md#industrieshair-stylists) invoice app for hair stylists
+
+### I11: Who invoices: self-employed, freelancers, sellers
+
+- [ ] **I11** · 0/9 live · languages: [L431–L440](#i11-in-every-language)
+  - [ ] [/industries/self-employed](plan/industries.md#industriesself-employed) invoice app for self employed
+  - [ ] [/industries/freelancers](plan/industries.md#industriesfreelancers) invoice app for freelancers
+  - [ ] [/industries/independent-contractors](plan/industries.md#industriesindependent-contractors) invoice app for independent contractors
+  - [ ] [/industries/tradespeople](plan/industries.md#industriestradespeople) invoice app for tradespeople
+  - [ ] [/industries/home-service-businesses](plan/industries.md#industrieshome-service-businesses) invoice app for home service businesses
+  - [ ] [/industries/gig-workers](plan/industries.md#industriesgig-workers) invoice app for gig workers
+  - [ ] [/industries/crafters](plan/industries.md#industriescrafters) invoice app for crafters
+  - [ ] [/industries/online-sellers](plan/industries.md#industriesonline-sellers) invoice app for online sellers
+  - [ ] [/industries/wholesalers](plan/industries.md#industrieswholesalers) invoice app for wholesalers
+
+### I12: Specialist contractors
+
+- [ ] **I12** · 0/10 live · languages: [L441–L450](#i12-in-every-language)
+  - [ ] [/industries/handymen](plan/industries.md#industrieshandymen) invoice app for handymen
+  - [ ] [/industries/garage-door-companies](plan/industries.md#industriesgarage-door-companies) invoice app for garage door companies
+  - [ ] [/industries/gas-engineers](plan/industries.md#industriesgas-engineers) invoice app for gas engineers
+  - [ ] [/industries/plasterers](plan/industries.md#industriesplasterers) invoice app for plasterers
+  - [ ] [/industries/concrete-contractors](plan/industries.md#industriesconcrete-contractors) invoice app for concrete contractors
+  - [ ] [/industries/low-voltage-contractors](plan/industries.md#industrieslow-voltage-contractors) invoice app for low voltage contractors
+  - [ ] [/industries/fire-protection-companies](plan/industries.md#industriesfire-protection-companies) invoice app for fire protection companies
+  - [ ] [/industries/scaffolding-companies](plan/industries.md#industriesscaffolding-companies) invoice app for scaffolding companies
+  - [ ] [/industries/foundation-repair-companies](plan/industries.md#industriesfoundation-repair-companies) invoice app for foundation repair companies
+  - [ ] [/industries/christmas-light-installers](plan/industries.md#industrieschristmas-light-installers) invoice app for christmas light installers
+
+### I13: Cleaning, waste and property services
+
+- [ ] **I13** · 0/7 live · languages: [L451–L460](#i13-in-every-language)
+  - [ ] [/industries/janitorial-companies](plan/industries.md#industriesjanitorial-companies) invoice app for janitorial companies
+  - [ ] [/industries/dumpster-rental-companies](plan/industries.md#industriesdumpster-rental-companies) invoice app for dumpster rental companies
+  - [ ] [/industries/portable-toilet-companies](plan/industries.md#industriesportable-toilet-companies) invoice app for portable toilet companies
+  - [ ] [/industries/pooper-scooper-businesses](plan/industries.md#industriespooper-scooper-businesses) invoice app for pooper scooper businesses
+  - [ ] [/industries/hood-cleaning-companies](plan/industries.md#industrieshood-cleaning-companies) invoice app for hood cleaning companies
+  - [ ] [/industries/property-preservation-companies](plan/industries.md#industriesproperty-preservation-companies) invoice app for property preservation companies
+  - [ ] [/industries/appraisers](plan/industries.md#industriesappraisers) invoice app for appraisers
+
+### I14: Auto shops and transport
+
+- [ ] **I14** · 0/10 live · languages: [L461–L470](#i14-in-every-language)
+  - [ ] [/industries/auto-body-shops](plan/industries.md#industriesauto-body-shops) invoice app for auto body shops
+  - [ ] [/industries/auto-glass-shops](plan/industries.md#industriesauto-glass-shops) invoice app for auto glass shops
+  - [ ] [/industries/tire-shops](plan/industries.md#industriestire-shops) invoice app for tire shops
+  - [ ] [/industries/window-tint-shops](plan/industries.md#industrieswindow-tint-shops) invoice app for window tint shops
+  - [ ] [/industries/pdr-technicians](plan/industries.md#industriespdr-technicians) invoice app for pdr technicians
+  - [ ] [/industries/heavy-equipment-mechanics](plan/industries.md#industriesheavy-equipment-mechanics) invoice app for heavy equipment mechanics
+  - [ ] [/industries/car-haulers](plan/industries.md#industriescar-haulers) invoice app for car haulers
+  - [ ] [/industries/freight-brokers](plan/industries.md#industriesfreight-brokers) invoice app for freight brokers
+  - [ ] [/industries/truck-dispatchers](plan/industries.md#industriestruck-dispatchers) invoice app for truck dispatchers
+  - [ ] [/industries/flight-instructors](plan/industries.md#industriesflight-instructors) invoice app for flight instructors
+
+### I15: Professional services
+
+- [ ] **I15** · 0/11 live · languages: [L471–L480](#i15-in-every-language)
+  - [ ] [/industries/accountants](plan/industries.md#industriesaccountants) invoice app for accountants
+  - [ ] [/industries/financial-advisors](plan/industries.md#industriesfinancial-advisors) invoice app for financial advisors
+  - [ ] [/industries/recruiters](plan/industries.md#industriesrecruiters) invoice app for recruiters
+  - [ ] [/industries/staffing-agencies](plan/industries.md#industriesstaffing-agencies) invoice app for staffing agencies
+  - [ ] [/industries/mediators](plan/industries.md#industriesmediators) invoice app for mediators
+  - [ ] [/industries/process-servers](plan/industries.md#industriesprocess-servers) invoice app for process servers
+  - [ ] [/industries/court-reporters](plan/industries.md#industriescourt-reporters) invoice app for court reporters
+  - [ ] [/industries/insurance-adjusters](plan/industries.md#industriesinsurance-adjusters) invoice app for insurance adjusters
+  - [ ] [/industries/msps](plan/industries.md#industriesmsps) invoice app for msps
+  - [ ] [/industries/engineering-firms](plan/industries.md#industriesengineering-firms) invoice app for engineering firms
+  - [ ] [/industries/environmental-consultants](plan/industries.md#industriesenvironmental-consultants) invoice app for environmental consultants
+
+### I16: Events, food and travel
+
+- [ ] **I16** · 0/10 live · languages: [L481–L490](#i16-in-every-language)
+  - [ ] [/industries/balloon-artists](plan/industries.md#industriesballoon-artists) invoice app for balloon artists
+  - [ ] [/industries/entertainers](plan/industries.md#industriesentertainers) invoice app for entertainers
+  - [ ] [/industries/travel-agents](plan/industries.md#industriestravel-agents) invoice app for travel agents
+  - [ ] [/industries/tour-operators](plan/industries.md#industriestour-operators) invoice app for tour operators
+  - [ ] [/industries/meal-prep-businesses](plan/industries.md#industriesmeal-prep-businesses) invoice app for meal prep businesses
+  - [ ] [/industries/food-trucks](plan/industries.md#industriesfood-trucks) invoice app for food trucks
+  - [ ] [/industries/event-decorators](plan/industries.md#industriesevent-decorators) invoice app for event decorators
+  - [ ] [/industries/wedding-vendors](plan/industries.md#industrieswedding-vendors) invoice app for wedding vendors
+  - [ ] [/industries/bartenders](plan/industries.md#industriesbartenders) invoice app for bartenders
+  - [ ] [/industries/event-venues](plan/industries.md#industriesevent-venues) invoice app for event venues
+
+### I17: Creative and media
+
+- [ ] **I17** · 0/9 live · languages: [L491–L500](#i17-in-every-language)
+  - [ ] [/industries/production-companies](plan/industries.md#industriesproduction-companies) invoice app for production companies
+  - [ ] [/industries/animators](plan/industries.md#industriesanimators) invoice app for animators
+  - [ ] [/industries/3d-artists](plan/industries.md#industries3d-artists) invoice app for 3d artists
+  - [ ] [/industries/fashion-designers](plan/industries.md#industriesfashion-designers) invoice app for fashion designers
+  - [ ] [/industries/fashion-stylists](plan/industries.md#industriesfashion-stylists) invoice app for fashion stylists
+  - [ ] [/industries/actors](plan/industries.md#industriesactors) invoice app for actors
+  - [ ] [/industries/models](plan/industries.md#industriesmodels) invoice app for models
+  - [ ] [/industries/creative-agencies](plan/industries.md#industriescreative-agencies) invoice app for creative agencies
+  - [ ] [/industries/game-developers](plan/industries.md#industriesgame-developers) invoice app for game developers
+
+### I18: Health, wellness and beauty
+
+- [ ] **I18** · 0/11 live · languages: [L501–L510](#i18-in-every-language)
+  - [ ] [/industries/physiotherapists](plan/industries.md#industriesphysiotherapists) invoice app for physiotherapists
+  - [ ] [/industries/chiropractors](plan/industries.md#industrieschiropractors) invoice app for chiropractors
+  - [ ] [/industries/acupuncturists](plan/industries.md#industriesacupuncturists) invoice app for acupuncturists
+  - [ ] [/industries/speech-therapists](plan/industries.md#industriesspeech-therapists) invoice app for speech therapists
+  - [ ] [/industries/occupational-therapists](plan/industries.md#industriesoccupational-therapists) invoice app for occupational therapists
+  - [ ] [/industries/locums](plan/industries.md#industrieslocums) invoice app for locums
+  - [ ] [/industries/nurses](plan/industries.md#industriesnurses) invoice app for nurses
+  - [ ] [/industries/midwives](plan/industries.md#industriesmidwives) invoice app for midwives
+  - [ ] [/industries/holistic-practitioners](plan/industries.md#industriesholistic-practitioners) invoice app for holistic practitioners
+  - [ ] [/industries/spray-tan-artists](plan/industries.md#industriesspray-tan-artists) invoice app for spray tan artists
+  - [ ] [/industries/pmu-artists](plan/industries.md#industriespmu-artists) invoice app for pmu artists
+
+### I19: Education and childcare
+
+- [ ] **I19** · 0/10 live · languages: [L511–L520](#i19-in-every-language)
+  - [ ] [/industries/daycare-providers](plan/industries.md#industriesdaycare-providers) invoice app for daycare providers
+  - [ ] [/industries/childminders](plan/industries.md#industrieschildminders) invoice app for childminders
+  - [ ] [/industries/after-school-programs](plan/industries.md#industriesafter-school-programs) invoice app for after school programs
+  - [ ] [/industries/summer-camps](plan/industries.md#industriessummer-camps) invoice app for summer camps
+  - [ ] [/industries/language-teachers](plan/industries.md#industrieslanguage-teachers) invoice app for language teachers
+  - [ ] [/industries/corporate-trainers](plan/industries.md#industriescorporate-trainers) invoice app for corporate trainers
+  - [ ] [/industries/speakers](plan/industries.md#industriesspeakers) invoice app for speakers
+  - [ ] [/industries/riding-instructors](plan/industries.md#industriesriding-instructors) invoice app for riding instructors
+  - [ ] [/industries/martial-arts-schools](plan/industries.md#industriesmartial-arts-schools) invoice app for martial arts schools
+  - [ ] [/industries/cpr-instructors](plan/industries.md#industriescpr-instructors) invoice app for cpr instructors
+
+### I20: Animals, farms and outdoors
+
+- [ ] **I20** · 0/9 live · languages: [L521–L530](#i20-in-every-language)
+  - [ ] [/industries/dog-groomers](plan/industries.md#industriesdog-groomers) invoice app for dog groomers
+  - [ ] [/industries/kennels](plan/industries.md#industrieskennels) invoice app for kennels
+  - [ ] [/industries/farriers](plan/industries.md#industriesfarriers) invoice app for farriers
+  - [ ] [/industries/stables](plan/industries.md#industriesstables) invoice app for stables
+  - [ ] [/industries/horse-trainers](plan/industries.md#industrieshorse-trainers) invoice app for horse trainers
+  - [ ] [/industries/outfitters](plan/industries.md#industriesoutfitters) invoice app for outfitters
+  - [ ] [/industries/fishing-charters](plan/industries.md#industriesfishing-charters) invoice app for fishing charters
+  - [ ] [/industries/custom-harvesters](plan/industries.md#industriescustom-harvesters) invoice app for custom harvesters
+  - [ ] [/industries/loggers](plan/industries.md#industriesloggers) invoice app for loggers
 
 ## Compare pages ("{competitor} alternative") (C)
 
@@ -1731,6 +1877,171 @@ Animals, farms and outdoors · 12 pages
 - [ ] [**L418**](plan/languages/it.md#l418-t20-in-italian) Italian · 0/12
 - [ ] [**L419**](plan/languages/pt.md#l419-t20-in-portuguese) Portuguese · 0/12
 - [ ] [**L420**](plan/languages/pl.md#l420-t20-in-polish) Polish · 0/12
+
+### I10 in every language
+
+One trade per page: split the combined industry pages · 6 pages
+
+- [ ] [**L421**](plan/languages/de.md#l421-i10-in-german) German · 0/6
+- [ ] [**L422**](plan/languages/es.md#l422-i10-in-spanish) Spanish · 0/6
+- [ ] [**L423**](plan/languages/fr.md#l423-i10-in-french) French · 0/6
+- [ ] [**L424**](plan/languages/nl.md#l424-i10-in-dutch) Dutch · 0/6
+- [ ] [**L425**](plan/languages/sv.md#l425-i10-in-swedish) Swedish · 0/6
+- [ ] [**L426**](plan/languages/da.md#l426-i10-in-danish) Danish · 0/6
+- [ ] [**L427**](plan/languages/nb.md#l427-i10-in-norwegian-bokmål) Norwegian (Bokmål) · 0/6
+- [ ] [**L428**](plan/languages/it.md#l428-i10-in-italian) Italian · 0/6
+- [ ] [**L429**](plan/languages/pt.md#l429-i10-in-portuguese) Portuguese · 0/6
+- [ ] [**L430**](plan/languages/pl.md#l430-i10-in-polish) Polish · 0/6
+
+### I11 in every language
+
+Who invoices: self-employed, freelancers, sellers · 7 pages
+
+- [ ] [**L431**](plan/languages/de.md#l431-i11-in-german) German · 0/7
+- [ ] [**L432**](plan/languages/es.md#l432-i11-in-spanish) Spanish · 0/7
+- [ ] [**L433**](plan/languages/fr.md#l433-i11-in-french) French · 0/7
+- [ ] [**L434**](plan/languages/nl.md#l434-i11-in-dutch) Dutch · 0/7
+- [ ] [**L435**](plan/languages/sv.md#l435-i11-in-swedish) Swedish · 0/7
+- [ ] [**L436**](plan/languages/da.md#l436-i11-in-danish) Danish · 0/7
+- [ ] [**L437**](plan/languages/nb.md#l437-i11-in-norwegian-bokmål) Norwegian (Bokmål) · 0/7
+- [ ] [**L438**](plan/languages/it.md#l438-i11-in-italian) Italian · 0/7
+- [ ] [**L439**](plan/languages/pt.md#l439-i11-in-portuguese) Portuguese · 0/7
+- [ ] [**L440**](plan/languages/pl.md#l440-i11-in-polish) Polish · 0/7
+
+### I12 in every language
+
+Specialist contractors · 8 pages
+
+- [ ] [**L441**](plan/languages/de.md#l441-i12-in-german) German · 0/8
+- [ ] [**L442**](plan/languages/es.md#l442-i12-in-spanish) Spanish · 0/8
+- [ ] [**L443**](plan/languages/fr.md#l443-i12-in-french) French · 0/8
+- [ ] [**L444**](plan/languages/nl.md#l444-i12-in-dutch) Dutch · 0/8
+- [ ] [**L445**](plan/languages/sv.md#l445-i12-in-swedish) Swedish · 0/8
+- [ ] [**L446**](plan/languages/da.md#l446-i12-in-danish) Danish · 0/8
+- [ ] [**L447**](plan/languages/nb.md#l447-i12-in-norwegian-bokmål) Norwegian (Bokmål) · 0/8
+- [ ] [**L448**](plan/languages/it.md#l448-i12-in-italian) Italian · 0/8
+- [ ] [**L449**](plan/languages/pt.md#l449-i12-in-portuguese) Portuguese · 0/8
+- [ ] [**L450**](plan/languages/pl.md#l450-i12-in-polish) Polish · 0/8
+
+### I13 in every language
+
+Cleaning, waste and property services · 3 pages
+
+- [ ] [**L451**](plan/languages/de.md#l451-i13-in-german) German · 0/3
+- [ ] [**L452**](plan/languages/es.md#l452-i13-in-spanish) Spanish · 0/3
+- [ ] [**L453**](plan/languages/fr.md#l453-i13-in-french) French · 0/3
+- [ ] [**L454**](plan/languages/nl.md#l454-i13-in-dutch) Dutch · 0/3
+- [ ] [**L455**](plan/languages/sv.md#l455-i13-in-swedish) Swedish · 0/3
+- [ ] [**L456**](plan/languages/da.md#l456-i13-in-danish) Danish · 0/3
+- [ ] [**L457**](plan/languages/nb.md#l457-i13-in-norwegian-bokmål) Norwegian (Bokmål) · 0/3
+- [ ] [**L458**](plan/languages/it.md#l458-i13-in-italian) Italian · 0/3
+- [ ] [**L459**](plan/languages/pt.md#l459-i13-in-portuguese) Portuguese · 0/3
+- [ ] [**L460**](plan/languages/pl.md#l460-i13-in-polish) Polish · 0/3
+
+### I14 in every language
+
+Auto shops and transport · 8 pages
+
+- [ ] [**L461**](plan/languages/de.md#l461-i14-in-german) German · 0/8
+- [ ] [**L462**](plan/languages/es.md#l462-i14-in-spanish) Spanish · 0/8
+- [ ] [**L463**](plan/languages/fr.md#l463-i14-in-french) French · 0/8
+- [ ] [**L464**](plan/languages/nl.md#l464-i14-in-dutch) Dutch · 0/8
+- [ ] [**L465**](plan/languages/sv.md#l465-i14-in-swedish) Swedish · 0/8
+- [ ] [**L466**](plan/languages/da.md#l466-i14-in-danish) Danish · 0/8
+- [ ] [**L467**](plan/languages/nb.md#l467-i14-in-norwegian-bokmål) Norwegian (Bokmål) · 0/8
+- [ ] [**L468**](plan/languages/it.md#l468-i14-in-italian) Italian · 0/8
+- [ ] [**L469**](plan/languages/pt.md#l469-i14-in-portuguese) Portuguese · 0/8
+- [ ] [**L470**](plan/languages/pl.md#l470-i14-in-polish) Polish · 0/8
+
+### I15 in every language
+
+Professional services · 8 pages
+
+- [ ] [**L471**](plan/languages/de.md#l471-i15-in-german) German · 0/8
+- [ ] [**L472**](plan/languages/es.md#l472-i15-in-spanish) Spanish · 0/8
+- [ ] [**L473**](plan/languages/fr.md#l473-i15-in-french) French · 0/8
+- [ ] [**L474**](plan/languages/nl.md#l474-i15-in-dutch) Dutch · 0/8
+- [ ] [**L475**](plan/languages/sv.md#l475-i15-in-swedish) Swedish · 0/8
+- [ ] [**L476**](plan/languages/da.md#l476-i15-in-danish) Danish · 0/8
+- [ ] [**L477**](plan/languages/nb.md#l477-i15-in-norwegian-bokmål) Norwegian (Bokmål) · 0/8
+- [ ] [**L478**](plan/languages/it.md#l478-i15-in-italian) Italian · 0/8
+- [ ] [**L479**](plan/languages/pt.md#l479-i15-in-portuguese) Portuguese · 0/8
+- [ ] [**L480**](plan/languages/pl.md#l480-i15-in-polish) Polish · 0/8
+
+### I16 in every language
+
+Events, food and travel · 10 pages
+
+- [ ] [**L481**](plan/languages/de.md#l481-i16-in-german) German · 0/10
+- [ ] [**L482**](plan/languages/es.md#l482-i16-in-spanish) Spanish · 0/10
+- [ ] [**L483**](plan/languages/fr.md#l483-i16-in-french) French · 0/10
+- [ ] [**L484**](plan/languages/nl.md#l484-i16-in-dutch) Dutch · 0/10
+- [ ] [**L485**](plan/languages/sv.md#l485-i16-in-swedish) Swedish · 0/10
+- [ ] [**L486**](plan/languages/da.md#l486-i16-in-danish) Danish · 0/10
+- [ ] [**L487**](plan/languages/nb.md#l487-i16-in-norwegian-bokmål) Norwegian (Bokmål) · 0/10
+- [ ] [**L488**](plan/languages/it.md#l488-i16-in-italian) Italian · 0/10
+- [ ] [**L489**](plan/languages/pt.md#l489-i16-in-portuguese) Portuguese · 0/10
+- [ ] [**L490**](plan/languages/pl.md#l490-i16-in-polish) Polish · 0/10
+
+### I17 in every language
+
+Creative and media · 9 pages
+
+- [ ] [**L491**](plan/languages/de.md#l491-i17-in-german) German · 0/9
+- [ ] [**L492**](plan/languages/es.md#l492-i17-in-spanish) Spanish · 0/9
+- [ ] [**L493**](plan/languages/fr.md#l493-i17-in-french) French · 0/9
+- [ ] [**L494**](plan/languages/nl.md#l494-i17-in-dutch) Dutch · 0/9
+- [ ] [**L495**](plan/languages/sv.md#l495-i17-in-swedish) Swedish · 0/9
+- [ ] [**L496**](plan/languages/da.md#l496-i17-in-danish) Danish · 0/9
+- [ ] [**L497**](plan/languages/nb.md#l497-i17-in-norwegian-bokmål) Norwegian (Bokmål) · 0/9
+- [ ] [**L498**](plan/languages/it.md#l498-i17-in-italian) Italian · 0/9
+- [ ] [**L499**](plan/languages/pt.md#l499-i17-in-portuguese) Portuguese · 0/9
+- [ ] [**L500**](plan/languages/pl.md#l500-i17-in-polish) Polish · 0/9
+
+### I18 in every language
+
+Health, wellness and beauty · 11 pages
+
+- [ ] [**L501**](plan/languages/de.md#l501-i18-in-german) German · 0/11
+- [ ] [**L502**](plan/languages/es.md#l502-i18-in-spanish) Spanish · 0/11
+- [ ] [**L503**](plan/languages/fr.md#l503-i18-in-french) French · 0/11
+- [ ] [**L504**](plan/languages/nl.md#l504-i18-in-dutch) Dutch · 0/11
+- [ ] [**L505**](plan/languages/sv.md#l505-i18-in-swedish) Swedish · 0/11
+- [ ] [**L506**](plan/languages/da.md#l506-i18-in-danish) Danish · 0/11
+- [ ] [**L507**](plan/languages/nb.md#l507-i18-in-norwegian-bokmål) Norwegian (Bokmål) · 0/11
+- [ ] [**L508**](plan/languages/it.md#l508-i18-in-italian) Italian · 0/11
+- [ ] [**L509**](plan/languages/pt.md#l509-i18-in-portuguese) Portuguese · 0/11
+- [ ] [**L510**](plan/languages/pl.md#l510-i18-in-polish) Polish · 0/11
+
+### I19 in every language
+
+Education and childcare · 9 pages
+
+- [ ] [**L511**](plan/languages/de.md#l511-i19-in-german) German · 0/9
+- [ ] [**L512**](plan/languages/es.md#l512-i19-in-spanish) Spanish · 0/9
+- [ ] [**L513**](plan/languages/fr.md#l513-i19-in-french) French · 0/9
+- [ ] [**L514**](plan/languages/nl.md#l514-i19-in-dutch) Dutch · 0/9
+- [ ] [**L515**](plan/languages/sv.md#l515-i19-in-swedish) Swedish · 0/9
+- [ ] [**L516**](plan/languages/da.md#l516-i19-in-danish) Danish · 0/9
+- [ ] [**L517**](plan/languages/nb.md#l517-i19-in-norwegian-bokmål) Norwegian (Bokmål) · 0/9
+- [ ] [**L518**](plan/languages/it.md#l518-i19-in-italian) Italian · 0/9
+- [ ] [**L519**](plan/languages/pt.md#l519-i19-in-portuguese) Portuguese · 0/9
+- [ ] [**L520**](plan/languages/pl.md#l520-i19-in-polish) Polish · 0/9
+
+### I20 in every language
+
+Animals, farms and outdoors · 9 pages
+
+- [ ] [**L521**](plan/languages/de.md#l521-i20-in-german) German · 0/9
+- [ ] [**L522**](plan/languages/es.md#l522-i20-in-spanish) Spanish · 0/9
+- [ ] [**L523**](plan/languages/fr.md#l523-i20-in-french) French · 0/9
+- [ ] [**L524**](plan/languages/nl.md#l524-i20-in-dutch) Dutch · 0/9
+- [ ] [**L525**](plan/languages/sv.md#l525-i20-in-swedish) Swedish · 0/9
+- [ ] [**L526**](plan/languages/da.md#l526-i20-in-danish) Danish · 0/9
+- [ ] [**L527**](plan/languages/nb.md#l527-i20-in-norwegian-bokmål) Norwegian (Bokmål) · 0/9
+- [ ] [**L528**](plan/languages/it.md#l528-i20-in-italian) Italian · 0/9
+- [ ] [**L529**](plan/languages/pt.md#l529-i20-in-portuguese) Portuguese · 0/9
+- [ ] [**L530**](plan/languages/pl.md#l530-i20-in-polish) Polish · 0/9
 
 ## Not in an item yet
 

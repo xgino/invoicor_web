@@ -4534,3 +4534,773 @@
 - **Search words:** "modelo de fatura [taxidermy, in Portuguese]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per mount type (shoulder, full body, European, fish per inch), the deposit at drop-off, tanning, shipping, the tag or permit number (hedge: wildlife rules), pickup policy. Sample: a shoulder mount with deposit.
 - **Don't:** Meat processing (/templates/meat-processing).
+
+## L429: I10 in Portuguese
+
+[ ] One trade per page: split the combined industry pages · 0/6 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/hvac-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for hvac companies](../industries.md#industrieshvac-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [hvac companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/plumbers-hvac (one trade per page): service calls with diagnostic fees, equipment and refrigerant lines, maintenance plans billed by duplicating the last invoice, invoicing in the driveway after a repair. When live, narrow plumbers-hvac to plumbers and move its 'hvac invoicing software' key here.
+- **Don't:** The template's content (/templates/hvac, /templates/hvac-labor-and-materials-invoice, /templates/hvac-maintenance-plan-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/auto-detailers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for auto detailers](../industries.md#industriesauto-detailers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [auto detailers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/auto-detailing-mechanics: packages by vehicle size, ceramic coating with a deposit, mobile detailing with a travel fee, fleet accounts invoiced monthly. When live, narrow that page to mechanics.
+- **Don't:** The template's content (/templates/auto-detailing): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/videographers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for videographers](../industries.md#industriesvideographers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [videographers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/photographers-videographers: shoot days, edit rounds, deposits and milestones, licensing, invoicing on set after a wrap. When live, narrow that page to photographers.
+- **Don't:** The template's content (/templates/videography, /templates/video-production-milestone-invoice, /templates/videography-deposit-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/lawn-care-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for lawn care companies](../industries.md#industrieslawn-care-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [lawn care companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/landscaping-lawn-care: route work (mowing per cut, weekly or biweekly), seasonal treatments, monthly invoices by duplicating, invoicing between stops. Landscaping projects stay on the landscaping page; move 'lawn care invoice app' here.
+- **Don't:** The template's content (/templates/landscaping, /templates/monthly-lawn-care-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/life-coaches → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for life coaches](../industries.md#industrieslife-coaches) (planned: write the English page first)
+- **Search words:** "programa de faturação para [life coaches, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/consultants-coaches: session packages, programmes in instalments, VAT on coaching (hedge), invoicing after a call from the phone. Move 'coaching invoice app' here; consultants keep the other page.
+- **Don't:** The template's content (/templates/life-coaching): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/hair-stylists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for hair stylists](../industries.md#industrieshair-stylists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [hair stylists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/hair-makeup-artists: booth-renting stylists invoicing salon owners, bridal and on-location hair, product sales; the till handles everyday clients. Move 'hair stylist invoice app' here.
+- **Don't:** The template's content (/templates/hair-salon, /templates/hair-braiding): link it, don't repeat it; features outside BRAND.md §10.
+
+## L439: I11 in Portuguese
+
+[ ] Who invoices: self-employed, freelancers, sellers · 0/7 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/self-employed → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for self employed](../industries.md#industriesself-employed) (planned: write the English page first)
+- **Search words:** "programa de faturação para [self employed, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The self-employed and UK/AU sole traders in any trade: a professional invoice from the phone, the no-VAT note below the threshold, numbering that survives a tax inspection, invoices in the client's currency. Honest: no bookkeeping or tax returns (link accounting compares).
+- **Don't:** The template's content (/templates/freelance-invoice, /templates/no-vat-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/freelancers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for freelancers](../industries.md#industriesfreelancers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [freelancers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Freelancers across fields: foreign clients (currencies, languages, reverse charge), project, hourly and day-rate invoices, chasing payment by re-sending the PDF. Parent of the field pages (designers, developers, writers): link them.
+- **Don't:** The template's content (/templates/freelance-invoice, /templates/hourly-invoice, /templates/day-rate-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/tradespeople → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for tradespeople](../industries.md#industriestradespeople) (planned: write the English page first)
+- **Search words:** "programa de faturação para [tradespeople, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): UK, Irish, Australian and NZ tradespeople (the word they search): labour and materials, CIS or GST notes (hedge, link the country pages), invoicing on site before leaving. Link the trade pages (plumbers, electricians, carpenters).
+- **Don't:** The template's content (/templates/labor-and-materials-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/gig-workers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for gig workers](../industries.md#industriesgig-workers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [gig workers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Side jobs and gig work (deliveries, odd jobs, tutoring, events): when an invoice is needed at all, a simple free one, and when side income must be registered (hedge per country).
+- **Don't:** The template's content (/templates/personal-invoice, /templates/freelance-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/crafters → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for crafters](../industries.md#industriescrafters) (planned: write the English page first)
+- **Search words:** "programa de faturação para [crafters, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Makers and crafters selling wholesale to shops, at markets and on commission: per-item lines, deposits on custom work, shipping, VAT on goods. Honest: no inventory or shop integration.
+- **Don't:** The template's content (/templates/crafts, /templates/pottery, /templates/sales-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/online-sellers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for online sellers](../industries.md#industriesonline-sellers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [online sellers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): When a marketplace order needs a proper invoice (a business buyer asks for one, VAT invoice for EU buyers, a B2B order outside the platform). Honest: no store integration; each invoice is made by hand.
+- **Don't:** The template's content (/templates/sales-invoice, /templates/commercial-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/wholesalers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for wholesalers](../industries.md#industrieswholesalers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [wholesalers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small wholesalers and distributors: price lists by customer, case quantities, delivery dates, net terms, B2B VAT. Honest: no inventory, price lists or EDI.
+- **Don't:** The template's content (/templates/sales-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+## L449: I12 in Portuguese
+
+[ ] Specialist contractors · 0/8 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/handymen → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for handymen](../industries.md#industrieshandymen) (planned: write the English page first)
+- **Search words:** "programa de faturação para [handymen, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Split from /industries/general-contractors, which lists 'handyman invoice app' as a second key: small jobs by the hour with a minimum, materials picked up on the way, several jobs per day, invoicing before leaving. Move that key here.
+- **Don't:** The template's content (/templates/handyman, /templates/handyman-hourly-invoice, /templates/handyman-labor-and-materials-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/garage-door-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for garage door companies](../industries.md#industriesgarage-door-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [garage door companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Springs, openers and panels, service calls and emergency rates, parts warranties, invoicing in the driveway.
+- **Don't:** The template's content (/templates/garage-door-repair): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/gas-engineers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for gas engineers](../industries.md#industriesgas-engineers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [gas engineers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): UK and EU heating engineers: boiler services, landlord safety certificates, parts and call-out fees, the registration number on every invoice (hedge). Honest: the app doesn't make gas safety certificates.
+- **Don't:** The template's content (/templates/gas-engineer): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/plasterers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for plasterers](../industries.md#industriesplasterers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [plasterers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per room or per square metre, skim vs replaster, materials, day rates, invoicing at the end of a job (UK and EU first).
+- **Don't:** The template's content (/templates/plastering): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/concrete-contractors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for concrete contractors](../industries.md#industriesconcrete-contractors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [concrete contractors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Flatwork by square foot, yards poured, pump and short-load fees passed on, deposits before the pour, progress billing on larger jobs.
+- **Don't:** The template's content (/templates/concrete, /templates/concrete-cutting): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/low-voltage-contractors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for low voltage contractors](../industries.md#industrieslow-voltage-contractors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [low voltage contractors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per drop, certification reports, office jobs after hours, POs from GCs and IT firms.
+- **Don't:** The template's content (/templates/low-voltage-cabling): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/fire-protection-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for fire protection companies](../industries.md#industriesfire-protection-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [fire protection companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Inspection routes on a schedule, deficiency work invoiced separately, the report and licence number. Honest: no inspection reports or scheduling in the app.
+- **Don't:** The template's content (/templates/fire-protection, /templates/hood-cleaning): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/scaffolding-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for scaffolding companies](../industries.md#industriesscaffolding-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [scaffolding companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Erect and dismantle as a fixed price, weekly hire after the included period (duplicate the invoice each week), alterations, invoicing main contractors.
+- **Don't:** The template's content (/templates/scaffolding): link it, don't repeat it; features outside BRAND.md §10.
+
+## L459: I13 in Portuguese
+
+[ ] Cleaning, waste and property services · 0/3 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/janitorial-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for janitorial companies](../industries.md#industriesjanitorial-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [janitorial companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Contract cleaning for offices and sites: monthly invoices per contract (duplicate the last), extra work as lines, POs. Distinct from house cleaning (/industries/cleaning-services: link it).
+- **Don't:** The template's content (/templates/janitorial, /templates/commercial-cleaning-monthly-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/dumpster-rental-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for dumpster rental companies](../industries.md#industriesdumpster-rental-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [dumpster rental companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per haul, tonnage overages, extra days, prohibited items, invoicing after the dump ticket comes back. Honest: no dispatch or container tracking.
+- **Don't:** The template's content (/templates/dumpster-rental): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/appraisers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for appraisers](../industries.md#industriesappraisers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [appraisers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private appraisals invoiced on delivery, AMC and lender orders, rush fees, the licence number.
+- **Don't:** The template's content (/templates/appraisal): link it, don't repeat it; features outside BRAND.md §10.
+
+## L469: I14 in Portuguese
+
+[ ] Auto shops and transport · 0/8 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/auto-body-shops → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for auto body shops](../industries.md#industriesauto-body-shops) (planned: write the English page first)
+- **Search words:** "programa de faturação para [auto body shops, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Insurance jobs with deductibles and supplements, customer-pay work, sublets, invoicing at pickup. Honest: no estimating software (CCC, Mitchell).
+- **Don't:** The template's content (/templates/auto-body, /templates/paintless-dent-repair): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/auto-glass-shops → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for auto glass shops](../industries.md#industriesauto-glass-shops) (planned: write the English page first)
+- **Search words:** "programa de faturação para [auto glass shops, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Mobile installs, insurance claims and deductibles, calibration lines, invoicing at the car.
+- **Don't:** The template's content (/templates/auto-glass): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/tire-shops → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for tire shops](../industries.md#industriestire-shops) (planned: write the English page first)
+- **Search words:** "programa de faturação para [tire shops, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Tyres, mounting, disposal fees, seasonal changeovers and storage (EU), fleet accounts monthly.
+- **Don't:** The template's content (/templates/tire-service): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/window-tint-shops → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for window tint shops](../industries.md#industrieswindow-tint-shops) (planned: write the English page first)
+- **Search words:** "programa de faturação para [window tint shops, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Vehicle and residential film, warranties by film, dealer accounts billed weekly.
+- **Don't:** The template's content (/templates/window-tinting): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/pdr-technicians → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for pdr technicians](../industries.md#industriespdr-technicians) (planned: write the English page first)
+- **Search words:** "programa de faturação para [pdr technicians, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hail work for dealers and body shops, per-panel pricing from a dent matrix, travelling hail teams invoicing from the road.
+- **Don't:** The template's content (/templates/paintless-dent-repair): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/heavy-equipment-mechanics → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for heavy equipment mechanics](../industries.md#industriesheavy-equipment-mechanics) (planned: write the English page first)
+- **Search words:** "programa de faturação para [heavy equipment mechanics, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Field calls with travel time, machine hours and serials, parts, invoicing on site so the customer signs off the job.
+- **Don't:** The template's content (/templates/heavy-equipment-repair): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/freight-brokers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for freight brokers](../industries.md#industriesfreight-brokers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [freight brokers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Invoicing shippers per load with accessorials, after the POD. Honest: no TMS, load board or carrier payments.
+- **Don't:** The template's content (/templates/freight-broker): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/flight-instructors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for flight instructors](../industries.md#industriesflight-instructors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [flight instructors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Independent instructors: flight and ground hours, aircraft time if renting your own plane, invoices after each lesson or weekly.
+- **Don't:** The template's content (/templates/flight-instruction): link it, don't repeat it; features outside BRAND.md §10.
+
+## L479: I15 in Portuguese
+
+[ ] Professional services · 0/8 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/accountants → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for accountants](../industries.md#industriesaccountants) (planned: write the English page first)
+- **Search words:** "programa de faturação para [accountants, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small practices and solo accountants: fixed-fee packages, year-end work, advisory hours. Honest: they already have practice software; the angle is quick one-off invoices and foreign clients.
+- **Don't:** The template's content (/templates/accounting): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/financial-advisors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for financial advisors](../industries.md#industriesfinancial-advisors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [financial advisors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fee-only planners: plan fees, hourly, quarterly retainers by duplicating the invoice; disclosures hedged.
+- **Don't:** The template's content (/templates/financial-advisor): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/recruiters → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for recruiters](../industries.md#industriesrecruiters) (planned: write the English page first)
+- **Search words:** "programa de faturação para [recruiters, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Placement fees on the start date, retained search stages, guarantee periods, VAT on fees.
+- **Don't:** The template's content (/templates/recruitment): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/staffing-agencies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for staffing agencies](../industries.md#industriesstaffing-agencies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [staffing agencies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly invoices from approved timesheets per client. Honest: no timesheets or payroll; small agencies with a few clients.
+- **Don't:** The template's content (/templates/staffing-agency): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/mediators → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for mediators](../industries.md#industriesmediators) (planned: write the English page first)
+- **Search words:** "programa de faturação para [mediators, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions split between parties (one invoice each), prep time, agreements.
+- **Don't:** The template's content (/templates/mediation): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/msps → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for msps](../industries.md#industriesmsps) (planned: write the English page first)
+- **Search words:** "programa de faturação para [msps, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small MSPs: monthly per-user or per-device plans (duplicate monthly), project work, hardware resale. Honest: no PSA or RMM integration.
+- **Don't:** The template's content (/templates/managed-it-services-invoice, /templates/it-services): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/engineering-firms → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for engineering firms](../industries.md#industriesengineering-firms) (planned: write the English page first)
+- **Search words:** "programa de faturação para [engineering firms, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small consulting engineers: inspection fees, project phases, stamped drawings, reimbursables.
+- **Don't:** The template's content (/templates/engineering): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/environmental-consultants → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for environmental consultants](../industries.md#industriesenvironmental-consultants) (planned: write the English page first)
+- **Search words:** "programa de faturação para [environmental consultants, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Phase I/II reports as fixed fees, lab costs passed through, project numbers for lenders.
+- **Don't:** The template's content (/templates/environmental-consulting): link it, don't repeat it; features outside BRAND.md §10.
+
+## L489: I16 in Portuguese
+
+[ ] Events, food and travel · 0/10 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/balloon-artists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for balloon artists](../industries.md#industriesballoon-artists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [balloon artists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposits on booking, garlands per foot, delivery and teardown, invoicing on site.
+- **Don't:** The template's content (/templates/balloon-decor): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/entertainers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for entertainers](../industries.md#industriesentertainers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [entertainers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Shows per booking, deposits, travel, corporate POs; invoices sent from the venue.
+- **Don't:** The template's content (/templates/entertainer, /templates/face-painting): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/travel-agents → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for travel agents](../industries.md#industriestravel-agents) (planned: write the English page first)
+- **Search words:** "programa de faturação para [travel agents, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Planning fees, service fees, deposits and final payments; supplier bookings stay in the booking tools.
+- **Don't:** The template's content (/templates/travel-agent): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/tour-operators → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for tour operators](../industries.md#industriestour-operators) (planned: write the English page first)
+- **Search words:** "programa de faturação para [tour operators, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private tours and agency bookings, group tiers, entrance fees passed on. Honest: no booking system.
+- **Don't:** The template's content (/templates/tour-guide): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/meal-prep-businesses → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for meal prep businesses](../industries.md#industriesmeal-prep-businesses) (planned: write the English page first)
+- **Search words:** "programa de faturação para [meal prep businesses, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly plans by duplicating the invoice, corporate orders, delivery fees.
+- **Don't:** The template's content (/templates/meal-prep): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/food-trucks → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for food trucks](../industries.md#industriesfood-trucks) (planned: write the English page first)
+- **Search words:** "programa de faturação para [food trucks, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private events with minimums and deposits; the POS handles walk-up sales.
+- **Don't:** The template's content (/templates/food-truck): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/event-decorators → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for event decorators](../industries.md#industriesevent-decorators) (planned: write the English page first)
+- **Search words:** "programa de faturação para [event decorators, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Design fees, rental items from stock, damage and loss, deposits and balances.
+- **Don't:** The template's content (/templates/event-decor): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/wedding-vendors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for wedding vendors](../industries.md#industrieswedding-vendors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [wedding vendors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The umbrella page for wedding businesses (planners, florists, DJs, photographers, decorators): deposit at booking, balance before the date, a final invoice that subtracts the deposit. Link each trade's page.
+- **Don't:** The template's content (/templates/deposit-invoice, /templates/final-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/bartenders → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for bartenders](../industries.md#industriesbartenders) (planned: write the English page first)
+- **Search words:** "programa de faturação para [bartenders, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Event packages per guest or per hour, licensing (hedge), gratuity lines.
+- **Don't:** The template's content (/templates/bartending): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/event-venues → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for event venues](../industries.md#industriesevent-venues) (planned: write the English page first)
+- **Search words:** "programa de faturação para [event venues, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small venues: hire fees, F&B minimums, damage deposits, payment schedules. Honest: no booking calendar.
+- **Don't:** The template's content (/templates/event-venue): link it, don't repeat it; features outside BRAND.md §10.
+
+## L499: I17 in Portuguese
+
+[ ] Creative and media · 0/9 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/production-companies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for production companies](../industries.md#industriesproduction-companies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [production companies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small production companies: shoot days, crew and kit, post-production milestones, POs and job numbers.
+- **Don't:** The template's content (/templates/film-production): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/animators → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for animators](../industries.md#industriesanimators) (planned: write the English page first)
+- **Search words:** "programa de faturação para [animators, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per project or per second, revision rounds, usage rights, international studio clients.
+- **Don't:** The template's content (/templates/animation): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/3d-artists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for 3d artists](../industries.md#industries3d-artists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [3d artists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per render or per animation second, architects and agencies as clients, rush fees.
+- **Don't:** The template's content (/templates/3d-rendering): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/fashion-designers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for fashion designers](../industries.md#industriesfashion-designers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [fashion designers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Design fees, samples, production runs with fabric deposits, wholesale orders.
+- **Don't:** The template's content (/templates/fashion-design): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/fashion-stylists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for fashion stylists](../industries.md#industriesfashion-stylists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [fashion stylists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Shoot days, prep days, wardrobe budgets passed on with receipts.
+- **Don't:** The template's content (/templates/stylist, /templates/personal-shopper): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/actors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for actors](../industries.md#industriesactors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [actors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Day rates, buyouts, the agent's commission, expenses; invoices in the production's currency.
+- **Don't:** The template's content (/templates/actor): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/models → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for models](../industries.md#industriesmodels) (planned: write the English page first)
+- **Search words:** "programa de faturação para [models, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Bookings with usage, overtime and travel, direct clients vs agency bookings.
+- **Don't:** The template's content (/templates/model): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/creative-agencies → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for creative agencies](../industries.md#industriescreative-agencies) (planned: write the English page first)
+- **Search words:** "programa de faturação para [creative agencies, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small branding and design studios: project milestones, retainers, third-party costs. Distinct from marketing agencies (/industries/marketing-agencies: link).
+- **Don't:** The template's content (/templates/milestone-invoice, /templates/retainer-invoice): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/game-developers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for game developers](../industries.md#industriesgame-developers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [game developers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Contract work for studios, milestones with publishers, asset sales.
+- **Don't:** The template's content (/templates/game-development): link it, don't repeat it; features outside BRAND.md §10.
+
+## L509: I18 in Portuguese
+
+[ ] Health, wellness and beauty · 0/11 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/physiotherapists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for physiotherapists](../industries.md#industriesphysiotherapists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [physiotherapists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private practice and home visits: per session, packages, health-insurance details on the invoice where clients claim (hedge per country). Honest: no clinical notes or booking.
+- **Don't:** The template's content (/templates/physiotherapy): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/chiropractors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for chiropractors](../industries.md#industrieschiropractors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [chiropractors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Cash-pay practices, packages, superbills for insurance (link /templates/therapy).
+- **Don't:** The template's content (/templates/chiropractic): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/acupuncturists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for acupuncturists](../industries.md#industriesacupuncturists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [acupuncturists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions and herbs, superbills for clients who claim (link).
+- **Don't:** The template's content (/templates/acupuncture): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/speech-therapists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for speech therapists](../industries.md#industriesspeech-therapists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [speech therapists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private clients and school contracts, evaluations, teletherapy sessions.
+- **Don't:** The template's content (/templates/speech-therapy): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/occupational-therapists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for occupational therapists](../industries.md#industriesoccupational-therapists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [occupational therapists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Assessments, reports for funders, home visits with mileage.
+- **Don't:** The template's content (/templates/occupational-therapy): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/locums → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for locums](../industries.md#industrieslocums) (planned: write the English page first)
+- **Search words:** "programa de faturação para [locums, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Sessions across practices, monthly invoices per practice, registration numbers; pension and tax notes hedged.
+- **Don't:** The template's content (/templates/locum): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/nurses → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for nurses](../industries.md#industriesnurses) (planned: write the English page first)
+- **Search words:** "programa de faturação para [nurses, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Shifts per facility or private client, mileage, licence numbers.
+- **Don't:** The template's content (/templates/nursing): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/midwives → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for midwives](../industries.md#industriesmidwives) (planned: write the English page first)
+- **Search words:** "programa de faturação para [midwives, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Care packages in stages, birth supplies, payment plans; insurance billing differs by country (hedge).
+- **Don't:** The template's content (/templates/midwife, /templates/lactation-consultant): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/holistic-practitioners → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for holistic practitioners](../industries.md#industriesholistic-practitioners) (planned: write the English page first)
+- **Search words:** "programa de faturação para [holistic practitioners, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Reiki, hypnotherapy, sound healing and similar: sessions, packages, classes; no health claims.
+- **Don't:** The template's content (/templates/reiki, /templates/hypnotherapy, /templates/sleep-consultant): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/spray-tan-artists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for spray tan artists](../industries.md#industriesspray-tan-artists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [spray tan artists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Mobile sessions, bridal parties, packages.
+- **Don't:** The template's content (/templates/spray-tanning): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/pmu-artists → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for pmu artists](../industries.md#industriespmu-artists) (planned: write the English page first)
+- **Search words:** "programa de faturação para [pmu artists, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposits to book, touch-ups, consent handled separately.
+- **Don't:** The template's content (/templates/microblading): link it, don't repeat it; features outside BRAND.md §10.
+
+## L519: I19 in Portuguese
+
+[ ] Education and childcare · 0/9 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/daycare-providers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for daycare providers](../industries.md#industriesdaycare-providers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [daycare providers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Home and small centre daycares: weekly or monthly tuition (duplicate each period), late fees, the tax ID parents need for credits or subsidies (hedge). Honest: no attendance or parent portal.
+- **Don't:** The template's content (/templates/daycare): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/childminders → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for childminders](../industries.md#industrieschildminders) (planned: write the English page first)
+- **Search words:** "programa de faturação para [childminders, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): UK and EU home-based childminders: hours per child, funded hours vs paid hours (hedge), meals and outings.
+- **Don't:** The template's content (/templates/daycare, /templates/after-school-program): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/summer-camps → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for summer camps](../industries.md#industriessummer-camps) (planned: write the English page first)
+- **Search words:** "programa de faturação para [summer camps, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Weekly registrations, deposits, extended care. Honest: no registration forms.
+- **Don't:** The template's content (/templates/summer-camp): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/language-teachers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for language teachers](../industries.md#industrieslanguage-teachers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [language teachers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Lesson packages, company classes, online students abroad (currencies).
+- **Don't:** The template's content (/templates/language-lessons): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/corporate-trainers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for corporate trainers](../industries.md#industriescorporate-trainers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [corporate trainers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Day rates, per-participant fees, materials, POs.
+- **Don't:** The template's content (/templates/corporate-training): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/speakers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for speakers](../industries.md#industriesspeakers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [speakers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposits and balances, travel, bureau commissions.
+- **Don't:** The template's content (/templates/public-speaking): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/riding-instructors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for riding instructors](../industries.md#industriesriding-instructors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [riding instructors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Lesson packages, horse use, show coaching.
+- **Don't:** The template's content (/templates/horse-riding-lessons): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/martial-arts-schools → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for martial arts schools](../industries.md#industriesmartial-arts-schools) (planned: write the English page first)
+- **Search words:** "programa de faturação para [martial arts schools, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Monthly memberships (duplicate), belt tests, gear. Honest: no automatic membership billing.
+- **Don't:** The template's content (/templates/martial-arts): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/cpr-instructors → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for cpr instructors](../industries.md#industriescpr-instructors) (planned: write the English page first)
+- **Search words:** "programa de faturação para [cpr instructors, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Workplace classes per participant, certification card fees.
+- **Don't:** The template's content (/templates/cpr-training): link it, don't repeat it; features outside BRAND.md §10.
+
+## L529: I20 in Portuguese
+
+[ ] Animals, farms and outdoors · 0/9 live in pt
+
+- **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
+
+### /industries/dog-groomers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for dog groomers](../industries.md#industriesdog-groomers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [dog groomers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Takes 'dog grooming invoice' from /industries/pet-care (dog walkers and sitters stay there): per dog by size and coat, add-ons, mobile vans invoicing in the driveway.
+- **Don't:** The template's content (/templates/dog-grooming): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/kennels → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for kennels](../industries.md#industrieskennels) (planned: write the English page first)
+- **Search words:** "programa de faturação para [kennels, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Nightly stays, holiday surcharges, daycare days, invoicing at checkout. Honest: no booking calendar.
+- **Don't:** The template's content (/templates/pet-boarding): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/farriers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for farriers](../industries.md#industriesfarriers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [farriers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Barn visits with several horses (one invoice per owner), shoeing cycles every 6–8 weeks by duplicating the invoice.
+- **Don't:** The template's content (/templates/farrier): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/stables → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for stables](../industries.md#industriesstables) (planned: write the English page first)
+- **Search words:** "programa de faturação para [stables, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Monthly board per horse (duplicate), extras, farrier and vet costs passed on.
+- **Don't:** The template's content (/templates/horse-boarding): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/horse-trainers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for horse trainers](../industries.md#industrieshorse-trainers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [horse trainers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Training board per month, rides per week, shows and hauling.
+- **Don't:** The template's content (/templates/horse-boarding, /templates/horse-riding-lessons): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/outfitters → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for outfitters](../industries.md#industriesoutfitters) (planned: write the English page first)
+- **Search words:** "programa de faturação para [outfitters, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposits a season ahead, trophy fees, lodging; invoicing from camp.
+- **Don't:** The template's content (/templates/hunting-guide): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/fishing-charters → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for fishing charters](../industries.md#industriesfishing-charters) (planned: write the English page first)
+- **Search words:** "programa de faturação para [fishing charters, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Trip deposits, balances on the dock, fuel surcharges.
+- **Don't:** The template's content (/templates/fishing-charter): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/custom-harvesters → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for custom harvesters](../industries.md#industriescustom-harvesters) (planned: write the English page first)
+- **Search words:** "programa de faturação para [custom harvesters, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per acre or hectare, hauling, fuel; invoicing farmers field by field (Lohnunternehmer, loonwerker in the local versions).
+- **Don't:** The template's content (/templates/custom-harvesting): link it, don't repeat it; features outside BRAND.md §10.
+
+### /industries/loggers → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice app for loggers](../industries.md#industriesloggers) (planned: write the English page first)
+- **Search words:** "programa de faturação para [loggers, in Portuguese]"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Timber sales settlements, per-tonne hauling, firewood sales.
+- **Don't:** The template's content (/templates/logging, /templates/firewood, /templates/land-clearing): link it, don't repeat it; features outside BRAND.md §10.

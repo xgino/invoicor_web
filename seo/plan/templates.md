@@ -738,7 +738,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Collision and paint: the insurance claim number and adjuster, the estimate vs supplements, the deductible the customer pays vs the insurer's share, paint and materials per hour, frame time, sublet work (glass, alignment), refinish hours. Sample: an insured repair with a $500 deductible.
 - **Don't write about:** Mechanical repair (/templates/auto-repair); detailing (/templates/auto-detailing).
 - **Already covered (link, don't repeat):** /templates/auto-detailing (“auto detailing invoice template”)
-- **Notes:** industry: auto-detailing-mechanics
+- **Notes:** industry: auto-body-shops
 
 #### /templates/dog-grooming
 
@@ -746,7 +746,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per dog by size and coat (bath, full groom, hand strip), add-ons (nails, teeth, de-shedding, flea bath), matting and behaviour surcharges, the mobile van fee, no-show policy, a multi-dog discount. Sample: two dogs.
 - **Don't write about:** Pet sitting and walking (/templates/pet-sitting); training (/templates/dog-training).
-- **Notes:** industry: pet-care
+- **Notes:** industry: dog-groomers
 
 #### /templates/hair-salon
 
@@ -754,7 +754,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. When a salon or stylist invoices instead of ringing up at the till: bridal and event hair on location, B2B work (shoots, theatre), weekly booth or chair rent the owner invoices to renters, product sales taxed apart. Say plainly that everyday salon sales are till receipts. Sample: 4 weeks of booth rent + a wedding party.
 - **Don't write about:** Makeup (/templates/makeup-artist); barbering (/templates/barber).
-- **Notes:** industry: hair-makeup-artists
+- **Notes:** industry: hair-stylists
 
 #### /templates/architect
 
@@ -819,7 +819,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Packages (6 or 12 sessions), single sessions, programmes paid in instalments, cancellation and no-show rules, VAT on coaching (hedge). Not therapy: no health claims. Sample: a 6-session package in 2 instalments.
 - **Don't write about:** Business consulting (/templates/consulting); therapy (/templates/therapy); sports coaching (/templates/sports-coaching).
-- **Notes:** industry: consultants-coaches
+- **Notes:** industry: life-coaches
 
 #### /templates/bartending
 
@@ -827,7 +827,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Event bartending: hours × bartenders with a minimum, setup and breakdown, a bar package per guest when the bartender supplies the drinks (licensing rules vary: hedge), mixers and ice, glassware rental, travel, a gratuity line. Sample: a 120-guest wedding, 2 bartenders, 5 hours.
 - **Don't write about:** Catering food service (/templates/catering).
-- **Notes:** industry: caterers
+- **Notes:** industry: bartenders
 
 #### /templates/plastering
 
@@ -835,7 +835,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Skim coat vs full replaster by area, patching per item, ceilings and coving, drying time between coats, materials (bags, beads), access and scaffolding; UK and EU plastering, US stucco and veneer plaster. Sample: replaster a room and skim the ceiling.
 - **Don't write about:** Drywall hanging and taping (/templates/drywall).
-- **Notes:** industry: general-contractors
+- **Notes:** industry: plasterers
 
 #### /templates/concrete
 
@@ -843,7 +843,7 @@
 - **Item:** T9 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Flatwork: slab or driveway by square foot and thickness, cubic yards poured, rebar or mesh, forms, finish (broom, stamped, exposed aggregate), removing the old slab, pump-truck and short-load fees, curing time. Sample: a 600 sq ft driveway.
 - **Don't write about:** Brick, block and stone (/templates/masonry); the volume math (/tools/concrete-cost-calculator).
-- **Notes:** industry: masons
+- **Notes:** industry: concrete-contractors
 
 #### /templates/event-venue
 
@@ -852,7 +852,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Venue hire: date and hours (setup and breakdown time), the fee by day or hour, a food and beverage minimum, service charge vs gratuity, security and cleaning fees, the damage deposit, the payment schedule (deposit at booking, balance before the event). Sample: a Saturday wedding.
 - **Don't write about:** Event planning (/templates/event-planning); party rentals (/templates/party-rentals).
 - **Already covered (link, don't repeat):** /templates/event-planning (“event planner invoice template”)
-- **Notes:** industry: event-planners
+- **Notes:** industry: event-venues
 
 ### Item T10 (18)
 
@@ -879,7 +879,7 @@
 - **Item:** T10 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. UK and EU heating engineers: boiler service and repair, the gas safety record (CP12) for landlords, parts, call-out fee; the registration number on the invoice (Gas Safe in the UK: cite and date). Sample: annual service + landlord certificate.
 - **Don't write about:** HVAC in the US sense (/templates/hvac); plumbing (/templates/plumbing).
-- **Notes:** industry: plumbers-hvac
+- **Notes:** industry: gas-engineers
 
 #### /templates/foundation-repair
 
@@ -888,7 +888,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Piers per unit (push, helical), crack repair per linear foot, engineer's report, permits, the transferable warranty, progress or deposit billing on big jobs (link B items). Sample: 8 helical piers.
 - **Don't write about:** Waterproofing (/templates/basement-waterproofing); concrete flatwork (/templates/concrete).
 - **Already covered (link, don't repeat):** /templates/appliance-repair (“appliance repair invoice template”)
-- **Notes:** industry: general-contractors
+- **Notes:** industry: foundation-repair-companies
 
 #### /templates/basement-waterproofing
 
@@ -947,7 +947,7 @@
 - **Item:** T10 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per linear foot of roofline, trees per wrap, lease vs purchase of the lights, takedown and storage in January, a timer, the seasonal deposit. Sample: roofline + 2 trees, takedown included.
 - **Don't write about:** Landscaping (/templates/landscaping); electrical work (/templates/electrician).
-- **Notes:** industry: landscaping-lawn-care
+- **Notes:** industry: christmas-light-installers
 
 #### /templates/fire-protection
 
@@ -955,7 +955,7 @@
 - **Item:** T10 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Inspections by schedule (sprinklers, alarms, extinguishers, hoods), deficiencies found and quoted separately, the inspection report as a deliverable, the licence number, code references (hedge, NFPA or the local code: cite). Sample: annual sprinkler + alarm inspection.
 - **Don't write about:** Security systems (/templates/security-system-installation); hood cleaning (/templates/hood-cleaning).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: fire-protection-companies
 
 #### /templates/low-voltage-cabling
 
@@ -963,7 +963,7 @@
 - **Item:** T10 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per drop (Cat6, fibre), patch panel and rack work, testing and certification report, labelling, after-hours work in offices. Sample: 24 drops + a rack.
 - **Don't write about:** IT support (/templates/it-services); electrical work (/templates/electrician).
-- **Notes:** industry: electricians
+- **Notes:** industry: low-voltage-contractors
 
 #### /templates/gutter-installation
 
@@ -1013,7 +1013,7 @@
 - **Item:** T11 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Contract cleaning for businesses: the monthly contract price by square footage and frequency, supplies included or billed, extra services (carpets, windows, floor stripping) as lines, the service period. Repeat monthly by duplicating the invoice. Sample: an office, 5 nights a week.
 - **Don't write about:** House cleaning (/templates/cleaning-services); the monthly invoice in general (/templates/monthly-invoice).
-- **Notes:** industry: cleaning-services
+- **Notes:** industry: janitorial-companies
 
 #### /templates/hood-cleaning
 
@@ -1022,7 +1022,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per hood system by size, ducts and fans, filters exchange, access panels installed, before-and-after photos and the certificate sticker, frequency by cooking type (NFPA 96 in the US: hedge, cite). Sample: a restaurant, 2 hoods.
 - **Don't write about:** Fire protection inspections (/templates/fire-protection); general cleaning (/templates/cleaning-services).
 - **Already covered (link, don't repeat):** /templates/cleaning-services (“cleaning invoice template”) · /templates/window-cleaning (“window cleaning invoice template”) · /templates/carpet-cleaning (“carpet cleaning invoice template”)
-- **Notes:** industry: cleaning-services
+- **Notes:** industry: hood-cleaning-companies
 
 #### /templates/biohazard-cleanup
 
@@ -1047,7 +1047,7 @@
 - **Item:** T11 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. By container size and rental period, tonnage included and overage per ton, prohibited items fees, extra days, the permit for street placement (UK: skip permit). Sample: a 20-yard for 7 days, 1.4 tons over.
 - **Don't write about:** Junk removal (/templates/junk-removal); equipment rental (/templates/equipment-rental).
-- **Notes:** industry: junk-removal
+- **Notes:** industry: dumpster-rental-companies
 
 #### /templates/portable-toilet-rental
 
@@ -1055,7 +1055,7 @@
 - **Item:** T11 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Units per event or per month for job sites, servicing frequency, handwash stations, delivery and pickup, damage. Sample: a construction site, 2 units, weekly service.
 - **Don't write about:** Septic pumping (/templates/septic-service); party rentals (/templates/party-rentals).
-- **Notes:** industry: septic-companies
+- **Notes:** industry: portable-toilet-companies
 
 #### /templates/home-watch
 
@@ -1104,7 +1104,7 @@
 - **Item:** T11 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Work orders from banks and servicers: the work order number, before-during-after photos, cleanout per cubic yard, lock changes, winterisation, lawn cuts, bids for repairs; pricing per the client's price sheet. Sample: an initial secure + cleanout.
 - **Don't write about:** Junk removal (/templates/junk-removal); property management (/templates/property-management).
-- **Notes:** industry: property-managers
+- **Notes:** industry: property-preservation-companies
 
 #### /templates/auctioneer
 
@@ -1120,7 +1120,7 @@
 - **Item:** T11 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. The appraisal fee by property type and report form, rush fee, travel, the licence number, who ordered it (lender, AMC, private client); the fee must not depend on the value (hedge). Sample: a private single-family appraisal.
 - **Don't write about:** Home inspection (/templates/home-inspection); real estate agents (/templates/real-estate).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: appraisers
 
 #### /templates/concierge
 
@@ -1137,7 +1137,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Hourly or per session, purchases on the client's card vs paid by you and rebilled, the wardrobe edit, returns handled. Sample: a 3-hour shopping session + items rebilled.
 - **Don't write about:** Fashion styling for shoots (/templates/stylist); concierge (/templates/concierge).
 - **Already covered (link, don't repeat):** /templates/personal-training (“personal trainer invoice template”)
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: fashion-stylists
 
 #### /templates/house-sitting
 
@@ -1165,7 +1165,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per window or per vehicle by film type (ceramic, carbon), windshield strips, removal of old tint, home and office film per square foot; legal tint limits vary by state and country (hedge). Sample: a sedan, ceramic.
 - **Don't write about:** Auto glass replacement (/templates/auto-glass); detailing (/templates/auto-detailing).
 - **Already covered (link, don't repeat):** /templates/window-cleaning (“window cleaning invoice template”)
-- **Notes:** industry: auto-detailing-mechanics
+- **Notes:** industry: window-tint-shops
 
 #### /templates/auto-glass
 
@@ -1174,7 +1174,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Windshield replacement or chip repair, the glass part (OEM or aftermarket), moulding and adhesive, ADAS camera calibration, mobile service, insurance claim and deductible. Sample: a windshield with calibration, insured.
 - **Don't write about:** Window tint (/templates/window-tinting); body shop (/templates/auto-body).
 - **Already covered (link, don't repeat):** /templates/auto-detailing (“auto detailing invoice template”)
-- **Notes:** industry: auto-detailing-mechanics
+- **Notes:** industry: auto-glass-shops
 
 #### /templates/paintless-dent-repair
 
@@ -1182,7 +1182,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per dent by size and location, hail damage per panel from a dent matrix, R&I of trims, insurance claims (supplements). Sample: a hail claim, 4 panels.
 - **Don't write about:** Body and paint (/templates/auto-body).
-- **Notes:** industry: auto-detailing-mechanics
+- **Notes:** industry: pdr-technicians
 
 #### /templates/tire-service
 
@@ -1190,7 +1190,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Tyres by size and brand, mounting and balancing per tyre, valve stems, disposal fees (often required by law: hedge), alignment, seasonal changeover and storage (EU). Sample: 4 tyres + alignment + disposal.
 - **Don't write about:** Mechanical repair (/templates/auto-repair).
-- **Notes:** industry: auto-detailing-mechanics
+- **Notes:** industry: tire-shops
 
 #### /templates/car-hauling
 
@@ -1198,7 +1198,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per vehicle by distance, open vs enclosed, the bill of lading and inspection, inoperable surcharge, terminal vs door-to-door, the carrier's authority number (US: hedge). Sample: 2 cars, 900 miles, open trailer.
 - **Don't write about:** Towing (/templates/towing); trucking freight (/templates/trucking).
-- **Notes:** industry: towing-companies
+- **Notes:** industry: car-haulers
 
 #### /templates/motorcycle-repair
 
@@ -1215,7 +1215,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Field service: travel time and mileage to the site, labor per hour (shop vs field rate), parts, fluids and filters, the machine's serial number and hour meter, diagnostic time. Sample: an excavator hydraulic repair in the field.
 - **Don't write about:** Small engines (/templates/small-engine-repair); equipment rental (/templates/equipment-rental).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: heavy-equipment-mechanics
 
 #### /templates/freight-broker
 
@@ -1223,7 +1223,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. The broker billing the shipper: load number, pickup and delivery, the rate confirmation, accessorials (detention, lumper, layover), the proof of delivery; the broker's authority number (US: hedge). Sample: one FTL load with detention.
 - **Don't write about:** The carrier's own invoice (/templates/trucking); dispatch fees (/templates/truck-dispatch).
-- **Notes:** industry: owner-operators
+- **Notes:** industry: freight-brokers
 
 #### /templates/truck-dispatch
 
@@ -1231,7 +1231,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Dispatchers billing carriers: a percentage per load (or a flat weekly fee), the load list for the week, extra services (paperwork, factoring setup). Sample: a week of 4 loads at 8%.
 - **Don't write about:** Freight brokerage (/templates/freight-broker); trucking (/templates/trucking).
-- **Notes:** industry: owner-operators
+- **Notes:** industry: truck-dispatchers
 
 #### /templates/flight-instruction
 
@@ -1239,7 +1239,7 @@
 - **Item:** T12 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Instruction hours (flight and ground), aircraft rental per Hobbs or tach hour (wet or dry), fuel surcharge, checkride prep, the instructor's certificate number. Sample: 3 lessons, 4.2 flight hours.
 - **Don't write about:** Driving lessons (/templates/driving-instructor).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: flight-instructors
 
 #### /templates/valet-parking
 
@@ -1314,7 +1314,7 @@
 - **Item:** T13 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Erect and dismantle as a fixed price, hire per week after the included period, inspections (the inspection record: hedge per country), alterations, adaptations, transport. Sample: a house front, 6 weeks.
 - **Don't write about:** Equipment rental (/templates/equipment-rental); roofing (/templates/roofing).
-- **Notes:** industry: general-contractors
+- **Notes:** industry: scaffolding-companies
 
 #### /templates/millwright
 
@@ -1339,7 +1339,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Phase I/II site assessments as a fixed fee, sampling and lab costs passed through, field hours, reports, regulator meetings; project numbers for the client's lender. Sample: a Phase I report + 2 samples.
 - **Don't write about:** General consulting (/templates/consulting); asbestos surveys (/templates/asbestos-removal).
 - **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”)
-- **Notes:** industry: consultants-coaches
+- **Notes:** industry: environmental-consultants
 
 #### /templates/commercial-refrigeration
 
@@ -1415,7 +1415,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per piece (garland per foot, arches, columns), setup and teardown time, delivery, venue restrictions, the deposit on booking. Sample: a 20 ft garland + 2 columns.
 - **Don't write about:** Event decor in general (/templates/event-decor); party rentals (/templates/party-rentals).
-- **Notes:** industry: event-planners
+- **Notes:** industry: balloon-artists
 
 #### /templates/face-painting
 
@@ -1432,7 +1432,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per show or per hour, travel, sound equipment, the performance agreement (date, length, audience), the deposit and cancellation. Sample: a corporate magic show.
 - **Don't write about:** DJs (/templates/dj); musicians (/templates/musician).
-- **Notes:** industry: event-planners
+- **Notes:** industry: entertainers
 
 #### /templates/audio-visual
 
@@ -1473,7 +1473,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Design fee, rentals from your stock (linens, centrepieces, backdrops) per item, florals bought in, setup and teardown, damage and loss. Sample: a wedding reception for 120.
 - **Don't write about:** Event planning (/templates/event-planning); balloons (/templates/balloon-decor); florists (/templates/florist).
 - **Already covered (link, don't repeat):** /templates/event-planning (“event planner invoice template”)
-- **Notes:** industry: event-planners
+- **Notes:** industry: event-decorators
 
 #### /templates/food-truck
 
@@ -1481,7 +1481,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Private events: a guaranteed minimum, per guest or per item menus, travel, service hours, the permit at the venue (hedge), gratuity. Sample: a company lunch, 80 guests.
 - **Don't write about:** Full-service catering (/templates/catering).
-- **Notes:** industry: caterers
+- **Notes:** industry: food-trucks
 
 #### /templates/cooking-classes
 
@@ -1497,7 +1497,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Weekly plans by meals, ingredients at cost or included, containers, delivery, dietary plans; weekly by duplicating the invoice. Sample: 10 meals a week for a month.
 - **Don't write about:** Private chef (/templates/personal-chef); catering (/templates/catering).
-- **Notes:** industry: personal-chefs
+- **Notes:** industry: meal-prep-businesses
 
 #### /templates/meat-processing
 
@@ -1521,7 +1521,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per tour or per day, group size tiers, entrance fees passed on, transport, the guide's licence where required (hedge), deposits from agencies. Sample: a full-day private tour for 6.
 - **Don't write about:** Travel agency fees (/templates/travel-agent).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: tour-operators
 
 #### /templates/travel-agent
 
@@ -1529,7 +1529,7 @@
 - **Item:** T14 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Planning fees, bookings passed on at cost vs commission from suppliers, service fees per ticket, deposits and final payment dates; seller of travel rules where they exist (hedge). Sample: a planning fee + a booked trip.
 - **Don't write about:** Tour guiding (/templates/tour-guide).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: travel-agents
 
 ### Item T15 (15)
 
@@ -1539,7 +1539,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Accountants and CPA firms: year-end accounts, tax returns, advisory by the hour or fixed fee, monthly packages, engagement letter reference, out-of-scope work billed apart. Sample: a year-end package + 3 advisory hours.
 - **Don't write about:** Bookkeeping (/templates/bookkeeping); tax preparation (/templates/tax-preparation).
-- **Notes:** industry: bookkeepers
+- **Notes:** industry: accountants
 
 #### /templates/financial-advisor
 
@@ -1547,7 +1547,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Fee-only planners: a flat planning fee, hourly, or a retainer; the advisory fee as % of assets billed quarterly (often deducted from the account: say so); registration disclosures (hedge). Sample: a financial plan + quarterly fee.
 - **Don't write about:** Accounting (/templates/accounting); consulting (/templates/consulting).
-- **Notes:** industry: consultants-coaches
+- **Notes:** industry: financial-advisors
 
 #### /templates/recruitment
 
@@ -1555,7 +1555,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Placement fees as % of first-year salary, retained search in stages, the guarantee or rebate period, the candidate and start date, VAT on fees. Sample: a 20% placement on a €60,000 role.
 - **Don't write about:** Temp staffing (/templates/staffing-agency).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: recruiters
 
 #### /templates/staffing-agency
 
@@ -1563,7 +1563,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Temp workers billed weekly: hours per worker from approved timesheets × bill rate, overtime rates, the markup inside the bill rate, the PO, temp-to-hire conversion fees. Sample: a week of 3 temps.
 - **Don't write about:** Permanent placement (/templates/recruitment); security staff (/templates/security-guard).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: staffing-agencies
 
 #### /templates/grant-writing
 
@@ -1603,7 +1603,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Appearance fee, per page for the original and copies, expedited delivery, exhibits, realtime, the case name and number. Sample: a deposition, 180 pages, 2 copies.
 - **Don't write about:** General transcription (/templates/transcription).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: court-reporters
 
 #### /templates/interpreter
 
@@ -1627,7 +1627,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per session or per hour, split between the parties (who pays what share), prep time, the agreement drafting, cancellation. Sample: a full-day mediation split 50/50.
 - **Don't write about:** Attorneys (/templates/attorney).
-- **Notes:** industry: lawyers
+- **Notes:** industry: mediators
 
 #### /templates/expert-witness
 
@@ -1643,7 +1643,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per serve by area and rush level, attempts, skip tracing, the affidavit of service, mileage, the case number. Sample: 2 serves, one rush.
 - **Don't write about:** Private investigation (/templates/private-investigator).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: process-servers
 
 #### /templates/engineering
 
@@ -1651,7 +1651,7 @@
 - **Item:** T15 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Consulting engineers: inspections and calculations as fixed fees, hourly design work, site visits, stamped drawings, reimbursables, project numbers. Sample: a structural inspection + beam calculation.
 - **Don't write about:** Architects (/templates/architect); land surveying (/templates/land-surveying).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: engineering-firms
 
 ### Item T16 (10)
 
@@ -1695,7 +1695,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Milestones (prototype, vertical slice, alpha), art assets per piece, hourly contract work, licences and engines, publisher advances. Sample: a milestone + 12 asset pieces.
 - **Don't write about:** Apps (/templates/app-development); illustration (/templates/illustration).
 - **Already covered (link, don't repeat):** /templates/web-development (“web development invoice template”)
-- **Notes:** industry: app-developers
+- **Notes:** industry: game-developers
 
 #### /templates/animation
 
@@ -1703,7 +1703,7 @@
 - **Item:** T16 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per second of finished animation or per project, storyboards and animatics, revision rounds, voice and music licences passed through, usage rights. Sample: a 60-second explainer.
 - **Don't write about:** Video editing (/templates/video-editing); illustration (/templates/illustration).
-- **Notes:** industry: illustrators
+- **Notes:** industry: animators
 
 #### /templates/3d-rendering
 
@@ -1711,7 +1711,7 @@
 - **Item:** T16 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per image by view and resolution, animations per second, modelling from plans, revision rounds, rush. Sample: 4 exterior + 2 interior renders.
 - **Don't write about:** 3D printing (/templates/3d-printing); architects (/templates/architect).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: 3d-artists
 
 #### /templates/photo-retouching
 
@@ -1746,7 +1746,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Production companies and crews: pre-production, shoot days by crew role, equipment packages, post-production, expenses and per diems, the production's PO and job number. Sample: a 2-day commercial shoot.
 - **Don't write about:** Small video jobs (/templates/videography); editing only (/templates/video-editing).
-- **Notes:** industry: photographers-videographers
+- **Notes:** industry: production-companies
 
 #### /templates/actor
 
@@ -1754,7 +1754,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Self-employed actors: day rate or session fee, usage and buyout, fittings and rehearsals, the agent's commission (who invoices whom), expenses. Sample: a 2-day commercial with a buyout.
 - **Don't write about:** Voice-over (/templates/voice-over); modelling (/templates/model).
-- **Notes:** industry: voice-actors
+- **Notes:** industry: actors
 
 #### /templates/model
 
@@ -1762,7 +1762,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Day or half-day rate, usage rights by media and period, overtime, fittings, travel, the agency's commission and VAT. Sample: a half-day e-commerce shoot.
 - **Don't write about:** Acting (/templates/actor); stylists (/templates/stylist).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: models
 
 #### /templates/fashion-design
 
@@ -1771,7 +1771,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Design fees, pattern making, samples, production per unit with quantity breaks, fabric deposits, tech packs. Sample: a design + 3 samples + 50 units.
 - **Don't write about:** Alterations (/templates/alterations); embroidery (/templates/embroidery).
 - **Already covered (link, don't repeat):** /templates/freelance-design (“graphic design invoice template”) · /templates/interior-design (“interior design invoice template”)
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: fashion-designers
 
 #### /templates/stylist
 
@@ -1779,7 +1779,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Shoots and clients: day rate, prep and shopping days, the wardrobe budget passed on with receipts, returns, kit fee. Sample: a 1-day editorial + a prep day.
 - **Don't write about:** Hair styling (/templates/hair-salon); personal shopping (/templates/personal-shopper).
-- **Notes:** industry: hair-makeup-artists
+- **Notes:** industry: fashion-stylists
 
 #### /templates/muralist
 
@@ -1795,7 +1795,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Wholesale orders to shops and restaurants (minimums, per-piece prices, lead times), custom commissions, classes, shipping and breakage terms. Sample: a restaurant order of 60 plates.
 - **Don't write about:** Selling goods in general (/templates/sales-invoice).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: crafters
 
 #### /templates/jewelry-making
 
@@ -1819,7 +1819,7 @@
 - **Item:** T17 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Makers selling to shops, markets and custom clients: per item, wholesale vs retail price, custom orders with deposits, shipping, sales tax or VAT on goods. Sample: a wholesale order to a gift shop.
 - **Don't write about:** Goods in general (/templates/sales-invoice); pottery (/templates/pottery).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: crafters
 
 #### /templates/studio-rental
 
@@ -1845,7 +1845,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per session (initial vs follow-up), packages, herbs as products, the licence number; for insurance reimbursement clients often need a superbill (link /templates/therapy). Sample: an initial + 3 follow-ups.
 - **Don't write about:** The superbill in depth (/templates/therapy); massage (/templates/massage-therapy).
-- **Notes:** industry: massage-therapists
+- **Notes:** industry: acupuncturists
 
 #### /templates/chiropractic
 
@@ -1853,7 +1853,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Cash-pay visits: exams, adjustments, X-rays, packages and memberships, the provider's licence; insurance codes only on a superbill (hedge). Sample: an exam + X-ray + 2 adjustments.
 - **Don't write about:** The superbill (/templates/therapy); physical therapy (/templates/physiotherapy).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: chiropractors
 
 #### /templates/physiotherapy
 
@@ -1862,7 +1862,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Private practice: assessment and treatment sessions, home visits, packages, the therapist's registration; insurance or health-fund billing details vary by country (hedge). Sample: assessment + 4 sessions.
 - **Don't write about:** The superbill (/templates/therapy); occupational therapy (/templates/occupational-therapy).
 - **Already covered (link, don't repeat):** /templates/massage-therapy (“massage therapy invoice template”)
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: physiotherapists
 
 #### /templates/speech-therapy
 
@@ -1871,7 +1871,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Private clients and schools: sessions, evaluations and reports, contract hours for schools, teletherapy, cancellations. Sample: an evaluation + 8 sessions.
 - **Don't write about:** The superbill (/templates/therapy).
 - **Already covered (link, don't repeat):** /templates/massage-therapy (“massage therapy invoice template”)
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: speech-therapists
 
 #### /templates/occupational-therapy
 
@@ -1880,7 +1880,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Assessments, home or school visits, equipment recommendations, reports for funders, mileage. Sample: a home assessment + report.
 - **Don't write about:** Physiotherapy (/templates/physiotherapy).
 - **Already covered (link, don't repeat):** /templates/massage-therapy (“massage therapy invoice template”)
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: occupational-therapists
 
 #### /templates/reiki
 
@@ -1888,7 +1888,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Sessions, distance sessions, packages, classes and attunements; wording without health claims. Sample: 3 sessions + a level 1 class.
 - **Don't write about:** Massage (/templates/massage-therapy); coaching (/templates/life-coaching).
-- **Notes:** industry: massage-therapists
+- **Notes:** industry: holistic-practitioners
 
 #### /templates/spray-tanning
 
@@ -1896,7 +1896,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per session, mobile fee, bridal parties, packages, the patch-test note. Sample: a bridal party of 6, mobile.
 - **Don't write about:** Skin care (/templates/esthetician).
-- **Notes:** industry: estheticians
+- **Notes:** industry: spray-tan-artists
 
 #### /templates/microblading
 
@@ -1904,7 +1904,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. The procedure, the touch-up included or later, the deposit to book, consent forms, licensing (hedge per state or country). Sample: microblading + a 6-week touch-up.
 - **Don't write about:** Lashes (/templates/lash-extensions); makeup (/templates/makeup-artist).
-- **Notes:** industry: estheticians
+- **Notes:** industry: pmu-artists
 
 #### /templates/hair-braiding
 
@@ -1920,7 +1920,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Self-employed doctors, pharmacists or vets covering shifts: sessions or hours by date, the practice, travel, the registration number; pension and tax notes (UK: hedge, cite NHS guidance). Sample: 6 sessions in a month.
 - **Don't write about:** Nursing (/templates/nursing).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: locums
 
 #### /templates/nursing
 
@@ -1928,7 +1928,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Independent and agency nurses billing per shift or hour, the patient or facility, mileage, the licence number; private duty vs facility contracts. Sample: 4 private-duty shifts.
 - **Don't write about:** Home care (/templates/caregiving); locums (/templates/locum).
-- **Notes:** industry: caregivers
+- **Notes:** industry: nurses
 
 #### /templates/midwife
 
@@ -1936,7 +1936,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. A global fee for prenatal, birth and postnatal care in stages, birth supplies, lab fees passed on, the licence; health-insurance billing differs by country (hedge). Sample: a home-birth package in 3 payments.
 - **Don't write about:** Doulas (/templates/doula).
-- **Notes:** industry: doulas
+- **Notes:** industry: midwives
 
 #### /templates/lactation-consultant
 
@@ -1952,7 +1952,7 @@
 - **Item:** T18 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Packages (plan + 2 weeks of support), virtual or in-home, follow-up calls, extra weeks. Sample: a 2-week package.
 - **Don't write about:** Coaching (/templates/life-coaching).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: holistic-practitioners
 
 #### /templates/hypnotherapy
 
@@ -1970,7 +1970,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Weekly or monthly tuition, registration fee, late pickup fees, meals, holidays and closures, the provider's licence and tax ID for the parents' tax credit or childcare subsidy (hedge per country). Sample: a month for 2 children.
 - **Don't write about:** Babysitting and nannies (/templates/babysitting).
-- **Notes:** industry: babysitters
+- **Notes:** industry: daycare-providers
 
 #### /templates/after-school-program
 
@@ -1978,7 +1978,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per term or month, days per week, pickup from school, activities, late fees, sibling discount. Sample: a term, 3 days a week.
 - **Don't write about:** Daycare (/templates/daycare); tutoring (/templates/tutoring).
-- **Notes:** industry: babysitters
+- **Notes:** industry: after-school-programs
 
 #### /templates/summer-camp
 
@@ -1986,7 +1986,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per week per child, deposit on registration, extended care, trips, the refund policy, sibling discounts. Sample: 3 weeks for 2 children.
 - **Don't write about:** After-school care (/templates/after-school-program).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: summer-camps
 
 #### /templates/language-lessons
 
@@ -1994,7 +1994,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per lesson or package, online vs in person, group classes, exam preparation, materials, company language training. Sample: 10 lessons + a business course.
 - **Don't write about:** Tutoring in school subjects (/templates/tutoring); translation (/templates/translation).
-- **Notes:** industry: tutors
+- **Notes:** industry: language-teachers
 
 #### /templates/art-lessons
 
@@ -2010,7 +2010,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per day or per participant, design and preparation, materials and certificates, travel, online vs on site, the client's PO. Sample: a 2-day workshop for 15.
 - **Don't write about:** Consulting (/templates/consulting); public speaking (/templates/public-speaking).
-- **Notes:** industry: consultants-coaches
+- **Notes:** industry: corporate-trainers
 
 #### /templates/public-speaking
 
@@ -2018,7 +2018,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. The speaking fee, travel and accommodation (or a flat travel fee), book sales, recording rights, the deposit and balance; speakers' bureau commission. Sample: a keynote + travel.
 - **Don't write about:** Training workshops (/templates/corporate-training).
-- **Notes:** industry: consultants-coaches
+- **Notes:** industry: speakers
 
 #### /templates/horse-riding-lessons
 
@@ -2026,7 +2026,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per lesson (private, group), packages, horse use vs own horse, arena fees, shows and coaching at events. Sample: 8 lessons, school horse.
 - **Don't write about:** Boarding (/templates/horse-boarding).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: riding-instructors
 
 #### /templates/martial-arts
 
@@ -2034,7 +2034,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Memberships per month, belt test fees, uniforms and gear, private lessons, family plans; monthly by duplicating the invoice. Sample: a family plan + a belt test.
 - **Don't write about:** Personal training (/templates/personal-training).
-- **Notes:** industry: personal-trainers
+- **Notes:** industry: martial-arts-schools
 
 #### /templates/college-admissions-consulting
 
@@ -2051,7 +2051,7 @@
 - **Item:** T19 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per participant with a class minimum, certification cards and the issuing body's fees, on-site group classes, equipment. Sample: a workplace class for 12.
 - **Don't write about:** Corporate training (/templates/corporate-training).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: cpr-instructors
 
 #### /templates/music-therapy
 
@@ -2071,7 +2071,7 @@
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per night by size, holiday surcharges, multiple pets, daycare days, bathing on checkout, medications, vaccination requirements in the terms. Sample: 6 nights for 2 dogs over a holiday.
 - **Don't write about:** Pet sitting in the owner's home (/templates/pet-sitting); grooming (/templates/dog-grooming).
 - **Already covered (link, don't repeat):** /templates/pet-sitting (“pet sitting invoice template”)
-- **Notes:** industry: pet-care
+- **Notes:** industry: kennels
 
 #### /templates/horse-boarding
 
@@ -2079,7 +2079,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Monthly board by type (full, partial, pasture), feed and bedding extras, turnout, blanketing, farrier and vet visits passed on, the board agreement. Sample: a month of full board + farrier.
 - **Don't write about:** Farriers (/templates/farrier); lessons (/templates/horse-riding-lessons).
-- **Notes:** industry: farmers
+- **Notes:** industry: stables
 
 #### /templates/farrier
 
@@ -2087,7 +2087,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per horse: trim, front shoes, full set, specialty shoes, pads, a barn call fee shared across horses, missed appointments. Sample: 4 horses at one barn.
 - **Don't write about:** Horse boarding (/templates/horse-boarding).
-- **Notes:** industry: farmers
+- **Notes:** industry: farriers
 
 #### /templates/pet-waste-removal
 
@@ -2095,7 +2095,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Weekly or twice-weekly service by number of dogs, initial cleanup fee, deodorising, commercial sites (HOAs, apartments); monthly by duplicating the invoice. Sample: a month, weekly, 2 dogs.
 - **Don't write about:** Pet sitting (/templates/pet-sitting); lawn care (/templates/landscaping).
-- **Notes:** industry: pet-care
+- **Notes:** industry: pooper-scooper-businesses
 
 #### /templates/hunting-guide
 
@@ -2103,7 +2103,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Guided hunts per day or package, lodging and meals, trophy fees, processing passed on, licences and tags (the client buys them: hedge), the deposit and cancellation. Sample: a 3-day guided hunt.
 - **Don't write about:** Meat processing (/templates/meat-processing); fishing charters (/templates/fishing-charter).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: outfitters
 
 #### /templates/fishing-charter
 
@@ -2111,7 +2111,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Half or full day, per person or per boat, bait and tackle, fish cleaning, the fuel surcharge, licences, the captain's licence, gratuity line. Sample: a full-day trip for 4.
 - **Don't write about:** Hunting guides (/templates/hunting-guide); boat repair (/templates/boat-repair).
-- **Notes:** industry: none (link 2 related templates)
+- **Notes:** industry: fishing-charters
 
 #### /templates/custom-harvesting
 
@@ -2119,7 +2119,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per acre by crop, per bushel or tonne hauling, fuel surcharge, the field names and acres, combine and trucks; contractor work for farms (Lohnunternehmer, loonwerker in local versions). Sample: 300 acres of wheat + hauling.
 - **Don't write about:** Farm sales (/templates/farm); land clearing (/templates/land-clearing).
-- **Notes:** industry: farmers
+- **Notes:** industry: custom-harvesters
 
 #### /templates/land-clearing
 
@@ -2135,7 +2135,7 @@
 - **Item:** T20 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per tonne or per cord, stumpage paid to the owner vs cutting and hauling fees, scale tickets, the harvest plan. Sample: a timber sale settlement.
 - **Don't write about:** Tree service (/templates/tree-service); firewood (/templates/firewood).
-- **Notes:** industry: tree-service
+- **Notes:** industry: loggers
 
 #### /templates/firewood
 
