@@ -147,6 +147,13 @@ export const ITEMS = [
     text: "needs task S3",
   },
   {
+    id: "CT4",
+    title: "More EU countries in English (none of our languages)",
+    text: "needs task S3",
+  },
+  { id: "CT5", title: "India, Japan, Thailand and Quebec", text: "needs task S3" },
+  { id: "CT6", title: "Cross-border invoicing (UK, EU, US)", text: "needs task S3" },
+  {
     id: "LO1",
     title: "Invoice rules per country, in its own language",
     text: "needs task S3; it, pt, pl stay on hold (e-invoicing)",
@@ -317,6 +324,9 @@ export const ORDER = [
   "TL7",
   "TL8",
   "TL9",
+  "CT4",
+  "CT5",
+  "CT6",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

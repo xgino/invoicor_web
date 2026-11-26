@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
-**0 done · 23 planned**
+**0 done · 39 planned**
 
 ## Direction
 
@@ -28,7 +28,7 @@
 
 _None yet._
 
-## Planned (23)
+## Planned (39)
 
 ### Item CT1 (7)
 
@@ -215,3 +215,138 @@ _None yet._
 - **Write about:** Needs page code (chunk 43, the country page type). For foreign freelancers and small businesses there who search in English: what an invoice must show, with each rule's official source and the date checked; the generator preset. The Tax Department's required fields; TIC and VAT number; the registration threshold (check); EUR, the standard and reduced rates (check). Many businesses work in English.
 - **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice).
 - **Notes:** no local page planned (Austria: the German page covers the language)
+
+### Item CT4 (8)
+
+#### /invoice-generator-luxembourg
+
+- **Key:** invoice requirements luxembourg · also: luxembourg vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields per the AED; VAT 17% and the reduced rates (check); the small-business franchise; e-invoicing only for B2G so far (check). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-estonia
+
+- **Key:** invoice requirements estonia · also: estonia vat invoice; e-resident invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). e-Residents and freelancers: required fields per the Tax and Customs Board, VAT 24% (raised in 2025: check), the KMKR number, B2B e-invoices on request since 2025 (check what that means for a PDF). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-lithuania
+
+- **Key:** invoice requirements lithuania · also: lithuania vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields, PVM 21%, the i.SAF reporting of invoice data by VAT payers (hedge: the data is reported, the PDF stays valid: check). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-latvia
+
+- **Key:** invoice requirements latvia · also: latvia vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields per the VID, PVN 21%, the planned B2B e-invoicing (dates moved: check; if it applies, say so first). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-slovakia
+
+- **Key:** invoice requirements slovakia · also: slovakia vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields, DPH (rates changed in 2025: check), B2B e-invoicing planned from 2027 (check): until then a PDF is fine, say so with the date. EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-slovenia
+
+- **Key:** invoice requirements slovenia · also: slovenia vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields, DDV 22% and the reduced rates, B2B e-invoicing planned from 2028 (check), the fiscal cash register for cash payments (hedge: a cash sale needs a fiscally verified receipt). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-bulgaria
+
+- **Key:** invoice requirements bulgaria · also: bulgaria vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields per the NRA, VAT 20%, the switch to the euro in 2026 (prices and invoices in EUR, the conversion rate: check). EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-czech-republic
+
+- **Key:** invoice requirements czech republic · also: czech invoice requirements; czech vat invoice
+- **Item:** CT4 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Required fields (IČO, DIČ), DPH 21% and 12% (since 2024: check), the VAT control statement (hedge), invoices by non-VAT payers. CZK.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+### Item CT5 (4)
+
+#### /invoice-generator-india
+
+- **Key:** gst invoice format india · also: tax invoice format india; gst bill format
+- **Item:** CT5 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). GST tax invoice fields (CGST Rules, rule 46: check), GSTIN, HSN/SAC codes, place of supply, CGST + SGST vs IGST; e-invoicing (IRN) is required above a turnover limit, so the page says who can still use a PDF (check the current limit). INR. Link the India GST calculator.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-japan
+
+- **Key:** qualified invoice japan · also: japan invoice system; tekikaku seikyusho
+- **Item:** CT5 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). For foreigners and freelancers in Japan: the qualified invoice system since 2023 (the T + 13-digit registration number, consumption tax per rate, 10% and 8% reduced), what an unregistered seller can issue; English with the Japanese terms. JPY.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-thailand
+
+- **Key:** tax invoice thailand · also: thailand vat invoice
+- **Item:** CT5 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). Full vs abbreviated tax invoices per the Revenue Department, VAT 7% (check), the 13-digit tax ID, e-Tax invoices optional (check). THB.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”)
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /invoice-generator-quebec
+
+- **Key:** quebec invoice requirements · also: qst invoice; quebec gst qst invoice
+- **Item:** CT5 · **Intent:** country rules + generator preset · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). GST 5% + QST 9.975% and both registration numbers, and the Charter of the French language: invoices to Quebec clients must be in French (another language may be added; check the 2025 rules, cite the OQLF). CAD. Link the Canada page and calculator.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+### Item CT6 (4)
+
+#### /eu-client-from-uk
+
+- **Key:** invoice eu client from uk · also: invoicing eu clients after brexit; uk vat on services to eu
+- **Item:** CT6 · **Intent:** cross-border rules · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). UK businesses billing EU clients: services to EU businesses are usually outside the scope of UK VAT with the reverse charge in the EU; goods are exports (zero-rated, customs); B2C digital services and EU VAT (OSS). Each with its GOV.UK source, hedged. GBP or EUR.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /us-client-from-europe
+
+- **Key:** invoice us client from europe · also: invoicing us clients from eu; w-8ben invoice
+- **Item:** CT6 · **Intent:** cross-border rules · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). EU and UK freelancers billing US clients: usually no VAT on B2B services exported (reverse charge or outside the scope: hedge per country), the W-8BEN or W-8BEN-E the client may ask for, USD and bank details that work from the US. Link the international invoice template.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /uk-client-from-eu
+
+- **Key:** invoice uk client from eu · also: invoicing uk clients from europe
+- **Item:** CT6 · **Intent:** cross-border rules · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). EU businesses billing UK clients: the UK reverse charge on B2B services, the UK VAT number, goods as exports with customs, GBP vs EUR. Sources from the EU country and GOV.UK.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers
+
+#### /oss-invoice
+
+- **Key:** oss invoice · also: one stop shop vat invoice; eu oss invoice requirements
+- **Item:** CT6 · **Intent:** cross-border rules · **Languages:** en-only
+- **Write about:** Needs page code (task S3, the country page type). In English: what an invoice must show there, each rule with its official source and the date checked; the generator preset (currency, rate). EU B2C distance sales and digital services above €10,000: the VAT of the customer's country, which invoice rules apply (those of the seller's country under OSS: check), what the OSS return needs. Source: the European Commission's OSS guide.
+- **Don't write about:** The general 'what goes on an invoice' (the blog); the EU reverse charge in depth (/reverse-charge-invoice: link it); rules without a source and date.
+- **Notes:** en-only: none of our 11 languages, or a topic for English speakers

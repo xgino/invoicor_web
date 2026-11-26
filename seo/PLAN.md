@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 846 English and local pages + 8,150 language pages · **9,237 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 862 English and local pages + 8,150 language pages · **9,253 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -111,7 +111,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
-| [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 | 0 | 23 | 0/10 done |
+| [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 | 0 | 32 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
@@ -124,7 +124,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6**
 
 ## Tasks (S): code, no pages
 
@@ -1370,6 +1370,34 @@ Direction (what these pages can and can't do) and every brief: [plan/country.md]
   - [ ] [/invoice-generator-norway](plan/country.md#invoice-generator-norway) invoice requirements norway
   - [ ] [/invoice-generator-finland](plan/country.md#invoice-generator-finland) invoice requirements finland
   - [ ] [/invoice-generator-cyprus](plan/country.md#invoice-generator-cyprus) invoice requirements cyprus
+
+### CT4: More EU countries in English (none of our languages)
+
+- [ ] **CT4** · 0/8 live · needs task S3
+  - [ ] [/invoice-generator-luxembourg](plan/country.md#invoice-generator-luxembourg) invoice requirements luxembourg
+  - [ ] [/invoice-generator-estonia](plan/country.md#invoice-generator-estonia) invoice requirements estonia
+  - [ ] [/invoice-generator-lithuania](plan/country.md#invoice-generator-lithuania) invoice requirements lithuania
+  - [ ] [/invoice-generator-latvia](plan/country.md#invoice-generator-latvia) invoice requirements latvia
+  - [ ] [/invoice-generator-slovakia](plan/country.md#invoice-generator-slovakia) invoice requirements slovakia
+  - [ ] [/invoice-generator-slovenia](plan/country.md#invoice-generator-slovenia) invoice requirements slovenia
+  - [ ] [/invoice-generator-bulgaria](plan/country.md#invoice-generator-bulgaria) invoice requirements bulgaria
+  - [ ] [/invoice-generator-czech-republic](plan/country.md#invoice-generator-czech-republic) invoice requirements czech republic
+
+### CT5: India, Japan, Thailand and Quebec
+
+- [ ] **CT5** · 0/4 live · needs task S3
+  - [ ] [/invoice-generator-india](plan/country.md#invoice-generator-india) gst invoice format india
+  - [ ] [/invoice-generator-japan](plan/country.md#invoice-generator-japan) qualified invoice japan
+  - [ ] [/invoice-generator-thailand](plan/country.md#invoice-generator-thailand) tax invoice thailand
+  - [ ] [/invoice-generator-quebec](plan/country.md#invoice-generator-quebec) quebec invoice requirements
+
+### CT6: Cross-border invoicing (UK, EU, US)
+
+- [ ] **CT6** · 0/4 live · needs task S3
+  - [ ] [/eu-client-from-uk](plan/country.md#eu-client-from-uk) invoice eu client from uk
+  - [ ] [/us-client-from-europe](plan/country.md#us-client-from-europe) invoice us client from europe
+  - [ ] [/uk-client-from-eu](plan/country.md#uk-client-from-eu) invoice uk client from eu
+  - [ ] [/oss-invoice](plan/country.md#oss-invoice) oss invoice
 
 ## Local pages (in the country's own language) (LO)
 
