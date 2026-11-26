@@ -88,15 +88,35 @@ export function tokens(text) {
   ];
 }
 
-/** Shared words / all words (Jaccard). */
+/**
+ * Words almost every key has: they count for less, so "pool service invoice template" and
+ * "tree service invoice template" aren't called alike just because of "invoice template".
+ */
+const COMMON = new Set(
+  "invoice invoicing template app software iphone free factuur rechnung facture factura fattura fatura faktura".split(
+    " ",
+  ),
+);
+const weight = (w) => (COMMON.has(w) ? 0.3 : 1);
+
+/** Shared words / all words (weighted Jaccard). 1 = the same words. */
 export function similarity(a, b) {
   const x = new Set(tokens(a));
   const y = new Set(tokens(b));
   if (!x.size || !y.size) return 0;
   let shared = 0;
-  for (const w of x) if (y.has(w)) shared++;
-  return shared / (x.size + y.size - shared);
+  let all = 0;
+  for (const w of new Set([...x, ...y])) {
+    all += weight(w);
+    if (x.has(w) && y.has(w)) shared += weight(w);
+  }
+  return shared / all;
 }
+
+/** A trade's template and its "invoice app for …" page are a pair by design (a document vs an app). */
+const isPair = (a, b) =>
+  [a.page_type, b.page_type].includes("industry") &&
+  [a.page_type, b.page_type].some((t) => t.startsWith("template"));
 
 /** The pages most like `keyword` in the same language, best first. */
 export function closest(rows, keyword, lang = "en", limit = 8) {
@@ -119,6 +139,7 @@ export function overlaps(rows) {
       if (a.lang !== b.lang) continue;
       // A hub and its own pages (/templates and /templates/plumbing) are meant to share words.
       if (b.url.startsWith(`${a.url}/`) || a.url.startsWith(`${b.url}/`)) continue;
+      if (isPair(a, b)) continue;
       const score = similarity(a.primary_keyword, b.primary_keyword);
       if (score >= TOO_CLOSE) pairs.push({ a, b, score });
     }

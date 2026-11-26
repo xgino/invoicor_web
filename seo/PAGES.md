@@ -6,25 +6,25 @@
 > `npm run pages -- --check "plumbing deposit invoice"` (add `--lang de` for German) lists the
 > pages with the closest keys. The site test fails when this file or the CSV is behind the site.
 
-**188 live pages** · 19 planned · last change 2026-11-26
+**188 live pages** · 99 planned · last change 2026-11-26
 
 ## Counts
 
 | Section | Live | Planned | Page types |
 |---|---|---|---|
-| other English pages | 7 | 4 | legal 2, home 1, generator 1, support 1, program 1, android 1 |
+| other English pages | 7 | 11 | legal 2, home 1, generator 1, support 1, program 1, android 1 |
 | /compare | 21 | 1 | compare 20, hub 1 |
-| /guides | 0 | 10 |  |
-| /industries | 21 |  | industry 20, hub 1 |
-| /templates | 21 | 4 | template 20, hub 1 |
+| /guides | 0 | 7 |  |
+| /industries | 21 | 23 | industry 20, hub 1 |
+| /templates | 21 | 54 | template 20, hub 1 |
 | /tools | 4 |  | tool 4 |
 | /da | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
-| /de | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
+| /de | 8 | 1 | tool 4, home 1, generator 1, support 1, android 1 |
 | /es | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
-| /fr | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
+| /fr | 8 | 1 | tool 4, home 1, generator 1, support 1, android 1 |
 | /it | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
 | /nb | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
-| /nl | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
+| /nl | 8 | 1 | tool 4, home 1, generator 1, support 1, android 1 |
 | /pl | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
 | /pt | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
 | /sv | 8 |  | tool 4, home 1, generator 1, support 1, android 1 |
@@ -75,16 +75,12 @@ may compete for the same search: merge them, or give one a clearly different key
 
 | Alike | Page | Key | Page | Key |
 |---|---|---|---|---|
-| 75% | / | invoice app iphone | learn:/why-use-an-invoice-app-on-iphone | why use an invoice app on iphone |
-| 67% | /guides/what-to-include-on-an-invoice _(planned)_ | what to include on an invoice | learn:/what-should-an-invoice-include | what should an invoice include |
-| 67% | /templates/invoice-template-pdf _(planned)_ | invoice template pdf | learn:/what-is-a-pdf-invoice | what is a pdf invoice |
-| 67% | learn:/how-pdf-invoice-templates-work-on-iphone | how pdf invoice templates work on iphone | learn:/how-to-use-pdf-invoice-templates-on-iphone | how to use pdf invoice templates on iphone |
-| 67% | learn:/how-to-save-an-invoice-as-a-pdf-on-iphone | how to save an invoice as a pdf on iphone | learn:/can-you-send-an-invoice-as-a-pdf-from-iphone | can you send an invoice as a pdf from iphone |
-| 60% | / | invoice app iphone | learn:/free-invoice-app-for-iphone-what-to-look-for | free invoice app for iphone what to look for |
-| 60% | /templates/invoice-template-pdf _(planned)_ | invoice template pdf | learn:/how-pdf-invoice-templates-work-on-iphone | how pdf invoice templates work on iphone |
-| 60% | /templates/invoice-template-pdf _(planned)_ | invoice template pdf | learn:/how-to-use-pdf-invoice-templates-on-iphone | how to use pdf invoice templates on iphone |
-| 60% | learn:/how-to-use-an-invoice-maker-for-iphone | how to use an invoice maker for iphone | learn:/why-use-an-invoice-app-on-iphone | why use an invoice app on iphone |
-| 60% | learn:/how-to-share-an-invoice-pdf-from-iphone | how to share an invoice pdf from iphone | learn:/how-to-share-invoices-instantly-from-iphone | how to share invoices instantly from iphone |
+| 81% | /templates/invoice-template-pdf _(planned)_ | invoice template pdf | learn:/what-is-a-pdf-invoice | what is a pdf invoice |
+| 69% | learn:/what-is-a-multi-currency-invoicing-app | what is a multi currency invoicing app | learn:/what-is-a-multi-currency-invoice | what is a multi currency invoice |
+| 64% | /templates/web-development | web development invoice template | /templates/web-development-milestone-invoice _(planned)_ | web development milestone invoice |
+| 64% | /templates/virtual-assistant _(planned)_ | virtual assistant invoice template | /templates/virtual-assistant-hourly-invoice _(planned)_ | virtual assistant hourly invoice |
+| 62% | /templates/cleaning-services | cleaning invoice template | /templates/window-cleaning _(planned)_ | window cleaning invoice template |
+| 62% | /templates/cleaning-services | cleaning invoice template | /templates/carpet-cleaning _(planned)_ | carpet cleaning invoice template |
 
 ## All pages
 
@@ -103,6 +99,13 @@ may compete for the same search: merge them, or give one a clearly different key
 | /contact | contact invoicor | trust |  | planned |
 | /free-estimate-generator | free estimate generator | generator |  | planned |
 | /free-receipt-generator | free receipt generator | generator |  | planned |
+| /invoice-generator-australia | tax invoice australia | country |  | planned |
+| /invoice-generator-canada | gst hst invoice canada | country |  | planned |
+| /invoice-generator-ireland | vat invoice ireland | country |  | planned |
+| /invoice-generator-new-zealand | gst invoice nz | country |  | planned |
+| /invoice-generator-south-africa | vat invoice south africa | country |  | planned |
+| /invoice-generator-uk | uk vat invoice requirements | country |  | planned |
+| /reverse-charge-invoice | eu reverse charge invoice | country |  | planned |
 
 ### /compare (21 live)
 
@@ -139,9 +142,6 @@ may compete for the same search: merge them, or give one a clearly different key
 | /guides/how-to-number-invoices | invoice numbering | guide |  | planned |
 | /guides/how-to-write-an-invoice | how to write an invoice | guide |  | planned |
 | /guides/invoice-payment-terms | invoice payment terms | guide |  | planned |
-| /guides/invoice-requirements-germany | rechnung schreiben (de: /de/…) | guide |  | planned |
-| /guides/invoice-requirements-netherlands | factuur maken (nl: /nl/…) | guide |  | planned |
-| /guides/invoice-requirements-uk | uk invoice requirements / vat invoice | guide |  | planned |
 | /guides/invoice-vs-receipt | invoice vs receipt | guide |  | planned |
 | /guides/late-payment-email | late payment email template | guide |  | planned |
 | /guides/what-to-include-on-an-invoice | what to include on an invoice | guide |  | planned |
@@ -171,6 +171,29 @@ may compete for the same search: merge them, or give one a clearly different key
 | /industries/tutors | invoice app for tutors | industry | 2026-11-18 | live |
 | /industries/virtual-assistants | invoice app for virtual assistants | industry | 2026-11-18 | live |
 | /industries/web-developers | invoice app for freelance developers | industry | 2026-11-18 | live |
+| /industries/appliance-repair | invoice app for appliance repair technicians | industry |  | planned |
+| /industries/bookkeepers | invoice app for bookkeepers | industry |  | planned |
+| /industries/carpenters | invoice app for carpenters | industry |  | planned |
+| /industries/carpet-cleaners | invoice app for carpet cleaners | industry |  | planned |
+| /industries/copywriters | invoice app for copywriters | industry |  | planned |
+| /industries/djs | invoice app for djs | industry |  | planned |
+| /industries/event-planners | invoice app for event planners | industry |  | planned |
+| /industries/flooring-installers | invoice app for flooring installers | industry |  | planned |
+| /industries/florists | invoice app for florists | industry |  | planned |
+| /industries/interior-designers | invoice app for interior designers | industry |  | planned |
+| /industries/junk-removal | invoice app for junk removal businesses | industry |  | planned |
+| /industries/locksmiths | invoice app for locksmiths | industry |  | planned |
+| /industries/masons | invoice app for masons | industry |  | planned |
+| /industries/massage-therapists | invoice app for massage therapists | industry |  | planned |
+| /industries/music-teachers | invoice app for music teachers | industry |  | planned |
+| /industries/pool-service | invoice app for pool service companies | industry |  | planned |
+| /industries/pressure-washing | invoice app for pressure washing businesses | industry |  | planned |
+| /industries/snow-removal | invoice app for snow removal businesses | industry |  | planned |
+| /industries/social-media-managers | invoice app for social media managers | industry |  | planned |
+| /industries/tile-installers | invoice app for tile installers | industry |  | planned |
+| /industries/translators | invoice app for translators | industry |  | planned |
+| /industries/tree-service | invoice app for tree service companies | industry |  | planned |
+| /industries/window-cleaners | invoice app for window cleaners | industry |  | planned |
 
 ### /templates (21 live)
 
@@ -197,10 +220,60 @@ may compete for the same search: merge them, or give one a clearly different key
 | /templates/tutoring | tutoring invoice template | template | 2026-11-18 | live |
 | /templates/videography | videography invoice template | template | 2026-11-17 | live |
 | /templates/web-development | web development invoice template | template | 2026-11-18 | live |
+| /templates/appliance-repair | appliance repair invoice template | template |  | planned |
+| /templates/bookkeeping | bookkeeping invoice template | template |  | planned |
+| /templates/bookkeeping-hourly-invoice | bookkeeping hourly invoice | template (billing type) |  | planned |
+| /templates/carpentry | carpentry invoice template | template |  | planned |
+| /templates/carpet-cleaning | carpet cleaning invoice template | template |  | planned |
+| /templates/catering-deposit-invoice | catering deposit invoice | template (billing type) |  | planned |
+| /templates/construction-progress-invoice | construction progress invoice | template (billing type) |  | planned |
+| /templates/consulting-hourly-invoice | consulting hourly invoice | template (billing type) |  | planned |
+| /templates/consulting-retainer-invoice | consulting retainer invoice | template (billing type) |  | planned |
+| /templates/contractor-deposit-invoice | contractor deposit invoice | template (billing type) |  | planned |
+| /templates/copywriting | copywriter invoice template | template |  | planned |
+| /templates/dj | dj invoice template | template |  | planned |
+| /templates/dj-deposit-invoice | dj deposit invoice | template (billing type) |  | planned |
+| /templates/drywall | drywall invoice template | template |  | planned |
+| /templates/electrical-labor-and-materials-invoice | electrical labor and materials invoice | template (billing type) |  | planned |
+| /templates/event-planning | event planner invoice template | template |  | planned |
+| /templates/fence-installation | fence installation invoice template | template |  | planned |
+| /templates/flooring | flooring invoice template | template |  | planned |
+| /templates/florist | florist invoice template | template |  | planned |
+| /templates/garage-door-repair | garage door repair invoice template | template |  | planned |
+| /templates/handyman-hourly-invoice | handyman hourly invoice | template (billing type) |  | planned |
+| /templates/hvac-labor-and-materials-invoice | hvac labor and materials invoice | template (billing type) |  | planned |
+| /templates/interior-design | interior design invoice template | template |  | planned |
 | /templates/invoice-template-excel | invoice template excel | template (file format) |  | planned |
 | /templates/invoice-template-google-docs | invoice template google docs | template (file format) |  | planned |
 | /templates/invoice-template-pdf | invoice template pdf | template (file format) |  | planned |
 | /templates/invoice-template-word | invoice template word | template (file format) |  | planned |
+| /templates/junk-removal | junk removal invoice template | template |  | planned |
+| /templates/landscaping-labor-and-materials-invoice | landscaping labor and materials invoice | template (billing type) |  | planned |
+| /templates/locksmith | locksmith invoice template | template |  | planned |
+| /templates/makeup-artist | makeup artist invoice template | template |  | planned |
+| /templates/masonry | masonry invoice template | template |  | planned |
+| /templates/massage-therapy | massage therapy invoice template | template |  | planned |
+| /templates/music-lessons | music teacher invoice template | template |  | planned |
+| /templates/painting-deposit-invoice | painting deposit invoice | template (billing type) |  | planned |
+| /templates/pet-sitting | pet sitting invoice template | template |  | planned |
+| /templates/photography-deposit-invoice | photography deposit invoice | template (billing type) |  | planned |
+| /templates/plumbing-labor-and-materials-invoice | plumbing labor and materials invoice | template (billing type) |  | planned |
+| /templates/pool-service | pool service invoice template | template |  | planned |
+| /templates/pressure-washing | pressure washing invoice template | template |  | planned |
+| /templates/remodeling | remodeling invoice template | template |  | planned |
+| /templates/roofing-deposit-invoice | roofing deposit invoice | template (billing type) |  | planned |
+| /templates/snow-removal | snow removal invoice template | template |  | planned |
+| /templates/social-media-management | social media manager invoice template | template |  | planned |
+| /templates/social-media-retainer-invoice | social media retainer invoice | template (billing type) |  | planned |
+| /templates/tile-installation | tile installation invoice template | template |  | planned |
+| /templates/translation | translation invoice template | template |  | planned |
+| /templates/tree-service | tree service invoice template | template |  | planned |
+| /templates/video-production-milestone-invoice | video production milestone invoice | template (billing type) |  | planned |
+| /templates/virtual-assistant | virtual assistant invoice template | template |  | planned |
+| /templates/virtual-assistant-hourly-invoice | virtual assistant hourly invoice | template (billing type) |  | planned |
+| /templates/web-development-milestone-invoice | web development milestone invoice | template (billing type) |  | planned |
+| /templates/web-development-retainer-invoice | website maintenance retainer invoice | template (billing type) |  | planned |
+| /templates/window-cleaning | window cleaning invoice template | template |  | planned |
 
 ### /tools (4 live)
 
@@ -236,6 +309,7 @@ may compete for the same search: merge them, or give one a clearly different key
 | /de/tools/mehrwertsteuer-rechner | mehrwertsteuer rechner | tool | 2026-11-18 | live |
 | /de/tools/stundenrechner | stundenrechner: arbeitsstunden für die rechnung | tool | 2026-11-18 | live |
 | /de/tools/stundensatz-rechner | stundensatz rechner | tool | 2026-11-18 | live |
+| /de/rechnung-pflichtangaben | pflichtangaben rechnung | country |  | planned |
 
 ### /es (8 live)
 
@@ -262,6 +336,7 @@ may compete for the same search: merge them, or give one a clearly different key
 | /fr/outils/calcul-heures | calcul heures | tool | 2026-11-18 | live |
 | /fr/outils/calcul-taux-horaire | calcul taux horaire | tool | 2026-11-18 | live |
 | /fr/outils/calcul-tva | calcul tva | tool | 2026-11-18 | live |
+| /fr/mentions-obligatoires-facture | mentions obligatoires facture | country |  | planned |
 
 ### /it (8 live)
 
@@ -301,6 +376,7 @@ may compete for the same search: merge them, or give one a clearly different key
 | /nl/tools/btw-berekenen | btw berekenen | tool | 2026-11-18 | live |
 | /nl/tools/uren-berekenen | uren berekenen | tool | 2026-11-18 | live |
 | /nl/tools/uurtarief-berekenen | uurtarief berekenen | tool | 2026-11-18 | live |
+| /nl/factuureisen | factuureisen | country |  | planned |
 
 ### /pl (8 live)
 

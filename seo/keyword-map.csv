@@ -48,9 +48,6 @@ url,lang,status,added,page_type,primary_keyword,secondary_keywords,intent,chunk,
 /guides/invoice-payment-terms,en,planned,,guide,invoice payment terms,,learn (how-to),42,,
 /guides/how-to-number-invoices,en,planned,,guide,invoice numbering,,learn (how-to),42,,
 /guides/late-payment-email,en,planned,,guide,late payment email template,,learn (how-to),42,,
-/guides/invoice-requirements-uk,en,planned,,guide,uk invoice requirements / vat invoice,,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
-/guides/invoice-requirements-germany,en,planned,,guide,rechnung schreiben (de: /de/…),,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
-/guides/invoice-requirements-netherlands,en,planned,,guide,factuur maken (nl: /nl/…),,learn (country),43,,Country pages: decide guide vs generator preset in chunk 43
 /templates/invoice-template-word,en,planned,,template (file format),invoice template word,,download,53,,Big-volume quick wins
 /templates/invoice-template-excel,en,planned,,template (file format),invoice template excel,,download,53,,Big-volume quick wins
 /templates/invoice-template-google-docs,en,planned,,template (file format),invoice template google docs,,download,53,,Big-volume quick wins
@@ -92,6 +89,86 @@ url,lang,status,added,page_type,primary_keyword,secondary_keywords,intent,chunk,
 /tools/hours-calculator,en,live,2026-11-18,tool,hours calculator,work hours calculator; time to decimal hours; timesheet calculator,tool (do),T1 (2026-11-18),,
 /tools/hourly-rate-calculator,en,live,2026-11-18,tool,freelance hourly rate calculator,hourly rate calculator; day rate calculator; how much to charge per hour,tool (do),T1 (2026-11-18),,
 /android,en,live,2026-11-18,android,invoicor for android: coming soon,,,,,key from the URL or title (npm run pages); check it
+/templates/virtual-assistant,en,planned,,template,virtual assistant invoice template,va invoice template; virtual assistant invoice pdf,template (download/fill),W1-A,,"gap: industry page exists, no template"
+/templates/pet-sitting,en,planned,,template,pet sitting invoice template,dog walking invoice template; pet sitter invoice,template (download/fill),W1-A,,gap: industry /industries/pet-care exists
+/templates/makeup-artist,en,planned,,template,makeup artist invoice template,hair and makeup invoice template; mua invoice,template (download/fill),W1-A,,gap: industry /industries/hair-makeup-artists exists
+/templates/carpentry,en,planned,,template,carpentry invoice template,carpenter invoice template; woodwork invoice,template (download/fill),W1-A,,
+/templates/flooring,en,planned,,template,flooring invoice template,flooring installation invoice; floor installer invoice,template (download/fill),W1-A,,
+/templates/tile-installation,en,planned,,template,tile installation invoice template,tiling invoice template; tiler invoice,template (download/fill),W1-A,,
+/templates/drywall,en,planned,,template,drywall invoice template,drywall contractor invoice; plastering invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
+/templates/masonry,en,planned,,template,masonry invoice template,bricklayer invoice template; concrete invoice,template (download/fill),W1-A,,
+/templates/fence-installation,en,planned,,template,fence installation invoice template,fencing invoice template; fence contractor invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
+/templates/pool-service,en,planned,,template,pool service invoice template,pool cleaning invoice; pool maintenance invoice,template (download/fill),W1-A,,
+/templates/window-cleaning,en,planned,,template,window cleaning invoice template,window cleaner invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways
+/templates/pressure-washing,en,planned,,template,pressure washing invoice template,power washing invoice template,template (download/fill),W1-A,,
+/templates/tree-service,en,planned,,template,tree service invoice template,tree removal invoice; arborist invoice template,template (download/fill),W1-A,,
+/templates/snow-removal,en,planned,,template,snow removal invoice template,snow plowing invoice template,template (download/fill),W1-A,,
+/templates/locksmith,en,planned,,template,locksmith invoice template,locksmith receipt,template (download/fill),W1-A,,
+/templates/appliance-repair,en,planned,,template,appliance repair invoice template,appliance repair receipt; repair technician invoice,template (download/fill),W1-A,,
+/templates/junk-removal,en,planned,,template,junk removal invoice template,hauling invoice template,template (download/fill),W1-A,,
+/templates/carpet-cleaning,en,planned,,template,carpet cleaning invoice template,upholstery cleaning invoice,template (download/fill),W1-A,,close to /templates/cleaning-services (house cleaning): link both ways
+/templates/interior-design,en,planned,,template,interior design invoice template,interior designer invoice,template (download/fill),W1-A,,
+/templates/remodeling,en,planned,,template,remodeling invoice template,home renovation invoice template; kitchen remodel invoice,template (download/fill),W1-A,,no industry page: /industries/general-contractors covers it
+/templates/garage-door-repair,en,planned,,template,garage door repair invoice template,garage door installation invoice,template (download/fill),W1-A,,no industry page yet; auto repair is taken by /templates/auto-detailing
+/templates/dj,en,planned,,template,dj invoice template,dj services invoice; wedding dj invoice,template (download/fill),W1-A,,
+/templates/event-planning,en,planned,,template,event planner invoice template,event planning invoice; wedding planner invoice,template (download/fill),W1-A,,
+/templates/florist,en,planned,,template,florist invoice template,flower shop invoice; wedding florist invoice,template (download/fill),W1-A,,
+/templates/massage-therapy,en,planned,,template,massage therapy invoice template,massage therapist invoice; massage receipt,template (download/fill),W1-A,,
+/templates/translation,en,planned,,template,translation invoice template,translator invoice template,template (download/fill),W1-A,,
+/templates/copywriting,en,planned,,template,copywriter invoice template,freelance writer invoice template,template (download/fill),W1-A,,
+/templates/social-media-management,en,planned,,template,social media manager invoice template,social media marketing invoice,template (download/fill),W1-A,,
+/templates/music-lessons,en,planned,,template,music teacher invoice template,music lesson invoice; piano lesson invoice,template (download/fill),W1-A,,
+/templates/bookkeeping,en,planned,,template,bookkeeping invoice template,bookkeeper invoice template,template (download/fill),W1-A,,
+/industries/carpenters,en,planned,,industry,invoice app for carpenters,,app for my trade,W1-A,,
+/industries/flooring-installers,en,planned,,industry,invoice app for flooring installers,,app for my trade,W1-A,,
+/industries/tile-installers,en,planned,,industry,invoice app for tile installers,,app for my trade,W1-A,,
+/industries/masons,en,planned,,industry,invoice app for masons,,app for my trade,W1-A,,
+/industries/pool-service,en,planned,,industry,invoice app for pool service companies,,app for my trade,W1-A,,
+/industries/window-cleaners,en,planned,,industry,invoice app for window cleaners,,app for my trade,W1-A,,
+/industries/pressure-washing,en,planned,,industry,invoice app for pressure washing businesses,,app for my trade,W1-A,,
+/industries/tree-service,en,planned,,industry,invoice app for tree service companies,,app for my trade,W1-A,,
+/industries/snow-removal,en,planned,,industry,invoice app for snow removal businesses,,app for my trade,W1-A,,
+/industries/locksmiths,en,planned,,industry,invoice app for locksmiths,,app for my trade,W1-A,,
+/industries/appliance-repair,en,planned,,industry,invoice app for appliance repair technicians,,app for my trade,W1-A,,
+/industries/junk-removal,en,planned,,industry,invoice app for junk removal businesses,,app for my trade,W1-A,,
+/industries/carpet-cleaners,en,planned,,industry,invoice app for carpet cleaners,,app for my trade,W1-A,,
+/industries/interior-designers,en,planned,,industry,invoice app for interior designers,,app for my trade,W1-A,,
+/industries/djs,en,planned,,industry,invoice app for djs,,app for my trade,W1-A,,
+/industries/event-planners,en,planned,,industry,invoice app for event planners,,app for my trade,W1-A,,
+/industries/florists,en,planned,,industry,invoice app for florists,,app for my trade,W1-A,,
+/industries/massage-therapists,en,planned,,industry,invoice app for massage therapists,,app for my trade,W1-A,,
+/industries/translators,en,planned,,industry,invoice app for translators,,app for my trade,W1-A,,
+/industries/copywriters,en,planned,,industry,invoice app for copywriters,,app for my trade,W1-A,,
+/industries/social-media-managers,en,planned,,industry,invoice app for social media managers,,app for my trade,W1-A,,
+/industries/music-teachers,en,planned,,industry,invoice app for music teachers,,app for my trade,W1-A,,
+/industries/bookkeepers,en,planned,,industry,invoice app for bookkeepers,,app for my trade,W1-A,,
+/templates/photography-deposit-invoice,en,planned,,template (billing type),photography deposit invoice,photographer deposit invoice; wedding photography deposit,template: deposit,W1-B,,
+/templates/catering-deposit-invoice,en,planned,,template (billing type),catering deposit invoice,catering deposit invoice template,template: deposit,W1-B,,
+/templates/contractor-deposit-invoice,en,planned,,template (billing type),contractor deposit invoice,construction deposit invoice; down payment invoice,template: deposit,W1-B,,
+/templates/roofing-deposit-invoice,en,planned,,template (billing type),roofing deposit invoice,roofer deposit invoice,template: deposit,W1-B,,
+/templates/painting-deposit-invoice,en,planned,,template (billing type),painting deposit invoice,painter deposit invoice,template: deposit,W1-B,,
+/templates/dj-deposit-invoice,en,planned,,template (billing type),dj deposit invoice,wedding dj deposit,template: deposit,W1-B,,
+/templates/construction-progress-invoice,en,planned,,template (billing type),construction progress invoice,progress billing invoice; progress payment invoice,template: progress,W1-B,,
+/templates/web-development-milestone-invoice,en,planned,,template (billing type),web development milestone invoice,website project milestone invoice,template: progress,W1-B,,
+/templates/video-production-milestone-invoice,en,planned,,template (billing type),video production milestone invoice,videographer milestone invoice,template: progress,W1-B,,
+/templates/consulting-hourly-invoice,en,planned,,template (billing type),consulting hourly invoice,hourly consultant invoice,template: hourly,W1-B,,
+/templates/virtual-assistant-hourly-invoice,en,planned,,template (billing type),virtual assistant hourly invoice,va hourly invoice,template: hourly,W1-B,,
+/templates/handyman-hourly-invoice,en,planned,,template (billing type),handyman hourly invoice,handyman hourly rate invoice,template: hourly,W1-B,,
+/templates/bookkeeping-hourly-invoice,en,planned,,template (billing type),bookkeeping hourly invoice,bookkeeper hourly invoice,template: hourly,W1-B,,
+/templates/plumbing-labor-and-materials-invoice,en,planned,,template (billing type),plumbing labor and materials invoice,plumbing parts and labor invoice,template: labor and materials,W1-B,,
+/templates/electrical-labor-and-materials-invoice,en,planned,,template (billing type),electrical labor and materials invoice,electrician parts and labor invoice,template: labor and materials,W1-B,,
+/templates/hvac-labor-and-materials-invoice,en,planned,,template (billing type),hvac labor and materials invoice,hvac parts and labor invoice,template: labor and materials,W1-B,,
+/templates/landscaping-labor-and-materials-invoice,en,planned,,template (billing type),landscaping labor and materials invoice,landscaping materials invoice,template: labor and materials,W1-B,,
+/templates/consulting-retainer-invoice,en,planned,,template (billing type),consulting retainer invoice,retainer invoice template,template: retainer,W1-B,,
+/templates/social-media-retainer-invoice,en,planned,,template (billing type),social media retainer invoice,monthly social media invoice,template: retainer,W1-B,,
+/templates/web-development-retainer-invoice,en,planned,,template (billing type),website maintenance retainer invoice,web maintenance invoice,template: retainer,W1-B,,
+/invoice-generator-uk,en,planned,,country,uk vat invoice requirements,invoice generator uk; vat invoice template uk,country rules + generator preset,W1-C,,"GBP, 20/5/0% VAT, VAT number; replaces /guides/invoice-requirements-uk"
+/invoice-generator-ireland,en,planned,,country,vat invoice ireland,invoice template ireland; irish vat invoice requirements,country rules + generator preset,W1-C,,"EUR, 23/13.5/9% VAT"
+/invoice-generator-australia,en,planned,,country,tax invoice australia,abn invoice template; gst invoice australia,country rules + generator preset,W1-C,,"AUD, 10% GST, ABN"
+/invoice-generator-new-zealand,en,planned,,country,gst invoice nz,tax invoice nz; nz invoice template,country rules + generator preset,W1-C,,"NZD, 15% GST, GST number"
+/invoice-generator-canada,en,planned,,country,gst hst invoice canada,canada invoice template; invoice requirements canada,country rules + generator preset,W1-C,,"CAD, GST/HST/PST by province"
+/invoice-generator-south-africa,en,planned,,country,vat invoice south africa,tax invoice south africa; sars invoice requirements,country rules + generator preset,W1-C,,"ZAR, 15% VAT"
+/reverse-charge-invoice,en,planned,,country,eu reverse charge invoice,vat reverse charge invoice; intra eu invoice,country rules + generator preset,W1-C,,EU B2B: both VAT numbers + the reverse-charge note; chunk 43 called it /eu
 /nl,nl,live,2026-11-18,home,factuur app voor iphone,,,,,key from the URL or title (npm run pages); check it
 /de,de,live,2026-11-18,home,rechnungs-app für iphone,,,,,key from the URL or title (npm run pages); check it
 /fr,fr,live,2026-11-18,home,application facture iphone,,,,,key from the URL or title (npm run pages); check it
@@ -172,6 +249,9 @@ url,lang,status,added,page_type,primary_keyword,secondary_keywords,intent,chunk,
 /sv/verktyg/rakna-ut-timpris,sv,live,2026-11-18,tool,rakna ut timpris,,,,,key from the URL or title (npm run pages); check it
 /da/vaerktoejer/beregn-timepris,da,live,2026-11-18,tool,beregn timepris,,,,,key from the URL or title (npm run pages); check it
 /nb/verktoy/beregn-timepris,nb,live,2026-11-18,tool,beregn timepris,,,,,key from the URL or title (npm run pages); check it
+/de/rechnung-pflichtangaben,de,planned,,country,pflichtangaben rechnung,rechnung pflichtangaben; was muss auf eine rechnung,country rules + generator preset,W1-C,,"§14 UStG, Kleinunternehmer §19; replaces /guides/invoice-requirements-germany; next to /de/rechnung-erstellen, must not compete with it"
+/nl/factuureisen,nl,planned,,country,factuureisen,wat moet er op een factuur; factuur eisen belastingdienst,country rules + generator preset,W1-C,,"btw-nummer, KvK, KOR; replaces /guides/invoice-requirements-netherlands"
+/fr/mentions-obligatoires-facture,fr,planned,,country,mentions obligatoires facture,facture mentions légales; mentions facture auto-entrepreneur,country rules + generator preset,W1-C,,"SIRET, TVA non applicable art. 293 B"
 https://learn.invoicor.com/how-to-use-an-invoice-maker-for-iphone,en,live,2026-11-10,blog,how to use an invoice maker for iphone,,learn,,,
 https://learn.invoicor.com/how-to-create-an-invoice-on-iphone-in-seconds,en,live,2026-11-10,blog,how to create an invoice on iphone in seconds,,learn,,,
 https://learn.invoicor.com/free-invoice-app-for-iphone-what-to-look-for,en,live,2026-11-11,blog,free invoice app for iphone what to look for,,learn,,,
