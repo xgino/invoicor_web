@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 660 English and local pages + 6,470 language pages · **7,371 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 778 English and local pages + 7,650 language pages · **8,669 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -106,7 +106,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | Category | Items | Pages done | Pages to build | Language items |
 |---|---|---|---|---|
 | [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 | 50 | 263 | 0/200 done |
-| [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 | 0 | 59 | 0/30 done |
+| [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12 B13 B14 B15 | 0 | 177 | 0/150 done |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
@@ -116,7 +116,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L530 | 80 | 6470 | |
+| [Languages](#languages-l) | L1–L650 | 80 | 7650 | |
 
 ## Suggested order
 
@@ -124,7 +124,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15**
 
 ## Tasks (S): code, no pages
 
@@ -605,6 +605,172 @@ Direction (what these pages can and can't do) and every brief: [plan/billing.md]
   - [ ] [/templates/virtual-assistant-retainer-invoice](plan/billing.md#templatesvirtual-assistant-retainer-invoice) virtual assistant retainer invoice
   - [ ] [/templates/handyman-labor-and-materials-invoice](plan/billing.md#templateshandyman-labor-and-materials-invoice) handyman labor and materials invoice
   - ~~/templates/consulting-project-invoice~~ parked: a 3rd billing type for consulting (the rule is at most 2); a fixed-fee project is the consulting template's default case: cover it there
+
+### B4: Deposits: events and weddings
+
+- [ ] **B4** · 0/11 live · languages: [L531–L540](#b4-in-every-language)
+  - [ ] [/templates/photo-booth-deposit-invoice](plan/billing.md#templatesphoto-booth-deposit-invoice) photo booth deposit invoice
+  - [ ] [/templates/party-rental-deposit-invoice](plan/billing.md#templatesparty-rental-deposit-invoice) party rental deposit invoice
+  - [ ] [/templates/wedding-officiant-deposit-invoice](plan/billing.md#templateswedding-officiant-deposit-invoice) wedding officiant deposit invoice
+  - [ ] [/templates/venue-deposit-invoice](plan/billing.md#templatesvenue-deposit-invoice) venue deposit invoice
+  - [ ] [/templates/balloon-decor-deposit-invoice](plan/billing.md#templatesballoon-decor-deposit-invoice) balloon decor deposit invoice
+  - [ ] [/templates/bartending-deposit-invoice](plan/billing.md#templatesbartending-deposit-invoice) bartending deposit invoice
+  - [ ] [/templates/limo-deposit-invoice](plan/billing.md#templateslimo-deposit-invoice) limo deposit invoice
+  - [ ] [/templates/entertainer-deposit-invoice](plan/billing.md#templatesentertainer-deposit-invoice) entertainer deposit invoice
+  - [ ] [/templates/food-truck-deposit-invoice](plan/billing.md#templatesfood-truck-deposit-invoice) food truck deposit invoice
+  - [ ] [/templates/event-decor-deposit-invoice](plan/billing.md#templatesevent-decor-deposit-invoice) event decor deposit invoice
+  - [ ] [/templates/wedding-invitation-deposit-invoice](plan/billing.md#templateswedding-invitation-deposit-invoice) wedding invitation deposit invoice
+
+### B5: Deposits: custom and made-to-order work
+
+- [ ] **B5** · 0/13 live · languages: [L541–L550](#b5-in-every-language)
+  - [ ] [/templates/custom-furniture-deposit-invoice](plan/billing.md#templatescustom-furniture-deposit-invoice) custom furniture deposit invoice
+  - [ ] [/templates/cabinet-deposit-invoice](plan/billing.md#templatescabinet-deposit-invoice) cabinet deposit invoice
+  - [ ] [/templates/countertop-deposit-invoice](plan/billing.md#templatescountertop-deposit-invoice) countertop deposit invoice
+  - [ ] [/templates/upholstery-deposit-invoice](plan/billing.md#templatesupholstery-deposit-invoice) upholstery deposit invoice
+  - [ ] [/templates/custom-jewelry-deposit-invoice](plan/billing.md#templatescustom-jewelry-deposit-invoice) custom jewelry deposit invoice
+  - [ ] [/templates/fashion-design-deposit-invoice](plan/billing.md#templatesfashion-design-deposit-invoice) fashion design deposit invoice
+  - [ ] [/templates/art-commission-deposit-invoice](plan/billing.md#templatesart-commission-deposit-invoice) art commission deposit invoice
+  - [ ] [/templates/mural-deposit-invoice](plan/billing.md#templatesmural-deposit-invoice) mural deposit invoice
+  - [ ] [/templates/taxidermy-deposit-invoice](plan/billing.md#templatestaxidermy-deposit-invoice) taxidermy deposit invoice
+  - [ ] [/templates/sign-deposit-invoice](plan/billing.md#templatessign-deposit-invoice) sign deposit invoice
+  - [ ] [/templates/window-treatment-deposit-invoice](plan/billing.md#templateswindow-treatment-deposit-invoice) blinds deposit invoice
+  - [ ] [/templates/screen-printing-deposit-invoice](plan/billing.md#templatesscreen-printing-deposit-invoice) screen printing deposit invoice
+  - [ ] [/templates/embroidery-deposit-invoice](plan/billing.md#templatesembroidery-deposit-invoice) embroidery deposit invoice
+
+### B6: Deposits: contractors and home projects
+
+- [ ] **B6** · 0/13 live · languages: [L551–L560](#b6-in-every-language)
+  - [ ] [/templates/fence-deposit-invoice](plan/billing.md#templatesfence-deposit-invoice) fence deposit invoice
+  - [ ] [/templates/deck-deposit-invoice](plan/billing.md#templatesdeck-deposit-invoice) deck deposit invoice
+  - [ ] [/templates/solar-deposit-invoice](plan/billing.md#templatessolar-deposit-invoice) solar deposit invoice
+  - [ ] [/templates/siding-deposit-invoice](plan/billing.md#templatessiding-deposit-invoice) siding deposit invoice
+  - [ ] [/templates/window-deposit-invoice](plan/billing.md#templateswindow-deposit-invoice) window installation deposit invoice
+  - [ ] [/templates/remodeling-deposit-invoice](plan/billing.md#templatesremodeling-deposit-invoice) remodeling deposit invoice
+  - [ ] [/templates/flooring-deposit-invoice](plan/billing.md#templatesflooring-deposit-invoice) flooring deposit invoice
+  - [ ] [/templates/tile-deposit-invoice](plan/billing.md#templatestile-deposit-invoice) tile deposit invoice
+  - [ ] [/templates/foundation-repair-deposit-invoice](plan/billing.md#templatesfoundation-repair-deposit-invoice) foundation repair deposit invoice
+  - [ ] [/templates/well-drilling-deposit-invoice](plan/billing.md#templateswell-drilling-deposit-invoice) well drilling deposit invoice
+  - [ ] [/templates/masonry-deposit-invoice](plan/billing.md#templatesmasonry-deposit-invoice) masonry deposit invoice
+  - [ ] [/templates/concrete-deposit-invoice](plan/billing.md#templatesconcrete-deposit-invoice) concrete deposit invoice
+  - [ ] [/templates/paving-deposit-invoice](plan/billing.md#templatespaving-deposit-invoice) paving deposit invoice
+
+### B7: Progress invoices: construction trades
+
+- [ ] **B7** · 0/9 live · languages: [L561–L570](#b7-in-every-language)
+  - [ ] [/templates/excavation-progress-invoice](plan/billing.md#templatesexcavation-progress-invoice) excavation progress invoice
+  - [ ] [/templates/solar-installation-progress-invoice](plan/billing.md#templatessolar-installation-progress-invoice) solar progress invoice
+  - [ ] [/templates/drywall-progress-invoice](plan/billing.md#templatesdrywall-progress-invoice) drywall progress invoice
+  - [ ] [/templates/insulation-progress-invoice](plan/billing.md#templatesinsulation-progress-invoice) insulation progress invoice
+  - [ ] [/templates/carpentry-progress-invoice](plan/billing.md#templatescarpentry-progress-invoice) carpentry progress invoice
+  - [ ] [/templates/window-installation-progress-invoice](plan/billing.md#templateswindow-installation-progress-invoice) window installation progress invoice
+  - [ ] [/templates/architect-progress-invoice](plan/billing.md#templatesarchitect-progress-invoice) architect progress invoice
+  - [ ] [/templates/demolition-progress-invoice](plan/billing.md#templatesdemolition-progress-invoice) demolition progress invoice
+  - [ ] [/templates/fabrication-progress-invoice](plan/billing.md#templatesfabrication-progress-invoice) steel fabrication progress invoice
+
+### B8: Monthly and seasonal service invoices
+
+- [ ] **B8** · 0/13 live · languages: [L571–L580](#b8-in-every-language)
+  - [ ] [/templates/monthly-window-cleaning-invoice](plan/billing.md#templatesmonthly-window-cleaning-invoice) monthly window cleaning invoice
+  - [ ] [/templates/monthly-dog-walking-invoice](plan/billing.md#templatesmonthly-dog-walking-invoice) monthly dog walking invoice
+  - [ ] [/templates/monthly-aquarium-maintenance-invoice](plan/billing.md#templatesmonthly-aquarium-maintenance-invoice) monthly aquarium maintenance invoice
+  - [ ] [/templates/monthly-bookkeeping-invoice](plan/billing.md#templatesmonthly-bookkeeping-invoice) monthly bookkeeping invoice
+  - [ ] [/templates/monthly-seo-invoice](plan/billing.md#templatesmonthly-seo-invoice) monthly seo invoice
+  - [ ] [/templates/monthly-security-invoice](plan/billing.md#templatesmonthly-security-invoice) monthly security guard invoice
+  - [ ] [/templates/property-management-fee-invoice](plan/billing.md#templatesproperty-management-fee-invoice) property management fee invoice
+  - [ ] [/templates/monthly-dance-class-invoice](plan/billing.md#templatesmonthly-dance-class-invoice) monthly dance class invoice
+  - [ ] [/templates/weekly-home-care-invoice](plan/billing.md#templatesweekly-home-care-invoice) weekly home care invoice
+  - [ ] [/templates/monthly-courier-invoice](plan/billing.md#templatesmonthly-courier-invoice) monthly courier invoice
+  - [ ] [/templates/pool-opening-closing-invoice](plan/billing.md#templatespool-opening-closing-invoice) pool opening and closing invoice
+  - [ ] [/templates/sprinkler-winterization-invoice](plan/billing.md#templatessprinkler-winterization-invoice) sprinkler winterization invoice
+  - [ ] [/templates/seasonal-gutter-cleaning-invoice](plan/billing.md#templatesseasonal-gutter-cleaning-invoice) seasonal gutter cleaning invoice
+
+### B9: Retainers for professionals
+
+- [ ] **B9** · 0/10 live · languages: [L581–L590](#b9-in-every-language)
+  - [ ] [/templates/legal-retainer-invoice](plan/billing.md#templateslegal-retainer-invoice) legal retainer invoice
+  - [ ] [/templates/marketing-retainer-invoice](plan/billing.md#templatesmarketing-retainer-invoice) marketing agency retainer invoice
+  - [ ] [/templates/copywriting-retainer-invoice](plan/billing.md#templatescopywriting-retainer-invoice) copywriting retainer invoice
+  - [ ] [/templates/graphic-design-retainer-invoice](plan/billing.md#templatesgraphic-design-retainer-invoice) graphic design retainer invoice
+  - [ ] [/templates/ux-retainer-invoice](plan/billing.md#templatesux-retainer-invoice) ux design retainer invoice
+  - [ ] [/templates/private-investigator-retainer-invoice](plan/billing.md#templatesprivate-investigator-retainer-invoice) private investigator retainer invoice
+  - [ ] [/templates/financial-advisor-retainer-invoice](plan/billing.md#templatesfinancial-advisor-retainer-invoice) financial advisor retainer invoice
+  - [ ] [/templates/accounting-retainer-invoice](plan/billing.md#templatesaccounting-retainer-invoice) accounting retainer invoice
+  - [ ] [/templates/expert-witness-retainer-invoice](plan/billing.md#templatesexpert-witness-retainer-invoice) expert witness retainer invoice
+  - [ ] [/templates/video-editing-retainer-invoice](plan/billing.md#templatesvideo-editing-retainer-invoice) video editing retainer invoice
+
+### B10: Hourly billing for professionals and care
+
+- [ ] **B10** · 0/7 live · languages: [L591–L600](#b10-in-every-language)
+  - [ ] [/templates/legal-hourly-invoice](plan/billing.md#templateslegal-hourly-invoice) legal hourly invoice
+  - [ ] [/templates/it-hourly-invoice](plan/billing.md#templatesit-hourly-invoice) it services hourly invoice
+  - [ ] [/templates/translation-hourly-invoice](plan/billing.md#templatestranslation-hourly-invoice) translation hourly invoice
+  - [ ] [/templates/video-editing-hourly-invoice](plan/billing.md#templatesvideo-editing-hourly-invoice) video editing hourly invoice
+  - [ ] [/templates/home-care-hourly-invoice](plan/billing.md#templateshome-care-hourly-invoice) home care hourly invoice
+  - [ ] [/templates/data-analysis-hourly-invoice](plan/billing.md#templatesdata-analysis-hourly-invoice) data analysis hourly invoice
+  - [ ] [/templates/ux-design-hourly-invoice](plan/billing.md#templatesux-design-hourly-invoice) ux design hourly invoice
+
+### B11: Packages: lessons, wellness and coaching
+
+- [ ] **B11** · 0/10 live · languages: [L601–L610](#b11-in-every-language)
+  - [ ] [/templates/swim-lesson-package-invoice](plan/billing.md#templatesswim-lesson-package-invoice) swim lesson package invoice
+  - [ ] [/templates/yoga-class-pack-invoice](plan/billing.md#templatesyoga-class-pack-invoice) yoga class pack invoice
+  - [ ] [/templates/massage-package-invoice](plan/billing.md#templatesmassage-package-invoice) massage package invoice
+  - [ ] [/templates/driving-lesson-package-invoice](plan/billing.md#templatesdriving-lesson-package-invoice) driving lesson package invoice
+  - [ ] [/templates/riding-lesson-package-invoice](plan/billing.md#templatesriding-lesson-package-invoice) riding lesson package invoice
+  - [ ] [/templates/nutrition-package-invoice](plan/billing.md#templatesnutrition-package-invoice) nutrition package invoice
+  - [ ] [/templates/facial-package-invoice](plan/billing.md#templatesfacial-package-invoice) facial package invoice
+  - [ ] [/templates/coaching-package-invoice](plan/billing.md#templatescoaching-package-invoice) sports coaching package invoice
+  - [ ] [/templates/language-lesson-package-invoice](plan/billing.md#templateslanguage-lesson-package-invoice) language lesson package invoice
+  - [ ] [/templates/physiotherapy-package-invoice](plan/billing.md#templatesphysiotherapy-package-invoice) physiotherapy package invoice
+
+### B12: Service calls, emergencies and insurance jobs
+
+- [ ] **B12** · 0/11 live · languages: [L611–L620](#b12-in-every-language)
+  - [ ] [/templates/garage-door-service-call-invoice](plan/billing.md#templatesgarage-door-service-call-invoice) garage door service call invoice
+  - [ ] [/templates/emergency-towing-invoice](plan/billing.md#templatesemergency-towing-invoice) emergency towing invoice
+  - [ ] [/templates/emergency-tree-removal-invoice](plan/billing.md#templatesemergency-tree-removal-invoice) emergency tree removal invoice
+  - [ ] [/templates/emergency-drain-cleaning-invoice](plan/billing.md#templatesemergency-drain-cleaning-invoice) emergency drain cleaning invoice
+  - [ ] [/templates/emergency-board-up-invoice](plan/billing.md#templatesemergency-board-up-invoice) emergency board up invoice
+  - [ ] [/templates/refrigeration-service-call-invoice](plan/billing.md#templatesrefrigeration-service-call-invoice) refrigeration service call invoice
+  - [ ] [/templates/restaurant-equipment-service-call-invoice](plan/billing.md#templatesrestaurant-equipment-service-call-invoice) restaurant equipment service call invoice
+  - [ ] [/templates/field-service-call-invoice](plan/billing.md#templatesfield-service-call-invoice) field service call invoice
+  - [ ] [/templates/call-out-charge-invoice](plan/billing.md#templatescall-out-charge-invoice) call out charge invoice
+  - [ ] [/templates/water-damage-insurance-invoice](plan/billing.md#templateswater-damage-insurance-invoice) water damage insurance invoice
+  - [ ] [/templates/mold-remediation-insurance-invoice](plan/billing.md#templatesmold-remediation-insurance-invoice) mold remediation insurance invoice
+
+### B13: Milestones: creative, tech and engineering projects
+
+- [ ] **B13** · 0/9 live · languages: [L621–L630](#b13-in-every-language)
+  - [ ] [/templates/game-development-milestone-invoice](plan/billing.md#templatesgame-development-milestone-invoice) game development milestone invoice
+  - [ ] [/templates/animation-milestone-invoice](plan/billing.md#templatesanimation-milestone-invoice) animation milestone invoice
+  - [ ] [/templates/film-production-milestone-invoice](plan/billing.md#templatesfilm-production-milestone-invoice) film production milestone invoice
+  - [ ] [/templates/engineering-milestone-invoice](plan/billing.md#templatesengineering-milestone-invoice) engineering milestone invoice
+  - [ ] [/templates/illustration-milestone-invoice](plan/billing.md#templatesillustration-milestone-invoice) illustration milestone invoice
+  - [ ] [/templates/music-production-milestone-invoice](plan/billing.md#templatesmusic-production-milestone-invoice) music production milestone invoice
+  - [ ] [/templates/marketing-project-milestone-invoice](plan/billing.md#templatesmarketing-project-milestone-invoice) marketing project milestone invoice
+  - [ ] [/templates/technical-writing-milestone-invoice](plan/billing.md#templatestechnical-writing-milestone-invoice) technical writing milestone invoice
+  - [ ] [/templates/environmental-consulting-phase-invoice](plan/billing.md#templatesenvironmental-consulting-phase-invoice) environmental consulting phase invoice
+
+### B14: Final invoices: events and custom work
+
+- [ ] **B14** · 0/7 live · languages: [L631–L640](#b14-in-every-language)
+  - [ ] [/templates/dj-final-invoice](plan/billing.md#templatesdj-final-invoice) dj final invoice
+  - [ ] [/templates/event-planner-final-invoice](plan/billing.md#templatesevent-planner-final-invoice) event planner final invoice
+  - [ ] [/templates/florist-final-invoice](plan/billing.md#templatesflorist-final-invoice) florist final invoice
+  - [ ] [/templates/band-final-invoice](plan/billing.md#templatesband-final-invoice) band final invoice
+  - [ ] [/templates/venue-final-invoice](plan/billing.md#templatesvenue-final-invoice) venue final invoice
+  - [ ] [/templates/party-rental-final-invoice](plan/billing.md#templatesparty-rental-final-invoice) party rental final invoice
+  - [ ] [/templates/custom-furniture-final-invoice](plan/billing.md#templatescustom-furniture-final-invoice) custom furniture final invoice
+
+### B15: Per-unit billing: per word, mile and minute
+
+- [ ] **B15** · 0/5 live · languages: [L641–L650](#b15-in-every-language)
+  - [ ] [/templates/proofreading-per-word-invoice](plan/billing.md#templatesproofreading-per-word-invoice) proofreading per word invoice
+  - [ ] [/templates/voice-over-per-word-invoice](plan/billing.md#templatesvoice-over-per-word-invoice) voice over per word invoice
+  - [ ] [/templates/courier-per-mile-invoice](plan/billing.md#templatescourier-per-mile-invoice) courier per mile invoice
+  - [ ] [/templates/towing-per-mile-invoice](plan/billing.md#templatestowing-per-mile-invoice) towing per mile invoice
+  - [ ] [/templates/trucking-rate-per-mile-invoice](plan/billing.md#templatestrucking-rate-per-mile-invoice) trucking rate per mile invoice
 
 ## Invoice types (general documents) (D)
 
@@ -2042,6 +2208,186 @@ Animals, farms and outdoors · 9 pages
 - [ ] [**L528**](plan/languages/it.md#l528-i20-in-italian) Italian · 0/9
 - [ ] [**L529**](plan/languages/pt.md#l529-i20-in-portuguese) Portuguese · 0/9
 - [ ] [**L530**](plan/languages/pl.md#l530-i20-in-polish) Polish · 0/9
+
+### B4 in every language
+
+Deposits: events and weddings · 11 pages
+
+- [ ] [**L531**](plan/languages/de.md#l531-b4-in-german) German · 0/11
+- [ ] [**L532**](plan/languages/es.md#l532-b4-in-spanish) Spanish · 0/11
+- [ ] [**L533**](plan/languages/fr.md#l533-b4-in-french) French · 0/11
+- [ ] [**L534**](plan/languages/nl.md#l534-b4-in-dutch) Dutch · 0/11
+- [ ] [**L535**](plan/languages/sv.md#l535-b4-in-swedish) Swedish · 0/11
+- [ ] [**L536**](plan/languages/da.md#l536-b4-in-danish) Danish · 0/11
+- [ ] [**L537**](plan/languages/nb.md#l537-b4-in-norwegian-bokmål) Norwegian (Bokmål) · 0/11
+- [ ] [**L538**](plan/languages/it.md#l538-b4-in-italian) Italian · 0/11
+- [ ] [**L539**](plan/languages/pt.md#l539-b4-in-portuguese) Portuguese · 0/11
+- [ ] [**L540**](plan/languages/pl.md#l540-b4-in-polish) Polish · 0/11
+
+### B5 in every language
+
+Deposits: custom and made-to-order work · 13 pages
+
+- [ ] [**L541**](plan/languages/de.md#l541-b5-in-german) German · 0/13
+- [ ] [**L542**](plan/languages/es.md#l542-b5-in-spanish) Spanish · 0/13
+- [ ] [**L543**](plan/languages/fr.md#l543-b5-in-french) French · 0/13
+- [ ] [**L544**](plan/languages/nl.md#l544-b5-in-dutch) Dutch · 0/13
+- [ ] [**L545**](plan/languages/sv.md#l545-b5-in-swedish) Swedish · 0/13
+- [ ] [**L546**](plan/languages/da.md#l546-b5-in-danish) Danish · 0/13
+- [ ] [**L547**](plan/languages/nb.md#l547-b5-in-norwegian-bokmål) Norwegian (Bokmål) · 0/13
+- [ ] [**L548**](plan/languages/it.md#l548-b5-in-italian) Italian · 0/13
+- [ ] [**L549**](plan/languages/pt.md#l549-b5-in-portuguese) Portuguese · 0/13
+- [ ] [**L550**](plan/languages/pl.md#l550-b5-in-polish) Polish · 0/13
+
+### B6 in every language
+
+Deposits: contractors and home projects · 13 pages
+
+- [ ] [**L551**](plan/languages/de.md#l551-b6-in-german) German · 0/13
+- [ ] [**L552**](plan/languages/es.md#l552-b6-in-spanish) Spanish · 0/13
+- [ ] [**L553**](plan/languages/fr.md#l553-b6-in-french) French · 0/13
+- [ ] [**L554**](plan/languages/nl.md#l554-b6-in-dutch) Dutch · 0/13
+- [ ] [**L555**](plan/languages/sv.md#l555-b6-in-swedish) Swedish · 0/13
+- [ ] [**L556**](plan/languages/da.md#l556-b6-in-danish) Danish · 0/13
+- [ ] [**L557**](plan/languages/nb.md#l557-b6-in-norwegian-bokmål) Norwegian (Bokmål) · 0/13
+- [ ] [**L558**](plan/languages/it.md#l558-b6-in-italian) Italian · 0/13
+- [ ] [**L559**](plan/languages/pt.md#l559-b6-in-portuguese) Portuguese · 0/13
+- [ ] [**L560**](plan/languages/pl.md#l560-b6-in-polish) Polish · 0/13
+
+### B7 in every language
+
+Progress invoices: construction trades · 9 pages
+
+- [ ] [**L561**](plan/languages/de.md#l561-b7-in-german) German · 0/9
+- [ ] [**L562**](plan/languages/es.md#l562-b7-in-spanish) Spanish · 0/9
+- [ ] [**L563**](plan/languages/fr.md#l563-b7-in-french) French · 0/9
+- [ ] [**L564**](plan/languages/nl.md#l564-b7-in-dutch) Dutch · 0/9
+- [ ] [**L565**](plan/languages/sv.md#l565-b7-in-swedish) Swedish · 0/9
+- [ ] [**L566**](plan/languages/da.md#l566-b7-in-danish) Danish · 0/9
+- [ ] [**L567**](plan/languages/nb.md#l567-b7-in-norwegian-bokmål) Norwegian (Bokmål) · 0/9
+- [ ] [**L568**](plan/languages/it.md#l568-b7-in-italian) Italian · 0/9
+- [ ] [**L569**](plan/languages/pt.md#l569-b7-in-portuguese) Portuguese · 0/9
+- [ ] [**L570**](plan/languages/pl.md#l570-b7-in-polish) Polish · 0/9
+
+### B8 in every language
+
+Monthly and seasonal service invoices · 13 pages
+
+- [ ] [**L571**](plan/languages/de.md#l571-b8-in-german) German · 0/13
+- [ ] [**L572**](plan/languages/es.md#l572-b8-in-spanish) Spanish · 0/13
+- [ ] [**L573**](plan/languages/fr.md#l573-b8-in-french) French · 0/13
+- [ ] [**L574**](plan/languages/nl.md#l574-b8-in-dutch) Dutch · 0/13
+- [ ] [**L575**](plan/languages/sv.md#l575-b8-in-swedish) Swedish · 0/13
+- [ ] [**L576**](plan/languages/da.md#l576-b8-in-danish) Danish · 0/13
+- [ ] [**L577**](plan/languages/nb.md#l577-b8-in-norwegian-bokmål) Norwegian (Bokmål) · 0/13
+- [ ] [**L578**](plan/languages/it.md#l578-b8-in-italian) Italian · 0/13
+- [ ] [**L579**](plan/languages/pt.md#l579-b8-in-portuguese) Portuguese · 0/13
+- [ ] [**L580**](plan/languages/pl.md#l580-b8-in-polish) Polish · 0/13
+
+### B9 in every language
+
+Retainers for professionals · 10 pages
+
+- [ ] [**L581**](plan/languages/de.md#l581-b9-in-german) German · 0/10
+- [ ] [**L582**](plan/languages/es.md#l582-b9-in-spanish) Spanish · 0/10
+- [ ] [**L583**](plan/languages/fr.md#l583-b9-in-french) French · 0/10
+- [ ] [**L584**](plan/languages/nl.md#l584-b9-in-dutch) Dutch · 0/10
+- [ ] [**L585**](plan/languages/sv.md#l585-b9-in-swedish) Swedish · 0/10
+- [ ] [**L586**](plan/languages/da.md#l586-b9-in-danish) Danish · 0/10
+- [ ] [**L587**](plan/languages/nb.md#l587-b9-in-norwegian-bokmål) Norwegian (Bokmål) · 0/10
+- [ ] [**L588**](plan/languages/it.md#l588-b9-in-italian) Italian · 0/10
+- [ ] [**L589**](plan/languages/pt.md#l589-b9-in-portuguese) Portuguese · 0/10
+- [ ] [**L590**](plan/languages/pl.md#l590-b9-in-polish) Polish · 0/10
+
+### B10 in every language
+
+Hourly billing for professionals and care · 7 pages
+
+- [ ] [**L591**](plan/languages/de.md#l591-b10-in-german) German · 0/7
+- [ ] [**L592**](plan/languages/es.md#l592-b10-in-spanish) Spanish · 0/7
+- [ ] [**L593**](plan/languages/fr.md#l593-b10-in-french) French · 0/7
+- [ ] [**L594**](plan/languages/nl.md#l594-b10-in-dutch) Dutch · 0/7
+- [ ] [**L595**](plan/languages/sv.md#l595-b10-in-swedish) Swedish · 0/7
+- [ ] [**L596**](plan/languages/da.md#l596-b10-in-danish) Danish · 0/7
+- [ ] [**L597**](plan/languages/nb.md#l597-b10-in-norwegian-bokmål) Norwegian (Bokmål) · 0/7
+- [ ] [**L598**](plan/languages/it.md#l598-b10-in-italian) Italian · 0/7
+- [ ] [**L599**](plan/languages/pt.md#l599-b10-in-portuguese) Portuguese · 0/7
+- [ ] [**L600**](plan/languages/pl.md#l600-b10-in-polish) Polish · 0/7
+
+### B11 in every language
+
+Packages: lessons, wellness and coaching · 10 pages
+
+- [ ] [**L601**](plan/languages/de.md#l601-b11-in-german) German · 0/10
+- [ ] [**L602**](plan/languages/es.md#l602-b11-in-spanish) Spanish · 0/10
+- [ ] [**L603**](plan/languages/fr.md#l603-b11-in-french) French · 0/10
+- [ ] [**L604**](plan/languages/nl.md#l604-b11-in-dutch) Dutch · 0/10
+- [ ] [**L605**](plan/languages/sv.md#l605-b11-in-swedish) Swedish · 0/10
+- [ ] [**L606**](plan/languages/da.md#l606-b11-in-danish) Danish · 0/10
+- [ ] [**L607**](plan/languages/nb.md#l607-b11-in-norwegian-bokmål) Norwegian (Bokmål) · 0/10
+- [ ] [**L608**](plan/languages/it.md#l608-b11-in-italian) Italian · 0/10
+- [ ] [**L609**](plan/languages/pt.md#l609-b11-in-portuguese) Portuguese · 0/10
+- [ ] [**L610**](plan/languages/pl.md#l610-b11-in-polish) Polish · 0/10
+
+### B12 in every language
+
+Service calls, emergencies and insurance jobs · 11 pages
+
+- [ ] [**L611**](plan/languages/de.md#l611-b12-in-german) German · 0/11
+- [ ] [**L612**](plan/languages/es.md#l612-b12-in-spanish) Spanish · 0/11
+- [ ] [**L613**](plan/languages/fr.md#l613-b12-in-french) French · 0/11
+- [ ] [**L614**](plan/languages/nl.md#l614-b12-in-dutch) Dutch · 0/11
+- [ ] [**L615**](plan/languages/sv.md#l615-b12-in-swedish) Swedish · 0/11
+- [ ] [**L616**](plan/languages/da.md#l616-b12-in-danish) Danish · 0/11
+- [ ] [**L617**](plan/languages/nb.md#l617-b12-in-norwegian-bokmål) Norwegian (Bokmål) · 0/11
+- [ ] [**L618**](plan/languages/it.md#l618-b12-in-italian) Italian · 0/11
+- [ ] [**L619**](plan/languages/pt.md#l619-b12-in-portuguese) Portuguese · 0/11
+- [ ] [**L620**](plan/languages/pl.md#l620-b12-in-polish) Polish · 0/11
+
+### B13 in every language
+
+Milestones: creative, tech and engineering projects · 9 pages
+
+- [ ] [**L621**](plan/languages/de.md#l621-b13-in-german) German · 0/9
+- [ ] [**L622**](plan/languages/es.md#l622-b13-in-spanish) Spanish · 0/9
+- [ ] [**L623**](plan/languages/fr.md#l623-b13-in-french) French · 0/9
+- [ ] [**L624**](plan/languages/nl.md#l624-b13-in-dutch) Dutch · 0/9
+- [ ] [**L625**](plan/languages/sv.md#l625-b13-in-swedish) Swedish · 0/9
+- [ ] [**L626**](plan/languages/da.md#l626-b13-in-danish) Danish · 0/9
+- [ ] [**L627**](plan/languages/nb.md#l627-b13-in-norwegian-bokmål) Norwegian (Bokmål) · 0/9
+- [ ] [**L628**](plan/languages/it.md#l628-b13-in-italian) Italian · 0/9
+- [ ] [**L629**](plan/languages/pt.md#l629-b13-in-portuguese) Portuguese · 0/9
+- [ ] [**L630**](plan/languages/pl.md#l630-b13-in-polish) Polish · 0/9
+
+### B14 in every language
+
+Final invoices: events and custom work · 7 pages
+
+- [ ] [**L631**](plan/languages/de.md#l631-b14-in-german) German · 0/7
+- [ ] [**L632**](plan/languages/es.md#l632-b14-in-spanish) Spanish · 0/7
+- [ ] [**L633**](plan/languages/fr.md#l633-b14-in-french) French · 0/7
+- [ ] [**L634**](plan/languages/nl.md#l634-b14-in-dutch) Dutch · 0/7
+- [ ] [**L635**](plan/languages/sv.md#l635-b14-in-swedish) Swedish · 0/7
+- [ ] [**L636**](plan/languages/da.md#l636-b14-in-danish) Danish · 0/7
+- [ ] [**L637**](plan/languages/nb.md#l637-b14-in-norwegian-bokmål) Norwegian (Bokmål) · 0/7
+- [ ] [**L638**](plan/languages/it.md#l638-b14-in-italian) Italian · 0/7
+- [ ] [**L639**](plan/languages/pt.md#l639-b14-in-portuguese) Portuguese · 0/7
+- [ ] [**L640**](plan/languages/pl.md#l640-b14-in-polish) Polish · 0/7
+
+### B15 in every language
+
+Per-unit billing: per word, mile and minute · 5 pages
+
+- [ ] [**L641**](plan/languages/de.md#l641-b15-in-german) German · 0/5
+- [ ] [**L642**](plan/languages/es.md#l642-b15-in-spanish) Spanish · 0/5
+- [ ] [**L643**](plan/languages/fr.md#l643-b15-in-french) French · 0/5
+- [ ] [**L644**](plan/languages/nl.md#l644-b15-in-dutch) Dutch · 0/5
+- [ ] [**L645**](plan/languages/sv.md#l645-b15-in-swedish) Swedish · 0/5
+- [ ] [**L646**](plan/languages/da.md#l646-b15-in-danish) Danish · 0/5
+- [ ] [**L647**](plan/languages/nb.md#l647-b15-in-norwegian-bokmål) Norwegian (Bokmål) · 0/5
+- [ ] [**L648**](plan/languages/it.md#l648-b15-in-italian) Italian · 0/5
+- [ ] [**L649**](plan/languages/pt.md#l649-b15-in-portuguese) Portuguese · 0/5
+- [ ] [**L650**](plan/languages/pl.md#l650-b15-in-polish) Polish · 0/5
 
 ## Not in an item yet
 

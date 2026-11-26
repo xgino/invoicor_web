@@ -104,6 +104,18 @@ export const ITEMS = [
   { id: "B1", title: "Billing types I", text: "build with or after D1 (the parents)" },
   { id: "B2", title: "Billing types II" },
   { id: "B3", title: "Billing types III" },
+  { id: "B4", title: "Deposits: events and weddings" },
+  { id: "B5", title: "Deposits: custom and made-to-order work" },
+  { id: "B6", title: "Deposits: contractors and home projects" },
+  { id: "B7", title: "Progress invoices: construction trades" },
+  { id: "B8", title: "Monthly and seasonal service invoices" },
+  { id: "B9", title: "Retainers for professionals" },
+  { id: "B10", title: "Hourly billing for professionals and care" },
+  { id: "B11", title: "Packages: lessons, wellness and coaching" },
+  { id: "B12", title: "Service calls, emergencies and insurance jobs" },
+  { id: "B13", title: "Milestones: creative, tech and engineering projects" },
+  { id: "B14", title: "Final invoices: events and custom work" },
+  { id: "B15", title: "Per-unit billing: per word, mile and minute" },
   {
     id: "D1",
     title: "Invoice types: the general documents",
@@ -204,6 +216,19 @@ export const LANGUAGE_SOURCES = [
   "I18",
   "I19",
   "I20",
+  // Billing types B4–B15 (added 2026-11-27).
+  "B4",
+  "B5",
+  "B6",
+  "B7",
+  "B8",
+  "B9",
+  "B10",
+  "B11",
+  "B12",
+  "B13",
+  "B14",
+  "B15",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */
@@ -261,6 +286,18 @@ export const ORDER = [
   "I18",
   "I19",
   "I20",
+  "B4",
+  "B5",
+  "B6",
+  "B7",
+  "B8",
+  "B9",
+  "B10",
+  "B11",
+  "B12",
+  "B13",
+  "B14",
+  "B15",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

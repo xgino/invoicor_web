@@ -5304,3 +5304,1019 @@
 - **Search words:** "facturatie app voor [loggers, in Dutch]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Timber sales settlements, per-tonne hauling, firewood sales.
 - **Don't:** The template's content (/templates/logging, /templates/firewood, /templates/land-clearing): link it, don't repeat it; features outside BRAND.md §10.
+
+## L534: B4 in Dutch
+
+[ ] Deposits: events and weddings · 0/11 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/photo-booth-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [photo booth deposit invoice](../billing.md#templatesphoto-booth-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "photo booth deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A booking fee to hold the date (often non-refundable), the package and hours, the balance due before the event; the final invoice subtracts it.
+- **Don't:** General fields of the trade (owned by /templates/photo-booth-rental): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/party-rental-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [party rental deposit invoice](../billing.md#templatesparty-rental-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "party rental deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Two kinds on one page: the booking deposit (part of the price) and the refundable damage deposit (returned after inspection) — keep them on separate lines.
+- **Don't:** General fields of the trade (owned by /templates/party-rentals): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/wedding-officiant-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [wedding officiant deposit invoice](../billing.md#templateswedding-officiant-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "wedding officiant deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The retainer that holds the date, rehearsal and travel later, the balance before the ceremony.
+- **Don't:** General fields of the trade (owned by /templates/wedding-officiant): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/venue-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [venue deposit invoice](../billing.md#templatesvenue-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "venue deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Booking deposit plus the separate security deposit, the payment schedule to the event date, cancellation tiers by notice.
+- **Don't:** General fields of the trade (owned by /templates/event-venue): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/balloon-decor-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [balloon decor deposit invoice](../billing.md#templatesballoon-decor-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "balloon decor deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. 50% to book (balloons are bought for the order), the balance on delivery, rush orders paid in full.
+- **Don't:** General fields of the trade (owned by /templates/balloon-decor): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/bartending-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [bartending deposit invoice](../billing.md#templatesbartending-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "bartending deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit to book staff and stock, the final headcount date, the balance before the event.
+- **Don't:** General fields of the trade (owned by /templates/bartending): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/limo-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [limo deposit invoice](../billing.md#templateslimo-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "limo deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit on the booking, the minimum hours, overtime and gratuity settled on the final invoice.
+- **Don't:** General fields of the trade (owned by /templates/limousine-service): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/entertainer-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [entertainer deposit invoice](../billing.md#templatesentertainer-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "entertainer deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The deposit in the performance agreement, cancellation by notice period, the balance on the day.
+- **Don't:** General fields of the trade (owned by /templates/entertainer): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/food-truck-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [food truck deposit invoice](../billing.md#templatesfood-truck-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "food truck deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit against the guaranteed minimum, the final guest count, the balance after the event if sales fall short.
+- **Don't:** General fields of the trade (owned by /templates/food-truck): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/event-decor-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [event decor deposit invoice](../billing.md#templatesevent-decor-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "event decor deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A design fee plus a deposit for rentals and florals bought in, the balance two weeks before, the damage deposit on its own line.
+- **Don't:** General fields of the trade (owned by /templates/event-decor): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/wedding-invitation-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [wedding invitation deposit invoice](../billing.md#templateswedding-invitation-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "wedding invitation deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The design deposit, approval of proofs, the balance before printing (custom print can't be returned).
+- **Don't:** General fields of the trade (owned by /templates/wedding-invitations): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+## L544: B5 in Dutch
+
+[ ] Deposits: custom and made-to-order work · 0/13 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/custom-furniture-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [custom furniture deposit invoice](../billing.md#templatescustom-furniture-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "custom furniture deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. 50% to start (materials), the balance on delivery, changes after approval as a new line.
+- **Don't:** General fields of the trade (owned by /templates/custom-furniture): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/cabinet-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [cabinet deposit invoice](../billing.md#templatescabinet-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "cabinet deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit when the cabinets are ordered (lead time), the install invoice later, what happens if the client cancels after ordering.
+- **Don't:** General fields of the trade (owned by /templates/cabinet-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/countertop-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [countertop deposit invoice](../billing.md#templatescountertop-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "countertop deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The deposit at templating (the slab is cut to size), the balance at install, sinks and cut-outs on the final invoice.
+- **Don't:** General fields of the trade (owned by /templates/countertop-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/upholstery-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [upholstery deposit invoice](../billing.md#templatesupholstery-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "upholstery deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit for fabric ordered for the piece, the balance on pickup, customer's own material (COM) without a fabric deposit.
+- **Don't:** General fields of the trade (owned by /templates/upholstery): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/custom-jewelry-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [custom jewelry deposit invoice](../billing.md#templatescustom-jewelry-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "custom jewelry deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The deposit covers metal and stones at the day's price, the balance on collection; a resize later as its own invoice.
+- **Don't:** General fields of the trade (owned by /templates/jewelry-making): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/fashion-design-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [fashion design deposit invoice](../billing.md#templatesfashion-design-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "fashion design deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fabric and pattern deposit, fittings, the balance at the final fitting.
+- **Don't:** General fields of the trade (owned by /templates/fashion-design): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/art-commission-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [art commission deposit invoice](../billing.md#templatesart-commission-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "art commission deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A non-refundable deposit to start the sketch, the balance before delivery of the final file or piece, usage rights stated.
+- **Don't:** General fields of the trade (owned by /templates/art-commission): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/mural-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [mural deposit invoice](../billing.md#templatesmural-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "mural deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The design fee and a deposit for paint and lifts, stage payments on large walls.
+- **Don't:** General fields of the trade (owned by /templates/muralist): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/taxidermy-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [taxidermy deposit invoice](../billing.md#templatestaxidermy-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "taxidermy deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit at drop-off (often half), the balance at pickup, the unclaimed-mount policy.
+- **Don't:** General fields of the trade (owned by /templates/taxidermy): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/sign-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [sign deposit invoice](../billing.md#templatessign-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "sign deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. 50% on approval of the proof, the balance on install; permits and install on the final invoice.
+- **Don't:** General fields of the trade (owned by /templates/sign-making): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/window-treatment-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [blinds deposit invoice](../billing.md#templateswindow-treatment-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "blinds deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit when custom blinds or shutters are ordered (made to measure), the balance at install.
+- **Don't:** General fields of the trade (owned by /templates/window-treatments): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/screen-printing-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [screen printing deposit invoice](../billing.md#templatesscreen-printing-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "screen printing deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. 50% on order (blanks bought), screens and setup in the deposit, the balance on pickup.
+- **Don't:** General fields of the trade (owned by /templates/screen-printing): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/embroidery-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [embroidery deposit invoice](../billing.md#templatesembroidery-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "embroidery deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Digitising fee and a deposit on bulk orders, the balance on delivery.
+- **Don't:** General fields of the trade (owned by /templates/embroidery): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+## L554: B6 in Dutch
+
+[ ] Deposits: contractors and home projects · 0/13 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/fence-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [fence deposit invoice](../billing.md#templatesfence-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "fence deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit for materials before the dig, the balance on completion; state limits on contractor deposits (hedge: some states cap them).
+- **Don't:** General fields of the trade (owned by /templates/fence-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/deck-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [deck deposit invoice](../billing.md#templatesdeck-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "deck deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit for lumber or composite, permit fees on their own line, the balance after inspection; deposit caps by state (hedge).
+- **Don't:** General fields of the trade (owned by /templates/deck-building): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/solar-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [solar deposit invoice](../billing.md#templatessolar-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "solar deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The deposit at signing, equipment ordered, the next payments at install and at interconnection (progress: link /templates/solar-installation-progress-invoice).
+- **Don't:** General fields of the trade (owned by /templates/solar-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/siding-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [siding deposit invoice](../billing.md#templatessiding-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "siding deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit for siding ordered by colour, the balance at completion, rot repairs found on site as a new line.
+- **Don't:** General fields of the trade (owned by /templates/siding): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/window-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [window installation deposit invoice](../billing.md#templateswindow-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "window installation deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Custom windows are made to measure: the deposit at ordering, the balance after install.
+- **Don't:** General fields of the trade (owned by /templates/window-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/remodeling-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [remodeling deposit invoice](../billing.md#templatesremodeling-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "remodeling deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The deposit at signing (and its legal cap, hedge), then progress invoices (link the remodeling progress page).
+- **Don't:** General fields of the trade (owned by /templates/remodeling): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/flooring-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [flooring deposit invoice](../billing.md#templatesflooring-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "flooring deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit for material ordered by the box, the balance after install, leftover boxes returned or left.
+- **Don't:** General fields of the trade (owned by /templates/flooring): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/tile-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [tile deposit invoice](../billing.md#templatestile-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "tile deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A deposit for tile and setting materials, the balance at grout and seal.
+- **Don't:** General fields of the trade (owned by /templates/tile-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/foundation-repair-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [foundation repair deposit invoice](../billing.md#templatesfoundation-repair-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "foundation repair deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit at signing, engineer's report and permits, the balance after the final inspection.
+- **Don't:** General fields of the trade (owned by /templates/foundation-repair): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/well-drilling-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [well drilling deposit invoice](../billing.md#templateswell-drilling-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "well drilling deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A mobilisation deposit, drilling billed per foot after, what's owed for a dry hole.
+- **Don't:** General fields of the trade (owned by /templates/well-drilling): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/masonry-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [masonry deposit invoice](../billing.md#templatesmasonry-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "masonry deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit for stone or brick ordered, the balance at completion, weather delays.
+- **Don't:** General fields of the trade (owned by /templates/masonry): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/concrete-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [concrete deposit invoice](../billing.md#templatesconcrete-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "concrete deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit before the pour (the plant is booked), the balance after finishing, extra yards on the final invoice.
+- **Don't:** General fields of the trade (owned by /templates/concrete): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/paving-deposit-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [paving deposit invoice](../billing.md#templatespaving-deposit-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "paving deposit invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Deposit to book the crew and plant, the balance on completion, tonnage over the estimate.
+- **Don't:** General fields of the trade (owned by /templates/asphalt-paving): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+
+## L564: B7 in Dutch
+
+[ ] Progress invoices: construction trades · 0/9 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/excavation-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [excavation progress invoice](../billing.md#templatesexcavation-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "excavation progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Monthly progress by quantities (cubic yards moved, trench feet) against the schedule of values, retainage.
+- **Don't:** General fields of the trade (owned by /templates/excavation): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/solar-installation-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [solar progress invoice](../billing.md#templatessolar-installation-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "solar progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Payments at equipment delivery, install complete and interconnection approval; link the deposit page.
+- **Don't:** General fields of the trade (owned by /templates/solar-installation): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/drywall-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [drywall progress invoice](../billing.md#templatesdrywall-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "drywall progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Billing a GC by stage (hang, tape, finish) or % complete, retainage held, change orders by number.
+- **Don't:** General fields of the trade (owned by /templates/drywall): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/insulation-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [insulation progress invoice](../billing.md#templatesinsulation-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "insulation progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Commercial jobs billed by area completed per floor, retainage.
+- **Don't:** General fields of the trade (owned by /templates/insulation): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/carpentry-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [carpentry progress invoice](../billing.md#templatescarpentry-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "carpentry progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Framing and finish carpentry billed by stage to a GC or owner, retainage, extras by change order.
+- **Don't:** General fields of the trade (owned by /templates/carpentry): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/window-installation-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [window installation progress invoice](../billing.md#templateswindow-installation-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "window installation progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Larger jobs: windows installed per floor or elevation against the contract, retainage.
+- **Don't:** General fields of the trade (owned by /templates/window-installation): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/architect-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [architect progress invoice](../billing.md#templatesarchitect-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "architect progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fees by phase completed (schematic, design development, documents, construction administration) as % of the fee, reimbursables.
+- **Don't:** General fields of the trade (owned by /templates/architect): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/demolition-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [demolition progress invoice](../billing.md#templatesdemolition-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "demolition progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Progress by area demolished and loads hauled, abatement subcontracted, retainage.
+- **Don't:** General fields of the trade (owned by /templates/demolition): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/fabrication-progress-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [steel fabrication progress invoice](../billing.md#templatesfabrication-progress-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "steel fabrication progress invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Fabrication jobs billed at drawings approved, material purchased, fabrication and erection complete.
+- **Don't:** General fields of the trade (owned by /templates/welding): one sentence and a link; the general progress invoice (owned by /templates/construction-progress-invoice); any claim that the app tracks deposits, payments or time.
+
+## L574: B8 in Dutch
+
+[ ] Monthly and seasonal service invoices · 0/13 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/monthly-window-cleaning-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly window cleaning invoice](../billing.md#templatesmonthly-window-cleaning-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly window cleaning invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Storefront routes: visits that month, inside or outside, skipped visits credited.
+- **Don't:** General fields of the trade (owned by /templates/window-cleaning): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-dog-walking-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly dog walking invoice](../billing.md#templatesmonthly-dog-walking-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly dog walking invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Walks per week × weeks, holidays at a higher rate, cancellations inside 24 hours charged.
+- **Don't:** General fields of the trade (owned by /templates/pet-sitting): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-aquarium-maintenance-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly aquarium maintenance invoice](../billing.md#templatesmonthly-aquarium-maintenance-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly aquarium maintenance invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Visits per month, livestock and supplies as extra lines, emergency visits.
+- **Don't:** General fields of the trade (owned by /templates/aquarium-maintenance): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-bookkeeping-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly bookkeeping invoice](../billing.md#templatesmonthly-bookkeeping-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly bookkeeping invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A fixed monthly fee by transaction volume, catch-up work and payroll as extras.
+- **Don't:** General fields of the trade (owned by /templates/bookkeeping): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-seo-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly seo invoice](../billing.md#templatesmonthly-seo-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly seo invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly SEO fee, the deliverables that month, tools passed on, minimum terms.
+- **Don't:** General fields of the trade (owned by /templates/seo-services): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-security-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly security guard invoice](../billing.md#templatesmonthly-security-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly security guard invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours per post per month at the contract rate, overtime and holiday rates, extra cover.
+- **Don't:** General fields of the trade (owned by /templates/security-guard): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/property-management-fee-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [property management fee invoice](../billing.md#templatesproperty-management-fee-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "property management fee invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The monthly fee (% of rent collected), leasing fees, maintenance coordination; the owner statement vs the invoice.
+- **Don't:** General fields of the trade (owned by /templates/property-management): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-dance-class-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly dance class invoice](../billing.md#templatesmonthly-dance-class-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly dance class invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Monthly tuition by classes per week, costume and recital fees, sibling discounts.
+- **Don't:** General fields of the trade (owned by /templates/dance-lessons): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/weekly-home-care-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [weekly home care invoice](../billing.md#templatesweekly-home-care-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "weekly home care invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours per day × days that week, overnight and weekend rates, mileage for errands.
+- **Don't:** General fields of the trade (owned by /templates/caregiving): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/monthly-courier-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [monthly courier invoice](../billing.md#templatesmonthly-courier-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "monthly courier invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Business accounts: every delivery that month by date and job number, waiting time, fuel surcharge.
+- **Don't:** General fields of the trade (owned by /templates/courier): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/pool-opening-closing-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [pool opening and closing invoice](../billing.md#templatespool-opening-closing-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "pool opening and closing invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Seasonal openings and closings with chemicals, cover handling and winterising; the monthly service invoice is separate.
+- **Don't:** General fields of the trade (owned by /templates/pool-service): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/sprinkler-winterization-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [sprinkler winterization invoice](../billing.md#templatessprinkler-winterization-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "sprinkler winterization invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Autumn blowouts and spring start-ups per zone, repairs found during start-up.
+- **Don't:** General fields of the trade (owned by /templates/irrigation): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/seasonal-gutter-cleaning-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [seasonal gutter cleaning invoice](../billing.md#templatesseasonal-gutter-cleaning-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "seasonal gutter cleaning invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Spring and autumn visits on one contract, billed per visit or as a season.
+- **Don't:** General fields of the trade (owned by /templates/gutter-cleaning): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+
+## L584: B9 in Dutch
+
+[ ] Retainers for professionals · 0/10 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/legal-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [legal retainer invoice](../billing.md#templateslegal-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "legal retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The advance into the client trust account, hours drawn against it, the remaining balance, replenishment; trust-account rules hedged (no legal advice).
+- **Don't:** General fields of the trade (owned by /templates/attorney): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/marketing-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [marketing agency retainer invoice](../billing.md#templatesmarketing-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "marketing agency retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly retainer for a scope of work, out-of-scope work billed apart, ad spend not included.
+- **Don't:** General fields of the trade (owned by /templates/marketing-agency): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/copywriting-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [copywriting retainer invoice](../billing.md#templatescopywriting-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "copywriting retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly number of pieces or words, unused work by the agreement, rush pieces as extras.
+- **Don't:** General fields of the trade (owned by /templates/copywriting): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/graphic-design-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [graphic design retainer invoice](../billing.md#templatesgraphic-design-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "graphic design retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly block of design hours, the request log as lines, overage at the hourly rate.
+- **Don't:** General fields of the trade (owned by /templates/freelance-design): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/ux-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [ux design retainer invoice](../billing.md#templatesux-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "ux design retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly product-design retainer by days per month, sprints delivered.
+- **Don't:** General fields of the trade (owned by /templates/ux-design): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/private-investigator-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [private investigator retainer invoice](../billing.md#templatesprivate-investigator-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "private investigator retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The retainer paid upfront, hours and expenses drawn against it, the refund of what's unused.
+- **Don't:** General fields of the trade (owned by /templates/private-investigator): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/financial-advisor-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [financial advisor retainer invoice](../billing.md#templatesfinancial-advisor-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "financial advisor retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A flat annual or quarterly retainer for ongoing planning (duplicate each quarter), what's included.
+- **Don't:** General fields of the trade (owned by /templates/financial-advisor): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/accounting-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [accounting retainer invoice](../billing.md#templatesaccounting-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "accounting retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A fixed monthly fee for a package (bookkeeping review, payroll, quarterly returns), out-of-scope work billed apart.
+- **Don't:** General fields of the trade (owned by /templates/accounting): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/expert-witness-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [expert witness retainer invoice](../billing.md#templatesexpert-witness-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "expert witness retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The initial retainer, hours drawn against it, deposition and trial days at their own rates.
+- **Don't:** General fields of the trade (owned by /templates/expert-witness): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/video-editing-retainer-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [video editing retainer invoice](../billing.md#templatesvideo-editing-retainer-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "video editing retainer invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A monthly number of videos for a creator or brand, extra revisions, rush edits.
+- **Don't:** General fields of the trade (owned by /templates/video-editing): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+
+## L594: B10 in Dutch
+
+[ ] Hourly billing for professionals and care · 0/7 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/legal-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [legal hourly invoice](../billing.md#templateslegal-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "legal hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Time entries in tenths of an hour per task, rates per lawyer or paralegal, costs advanced; link the retainer page.
+- **Don't:** General fields of the trade (owned by /templates/attorney): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/it-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [it services hourly invoice](../billing.md#templatesit-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "it services hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Ad hoc support by the hour with a minimum, remote vs on-site rates, after-hours.
+- **Don't:** General fields of the trade (owned by /templates/it-services): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/translation-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [translation hourly invoice](../billing.md#templatestranslation-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "translation hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Work that isn't per word (editing, review, DTP, project management) by the hour; link the per-word page.
+- **Don't:** General fields of the trade (owned by /templates/translation): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/video-editing-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [video editing hourly invoice](../billing.md#templatesvideo-editing-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "video editing hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Edit hours by day, revision rounds included, render and export time.
+- **Don't:** General fields of the trade (owned by /templates/video-editing): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/home-care-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [home care hourly invoice](../billing.md#templateshome-care-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "home care hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours per visit with a minimum, rates by time of day, mileage; link the weekly page.
+- **Don't:** General fields of the trade (owned by /templates/caregiving): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/data-analysis-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [data analysis hourly invoice](../billing.md#templatesdata-analysis-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "data analysis hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours per task (cleaning, modelling, dashboards), meetings, tools passed on.
+- **Don't:** General fields of the trade (owned by /templates/data-analysis): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/ux-design-hourly-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [ux design hourly invoice](../billing.md#templatesux-design-hourly-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "ux design hourly invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours per phase (research, wireframes, testing), workshops at a day rate.
+- **Don't:** General fields of the trade (owned by /templates/ux-design): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+
+## L604: B11 in Dutch
+
+[ ] Packages: lessons, wellness and coaching · 0/10 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/swim-lesson-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [swim lesson package invoice](../billing.md#templatesswim-lesson-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "swim lesson package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A block of lessons paid upfront, make-ups for missed lessons, pool fees.
+- **Don't:** General fields of the trade (owned by /templates/swim-lessons): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/yoga-class-pack-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [yoga class pack invoice](../billing.md#templatesyoga-class-pack-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "yoga class pack invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Class packs and private series, expiry dates, studio vs private.
+- **Don't:** General fields of the trade (owned by /templates/yoga): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/massage-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [massage package invoice](../billing.md#templatesmassage-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "massage package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Prepaid series (5 or 10 sessions) at a discount, expiry, sessions used so far.
+- **Don't:** General fields of the trade (owned by /templates/massage-therapy): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/driving-lesson-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [driving lesson package invoice](../billing.md#templatesdriving-lesson-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "driving lesson package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Blocks of lessons, the test-day fee, missed-lesson charges.
+- **Don't:** General fields of the trade (owned by /templates/driving-instructor): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/riding-lesson-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [riding lesson package invoice](../billing.md#templatesriding-lesson-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "riding lesson package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Lesson blocks, school horse vs own horse, expiry.
+- **Don't:** General fields of the trade (owned by /templates/horse-riding-lessons): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/nutrition-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [nutrition package invoice](../billing.md#templatesnutrition-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "nutrition package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A programme (assessment + follow-ups + meal plans) in one or more payments.
+- **Don't:** General fields of the trade (owned by /templates/nutrition): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/facial-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [facial package invoice](../billing.md#templatesfacial-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "facial package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Treatment series (peels, microneedling) paid upfront, products separate.
+- **Don't:** General fields of the trade (owned by /templates/esthetician): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/coaching-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [sports coaching package invoice](../billing.md#templatescoaching-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "sports coaching package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Private sessions in blocks, team clinics per player.
+- **Don't:** General fields of the trade (owned by /templates/sports-coaching): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/language-lesson-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [language lesson package invoice](../billing.md#templateslanguage-lesson-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "language lesson package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Lesson blocks, company courses per participant, materials.
+- **Don't:** General fields of the trade (owned by /templates/language-lessons): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/physiotherapy-package-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [physiotherapy package invoice](../billing.md#templatesphysiotherapy-package-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "physiotherapy package invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A treatment plan of sessions paid upfront, health-insurance claims per session (hedge).
+- **Don't:** General fields of the trade (owned by /templates/physiotherapy): one sentence and a link; the general package invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+## L614: B12 in Dutch
+
+[ ] Service calls, emergencies and insurance jobs · 0/11 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/garage-door-service-call-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [garage door service call invoice](../billing.md#templatesgarage-door-service-call-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "garage door service call invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The service call fee, credited if repaired, parts, after-hours rates.
+- **Don't:** General fields of the trade (owned by /templates/garage-door-repair): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/emergency-towing-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [emergency towing invoice](../billing.md#templatesemergency-towing-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "emergency towing invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hook-up fee, mileage, after-hours and winching, motor club or insurance billing.
+- **Don't:** General fields of the trade (owned by /templates/towing): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/emergency-tree-removal-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [emergency tree removal invoice](../billing.md#templatesemergency-tree-removal-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "emergency tree removal invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Storm call-outs at emergency rates, crane and crew hours, insurance claims (hedge).
+- **Don't:** General fields of the trade (owned by /templates/tree-service): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/emergency-drain-cleaning-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [emergency drain cleaning invoice](../billing.md#templatesemergency-drain-cleaning-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "emergency drain cleaning invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): After-hours call-outs, the trip fee, camera inspection offered after.
+- **Don't:** General fields of the trade (owned by /templates/drain-cleaning): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/emergency-board-up-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [emergency board up invoice](../billing.md#templatesemergency-board-up-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "emergency board up invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Board-up after a break-in or storm, the return visit to glaze, insurance billing.
+- **Don't:** General fields of the trade (owned by /templates/glazier): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/refrigeration-service-call-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [refrigeration service call invoice](../billing.md#templatesrefrigeration-service-call-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "refrigeration service call invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Emergency rates, refrigerant by weight, stock-loss risk noted, the maintenance contract offered.
+- **Don't:** General fields of the trade (owned by /templates/commercial-refrigeration): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/restaurant-equipment-service-call-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [restaurant equipment service call invoice](../billing.md#templatesrestaurant-equipment-service-call-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "restaurant equipment service call invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Trip charge, diagnosis, parts on order and the return visit.
+- **Don't:** General fields of the trade (owned by /templates/restaurant-equipment-repair): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/field-service-call-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [field service call invoice](../billing.md#templatesfield-service-call-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "field service call invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Travel time both ways, the service truck rate, labor on site, parts.
+- **Don't:** General fields of the trade (owned by /templates/heavy-equipment-repair): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/call-out-charge-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [call out charge invoice](../billing.md#templatescall-out-charge-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "call out charge invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The call-out charge (UK), the first hour, parts, out-of-hours rates.
+- **Don't:** General fields of the trade (owned by /templates/gas-engineer): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/water-damage-insurance-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [water damage insurance invoice](../billing.md#templateswater-damage-insurance-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "water damage insurance invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Emergency extraction, drying equipment per day, the claim number, the deductible and the insurer's share on one invoice.
+- **Don't:** General fields of the trade (owned by /templates/water-damage-restoration): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/mold-remediation-insurance-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [mold remediation insurance invoice](../billing.md#templatesmold-remediation-insurance-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "mold remediation insurance invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Containment and removal, testing, the claim number and what the policy covers (hedge).
+- **Don't:** General fields of the trade (owned by /templates/mold-remediation): one sentence and a link; the general service call invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+## L624: B13 in Dutch
+
+[ ] Milestones: creative, tech and engineering projects · 0/9 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/game-development-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [game development milestone invoice](../billing.md#templatesgame-development-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "game development milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Publisher milestones (prototype, alpha, beta, gold), acceptance criteria, advances against royalties (hedge).
+- **Don't:** General fields of the trade (owned by /templates/game-development): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/animation-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [animation milestone invoice](../billing.md#templatesanimation-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "animation milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Script and storyboard, animatic, final animation, delivery; revisions per stage.
+- **Don't:** General fields of the trade (owned by /templates/animation): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/film-production-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [film production milestone invoice](../billing.md#templatesfilm-production-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "film production milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Pre-production, shoot, rough cut, final delivery; the production's PO.
+- **Don't:** General fields of the trade (owned by /templates/film-production): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/engineering-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [engineering milestone invoice](../billing.md#templatesengineering-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "engineering milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Phases (study, design, permitting, construction support) as % of the fee.
+- **Don't:** General fields of the trade (owned by /templates/engineering): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/illustration-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [illustration milestone invoice](../billing.md#templatesillustration-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "illustration milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Book projects: sketches, final art, delivery, the advance and kill fee.
+- **Don't:** General fields of the trade (owned by /templates/illustration): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/music-production-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [music production milestone invoice](../billing.md#templatesmusic-production-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "music production milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Pre-production, tracking, mixing, mastering per song or album, points or royalties (hedge).
+- **Don't:** General fields of the trade (owned by /templates/music-production): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/marketing-project-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [marketing project milestone invoice](../billing.md#templatesmarketing-project-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "marketing project milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Campaign projects: strategy, creative, launch, report; link the retainer page.
+- **Don't:** General fields of the trade (owned by /templates/marketing-agency): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/technical-writing-milestone-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [technical writing milestone invoice](../billing.md#templatestechnical-writing-milestone-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "technical writing milestone invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Outline, first draft, review, final; documentation sets per release.
+- **Don't:** General fields of the trade (owned by /templates/technical-writing): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/environmental-consulting-phase-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [environmental consulting phase invoice](../billing.md#templatesenvironmental-consulting-phase-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "environmental consulting phase invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Phase II sampling and lab results, reporting, remediation oversight by phase.
+- **Don't:** General fields of the trade (owned by /templates/environmental-consulting): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+
+## L634: B14 in Dutch
+
+[ ] Final invoices: events and custom work · 0/7 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/dj-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [dj final invoice](../billing.md#templatesdj-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "dj final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The balance after the deposit, overtime played on the night, the final invoice before or after the event.
+- **Don't:** General fields of the trade (owned by /templates/dj): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/event-planner-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [event planner final invoice](../billing.md#templatesevent-planner-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "event planner final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The planning fee balance, vendor payments passed on, the deposit subtracted.
+- **Don't:** General fields of the trade (owned by /templates/event-planning): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/florist-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [florist final invoice](../billing.md#templatesflorist-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "florist final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Final counts two weeks out, the deposit subtracted, rentals and delivery.
+- **Don't:** General fields of the trade (owned by /templates/florist): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/band-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [band final invoice](../billing.md#templatesband-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "band final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The balance due on the day, overtime sets, travel.
+- **Don't:** General fields of the trade (owned by /templates/musician): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/venue-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [venue final invoice](../billing.md#templatesvenue-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "venue final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The final bill after the event: F&B over the minimum, overtime, damage from the security deposit.
+- **Don't:** General fields of the trade (owned by /templates/event-venue): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/party-rental-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [party rental final invoice](../billing.md#templatesparty-rental-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "party rental final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): After pickup: missing or damaged items, late returns, the deposit settled.
+- **Don't:** General fields of the trade (owned by /templates/party-rentals): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/custom-furniture-final-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [custom furniture final invoice](../billing.md#templatescustom-furniture-final-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "custom furniture final invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The balance on delivery, approved changes, delivery and install.
+- **Don't:** General fields of the trade (owned by /templates/custom-furniture): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+
+## L644: B15 in Dutch
+
+[ ] Per-unit billing: per word, mile and minute · 0/5 live in nl
+
+- **For every template (billing type) page:** How this billing type works there (deposit and final invoice rules, VAT on deposits), a sample in the local currency; link the local trade template.
+
+### /templates/proofreading-per-word-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [proofreading per word invoice](../billing.md#templatesproofreading-per-word-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "proofreading per word invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per word or per 1,000 words by level (proofread, copy-edit), turnaround tiers.
+- **Don't:** General fields of the trade (owned by /templates/proofreading): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/voice-over-per-word-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [voice over per word invoice](../billing.md#templatesvoice-over-per-word-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "voice over per word invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per word or per finished minute, usage and buyouts, pickups.
+- **Don't:** General fields of the trade (owned by /templates/voice-over): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/courier-per-mile-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [courier per mile invoice](../billing.md#templatescourier-per-mile-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "courier per mile invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Per mile with a base fee, waiting time, weight surcharges; link the monthly account page.
+- **Don't:** General fields of the trade (owned by /templates/courier): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/towing-per-mile-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [towing per mile invoice](../billing.md#templatestowing-per-mile-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "towing per mile invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hook-up fee + per mile loaded, storage per day; link the emergency page.
+- **Don't:** General fields of the trade (owned by /templates/towing): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
+
+### /templates/trucking-rate-per-mile-invoice → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [trucking rate per mile invoice](../billing.md#templatestrucking-rate-per-mile-invoice) (planned: write the English page first)
+- **Search words:** the Dutch term for "trucking rate per mile invoice"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Loaded miles × rate, deadhead, fuel surcharge, detention; the rate confirmation number.
+- **Don't:** General fields of the trade (owned by /templates/trucking): one sentence and a link; the general service invoice (owned by /templates/service-invoice); any claim that the app tracks deposits, payments or time.
