@@ -3194,3 +3194,117 @@
 - **Search words:** "programma fatturazione [equipment rental companies, in Italian]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L288: TL0 in Italian
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in it
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Italian
+
+- [x] **Live in it**: /it/strumenti
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "calcolo [free invoicing tools, in Italian]"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Italian
+
+- [x] **Live in it**: /it/strumenti/calcolo-iva
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "calcolo [vat, in Italian]"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Italian
+
+- [x] **Live in it**: /it/strumenti/calcolo-ore
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "calcolo [hours, in Italian]"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Italian
+
+- [x] **Live in it**: /it/strumenti/calcolo-tariffa-oraria
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "calcolo [freelance hourly rate, in Italian]"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L298: G0 in Italian
+
+[x] The free invoice generator (built) · 1/1 live in it
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Italian
+
+- [x] **Live in it**: /it/crea-fattura
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Italian term for "free invoice generator"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L308: P0 in Italian
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in it
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Italian
+
+- [x] **Live in it**: /it
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Italian term for "invoice app iphone"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Italian
+
+- [ ] **Live in it**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Italian term for "invoice templates"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Italian
+
+- [ ] **Live in it**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Italian term for "invoicing software by industry"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Italian
+
+- [x] **Live in it**: /it/aiuto
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Italian term for "invoicor help"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Italian
+
+- [ ] **Live in it**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Italian term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Italian
+
+- [ ] **Live in it**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Italian term for "invoicor terms of service"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Italian
+
+- [ ] **Live in it**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Italian term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Italian
+
+- [x] **Live in it**: /it/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Italian term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Italy, Switzerland (IT): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

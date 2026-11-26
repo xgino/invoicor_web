@@ -3194,3 +3194,117 @@
 - **Search words:** "program do faktur dla [equipment rental companies, in Polish]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L290: TL0 in Polish
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in pl
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Polish
+
+- [x] **Live in pl**: /pl/narzedzia
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "kalkulator [free invoicing tools, in Polish]"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Polish
+
+- [x] **Live in pl**: /pl/narzedzia/kalkulator-vat
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [vat, in Polish]"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Polish
+
+- [x] **Live in pl**: /pl/narzedzia/kalkulator-godzin
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [hours, in Polish]"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Polish
+
+- [x] **Live in pl**: /pl/narzedzia/kalkulator-stawki-godzinowej
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [freelance hourly rate, in Polish]"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L300: G0 in Polish
+
+[x] The free invoice generator (built) · 1/1 live in pl
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Polish
+
+- [x] **Live in pl**: /pl/wystaw-fakture
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Polish term for "free invoice generator"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L310: P0 in Polish
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in pl
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Polish
+
+- [x] **Live in pl**: /pl
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Polish term for "invoice app iphone"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Polish term for "invoice templates"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Polish term for "invoicing software by industry"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Polish
+
+- [x] **Live in pl**: /pl/pomoc
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Polish term for "invoicor help"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Polish term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Polish term for "invoicor terms of service"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Polish term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Polish
+
+- [x] **Live in pl**: /pl/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Polish term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Poland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

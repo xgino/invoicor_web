@@ -3194,3 +3194,117 @@
 - **Search words:** "Rechnungsprogramm für [equipment rental companies, in German]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L281: TL0 in German
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in de
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → German
+
+- [x] **Live in de**: /de/tools
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "[free invoicing tools, in German] Rechner"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → German
+
+- [x] **Live in de**: /de/tools/mehrwertsteuer-rechner
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "[vat, in German] Rechner"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → German
+
+- [x] **Live in de**: /de/tools/stundenrechner
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "[hours, in German] Rechner"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → German
+
+- [x] **Live in de**: /de/tools/stundensatz-rechner
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "[freelance hourly rate, in German] Rechner"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L291: G0 in German
+
+[x] The free invoice generator (built) · 1/1 live in de
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → German
+
+- [x] **Live in de**: /de/rechnung-erstellen
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the German term for "free invoice generator"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L301: P0 in German
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in de
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → German
+
+- [x] **Live in de**: /de
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the German term for "invoice app iphone"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → German
+
+- [ ] **Live in de**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the German term for "invoice templates"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → German
+
+- [ ] **Live in de**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the German term for "invoicing software by industry"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → German
+
+- [x] **Live in de**: /de/hilfe
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the German term for "invoicor help"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → German
+
+- [ ] **Live in de**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the German term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → German
+
+- [ ] **Live in de**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the German term for "invoicor terms of service"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → German
+
+- [ ] **Live in de**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the German term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → German
+
+- [x] **Live in de**: /de/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the German term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

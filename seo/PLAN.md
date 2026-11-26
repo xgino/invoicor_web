@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 401 English and local pages + 4,090 language pages · **4,732 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 401 English and local pages + 4,140 language pages · **4,782 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -110,12 +110,13 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 | 43 | 94 | 0/90 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
-| [Free tools](#free-tools-tl) | TL1 TL2 TL3 | 0 | 41 | 0/30 done |
+| [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 | 4 | 41 | 10/40 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 | 0 | 23 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 | 0 | 32 | none |
-| [Generators (other documents)](#generators-other-documents-g) | G1 | 0 | 4 | 0/10 done |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1 | 0 | 2 | 0/10 done |
-| [Languages](#languages-l) | L1–L280 | 0 | 4090 | |
+| [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
+| [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
+| [Languages](#languages-l) | L1–L310 | 80 | 4140 | |
 
 ## Suggested order
 
@@ -665,6 +666,14 @@ Direction (what these pages can and can't do) and every brief: [plan/compare.md]
 
 Direction (what these pages can and can't do) and every brief: [plan/tools.md](plan/tools.md)
 
+### TL0: Free tools built before the plan (hub, VAT, hours, hourly rate)
+
+- [x] **TL0** · 4/4 live · languages: [L281–L290](#tl0-in-every-language)
+  - [x] [/tools](https://invoicor.com/tools) free invoicing tools
+  - [x] [/tools/vat-calculator](https://invoicor.com/tools/vat-calculator) vat calculator
+  - [x] [/tools/hours-calculator](https://invoicor.com/tools/hours-calculator) hours calculator
+  - [x] [/tools/hourly-rate-calculator](https://invoicor.com/tools/hourly-rate-calculator) freelance hourly rate calculator
+
 ### TL1: Free tools I
 
 - [ ] **TL1** · 0/11 live · languages: [L101–L110](#tl1-in-every-language)
@@ -805,6 +814,11 @@ Direction (what these pages can and can't do) and every brief: [plan/local.md](p
 
 Direction (what these pages can and can't do) and every brief: [plan/generators.md](plan/generators.md)
 
+### G0: The free invoice generator (built)
+
+- [x] **G0** · 1/1 live · languages: [L291–L300](#g0-in-every-language)
+  - [x] [/free-invoice-generator](https://invoicor.com/free-invoice-generator) free invoice generator
+
 ### G1: Document generators (receipt, estimate, proforma, credit note)
 
 - [ ] **G1** · 0/4 live · languages: [L191–L200](#g1-in-every-language)
@@ -813,9 +827,68 @@ Direction (what these pages can and can't do) and every brief: [plan/generators.
   - [ ] [/free-proforma-invoice-generator](plan/generators.md#free-proforma-invoice-generator) proforma invoice generator
   - [ ] [/free-credit-note-generator](plan/generators.md#free-credit-note-generator) credit note generator
 
+## Blog (learn.invoicor.com) (BL)
+
+Direction (what these pages can and can't do) and every brief: [plan/blog.md](plan/blog.md)
+
+### BL1: Blog articles 1–17 (built, learn.invoicor.com)
+
+- [x] **BL1** · 17/17 live
+  - [x] [learn:/how-to-use-an-invoice-maker-for-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-use-an-invoice-maker-for-iphone) how to use an invoice maker for iphone
+  - [x] [learn:/how-to-create-an-invoice-on-iphone-in-seconds](https://invoicor.comhttps://learn.invoicor.com/how-to-create-an-invoice-on-iphone-in-seconds) how to create an invoice on iphone in seconds
+  - [x] [learn:/free-invoice-app-for-iphone-what-to-look-for](https://invoicor.comhttps://learn.invoicor.com/free-invoice-app-for-iphone-what-to-look-for) free invoice app for iphone what to look for
+  - [x] [learn:/how-pdf-invoice-templates-work-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-pdf-invoice-templates-work-on-iphone) how pdf invoice templates work on iphone
+  - [x] [learn:/what-is-a-multi-currency-invoicing-app](https://invoicor.comhttps://learn.invoicor.com/what-is-a-multi-currency-invoicing-app) what is a multi currency invoicing app
+  - [x] [learn:/how-a-tax-calculator-helps-when-creating-invoices](https://invoicor.comhttps://learn.invoicor.com/how-a-tax-calculator-helps-when-creating-invoices) how a tax calculator helps when creating invoices
+  - [x] [learn:/how-to-share-an-invoice-pdf-from-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-share-an-invoice-pdf-from-iphone) how to share an invoice pdf from iphone
+  - [x] [learn:/what-makes-an-invoice-look-professional](https://invoicor.comhttps://learn.invoicor.com/what-makes-an-invoice-look-professional) what makes an invoice look professional
+  - [x] [learn:/invoice-creation-checklist-for-iphone-users](https://invoicor.comhttps://learn.invoicor.com/invoice-creation-checklist-for-iphone-users) invoice creation checklist for iphone users
+  - [x] [learn:/what-is-an-invoice-maker](https://invoicor.comhttps://learn.invoicor.com/what-is-an-invoice-maker) what is an invoice maker
+  - [x] [learn:/how-to-use-pdf-invoice-templates-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-use-pdf-invoice-templates-on-iphone) how to use pdf invoice templates on iphone
+  - [x] [learn:/how-to-calculate-tax-on-an-invoice-in-the-app](https://invoicor.comhttps://learn.invoicor.com/how-to-calculate-tax-on-an-invoice-in-the-app) how to calculate tax on an invoice in the app
+  - [x] [learn:/can-you-create-invoices-in-different-currencies](https://invoicor.comhttps://learn.invoicor.com/can-you-create-invoices-in-different-currencies) can you create invoices in different currencies
+  - [x] [learn:/how-auto-fill-helps-you-create-invoices-faster](https://invoicor.comhttps://learn.invoicor.com/how-auto-fill-helps-you-create-invoices-faster) how auto fill helps you create invoices faster
+  - [x] [learn:/how-to-share-invoices-instantly-from-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-share-invoices-instantly-from-iphone) how to share invoices instantly from iphone
+  - [x] [learn:/how-to-create-a-receipt-on-iphone-in-minutes](https://invoicor.comhttps://learn.invoicor.com/how-to-create-a-receipt-on-iphone-in-minutes) how to create a receipt on iphone in minutes
+  - [x] [learn:/how-to-save-an-invoice-as-a-pdf-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-save-an-invoice-as-a-pdf-on-iphone) how to save an invoice as a pdf on iphone
+
+### BL2: Blog articles 18–34 (built, learn.invoicor.com)
+
+- [x] **BL2** · 17/17 live
+  - [x] [learn:/how-to-send-an-invoice-from-iphone-by-email](https://invoicor.comhttps://learn.invoicor.com/how-to-send-an-invoice-from-iphone-by-email) how to send an invoice from iphone by email
+  - [x] [learn:/how-to-change-the-currency-on-an-invoice](https://invoicor.comhttps://learn.invoicor.com/how-to-change-the-currency-on-an-invoice) how to change the currency on an invoice
+  - [x] [learn:/how-to-reuse-invoice-details-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-reuse-invoice-details-on-iphone) how to reuse invoice details on iphone
+  - [x] [learn:/how-to-number-invoices-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-number-invoices-on-iphone) how to number invoices on iphone
+  - [x] [learn:/what-should-an-invoice-include](https://invoicor.comhttps://learn.invoicor.com/what-should-an-invoice-include) what should an invoice include
+  - [x] [learn:/what-is-a-pdf-invoice](https://invoicor.comhttps://learn.invoicor.com/what-is-a-pdf-invoice) what is a pdf invoice
+  - [x] [learn:/what-does-auto-fill-mean-in-an-invoice-app](https://invoicor.comhttps://learn.invoicor.com/what-does-auto-fill-mean-in-an-invoice-app) what does auto fill mean in an invoice app
+  - [x] [learn:/why-use-an-invoice-app-on-iphone](https://invoicor.comhttps://learn.invoicor.com/why-use-an-invoice-app-on-iphone) why use an invoice app on iphone
+  - [x] [learn:/what-does-an-invoice-tax-calculator-do](https://invoicor.comhttps://learn.invoicor.com/what-does-an-invoice-tax-calculator-do) what does an invoice tax calculator do
+  - [x] [learn:/what-is-a-multi-currency-invoice](https://invoicor.comhttps://learn.invoicor.com/what-is-a-multi-currency-invoice) what is a multi currency invoice
+  - [x] [learn:/best-invoice-app-features-for-freelancers-on-iphone](https://invoicor.comhttps://learn.invoicor.com/best-invoice-app-features-for-freelancers-on-iphone) best invoice app features for freelancers on iphone
+  - [x] [learn:/best-ways-to-send-invoices-from-iphone](https://invoicor.comhttps://learn.invoicor.com/best-ways-to-send-invoices-from-iphone) best ways to send invoices from iphone
+  - [x] [learn:/best-invoice-template-styles-for-mobile-use](https://invoicor.comhttps://learn.invoicor.com/best-invoice-template-styles-for-mobile-use) best invoice template styles for mobile use
+  - [x] [learn:/can-you-make-an-invoice-on-iphone-without-paper](https://invoicor.comhttps://learn.invoicor.com/can-you-make-an-invoice-on-iphone-without-paper) can you make an invoice on iphone without paper
+  - [x] [learn:/can-you-edit-an-invoice-after-saving-it](https://invoicor.comhttps://learn.invoicor.com/can-you-edit-an-invoice-after-saving-it) can you edit an invoice after saving it
+  - [x] [learn:/can-you-send-an-invoice-as-a-pdf-from-iphone](https://invoicor.comhttps://learn.invoicor.com/can-you-send-an-invoice-as-a-pdf-from-iphone) can you send an invoice as a pdf from iphone
+  - [x] [learn:/do-you-need-to-fill-every-invoice-field](https://invoicor.comhttps://learn.invoicor.com/do-you-need-to-fill-every-invoice-field) do you need to fill every invoice field
+
 ## Core pages, hubs, trust and legal (P)
 
 Direction (what these pages can and can't do) and every brief: [plan/core.md](plan/core.md)
+
+### P0: Core pages (built): home, hubs, help, affiliate, terms, privacy, Android
+
+- [x] **P0** · 9/9 live · languages: [L301–L310](#p0-in-every-language)
+  - [x] [/](https://invoicor.com/) invoice app iphone
+  - [x] [/templates](https://invoicor.com/templates) invoice templates
+  - [x] [/industries](https://invoicor.com/industries) invoicing software by industry
+  - [x] [/compare](https://invoicor.com/compare) invoice app alternatives
+  - [x] [/help](https://invoicor.com/help) invoicor help
+  - [x] [/affiliate](https://invoicor.com/affiliate) invoicor affiliate program
+  - [x] [/terms](https://invoicor.com/terms) invoicor terms of service
+  - [x] [/privacy](https://invoicor.com/privacy) invoicor privacy policy
+  - [x] [/android](https://invoicor.com/android) invoicor for android: coming soon
 
 ### P1: Trust pages: about, contact (E-E-A-T)
 
@@ -1247,6 +1320,51 @@ Architects, real estate agents, private investigators, equipment rental · 4 pag
 - [ ] [**L278**](plan/languages/it.md#l278-i9-in-italian) Italian · 0/4
 - [ ] [**L279**](plan/languages/pt.md#l279-i9-in-portuguese) Portuguese · 0/4
 - [ ] [**L280**](plan/languages/pl.md#l280-i9-in-polish) Polish · 0/4
+
+### TL0 in every language
+
+Free tools built before the plan (hub, VAT, hours, hourly rate) · 4 pages
+
+- [x] [**L281**](plan/languages/de.md#l281-tl0-in-german) German · 4/4
+- [x] [**L282**](plan/languages/es.md#l282-tl0-in-spanish) Spanish · 4/4
+- [x] [**L283**](plan/languages/fr.md#l283-tl0-in-french) French · 4/4
+- [x] [**L284**](plan/languages/nl.md#l284-tl0-in-dutch) Dutch · 4/4
+- [x] [**L285**](plan/languages/sv.md#l285-tl0-in-swedish) Swedish · 4/4
+- [x] [**L286**](plan/languages/da.md#l286-tl0-in-danish) Danish · 4/4
+- [x] [**L287**](plan/languages/nb.md#l287-tl0-in-norwegian-bokmål) Norwegian (Bokmål) · 4/4
+- [x] [**L288**](plan/languages/it.md#l288-tl0-in-italian) Italian · 4/4
+- [x] [**L289**](plan/languages/pt.md#l289-tl0-in-portuguese) Portuguese · 4/4
+- [x] [**L290**](plan/languages/pl.md#l290-tl0-in-polish) Polish · 4/4
+
+### G0 in every language
+
+The free invoice generator (built) · 1 pages
+
+- [x] [**L291**](plan/languages/de.md#l291-g0-in-german) German · 1/1
+- [x] [**L292**](plan/languages/es.md#l292-g0-in-spanish) Spanish · 1/1
+- [x] [**L293**](plan/languages/fr.md#l293-g0-in-french) French · 1/1
+- [x] [**L294**](plan/languages/nl.md#l294-g0-in-dutch) Dutch · 1/1
+- [x] [**L295**](plan/languages/sv.md#l295-g0-in-swedish) Swedish · 1/1
+- [x] [**L296**](plan/languages/da.md#l296-g0-in-danish) Danish · 1/1
+- [x] [**L297**](plan/languages/nb.md#l297-g0-in-norwegian-bokmål) Norwegian (Bokmål) · 1/1
+- [x] [**L298**](plan/languages/it.md#l298-g0-in-italian) Italian · 1/1
+- [x] [**L299**](plan/languages/pt.md#l299-g0-in-portuguese) Portuguese · 1/1
+- [x] [**L300**](plan/languages/pl.md#l300-g0-in-polish) Polish · 1/1
+
+### P0 in every language
+
+Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 8 pages
+
+- [ ] [**L301**](plan/languages/de.md#l301-p0-in-german) German · 3/8
+- [ ] [**L302**](plan/languages/es.md#l302-p0-in-spanish) Spanish · 3/8
+- [ ] [**L303**](plan/languages/fr.md#l303-p0-in-french) French · 3/8
+- [ ] [**L304**](plan/languages/nl.md#l304-p0-in-dutch) Dutch · 3/8
+- [ ] [**L305**](plan/languages/sv.md#l305-p0-in-swedish) Swedish · 3/8
+- [ ] [**L306**](plan/languages/da.md#l306-p0-in-danish) Danish · 3/8
+- [ ] [**L307**](plan/languages/nb.md#l307-p0-in-norwegian-bokmål) Norwegian (Bokmål) · 3/8
+- [ ] [**L308**](plan/languages/it.md#l308-p0-in-italian) Italian · 3/8
+- [ ] [**L309**](plan/languages/pt.md#l309-p0-in-portuguese) Portuguese · 3/8
+- [ ] [**L310**](plan/languages/pl.md#l310-p0-in-polish) Polish · 3/8
 
 ## Not in an item yet
 

@@ -3194,3 +3194,117 @@
 - **Search words:** "programa de faturação para [equipment rental companies, in Portuguese]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L289: TL0 in Portuguese
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in pt
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Portuguese
+
+- [x] **Live in pt**: /pt/ferramentas
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "calculadora de [free invoicing tools, in Portuguese]"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Portuguese
+
+- [x] **Live in pt**: /pt/ferramentas/calcular-iva
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "calculadora de [vat, in Portuguese]"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Portuguese
+
+- [x] **Live in pt**: /pt/ferramentas/calculadora-horas
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "calculadora de [hours, in Portuguese]"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Portuguese
+
+- [x] **Live in pt**: /pt/ferramentas/calcular-preco-hora
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "calculadora de [freelance hourly rate, in Portuguese]"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L299: G0 in Portuguese
+
+[x] The free invoice generator (built) · 1/1 live in pt
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Portuguese
+
+- [x] **Live in pt**: /pt/criar-fatura
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Portuguese term for "free invoice generator"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L309: P0 in Portuguese
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in pt
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Portuguese
+
+- [x] **Live in pt**: /pt
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoice app iphone"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoice templates"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicing software by industry"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Portuguese
+
+- [x] **Live in pt**: /pt/ajuda
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicor help"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicor terms of service"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Portuguese
+
+- [ ] **Live in pt**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Portuguese
+
+- [x] **Live in pt**: /pt/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Portuguese term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Portugal (PT-PT); Brazil only with care: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

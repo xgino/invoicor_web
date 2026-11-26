@@ -3194,3 +3194,117 @@
 - **Search words:** "faktureringsprogram for [equipment rental companies, in Norwegian (Bokmål)]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L287: TL0 in Norwegian (Bokmål)
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in nb
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/verktoy
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "kalkulator [free invoicing tools, in Norwegian (Bokmål)]"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/verktoy/mva-kalkulator
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [vat, in Norwegian (Bokmål)]"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/verktoy/timekalkulator
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [hours, in Norwegian (Bokmål)]"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/verktoy/beregn-timepris
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "kalkulator [freelance hourly rate, in Norwegian (Bokmål)]"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L297: G0 in Norwegian (Bokmål)
+
+[x] The free invoice generator (built) · 1/1 live in nb
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/lag-faktura
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "free invoice generator"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L307: P0 in Norwegian (Bokmål)
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in nb
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoice app iphone"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Norwegian (Bokmål)
+
+- [ ] **Live in nb**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoice templates"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Norwegian (Bokmål)
+
+- [ ] **Live in nb**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicing software by industry"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/hjelp
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicor help"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Norwegian (Bokmål)
+
+- [ ] **Live in nb**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Norwegian (Bokmål)
+
+- [ ] **Live in nb**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicor terms of service"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Norwegian (Bokmål)
+
+- [ ] **Live in nb**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Norwegian (Bokmål)
+
+- [x] **Live in nb**: /nb/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Norwegian (Bokmål) term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Norway: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

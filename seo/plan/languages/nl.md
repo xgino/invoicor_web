@@ -3194,3 +3194,117 @@
 - **Search words:** "facturatie app voor [equipment rental companies, in Dutch]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L284: TL0 in Dutch
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in nl
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Dutch
+
+- [x] **Live in nl**: /nl/tools
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "[free invoicing tools, in Dutch] berekenen"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Dutch
+
+- [x] **Live in nl**: /nl/tools/btw-berekenen
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "[vat, in Dutch] berekenen"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Dutch
+
+- [x] **Live in nl**: /nl/tools/uren-berekenen
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "[hours, in Dutch] berekenen"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Dutch
+
+- [x] **Live in nl**: /nl/tools/uurtarief-berekenen
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "[freelance hourly rate, in Dutch] berekenen"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L294: G0 in Dutch
+
+[x] The free invoice generator (built) · 1/1 live in nl
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Dutch
+
+- [x] **Live in nl**: /nl/gratis-factuur-maken
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Dutch term for "free invoice generator"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L304: P0 in Dutch
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in nl
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Dutch
+
+- [x] **Live in nl**: /nl
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Dutch term for "invoice app iphone"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Dutch term for "invoice templates"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicing software by industry"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Dutch
+
+- [x] **Live in nl**: /nl/help
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicor help"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicor terms of service"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Dutch
+
+- [ ] **Live in nl**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Dutch
+
+- [x] **Live in nl**: /nl/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Dutch term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

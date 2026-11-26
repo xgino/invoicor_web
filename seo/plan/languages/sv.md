@@ -3194,3 +3194,117 @@
 - **Search words:** "faktureringsprogram för [equipment rental companies, in Swedish]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L285: TL0 in Swedish
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in sv
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → Swedish
+
+- [x] **Live in sv**: /sv/verktyg
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "räkna ut [free invoicing tools, in Swedish]"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → Swedish
+
+- [x] **Live in sv**: /sv/verktyg/momsraknare
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "räkna ut [vat, in Swedish]"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → Swedish
+
+- [x] **Live in sv**: /sv/verktyg/timraknare
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "räkna ut [hours, in Swedish]"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → Swedish
+
+- [x] **Live in sv**: /sv/verktyg/rakna-ut-timpris
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "räkna ut [freelance hourly rate, in Swedish]"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L295: G0 in Swedish
+
+[x] The free invoice generator (built) · 1/1 live in sv
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → Swedish
+
+- [x] **Live in sv**: /sv/skapa-faktura
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the Swedish term for "free invoice generator"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L305: P0 in Swedish
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in sv
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → Swedish
+
+- [x] **Live in sv**: /sv
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the Swedish term for "invoice app iphone"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the Swedish term for "invoice templates"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicing software by industry"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → Swedish
+
+- [x] **Live in sv**: /sv/hjalp
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicor help"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicor affiliate program"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicor terms of service"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicor privacy policy"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → Swedish
+
+- [x] **Live in sv**: /sv/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the Swedish term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for Sweden: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

@@ -23,6 +23,7 @@ export const PREFIX = {
   generators: "G",
   country: "CT",
   local: "LO",
+  blog: "BL",
   core: "P",
 };
 
@@ -84,9 +85,11 @@ export const ITEMS = [
   },
   { id: "C1", title: "Compare pages (built, English only)" },
   { id: "C2", title: "20 more compares (English only)" },
+  { id: "TL0", title: "Free tools built before the plan (hub, VAT, hours, hourly rate)" },
   { id: "TL1", title: "Free tools I" },
   { id: "TL2", title: "Free tools II" },
   { id: "TL3", title: "Pricing calculators for trades", text: "needs task S4" },
+  { id: "G0", title: "The free invoice generator (built)" },
   { id: "G1", title: "Document generators (receipt, estimate, proforma, credit note)" },
   {
     id: "CT1",
@@ -105,12 +108,18 @@ export const ITEMS = [
     text: "needs task S3; it, pt, pl stay on hold (e-invoicing)",
   },
   { id: "LO2", title: "Local rivals, in their own language (HL9)" },
+  {
+    id: "P0",
+    title: "Core pages (built): home, hubs, help, affiliate, terms, privacy, Android",
+  },
+  { id: "BL1", title: "Blog articles 1–17 (built, learn.invoicor.com)" },
+  { id: "BL2", title: "Blog articles 18–34 (built, learn.invoicor.com)" },
   { id: "P1", title: "Trust pages: about, contact (E-E-A-T)" },
 ];
 
 /**
  * The order L items are numbered in: per source item, one L item per language. Append only.
- * Items without `localize: yes` pages get no L items.
+ * Items without `localize: yes` pages get no L items. Item 0 (TL0, G0, P0) = built before the plan.
  */
 export const LANGUAGE_SOURCES = [
   "T1",
@@ -141,6 +150,10 @@ export const LANGUAGE_SOURCES = [
   "TL3",
   "T9",
   "I9",
+  // Built before the plan; their language versions partly exist (home, generator, help, Android, tools).
+  "TL0",
+  "G0",
+  "P0",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */

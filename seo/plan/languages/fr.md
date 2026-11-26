@@ -3194,3 +3194,117 @@
 - **Search words:** "logiciel de facturation [equipment rental companies, in French]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Small rental yards and owner-operators with a few machines: day, week and month rates, delivery. Honest: no booking calendar, inventory or availability tracking.
 - **Don't:** The template's content (/templates/equipment-rental).
+
+## L283: TL0 in French
+
+[x] Free tools built before the plan (hub, VAT, hours, hourly rate) · 4/4 live in fr
+
+- **For every tool page:** The local rates and presets (number format, currency, VAT), local units (metric), the local slug in the route table.
+
+### /tools → French
+
+- [x] **Live in fr**: /fr/outils
+- **English page:** [free invoicing tools](https://invoicor.com/tools) (live: use it as the source)
+- **Search words:** "calculateur [free invoicing tools, in French]"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/vat-calculator → French
+
+- [x] **Live in fr**: /fr/outils/calcul-tva
+- **English page:** [vat calculator](https://invoicor.com/tools/vat-calculator) (live: use it as the source)
+- **Search words:** "calculateur [vat, in French]"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hours-calculator → French
+
+- [x] **Live in fr**: /fr/outils/calcul-heures
+- **English page:** [hours calculator](https://invoicor.com/tools/hours-calculator) (live: use it as the source)
+- **Search words:** "calculateur [hours, in French]"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /tools/hourly-rate-calculator → French
+
+- [x] **Live in fr**: /fr/outils/calcul-taux-horaire
+- **English page:** [freelance hourly rate calculator](https://invoicor.com/tools/hourly-rate-calculator) (live: use it as the source)
+- **Search words:** "calculateur [freelance hourly rate, in French]"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L293: G0 in French
+
+[x] The free invoice generator (built) · 1/1 live in fr
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-invoice-generator → French
+
+- [x] **Live in fr**: /fr/creer-une-facture
+- **English page:** [free invoice generator](https://invoicor.com/free-invoice-generator) (live: use it as the source)
+- **Search words:** the French term for "free invoice generator"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+## L303: P0 in French
+
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in fr
+
+- **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every support page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every program page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every legal page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every android page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### / → French
+
+- [x] **Live in fr**: /fr
+- **English page:** [invoice app iphone](https://invoicor.com/) (live: use it as the source)
+- **Search words:** the French term for "invoice app iphone"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /templates → French
+
+- [ ] **Live in fr**
+- **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
+- **Search words:** the French term for "invoice templates"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /industries → French
+
+- [ ] **Live in fr**
+- **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
+- **Search words:** the French term for "invoicing software by industry"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /help → French
+
+- [x] **Live in fr**: /fr/aide
+- **English page:** [invoicor help](https://invoicor.com/help) (live: use it as the source)
+- **Search words:** the French term for "invoicor help"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /affiliate → French
+
+- [ ] **Live in fr**
+- **English page:** [invoicor affiliate program](https://invoicor.com/affiliate) (live: use it as the source)
+- **Search words:** the French term for "invoicor affiliate program"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /terms → French
+
+- [ ] **Live in fr**
+- **English page:** [invoicor terms of service](https://invoicor.com/terms) (live: use it as the source)
+- **Search words:** the French term for "invoicor terms of service"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /privacy → French
+
+- [ ] **Live in fr**
+- **English page:** [invoicor privacy policy](https://invoicor.com/privacy) (live: use it as the source)
+- **Search words:** the French term for "invoicor privacy policy"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+
+### /android → French
+
+- [x] **Live in fr**: /fr/android
+- **English page:** [invoicor for android: coming soon](https://invoicor.com/android) (live: use it as the source)
+- **Search words:** the French term for "invoicor for android: coming soon"
+- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
