@@ -6302,5 +6302,1911 @@
         "slug": "virtual-assistant"
       }
     ]
+  },
+  {
+    "slug": "deposit-invoice",
+    "niche": "Deposit",
+    "title": "Deposit Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free deposit invoice template with a filled-in sample: bill part of the price before work starts, then subtract it on the final invoice. Get the PDF.",
+    "h1": "Free Deposit Invoice Template",
+    "subtitle": "Bill part of the price before the work starts, on its own invoice, with the full job price and the share you're asking for.",
+    "intro_paragraph": "A deposit invoice asks the client for part of the price before you start. It's a real invoice with its own number, not a line on a quote or a promise in an email. That link between the two documents is where most deposit invoices fall short: the deposit says too little about the job, and months later nobody can tell what the $1,200 was for. This page covers the fields a deposit invoice needs, a filled-in sample for 30% of a $4,000 job, the tax point people miss, and how the final invoice should take the deposit off.",
+    "what_to_include_intro": "The client pays a deposit for work that hasn't happened yet, so the invoice has to carry the context a normal invoice gets from the finished job. Six things make it hold up later.",
+    "req_1_title": "The word deposit, at the top",
+    "req_1_text": "Title the document 'Deposit invoice' or put 'Deposit' at the start of the first line item. A client's bookkeeper files it differently from a bill for finished work, and you need to find it fast when you write the final invoice.",
+    "req_2_title": "The full job price and the share asked",
+    "req_2_text": "Show both numbers: the agreed total and the deposit as a percentage or a fixed part of it. 'Deposit: 30% of $4,000.00' tells the client exactly how much is left. Writing only '$1,200.00' leaves them guessing.",
+    "req_3_title": "What the deposit secures",
+    "req_3_text": "Name the job and what the payment holds: a start date, a booked day, materials ordered for this client. Refer to the agreement or quote by its number or date.",
+    "req_4_title": "Refundable or not, and until when",
+    "req_4_text": "Say plainly whether the deposit is refundable, and until when. 'Non-refundable once materials are ordered' and 'Refundable in full until 14 days before the start date' are both clear. Local consumer law can limit a non-refundable term, so check it.",
+    "req_5_title": "When the rest is due",
+    "req_5_text": "Tell the client what comes next: the balance on completion, or another invoice at a stage of the work. The deposit needs its own due date too. If nothing is booked until it's paid, say so.",
+    "req_6_title": "Its own invoice number",
+    "req_6_text": "Number the deposit invoice in your normal sequence, like any other invoice. The final invoice will quote this number, so it has to be unique and easy to find.",
+    "what_to_include_outro": "A deposit invoice is short, often a single line. The details above turn that line into a record both sides can rely on when the final invoice arrives.",
+    "sample_breakdown_title": "Deposit invoice example",
+    "sample_breakdown_intro": "A 30% deposit on a $4,000 built-in bookcase, billed before the maker orders the timber. The sample charges no tax on the deposit, which fits a business that isn't registered for sales tax or VAT. Tax rules vary: check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Deposit: 30% of $4,000.00 project price, built-in bookcase and window seat (quote Q-118, accepted Mar 2)",
+        "qty": "1",
+        "rate": "$1,200.00",
+        "amount": "$1,200.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$1,200.00",
+    "sample_breakdown_balance": "$1,200.00",
+    "sample_breakdown_notes": "Deposit invoice #1047. Due by Mar 9 to hold the build slot starting Mar 23. Non-refundable once the timber is ordered on Mar 10. The balance of $2,800.00 is due on completion, on a final invoice that will subtract this deposit.",
+    "industry_notes_title": "Deposit invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Tax can be due on the deposit",
+        "text": "In many VAT countries, VAT is due on a deposit when it's paid, not when the work is finished. The deposit invoice then shows VAT on the deposit amount, and the final invoice charges VAT only on the rest. US sales tax works differently and varies by state. Check your local rule before the first one."
+      },
+      {
+        "title": "Deposit, down payment or retainer",
+        "text": "A down payment or an advance payment is the same document as a deposit. A retainer is not: it pays ahead for availability or hours over a period, often month after month. A deposit belongs to one job and is used up by that job's final invoice."
+      },
+      {
+        "title": "How the final invoice takes it off",
+        "text": "The final invoice lists the full price, then a negative line: 'Less deposit, invoice #1047, paid Mar 8: -$1,200.00'. The balance due is what's left. Quote the number and the payment date so the client's bookkeeper can match both payments to one job."
+      }
+    ],
+    "mistakes_title": "Three deposit invoice mistakes",
+    "mistakes": [
+      {
+        "title": "Asking for the deposit in the quote only",
+        "text": "A quote that says '30% upfront' isn't something a client's accounts team can pay. Send a numbered deposit invoice with a due date."
+      },
+      {
+        "title": "Forgetting the deposit on the final invoice",
+        "text": "The final invoice bills the full $4,000, and the client either overpays by $1,200 or refuses to pay anything until it's fixed. Before you send a final invoice, look up every deposit invoice for that client and job."
+      },
+      {
+        "title": "No refund terms",
+        "text": "When a client cancels, an unclear deposit turns into an argument. If the invoice and the agreement both say when the deposit stops being refundable, there's little to argue about."
+      }
+    ],
+    "pro_tip": "Repeat the deposit invoice number in the notes of the final invoice, not only on the negative line. If the deposit came from another account, that note is how the client's bookkeeper connects the two payments.",
+    "format_pdf_desc": "A PDF looks the same on the client's phone and in their accounts system, so the deposit amount, the job price and your refund terms can't shift or be edited along the way.",
+    "faqs": [
+      {
+        "question": "Is a deposit invoice a real invoice?",
+        "answer": "Yes. It has an invoice number, a date, your details and the client's, and an amount due, so it belongs in your records like any other invoice. The difference is that it bills work that isn't done yet."
+      },
+      {
+        "question": "Should a deposit invoice show the full project price?",
+        "answer": "Yes. Show the agreed total and the share you're asking for, so the client sees what's left and you both have the agreed price in writing. If extra work changes it later, the final invoice shows the change."
+      },
+      {
+        "question": "How do I show the deposit on the final invoice?",
+        "answer": "List the work at its full price, then a negative line for the amount received. In the free generator a line item can have a negative price, so the subtraction prints on the PDF. The app doesn't accept negative prices: there, bill the balance as the line and name the deposit invoice in its details and the notes. The final invoice template shows a complete example."
+      },
+      {
+        "question": "What if the client cancels after paying the deposit?",
+        "answer": "If it's refundable, pay it back and keep a record that ties the refund to the deposit invoice; in many VAT countries you also issue a credit note. If it isn't, point to the terms the client accepted. Local consumer law can limit what you may keep, so check it."
+      },
+      {
+        "question": "Does Invoicor track whether a deposit was paid?",
+        "answer": "Not as a deposit. You can mark the deposit invoice paid like any invoice, but the app doesn't link it to the final invoice or keep a running balance. When the job ends, write the final invoice with a negative line for the deposit."
+      }
+    ],
+    "related": [
+      {
+        "name": "Final invoice",
+        "slug": "final-invoice"
+      },
+      {
+        "name": "Milestone invoice",
+        "slug": "milestone-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "final-invoice",
+    "niche": "Final",
+    "title": "Final Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free final invoice template: bill the full price, subtract the deposit and every earlier invoice by number, and show the balance due. Download a PDF.",
+    "h1": "Free Final Invoice Template",
+    "subtitle": "Close a job that was paid in parts: the full price, every earlier invoice taken off by number and date, and the balance that settles the account.",
+    "intro_paragraph": "A final invoice is the last bill on a job that was paid in parts. It restates the whole job at its full price, takes off every invoice the client has already had, and asks for what's left. That makes it the one document where the whole job adds up: the contract, the changes, the deposit, the stage payments and the balance. Done badly, the client pays twice for the same work or holds the payment. Below: the six fields that matter, a sample for a $12,000 job after a $3,000 deposit and a $4,500 progress invoice, and how tax works when earlier invoices already charged it.",
+    "what_to_include_intro": "The final invoice answers one question for the client: is this really everything? Each field below helps it answer yes.",
+    "req_1_title": "Marked as the final invoice",
+    "req_1_text": "Write 'Final invoice' in the title or the first line. It tells the client nothing else is coming for this job, and it tells their accounts team to reconcile it against the earlier payments before paying. Use it only when the job is truly finished.",
+    "req_2_title": "The full price, including changes",
+    "req_2_text": "Start from the contract price and add every approved change on its own line. The total of these lines is the job's real price. If you bill only the remaining work, the client can't see how you reached the balance.",
+    "req_3_title": "Every earlier invoice, by number and date",
+    "req_3_text": "Subtract each earlier invoice on its own negative line: the deposit, then each progress or milestone invoice. Quote the invoice number and the date it was paid, such as 'Less progress invoice #1052, paid Jun 12'. One combined line for 'payments received' hides mistakes.",
+    "req_4_title": "The agreement it closes",
+    "req_4_text": "Name the job and the contract or quote it settles, with its number or date. A client with several jobs running needs to know which one this invoice closes, and which deposit and stage payments belong to it.",
+    "req_5_title": "The balance due, with a date",
+    "req_5_text": "End on one clear number: the amount that settles the job. Give it a due date and your payment details.",
+    "req_6_title": "Its own number in your sequence",
+    "req_6_text": "The final invoice takes the next number in your normal sequence, like every invoice before it. It refers to the earlier numbers; it doesn't reuse one or add a suffix like '-F'.",
+    "what_to_include_outro": "If the full price minus the earlier invoices doesn't equal the balance, the client will notice. Check the math against your own list of invoices for the job before you send.",
+    "sample_breakdown_title": "Final invoice example",
+    "sample_breakdown_intro": "The last invoice on a $12,000 shop interior build-out. The client paid a $3,000 deposit (invoice #1038) and a $4,500 progress invoice (#1052). The sample assumes no sales tax on these services. Tax rules vary, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Shop interior build-out, contract price (agreement of Apr 2)",
+        "qty": "1",
+        "rate": "$11,200.00",
+        "amount": "$11,200.00"
+      },
+      {
+        "description": "Change order 1: extra display wall, approved May 20",
+        "qty": "1",
+        "rate": "$800.00",
+        "amount": "$800.00"
+      },
+      {
+        "description": "Less progress invoice #1052 (paid Jun 12)",
+        "qty": "1",
+        "rate": "-$4,500.00",
+        "amount": "-$4,500.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$7,500.00",
+    "sample_breakdown_deposit": "-$3,000.00",
+    "sample_breakdown_deposit_label": "Less deposit, invoice #1038 (paid Apr 9)",
+    "sample_breakdown_balance": "$4,500.00",
+    "sample_breakdown_notes": "Final invoice #1066 for agreement of Apr 2. Full price $12,000.00. Earlier invoices: #1038 deposit $3,000.00 and #1052 progress $4,500.00, both paid. Balance of $4,500.00 due by Jul 15. No further invoices will follow for this agreement.",
+    "industry_notes_title": "Final invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Tax on the remaining amount only",
+        "text": "If the deposit and progress invoices already charged VAT or sales tax, the final invoice charges tax on what's left, not on the full price again. Many VAT countries also expect the tax already invoiced to be shown on the final invoice. Germany is strict about this on a Schlussrechnung, so follow your local rule or ask your accountant."
+      },
+      {
+        "title": "Final means the job is closed",
+        "text": "The latest invoice in a series isn't automatically a final one. Call an invoice final when the job or contract ends and its balance settles the account."
+      },
+      {
+        "title": "Keep the job's invoices together",
+        "text": "Before you write the final invoice, list every invoice you sent for the job and whether it was paid. Invoicor doesn't link invoices or keep a running balance, so that list is yours to keep: a note in the client's file works."
+      }
+    ],
+    "mistakes_title": "Three final invoice mistakes",
+    "mistakes": [
+      {
+        "title": "Billing only the last stage",
+        "text": "A final invoice that lists only the remaining work hides how the balance was reached. The client can't tell whether the deposit was counted. Restate the full price, then subtract."
+      },
+      {
+        "title": "Subtracting a lump sum",
+        "text": "'Less payments received: $7,500' is hard to check. One line per earlier invoice, with its number and date, makes each amount checkable."
+      },
+      {
+        "title": "Charging tax twice",
+        "text": "When the earlier invoices charged tax and the final invoice applies tax to the full price again, the client pays tax twice on the same part of the job. Apply tax only to the remaining amount. Invoicor uses one tax rate per invoice, so the rate falls on what the lines add up to: subtract first, and the tax is on the remaining amount."
+      }
+    ],
+    "pro_tip": "Send the final invoice with a short list of every invoice on the job, in the notes or your email: number, date, amount, paid or open. The client's accounts team checks that list first, so make it match theirs.",
+    "format_pdf_desc": "A PDF fixes the full price, each subtraction and the balance in one layout, so the number the client approves is the number that reaches their accounts team.",
+    "faqs": [
+      {
+        "question": "What's the difference between a final invoice and a regular invoice?",
+        "answer": "A regular invoice bills a piece of work. A final invoice closes a job that was paid in parts: it shows the full price, subtracts every earlier invoice and asks for the balance."
+      },
+      {
+        "question": "How do I subtract a deposit on a final invoice?",
+        "answer": "Below the work lines, add a negative line such as 'Less deposit, invoice #1038, paid Apr 9: -$3,000.00', and one for each progress or milestone invoice. The free generator accepts negative prices. The app doesn't: there, bill the balance on one line and list each earlier invoice by number in the notes. The deposit invoice template covers the first half of the pair."
+      },
+      {
+        "question": "What if the client hasn't paid an earlier invoice yet?",
+        "answer": "Don't bury it in the balance. Either subtract only the paid invoices and list the open one in the notes as still due, or subtract all of them and note that invoice #1052 remains unpaid. Either way, the client sees the full amount they owe."
+      },
+      {
+        "question": "Is a final invoice the same as a final bill or closing invoice?",
+        "answer": "Yes. Final bill, closing invoice and final invoice all mean the last invoice that settles a job. Whatever the name, it should show the full price, the earlier invoices and the balance."
+      },
+      {
+        "question": "Can I change a final invoice after sending it?",
+        "answer": "Not in place. In Invoicor a sent invoice is locked: duplicate it, correct the copy, send that, and mark the old one cancelled. In many countries the expected route is a credit note against the wrong invoice, so check what your accountant prefers."
+      }
+    ],
+    "related": [
+      {
+        "name": "Deposit invoice",
+        "slug": "deposit-invoice"
+      },
+      {
+        "name": "Milestone invoice",
+        "slug": "milestone-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "milestone-invoice",
+    "niche": "Milestone",
+    "title": "Milestone Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free milestone invoice template: bill each accepted stage of a project with its share of the total and what's paid so far. Sample included, PDF download.",
+    "h1": "Free Milestone Invoice Template",
+    "subtitle": "Bill a project in the stages your contract sets, one invoice per accepted deliverable, with its share of the total and a clear count of what's been paid.",
+    "intro_paragraph": "A milestone invoice bills one stage of a project once that stage is delivered and accepted. The stages come from the contract: design 30%, build 50%, launch 20%. Each milestone is a deliverable, not a date and not a measure of effort. That's the difference from progress billing, where a contractor bills for how much of the work is complete, and from a retainer, where the client pays for time whether or not anything ships. This page covers what to put on it, a sample for milestone 2 of 3 on a $9,000 project, and how the stages should add up to the contract.",
+    "what_to_include_intro": "A client approves a milestone invoice by checking it against the contract. Make that check easy with these six fields.",
+    "req_1_title": "The milestone, named as in the contract",
+    "req_1_text": "Use the milestone's number and name exactly as the contract has them: 'Milestone 2 of 3: Build'. If the contract says 'Beta release' and the invoice says 'Development phase', the client's accounts team will ask which payment it is.",
+    "req_2_title": "The contract it comes from",
+    "req_2_text": "Quote the agreement or statement of work by its number or date. Clients with several projects need it to match the invoice to a budget, and you need it if a stage is ever disputed.",
+    "req_3_title": "What was delivered and accepted",
+    "req_3_text": "Describe the deliverable in a few words and state when the client accepted it: 'Build delivered Aug 7, accepted by email Aug 14'. Under most milestone contracts, acceptance is what makes the payment due, so it belongs on the invoice and not only in your inbox.",
+    "req_4_title": "Its share of the total",
+    "req_4_text": "Show the milestone's percentage or fixed amount next to the full contract value: '50% of $9,000.00'. The client sees the stage in proportion, and anyone reading the invoice later sees the whole deal it belongs to.",
+    "req_5_title": "What's been paid so far",
+    "req_5_text": "List the earlier milestone invoices by number with what was paid, plus what remains after this one. 'Paid to date: $2,700.00 (invoice #2031). Remaining after this invoice: $1,800.00.' This running count keeps the last stage from being a surprise.",
+    "req_6_title": "Extra work on its own lines",
+    "req_6_text": "Work the client asked for outside the milestones, such as a change request, goes on a separate line with its own reference. Folding it into the milestone amount makes the stage look pricier than the contract says, and it gets queried.",
+    "what_to_include_outro": "Taken together, the stage invoices should equal the contract value plus approved changes, with nothing missing.",
+    "sample_breakdown_title": "Milestone invoice example",
+    "sample_breakdown_intro": "Milestone 2 of 3 on a $9,000 customer portal project, split 30% design, 50% build, 20% launch. Milestone 1 was paid on invoice #2031. The sample assumes the services aren't subject to sales tax: tax rules vary by state and country, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Milestone 2 of 3: Build (50% of $9,000.00), delivered Aug 7, accepted Aug 14, per SOW-14",
+        "qty": "1",
+        "rate": "$4,500.00",
+        "amount": "$4,500.00"
+      },
+      {
+        "description": "Change request CR-3: data export feature, approved Jul 28",
+        "qty": "1",
+        "rate": "$650.00",
+        "amount": "$650.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$5,150.00",
+    "sample_breakdown_balance": "$5,150.00",
+    "sample_breakdown_notes": "Invoice #2044, due Sep 13 (net 30). Contract value $9,000.00. Paid to date: $2,700.00 (invoice #2031, Milestone 1: Design). After this invoice, $1,800.00 remains for Milestone 3: Launch. Change requests are billed outside the contract value.",
+    "industry_notes_title": "Milestone invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Milestone billing is not progress billing",
+        "text": "The two get mixed up. Progress billing charges for the share of the work that's done, measured as a percentage and typical in construction. Milestone billing charges a fixed amount when a defined deliverable is accepted. If your contract measures completion rather than deliverables, a progress invoice is the closer fit."
+      },
+      {
+        "title": "Acceptance terms decide when you can bill",
+        "text": "Many milestone contracts give the client a set number of days to accept or reject a deliverable, and treat silence as acceptance after that. If yours does, the invoice can quote it: 'Deemed accepted Aug 14 under clause 6'. If the contract says nothing, get acceptance in writing before you invoice."
+      },
+      {
+        "title": "Tax on each stage",
+        "text": "In many VAT countries, each milestone invoice is taxed on its own date, so it carries VAT on that stage's amount. In the US, whether a service or a digital deliverable is taxable depends on the state. Invoicor applies one tax rate per invoice, so a stage that mixes taxed and untaxed work may need two invoices; ask your accountant."
+      }
+    ],
+    "mistakes_title": "Three milestone invoice mistakes",
+    "mistakes": [
+      {
+        "title": "Invoicing before acceptance",
+        "text": "Sending the invoice the day you deliver, before the client has signed off, invites them to reject both. Wait for acceptance, or the date the contract deems it accepted, and quote that date."
+      },
+      {
+        "title": "Stages that don't add up",
+        "text": "Rounding a third of $10,000 to $3,333 three times leaves $1 unbilled, and a renegotiated split can leave more. Make the last milestone the remainder of the contract value, so the stages always total the contract exactly."
+      },
+      {
+        "title": "No running total",
+        "text": "Each invoice on its own looks fine, but without 'paid to date' and 'remaining' the client loses track, and so do you."
+      }
+    ],
+    "pro_tip": "Start each new milestone invoice by duplicating the previous one. The contract reference, client details and payment terms carry over; you change the milestone line, the acceptance date and the running totals in the notes.",
+    "format_pdf_desc": "A PDF keeps the milestone name, the acceptance date and the running totals fixed, which is what a client's project manager forwards to finance for approval.",
+    "faqs": [
+      {
+        "question": "How do I split a project into milestones?",
+        "answer": "Tie each milestone to something the client can see and accept, such as a signed-off design, a working build or a launch. Give each one a fixed share of the total in the contract."
+      },
+      {
+        "question": "Can the first milestone be paid upfront?",
+        "answer": "Yes. Many contracts make the first payment due on signing, before any deliverable exists. That payment is really a deposit, so bill it on a deposit invoice that names the contract, then bill the later stages as milestones. The last invoice should list both."
+      },
+      {
+        "question": "What if the client rejects a milestone?",
+        "answer": "Don't invoice it yet. Fix what the contract's acceptance criteria require, deliver again, and invoice on acceptance. If you already sent the invoice, mark it cancelled rather than leaving it open, then issue a new one once the stage is accepted."
+      },
+      {
+        "question": "Where do change requests go?",
+        "answer": "Bill approved change requests on the next milestone invoice, on their own lines with the change reference, or on a separate invoice. Keep them out of the milestone amount itself, so each stage still matches the contract figure."
+      },
+      {
+        "question": "How is the last milestone invoice different?",
+        "answer": "The last milestone bills the final stage and closes the contract, so it often doubles as the final invoice. Restate the contract value, list every earlier milestone invoice by number, and mark it final. The final invoice template shows that layout."
+      }
+    ],
+    "related": [
+      {
+        "name": "Final invoice",
+        "slug": "final-invoice"
+      },
+      {
+        "name": "Deposit invoice",
+        "slug": "deposit-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "retainer-invoice",
+    "niche": "Retainer",
+    "title": "Retainer Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free retainer invoice template: bill a monthly fee for hours or availability, with included hours, overage and unused-hour terms. Sample and PDF.",
+    "h1": "Free Retainer Invoice Template",
+    "subtitle": "Bill a fixed fee in advance for a month of availability or a block of hours, with what's included, what happens to unused hours and extra work on its own lines.",
+    "intro_paragraph": "A retainer invoice bills a fixed fee, paid ahead, for a period of your time. Lawyers, consultants, agencies and freelancers use it when a client wants them on call or wants a set number of hours each month. Unlike a deposit, it doesn't belong to one job that ends. Unlike a milestone, nothing has to be delivered before it's due. The client pays for access, and the invoice has to spell out what that access includes: the period, the hours or scope, what happens to hours that go unused, and how extra work is charged. This page covers the fields, a sample for May with 20 included hours and 3 hours over, and how to send one each month.",
+    "what_to_include_intro": "A retainer invoice repeats every period, so small gaps add up. These six fields make each month's invoice complete on its own.",
+    "req_1_title": "The period covered",
+    "req_1_text": "State the exact dates: 'Retainer, May 1 to May 31'. The client is paying for a stretch of time, so the period is the main thing being billed.",
+    "req_2_title": "What the fee includes",
+    "req_2_text": "Write the included hours or scope in one line: '20 hours of consulting', 'up to 4 contract reviews', 'on-call support on weekdays'. This is what the client measures your work against, so match the wording in your agreement.",
+    "req_3_title": "Advance against work, or availability",
+    "req_3_text": "Say which kind of retainer this is. An advance retainer is prepaid work: hours are drawn down against it. An availability retainer pays to keep you on call, and the fee is earned whether the client uses you or not.",
+    "req_4_title": "Unused hours",
+    "req_4_text": "Tell the client what happens to hours they didn't use: carried into the next period, carried over up to a cap, or lost at month end. One sentence in the notes, taken from the agreement, saves a conversation after every quiet month.",
+    "req_5_title": "Overage on its own lines",
+    "req_5_text": "Hours beyond the included amount go on a separate line with the count and the rate: '3 hours beyond retainer, April, at $160.00'. Keeping them apart from the fee shows the client the retainer price didn't change.",
+    "req_6_title": "Due before the period starts",
+    "req_6_text": "A retainer is paid ahead, so the due date should fall on or before the first day of the period. A retainer due at the end of the month is really an hourly invoice with a minimum.",
+    "what_to_include_outro": "Get these lines right once, and each new retainer invoice only needs a new period, a new date and any overage.",
+    "sample_breakdown_title": "Retainer invoice example",
+    "sample_breakdown_intro": "A consultant's retainer for May: 20 hours included for a fixed fee, paid in advance. In April the client used 23 hours, so the 3 extra hours are billed here at the agreed overage rate. The sample assumes the consulting isn't subject to sales tax. Service tax rules differ by place, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Monthly retainer, May 1 to May 31: up to 20 hours of consulting (agreement R-07)",
+        "qty": "1",
+        "rate": "$2,800.00",
+        "amount": "$2,800.00"
+      },
+      {
+        "description": "Hours beyond retainer, April (23 used, 20 included)",
+        "qty": "3",
+        "rate": "$160.00",
+        "amount": "$480.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$3,280.00",
+    "sample_breakdown_balance": "$3,280.00",
+    "sample_breakdown_notes": "Invoice #3118, due May 1. The retainer fee is payable in advance; May work starts on receipt. Unused hours don't roll over (agreement R-07, clause 3). Any May overage goes on the June invoice at $160.00 per hour.",
+    "industry_notes_title": "Retainer invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Client money may have rules of its own",
+        "text": "For lawyers and some other professions, an advance retainer can count as the client's money until it's earned, with rules about where it's held and when you may draw on it. Those rules differ by state and country. Check your licensing body's guidance before you set up the invoice."
+      },
+      {
+        "title": "When the fee counts as income",
+        "text": "An availability retainer is usually earned when its period starts. An advance against future work may only be earned as you do the work. That can change when you record the income or charge VAT, so ask your accountant which applies to your agreement."
+      },
+      {
+        "title": "Sending it every month",
+        "text": "Invoicor doesn't send recurring invoices. At the start of each period, duplicate last month's retainer invoice, change the dates and the period, update or delete the overage line, and send it. Give the copy the next number in your sequence so your records stay in order."
+      }
+    ],
+    "mistakes_title": "Three retainer invoice mistakes",
+    "mistakes": [
+      {
+        "title": "Hiding overage in the fee",
+        "text": "Raising the retainer line from $2,800 to $3,280 in a busy month makes the fee look unstable, and the client can't see why. Keep the fee fixed and add a separate overage line with hours and rate."
+      },
+      {
+        "title": "No rule for unused hours",
+        "text": "If the agreement and the invoice say nothing, clients often assume unused hours carry over indefinitely. After a few quiet months you owe a backlog of free work."
+      },
+      {
+        "title": "Billing the retainer after the month",
+        "text": "Invoicing on the 31st for the month just finished turns the retainer into credit you're extending. If the client stops paying, the work is already done. Date the invoice before the period and make it due by the first day."
+      }
+    ],
+    "pro_tip": "Keep a simple hours log per client and month next to your invoices. When you bill overage, give the dates and the task for each extra hour in the line or the notes.",
+    "format_pdf_desc": "A PDF lets the client file each month's retainer next to the last one in the same layout, so the fixed fee, the period and any overage are easy to compare.",
+    "faqs": [
+      {
+        "question": "What's the difference between a retainer and a deposit?",
+        "answer": "A deposit is part of the price of one job, paid before it starts and subtracted on the final invoice. A retainer pays for a period of availability or a block of hours, usually again each month, and isn't subtracted from a later bill."
+      },
+      {
+        "question": "Should a retainer invoice list the hours worked?",
+        "answer": "The fee line doesn't need them, since the fee is fixed. Many clients still want a summary of hours used against the included amount, and you need one when you bill overage. Put the summary in the notes or send a short report with the invoice."
+      },
+      {
+        "question": "Do unused retainer hours roll over?",
+        "answer": "Only if your agreement says so. No rollover, one month of rollover, or rollover up to a cap are the usual choices. Repeat yours on each invoice."
+      },
+      {
+        "question": "Is a retainer refundable?",
+        "answer": "It depends on the kind and your agreement. An availability retainer is usually earned for its period, while unused advance payments for work may have to be returned when the engagement ends. Check your profession's rules before you promise either way."
+      },
+      {
+        "question": "Can I charge a different rate for hours over the retainer?",
+        "answer": "Yes, if the agreement says so. Some retainers price the included hours below the normal rate and bill overage at the full rate; others use one rate for both. Show the rate on the overage line so the client can check it."
+      }
+    ],
+    "related": [
+      {
+        "name": "Hourly invoice",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Monthly invoice",
+        "slug": "monthly-invoice"
+      },
+      {
+        "name": "Consulting",
+        "slug": "consulting"
+      }
+    ]
+  },
+  {
+    "slug": "hourly-invoice",
+    "niche": "Hourly",
+    "title": "Hourly Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free hourly invoice template: bill hours times rate with a clear timesheet summary, rush rates and rounding. Fill in the sample and download a PDF.",
+    "h1": "Free Hourly Invoice Template",
+    "subtitle": "Bill time worked as hours times rate, with a short timesheet summary your client can check line by line.",
+    "intro_paragraph": "An hourly invoice charges for time, not for a finished deliverable. Every line is built from two numbers: the hours worked and the rate for those hours. That makes it the most transparent way to bill, and the one clients question most. A good hourly invoice answers the questions first: which day, which task, how many hours, at which rate, and why a higher rate applies where it does. Below: the timesheet summary, rounding, standard and rush rates side by side, and an agreed cap. The sample bills three working days at two rates.",
+    "what_to_include_intro": "The client already agreed to your rate. What they want from the invoice is proof of the hours. Build every line so it can be checked against your own time records.",
+    "req_1_title": "One line per day or per task",
+    "req_1_text": "Group hours the way your client thinks about the work: by task for a project (\"Migrate mailboxes, 3.5 h\"), by date when they pay for your presence. Avoid one line reading \"42 hours of work\": it hides what the client needs to approve it.",
+    "req_2_title": "Hours as decimals, not minutes",
+    "req_2_text": "Write 2.25 hours, not 2 h 15 min, so the quantity multiplies cleanly by the rate. 15 minutes is 0.25, 20 minutes is 0.33, 45 minutes is 0.75. Our free hours calculator adds up start and end times if you logged them on paper.",
+    "req_3_title": "The rate on every line",
+    "req_3_text": "Put the hourly rate on each line, even when it repeats. A second rate (rush, weekend, travel) then stands out on its own row instead of hiding in a blended total.",
+    "req_4_title": "Your rounding rule, stated once",
+    "req_4_text": "Say in the notes how you round: to the nearest quarter hour, to the next six minutes, or with a one-hour minimum per call-out. Clients accept rounding they were told about, not rounding they discover.",
+    "req_5_title": "The billing period",
+    "req_5_text": "Give the date range the invoice covers, for example \"Work from October 6 to October 13\". Back-to-back periods mean no hours fall between two invoices and none are billed twice.",
+    "req_6_title": "The cap, if there is one",
+    "req_6_text": "When the client approved \"up to 30 hours\", show where this invoice leaves them: \"Hours billed this month: 11.25 of 30\". It builds trust and gives you a moment to ask for more hours before you go over.",
+    "what_to_include_outro": "Keep your own time log behind the invoice. The invoice is the summary; the log is what you show if a client asks how Tuesday turned into six hours.",
+    "sample_breakdown_title": "Hourly invoice example",
+    "sample_breakdown_intro": "An IT support contractor bills a small office for one week: three working days at $85 per hour, plus one same-day request at the agreed rush rate of 1.5 times. No sales tax is shown: many US states don't tax this service, but rules vary, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Oct 6: new router setup and firewall rules (standard)",
+        "qty": "3.5",
+        "rate": "$85.00/hr",
+        "amount": "$297.50"
+      },
+      {
+        "description": "Oct 8: laptop setup for two new hires (standard)",
+        "qty": "2.25",
+        "rate": "$85.00/hr",
+        "amount": "$191.25"
+      },
+      {
+        "description": "Oct 8: same-day printer outage, requested 4 pm (rush 1.5x)",
+        "qty": "1.5",
+        "rate": "$127.50/hr",
+        "amount": "$191.25"
+      },
+      {
+        "description": "Oct 13: backup check and staff password reset (standard)",
+        "qty": "4",
+        "rate": "$85.00/hr",
+        "amount": "$340.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$1,020.00",
+    "sample_breakdown_balance": "$1,020.00",
+    "sample_breakdown_notes": "Work from October 6 to October 13. Time rounded to the nearest quarter hour. Rush rate (1.5x) applies to requests for same-day work, as agreed in the service terms. Hours billed this month: 11.25 of the 30-hour cap. Payment due within 14 days.",
+    "industry_notes_title": "Hourly invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Track time somewhere else first",
+        "text": "Neither the Invoicor app nor the free generator has a timer. Keep your hours in a notebook, calendar or time app, then type the totals in. In the app, save \"Standard hour\" and \"Rush hour\" as products once and add them to each new invoice in a tap."
+      },
+      {
+        "title": "Minimums and travel time are terms, not surprises",
+        "text": "A one-hour minimum per visit, or travel at half rate, is fair only if the client agreed before the work. Put it in your quote or service agreement, then repeat it in the invoice notes."
+      },
+      {
+        "title": "Hourly is not a retainer",
+        "text": "An hourly invoice bills the exact hours worked. A retainer bills a fixed sum for reserved time, used or not, and a monthly invoice bills an agreed fee for a period of service. If the client pays the same amount every month, one of those fits better."
+      }
+    ],
+    "mistakes_title": "Three mistakes on hourly invoices",
+    "mistakes": [
+      {
+        "title": "A total of hours with no breakdown",
+        "text": "\"Consulting, 18 hours, $1,530\" makes the client do the detective work. The usual result is a delayed payment and an email asking for details."
+      },
+      {
+        "title": "Mixing rates in one line",
+        "text": "Billing 4 standard and 1.5 rush hours as \"5.5 hours at $96.59\" is correct math and confusing to read. Use one row per rate, so each line can be checked on its own."
+      },
+      {
+        "title": "Going over the cap without asking",
+        "text": "If the client approved 20 hours and the invoice says 26, the extra six are a negotiation, not a bill. Ask before you pass the cap and record the approval in the notes."
+      }
+    ],
+    "pro_tip": "Write each line's description in the past tense, as an outcome: \"Restored the shared drive after the outage\" reads like value delivered, while \"Worked on drive\" reads like time spent. Same hours, same rate, fewer questions.",
+    "format_pdf_desc": "A PDF keeps your hours and rates exactly as you sent them, so the client's approval and your records always match the same numbers.",
+    "faqs": [
+      {
+        "question": "How do I calculate an hourly invoice?",
+        "answer": "Multiply each line's hours by its rate, then add the lines up. Discount and tax come after the subtotal. In the free generator, hours go in the quantity field and the rate in the price field; the totals calculate for you."
+      },
+      {
+        "question": "Should I attach a timesheet to an hourly invoice?",
+        "answer": "On short invoices, the lines are the timesheet: date, task and hours. For long engagements, summarize by day or week and keep the detailed log ready if asked. Some clients, agencies in particular, require a signed timesheet with every invoice: follow their process."
+      },
+      {
+        "question": "How should I round billable time?",
+        "answer": "Pick one rule and state it. The nearest quarter hour is common for services; many professionals bill in six-minute units (0.1 hour). Round each entry, not only the weekly total."
+      },
+      {
+        "question": "Can I charge a different rate for rush or weekend work?",
+        "answer": "Yes, if the client agreed before the work started. Show the higher rate on its own line with a short reason, like \"rush 1.5x\" or \"Saturday rate\"."
+      },
+      {
+        "question": "How often should I send an hourly invoice?",
+        "answer": "Weekly or every two weeks suits steady work: the hours are fresh and the amounts stay small. Monthly suits clients with a monthly payment run. For one-off jobs, invoice when the work is done."
+      },
+      {
+        "question": "Does Invoicor track my hours?",
+        "answer": "No. The app makes the invoice; it doesn't run a timer. Enter the hours you tracked as quantities. The free hours calculator can add up a day's start and end times first."
+      }
+    ],
+    "related": [
+      {
+        "name": "Monthly Invoice",
+        "slug": "monthly-invoice"
+      },
+      {
+        "name": "Labor and Materials Invoice",
+        "slug": "labor-and-materials-invoice"
+      },
+      {
+        "name": "Freelance Invoice",
+        "slug": "freelance-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "monthly-invoice",
+    "niche": "Monthly",
+    "title": "Monthly Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free monthly invoice template for ongoing service: show the service period, visits made and skipped visits credited. Fill in the sample, get a PDF.",
+    "h1": "Free Monthly Invoice Template",
+    "subtitle": "One invoice per month for ongoing service: the period, what was delivered that month, any credits, and a clear due date.",
+    "intro_paragraph": "A monthly invoice bills a client once per calendar month for service that keeps going: weekly visits, maintained equipment, a standing lesson slot, a rented item. The price is agreed once, as a flat monthly fee or a price per visit. Each invoice then shows what happened in that month: were all visits made, was one skipped and credited, was anything extra added? Clients pay these in their regular payment run, so the period and the number matter as much as the amount. Below: the structure, credits for skipped visits, and a fast way to make next month's invoice from this one.",
+    "what_to_include_intro": "Because the client sees nearly the same invoice every month, what changes is what they read. Make the period, the visit count and any adjustments easy to spot.",
+    "req_1_title": "The service period, in words",
+    "req_1_text": "Write the exact period: \"Service period: October 1 to 31, 2026\". The issue date alone isn't enough. Bookkeepers match invoices to months, and a clear period stops a month from being paid twice or skipped.",
+    "req_2_title": "A number that shows the month",
+    "req_2_text": "A scheme with the year and month helps both sides: INV-2026-10, then INV-2026-11. Keep it sequential and unique. Give one-off jobs a suffix or their own series so the monthly run stays readable.",
+    "req_3_title": "The fee and how it's built",
+    "req_3_text": "State the basis: a flat fee (\"Monthly plant care, 4 visits included\") or a price per visit times the visits made. If the fee is flat, say how a five-week month is handled.",
+    "req_4_title": "Credits as their own lines",
+    "req_4_text": "When a visit was skipped, add a negative line: \"Credit: October 23 visit skipped, office closed\". Quietly lowering the fee looks like a price change; a visible credit shows the agreement still stands.",
+    "req_5_title": "Extras outside the agreement",
+    "req_5_text": "Anything not covered by the monthly fee, like a replacement part, an extra visit or a one-time job, goes on its own line with its own price. Listing it separately keeps next month's invoice clean when you copy this one.",
+    "req_6_title": "A due date that fits their payment run",
+    "req_6_text": "Many businesses pay suppliers on fixed days. Ask which, and set the due date before that run. \"Due November 15\" is clearer than \"Net 15\" when the invoice may sit in an inbox.",
+    "what_to_include_outro": "If the client receives the same invoice every month with only the period changing, the one month something differs (a credit, an extra) is the one they'll read closely. Make that line obvious and explained.",
+    "sample_breakdown_title": "Monthly invoice example",
+    "sample_breakdown_intro": "An office plant care service bills October: four weekly visits in the flat fee, one visit skipped (office closed) and credited at the per-visit price, and one replacement plant added. The sample assumes a state with 6% sales tax on both service and plant; tax rules vary, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Monthly plant care, October 1 to 31 (4 weekly visits)",
+        "qty": "1",
+        "rate": "$260.00",
+        "amount": "$260.00"
+      },
+      {
+        "description": "Credit: October 23 visit skipped (office closed)",
+        "qty": "1",
+        "rate": "-$65.00",
+        "amount": "-$65.00"
+      },
+      {
+        "description": "Replacement plant, lobby (fiddle-leaf fig, 6 ft)",
+        "qty": "1",
+        "rate": "$145.00",
+        "amount": "$145.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$340.00",
+    "sample_breakdown_tax_label": "Sales tax (6%)",
+    "sample_breakdown_tax": "$20.40",
+    "sample_breakdown_balance": "$360.40",
+    "sample_breakdown_notes": "Invoice INV-2026-10. Service period October 1 to 31, 2026. Visits made: October 2, 9 and 16; October 23 skipped at the client's request and credited at $65 per visit. Payment due November 15.",
+    "industry_notes_title": "Monthly invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Monthly, not automatic",
+        "text": "Many billing tools call this a recurring invoice and send it on a schedule. Invoicor doesn't send recurring or scheduled invoices. Open last month's invoice, tap duplicate, and change the period, the number and any credits. Client, fee line and notes carry over."
+      },
+      {
+        "title": "Monthly invoice or retainer?",
+        "text": "A monthly invoice bills service delivered in the month. A retainer bills in advance for time or availability reserved. If you invoice on the 1st for work not yet done, you're closer to a retainer, and the wording should say so."
+      },
+      {
+        "title": "Mark last month paid before you copy it",
+        "text": "Set the previous invoice to paid when the money arrives, then duplicate it. The status list shows which months are settled and which are overdue, so a missed payment doesn't hide behind a newer invoice."
+      }
+    ],
+    "mistakes_title": "Three mistakes on monthly invoices",
+    "mistakes": [
+      {
+        "title": "Copying last month without changing the period",
+        "text": "An invoice that still says \"September\" in November gets rejected or paid as a duplicate. Before sending, check the period, the number and the due date."
+      },
+      {
+        "title": "Skipped visits left out silently",
+        "text": "Bill the full fee for a skipped visit without a word, and the client asks for every credit at once months later. Credit it, or state in the agreement that the fee covers skipped visits."
+      },
+      {
+        "title": "Extras added to the main fee",
+        "text": "Raising the main line from $260 to $405 for a replacement plant makes next month's copy wrong and hides what changed. Keep the base fee fixed and put extras on their own lines."
+      }
+    ],
+    "pro_tip": "Send the monthly invoice on the same day every month, ideally the first working day after the period ends. Clients build it into their routine, the gap between months stays even, and a late payment is easy to spot.",
+    "format_pdf_desc": "A PDF per month gives the client a fixed document for each period that files neatly by month and can't change after it was sent.",
+    "faqs": [
+      {
+        "question": "When should I send a monthly invoice?",
+        "answer": "For service delivered during the month, right after it ends, when all visits and credits are known. For a fixed fee with nothing to adjust, some businesses invoice on the 1st. Choose one and stay with it."
+      },
+      {
+        "question": "How do I bill a month with five weekly visits?",
+        "answer": "With a price per visit, bill five. With a flat fee, the usual approach is that it covers every week, so it stays the same; some businesses define it as four visits and bill a fifth as an extra. Write the rule in the agreement and the notes."
+      },
+      {
+        "question": "How do I show a credit on a monthly invoice?",
+        "answer": "Add a line with a negative price and a short reason, such as \"Credit: October 23 visit skipped\". The client sees the full fee and the adjustment. The free generator accepts negative prices for exactly this. The app doesn't: there, lower the month's quantity or fee and put the reason in the line's details."
+      },
+      {
+        "question": "Can I pro-rate the first or last month?",
+        "answer": "Yes. Bill the share of the month or the visits made, and say so: \"Service from October 15, 2 of 4 visits\". Agree the method, by days or by visits, before the first invoice."
+      },
+      {
+        "question": "Does each monthly invoice need its own number?",
+        "answer": "Yes, even if the content repeats. Sequential numbers are expected in most countries and help your accountant. Year and month in the number make the run easy to read."
+      }
+    ],
+    "related": [
+      {
+        "name": "Retainer Invoice",
+        "slug": "retainer-invoice"
+      },
+      {
+        "name": "Hourly Invoice",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Service Invoice",
+        "slug": "service-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "labor-and-materials-invoice",
+    "niche": "Labor and Materials",
+    "title": "Labor and Materials Invoice Template (Free) | Invoicor",
+    "meta_description": "Free labor and materials invoice template: labor lines, itemized materials with markup, trip and disposal fees, and sales tax. Fill it in, get a PDF.",
+    "h1": "Free Labor and Materials Invoice Template",
+    "subtitle": "Bill the work and the parts on separate lines, with the tax only where it applies.",
+    "intro_paragraph": "A labor and materials invoice splits a job's price in two: what you charged for your work and what you charged for the things you installed or used. Trades also call it a time and materials invoice or a parts and labor invoice. The split matters three ways. The client sees what the job cost in parts versus skill. Sales tax often applies to one part and not the other. And on time and materials work, with no fixed price, the invoice is the only place the client can check both. Below: labor lines, itemized materials and markup, trip and disposal fees, and tax. The sample is a door frame repair with three labor hours and five material lines.",
+    "what_to_include_intro": "Each line should belong clearly to labor, materials or a fee. If a client can't tell which group a line sits in, the split loses its purpose.",
+    "req_1_title": "Labor as hours times rate, or a flat price",
+    "req_1_text": "On time and materials work, list labor as hours and a rate, with what was done: \"Remove and replace rotted jamb, 3 h at $78\". On a job priced per task, a flat labor line is fine if it names the task.",
+    "req_2_title": "Materials with quantity, unit and unit price",
+    "req_2_text": "Give each material its own line in the unit it's sold in: 3 tubes of caulk, 1 box of screws, 12 linear feet of trim. \"Materials: $200\" invites the client to price the job at the hardware store.",
+    "req_3_title": "Your markup policy",
+    "req_3_text": "Markup pays for sourcing, pickup, storage and returns. Build it into unit prices and state it once in the notes (\"materials include a 15% handling charge\"), or show cost and markup separately. Hiding it causes disputes.",
+    "req_4_title": "Trip, disposal and small-parts fees",
+    "req_4_text": "Trip charges, dump fees or a shop supplies charge are neither labor nor a specific material. Give each its own line and a plain name, so it reads as a fee for a reason, not padded labor.",
+    "req_5_title": "Tax shown on the right base",
+    "req_5_text": "In many US states, materials are taxable and repair labor isn't, but rules differ by state and by type of work (repair versus new construction). Label the tax line with its base, such as \"7% on materials\", and check your state's revenue department.",
+    "req_6_title": "A reference to the quote or work order",
+    "req_6_text": "Time and materials jobs often start with an estimated range or a not-to-exceed amount. Put that reference and limit in the notes, so the client can compare the total to what they approved.",
+    "what_to_include_outro": "Our trade templates (plumbing, electrician, HVAC, handyman and others) show the same structure with each trade's own parts and rules.",
+    "sample_breakdown_title": "Labor and materials invoice example",
+    "sample_breakdown_intro": "A repair contractor replaces a rotted exterior door frame: three labor hours, a trip charge, five material lines and a disposal fee. Material prices include a 15% markup on cost. The sample assumes a state with 7% sales tax on materials only; tax rules vary by state, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Trip charge",
+        "qty": "1",
+        "rate": "$45.00",
+        "amount": "$45.00"
+      },
+      {
+        "description": "Labor: replace rotted jamb and threshold",
+        "qty": "3",
+        "rate": "$78.00/hr",
+        "amount": "$234.00"
+      },
+      {
+        "description": "Material: primed pine jamb kit, 36 in",
+        "qty": "1",
+        "rate": "$96.00",
+        "amount": "$96.00"
+      },
+      {
+        "description": "Material: aluminum threshold, 36 in",
+        "qty": "1",
+        "rate": "$42.50",
+        "amount": "$42.50"
+      },
+      {
+        "description": "Material: exterior wood filler",
+        "qty": "2",
+        "rate": "$11.75",
+        "amount": "$23.50"
+      },
+      {
+        "description": "Material: exterior screws, 1 lb box",
+        "qty": "1",
+        "rate": "$12.40",
+        "amount": "$12.40"
+      },
+      {
+        "description": "Material: exterior caulk tube",
+        "qty": "3",
+        "rate": "$8.60",
+        "amount": "$25.80"
+      },
+      {
+        "description": "Disposal of old frame",
+        "qty": "1",
+        "rate": "$25.00",
+        "amount": "$25.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$504.20",
+    "sample_breakdown_tax_label": "Sales tax (7% on materials, $200.20)",
+    "sample_breakdown_tax": "$14.01",
+    "sample_breakdown_balance": "$518.21",
+    "sample_breakdown_notes": "Work order WO-0412, approved as time and materials, not to exceed $600. Material prices include a 15% handling charge on cost. Labor billed in half-hour steps. Payment due on completion.",
+    "industry_notes_title": "Labor and materials invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Time and materials versus fixed price",
+        "text": "On a fixed-price job, the client pays the quoted total and the split is mostly for tax and clarity. On time and materials, the client pays actual hours and parts, so the invoice is the proof. Agree which applies before you start, with a cap for time and materials."
+      },
+      {
+        "title": "One tax rate per invoice",
+        "text": "The Invoicor app and the free generator apply one tax rate to the whole invoice, with no per-line setting. If only materials are taxable where you work, one clean option is two invoices: materials with tax, labor without. Ask your accountant what your state prefers."
+      },
+      {
+        "title": "Keep the supplier receipts",
+        "text": "Supplier receipts back up your material prices if a client or auditor asks, so file them with the job. The client's invoice needs item, quantity and price, not your cost, unless the contract is cost-plus."
+      }
+    ],
+    "mistakes_title": "Three mistakes on labor and materials invoices",
+    "mistakes": [
+      {
+        "title": "Taxing the whole subtotal",
+        "text": "Applying the materials rate to labor too overcharges the client where labor is exempt. Check what's taxable in your state and let the tax fall only on that part."
+      },
+      {
+        "title": "Labor folded into material prices",
+        "text": "Raising part prices to cover install time makes parts look overpriced and labor look free, and breaks the tax split. Keep install time on labor lines, even when it's short."
+      },
+      {
+        "title": "Forgetting the small stuff",
+        "text": "Screws, caulk, filler and blades add up across a year. If your contract allows it, bill them as material lines or one stated shop supplies line instead of absorbing them."
+      }
+    ],
+    "pro_tip": "Save your most-used materials as products in the app, marked-up price included. Prices stay consistent and you stop guessing the markup on site.",
+    "format_pdf_desc": "A PDF fixes the labor hours, material prices and tax line as agreed, which is what a client compares against the work order and what you keep for the job file.",
+    "faqs": [
+      {
+        "question": "What is the difference between labor and materials and time and materials?",
+        "answer": "Same invoice: work and parts on separate lines. \"Time and materials\" usually also means no fixed price upfront, so the client pays actual hours and parts. \"Parts and labor\" is the name in repair trades. This layout fits all three."
+      },
+      {
+        "question": "Should I show my markup on materials?",
+        "answer": "Not necessarily per line, but the client should know it exists: build it into the unit price and add one sentence in the notes. On cost-plus contracts, show cost and markup on separate lines."
+      },
+      {
+        "question": "Is labor taxable on an invoice?",
+        "answer": "It depends on the state and the work. Many US states tax materials and not repair labor; some tax certain labor, and new construction often has its own rules. Check your state's department of revenue."
+      },
+      {
+        "question": "How do I bill for a trip or service call?",
+        "answer": "First line, flat price: \"Trip charge, $45\". If you credit it when the client goes ahead with the job, add a negative line right below, so fee and credit sit side by side."
+      },
+      {
+        "question": "What if the job goes over the estimate?",
+        "answer": "Tell the client before you pass the agreed limit and get approval in writing, then note it: \"Approved October 14 to exceed $600 by up to $150\". An overrun first heard of on the invoice is a common reason these invoices go unpaid."
+      }
+    ],
+    "related": [
+      {
+        "name": "Hourly Invoice",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Expense Reimbursement Invoice",
+        "slug": "expense-reimbursement-invoice"
+      },
+      {
+        "name": "Handyman",
+        "slug": "handyman"
+      }
+    ]
+  },
+  {
+    "slug": "expense-reimbursement-invoice",
+    "niche": "Expense Reimbursement",
+    "title": "Expense Reimbursement Invoice Template (Free) | Invoicor",
+    "meta_description": "Free reimbursement invoice template for passing costs on to a client: list each expense, at cost or with a markup, with receipts. Fill it in, get a PDF.",
+    "h1": "Free Expense Reimbursement Invoice Template",
+    "subtitle": "For businesses and freelancers billing a client for costs they paid on the client's behalf: travel, fees and supplies, at cost or with an agreed markup.",
+    "intro_paragraph": "This is the invoice a business or freelancer sends to a client to recover costs paid for that client's job. It is not an employee's expense report to an employer. You paid for the flight, the venue or the printing; the contract says the client covers it; now you bill it. The price isn't your work but a list of what you spent, each line backed by a receipt, at cost or with an agreed markup. Bill these on their own reimbursement invoice or as an expenses section on your regular one. Below: what each line needs, receipts and markup, and the tax difference between a rebilled cost and a true disbursement.",
+    "what_to_include_intro": "A client approving an expense invoice wants to tick off each cost against a receipt and the contract. Give them what they need to do that.",
+    "req_1_title": "One line per expense, with date and vendor",
+    "req_1_text": "List each cost separately: \"Oct 14: flight Chicago to Denver, receipt 1\". Date and vendor let the client match the line to the trip and the receipt. Group only many small items of one kind, like taxis on one trip.",
+    "req_2_title": "Receipt references",
+    "req_2_text": "Number your receipts and put the number on each line. Send copies as a separate file with the invoice. When accounts asks for receipt 4, you both know which one.",
+    "req_3_title": "At cost or with markup, as the contract says",
+    "req_3_text": "Many contracts say expenses pass on at cost; others allow a handling fee, often on purchases, not travel. Show any markup on its own line (\"Handling fee 10% on printing, contract section 6\") so the costs still match the receipts.",
+    "req_4_title": "The project or job reference",
+    "req_4_text": "Name the project, event or purchase order the costs belong to. Clients often pay expenses from a different budget than fees, and a reference sends your invoice to the right person instead of a general inbox.",
+    "req_5_title": "Amounts in the currency you'll be paid in",
+    "req_5_text": "For costs paid in another currency, convert to the invoice currency and say how: \"converted at the card rate on the statement\". The client then pays one total in one currency.",
+    "req_6_title": "A clear link to the main invoice",
+    "req_6_text": "When fees and expenses go on separate invoices, cross-reference the numbers in the notes. A client won't approve one and forget the other, and your bookkeeper can match payments.",
+    "what_to_include_outro": "Check the contract before you buy anything you plan to pass on. Pre-approval for large costs (flights, hotels, equipment rental) avoids the one argument a reimbursement invoice can't win: \"we never agreed to that\".",
+    "sample_breakdown_title": "Expense reimbursement invoice example",
+    "sample_breakdown_intro": "A freelance workshop facilitator bills the costs of a two-day on-site workshop, separate from the fee invoice. Travel and venue are at cost; printing carries a 10% handling fee the contract allows. No sales tax in this US example; whether rebilled costs are taxed varies by state and country, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Oct 14: flight Chicago to Denver (receipt 1)",
+        "qty": "1",
+        "rate": "$412.60",
+        "amount": "$412.60"
+      },
+      {
+        "description": "Hotel, 2 nights (receipt 2)",
+        "qty": "2",
+        "rate": "$189.00",
+        "amount": "$378.00"
+      },
+      {
+        "description": "Taxis and airport train (receipts 3 to 5)",
+        "qty": "1",
+        "rate": "$86.40",
+        "amount": "$86.40"
+      },
+      {
+        "description": "Venue booking fee (receipt 6)",
+        "qty": "1",
+        "rate": "$350.00",
+        "amount": "$350.00"
+      },
+      {
+        "description": "Workshop packs, 20 copies (receipt 7)",
+        "qty": "1",
+        "rate": "$164.00",
+        "amount": "$164.00"
+      },
+      {
+        "description": "Handling fee, 10% on printing",
+        "qty": "1",
+        "rate": "$16.40",
+        "amount": "$16.40"
+      }
+    ],
+    "sample_breakdown_subtotal": "$1,407.40",
+    "sample_breakdown_balance": "$1,407.40",
+    "sample_breakdown_notes": "Expenses for the October 15 to 16 workshop, PO 7731. Fees on invoice INV-0088. Receipts 1 to 7 sent as a separate PDF. Travel and venue at cost; handling fee per contract section 6. Due within 30 days.",
+    "industry_notes_title": "Expense reimbursement invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Disbursement or rebilled cost: the tax difference",
+        "text": "In VAT countries, a cost you pass on is usually part of your own supply and gets VAT like your fee. A true disbursement, paid as the client's agent, can stay outside VAT. In the UK, HMRC's VAT guide (Notice 700, section 25.1, checked November 2026) lists eight conditions, including that you recover only the exact amount paid."
+      },
+      {
+        "title": "In the US, check your state",
+        "text": "Some states treat reimbursed expenses as part of a taxable sale when the service is taxable; others don't, and rebilled materials can be taxable on their own. There's no single US rule, so check your state's revenue department."
+      },
+      {
+        "title": "Not an employee expense report",
+        "text": "Employees claiming costs back usually use their employer's expense form, not an invoice. This page is for a business billing a separate client."
+      }
+    ],
+    "mistakes_title": "Three mistakes on reimbursement invoices",
+    "mistakes": [
+      {
+        "title": "A markup the contract doesn't allow",
+        "text": "Adding 15% to travel when the contract says \"at cost\" turns a routine invoice into a trust problem, usually found when the client checks a receipt. Add only a handling fee the agreement names."
+      },
+      {
+        "title": "Waiting months to bill",
+        "text": "Expenses billed long after the project are harder to approve: budgets are closed and contacts have moved on. Bill them with the fee invoice or within the month."
+      },
+      {
+        "title": "Personal costs mixed in",
+        "text": "A dinner with friends or an unapproved seat upgrade makes every other line suspect. Bill only what the contract covers."
+      }
+    ],
+    "pro_tip": "Photograph each receipt when you get it and name the file with its future line number (\"R3-taxi-oct15\"). When you build the invoice, lines and receipt files already line up.",
+    "format_pdf_desc": "A PDF sits next to the receipt copies in the client's approval workflow and keeps every amount exactly as the receipts show it.",
+    "faqs": [
+      {
+        "question": "Can I charge a client for expenses on an invoice?",
+        "answer": "Yes, when your agreement says the client pays them. The contract should name which costs are billable, whether at cost or marked up, and whether large items need approval first."
+      },
+      {
+        "question": "Should expenses go on the same invoice as my fee?",
+        "answer": "Either works. One invoice with an expenses section is simpler for small jobs. A separate one is better when expenses come from another budget or arrive later than the fee."
+      },
+      {
+        "question": "Do I have to attach receipts?",
+        "answer": "Most clients ask, and some contracts require them above a set amount. Send numbered copies matching the lines, and keep the originals for your taxes."
+      },
+      {
+        "question": "Is it legal to mark up reimbursed expenses?",
+        "answer": "Generally yes, if the client agreed. It's a contract question, and in VAT countries a marked-up cost can't be a disbursement. Without an agreed markup, bill the exact cost."
+      },
+      {
+        "question": "Do I charge VAT or sales tax on reimbursed expenses?",
+        "answer": "Often, yes. In most VAT countries a rebilled cost gets VAT at your fee's rate; only true disbursements stay outside. In the US it depends on the state. Ask your accountant before the first expense invoice."
+      },
+      {
+        "question": "How do I invoice an expense paid in another currency?",
+        "answer": "Convert it and say how; the card statement rate is the simplest proof. The free generator supports 38 currencies, so you can also bill in the client's currency if the contract says so."
+      }
+    ],
+    "related": [
+      {
+        "name": "Labor and Materials Invoice",
+        "slug": "labor-and-materials-invoice"
+      },
+      {
+        "name": "Hourly Invoice",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Freelance Invoice",
+        "slug": "freelance-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "service-invoice",
+    "niche": "Service",
+    "title": "Service Invoice Template (Free, PDF) | Invoicor",
+    "meta_description": "Free service invoice template for any business that bills work, not goods. See a filled-in sample, then make your own PDF in the free generator.",
+    "h1": "Free Service Invoice Template",
+    "subtitle": "For any business that bills work rather than things sold: how to describe the service, date it, price it and set terms.",
+    "intro_paragraph": "A service invoice bills for time, skill or a result, not a physical product. Nothing ships, so the words on the page are the client's only proof of what they're paying for. That makes the description the key field: what was done, when and for whom. This is the general document behind consultants, agencies, trainers, repair firms and any business that sells work. Selling items? Use the sales invoice. If your trade has its own template, the templates hub lists it.",
+    "what_to_include_intro": "The legal basics are the same as any invoice. What changes is how you prove the work. These six fields do that.",
+    "req_1_title": "A description the client recognizes",
+    "req_1_text": "Write the line the way the client would describe the job to their manager. \"Quarterly staff workshop, Denver office, 14 attendees\" gets approved. \"Professional services\" gets questioned.",
+    "req_2_title": "The service date, separate from the invoice date",
+    "req_2_text": "You often bill days after the work. Put the service date or date range in the line details and keep the invoice date as the day you issue it. Many tax authorities ask for the date of supply when the two differ.",
+    "req_3_title": "The pricing basis on each line",
+    "req_3_text": "Services are priced by the hour, by the visit or session, or as a flat fee for a defined scope. Show which one each line uses: \"6 hours at $150\" or \"Flat fee: onboarding package\". Mixing bases on one invoice is fine.",
+    "req_4_title": "A reference the client gave you",
+    "req_4_text": "Larger clients route invoices by purchase order number, project code or contact name. Ask for it before you bill and put it in the notes, or the invoice can sit in an accounts inbox with no owner.",
+    "req_5_title": "Tax treatment of the service, stated",
+    "req_5_text": "Whether a service is taxed depends on where you are and what the service is. Many US states tax few services; most VAT countries tax them by default. State the rate you applied, or say that no tax applies.",
+    "req_6_title": "Payment terms with a real due date",
+    "req_6_text": "Write the terms (for example net 15) and the due date itself, plus how to pay: bank details or your own payment link. The client can't return the work, so a clear due date is your main lever.",
+    "what_to_include_outro": "Get these right and the invoice explains itself: the client approves it without calling you, and you have a dated record of what you delivered.",
+    "sample_breakdown_title": "Service invoice example",
+    "sample_breakdown_intro": "A training company bills one month of work: a flat-fee workshop, two site visits and hourly coaching calls. Three lines, three pricing bases. The sample assumes a US state that doesn't tax these services, so there is no tax line. Tax rules vary: check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Customer service workshop, half day, Denver office (Mar 4), flat fee",
+        "qty": "1",
+        "rate": "$1,200.00",
+        "amount": "$1,200.00"
+      },
+      {
+        "description": "On-site follow-up visit (Mar 11 and Mar 25)",
+        "qty": "2",
+        "rate": "$250.00",
+        "amount": "$500.00"
+      },
+      {
+        "description": "One-to-one coaching calls, team leads (Mar 5 to 28)",
+        "qty": "4",
+        "rate": "$150.00",
+        "amount": "$600.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$2,300.00",
+    "sample_breakdown_balance": "$2,300.00",
+    "sample_breakdown_notes": "Services delivered March 4 to 28. PO 4471-B, approved by the operations manager. No sales tax applies to these training services in the client's state. Payment due net 15 by bank transfer.",
+    "industry_notes_title": "Service invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Services and goods are often taxed differently",
+        "text": "US sales tax was built around goods, and each state decides which services it taxes. In the UK, the EU and most VAT countries, services are generally taxed, but where a service counts as supplied can depend on who and where the client is. Selling abroad? Check the place-of-supply rule first."
+      },
+      {
+        "title": "Mixed jobs need a decision",
+        "text": "Some service jobs include parts. Supplies used up in the work usually stay part of the service; items sold alongside it may be taxed even if the labor isn't. The labor and materials invoice is built for that case. Invoicor uses one tax rate per invoice, so ask your accountant how to show a split."
+      },
+      {
+        "title": "Numbering doesn't change because the work repeats",
+        "text": "Every invoice needs its own number, even for the same fee every month. In Invoicor you duplicate last month's invoice, change the dates and the service period, and it gets the next number. Never reuse a number with a new date."
+      }
+    ],
+    "mistakes_title": "Three mistakes on service invoices",
+    "mistakes": [
+      {
+        "title": "Billing a label instead of the work",
+        "text": "\"Consulting: $2,000\" tells the person who approves invoices nothing if they weren't in the meetings. They hold the bill until someone explains it. One more sentence per line buys a faster approval."
+      },
+      {
+        "title": "Leaving out when the service happened",
+        "text": "An invoice dated April 2 for February work looks like an error to the client and can put revenue in the wrong tax period for you. Put the service dates on the lines or in the notes."
+      },
+      {
+        "title": "Charging tax because the last job had it",
+        "text": "Taxability follows the service, not your habit. A repair may be taxed where training isn't, even in one state. Check each service type once, write down the answer, and don't copy the rate from an old invoice."
+      }
+    ],
+    "pro_tip": "Send the invoice the day the work ends, while the client still feels the value. A bill that arrives three weeks later competes with a fading memory of the work. For month-long jobs, bill at month end and name the period.",
+    "format_pdf_desc": "A PDF keeps your descriptions and dates exactly as written, opens the same on any device, and files straight into the client's accounts system.",
+    "faqs": [
+      {
+        "question": "What is the difference between a service invoice and a sales invoice?",
+        "answer": "A service invoice bills work: hours, visits, sessions or a project fee. A sales invoice bills goods: items with a SKU, a unit price and often shipping. A service invoice leans on descriptions and service dates; a sales invoice on quantities, delivery and returns."
+      },
+      {
+        "question": "How do I write an invoice for services rendered?",
+        "answer": "List each service on its own line with what you did, when and for whom. Add the quantity and rate, then the subtotal, any tax and the total, followed by terms, a due date and how to pay. \"Services rendered\" works as a heading, not as a description."
+      },
+      {
+        "question": "Do I charge sales tax or VAT on services?",
+        "answer": "It depends on your country, state and the service. Many US states tax only some services; most VAT countries tax services by default, with exceptions such as some health and education services. Check your tax authority's guidance and state the treatment on the invoice."
+      },
+      {
+        "question": "Should I bill hourly or a flat fee on a service invoice?",
+        "answer": "Bill the way you agreed. Hourly suits open-ended work and shows the time behind the price; a flat fee suits a defined scope. If you mostly bill time, the hourly invoice template covers rates, rounding and timesheets."
+      },
+      {
+        "question": "What payment terms are usual for services?",
+        "answer": "Due on receipt, net 15 and net 30 are the most common. One-off jobs often use due on receipt; business clients often ask for net 30. Always write the actual due date, not only the term."
+      }
+    ],
+    "related": [
+      {
+        "name": "Sales invoice",
+        "slug": "sales-invoice"
+      },
+      {
+        "name": "Hourly invoice",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Labor and materials invoice",
+        "slug": "labor-and-materials-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "sales-invoice",
+    "niche": "Sales",
+    "title": "Sales Invoice Template for Goods (Free PDF) | Invoicor",
+    "meta_description": "Free sales invoice template for selling goods: SKUs, unit prices, shipping and sales tax or VAT. See a sample order, then make your PDF free.",
+    "h1": "Free Sales Invoice Template for Goods",
+    "subtitle": "For makers, resellers and wholesalers: how to list products, price shipping, apply sales tax or VAT and set returns terms.",
+    "intro_paragraph": "A sales invoice bills for goods that leave your shelf and arrive at the buyer's door. It has to match the order line for line, so the buyer can check the box against the paper and book the stock. The weight is on quantities, unit prices, product codes and delivery. It isn't a receipt: an invoice asks for payment, a receipt confirms it. And it isn't a commercial invoice, which travels with goods across a border. This page covers the domestic sale of goods.",
+    "what_to_include_intro": "Buyers read a sales invoice next to their purchase order and the packing slip. These six fields make that check quick.",
+    "req_1_title": "Item name and SKU on every line",
+    "req_1_text": "Give each product its name, variant and the SKU you use. \"Soy candle, 8 oz, Cedar (CND-08)\" can be matched to a shelf, a purchase order and a reorder. Save your products once and pick them per order.",
+    "req_2_title": "Quantity and unit price, not just a line total",
+    "req_2_text": "Show the units and the price per unit, then the amount. A buyer who got 22 candles instead of 24 needs the unit price to work out the credit. Name the unit if it isn't obvious: case of 12, kilogram.",
+    "req_3_title": "Shipping and handling as their own line",
+    "req_3_text": "Put delivery on a separate line instead of inside the prices. The buyer sees what the goods cost and what moving them cost, and since some US states tax delivery and others don't, the tax is easier to check.",
+    "req_4_title": "Sales tax or VAT, at the rate that applies",
+    "req_4_text": "Goods are taxed in most places, at a rate set by where the sale is taxed and what the product is. Show the rate and the amount. A buyer who resells may give you an exemption certificate: keep it and note it.",
+    "req_5_title": "Delivery date and delivery address",
+    "req_5_text": "Write when the goods shipped and where they went, if that isn't the billing address. The delivery date often counts as the date of supply for tax, and the address settles which tax applies.",
+    "req_6_title": "Returns and damage terms",
+    "req_6_text": "One line on returns protects both sides: how many days to report damage or missing items, whether returns are accepted, and who pays return shipping. Match what your price list already says.",
+    "what_to_include_outro": "With these in place the invoice matches the order and the box, so the buyer pays without a reconciliation email.",
+    "sample_breakdown_title": "Sales invoice example",
+    "sample_breakdown_intro": "A candle maker bills a boutique hotel for four products it uses in its rooms, not for resale, plus one shipping line. The sample assumes a US state that taxes the goods and the delivery charge at a combined 7%. Many states treat shipping differently: check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Soy candle, 8 oz, Cedar (CND-08)",
+        "qty": "24",
+        "rate": "$14.00",
+        "amount": "$336.00"
+      },
+      {
+        "description": "Soy candle, 16 oz, Cedar (CND-16)",
+        "qty": "12",
+        "rate": "$24.00",
+        "amount": "$288.00"
+      },
+      {
+        "description": "Reed diffuser, 100 ml, Linen (DIF-100)",
+        "qty": "10",
+        "rate": "$19.50",
+        "amount": "$195.00"
+      },
+      {
+        "description": "Room spray, 4 oz, Linen (RS-04)",
+        "qty": "10",
+        "rate": "$11.00",
+        "amount": "$110.00"
+      },
+      {
+        "description": "Ground shipping, 3 boxes",
+        "qty": "1",
+        "rate": "$32.00",
+        "amount": "$32.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$961.00",
+    "sample_breakdown_tax_label": "Sales tax (7%)",
+    "sample_breakdown_tax": "$67.27",
+    "sample_breakdown_balance": "$1,028.27",
+    "sample_breakdown_notes": "Shipped October 14 to the hotel's receiving dock, 220 Pine St. PO HTL-0932. Report damaged or missing items within 7 days. Unopened items returnable within 30 days at the buyer's cost. Payment due net 30.",
+    "industry_notes_title": "Sales invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Where the sale is taxed",
+        "text": "In the US, an order shipped to another state may be taxed where the buyer is, once your sales into that state pass its threshold. Each state sets and changes its own, so check its revenue department. In the EU, sales of goods to consumers in other member states have their own VAT rules."
+      },
+      {
+        "title": "Selling to a reseller",
+        "text": "Many US states let a shop that resells your goods give you a resale certificate, so you charge no sales tax and keep the certificate on file. In VAT countries a registered business buyer usually pays the VAT and reclaims it, so you still charge it at home."
+      },
+      {
+        "title": "Corrections go on a new document",
+        "text": "If a box arrives short or a price was wrong, don't edit the sent invoice. Issue a corrected invoice or credit that names the original number. In Invoicor a sent invoice is locked: duplicate it, correct the quantity or price on the copy, send it and mark the original cancelled. Where your country expects a credit note instead, check with your accountant."
+      }
+    ],
+    "mistakes_title": "Three mistakes on sales invoices",
+    "mistakes": [
+      {
+        "title": "One line for the whole order",
+        "text": "\"Candle order: $961\" can't be checked against what arrived, or used to credit one broken item. List every product with its quantity and unit price."
+      },
+      {
+        "title": "Forgetting tax on shipping, or charging it wrongly",
+        "text": "Shipping is a common sales tax slip. Some states tax delivery of taxable goods, others don't if it's billed separately. Decide once per state you ship to, and keep shipping on its own line."
+      },
+      {
+        "title": "Sending an invoice when the buyer already paid",
+        "text": "A customer who paid at checkout needs a receipt, not a request for money. An invoice for a paid order confuses their books and invites double payment. Use invoices for orders paid later, such as trade accounts."
+      }
+    ],
+    "pro_tip": "Print the invoice number on the packing slip in the box. When a buyer reports a missing item they quote the slip, you open the same invoice, and it takes one email instead of five.",
+    "format_pdf_desc": "A PDF keeps SKUs, quantities and totals in fixed columns, prints cleanly next to a packing slip, and files without anything shifting.",
+    "faqs": [
+      {
+        "question": "What is the difference between a sales invoice and a receipt?",
+        "answer": "A sales invoice asks for payment for goods, usually by a due date. A receipt confirms payment already made. Paid at the moment of sale: give a receipt. Bought on terms: send an invoice and mark it paid when the money arrives."
+      },
+      {
+        "question": "Is a sales invoice the same as a commercial invoice?",
+        "answer": "No. A sales invoice bills a domestic sale. A commercial invoice travels with goods shipped abroad and adds what customs need, such as the HS code, origin and weights."
+      },
+      {
+        "question": "Do I have to show a SKU on a sales invoice?",
+        "answer": "Usually not by law: a clear product name is the minimum in most places. But a SKU makes matching, reorders and returns faster, and business buyers expect it."
+      },
+      {
+        "question": "How do I add shipping to a sales invoice?",
+        "answer": "Add it as its own line, like \"Ground shipping, 3 boxes\", and check whether delivery is taxed where you are. Invoicor applies one tax rate to the whole invoice, so if shipping is treated differently from the goods, ask your accountant how to show it."
+      },
+      {
+        "question": "What payment terms suit a sale of goods?",
+        "answer": "Retail customers usually pay up front and get a receipt. Trade buyers often get net 30 once they have an account. For a new buyer's first order, many sellers ask for payment before shipping."
+      }
+    ],
+    "related": [
+      {
+        "name": "Service invoice",
+        "slug": "service-invoice"
+      },
+      {
+        "name": "Commercial invoice",
+        "slug": "commercial-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "commercial-invoice",
+    "niche": "Commercial",
+    "title": "Commercial Invoice Template for Export (Free) | Invoicor",
+    "meta_description": "Free commercial invoice template for shipping goods abroad: HS codes, origin, weights and Incoterms per line. See a UK-to-US sample, make your PDF.",
+    "h1": "Free Commercial Invoice Template for Export",
+    "subtitle": "The invoice that travels with goods across a border: the fields customs and carriers read, and what still needs its own form.",
+    "intro_paragraph": "A commercial invoice is the bill for an export sale, written so customs at the other end can understand the shipment. It names the seller, the buyer and whoever receives the goods, and gives each item's description, value, origin, weight and tariff code. Customs use it to classify the goods and set duties; carriers ask for it before they move an international parcel. Invoicor makes the invoice PDF, with the HS code and origin in each line's details. It doesn't file customs declarations or carrier forms.",
+    "what_to_include_intro": "Customs and carriers look for the same core facts, and a missing one is a common reason a shipment is held.",
+    "req_1_title": "Seller, buyer and consignee",
+    "req_1_text": "List your business as the exporter, with any customs number you use, such as an EORI number in the UK and EU. Then the buyer who pays, and the consignee in the notes if the goods go elsewhere.",
+    "req_2_title": "A precise description of each item",
+    "req_2_text": "\"Gifts\" or \"samples\" won't get through. Say what each item is, what it's made of and what it's for: \"Stoneware coffee mug, glazed, 350 ml, household use\". Customs classify from this text.",
+    "req_3_title": "HS code and country of origin per line",
+    "req_3_text": "The HS code classifies the product for tariffs: six digits shared worldwide, often more digits nationally. Origin is where the goods were made, not where they shipped from. Write both in the line details.",
+    "req_4_title": "Quantity, weight and value in a stated currency",
+    "req_4_text": "Give units, unit value and line total in one currency named on the invoice, plus weight per line or per shipment and the number of packages. Customs check that the value fits the goods.",
+    "req_5_title": "Incoterms and the reason for export",
+    "req_5_text": "State the Incoterms rule you agreed, such as DAP or DDP with the named place: it shows who pays freight and import duties. Add the reason for export: sale, sample, repair or return.",
+    "req_6_title": "A signed declaration",
+    "req_6_text": "Most carriers expect a short statement that the information is true and correct, with the signer's name and the date. Put it in the notes and sign the printed copy, or follow your carrier's instructions.",
+    "what_to_include_outro": "These fields turn a normal invoice into one customs can work with. Check your carrier's list too: some want extra details or their own form as well.",
+    "sample_breakdown_title": "Commercial invoice example",
+    "sample_breakdown_intro": "A homeware maker in England ships an order to a Boston shop under DAP Boston, priced in pounds. It assumes UK rules: exported goods are usually zero-rated for VAT with proof of export, so VAT is 0%. US duties are the buyer's under DAP. The HS codes are examples: check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Stoneware coffee mug, glazed, 350 ml. HS 6912.00, origin UK, 0.4 kg each",
+        "qty": "48",
+        "rate": "£14.00",
+        "amount": "£672.00"
+      },
+      {
+        "description": "Wool throw blanket, 130 x 180 cm. HS 6301.20, origin UK, 1.1 kg each",
+        "qty": "12",
+        "rate": "£55.00",
+        "amount": "£660.00"
+      },
+      {
+        "description": "Paper notebook, A5, cloth cover. HS 4820.10, origin UK, 0.3 kg each",
+        "qty": "60",
+        "rate": "£6.50",
+        "amount": "£390.00"
+      },
+      {
+        "description": "International freight to Boston, 4 cartons, 55 kg gross",
+        "qty": "1",
+        "rate": "£185.00",
+        "amount": "£185.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "£1,907.00",
+    "sample_breakdown_tax_label": "VAT 0% (export of goods)",
+    "sample_breakdown_tax": "£0.00",
+    "sample_breakdown_balance": "£1,907.00",
+    "sample_breakdown_notes": "Incoterms 2020: DAP Boston, MA. Reason for export: sale. Consignee: Harbor Home Goods, Boston. I declare that the information on this invoice is true and correct. Signed: J. Price, Director, 12 November.",
+    "industry_notes_title": "Commercial invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Incoterms decide who pays the duties",
+        "text": "Incoterms are published by the International Chamber of Commerce; the current set is Incoterms 2020. Under DAP the buyer pays import duties and taxes; under DDP the seller does. Agree the rule before you quote, since DDP duties come out of your margin."
+      },
+      {
+        "title": "Classification is your responsibility",
+        "text": "The exporter or importer answers for the HS code, not the carrier. Use the customs authority's tariff tool: the UK Trade Tariff on GOV.UK, or the US Harmonized Tariff Schedule from the US International Trade Commission. A wrong code can mean the wrong duty."
+      },
+      {
+        "title": "The invoice is one document among several",
+        "text": "A shipment can also need an export declaration, a certificate of origin, a packing list or a carrier form. Invoicor makes the invoice; your carrier, forwarder or customs broker will tell you what else is needed."
+      }
+    ],
+    "mistakes_title": "Three mistakes on commercial invoices",
+    "mistakes": [
+      {
+        "title": "Undervaluing to save the buyer duty",
+        "text": "Declaring less than the real price is a false declaration: customs can hold or seize the goods and fine the importer. Declare what the buyer pays. For a gift or sample, say so and give a realistic value."
+      },
+      {
+        "title": "Confusing origin with where it shipped from",
+        "text": "A product made in Portugal and shipped from your UK warehouse has Portuguese origin. Origin can change the duty rate and trade-deal benefits, so check it per item."
+      },
+      {
+        "title": "No currency, or a total in two currencies",
+        "text": "Customs convert your value into their own currency, so they need to know yours. Pick one for the whole invoice, name it, and keep every line and the freight in it."
+      }
+    ],
+    "pro_tip": "Save each product with its HS code, origin and weight in its details. Every export order then starts with the customs data in place, and you only change quantities, buyer and date.",
+    "format_pdf_desc": "Carriers and customs brokers ask for the commercial invoice as a PDF to attach to the shipment. It keeps codes and weights in place and prints cleanly for the outside of the box.",
+    "faqs": [
+      {
+        "question": "When do I need a commercial invoice?",
+        "answer": "Whenever goods cross a customs border, including most courier parcels: for sales, and usually for samples, gifts and returns with the reason stated. Documents alone usually don't need one: check with your carrier."
+      },
+      {
+        "question": "What is the difference between a commercial invoice and a sales invoice?",
+        "answer": "Both bill for goods. A commercial invoice adds what customs need: HS codes, origin, weights, Incoterms, the reason for export and a signed declaration. A domestic sale only needs a sales invoice."
+      },
+      {
+        "question": "Where do I put the HS code on the invoice?",
+        "answer": "On each item's line, after the description or in the line details, with the country of origin. Each line item in the free generator has a details field for this."
+      },
+      {
+        "question": "Do I charge VAT on an export?",
+        "answer": "In the UK and many VAT countries, exported goods are usually zero-rated if you keep evidence of export. Rules differ for consumer sales and within trade blocs, so check HMRC's export guidance or your own tax authority's."
+      },
+      {
+        "question": "Can Invoicor create the customs forms too?",
+        "answer": "No. Invoicor makes the invoice PDF with the customs details you add per line. Declarations, certificates of origin and carrier forms come from your carrier, forwarder, broker or the customs authority."
+      }
+    ],
+    "related": [
+      {
+        "name": "Sales invoice",
+        "slug": "sales-invoice"
+      },
+      {
+        "name": "Deposit invoice",
+        "slug": "deposit-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "no-vat-invoice",
+    "niche": "No-VAT",
+    "title": "Invoice Without VAT Template (Free PDF) | Invoicor",
+    "meta_description": "Free invoice without VAT template for sellers not VAT registered or below the threshold. See a UK sample with the right note, then make your PDF.",
+    "h1": "Free Invoice Without VAT Template",
+    "subtitle": "For sole traders and small businesses that don't charge VAT: what the invoice must show, what to write, and what changes when you register.",
+    "intro_paragraph": "An invoice without VAT is a normal invoice from a seller who doesn't charge VAT, usually because they aren't registered. That's common for new sole traders, side businesses and small firms below their country's threshold. It still needs a number, dates, both parties' details and a clear description. What it must not do is look like a VAT invoice: no VAT line, no VAT number. A note saying why is good practice, and required in some countries. The main example is the UK, with notes on Australia and EU schemes.",
+    "what_to_include_intro": "Leaving VAT off is easy. Making the invoice complete for a client who expects a VAT line takes these six points.",
+    "req_1_title": "The usual invoice details, in full",
+    "req_1_text": "GOV.UK's invoicing guidance (checked November 2026) lists the basics for any UK invoice: a unique number, your and the client's names and addresses, a description, the supply date, the invoice date, the amount and the total owed.",
+    "req_2_title": "No VAT line and no VAT number",
+    "req_2_text": "If you aren't registered you can't charge VAT and have no VAT number to show. Leave the tax rate empty so no tax line appears. A \"VAT 0%\" line suggests you're registered and zero-rating the sale.",
+    "req_3_title": "A short note saying why",
+    "req_3_text": "Add a line such as \"Not registered for VAT. No VAT has been charged.\" In the UK that's good practice, not fixed wording. Some EU countries require a note: in Germany, a reference to the exemption under §19 UStG.",
+    "req_4_title": "Prices that are the final price",
+    "req_4_text": "Your rate is what the client pays. Don't show a figure \"plus VAT\" or a gross and net split you don't charge. If you quoted the client a price before, the invoice total should match it exactly.",
+    "req_5_title": "A company or registration number where it applies",
+    "req_5_text": "A limited company usually shows its registered number and registered office whatever its VAT status. The free generator has a registration number field, separate from the tax ID.",
+    "req_6_title": "Payment details that are easy to use",
+    "req_6_text": "Give your bank name and account details or IBAN, and a due date. Ask the client to use the invoice number as the payment reference.",
+    "what_to_include_outro": "The client sees at once that no VAT is due and why, and your records show you didn't collect tax you couldn't charge.",
+    "sample_breakdown_title": "Invoice without VAT example",
+    "sample_breakdown_intro": "A UK sole trader who isn't VAT registered bills a small business for a website copy refresh. The sample assumes UK rules, in pounds, with no tax line and a note saying why. Rules differ by country and change: check HMRC or your own tax authority.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Website copy rewrite, 5 pages (home, about, 3 services)",
+        "qty": "5",
+        "rate": "£180.00",
+        "amount": "£900.00"
+      },
+      {
+        "description": "Product description edits, 20 items",
+        "qty": "20",
+        "rate": "£12.50",
+        "amount": "£250.00"
+      },
+      {
+        "description": "Call to agree the brief and final review",
+        "qty": "2",
+        "rate": "£60.00",
+        "amount": "£120.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "£1,270.00",
+    "sample_breakdown_balance": "£1,270.00",
+    "sample_breakdown_notes": "Not registered for VAT. No VAT has been charged. Work supplied 3 to 21 November. Payment due within 14 days by bank transfer; please use the invoice number as the reference.",
+    "industry_notes_title": "No-VAT invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Your client can't reclaim VAT that isn't there",
+        "text": "A registered client reclaims VAT only from a valid VAT invoice. Yours has none, so there's nothing to reclaim and nothing to add. For a client who can't reclaim VAT anyway, such as a private person, your price simply looks lower."
+      },
+      {
+        "title": "Crossing the threshold changes the invoice",
+        "text": "Most VAT countries require you to register once taxable turnover passes a threshold that each government sets and changes. HMRC publishes the current UK figure. From your effective date you charge VAT, show your VAT number and issue VAT invoices."
+      },
+      {
+        "title": "Australia and EU small-business schemes",
+        "text": "In Australia, a business not registered for GST can't issue a tax invoice or include GST; it issues an ordinary invoice (see the ATO's guidance). Many EU countries exempt sellers below a turnover limit, such as Germany's Kleinunternehmer rule in §19 UStG, each with its own conditions and wording: check your tax authority."
+      }
+    ],
+    "mistakes_title": "Three mistakes on invoices without VAT",
+    "mistakes": [
+      {
+        "title": "Charging VAT before you're registered",
+        "text": "Adding 20% to look established isn't allowed before you're registered, and you'd owe what you collected. If it already happened, ask HMRC or an accountant how to correct it."
+      },
+      {
+        "title": "Showing a 0% VAT line",
+        "text": "\"VAT 0%\" tells the client you're registered and the sale is zero-rated, which is a different status. Unregistered: no VAT line at all, and a note."
+      },
+      {
+        "title": "Missing the moment you must register",
+        "text": "Sellers often keep issuing no-VAT invoices months after they should have registered, and the tax can then come out of their own pocket. Keep a running turnover total so you see the threshold coming."
+      }
+    ],
+    "pro_tip": "Keep one finished invoice with the no-VAT note, your bank details and terms, and duplicate it for each new client. Nothing to retype, and no stray tax rate from another invoice.",
+    "format_pdf_desc": "A PDF shows the exact total with your note in place, can't be edited to add a VAT line later, and is easy to keep with your records.",
+    "faqs": [
+      {
+        "question": "Can I issue an invoice if I'm not VAT registered?",
+        "answer": "Yes. Every business should invoice its clients. Not being registered just means no VAT on the invoice; it still needs a number, dates, both parties' details, a description and the total."
+      },
+      {
+        "question": "What do I write on an invoice when I'm not VAT registered?",
+        "answer": "In the UK, \"Not registered for VAT. No VAT has been charged.\" works well. Some countries require set wording: in Germany, sellers under the small-business rule refer to §19 UStG. Check your tax authority."
+      },
+      {
+        "question": "Do I need a VAT number on my invoice?",
+        "answer": "Only if you're registered for VAT. A company registration number is different: limited companies usually show it whatever their VAT status."
+      },
+      {
+        "question": "Is an invoice without VAT the same as a VAT-exempt invoice?",
+        "answer": "Not quite. An unregistered seller charges no VAT on anything. A registered seller can also make exempt supplies, such as some health or financial services, and states the exemption on that invoice. Check which applies to you."
+      },
+      {
+        "question": "What happens to invoices I issued before registering?",
+        "answer": "They stay without VAT. From your effective registration date, new invoices carry VAT. If registration is backdated, HMRC's guidance explains how to account for sales in that period, or ask an accountant."
+      }
+    ],
+    "related": [
+      {
+        "name": "Freelance invoice",
+        "slug": "freelance-invoice"
+      },
+      {
+        "name": "Service invoice",
+        "slug": "service-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "freelance-invoice",
+    "niche": "Freelance",
+    "title": "Freelance Invoice Template (Free PDF) | Invoicor",
+    "meta_description": "Free freelance invoice template with a filled-in sample. Add what your client's accounts team needs to pay you, then download a clean PDF.",
+    "h1": "Free Freelance Invoice Template",
+    "subtitle": "One invoice for freelancers in any field, self-employed or sole trader: what a client's accounts team checks before it pays, plus a sample to edit.",
+    "intro_paragraph": "A freelance invoice is usually read by two people. The person who hired you knows the work. The person who pays you, often someone in accounts payable, only knows what's on the page. If your legal name, the PO number or your bank details are missing, the invoice goes back in the queue. This template is built for that second reader, in any field and any country. UK sole traders and the self-employed send the same document. US independent contractors have extra tax paperwork, covered on its own page.",
+    "what_to_include_intro": "Clients with an accounts team process invoices against a checklist. Match it the first time and you get paid on the terms you agreed.",
+    "req_1_title": "Your legal name, not only your trading name",
+    "req_1_text": "Accounts teams pay the supplier set up in their system. If you trade as 'North Studio' but the bank account is in your own name, show both: 'Jane Smith, trading as North Studio'. A name that doesn't match the account holder can get a payment held for checks.",
+    "req_2_title": "Your tax ID where the client needs it",
+    "req_2_text": "Many clients need a tax or registration number before they can pay a new supplier: a VAT number in the EU, a UTR or VAT number in the UK, an ABN in Australia. Put it under your address. If you aren't registered for anything, leave the field empty.",
+    "req_3_title": "The client's PO or reference number",
+    "req_3_text": "Larger companies match each invoice to a purchase order or cost-center code. Ask for it when you agree the work and copy it exactly. Without it, the invoice can sit in a shared inbox while someone works out whose budget it is.",
+    "req_4_title": "Lines that match how you priced the job",
+    "req_4_text": "A project fee is one line with the agreed scope in the details. Hours or days beyond that scope get their own lines with quantity and rate. Then the client can approve the fee straight away and query only the extra.",
+    "req_5_title": "Usage rights when you sell creative work",
+    "req_5_text": "If you license writing, images, music or code, say what the client gets and when: 'Full usage rights transfer on payment in full' or 'Licensed for web use for 12 months'. A written term beats a vague expectation, and it's one more reason to pay on time.",
+    "req_6_title": "VAT, or a clear no-VAT note",
+    "req_6_text": "If you're registered for VAT or GST, show your number, the rate and the tax amount. If you aren't, add a line such as 'Not registered for VAT'. For a business client abroad, reverse-charge wording may apply. Check your tax office's rules for where you and the client are based.",
+    "what_to_include_outro": "With these six details, someone who has never met you can approve the invoice.",
+    "sample_breakdown_title": "Freelance invoice example",
+    "sample_breakdown_intro": "A project fee plus two hours of extra work the client asked for after sign-off. The sample assumes a freelancer who isn't registered for VAT or sales tax, so there's no tax line. Tax rules vary by country: check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Project fee: launch content package, per proposal dated Oct 6",
+        "qty": "1",
+        "rate": "$2,400.00",
+        "amount": "$2,400.00"
+      },
+      {
+        "description": "Extra revisions requested Oct 28 (beyond the two rounds in scope)",
+        "qty": "2",
+        "rate": "$85.00",
+        "amount": "$170.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$2,570.00",
+    "sample_breakdown_balance": "$2,570.00",
+    "sample_breakdown_notes": "PO 4500-1187. Payment due within 14 days by bank transfer to the account above; please quote invoice FR-2026-031. Not registered for VAT. Full usage rights to the delivered content transfer on payment in full.",
+    "industry_notes_title": "Freelance invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Self-employed, sole trader, freelancer: same document",
+        "text": "The label changes by country, the invoice doesn't. A UK sole trader, a US self-employed consultant and an EU freelancer all show who they are, who the client is, a unique number, the date, what was supplied, the amount and any tax. Some countries require extra fields, so check your local list once."
+      },
+      {
+        "title": "Number invoices in one unbroken series",
+        "text": "Use one sequence across all clients, such as FR-2026-001 and FR-2026-002, not a fresh '001' per client. Tax offices in many countries expect invoice numbers to be unique and in order."
+      },
+      {
+        "title": "Payment terms come from the contract",
+        "text": "If your proposal says 14 days, the invoice says 14 days. If you signed the client's supplier agreement, its longer terms may apply instead, so read it before you print 'due on receipt'."
+      }
+    ],
+    "mistakes_title": "Three mistakes freelancers make on invoices",
+    "mistakes": [
+      {
+        "title": "Sending it to the wrong person",
+        "text": "Your contact approves the work but may not pay it. Ask where invoices go, often a shared accounts payable address, and copy your contact."
+      },
+      {
+        "title": "Bundling extra work into the fee",
+        "text": "Raising the project fee to cover extra hours hides the change, and the client stops to ask why the number differs from the proposal. Keep the agreed fee and add the extra time on its own dated line."
+      },
+      {
+        "title": "Bank details that don't work across borders",
+        "text": "A domestic account number alone often can't be paid from abroad. For international clients, add your IBAN, SWIFT (BIC) and bank name, and invoice in the currency your contract names."
+      }
+    ],
+    "pro_tip": "When you agree a new job, ask: 'What do you need on the invoice for it to be paid first time?' The answer might be a PO number, a project code or a supplier form. In the Invoicor app, write it in the client's notes so you see it each time, and put it in every invoice's notes; duplicating their last invoice copies it.",
+    "format_pdf_desc": "Accounts teams file and forward invoices as PDFs. A PDF keeps your layout, can't be edited by mistake on its way, and opens anywhere.",
+    "faqs": [
+      {
+        "question": "What should a freelance invoice include?",
+        "answer": "Your name and address, the client's name and address, a unique invoice number, the issue and due dates, the work with quantities and rates, the total, and how to pay. Add your tax ID and the tax if you're registered, and the client's PO number if they gave one."
+      },
+      {
+        "question": "Do I need to charge VAT or sales tax as a freelancer?",
+        "answer": "Only if you're registered or required to be. In the UK and EU that depends on your turnover and the work; in the US, on the state and the service. If you aren't registered, don't add tax, and say so. Thresholds change, so check the current figure with your tax office."
+      },
+      {
+        "question": "How do I invoice a client in another country?",
+        "answer": "Invoice in the currency the contract names, add your IBAN and SWIFT, and include the client's tax ID if they're a business. Within the EU, business-to-business services usually fall under the reverse charge, which needs its own wording. The free generator has 38 currencies and 11 invoice languages."
+      },
+      {
+        "question": "Is a self-employed invoice different from a freelance invoice?",
+        "answer": "No. Self-employed, sole trader and freelancer describe the same set-up: you are the business. What changes by country is which tax details you must show."
+      },
+      {
+        "question": "When should I send a freelance invoice?",
+        "answer": "When the contract says: on delivery, at a milestone or at month-end. For long projects, agree a deposit or milestone invoices up front rather than one large bill at the end."
+      }
+    ],
+    "related": [
+      {
+        "name": "Independent Contractor",
+        "slug": "independent-contractor-invoice"
+      },
+      {
+        "name": "Hourly",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "No-VAT",
+        "slug": "no-vat-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "independent-contractor-invoice",
+    "niche": "Independent Contractor",
+    "title": "Independent Contractor Invoice Template (Free) | Invoicor",
+    "meta_description": "Free independent contractor invoice template for US contractors. Bill as a business, not an employee, and download a PDF your client can file.",
+    "h1": "Free Independent Contractor Invoice Template",
+    "subtitle": "For US independent contractors who bill clients directly: an invoice that reads like a bill from a business, matching the client's records and tax forms.",
+    "intro_paragraph": "When a US company pays you as an independent contractor, it doesn't run payroll for you. No tax is withheld, no benefits are added, and at year-end the client may report what it paid you to the IRS. Your invoice is part of the record behind that arrangement. It should read like a bill from one business to another: your name or business name, your own invoice number, work described by result or by hour, and no employee-style lines. If you freelance outside the US, the general freelance invoice is the better fit.",
+    "what_to_include_intro": "The client will match your invoice to the W-9 it keeps on file and, later, to its year-end filings. These fields keep them consistent.",
+    "req_1_title": "The name that matches your W-9",
+    "req_1_text": "Invoice under the legal name or business name on the W-9 you gave the client. If your W-9 shows an LLC, invoice as the LLC. When the invoice and the tax form name different payees, payment can stall.",
+    "req_2_title": "Your own invoice number and dates",
+    "req_2_text": "Employees get paystubs; businesses send numbered invoices. Use your own sequence (IC-2026-011), an issue date and a due date. It shows you set your own billing.",
+    "req_3_title": "Work described as a service, not a job title",
+    "req_3_text": "'Project management support, November: 64 hours' describes a service. 'Salary, November' describes a job. Name deliverables or hours worked, not a position.",
+    "req_4_title": "No tax withheld, and no payroll lines",
+    "req_4_text": "The invoice asks for the full amount. Don't deduct income tax, Social Security or Medicare: as a contractor you handle your own taxes, often through estimated payments. Leave out overtime, PTO and benefit lines. Ask a tax professional how this applies to you.",
+    "req_5_title": "Expenses billed only if the contract says so",
+    "req_5_text": "Contractors usually cover their own tools and costs. If the contract lets you pass some on, such as a software seat used only for this client, list each on its own line and keep the receipt.",
+    "req_6_title": "The contract or SOW reference",
+    "req_6_text": "Put the agreement's name or date on the invoice: 'Per consulting agreement dated Jan 12, 2026'. It ties the invoice to the terms you signed and helps the client's records show a business relationship rather than employment.",
+    "what_to_include_outro": "No single line decides your status: the IRS looks at the whole relationship. But an invoice that matches your contract and W-9 is one less thing to explain.",
+    "sample_breakdown_title": "Independent contractor invoice example",
+    "sample_breakdown_intro": "A month of hourly contract work, a fixed monthly report and one expense the contract allows. No income tax is withheld. No sales tax is shown: many states don't tax this service, but rules vary by state, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Project management support, Nov 2 to Nov 27 (hours per timesheet)",
+        "qty": "64",
+        "rate": "$70.00",
+        "amount": "$4,480.00"
+      },
+      {
+        "description": "Monthly status report and review call",
+        "qty": "1",
+        "rate": "$350.00",
+        "amount": "$350.00"
+      },
+      {
+        "description": "Reimbursable per contract: project software seat, November",
+        "qty": "1",
+        "rate": "$49.00",
+        "amount": "$49.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$4,879.00",
+    "sample_breakdown_balance": "$4,879.00",
+    "sample_breakdown_notes": "Services under the independent contractor agreement dated Jan 12, 2026. No taxes withheld. W-9 on file with the client. Software seat receipt available on request. Net 15, by bank transfer.",
+    "industry_notes_title": "Independent contractor invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "The W-9 comes first",
+        "text": "Many US clients ask a new contractor for Form W-9 before the first payment. It gives them your legal name, address and taxpayer ID, either your SSN or an EIN. Send it once and update it when something changes."
+      },
+      {
+        "title": "The 1099-NEC is the client's form",
+        "text": "If a business pays you at or above the IRS reporting threshold in a year, it files Form 1099-NEC and sends you a copy. The threshold is set by law and has changed, so check the IRS page on Form 1099-NEC for your year. Your invoices let you check the total on the form."
+      },
+      {
+        "title": "The invoice doesn't make you a contractor",
+        "text": "Your status depends on the working relationship: who controls how the work is done, who pays the costs, whether you work for others too. The IRS explains these rules on its website, and some states apply stricter tests. An invoice supports the arrangement but can't fix a role that works like a job."
+      }
+    ],
+    "mistakes_title": "Three mistakes independent contractors make on invoices",
+    "mistakes": [
+      {
+        "title": "Putting your SSN on the invoice",
+        "text": "Invoices get emailed, forwarded and saved in shared folders. Your Social Security number doesn't belong there: the client already has it on your W-9. Use an EIN if you want a tax number on the page."
+      },
+      {
+        "title": "Billing like a paycheck",
+        "text": "The same amount every two weeks labeled 'pay period' looks like wages. Bill for the work: hours at a rate, a named monthly retainer or a project fee."
+      },
+      {
+        "title": "Losing track of what you billed",
+        "text": "At year-end you'll compare your records with any 1099-NEC you receive. Keep every invoice in one place and mark each one paid when the money arrives, so the year's total is easy to add up."
+      }
+    ],
+    "pro_tip": "Send your W-9 with your first invoice, before anyone asks. Payments to new contractors often wait until a W-9 is on file, and sending it early saves a round of emails with the client's accounts team.",
+    "format_pdf_desc": "Clients keep contractor invoices with their tax records. A PDF holds its layout, can't be changed by accident after you send it, and files cleanly next to your W-9.",
+    "faqs": [
+      {
+        "question": "What is a 1099 invoice?",
+        "answer": "An informal name for an invoice from an independent contractor, after Form 1099-NEC, which the client may file to report what it paid you. There's no special format: use a normal business invoice with no tax withheld."
+      },
+      {
+        "question": "Do I need to send a W-9 with every invoice?",
+        "answer": "No. The client usually asks for a W-9 once, before the first payment, and keeps it on file. Send a new one if your name, business type, address or tax ID changes."
+      },
+      {
+        "question": "Should an independent contractor invoice show taxes?",
+        "answer": "Not income tax: nothing is withheld. Sales tax is separate. Many professional services aren't taxed, but some states tax certain services, so check your state's revenue department."
+      },
+      {
+        "question": "Can I use an EIN instead of my SSN?",
+        "answer": "Yes. Sole proprietors can get an EIN from the IRS at no cost and put it on the W-9 instead of their Social Security number, which keeps the SSN off business paperwork."
+      },
+      {
+        "question": "How often should I invoice as an independent contractor?",
+        "answer": "As your contract says: hourly work often weekly, every two weeks or monthly; project work at milestones or on delivery. In the Invoicor app you can duplicate last month's invoice and change the dates and hours."
+      },
+      {
+        "question": "What if a client treats me like an employee?",
+        "answer": "That's about the working relationship, not the invoice. The IRS describes the factors on its page about independent contractors and employees, and you can ask the IRS for a determination. Talk to a tax professional if you're unsure."
+      }
+    ],
+    "related": [
+      {
+        "name": "Freelance",
+        "slug": "freelance-invoice"
+      },
+      {
+        "name": "Hourly",
+        "slug": "hourly-invoice"
+      },
+      {
+        "name": "Monthly",
+        "slug": "monthly-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "subcontractor-invoice",
+    "niche": "Subcontractor",
+    "title": "Subcontractor Invoice Template (Free PDF) | Invoicor",
+    "meta_description": "Free subcontractor invoice template. Bill the main contractor with the PO, percent complete, retainage and change orders, then download a PDF.",
+    "h1": "Free Subcontractor Invoice Template",
+    "subtitle": "For subs who bill the general contractor, not the owner: contract numbers, percent complete, retainage and change orders the GC can approve.",
+    "intro_paragraph": "A subcontractor invoice travels up the chain. You bill the general contractor, the GC folds your numbers into its own pay application to the owner, and the owner's payment flows back down to you. Each step checks your invoice against the subcontract. So a sub invoice looks different from a bill to a homeowner: it names the project and the GC's contract or PO number, shows how much of your scope is done, holds back retainage and lists approved change orders by number. Miss one and it waits for the next billing cycle.",
+    "what_to_include_intro": "GCs often collect sub invoices by a fixed monthly cutoff. These six items are what their project manager checks first.",
+    "req_1_title": "Project name, address and the GC's numbers",
+    "req_1_text": "Show the project name and site address, the GC's subcontract or PO number and their job number if they use one. A GC running several jobs sorts invoices by these references, and one it can't match waits.",
+    "req_2_title": "Scope and percent complete",
+    "req_2_text": "For a fixed-price subcontract, bill by progress: the contract value, the percentage complete to date and the amount earned to date. The GC compares your percentage with what its superintendent saw on site, so keep it realistic.",
+    "req_3_title": "Previously billed, as its own line",
+    "req_3_text": "Subtract what earlier invoices claimed on a negative line that names them ('Less invoice SUB-0412'). This invoice then asks only for this period's work, and the GC can check the running total without rebuilding your math.",
+    "req_4_title": "Retainage held",
+    "req_4_text": "Many subcontracts let the GC hold back a share of each payment, often 5% or 10%, until the work is accepted. Show it as a deduction and keep a running total, because you'll invoice it separately at the end.",
+    "req_5_title": "Change orders by number",
+    "req_5_text": "Approved extra work goes on its own line with the change order number and date: 'CO-03, six added circuits, approved Oct 9'. Never fold it into the base contract line, and get unapproved changes signed before you bill them.",
+    "req_6_title": "License, insurance and lien paperwork",
+    "req_6_text": "Put your license number in the notes if your state requires it. Many GCs want a current certificate of insurance and, in many states, a conditional lien waiver with each payment request. Lien waiver rules vary by state: check yours.",
+    "what_to_include_outro": "A sub invoice that answers the GC's questions before they're asked gets added to the owner's pay application without edits.",
+    "sample_breakdown_title": "Subcontractor invoice example",
+    "sample_breakdown_intro": "The second invoice on an $18,000 electrical subcontract, now 40% complete after a first invoice for 20%, with one approved change order and 10% retainage held. The sample assumes labor-only work with no sales tax; construction tax rules vary by state, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Electrical rough-in, subcontract SC-2214: 40% of $18,000 complete to date",
+        "qty": "1",
+        "rate": "$7,200.00",
+        "amount": "$7,200.00"
+      },
+      {
+        "description": "Less previously billed, invoice SUB-0412 (20%)",
+        "qty": "1",
+        "rate": "-$3,600.00",
+        "amount": "-$3,600.00"
+      },
+      {
+        "description": "Change order CO-03: six added circuits, approved Oct 9 (100% complete)",
+        "qty": "1",
+        "rate": "$1,350.00",
+        "amount": "$1,350.00"
+      }
+    ],
+    "sample_breakdown_subtotal": "$4,950.00",
+    "sample_breakdown_deposit_label": "Retainage held (10%)",
+    "sample_breakdown_deposit": "-$495.00",
+    "sample_breakdown_balance": "$4,455.00",
+    "sample_breakdown_notes": "Riverside Medical Office, 410 Harbor Rd. GC PO 7781. Retainage held to date: $855.00 ($360.00 on SUB-0412 plus $495.00 here). Net 30 per subcontract. Conditional lien waiver for this amount enclosed. License #EC-XXXXX.",
+    "industry_notes_title": "Subcontractor invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Pay-when-paid and pay-if-paid clauses",
+        "text": "Many subcontracts tie your payment to the GC being paid by the owner. Some US states limit these clauses or won't enforce them, especially pay-if-paid. Your invoice can't change the clause, but it can make sure the delay isn't your paperwork."
+      },
+      {
+        "title": "UK: CIS deductions",
+        "text": "Under HMRC's Construction Industry Scheme, the contractor deducts tax from a subcontractor's payments, pays it to HMRC and gives the sub a statement of deductions. It applies to labor, not materials, so show them on separate lines. HMRC sets the rate by registration status: check its CIS guidance for current rates. Many UK construction services also fall under the VAT domestic reverse charge (HMRC guidance again)."
+      },
+      {
+        "title": "Retainage comes back on its own invoice",
+        "text": "Once your scope is accepted, invoice the retainage as a separate document listing each amount withheld. Some states cap retainage or set release deadlines on certain projects, so check your state's rule and your subcontract."
+      }
+    ],
+    "mistakes_title": "Three mistakes subcontractors make on invoices",
+    "mistakes": [
+      {
+        "title": "Billing the owner instead of the GC",
+        "text": "Your contract is with the general contractor. Unless the subcontract says otherwise, the invoice goes to the GC's legal name and billing address, not to the property owner."
+      },
+      {
+        "title": "Missing the monthly cutoff",
+        "text": "If the GC compiles its pay application on the 25th and your invoice arrives on the 27th, your work waits a month. Ask for the cutoff at the start of the job and send yours before it."
+      },
+      {
+        "title": "Percent complete that runs ahead of the site",
+        "text": "Billing 60% when the superintendent sees 40% gets the line cut back or the invoice returned, and it weakens your position in any later dispute. Bill what's in place."
+      }
+    ],
+    "pro_tip": "Keep a one-page ledger per subcontract: contract value, change orders, each invoice's percent and retainage held. Each new invoice is then the last one with three numbers updated. In the Invoicor app, line prices can't be negative, so duplicate the previous invoice, bill this period's amount as the line and show the percent, earlier invoices and retainage in the notes. The free generator takes negative lines, as in the sample.",
+    "format_pdf_desc": "GCs attach sub invoices to their own pay applications. A PDF keeps your numbers fixed, prints cleanly for the project file and can't be altered once it's part of the owner's billing.",
+    "faqs": [
+      {
+        "question": "What's the difference between a subcontractor invoice and a contractor invoice?",
+        "answer": "Who it goes to. A contractor bills the owner. A subcontractor bills the contractor who hired it, using that contractor's contract or PO number, and its amounts become part of the contractor's bill to the owner."
+      },
+      {
+        "question": "How do I show retainage on a subcontractor invoice?",
+        "answer": "Bill the amount earned this period, then deduct your subcontract's retainage percentage as its own line, with the total held to date in the notes. Release it later with a separate retainage invoice."
+      },
+      {
+        "question": "Should change orders go on the same invoice?",
+        "answer": "Approved ones can, each on its own line with its number and approval date, so the GC can match each to its signed change order."
+      },
+      {
+        "question": "Do I need to send a lien waiver with my invoice?",
+        "answer": "Often, yes. Many GCs want a conditional lien waiver with each payment request and an unconditional one once payment clears. Some states require their own statutory forms, so check yours."
+      },
+      {
+        "question": "How does CIS affect a UK subcontractor invoice?",
+        "answer": "The contractor deducts CIS tax from the labor part of your payment and sends it to HMRC. Show labor and materials on separate lines so the deduction is easy to work out. HMRC's CIS guidance has the current rates."
+      },
+      {
+        "question": "Can Invoicor fill in my GC's pay application form?",
+        "answer": "No. Invoicor makes invoices, not pay application forms with a schedule of values. Many subs bill on a plain invoice like the sample. If your GC requires its own form, fill that in and keep the invoice for your records."
+      }
+    ],
+    "related": [
+      {
+        "name": "Construction",
+        "slug": "construction"
+      },
+      {
+        "name": "Milestone",
+        "slug": "milestone-invoice"
+      },
+      {
+        "name": "Labor and Materials",
+        "slug": "labor-and-materials-invoice"
+      }
+    ]
+  },
+  {
+    "slug": "past-due-invoice",
+    "niche": "Past Due",
+    "title": "Past Due Invoice Template (Free PDF) | Invoicor",
+    "meta_description": "Free past due invoice template. Re-send an unpaid invoice with its original number, PAST DUE, the days overdue and a late fee only where allowed.",
+    "h1": "Free Past Due Invoice Template",
+    "subtitle": "How to re-send an invoice that wasn't paid on time: the same number, marked PAST DUE, with the days overdue and any late fee your terms allow.",
+    "intro_paragraph": "A past due invoice isn't a new bill. It's the invoice you already sent, sent again after its due date, marked so nobody mistakes it for a second charge. It keeps the original number, issue date and due date, then adds a clear PAST DUE label and how many days late it is. If your contract or the law allows a late fee, it shows that too. The aim is to make paying now the easiest thing to do. This page is about the document itself, not follow-up emails or collections.",
+    "what_to_include_intro": "Most late invoices are lost, stuck in an approval or forgotten rather than disputed. A past due invoice should remove every reason to wait.",
+    "req_1_title": "The same invoice number",
+    "req_1_text": "Re-use the original number. A new number makes the client's accounts team think it's a new charge, so it may be paid twice or not at all. A late fee billed separately gets its own number and names the original.",
+    "req_2_title": "PAST DUE, near the top",
+    "req_2_text": "Put 'PAST DUE' where it can't be missed: in the notes, the first line or your email's subject. Many accounts teams handle overdue items faster, but only if they can see that this is one.",
+    "req_3_title": "Original dates and days overdue",
+    "req_3_text": "Show the issue and due dates exactly as they were, then the days overdue as of today: 'Due Oct 15, 2026. 30 days past due on Nov 14.' The client can check it without digging out the original email.",
+    "req_4_title": "A late fee only if you agreed one",
+    "req_4_text": "You can usually charge a late fee only if the contract, your accepted terms or the law provides for it, and some places cap the rate. If your original terms said '1.5% per month on overdue balances', apply it. If they didn't, don't add one now: a surprise fee invites a dispute.",
+    "req_5_title": "The amount still owed",
+    "req_5_text": "Restate the balance. If the client paid part of it, show the payment received as a negative line (in the free generator) or in the notes (in the app, where prices can't be negative), so the remaining amount is clear.",
+    "req_6_title": "How to pay, again",
+    "req_6_text": "Repeat your bank details or payment link in full. The original email may be buried, and whoever handles overdue items may never have seen it.",
+    "what_to_include_outro": "Keep the tone neutral. The facts on the page, a number, a date and an amount, do the persuading.",
+    "sample_breakdown_title": "Past due invoice example",
+    "sample_breakdown_intro": "Invoice INV-1042 for $3,450, issued Sep 15 and due Oct 15, re-sent 30 days late with the 1.5% monthly late fee its original terms allowed. The sample assumes services with no sales tax; tax rules vary, so check yours.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Consulting services, September (per agreement dated Aug 4)",
+        "qty": "1",
+        "rate": "$2,800.00",
+        "amount": "$2,800.00"
+      },
+      {
+        "description": "Team workshop, Sep 9",
+        "qty": "1",
+        "rate": "$650.00",
+        "amount": "$650.00"
+      },
+      {
+        "description": "Late fee: 1.5% of $3,450.00, 30 days overdue (per original terms)",
+        "qty": "1",
+        "rate": "$51.75",
+        "amount": "$51.75"
+      }
+    ],
+    "sample_breakdown_subtotal": "$3,501.75",
+    "sample_breakdown_balance": "$3,501.75",
+    "sample_breakdown_notes": "PAST DUE: 30 days. Invoice INV-1042, issued Sep 15, 2026, was due Oct 15, 2026. Late fee of 1.5% per month applied under the original terms. If you've already paid, please reply with the payment date. Payment by bank transfer to the account above.",
+    "industry_notes_title": "Past due invoice rules worth knowing",
+    "industry_notes": [
+      {
+        "title": "Re-send or re-issue",
+        "text": "Where your records allow edits, you can re-issue the same number with PAST DUE and a late fee line, as in the sample. In the Invoicor app a sent invoice is locked: share the same PDF again and bill any late fee on a new invoice that names the original."
+      },
+      {
+        "title": "Late fees and interest have limits",
+        "text": "Many US states cap late fees or interest, and consumer contracts face stricter rules. In the UK, the Late Payment of Commercial Debts (Interest) Act 1998 gives businesses a right to statutory interest on late business-to-business payments, and EU countries have similar rules. Check yours before you add a number."
+      },
+      {
+        "title": "Mark it overdue in your records",
+        "text": "In the Invoicor app an invoice can carry the overdue status. The app doesn't send reminders, so set a day each week to look at overdue invoices and re-share them yourself."
+      }
+    ],
+    "mistakes_title": "Three mistakes on past due invoices",
+    "mistakes": [
+      {
+        "title": "Giving it a new number",
+        "text": "A new number on the same work looks like a second bill. The client may pay both and ask for a refund, or pay neither while they sort it out."
+      },
+      {
+        "title": "Adding a fee nobody agreed to",
+        "text": "A late fee that wasn't in the contract or original terms is hard to enforce, and the argument over it can hold up the main amount. Put late fees in your terms before the next job starts."
+      },
+      {
+        "title": "Waiting too long to re-send",
+        "text": "Two weeks late needs a nudge; four months late is a collections problem. Re-send soon after the due date and again at regular intervals, each time with the updated days overdue."
+      }
+    ],
+    "pro_tip": "Before you re-send, ask your contact one short question: 'Is anything stopping this invoice from being paid?' A missing PO number or a wrong billing address is often the answer. Fixing that gets you paid faster than a firmer tone.",
+    "format_pdf_desc": "A past due invoice may land in front of a manager, a bookkeeper or a collections agency. A PDF keeps the original dates and amounts exactly as sent.",
+    "faqs": [
+      {
+        "question": "What should I write on a past due invoice?",
+        "answer": "The original number, issue date and due date, PAST DUE, the days overdue, the balance owed, any late fee your terms allow, and how to pay. A short note helps: 'This invoice was due on Oct 15 and is now 30 days past due. Please pay the balance of $3,501.75 by Nov 21, or let us know if something is wrong with it.'"
+      },
+      {
+        "question": "Should a past due invoice get a new invoice number?",
+        "answer": "No. Keep the original so the client matches it to the bill they already have. Only a separate late fee invoice gets a new number."
+      },
+      {
+        "question": "Can I charge a late fee on an overdue invoice?",
+        "answer": "Usually only if your contract or original terms said so, or a law gives you the right, such as statutory interest on UK business debts. Many US states cap fees and interest, so check your rule first."
+      },
+      {
+        "question": "When does an invoice become past due?",
+        "answer": "The day after its due date. Many businesses wait a few days, since a payment may be on its way, then re-send every week or two until it's paid."
+      },
+      {
+        "question": "Does Invoicor send overdue reminders?",
+        "answer": "No. Invoicor gives each invoice a status, including overdue, but it doesn't send reminders or track whether the client opened your email. You re-share the PDF yourself."
+      },
+      {
+        "question": "What's the difference between a past due invoice and a payment reminder?",
+        "answer": "A reminder is a letter or email about an invoice. A past due invoice is the invoice itself, re-sent with PAST DUE and the days overdue. Many people send both: a short email with the past due invoice attached."
+      }
+    ],
+    "related": [
+      {
+        "name": "Final",
+        "slug": "final-invoice"
+      },
+      {
+        "name": "Service",
+        "slug": "service-invoice"
+      },
+      {
+        "name": "Freelance",
+        "slug": "freelance-invoice"
+      }
+    ]
   }
 ]

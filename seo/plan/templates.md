@@ -38,7 +38,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T4 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. IT support and computer repair: hourly support (remote vs on-site, minimum charge), managed services per device or user per month, hardware and licenses resold (with markup, warranty), project work. Sample: a small-office month with 12 managed devices, an on-site visit and a laptop.
 - **Don't write about:** Websites and web projects (owned by /templates/web-development).
-- **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”) · /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
 - **Notes:** industry: it-technicians
 
 #### /templates/drone-services
@@ -47,7 +47,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T4 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Drone pilots: flight time or per project, the FAA Part 107 certificate number on the invoice (US commercial pilots need it; verify), editing and deliverables (photos, video, maps), licensing and usage, travel, weather reschedules. Sample: a real-estate aerial package.
 - **Don't write about:** Photo usage rights in general (owned by /templates/photography).
-- **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”) · /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
 - **Notes:** industry: drone-pilots
 
 #### /templates/tattoo
@@ -351,7 +351,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Key:** limousine service invoice template · also: chauffeur invoice; car service invoice
 - **Item:** T6 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Hourly with a minimum, gratuity, tolls and parking, waiting time, airport transfers.
-- **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”) · /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
 - **Notes:** industry: limo-services
 
 #### /templates/photo-booth-rental
@@ -1019,7 +1019,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T11 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per pound or kilo, per item for dry cleaning and linens, pickup and delivery, B2B accounts (salons, Airbnb hosts, gyms) billed monthly. Sample: a host's monthly linens.
 - **Don't write about:** Alterations (/templates/alterations).
-- **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”) · /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
 - **Notes:** industry: none (link 2 related templates)
 
 #### /templates/dumpster-rental
@@ -1052,6 +1052,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T11 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Commission on gross sales (the rate and any minimum), sale prep and pricing, advertising, clean-out after the sale, the settlement statement to the family. Sample: a 3-day sale, 35% commission.
 - **Don't write about:** Auctions (/templates/auctioneer); senior moves (/templates/senior-move-management).
+- **Already covered (link, don't repeat):** /templates/sales-invoice (“sales invoice template”)
 - **Notes:** industry: none (link 2 related templates)
 
 #### /templates/self-storage
@@ -1260,7 +1261,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T12 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per hour with a minimum (portal to portal), the operator and rigger, travel and setup time, permits, lift plans, overtime. Sample: a 4-hour minimum lift with rigger.
 - **Don't write about:** Equipment rental without an operator (/templates/equipment-rental).
-- **Already covered (link, don't repeat):** /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”) · /templates/pool-service (“pool service invoice template”) · /templates/tree-service (“tree service invoice template”)
 - **Notes:** industry: none (link 2 related templates)
 
 ### Item T13 (15)
@@ -1328,6 +1329,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** T13 · **Score:** not scored · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Service calls for restaurants and shops: emergency rates, refrigerant by the pound (the certification and logs where required: hedge), parts, preventive maintenance contracts. Sample: a walk-in cooler compressor repair, after hours.
 - **Don't write about:** Residential HVAC (/templates/hvac); kitchen equipment repair (/templates/restaurant-equipment-repair).
+- **Already covered (link, don't repeat):** /templates/commercial-invoice (“commercial invoice template”)
 - **Notes:** industry: plumbers-hvac
 
 #### /templates/restaurant-equipment-repair

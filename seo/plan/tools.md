@@ -74,6 +74,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Key:** deposit calculator · also: down payment calculator; deposit invoice amount
 - **Item:** TL1 · **Score:** not scored · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts in 11 languages (lib/i18n/pages/tools). The deposit (% or amount) of a job total, the balance due, and both as invoice lines: the deposit invoice and the final invoice with the deposit subtracted, each one click into the generator. Link the deposit templates.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** new
 
 #### /tools/retainage-calculator

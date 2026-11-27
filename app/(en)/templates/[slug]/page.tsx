@@ -52,6 +52,8 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
 
   const niche = d.niche;
   const nicheLower = niche.toLowerCase();
+  // "an hourly invoice", "an international invoice", "a deposit invoice".
+  const aNiche = `${/^(?:[aeiou]|hour|honest|honor)/.test(nicheLower) ? "an" : "a"} ${nicheLower}`;
   const requirements = [1, 2, 3, 4, 5, 6].flatMap((n) => {
     const title = text(d, `req_${n}_title`);
     return title ? [{ title, text: text(d, `req_${n}_text`) }] : [];
@@ -83,7 +85,12 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
   const toc = [
     { id: "what-to-include", label: "What to include", show: !!whatToInclude },
     { id: "sample", label: "Invoice example", show: rows.length > 0 },
-    { id: "notes", label: "Industry notes", show: d.industry_notes.length > 0 },
+    // Invoice-type pages (deposit, freelance …) have no industry: their notes are about the document.
+    {
+      id: "notes",
+      label: d.industry ? "Industry notes" : "Notes",
+      show: d.industry_notes.length > 0,
+    },
     { id: "mistakes", label: "Mistakes to avoid", show: d.mistakes.length > 0 },
     { id: "formats", label: "Send it as a PDF", show: true },
     { id: "tip", label: "Pro tip", show: !!proTip },
@@ -100,7 +107,7 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
     <>
       <JsonLd
         data={howToLd(
-          `What to include on a ${nicheLower} invoice`,
+          `What to include on ${aNiche} invoice`,
           whatToInclude,
           requirements.map((r) => ({ name: r.title, text: r.text })),
         )}
@@ -164,7 +171,7 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
           <Block
             id="what-to-include"
             eyebrow="Checklist"
-            title={`What to include on a ${nicheLower} invoice`}
+            title={`What to include on ${aNiche} invoice`}
             intro={whatToInclude}
           >
             <PointList items={requirements} />

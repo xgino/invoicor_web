@@ -23,7 +23,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit (retainer) invoice a photographer sends when a client books a date: what it secures (the date, prep time), usual sizes (25–50%), non-refundable wording and the cancellation and reschedule policy, due before the date is held. Sample: a wedding booking deposit. Show how the balance invoice later lists the deposit as a negative line. FAQs: deposit vs retainer, refundable or not, rescheduling, how it appears on the final invoice.
 - **Don't write about:** General photography invoice fields, usage rights and licensing (owned by /templates/photography): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/photography (“photography invoice template”)
+- **Already covered (link, don't repeat):** /templates/photography (“photography invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/catering-deposit-invoice
 
@@ -31,7 +31,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit that locks a catering date: deposit size, the final headcount deadline and how the final invoice adjusts to the guaranteed count, a tasting fee credited against the deposit, cancellation windows. Sample: a 120-guest wedding deposit.
 - **Don't write about:** Per-head menu pricing, service charge vs gratuity, staffing lines (owned by /templates/catering).
-- **Already covered (link, don't repeat):** /templates/catering (“catering invoice template”)
+- **Already covered (link, don't repeat):** /templates/catering (“catering invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/contractor-deposit-invoice
 
@@ -39,7 +39,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The down payment a contractor takes before starting: what it pays for (materials, scheduling), how big it may be (some states cap home-improvement down payments, e.g. California: $1,000 or 10% of the contract price, whichever is less, Business and Professions Code §7159.5; verify and date it), a materials deposit vs a booking deposit, what the contract should say. Sample: a kitchen job deposit.
 - **Don't write about:** Progress billing and retainage (owned by /templates/construction-progress-invoice); general construction fields (/templates/construction).
-- **Already covered (link, don't repeat):** /industries/general-contractors (“invoice app for contractors”)
+- **Already covered (link, don't repeat):** /industries/general-contractors (“invoice app for contractors”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/roofing-deposit-invoice
 
@@ -47,7 +47,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit before a roof job: ordering shingles and materials, scheduling around weather, insurance-claim jobs (homeowner deductible, insurer's first and final checks, hedged), what happens to the deposit if the job is delayed. Sample: a full re-roof materials deposit.
 - **Don't write about:** Roofing line items per square, tear-off and disposal (owned by /templates/roofing).
-- **Already covered (link, don't repeat):** /templates/roofing (“roofing invoice template”) · /industries/roofers (“roofing invoice app”)
+- **Already covered (link, don't repeat):** /templates/roofing (“roofing invoice template”) · /industries/roofers (“roofing invoice app”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/painting-deposit-invoice
 
@@ -55,7 +55,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit a painter takes for paint and the booked days: color selection before ordering, change orders after the deposit, interior vs exterior weather terms. Sample: an exterior repaint deposit.
 - **Don't write about:** Per-room and per-square-foot pricing, prep lines (owned by /templates/painting).
-- **Already covered (link, don't repeat):** /templates/painting (“painting invoice template”)
+- **Already covered (link, don't repeat):** /templates/painting (“painting invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/dj-deposit-invoice
 
@@ -63,7 +63,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The date-hold deposit for a DJ booking: deposit size, what it covers, non-refundable terms, balance due before the event, overtime rate agreed in advance. Sample: a wedding DJ deposit.
 - **Don't write about:** Full DJ invoice lines (hours, equipment, travel; owned by /templates/dj).
-- **Already covered (link, don't repeat):** /templates/dj (“dj invoice template”)
+- **Already covered (link, don't repeat):** /templates/dj (“dj invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/construction-progress-invoice
 
@@ -95,7 +95,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: hourly · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly consulting invoices: hours × rate, billing increments (e.g. 0.25 h), how much detail per entry, minimum billing, travel time; hours come from your own timesheet (the app doesn't track time); link the free hours calculator. Sample: a month of advisory hours.
 - **Don't write about:** Retainers (owned by /templates/consulting-retainer-invoice); setting your rate (the rate calculator in /tools); general consulting fields (/templates/consulting).
-- **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”)
+- **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”) · /templates/hourly-invoice (“hourly invoice template”)
 
 #### /templates/virtual-assistant-hourly-invoice
 
@@ -111,7 +111,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: hourly · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly handyman billing: hourly vs flat per job, minimum charge (often 1–2 hours), trip charge, materials at cost or with a markup, rounding. Sample: a half-day of small repairs.
 - **Don't write about:** General handyman invoice fields (owned by /templates/handyman).
-- **Already covered (link, don't repeat):** /templates/handyman (“handyman invoice template”)
+- **Already covered (link, don't repeat):** /templates/handyman (“handyman invoice template”) · /templates/hourly-invoice (“hourly invoice template”)
 
 #### /templates/bookkeeping-hourly-invoice
 
@@ -119,7 +119,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: hourly · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly bookkeeping: catch-up and clean-up work billed by the hour vs the usual monthly fixed fee, what to list per entry, year-end extras. Sample: a catch-up project of 3 months of books.
 - **Don't write about:** The monthly fixed-fee bookkeeping invoice (owned by /templates/bookkeeping).
-- **Already covered (link, don't repeat):** /templates/bookkeeping (“bookkeeping invoice template”)
+- **Already covered (link, don't repeat):** /templates/bookkeeping (“bookkeeping invoice template”) · /templates/hourly-invoice (“hourly invoice template”)
 
 #### /templates/plumbing-labor-and-materials-invoice
 
@@ -127,6 +127,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: labor and materials · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Separating labor and parts: labor as hours × rate or a flat fee, each part on its own line, markup on parts (be transparent), parts vs workmanship warranty; sales tax on parts vs labor differs by state, and the app applies one tax rate per invoice (say how to handle it). Sample: a water heater replacement.
 - **Don't write about:** General plumbing invoice fields (owned by /templates/plumbing).
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/electrical-labor-and-materials-invoice
 
@@ -134,6 +135,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: labor and materials · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for electricians: wire by the foot, devices and fixtures (supplied by you or the customer), permit fees as a pass-through line, labor hours; tax on materials vs labor (state rules, one tax rate per invoice). Sample: a panel upgrade.
 - **Don't write about:** General electrician invoice fields (owned by /templates/electrician).
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/hvac-labor-and-materials-invoice
 
@@ -141,6 +143,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: labor and materials · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for HVAC: equipment, refrigerant by the pound, parts, labor hours, warranty registration, disposal of old units; tax rules hedged. Sample: an AC condenser replacement.
 - **Don't write about:** General HVAC invoice fields and maintenance plans (owned by /templates/hvac).
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/landscaping-labor-and-materials-invoice
 
@@ -148,6 +151,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: labor and materials · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Labor and materials for landscaping projects: plants, soil and mulch by the cubic yard, stone by the ton, crew hours, equipment and disposal fees. Sample: a new front-yard bed install.
 - **Don't write about:** Recurring lawn care visits and general landscaping fields (owned by /templates/landscaping).
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/consulting-retainer-invoice
 
@@ -155,7 +159,7 @@ _None yet._
 - **Item:** B1 · **Score:** not scored · **Intent:** template: retainer · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Monthly consulting retainers: paying for availability vs a block of hours, invoicing at the start of the month, unused hours (roll over or not), the overage rate; in the app, duplicate last month's invoice. Sample: a monthly advisory retainer with an overage line.
 - **Don't write about:** Hourly billing (owned by /templates/consulting-hourly-invoice); general consulting fields (/templates/consulting).
-- **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”)
+- **Already covered (link, don't repeat):** /templates/consulting (“consulting invoice template”) · /templates/retainer-invoice (“retainer invoice template”)
 
 #### /templates/social-media-retainer-invoice
 
@@ -180,6 +184,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The booking deposit, non-refundable terms, applied to the final session.
 - **Don't write about:** General fields of the trade (owned by /templates/tattoo): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/cake-deposit-invoice
 
@@ -187,6 +192,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The order deposit, the final design date, delivery balance.
 - **Don't write about:** General fields of the trade (owned by /templates/bakery): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/band-deposit-invoice
 
@@ -194,6 +200,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Holding the date, the balance before the gig, cancellation.
 - **Don't write about:** General fields of the trade (owned by /templates/musician): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/event-planner-deposit-invoice
 
@@ -232,6 +239,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Milestones by build stage, acceptance, app store launch.
 - **Don't write about:** General fields of the trade (owned by /templates/app-development): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/milestone-invoice (“milestone invoice template”)
 
 #### /templates/remodeling-progress-invoice
 
@@ -290,6 +298,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Squares, underlayment, flashing, labor, disposal.
 - **Don't write about:** General fields of the trade (owned by /templates/roofing): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/flooring-labor-and-materials-invoice
 
@@ -297,6 +306,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Square feet of material plus waste, underlayment, labor per sq ft.
 - **Don't write about:** General fields of the trade (owned by /templates/flooring): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/carpentry-labor-and-materials-invoice
 
@@ -304,6 +314,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Lumber and hardware, labor hours, finish work.
 - **Don't write about:** General fields of the trade (owned by /templates/carpentry): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/painting-labor-and-materials-invoice
 
@@ -311,6 +322,7 @@ _None yet._
 - **Item:** B2 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Gallons and supplies, labor per room or hour, prep.
 - **Don't write about:** General fields of the trade (owned by /templates/painting): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 #### /templates/monthly-pool-service-invoice
 
@@ -335,7 +347,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The monthly contract price, extra services, supplies.
 - **Don't write about:** General fields of the trade (owned by /templates/cleaning-services): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/cleaning-services (“cleaning invoice template”)
+- **Already covered (link, don't repeat):** /templates/cleaning-services (“cleaning invoice template”) · /templates/monthly-invoice (“monthly invoice template”)
 
 #### /templates/seasonal-snow-removal-invoice
 
@@ -380,7 +392,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The balance after the deposit, extras, gallery delivery on payment.
 - **Don't write about:** General fields of the trade (owned by /templates/photography): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/photography (“photography invoice template”)
+- **Already covered (link, don't repeat):** /templates/photography (“photography invoice template”) · /templates/final-invoice (“final invoice template”)
 
 #### /templates/videography-deposit-invoice
 
@@ -388,7 +400,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The date-hold deposit, balance before delivery.
 - **Don't write about:** General fields of the trade (owned by /templates/videography): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/videography (“videography invoice template”)
+- **Already covered (link, don't repeat):** /templates/videography (“videography invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 
 #### /templates/catering-final-invoice
 
@@ -396,7 +408,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The final headcount, extras, the deposit subtracted.
 - **Don't write about:** General fields of the trade (owned by /templates/catering): one sentence and a link.
-- **Already covered (link, don't repeat):** /templates/catering (“catering invoice template”)
+- **Already covered (link, don't repeat):** /templates/catering (“catering invoice template”) · /templates/final-invoice (“final invoice template”)
 
 #### /templates/emergency-plumbing-invoice
 
@@ -442,6 +454,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Crew size × hours, travel time, minimums.
 - **Don't write about:** General fields of the trade (owned by /templates/moving): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/hourly-invoice (“hourly invoice template”)
 
 #### /templates/graphic-design-deposit-invoice
 
@@ -465,6 +478,7 @@ _None yet._
 - **Item:** B3 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Materials at cost or markup, labor, trip charge.
 - **Don't write about:** General fields of the trade (owned by /templates/handyman): one sentence and a link.
+- **Already covered (link, don't repeat):** /templates/labor-and-materials-invoice (“labor and materials invoice template”)
 
 ### Item B4 (11)
 
@@ -498,6 +512,7 @@ _None yet._
 - **Item:** B4 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Booking deposit plus the separate security deposit, the payment schedule to the event date, cancellation tiers by notice.
 - **Don't write about:** General fields of the trade (owned by /templates/event-venue): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/event-venue; parent: /templates/deposit-invoice
 
 #### /templates/balloon-decor-deposit-invoice
@@ -514,6 +529,7 @@ _None yet._
 - **Item:** B4 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit to book staff and stock, the final headcount date, the balance before the event.
 - **Don't write about:** General fields of the trade (owned by /templates/bartending): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/bartending; parent: /templates/deposit-invoice
 
 #### /templates/limo-deposit-invoice
@@ -522,6 +538,7 @@ _None yet._
 - **Item:** B4 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit on the booking, the minimum hours, overtime and gratuity settled on the final invoice.
 - **Don't write about:** General fields of the trade (owned by /templates/limousine-service): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/limousine-service; parent: /templates/deposit-invoice
 
 #### /templates/entertainer-deposit-invoice
@@ -530,6 +547,7 @@ _None yet._
 - **Item:** B4 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. The deposit in the performance agreement, cancellation by notice period, the balance on the day.
 - **Don't write about:** General fields of the trade (owned by /templates/entertainer): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/entertainer; parent: /templates/deposit-invoice
 
 #### /templates/food-truck-deposit-invoice
@@ -572,6 +590,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit when the cabinets are ordered (lead time), the install invoice later, what happens if the client cancels after ordering.
 - **Don't write about:** General fields of the trade (owned by /templates/cabinet-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/cabinet-installation; parent: /templates/deposit-invoice
 
 #### /templates/countertop-deposit-invoice
@@ -580,6 +599,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. The deposit at templating (the slab is cut to size), the balance at install, sinks and cut-outs on the final invoice.
 - **Don't write about:** General fields of the trade (owned by /templates/countertop-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/countertop-installation; parent: /templates/deposit-invoice
 
 #### /templates/upholstery-deposit-invoice
@@ -588,6 +608,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit for fabric ordered for the piece, the balance on pickup, customer's own material (COM) without a fabric deposit.
 - **Don't write about:** General fields of the trade (owned by /templates/upholstery): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/upholstery; parent: /templates/deposit-invoice
 
 #### /templates/custom-jewelry-deposit-invoice
@@ -620,6 +641,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. The design fee and a deposit for paint and lifts, stage payments on large walls.
 - **Don't write about:** General fields of the trade (owned by /templates/muralist): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/muralist; parent: /templates/deposit-invoice
 
 #### /templates/taxidermy-deposit-invoice
@@ -628,6 +650,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Deposit at drop-off (often half), the balance at pickup, the unclaimed-mount policy.
 - **Don't write about:** General fields of the trade (owned by /templates/taxidermy): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/taxidermy; parent: /templates/deposit-invoice
 
 #### /templates/sign-deposit-invoice
@@ -636,6 +659,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. 50% on approval of the proof, the balance on install; permits and install on the final invoice.
 - **Don't write about:** General fields of the trade (owned by /templates/sign-making): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/sign-making; parent: /templates/deposit-invoice
 
 #### /templates/window-treatment-deposit-invoice
@@ -644,6 +668,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit when custom blinds or shutters are ordered (made to measure), the balance at install.
 - **Don't write about:** General fields of the trade (owned by /templates/window-treatments): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/window-treatments; parent: /templates/deposit-invoice
 
 #### /templates/screen-printing-deposit-invoice
@@ -660,6 +685,7 @@ _None yet._
 - **Item:** B5 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Digitising fee and a deposit on bulk orders, the balance on delivery.
 - **Don't write about:** General fields of the trade (owned by /templates/embroidery): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/embroidery; parent: /templates/deposit-invoice
 
 ### Item B6 (13)
@@ -670,7 +696,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit for materials before the dig, the balance on completion; state limits on contractor deposits (hedge: some states cap them).
 - **Don't write about:** General fields of the trade (owned by /templates/fence-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/fence-installation (“fence installation invoice template”)
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”) · /templates/fence-installation (“fence installation invoice template”)
 - **Notes:** trade: /templates/fence-installation; parent: /templates/deposit-invoice
 
 #### /templates/deck-deposit-invoice
@@ -679,6 +705,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Deposit for lumber or composite, permit fees on their own line, the balance after inspection; deposit caps by state (hedge).
 - **Don't write about:** General fields of the trade (owned by /templates/deck-building): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/deck-building; parent: /templates/deposit-invoice
 
 #### /templates/solar-deposit-invoice
@@ -687,6 +714,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. The deposit at signing, equipment ordered, the next payments at install and at interconnection (progress: link /templates/solar-installation-progress-invoice).
 - **Don't write about:** General fields of the trade (owned by /templates/solar-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/solar-installation; parent: /templates/deposit-invoice
 
 #### /templates/siding-deposit-invoice
@@ -695,6 +723,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit for siding ordered by colour, the balance at completion, rot repairs found on site as a new line.
 - **Don't write about:** General fields of the trade (owned by /templates/siding): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/siding; parent: /templates/deposit-invoice
 
 #### /templates/window-deposit-invoice
@@ -703,6 +732,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Custom windows are made to measure: the deposit at ordering, the balance after install.
 - **Don't write about:** General fields of the trade (owned by /templates/window-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/window-installation; parent: /templates/deposit-invoice
 
 #### /templates/remodeling-deposit-invoice
@@ -711,7 +741,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. The deposit at signing (and its legal cap, hedge), then progress invoices (link the remodeling progress page).
 - **Don't write about:** General fields of the trade (owned by /templates/remodeling): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/remodeling (“remodeling invoice template”)
+- **Already covered (link, don't repeat):** /templates/remodeling (“remodeling invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/remodeling; parent: /templates/deposit-invoice
 
 #### /templates/flooring-deposit-invoice
@@ -720,7 +750,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit for material ordered by the box, the balance after install, leftover boxes returned or left.
 - **Don't write about:** General fields of the trade (owned by /templates/flooring): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/flooring (“flooring invoice template”)
+- **Already covered (link, don't repeat):** /templates/flooring (“flooring invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/flooring; parent: /templates/deposit-invoice
 
 #### /templates/tile-deposit-invoice
@@ -729,7 +759,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. A deposit for tile and setting materials, the balance at grout and seal.
 - **Don't write about:** General fields of the trade (owned by /templates/tile-installation): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/tile-installation (“tile installation invoice template”)
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”) · /templates/tile-installation (“tile installation invoice template”)
 - **Notes:** trade: /templates/tile-installation; parent: /templates/deposit-invoice
 
 #### /templates/foundation-repair-deposit-invoice
@@ -754,7 +784,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Deposit for stone or brick ordered, the balance at completion, weather delays.
 - **Don't write about:** General fields of the trade (owned by /templates/masonry): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/masonry (“masonry invoice template”)
+- **Already covered (link, don't repeat):** /templates/masonry (“masonry invoice template”) · /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/masonry; parent: /templates/deposit-invoice
 
 #### /templates/concrete-deposit-invoice
@@ -763,6 +793,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Deposit before the pour (the plant is booked), the balance after finishing, extra yards on the final invoice.
 - **Don't write about:** General fields of the trade (owned by /templates/concrete): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/concrete; parent: /templates/deposit-invoice
 
 #### /templates/paving-deposit-invoice
@@ -771,6 +802,7 @@ _None yet._
 - **Item:** B6 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/deposit-invoice up. Deposit to book the crew and plant, the balance on completion, tonnage over the estimate.
 - **Don't write about:** General fields of the trade (owned by /templates/asphalt-paving): one sentence and a link; the general deposit invoice (owned by /templates/deposit-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”)
 - **Notes:** trade: /templates/asphalt-paving; parent: /templates/deposit-invoice
 
 ### Item B7 (9)
@@ -882,7 +914,7 @@ _None yet._
 - **Item:** B8 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/monthly-invoice up. A fixed monthly fee by transaction volume, catch-up work and payroll as extras.
 - **Don't write about:** General fields of the trade (owned by /templates/bookkeeping): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/bookkeeping (“bookkeeping invoice template”)
+- **Already covered (link, don't repeat):** /templates/bookkeeping (“bookkeeping invoice template”) · /templates/monthly-invoice (“monthly invoice template”)
 - **Notes:** trade: /templates/bookkeeping; parent: /templates/monthly-invoice
 
 #### /templates/monthly-seo-invoice
@@ -891,6 +923,7 @@ _None yet._
 - **Item:** B8 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/monthly-invoice up. A monthly SEO fee, the deliverables that month, tools passed on, minimum terms.
 - **Don't write about:** General fields of the trade (owned by /templates/seo-services): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/monthly-invoice (“monthly invoice template”)
 - **Notes:** trade: /templates/seo-services; parent: /templates/monthly-invoice
 
 #### /templates/monthly-security-invoice
@@ -931,6 +964,7 @@ _None yet._
 - **Item:** B8 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/monthly-invoice up. Business accounts: every delivery that month by date and job number, waiting time, fuel surcharge.
 - **Don't write about:** General fields of the trade (owned by /templates/courier): one sentence and a link; the general monthly invoice (owned by /templates/monthly-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/monthly-invoice (“monthly invoice template”)
 - **Notes:** trade: /templates/courier; parent: /templates/monthly-invoice
 
 #### /templates/pool-opening-closing-invoice
@@ -965,6 +999,7 @@ _None yet._
 - **Item:** B9 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/retainer-invoice up. The advance into the client trust account, hours drawn against it, the remaining balance, replenishment; trust-account rules hedged (no legal advice).
 - **Don't write about:** General fields of the trade (owned by /templates/attorney): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/retainer-invoice (“retainer invoice template”)
 - **Notes:** trade: /templates/attorney; parent: /templates/retainer-invoice
 
 #### /templates/marketing-retainer-invoice
@@ -981,6 +1016,7 @@ _None yet._
 - **Item:** B9 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/retainer-invoice up. A monthly number of pieces or words, unused work by the agreement, rush pieces as extras.
 - **Don't write about:** General fields of the trade (owned by /templates/copywriting): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/retainer-invoice (“retainer invoice template”)
 - **Notes:** trade: /templates/copywriting; parent: /templates/retainer-invoice
 
 #### /templates/graphic-design-retainer-invoice
@@ -1022,6 +1058,7 @@ _None yet._
 - **Item:** B9 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/retainer-invoice up. A fixed monthly fee for a package (bookkeeping review, payroll, quarterly returns), out-of-scope work billed apart.
 - **Don't write about:** General fields of the trade (owned by /templates/accounting): one sentence and a link; the general retainer invoice (owned by /templates/retainer-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/retainer-invoice (“retainer invoice template”)
 - **Notes:** trade: /templates/accounting; parent: /templates/retainer-invoice
 
 #### /templates/expert-witness-retainer-invoice
@@ -1048,6 +1085,7 @@ _None yet._
 - **Item:** B10 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/hourly-invoice up. Time entries in tenths of an hour per task, rates per lawyer or paralegal, costs advanced; link the retainer page.
 - **Don't write about:** General fields of the trade (owned by /templates/attorney): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/hourly-invoice (“hourly invoice template”)
 - **Notes:** trade: /templates/attorney; parent: /templates/hourly-invoice
 
 #### /templates/it-hourly-invoice
@@ -1064,7 +1102,7 @@ _None yet._
 - **Item:** B10 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/hourly-invoice up. Work that isn't per word (editing, review, DTP, project management) by the hour; link the per-word page.
 - **Don't write about:** General fields of the trade (owned by /templates/translation): one sentence and a link; the general hourly invoice (owned by /templates/hourly-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/translation (“translation invoice template”)
+- **Already covered (link, don't repeat):** /templates/translation (“translation invoice template”) · /templates/hourly-invoice (“hourly invoice template”)
 - **Notes:** trade: /templates/translation; parent: /templates/hourly-invoice
 
 #### /templates/video-editing-hourly-invoice
@@ -1288,6 +1326,7 @@ _None yet._
 - **Item:** B13 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/milestone-invoice up. Script and storyboard, animatic, final animation, delivery; revisions per stage.
 - **Don't write about:** General fields of the trade (owned by /templates/animation): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/milestone-invoice (“milestone invoice template”)
 - **Notes:** trade: /templates/animation; parent: /templates/milestone-invoice
 
 #### /templates/film-production-milestone-invoice
@@ -1304,6 +1343,7 @@ _None yet._
 - **Item:** B13 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/milestone-invoice up. Phases (study, design, permitting, construction support) as % of the fee.
 - **Don't write about:** General fields of the trade (owned by /templates/engineering): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/milestone-invoice (“milestone invoice template”)
 - **Notes:** trade: /templates/engineering; parent: /templates/milestone-invoice
 
 #### /templates/illustration-milestone-invoice
@@ -1312,6 +1352,7 @@ _None yet._
 - **Item:** B13 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/milestone-invoice up. Book projects: sketches, final art, delivery, the advance and kill fee.
 - **Don't write about:** General fields of the trade (owned by /templates/illustration): one sentence and a link; the general milestone invoice (owned by /templates/milestone-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/milestone-invoice (“milestone invoice template”)
 - **Notes:** trade: /templates/illustration; parent: /templates/milestone-invoice
 
 #### /templates/music-production-milestone-invoice
@@ -1354,7 +1395,7 @@ _None yet._
 - **Item:** B14 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/final-invoice up. The balance after the deposit, overtime played on the night, the final invoice before or after the event.
 - **Don't write about:** General fields of the trade (owned by /templates/dj): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/dj (“dj invoice template”)
+- **Already covered (link, don't repeat):** /templates/dj (“dj invoice template”) · /templates/final-invoice (“final invoice template”)
 - **Notes:** trade: /templates/dj; parent: /templates/final-invoice
 
 #### /templates/event-planner-final-invoice
@@ -1372,7 +1413,7 @@ _None yet._
 - **Item:** B14 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/final-invoice up. Final counts two weeks out, the deposit subtracted, rentals and delivery.
 - **Don't write about:** General fields of the trade (owned by /templates/florist): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/florist (“florist invoice template”) · /industries/florists (“invoice app for florists”)
+- **Already covered (link, don't repeat):** /templates/florist (“florist invoice template”) · /industries/florists (“invoice app for florists”) · /templates/final-invoice (“final invoice template”)
 - **Notes:** trade: /templates/florist; parent: /templates/final-invoice
 
 #### /templates/band-final-invoice
@@ -1381,6 +1422,7 @@ _None yet._
 - **Item:** B14 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/final-invoice up. The balance due on the day, overtime sets, travel.
 - **Don't write about:** General fields of the trade (owned by /templates/musician): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/final-invoice (“final invoice template”)
 - **Notes:** trade: /templates/musician; parent: /templates/final-invoice
 
 #### /templates/venue-final-invoice
@@ -1389,6 +1431,7 @@ _None yet._
 - **Item:** B14 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/final-invoice up. The final bill after the event: F&B over the minimum, overtime, damage from the security deposit.
 - **Don't write about:** General fields of the trade (owned by /templates/event-venue): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
+- **Already covered (link, don't repeat):** /templates/final-invoice (“final invoice template”)
 - **Notes:** trade: /templates/event-venue; parent: /templates/final-invoice
 
 #### /templates/party-rental-final-invoice

@@ -11,10 +11,14 @@ export interface GeneratorExample {
   notes: string;
 }
 
-/** First number in a string: "$2,800.00" → 2800, "1.5 hrs" → 1.5, "Included" → null. */
-function firstNumber(value: string): number | null {
-  const m = value.replace(/,/g, "").match(/-?\d+(?:\.\d+)?/);
-  return m ? Number(m[0]) : null;
+/**
+ * First number in a string: "$2,800.00" → 2800, "1.5 hrs" → 1.5, "Included" → null. A minus before
+ * the currency sign counts: "-$4,500.00" → -4500 (a credit or an earlier invoice subtracted).
+ */
+export function firstNumber(value: string): number | null {
+  const m = value.replace(/,/g, "").match(/([-−])?\D{0,3}?(\d+(?:\.\d+)?)/);
+  if (!m) return null;
+  return m[1] ? -Number(m[2]) : Number(m[2]);
 }
 
 export function toExample(t: TemplateEntry): GeneratorExample | null {

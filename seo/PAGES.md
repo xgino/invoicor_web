@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**207 live pages** · last change 2026-11-26 · 984 more planned in [PLAN.md](PLAN.md)
+**223 live pages** · last change 2026-11-27 · 964 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -16,7 +16,7 @@
 | other English pages | 7 | legal 2, home 1, generator 1, support 1, program 1, android 1 |
 | /compare | 21 | compare 20, hub 1 |
 | /industries | 44 | industry 43, hub 1 |
-| /templates | 51 | template 50, hub 1 |
+| /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
 | /da | 8 | tool 4, home 1, generator 1, support 1, android 1 |
 | /de | 8 | tool 4, home 1, generator 1, support 1, android 1 |
@@ -49,8 +49,9 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 | legal | yes | 2 | 0 | 20 |
 | tool | yes | 4 | 4 |  |
 | android | yes | 1 | 1 |  |
+| template (invoice type) | yes, en-only | 16 | 0 | 140 |
 
-**980 language versions still to write** for live pages.
+**1120 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
@@ -67,11 +68,13 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | android | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| template (invoice type) | 16 | · | · | · | · | · | · | · | · | · | · |
 
 ### Made per day
 
 | Date | Pages | What |
 |---|---|---|
+| 2026-11-27 | 16 | template (invoice type) 16 |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, home 1, generator 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, home 10, generator 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -175,7 +178,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /industries/web-developers | invoice app for freelance developers | industry | yes | 2026-11-18 |
 | /industries/window-cleaners | invoice app for window cleaners | industry | yes | 2026-11-26 |
 
-### /templates (51)
+### /templates (67)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -187,30 +190,42 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /templates/carpet-cleaning | carpet cleaning invoice template | template | yes | 2026-11-26 |
 | /templates/catering | catering invoice template | template | yes | 2026-11-18 |
 | /templates/cleaning-services | cleaning invoice template | template | yes | 2026-11-17 |
+| /templates/commercial-invoice | commercial invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/construction | construction invoice template | template | yes | 2026-11-18 |
 | /templates/consulting | consulting invoice template | template | yes | 2026-11-17 |
 | /templates/copywriting | copywriter invoice template | template | yes | 2026-11-26 |
+| /templates/deposit-invoice | deposit invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/dj | dj invoice template | template | yes | 2026-11-26 |
 | /templates/drywall | drywall invoice template | template | yes | 2026-11-26 |
 | /templates/electrician | electrician invoice template | template | yes | 2026-11-18 |
 | /templates/event-planning | event planner invoice template | template | yes | 2026-11-26 |
+| /templates/expense-reimbursement-invoice | reimbursement invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/fence-installation | fence installation invoice template | template | yes | 2026-11-26 |
+| /templates/final-invoice | final invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/flooring | flooring invoice template | template | yes | 2026-11-26 |
 | /templates/florist | florist invoice template | template | yes | 2026-11-26 |
 | /templates/freelance-design | graphic design invoice template | template | yes | 2026-11-17 |
+| /templates/freelance-invoice | freelance invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/garage-door-repair | garage door repair invoice template | template | yes | 2026-11-26 |
 | /templates/handyman | handyman invoice template | template | yes | 2026-11-17 |
+| /templates/hourly-invoice | hourly invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/hvac | hvac invoice template | template | yes | 2026-11-17 |
+| /templates/independent-contractor-invoice | independent contractor invoice template | template (invoice type) | en-only | 2026-11-27 |
 | /templates/interior-design | interior design invoice template | template | yes | 2026-11-26 |
 | /templates/junk-removal | junk removal invoice template | template | yes | 2026-11-26 |
+| /templates/labor-and-materials-invoice | labor and materials invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/landscaping | landscaping invoice template | template | yes | 2026-11-17 |
 | /templates/locksmith | locksmith invoice template | template | yes | 2026-11-26 |
 | /templates/makeup-artist | makeup artist invoice template | template | yes | 2026-11-26 |
 | /templates/masonry | masonry invoice template | template | yes | 2026-11-26 |
 | /templates/massage-therapy | massage therapy invoice template | template | yes | 2026-11-26 |
+| /templates/milestone-invoice | milestone invoice template | template (invoice type) | yes | 2026-11-27 |
+| /templates/monthly-invoice | monthly invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/moving | moving company invoice template | template | yes | 2026-11-18 |
 | /templates/music-lessons | music teacher invoice template | template | yes | 2026-11-26 |
+| /templates/no-vat-invoice | invoice without vat template | template (invoice type) | yes | 2026-11-27 |
 | /templates/painting | painting invoice template | template | yes | 2026-11-18 |
+| /templates/past-due-invoice | past due invoice template | template (invoice type) | en-only | 2026-11-27 |
 | /templates/personal-training | personal trainer invoice template | template | yes | 2026-11-18 |
 | /templates/pest-control | pest control invoice template | template | yes | 2026-11-18 |
 | /templates/pet-sitting | pet sitting invoice template | template | yes | 2026-11-26 |
@@ -219,9 +234,13 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /templates/pool-service | pool service invoice template | template | yes | 2026-11-26 |
 | /templates/pressure-washing | pressure washing invoice template | template | yes | 2026-11-26 |
 | /templates/remodeling | remodeling invoice template | template | yes | 2026-11-26 |
+| /templates/retainer-invoice | retainer invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/roofing | roofing invoice template | template | yes | 2026-11-18 |
+| /templates/sales-invoice | sales invoice template | template (invoice type) | yes | 2026-11-27 |
+| /templates/service-invoice | service invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/snow-removal | snow removal invoice template | template | yes | 2026-11-26 |
 | /templates/social-media-management | social media manager invoice template | template | yes | 2026-11-26 |
+| /templates/subcontractor-invoice | subcontractor invoice template | template (invoice type) | yes | 2026-11-27 |
 | /templates/tile-installation | tile installation invoice template | template | yes | 2026-11-26 |
 | /templates/translation | translation invoice template | template | yes | 2026-11-26 |
 | /templates/tree-service | tree service invoice template | template | yes | 2026-11-26 |

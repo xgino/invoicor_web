@@ -8,7 +8,7 @@
 > language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**207 / 4,000 pages live** (5%) · planned: 977 English and local pages + 8,299 language pages · **9,483 when everything is built** (fewer after the demand gate parks the weak ones)
+**223 / 4,000 pages live** (6%) · planned: 957 English and local pages + 8,269 language pages · **9,449 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -33,7 +33,7 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 |---|---|---|---|---|
 | [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 | 50 | 263 | 0/200 done |
 | [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12 B13 B14 B15 | 0 | 177 | 0/150 done |
-| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 D2 | 0 | 30 | 0/20 done |
+| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 D2 | 16 | 10 | 0/20 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
@@ -41,31 +41,31 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators](#generators-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 9 | 6 | 0/30 done |
-| [Languages](#languages-l) | L1–L730 | 80 | 8299 | |
+| [Languages](#languages-l) | L1–L730 | 80 | 8269 | |
 
 ## Best next (by score)
 
-The items that can be built now (no task in the way), best first: the average `score` of their planned pages (blank counts as 3; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. 0 of 977 planned pages are scored.
+The items that can be built now (no task in the way), best first: the average `score` of their planned pages (blank counts as 3; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. 0 of 957 planned pages are scored.
 
 | # | Item | Pages to build | Score | Scored |
 |---|---|---|---|---|
-| 1 | [D1](#d1-invoice-types-the-general-documents) Invoice types: the general documents | 20 | 3.0 | 0/20 |
-| 2 | [B1](#b1-billing-types-i) Billing types I | 20 | 3.0 | 0/20 |
-| 3 | [T4](#t4-10-trades-notary-home-inspection-it-services-) 10 trades: notary, home inspection, IT services … | 10 | 3.0 | 0/10 |
-| 4 | [I4](#i4-industry-pages-for-t4s-trades) Industry pages for T4's trades | 10 | 3.0 | 0/10 |
-| 5 | [TL1](#tl1-free-tools-i) Free tools I | 11 | 3.0 | 0/11 |
-| 6 | [P1](#p1-trust-pages-about-contact-e-e-a-t) Trust pages: about, contact (E-E-A-T) | 2 | 3.0 | 0/2 |
-| 7 | [I10](#i10-one-trade-per-page-split-the-combined-industry-pages) One trade per page: split the combined industry pages | 6 | 3.0 | 0/6 |
-| 8 | [I11](#i11-who-invoices-self-employed-freelancers-sellers) Who invoices: self-employed, freelancers, sellers | 9 | 3.0 | 0/9 |
-| 9 | [T5](#t5-home-and-property-services) Home and property services | 20 | 3.0 | 0/20 |
-| 10 | [I5](#i5-industry-pages-for-t5s-trades) Industry pages for T5's trades | 20 | 3.0 | 0/20 |
-| 11 | [C2](#c2-20-more-compares-english-only) 20 more compares (English only) | 20 | 3.0 | 0/20 |
-| 12 | [B2](#b2-billing-types-ii) Billing types II | 20 | 3.0 | 0/20 |
-| 13 | [T6](#t6-makers-repair-transport-events) Makers, repair, transport, events | 20 | 3.0 | 0/20 |
-| 14 | [I6](#i6-industry-pages-for-t6s-trades) Industry pages for T6's trades | 20 | 3.0 | 0/20 |
-| 15 | [LO2](#lo2-local-rivals-in-their-own-language-hl9) Local rivals, in their own language (HL9) | 20 | 3.0 | 0/20 |
+| 1 | [B1](#b1-billing-types-i) Billing types I | 20 | 3.0 | 0/20 |
+| 2 | [T4](#t4-10-trades-notary-home-inspection-it-services-) 10 trades: notary, home inspection, IT services … | 10 | 3.0 | 0/10 |
+| 3 | [I4](#i4-industry-pages-for-t4s-trades) Industry pages for T4's trades | 10 | 3.0 | 0/10 |
+| 4 | [TL1](#tl1-free-tools-i) Free tools I | 11 | 3.0 | 0/11 |
+| 5 | [P1](#p1-trust-pages-about-contact-e-e-a-t) Trust pages: about, contact (E-E-A-T) | 2 | 3.0 | 0/2 |
+| 6 | [I10](#i10-one-trade-per-page-split-the-combined-industry-pages) One trade per page: split the combined industry pages | 6 | 3.0 | 0/6 |
+| 7 | [I11](#i11-who-invoices-self-employed-freelancers-sellers) Who invoices: self-employed, freelancers, sellers | 9 | 3.0 | 0/9 |
+| 8 | [T5](#t5-home-and-property-services) Home and property services | 20 | 3.0 | 0/20 |
+| 9 | [I5](#i5-industry-pages-for-t5s-trades) Industry pages for T5's trades | 20 | 3.0 | 0/20 |
+| 10 | [C2](#c2-20-more-compares-english-only) 20 more compares (English only) | 20 | 3.0 | 0/20 |
+| 11 | [B2](#b2-billing-types-ii) Billing types II | 20 | 3.0 | 0/20 |
+| 12 | [T6](#t6-makers-repair-transport-events) Makers, repair, transport, events | 20 | 3.0 | 0/20 |
+| 13 | [I6](#i6-industry-pages-for-t6s-trades) Industry pages for T6's trades | 20 | 3.0 | 0/20 |
+| 14 | [LO2](#lo2-local-rivals-in-their-own-language-hl9) Local rivals, in their own language (HL9) | 20 | 3.0 | 0/20 |
+| 15 | [TL2](#tl2-free-tools-ii) Free tools II | 10 | 3.0 | 0/10 |
 
-And 56 more ready items. Waiting for a task: **S4** (TL3, TL7, TL8, TL9) · **S3** (CT1, CT2, CT3, CT4, CT5, CT6, LO1, LO3, LO4, LO5, LO6, LO7, LO8).
+And 55 more ready items. Waiting for a task: **S4** (TL3, TL7, TL8, TL9) · **S3** (CT1, CT2, CT3, CT4, CT5, CT6, LO1, LO3, LO4, LO5, LO6, LO7, LO8).
 
 ## Suggested order
 
@@ -73,7 +73,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2** → **P2**
+**S1** → ~~D1~~ → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2** → **P2**
 
 ## Tasks (S): code, no pages
 
@@ -727,27 +727,27 @@ Rules: [RULES.md § D · Invoice types (general documents)](RULES.md#d--invoice-
 
 ### D1: Invoice types: the general documents
 
-- [ ] **D1** · 0/20 live · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · languages: [L61–L70](#d1-in-every-language)
-  - [ ] [/templates/deposit-invoice](plan/types.md#templatesdeposit-invoice) deposit invoice template
-  - [ ] [/templates/final-invoice](plan/types.md#templatesfinal-invoice) final invoice template
-  - [ ] [/templates/milestone-invoice](plan/types.md#templatesmilestone-invoice) milestone invoice template
-  - [ ] [/templates/hourly-invoice](plan/types.md#templateshourly-invoice) hourly invoice template
-  - [ ] [/templates/day-rate-invoice](plan/types.md#templatesday-rate-invoice) day rate invoice template
-  - [ ] [/templates/retainer-invoice](plan/types.md#templatesretainer-invoice) retainer invoice template
-  - [ ] [/templates/monthly-invoice](plan/types.md#templatesmonthly-invoice) monthly invoice template
-  - [ ] [/templates/labor-and-materials-invoice](plan/types.md#templateslabor-and-materials-invoice) labor and materials invoice template
-  - [ ] [/templates/service-invoice](plan/types.md#templatesservice-invoice) service invoice template
-  - [ ] [/templates/sales-invoice](plan/types.md#templatessales-invoice) sales invoice template
-  - [ ] [/templates/commercial-invoice](plan/types.md#templatescommercial-invoice) commercial invoice template
-  - [ ] [/templates/past-due-invoice](plan/types.md#templatespast-due-invoice) past due invoice template
-  - [ ] [/templates/mileage-invoice](plan/types.md#templatesmileage-invoice) mileage invoice template
-  - [ ] [/templates/expense-reimbursement-invoice](plan/types.md#templatesexpense-reimbursement-invoice) reimbursement invoice template
-  - [ ] [/templates/no-vat-invoice](plan/types.md#templatesno-vat-invoice) invoice without vat template
-  - [ ] [/templates/freelance-invoice](plan/types.md#templatesfreelance-invoice) freelance invoice template
-  - [ ] [/templates/independent-contractor-invoice](plan/types.md#templatesindependent-contractor-invoice) independent contractor invoice template
-  - [ ] [/templates/subcontractor-invoice](plan/types.md#templatessubcontractor-invoice) subcontractor invoice template
-  - [ ] [/templates/personal-invoice](plan/types.md#templatespersonal-invoice) invoice template for individuals
-  - [ ] [/templates/international-invoice](plan/types.md#templatesinternational-invoice) international invoice template
+- [x] **D1** · 16/16 live · 4 parked · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · languages: [L61–L70](#d1-in-every-language)
+  - [x] [/templates/deposit-invoice](https://invoicor.com/templates/deposit-invoice) deposit invoice template
+  - [x] [/templates/hourly-invoice](https://invoicor.com/templates/hourly-invoice) hourly invoice template
+  - [x] [/templates/retainer-invoice](https://invoicor.com/templates/retainer-invoice) retainer invoice template
+  - [x] [/templates/service-invoice](https://invoicor.com/templates/service-invoice) service invoice template
+  - [x] [/templates/sales-invoice](https://invoicor.com/templates/sales-invoice) sales invoice template
+  - [x] [/templates/commercial-invoice](https://invoicor.com/templates/commercial-invoice) commercial invoice template
+  - [x] [/templates/freelance-invoice](https://invoicor.com/templates/freelance-invoice) freelance invoice template
+  - [x] [/templates/subcontractor-invoice](https://invoicor.com/templates/subcontractor-invoice) subcontractor invoice template
+  - [x] [/templates/final-invoice](https://invoicor.com/templates/final-invoice) final invoice template
+  - [x] [/templates/milestone-invoice](https://invoicor.com/templates/milestone-invoice) milestone invoice template
+  - [x] [/templates/monthly-invoice](https://invoicor.com/templates/monthly-invoice) monthly invoice template
+  - [x] [/templates/labor-and-materials-invoice](https://invoicor.com/templates/labor-and-materials-invoice) labor and materials invoice template
+  - [x] [/templates/past-due-invoice](https://invoicor.com/templates/past-due-invoice) past due invoice template
+  - [x] [/templates/expense-reimbursement-invoice](https://invoicor.com/templates/expense-reimbursement-invoice) reimbursement invoice template
+  - [x] [/templates/no-vat-invoice](https://invoicor.com/templates/no-vat-invoice) invoice without vat template
+  - [x] [/templates/independent-contractor-invoice](https://invoicor.com/templates/independent-contractor-invoice) independent contractor invoice template
+  - ~~/templates/day-rate-invoice~~ parked: parked 2026-11-27 (demand gate): search results show one dedicated page, the rest fall back to hourly templates; the hourly page covers day rates. Local versions (Tagessatz, dagtarief) can return as local pages with their own evidence; was: local: Rechnung nach Tagessatz (de), factuur dagtarief (nl)
+  - ~~/templates/mileage-invoice~~ parked: parked 2026-11-27 (demand gate): results are mileage logs and employee reimbursement forms, not invoices; the expense reimbursement page covers billing miles to a client; was: en-only: a US habit
+  - ~~/templates/personal-invoice~~ parked: parked 2026-11-27 (demand gate): no site uses "invoice template for individuals"; results treat it as freelance or simple invoices (the freelance page). The big local searches (Rechnung als Privatperson, factuur als particulier) can return as local pages; was: local: Rechnung als Privatperson (de), factuur als particulier (nl): both big local searches
+  - ~~/templates/international-invoice~~ parked: parked 2026-11-27 (demand gate): intent split between commercial/export invoices (the commercial page) and currency tools; the freelance and commercial pages cover foreign clients. Local versions (Rechnung ins Ausland) can return as local pages; was: local: Rechnung ins Ausland / in Fremdwährung (de), factuur buitenland (nl)
 
 ### D2: Invoice types II: special cases (self-billing, revised, paid, PO …)
 
@@ -1717,18 +1717,18 @@ Industry pages 33–43 (built) · 11 pages
 
 ### D1 in every language
 
-Invoice types: the general documents · 17 pages
+Invoice types: the general documents · 14 pages
 
-- [ ] [**L61**](plan/languages/de.md#l61-d1-in-german) German · 0/17
-- [ ] [**L62**](plan/languages/es.md#l62-d1-in-spanish) Spanish · 0/17
-- [ ] [**L63**](plan/languages/fr.md#l63-d1-in-french) French · 0/17
-- [ ] [**L64**](plan/languages/nl.md#l64-d1-in-dutch) Dutch · 0/17
-- [ ] [**L65**](plan/languages/sv.md#l65-d1-in-swedish) Swedish · 0/17
-- [ ] [**L66**](plan/languages/da.md#l66-d1-in-danish) Danish · 0/17
-- [ ] [**L67**](plan/languages/nb.md#l67-d1-in-norwegian-bokmål) Norwegian (Bokmål) · 0/17
-- [ ] [**L68**](plan/languages/it.md#l68-d1-in-italian) Italian · 0/17
-- [ ] [**L69**](plan/languages/pt.md#l69-d1-in-portuguese) Portuguese · 0/17
-- [ ] [**L70**](plan/languages/pl.md#l70-d1-in-polish) Polish · 0/17
+- [ ] [**L61**](plan/languages/de.md#l61-d1-in-german) German · 0/14
+- [ ] [**L62**](plan/languages/es.md#l62-d1-in-spanish) Spanish · 0/14
+- [ ] [**L63**](plan/languages/fr.md#l63-d1-in-french) French · 0/14
+- [ ] [**L64**](plan/languages/nl.md#l64-d1-in-dutch) Dutch · 0/14
+- [ ] [**L65**](plan/languages/sv.md#l65-d1-in-swedish) Swedish · 0/14
+- [ ] [**L66**](plan/languages/da.md#l66-d1-in-danish) Danish · 0/14
+- [ ] [**L67**](plan/languages/nb.md#l67-d1-in-norwegian-bokmål) Norwegian (Bokmål) · 0/14
+- [ ] [**L68**](plan/languages/it.md#l68-d1-in-italian) Italian · 0/14
+- [ ] [**L69**](plan/languages/pt.md#l69-d1-in-portuguese) Portuguese · 0/14
+- [ ] [**L70**](plan/languages/pl.md#l70-d1-in-polish) Polish · 0/14
 
 ### B1 in every language
 

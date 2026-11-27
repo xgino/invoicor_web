@@ -158,7 +158,7 @@ the compare pages all read it.
 | A **payment link field**: you paste your own PayPal / Stripe / other link, shown on the PDF | Hold, route or take a cut of money; per-transaction fees |
 | 31 templates (21 free, 8 Starter, 2 Pro), your logo | Custom brand colors per template (unverified: don't claim) |
 | Saved clients and products; one-tap **duplicate** of an invoice. **Unlimited clients on every plan**, Free included (API `subscriptions/limits.py`: `clients: None` for all tiers; checked 2026-11-18. The code says "for now": re-check before each big launch) | Automatic recurring invoices or scheduled sending |
-| Subtotal, discount, **one tax rate per invoice** (inclusive or exclusive) | Per-line tax / taxable toggles per item |
+| Subtotal, discount (percent or fixed amount), **one tax rate per invoice** (inclusive or exclusive). Line prices are 0 or more in the app (API `invoices/views.py`, checked 2026-11-27); the free web generator also accepts negative prices (a credit, an earlier invoice subtracted) | Per-line tax / taxable toggles per item; negative line items in the app |
 | Status: draft, sent, paid, overdue, cancelled (a sent invoice is locked; duplicate to change it) | Read receipts, "client opened it" tracking, push notifications on payment, overdue reminders to clients |
 | Line items per invoice: Free 10, Starter 25, Pro 50 (API `subscriptions/limits.py`) | "Unlimited line items" |
 | 11 invoice languages, 38 currencies. **The app's own screens are in English** (checked in `invoicor_ios` 2026-11-18: no translations); only the invoices come in 11 languages | "135 currencies", "any currency"; "the app in your language" (say "invoices in your language") |

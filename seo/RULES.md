@@ -39,7 +39,9 @@ competitor facts without a source.
 - Only claims the app backs up (BRAND.md §10). No estimates or quotes, no recurring or scheduled
   invoices, no reminders, no photo attachments, no deposit or partial-payment tracking, no time
   tracking, no offline use, one tax rate per invoice. Repeat work = duplicate the last invoice and
-  change the date. A deposit = its own invoice, then a negative line or a note on the final invoice.
+  change the date. A deposit = its own invoice; the final invoice subtracts it with a negative line in
+  the free web generator, or in the app (where line prices can't be negative) by billing the balance
+  and naming the deposit invoice in the notes.
 - At most one "Can Invoicor do X? No." FAQ per page; spend the FAQs on the page's own questions.
 - Legal and tax points hedged ("check your state's rule") unless the brief gives a sourced fact; a
   specific law, rate or price only with its source and the date checked. Re-check those every 6
@@ -111,7 +113,7 @@ The plan's page count is a direction, not a quota.
   | Score | Means | Evidence (`score_why`) |
   |---|---|---|
   | 5 | Proven demand and a parent or a big search | Search Console impressions for the key, or a keyword tool's volume, plus why it's a parent |
-  | 4 | Demand found | Search Console queries, autocomplete, "People also ask" or a keyword tool |
+  | 4 | Demand found | Search Console queries, autocomplete, "People also ask", a keyword tool, or a results page full of pages dedicated to the key from established sites (name 2–3 and the date) |
   | 3 | Plausible, not checked | "unchecked" (or leave both blank) |
   | 2 | Niche or doubtful: build last | why (a sub-search, a small market, close to a live page) |
   | 1 | Weak: the demand gate will most likely park it | why |

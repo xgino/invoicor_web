@@ -336,6 +336,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Key:** invoice app for limo services
 - **Item:** I6 · **Score:** not scored · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: hourly with a minimum, gratuity, tolls and parking, waiting time, airport transfers. Show it as their real week of invoicing from the iPhone.
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”)
 - **Notes:** template: limousine-service
 
 #### /industries/photo-booth-rentals
@@ -655,6 +656,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Key:** invoice app for aquarium services
 - **Item:** I8 · **Score:** not scored · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: monthly service visits, livestock and equipment, setups. Show it as their real week of invoicing from the iPhone.
+- **Already covered (link, don't repeat):** /templates/service-invoice (“service invoice template”)
 - **Notes:** template: aquarium-maintenance
 
 #### /industries/surveyors
@@ -780,7 +782,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Item:** I11 · **Score:** not scored · **Intent:** app for my trade · **Languages:** en-only
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. US 1099 contractors: invoicing like a business (not an employee), monthly invoices to one client, expenses as lines; the app makes the invoice, taxes stay with your accountant (hedge).
 - **Don't write about:** The template's content (/templates/independent-contractor-invoice): link it, don't repeat it; features outside BRAND.md §10.
-- **Already covered (link, don't repeat):** /industries/general-contractors (“invoice app for contractors”)
+- **Already covered (link, don't repeat):** /templates/independent-contractor-invoice (“independent contractor invoice template”) · /industries/general-contractors (“invoice app for contractors”)
 - **Notes:** template: independent-contractor-invoice
 
 #### /industries/tradespeople
