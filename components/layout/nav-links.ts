@@ -8,14 +8,13 @@ export interface NavLink {
 }
 
 /**
- * Main navigation (ROADMAP chunks 18a, 35e, T2): five items. Industries and Compare live in the
+ * Main navigation (ROADMAP chunks 18a, 35e, T2): four items (the blog link went 2026-11-27, R10). Industries and Compare live in the
  * footer and on the hubs; the generator is the first of the free tools.
  */
 export const NAV_LINKS: readonly NavLink[] = [
   { href: "/templates", label: "Templates" },
   { href: "/tools", label: "Free tools" },
   { href: "/#pricing", label: "Pricing" },
-  { href: "https://learn.invoicor.com/", label: "Blog" },
   { href: "/help", label: "Help" },
 ] as const;
 

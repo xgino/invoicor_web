@@ -6,7 +6,7 @@ import { Logo } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
-import { BLOG_URL, CONTACT_EMAIL } from "@/lib/config";
+import { CONTACT_EMAIL } from "@/lib/config";
 import { getTemplates } from "@/lib/content";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
@@ -123,16 +123,6 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
               <AllLink href="/templates">All templates</AllLink>
             </Column>
             <Column title="Resources">
-              <li>
-                <a
-                  href={BLOG_URL}
-                  className={LINK}
-                  data-track="footer_click"
-                  data-track-link="blog"
-                >
-                  Blog &amp; guides
-                </a>
-              </li>
               <Item href="/help" track="help">
                 Help &amp; FAQ
               </Item>
@@ -263,11 +253,6 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               <EnglishItem href="/templates">{t.templates}</EnglishItem>
               <EnglishItem href="/industries">{t.industries}</EnglishItem>
               <EnglishItem href="/compare">{t.compare}</EnglishItem>
-              <li>
-                <a href={BLOG_URL} hrefLang="en" className={LINK}>
-                  Blog
-                </a>
-              </li>
             </Column>
             <div className="col-span-2 sm:col-span-1">
               <LanguageSwitcher

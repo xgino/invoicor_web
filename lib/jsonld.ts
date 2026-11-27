@@ -7,7 +7,6 @@ import { PLANS, PRICING } from "./pricing";
 import {
   APP_STORE_APP_NAME,
   APP_STORE_URL,
-  BLOG_URL,
   CONTACT_EMAIL,
   SITE_NAME,
   SITE_URL,
@@ -26,20 +25,6 @@ export function organizationLd(): JsonLd {
     logo: absoluteUrl("/icons/icon-512.png"),
     email: CONTACT_EMAIL,
     sameAs: [APP_STORE_URL],
-  };
-}
-
-/** The blog on learn.invoicor.com, published by the same organization (ROADMAP L5). */
-export function blogLd(): JsonLd {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": `${BLOG_URL}#blog`,
-    name: "Invoicor Learn",
-    url: BLOG_URL,
-    description: "How-to articles about invoicing and the Invoicor app.",
-    inLanguage: "en",
-    publisher: { "@id": `${SITE_URL}/#organization` },
   };
 }
 

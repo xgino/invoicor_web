@@ -1,4 +1,4 @@
-import { APP_STORE_URL, BLOG_URL, CONTACT_EMAIL, absoluteUrl } from "@/lib/config";
+import { APP_STORE_URL, CONTACT_EMAIL, absoluteUrl } from "@/lib/config";
 import { LOCALE_INFO, PREFIXED_LOCALES } from "@/lib/i18n/config";
 import { ROUTES } from "@/lib/i18n/routes";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
@@ -20,7 +20,6 @@ export function GET() {
 
 - App Store: ${APP_STORE_URL}
 - Website: ${absoluteUrl("/")}
-- Blog with how-to articles: ${BLOG_URL}
 - Contact: ${CONTACT_EMAIL}
 
 ## Main pages
@@ -38,11 +37,6 @@ ${list([
   { title: "Help and FAQ", path: "/help" },
   { title: "Android (coming soon)", path: "/android" },
 ])}
-
-## Guides and how-to articles
-
-The blog at ${BLOG_URL} (a separate site, same company) has how-to articles about invoicing and the
-Invoicor app. Its own sitemap: ${BLOG_URL}sitemap.xml
 
 ## Other languages
 
