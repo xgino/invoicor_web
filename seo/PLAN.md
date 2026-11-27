@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**207 / 4,000 pages live** (5%) · planned: 958 English and local pages + 8,150 language pages · **9,315 when everything is built** (fewer after the demand gate parks the weak ones)
+**207 / 4,000 pages live** (5%) · planned: 968 English and local pages + 8,229 language pages · **9,404 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -107,7 +107,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 |---|---|---|---|---|
 | [Trade templates](#trade-templates-t) | T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 T14 T15 T16 T17 T18 T19 T20 | 50 | 263 | 0/200 done |
 | [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12 B13 B14 B15 | 0 | 177 | 0/150 done |
-| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
+| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 D2 | 0 | 30 | 0/20 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
@@ -115,7 +115,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L700 | 80 | 8150 | |
+| [Languages](#languages-l) | L1–L710 | 80 | 8229 | |
 
 ## Suggested order
 
@@ -123,7 +123,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2**
 
 ## Tasks (S): code, no pages
 
@@ -798,6 +798,21 @@ Direction (what these pages can and can't do) and every brief: [plan/types.md](p
   - [ ] [/templates/subcontractor-invoice](plan/types.md#templatessubcontractor-invoice) subcontractor invoice template
   - [ ] [/templates/personal-invoice](plan/types.md#templatespersonal-invoice) invoice template for individuals
   - [ ] [/templates/international-invoice](plan/types.md#templatesinternational-invoice) international invoice template
+
+### D2: Invoice types II: special cases (self-billing, revised, paid, PO …)
+
+- [ ] **D2** · 0/10 live · 1 parked · languages: [L701–L710](#d2-in-every-language)
+  - [ ] [/templates/self-billing-invoice](plan/types.md#templatesself-billing-invoice) self billing invoice template
+  - [ ] [/templates/itemized-invoice](plan/types.md#templatesitemized-invoice) itemized invoice template
+  - [ ] [/templates/paid-invoice](plan/types.md#templatespaid-invoice) paid invoice template
+  - [ ] [/templates/revised-invoice](plan/types.md#templatesrevised-invoice) revised invoice template
+  - [ ] [/templates/cancellation-fee-invoice](plan/types.md#templatescancellation-fee-invoice) cancellation fee invoice template
+  - [ ] [/templates/limited-company-invoice](plan/types.md#templateslimited-company-invoice) limited company invoice template
+  - [ ] [/templates/purchase-order-invoice](plan/types.md#templatespurchase-order-invoice) purchase order invoice template
+  - [ ] [/templates/nonprofit-invoice](plan/types.md#templatesnonprofit-invoice) nonprofit invoice template
+  - [ ] [/templates/pro-bono-invoice](plan/types.md#templatespro-bono-invoice) pro bono invoice template
+  - [ ] [/templates/royalty-invoice](plan/types.md#templatesroyalty-invoice) royalty invoice template
+  - ~~/de/vorlagen/korrigierte-rechnung~~ parked: owned by /de/rechnung-korrigieren (LO7): a German version would compete with it
 
 ## Industry pages ("invoice app for …") (I)
 
@@ -2692,6 +2707,21 @@ Pricing calculators III: makers and production · 7 pages
 - [ ] [**L698**](plan/languages/it.md#l698-tl9-in-italian) Italian · 0/7
 - [ ] [**L699**](plan/languages/pt.md#l699-tl9-in-portuguese) Portuguese · 0/7
 - [ ] [**L700**](plan/languages/pl.md#l700-tl9-in-polish) Polish · 0/7
+
+### D2 in every language
+
+Invoice types II: special cases (self-billing, revised, paid, PO …) · 8 pages
+
+- [ ] [**L701**](plan/languages/de.md#l701-d2-in-german) German · 0/7
+- [ ] [**L702**](plan/languages/es.md#l702-d2-in-spanish) Spanish · 0/8
+- [ ] [**L703**](plan/languages/fr.md#l703-d2-in-french) French · 0/8
+- [ ] [**L704**](plan/languages/nl.md#l704-d2-in-dutch) Dutch · 0/8
+- [ ] [**L705**](plan/languages/sv.md#l705-d2-in-swedish) Swedish · 0/8
+- [ ] [**L706**](plan/languages/da.md#l706-d2-in-danish) Danish · 0/8
+- [ ] [**L707**](plan/languages/nb.md#l707-d2-in-norwegian-bokmål) Norwegian (Bokmål) · 0/8
+- [ ] [**L708**](plan/languages/it.md#l708-d2-in-italian) Italian · 0/8
+- [ ] [**L709**](plan/languages/pt.md#l709-d2-in-portuguese) Portuguese · 0/8
+- [ ] [**L710**](plan/languages/pl.md#l710-d2-in-polish) Polish · 0/8
 
 ## Not in an item yet
 

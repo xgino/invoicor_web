@@ -6750,3 +6750,67 @@
 - **Search words:** "[laser engraving pricing, in German] Rechner"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The pro enters their own rates (defaults are labelled examples, no market prices as facts); 'Put on an invoice' fills the generator. Machine minutes × rate, material, setup, quantity breaks.
 - **Don't:** What /templates/laser-engraving already explains (link it); rates without a source and date.
+
+## L701: D2 in German
+
+[ ] Invoice types II: special cases (self-billing, revised, paid, PO …) · 0/7 live in de
+
+- **For every template (invoice type) page:** This document under that country's rules (the local terms list): what it must show there, the law or tax office as the source with the date checked.
+
+### /templates/self-billing-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [self billing invoice template](../types.md#templatesself-billing-invoice) (planned: write the English page first)
+- **Search words:** the German term for "self billing invoice template"; known local terms: Gutschrift im Sinne des UStG (de), self-billing / autofacturation (fr): check the local word
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The customer writes the invoice for the supplier (common with subcontractors, couriers, growers, platforms): the self-billing agreement it needs, the words 'self-billing' on the invoice (UK: HMRC VAT Notice 700/62; EU: Art. 224 VAT Directive: cite and date), the supplier's VAT number, who keeps what. Be honest: Invoicor has no 'self-billing' document type; say what to write in the notes. Sample: a courier firm self-billing a driver for a month of drops.
+- **Don't:** The subcontractor invoice (/templates/subcontractor-invoice: link it); the reverse charge (/reverse-charge-invoice); credit notes (/free-credit-note-generator).
+
+### /templates/itemized-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [itemized invoice template](../types.md#templatesitemized-invoice) (planned: write the English page first)
+- **Search words:** the German term for "itemized invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Every part, hour and fee on its own line with quantity, unit and unit price: when clients, insurers or the tax office ask for it, how to group lines so it stays readable, discounts per line vs on the total (the app has one discount on the total and one tax rate per invoice: say so), line limits (Free 10, Starter 25, Pro 50: BRAND.md). Sample: a 14-line appliance repair for an insurance claim.
+- **Don't:** Labor and materials split (/templates/labor-and-materials-invoice: link it); trade templates' own line items.
+
+### /templates/paid-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [paid invoice template](../types.md#templatespaid-invoice) (planned: write the English page first)
+- **Search words:** the German term for "paid invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): An invoice that shows it's settled: 'PAID' with the date and method, amount paid and balance zero, when a client wants a paid invoice instead of a receipt (expense claims, warranties), cash sales. The app has a paid status (BRAND.md; check whether the PDF shows it before claiming). Sample: a $640 job paid by card on the day.
+- **Don't:** The receipt (/free-receipt-generator: link it, and say the difference in two lines); the final invoice after a deposit (/templates/final-invoice).
+
+- ~~/templates/revised-invoice~~ skipped in de: owned by /de/rechnung-korrigieren (LO7): a German version would compete with it
+
+### /templates/cancellation-fee-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [cancellation fee invoice template](../types.md#templatescancellation-fee-invoice) (planned: write the English page first)
+- **Search words:** the German term for "cancellation fee invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Billing a client who cancels late or doesn't show: the clause it rests on (quote it on the invoice), kept deposits vs a new fee, whether VAT or sales tax applies to cancellation fees (EU: often yes since the 2021 CJEU rulings: hedge, check per country), reasonable amounts. Sample: a photographer's 50% fee for a wedding cancelled 3 weeks out.
+- **Don't:** Deposits (/templates/deposit-invoice: link it); past due invoices (/templates/past-due-invoice).
+
+### /templates/purchase-order-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [purchase order invoice template](../types.md#templatespurchase-order-invoice) (planned: write the English page first)
+- **Search words:** the German term for "purchase order invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Billing a company that issued a purchase order: the PO number where their accounts team looks for it, the same item descriptions and prices as the PO, partial deliveries against one PO, why invoices without a PO get stuck (three-way match: hedge). Where to put the PO number in Invoicor (check: a reference field or the notes). Sample: a print job delivered in two parts against one PO.
+- **Don't:** Purchase orders themselves (not an Invoicor document); net terms (/tools/due-date-calculator: link it).
+
+### /templates/pro-bono-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [pro bono invoice template](../types.md#templatespro-bono-invoice) (planned: write the English page first)
+- **Search words:** the German term for "pro bono invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Showing the value of free work: the normal price per line, a 100% discount, a total of 0, why (the client sees the value; some charities want it for their records; your own records). Tax: donated services are usually not deductible as a gift (US IRS: hedge, cite); VAT on free services varies (hedge). Sample: a designer's free logo for a local food bank.
+- **Don't:** Nonprofit invoices (/templates/nonprofit-invoice: link it); discounts in general (/tools/discount-calculator).
+
+### /templates/royalty-invoice → German
+
+- [ ] **Live in de**
+- **English page:** [royalty invoice template](../types.md#templatesroyalty-invoice) (planned: write the English page first)
+- **Search words:** the German term for "royalty invoice template"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Billing for use rather than work: the licence (what, where, how long), the royalty basis (a fixed fee, per unit sold, or a percentage of a reported amount, with the period and the statement it rests on), withholding tax on cross-border royalties (hedge, treaties), VAT on licences (a service: reverse charge B2B in the EU). Sample: a photographer's licence for a year of web use plus a quarterly royalty.
+- **Don't:** Photography templates (link /templates/photography); international invoices (/templates/international-invoice).

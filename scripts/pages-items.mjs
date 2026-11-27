@@ -120,6 +120,7 @@ export const ITEMS = [
     title: "Invoice types: the general documents",
     text: "the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first",
   },
+  { id: "D2", title: "Invoice types II: special cases (self-billing, revised, paid, PO …)" },
   { id: "C1", title: "Compare pages (built, English only)" },
   { id: "C2", title: "20 more compares (English only)" },
   { id: "C3", title: "UK accounting and banking apps" },
@@ -269,6 +270,7 @@ export const LANGUAGE_SOURCES = [
   "TL7",
   "TL8",
   "TL9",
+  "D2",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */
@@ -362,6 +364,7 @@ export const ORDER = [
   "C9",
   "C10",
   "C11",
+  "D2",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */
