@@ -6820,3 +6820,49 @@
 - **Search words:** the Swedish term for "royalty invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Billing for use rather than work: the licence (what, where, how long), the royalty basis (a fixed fee, per unit sold, or a percentage of a reported amount, with the period and the statement it rests on), withholding tax on cross-border royalties (hedge, treaties), VAT on licences (a service: reverse charge B2B in the EU). Sample: a photographer's licence for a year of web use plus a quarterly royalty.
 - **Don't:** Photography templates (link /templates/photography); international invoices (/templates/international-invoice).
+
+## L715: G2 in Swedish
+
+[ ] Document generators II (purchase order, delivery note, statement, debit note, work order) · 0/5 live in sv
+
+- **For every generator page:** The local document name and its rules there; the local generator presets.
+
+### /free-purchase-order-generator → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [purchase order generator](../generators.md#free-purchase-order-generator) (planned: write the English page first)
+- **Search words:** the Swedish term for "purchase order generator"; known local terms: Bestellung (de), bon de commande (fr), inkooporder (nl): check the local word
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A PO a small business sends to a supplier: PO number, supplier and ship-to address, items with quantities and agreed prices, delivery date, terms; no tax invoice wording. Show how the supplier's invoice then quotes the PO number (link /templates/purchase-order-invoice).
+- **Don't:** Invoicing against a PO (/templates/purchase-order-invoice: link it both ways).
+
+### /free-delivery-note-generator → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [delivery note generator](../generators.md#free-delivery-note-generator) (planned: write the English page first)
+- **Search words:** the Swedish term for "delivery note generator"; known local terms: Lieferschein (de), bon de livraison (fr), pakbon (nl), albarán (es): big local searches
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A delivery note or packing slip: what was delivered, quantities, the order or PO number, no prices (or an option to show them), a line for the receiver's signature and date (printed, not e-signed: the generator has no e-signatures). How it differs from the invoice that follows.
+- **Don't:** Customs documents (/templates/commercial-invoice: link it).
+
+### /free-statement-of-account-generator → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [statement of account generator](../generators.md#free-statement-of-account-generator) (planned: write the English page first)
+- **Search words:** the Swedish term for "statement of account generator"; known local terms: Kontoauszug means a bank statement in German: use Offene-Posten-Liste / Saldenbestätigung (check)
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A statement for one client over a period: opening balance, each invoice and payment by date and number, the balance due, an ageing line (current, 30, 60, 90+ days). The user types the invoices in (no link to the app's data: say so). When to send one (month end, before chasing).
+- **Don't:** Re-sending one overdue invoice (/templates/past-due-invoice: link it); DSO math (/tools/dso-calculator).
+
+### /free-debit-note-generator → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [debit note generator](../generators.md#free-debit-note-generator) (planned: write the English page first)
+- **Search words:** the Swedish term for "debit note generator"; known local terms: note de débit (fr, Belgium), debetnota (nl), nota de débito (es)
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A debit note: raising the amount of an earlier invoice (an extra charge, a price correction upward) or, in some countries, the buyer's note to the seller for a return (India GST: both uses, check; say which one the page means). It refers to the original invoice number. Pair it with the credit note.
+- **Don't:** Credit notes (/free-credit-note-generator: link it both ways); revised invoices (/templates/revised-invoice).
+
+### /free-work-order-generator → Swedish
+
+- [ ] **Live in sv**
+- **English page:** [work order generator](../generators.md#free-work-order-generator) (planned: write the English page first)
+- **Search words:** the Swedish term for "work order generator"; known local terms: Arbeitsauftrag / Auftragszettel (de), bon d'intervention (fr), werkbon (nl): check
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A work order for a job: client and site, the work to do, parts and hours used, the technician, a line for the client's signature on paper; then turn it into an invoice in one click (prefill the invoice generator with the lines). For trades: plumbing, HVAC, repairs.
+- **Don't:** The estimate before the job (/free-estimate-generator); labor and materials invoices (/templates/labor-and-materials-invoice: link it).

@@ -145,6 +145,11 @@ export const ITEMS = [
   { id: "G0", title: "The free invoice generator (built)" },
   { id: "G1", title: "Document generators (receipt, estimate, proforma, credit note)" },
   {
+    id: "G2",
+    title:
+      "Document generators II (purchase order, delivery note, statement, debit note, work order)",
+  },
+  {
     id: "CT1",
     title: "Country pages I (English-speaking countries + EU reverse charge)",
     text: "needs task S3",
@@ -271,6 +276,7 @@ export const LANGUAGE_SOURCES = [
   "TL8",
   "TL9",
   "D2",
+  "G2",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */
@@ -365,6 +371,7 @@ export const ORDER = [
   "C10",
   "C11",
   "D2",
+  "G2",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

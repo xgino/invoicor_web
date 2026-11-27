@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**207 / 4,000 pages live** (5%) · planned: 968 English and local pages + 8,229 language pages · **9,404 when everything is built** (fewer after the demand gate parks the weak ones)
+**207 / 4,000 pages live** (5%) · planned: 973 English and local pages + 8,279 language pages · **9,459 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -113,9 +113,9 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
-| [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
+| [Generators (other documents)](#generators-other-documents-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L710 | 80 | 8229 | |
+| [Languages](#languages-l) | L1–L720 | 80 | 8279 | |
 
 ## Suggested order
 
@@ -123,7 +123,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2**
 
 ## Tasks (S): code, no pages
 
@@ -1630,6 +1630,15 @@ Direction (what these pages can and can't do) and every brief: [plan/generators.
   - [ ] [/free-proforma-invoice-generator](plan/generators.md#free-proforma-invoice-generator) proforma invoice generator
   - [ ] [/free-credit-note-generator](plan/generators.md#free-credit-note-generator) credit note generator
 
+### G2: Document generators II (purchase order, delivery note, statement, debit note, work order)
+
+- [ ] **G2** · 0/5 live · languages: [L711–L720](#g2-in-every-language)
+  - [ ] [/free-purchase-order-generator](plan/generators.md#free-purchase-order-generator) purchase order generator
+  - [ ] [/free-delivery-note-generator](plan/generators.md#free-delivery-note-generator) delivery note generator
+  - [ ] [/free-statement-of-account-generator](plan/generators.md#free-statement-of-account-generator) statement of account generator
+  - [ ] [/free-debit-note-generator](plan/generators.md#free-debit-note-generator) debit note generator
+  - [ ] [/free-work-order-generator](plan/generators.md#free-work-order-generator) work order generator
+
 ## Core pages, hubs, trust and legal (P)
 
 Direction (what these pages can and can't do) and every brief: [plan/core.md](plan/core.md)
@@ -2722,6 +2731,21 @@ Invoice types II: special cases (self-billing, revised, paid, PO …) · 8 pages
 - [ ] [**L708**](plan/languages/it.md#l708-d2-in-italian) Italian · 0/8
 - [ ] [**L709**](plan/languages/pt.md#l709-d2-in-portuguese) Portuguese · 0/8
 - [ ] [**L710**](plan/languages/pl.md#l710-d2-in-polish) Polish · 0/8
+
+### G2 in every language
+
+Document generators II (purchase order, delivery note, statement, debit note, work order) · 5 pages
+
+- [ ] [**L711**](plan/languages/de.md#l711-g2-in-german) German · 0/5
+- [ ] [**L712**](plan/languages/es.md#l712-g2-in-spanish) Spanish · 0/5
+- [ ] [**L713**](plan/languages/fr.md#l713-g2-in-french) French · 0/5
+- [ ] [**L714**](plan/languages/nl.md#l714-g2-in-dutch) Dutch · 0/5
+- [ ] [**L715**](plan/languages/sv.md#l715-g2-in-swedish) Swedish · 0/5
+- [ ] [**L716**](plan/languages/da.md#l716-g2-in-danish) Danish · 0/5
+- [ ] [**L717**](plan/languages/nb.md#l717-g2-in-norwegian-bokmål) Norwegian (Bokmål) · 0/5
+- [ ] [**L718**](plan/languages/it.md#l718-g2-in-italian) Italian · 0/5
+- [ ] [**L719**](plan/languages/pt.md#l719-g2-in-portuguese) Portuguese · 0/5
+- [ ] [**L720**](plan/languages/pl.md#l720-g2-in-polish) Polish · 0/5
 
 ## Not in an item yet
 
