@@ -19,6 +19,22 @@ export const API_URL = stripTrailingSlash(
 export const SITE_NAME = "Invoicor";
 export const CONTACT_EMAIL = "info@invoicor.com";
 
+/**
+ * Company details for /about, /contact and the footer (ROADMAP X7, decision D6). Empty until
+ * the owner sends them: a field that's empty isn't shown, so nothing is ever guessed. A Dutch
+ * business must show its KvK number on its website: fill `kvk` before a big launch.
+ */
+export const COMPANY = {
+  /** Where the business is run from, as the terms and privacy policy say. */
+  country: "the Netherlands",
+  legalName: "",
+  kvk: "",
+  vat: "",
+  city: "",
+  /** 3–5 sentences by the owner: who makes Invoicor and why. Shown on /about when filled. */
+  story: "",
+};
+
 export const APP_STORE_ID = "6761840276";
 export const APP_STORE_APP_NAME = "Invoicor: Invoice Generator";
 /**

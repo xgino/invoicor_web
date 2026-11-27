@@ -1228,14 +1228,14 @@
 ### /about → French
 
 - [ ] **Live in fr**
-- **English page:** [about invoicor](../core.md#about) (planned: write the English page first)
+- **English page:** [about invoicor](https://invoicor.com/about) (live: use it as the source)
 - **Search words:** the French term for "about invoicor"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
 
 ### /contact → French
 
 - [ ] **Live in fr**
-- **English page:** [contact invoicor](../core.md#contact) (planned: write the English page first)
+- **English page:** [contact invoicor](https://invoicor.com/contact) (live: use it as the source)
 - **Search words:** the French term for "contact invoicor"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).
 

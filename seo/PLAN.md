@@ -8,7 +8,7 @@
 > language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**223 / 4,000 pages live** (6%) · planned: 957 English and local pages + 8,269 language pages · **9,449 when everything is built** (fewer after the demand gate parks the weak ones)
+**225 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,269 language pages · **9,449 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -40,12 +40,12 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators](#generators-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 9 | 6 | 0/30 done |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 11 | 4 | 0/30 done |
 | [Languages](#languages-l) | L1–L730 | 80 | 8269 | |
 
 ## Best next (by score)
 
-The items that can be built now (no task in the way), best first: the average `score` of their planned pages (blank counts as 3; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. 0 of 957 planned pages are scored.
+The items that can be built now (no task in the way), best first: the average `score` of their planned pages (blank counts as 3; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. 0 of 955 planned pages are scored.
 
 | # | Item | Pages to build | Score | Scored |
 |---|---|---|---|---|
@@ -53,19 +53,19 @@ The items that can be built now (no task in the way), best first: the average `s
 | 2 | [T4](#t4-10-trades-notary-home-inspection-it-services-) 10 trades: notary, home inspection, IT services … | 10 | 3.0 | 0/10 |
 | 3 | [I4](#i4-industry-pages-for-t4s-trades) Industry pages for T4's trades | 10 | 3.0 | 0/10 |
 | 4 | [TL1](#tl1-free-tools-i) Free tools I | 11 | 3.0 | 0/11 |
-| 5 | [P1](#p1-trust-pages-about-contact-e-e-a-t) Trust pages: about, contact (E-E-A-T) | 2 | 3.0 | 0/2 |
-| 6 | [I10](#i10-one-trade-per-page-split-the-combined-industry-pages) One trade per page: split the combined industry pages | 6 | 3.0 | 0/6 |
-| 7 | [I11](#i11-who-invoices-self-employed-freelancers-sellers) Who invoices: self-employed, freelancers, sellers | 9 | 3.0 | 0/9 |
-| 8 | [T5](#t5-home-and-property-services) Home and property services | 20 | 3.0 | 0/20 |
-| 9 | [I5](#i5-industry-pages-for-t5s-trades) Industry pages for T5's trades | 20 | 3.0 | 0/20 |
-| 10 | [C2](#c2-20-more-compares-english-only) 20 more compares (English only) | 20 | 3.0 | 0/20 |
-| 11 | [B2](#b2-billing-types-ii) Billing types II | 20 | 3.0 | 0/20 |
-| 12 | [T6](#t6-makers-repair-transport-events) Makers, repair, transport, events | 20 | 3.0 | 0/20 |
-| 13 | [I6](#i6-industry-pages-for-t6s-trades) Industry pages for T6's trades | 20 | 3.0 | 0/20 |
-| 14 | [LO2](#lo2-local-rivals-in-their-own-language-hl9) Local rivals, in their own language (HL9) | 20 | 3.0 | 0/20 |
-| 15 | [TL2](#tl2-free-tools-ii) Free tools II | 10 | 3.0 | 0/10 |
+| 5 | [I10](#i10-one-trade-per-page-split-the-combined-industry-pages) One trade per page: split the combined industry pages | 6 | 3.0 | 0/6 |
+| 6 | [I11](#i11-who-invoices-self-employed-freelancers-sellers) Who invoices: self-employed, freelancers, sellers | 9 | 3.0 | 0/9 |
+| 7 | [T5](#t5-home-and-property-services) Home and property services | 20 | 3.0 | 0/20 |
+| 8 | [I5](#i5-industry-pages-for-t5s-trades) Industry pages for T5's trades | 20 | 3.0 | 0/20 |
+| 9 | [C2](#c2-20-more-compares-english-only) 20 more compares (English only) | 20 | 3.0 | 0/20 |
+| 10 | [B2](#b2-billing-types-ii) Billing types II | 20 | 3.0 | 0/20 |
+| 11 | [T6](#t6-makers-repair-transport-events) Makers, repair, transport, events | 20 | 3.0 | 0/20 |
+| 12 | [I6](#i6-industry-pages-for-t6s-trades) Industry pages for T6's trades | 20 | 3.0 | 0/20 |
+| 13 | [LO2](#lo2-local-rivals-in-their-own-language-hl9) Local rivals, in their own language (HL9) | 20 | 3.0 | 0/20 |
+| 14 | [TL2](#tl2-free-tools-ii) Free tools II | 10 | 3.0 | 0/10 |
+| 15 | [G1](#g1-document-generators-receipt-estimate-proforma-credit-note) Document generators (receipt, estimate, proforma, credit note) | 4 | 3.0 | 0/4 |
 
-And 55 more ready items. Waiting for a task: **S4** (TL3, TL7, TL8, TL9) · **S3** (CT1, CT2, CT3, CT4, CT5, CT6, LO1, LO3, LO4, LO5, LO6, LO7, LO8).
+And 54 more ready items. Waiting for a task: **S4** (TL3, TL7, TL8, TL9) · **S3** (CT1, CT2, CT3, CT4, CT5, CT6, LO1, LO3, LO4, LO5, LO6, LO7, LO8).
 
 ## Suggested order
 
@@ -73,7 +73,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → ~~D1~~ → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2** → **P2**
+**S1** → ~~D1~~ → **B1** → **T4** → **I4** → **TL1** → ~~P1~~ → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2** → **P2**
 
 ## Tasks (S): code, no pages
 
@@ -1608,9 +1608,9 @@ Rules: [RULES.md § P · Core pages, hubs, trust and legal](RULES.md#p--core-pag
 
 ### P1: Trust pages: about, contact (E-E-A-T)
 
-- [ ] **P1** · 0/2 live · languages: [L121–L130](#p1-in-every-language)
-  - [ ] [/about](plan/core.md#about) about invoicor
-  - [ ] [/contact](plan/core.md#contact) contact invoicor
+- [x] **P1** · 2/2 live · languages: [L121–L130](#p1-in-every-language)
+  - [x] [/about](https://invoicor.com/about) about invoicor
+  - [x] [/contact](https://invoicor.com/contact) contact invoicor
 
 ### P2: Features, security, the countries hub and the German Impressum
 

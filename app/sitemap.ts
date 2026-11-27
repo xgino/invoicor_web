@@ -50,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     page("/help", CONTENT_UPDATED_AT.site),
     page("/android", CONTENT_UPDATED_AT.site),
     page("/affiliate", CONTENT_UPDATED_AT.site),
+    page("/about", "2026-11-27"),
+    page("/contact", "2026-11-27"),
     page("/terms", CONTENT_UPDATED_AT.legal),
     page("/privacy", CONTENT_UPDATED_AT.privacy),
     ...translated,

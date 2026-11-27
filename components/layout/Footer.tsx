@@ -143,6 +143,12 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
               </Item>
             </Column>
             <Column title="Company">
+              <Item href="/about" track="about">
+                About
+              </Item>
+              <Item href="/contact" track="contact">
+                Contact
+              </Item>
               <Item href="/affiliate" track="affiliate">
                 Affiliate program ({AFFILIATE.commission}%)
               </Item>

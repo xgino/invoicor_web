@@ -7,13 +7,13 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**223 live pages** · last change 2026-11-27 · 964 more planned in [PLAN.md](PLAN.md)
+**225 live pages** · last change 2026-11-27 · 962 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
 | Section | Live | Page types |
 |---|---|---|
-| other English pages | 7 | legal 2, home 1, generator 1, support 1, program 1, android 1 |
+| other English pages | 9 | trust 2, legal 2, home 1, generator 1, support 1, program 1, android 1 |
 | /compare | 21 | compare 20, hub 1 |
 | /industries | 44 | industry 43, hub 1 |
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
@@ -46,12 +46,13 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 | compare | en-only | 20 | 0 |  |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
+| trust | yes | 2 | 0 | 20 |
 | legal | yes | 2 | 0 | 20 |
 | tool | yes | 4 | 4 |  |
 | android | yes | 1 | 1 |  |
 | template (invoice type) | yes, en-only | 16 | 0 | 140 |
 
-**1120 language versions still to write** for live pages.
+**1140 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
@@ -65,6 +66,7 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
+| trust | 2 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | android | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -74,7 +76,7 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-27 | 16 | template (invoice type) 16 |
+| 2026-11-27 | 18 | template (invoice type) 16, trust 2 |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, home 1, generator 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, home 10, generator 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -91,13 +93,15 @@ They may compete for the same search: merge them, or give one a clearly differen
 
 ## All pages
 
-### other English pages (7)
+### other English pages (9)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | / | invoice app iphone | home | yes | 2026-11-18 |
+| /about | about invoicor | trust | yes | 2026-11-27 |
 | /affiliate | invoicor affiliate program | program | yes | 2026-11-18 |
 | /android | invoicor for android: coming soon | android | yes | 2026-11-18 |
+| /contact | contact invoicor | trust | yes | 2026-11-27 |
 | /free-invoice-generator | free invoice generator | generator | yes | 2026-11-18 |
 | /help | invoicor help | support | yes | 2026-11-18 |
 | /privacy | invoicor privacy policy | legal | yes | 2026-11-18 |

@@ -3,17 +3,17 @@
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
-**9 done · 10 planned**
+**11 done · 8 planned**
 
 ## Direction
 
 URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § P · Core pages, hubs, trust and legal](../RULES.md#p--core-pages-hubs-trust-and-legal).
 
-## Done (9): don't build these again
+## Done (11): don't build these again
 
-`/` invoice app iphone · `/templates` invoice templates · `/industries` invoicing software by industry · `/compare` invoice app alternatives · `/help` invoicor help · `/affiliate` invoicor affiliate program · `/terms` invoicor terms of service · `/privacy` invoicor privacy policy · `/android` invoicor for android: coming soon
+`/` invoice app iphone · `/templates` invoice templates · `/industries` invoicing software by industry · `/compare` invoice app alternatives · `/help` invoicor help · `/affiliate` invoicor affiliate program · `/about` about invoicor · `/contact` contact invoicor · `/terms` invoicor terms of service · `/privacy` invoicor privacy policy · `/android` invoicor for android: coming soon
 
-## Planned (10)
+## Planned (8)
 
 ### on hold: file downloads (53) (4)
 
@@ -45,22 +45,6 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Write about:** On hold: the generator already makes PDFs; check for overlap before building (chunk 53).
 - **Don't write about:** The free generator (/free-invoice-generator).
 - **Notes:** Big-volume quick wins
-
-### Item P1 (2)
-
-#### /about
-
-- **Key:** about invoicor
-- **Item:** P1 · **Score:** not scored · **Intent:** brand / trust · **Languages:** yes
-- **Write about:** Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
-- **Notes:** E-E-A-T
-
-#### /contact
-
-- **Key:** contact invoicor
-- **Item:** P1 · **Score:** not scored · **Intent:** brand / trust · **Languages:** yes
-- **Write about:** How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).
-- **Notes:** E-E-A-T
 
 ### Item P2 (4)
 

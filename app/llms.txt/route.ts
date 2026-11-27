@@ -62,6 +62,8 @@ ${list(getComparisons().map((c) => ({ title: c.h1, path: `/compare/${c.slug}` })
 ## Optional
 
 ${list([
+  { title: "About Invoicor", path: "/about" },
+  { title: "Contact", path: "/contact" },
   { title: "Affiliate program", path: "/affiliate" },
   { title: "Terms of service", path: "/terms" },
   { title: "Privacy policy", path: "/privacy" },

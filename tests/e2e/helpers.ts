@@ -15,6 +15,8 @@ export const PAGE_TYPES = {
   help: "/help",
   android: "/android",
   affiliate: "/affiliate",
+  about: "/about",
+  contact: "/contact",
   privacy: "/privacy",
   terms: "/terms",
 };

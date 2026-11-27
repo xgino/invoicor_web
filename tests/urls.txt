@@ -38,6 +38,8 @@
 /help
 /android
 /affiliate
+/about
+/contact
 /terms
 /privacy
 /templates/electrician
