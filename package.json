@@ -24,7 +24,8 @@
     "check": "npm run lint && npm run typecheck && npm run content:check && npm run test:unit && npm run build && npm run test:site && npm run test:e2e",
     "prepare": "husky",
     "pages": "node scripts/pages.mjs",
-    "pages:category": "node scripts/pages-category.mjs"
+    "pages:category": "node scripts/pages-category.mjs",
+    "pages:page": "node scripts/pages-page.mjs"
   },
   "dependencies": {
     "jspdf": "4.2.1",

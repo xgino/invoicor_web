@@ -8,7 +8,10 @@ import { describe, expect, it } from "vitest";
 import {
   LOCALIZE,
   SCORES,
+  groupOf,
   parseCsv,
+  parseId,
+  parseRange,
   renderPagesMd,
   renderPlanFiles,
   renderRules,
@@ -17,7 +20,7 @@ import {
   similarity,
 } from "../../scripts/pages-lib.mjs";
 import { CATEGORIES } from "../../scripts/pages-categories.mjs";
-import { ITEMS, LANGUAGE_SOURCES, ORDER, TASKS } from "../../scripts/pages-items.mjs";
+import { GROUPS, ORDER, PREFIX, TASKS } from "../../scripts/pages-items.mjs";
 
 interface Row {
   url: string;
@@ -75,14 +78,6 @@ describe("page log", () => {
     expect([...bad, ...noWhy]).toEqual([]);
   });
 
-  it("names only real tasks in an item's needs", () => {
-    const tasks = new Set(TASKS.map((t) => t.id));
-    const wrong = ITEMS.flatMap((i) =>
-      (i.needs ?? []).filter((id) => !tasks.has(id)).map((id) => `${i.id}: ${id}`),
-    );
-    expect(wrong).toEqual([]);
-  });
-
   it("never gives two pages the same key in the same language", () => {
     const seen = new Map<string, string>();
     const dupes: string[] = [];
@@ -117,23 +112,64 @@ describe("page log", () => {
     expect(missing).toEqual([]);
   });
 
-  it("keeps items the size one run builds well (at most 25 pages) and in the item list", () => {
-    const ids = new Set(ITEMS.map((i) => i.id));
-    const sizes = new Map<string, number>();
-    for (const r of rows as unknown as Record<string, string>[])
-      if (r.item) sizes.set(r.item, (sizes.get(r.item) ?? 0) + 1);
-    expect([...sizes].filter(([, n]) => n > 25)).toEqual([]);
-    expect([...sizes.keys()].filter((id) => !ids.has(id))).toEqual([]);
-    expect(LANGUAGE_SOURCES.filter((id) => !sizes.has(id))).toEqual([]);
-    const known = new Set([...ids, ...TASKS.map((t) => t.id)]);
-    expect(ORDER.filter((id) => !known.has(id))).toEqual([]);
-    // Every item still to build is in the suggested order, so nothing gets forgotten.
-    const toBuild = new Set(
-      (rows as unknown as Record<string, string>[])
-        .filter((r) => r.item && r.status === "planned")
-        .map((r) => r.item ?? ""),
+  it("gives every page a unique ID of its category's letter, and each version its page's ID + language", () => {
+    const all = rows as unknown as Record<string, string>[];
+    const live = all.filter((r) => r.status !== "removed");
+    const seen = new Map<string, string>();
+    const bad: string[] = [];
+    const byUrl = new Map(live.filter((r) => !r.translation_of).map((r) => [r.url, r]));
+    for (const r of live) {
+      const id = r.id ?? "";
+      if (seen.has(id)) bad.push(`${id} twice: ${r.url} and ${seen.get(id)}`);
+      seen.set(id, r.url ?? "");
+      const p = parseId(id);
+      if (r.translation_of) {
+        const parent = byUrl.get(r.translation_of);
+        if (id !== `${parent?.id}-${r.lang}`)
+          bad.push(`${r.url}: id "${id}", expected ${parent?.id}-${r.lang}`);
+      } else {
+        const c = CATEGORIES.find((x) => x.match(r));
+        if (!p || p.lang || !c || p.prefix !== PREFIX[c.id]) bad.push(`${r.url}: id "${id}"`);
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it("keeps groups to one category, without overlaps, at most 25 pages, and in the suggested order", () => {
+    const all = (rows as unknown as Record<string, string>[]).filter(
+      (r) => r.status !== "removed" && !r.translation_of,
     );
-    expect([...toBuild].filter((id) => !ORDER.includes(id))).toEqual([]);
+    const problems: string[] = [];
+    const taken = new Map<string, string>();
+    for (const g of GROUPS) {
+      const r = parseRange(g.range);
+      if (!r) {
+        problems.push(`bad range ${g.range}`);
+        continue;
+      }
+      if (!Object.values(PREFIX).includes(r.prefix)) problems.push(`${g.range}: unknown letter`);
+      for (let n = r.from; n <= r.to; n++) {
+        const k = `${r.prefix}${n}`;
+        if (taken.has(k)) problems.push(`${k} in ${g.range} and ${taken.get(k)}`);
+        taken.set(k, g.range);
+      }
+      const size = all.filter((x) => groupOf(x.id)?.range === g.range).length;
+      if (size > 25) problems.push(`${g.range}: ${size} pages`);
+      if (size === 0) problems.push(`${g.range}: no pages`);
+      for (const t of g.needs ?? [])
+        if (!TASKS.some((x) => x.id === t)) problems.push(`${g.range}: unknown task ${t}`);
+    }
+    const known = new Set([...GROUPS.map((g) => g.range), ...TASKS.map((t) => t.id)]);
+    problems.push(...ORDER.filter((id) => !known.has(id)).map((id) => `ORDER: unknown ${id}`));
+    // Every group still to build is in the suggested order, so nothing gets forgotten.
+    const toBuild = new Set(
+      all.filter((x) => x.status === "planned").map((x) => groupOf(x.id)?.range ?? ""),
+    );
+    toBuild.delete("");
+    problems.push(
+      ...[...toBuild].filter((g) => !ORDER.includes(g)).map((g) => `not in ORDER: ${g}`),
+    );
+    expect(problems).toEqual([]);
   });
 
   it("uses only known statuses, and says why a page is parked (the demand gate)", () => {

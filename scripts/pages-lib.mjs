@@ -4,6 +4,8 @@
  */
 
 export const COLUMNS = [
+  /** The page's ID: {letter}{n} per category (D4), a language version {parent}-{lang} (D4-de). */
+  "id",
   "url",
   "lang",
   "status",
@@ -18,7 +20,6 @@ export const COLUMNS = [
   "notes",
   "brief",
   "avoid",
-  "item",
   "translation_of",
   "score",
   "score_why",
@@ -204,16 +205,7 @@ export function section(row) {
 const shortUrl = (url) => url;
 
 import { CATEGORIES } from "./pages-categories.mjs";
-import {
-  GOAL,
-  ITEMS,
-  LANGUAGES,
-  LANGUAGE_ORDER,
-  LANGUAGE_SOURCES,
-  ORDER,
-  PREFIX,
-  TASKS,
-} from "./pages-items.mjs";
+import { GOAL, GROUPS, LANGUAGES, LANGUAGE_ORDER, ORDER, PREFIX, TASKS } from "./pages-items.mjs";
 
 // ── PAGES.md: what we have ──
 
@@ -420,15 +412,79 @@ export function renderPlanMd(rows) {
 }
 
 const categoryOf = (r) => CATEGORIES.find((c) => c.match(r));
+/** The heading of a page in its category file: "D4 · /templates/hourly-invoice". */
+const pageHeading = (r) => `${r.id} · ${shortUrl(r.url)}`;
 const pageLink = (r, fromPlan = true) => {
   const c = categoryOf(r);
-  return c ? `${fromPlan ? "plan/" : ""}${c.id}.md#${anchor(shortUrl(r.url))}` : "";
+  return c ? `${fromPlan ? "plan/" : ""}${c.id}.md#${anchor(pageHeading(r))}` : "";
 };
 const box = (done) => (done ? "[x]" : "[ ]");
 
-/** An item's pages to build; parked pages (no demand, RULES.md §2) don't count. */
-function itemStats(rows, itemId) {
-  const all = rows.filter((r) => r.item === itemId && r.status !== "removed");
+// ── Page IDs and groups ──
+
+const ID_RE = /^([A-Z]+)(\d+)(?:-([a-z]{2}))?$/;
+
+/** "D4" → { prefix: "D", n: 4 }; "D4-de" → { …, lang: "de" }; anything else → null. */
+export function parseId(id) {
+  const m = String(id ?? "").match(ID_RE);
+  return m ? { prefix: m[1], n: Number(m[2]), lang: m[3] ?? "" } : null;
+}
+
+/** "D1–D20" (or "D1-D20", or one ID) → { prefix, from, to }, or null. */
+export function parseRange(range) {
+  const [a, b] = String(range)
+    .split(/[–-](?=[A-Z])/)
+    .map(parseId);
+  if (!a || a.lang || (b && (b.lang || b.prefix !== a.prefix))) return null;
+  return { prefix: a.prefix, from: a.n, to: (b ?? a).n };
+}
+
+const inRange = (id, range) => {
+  const p = parseId(id);
+  const r = parseRange(range);
+  return !!p && !!r && !p.lang && p.prefix === r.prefix && p.n >= r.from && p.n <= r.to;
+};
+
+/** The group a page belongs to (by its ID; a language version by its English page's ID). */
+export const groupOf = (id) => {
+  const p = parseId(id);
+  return p ? (GROUPS.find((g) => inRange(`${p.prefix}${p.n}`, g.range)) ?? null) : null;
+};
+
+const isPage = (r) => !r.translation_of && r.status !== "removed";
+
+/**
+ * Fill in missing IDs: a page gets the next free number of its category's letter, a language
+ * version its English page's ID + "-{lang}". Existing IDs never change. Returns the rows it changed.
+ */
+export function assignIds(rows) {
+  const changed = [];
+  const next = {};
+  for (const r of rows) {
+    const p = parseId(r.id);
+    if (p && !p.lang) next[p.prefix] = Math.max(next[p.prefix] ?? 0, p.n);
+  }
+  for (const r of rows.filter((x) => isPage(x) && !x.id)) {
+    const c = categoryOf(r);
+    if (!c) continue;
+    const prefix = PREFIX[c.id];
+    next[prefix] = (next[prefix] ?? 0) + 1;
+    r.id = `${prefix}${next[prefix]}`;
+    changed.push(r);
+  }
+  const byUrl = new Map(rows.filter(isPage).map((r) => [r.url, r]));
+  for (const r of rows.filter((x) => x.translation_of && x.status !== "removed" && !x.id)) {
+    const parent = byUrl.get(r.translation_of);
+    if (!parent?.id) continue;
+    r.id = `${parent.id}-${r.lang}`;
+    changed.push(r);
+  }
+  return changed;
+}
+
+/** A group's pages to build; parked pages (no demand, RULES.md §2) don't count. */
+function groupStats(rows, g) {
+  const all = rows.filter((r) => isPage(r) && inRange(r.id, g.range));
   const pages = all.filter((r) => r.status !== "parked");
   return {
     pages,
@@ -438,7 +494,7 @@ function itemStats(rows, itemId) {
 }
 
 /**
- * An item's pages in one language. A page that doesn't fit that country (no local demand, a trade
+ * A group's pages in one language. A page that doesn't fit that country (no local demand, a trade
  * that works differently there) gets a row in that language with `status: parked` and
  * `translation_of`: it's skipped.
  */
@@ -454,59 +510,62 @@ function languageStats(rows, pages, lang) {
 const versionOf = (rows, url, lang) =>
   rows.find((r) => r.lang === lang && r.translation_of === url && r.status !== "removed");
 
-/** L1, L2 …: per source item (LANGUAGE_SOURCES), one per language; append-only numbering. */
+/** Per group with `localize: yes` pages, one entry per language: "D1–D20 in German". */
 function languageItems(rows) {
   const list = [];
-  for (const source of LANGUAGE_SOURCES) {
-    const yes = itemStats(rows, source).pages.filter((r) => r.localize === "yes");
+  for (const g of GROUPS) {
+    const yes = groupStats(rows, g).pages.filter((r) => r.localize === "yes");
     if (!yes.length) continue;
-    for (const lang of LANGUAGE_ORDER)
-      list.push({ id: `L${list.length + 1}`, source, lang, pages: yes });
+    for (const lang of LANGUAGE_ORDER) list.push({ g, lang, pages: yes });
   }
   return list;
 }
 
-const itemOf = (id) => ITEMS.find((i) => i.id === id);
-const itemCategory = (rows, id) => {
-  const { pages, parked } = itemStats(rows, id);
-  return categoryOf([...pages, ...parked][0] ?? {}) ?? null;
+const groupCategory = (g) => {
+  const r = parseRange(g.range);
+  return CATEGORIES.find((c) => PREFIX[c.id] === r?.prefix) ?? null;
 };
-const lAnchor = (li) => anchor(`${li.id} ${li.source} in ${LANGUAGES[li.lang].name}`);
+const groupHeading = (g) => `${g.range}: ${g.title}`;
+const langLabel = (li) => `${li.g.range} in ${LANGUAGES[li.lang].name}`;
 
 function renderPlan(rows) {
   const live = rows.filter((r) => r.status === "live");
   const planned = rows.filter((r) => r.status === "planned");
+  const inGroup = planned.filter((r) => isPage(r) && groupOf(r.id));
   const litems = languageItems(rows);
   const lStats = litems.map((li) => ({ li, ...languageStats(rows, li.pages, li.lang) }));
   const langTodo = lStats.reduce((n, s) => n + s.total - s.done, 0);
-  const total = live.length + planned.filter((r) => r.item).length + langTodo;
+  const total = live.length + inGroup.length + langTodo;
   const out = [];
   out.push(
     "# Page plan",
     "",
-    "> **Generated, don't edit by hand.** Every item per category, with its pages below it: T1, T2 …",
-    "> for trade templates, I1 … for industry pages, and so on; L1, L2 … for the language versions",
-    "> (one language each). Boxes tick themselves when the pages are live. The rules for every page:",
-    "> [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per category); the",
-    "> instructions per language page are in [plan/languages/](plan/languages/) (one file per",
-    "> language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)",
-    "> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`. After any change: `npm run pages`.",
+    "> **Generated, don't edit by hand.** Every page has an ID: a letter per category and a number",
+    "> (T5, D12, LO3); its language versions add the language (D12-de). Pages sit in groups of",
+    "> 10–25 (D1–D20) per category. Boxes tick themselves when the pages are live. The rules for",
+    "> every page: [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per",
+    "> category); the instructions per language version in [plan/languages/](plan/languages/). What",
+    "> exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv) (`id`, `brief`,",
+    "> `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.",
     "",
-    `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%) · planned: ${planned.filter((r) => r.item).length} English and local pages + ${langTodo.toLocaleString("en")} language pages · **${total.toLocaleString("en")} when everything is built** (fewer after the demand gate parks the weak ones)`,
+    `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%) · planned: ${inGroup.length} English and local pages + ${langTodo.toLocaleString("en")} language versions · **${total.toLocaleString("en")} when everything is built** (fewer after the demand gate parks the weak ones)`,
     "",
-    "## How to run an item",
+    "## How to run",
     "",
-    'Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:',
+    'Say which: "do D4" (one page and its language versions), "do D4-de" (one language version),',
+    '"do D1–D20" (a group), "do D1–D20 in German" or "do S1" (a task). One page at a glance:',
+    "`npm run pages:page D4`. Then:",
     "",
-    "1. **English item (T5, B1 …):** first the demand gate ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)):",
-    "   park the pages nobody searches for. Then, for each page listed under the item, read its brief",
-    "   (the link), its category's section in [RULES.md §5](RULES.md#5-categories) and the fact sheet",
+    "1. **English pages (D4, D1–D20 …):** first the demand gate ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)):",
+    "   park the pages nobody searches for. Then, for each page, read its brief (the link), its",
+    "   category's section in [RULES.md §5](RULES.md#5-categories) and the fact sheet",
     "   [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,",
     "   then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update",
-    "   ROADMAP.md; one commit per item.",
-    "2. **Language item (L1 …):** one item's pages in one language, written for that country. Its",
-    "   instructions per page are in that language's file in [plan/languages/](plan/languages/).",
-    "   Needs task S1 for templates and industry pages, and the English pages live first.",
+    "   ROADMAP.md; one commit per request.",
+    "2. **Language versions (D4-de, D1–D20 in German …):** written for that country, from the",
+    "   instructions in that language's file in [plan/languages/](plan/languages/). Needs task S1 for",
+    '   templates and industry pages, and the English page live first. "do D4" includes them once',
+    "   both are true.",
     "3. **Task (S1 …):** code work, no pages. Tick it in `scripts/pages-items.mjs` (`done: true`).",
     "4. **After each deploy:** check indexing per page type before adding more of it ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)).",
     '5. **New pages for the plan:** "add 10 pages to T" (the `seo-add-pages` skill, [RULES.md §3](RULES.md#3-planning-new-items)).',
@@ -517,45 +576,43 @@ function renderPlan(rows) {
   out.push(
     "## Overview",
     "",
-    "| Category | Items | Pages done | Pages to build | Language items |",
-    "|---|---|---|---|---|",
+    "| Category | Page IDs | Groups | Pages done | Pages to build | Languages done |",
+    "|---|---|---|---|---|---|",
   );
   for (const c of CATEGORIES) {
-    const ids = ITEMS.filter((it) => itemCategory(rows, it.id) === c).map((it) => it.id);
-    if (!ids.length) continue;
-    const pages = ids.flatMap((id) => itemStats(rows, id).pages);
-    const ls = lStats.filter((s) => ids.includes(s.li.source));
-    const lrange = ls.length
-      ? `${ls.filter((s) => s.total && s.done === s.total).length}/${ls.length} done`
-      : "none";
+    const gs = GROUPS.filter((g) => groupCategory(g) === c);
+    if (!gs.length) continue;
+    const pages = gs.flatMap((g) => groupStats(rows, g).pages);
+    const ls = lStats.filter((s) => gs.includes(s.li.g));
+    const ids = rows
+      .filter((r) => isPage(r) && categoryOf(r) === c)
+      .map((r) => parseId(r.id)?.n ?? 0);
     out.push(
-      `| [${c.title}](#${anchor(`${c.title} ${PREFIX[c.id]}`)}) | ${ids.join(" ")} | ${pages.filter((r) => r.status === "live").length} | ${pages.filter((r) => r.status === "planned").length} | ${lrange} |`,
+      `| [${c.title}](#${anchor(`${c.title} ${PREFIX[c.id]}`)}) | ${PREFIX[c.id]}1–${PREFIX[c.id]}${Math.max(0, ...ids)} | ${gs.length} | ${pages.filter((r) => r.status === "live").length} | ${pages.filter((r) => r.status === "planned").length} | ${ls.length ? `${ls.reduce((n, s) => n + s.done, 0)}/${ls.reduce((n, s) => n + s.total, 0)}` : "none"} |`,
     );
   }
-  out.push(
-    `| [Languages](#languages-l) | L1–L${litems.length} | ${lStats.reduce((n, s) => n + s.done, 0)} | ${langTodo} | |`,
-    "",
-  );
+  out.push("");
 
-  // Suggested order
+  // Best next: by score, among the groups whose tasks are done
+  const taskDone = (id) => TASKS.find((t) => t.id === id)?.done ?? false;
   const doneId = (id) => {
     const t = TASKS.find((x) => x.id === id);
     if (t) return t.done;
-    const { pages, live: n } = itemStats(rows, id);
+    const g = GROUPS.find((x) => x.range === id);
+    if (!g) return false;
+    const { pages, live: n } = groupStats(rows, g);
     return pages.length > 0 && n === pages.length;
   };
-  // Best next: by score, among the items whose tasks are done
-  const taskDone = (id) => TASKS.find((t) => t.id === id)?.done ?? false;
-  const open = ITEMS.map((it, i) => {
-    const todo = itemStats(rows, it.id).pages.filter((r) => r.status === "planned");
+  const open = GROUPS.map((g, i) => {
+    const todo = groupStats(rows, g).pages.filter((r) => r.status === "planned");
     const scored = todo.filter((r) => r.score);
     return {
-      it,
+      g,
       todo,
       scored: scored.length,
       avg: todo.length ? todo.reduce((n, r) => n + scoreOf(r), 0) / todo.length : 0,
-      blocked: (it.needs ?? []).filter((id) => !taskDone(id)),
-      order: ORDER.includes(it.id) ? ORDER.indexOf(it.id) : ORDER.length + i,
+      blocked: (g.needs ?? []).filter((id) => !taskDone(id)),
+      order: ORDER.includes(g.range) ? ORDER.indexOf(g.range) : ORDER.length + i,
     };
   }).filter((x) => x.todo.length);
   const rank = (a, b) => b.avg - a.avg || a.order - b.order;
@@ -567,20 +624,20 @@ function renderPlan(rows) {
   out.push(
     "## Best next (by score)",
     "",
-    `The items that can be built now (no task in the way), best first: the average \`score\` of their planned pages (blank counts as ${UNSCORED}; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. ${scoredAll} of ${todoAll} planned pages are scored.`,
+    `The groups that can be built now (no task in the way), best first: the average \`score\` of their planned pages (blank counts as ${UNSCORED}; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. ${scoredAll} of ${todoAll} planned pages are scored.`,
     "",
-    "| # | Item | Pages to build | Score | Scored |",
+    "| # | Group | Pages to build | Score | Scored |",
     "|---|---|---|---|---|",
     ...ready
       .slice(0, 15)
       .map(
         (x, i) =>
-          `| ${i + 1} | [${x.it.id}](#${anchor(`${x.it.id}: ${x.it.title}`)}) ${x.it.title} | ${x.todo.length} | ${x.avg.toFixed(1)} | ${x.scored}/${x.todo.length} |`,
+          `| ${i + 1} | [${x.g.range}](#${anchor(groupHeading(x.g))}) ${x.g.title} | ${x.todo.length} | ${x.avg.toFixed(1)} | ${x.scored}/${x.todo.length} |`,
       ),
     "",
-    `${ready.length > 15 ? `And ${ready.length - 15} more ready items. ` : ""}Waiting for a task: ${
+    `${ready.length > 15 ? `And ${ready.length - 15} more ready groups. ` : ""}Waiting for a task: ${
       [...byTask]
-        .map(([task, list]) => `**${task}** (${list.map((x) => x.it.id).join(", ")})`)
+        .map(([task, list]) => `**${task}** (${list.map((x) => x.g.range).join(", ")})`)
         .join(" · ") || "none"
     }.`,
     "",
@@ -589,9 +646,8 @@ function renderPlan(rows) {
   out.push(
     "## Suggested order",
     "",
-    "The English items and tasks in the order that pays off most (parents first, bigger searches first,",
-    "code before the pages that need it). Language items: in their number order, alongside, once their",
-    "English pages are live.",
+    "The groups and tasks in the order that pays off most (parents first, bigger searches first, code",
+    "before the pages that need it). A group's language versions follow once its English pages are live.",
     "",
     ORDER.map((id) => (doneId(id) ? `~~${id}~~` : `**${id}**`)).join(" → "),
     "",
@@ -601,68 +657,68 @@ function renderPlan(rows) {
     "",
   );
 
-  // Per category: its items and their pages
+  // Per category: its groups and their pages
   for (const c of CATEGORIES) {
-    const items = ITEMS.filter((it) => itemCategory(rows, it.id) === c);
-    if (!items.length) continue;
+    const gs = GROUPS.filter((g) => groupCategory(g) === c);
+    if (!gs.length) continue;
     out.push(
       `## ${c.title} (${PREFIX[c.id]})`,
       "",
       `Rules: [RULES.md § ${rulesHeading(c)}](RULES.md#${anchor(rulesHeading(c))}) · every brief: [plan/${c.id}.md](plan/${c.id}.md)`,
       "",
     );
-    for (const it of items) {
-      const { pages, parked, live: n } = itemStats(rows, it.id);
-      const ls = litems.filter((li) => li.source === it.id);
+    for (const g of gs) {
+      const { pages, parked, live: n } = groupStats(rows, g);
+      const ls = lStats.filter((s) => s.li.g === g);
       out.push(
-        `### ${it.id}: ${it.title}`,
+        `### ${groupHeading(g)}`,
         "",
-        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.needs?.length ? ` · needs task ${it.needs.join(" + ")}` : ""}${it.text ? ` · ${it.text}` : ""}${ls.length ? ` · languages: [${ls[0].id}–${ls.at(-1).id}](#${anchor(`${it.id} in every language`)})` : ""}`,
+        `- ${box(pages.length > 0 && n === pages.length)} **${g.range}** · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${g.needs?.length ? ` · needs task ${g.needs.join(" + ")}` : ""}${g.text ? ` · ${g.text}` : ""}${ls.length ? ` · [languages](#${anchor(`${g.range} in every language`)}): ${ls.reduce((x, s) => x + s.done, 0)}/${ls.reduce((x, s) => x + s.total, 0)}` : ""}`,
       );
       for (const r of byScore(pages))
         out.push(
-          `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${r.status === "live" ? `https://invoicor.com${r.url}` : pageLink(r)}) ${r.primary_keyword}${r.status === "live" ? "" : scoreLabel(r)}`,
+          `  - ${box(r.status === "live")} **${r.id}** [${shortUrl(r.url)}](${r.status === "live" ? `https://invoicor.com${r.url}` : pageLink(r)}) ${r.primary_keyword}${r.status === "live" ? "" : scoreLabel(r)}`,
         );
       for (const r of parked)
-        out.push(`  - ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
+        out.push(`  - ~~**${r.id}** ${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
       out.push("");
     }
   }
 
   // Languages
   out.push(
-    "## Languages (L)",
+    "## Languages",
     "",
-    "One L item = one item's pages in one language. The instructions per page (search words, what to",
-    "write for that country, what not to) are in the language's file; the number links there.",
+    'Per group, its `localize: yes` pages in each language: "do D1–D20 in German", or one version:',
+    '"do D4-de". The instructions per version (search words, what to write for that country, what',
+    "not to) are in the language's file; each line links there.",
     "",
   );
-  for (const source of [...new Set(litems.map((li) => li.source))]) {
-    const it = itemOf(source);
+  for (const g of [...new Set(litems.map((li) => li.g))]) {
     out.push(
-      `### ${source} in every language`,
+      `### ${g.range} in every language`,
       "",
-      `${it.title} · ${litems.find((li) => li.source === source).pages.length} pages`,
+      `${g.title} · ${litems.find((li) => li.g === g).pages.length} pages`,
       "",
     );
-    for (const s of lStats.filter((x) => x.li.source === source))
+    for (const s of lStats.filter((x) => x.li.g === g))
       out.push(
-        `- ${box(s.total > 0 && s.done === s.total)} [**${s.li.id}**](plan/languages/${s.li.lang}.md#${lAnchor(s.li)}) ${LANGUAGES[s.li.lang].name} · ${s.done}/${s.total}`,
+        `- ${box(s.total > 0 && s.done === s.total)} [**${langLabel(s.li)}**](plan/languages/${s.li.lang}.md#${anchor(langLabel(s.li))}) · ${s.done}/${s.total}`,
       );
     out.push("");
   }
 
-  // Not in an item
-  const loose = planned.filter((r) => !r.item);
+  // Not in a group
+  const loose = planned.filter((r) => isPage(r) && !groupOf(r.id));
   out.push(
-    "## Not in an item yet",
+    "## Not in a group yet",
     "",
     "Pages that need a decision or code first, and pages on hold, with the reason in their brief.",
     "",
   );
   for (const [g, list] of group(loose, (r) => r.chunk || "unsorted"))
     out.push(
-      `- **${g}** (${list.length}): ${list.map((r) => `[${shortUrl(r.url)}](${pageLink(r)})`).join(" · ")}`,
+      `- **${g}** (${list.length}): ${list.map((r) => `[${r.id} ${shortUrl(r.url)}](${pageLink(r)})`).join(" · ")}`,
     );
   out.push("");
   return out.join("\n");
@@ -714,11 +770,12 @@ function renderLanguage(rows, lang) {
   const L = LANGUAGES[lang];
   const items = languageItems(rows).filter((li) => li.lang === lang);
   const out = [
-    `# ${L.name} (${lang}): language items`,
+    `# ${L.name} (${lang}): language versions`,
     "",
-    "> **Generated, don't edit by hand.** Every L item in this language with its pages and what each",
-    "> page must do. Back to the [plan](../../PLAN.md#languages-l). Data: `seo/keyword-map.csv`; then",
-    "> `npm run pages`.",
+    `> **Generated, don't edit by hand.** Every page planned in ${L.name}, per group, with what each`,
+    `> version must do. A version's ID is its English page's ID + \`-${lang}\` ("do D4-${lang}"; a whole`,
+    `> group: "do D1–D20 in ${L.name}"). Back to the [plan](../../PLAN.md#languages). Data:`,
+    "> `seo/keyword-map.csv`; then `npm run pages`.",
     "",
     `## Writing for ${L.markets}`,
     "",
@@ -728,19 +785,18 @@ function renderLanguage(rows, lang) {
     `- **Search words** usually look like: template "${L.keys.template}", app page "${L.keys.industry}", tool "${L.keys.tool}". Research the real local words first (the demand gate): Google in ${L.name} (autocomplete, "People also ask"), Search Console for the ${lang} pages.`,
     "- **Every page:** written for the country, not word for word; slug, title, H1 and examples in",
     `  ${L.name}; links to the English page (hreflang) and to the other ${lang} pages; the same depth and`,
-    "  honesty rules as the English page ([PLAN.md](../../PLAN.md#rules-for-every-page)).",
+    "  honesty rules as the English page ([RULES.md](../../RULES.md)).",
     `- **Skip a page** that has no ${L.name} search or doesn't fit the country: a \`parked\` row in`,
     `  \`${lang}\` with \`translation_of\` = the English URL and the reason in \`notes\`.`,
     "",
   ];
   for (const li of items) {
-    const it = itemOf(li.source);
     const s = languageStats(rows, li.pages, lang);
     const types = [...new Set(li.pages.map((r) => r.page_type))];
     out.push(
-      `## ${li.id}: ${li.source} in ${L.name}`,
+      `## ${langLabel(li)}`,
       "",
-      `${box(s.total > 0 && s.done === s.total)} ${it.title} · ${s.done}/${s.total} live in ${lang}`,
+      `${box(s.total > 0 && s.done === s.total)} ${li.g.title} · ${s.done}/${s.total} live in ${lang}`,
       "",
       ...types.map((t) => `- **For every ${t} page:** ${TYPE_NOTES[t] ?? TYPE_NOTES.trust}`),
       "",
@@ -749,11 +805,14 @@ function renderLanguage(rows, lang) {
       const v = versionOf(rows, r.url, lang);
       const src = r.status === "live" ? `https://invoicor.com${r.url}` : `../${pageLink(r, false)}`;
       if (v?.status === "parked") {
-        out.push(`- ~~${r.url}~~ skipped in ${lang}: ${v.notes || "no reason given"}`, "");
+        out.push(
+          `- ~~**${r.id}-${lang}** ${r.url}~~ skipped in ${lang}: ${v.notes || "no reason given"}`,
+          "",
+        );
         continue;
       }
       out.push(
-        `### ${r.url} → ${L.name}`,
+        `### ${r.id}-${lang} · ${r.url} → ${L.name}`,
         "",
         `- ${box(v?.status === "live")} **Live in ${lang}**${v ? `: ${v.url}` : ""}`,
         `- **English page:** [${r.primary_keyword}](${src})${r.status === "live" ? " (live: use it as the source)" : " (planned: write the English page first)"}`,
@@ -764,7 +823,7 @@ function renderLanguage(rows, lang) {
       out.push("");
     }
   }
-  if (!items.length) out.push("_No language items yet._", "");
+  if (!items.length) out.push("_No language versions planned yet._", "");
   return out.join("\n");
 }
 
@@ -793,7 +852,7 @@ function renderCategory(rows, c) {
       ? done
           .map(
             (r) =>
-              `\`${shortUrl(r.url).replace(/^\/(templates|industries|compare|tools)\//, "")}\` ${r.primary_keyword}`,
+              `**${r.id}** \`${shortUrl(r.url).replace(/^\/(templates|industries|compare|tools)\//, "")}\` ${r.primary_keyword}`,
           )
           .join(" · ")
       : "_None yet._",
@@ -802,11 +861,14 @@ function renderCategory(rows, c) {
     "",
   ];
   if (!todo.length) out.push("_Nothing planned._", "");
-  const byItem = group(todo, (r) => r.item || r.chunk || "unscheduled");
-  for (const [item, items] of [...byItem].sort((a, b) =>
-    a[0].localeCompare(b[0], "en", { numeric: true }),
-  )) {
-    out.push(`### ${/^[A-Z]+\d+$/.test(item) ? `Item ${item}` : item} (${items.length})`, "");
+  const groupName = (r) => {
+    const g = groupOf(r.id);
+    return g ? groupHeading(g) : `Not in a group yet: ${r.chunk || "unsorted"}`;
+  };
+  const byGroup = group(todo, groupName);
+  const first = (list) => Math.min(...list.map((r) => parseId(r.id)?.n ?? Infinity));
+  for (const [name, items] of [...byGroup].sort((a, b) => first(a[1]) - first(b[1]))) {
+    out.push(`### ${name} (${items.length})`, "");
     for (const r of byScore(items)) {
       const near = closest(
         live.filter((x) => x.url !== r.url),
@@ -814,10 +876,10 @@ function renderCategory(rows, c) {
         r.lang,
         4,
       ).filter((m) => m.score >= CLOSE);
-      out.push(`#### ${shortUrl(r.url)}`, "");
+      out.push(`#### ${pageHeading(r)}`, "");
       out.push(
         `- **Key:** ${r.primary_keyword}${r.secondary_keywords ? ` · also: ${r.secondary_keywords}` : ""}`,
-        `- **Item:** ${r.item || r.chunk || "unscheduled"} · **Score:** ${r.score ? `${r.score}${r.score_why ? ` (${r.score_why})` : ""}` : "not scored"}${r.intent ? ` · **Intent:** ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
+        `- **Group:** ${groupOf(r.id)?.range ?? (r.chunk || "none yet")} · **Score:** ${r.score ? `${r.score}${r.score_why ? ` (${r.score_why})` : ""}` : "not scored"}${r.intent ? ` · **Intent:** ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
         `- **Write about:** ${r.brief || "_no brief yet: write one before building_"}`,
       );
       if (r.avoid) out.push(`- **Don't write about:** ${r.avoid}`);
@@ -838,7 +900,8 @@ function renderCategory(rows, c) {
       "No proven demand, or the parent page covers it. Unpark (`status: planned`) only with new evidence.",
       "",
       ...parked.map(
-        (r) => `- \`${shortUrl(r.url)}\` ${r.primary_keyword}: ${r.notes || "no reason given"}`,
+        (r) =>
+          `- **${r.id}** \`${shortUrl(r.url)}\` ${r.primary_keyword}: ${r.notes || "no reason given"}`,
       ),
       "",
     );

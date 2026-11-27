@@ -11,7 +11,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseCsv, rulesSection, scoreOf } from "./pages-lib.mjs";
+import { groupOf, parseCsv, parseId, rulesSection, scoreOf } from "./pages-lib.mjs";
 import { CATEGORIES } from "./pages-categories.mjs";
 import { PREFIX } from "./pages-items.mjs";
 
@@ -41,21 +41,24 @@ if (!cat) {
 }
 const list = rows.filter(cat.match);
 const n = count(list);
-const items = [...new Set(list.map((r) => r.item).filter(Boolean))];
+const groups = [...new Set(list.map((r) => groupOf(r.id)?.range).filter(Boolean))];
 console.log(`# ${PREFIX[cat.id]} · ${cat.title} (${cat.id})`);
 console.log(
-  `live ${n.live}, planned ${n.planned}, parked ${n.parked} · items: ${items.join(", ") || "none"}`,
+  `live ${n.live}, planned ${n.planned}, parked ${n.parked} · groups: ${groups.join(", ") || "none"}`,
 );
 console.log(
   `\nRules (seo/RULES.md §5):\n${rulesSection(readFileSync(join(root, "seo/RULES.md"), "utf8"), cat) ?? "MISSING: add this category's section to seo/RULES.md"}`,
 );
-console.log("\nPages (status | item | localize | score | url | key), best score first per status:");
+console.log("\nPages (id | status | localize | score | url | key), by ID:");
 const order = { live: 0, planned: 1, parked: 2, removed: 3 };
 for (const r of [...list].sort(
-  (a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9) || scoreOf(b) - scoreOf(a),
+  (a, b) =>
+    (parseId(a.id)?.n ?? 0) - (parseId(b.id)?.n ?? 0) ||
+    (order[a.status] ?? 9) - (order[b.status] ?? 9) ||
+    scoreOf(b) - scoreOf(a),
 ))
   console.log(
-    [r.status, r.item || "-", r.localize || "-", r.score || "-", r.url, r.primary_keyword].join(
+    [r.id || "-", r.status, r.localize || "-", r.score || "-", r.url, r.primary_keyword].join(
       " | ",
     ),
   );

@@ -9,21 +9,23 @@ export interface Language {
   rate: string;
   keys: { template: string; industry: string; tool: string };
 }
-export interface Item {
-  id: string;
+export interface Group {
+  /** A range of page IDs of one category: "D1–D20". */
+  range: string;
   title: string;
   text?: string;
-  /** Task ids (S1 …) that must be done before this item can be built. */
+  /** Task ids (S1 …) that must be done before this group can be built. */
   needs?: string[];
 }
-export interface Task extends Item {
+export interface Task {
+  id: string;
+  title: string;
   done: boolean;
   text: string;
 }
 export const PREFIX: Record<string, string>;
 export const TASKS: Task[];
-export const ITEMS: Item[];
-export const LANGUAGE_SOURCES: string[];
+export const GROUPS: Group[];
 export const ORDER: string[];
 export const LANGUAGE_ORDER: string[];
 export const GOAL: number;

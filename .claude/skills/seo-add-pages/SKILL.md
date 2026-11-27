@@ -8,7 +8,7 @@ description: Suggest and plan new SEO pages for invoicor.com. Use when the user 
 The page log [seo/keyword-map.csv](../../../seo/keyword-map.csv) is the one source of truth: every
 page, live, planned or parked, is one row. PLAN.md, PAGES.md and seo/plan/ are generated from it
 (`npm run pages`); never edit them by hand. This routine plans pages (rows); writing them is
-"do <item>" (see PLAN.md → How to run an item).
+"do D4" / "do D1–D20" (see PLAN.md → How to run).
 
 ## 1. Read only this (not PLAN.md, not the whole CSV)
 
@@ -16,7 +16,7 @@ page, live, planned or parked, is one row. PLAN.md, PAGES.md and seo/plan/ are g
 2. `npm run -s pages:category -- <letter>` → the category's rules (its section of
    `seo/RULES.md` §5: URL, key, blueprint, can and can't, links, languages) and every row in it,
    one line each. This is "what we have and what's planned".
-3. `seo/RULES.md` §2 (thin and duplicate pages) and §3 (planning new items); §4 too if the pages
+3. `seo/RULES.md` §2 (thin and duplicate pages) and §3 (planning new pages); §4 too if the pages
    get language versions. Read with offset/limit, not the whole file.
 4. The claims the app backs up: `BRAND.md` §10. A page may only promise those.
 5. Why the category stopped last time: `grep -n "Stopped at" ROADMAP.md`, the category's lines.
@@ -67,13 +67,14 @@ the number is a direction, not a quota.
 1. Append the rows to `seo/keyword-map.csv` with a small script that uses `parseCsv` / `toCsv`
    from `scripts/pages-lib.mjs`. Fields: url, lang, status `planned`, page_type, localize
    (yes / local / en-only, with the reason in notes), primary_keyword, secondary_keywords,
-   intent, item, brief (what to write, with sources to check), avoid (what neighbours own: link
+   intent, brief (what to write, with sources to check), avoid (what neighbours own: link
    them), score and score_why (from step 4). A language version that shouldn't exist gets a
    `parked` row (`translation_of` = the English URL, reason in notes).
-2. `scripts/pages-items.mjs`: the new item at the end of `ITEMS` (next free number for the
-   letter, never renumber) and in `ORDER`; if any row is `localize: yes`, also at the end of
-   `LANGUAGE_SOURCES` (append-only); if it waits for a task, `needs: ["S3"]`.
-3. `npm run pages`, then `npm run check`.
-4. ROADMAP.md: one R entry with what was added and, if it stopped short, **"Stopped at <item>"**
+2. Leave `id` empty and run `npm run pages`: each new page gets the next free ID of its letter
+   (in the order the rows were added), and its language versions follow by themselves.
+3. `scripts/pages-items.mjs`: the new group at the end of `GROUPS` with the range of those IDs
+   (`range: "D31–D40"`, a title) and in `ORDER`; if it waits for a task, `needs: ["S3"]`. Then
+   `npm run pages` again and `npm run check`.
+4. ROADMAP.md: one R entry with what was added and, if it stopped short, **"Stopped at <range>"**
    and why (step 5 of the reading list depends on that wording).
 5. One commit, push to `dev` (never `main`), check CI.

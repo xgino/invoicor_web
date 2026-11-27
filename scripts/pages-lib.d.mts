@@ -27,3 +27,9 @@ export function rulesSection(text: string, category: { id: string; title: string
 export const SCORES: string[];
 export const UNSCORED: number;
 export function scoreOf(row: Row): number;
+export function parseId(id: string | undefined): { prefix: string; n: number; lang: string } | null;
+export function parseRange(range: string): { prefix: string; from: number; to: number } | null;
+export function groupOf(
+  id: string | undefined,
+): { range: string; title: string; text?: string; needs?: string[] } | null;
+export function assignIds(rows: Row[]): Row[];

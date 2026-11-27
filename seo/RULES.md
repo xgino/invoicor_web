@@ -6,7 +6,8 @@
 > `npm run pages`. Hand-written, except the block marked _generated_ in §4.
 >
 > - **Add pages to the plan:** "add 10 pages to T" (the `seo-add-pages` skill reads this file).
-> - **Build planned pages:** "do D1" (see [PLAN.md → How to run an item](PLAN.md#how-to-run-an-item)).
+> - **Build planned pages:** "do D4" (one page and its language versions), "do D4-de", "do D1–D20"
+>   (see [PLAN.md → How to run](PLAN.md#how-to-run)). One page at a glance: `npm run pages:page D4`.
 > - **One category at a glance:** `npm run pages:category -- D` (its section below + every row).
 > - **Facts the app backs up:** [BRAND.md §10](../BRAND.md). Nothing else counts as proof.
 
@@ -66,13 +67,13 @@ The plan's page count is a direction, not a quota.
 **Before a page is written: the demand gate**
 - Find evidence that people search for the key: Search Console queries, Google autocomplete and
   "People also ask", or a keyword tool. Never invent volumes.
-- No evidence: don't write it. Set `status` to `parked` with the reason in `notes`. The item is done
+- No evidence: don't write it. Set `status` to `parked` with the reason in `notes`. The group is done
   without it and the key stays reserved, so nobody plans it again.
 
 **While building**
 - **Parents before children:** the general page ("deposit invoice") comes before or with its
   specific ones ("photography deposit invoice"), and the children link up to it.
-- **Proven types first:** a new page type starts with one item of ≤ 10 pages and grows only after
+- **Proven types first:** a new page type starts with one group of ≤ 10 pages and grows only after
   it indexes.
 - **No near-copies,** checked in two places (`scripts/similarity.mjs`). Pages are compared by
   overlapping 5-word phrases: the share of the smaller page's phrases that also appear in the
@@ -92,22 +93,23 @@ The plan's page count is a direction, not a quota.
 - Wait 2–3 weeks, then check in Search Console how many of the new pages got indexed, per page type
   (a sitemap per type comes with task S1). A type under ~50% indexed after 4 weeks: stop adding
   that type and improve its pages first.
-- **Re-plan with Search Console data** every ~5 items: more of what ranks, less of what doesn't.
+- **Re-plan with Search Console data** every ~5 groups: more of what ranks, less of what doesn't.
 
-## 3. Planning new items
+## 3. Planning new pages
 
-- **One item = 10–25 pages of one category** (fewer rather than padded with sub-niches), named with
-  the category's letter and the next number (T10, B4 …). Add it at the end of `ITEMS` and to
-  `ORDER` in `scripts/pages-items.mjs`; numbers never change.
+- **Every page has an ID:** its category's letter and the next free number (T314, D31 …), set by
+  `npm run pages` when the row has none. A language version's ID is its page's ID + the language
+  (D31-de). IDs never change and are never reused: a removed page keeps its number.
+- **A group = 10–25 new pages of one category** (fewer rather than padded with sub-niches), added
+  together so their IDs form one range: add it at the end of `GROUPS` (`range: "D31–D40"`, a
+  title) and to `ORDER` in `scripts/pages-items.mjs`.
 - **Every row** gets `localize` (yes / local / en-only, the reason in `notes`), a `brief` (what to
-  write, with the sources to check) and an `avoid` (what its neighbours own: link them) before it
-  gets an `item`.
-- **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`
-  (append-only): its 10 L items appear by themselves, with the next free numbers. A language
-  version that shouldn't exist gets a `parked` row in that language (`translation_of` = the
-  English URL, the reason in `notes`).
+  write, with the sources to check) and an `avoid` (what its neighbours own: link them).
+- **Languages:** a `localize: yes` page gets a version in every language by itself (D31-de …
+  D31-pl, listed in PLAN.md and `plan/languages/`). A version that shouldn't exist gets a
+  `parked` row in that language (`translation_of` = the English URL, the reason in `notes`).
 - **Score every planned row** (`score` 1–5, the evidence in `score_why`). PLAN.md sorts the pages
-  of an item by it and ranks the items that can be built now by their average (**Best next**);
+  of a group by it and ranks the groups that can be built now by their average (**Best next**);
   blank counts as 3.
 
   | Score | Means | Evidence (`score_why`) |
@@ -121,11 +123,11 @@ The plan's page count is a direction, not a quota.
   Never a number without its evidence: a score above 3 needs a source in `score_why`. At the
   demand gate the score is updated (or the row parked); after each Search Console round, re-score
   the rows the data covers.
-- An item that can't start before a task is done gets `needs: ["S3"]` in `pages-items.mjs`;
+- A group that can't start before a task is done gets `needs: ["S3"]` in `pages-items.mjs`;
   Best next leaves it out until the task is ticked.
 - **Stopping short is fine.** When a category runs out of good pages, the ROADMAP entry says
-  **"Stopped at {item}"** and why, so the next round doesn't propose the same pages again.
-- Then `npm run pages` and `npm run check`; one commit per item, pushed to `dev`.
+  **"Stopped at {range}"** and why, so the next round doesn't propose the same pages again.
+- Then `npm run pages` and `npm run check`; one commit per request, pushed to `dev`.
 
 ## 4. Languages
 
@@ -157,7 +159,7 @@ The plan's page count is a direction, not a quota.
 
 ## 5. Categories
 
-One section per item letter: the URL, the key and where the page is written; **Intent**,
+One section per ID letter: the URL, the key and where the page is written; **Intent**,
 **Sections**, **JSON-LD** and **Min words** are the blueprint (build a new page like the live ones
 of its type); then what it can and can't do, its links and its languages. A new category gets its
 section here first (the site test checks the heading: `{letter} · {title}`).
@@ -375,7 +377,7 @@ section here first (the site test checks the heading: `{letter} · {title}`).
   "what it doesn't do".
 - **Legal** (terms, privacy, Impressum): indexable but not targeted; a "last updated" date; no CTA
   clutter.
-- **Can't:** more of them (single pages, so no item of 10 here); Word, Excel or Google Docs template
+- **Can't:** more of them (single pages, so no group of 10 here); Word, Excel or Google Docs template
   pages until we really offer the files.
 - **Links:** nav and footer.
 - **Languages:** per page: home, generator, tools, help and Android in 11 languages; the templates

@@ -22,6 +22,7 @@ import {
   parseCsv,
   renderPagesMd,
   renderPlanFiles,
+  assignIds,
   renderRules,
   toCsv,
 } from "./pages-lib.mjs";
@@ -100,7 +101,7 @@ for (const url of siteUrls) {
       // A translation follows its English page; a new English page needs a decision (R4).
       localize: enRow?.localize ?? "",
       translation_of: enRow ? en[1] || "/" : "",
-      item: "",
+      id: "",
       primary_keyword: keyFrom(url, html),
       secondary_keywords: "",
       intent: "",
@@ -125,6 +126,9 @@ for (const r of rows)
 
 // ── Dates ──
 for (const r of rows) if (r.status === "live" && !r.added) r.added = gitDate(r.url) || today;
+
+// ── IDs: new pages get the next number of their letter, language versions {id}-{lang} ──
+for (const r of assignIds(rows)) changes.push(`id ${r.id}  ${r.url}`);
 
 // ── Write ──
 const order = (r) => (r.lang === "en" ? 0 : 1);
