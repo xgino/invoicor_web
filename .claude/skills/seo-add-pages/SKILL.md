@@ -48,11 +48,11 @@ gate at writing time will park it), never invent volumes.
 
 ## 4. Rank and return. Write nothing yet
 
-Score each 1–5 and sort by the total, highest first:
-- **Demand** (evidence above; unchecked = 2),
-- **Value of its own** (how different from the nearest page),
-- **Parent first** (a general page that others will link up to scores higher),
-- **Ready** (5 = needs no code; lower when it waits for a task such as S1, S3, S4).
+Give each candidate a `score` of 1–5 by the table in `seo/RULES.md` §3 (demand evidence first;
+a parent or a big search lifts it; doubtful value lowers it), with the evidence as `score_why`.
+Unchecked demand = 3, never higher without a source. Sort by score, highest first; ties: the
+parent before its children, then the page that needs no task. Waiting for a task (S1, S3, S4)
+goes in **Needs**, not in the score.
 
 Return one table:
 
@@ -68,11 +68,11 @@ the number is a direction, not a quota.
    from `scripts/pages-lib.mjs`. Fields: url, lang, status `planned`, page_type, localize
    (yes / local / en-only, with the reason in notes), primary_keyword, secondary_keywords,
    intent, item, brief (what to write, with sources to check), avoid (what neighbours own: link
-   them). A language version that shouldn't exist gets a `parked` row (`translation_of` = the
-   English URL, reason in notes).
+   them), score and score_why (from step 4). A language version that shouldn't exist gets a
+   `parked` row (`translation_of` = the English URL, reason in notes).
 2. `scripts/pages-items.mjs`: the new item at the end of `ITEMS` (next free number for the
    letter, never renumber) and in `ORDER`; if any row is `localize: yes`, also at the end of
-   `LANGUAGE_SOURCES` (append-only).
+   `LANGUAGE_SOURCES` (append-only); if it waits for a task, `needs: ["S3"]`.
 3. `npm run pages`, then `npm run check`.
 4. ROADMAP.md: one R entry with what was added and, if it stopped short, **"Stopped at <item>"**
    and why (step 5 of the reading list depends on that wording).

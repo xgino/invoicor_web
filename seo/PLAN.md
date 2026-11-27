@@ -43,6 +43,30 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 9 | 6 | 0/30 done |
 | [Languages](#languages-l) | L1–L730 | 80 | 8299 | |
 
+## Best next (by score)
+
+The items that can be built now (no task in the way), best first: the average `score` of their planned pages (blank counts as 3; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. 0 of 977 planned pages are scored.
+
+| # | Item | Pages to build | Score | Scored |
+|---|---|---|---|---|
+| 1 | [D1](#d1-invoice-types-the-general-documents) Invoice types: the general documents | 20 | 3.0 | 0/20 |
+| 2 | [B1](#b1-billing-types-i) Billing types I | 20 | 3.0 | 0/20 |
+| 3 | [T4](#t4-10-trades-notary-home-inspection-it-services-) 10 trades: notary, home inspection, IT services … | 10 | 3.0 | 0/10 |
+| 4 | [I4](#i4-industry-pages-for-t4s-trades) Industry pages for T4's trades | 10 | 3.0 | 0/10 |
+| 5 | [TL1](#tl1-free-tools-i) Free tools I | 11 | 3.0 | 0/11 |
+| 6 | [P1](#p1-trust-pages-about-contact-e-e-a-t) Trust pages: about, contact (E-E-A-T) | 2 | 3.0 | 0/2 |
+| 7 | [I10](#i10-one-trade-per-page-split-the-combined-industry-pages) One trade per page: split the combined industry pages | 6 | 3.0 | 0/6 |
+| 8 | [I11](#i11-who-invoices-self-employed-freelancers-sellers) Who invoices: self-employed, freelancers, sellers | 9 | 3.0 | 0/9 |
+| 9 | [T5](#t5-home-and-property-services) Home and property services | 20 | 3.0 | 0/20 |
+| 10 | [I5](#i5-industry-pages-for-t5s-trades) Industry pages for T5's trades | 20 | 3.0 | 0/20 |
+| 11 | [C2](#c2-20-more-compares-english-only) 20 more compares (English only) | 20 | 3.0 | 0/20 |
+| 12 | [B2](#b2-billing-types-ii) Billing types II | 20 | 3.0 | 0/20 |
+| 13 | [T6](#t6-makers-repair-transport-events) Makers, repair, transport, events | 20 | 3.0 | 0/20 |
+| 14 | [I6](#i6-industry-pages-for-t6s-trades) Industry pages for T6's trades | 20 | 3.0 | 0/20 |
+| 15 | [LO2](#lo2-local-rivals-in-their-own-language-hl9) Local rivals, in their own language (HL9) | 20 | 3.0 | 0/20 |
+
+And 56 more ready items. Waiting for a task: **S4** (TL3, TL7, TL8, TL9) · **S3** (CT1, CT2, CT3, CT4, CT5, CT6, LO1, LO3, LO4, LO5, LO6, LO7, LO8).
+
 ## Suggested order
 
 The English items and tasks in the order that pays off most (parents first, bigger searches first,
@@ -1438,7 +1462,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO1: Invoice rules per country, in its own language
 
-- [ ] **LO1** · 0/12 live · needs task S3; it, pt, pl stay on hold (e-invoicing)
+- [ ] **LO1** · 0/12 live · needs task S3 · it, pt, pl stay on hold (e-invoicing)
   - [ ] [/de/rechnung-pflichtangaben](plan/local.md#derechnung-pflichtangaben) pflichtangaben rechnung
   - [ ] [/nl/factuureisen](plan/local.md#nlfactuureisen) factuureisen
   - [ ] [/fr/mentions-obligatoires-facture](plan/local.md#frmentions-obligatoires-facture) mentions obligatoires facture
@@ -1478,7 +1502,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO3: Payment reminders and the fees the law allows
 
-- [ ] **LO3** · 0/8 live
+- [ ] **LO3** · 0/8 live · needs task S3
   - [ ] [/de/mahnung-schreiben](plan/local.md#demahnung-schreiben) mahnung schreiben
   - [ ] [/nl/betalingsherinnering](plan/local.md#nlbetalingsherinnering) betalingsherinnering sturen
   - [ ] [/nl/incassokosten-berekenen](plan/local.md#nlincassokosten-berekenen) incassokosten berekenen
@@ -1490,7 +1514,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO4: E-invoicing: when a PDF stops being enough
 
-- [ ] **LO4** · 0/5 live
+- [ ] **LO4** · 0/5 live · needs task S3
   - [ ] [/de/e-rechnung-pflicht](plan/local.md#dee-rechnung-pflicht) e-rechnung pflicht
   - [ ] [/fr/facturation-electronique-obligatoire](plan/local.md#frfacturation-electronique-obligatoire) facturation électronique obligatoire
   - [ ] [/es/verifactu-autonomos](plan/local.md#esverifactu-autonomos) verifactu autónomos
@@ -1499,7 +1523,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO5: Business numbers on the invoice
 
-- [ ] **LO5** · 0/6 live
+- [ ] **LO5** · 0/6 live · needs task S3
   - [ ] [/de/steuernummer-auf-rechnung](plan/local.md#desteuernummer-auf-rechnung) steuernummer auf rechnung
   - [ ] [/nl/kvk-nummer-op-factuur](plan/local.md#nlkvk-nummer-op-factuur) kvk nummer op factuur
   - [ ] [/fr/facture-en-attente-de-siret](plan/local.md#frfacture-en-attente-de-siret) facture en attente de siret
@@ -1521,7 +1545,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO7: More local rules (Germany, France, Spain)
 
-- [ ] **LO7** · 0/7 live
+- [ ] **LO7** · 0/7 live · needs task S3
   - [ ] [/de/leistungsdatum-rechnung](plan/local.md#deleistungsdatum-rechnung) leistungsdatum rechnung
   - [ ] [/de/aufbewahrungspflicht-hinweis-rechnung](plan/local.md#deaufbewahrungspflicht-hinweis-rechnung) aufbewahrungspflicht hinweis rechnung
   - [ ] [/de/rechnung-korrigieren](plan/local.md#derechnung-korrigieren) rechnung korrigieren
@@ -1532,7 +1556,7 @@ Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#
 
 ### LO8: Payment reference numbers (Sweden, Norway, Denmark, Belgium)
 
-- [ ] **LO8** · 0/5 live · needs tool code
+- [ ] **LO8** · 0/5 live · needs task S3 · needs tool code
   - [ ] [/sv/ocr-nummer-generator](plan/local.md#svocr-nummer-generator) ocr nummer generator
   - [ ] [/nb/kid-nummer-generator](plan/local.md#nbkid-nummer-generator) kid nummer generator
   - [ ] [/da/fik-nummer](plan/local.md#dafik-nummer) fik nummer

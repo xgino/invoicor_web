@@ -20,7 +20,24 @@ export const COLUMNS = [
   "avoid",
   "item",
   "translation_of",
+  "score",
+  "score_why",
 ];
+
+/**
+ * `score`: how much a planned page is worth building, 1–5 (seo/RULES.md §3), with the evidence in
+ * `score_why`. Blank = not scored yet, counted as UNSCORED.
+ */
+export const SCORES = ["", "1", "2", "3", "4", "5"];
+export const UNSCORED = 3;
+export const scoreOf = (r) => Number(r.score) || UNSCORED;
+/** Best first; ties keep their order. */
+const byScore = (list) =>
+  list
+    .map((r, i) => ({ r, i }))
+    .sort((a, b) => scoreOf(b.r) - scoreOf(a.r) || a.i - b.i)
+    .map((x) => x.r);
+const scoreLabel = (r) => (r.score ? ` · score ${r.score}` : "");
 
 /**
  * The language decision per page (roadmap R4, "localize only what makes sense"):
@@ -527,6 +544,48 @@ function renderPlan(rows) {
     const { pages, live: n } = itemStats(rows, id);
     return pages.length > 0 && n === pages.length;
   };
+  // Best next: by score, among the items whose tasks are done
+  const taskDone = (id) => TASKS.find((t) => t.id === id)?.done ?? false;
+  const open = ITEMS.map((it, i) => {
+    const todo = itemStats(rows, it.id).pages.filter((r) => r.status === "planned");
+    const scored = todo.filter((r) => r.score);
+    return {
+      it,
+      todo,
+      scored: scored.length,
+      avg: todo.length ? todo.reduce((n, r) => n + scoreOf(r), 0) / todo.length : 0,
+      blocked: (it.needs ?? []).filter((id) => !taskDone(id)),
+      order: ORDER.includes(it.id) ? ORDER.indexOf(it.id) : ORDER.length + i,
+    };
+  }).filter((x) => x.todo.length);
+  const rank = (a, b) => b.avg - a.avg || a.order - b.order;
+  const ready = open.filter((x) => !x.blocked.length).sort(rank);
+  const waiting = open.filter((x) => x.blocked.length);
+  const byTask = group(waiting, (x) => x.blocked.join(" + "));
+  const scoredAll = open.reduce((n, x) => n + x.scored, 0);
+  const todoAll = open.reduce((n, x) => n + x.todo.length, 0);
+  out.push(
+    "## Best next (by score)",
+    "",
+    `The items that can be built now (no task in the way), best first: the average \`score\` of their planned pages (blank counts as ${UNSCORED}; how to score: [RULES.md §3](RULES.md#3-planning-new-items)), ties in the suggested order below. ${scoredAll} of ${todoAll} planned pages are scored.`,
+    "",
+    "| # | Item | Pages to build | Score | Scored |",
+    "|---|---|---|---|---|",
+    ...ready
+      .slice(0, 15)
+      .map(
+        (x, i) =>
+          `| ${i + 1} | [${x.it.id}](#${anchor(`${x.it.id}: ${x.it.title}`)}) ${x.it.title} | ${x.todo.length} | ${x.avg.toFixed(1)} | ${x.scored}/${x.todo.length} |`,
+      ),
+    "",
+    `${ready.length > 15 ? `And ${ready.length - 15} more ready items. ` : ""}Waiting for a task: ${
+      [...byTask]
+        .map(([task, list]) => `**${task}** (${list.map((x) => x.it.id).join(", ")})`)
+        .join(" · ") || "none"
+    }.`,
+    "",
+  );
+
   out.push(
     "## Suggested order",
     "",
@@ -558,11 +617,11 @@ function renderPlan(rows) {
       out.push(
         `### ${it.id}: ${it.title}`,
         "",
-        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.text ? ` · ${it.text}` : ""}${ls.length ? ` · languages: [${ls[0].id}–${ls.at(-1).id}](#${anchor(`${it.id} in every language`)})` : ""}`,
+        `- ${box(pages.length > 0 && n === pages.length)} **${it.id}** · ${n}/${pages.length} live${parked.length ? ` · ${parked.length} parked` : ""}${it.needs?.length ? ` · needs task ${it.needs.join(" + ")}` : ""}${it.text ? ` · ${it.text}` : ""}${ls.length ? ` · languages: [${ls[0].id}–${ls.at(-1).id}](#${anchor(`${it.id} in every language`)})` : ""}`,
       );
-      for (const r of pages)
+      for (const r of byScore(pages))
         out.push(
-          `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${r.status === "live" ? `https://invoicor.com${r.url}` : pageLink(r)}) ${r.primary_keyword}`,
+          `  - ${box(r.status === "live")} [${shortUrl(r.url)}](${r.status === "live" ? `https://invoicor.com${r.url}` : pageLink(r)}) ${r.primary_keyword}${r.status === "live" ? "" : scoreLabel(r)}`,
         );
       for (const r of parked)
         out.push(`  - ~~${shortUrl(r.url)}~~ parked: ${r.notes || "no reason given"}`);
@@ -748,7 +807,7 @@ function renderCategory(rows, c) {
     a[0].localeCompare(b[0], "en", { numeric: true }),
   )) {
     out.push(`### ${/^[A-Z]+\d+$/.test(item) ? `Item ${item}` : item} (${items.length})`, "");
-    for (const r of items) {
+    for (const r of byScore(items)) {
       const near = closest(
         live.filter((x) => x.url !== r.url),
         r.primary_keyword,
@@ -758,7 +817,7 @@ function renderCategory(rows, c) {
       out.push(`#### ${shortUrl(r.url)}`, "");
       out.push(
         `- **Key:** ${r.primary_keyword}${r.secondary_keywords ? ` · also: ${r.secondary_keywords}` : ""}`,
-        `- **Item:** ${r.item || r.chunk || "unscheduled"}${r.intent ? ` · **Intent:** ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
+        `- **Item:** ${r.item || r.chunk || "unscheduled"} · **Score:** ${r.score ? `${r.score}${r.score_why ? ` (${r.score_why})` : ""}` : "not scored"}${r.intent ? ` · **Intent:** ${r.intent}` : ""} · **Languages:** ${r.localize || "decide (yes / local / en-only)"}${r.lang !== "en" ? ` (written in ${r.lang})` : ""}`,
         `- **Write about:** ${r.brief || "_no brief yet: write one before building_"}`,
       );
       if (r.avoid) out.push(`- **Don't write about:** ${r.avoid}`);

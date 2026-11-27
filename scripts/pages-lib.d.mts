@@ -24,3 +24,6 @@ export function renderLanguageTable(): string;
 export function renderRules(text: string): string;
 export function rulesHeading(category: { id: string; title: string }): string;
 export function rulesSection(text: string, category: { id: string; title: string }): string | null;
+export const SCORES: string[];
+export const UNSCORED: number;
+export function scoreOf(row: Row): number;

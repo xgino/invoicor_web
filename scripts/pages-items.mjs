@@ -9,7 +9,8 @@
  *
  * Completion is automatic: an item is done when all its pages are live (parked pages skipped); an L
  * item when all its pages exist in that language (`translation_of`). A task (code, no pages) is
- * ticked here by hand: `done: true`.
+ * ticked here by hand: `done: true`. An item that can't start before a task is done says so in
+ * `needs` (task ids); PLAN.md → Best next leaves it out until then.
  */
 
 /** Per category: the item letter(s). */
@@ -135,13 +136,13 @@ export const ITEMS = [
   { id: "TL0", title: "Free tools built before the plan (hub, VAT, hours, hourly rate)" },
   { id: "TL1", title: "Free tools I" },
   { id: "TL2", title: "Free tools II" },
-  { id: "TL3", title: "Pricing calculators for trades", text: "needs task S4" },
+  { id: "TL3", title: "Pricing calculators for trades", needs: ["S4"] },
   { id: "TL4", title: "VAT and GST calculators per country (English)" },
   { id: "TL5", title: "Tax tools for the self-employed" },
   { id: "TL6", title: "Payment fees, terms and payment details" },
-  { id: "TL7", title: "Job costing and materials for contractors", text: "needs task S4" },
-  { id: "TL8", title: "Pricing calculators II: services and transport", text: "needs task S4" },
-  { id: "TL9", title: "Pricing calculators III: makers and production", text: "needs task S4" },
+  { id: "TL7", title: "Job costing and materials for contractors", needs: ["S4"] },
+  { id: "TL8", title: "Pricing calculators II: services and transport", needs: ["S4"] },
+  { id: "TL9", title: "Pricing calculators III: makers and production", needs: ["S4"] },
   { id: "G0", title: "The free invoice generator (built)" },
   { id: "G1", title: "Document generators (receipt, estimate, proforma, credit note)" },
   {
@@ -152,38 +153,40 @@ export const ITEMS = [
   {
     id: "CT1",
     title: "Country pages I (English-speaking countries + EU reverse charge)",
-    text: "needs task S3",
+    needs: ["S3"],
   },
-  { id: "CT2", title: "Country pages II", text: "needs task S3" },
+  { id: "CT2", title: "Country pages II", needs: ["S3"] },
   {
     id: "CT3",
     title: "European countries in English (for foreign freelancers)",
-    text: "needs task S3",
+    needs: ["S3"],
   },
   {
     id: "CT4",
     title: "More EU countries in English (none of our languages)",
-    text: "needs task S3",
+    needs: ["S3"],
   },
-  { id: "CT5", title: "India, Japan, Thailand and Quebec", text: "needs task S3" },
-  { id: "CT6", title: "Cross-border invoicing (UK, EU, US)", text: "needs task S3" },
+  { id: "CT5", title: "India, Japan, Thailand and Quebec", needs: ["S3"] },
+  { id: "CT6", title: "Cross-border invoicing (UK, EU, US)", needs: ["S3"] },
   {
     id: "LO1",
     title: "Invoice rules per country, in its own language",
-    text: "needs task S3; it, pt, pl stay on hold (e-invoicing)",
+    needs: ["S3"],
+    text: "it, pt, pl stay on hold (e-invoicing)",
   },
   { id: "LO2", title: "Local rivals, in their own language (HL9)" },
-  { id: "LO3", title: "Payment reminders and the fees the law allows" },
-  { id: "LO4", title: "E-invoicing: when a PDF stops being enough" },
-  { id: "LO5", title: "Business numbers on the invoice" },
+  { id: "LO3", needs: ["S3"], title: "Payment reminders and the fees the law allows" },
+  { id: "LO4", needs: ["S3"], title: "E-invoicing: when a PDF stops being enough" },
+  { id: "LO5", needs: ["S3"], title: "Business numbers on the invoice" },
   {
     id: "LO6",
     title: "Other countries that share a language (Austria, Switzerland, Quebec, Luxembourg)",
-    text: "needs task S3",
+    needs: ["S3"],
   },
-  { id: "LO7", title: "More local rules (Germany, France, Spain)" },
+  { id: "LO7", needs: ["S3"], title: "More local rules (Germany, France, Spain)" },
   {
     id: "LO8",
+    needs: ["S3"],
     title: "Payment reference numbers (Sweden, Norway, Denmark, Belgium)",
     text: "needs tool code",
   },

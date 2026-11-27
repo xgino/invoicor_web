@@ -7,6 +7,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
   LOCALIZE,
+  SCORES,
   parseCsv,
   renderPagesMd,
   renderPlanFiles,
@@ -61,6 +62,25 @@ describe("page log", () => {
       .filter((r) => r.status !== "removed" && !LOCALIZE.includes(r.localize))
       .map((r) => r.url);
     expect(undecided).toEqual([]);
+  });
+
+  it("scores pages 1–5 or not at all, and a score above 3 only with its evidence (RULES.md §3)", () => {
+    const all = rows as unknown as Record<string, string>[];
+    const bad = all
+      .filter((r) => !SCORES.includes(r.score ?? ""))
+      .map((r) => `${r.url}: score "${r.score}"`);
+    const noWhy = all
+      .filter((r) => Number(r.score) > 3 && !(r.score_why ?? "").trim())
+      .map((r) => `${r.url}: score ${r.score} without score_why`);
+    expect([...bad, ...noWhy]).toEqual([]);
+  });
+
+  it("names only real tasks in an item's needs", () => {
+    const tasks = new Set(TASKS.map((t) => t.id));
+    const wrong = ITEMS.flatMap((i) =>
+      (i.needs ?? []).filter((id) => !tasks.has(id)).map((id) => `${i.id}: ${id}`),
+    );
+    expect(wrong).toEqual([]);
   });
 
   it("never gives two pages the same key in the same language", () => {

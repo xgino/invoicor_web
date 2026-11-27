@@ -13,6 +13,8 @@ export interface Item {
   id: string;
   title: string;
   text?: string;
+  /** Task ids (S1 …) that must be done before this item can be built. */
+  needs?: string[];
 }
 export interface Task extends Item {
   done: boolean;

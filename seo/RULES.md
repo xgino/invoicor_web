@@ -104,6 +104,23 @@ The plan's page count is a direction, not a quota.
   (append-only): its 10 L items appear by themselves, with the next free numbers. A language
   version that shouldn't exist gets a `parked` row in that language (`translation_of` = the
   English URL, the reason in `notes`).
+- **Score every planned row** (`score` 1–5, the evidence in `score_why`). PLAN.md sorts the pages
+  of an item by it and ranks the items that can be built now by their average (**Best next**);
+  blank counts as 3.
+
+  | Score | Means | Evidence (`score_why`) |
+  |---|---|---|
+  | 5 | Proven demand and a parent or a big search | Search Console impressions for the key, or a keyword tool's volume, plus why it's a parent |
+  | 4 | Demand found | Search Console queries, autocomplete, "People also ask" or a keyword tool |
+  | 3 | Plausible, not checked | "unchecked" (or leave both blank) |
+  | 2 | Niche or doubtful: build last | why (a sub-search, a small market, close to a live page) |
+  | 1 | Weak: the demand gate will most likely park it | why |
+
+  Never a number without its evidence: a score above 3 needs a source in `score_why`. At the
+  demand gate the score is updated (or the row parked); after each Search Console round, re-score
+  the rows the data covers.
+- An item that can't start before a task is done gets `needs: ["S3"]` in `pages-items.mjs`;
+  Best next leaves it out until the task is ticked.
 - **Stopping short is fine.** When a category runs out of good pages, the ROADMAP entry says
   **"Stopped at {item}"** and why, so the next round doesn't propose the same pages again.
 - Then `npm run pages` and `npm run check`; one commit per item, pushed to `dev`.

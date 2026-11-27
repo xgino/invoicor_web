@@ -11,7 +11,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseCsv, rulesSection } from "./pages-lib.mjs";
+import { parseCsv, rulesSection, scoreOf } from "./pages-lib.mjs";
 import { CATEGORIES } from "./pages-categories.mjs";
 import { PREFIX } from "./pages-items.mjs";
 
@@ -49,7 +49,13 @@ console.log(
 console.log(
   `\nRules (seo/RULES.md §5):\n${rulesSection(readFileSync(join(root, "seo/RULES.md"), "utf8"), cat) ?? "MISSING: add this category's section to seo/RULES.md"}`,
 );
-console.log("\nPages (status | item | localize | url | key):");
+console.log("\nPages (status | item | localize | score | url | key), best score first per status:");
 const order = { live: 0, planned: 1, parked: 2, removed: 3 };
-for (const r of [...list].sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9)))
-  console.log([r.status, r.item || "-", r.localize || "-", r.url, r.primary_keyword].join(" | "));
+for (const r of [...list].sort(
+  (a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9) || scoreOf(b) - scoreOf(a),
+))
+  console.log(
+    [r.status, r.item || "-", r.localize || "-", r.score || "-", r.url, r.primary_keyword].join(
+      " | ",
+    ),
+  );
