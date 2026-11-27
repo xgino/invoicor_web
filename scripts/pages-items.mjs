@@ -192,6 +192,7 @@ export const ITEMS = [
     title: "Core pages (built): home, hubs, help, affiliate, terms, privacy, Android",
   },
   { id: "P1", title: "Trust pages: about, contact (E-E-A-T)" },
+  { id: "P2", title: "Features, security, the countries hub and the German Impressum" },
 ];
 
 /**
@@ -277,6 +278,7 @@ export const LANGUAGE_SOURCES = [
   "TL9",
   "D2",
   "G2",
+  "P2",
 ];
 
 /** A suggested order for the English items (language items: in their number order). */
@@ -372,6 +374,7 @@ export const ORDER = [
   "C11",
   "D2",
   "G2",
+  "P2",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

@@ -218,9 +218,11 @@ export const CATEGORIES = [
         "program",
         "legal",
         "trust",
+        "product",
         "android",
         "template (file format)",
-      ].includes(r.page_type) && r.lang === "en",
+      ].includes(r.page_type) &&
+      (r.lang === "en" || r.localize === "local"),
     url: "fixed pages",
     key: "one each",
     blueprint: "BLUEPRINTS.md#about-contact-help-affiliate-legal",

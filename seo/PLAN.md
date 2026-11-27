@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**207 / 4,000 pages live** (5%) · planned: 973 English and local pages + 8,279 language pages · **9,459 when everything is built** (fewer after the demand gate parks the weak ones)
+**207 / 4,000 pages live** (5%) · planned: 977 English and local pages + 8,299 language pages · **9,483 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -114,8 +114,8 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
-| [Languages](#languages-l) | L1–L720 | 80 | 8279 | |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 9 | 6 | 0/30 done |
+| [Languages](#languages-l) | L1–L730 | 80 | 8299 | |
 
 ## Suggested order
 
@@ -123,7 +123,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11** → **D2** → **G2** → **P2**
 
 ## Tasks (S): code, no pages
 
@@ -1662,6 +1662,14 @@ Direction (what these pages can and can't do) and every brief: [plan/core.md](pl
   - [ ] [/about](plan/core.md#about) about invoicor
   - [ ] [/contact](plan/core.md#contact) contact invoicor
 
+### P2: Features, security, the countries hub and the German Impressum
+
+- [ ] **P2** · 0/4 live · languages: [L721–L730](#p2-in-every-language)
+  - [ ] [/features](plan/core.md#features) invoicor features
+  - [ ] [/security](plan/core.md#security) invoicor data security
+  - [ ] [/countries](plan/core.md#countries) invoice requirements by country
+  - [ ] [/de/impressum](plan/core.md#deimpressum) impressum
+
 ## Languages (L)
 
 One L item = one item's pages in one language. The instructions per page (search words, what to
@@ -2746,6 +2754,21 @@ Document generators II (purchase order, delivery note, statement, debit note, wo
 - [ ] [**L718**](plan/languages/it.md#l718-g2-in-italian) Italian · 0/5
 - [ ] [**L719**](plan/languages/pt.md#l719-g2-in-portuguese) Portuguese · 0/5
 - [ ] [**L720**](plan/languages/pl.md#l720-g2-in-polish) Polish · 0/5
+
+### P2 in every language
+
+Features, security, the countries hub and the German Impressum · 2 pages
+
+- [ ] [**L721**](plan/languages/de.md#l721-p2-in-german) German · 0/2
+- [ ] [**L722**](plan/languages/es.md#l722-p2-in-spanish) Spanish · 0/2
+- [ ] [**L723**](plan/languages/fr.md#l723-p2-in-french) French · 0/2
+- [ ] [**L724**](plan/languages/nl.md#l724-p2-in-dutch) Dutch · 0/2
+- [ ] [**L725**](plan/languages/sv.md#l725-p2-in-swedish) Swedish · 0/2
+- [ ] [**L726**](plan/languages/da.md#l726-p2-in-danish) Danish · 0/2
+- [ ] [**L727**](plan/languages/nb.md#l727-p2-in-norwegian-bokmål) Norwegian (Bokmål) · 0/2
+- [ ] [**L728**](plan/languages/it.md#l728-p2-in-italian) Italian · 0/2
+- [ ] [**L729**](plan/languages/pt.md#l729-p2-in-portuguese) Portuguese · 0/2
+- [ ] [**L730**](plan/languages/pl.md#l730-p2-in-polish) Polish · 0/2
 
 ## Not in an item yet
 

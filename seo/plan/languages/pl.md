@@ -6866,3 +6866,26 @@
 - **Search words:** the Polish term for "work order generator"; known local terms: Arbeitsauftrag / Auftragszettel (de), bon d'intervention (fr), werkbon (nl): check
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Same blueprint as the invoice generator page. The page says plainly that the app itself makes invoices only. A work order for a job: client and site, the work to do, parts and hours used, the technician, a line for the client's signature on paper; then turn it into an invoice in one click (prefill the invoice generator with the lines). For trades: plumbing, HVAC, repairs.
 - **Don't:** The estimate before the job (/free-estimate-generator); labor and materials invoices (/templates/labor-and-materials-invoice: link it).
+
+## L730: P2 in Polish
+
+[ ] Features, security, the countries hub and the German Impressum · 0/2 live in pl
+
+- **For every product page:** The same facts (BRAND.md §10), written naturally in that language.
+- **For every trust page:** The same facts (BRAND.md §10), written naturally in that language.
+
+### /features → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicor features](../core.md#features) (planned: write the English page first)
+- **Search words:** the Polish term for "invoicor features"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Everything the app does, straight from the BRAND.md §10 'does' column (templates, 11 invoice languages, 38 currencies, payment link field, saved clients and products, duplicate, statuses, dashboard, business profiles, data in Germany), each with a screenshot, and a short honest 'what it doesn't do' list from the 'does not' column (no payments, no recurring invoices, no estimates, no team logins). Re-check §10 before publishing.
+- **Don't:** Prices (the home page's pricing section, /#pricing: link it); per-trade pitches (the industry pages).
+
+### /security → Polish
+
+- [ ] **Live in pl**
+- **English page:** [invoicor data security](../core.md#security) (planned: write the English page first)
+- **Search words:** the Polish term for "invoicor data security"
+- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Where the data lives (servers in Germany: BRAND.md), that Invoicor never handles payments (you paste your own payment link), how to export or delete your data and account (check the app and the privacy policy), who can see it. Only what's true today; no certificates or audits unless we have them.
+- **Don't:** The privacy policy text (/privacy: link it, don't repeat it).
