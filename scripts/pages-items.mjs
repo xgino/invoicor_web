@@ -159,6 +159,20 @@ export const ITEMS = [
     text: "needs task S3; it, pt, pl stay on hold (e-invoicing)",
   },
   { id: "LO2", title: "Local rivals, in their own language (HL9)" },
+  { id: "LO3", title: "Payment reminders and the fees the law allows" },
+  { id: "LO4", title: "E-invoicing: when a PDF stops being enough" },
+  { id: "LO5", title: "Business numbers on the invoice" },
+  {
+    id: "LO6",
+    title: "Other countries that share a language (Austria, Switzerland, Quebec, Luxembourg)",
+    text: "needs task S3",
+  },
+  { id: "LO7", title: "More local rules (Germany, France, Spain)" },
+  {
+    id: "LO8",
+    title: "Payment reference numbers (Sweden, Norway, Denmark, Belgium)",
+    text: "needs tool code",
+  },
   {
     id: "P0",
     title: "Core pages (built): home, hubs, help, affiliate, terms, privacy, Android",
@@ -327,6 +341,12 @@ export const ORDER = [
   "CT4",
   "CT5",
   "CT6",
+  "LO3",
+  "LO4",
+  "LO5",
+  "LO6",
+  "LO7",
+  "LO8",
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */

@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 862 English and local pages + 8,150 language pages · **9,253 when everything is built** (fewer after the demand gate parks the weak ones)
+**241 / 4,000 pages live** (6%) · planned: 901 English and local pages + 8,150 language pages · **9,292 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -112,7 +112,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
-| [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 | 0 | 32 | none |
+| [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
 | [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
@@ -124,7 +124,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8**
 
 ## Tasks (S): code, no pages
 
@@ -1442,6 +1442,69 @@ Direction (what these pages can and can't do) and every brief: [plan/local.md](p
   - [ ] [/da/e-conomic-alternativ](plan/local.md#dae-conomic-alternativ) e-conomic alternativ
   - [ ] [/nb/fiken-alternativ](plan/local.md#nbfiken-alternativ) fiken alternativ
   - [ ] [/nb/conta-alternativ](plan/local.md#nbconta-alternativ) conta alternativ
+
+### LO3: Payment reminders and the fees the law allows
+
+- [ ] **LO3** · 0/8 live
+  - [ ] [/de/mahnung-schreiben](plan/local.md#demahnung-schreiben) mahnung schreiben
+  - [ ] [/nl/betalingsherinnering](plan/local.md#nlbetalingsherinnering) betalingsherinnering sturen
+  - [ ] [/nl/incassokosten-berekenen](plan/local.md#nlincassokosten-berekenen) incassokosten berekenen
+  - [ ] [/fr/relance-facture-impayee](plan/local.md#frrelance-facture-impayee) relance facture impayée
+  - [ ] [/es/reclamar-factura-impagada](plan/local.md#esreclamar-factura-impagada) reclamar factura impagada
+  - [ ] [/sv/betalningspaminnelse](plan/local.md#svbetalningspaminnelse) betalningspåminnelse
+  - [ ] [/da/rykker-faktura](plan/local.md#darykker-faktura) rykker faktura
+  - [ ] [/nb/purring-faktura](plan/local.md#nbpurring-faktura) purring faktura
+
+### LO4: E-invoicing: when a PDF stops being enough
+
+- [ ] **LO4** · 0/5 live
+  - [ ] [/de/e-rechnung-pflicht](plan/local.md#dee-rechnung-pflicht) e-rechnung pflicht
+  - [ ] [/fr/facturation-electronique-obligatoire](plan/local.md#frfacturation-electronique-obligatoire) facturation électronique obligatoire
+  - [ ] [/es/verifactu-autonomos](plan/local.md#esverifactu-autonomos) verifactu autónomos
+  - [ ] [/nl/e-facturatie-verplicht-belgie](plan/local.md#nle-facturatie-verplicht-belgie) e-facturatie verplicht belgië
+  - [ ] [/fr/facturation-electronique-belgique](plan/local.md#frfacturation-electronique-belgique) facturation électronique belgique
+
+### LO5: Business numbers on the invoice
+
+- [ ] **LO5** · 0/6 live
+  - [ ] [/de/steuernummer-auf-rechnung](plan/local.md#desteuernummer-auf-rechnung) steuernummer auf rechnung
+  - [ ] [/nl/kvk-nummer-op-factuur](plan/local.md#nlkvk-nummer-op-factuur) kvk nummer op factuur
+  - [ ] [/fr/facture-en-attente-de-siret](plan/local.md#frfacture-en-attente-de-siret) facture en attente de siret
+  - [ ] [/sv/f-skatt-faktura](plan/local.md#svf-skatt-faktura) f-skatt på faktura
+  - [ ] [/nb/foretaksregisteret-pa-faktura](plan/local.md#nbforetaksregisteret-pa-faktura) foretaksregisteret på faktura
+  - [ ] [/da/cvr-nummer-faktura](plan/local.md#dacvr-nummer-faktura) cvr nummer på faktura
+
+### LO6: Other countries that share a language (Austria, Switzerland, Quebec, Luxembourg)
+
+- [ ] **LO6** · 0/8 live · needs task S3
+  - [ ] [/de/rechnung-oesterreich](plan/local.md#derechnung-oesterreich) rechnungsmerkmale österreich
+  - [ ] [/de/honorarnote](plan/local.md#dehonorarnote) honorarnote
+  - [ ] [/de/rechnung-schweiz](plan/local.md#derechnung-schweiz) mwst rechnung schweiz
+  - [ ] [/fr/facture-suisse](plan/local.md#frfacture-suisse) facture suisse mentions obligatoires
+  - [ ] [/it/fattura-svizzera](plan/local.md#itfattura-svizzera) fattura svizzera requisiti
+  - [ ] [/fr/facture-quebec-tps-tvq](plan/local.md#frfacture-quebec-tps-tvq) facture tps tvq
+  - [ ] [/fr/facture-travailleur-autonome](plan/local.md#frfacture-travailleur-autonome) facture travailleur autonome
+  - [ ] [/fr/facture-luxembourg](plan/local.md#frfacture-luxembourg) facture luxembourg mentions obligatoires
+
+### LO7: More local rules (Germany, France, Spain)
+
+- [ ] **LO7** · 0/7 live
+  - [ ] [/de/leistungsdatum-rechnung](plan/local.md#deleistungsdatum-rechnung) leistungsdatum rechnung
+  - [ ] [/de/aufbewahrungspflicht-hinweis-rechnung](plan/local.md#deaufbewahrungspflicht-hinweis-rechnung) aufbewahrungspflicht hinweis rechnung
+  - [ ] [/de/rechnung-korrigieren](plan/local.md#derechnung-korrigieren) rechnung korrigieren
+  - [ ] [/fr/mention-assurance-decennale-facture](plan/local.md#frmention-assurance-decennale-facture) mention assurance décennale facture
+  - [ ] [/fr/delai-de-paiement-legal](plan/local.md#frdelai-de-paiement-legal) délai de paiement légal facture
+  - [ ] [/es/factura-con-retencion-irpf](plan/local.md#esfactura-con-retencion-irpf) factura con retención irpf
+  - [ ] [/es/recargo-de-equivalencia-factura](plan/local.md#esrecargo-de-equivalencia-factura) recargo de equivalencia factura
+
+### LO8: Payment reference numbers (Sweden, Norway, Denmark, Belgium)
+
+- [ ] **LO8** · 0/5 live · needs tool code
+  - [ ] [/sv/ocr-nummer-generator](plan/local.md#svocr-nummer-generator) ocr nummer generator
+  - [ ] [/nb/kid-nummer-generator](plan/local.md#nbkid-nummer-generator) kid nummer generator
+  - [ ] [/da/fik-nummer](plan/local.md#dafik-nummer) fik nummer
+  - [ ] [/nl/gestructureerde-mededeling-generator](plan/local.md#nlgestructureerde-mededeling-generator) gestructureerde mededeling generator
+  - [ ] [/fr/communication-structuree-generateur](plan/local.md#frcommunication-structuree-generateur) communication structurée générateur
 
 ## Generators (other documents) (G)
 

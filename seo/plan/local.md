@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
-**0 done · 35 planned**
+**0 done · 74 planned**
 
 ## Direction
 
@@ -27,7 +27,7 @@
 
 _None yet._
 
-## Planned (35)
+## Planned (74)
 
 ### Item LO1 (12)
 
@@ -240,6 +240,291 @@ _None yet._
 - **Key:** conta alternativ
 - **Item:** LO2 · **Intent:** compare · **Languages:** local (written in nb)
 - **Write about:** Written in the language (HL9): a fair comparison with a local rival, their prices from their own site (source and date), and honestly where they're better (most local tools do e-invoicing, bookkeeping and bank links that Invoicor doesn't). Rival: Conta; check it still exists and its current plans.
+
+### Item LO3 (8)
+
+#### /de/mahnung-schreiben
+
+- **Key:** mahnung schreiben · also: zahlungserinnerung vorlage; mahngebühren wie hoch
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Germany: Zahlungserinnerung, 1. and 2. Mahnung, when the client is in default (Verzug: 30 days after the invoice for consumers only if the invoice says so, §286 BGB: check), what fees you may charge (actual costs only, the €40 flat fee for businesses, §288 Abs. 5 BGB: cite and date), a sample text per step. Austria and Switzerland in a box (hedged). Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /nl/betalingsherinnering
+
+- **Key:** betalingsherinnering sturen · also: betalingsherinnering voorbeeld; veertiendagenbrief
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in nl)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Dutch, for the Netherlands: the reminder, then for consumers the mandatory 14-day letter (veertiendagenbrief) before collection costs may be charged, what it must say, sample texts; link the incasso calculator. Sources: rijksoverheid.nl, the WIK (cite and date). Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /nl/incassokosten-berekenen
+
+- **Key:** incassokosten berekenen · also: wik staffel; buitengerechtelijke incassokosten
+- **Item:** LO3 · **Intent:** tool · **Languages:** local (written in nl)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In Dutch: the WIK scale (15% of the first €2,500, minimum €40, then the lower steps: check the current scale in the Besluit vergoeding voor buitengerechtelijke incassokosten), B2B vs B2C, when you may charge it (after the 14-day letter for consumers). The answer goes on a reminder invoice in the generator. Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /fr/relance-facture-impayee
+
+- **Key:** relance facture impayée · also: lettre de relance facture; mise en demeure facture impayée
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for France: the friendly reminder, the formal notice (mise en demeure), late-payment penalties and the €40 fixed compensation for businesses (Code de commerce L441-10: check), the payment deadlines (60 days or 45 days end of month), sample texts. Belgium and Switzerland in a box (hedged). Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /es/reclamar-factura-impagada
+
+- **Key:** reclamar factura impagada · also: carta reclamación factura; burofax factura impagada
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in es)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Spanish, for Spain: the reminder, the burofax, late interest and the €40 compensation for businesses (Ley 3/2004: check), the monitorio procedure in one hedged paragraph, sample texts. Say the Verifactu date (from the LO1 page) where it touches the invoice. Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /sv/betalningspaminnelse
+
+- **Key:** betalningspåminnelse · also: påminnelseavgift; påminnelse faktura mall
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in sv)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Swedish: the reminder, the reminder fee (60 kr, only if agreed before, Lag om ersättning för inkassokostnader: check the amount), dröjsmålsränta in one sentence with a link to the interest calculator, sample texts. Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /da/rykker-faktura
+
+- **Key:** rykker faktura · also: rykkergebyr; rykkerskrivelse skabelon
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in da)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Danish: up to three reminders at least 10 days apart and the maximum fee per reminder (100 kr, renteloven §9b: check), the compensation for businesses, sample texts. Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+#### /nb/purring-faktura
+
+- **Key:** purring faktura · also: purregebyr; betalingspåminnelse mal
+- **Item:** LO3 · **Intent:** reminder rules · **Languages:** local (written in nb)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Norwegian Bokmål: the reminder (betalingspåminnelse), the purregebyr tied to the inkassosats (check the current amount in inkassoforskriften), the 14 days before a debt goes to collection (inkassovarsel), sample texts. Sources from the official site, each dated.
+- **Don't write about:** How to write the invoice itself (that language's generator page); statutory late-payment interest (that language's version of /tools/late-payment-interest-calculator: link it); debt collection agencies beyond one hedged sentence.
+
+### Item LO4 (5)
+
+#### /de/e-rechnung-pflicht
+
+- **Key:** e-rechnung pflicht · also: e-rechnung kleinunternehmer; e-rechnung ab 2027
+- **Item:** LO4 · **Intent:** e-invoicing rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Germany: receiving e-invoices since 2025, sending from 2027 (turnover over €800,000) and 2028 for everyone (check the dates in the BMF letter), who is exempt (Kleinunternehmer, invoices up to €250, B2C), what a PDF is until then (an 'other invoice', fine with the client's consent: check). Say plainly that Invoicor makes PDFs, not XRechnung or ZUGFeRD. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to make an invoice (the generator page). No claim that Invoicor sends e-invoices: it makes PDFs.
+
+#### /fr/facturation-electronique-obligatoire
+
+- **Key:** facturation électronique obligatoire · also: facture électronique 2026; facture électronique micro-entrepreneur
+- **Item:** LO4 · **Intent:** e-invoicing rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for France: everyone must receive e-invoices from September 2026, large and mid-size companies must send them then, SMEs and micro-entrepreneurs from September 2027 (check on impots.gouv.fr), the approved platforms (PA), B2C and export (e-reporting) in one paragraph. Say plainly that Invoicor makes PDFs and isn't an approved platform. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to make an invoice (the generator page). No claim that Invoicor sends e-invoices: it makes PDFs.
+
+#### /es/verifactu-autonomos
+
+- **Key:** verifactu autónomos · also: factura electrónica obligatoria autónomos; verifactu fechas
+- **Item:** LO4 · **Intent:** e-invoicing rules · **Languages:** local (written in es)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Spanish, for Spain: Verifactu (certified billing software) and its dates (moved to 2027 for companies and autónomos: check the latest Real Decreto), the separate B2B e-invoice rule from the Ley Crea y Crece (check its status), who is exempt (SII, Basque and Navarre regimes). Say plainly that Invoicor isn't Verifactu software, so its PDFs stop being enough for Spanish sellers on that date. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to make an invoice (the generator page). No claim that Invoicor sends e-invoices: it makes PDFs.
+
+#### /nl/e-facturatie-verplicht-belgie
+
+- **Key:** e-facturatie verplicht belgië · also: peppol verplicht 2026; e-factuur belgië
+- **Item:** LO4 · **Intent:** e-invoicing rules · **Languages:** local (written in nl)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Dutch, for Belgium (Flanders): Peppol e-invoices required for B2B since January 2026, e-reporting from 2028 (check on fin.belgium.be), what is exempt (B2C, some exempt sellers), the fines. Say plainly that Invoicor doesn't send Peppol invoices, so it suits Belgian B2C invoices only. Note for the Netherlands: no B2B rule yet (EU ViDA from 2030: check). Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to make an invoice (the generator page). No claim that Invoicor sends e-invoices: it makes PDFs.
+
+#### /fr/facturation-electronique-belgique
+
+- **Key:** facturation électronique belgique · also: peppol obligatoire belgique; facture électronique 2026 belgique
+- **Item:** LO4 · **Intent:** e-invoicing rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for Belgium (Wallonia, Brussels): the same rules as the Dutch Belgium page (Peppol B2B since January 2026, e-reporting 2028, exemptions, fines: check on fin.belgium.be), written for French-speaking Belgians. Say plainly that Invoicor doesn't send Peppol invoices, so it suits B2C only. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to make an invoice (the generator page). No claim that Invoicor sends e-invoices: it makes PDFs.
+
+### Item LO5 (6)
+
+#### /de/steuernummer-auf-rechnung
+
+- **Key:** steuernummer auf rechnung · also: steuernummer oder ust-idnr rechnung; ust-idnr auf rechnung pflicht
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German: the Steuernummer or the USt-IdNr. is required (§14 Abs. 4 Nr. 2 UStG), when the USt-IdNr. is required (EU clients, reverse charge), why many use the USt-IdNr. (privacy), how to get one (BZSt, one sentence), Austria's UID box. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+#### /nl/kvk-nummer-op-factuur
+
+- **Key:** kvk nummer op factuur · also: btw-id op factuur; btw nummer of btw-id factuur
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in nl)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Dutch: the KvK number and the btw-id (since 2020 instead of the old btw number with the BSN), which one goes where, the KOR case, when a client's btw-id is needed (verlegd, EU). Sources: belastingdienst.nl, kvk.nl, dated. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+#### /fr/facture-en-attente-de-siret
+
+- **Key:** facture en attente de siret · also: facture sans siret; siret en cours d'attribution
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French: can a new micro-entrepreneur invoice before the SIRET arrives (the mention to use: check on autoentrepreneur.urssaf.fr), the SIREN vs SIRET, the RCS/RM mention for companies and artisans, the VAT number when it applies. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+#### /sv/f-skatt-faktura
+
+- **Key:** f-skatt på faktura · also: godkänd för f-skatt faktura; momsregistreringsnummer faktura
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in sv)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Swedish: what F-skatt means for the client (no tax deduction from the payment), whether 'Godkänd för F-skatt' must be on the invoice (not required by law since 2009 but expected: check on skatteverket.se), the momsregistreringsnummer (SE…01), organisationsnummer vs personnummer for sole traders. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+#### /nb/foretaksregisteret-pa-faktura
+
+- **Key:** foretaksregisteret på faktura · also: organisasjonsnummer på faktura; mva på faktura
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in nb)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Norwegian Bokmål: 'Foretaksregisteret' after the organisasjonsnummer for registered companies (foretaksregisterloven §10-2: check), 'MVA' after it when VAT-registered, what an enkeltpersonforetak not in the register writes. Sources: brreg.no, lovdata.no, dated. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+#### /da/cvr-nummer-faktura
+
+- **Key:** cvr nummer på faktura · also: faktura uden cvr nummer; se nummer faktura
+- **Item:** LO5 · **Intent:** number rules · **Languages:** local (written in da)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Danish: the CVR number (or SE number) on the invoice, what applies without a CVR (B-income: hedged, link skat.dk), when the client's CVR is needed (reverse charge, EU). Sources: skat.dk, virk.dk, dated. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page: link it); how to register a business beyond one sentence and the official link.
+
+### Item LO6 (8)
+
+#### /de/rechnung-oesterreich
+
+- **Key:** rechnungsmerkmale österreich · also: rechnung österreich pflichtangaben; uid nummer rechnung österreich
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Austria: the required details (§11 UStG: the UID of the client above €10,000: check), Kleinbetragsrechnung up to €400, Kleinunternehmer (€55,000 since 2025: check), 20% / 13% / 10%. EUR. Sources: bmf.gv.at, usp.gv.at, dated. Link /invoice-generator-austria when it exists (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /de/honorarnote
+
+- **Key:** honorarnote · also: honorarnote vorlage; honorarnote ohne ust
+- **Item:** LO6 · **Intent:** template · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Austria: the Honorarnote (the Austrian word for a freelancer's invoice: Neue Selbständige, Werkvertrag), what it must show, with or without USt (Kleinunternehmer), SVS in one hedged sentence, a sample in the generator. Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /de/rechnung-schweiz
+
+- **Key:** mwst rechnung schweiz · also: rechnung schweiz anforderungen; rechnung ohne mwst schweiz
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German, for Switzerland: what an invoice must show (Art. 26 MWSTG: check), the UID with MWST, the CHF 100,000 registration threshold, 8.1% / 2.6% / 3.8% (check), the QR-bill (link that tool). CHF. Sources: estv.admin.ch, dated. Link /invoice-generator-switzerland (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /fr/facture-suisse
+
+- **Key:** facture suisse mentions obligatoires · also: facture tva suisse; facture sans tva suisse
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for French-speaking Switzerland: the same rules as the German Swiss page (Art. 26 LTVA, the CHF 100,000 threshold, the rates, the QR-bill: check), French terms (TVA, IDE). CHF. Link /invoice-generator-switzerland (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /it/fattura-svizzera
+
+- **Key:** fattura svizzera requisiti · also: fattura iva svizzera; fattura ticino
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in it)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Italian, for Ticino and Italian-speaking Switzerland: the Swiss rules (Art. 26 LIVA, the CHF 100,000 threshold, the rates, the QR-bill: check). Say plainly it is for Switzerland only: invoices in Italy need the SdI, which Invoicor doesn't send. CHF. Link /invoice-generator-switzerland (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /fr/facture-quebec-tps-tvq
+
+- **Key:** facture tps tvq · also: facture québec exigences; numéro tps tvq facture
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for Quebec: GST 5% and QST 9.975%, both registration numbers and when they're required (check revenuquebec.ca), the small supplier threshold ($30,000), invoices in French (Charter of the French language: check the 2025 rules). CAD. Link /invoice-generator-quebec (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /fr/facture-travailleur-autonome
+
+- **Key:** facture travailleur autonome · also: modèle facture travailleur autonome; facture travailleur autonome sans taxes
+- **Item:** LO6 · **Intent:** template · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for Quebec: the travailleur autonome's invoice (the Quebec word, not auto-entrepreneur), with or without GST/QST (small supplier), what to show, a sample in CAD in the generator. Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+#### /fr/facture-luxembourg
+
+- **Key:** facture luxembourg mentions obligatoires · also: facture tva luxembourg
+- **Item:** LO6 · **Intent:** country rules · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for Luxembourg: the same rules as /invoice-generator-luxembourg (required fields per the AED, 17% and the reduced rates, the franchise for small businesses: check), French terms. EUR. Link the English page (hreflang). Sources from the official site, each dated.
+- **Don't write about:** The rules of the language's main country (its LO1 page: link it); how to make an invoice (the generator page).
+
+### Item LO7 (7)
+
+#### /de/leistungsdatum-rechnung
+
+- **Key:** leistungsdatum rechnung · also: leistungszeitraum rechnung; leistungsdatum entspricht rechnungsdatum
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German: the date of supply is required (§14 Abs. 4 Nr. 6 UStG), the wording 'Leistungsdatum entspricht Rechnungsdatum', service periods for monthly work, what the Finanzamt does when it's missing (no input tax for the client: hedge). Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /de/aufbewahrungspflicht-hinweis-rechnung
+
+- **Key:** aufbewahrungspflicht hinweis rechnung · also: hinweis aufbewahrungspflicht privatkunden; rechnung privatperson handwerker
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German: for work on a property for private clients the invoice must say the client keeps it for 2 years (§14 Abs. 4 Nr. 9 UStG: check), the invoice within 6 months, the sample wording; link the Handwerkerrechnung page for the tax deduction. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /de/rechnung-korrigieren
+
+- **Key:** rechnung korrigieren · also: rechnungskorrektur; rechnung stornieren
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in de)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In German: correcting a wrong detail (Rechnungsberichtigung, §31 Abs. 5 UStDV) vs cancelling and reissuing (Storno), and why 'Gutschrift' in German tax law means self-billing, not a credit note (check). Link the credit note generator for the refund case. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /fr/mention-assurance-decennale-facture
+
+- **Key:** mention assurance décennale facture · also: mention obligatoire décennale devis facture; assurance professionnelle facture artisan
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French, for building trades: the insurer, the policy and the area covered must be on quotes and invoices (loi Pinel 2014, article 22: check), who needs a décennale, the sample wording. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /fr/delai-de-paiement-legal
+
+- **Key:** délai de paiement légal facture · also: délai de paiement 30 jours; délai de paiement 45 jours fin de mois
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In French: 30 days by default, the agreed maximum of 60 days or 45 days end of month (L441-10: check), the exceptions (transport, perishable food), what goes on the invoice (the date and the penalties). Link the due-date calculator. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /es/factura-con-retencion-irpf
+
+- **Key:** factura con retención irpf · also: retención irpf autónomos 15 o 7; cuándo aplicar retención en factura
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in es)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Spanish, for Spain: who applies the IRPF withholding (professionals billing businesses), 15% and 7% for the first three years (check), how it shows on the invoice (subtracted from the total), a worked example. Say the Verifactu date. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+#### /es/recargo-de-equivalencia-factura
+
+- **Key:** recargo de equivalencia factura · also: recargo de equivalencia porcentajes
+- **Item:** LO7 · **Intent:** local rule · **Languages:** local (written in es)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). In Spanish: when a supplier must add the recargo de equivalencia (selling to retailers in the regime), the rates per VAT rate (5.2% / 1.4% / 0.5%: check), how it shows on the invoice, a worked example. Say the Verifactu date. Sources from the official site, each dated.
+- **Don't write about:** The full list of invoice requirements (that language's country page); the small-business scheme (that language's version of /templates/no-vat-invoice); credit notes (that language's version of /free-credit-note-generator).
+
+### Item LO8 (5)
+
+#### /sv/ocr-nummer-generator
+
+- **Key:** ocr nummer generator · also: skapa ocr nummer; ocr referens faktura
+- **Item:** LO8 · **Intent:** tool · **Languages:** local (written in sv)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In Swedish: makes an OCR reference with the Luhn check digit (and the optional length digit), explains that the payee needs an OCR agreement with Bankgirot or Plusgirot for the bank to check it (check), and puts the number on an invoice in the generator. Sources from the official site, each dated.
+- **Don't write about:** Invoice numbers (that language's version of /tools/invoice-number-generator); the SEPA or Swiss QR code (their tool pages: link them).
+
+#### /nb/kid-nummer-generator
+
+- **Key:** kid nummer generator · also: lage kid nummer; kid nummer faktura
+- **Item:** LO8 · **Intent:** tool · **Languages:** local (written in nb)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In Norwegian Bokmål: makes a KID with the MOD10 or MOD11 check digit, explains that the payee needs a KID agreement with the bank (check), and puts the number on an invoice. Sources from the official site, each dated.
+- **Don't write about:** Invoice numbers (that language's version of /tools/invoice-number-generator); the SEPA or Swiss QR code (their tool pages: link them).
+
+#### /da/fik-nummer
+
+- **Key:** fik nummer · also: fi kort +71; betalingsid faktura
+- **Item:** LO8 · **Intent:** tool · **Languages:** local (written in da)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In Danish: the FI card code (+71, +73, +75) and the payment ID with its check digit, that the payee needs a creditor number from the bank (check), and puts the line on an invoice. Sources from the official site, each dated.
+- **Don't write about:** Invoice numbers (that language's version of /tools/invoice-number-generator); the SEPA or Swiss QR code (their tool pages: link them).
+
+#### /nl/gestructureerde-mededeling-generator
+
+- **Key:** gestructureerde mededeling generator · also: gestructureerde mededeling maken; ogm nummer
+- **Item:** LO8 · **Intent:** tool · **Languages:** local (written in nl)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In Dutch, for Belgium: makes a structured communication (+++123/4567/89002+++, the mod 97 check: check), no bank agreement needed, and puts it on an invoice. Note that Belgian B2B invoices need Peppol since 2026 (link the e-invoicing page). Sources from the official site, each dated.
+- **Don't write about:** Invoice numbers (that language's version of /tools/invoice-number-generator); the SEPA or Swiss QR code (their tool pages: link them).
+
+#### /fr/communication-structuree-generateur
+
+- **Key:** communication structurée générateur · also: créer communication structurée; numéro de communication structurée
+- **Item:** LO8 · **Intent:** tool · **Languages:** local (written in fr)
+- **Write about:** Needs page code under the language routes (chunk 43). Written in the language from the start (R4). Needs tool code. In French, for Belgium: the same tool as the Dutch page (+++…+++, mod 97), and the same Peppol note for B2B invoices. Sources from the official site, each dated.
+- **Don't write about:** Invoice numbers (that language's version of /tools/invoice-number-generator); the SEPA or Swiss QR code (their tool pages: link them).
 
 ### on hold: e-invoicing (3)
 
