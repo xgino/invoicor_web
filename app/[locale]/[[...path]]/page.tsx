@@ -3,6 +3,12 @@ import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
 import { GeneratorPage } from "@/components/sections/generator/GeneratorPage";
 import { HelpPage } from "@/components/sections/help/HelpPage";
+import {
+  type ContentRoute,
+  ContentRoutePage,
+  contentMeta,
+  contentRoutes,
+} from "@/components/sections/content/localized";
 import { HomePage } from "@/components/sections/home/HomePage";
 import { ToolPage, ToolsHub } from "@/components/tools/ToolPage";
 import { HOME } from "@/lib/i18n/pages/home";
@@ -23,16 +29,27 @@ export const dynamicParams = false;
 
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
-  return localizedPaths(params.locale).map((p) => ({ path: p.segments }));
+  return [
+    ...localizedPaths(params.locale).map((p) => ({ path: p.segments })),
+    // The template and industry pages and hubs in this language (task S1), when it has any.
+    ...contentRoutes(params.locale).map((c) => ({ path: c.segments })),
+  ];
 }
 
 type Props = { params: Promise<{ locale: string; path?: string[] }> };
 
-async function resolve(props: Props): Promise<{ locale: Locale; key: PageKey } | null> {
+type Resolved =
+  | { locale: Locale; key: PageKey; content?: undefined }
+  | { locale: Locale; key?: undefined; content: ContentRoute };
+
+async function resolve(props: Props): Promise<Resolved | null> {
   const { locale, path = [] } = await props.params;
   if (!isLocale(locale)) return null;
-  const match = localizedPaths(locale).find((p) => p.segments.join("/") === path.join("/"));
-  return match ? { locale, key: match.key } : null;
+  const joined = path.join("/");
+  const match = localizedPaths(locale).find((p) => p.segments.join("/") === joined);
+  if (match) return { locale, key: match.key };
+  const content = contentRoutes(locale).find((c) => c.segments.join("/") === joined);
+  return content ? { locale, content: content.route } : null;
 }
 
 const PAGES: Record<
@@ -78,7 +95,9 @@ const PAGES: Record<
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const page = await resolve(props);
-  const def = page && PAGES[page.key];
+  if (page?.content)
+    return buildMetadata({ ...contentMeta(page.locale, page.content), locale: page.locale });
+  const def = page?.key && PAGES[page.key];
   if (!page || !def?.meta) return {};
   const languages = alternatesFor(page.key);
   return buildMetadata({
@@ -91,7 +110,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 export default async function LocalizedPage(props: Props) {
   const page = await resolve(props);
-  const render = page && PAGES[page.key].render;
+  if (page?.content) return <ContentRoutePage locale={page.locale} route={page.content} />;
+  const render = page?.key && PAGES[page.key].render;
   if (!page || !render) notFound();
   return render(page.locale);
 }

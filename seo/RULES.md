@@ -150,6 +150,17 @@ The plan's page count is a direction, not a quota.
   anyway.
 - German first (it already gets clicks); Italian, Portuguese and Polish last (e-invoicing).
 
+**Where a version is written** (task S1): a template or industry page in
+`content/{locale}/templates.json` or `industries.json`, with the English entry's fields written for
+that country, plus `translation_of` (the English slug) and, because the trade's name changes form
+per language, its own headings: templates `include_title`, `paper_label`, `faq_title`,
+`cta_title` (followed on the page by "in seconds" in that language) and `tip_title` with a pro tip;
+industries `features_title`, `line_items_title`, `faq_title`, `cta_title`. Its URL is the language's
+base (`CONTENT_BASES` in `lib/i18n/routes.ts`: /de/vorlagen, /nl/templates …) + its own local slug.
+The hub, hreflang both ways, the sitemap, the language switcher, the menu link and "Use this
+template" follow by themselves; `npm run pages` then files it as D4-de. The fixed page text
+(buttons, labels) is in `lib/i18n/pages/content/{locale}.ts`.
+
 <!-- generated:languages (npm run pages; edit LANGUAGES in scripts/pages-items.mjs) -->
 | Lang | Markets | Money | Numbers | VAT | Tax words | Watch out |
 |---|---|---|---|---|---|---|

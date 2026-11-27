@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { HubPage } from "@/components/sections/content/hub";
 import { getTemplates } from "@/lib/content";
+import { hubVersions } from "@/lib/content-i18n";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -8,6 +9,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Free, industry-specific invoice templates and guides: what to include, sample breakdowns, and mistakes to avoid. Create and send them in seconds with the Invoicor app.",
   path: "/templates",
+  // The hub in every language it exists in (task S1), for hreflang.
+  languages: hubVersions("templates"),
 });
 
 /** Templates hub (ROADMAP chunk 21c, blueprint "Hub"). */

@@ -118,6 +118,41 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   },
 };
 
+/**
+ * Where the template and industry pages live in each language (task S1): the hub, and the pages
+ * below it with their own local slug (/de/vorlagen/anzahlungsrechnung). The words are the ones the
+ * menus use (lib/i18n/chrome.ts). A language's hub and pages only exist once it has at least one
+ * translated page in content/{locale}/templates.json or industries.json.
+ */
+export const CONTENT_BASES: Record<"templates" | "industries", Record<Locale, string>> = {
+  templates: {
+    en: "/templates",
+    nl: "/nl/templates",
+    de: "/de/vorlagen",
+    fr: "/fr/modeles",
+    es: "/es/plantillas",
+    it: "/it/modelli",
+    pt: "/pt/modelos",
+    pl: "/pl/wzory",
+    sv: "/sv/mallar",
+    da: "/da/skabeloner",
+    nb: "/nb/maler",
+  },
+  industries: {
+    en: "/industries",
+    nl: "/nl/branches",
+    de: "/de/branchen",
+    fr: "/fr/metiers",
+    es: "/es/sectores",
+    it: "/it/settori",
+    pt: "/pt/setores",
+    pl: "/pl/branze",
+    sv: "/sv/branscher",
+    da: "/da/brancher",
+    nb: "/nb/bransjer",
+  },
+};
+
 export function pathFor(key: PageKey, locale: Locale): string | undefined {
   return ROUTES[key][locale];
 }

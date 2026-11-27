@@ -14,6 +14,7 @@
 - **Every page:** written for the country, not word for word; slug, title, H1 and examples in
   Spanish; links to the English page (hreflang) and to the other es pages; the same depth and
   honesty rules as the English page ([RULES.md](../../RULES.md)).
+- **Where:** a template or industry page goes in `content/es/templates.json` or `industries.json`: the English entry's fields written for the country, `translation_of` (the English slug) and its own headings (RULES.md §4, "Where a version is written"). Its URL: the Spanish base in `lib/i18n/routes.ts` + a local slug.
 - **Skip a page** that has no Spanish search or doesn't fit the country: a `parked` row in
   `es` with `translation_of` = the English URL and the reason in `notes`.
 

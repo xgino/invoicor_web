@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/layout";
 import { QrDownload } from "@/components/ui/QrDownload";
 import { getApiCurrencies, getApiLanguages, getApiTemplates } from "@/lib/api";
 import { getTemplates } from "@/lib/content";
+import { getLocalTemplates } from "@/lib/content-i18n";
 import { examplesBySlug } from "@/lib/generator/examples";
 import { CHROME } from "@/lib/i18n/chrome";
 import { LOCALE_INFO, type Locale } from "@/lib/i18n/config";
@@ -74,7 +75,8 @@ export async function GeneratorPage({ locale }: { locale: Locale }) {
             t={t.ui}
             intl={info.intl}
             defaults={locale === "en" ? undefined : defaults}
-            examples={examplesBySlug(getTemplates())}
+            // This language's template samples too (task S1), so its "Use this template" links work.
+            examples={examplesBySlug([...getTemplates(), ...getLocalTemplates(locale)])}
             templates={templates.map(({ slug, name, tier }) => ({ slug, name, tier }))}
             currencies={currencies}
             languages={languages}

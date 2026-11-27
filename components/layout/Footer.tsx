@@ -8,6 +8,7 @@ import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
 import { CONTACT_EMAIL } from "@/lib/config";
 import { getTemplates } from "@/lib/content";
+import { hubPath } from "@/lib/content-i18n";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
 import { ROUTES } from "@/lib/i18n/routes";
@@ -195,6 +196,9 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
  */
 function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
   const t = CHROME[locale].footer;
+  // This language's hubs, once it has pages (task S1); until then the English ones are linked.
+  const templatesHub = hubPath("templates", locale);
+  const industriesHub = hubPath("industries", locale);
   const home = ROUTES.home[locale];
   const year = new Date().getFullYear();
   return (
@@ -253,6 +257,16 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               <Item href={ROUTES.android[locale] ?? "/android"} track="android">
                 {t.android}
               </Item>
+              {templatesHub && (
+                <Item href={templatesHub} track="templates">
+                  {t.templates}
+                </Item>
+              )}
+              {industriesHub && (
+                <Item href={industriesHub} track="industries">
+                  {t.industries}
+                </Item>
+              )}
               <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
@@ -265,8 +279,8 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               </li>
             </Column>
             <Column title={t.colEnglish}>
-              <EnglishItem href="/templates">{t.templates}</EnglishItem>
-              <EnglishItem href="/industries">{t.industries}</EnglishItem>
+              {!templatesHub && <EnglishItem href="/templates">{t.templates}</EnglishItem>}
+              {!industriesHub && <EnglishItem href="/industries">{t.industries}</EnglishItem>}
               <EnglishItem href="/compare">{t.compare}</EnglishItem>
             </Column>
             <div className="col-span-2 sm:col-span-1">

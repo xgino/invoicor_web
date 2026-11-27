@@ -22,7 +22,7 @@ const base = {
   faqs: z.array(faq).default([]),
 };
 
-const templateSchema = z.looseObject({
+export const templateSchema = z.looseObject({
   ...base,
   niche: z.string().min(1),
   /** Slug of the matching industry page (the "invoice app for …" page), for cross-links. */
@@ -40,7 +40,7 @@ const templateSchema = z.looseObject({
   invoice_types: z.array(z.string()).default([]),
 });
 
-const industrySchema = z.looseObject({
+export const industrySchema = z.looseObject({
   ...base,
   industry: z.string().min(1),
   industry_stats: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
@@ -152,9 +152,10 @@ export const getComparison = (slug: string) => comparisons.find((c) => c.slug ==
 
 /** Read an optional, non-empty string field (e.g. `text(d, "req_1_title")`). */
 /** "2026-11-18" → "November 18, 2026" (the visible "Updated" line on content pages). */
-export function formatUpdated(iso: string): string {
+/** "2026-11-18" → "November 18, 2026" (or the date in another language: `intl` "de-DE"). */
+export function formatUpdated(iso: string, intl = "en-US"): string {
   const [y, m, d] = iso.split("-").map(Number) as [number, number, number];
-  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("en-US", {
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(intl, {
     year: "numeric",
     month: "long",
     day: "numeric",

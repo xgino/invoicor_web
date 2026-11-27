@@ -14,6 +14,7 @@
 - **Every page:** written for the country, not word for word; slug, title, H1 and examples in
   Polish; links to the English page (hreflang) and to the other pl pages; the same depth and
   honesty rules as the English page ([RULES.md](../../RULES.md)).
+- **Where:** a template or industry page goes in `content/pl/templates.json` or `industries.json`: the English entry's fields written for the country, `translation_of` (the English slug) and its own headings (RULES.md §4, "Where a version is written"). Its URL: the Polish base in `lib/i18n/routes.ts` + a local slug.
 - **Skip a page** that has no Polish search or doesn't fit the country: a `parked` row in
   `pl` with `translation_of` = the English URL and the reason in `notes`.
 

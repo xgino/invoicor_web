@@ -2,15 +2,42 @@
 
 import { Check, Globe } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { cx } from "@/components/ui/cx";
 import { LANG_STORAGE_KEY, LOCALES, LOCALE_INFO, type Locale } from "@/lib/i18n/config";
 import { ROUTES, pageForPath } from "@/lib/i18n/routes";
 
 /** Where a language choice leads from the current page: the same page if it exists, else home. */
-function targetFor(pathname: string, locale: Locale): string | null {
+function targetFor(
+  pathname: string,
+  locale: Locale,
+  alternates: Partial<Record<Locale, string>>,
+): string | null {
   const { key } = pageForPath(pathname);
-  return (key && ROUTES[key][locale]) || ROUTES.home[locale] || null;
+  return alternates[locale] || (key && ROUTES[key][locale]) || ROUTES.home[locale] || null;
+}
+
+/**
+ * The page's own language versions, from its hreflang links in <head>. Template and industry pages
+ * (task S1) aren't in the route table, but their metadata lists every version, so the switcher
+ * leads to the same page in the chosen language. Paths only, so a local preview stays local.
+ */
+function readAlternates(): string {
+  const map: Record<string, string> = {};
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => {
+    const lang = el.getAttribute("hreflang") ?? "";
+    const href = el.getAttribute("href");
+    if (href && (LOCALES as readonly string[]).includes(lang))
+      map[lang] = new URL(href, window.location.href).pathname;
+  });
+  return JSON.stringify(map);
+}
+const noSubscribe = () => () => {};
+
+function useAlternates(): Partial<Record<Locale, string>> {
+  // Read on every render (a new page re-renders the switcher); "{}" while rendering on the server.
+  const json = useSyncExternalStore(noSubscribe, readAlternates, () => "{}");
+  return useMemo(() => JSON.parse(json) as Partial<Record<Locale, string>>, [json]);
 }
 
 function remember(locale: Locale) {
@@ -36,8 +63,9 @@ export function LanguageSwitcher({
   variant?: "menu" | "list";
 }) {
   const pathname = usePathname();
+  const alternates = useAlternates();
   const options = LOCALES.flatMap((l) => {
-    const href = targetFor(pathname, l);
+    const href = targetFor(pathname, l, alternates);
     return href ? [{ locale: l, href }] : [];
   });
 

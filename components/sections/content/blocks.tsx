@@ -9,7 +9,7 @@ import { cx } from "@/components/ui/cx";
 import { Container, Eyebrow, Gradient, Heading, Section, Text } from "@/components/ui/layout";
 import { FREE_INVOICES } from "@/lib/pricing";
 import { CHROME, fill } from "@/lib/i18n/chrome";
-import type { Locale } from "@/lib/i18n/config";
+import { LOCALE_INFO, type Locale } from "@/lib/i18n/config";
 import { HOME } from "@/lib/i18n/pages/home";
 import { ROUTES } from "@/lib/i18n/routes";
 import { Toc, type TocSection } from "./Toc";
@@ -29,6 +29,8 @@ export function PageHeader({
   actions,
   aside,
   updated,
+  updatedLabel = "Updated",
+  locale = "en",
 }: {
   crumbs: Array<{ name: string; href?: string }>;
   eyebrow?: ReactNode;
@@ -38,6 +40,9 @@ export function PageHeader({
   aside?: ReactNode;
   /** ISO date of the last content update, shown as "Updated November 18, 2026". */
   updated?: string;
+  /** "Updated" and the date format in the page's language. */
+  updatedLabel?: string;
+  locale?: Locale;
 }) {
   return (
     <header className="bg-surface relative isolate overflow-hidden">
@@ -61,7 +66,8 @@ export function PageHeader({
             {actions && <div className="mt-8 flex flex-wrap items-center gap-3">{actions}</div>}
             {updated && (
               <p className="text-small text-subtle mt-5">
-                Updated <time dateTime={updated}>{formatUpdated(updated)}</time>
+                {updatedLabel}{" "}
+                <time dateTime={updated}>{formatUpdated(updated, LOCALE_INFO[locale].intl)}</time>
               </p>
             )}
           </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container, Section } from "@/components/ui/layout";
+import type { Locale } from "@/lib/i18n/config";
 import { collectionLd } from "@/lib/jsonld";
 import { ClosingCta, PageHeader } from "./blocks";
 
@@ -47,6 +48,13 @@ export function HubPage({
   cta,
   explainer,
   campaign,
+  locale = "en",
+  home = { name: "Home", href: "/" },
+  closing = {
+    title: "Make your next invoice",
+    gradient: "in seconds.",
+    text: "Saved clients and products, automatic totals and a clean PDF you send from your phone.",
+  },
 }: {
   path: string;
   name: string;
@@ -57,6 +65,10 @@ export function HubPage({
   cta: string;
   explainer: ReactNode;
   campaign: string;
+  /** The page's language (task S1): the crumbs, the closing call to action. */
+  locale?: Locale;
+  home?: { name: string; href: string };
+  closing?: { title: string; gradient: string; text: string };
 }) {
   return (
     <>
@@ -67,12 +79,7 @@ export function HubPage({
           items.map((i) => ({ name: i.title, path: i.href })),
         )}
       />
-      <PageHeader
-        crumbs={[{ name: "Home", href: "/" }, { name }]}
-        eyebrow={eyebrow}
-        title={title}
-        subtitle={subtitle}
-      />
+      <PageHeader crumbs={[home, { name }]} eyebrow={eyebrow} title={title} subtitle={subtitle} />
       <Container className="pb-section space-y-14">
         {groupItems(items).map((g) => (
           <section key={g.name ?? "all"} aria-labelledby={g.name ? slug(g.name) : undefined}>
@@ -117,10 +124,11 @@ export function HubPage({
         </Container>
       </Section>
       <ClosingCta
-        title="Make your next invoice"
-        gradient="in seconds."
-        text="Saved clients and products, automatic totals and a clean PDF you send from your phone."
+        title={closing.title}
+        gradient={closing.gradient}
+        text={closing.text}
         campaign={campaign}
+        locale={locale}
       />
     </>
   );

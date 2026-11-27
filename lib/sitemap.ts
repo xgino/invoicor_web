@@ -1,6 +1,13 @@
 import { absoluteUrl } from "@/lib/config";
 import { CONTENT_UPDATED_AT, getComparisons, getIndustries, getTemplates } from "@/lib/content";
-import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
+import {
+  contentPath,
+  contentVersions,
+  getLocalIndustries,
+  getLocalTemplates,
+  hubVersions,
+} from "@/lib/content-i18n";
+import { DEFAULT_LOCALE, PREFIXED_LOCALES, type Locale } from "@/lib/i18n/config";
 import { ROUTES, type PageKey } from "@/lib/i18n/routes";
 import { TOOLS } from "@/lib/tools/registry";
 
@@ -31,10 +38,36 @@ function languagesOf(path: string): Partial<Record<Locale, string>> | undefined 
   return Object.keys(versions).length > 1 ? versions : undefined;
 }
 
-const entry = (path: string, lastModified: string): SitemapEntry => {
-  const languages = languagesOf(path);
+const entry = (
+  path: string,
+  lastModified: string,
+  versions?: Partial<Record<Locale, string>>,
+): SitemapEntry => {
+  const languages = versions
+    ? Object.keys(versions).length > 1
+      ? versions
+      : undefined
+    : languagesOf(path);
   return { path, lastModified, ...(languages ? { languages } : {}) };
 };
+
+/** A content type in every language (task S1): the hubs, then the English pages and their versions. */
+function contentEntries(kind: "templates" | "industries", date: string): SitemapEntry[] {
+  const hubs = hubVersions(kind);
+  const english = (kind === "templates" ? getTemplates() : getIndustries()).map((e) =>
+    entry(`/${kind}/${e.slug}`, date, contentVersions(kind, e.slug)),
+  );
+  const local = PREFIXED_LOCALES.flatMap((l) =>
+    (kind === "templates" ? getLocalTemplates(l) : getLocalIndustries(l)).map((e) =>
+      entry(contentPath(kind, l, e.slug), date, contentVersions(kind, e.translation_of)),
+    ),
+  );
+  return [
+    ...(Object.entries(hubs) as [Locale, string][]).map(([, path]) => entry(path, date, hubs)),
+    ...english,
+    ...local,
+  ];
+}
 
 export function sitemapEntries(): Record<SitemapType, SitemapEntry[]> {
   const translated = (keys: (k: PageKey) => boolean) =>
@@ -58,14 +91,8 @@ export function sitemapEntries(): Record<SitemapType, SitemapEntry[]> {
       entry("/privacy", CONTENT_UPDATED_AT.privacy),
       ...translated((k) => !TOOL_KEYS.includes(k)),
     ],
-    templates: [
-      entry("/templates", CONTENT_UPDATED_AT.templates),
-      ...getTemplates().map((t) => entry(`/templates/${t.slug}`, CONTENT_UPDATED_AT.templates)),
-    ],
-    industries: [
-      entry("/industries", CONTENT_UPDATED_AT.industries),
-      ...getIndustries().map((i) => entry(`/industries/${i.slug}`, CONTENT_UPDATED_AT.industries)),
-    ],
+    templates: contentEntries("templates", CONTENT_UPDATED_AT.templates),
+    industries: contentEntries("industries", CONTENT_UPDATED_AT.industries),
     compare: [
       entry("/compare", CONTENT_UPDATED_AT.comparisons),
       ...getComparisons().map((c) => entry(`/compare/${c.slug}`, CONTENT_UPDATED_AT.comparisons)),

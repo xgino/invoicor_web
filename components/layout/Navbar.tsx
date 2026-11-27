@@ -8,6 +8,7 @@ import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
 import { ROUTES } from "@/lib/i18n/routes";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { DesktopLinks, MobileMenu, NavShell } from "./NavClient";
+import { hubPath } from "@/lib/content-i18n";
 import { navLinksFor } from "./nav-links";
 
 /**
@@ -16,7 +17,7 @@ import { navLinksFor } from "./nav-links";
  */
 export function Navbar({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
   const t = CHROME[locale].nav;
-  const links = navLinksFor(locale);
+  const links = navLinksFor(locale, hubPath("templates", locale));
   const cta = (campaign: string, full = false) => (
     <a
       href={appStoreLink(campaign)}

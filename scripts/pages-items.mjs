@@ -30,7 +30,7 @@ export const PREFIX = {
 export const TASKS = [
   {
     id: "S1",
-    done: false,
+    done: true,
     title: "Language setup for templates and industry pages (roadmap H4)",
     text: "The template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, and the sitemap split per page type (a sitemap index, so Search Console shows indexing per type). Every L item for templates and industry pages waits for this.",
   },
