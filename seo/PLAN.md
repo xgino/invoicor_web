@@ -1,13 +1,12 @@
-# Page plan: the road to 4,000 pages
+# Page plan
 
 > **Generated, don't edit by hand.** Every item per category, with its pages below it: T1, T2 …
 > for trade templates, I1 … for industry pages, and so on; L1, L2 … for the language versions
-> (one language each). Boxes tick themselves when the pages are live. The brief per English page is
-> in [plan/](plan/) (one file per category, with what its pages can and can't do); the
+> (one language each). Boxes tick themselves when the pages are live. The rules for every page:
+> [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per category); the
 > instructions per language page are in [plan/languages/](plan/languages/) (one file per
 > language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)
-> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
-> `scripts/pages-categories.mjs`. After any change: `npm run pages`.
+> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
 **207 / 4,000 pages live** (5%) · planned: 977 English and local pages + 8,299 language pages · **9,483 when everything is built** (fewer after the demand gate parks the weak ones)
 
@@ -15,9 +14,9 @@
 
 Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
 
-1. **English item (T5, B1 …):** first the demand gate (rules below): park the pages nobody
-   searches for. Then, for each page listed under the item, read its brief (the link) and its
-   category's direction in the same file, the blueprint and the fact sheet
+1. **English item (T5, B1 …):** first the demand gate ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)):
+   park the pages nobody searches for. Then, for each page listed under the item, read its brief
+   (the link), its category's section in [RULES.md §5](RULES.md#5-categories) and the fact sheet
    [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,
    then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update
    ROADMAP.md; one commit per item.
@@ -25,81 +24,8 @@ Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:
    instructions per page are in that language's file in [plan/languages/](plan/languages/).
    Needs task S1 for templates and industry pages, and the English pages live first.
 3. **Task (S1 …):** code work, no pages. Tick it in `scripts/pages-items.mjs` (`done: true`).
-4. **After each deploy:** wait 2–3 weeks and check in Search Console how many of the new pages got
-   indexed. A page type under ~50% indexed after 4 weeks: stop and improve it before adding more.
-
-## Rules for every page
-
-- Same fields and depth as the live pages of that type; about 900–1,200 words of real, specific
-  text (the trade's jobs, units, materials, terms, billing habits). Title ≤ 60 characters ending in
-  `| Invoicor`, meta description ≤ 155, the key in the H1. No sentence copied from another page.
-- Sample invoices: realistic prices, correct math (qty × rate, subtotal, tax, balance), a stated and
-  hedged tax situation ("tax rules vary").
-- Only claims the app backs up (BRAND.md §10). No estimates or quotes, no recurring or scheduled
-  invoices, no reminders, no photo attachments, no deposit or partial-payment tracking, no time
-  tracking, no offline use, one tax rate per invoice. Repeat work = duplicate the last invoice and
-  change the date. A deposit = its own invoice, then a negative line or a note on the final invoice.
-- At most one "Can Invoicor do X? No." FAQ per page; spend the FAQs on the trade's own questions.
-- Legal and tax points hedged ("check your state's rule") unless the brief gives a sourced fact; a
-  specific law only with its source and the date checked.
-- Link the trade's pages both ways (template ↔ industry ↔ billing types); 2 `related` per page.
-- Never build a page that's in a category's **Done** list or whose key is taken
-  (`npm run pages -- --check "<key>"`): improve that page instead.
-- **Demand first (the gate):** before writing, find evidence that people search for the page's
-  key: Search Console queries, Google's autocomplete and "People also ask", or a keyword tool.
-  No evidence: don't write it. Set its `status` to `parked` with the reason in `notes`. The item
-  is done without it, and the key stays reserved so nobody plans it again.
-- **Value of its own:** a page must answer something its neighbours don't. If the honest content
-  is mostly the parent page with other nouns (a trade's billing type, a niche trade's app page),
-  park it and improve the parent instead. 4,000 pages is a direction, not a quota: Google's
-  scaled-content policy judges value per page, and weak pages pull the whole site down.
-- **Release in waves:** at most ~150 new URLs per deploy, then watch indexing per page type in
-  Search Console (sitemap per type, task S1).
-
-## Rules for language items
-
-- Written for the country, by local search words (research them first), not word for word.
-- The slug, title, H1 and examples in that language; prices, currency and number format of that
-  market (the table below).
-- Never claim the app's screens are in that language (they're English); say "invoices in your
-  language".
-- The e-invoicing warnings below are part of the page where they apply (first paragraph).
-- A page with no local search, or a trade that works differently there (a notary in Germany is a
-  state office with fixed fees), gets a `parked` row in that language (`translation_of` = the
-  English URL, the reason in `notes`): skipped, not translated anyway.
-- German first (it already gets clicks); Italian, Portuguese and Polish last (e-invoicing).
-
-| Lang | Markets | Money | Numbers | VAT | Tax words | Watch out |
-|---|---|---|---|---|---|---|
-| [de German](plan/languages/de.md) | Germany, Austria, Switzerland | EUR (CHF in Switzerland) | 1.234,56 € | 19% (7% reduced); Austria 20%, Switzerland 8.1% | USt / MwSt; Kleinunternehmer (§19 UStG) note | B2B e-invoicing in Germany: receiving since 2025, sending phased in 2027–2028; say when a PDF is still fine. |
-| [es Spanish](plan/languages/es.md) | Spain first; Latin America only with care | EUR | 1.234,56 € | 21% (10%, 4%) | IVA; NIF | Spain: Verifactu and B2B e-invoicing are coming (check dates). Mexico (CFDI) and most of Latin America require electronic invoices: don't present a PDF as a valid invoice there. |
-| [fr French](plan/languages/fr.md) | France, Belgium (FR), Switzerland (FR) | EUR (CHF) | 1 234,56 € | 20% (10%, 5.5%, 2.1%) | TVA; 'TVA non applicable, art. 293 B du CGI' for micro-entrepreneurs | France: B2B e-invoicing from 2026–2027 (check dates). |
-| [nl Dutch](plan/languages/nl.md) | Netherlands, Belgium (NL) | EUR | € 1.234,56 | 21% (9%) | btw; KOR; KvK number; 'btw verlegd' | Belgium: B2B e-invoicing from 2026 (Peppol): say so on Belgian examples. |
-| [sv Swedish](plan/languages/sv.md) | Sweden | SEK | 1 234,56 kr | 25% (12%, 6%) | moms; F-skatt; momsregistreringsnummer | Public sector needs Peppol e-invoices. |
-| [da Danish](plan/languages/da.md) | Denmark | DKK | 1.234,56 kr. | 25% | moms; CVR number | Public sector needs e-invoices (NemHandel/OIOUBL); the bookkeeping law sets rules for digital systems (hedge). |
-| [nb Norwegian (Bokmål)](plan/languages/nb.md) | Norway | NOK | 1 234,56 kr | 25% (15%, 12%) | MVA; organisasjonsnummer + 'MVA' | Public sector needs EHF; Invoicor doesn't send EHF. |
-| [it Italian](plan/languages/it.md) | Italy, Switzerland (IT) | EUR | 1.234,56 € | 22% (10%, 5%, 4%) | IVA; partita IVA | Italy: invoices must be electronic via the SdI; a PDF is only a courtesy copy. Every Italian page says so in the first paragraph and never sends people to make a 'valid invoice' as a PDF. |
-| [pt Portuguese](plan/languages/pt.md) | Portugal (PT-PT); Brazil only with care | EUR | 1234,56 € | 23% (13%, 6%) | IVA; NIF | Portugal: invoices must come from AT-certified software; Brazil: NF-e/NFS-e electronic invoices. Say so plainly; a PDF from Invoicor isn't a valid invoice there. |
-| [pl Polish](plan/languages/pl.md) | Poland | PLN | 1 234,56 zł | 23% (8%, 5%) | VAT; NIP | Poland: KSeF structured e-invoices become mandatory in 2026 (check dates); after that a PDF isn't a valid B2B invoice. |
-
-## Rules for new items
-
-So the plan can keep growing (the goal of 4,000 can move up or down with the results):
-
-- **One item = 10–25 pages of one category** (smaller rather than padded with sub-niches), named with that category's letter and the next
-  number (T10, B4 …). Add it at the end of `ITEMS` in `scripts/pages-items.mjs`; numbers never
-  change.
-- **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`:
-  its 10 L items appear by themselves, with the next free numbers.
-- **New page ideas** must fit a category's direction ([plan/](plan/)), pass the key check, and get
-  a brief (`brief`) and what not to repeat (`avoid`) before they get an `item`.
-- **Proven types first:** a new page type (a new category) starts with one item of ≤ 10 pages and
-  grows only after it indexes.
-- **Parents before children:** the general page ("deposit invoice") comes before or with its
-  specific ones ("photography deposit invoice"), and the children link up to it.
-- **Bigger searches first:** a new trade or topic must be a search of its own, not a sub-niche or a
-  synonym of a planned one.
-- **Re-plan with Search Console data** every ~5 items: more of what ranks, less of what doesn't.
+4. **After each deploy:** check indexing per page type before adding more of it ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)).
+5. **New pages for the plan:** "add 10 pages to T" (the `seo-add-pages` skill, [RULES.md §3](RULES.md#3-planning-new-items)).
 
 ## Overview
 
@@ -113,7 +39,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
-| [Generators (other documents)](#generators-other-documents-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
+| [Generators](#generators-g) | G0 G1 G2 | 1 | 9 | 10/30 done |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 P2 | 9 | 6 | 0/30 done |
 | [Languages](#languages-l) | L1–L730 | 80 | 8299 | |
 
@@ -134,7 +60,7 @@ English pages are live.
 
 ## Trade templates (T)
 
-Direction (what these pages can and can't do) and every brief: [plan/templates.md](plan/templates.md)
+Rules: [RULES.md § T · Trade templates](RULES.md#t--trade-templates) · every brief: [plan/templates.md](plan/templates.md)
 
 ### T1: Trade templates 1–20 (built)
 
@@ -531,7 +457,7 @@ Direction (what these pages can and can't do) and every brief: [plan/templates.m
 
 ## Billing-type templates (B)
 
-Direction (what these pages can and can't do) and every brief: [plan/billing.md](plan/billing.md)
+Rules: [RULES.md § B · Billing-type templates](RULES.md#b--billing-type-templates) · every brief: [plan/billing.md](plan/billing.md)
 
 ### B1: Billing types I
 
@@ -773,7 +699,7 @@ Direction (what these pages can and can't do) and every brief: [plan/billing.md]
 
 ## Invoice types (general documents) (D)
 
-Direction (what these pages can and can't do) and every brief: [plan/types.md](plan/types.md)
+Rules: [RULES.md § D · Invoice types (general documents)](RULES.md#d--invoice-types-general-documents) · every brief: [plan/types.md](plan/types.md)
 
 ### D1: Invoice types: the general documents
 
@@ -816,7 +742,7 @@ Direction (what these pages can and can't do) and every brief: [plan/types.md](p
 
 ## Industry pages ("invoice app for …") (I)
 
-Direction (what these pages can and can't do) and every brief: [plan/industries.md](plan/industries.md)
+Rules: [RULES.md § I · Industry pages ("invoice app for …")](RULES.md#i--industry-pages-invoice-app-for-) · every brief: [plan/industries.md](plan/industries.md)
 
 ### I1: Industry pages 1–20 (built)
 
@@ -1139,7 +1065,7 @@ Direction (what these pages can and can't do) and every brief: [plan/industries.
 
 ## Compare pages ("{competitor} alternative") (C)
 
-Direction (what these pages can and can't do) and every brief: [plan/compare.md](plan/compare.md)
+Rules: [RULES.md § C · Compare pages ("{competitor} alternative")](RULES.md#c--compare-pages-competitor-alternative) · every brief: [plan/compare.md](plan/compare.md)
 
 ### C1: Compare pages (built, English only)
 
@@ -1284,7 +1210,7 @@ Direction (what these pages can and can't do) and every brief: [plan/compare.md]
 
 ## Free tools (TL)
 
-Direction (what these pages can and can't do) and every brief: [plan/tools.md](plan/tools.md)
+Rules: [RULES.md § TL · Free tools](RULES.md#tl--free-tools) · every brief: [plan/tools.md](plan/tools.md)
 
 ### TL0: Free tools built before the plan (hub, VAT, hours, hourly rate)
 
@@ -1441,7 +1367,7 @@ Direction (what these pages can and can't do) and every brief: [plan/tools.md](p
 
 ## Country pages (English) (CT)
 
-Direction (what these pages can and can't do) and every brief: [plan/country.md](plan/country.md)
+Rules: [RULES.md § CT · Country pages (English)](RULES.md#ct--country-pages-english) · every brief: [plan/country.md](plan/country.md)
 
 ### CT1: Country pages I (English-speaking countries + EU reverse charge)
 
@@ -1508,7 +1434,7 @@ Direction (what these pages can and can't do) and every brief: [plan/country.md]
 
 ## Local pages (in the country's own language) (LO)
 
-Direction (what these pages can and can't do) and every brief: [plan/local.md](plan/local.md)
+Rules: [RULES.md § LO · Local pages (in the country's own language)](RULES.md#lo--local-pages-in-the-countrys-own-language) · every brief: [plan/local.md](plan/local.md)
 
 ### LO1: Invoice rules per country, in its own language
 
@@ -1613,9 +1539,9 @@ Direction (what these pages can and can't do) and every brief: [plan/local.md](p
   - [ ] [/nl/gestructureerde-mededeling-generator](plan/local.md#nlgestructureerde-mededeling-generator) gestructureerde mededeling generator
   - [ ] [/fr/communication-structuree-generateur](plan/local.md#frcommunication-structuree-generateur) communication structurée générateur
 
-## Generators (other documents) (G)
+## Generators (G)
 
-Direction (what these pages can and can't do) and every brief: [plan/generators.md](plan/generators.md)
+Rules: [RULES.md § G · Generators](RULES.md#g--generators) · every brief: [plan/generators.md](plan/generators.md)
 
 ### G0: The free invoice generator (built)
 
@@ -1641,7 +1567,7 @@ Direction (what these pages can and can't do) and every brief: [plan/generators.
 
 ## Core pages, hubs, trust and legal (P)
 
-Direction (what these pages can and can't do) and every brief: [plan/core.md](plan/core.md)
+Rules: [RULES.md § P · Core pages, hubs, trust and legal](RULES.md#p--core-pages-hubs-trust-and-legal) · every brief: [plan/core.md](plan/core.md)
 
 ### P0: Core pages (built): home, hubs, help, affiliate, terms, privacy, Android
 

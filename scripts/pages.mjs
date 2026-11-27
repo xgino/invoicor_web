@@ -22,6 +22,7 @@ import {
   parseCsv,
   renderPagesMd,
   renderPlanFiles,
+  renderRules,
   toCsv,
 } from "./pages-lib.mjs";
 
@@ -134,9 +135,11 @@ for (const [file, text] of Object.entries(renderPlanFiles(rows))) {
   mkdirSync(dirname(join(root, file)), { recursive: true });
   writeFileSync(join(root, file), text);
 }
+const RULES = join(root, "seo/RULES.md");
+writeFileSync(RULES, renderRules(readFileSync(RULES, "utf8")));
 console.log(changes.length ? changes.join("\n") : "No new or removed pages.");
 console.log(
-  `\nseo/keyword-map.csv, seo/PAGES.md, seo/PLAN.md and seo/plan/ updated (${rows.filter((r) => r.status === "live").length} live pages).`,
+  `\nseo/keyword-map.csv, seo/PAGES.md, seo/PLAN.md, seo/plan/ and the language table in seo/RULES.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
 );
 
 // ── Helpers ──

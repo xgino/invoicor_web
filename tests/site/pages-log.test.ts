@@ -10,6 +10,9 @@ import {
   parseCsv,
   renderPagesMd,
   renderPlanFiles,
+  renderRules,
+  rulesHeading,
+  rulesSection,
   similarity,
 } from "../../scripts/pages-lib.mjs";
 import { CATEGORIES } from "../../scripts/pages-categories.mjs";
@@ -81,6 +84,17 @@ describe("page log", () => {
     const files = renderPlanFiles(rows as unknown as Record<string, string>[]);
     for (const [file, text] of Object.entries(files))
       expect(readFileSync(join(process.cwd(), file), "utf8"), file).toBe(text);
+  });
+
+  it(`seo/RULES.md has the current language table (${FIX})`, () => {
+    const text = readFileSync(join(process.cwd(), "seo/RULES.md"), "utf8");
+    expect(text).toBe(renderRules(text));
+  });
+
+  it("gives every category its rules in seo/RULES.md §5 (heading: letter · title)", () => {
+    const text = readFileSync(join(process.cwd(), "seo/RULES.md"), "utf8");
+    const missing = CATEGORIES.filter((c) => !rulesSection(text, c)).map(rulesHeading);
+    expect(missing).toEqual([]);
   });
 
   it("keeps items the size one run builds well (at most 25 pages) and in the item list", () => {

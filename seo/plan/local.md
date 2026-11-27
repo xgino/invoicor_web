@@ -1,27 +1,13 @@
 # Local pages (in the country's own language)
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 74 planned**
 
 ## Direction
 
-- **URL:** `/{lang}/{local slug}` · **Key:** the country's own search words (e.g. "pflichtangaben rechnung", "factuureisen")
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages) · **Where it's written:** page code under the language routes (chunk 43)
-- **Links to:** the language's generator page and VAT calculator.
-- **Languages:** **local**: only in its own language.
-
-**Can do:**
-
-- Written in the language from the start (rule R4): local invoice rules, small-business schemes, local wording and examples.
-- Later: comparisons with that country's own rivals (HL9).
-- Local topics that have no English parent (`local topic`): rules only that country has, e.g. the German Kleinbetragsrechnung (≤ 250 €), the Swedish ROT/RUT deduction on the invoice.
-
-**Can't do:**
-
-- Compete with that language's generator page: this is "what must be on it", the generator is "make one".
-- Invite people to make a PDF invoice where the law requires e-invoicing (IT, PT, PL): those are on hold until the product supports it.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § LO · Local pages (in the country's own language)](../RULES.md#lo--local-pages-in-the-countrys-own-language).
 
 ## Done (0): don't build these again
 

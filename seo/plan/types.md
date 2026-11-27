@@ -1,29 +1,13 @@
 # Invoice types (general documents)
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 30 planned**
 
 ## Direction
 
-- **URL:** `/templates/{type}-invoice` · **Key:** "{deposit | final | hourly | commercial | freelance …} invoice template"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#invoice-type-template-templatestype-invoice) · **Where it's written:** `content/templates.json` (same fields as a template)
-- **Links to:** the trade billing-type pages of this type (both ways), the free generator, one tool (deposit calculator, mileage calculator …).
-- **Languages:** **yes** for most: these are the big local searches (Anzahlungsrechnung, Schlussrechnung, factuur zzp). US-only ones (1099, mileage) stay **en-only**.
-
-**Can do:**
-
-- The general document behind many trades: what makes this kind of invoice different (what it must show, how it's numbered, how it relates to the other invoices), with a sample for a typical case.
-- Be the parent of the trade billing-type pages: list them ("by trade") and take the general search, so the trade pages only need the trade's specifics.
-- A who-invoices type (freelance, subcontractor, independent contractor) when the tax status changes the invoice (no VAT charged, CIS deduction, reverse charge, no tax withheld).
-
-**Can't do:**
-
-- Be a trade template under another name: "service invoice" is about invoicing services in general, not about any trade.
-- Synonyms as their own pages: down payment = advance payment = deposit; interim = progress (owned by /templates/construction-progress-invoice); time and materials = labor and materials; sole trader = self-employed = freelance.
-- Promise what the app can't: no deposit or partial-payment tracking, no recurring invoices, no customs forms; a commercial invoice is the document, not the carrier's paperwork.
-- The concept explained at length (what is a proforma, what does net 30 mean): no "what is" explainers: this page is the document.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § D · Invoice types (general documents)](../RULES.md#d--invoice-types-general-documents).
 
 ## Done (0): don't build these again
 

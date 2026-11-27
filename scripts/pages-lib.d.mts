@@ -20,3 +20,7 @@ export function section(row: Row): string;
 export function renderPagesMd(rows: Row[]): string;
 export function renderPlanMd(rows: Row[]): string;
 export function renderPlanFiles(rows: Row[]): Record<string, string>;
+export function renderLanguageTable(): string;
+export function renderRules(text: string): string;
+export function rulesHeading(category: { id: string; title: string }): string;
+export function rulesSection(text: string, category: { id: string; title: string }): string | null;

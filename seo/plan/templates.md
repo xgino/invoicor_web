@@ -1,31 +1,13 @@
 # Trade templates
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **50 done · 263 planned**
 
 ## Direction
 
-- **URL:** `/templates/{trade}` · **Key:** "{trade} invoice template"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#template-templatesslug) · **Where it's written:** `content/templates.json`
-- **Links to:** its industry page (`industry` field), 2 related templates, the trade's billing-type pages once they exist.
-- **Languages:** **yes**: written per country later (local trade names and prices), after the language setup (H4).
-
-**Can do:**
-
-- One page per trade with real work of its own: its jobs, units (per hour, per square foot, per visit), materials, terms and billing habits.
-- A filled-in sample invoice with realistic prices; the free generator opens with it (Use this template).
-- Trade-specific notes, mistakes, a pro tip and FAQs about how that trade invoices.
-- Name the PDF: why a PDF works for this trade, and the free generator.
-
-**Can't do:**
-
-- A trade that's only a synonym or a sub-niche of a live one (wedding photography is part of /templates/photography, mobile mechanic of /templates/auto-repair): improve that page instead.
-- Two trades on one page: one trade, one key (auto detailing and auto repair are two searches, so two pages).
-- Word, Excel or Google Docs downloads: we don't offer those files (S1-n).
-- City or state versions of the same trade (doorway pages).
-- Billing-type questions in depth (deposits, retainers, hourly): those are their own pages, see Billing-type templates.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § T · Trade templates](../RULES.md#t--trade-templates).
 
 ## Done (50): don't build these again
 

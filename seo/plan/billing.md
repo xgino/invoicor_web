@@ -1,29 +1,13 @@
 # Billing-type templates
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 177 planned**
 
 ## Direction
 
-- **URL:** `/templates/{trade}-{billing}-invoice` · **Key:** "{trade} {deposit | progress | milestone | hourly | labor and materials | retainer} invoice"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#billing-type-template-templatestrade-billing-invoice) · **Where it's written:** `content/templates.json`
-- **Links to:** the trade's template (in `related`), the general invoice type (Invoice types), its industry page.
-- **Languages:** **yes**, with the trade templates.
-
-**Can do:**
-
-- Answer "how do I bill this way" for one trade: deposit size and terms, progress percentages and retainage, increments and minimums, parts vs labor, unused retainer hours.
-- A sample invoice of that billing type (e.g. a deposit invoice, then how the final invoice subtracts it).
-- Only combinations people actually bill that way (wedding trades take deposits, contractors bill progress, consultants bill hourly or on retainer).
-
-**Can't do:**
-
-- Repeat the trade's general fields: one sentence and a link to its template.
-- Claim the app tracks deposits, partial payments or time, or sends recurring invoices (it doesn't).
-- Every trade × every billing type: at most 2 billing types per trade, and only where the search is real.
-- Exist without its own demand: the general invoice type ("labor and materials invoice") covers a trade that only swaps the materials. No evidence at the demand gate: park it.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § B · Billing-type templates](../RULES.md#b--billing-type-templates).
 
 ## Done (0): don't build these again
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * One category at a glance, for planning new pages without reading PLAN.md:
- * its direction (can / can't, from pages-categories.mjs) and every row (live, planned, parked),
+ * its rules (its section of seo/RULES.md §5) and every row (live, planned, parked),
  * one line each, live first.
  *
  *   node scripts/pages-category.mjs            # list the categories with their counts
@@ -11,7 +11,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseCsv } from "./pages-lib.mjs";
+import { parseCsv, rulesSection } from "./pages-lib.mjs";
 import { CATEGORIES } from "./pages-categories.mjs";
 import { PREFIX } from "./pages-items.mjs";
 
@@ -46,13 +46,9 @@ console.log(`# ${PREFIX[cat.id]} · ${cat.title} (${cat.id})`);
 console.log(
   `live ${n.live}, planned ${n.planned}, parked ${n.parked} · items: ${items.join(", ") || "none"}`,
 );
-console.log(`URL ${cat.url} · key ${cat.key} · blueprint seo/${cat.blueprint}`);
-console.log("\nCan:");
-for (const s of cat.can ?? []) console.log(`- ${s}`);
-console.log("\nCan't:");
-for (const s of cat.cannot ?? []) console.log(`- ${s}`);
-if (cat.links) console.log(`\nLinks: ${cat.links}`);
-if (cat.languages) console.log(`Languages: ${cat.languages}`);
+console.log(
+  `\nRules (seo/RULES.md §5):\n${rulesSection(readFileSync(join(root, "seo/RULES.md"), "utf8"), cat) ?? "MISSING: add this category's section to seo/RULES.md"}`,
+);
 console.log("\nPages (status | item | localize | url | key):");
 const order = { live: 0, planned: 1, parked: 2, removed: 3 };
 for (const r of [...list].sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9)))

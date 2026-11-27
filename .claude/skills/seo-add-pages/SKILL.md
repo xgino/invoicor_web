@@ -13,15 +13,15 @@ page, live, planned or parked, is one row. PLAN.md, PAGES.md and seo/plan/ are g
 ## 1. Read only this (not PLAN.md, not the whole CSV)
 
 1. `npm run -s pages:category` → every category with its letter and counts.
-2. `npm run -s pages:category -- <letter>` → the category's direction (can / can't, links,
-   languages) and every row in it, one line each. This is "what we have and what's planned".
-3. The shared rules: `seo/PLAN.md` from "## Rules for every page" to "## Overview" (about 70
-   lines: page rules, language rules, rules for new items). Read with offset/limit, not the file.
+2. `npm run -s pages:category -- <letter>` → the category's rules (its section of
+   `seo/RULES.md` §5: URL, key, blueprint, can and can't, links, languages) and every row in it,
+   one line each. This is "what we have and what's planned".
+3. `seo/RULES.md` §2 (thin and duplicate pages) and §3 (planning new items); §4 too if the pages
+   get language versions. Read with offset/limit, not the whole file.
 4. The claims the app backs up: `BRAND.md` §10. A page may only promise those.
 5. Why the category stopped last time: `grep -n "Stopped at" ROADMAP.md`, the category's lines.
    Don't re-propose what was left out on purpose unless something changed (new API currency, new
    app feature, Search Console data).
-6. The blueprint section named in step 2 (`seo/BLUEPRINTS.md`), for what a page of this type has.
 
 ## 2. Unbuilt pages come first
 
@@ -32,7 +32,7 @@ used up. The user decides.
 ## 3. Find candidates (about twice the number asked)
 
 Each candidate must:
-- fit the category's **can**, and none of its **can't**;
+- fit the category's **Can**, and none of its **Can't** (RULES.md §5);
 - be a search of its own: not a synonym, sub-niche, city or state version of a row in the list
   (doorway pages and near-duplicates are what Google's scaled-content policy punishes);
 - pass `npm run pages -- --check "<key>"` (and `--lang xx` for a local page);

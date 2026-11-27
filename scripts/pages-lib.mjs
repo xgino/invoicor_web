@@ -348,35 +348,46 @@ function languageGaps(rows) {
   });
 }
 
-// ── PLAN.md: what to build next (instructions) ──
+// ── RULES.md: the one generated block (the language table) ──
 
-const PAGE_RULES = [
-  "- Same fields and depth as the live pages of that type; about 900–1,200 words of real, specific",
-  "  text (the trade's jobs, units, materials, terms, billing habits). Title ≤ 60 characters ending in",
-  "  `| Invoicor`, meta description ≤ 155, the key in the H1. No sentence copied from another page.",
-  "- Sample invoices: realistic prices, correct math (qty × rate, subtotal, tax, balance), a stated and",
-  '  hedged tax situation ("tax rules vary").',
-  "- Only claims the app backs up (BRAND.md §10). No estimates or quotes, no recurring or scheduled",
-  "  invoices, no reminders, no photo attachments, no deposit or partial-payment tracking, no time",
-  "  tracking, no offline use, one tax rate per invoice. Repeat work = duplicate the last invoice and",
-  "  change the date. A deposit = its own invoice, then a negative line or a note on the final invoice.",
-  '- At most one "Can Invoicor do X? No." FAQ per page; spend the FAQs on the trade\'s own questions.',
-  '- Legal and tax points hedged ("check your state\'s rule") unless the brief gives a sourced fact; a',
-  "  specific law only with its source and the date checked.",
-  "- Link the trade's pages both ways (template ↔ industry ↔ billing types); 2 `related` per page.",
-  "- Never build a page that's in a category's **Done** list or whose key is taken",
-  '  (`npm run pages -- --check "<key>"`): improve that page instead.',
-  "- **Demand first (the gate):** before writing, find evidence that people search for the page's",
-  '  key: Search Console queries, Google\'s autocomplete and "People also ask", or a keyword tool.',
-  "  No evidence: don't write it. Set its `status` to `parked` with the reason in `notes`. The item",
-  "  is done without it, and the key stays reserved so nobody plans it again.",
-  "- **Value of its own:** a page must answer something its neighbours don't. If the honest content",
-  "  is mostly the parent page with other nouns (a trade's billing type, a niche trade's app page),",
-  "  park it and improve the parent instead. 4,000 pages is a direction, not a quota: Google's",
-  "  scaled-content policy judges value per page, and weak pages pull the whole site down.",
-  "- **Release in waves:** at most ~150 new URLs per deploy, then watch indexing per page type in",
-  "  Search Console (sitemap per type, task S1).",
-];
+const RULES_START =
+  "<!-- generated:languages (npm run pages; edit LANGUAGES in scripts/pages-items.mjs) -->";
+const RULES_END = "<!-- /generated:languages -->";
+
+/** The markets per language: money, number format, VAT, tax words, e-invoicing warnings. */
+export function renderLanguageTable() {
+  return [
+    "| Lang | Markets | Money | Numbers | VAT | Tax words | Watch out |",
+    "|---|---|---|---|---|---|---|",
+    ...LANGUAGE_ORDER.map((l) => {
+      const x = LANGUAGES[l];
+      return `| [${l} ${x.name}](plan/languages/${l}.md) | ${x.markets} | ${x.money} | ${x.numbers} | ${x.rate} | ${x.tax} | ${x.watch} |`;
+    }),
+  ].join("\n");
+}
+
+/** seo/RULES.md with its generated block refreshed; the rest is hand-written. */
+export function renderRules(text) {
+  const a = text.indexOf(RULES_START);
+  const b = text.indexOf(RULES_END);
+  if (a < 0 || b < a) throw new Error(`seo/RULES.md: missing ${RULES_START} … ${RULES_END}`);
+  return `${text.slice(0, a + RULES_START.length)}\n${renderLanguageTable()}\n${text.slice(b)}`;
+}
+
+/** A category's heading in RULES.md §5: "T · Trade templates". */
+export const rulesHeading = (c) => `${PREFIX[c.id]} · ${c.title}`;
+
+/** The category's section of RULES.md (its heading up to the next one), or null. */
+export function rulesSection(text, c) {
+  const head = `### ${rulesHeading(c)}\n`;
+  const a = text.indexOf(head);
+  if (a < 0) return null;
+  const rest = text.slice(a + head.length);
+  const b = rest.search(/^#{2,3} /m);
+  return (b < 0 ? rest : rest.slice(0, b)).trim();
+}
+
+// ── PLAN.md: what to build next (instructions) ──
 
 /** All plan files: seo/PLAN.md (the items), seo/plan/{category}.md (the briefs) and
  * seo/plan/languages/{lang}.md (every language item with its pages). */
@@ -398,7 +409,7 @@ const pageLink = (r, fromPlan = true) => {
 };
 const box = (done) => (done ? "[x]" : "[ ]");
 
-/** An item's pages to build; parked pages (no demand, see PAGE_RULES) don't count. */
+/** An item's pages to build; parked pages (no demand, RULES.md §2) don't count. */
 function itemStats(rows, itemId) {
   const all = rows.filter((r) => r.item === itemId && r.status !== "removed");
   const pages = all.filter((r) => r.status !== "parked");
@@ -454,16 +465,15 @@ function renderPlan(rows) {
   const total = live.length + planned.filter((r) => r.item).length + langTodo;
   const out = [];
   out.push(
-    "# Page plan: the road to 4,000 pages",
+    "# Page plan",
     "",
     "> **Generated, don't edit by hand.** Every item per category, with its pages below it: T1, T2 …",
     "> for trade templates, I1 … for industry pages, and so on; L1, L2 … for the language versions",
-    "> (one language each). Boxes tick themselves when the pages are live. The brief per English page is",
-    "> in [plan/](plan/) (one file per category, with what its pages can and can't do); the",
+    "> (one language each). Boxes tick themselves when the pages are live. The rules for every page:",
+    "> [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per category); the",
     "> instructions per language page are in [plan/languages/](plan/languages/) (one file per",
     "> language). What exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv)",
-    "> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:",
-    "> `scripts/pages-categories.mjs`. After any change: `npm run pages`.",
+    "> (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`. After any change: `npm run pages`.",
     "",
     `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%) · planned: ${planned.filter((r) => r.item).length} English and local pages + ${langTodo.toLocaleString("en")} language pages · **${total.toLocaleString("en")} when everything is built** (fewer after the demand gate parks the weak ones)`,
     "",
@@ -471,9 +481,9 @@ function renderPlan(rows) {
     "",
     'Say which: "do T5", "do D1, B1", "do L1, L2" or "do S1". Then:',
     "",
-    "1. **English item (T5, B1 …):** first the demand gate (rules below): park the pages nobody",
-    "   searches for. Then, for each page listed under the item, read its brief (the link) and its",
-    "   category's direction in the same file, the blueprint and the fact sheet",
+    "1. **English item (T5, B1 …):** first the demand gate ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)):",
+    "   park the pages nobody searches for. Then, for each page listed under the item, read its brief",
+    "   (the link), its category's section in [RULES.md §5](RULES.md#5-categories) and the fact sheet",
     "   [BRAND.md §10](../BRAND.md). Use one live page of the same type as the model. Write them all,",
     "   then: `npm run content:check` → `npm run build` → `npm run pages` → `npm run check`. Update",
     "   ROADMAP.md; one commit per item.",
@@ -481,51 +491,8 @@ function renderPlan(rows) {
     "   instructions per page are in that language's file in [plan/languages/](plan/languages/).",
     "   Needs task S1 for templates and industry pages, and the English pages live first.",
     "3. **Task (S1 …):** code work, no pages. Tick it in `scripts/pages-items.mjs` (`done: true`).",
-    "4. **After each deploy:** wait 2–3 weeks and check in Search Console how many of the new pages got",
-    "   indexed. A page type under ~50% indexed after 4 weeks: stop and improve it before adding more.",
-    "",
-    "## Rules for every page",
-    "",
-    ...PAGE_RULES,
-    "",
-    "## Rules for language items",
-    "",
-    "- Written for the country, by local search words (research them first), not word for word.",
-    "- The slug, title, H1 and examples in that language; prices, currency and number format of that",
-    "  market (the table below).",
-    "- Never claim the app's screens are in that language (they're English); say \"invoices in your",
-    '  language".',
-    "- The e-invoicing warnings below are part of the page where they apply (first paragraph).",
-    "- A page with no local search, or a trade that works differently there (a notary in Germany is a",
-    "  state office with fixed fees), gets a `parked` row in that language (`translation_of` = the",
-    "  English URL, the reason in `notes`): skipped, not translated anyway.",
-    "- German first (it already gets clicks); Italian, Portuguese and Polish last (e-invoicing).",
-    "",
-    "| Lang | Markets | Money | Numbers | VAT | Tax words | Watch out |",
-    "|---|---|---|---|---|---|---|",
-    ...LANGUAGE_ORDER.map((l) => {
-      const x = LANGUAGES[l];
-      return `| [${l} ${x.name}](plan/languages/${l}.md) | ${x.markets} | ${x.money} | ${x.numbers} | ${x.rate} | ${x.tax} | ${x.watch} |`;
-    }),
-    "",
-    "## Rules for new items",
-    "",
-    "So the plan can keep growing (the goal of 4,000 can move up or down with the results):",
-    "",
-    "- **One item = 10–25 pages of one category** (smaller rather than padded with sub-niches), named with that category's letter and the next",
-    "  number (T10, B4 …). Add it at the end of `ITEMS` in `scripts/pages-items.mjs`; numbers never",
-    "  change.",
-    "- **Languages:** if its pages are `localize: yes`, add the item at the end of `LANGUAGE_SOURCES`:",
-    "  its 10 L items appear by themselves, with the next free numbers.",
-    "- **New page ideas** must fit a category's direction ([plan/](plan/)), pass the key check, and get",
-    "  a brief (`brief`) and what not to repeat (`avoid`) before they get an `item`.",
-    "- **Proven types first:** a new page type (a new category) starts with one item of ≤ 10 pages and",
-    "  grows only after it indexes.",
-    '- **Parents before children:** the general page ("deposit invoice") comes before or with its',
-    '  specific ones ("photography deposit invoice"), and the children link up to it.',
-    "- **Bigger searches first:** a new trade or topic must be a search of its own, not a sub-niche or a",
-    "  synonym of a planned one.",
-    "- **Re-plan with Search Console data** every ~5 items: more of what ranks, less of what doesn't.",
+    "4. **After each deploy:** check indexing per page type before adding more of it ([RULES.md §2](RULES.md#2-thin-and-duplicate-pages-what-google-punishes)).",
+    '5. **New pages for the plan:** "add 10 pages to T" (the `seo-add-pages` skill, [RULES.md §3](RULES.md#3-planning-new-items)).',
     "",
   );
 
@@ -582,7 +549,7 @@ function renderPlan(rows) {
     out.push(
       `## ${c.title} (${PREFIX[c.id]})`,
       "",
-      `Direction (what these pages can and can't do) and every brief: [plan/${c.id}.md](plan/${c.id}.md)`,
+      `Rules: [RULES.md § ${rulesHeading(c)}](RULES.md#${anchor(rulesHeading(c))}) · every brief: [plan/${c.id}.md](plan/${c.id}.md)`,
       "",
     );
     for (const it of items) {
@@ -752,25 +719,14 @@ function renderCategory(rows, c) {
   const out = [
     `# ${c.title}`,
     "",
-    "> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:",
+    "> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:",
     "> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).",
     "",
     `**${done.length} done · ${todo.length} planned**`,
     "",
     "## Direction",
     "",
-    `- **URL:** ${c.url} · **Key:** ${c.key}`,
-    `- **Blueprint:** [${c.blueprint.split("#")[0].replace("../", "")}](../${c.blueprint}) · **Where it's written:** ${c.data}`,
-    `- **Links to:** ${c.links}`,
-    `- **Languages:** ${c.languages}`,
-    "",
-    "**Can do:**",
-    "",
-    ...c.can.map((x) => `- ${x}`),
-    "",
-    "**Can't do:**",
-    "",
-    ...c.cannot.map((x) => `- ${x}`),
+    `URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § ${rulesHeading(c)}](../RULES.md#${anchor(rulesHeading(c))}).`,
     "",
     `## Done (${done.length}): don't build these again`,
     "",

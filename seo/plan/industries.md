@@ -1,29 +1,13 @@
 # Industry pages ("invoice app for …")
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **43 done · 196 planned**
 
 ## Direction
 
-- **URL:** `/industries/{professionals}` · **Key:** "invoice app for {professionals}"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#industry-industriesslug) · **Where it's written:** `content/industries.json`
-- **Links to:** the matching template(s), 2 related industries.
-- **Languages:** **yes**, after the language setup (H4).
-
-**Can do:**
-
-- Show how that profession invoices from an iPhone with Invoicor: a real day (scenario), their usual line items, their mistakes and the app features that fix them.
-- Profession-specific stats (price ranges), glossary, tax and licensing notes (hedged).
-- Pair with the trade's template (template = the document, industry = the app).
-
-**Can't do:**
-
-- A profession a live page already covers (drywall, fencing and remodeling sit under /industries/general-contractors).
-- Features outside BRAND.md §10 in the feature cards (no estimates, scheduling, reminders, payments, photo attachments, time tracking).
-- "The app in your language": the app's screens are English; say "invoices in 11 languages".
-- A niche trade's app page without its own "invoice app / software for …" search: the template links to the nearest broader industry page instead (auto body → mechanics, plastering → contractors). The app's features are the same everywhere, so these pages differ only in the trade, which makes them weak (doorway risk).
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § I · Industry pages ("invoice app for …")](../RULES.md#i--industry-pages-invoice-app-for-).
 
 ## Done (43): don't build these again
 

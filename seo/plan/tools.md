@@ -1,30 +1,13 @@
 # Free tools
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **4 done · 109 planned**
 
 ## Direction
 
-- **URL:** `/tools/{tool}` (local slugs per language, `lib/i18n/routes.ts`) · **Key:** "{tool} calculator / checker / generator"
-- **Blueprint:** [ROADMAP.md](../../ROADMAP.md#t-free-tools) · **Where it's written:** page code: `components/tools/`, `lib/tools/registry.ts`
-- **Links to:** the free generator, the other tools (hub), the related templates.
-- **Languages:** **yes**: every tool exists in all 11 languages with local presets (T9).
-
-**Can do:**
-
-- A tool that works in the browser and gives a real answer (a number, a check), with the steps in plain words.
-- A button that puts the result on an invoice in the free generator (`?item=&qty=&price=&tax=&currency=`).
-- Country presets per language (rates, number format, currency).
-- Pricing calculators for a trade ("house cleaning pricing calculator"): the pro enters their own rates, the tool does the trade's math (square feet, coats, visits, loads, guests), then puts the price on an invoice.
-
-**Can't do:**
-
-- Rates or rules without a source and a date (VAT, late-payment interest): re-check every 6 months.
-- Claims a check can't back up: an IBAN check catches typos, it doesn't prove who owns the account.
-- Tools that need our server or a paid API without a decision first (VAT number check, business register: T5, T6).
-- Market prices as facts ("house cleaning costs $150"): default inputs are labelled as examples to replace, and a price range appears only with its source and date.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § TL · Free tools](../RULES.md#tl--free-tools).
 
 ## Done (4): don't build these again
 

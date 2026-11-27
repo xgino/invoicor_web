@@ -1,28 +1,13 @@
 # Country pages (English)
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 39 planned**
 
 ## Direction
 
-- **URL:** `/invoice-generator-{country}`, `/reverse-charge-invoice` · **Key:** "{country} VAT / GST / tax invoice (requirements)"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#country-page-invoice-generator-country-and-local-pages) · **Where it's written:** page code: a new page type (chunk 43)
-- **Links to:** the VAT calculator, the free generator, the reverse-charge page (EU countries).
-- **Languages:** **en-only** for English-speaking countries; other countries get a local page in their own language (next category).
-
-**Can do:**
-
-- What must be on an invoice in that country, each rule with its official source and the date checked, plus the free generator preset (currency, rate).
-- Countries whose rules differ in ways that matter (VAT/GST numbers, thresholds, required wording) and whose currency the generator supports (the API's 38).
-- European countries in English too, for the foreign freelancers there who search in English ("invoice requirements germany"): the same rules as the local page, paired with it by hreflang once both exist.
-
-**Can't do:**
-
-- Countries where a PDF invoice from Invoicor isn't a valid invoice (mandatory e-invoicing or certified software, e.g. Italy's SdI, Portugal's certified software, Poland's KSeF from 2026, Kenya's eTIMS): no page that sends people to make one here.
-- Rules from memory: only what the official source says; rates change.
-- The general "what goes on an invoice" (not a country topic).
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § CT · Country pages (English)](../RULES.md#ct--country-pages-english).
 
 ## Done (0): don't build these again
 

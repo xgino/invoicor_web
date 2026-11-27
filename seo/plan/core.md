@@ -1,25 +1,13 @@
 # Core pages, hubs, trust and legal
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **9 done · 10 planned**
 
 ## Direction
 
-- **URL:** fixed pages · **Key:** one each
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#about-contact-help-affiliate-legal) · **Where it's written:** page code
-- **Links to:** nav and footer.
-- **Languages:** per page: home, generator, tools, help, Android are in 11 languages; templates and industries hubs follow H4; legal later (HL7).
-
-**Can do:**
-
-- One page per purpose; hubs list every page of their collection by themselves.
-
-**Can't do:**
-
-- More of them: these are single pages, so no 10 here.
-- Word, Excel, Google Docs template pages until we really offer the files (on hold).
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § P · Core pages, hubs, trust and legal](../RULES.md#p--core-pages-hubs-trust-and-legal).
 
 ## Done (9): don't build these again
 

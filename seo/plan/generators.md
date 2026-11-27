@@ -1,26 +1,13 @@
-# Generators (other documents)
+# Generators
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **1 done · 9 planned**
 
 ## Direction
 
-- **URL:** `/free-{document}-generator` · **Key:** "free {document} generator"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#generator-free-invoice-generator-chunks-3035) · **Where it's written:** page code: a `document_type` in the web generator (chunk 44)
-- **Links to:** the invoice generator.
-- **Languages:** **yes**, like the invoice generator.
-
-**Can do:**
-
-- Other business documents made in the browser like the invoice: receipt, estimate, proforma, credit note.
-- Say plainly that the app itself makes invoices only.
-
-**Can't do:**
-
-- Separate pages for synonyms (quote = estimate: one page owns both keys).
-- Fewer than 10 is right here: only documents a small business really sends.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § G · Generators](../RULES.md#g--generators).
 
 ## Done (1): don't build these again
 

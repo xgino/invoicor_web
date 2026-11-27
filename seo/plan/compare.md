@@ -1,27 +1,13 @@
 # Compare pages ("{competitor} alternative")
 
-> **Generated, don't edit by hand.** Direction: `scripts/pages-categories.mjs`; pages and briefs:
+> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **20 done · 77 planned**
 
 ## Direction
 
-- **URL:** `/compare/{competitor}` · **Key:** "{competitor} alternative"
-- **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#compare-compareslug) · **Where it's written:** `content/comparisons.json`
-- **Links to:** 2 related compares, the pricing section, the free generator.
-- **Languages:** **en-only** (HL8). Local rivals become their own local pages (HL9).
-
-**Can do:**
-
-- An honest comparison: who the competitor is for, their prices and features from their own pages (source and date), where Invoicor is simpler or cheaper, and where they're the better choice.
-- Competitors that people actually search for as "{name} alternative" or "{name} vs".
-
-**Can't do:**
-
-- Competitor facts without a source and a date, or prices older than 3 months (re-check, E1-b).
-- "X vs Y" pages between two competitors (little value of our own).
-- Local rivals in other languages here: those are local pages (HL9), written in that language.
+URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § C · Compare pages ("{competitor} alternative")](../RULES.md#c--compare-pages-competitor-alternative).
 
 ## Done (20): don't build these again
 
