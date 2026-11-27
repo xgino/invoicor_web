@@ -161,6 +161,16 @@
 /de/vorlagen/kleinunternehmer-rechnung
 /de/vorlagen/rechnung-freiberufler
 /de/vorlagen/subunternehmer-rechnung
+/de/vorlagen/rechnung-fotograf
+/de/vorlagen/rechnung-grafikdesigner
+/de/vorlagen/rechnung-webdesigner
+/de/vorlagen/rechnung-heizung-sanitaer
+/de/vorlagen/rechnung-maler
+/de/vorlagen/rechnung-fliesenleger
+/de/vorlagen/rechnung-gebaeudereinigung
+/de/vorlagen/rechnung-unternehmensberatung
+/de/vorlagen/rechnung-uebersetzer
+/de/vorlagen/rechnung-musikunterricht
 /fr/aide
 /es/ayuda
 /it/aiuto

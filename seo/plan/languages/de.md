@@ -20,371 +20,196 @@
 
 ## T1–T20 in German
 
-[ ] Trade templates 1–20 (built) · 0/20 live in de
+[ ] Trade templates 1–20 (built) · 7/9 live in de
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
 ### T1-de · /templates/photography → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-fotograf
 - **English page:** [photography invoice template](https://invoicor.com/templates/photography) (live: use it as the source)
 - **Search words:** "[photography, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T2-de · /templates/plumbing → German
-
-- [ ] **Live in de**
-- **English page:** [plumbing invoice template](https://invoicor.com/templates/plumbing) (live: use it as the source)
-- **Search words:** "[plumbing, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T2-de** /templates/plumbing~~ skipped in de: parked 2026-11-28 (demand gate, de): Germans search SHK (Heizung, Sanitär, Klima) as one trade; covered by the T3-de page
 
 ### T3-de · /templates/hvac → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-heizung-sanitaer
 - **English page:** [hvac invoice template](https://invoicor.com/templates/hvac) (live: use it as the source)
 - **Search words:** "[hvac, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T4-de · /templates/freelance-design → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-grafikdesigner
 - **English page:** [graphic design invoice template](https://invoicor.com/templates/freelance-design) (live: use it as the source)
 - **Search words:** "[graphic design, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T5-de · /templates/handyman → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/vorlagen/rechnung-hausmeisterservice
 - **English page:** [handyman invoice template](https://invoicor.com/templates/handyman) (live: use it as the source)
 - **Search words:** "[handyman, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T6-de · /templates/videography → German
+- ~~**T6-de** /templates/videography~~ skipped in de: parked 2026-11-28 (demand gate, de): few German pages
 
-- [ ] **Live in de**
-- **English page:** [videography invoice template](https://invoicor.com/templates/videography) (live: use it as the source)
-- **Search words:** "[videography, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T7-de · /templates/landscaping → German
-
-- [ ] **Live in de**
-- **English page:** [landscaping invoice template](https://invoicor.com/templates/landscaping) (live: use it as the source)
-- **Search words:** "[landscaping, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T7-de** /templates/landscaping~~ skipped in de: parked 2026-11-28 (demand gate, de): weak; Gartenpflege for private clients is the angle (§35a, owned by the Handwerkerrechnung page)
 
 ### T8-de · /templates/consulting → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-unternehmensberatung
 - **English page:** [consulting invoice template](https://invoicor.com/templates/consulting) (live: use it as the source)
 - **Search words:** "[consulting, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T9-de · /templates/cleaning-services → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-gebaeudereinigung
 - **English page:** [cleaning invoice template](https://invoicor.com/templates/cleaning-services) (live: use it as the source)
 - **Search words:** "[cleaning, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T10-de · /templates/auto-detailing → German
+- ~~**T10-de** /templates/auto-detailing~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated German pages
 
-- [ ] **Live in de**
-- **English page:** [auto detailing invoice template](https://invoicor.com/templates/auto-detailing) (live: use it as the source)
-- **Search words:** "[auto detailing, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T11-de** /templates/electrician~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages from big sites; Germans use one Handwerkerrechnung
 
-### T11-de · /templates/electrician → German
+- ~~**T12-de** /templates/construction~~ skipped in de: parked 2026-11-28 (overlap, de): the German demand is about §13b and Abschlag/Schlussrechnung, owned by D18-de, D3-de and D2-de
 
-- [ ] **Live in de**
-- **English page:** [electrician invoice template](https://invoicor.com/templates/electrician) (live: use it as the source)
-- **Search words:** "[electrician, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T12-de · /templates/construction → German
-
-- [ ] **Live in de**
-- **English page:** [construction invoice template](https://invoicor.com/templates/construction) (live: use it as the source)
-- **Search words:** "[construction, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T13-de · /templates/roofing → German
-
-- [ ] **Live in de**
-- **English page:** [roofing invoice template](https://invoicor.com/templates/roofing) (live: use it as the source)
-- **Search words:** "[roofing, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T13-de** /templates/roofing~~ skipped in de: parked 2026-11-28 (demand gate, de): covered by Handwerker pages
 
 ### T14-de · /templates/painting → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-maler
 - **English page:** [painting invoice template](https://invoicor.com/templates/painting) (live: use it as the source)
 - **Search words:** "[painting, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T15-de · /templates/web-development → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-webdesigner
 - **English page:** [web development invoice template](https://invoicor.com/templates/web-development) (live: use it as the source)
 - **Search words:** "[web development, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T16-de · /templates/personal-training → German
+- ~~**T16-de** /templates/personal-training~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
-- [ ] **Live in de**
-- **English page:** [personal trainer invoice template](https://invoicor.com/templates/personal-training) (live: use it as the source)
-- **Search words:** "[personal trainer, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T17-de · /templates/tutoring → German
-
-- [ ] **Live in de**
-- **English page:** [tutoring invoice template](https://invoicor.com/templates/tutoring) (live: use it as the source)
-- **Search words:** "[tutoring, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T17-de** /templates/tutoring~~ skipped in de: parked 2026-11-28 (demand gate, de): no German pages (only AT/CH)
 
 ### T18-de · /templates/catering → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/vorlagen/rechnung-catering
 - **English page:** [catering invoice template](https://invoicor.com/templates/catering) (live: use it as the source)
 - **Search words:** "[catering, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T19-de · /templates/moving → German
+- ~~**T19-de** /templates/moving~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
-- [ ] **Live in de**
-- **English page:** [moving company invoice template](https://invoicor.com/templates/moving) (live: use it as the source)
-- **Search words:** "[moving company, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T20-de · /templates/pest-control → German
-
-- [ ] **Live in de**
-- **English page:** [pest control invoice template](https://invoicor.com/templates/pest-control) (live: use it as the source)
-- **Search words:** "[pest control, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T20-de** /templates/pest-control~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
 ## T21–T35 in German
 
-[ ] Trade templates 21–35 (built) · 0/15 live in de
+[ ] Trade templates 21–35 (built) · 1/3 live in de
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T21-de · /templates/virtual-assistant → German
+- ~~**T21-de** /templates/virtual-assistant~~ skipped in de: parked 2026-11-28 (demand gate, de): niche in Germany
 
-- [ ] **Live in de**
-- **English page:** [virtual assistant invoice template](https://invoicor.com/templates/virtual-assistant) (live: use it as the source)
-- **Search words:** "[virtual assistant, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T22-de** /templates/pet-sitting~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
-### T22-de · /templates/pet-sitting → German
+- ~~**T23-de** /templates/makeup-artist~~ skipped in de: parked 2026-11-28 (demand gate, de): no German pages
 
-- [ ] **Live in de**
-- **English page:** [pet sitting invoice template](https://invoicor.com/templates/pet-sitting) (live: use it as the source)
-- **Search words:** "[pet sitting, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T24-de** /templates/carpentry~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages; covered by Handwerker pages
 
-### T23-de · /templates/makeup-artist → German
-
-- [ ] **Live in de**
-- **English page:** [makeup artist invoice template](https://invoicor.com/templates/makeup-artist) (live: use it as the source)
-- **Search words:** "[makeup artist, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T24-de · /templates/carpentry → German
-
-- [ ] **Live in de**
-- **English page:** [carpentry invoice template](https://invoicor.com/templates/carpentry) (live: use it as the source)
-- **Search words:** "[carpentry, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T25-de · /templates/flooring → German
-
-- [ ] **Live in de**
-- **English page:** [flooring invoice template](https://invoicor.com/templates/flooring) (live: use it as the source)
-- **Search words:** "[flooring, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T25-de** /templates/flooring~~ skipped in de: parked 2026-11-28 (demand gate, de): covered by Handwerker pages
 
 ### T26-de · /templates/tile-installation → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-fliesenleger
 - **English page:** [tile installation invoice template](https://invoicor.com/templates/tile-installation) (live: use it as the source)
 - **Search words:** "[tile installation, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T27-de · /templates/drywall → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/vorlagen/rechnung-trockenbau
 - **English page:** [drywall invoice template](https://invoicor.com/templates/drywall) (live: use it as the source)
 - **Search words:** "[drywall, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T28-de · /templates/masonry → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/vorlagen/rechnung-maurer
 - **English page:** [masonry invoice template](https://invoicor.com/templates/masonry) (live: use it as the source)
 - **Search words:** "[masonry, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T29-de · /templates/fence-installation → German
+- ~~**T29-de** /templates/fence-installation~~ skipped in de: parked 2026-11-28 (demand gate, de): weak; Handwerker or GaLaBau template
 
-- [ ] **Live in de**
-- **English page:** [fence installation invoice template](https://invoicor.com/templates/fence-installation) (live: use it as the source)
-- **Search words:** "[fence installation, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T30-de** /templates/pool-service~~ skipped in de: parked 2026-11-28 (demand gate, de): no German pages
 
-### T30-de · /templates/pool-service → German
+- ~~**T31-de** /templates/window-cleaning~~ skipped in de: parked 2026-11-28 (demand gate, de): covered by Gebäudereinigung (T9-de)
 
-- [ ] **Live in de**
-- **English page:** [pool service invoice template](https://invoicor.com/templates/pool-service) (live: use it as the source)
-- **Search words:** "[pool service, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T32-de** /templates/pressure-washing~~ skipped in de: parked 2026-11-28 (demand gate, de): not a distinct trade in Germany
 
-### T31-de · /templates/window-cleaning → German
+- ~~**T33-de** /templates/tree-service~~ skipped in de: parked 2026-11-28 (demand gate, de): usually GaLaBau
 
-- [ ] **Live in de**
-- **English page:** [window cleaning invoice template](https://invoicor.com/templates/window-cleaning) (live: use it as the source)
-- **Search words:** "[window cleaning, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T34-de** /templates/snow-removal~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages; the §35a angle belongs to the Handwerkerrechnung page
 
-### T32-de · /templates/pressure-washing → German
-
-- [ ] **Live in de**
-- **English page:** [pressure washing invoice template](https://invoicor.com/templates/pressure-washing) (live: use it as the source)
-- **Search words:** "[pressure washing, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T33-de · /templates/tree-service → German
-
-- [ ] **Live in de**
-- **English page:** [tree service invoice template](https://invoicor.com/templates/tree-service) (live: use it as the source)
-- **Search words:** "[tree service, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T34-de · /templates/snow-removal → German
-
-- [ ] **Live in de**
-- **English page:** [snow removal invoice template](https://invoicor.com/templates/snow-removal) (live: use it as the source)
-- **Search words:** "[snow removal, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T35-de · /templates/locksmith → German
-
-- [ ] **Live in de**
-- **English page:** [locksmith invoice template](https://invoicor.com/templates/locksmith) (live: use it as the source)
-- **Search words:** "[locksmith, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T35-de** /templates/locksmith~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
 ## T36–T50 in German
 
-[ ] Trade templates 36–50 (built) · 0/15 live in de
+[ ] Trade templates 36–50 (built) · 2/3 live in de
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T36-de · /templates/appliance-repair → German
+- ~~**T36-de** /templates/appliance-repair~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages
 
-- [ ] **Live in de**
-- **English page:** [appliance repair invoice template](https://invoicor.com/templates/appliance-repair) (live: use it as the source)
-- **Search words:** "[appliance repair, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T37-de** /templates/junk-removal~~ skipped in de: parked 2026-11-28 (demand gate, de): checklists only
 
-### T37-de · /templates/junk-removal → German
+- ~~**T38-de** /templates/carpet-cleaning~~ skipped in de: parked 2026-11-28 (demand gate, de): covered by Reinigung pages
 
-- [ ] **Live in de**
-- **English page:** [junk removal invoice template](https://invoicor.com/templates/junk-removal) (live: use it as the source)
-- **Search words:** "[junk removal, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T39-de** /templates/interior-design~~ skipped in de: parked 2026-11-28 (demand gate, de): weak, and Innenarchitekt is a protected title with HOAI fee rules: a different page in Germany
 
-### T38-de · /templates/carpet-cleaning → German
+- ~~**T40-de** /templates/remodeling~~ skipped in de: parked 2026-11-28 (overlap, de): demand is for the general Handwerkerrechnung (LO9)
 
-- [ ] **Live in de**
-- **English page:** [carpet cleaning invoice template](https://invoicor.com/templates/carpet-cleaning) (live: use it as the source)
-- **Search words:** "[carpet cleaning, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T39-de · /templates/interior-design → German
-
-- [ ] **Live in de**
-- **English page:** [interior design invoice template](https://invoicor.com/templates/interior-design) (live: use it as the source)
-- **Search words:** "[interior design, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T40-de · /templates/remodeling → German
-
-- [ ] **Live in de**
-- **English page:** [remodeling invoice template](https://invoicor.com/templates/remodeling) (live: use it as the source)
-- **Search words:** "[remodeling, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T41-de · /templates/garage-door-repair → German
-
-- [ ] **Live in de**
-- **English page:** [garage door repair invoice template](https://invoicor.com/templates/garage-door-repair) (live: use it as the source)
-- **Search words:** "[garage door repair, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T41-de** /templates/garage-door-repair~~ skipped in de: parked 2026-11-28 (demand gate, de): not a separate trade in Germany
 
 ### T42-de · /templates/dj → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/vorlagen/rechnung-dj
 - **English page:** [dj invoice template](https://invoicor.com/templates/dj) (live: use it as the source)
 - **Search words:** "[dj, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T43-de · /templates/event-planning → German
+- ~~**T43-de** /templates/event-planning~~ skipped in de: parked 2026-11-28 (demand gate, de): no German pages
 
-- [ ] **Live in de**
-- **English page:** [event planner invoice template](https://invoicor.com/templates/event-planning) (live: use it as the source)
-- **Search words:** "[event planner, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T44-de** /templates/florist~~ skipped in de: parked 2026-11-28 (demand gate, de): no German pages (tax articles only)
 
-### T44-de · /templates/florist → German
-
-- [ ] **Live in de**
-- **English page:** [florist invoice template](https://invoicor.com/templates/florist) (live: use it as the source)
-- **Search words:** "[florist, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T45-de · /templates/massage-therapy → German
-
-- [ ] **Live in de**
-- **English page:** [massage therapy invoice template](https://invoicor.com/templates/massage-therapy) (live: use it as the source)
-- **Search words:** "[massage therapy, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T45-de** /templates/massage-therapy~~ skipped in de: parked 2026-11-28 (demand gate, de): no dedicated pages; medical vs wellness massage changes the tax
 
 ### T46-de · /templates/translation → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-uebersetzer
 - **English page:** [translation invoice template](https://invoicor.com/templates/translation) (live: use it as the source)
 - **Search words:** "[translation, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T47-de · /templates/copywriting → German
+- ~~**T47-de** /templates/copywriting~~ skipped in de: parked 2026-11-28 (demand gate, de): covered by the Freiberufler page (D16-de)
 
-- [ ] **Live in de**
-- **English page:** [copywriter invoice template](https://invoicor.com/templates/copywriting) (live: use it as the source)
-- **Search words:** "[copywriter, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T48-de · /templates/social-media-management → German
-
-- [ ] **Live in de**
-- **English page:** [social media manager invoice template](https://invoicor.com/templates/social-media-management) (live: use it as the source)
-- **Search words:** "[social media manager, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T48-de** /templates/social-media-management~~ skipped in de: parked 2026-11-28 (demand gate, de): only template farms
 
 ### T49-de · /templates/music-lessons → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-musikunterricht
 - **English page:** [music teacher invoice template](https://invoicor.com/templates/music-lessons) (live: use it as the source)
 - **Search words:** "[music teacher, in German] Rechnung Vorlage"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T50-de · /templates/bookkeeping → German
-
-- [ ] **Live in de**
-- **English page:** [bookkeeping invoice template](https://invoicor.com/templates/bookkeeping) (live: use it as the source)
-- **Search words:** "[bookkeeping, in German] Rechnung Vorlage"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T50-de** /templates/bookkeeping~~ skipped in de: parked 2026-11-28 (demand gate, de): weak, and the StBerG limits what a Buchhalter may do
 
 ## T51–T60 in German
 

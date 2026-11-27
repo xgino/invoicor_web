@@ -1490,5 +1490,1333 @@
       }
     ],
     "invoice_types": []
+  },
+  {
+    "slug": "rechnung-fotograf",
+    "translation_of": "photography",
+    "niche": "Rechnung für Fotografen",
+    "title": "Rechnung Fotograf: Vorlage und Muster mit 7 % | Invoicor",
+    "meta_description": "Rechnung für Fotografen: wann Nutzungsrechte 7 % USt tragen, warum Hochzeiten 19 % kosten, was Kleinunternehmer schreiben. Jetzt als PDF erstellen.",
+    "h1": "Rechnung Fotograf: Vorlage und Muster für Fotografen",
+    "subtitle": "Für Fotografinnen und Fotografen in Deutschland: Shooting, Bildbearbeitung und Nutzungsrechte richtig aufführen und den passenden Steuersatz wählen.",
+    "intro_paragraph": "Bei einer Fotografenrechnung zählt, was der Kunde mit den Bildern tun darf. Eine Agentur, die Fotos für eine Kampagne lizenziert, bekommt Nutzungsrechte; ein Brautpaar bekommt seine bestellten Bilddateien. Für die Umsatzsteuer ist das der Unterschied zwischen 7 % und 19 %. An Unternehmen darf die Rechnung bis 31. Dezember 2026 ein PDF sein, wenn der Kunde zustimmt, bis 31. Dezember 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 braucht es eine E-Rechnung (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. Für Privatkunden und Kleinunternehmer bleibt das PDF in Ordnung.",
+    "include_title": "Was auf eine Rechnung für Fotografen gehört",
+    "what_to_include_intro": "Neben den Pflichtangaben nach § 14 Abs. 4 UStG braucht Ihre Rechnung diese Punkte, damit Kunde und Finanzamt verstehen, was Sie verkauft haben.",
+    "req_1_title": "Die Nutzungsrechte, genau beschrieben",
+    "req_1_text": "Schreiben Sie in eine eigene Zeile, welche Rechte der Kunde erhält: einfaches oder ausschließliches Nutzungsrecht, Medien, Gebiet und Dauer. „Website und LinkedIn, Deutschland, 3 Jahre“ ist eindeutig, „inkl. Rechte“ nicht.",
+    "req_2_title": "Den Steuersatz, der zum Auftrag passt",
+    "req_2_text": "Für Nutzungsrechte zur Veröffentlichung, etwa für Presse, Werbung oder eine Bildagentur, gilt in der Regel 7 % (§ 12 Abs. 2 Nr. 7c UStG). Für die bloße Übergabe bestellter Abzüge oder Dateien, wie bei Hochzeiten und Porträts, gilt 19 %. Die Grenze bei Ihrem Auftrag klären Sie mit Ihrem Steuerberater.",
+    "req_3_title": "Shooting, Bearbeitung und Bildanzahl getrennt",
+    "req_3_text": "Führen Sie Aufnahmezeit (Stunden, Halbtag oder Tagessatz), Bildbearbeitung pro Bild und die Zahl der Bilder einzeln auf. Weitere Motive rechnen Sie später zum selben Bildpreis nach.",
+    "req_4_title": "Anfahrt, Studio und Assistenz",
+    "req_4_text": "Anfahrtspauschale oder Kilometer, Studiomiete, Visagistin und Zweitfotograf gehören in eigene Zeilen. In eigenem Namen eingekauft, sind sie Teil Ihres Preises, in der Regel zum Steuersatz der Hauptleistung; prüfen Sie das mit Ihrem Steuerberater.",
+    "req_5_title": "Aufnahmetag als Leistungsdatum",
+    "req_5_text": "Das Leistungsdatum ist Pflicht. Invoicor hat dafür kein eigenes Feld: Schreiben Sie den Aufnahmetag in die Beschreibung („Shooting am 14. Oktober 2026“) oder in die Hinweise, bei mehreren Terminen den Zeitraum.",
+    "req_6_title": "Lieferung der Dateien und Zahlungsfrist",
+    "req_6_text": "Nennen Sie, wie die Bilder geliefert werden (Online-Galerie, Download-Link, Abzüge) und das Zahlungsziel. Viele Fotografen geben die hochaufgelösten Dateien erst nach Zahlungseingang frei und schreiben das in die Hinweise.",
+    "what_to_include_outro": "So zeigt die Rechnung, was fotografiert, geliefert und lizenziert wurde, und der Steuersatz lässt sich aus der Beschreibung nachvollziehen.",
+    "paper_label": "Rechnung Fotograf · Muster",
+    "sample_breakdown_title": "Muster: Rechnung für Mitarbeiterfotos mit Nutzungsrechten",
+    "sample_breakdown_intro": "Eine Fotografin aus Leipzig fotografiert das Team eines Ingenieurbüros für Website und Stellenanzeigen. Hauptinhalt ist die Einräumung der Nutzungsrechte zur Veröffentlichung, deshalb 7 % USt; ob das bei Ihnen genauso ist, klärt Ihr Steuerberater.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Aufnahme Mitarbeiterporträts vor Ort, Halbtag (Shooting am 14. Oktober 2026)",
+        "qty": "1",
+        "rate": "650,00 €",
+        "amount": "650,00 €"
+      },
+      {
+        "description": "Bildbearbeitung: Retusche, Farbe, Zuschnitt für Web und Print",
+        "qty": "12",
+        "rate": "18,00 €",
+        "amount": "216,00 €"
+      },
+      {
+        "description": "Einfaches Nutzungsrecht je Bild: Website, Social Media, Stellenanzeigen, Deutschland, 3 Jahre",
+        "qty": "12",
+        "rate": "45,00 €",
+        "amount": "540,00 €"
+      },
+      {
+        "description": "Anfahrtspauschale Leipzig-Markkleeberg inkl. mobiler Lichtausrüstung",
+        "qty": "1",
+        "rate": "45,00 €",
+        "amount": "45,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.451,00 €",
+    "sample_breakdown_tax_label": "USt. 7 %",
+    "sample_breakdown_tax": "101,57 €",
+    "sample_breakdown_balance": "1.552,57 €",
+    "sample_breakdown_notes": "Leistungsdatum: 14. Oktober 2026. Die Nutzungsrechte gelten ab Zahlungseingang; weitere Nutzungen bitte vorher anfragen. Das Urheberrecht bleibt bei der Fotografin. Der Download-Link folgt nach Zahlung. Zahlbar innerhalb von 14 Tagen.",
+    "industry_notes_title": "Was Fotografen bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "7 % oder 19 %: der Auftrag entscheidet",
+        "text": "Der ermäßigte Satz gilt für die Einräumung urheberrechtlicher Nutzungsrechte, zum Beispiel wenn Bildjournalisten, Bildagenturen oder Fotodesigner Fotos zur Veröffentlichung lizenzieren (§ 12 Abs. 2 Nr. 7c UStG, UStAE 12.7 Abs. 18). Liefern Sie nur die bestellten Positive oder Bilddateien, ist es eine Lieferung zu 19 %."
+      },
+      {
+        "title": "Hochzeiten und Porträts für Privatkunden",
+        "text": "Brautpaare, Familien und Bewerber erhalten in der Regel ihre bestellten Bilder zum privaten Gebrauch. Dafür berechnen Sie 19 % auf den gesamten Auftrag, auch auf Album und Abzüge. Weil Invoicor einen Steuersatz pro Rechnung kennt, brauchen Sie für ein Paket aus 7 %- und 19 %-Leistungen zwei Rechnungen; fragen Sie im Zweifel Ihren Steuerberater, wie Sie aufteilen."
+      },
+      {
+        "title": "Viele Fotografen sind Kleinunternehmer",
+        "text": "Wer nebenberuflich oder am Anfang fotografiert, bleibt oft unter den Grenzen des § 19 UStG: höchstens 25.000 € Umsatz im Vorjahr und 100.000 € im laufenden Jahr. Dann gibt es keine Umsatzsteuer und die Frage nach 7 % oder 19 % stellt sich nicht. Auf die Rechnung gehört ein Hinweis wie „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“, und Ihre Steuernummer in die Hinweise."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Rechnungen von Fotografen",
+    "mistakes": [
+      {
+        "title": "Pauschal 7 % auf jede Rechnung",
+        "text": "Der ermäßigte Satz hängt an den Nutzungsrechten, nicht am Beruf. Wer das Hochzeitspaket mit 7 % abrechnet, weist zu wenig Steuer aus und trägt die Differenz unter Umständen selbst."
+      },
+      {
+        "title": "Nutzungsrechte ohne Umfang",
+        "text": "„Bilder inkl. Nutzungsrechte“ lässt offen, wo und wie lange der Kunde die Fotos nutzen darf. Medium, Gebiet und Dauer auf der Rechnung sichern Ihre spätere Nachlizenzierung und begründen den Steuersatz."
+      },
+      {
+        "title": "Ausweis von Umsatzsteuer als Kleinunternehmer",
+        "text": "Steht auf der Rechnung eines Kleinunternehmers „zzgl. 7 % USt.“, kann der ausgewiesene Betrag ans Finanzamt fällig werden. Stellen Sie als Kleinunternehmer keinen Steuersatz ein. Invoicor druckt die Steuerzeile trotzdem mit 0 %; der Hinweis auf § 19 UStG erklärt sie."
+      }
+    ],
+    "tip_title": "Ein Tipp für Fotografen",
+    "pro_tip": "Legen Sie in Invoicor zwei Muster an: eines für Firmenaufträge mit Nutzungsrechten und 7 %, eines für Hochzeiten und Porträts mit 19 %. Für jeden Auftrag duplizieren Sie das passende und ändern Datum und Bildanzahl.",
+    "format_pdf_desc": "Ein PDF hält Rechtezeile und Steuersatz unverändert fest, sieht beim Brautpaar wie in der Buchhaltung gleich aus und lässt sich acht Jahre aufbewahren (§ 14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Rechnung für Fotografen",
+    "faqs": [
+      {
+        "question": "Wann darf ein Fotograf 7 % Umsatzsteuer berechnen?",
+        "answer": "Wenn Sie urheberrechtliche Nutzungsrechte einräumen, etwa für die Veröffentlichung in Presse, Werbung, auf einer Website oder über eine Bildagentur (§ 12 Abs. 2 Nr. 7c UStG mit UStAE 12.7 Abs. 18). Werden nur die bestellten Bilder oder Dateien übergeben, gilt 19 %. Bei gemischten Aufträgen klären Sie die Einordnung mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Welcher Steuersatz gilt für Hochzeitsfotos?",
+        "answer": "In der Regel 19 %. Das Brautpaar erhält die bestellten Bilddateien oder Abzüge für den privaten Gebrauch; das ist keine Einräumung von Nutzungsrechten zur Veröffentlichung. Das gilt ebenso für Album, Abzüge und Bewerbungsfotos."
+      },
+      {
+        "question": "Wie berechne ich eine Anzahlung für eine Hochzeit?",
+        "answer": "Mit einer eigenen Anzahlungsrechnung bei der Buchung, mit allen Pflichtangaben und 19 % USt. In der Schlussrechnung nach der Hochzeit ziehen Sie die Anzahlung und die Steuer darauf ab (§ 14 Abs. 5 UStG). Im kostenlosen Generator geht das mit einer negativen Zeile; in der App, die keine negativen Preise kennt, rechnen Sie den Restbetrag ab und nennen die Anzahlungsrechnung in den Hinweisen."
+      },
+      {
+        "question": "Brauche ich als Fotograf eine E-Rechnung?",
+        "answer": "Nur an Unternehmen, und erst ab 2028 verpflichtend (bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz). Privatkunden, Kleinunternehmer und Rechnungen bis 250 € brutto sind ausgenommen."
+      },
+      {
+        "question": "Wie rechne ich die Anfahrt ab?",
+        "answer": "Als eigene Zeile, als Pauschale nach Entfernung („bis 30 km inklusive, darüber 45,00 €“) oder pro Kilometer. Bahnticket oder Hotel in eigenem Namen gehören zu Ihrem Preis; den Steuersatz dafür stimmen Sie mit Ihrem Steuerberater ab."
+      }
+    ],
+    "cta_title": "Ihre Rechnung als Fotograf",
+    "links_title": "Rechnungsarten für Fotografen",
+    "related": [
+      {
+        "name": "Rechnung für Grafikdesigner",
+        "slug": "rechnung-grafikdesigner"
+      },
+      {
+        "name": "Rechnung für Webdesigner",
+        "slug": "rechnung-webdesigner"
+      }
+    ],
+    "invoice_types": ["anzahlungsrechnung", "schlussrechnung", "auslagen-weiterberechnen"]
+  },
+  {
+    "slug": "rechnung-grafikdesigner",
+    "translation_of": "freelance-design",
+    "niche": "Rechnung für Grafikdesigner",
+    "title": "Rechnung Grafikdesigner: Vorlage und Muster | Invoicor",
+    "meta_description": "Rechnung für Grafikdesign: Gestaltung und Nutzungsrechte trennen, 7 % oder 19 % USt, Anzahlung abziehen, EU-Kunden. Muster ansehen, PDF erstellen.",
+    "h1": "Rechnung Grafikdesigner: Vorlage und Muster für Grafikdesign",
+    "subtitle": "Für selbstständige Grafikdesigner: Entwürfe, Korrekturen, Dateien und Nutzungsrechte abrechnen, den Steuersatz aus dem Vertrag ableiten und die Anzahlung abziehen.",
+    "intro_paragraph": "Eine Designrechnung beschreibt zwei Dinge: die Arbeit an Logo, Layout oder Kampagne und das Recht des Kunden, das Ergebnis zu nutzen. Wie beides im Vertrag gewichtet ist, entscheidet über 7 % oder 19 % Umsatzsteuer. Ihre Kunden sind meist Unternehmen: Ein PDF ist bis 31. Dezember 2026 mit deren Einverständnis erlaubt, bis 31. Dezember 2027 bei höchstens 800.000 € Vorjahresumsatz. Danach müssen Rechnungen an Firmen als XRechnung oder ZUGFeRD kommen. Invoicor erstellt PDF-Rechnungen, nicht diese Formate. Kleinunternehmer nach § 19 UStG sind ausgenommen.",
+    "include_title": "Was auf eine Rechnung für Grafikdesign gehört",
+    "what_to_include_intro": "Neben den Pflichtangaben nach § 14 Abs. 4 UStG gehören diese Punkte auf die Rechnung, an denen Designrechnungen am häufigsten hängen bleiben.",
+    "req_1_title": "Leistungen als fertige Ergebnisse",
+    "req_1_text": "Beschreiben Sie, was entstanden ist: „Logo-Entwicklung, 3 Entwürfe, 2 Korrekturschleifen“ statt „Designarbeiten“. Die Buchhaltung des Kunden muss erkennen können, wofür sie zahlt, ohne das Angebot herauszusuchen.",
+    "req_2_title": "Gestaltung und Nutzungsrechte klar benannt",
+    "req_2_text": "Steht im Vertrag die Einräumung von Nutzungsrechten im Vordergrund, etwa die Lizenz für eine Illustration in einer Werbekampagne, kann 7 % gelten. Steht die Gestaltungsarbeit im Vordergrund, sind es 19 % (UStAE 12.7 Abs. 17). Formulieren Sie die Rechtezeile so, wie es im Vertrag steht, und lassen Sie die Einordnung von Ihrem Steuerberater prüfen.",
+    "req_3_title": "Korrekturschleifen und Zusatzwünsche",
+    "req_3_text": "Nennen Sie, wie viele Korrekturen im Preis enthalten waren, und rechnen Sie jede weitere Runde als eigene Zeile mit Stunden, Stundensatz und Datum der Beauftragung ab.",
+    "req_4_title": "Dateien und Formate",
+    "req_4_text": "Listen Sie auf, was der Kunde bekommt: Druckdaten als PDF/X, Logo als SVG und PNG, offene Dateien aus Illustrator oder Figma. Wenn offene Dateien extra kosten, gehören sie in eine eigene Zeile.",
+    "req_5_title": "Anzahlung und Leistungszeitraum",
+    "req_5_text": "Bei größeren Projekten stellen Sie zu Beginn eine Anzahlungsrechnung; in der Schlussrechnung ziehen Sie den Betrag und die Steuer darauf ab (§ 14 Abs. 5 UStG). Den Leistungszeitraum schreiben Sie in die Hinweise, Invoicor hat kein Datumsfeld dafür.",
+    "req_6_title": "Fälligkeit und Verzug",
+    "req_6_text": "Schreiben Sie ein Zahlungsziel auf die Rechnung, etwa 14 Tage. Ein Unternehmen ist spätestens 30 Tage nach Fälligkeit und Zugang in Verzug (§ 286 Abs. 3 BGB); dann stehen Ihnen Verzugszinsen und 40 € Pauschale zu (§ 288 BGB).",
+    "what_to_include_outro": "Mit diesen Angaben wird die Rechnung ohne Rückfrage freigegeben, und Sie haben schriftlich, was bezahlt wurde.",
+    "paper_label": "Rechnung Grafikdesign · Muster",
+    "sample_breakdown_title": "Muster: Schlussrechnung für ein Corporate Design",
+    "sample_breakdown_intro": "Ein Designer aus Nürnberg hat für eine Bäckerei Logo und Geschäftsausstattung entwickelt. Im Vertrag steht die Gestaltung im Vordergrund, die Nutzung ist im Preis enthalten: 19 %. Die Anzahlung von 1.190,00 € brutto ist bezahlt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Logo-Entwicklung, 3 Entwürfe, 2 Korrekturschleifen, Wort-Bild-Marke",
+        "qty": "1",
+        "rate": "1.800,00 €",
+        "amount": "1.800,00 €"
+      },
+      {
+        "description": "Geschäftsausstattung: Visitenkarte, Briefbogen, Bäckertüte",
+        "qty": "1",
+        "rate": "650,00 €",
+        "amount": "650,00 €"
+      },
+      {
+        "description": "Zusätzliche Korrekturschleife Logo, beauftragt per E-Mail am 14. Oktober",
+        "qty": "3 Std.",
+        "rate": "85,00 €",
+        "amount": "255,00 €"
+      },
+      {
+        "description": "Offene Dateien (AI, SVG, PDF/X) und Gestaltungsrichtlinie, 8 Seiten",
+        "qty": "1",
+        "rate": "120,00 €",
+        "amount": "120,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2.825,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "536,75 €",
+    "sample_breakdown_deposit_label": "Anzahlung, Rechnung 2026-031",
+    "sample_breakdown_deposit": "-1.190,00 €",
+    "sample_breakdown_balance": "2.171,75 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 8. September bis 31. Oktober 2026. Abgezogen: Anzahlung laut Rechnung 2026-031 vom 8. September 2026, 1.000,00 € netto zzgl. 190,00 € USt. Die Nutzungsrechte für Logo und Geschäftsausstattung (zeitlich und räumlich unbegrenzt, ausschließlich) gehen mit vollständiger Zahlung über. Zahlbar innerhalb von 14 Tagen.",
+    "industry_notes_title": "Was Grafikdesigner bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Der Vertrag bestimmt den Steuersatz",
+        "text": "Nach UStAE 12.7 Abs. 17 kommt es auf die Vereinbarung an: Ist die Einräumung von Nutzungsrechten an einem Entwurf Hauptinhalt, gilt 7 %, sonst 19 %. Ein beauftragtes Logo ist oft vor allem Gestaltungsarbeit, eine Illustration, die ein Verlag für ein Cover lizenziert, eher eine Rechteeinräumung. Lassen Sie Ihre Standardverträge von Ihrem Steuerberater ansehen."
+      },
+      {
+        "title": "Kunden in anderen EU-Ländern",
+        "text": "Gestalten Sie für ein Unternehmen mit USt-IdNr. in Österreich, Frankreich oder einem anderen EU-Land, liegt der Ort der Leistung dort (§ 3a Abs. 2 UStG): keine deutsche Umsatzsteuer, der Kunde versteuert sie in seinem Land. Auf die Rechnung gehören Ihre und seine USt-IdNr. und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§ 14a Abs. 1 UStG). In Invoicor stellen Sie keinen Steuersatz ein; die Zeile zeigt 0 %."
+      },
+      {
+        "title": "Pauschale, Stundensatz oder beides",
+        "text": "Für klar umrissene Aufgaben wie ein Logo bieten die meisten Designer einen Festpreis an, für laufende Betreuung einen Stundensatz, oft kombiniert. Auf der Rechnung trennen Sie beides, damit der Kunde sieht, warum der Betrag vom Angebot abweicht."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Rechnungen für Grafikdesign",
+    "mistakes": [
+      {
+        "title": "Rechte übertragen, bevor bezahlt ist",
+        "text": "Wer offene Dateien und Rechte vor der Zahlung übergibt, hat danach wenig in der Hand. Die Rechte gehen mit vollständiger Zahlung über; das steht in den Hinweisen."
+      },
+      {
+        "title": "Die Anzahlung nur brutto abziehen",
+        "text": "Ziehen Sie in der Schlussrechnung nur eine Summe ab, fehlt die Steuer auf die Anzahlung. § 14 Abs. 5 UStG verlangt beides. Nennen Sie in den Hinweisen Nummer, Nettobetrag und Steuer der Anzahlungsrechnung, wie im Muster oben."
+      },
+      {
+        "title": "Gekaufte Schriften und Bilder vergessen",
+        "text": "Schriftlizenzen oder Stockfotos, die Sie in eigenem Namen für das Projekt kaufen, sind Teil Ihres Preises. Rechnen Sie sie als eigene Zeile ab, statt sie aus Ihrem Honorar zu zahlen."
+      }
+    ],
+    "tip_title": "Ein Tipp für Grafikdesigner",
+    "pro_tip": "Möchte ein Kunde einen niedrigeren Preis, streichen Sie eine Leistung statt den Stundensatz, etwa die Gestaltungsrichtlinie oder einen dritten Entwurf. Die Rechnung zeigt dann einen kleineren Auftrag zum selben Stundenwert.",
+    "format_pdf_desc": "Ihre Rechnung ist auch eine Arbeitsprobe. Ein PDF zeigt Logo, Schrift und Aufbau auf jedem Gerät so, wie Sie sie gesetzt haben, und bleibt acht Jahre unverändert (§ 14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Rechnung für Grafikdesign",
+    "faqs": [
+      {
+        "question": "Berechnen Grafikdesigner 7 % oder 19 % Umsatzsteuer?",
+        "answer": "Das hängt vom Vertrag ab. Ist die Einräumung von Nutzungsrechten an einem Entwurf vereinbart und der Hauptinhalt, gilt 7 %, sonst 19 % (UStAE 12.7 Abs. 17). Bei vielen Auftragsarbeiten steht die Gestaltung im Vordergrund. Klären Sie die Einordnung für Ihre Verträge mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie schreibe ich eine Rechnung als Grafikdesigner?",
+        "answer": "Ihre Daten und die des Kunden, Steuernummer oder USt-IdNr., Datum und fortlaufende Nummer, dann die Leistungen als Ergebnisse, Zusatzkorrekturen mit Stunden, Dateien und Rechte. Darunter Nettobetrag, Steuer, eine abgezogene Anzahlung und der offene Betrag, in den Hinweisen Leistungszeitraum und Zahlungsziel."
+      },
+      {
+        "question": "Wie hoch sollte die Anzahlung sein?",
+        "answer": "Üblich sind 30 bis 50 % bei Auftragserteilung, bei langen Projekten auch Teilzahlungen nach Projektabschnitten. Die Höhe ist Ihre Vereinbarung mit dem Kunden; wichtig ist eine eigene Anzahlungsrechnung mit allen Pflichtangaben."
+      },
+      {
+        "question": "Wie rechne ich Druckkosten für Visitenkarten oder Flyer ab?",
+        "answer": "Bestellen Sie den Druck in eigenem Namen, ist er eine Auslage und Teil Ihres Preises (§ 10 Abs. 1 Satz 2 UStG): eine eigene Zeile mit Auflage und Format, zum Beispiel „Druck Visitenkarten, 500 Stück, 350 g“. Welcher Steuersatz gilt, ist in der Regel der der Hauptleistung; prüfen Sie das mit Ihrem Steuerberater. Bestellt der Kunde selbst, schicken Sie nur die Druckdaten."
+      },
+      {
+        "question": "Kann ich als Kleinunternehmer Design-Rechnungen ohne Umsatzsteuer schreiben?",
+        "answer": "Ja, wenn Ihr Umsatz im Vorjahr höchstens 25.000 € und im laufenden Jahr höchstens 100.000 € beträgt (§ 19 UStG). Dann gibt es weder 7 % noch 19 %, sondern einen Hinweis wie „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“."
+      }
+    ],
+    "cta_title": "Ihre Rechnung für Grafikdesign",
+    "links_title": "Rechnungsarten für Grafikdesigner",
+    "related": [
+      {
+        "name": "Rechnung für Webdesigner",
+        "slug": "rechnung-webdesigner"
+      },
+      {
+        "name": "Rechnung für Fotografen",
+        "slug": "rechnung-fotograf"
+      }
+    ],
+    "invoice_types": ["rechnung-freiberufler", "anzahlungsrechnung", "teilrechnung"]
+  },
+  {
+    "slug": "rechnung-webdesigner",
+    "translation_of": "web-development",
+    "niche": "Rechnung für Webdesigner",
+    "title": "Rechnung Webdesigner: Vorlage für Webdesign | Invoicor",
+    "meta_description": "Rechnung für Webdesign und Webentwicklung: Projektabschnitte, Zusatzstunden, Hosting und Domain, EU-Kunden. Muster mit 19 % USt, jetzt als PDF.",
+    "h1": "Rechnung Webdesigner: Vorlage und Muster für Webdesign",
+    "subtitle": "Für Webdesigner, Webentwickler und kleine Agenturen: eine Website in Abschnitten abrechnen, Mehraufwand zeigen und Hosting und Domain richtig weiterberechnen.",
+    "intro_paragraph": "Eine Website entsteht in Etappen: Konzept, Design, Umsetzung, Livegang. Wer erst am Ende abrechnet, finanziert das Projekt monatelang vor, deshalb rechnen die meisten Webdesigner nach Abschnitten ab. Ihre Kunden sind fast immer Unternehmen: Bis 31. Dezember 2026 geht ein PDF, wenn der Kunde einverstanden ist, bis 31. Dezember 2027 bei höchstens 800.000 € Vorjahresumsatz. Ab 1. Januar 2028 braucht jede Rechnung an ein Unternehmen das Format XRechnung oder ZUGFeRD. Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen; Kleinunternehmer sind ausgenommen.",
+    "include_title": "Was auf eine Rechnung für Webdesign gehört",
+    "what_to_include_intro": "Kunden geben eine Webdesign-Rechnung schneller frei, wenn sich jede Zeile im Browser oder im Angebot wiederfinden lässt. Neben den Pflichtangaben nach § 14 Abs. 4 UStG gehören diese Punkte darauf.",
+    "req_1_title": "Abgenommene Projektabschnitte",
+    "req_1_text": "Rechnen Sie nach Abschnitten aus dem Angebot ab: „Konzept und Sitemap“, „Design“, „Umsetzung in WordPress“. Ist ein Abschnitt fertig und abgenommen, rechnen Sie ihn als Teilrechnung endgültig ab, mit dem Datum der Abnahme.",
+    "req_2_title": "Zusatzaufwand als eigene Zeile",
+    "req_2_text": "Was nicht im Angebot stand, etwa eine Anbindung des Kontaktformulars an das CRM, kommt mit Stunden, Stundensatz und dem Datum der Beauftragung in eine eigene Zeile. Das hält den Festpreis sauber und die Zusammenarbeit freundlich.",
+    "req_3_title": "Hosting, Domain und Lizenzen",
+    "req_3_text": "Kaufen Sie Hosting, Domain oder Plugins in eigenem Namen und berechnen sie weiter, sind das Auslagen und Teil Ihres Preises (§ 10 Abs. 1 Satz 2 UStG); nennen Sie den Zeitraum. Zahlen Sie im Namen und auf Rechnung des Kunden, sind es durchlaufende Posten ohne Umsatzsteuer (§ 10 Abs. 1 Satz 4 UStG).",
+    "req_4_title": "Der richtige Steuersatz",
+    "req_4_text": "Webdesign und Programmierung werden in der Regel mit 19 % abgerechnet; der ermäßigte Satz für Nutzungsrechte hängt am Vertragsinhalt (UStAE 12.7 Abs. 17), und überlassene Software fällt normalerweise nicht darunter. Für Websites nennt die Verwaltung kein eigenes Beispiel. Bei Sonderfällen fragen Sie Ihren Steuerberater.",
+    "req_5_title": "Leistungszeitraum in den Hinweisen",
+    "req_5_text": "Das Leistungsdatum ist Pflicht. Weil Invoicor kein Feld dafür hat, schreiben Sie den Zeitraum des Abschnitts in die Hinweise oder in die Zeile („Umsetzung 6. Oktober bis 12. November 2026“).",
+    "req_6_title": "Übergabe und Zugänge",
+    "req_6_text": "Halten Sie fest, wann Admin-Zugang, Quellcode und Rechte an Texten und Gestaltung übergehen, meist mit vollständiger Zahlung der letzten Rechnung, und wie lange Fehlerbehebung nach dem Livegang inklusive ist.",
+    "what_to_include_outro": "So liest sich jede Rechnung wie ein kurzer Projektbericht: was fertig ist und was dazukam.",
+    "paper_label": "Rechnung Webdesign · Muster",
+    "sample_breakdown_title": "Muster: Teilrechnung für eine Firmenwebsite",
+    "sample_breakdown_intro": "Eine Webdesignerin aus Münster baut die Website eines Steuerbüros. Abschnitt 1 ist abgerechnet; diese zweite Teilrechnung umfasst Design und Umsetzung, einen Zusatzauftrag und Hosting und Domain, in eigenem Namen eingekauft.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Abschnitt 2: Design und Umsetzung, 6 Seiten, WordPress, abgenommen am 12. November 2026",
+        "qty": "1",
+        "rate": "3.600,00 €",
+        "amount": "3.600,00 €"
+      },
+      {
+        "description": "Zusatzauftrag: Kontaktformular mit CRM-Anbindung (E-Mail vom 3. November)",
+        "qty": "4 Std.",
+        "rate": "90,00 €",
+        "amount": "360,00 €"
+      },
+      {
+        "description": "Einweisung in das Redaktionssystem, online",
+        "qty": "2 Std.",
+        "rate": "90,00 €",
+        "amount": "180,00 €"
+      },
+      {
+        "description": "Webhosting, 1. Dezember 2026 bis 30. November 2027",
+        "qty": "12",
+        "rate": "12,00 €",
+        "amount": "144,00 €"
+      },
+      {
+        "description": "Domain steuerbuero-beispiel.de, 12 Monate",
+        "qty": "1",
+        "rate": "18,00 €",
+        "amount": "18,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "4.302,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "817,38 €",
+    "sample_breakdown_balance": "5.119,38 €",
+    "sample_breakdown_notes": "2. Teilrechnung zum Angebot 2026-118. Leistungszeitraum: 6. Oktober bis 12. November 2026. Abschnitt 1 wurde mit Rechnung 2026-087 abgerechnet; Abschnitt 3 (Inhalte und Livegang) folgt gesondert. Hosting und Domain sind in eigenem Namen eingekauft und weiterberechnet. Zahlbar innerhalb von 14 Tagen.",
+    "industry_notes_title": "Was Webdesigner bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Teilrechnung oder Abschlagsrechnung",
+        "text": "Eine Teilrechnung rechnet einen abgeschlossenen und abgenommenen Abschnitt endgültig ab; dieser Teil ist damit erledigt. Eine Abschlagsrechnung fordert dagegen eine vorläufige Zahlung nach Projektfortschritt während des laufenden Projekts (§ 632a BGB) und wird in der Schlussrechnung verrechnet. Für Websites mit klaren Abschnitten und Abnahmen passt meist die Teilrechnung."
+      },
+      {
+        "title": "Kunden in anderen EU-Ländern",
+        "text": "Bauen Sie die Website für ein Unternehmen mit USt-IdNr. in einem anderen EU-Land, liegt der Ort der Leistung beim Kunden (§ 3a Abs. 2 UStG). Sie berechnen keine deutsche Umsatzsteuer, der Kunde versteuert die Leistung in seinem Land. Die Rechnung braucht beide USt-IdNrn. und den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§ 14a Abs. 1 UStG). Mit § 13b UStG hat das nichts zu tun."
+      },
+      {
+        "title": "Wartung nach dem Livegang",
+        "text": "Updates, Backups und kleine Änderungen rechnen viele Webdesigner als monatliche Pauschale ab. Invoicor verschickt keine wiederkehrenden Rechnungen: Duplizieren Sie die Rechnung des Vormonats und ändern Sie Datum, Nummer und Zeitraum, oder stellen Sie eine Dauerrechnung über das Jahr aus."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Rechnungen für Webdesign",
+    "mistakes": [
+      {
+        "title": "Zugänge vor der letzten Zahlung übergeben",
+        "text": "Hat der Kunde Admin-Zugang und Hosting-Login, verliert die Schlussrechnung ihre Dringlichkeit. Machen Sie die Übergabe zum letzten Schritt nach dem Zahlungseingang und schreiben Sie das in die Hinweise."
+      },
+      {
+        "title": "Durchlaufende Posten mit Steuer belegen",
+        "text": "Haben Sie die Domain im Namen und auf Rechnung des Kunden bezahlt, ist das ein durchlaufender Posten ohne Umsatzsteuer. Weil Invoicor einen Steuersatz pro Rechnung kennt, gehört er nicht auf eine Rechnung mit 19 %; stellen Sie ihn gesondert in Rechnung oder fragen Sie Ihren Steuerberater."
+      },
+      {
+        "title": "„Programmierung: 3.600 €“",
+        "text": "Eine Zeile ohne Inhalt landet mit Rückfragen bei Ihnen. „Design und Umsetzung von 6 Seiten, responsiv, abgenommen am 12. November“ zeigt, was geliefert wurde, und wird freigegeben."
+      }
+    ],
+    "tip_title": "Ein Tipp für Webdesigner",
+    "pro_tip": "Schicken Sie zur Teilrechnung den Link zur Testumgebung oder ein kurzes Bildschirmvideo des Abschnitts mit. Der Kunde sieht, wofür er zahlt, und Sie haben einen Nachweis für den Stand bei der Abnahme.",
+    "format_pdf_desc": "Ein PDF hält Abschnitt, Abnahme und Zeitraum fest, lässt sich an die Buchhaltung weiterleiten, ohne dass sich etwas verschiebt, und ist leicht acht Jahre aufzubewahren (§ 14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Rechnung für Webdesign",
+    "faqs": [
+      {
+        "question": "Wie schreibe ich eine Rechnung für Webdesign?",
+        "answer": "Ihre und die Kundendaten, Steuernummer oder USt-IdNr., Datum und fortlaufende Nummer, dann der abgenommene Abschnitt, Zusatzstunden mit Satz und weiterberechnete Kosten mit Zeitraum. Darunter Nettobetrag, 19 % USt und Gesamtbetrag, in den Hinweisen Leistungszeitraum, Angebot und Zahlungsziel."
+      },
+      {
+        "question": "Gilt für Webdesign 7 % oder 19 % Umsatzsteuer?",
+        "answer": "Normalerweise 19 %. Der ermäßigte Satz für die Einräumung von Nutzungsrechten greift bei Webdesign und Programmierung in der Regel nicht; ausdrücklich zu Websites äußert sich die Verwaltung aber nicht. Liegt Ihr Fall anders, etwa bei einer reinen Lizenz für eine Illustration, klären Sie das mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie rechne ich Hosting und Domain weiter?",
+        "answer": "Kaufen Sie sie in eigenem Namen, als eigene Zeilen mit Zeitraum; sie sind Teil Ihres Preises, in der Regel zum Steuersatz der Hauptleistung (prüfen Sie das mit Ihrem Steuerberater). Läuft der Vertrag auf den Namen des Kunden und Sie zahlen nur für ihn, ist es ein durchlaufender Posten ohne Umsatzsteuer."
+      },
+      {
+        "question": "Kann ich eine Website in Raten abrechnen?",
+        "answer": "Ja, nach Abschnitten, die Sie im Angebot festlegen. Üblich sind eine Anzahlung zum Start und Teilrechnungen nach jeder Abnahme. Jede Rechnung bekommt eine eigene Nummer; in den Hinweisen nennen Sie die bisherigen Rechnungen, damit der Kunde den Überblick behält."
+      },
+      {
+        "question": "Kann Invoicor eine XRechnung für meine Kunden erstellen?",
+        "answer": "Nein. Invoicor erstellt PDF-Rechnungen, auf Deutsch und in zehn weiteren Sprachen. Bis Ende 2026 reicht das an Unternehmen mit deren Zustimmung, bis Ende 2027 bei bis zu 800.000 € Vorjahresumsatz. Ab 2028 brauchen Ihre Geschäftskunden eine E-Rechnung aus einem anderen Programm."
+      }
+    ],
+    "cta_title": "Ihre Rechnung für Webdesign",
+    "links_title": "Rechnungsarten für Webdesigner",
+    "related": [
+      {
+        "name": "Rechnung für Grafikdesigner",
+        "slug": "rechnung-grafikdesigner"
+      },
+      {
+        "name": "Rechnung für Unternehmensberater",
+        "slug": "rechnung-unternehmensberatung"
+      }
+    ],
+    "invoice_types": ["teilrechnung", "rechnung-freiberufler"]
+  },
+  {
+    "slug": "rechnung-heizung-sanitaer",
+    "translation_of": "hvac",
+    "niche": "Rechnung Heizung Sanitär",
+    "title": "Rechnung Heizung Sanitär: Vorlage und Muster | Invoicor",
+    "meta_description": "SHK-Rechnung schreiben: Anfahrt, Monteur- und Helferstunden, Material und Wartung getrennt. Muster mit 19 % USt, kostenlos als PDF erstellen.",
+    "h1": "Rechnung Heizung Sanitär: Vorlage und Muster für SHK-Betriebe",
+    "subtitle": "Für Installateure und SHK-Betriebe: wie Sie Anfahrt, Monteur- und Helferstunden, Ersatzteile und Wartungsverträge so abrechnen, dass Hausbesitzer und Hausverwaltung jede Zeile nachvollziehen.",
+    "intro_paragraph": "Wenn die Heizung im November ausfällt, ruft der Kunde an, und eine Woche später kommt die Frage: Wofür genau sind diese 760 Euro? Eine gute SHK-Rechnung beantwortet das Zeile für Zeile: Anfahrt, Monteur- und Helferstunden, jedes Bauteil mit Typ und das Kleinmaterial. An Hausbesitzer und Mieter dürfen Sie weiter ein PDF schicken. An Hausverwaltungen, Wohnungsunternehmen und Gewerbekunden ist ein PDF bis 31. Dezember 2026 mit deren Zustimmung erlaubt, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug; ab 2028 müssen B2B-Rechnungen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen.",
+    "include_title": "Was auf eine Rechnung für Heizung und Sanitär gehört",
+    "what_to_include_intro": "Heizung, Sanitär und Klima sind in Deutschland ein Gewerk, aber auf der Rechnung sollte jede Leistung für sich stehen. Diese Angaben gehören dazu.",
+    "req_1_title": "Anfahrt als eigene Position",
+    "req_1_text": "Berechnen Sie die Anfahrt als Pauschale oder nach Zeit und Kilometern, aber immer in einer eigenen Zeile. Ein Notdienstzuschlag für Abend, Wochenende oder Feiertag steht ebenfalls getrennt da, mit dem Hinweis, dass er vorher vereinbart war.",
+    "req_2_title": "Monteur- und Helferstunden getrennt",
+    "req_2_text": "Ein Monteur kostet mehr als ein Helfer oder Azubi, also bekommen beide eine eigene Zeile mit Stunden und Satz. Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen von der Steuer abziehen (höchstens 1.200 € im Jahr), aber nur, wenn Arbeits-, Fahrt- und Maschinenkosten auf der Rechnung getrennt vom Material erkennbar sind und sie den Betrag überweisen statt bar zu zahlen.",
+    "req_3_title": "Ersatzteile mit Hersteller und Typ",
+    "req_3_text": "Schreiben Sie bei Pumpe, Mischer, Ventil oder Therme Hersteller, Typ und bei Geräten die Seriennummer dazu. Das braucht der Kunde für die Herstellergarantie, und der nächste Monteur sieht sofort, was eingebaut ist. Kleinmaterial wie Dichtungen und Fittings fassen Sie in einer Zeile zusammen.",
+    "req_4_title": "Anlage und Einsatzort",
+    "req_4_text": "Zahlt eine Hausverwaltung, ist die Rechnungsadresse oft nicht der Ort der Arbeit. Nennen Sie das Objekt mit Straße, Wohnung oder Etage und die Anlage („Gas-Brennwerttherme Keller, Baujahr 2014“), damit die Verwaltung die Kosten richtig zuordnet.",
+    "req_5_title": "Leistungsdatum und Pflichtangaben",
+    "req_5_text": "Nach §14 Abs. 4 UStG gehören unter anderem Ihre Steuernummer oder USt-IdNr., eine fortlaufende Rechnungsnummer und das Leistungsdatum auf die Rechnung. Invoicor hat für das Leistungsdatum kein Feld: Schreiben Sie „Leistungsdatum: 18. November 2026“ in die Hinweise. Eine reine Steuernummer gehört ebenfalls dorthin, denn das Feld druckt „USt-IdNr.“.",
+    "req_6_title": "Wartung: was enthalten ist und was nicht",
+    "req_6_text": "Bei einem Wartungsvertrag schreiben Sie die Vertragsnummer und die enthaltenen Arbeiten in die Position. Teile, die bei der Wartung getauscht wurden, stehen als eigene Zeilen darunter, damit der Kunde sieht, was der Vertrag abdeckt und was extra kostet.",
+    "what_to_include_outro": "So wird die Rechnung zum Einsatzbericht: wer kam, wie lange gearbeitet wurde und was jetzt in der Anlage steckt.",
+    "paper_label": "SHK-Rechnung · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für Heizung und Sanitär",
+    "sample_breakdown_intro": "Heizungsausfall in einem Einfamilienhaus: Ein Monteur und ein Helfer tauschen die defekte Umwälzpumpe, füllen Heizungswasser nach und entlüften die Anlage. Kunde ist ein Privathaushalt, also reicht ein PDF. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Anfahrtspauschale Stadtgebiet",
+        "qty": "1",
+        "rate": "49,00 €",
+        "amount": "49,00 €"
+      },
+      {
+        "description": "Monteurstunden: Fehlersuche, Pumpe getauscht, Anlage befüllt und entlüftet",
+        "qty": "2,5 Std.",
+        "rate": "79,00 €",
+        "amount": "197,50 €"
+      },
+      {
+        "description": "Helferstunden: Heizungswasser abgelassen, Montage",
+        "qty": "1,5 Std.",
+        "rate": "58,00 €",
+        "amount": "87,00 €"
+      },
+      {
+        "description": "Hocheffizienz-Heizungsumwälzpumpe 25/1-6, 180 mm",
+        "qty": "1",
+        "rate": "289,00 €",
+        "amount": "289,00 €"
+      },
+      {
+        "description": "Kleinmaterial: Dichtungen, Verschraubungen, Entlüftungsventil",
+        "qty": "1",
+        "rate": "18,40 €",
+        "amount": "18,40 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "640,90 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "121,77 €",
+    "sample_breakdown_balance": "762,67 €",
+    "sample_breakdown_notes": "Leistungsdatum: 18. November 2026. Einsatzort: Lindenweg 12, 34117 Kassel, Heizraum Keller. Anlage: Gas-Brennwerttherme, Baujahr 2014. Arbeitsbericht Nr. 2026-311, vom Kunden unterschrieben. Arbeits- und Fahrtkosten: 333,50 € netto. Zahlbar innerhalb von 14 Tagen per Überweisung. Steuernummer 026 812 34567.",
+    "industry_notes_title": "Was SHK-Betriebe bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "§13b bei Aufträgen von Bauunternehmen",
+        "text": "Installieren Sie Heizung oder Sanitär in einem Neubau für einen Generalunternehmer, der selbst regelmäßig Bauleistungen erbringt (oder eine gültige Bescheinigung USt 1 TG vorlegt), schuldet er die Umsatzsteuer. Ihre Rechnung weist dann keine aus und trägt den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. In Invoicor stellen Sie dafür keinen Steuersatz ein; das PDF zeigt „MwSt. (0 %)“ mit 0,00 €. Ob eine Reparatur oder Wartung als Bauleistung zählt, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "title": "Rechnungen für geförderte Anlagen",
+        "text": "Bei Wärmepumpe, Heizungstausch oder Solarthermie fragt der Kunde oft nach einer Förderung über BAFA oder KfW. Förderstellen verlangen bestimmte Angaben auf der Rechnung: Prüfen Sie die Vorgaben der Förderstelle, bevor Sie die Rechnung schreiben, und listen Sie Gerät, Montage und Nebenarbeiten getrennt auf."
+      },
+      {
+        "title": "Kosten, die die Hausverwaltung weiterverteilt",
+        "text": "Hausverwaltungen legen Wartungskosten oft auf die Mieter um, Reparaturen dagegen meist nicht. Trennen Sie deshalb Wartung und Reparatur auf der Rechnung, auch wenn beides beim selben Termin passiert ist. Das erspart Ihnen Rückfragen und eine korrigierte Rechnung."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf SHK-Rechnungen",
+    "mistakes": [
+      {
+        "title": "„Reparatur Heizung“ als einzige Zeile",
+        "text": "Eine Pauschale ohne Aufschlüsselung lädt zum Streit ein, und der Kunde kann den Arbeitsanteil nicht erkennen. Schreiben Sie Anfahrt, Stunden und Teile einzeln auf, auch wenn der Betrag klein ist."
+      },
+      {
+        "title": "Material aus dem Wagen vergessen",
+        "text": "Das Ventil aus dem Lager im Transporter landet schnell nicht auf der Rechnung. Notieren Sie jedes Teil auf dem Arbeitsbericht vor Ort und übernehmen Sie die Liste vollständig."
+      },
+      {
+        "title": "Stunden ohne Nachweis",
+        "text": "Hält der Kunde 2,5 Stunden für zu viel, hilft nur ein Arbeitsbericht mit Beginn, Ende und Unterschrift. Nennen Sie seine Nummer in den Hinweisen der Rechnung."
+      }
+    ],
+    "tip_title": "Ein Tipp für SHK-Betriebe",
+    "pro_tip": "Schreiben Sie bei jeder Heizungsrechnung den nächsten Wartungstermin in die Hinweise: „Nächste Wartung empfohlen: Oktober 2027.“ Der Kunde ruft dann bei Ihnen an und nicht beim Betrieb, der zuerst bei Google steht.",
+    "format_pdf_desc": "Ein PDF zeigt Arbeitszeit, Teile und Steuer auf dem Handy des Kunden genauso wie beim Steuerberater der Hausverwaltung, und niemand ändert die Stunden nachträglich.",
+    "faq_title": "Fragen zur SHK-Rechnung",
+    "faqs": [
+      {
+        "question": "Wie hoch darf eine Anfahrtspauschale sein?",
+        "answer": "Eine feste Höhe gibt es nicht; sie hängt von Region, Entfernung und Ihrem Betrieb ab. Wichtig ist, dass der Kunde sie vorher kennt, aus dem Angebot, der Preisliste oder dem Telefonat, und dass sie als eigene Zeile auf der Rechnung steht."
+      },
+      {
+        "question": "Wie rechne ich einen Notdiensteinsatz ab?",
+        "answer": "Wie einen normalen Einsatz, dazu der vereinbarte Zuschlag als eigene Position, etwa „Notdienstzuschlag Sonntag“. Nennen Sie Uhrzeit und Datum des Einsatzes in der Position oder den Hinweisen, damit der Zuschlag nachvollziehbar ist."
+      },
+      {
+        "question": "Wie stelle ich einen Wartungsvertrag in Rechnung?",
+        "answer": "Entweder mit einer Rechnung pro Wartung oder mit einer Dauerrechnung, die einmal ausgestellt wird und mehrere Zeiträume abdeckt. Invoicor sendet keine Rechnungen automatisch: Duplizieren Sie die Rechnung vom letzten Jahr und ändern Sie Datum, Nummer und Leistungszeitraum."
+      },
+      {
+        "question": "Muss ich bei Arbeiten für einen Bauträger Umsatzsteuer ausweisen?",
+        "answer": "Nicht, wenn der Bauträger selbst nachhaltig Bauleistungen erbringt oder eine gültige Bescheinigung USt 1 TG seines Finanzamts hat (§13b UStG). Dann steht auf der Rechnung keine Steuer, aber der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Im Zweifel fragen Sie Ihren Steuerberater."
+      },
+      {
+        "question": "Kann ich diese SHK-Rechnung online ausfüllen?",
+        "answer": "Ja. Öffnen Sie das Muster im kostenlosen Generator, ändern Sie Stunden, Teile und Preise und laden Sie das PDF herunter. Die Invoicor App für das iPhone speichert Ihre Stundensätze, die Anfahrtspauschale und Stammkunden wie Hausverwaltungen."
+      }
+    ],
+    "cta_title": "Ihre SHK-Rechnung",
+    "links_title": "Rechnungsarten für SHK-Betriebe",
+    "related": [
+      {
+        "name": "Fliesenleger-Rechnung",
+        "slug": "rechnung-fliesenleger"
+      },
+      {
+        "name": "Malerrechnung",
+        "slug": "rechnung-maler"
+      }
+    ],
+    "invoice_types": ["rechnung-lohn-und-material", "rechnung-dienstleistung", "dauerrechnung"]
+  },
+  {
+    "slug": "rechnung-maler",
+    "translation_of": "painting",
+    "niche": "Malerrechnung",
+    "title": "Malerrechnung: Vorlage und Muster mit Aufmaß | Invoicor",
+    "meta_description": "Rechnung als Maler: Aufmaß in m², Vorarbeiten, Stundensatz oder Pauschale und Material getrennt. Muster mit 19 % USt, kostenlos als PDF.",
+    "h1": "Rechnung Maler: Vorlage und Muster für Malerbetriebe",
+    "subtitle": "Für Maler und Lackierer: wie Sie Wand- und Deckenflächen nach Aufmaß, Vorarbeiten, Lackierarbeiten und Farbe abrechnen, damit der Kunde die Fläche nachmessen kann und nicht nur den Endbetrag sieht.",
+    "intro_paragraph": "Eine Wohnung streichen sieht für den Kunden nach zwei Tagen Rolle aus. Die Zeit steckt aber im Abdecken, Spachteln, Schleifen und Grundieren. Eine Malerrechnung, die Flächen nach Aufmaß in m², Vorarbeiten und Material trennt, erklärt den Preis, bevor jemand fragt. Privatkunden dürfen Sie weiter ein PDF schicken. Für Hausverwaltungen und Firmen gilt: Bis 31. Dezember 2026 ist ein PDF mit deren Zustimmung erlaubt, bis Ende 2027 bei einem Vorjahresumsatz bis 800.000 €; ab 2028 braucht es zwischen Unternehmen E-Rechnungen (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen.",
+    "include_title": "Was auf eine Malerrechnung gehört",
+    "what_to_include_intro": "Am besten folgt die Rechnung dem Weg durch die Wohnung, den Sie beim Angebot gegangen sind: Raum für Raum, Fläche für Fläche.",
+    "req_1_title": "Aufmaß in m² pro Raum",
+    "req_1_text": "Wände und Decken stehen getrennt, mit Raum und Fläche: „Wohnzimmer, Wände, 2 Anstriche, 68,5 m²“. Ob Fenster und Türen abgezogen werden, regelt Ihr Vertrag; bei VOB-Verträgen gelten die Abrechnungsregeln der VOB/C. Legen Sie das Aufmaß bei, dann prüft der Kunde selbst nach.",
+    "req_2_title": "Vorarbeiten als eigene Positionen",
+    "req_2_text": "Abdecken, Abkleben, Möbel rücken, Tapete entfernen, Risse spachteln, Tiefgrund auftragen: Das ist oft die Hälfte der Arbeit. Stehen diese Arbeiten einzeln da, vergleicht der Kunde Ihren Preis nicht mehr mit einem Angebot, das sie einfach weglässt.",
+    "req_3_title": "Stundensatz oder Pauschale, wie angeboten",
+    "req_3_text": "Haben Sie nach m² angeboten, rechnen Sie nach m² ab. Eine Pauschale nennen Sie mit der Angebotsnummer („Treppenhaus laut Angebot A-2026-207“). Stundenlohnarbeiten belegen Sie mit Stundenzetteln, die der Kunde abgezeichnet hat.",
+    "req_4_title": "Material mit Produkt und Menge",
+    "req_4_text": "Dispersionsfarbe, Lack, Grundierung, Spachtelmasse und Abdeckmaterial als eigene Zeilen oder als eine Materialposition. Hat der Kunde die Farbe selbst gekauft, schreiben Sie das in die Hinweise; dann rechnen Sie nur die Arbeit ab.",
+    "req_5_title": "Arbeitskosten klar vom Material getrennt",
+    "req_5_text": "Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen absetzen (höchstens 1.200 € im Jahr), aber nur wenn Lohn, Fahrt- und Maschinenkosten auf der Rechnung getrennt vom Material erkennbar sind und sie überweisen, nicht bar zahlen.",
+    "req_6_title": "Leistungszeitraum und Steuerangaben",
+    "req_6_text": "Nennen Sie den Zeitraum der Arbeiten, etwa „Leistungszeitraum: 9.–13. November 2026“. Invoicor hat dafür kein eigenes Feld, also gehört er in die Position oder die Hinweise. Dazu kommen die Angaben nach §14 Abs. 4 UStG wie Rechnungsnummer und Steuernummer oder USt-IdNr.",
+    "what_to_include_outro": "Eine Malerrechnung mit Aufmaß und Farbtönen ist gleichzeitig das Protokoll der Renovierung, das der Kunde beim nächsten Ausbessern aus der Schublade holt.",
+    "paper_label": "Malerrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Malerrechnung",
+    "sample_breakdown_intro": "Renovierung von Wohnzimmer und Flur in einer Eigentumswohnung: Vorarbeiten, Wände in zwei Anstrichen, Decken, zwei Heizkörper lackiert. Abgerechnet nach Aufmaß, Kunde ist eine Privatperson. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Abdecken, Abkleben, Möbel rücken (Wohnzimmer, Flur)",
+        "qty": "4 Std.",
+        "rate": "52,00 €",
+        "amount": "208,00 €"
+      },
+      {
+        "description": "Risse und Dübellöcher spachteln, schleifen, Tiefgrund (Pauschale laut Angebot)",
+        "qty": "1",
+        "rate": "145,00 €",
+        "amount": "145,00 €"
+      },
+      {
+        "description": "Wände, 2 Anstriche Dispersionsfarbe weiß, nach Aufmaß",
+        "qty": "68,5 m²",
+        "rate": "9,80 €",
+        "amount": "671,30 €"
+      },
+      {
+        "description": "Decken, 1 Anstrich, nach Aufmaß",
+        "qty": "28 m²",
+        "rate": "8,50 €",
+        "amount": "238,00 €"
+      },
+      {
+        "description": "Heizkörper anschleifen und lackieren",
+        "qty": "2 Stk.",
+        "rate": "75,00 €",
+        "amount": "150,00 €"
+      },
+      {
+        "description": "Material: Dispersionsfarbe, Heizkörperlack, Tiefgrund, Abdeckfolie",
+        "qty": "1",
+        "rate": "186,40 €",
+        "amount": "186,40 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.598,70 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "303,75 €",
+    "sample_breakdown_balance": "1.902,45 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 9.–13. November 2026. Objekt: Goethestraße 8, 2. OG links, 04109 Leipzig. Angebot A-2026-207 vom 20. Oktober 2026; Aufmaß liegt bei. Farbtöne: Wände reinweiß matt, Flur eine Wand Sandbeige (Mischnummer auf dem Restgebinde). Restfarbe im Abstellraum. Arbeitskosten: 1.412,30 € netto. Zahlbar innerhalb von 14 Tagen per Überweisung.",
+    "industry_notes_title": "Was Maler bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Wer den Auftrag gibt, bekommt die Rechnung",
+        "text": "Beim Auszug lässt oft der Mieter streichen, bei Leerstand die Hausverwaltung im Namen des Eigentümers. Rechnungsempfänger ist, wer Sie beauftragt hat. Schreiben Sie das Objekt in die Hinweise, wenn die Rechnungsadresse eine andere ist."
+      },
+      {
+        "title": "§13b bei Aufträgen von Bauunternehmen",
+        "text": "Streichen Sie als Nachunternehmer für einen Bauunternehmer, der selbst regelmäßig Bauleistungen erbringt oder eine gültige Bescheinigung USt 1 TG hat, schuldet er die Umsatzsteuer. Malerarbeiten an Gebäuden zählen in der Regel zu den Bauleistungen; prüfen Sie Ihren Fall mit dem Steuerberater. Die Rechnung zeigt dann keine Steuer, sondern den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. In Invoicor druckt das PDF dabei „MwSt. (0 %)“ mit 0,00 €."
+      },
+      {
+        "title": "Mehrflächen und Zusatzarbeiten",
+        "text": "Zeigt sich unter der Tapete ein Wasserschaden oder will der Kunde noch die Küche, halten Sie den Zusatzauftrag schriftlich fest, eine kurze E-Mail genügt. Auf der Rechnung steht er als eigene Position mit Datum der Beauftragung."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Malerrechnungen",
+    "mistakes": [
+      {
+        "title": "„Malerarbeiten Wohnung“ in einer Zeile",
+        "text": "Ohne Flächen und Räume kann niemand die Rechnung prüfen, und der Arbeitsanteil ist nicht erkennbar. Eine Zeile pro Raum und Fläche kostet Sie fünf Minuten mehr."
+      },
+      {
+        "title": "Die Fläche aus dem Angebot übernommen",
+        "text": "Das Angebot schätzt, die Rechnung misst. Hat das Wohnzimmer am Ende 64 statt 70 m², rechnen Sie 64 ab. Ein Kunde, der nachmisst, verliert sonst das Vertrauen in jede andere Zeile."
+      },
+      {
+        "title": "Keine Farbtöne notiert",
+        "text": "Ein Jahr später ist ein Fleck an der Wand, und niemand weiß, welcher Weißton es war. Farbton und Mischnummer pro Raum in den Hinweisen sparen dem Kunden den Ärger und bringen Ihnen den Folgeauftrag."
+      }
+    ],
+    "tip_title": "Ein Tipp für Malerbetriebe",
+    "pro_tip": "Kleben Sie auf jedes Restgebinde einen Zettel mit Raum und Farbton und erwähnen Sie das in den Hinweisen der Rechnung. Wer zum Ausbessern den Eimer findet, findet auch Ihre Telefonnummer darauf.",
+    "format_pdf_desc": "Ein PDF mit Aufmaß, Flächen und Farbtönen bleibt lesbar, wie Sie es geschickt haben, und lässt sich mit dem Aufmaßblatt zusammen in einer E-Mail versenden.",
+    "faq_title": "Fragen zur Malerrechnung",
+    "faqs": [
+      {
+        "question": "Rechnen Maler nach m² oder nach Stunden ab?",
+        "answer": "Beides ist üblich. Flächen wie Wände und Decken meist nach m², Kleinkram und Ausbesserungen nach Stunden, ein Treppenhaus oft als Pauschale. Entscheidend ist, dass die Rechnung dieselbe Einheit nutzt wie Ihr Angebot."
+      },
+      {
+        "question": "Werden Fenster und Türen beim Aufmaß abgezogen?",
+        "answer": "Das hängt von Ihrer Vereinbarung ab. Bei VOB-Verträgen regelt die VOB/C, welche Öffnungen übermessen werden; sonst gilt, was im Angebot steht. Schreiben Sie die Regel ins Angebot, dann gibt es bei der Rechnung keine Diskussion."
+      },
+      {
+        "question": "Was schreibe ich, wenn der Kunde die Farbe selbst gekauft hat?",
+        "answer": "Lassen Sie die Materialzeile weg und schreiben Sie in die Hinweise: „Farbe vom Auftraggeber gestellt.“ So ist klar, warum kein Material berechnet ist und wer für das Produkt einsteht."
+      },
+      {
+        "question": "Muss ich als Nachunternehmer eines Bauunternehmens Umsatzsteuer ausweisen?",
+        "answer": "Wenn der Bauunternehmer selbst nachhaltig Bauleistungen erbringt oder Ihnen eine gültige Bescheinigung USt 1 TG gibt, nein: Nach §13b UStG schuldet er die Steuer, und Ihre Rechnung trägt den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Bei Privatkunden und normalen Hausverwaltungen weisen Sie wie gewohnt 19 % aus."
+      },
+      {
+        "question": "Kann ich diese Malerrechnung online ausfüllen?",
+        "answer": "Ja. Öffnen Sie das Muster im kostenlosen Generator, tragen Sie Ihre Räume, Flächen und Preise ein und laden Sie das PDF herunter. In der Invoicor App für das iPhone speichern Sie Ihre m²-Preise als Positionen und wählen sie beim nächsten Auftrag nur noch aus."
+      }
+    ],
+    "cta_title": "Ihre Malerrechnung",
+    "links_title": "Rechnungsarten für Maler",
+    "related": [
+      {
+        "name": "Fliesenleger-Rechnung",
+        "slug": "rechnung-fliesenleger"
+      },
+      {
+        "name": "Rechnung Heizung Sanitär",
+        "slug": "rechnung-heizung-sanitaer"
+      }
+    ],
+    "invoice_types": ["anzahlungsrechnung", "rechnung-lohn-und-material", "subunternehmer-rechnung"]
+  },
+  {
+    "slug": "rechnung-fliesenleger",
+    "translation_of": "tile-installation",
+    "niche": "Fliesenleger-Rechnung",
+    "title": "Rechnung Fliesenleger: Vorlage mit m²-Preisen | Invoicor",
+    "meta_description": "Fliesenleger-Rechnung schreiben: Rückbau, Abdichtung, Verlegen nach m² und Format, Verfugen und Material getrennt. Muster mit 19 % USt als PDF.",
+    "h1": "Rechnung Fliesenleger: Vorlage und Muster für Bad und Boden",
+    "subtitle": "Für Fliesenleger: wie Sie ein Bad vom Rückbau bis zur Silikonfuge abrechnen, mit m²-Preisen nach Format, Abdichtung, Verfugen und dem klaren Hinweis, wer die Fliesen geliefert hat.",
+    "intro_paragraph": "Was ein Bad kostet, sieht der Kunde an den Fliesen. Bezahlt hat er aber auch alles darunter: den Rückbau des alten Belags, den Ausgleich der Wände und die Abdichtung in der Dusche. Eine Fliesenleger-Rechnung, die diese Schritte mit m² und laufenden Metern zeigt, macht den Preis nachvollziehbar, und sie zeigt, warum Großformat und Mosaik nicht dasselbe kosten. Privatkunden können Sie weiter ein PDF schicken. An Bauträger und andere Firmen ist ein PDF bis 31. Dezember 2026 mit deren Zustimmung zulässig, bis Ende 2027 bei bis zu 800.000 € Vorjahresumsatz; danach sind zwischen Unternehmen E-Rechnungen (XRechnung oder ZUGFeRD) Pflicht. Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen.",
+    "include_title": "Was auf eine Fliesenleger-Rechnung gehört",
+    "what_to_include_intro": "Kunden vergleichen Fliesenleger über den m²-Preis. Damit der Vergleich fair ist, gehören diese Angaben auf die Rechnung.",
+    "req_1_title": "Flächen nach Wand, Boden und Format",
+    "req_1_text": "Wand und Boden stehen getrennt, jeweils mit m² und Fliesenformat: „Wandfliesen 30 × 60, Bad OG, 22 m²“. Großformate, Mosaik, Fischgrät oder diagonale Verlegung dauern länger und bekommen einen eigenen Satz. So sieht der Kunde, warum die Preise je Zeile verschieden sind.",
+    "req_2_title": "Rückbau und Entsorgung",
+    "req_2_text": "Alte Fliesen abschlagen, Kleberreste entfernen, Schutt abfahren: Rechnen Sie das nach m² oder als Pauschale ab und schreiben Sie dazu, was entfernt wurde. Ein alter Mörtelbelag macht deutlich mehr Arbeit als Fliesen auf Gipskarton.",
+    "req_3_title": "Untergrund und Abdichtung",
+    "req_3_text": "Ausgleichen, Grundieren, Verbundabdichtung mit Dichtband in Ecken und an Rohrdurchführungen: Im Duschbereich schützt diese Zeile das Haus. Nennen Sie das System und die Fläche, dann ist später belegt, dass abgedichtet wurde.",
+    "req_4_title": "Verfugen, Silikon und Schienen",
+    "req_4_text": "Verfugen rechnen viele nach m², Silikonfugen und Abschlussschienen nach laufendem Meter, Nischen und Ablagen pro Stück. Schreiben Sie sie einzeln auf, statt sie im Verlegepreis zu verstecken.",
+    "req_5_title": "Fliesen von Ihnen oder vom Kunden",
+    "req_5_text": "Hat der Kunde die Fliesen im Baumarkt gekauft, berechnen Sie nur Verlegematerial wie Kleber, Fugenmörtel und Abdichtung. Schreiben Sie dazu: „Fliesen vom Auftraggeber gestellt.“ Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen absetzen (bis 1.200 € im Jahr); das geht nur, wenn Lohn, Fahrt- und Maschinenkosten getrennt vom Material erkennbar sind und überwiesen statt bar bezahlt wird.",
+    "req_6_title": "Leistungszeitraum und Pflichtangaben",
+    "req_6_text": "Ein Bad dauert oft zwei Wochen. Schreiben Sie den Zeitraum in die Hinweise („Leistungszeitraum: 2.–13. November 2026“), denn Invoicor hat dafür kein Feld. Fortlaufende Rechnungsnummer und Steuernummer oder USt-IdNr. verlangt §14 Abs. 4 UStG ohnehin.",
+    "what_to_include_outro": "Mit diesen Zeilen erzählt die Rechnung das Bad vom Rohbau bis zur letzten Fuge, und sie hält fest, welche Fliesen und welches System verbaut sind, falls einmal eine Reparatur ansteht.",
+    "paper_label": "Fliesenleger-Rechnung · Muster",
+    "sample_breakdown_title": "Muster einer Fliesenleger-Rechnung",
+    "sample_breakdown_intro": "Badsanierung in einem Reihenhaus: alter Bodenbelag raus, Dusche abgedichtet, Wand und Boden neu gefliest. Die Fliesen hat der Kunde selbst gekauft, der Fliesenleger berechnet Arbeit und Verlegematerial. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Alten Bodenbelag abschlagen, Schutt entsorgen",
+        "qty": "6 m²",
+        "rate": "28,00 €",
+        "amount": "168,00 €"
+      },
+      {
+        "description": "Verbundabdichtung Duschbereich mit Dichtband und Manschetten",
+        "qty": "9,5 m²",
+        "rate": "32,00 €",
+        "amount": "304,00 €"
+      },
+      {
+        "description": "Wandfliesen 30 × 60 verlegen, Dünnbett",
+        "qty": "22 m²",
+        "rate": "58,00 €",
+        "amount": "1.276,00 €"
+      },
+      {
+        "description": "Bodenfliesen 60 × 60 verlegen, Großformat",
+        "qty": "6 m²",
+        "rate": "62,00 €",
+        "amount": "372,00 €"
+      },
+      {
+        "description": "Verfugen Wand und Boden",
+        "qty": "28 m²",
+        "rate": "9,50 €",
+        "amount": "266,00 €"
+      },
+      {
+        "description": "Abschlussschienen Edelstahl setzen",
+        "qty": "12 lfm",
+        "rate": "14,50 €",
+        "amount": "174,00 €"
+      },
+      {
+        "description": "Verlegematerial: Fliesenkleber, Fugenmörtel, Abdichtung, Silikon",
+        "qty": "1",
+        "rate": "238,60 €",
+        "amount": "238,60 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2.798,60 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "531,73 €",
+    "sample_breakdown_balance": "3.330,33 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 2.–13. November 2026. Objekt: Am Mühlbach 5, 79102 Freiburg, Bad OG. Fliesen vom Auftraggeber gestellt; 1,5 m² Restfliesen im Keller für spätere Reparaturen. Silikonfugen sind Wartungsfugen und sollten regelmäßig geprüft werden. Arbeitskosten: 2.560,00 € netto. Zahlbar innerhalb von 14 Tagen per Überweisung.",
+    "industry_notes_title": "Was Fliesenleger bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "§13b bei Aufträgen für Bauträger",
+        "text": "Fliesen Sie als Nachunternehmer für einen Bauträger oder Generalunternehmer, der selbst regelmäßig Bauleistungen erbringt oder eine gültige Bescheinigung USt 1 TG vorlegt, schuldet dieser die Umsatzsteuer. Dann weist Ihre Rechnung keine Steuer aus und nennt „Steuerschuldnerschaft des Leistungsempfängers“. Invoicor druckt dabei die Zeile „MwSt. (0 %)“ mit 0,00 €. Den Einzelfall bestätigt Ihr Steuerberater."
+      },
+      {
+        "title": "Format und Verlegemuster im Preis",
+        "text": "Eine 60 × 120-Platte braucht einen sehr ebenen Untergrund und oft zwei Leute, Mosaik braucht Geduld bei jeder Fuge. Rechnen Sie das nicht als Zuschlag am Ende ab, sondern über den m²-Preis der jeweiligen Zeile, genau wie im Angebot."
+      },
+      {
+        "title": "Verschnitt und Bruch bei Kundenfliesen",
+        "text": "Bringt der Kunde zu knapp Fliesen mit, steht die Baustelle. Vereinbaren Sie vorher, wie viel Reserve er kauft, und halten Sie fest, wie viele Fliesen übrig geblieben sind. Wartezeit durch fehlendes Material rechnen Sie nur ab, wenn sie vereinbart war."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Fliesenleger-Rechnungen",
+    "mistakes": [
+      {
+        "title": "Abdichtung im Verlegepreis versteckt",
+        "text": "Steht die Abdichtung nicht auf der Rechnung, fehlt bei einem späteren Wasserschaden der Beleg, dass sie gemacht wurde. Eine eigene Zeile mit System und Fläche schützt Sie und den Kunden."
+      },
+      {
+        "title": "Kein Hinweis auf gestellte Fliesen",
+        "text": "Ohne den Satz „Fliesen vom Auftraggeber gestellt“ fragt sich der Kunde, warum kein Material berechnet ist, oder er hält Sie bei Mängeln am Produkt für verantwortlich."
+      },
+      {
+        "title": "Silikonfugen ohne Hinweis",
+        "text": "Kunden halten eine gerissene Silikonfuge nach einem Jahr oft für einen Mangel. Ein Satz in den Hinweisen, dass es Wartungsfugen sind, erspart Ihnen den Ärger."
+      }
+    ],
+    "tip_title": "Ein Tipp für Fliesenleger",
+    "pro_tip": "Notieren Sie Hersteller, Serie und Farbe der Fliesen und des Fugenmörtels in den Hinweisen. Braucht der Kunde in fünf Jahren eine Fliese oder eine neue Fuge, sucht er das auf Ihrer Rechnung, und dann ruft er Sie an.",
+    "format_pdf_desc": "Ein PDF zeigt m², Formate und Abdichtung auf jedem Gerät gleich und lässt sich zusammen mit dem Aufmaß und den Fotos der Abdichtung an den Kunden schicken.",
+    "faq_title": "Fragen zur Fliesenleger-Rechnung",
+    "faqs": [
+      {
+        "question": "Wie rechnet ein Fliesenleger pro m² ab?",
+        "answer": "Meist mit einem Preis pro m² für das Verlegen, je nach Format und Muster verschieden, dazu Rückbau, Abdichtung und Verfugen als eigene Positionen. Laufende Meter gelten für Sockel, Schienen und Silikon, Stückpreise für Nischen und Ausschnitte."
+      },
+      {
+        "question": "Ist das Verfugen im m²-Preis enthalten?",
+        "answer": "Das legt Ihr Angebot fest. Viele Fliesenleger nennen es getrennt, weil Fugenbreite und Material den Aufwand ändern. Wichtig ist nur, dass Angebot und Rechnung es gleich behandeln."
+      },
+      {
+        "question": "Wie rechne ich ab, wenn der Kunde die Fliesen mitbringt?",
+        "answer": "Sie berechnen Ihre Arbeit und das Verlegematerial, nicht die Fliesen. Schreiben Sie in die Hinweise, dass die Fliesen vom Auftraggeber gestellt wurden, und wie viele übrig sind."
+      },
+      {
+        "question": "Brauche ich §13b, wenn ich für einen Bauträger fliese?",
+        "answer": "Wenn der Bauträger selbst nachhaltig Bauleistungen erbringt oder Ihnen eine gültige Bescheinigung USt 1 TG gibt, ja: Er schuldet die Steuer, Ihre Rechnung zeigt keine USt und den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Verkauft der Bauträger nur Wohnungen, ohne selbst zu bauen, klären Sie das mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Kann ich diese Fliesenleger-Rechnung online ausfüllen?",
+        "answer": "Ja. Öffnen Sie das Muster im kostenlosen Generator, ändern Sie Flächen, Formate und Preise und laden Sie das PDF herunter. Mit der Invoicor App für das iPhone schreiben Sie die Rechnung noch auf der Baustelle."
+      }
+    ],
+    "cta_title": "Ihre Fliesenleger-Rechnung",
+    "links_title": "Rechnungsarten für Fliesenleger",
+    "related": [
+      {
+        "name": "Malerrechnung",
+        "slug": "rechnung-maler"
+      },
+      {
+        "name": "Rechnung Heizung Sanitär",
+        "slug": "rechnung-heizung-sanitaer"
+      }
+    ],
+    "invoice_types": ["rechnung-lohn-und-material", "subunternehmer-rechnung"]
+  },
+  {
+    "slug": "rechnung-gebaeudereinigung",
+    "translation_of": "cleaning-services",
+    "niche": "Reinigungsrechnung",
+    "title": "Rechnung Gebäudereinigung: Vorlage und Muster | Invoicor",
+    "meta_description": "Rechnung für Gebäudereinigung: Unterhaltsreinigung im Monat, Glas- und Sonderreinigung getrennt, §13b und Muster mit 19 % USt. Kostenlos als PDF.",
+    "h1": "Rechnung Gebäudereinigung: Vorlage für Reinigungsfirmen",
+    "subtitle": "Für Gebäudereiniger und Reinigungsfirmen: wie Sie die monatliche Unterhaltsreinigung, Glasreinigung und Sonderreinigungen abrechnen, an Büros, Praxen, Hausverwaltungen und Privathaushalte.",
+    "intro_paragraph": "In der Gebäudereinigung schreiben Sie dieselbe Rechnung jeden Monat an dieselben Kunden, und genau deshalb schleichen sich Fehler ein: ein falscher Monat, eine vergessene Glasreinigung, eine doppelte Nummer. Die meisten Kunden sind Unternehmen, also zählt die E-Rechnung: Ein PDF ist bis 31. Dezember 2026 mit Zustimmung des Kunden erlaubt, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Ab 2028 gehen Rechnungen an Unternehmen nur als E-Rechnung (XRechnung oder ZUGFeRD); ausgenommen sind Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. An Privathaushalte bleibt das PDF in Ordnung.",
+    "include_title": "Was auf eine Rechnung für Gebäudereinigung gehört",
+    "what_to_include_intro": "Eine Reinigungsrechnung muss zeigen, welches Objekt in welchem Zeitraum wie oft gereinigt wurde, und was über den Vertrag hinaus dazukam.",
+    "req_1_title": "Objekt und Leistungsverzeichnis",
+    "req_1_text": "Nennen Sie das Objekt mit Adresse, Etage und Fläche und verweisen Sie auf den Reinigungsvertrag oder das Leistungsverzeichnis: „Unterhaltsreinigung Büro 3. OG, 420 m², 5 × wöchentlich laut Vertrag RV-2025-14“. Bei Kunden mit mehreren Standorten gehört jedes Objekt in eine eigene Zeile.",
+    "req_2_title": "Der Monat als Leistungszeitraum",
+    "req_2_text": "Bei der Unterhaltsreinigung ist der Leistungszeitraum der Monat: „Leistungszeitraum: 1.–30. November 2026“. Invoicor hat dafür kein Feld, also schreiben Sie ihn in die Position oder die Hinweise. Ohne ihn fehlt eine Pflichtangabe nach §14 Abs. 4 UStG.",
+    "req_3_title": "Monatsrechnung oder Dauerrechnung",
+    "req_3_text": "Für die feste Monatspauschale gibt es zwei Wege: jeden Monat eine eigene Rechnung oder eine Dauerrechnung, die einmal ausgestellt wird und zum Beispiel ein ganzes Jahr mit dem Monatsbetrag abdeckt. Zusatzleistungen rechnen Sie in beiden Fällen gesondert ab.",
+    "req_4_title": "Glasreinigung und Sonderreinigung getrennt",
+    "req_4_text": "Glasreinigung nach m² Glasfläche oder pro Einsatz, Grundreinigung, Teppichreinigung oder Bauendreinigung nach m² oder Stunden. Jede Leistung steht in einer eigenen Zeile mit Datum, damit der Kunde sie mit seiner Beauftragung abgleicht.",
+    "req_5_title": "Verbrauchsmaterial und Hygieneartikel",
+    "req_5_text": "Stellen Sie Handtuchpapier, Seife und Müllbeutel, gehört das als eigene Position auf die Rechnung, nach Menge oder als vereinbarte Pauschale. Ist es in der Monatspauschale enthalten, schreiben Sie das dazu.",
+    "req_6_title": "Rechnungsnummer und Steuerangaben",
+    "req_6_text": "Jede Monatsrechnung bekommt eine neue, fortlaufende Nummer, dazu Ihre Steuernummer oder USt-IdNr. Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise, denn das Feld in Invoicor druckt „USt-IdNr.“.",
+    "what_to_include_outro": "So prüft die Buchhaltung Ihres Kunden die Rechnung in einer Minute gegen den Vertrag und gibt sie frei, statt nachzufragen.",
+    "paper_label": "Reinigungsrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für Gebäudereinigung",
+    "sample_breakdown_intro": "Monatsrechnung an eine Steuerkanzlei: Unterhaltsreinigung der Büroetage im November, dazu die vierteljährliche Glasreinigung und eine Teppichreinigung im Besprechungsraum. Das PDF ist mit Zustimmung der Kanzlei bis Ende 2026 zulässig. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Unterhaltsreinigung Büro 3. OG, 420 m², 5 × wöchentlich, Monatspauschale November 2026",
+        "qty": "1",
+        "rate": "1.380,00 €",
+        "amount": "1.380,00 €"
+      },
+      {
+        "description": "Glasreinigung innen und außen inkl. Rahmen (12. November)",
+        "qty": "86 m²",
+        "rate": "2,40 €",
+        "amount": "206,40 €"
+      },
+      {
+        "description": "Sonderreinigung: Teppich Besprechungsraum, Sprühextraktion (20. November)",
+        "qty": "35 m²",
+        "rate": "4,20 €",
+        "amount": "147,00 €"
+      },
+      {
+        "description": "Hygieneartikel: Handtuchpapier, Seife, Müllbeutel (Pauschale laut Vertrag)",
+        "qty": "1",
+        "rate": "64,80 €",
+        "amount": "64,80 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.798,20 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "341,66 €",
+    "sample_breakdown_balance": "2.139,86 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 1.–30. November 2026. Objekt: Hansaring 40, 3. OG, 50670 Köln. Reinigungsvertrag RV-2025-14 vom 1. Februar 2025. Sonderreinigung beauftragt per E-Mail am 14. November 2026. Zahlbar bis 15. Dezember 2026 per Überweisung. Steuernummer 214 5678 9012.",
+    "industry_notes_title": "Was Gebäudereiniger bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "§13b, wenn der Kunde selbst reinigt",
+        "text": "Arbeiten Sie als Nachunternehmer für eine andere Reinigungsfirma oder einen Facility-Dienstleister, der selbst nachhaltig Gebäudereinigung erbringt, schuldet dieser die Umsatzsteuer (§13b Abs. 2 Nr. 8 UStG). Eine gültige Bescheinigung USt 1 TG seines Finanzamts belegt das. Ihre Rechnung weist dann keine Steuer aus und nennt „Steuerschuldnerschaft des Leistungsempfängers“; in Invoicor druckt das PDF „MwSt. (0 %)“ mit 0,00 €. Für Büros, Praxen und Hausverwaltungen gilt das nicht."
+      },
+      {
+        "title": "Privathaushalte",
+        "text": "Private Kunden können die Reinigung als haushaltsnahe Dienstleistung nach §35a EStG absetzen: 20 % der Arbeitskosten werden von der Steuer abgezogen, höchstens 4.000 € im Jahr, wenn die Rechnung den Arbeitsanteil erkennen lässt und sie überweisen statt bar zu zahlen."
+      },
+      {
+        "title": "Ausfall und Leerfahrten",
+        "text": "Steht Ihr Team vor verschlossener Tür, weil niemand Bescheid gesagt hat, regelt der Vertrag, ob Sie den Einsatz trotzdem berechnen. Steht dort nichts, ist eine Ausfallgebühr schwer durchzusetzen. Nehmen Sie eine Klausel in den nächsten Vertrag auf."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Reinigungsrechnungen",
+    "mistakes": [
+      {
+        "title": "Die Rechnung vom Vormonat unverändert verschickt",
+        "text": "Wer die letzte Rechnung kopiert, vergisst schnell, den Monat oder die Nummer zu ändern. Prüfen Sie vor dem Senden immer drei Dinge: Nummer, Datum, Leistungszeitraum."
+      },
+      {
+        "title": "Extras in der Pauschale verschwinden lassen",
+        "text": "Eine Grundreinigung nach einem Wasserschaden, ohne eigene Zeile abgerechnet, wird nächstes Mal als selbstverständlich erwartet. Rechnen Sie jede Leistung über den Vertrag hinaus einzeln ab."
+      },
+      {
+        "title": "Kein Bezug zum Vertrag",
+        "text": "Die Buchhaltung großer Kunden gibt eine Rechnung nur frei, wenn sie Vertrag oder Bestellnummer findet. Fehlt die Angabe, liegt Ihre Rechnung wochenlang im Freigabeprozess."
+      }
+    ],
+    "tip_title": "Ein Tipp für Reinigungsfirmen",
+    "pro_tip": "Schreiben Sie die nächste geplante Glasreinigung in die Hinweise der Monatsrechnung: „Nächste Glasreinigung: Februar 2027.“ Der Kunde plant sie ein, und Sie müssen keinen Termin hinterhertelefonieren.",
+    "format_pdf_desc": "Ein PDF lässt sich ohne Umweg an die Buchhaltung des Kunden mailen, sieht jeden Monat gleich aus und zeigt Objekt, Zeitraum und Zusatzleistungen auf einen Blick.",
+    "faq_title": "Fragen zur Reinigungsrechnung",
+    "faqs": [
+      {
+        "question": "Wie schreibe ich eine Rechnung für die monatliche Unterhaltsreinigung?",
+        "answer": "Eine Zeile für die Monatspauschale mit Objekt, Fläche, Turnus und Vertragsnummer, darunter jede Zusatzleistung einzeln. Den Monat schreiben Sie als Leistungszeitraum in die Position oder die Hinweise, dazu die Pflichtangaben nach §14 Abs. 4 UStG."
+      },
+      {
+        "question": "Ist eine Dauerrechnung besser als eine Rechnung pro Monat?",
+        "answer": "Die Dauerrechnung spart Arbeit, wenn sich der Betrag nicht ändert. Kommen fast jeden Monat Extras dazu, ist die Monatsrechnung übersichtlicher. Ändert sich der Preis, braucht eine Dauerrechnung eine neue Fassung; klären Sie die Einzelheiten mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wann gilt §13b für Reinigungsleistungen?",
+        "answer": "Wenn Ihr Kunde selbst nachhaltig Gebäudereinigung erbringt, zum Beispiel eine Reinigungsfirma, die Sie als Nachunternehmer einsetzt (§13b Abs. 2 Nr. 8 UStG). Ein Büro oder eine Hausverwaltung fällt nicht darunter; dort berechnen Sie 19 % USt."
+      },
+      {
+        "question": "Kann Invoicor die Monatsrechnung automatisch senden?",
+        "answer": "Nein. Invoicor hat keine wiederkehrenden Rechnungen. Duplizieren Sie die Rechnung vom Vormonat, ändern Sie Nummer, Datum und Leistungszeitraum und senden Sie das PDF; mit gespeicherten Kunden und Positionen dauert das eine Minute."
+      },
+      {
+        "question": "Wie rechne ich eine Bauendreinigung ab?",
+        "answer": "Als eigene Rechnung, meist nach m² oder nach Stunden, mit Objekt, Datum, Auftraggeber und dem Zustand bei Übergabe. Halten Sie fest, ob Farbspritzer, Mörtelreste und Etiketten an Fenstern zum Auftrag gehörten; solche Arbeiten dauern oft länger als die eigentliche Reinigung."
+      }
+    ],
+    "cta_title": "Ihre Reinigungsrechnung",
+    "links_title": "Rechnungsarten für Reinigungsfirmen",
+    "related": [
+      {
+        "name": "Malerrechnung",
+        "slug": "rechnung-maler"
+      },
+      {
+        "name": "Rechnung Heizung Sanitär",
+        "slug": "rechnung-heizung-sanitaer"
+      }
+    ],
+    "invoice_types": ["dauerrechnung", "rechnung-dienstleistung"]
+  },
+  {
+    "slug": "rechnung-unternehmensberatung",
+    "translation_of": "consulting",
+    "niche": "Rechnung für Unternehmensberater",
+    "title": "Rechnung Unternehmensberatung: Vorlage & Muster | Invoicor",
+    "meta_description": "Rechnung für Unternehmensberatung: Tagessatz oder Stundensatz, Reisekosten, monatliche Beratungspauschale und EU-Kunden. Muster mit 19 % USt, als PDF.",
+    "h1": "Rechnung Unternehmensberatung: Vorlage und Muster",
+    "subtitle": "Für Unternehmensberater, Interim-Manager und Coaches: Tagessätze, Stundensätze und Pauschalen so abrechnen, dass die Buchhaltung Ihres Kunden ohne Rückfrage zahlt.",
+    "intro_paragraph": "Beratung hinterlässt selten etwas zum Anfassen; was der Kunde bezahlt, sieht er auf Ihrer Rechnung. Fehlt die Bestellnummer oder ist der Leistungszeitraum unklar, legt die Kreditorenbuchhaltung die Rechnung zur Seite, und Ihr Geld kommt Wochen später. Für Rechnungen an Unternehmen gilt: Bis 31. Dezember 2026 ist ein PDF mit Zustimmung des Empfängers erlaubt, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug; ab 2028 müssen B2B-Rechnungen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD. Unten: die Angaben, ein Muster mit Pauschale, Zusatztag und Reisekosten und die Regeln für EU-Kunden.",
+    "include_title": "Was auf eine Beraterrechnung gehört",
+    "what_to_include_intro": "Neben den Pflichtangaben nach §14 Abs. 4 UStG (Name und Anschrift beider Seiten, Steuernummer oder USt-IdNr., Datum, fortlaufende Nummer, Leistung, Leistungsdatum, Nettobetrag, Steuersatz und Steuerbetrag) achten größere Kunden auf diese Punkte.",
+    "req_1_title": "Bestellnummer und Vertrag",
+    "req_1_text": "Größere Kunden arbeiten mit Bestellungen. Schreiben Sie die Bestellnummer und den Beratungsvertrag mit Datum in die erste Position oder die Hinweise, etwa „Bestellung 4500128834, Rahmenvertrag vom 3. März 2026“. Ohne diese Nummer kann die Buchhaltung die Rechnung keinem Budget zuordnen.",
+    "req_2_title": "Tagessatz oder Stundensatz, klar benannt",
+    "req_2_text": "Rechnen Sie nach Tagessatz ab, nennen Sie die Zahl der Tage, die Daten und was ein Tag umfasst („Tagessatz für 8 Stunden vor Ort“). Beim Stundensatz listen Sie Datum, Stunden und Thema auf oder legen einen Tätigkeitsnachweis bei.",
+    "req_3_title": "Der Leistungszeitraum",
+    "req_3_text": "Das Leistungsdatum ist Pflicht. Invoicor hat dafür kein eigenes Feld: Schreiben Sie es in die Position oder die Hinweise, zum Beispiel „Leistungszeitraum: 1.–30. November 2026“. Bei einer Monatspauschale ist das der Monat, für den sie gilt.",
+    "req_4_title": "Reisekosten als eigene Positionen",
+    "req_4_text": "Bahn, Flug, Hotel und Kilometer stehen jeweils in einer eigenen Zeile, mit Strecke und Datum. Haben Sie die Reise in Ihrem eigenen Namen gebucht, gehören die Kosten zum Entgelt (§10 Abs. 1 Satz 2 UStG) und bekommen Umsatzsteuer. Welcher Steuersatz dann gilt, ist in der Regel der Satz der Hauptleistung; prüfen Sie das mit Ihrem Steuerberater.",
+    "req_5_title": "Steuernummer oder USt-IdNr.",
+    "req_5_text": "Das Feld in Invoicor druckt „USt-IdNr.“. Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise. Für EU-Kunden brauchen Sie eine USt-IdNr.",
+    "req_6_title": "Zahlungsziel und Bankverbindung",
+    "req_6_text": "Nennen Sie ein festes Datum oder eine Frist, etwa „zahlbar innerhalb von 14 Tagen“, und Ihre IBAN. Steht nichts da, gerät ein Unternehmen spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung in Verzug (§286 Abs. 3 BGB).",
+    "what_to_include_outro": "Eine Beraterrechnung, die Bestellung, Zeitraum und Reisen trennt, geht einmal durch die Freigabe.",
+    "paper_label": "Beraterrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für Unternehmensberatung",
+    "sample_breakdown_intro": "Eine Beraterin aus Hamburg begleitet einen Maschinenbauer in Augsburg bei der Neuordnung des Einkaufs. Vereinbart sind eine monatliche Beratungspauschale, ein Tagessatz für Workshops außerhalb der Pauschale und ein Stundensatz für Zusatzarbeit. Kunde ist ein Unternehmen; das PDF ist mit seiner Zustimmung bis Ende 2026 zulässig. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Beratungspauschale Einkaufsorganisation, Leistungszeitraum 1.–30. November 2026 (Bestellung 4500128834)",
+        "qty": "1",
+        "rate": "4.500,00 €",
+        "amount": "4.500,00 €"
+      },
+      {
+        "description": "Workshop Lieferantenstrategie vor Ort in Augsburg, 18. November 2026, außerhalb der Pauschale",
+        "qty": "1 Tag",
+        "rate": "1.400,00 €",
+        "amount": "1.400,00 €"
+      },
+      {
+        "description": "Zusätzliche Analyse Rahmenverträge, 24. und 25. November 2026",
+        "qty": "3 Std.",
+        "rate": "150,00 €",
+        "amount": "450,00 €"
+      },
+      {
+        "description": "Reisekosten: Bahn Hamburg–Augsburg und zurück, 17.–19. November 2026, netto laut Beleg",
+        "qty": "1",
+        "rate": "186,40 €",
+        "amount": "186,40 €"
+      },
+      {
+        "description": "Reisekosten: Hotel Augsburg, 2 Nächte, netto laut Beleg",
+        "qty": "2",
+        "rate": "119,00 €",
+        "amount": "238,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "6.774,40 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "1.287,14 €",
+    "sample_breakdown_balance": "8.061,54 €",
+    "sample_breakdown_notes": "Rechnung Nr. 2026-112 vom 30. November 2026. Rahmenvertrag vom 3. März 2026, Bestellung 4500128834. Steuernummer 22/815/04711. Zahlbar bis 14. Dezember 2026 auf DE12 2005 0550 1234 5678 90. Kopien der Reisebelege liegen als eigenes PDF bei.",
+    "industry_notes_title": "Was Unternehmensberater bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Die Monatspauschale statt Retainer",
+        "text": "Was im Englischen Retainer heißt, ist in Deutschland meist eine monatliche Beratungspauschale: ein fester Betrag für ein vereinbartes Kontingent. Schreiben Sie jeden Monat eine eigene Rechnung mit dem Monat als Leistungszeitraum. Alternativ deckt eine Dauerrechnung viele Zeiträume ab. Invoicor schreibt keine wiederkehrenden Rechnungen; duplizieren Sie die Rechnung vom Vormonat und ändern Sie Monat und Nummer."
+      },
+      {
+        "title": "Kunden im EU-Ausland",
+        "text": "Beraten Sie ein Unternehmen in einem anderen EU-Land, liegt der Ort der Leistung dort (§3a Abs. 2 UStG). Sie weisen keine deutsche Umsatzsteuer aus, der Kunde schuldet die Steuer nach dem Recht seines Landes. Auf die Rechnung gehören beide USt-IdNrn. und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§14a Abs. 1 UStG). Das ist nicht §13b UStG. Invoicor druckt dann „MwSt. (0 %)“ mit 0,00 €; der Hinweis erklärt die Zeile."
+      },
+      {
+        "title": "Reisekosten oder durchlaufender Posten",
+        "text": "Buchen Sie Hotel und Bahn in Ihrem Namen, sind das Auslagen, die Sie weiterberechnen und versteuern. Bezahlen Sie dagegen etwas im Namen und für Rechnung des Kunden, etwa eine Gebühr, die auf ihn lautet, ist es ein durchlaufender Posten ohne Umsatzsteuer (§10 Abs. 1 Satz 4 UStG). Ob ein Aufschlag auf Reisekosten erlaubt ist, regelt Ihr Vertrag."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Beraterrechnungen",
+    "mistakes": [
+      {
+        "title": "„Beratung November“ als einzige Zeile",
+        "text": "Ohne Projekt, Tage und Zeitraum kann der Fachbereich die Leistung nicht bestätigen. Trennen Sie Pauschale und Zusatzarbeit."
+      },
+      {
+        "title": "Reisezeit nicht vereinbart",
+        "text": "Ob Fahrzeit als Arbeitszeit zählt, halb oder gar nicht, gehört in den Vertrag, nicht erst auf die Rechnung. Steht es dort, rechnen Sie es als eigene Position mit Datum ab."
+      },
+      {
+        "title": "Lange Zahlungsziele einfach hinnehmen",
+        "text": "Manche Konzerne setzen 60 oder 90 Tage in ihre Bestellbedingungen. Verhandeln Sie das vor dem Auftrag. Kommt das Geld zu spät, schuldet ein Unternehmen nach §288 BGB Verzugszinsen von 9 Prozentpunkten über dem Basiszinssatz und 40 € Pauschale."
+      }
+    ],
+    "tip_title": "Ein Tipp für Beraterrechnungen",
+    "pro_tip": "Fragen Sie beim ersten Auftrag, an wen die Rechnung gehen soll und welche Angaben die Buchhaltung braucht: Bestellnummer, Kostenstelle, Ansprechpartner. Speichern Sie das beim Kunden in Invoicor. Dann steht es auf jeder Rechnung.",
+    "format_pdf_desc": "Ein PDF sieht in jeder Freigabe gleich aus, lässt sich mit den Reisebelegen zusammen ablegen und wird acht Jahre aufbewahrt (§14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Beraterrechnung",
+    "faqs": [
+      {
+        "question": "Tagessatz oder Stundensatz: was gehört auf die Rechnung?",
+        "answer": "Was im Vertrag steht: beim Tagessatz die Tage mit Datum, beim Stundensatz Datum, Stunden und Thema. Mischen Sie beides, bekommt jedes eine eigene Zeile."
+      },
+      {
+        "question": "Wie rechne ich eine monatliche Beratungspauschale ab?",
+        "answer": "Mit einer Rechnung pro Monat, einer Zeile für die Pauschale und dem Monat als Leistungszeitraum. Arbeit außerhalb der Pauschale folgt in eigenen Zeilen. In Invoicor duplizieren Sie dafür die Rechnung vom Vormonat."
+      },
+      {
+        "question": "Muss ich auf Reisekosten Umsatzsteuer berechnen?",
+        "answer": "Wenn Sie die Reise in Ihrem eigenen Namen gekauft haben, ja: Sie sind Teil Ihres Entgelts (§10 Abs. 1 Satz 2 UStG). Meist rechnen Sie den Nettobetrag des Belegs ab und schlagen die Steuer der Rechnung auf. Den genauen Steuersatz und den Umgang mit der Vorsteuer klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie stelle ich einem Kunden in Österreich eine Rechnung?",
+        "answer": "Ohne deutsche Umsatzsteuer, mit beiden USt-IdNrn. und dem Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§3a Abs. 2, §14a Abs. 1 UStG). Prüfen Sie vorher, dass die USt-IdNr. des Kunden gültig ist. Weitere Meldepflichten klärt Ihr Steuerberater."
+      },
+      {
+        "question": "Kann Invoicor meine Beratungsstunden erfassen?",
+        "answer": "Nein. Invoicor hat keine Zeiterfassung. Führen Sie Ihre Stunden in einem eigenen Nachweis und übertragen Sie die Summe pro Tag oder Thema in die Positionen."
+      }
+    ],
+    "cta_title": "Ihre Beraterrechnung",
+    "links_title": "Rechnungsarten für Berater",
+    "related": [
+      {
+        "name": "Rechnung für Übersetzer",
+        "slug": "rechnung-uebersetzer"
+      },
+      {
+        "name": "Rechnung für Webdesigner",
+        "slug": "rechnung-webdesigner"
+      }
+    ],
+    "invoice_types": ["stundenrechnung"]
+  },
+  {
+    "slug": "rechnung-uebersetzer",
+    "translation_of": "translation",
+    "niche": "Rechnung für Übersetzer",
+    "title": "Rechnung Übersetzer: Vorlage und Muster (PDF) | Invoicor",
+    "meta_description": "Rechnung für Übersetzer und Dolmetscher: nach Normzeile, Wort oder Seite, beglaubigte Übersetzungen, Gerichtsaufträge nach JVEG und EU-Kunden. Als PDF.",
+    "h1": "Rechnung Übersetzer: Vorlage und Muster",
+    "subtitle": "Für freiberufliche Übersetzer und Dolmetscher: nach Normzeile, Wort oder Seite abrechnen, beglaubigte Übersetzungen ausweisen und Aufträge von Gerichten, Agenturen und Privatkunden richtig behandeln.",
+    "intro_paragraph": "Übersetzer und Dolmetscher rechnen in mehr Einheiten ab als fast jede andere Branche: Normzeile, Wort, Seite, Stunde, dazu Eilzuschläge und Mindestpreise. Der Kunde versteht den Preis nur, wenn die Rechnung sagt, was gezählt wurde und wie. Für Privatkunden, etwa bei einer beglaubigten Geburtsurkunde, bleibt das PDF in Ordnung. Für Rechnungen an Unternehmen gilt: Bis 31. Dezember 2026 ist ein PDF mit Zustimmung des Empfängers erlaubt, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug; ab 2028 müssen B2B-Rechnungen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD. Unten: die Angaben, ein Muster für eine Kanzlei, die Abrechnung mit Gerichten nach dem JVEG und die Regeln für Agenturen im EU-Ausland.",
+    "include_title": "Was auf eine Übersetzerrechnung gehört",
+    "what_to_include_intro": "Die Pflichtangaben nach §14 Abs. 4 UStG gelten auch hier: Name und Anschrift beider Seiten, Steuernummer oder USt-IdNr., Datum, fortlaufende Nummer, Leistung, Leistungsdatum, Nettobetrag, Steuersatz und Steuerbetrag. Für Übersetzungen kommen diese Angaben dazu.",
+    "req_1_title": "Sprachrichtung und Dokument",
+    "req_1_text": "Nennen Sie Ausgangs- und Zielsprache und das Dokument: „Englisch > Deutsch, Lizenzvertrag vom 4. September 2026“.",
+    "req_2_title": "Die Zähleinheit und die Grundlage",
+    "req_2_text": "Üblich ist die Normzeile mit 55 Anschlägen einschließlich Leerzeichen, daneben der Preis pro Wort. Schreiben Sie dazu, ob Sie den Ausgangs- oder den Zieltext gezählt haben. „312 Normzeilen à 55 Anschläge, Zieltext“ beantwortet die häufigste Rückfrage, bevor sie kommt.",
+    "req_3_title": "Beglaubigte Übersetzungen getrennt",
+    "req_3_text": "Urkunden, Zeugnisse und Registerauszüge rechnen viele pro Seite oder pauschal pro Dokument ab. Weisen Sie die beglaubigte Übersetzung, den Bestätigungsvermerk und den Versand des Originals per Post als eigene Positionen aus, damit klar ist, was die Beglaubigung kostet.",
+    "req_4_title": "Zuschläge und Mindestpreis",
+    "req_4_text": "Eilzuschlag, Wochenendarbeit oder schwer lesbare Vorlagen gehören in eine eigene Zeile mit dem Prozentsatz und der Position, auf die er sich bezieht. Für kurze Texte nennen Sie den Mindestpreis als solchen, nicht als erfundene Zeilenzahl.",
+    "req_5_title": "Das Lieferdatum",
+    "req_5_text": "Als Leistungsdatum gilt bei einer Übersetzung meist der Tag der Lieferung. Invoicor hat kein eigenes Feld dafür: Schreiben Sie es in die Position oder die Hinweise, etwa „Geliefert am 20. November 2026“. Bei Dolmetscheinsätzen nennen Sie Datum, Ort und Uhrzeit.",
+    "req_6_title": "Bestellnummer der Agentur",
+    "req_6_text": "Agenturen zahlen oft nur gegen ihre Auftragsnummer. Übernehmen Sie sie genau so, wie sie in der Bestellung steht. Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise, denn das Feld in Invoicor druckt „USt-IdNr.“.",
+    "what_to_include_outro": "Je genauer die Rechnung zählt, desto seltener wird über den Preis gesprochen.",
+    "paper_label": "Übersetzerrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für Übersetzer",
+    "sample_breakdown_intro": "Eine Fachübersetzerin in Köln übersetzt für eine Anwaltskanzlei einen Lizenzvertrag und einen Handelsregisterauszug, den zweiten beglaubigt, beides als Eilauftrag. Kunde ist ein Unternehmen; das PDF ist mit seiner Zustimmung bis Ende 2026 zulässig. 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Fachübersetzung Englisch > Deutsch, Lizenzvertrag, gezählt im Zieltext, geliefert am 20. November 2026",
+        "qty": "312 Normzeilen",
+        "rate": "1,60 €",
+        "amount": "499,20 €"
+      },
+      {
+        "description": "Beglaubigte Übersetzung Englisch > Deutsch, Handelsregisterauszug (Companies House), geliefert am 20. November 2026",
+        "qty": "3 Seiten",
+        "rate": "35,00 €",
+        "amount": "105,00 €"
+      },
+      {
+        "description": "Bestätigungsvermerk und Versand des Originals per Einschreiben",
+        "qty": "1",
+        "rate": "12,50 €",
+        "amount": "12,50 €"
+      },
+      {
+        "description": "Eilzuschlag 25 % auf Position 1 (Lieferung innerhalb von 2 Werktagen)",
+        "qty": "1",
+        "rate": "124,80 €",
+        "amount": "124,80 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "741,50 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "140,89 €",
+    "sample_breakdown_balance": "882,39 €",
+    "sample_breakdown_notes": "Rechnung Nr. 2026-088 vom 23. November 2026. Ihr Zeichen: Az. 214/26. Normzeile = 55 Anschläge einschließlich Leerzeichen, gezählt im Zieltext. Zahlbar bis 7. Dezember 2026 auf DE44 3705 0198 0012 3456 78.",
+    "industry_notes_title": "Was Übersetzer und Dolmetscher bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Aufträge von Gerichten nach dem JVEG",
+        "text": "Gerichte und Staatsanwaltschaften vergüten Übersetzungen nach §11 JVEG, und zwar nach Anschlägen, nicht nach Zeilen: je angefangene 55 Anschläge 1,95 €, wenn der Text bearbeitbar elektronisch geliefert wurde, sonst 2,15 €; bei besonders schwierigen Texten 2,15 € oder 2,30 €. Zeilen zählen nur, wenn sich Anschläge nicht ermitteln lassen. Die Umsatzsteuer erstattet das Gericht zusätzlich (§12 Abs. 1 Satz 2 Nr. 4 JVEG), außer Sie sind Kleinunternehmer. Für Dolmetscheinsätze gelten eigene Regeln im JVEG; prüfen Sie die aktuellen Sätze dort."
+      },
+      {
+        "title": "Agenturen im EU-Ausland",
+        "text": "Arbeiten Sie für eine Agentur oder ein Unternehmen in einem anderen EU-Land, liegt der Ort der Leistung beim Kunden (§3a Abs. 2 UStG). Keine deutsche Umsatzsteuer; der Kunde schuldet die Steuer in seinem Land. Auf die Rechnung gehören beide USt-IdNrn. und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§14a Abs. 1 UStG). Invoicor druckt dann eine Zeile „MwSt. (0 %)“ mit 0,00 €; der Hinweis erklärt sie. An Privatkunden im Ausland gelten andere Regeln: fragen Sie Ihren Steuerberater."
+      },
+      {
+        "title": "Kleinunternehmer unter Übersetzern",
+        "text": "Viele Übersetzer starten nebenberuflich. Lag Ihr Umsatz im Vorjahr bei höchstens 25.000 € und liegt er im laufenden Jahr bei höchstens 100.000 €, können Sie Kleinunternehmer nach §19 UStG sein: keine Umsatzsteuer, dafür ein Hinweis wie „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“. Kleinunternehmer müssen auch ab 2028 keine E-Rechnungen ausstellen."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Übersetzerrechnungen",
+    "mistakes": [
+      {
+        "title": "Keine Zählgrundlage",
+        "text": "„312 Zeilen“ ohne Angabe, wie lang eine Zeile ist und welcher Text gezählt wurde, lädt zum Nachzählen ein. Schreiben Sie die Definition in die Hinweise."
+      },
+      {
+        "title": "Gerichtsauftrag nach Zeilen abgerechnet",
+        "text": "Das JVEG rechnet nach angefangenen 55 Anschlägen. Wer Normzeilen angibt, bekommt die Rechnung von der Kostenstelle gekürzt oder zurück. Zählen Sie die Anschläge und nennen Sie die Zahl."
+      },
+      {
+        "title": "Den Eilzuschlag verstecken",
+        "text": "Ein höherer Zeilenpreis ohne Erklärung wirkt wie ein Fehler. Eine eigene Zeile „Eilzuschlag 25 %“ zeigt, wofür der Kunde zahlt."
+      }
+    ],
+    "tip_title": "Ein Tipp für Übersetzerrechnungen",
+    "pro_tip": "Legen Sie Ihre Standardleistungen als Produkte in Invoicor an: „Fachübersetzung pro Normzeile“, „Beglaubigte Übersetzung pro Seite“, „Eilzuschlag“. Dann tragen Sie pro Auftrag nur noch die Menge ein, und Ihre Preise stehen auf jeder Rechnung gleich.",
+    "format_pdf_desc": "Ein PDF behält Sonderzeichen und Sprachnamen auf jedem Gerät bei, lässt sich mit der Übersetzung zusammen schicken und wird acht Jahre aufbewahrt (§14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Übersetzerrechnung",
+    "faqs": [
+      {
+        "question": "Rechnen Übersetzer nach Normzeile oder nach Wort ab?",
+        "answer": "Beides ist üblich. Die Normzeile mit 55 Anschlägen ist in Deutschland verbreitet, Agenturen rechnen oft pro Wort. Wichtig ist, dass die Rechnung die Einheit nennt und sagt, ob Ausgangs- oder Zieltext gezählt wurde."
+      },
+      {
+        "question": "Wie rechne ich eine beglaubigte Übersetzung ab?",
+        "answer": "Meist pro Seite oder als Pauschale pro Dokument, mit eigenen Zeilen für Bestätigungsvermerk und Versand. An Privatkunden mit 19 % USt, wenn Sie nicht Kleinunternehmer sind. Bleibt die Rechnung bei höchstens 250 € brutto, reichen weniger Angaben (§33 UStDV)."
+      },
+      {
+        "question": "Wie stelle ich einem Gericht eine Rechnung?",
+        "answer": "Nach §11 JVEG: je angefangene 55 Anschläge 1,95 € bei bearbeitbarer elektronischer Vorlage, sonst 2,15 €, plus Umsatzsteuer, die das Gericht erstattet (§12 Abs. 1 Satz 2 Nr. 4 JVEG). Nennen Sie das Aktenzeichen und die Zahl der Anschläge."
+      },
+      {
+        "question": "Brauche ich eine USt-IdNr. für Kunden im Ausland?",
+        "answer": "Für Unternehmen in der EU ja: Beide USt-IdNrn. gehören auf die Rechnung, dazu der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Die USt-IdNr. beantragen Sie beim Bundeszentralamt für Steuern; Einzelheiten klärt Ihr Steuerberater."
+      },
+      {
+        "question": "Wie rechnen Dolmetscher ab?",
+        "answer": "Meist nach Stunden oder halben und ganzen Tagen, dazu Anfahrt und Wartezeit. Nennen Sie Datum, Ort, Beginn und Ende des Einsatzes. Für Gerichte gelten eigene Regeln im JVEG; prüfen Sie die aktuellen Sätze im Gesetz."
+      }
+    ],
+    "cta_title": "Ihre Übersetzerrechnung",
+    "links_title": "Rechnungsarten für Übersetzer und Dolmetscher",
+    "related": [
+      {
+        "name": "Rechnung für Unternehmensberater",
+        "slug": "rechnung-unternehmensberatung"
+      },
+      {
+        "name": "Rechnung für Grafikdesigner",
+        "slug": "rechnung-grafikdesigner"
+      }
+    ],
+    "invoice_types": ["rechnung-freiberufler", "kleinunternehmer-rechnung", "stundenrechnung"]
+  },
+  {
+    "slug": "rechnung-musikunterricht",
+    "translation_of": "music-lessons",
+    "niche": "Rechnung für Musikunterricht",
+    "title": "Rechnung Musikunterricht: Vorlage und Muster | Invoicor",
+    "meta_description": "Rechnung für Musikunterricht: Monatsbeitrag, 10er-Karte, Absagen nach Ihren Bedingungen und die Umsatzsteuer (Stand November 2026). Muster als PDF.",
+    "h1": "Rechnung Musikunterricht: Vorlage und Muster",
+    "subtitle": "Für freie Musiklehrer an Klavier, Gitarre, Geige oder Gesang: Monatsbeiträge, 10er-Karten und Geschwister übersichtlich abrechnen, mit klarer Regel für abgesagte Stunden.",
+    "intro_paragraph": "Musikunterricht folgt dem Wochenkalender, und genau dort entstehen die Rückfragen: Ein Monat hat vier oder fünf Unterrichtstage, die Schulferien fallen aus, ein Kind ist krank. Eine Rechnung für Musikunterricht, die Schüler, Instrument, Dauer und Zeitraum nennt, macht den Beitrag für Eltern planbar. Ihre Kunden sind meist Privatleute; für sie bleibt das PDF in Ordnung, die E-Rechnungspflicht betrifft Rechnungen an Unternehmen. Unten: die Angaben, ein Muster für zwei Geschwister, die Frage nach der Umsatzsteuer und wie Sie 10er-Karten abrechnen.",
+    "include_title": "Was auf eine Rechnung für Musikunterricht gehört",
+    "what_to_include_intro": "Die Pflichtangaben nach §14 Abs. 4 UStG gelten auch für Musiklehrer: Name und Anschrift beider Seiten, Steuernummer oder USt-IdNr., Datum, fortlaufende Nummer, Leistung und Leistungszeitraum, Betrag und Steuer oder der Hinweis auf die Befreiung. Für den Unterricht kommen diese Angaben dazu.",
+    "req_1_title": "Schüler, Instrument und Dauer",
+    "req_1_text": "Rechnungsempfänger sind meist die Eltern, der Unterricht gilt dem Kind. Nennen Sie beides: „Klavierunterricht für Mia Becker, Einzelunterricht 45 Minuten wöchentlich“. Bei Geschwistern bekommt jedes Kind eine eigene Zeile.",
+    "req_2_title": "Monat oder Unterrichtstage",
+    "req_2_text": "Rechnen Sie einen festen Monatsbeitrag ab, nennen Sie den Monat als Leistungszeitraum. Rechnen Sie pro Stunde ab, listen Sie die Daten auf, etwa „3., 10., 17. und 24. November 2026“. Invoicor hat kein eigenes Feld für das Leistungsdatum: Es gehört in die Position oder die Hinweise.",
+    "req_3_title": "Der Beitrag über das Jahr",
+    "req_3_text": "Viele Musiklehrer rechnen wie Musikschulen: ein Jahresbeitrag, verteilt auf zwölf gleiche Monatsbeiträge, die Ferien eingerechnet. Schreiben Sie das einmal in die Hinweise, dann fragt niemand, warum der August genauso viel kostet wie der März.",
+    "req_4_title": "Noten, Vorspiel und Anfahrt",
+    "req_4_text": "Notenhefte, die Sie für den Schüler kaufen, die Saalmiete für das Vorspiel oder eine Anfahrtspauschale für Unterricht beim Schüler zu Hause stehen in eigenen Zeilen. So bleibt der Monatsbeitrag jeden Monat gleich.",
+    "req_5_title": "Ihre Regel für abgesagte Stunden",
+    "req_5_text": "Ob eine kurzfristig abgesagte Stunde bezahlt, nachgeholt oder erstattet wird, entscheiden Ihre eigenen Unterrichtsbedingungen, die die Eltern vorher bekommen haben. Wiederholen Sie die Regel kurz in den Hinweisen, etwa „Absagen bis 24 Stunden vorher werden nachgeholt“.",
+    "req_6_title": "Zahlungsziel und Überweisung",
+    "req_6_text": "Nennen Sie ein Datum, etwa „zahlbar bis 5. des Monats“, und Ihre IBAN. Bei Privatkunden tritt Verzug nach 30 Tagen nur ein, wenn die Rechnung darauf hinweist (§286 Abs. 3 BGB). Ein Satz in den Hinweisen genügt.",
+    "what_to_include_outro": "Eine gute Rechnung für Musikunterricht ist kurz: ein Kind pro Zeile, ein Zeitraum, Ihre Regeln in zwei Sätzen.",
+    "paper_label": "Rechnung Musikunterricht · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für Musikunterricht",
+    "sample_breakdown_intro": "Ein freier Musiklehrer in Leipzig unterrichtet zwei Geschwister, Klavier und Gitarre, und rechnet den Monatsbeitrag für November mit Notenheft und Vorspielbeitrag ab. Er ist Kleinunternehmer nach §19 UStG: keine Steuerzeile, dafür der Hinweis.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Klavierunterricht Mia Becker, Einzelunterricht 45 Min. wöchentlich, Monatsbeitrag November 2026",
+        "qty": "1",
+        "rate": "120,00 €",
+        "amount": "120,00 €"
+      },
+      {
+        "description": "Gitarrenunterricht Jonas Becker, Einzelunterricht 30 Min. wöchentlich, Monatsbeitrag November 2026",
+        "qty": "1",
+        "rate": "85,00 €",
+        "amount": "85,00 €"
+      },
+      {
+        "description": "Notenheft Gitarrenschule Band 1, Jonas",
+        "qty": "1",
+        "rate": "14,90 €",
+        "amount": "14,90 €"
+      },
+      {
+        "description": "Beitrag Wintervorspiel am 12. Dezember 2026 (Saalmiete), Mia",
+        "qty": "1",
+        "rate": "15,00 €",
+        "amount": "15,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "234,90 €",
+    "sample_breakdown_balance": "234,90 €",
+    "sample_breakdown_notes": "Rechnung Nr. 2026-041 vom 1. November 2026. Steuernummer 231/245/67890. Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG. Zahlbar bis 5. November 2026 auf DE89 8605 5592 1090 0123 45; ohne Zahlung kommen Sie 30 Tage nach Fälligkeit und Zugang in Verzug. Absagen bis 24 Stunden vorher werden nachgeholt, spätere Absagen werden berechnet.",
+    "industry_notes_title": "Was Musiklehrer bei der Rechnung beachten",
+    "industry_notes": [
+      {
+        "title": "Umsatzsteuer auf Musikunterricht (Stand November 2026)",
+        "text": "Nach §4 Nr. 21 UStG ist Unterricht nur in bestimmten Fällen steuerfrei: an Schulen und Einrichtungen mit Bescheinigung der zuständigen Landesbehörde, wenn Sie als freier Lehrer an solchen Schulen oder Hochschulen unterrichten, und bei Schul- und Hochschulunterricht durch Privatlehrer. Hobbyunterricht direkt an Privatleute ist nach unserem Verständnis in der Regel mit 19 % steuerpflichtig, außer Sie sind Kleinunternehmer. Eine Reform von §4 Nr. 21 ist geplant, aber noch kein Gesetz. Klären Sie Ihren Fall mit Ihrem Steuerberater."
+      },
+      {
+        "title": "Kleinunternehmer: der häufigste Fall",
+        "text": "Viele freie Musiklehrer bleiben unter den Grenzen des §19 UStG: höchstens 25.000 € Umsatz im Vorjahr und höchstens 100.000 € im laufenden Jahr. Dann weisen Sie keine Umsatzsteuer aus und schreiben den Hinweis in die Hinweise. Invoicor druckt die Steuerzeile trotzdem, als „MwSt. (0 %)“ mit 0,00 €; der Hinweis erklärt sie."
+      },
+      {
+        "title": "10er-Karte oder Monatsrechnung",
+        "text": "Eine 10er-Karte rechnen Sie beim Verkauf ab: „10er-Karte Gitarrenunterricht, 10 × 45 Min.“ als eine Position, im Voraus bezahlt. Halten Sie die genommenen Stunden selbst fest; Invoicor zählt sie nicht mit. Für feste Monatsbeiträge gibt es neben der Rechnung pro Monat die Dauerrechnung: eine Rechnung, die alle Monate eines Schuljahres abdeckt."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Rechnungen für Musikunterricht",
+    "mistakes": [
+      {
+        "title": "Nur ein Betrag, kein Zeitraum",
+        "text": "„Unterricht 205,00 €“ sagt Eltern nicht, welcher Monat und welches Kind. Nennen Sie Kind, Instrument, Dauer und Monat, dann gibt es keine Rückfrage."
+      },
+      {
+        "title": "Die Absageregel nur mündlich",
+        "text": "Wer erst nach der dritten Absage erklärt, dass späte Absagen bezahlt werden, verliert Schüler. Geben Sie Ihre Bedingungen schriftlich vor der ersten Stunde und wiederholen Sie sie kurz auf der Rechnung."
+      },
+      {
+        "title": "Geschwister in einer Zeile",
+        "text": "Ein Betrag für zwei Kinder macht es schwer, einen Geschwisterrabatt, eine Kündigung oder eine Pause für eines der Kinder zu zeigen. Jedes Kind bekommt seine Zeile."
+      }
+    ],
+    "tip_title": "Ein Tipp für Musiklehrer",
+    "pro_tip": "Legen Sie jede Familie als Kunden und jeden Monatsbeitrag als Produkt in Invoicor an. Am Monatsanfang duplizieren Sie die Rechnung vom Vormonat, ändern den Monat und ergänzen Noten oder Vorspiel. Wiederkehrende Rechnungen verschickt Invoicor nicht von selbst; das Duplizieren dauert Sekunden.",
+    "format_pdf_desc": "Ein PDF können Eltern per Mail oder Messenger öffnen, ausdrucken und ablegen; bei Ihnen wird es acht Jahre aufbewahrt (§14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Rechnung für Musikunterricht",
+    "faqs": [
+      {
+        "question": "Muss ich auf Musikunterricht Umsatzsteuer berechnen?",
+        "answer": "Stand November 2026: Hobbyunterricht direkt an Privatleute ist nach unserem Verständnis in der Regel mit 19 % steuerpflichtig. Steuerfrei nach §4 Nr. 21 UStG ist er nur in den dort genannten Fällen, etwa an bescheinigten Einrichtungen. Als Kleinunternehmer nach §19 UStG fällt keine Steuer an. Eine Reform ist geplant; fragen Sie Ihren Steuerberater."
+      },
+      {
+        "question": "Monatsbeitrag oder Abrechnung pro Stunde?",
+        "answer": "Beides ist üblich. Der Monatsbeitrag mit eingerechneten Ferien ist für Eltern planbarer und für Sie verlässlicher. Pro Stunde passt zu Erwachsenen mit unregelmäßigen Terminen; dann stehen die Daten auf der Rechnung."
+      },
+      {
+        "question": "Darf ich abgesagte Stunden berechnen?",
+        "answer": "Das hängt von Ihren Unterrichtsbedingungen ab, die vorher vereinbart sein müssen. Steht dort, dass späte Absagen bezahlt werden, berechnen Sie die Stunde mit dem Datum und dem Vermerk „kurzfristig abgesagt“. Rechtliche Fragen klären Sie mit einem Anwalt."
+      },
+      {
+        "question": "Wie rechne ich eine 10er-Karte ab?",
+        "answer": "Mit einer Rechnung beim Verkauf, als eine Position mit Anzahl und Dauer der Stunden. Wie die Umsatzsteuer bei im Voraus bezahlten Stunden behandelt wird, wenn Sie nicht Kleinunternehmer sind, klärt Ihr Steuerberater."
+      },
+      {
+        "question": "Brauche ich für Rechnungen an Eltern eine E-Rechnung?",
+        "answer": "Nein. Die E-Rechnungspflicht gilt für Rechnungen an Unternehmen, Privatkunden bekommen weiter ein PDF. Kleinunternehmer und Rechnungen bis 250 € brutto sind auch bei Rechnungen an Unternehmen von der Pflicht ausgenommen."
+      }
+    ],
+    "cta_title": "Ihre Rechnung für den Musikunterricht",
+    "links_title": "Rechnungsarten für Musiklehrer",
+    "related": [
+      {
+        "name": "Rechnung für Übersetzer",
+        "slug": "rechnung-uebersetzer"
+      },
+      {
+        "name": "Rechnung für Unternehmensberater",
+        "slug": "rechnung-unternehmensberatung"
+      }
+    ],
+    "invoice_types": ["dauerrechnung", "stundenrechnung", "kleinunternehmer-rechnung"]
   }
 ]

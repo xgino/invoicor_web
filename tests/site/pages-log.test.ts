@@ -184,10 +184,14 @@ describe("page log", () => {
   });
 
   it("puts every planned page in a category with a direction (seo/PLAN.md)", () => {
-    const loose = rows
+    // A language version belongs to its English page's category (it's filed with it).
+    const all = rows as unknown as Record<string, string>[];
+    const byUrl = new Map(all.filter((r) => !r.translation_of).map((r) => [r.url, r]));
+    const loose = all
       .filter((r) => r.status === "planned")
-      .filter((r) => !CATEGORIES.some((c) => c.match(r as unknown as Record<string, string>)))
-      .map((r) => r.url);
+      .map((r) => (r.translation_of ? byUrl.get(r.translation_of) : r))
+      .filter((r) => !r || !CATEGORIES.some((c) => c.match(r)))
+      .map((r) => r?.url ?? "a language version without its English page");
     expect(loose).toEqual([]);
   });
 

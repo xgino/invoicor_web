@@ -8,7 +8,7 @@
 > exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**238 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,254 language versions · **9,447 when everything is built** (fewer after the demand gate parks the weak ones)
+**248 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,209 language versions · **9,412 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run
 
@@ -34,7 +34,7 @@ Say which: "do D4" (one page and its language versions), "do D4-de" (one languag
 
 | Category | Page IDs | Groups | Pages done | Pages to build | Languages done |
 |---|---|---|---|---|---|
-| [Trade templates](#trade-templates-t) | T1–T313 | 20 | 50 | 263 | 0/2990 |
+| [Trade templates](#trade-templates-t) | T1–T313 | 20 | 50 | 263 | 10/2955 |
 | [Billing-type templates](#billing-type-templates-b) | B1–B178 | 15 | 0 | 177 | 0/1770 |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 12/217 |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1–I239 | 20 | 43 | 196 | 0/2230 |
@@ -89,7 +89,7 @@ Rules: [RULES.md § T · Trade templates](RULES.md#t--trade-templates) · every 
 
 ### T1–T20: Trade templates 1–20 (built)
 
-- [x] **T1–T20** · 20/20 live · [languages](#t1t20-in-every-language): 0/200
+- [x] **T1–T20** · 20/20 live · [languages](#t1t20-in-every-language): 7/189
   - [x] **T1** [/templates/photography](https://invoicor.com/templates/photography) photography invoice template
   - [x] **T2** [/templates/plumbing](https://invoicor.com/templates/plumbing) plumbing invoice template
   - [x] **T3** [/templates/hvac](https://invoicor.com/templates/hvac) hvac invoice template
@@ -113,7 +113,7 @@ Rules: [RULES.md § T · Trade templates](RULES.md#t--trade-templates) · every 
 
 ### T21–T35: Trade templates 21–35 (built)
 
-- [x] **T21–T35** · 15/15 live · [languages](#t21t35-in-every-language): 0/150
+- [x] **T21–T35** · 15/15 live · [languages](#t21t35-in-every-language): 1/138
   - [x] **T21** [/templates/virtual-assistant](https://invoicor.com/templates/virtual-assistant) virtual assistant invoice template
   - [x] **T22** [/templates/pet-sitting](https://invoicor.com/templates/pet-sitting) pet sitting invoice template
   - [x] **T23** [/templates/makeup-artist](https://invoicor.com/templates/makeup-artist) makeup artist invoice template
@@ -132,7 +132,7 @@ Rules: [RULES.md § T · Trade templates](RULES.md#t--trade-templates) · every 
 
 ### T36–T50: Trade templates 36–50 (built)
 
-- [x] **T36–T50** · 15/15 live · [languages](#t36t50-in-every-language): 0/150
+- [x] **T36–T50** · 15/15 live · [languages](#t36t50-in-every-language): 2/138
   - [x] **T36** [/templates/appliance-repair](https://invoicor.com/templates/appliance-repair) appliance repair invoice template
   - [x] **T37** [/templates/junk-removal](https://invoicor.com/templates/junk-removal) junk removal invoice template
   - [x] **T38** [/templates/carpet-cleaning](https://invoicor.com/templates/carpet-cleaning) carpet cleaning invoice template
@@ -1630,7 +1630,7 @@ not to) are in the language's file; each line links there.
 
 Trade templates 1–20 (built) · 20 pages
 
-- [ ] [**T1–T20 in German**](plan/languages/de.md#t1t20-in-german) · 0/20
+- [ ] [**T1–T20 in German**](plan/languages/de.md#t1t20-in-german) · 7/9
 - [ ] [**T1–T20 in Spanish**](plan/languages/es.md#t1t20-in-spanish) · 0/20
 - [ ] [**T1–T20 in French**](plan/languages/fr.md#t1t20-in-french) · 0/20
 - [ ] [**T1–T20 in Dutch**](plan/languages/nl.md#t1t20-in-dutch) · 0/20
@@ -1645,7 +1645,7 @@ Trade templates 1–20 (built) · 20 pages
 
 Trade templates 21–35 (built) · 15 pages
 
-- [ ] [**T21–T35 in German**](plan/languages/de.md#t21t35-in-german) · 0/15
+- [ ] [**T21–T35 in German**](plan/languages/de.md#t21t35-in-german) · 1/3
 - [ ] [**T21–T35 in Spanish**](plan/languages/es.md#t21t35-in-spanish) · 0/15
 - [ ] [**T21–T35 in French**](plan/languages/fr.md#t21t35-in-french) · 0/15
 - [ ] [**T21–T35 in Dutch**](plan/languages/nl.md#t21t35-in-dutch) · 0/15
@@ -1660,7 +1660,7 @@ Trade templates 21–35 (built) · 15 pages
 
 Trade templates 36–50 (built) · 15 pages
 
-- [ ] [**T36–T50 in German**](plan/languages/de.md#t36t50-in-german) · 0/15
+- [ ] [**T36–T50 in German**](plan/languages/de.md#t36t50-in-german) · 2/3
 - [ ] [**T36–T50 in Spanish**](plan/languages/es.md#t36t50-in-spanish) · 0/15
 - [ ] [**T36–T50 in French**](plan/languages/fr.md#t36t50-in-french) · 0/15
 - [ ] [**T36–T50 in Dutch**](plan/languages/nl.md#t36t50-in-dutch) · 0/15
