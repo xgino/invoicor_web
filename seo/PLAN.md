@@ -8,7 +8,7 @@
 > exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**225 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,269 language versions · **9,449 when everything is built** (fewer after the demand gate parks the weak ones)
+**238 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,254 language versions · **9,447 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run
 
@@ -36,14 +36,14 @@ Say which: "do D4" (one page and its language versions), "do D4-de" (one languag
 |---|---|---|---|---|---|
 | [Trade templates](#trade-templates-t) | T1–T313 | 20 | 50 | 263 | 0/2990 |
 | [Billing-type templates](#billing-type-templates-b) | B1–B178 | 15 | 0 | 177 | 0/1770 |
-| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 0/219 |
+| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 12/217 |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1–I239 | 20 | 43 | 196 | 0/2230 |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1–C97 | 11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL1–TL113 | 10 | 4 | 109 | 40/910 |
 | [Country pages (English)](#country-pages-english-ct) | CT1–CT39 | 6 | 0 | 39 | 0/10 |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1–LO74 | 8 | 0 | 71 | none |
 | [Generators](#generators-g) | G1–G10 | 3 | 1 | 9 | 10/100 |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 30/120 |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 31/120 |
 
 ## Best next (by score)
 
@@ -728,7 +728,7 @@ Rules: [RULES.md § D · Invoice types (general documents)](RULES.md#d--invoice-
 
 ### D1–D20: Invoice types: the general documents
 
-- [x] **D1–D20** · 16/16 live · 4 parked · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · [languages](#d1d20-in-every-language): 0/140
+- [x] **D1–D20** · 16/16 live · 4 parked · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · [languages](#d1d20-in-every-language): 12/138
   - [x] **D1** [/templates/deposit-invoice](https://invoicor.com/templates/deposit-invoice) deposit invoice template
   - [x] **D4** [/templates/hourly-invoice](https://invoicor.com/templates/hourly-invoice) hourly invoice template
   - [x] **D6** [/templates/retainer-invoice](https://invoicor.com/templates/retainer-invoice) retainer invoice template
@@ -1595,7 +1595,7 @@ Rules: [RULES.md § P · Core pages, hubs, trust and legal](RULES.md#p--core-pag
 
 ### P1–P9: Core pages (built): home, hubs, help, affiliate, terms, privacy, Android
 
-- [x] **P1–P9** · 9/9 live · [languages](#p1p9-in-every-language): 30/80
+- [x] **P1–P9** · 9/9 live · [languages](#p1p9-in-every-language): 31/80
   - [x] **P1** [/](https://invoicor.com/) invoice app iphone
   - [x] **P2** [/templates](https://invoicor.com/templates) invoice templates
   - [x] **P3** [/industries](https://invoicor.com/industries) invoicing software by industry
@@ -2455,7 +2455,7 @@ Per-unit billing: per word, mile and minute · 5 pages
 
 Invoice types: the general documents · 14 pages
 
-- [ ] [**D1–D20 in German**](plan/languages/de.md#d1d20-in-german) · 0/14
+- [x] [**D1–D20 in German**](plan/languages/de.md#d1d20-in-german) · 12/12
 - [ ] [**D1–D20 in Spanish**](plan/languages/es.md#d1d20-in-spanish) · 0/14
 - [ ] [**D1–D20 in French**](plan/languages/fr.md#d1d20-in-french) · 0/14
 - [ ] [**D1–D20 in Dutch**](plan/languages/nl.md#d1d20-in-dutch) · 0/14
@@ -2680,7 +2680,7 @@ Country pages I (English-speaking countries + EU reverse charge) · 1 pages
 
 Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 8 pages
 
-- [ ] [**P1–P9 in German**](plan/languages/de.md#p1p9-in-german) · 3/8
+- [ ] [**P1–P9 in German**](plan/languages/de.md#p1p9-in-german) · 4/8
 - [ ] [**P1–P9 in Spanish**](plan/languages/es.md#p1p9-in-spanish) · 3/8
 - [ ] [**P1–P9 in French**](plan/languages/fr.md#p1p9-in-french) · 3/8
 - [ ] [**P1–P9 in Dutch**](plan/languages/nl.md#p1p9-in-dutch) · 3/8

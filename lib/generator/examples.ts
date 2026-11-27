@@ -12,11 +12,28 @@ export interface GeneratorExample {
 }
 
 /**
- * First number in a string: "$2,800.00" → 2800, "1.5 hrs" → 1.5, "Included" → null. A minus before
- * the currency sign counts: "-$4,500.00" → -4500 (a credit or an earlier invoice subtracted).
+ * Number format of a money or quantity string: "1,234.56" (English) or "1.234,56" (German,
+ * Dutch …). The separator that comes last is the decimal one; the other one groups thousands.
+ */
+function normalize(value: string): string {
+  // Only separators between two digits count (not the dot in "Std.").
+  const last = (sep: string) => {
+    let at = -1;
+    for (const m of value.matchAll(new RegExp(`\\d\\${sep}(?=\\d)`, "g"))) at = m.index + 1;
+    return at;
+  };
+  const lastComma = last(",");
+  const lastDot = last(".");
+  return lastComma > lastDot ? value.replace(/\./g, "").replace(",", ".") : value.replace(/,/g, "");
+}
+
+/**
+ * First number in a string: "$2,800.00" → 2800, "1.200,00 €" → 1200, "1,5 Std." → 1.5,
+ * "Included" → null. A minus before the currency sign counts: "-$4,500.00" → -4500 (a credit or
+ * an earlier invoice subtracted).
  */
 export function firstNumber(value: string): number | null {
-  const m = value.replace(/,/g, "").match(/([-−])?\D{0,3}?(\d+(?:\.\d+)?)/);
+  const m = normalize(value).match(/([-−])?\D{0,3}?(\d+(?:\.\d+)?)/);
   if (!m) return null;
   return m[1] ? -Number(m[2]) : Number(m[2]);
 }

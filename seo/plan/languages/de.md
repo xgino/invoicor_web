@@ -5700,13 +5700,13 @@
 
 ## D1–D20 in German
 
-[ ] Invoice types: the general documents · 0/14 live in de
+[x] Invoice types: the general documents · 12/12 live in de
 
 - **For every template (invoice type) page:** This document under that country's rules (the local terms list): what it must show there, the law or tax office as the source with the date checked.
 
 ### D1-de · /templates/deposit-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/anzahlungsrechnung
 - **English page:** [deposit invoice template](https://invoicor.com/templates/deposit-invoice) (live: use it as the source)
 - **Search words:** the German term for "deposit invoice template"; known local terms: Anzahlungsrechnung (de), aanbetalingsfactuur (nl), facture d'acompte (fr), factura de anticipo (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The general deposit invoice: part of the price before work starts. What it must show (that it's a deposit, the full job price, the share asked, what it secures, when the rest is due, refundable or not), its own invoice number, and how the final invoice subtracts it (a negative line: 'Less deposit, invoice #…'). In many VAT countries VAT is due on the deposit when it's paid (hedge; check the local rule). Sample: 30% of a $4,000 job. A 'by trade' section links the trade deposit pages.
@@ -5714,7 +5714,7 @@
 
 ### D2-de · /templates/final-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/schlussrechnung
 - **English page:** [final invoice template](https://invoicor.com/templates/final-invoice) (live: use it as the source)
 - **Search words:** the German term for "final invoice template"; known local terms: Schlussrechnung (de), eindfactuur (nl), facture de solde (fr), factura final (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The last invoice of a job paid in parts: the full price, minus every earlier invoice by number and date (deposit, progress invoices), the balance due, marked 'Final invoice'. Tax only on what's left when earlier invoices already charged it (hedge; Germany's Schlussrechnung rules are strict: the local version). Sample: a $12,000 job after a $3,000 deposit and a $4,500 progress invoice.
@@ -5722,7 +5722,7 @@
 
 ### D3-de · /templates/milestone-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/teilrechnung
 - **English page:** [milestone invoice template](https://invoicor.com/templates/milestone-invoice) (live: use it as the source)
 - **Search words:** the German term for "milestone invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A project billed in agreed stages (design 30%, build 50%, launch 20%): the milestone and the contract it's from, what was delivered and accepted, its share of the total, what's been paid so far. Milestones are deliverables; progress billing is % complete (construction, its own page). Sample: milestone 2 of 3 on a $9,000 project.
@@ -5730,23 +5730,17 @@
 
 ### D4-de · /templates/hourly-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/stundenrechnung
 - **English page:** [hourly invoice template](https://invoicor.com/templates/hourly-invoice) (live: use it as the source)
 - **Search words:** the German term for "hourly invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours × rate for any work: hours by day or by task (a timesheet summary on the invoice), rounding and minimum increments, different rates (standard, rush, travel), a cap agreed upfront. The app has no timer: you enter the hours you tracked; the hours calculator adds up times. Sample: 3 dates at 2 rates.
 - **Don't:** The trade hourly pages (consulting, handyman, VA, bookkeeping, cleaning, moving); setting your rate (the hourly rate calculator).
 
-### D6-de · /templates/retainer-invoice → German
-
-- [ ] **Live in de**
-- **English page:** [retainer invoice template](https://invoicor.com/templates/retainer-invoice) (live: use it as the source)
-- **Search words:** the German term for "retainer invoice template"
-- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A fixed fee paid ahead for availability or a block of hours (lawyers, consultants, agencies): the period, what's included (hours or scope), what happens to unused hours (rolled over or lost, per the contract), work beyond it billed on its own lines. An advance against future work vs a pure availability fee. Each month: duplicate last month's invoice (the app doesn't send recurring invoices). Sample: May, 20 hours included, 3 hours over.
-- **Don't:** The consulting, social media, website, interior design and VA retainer pages (trade specifics); legal trust-account rules (hedge, no law cited).
+- ~~**D6-de** /templates/retainer-invoice~~ skipped in de: parked 2026-11-27 (demand gate, de): no German site uses "Retainer-Rechnung"; a Pauschalrechnung means a flat fee, not a fee paid ahead for availability, so the honest German page would be a different one. Revisit with Search Console data.
 
 ### D7-de · /templates/monthly-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/dauerrechnung
 - **English page:** [monthly invoice template](https://invoicor.com/templates/monthly-invoice) (live: use it as the source)
 - **Search words:** the German term for "monthly invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): One invoice a month for ongoing service (cleaning, lawn care, pools, lessons, equipment): the service period, visits or units that month, a flat fee or per visit, skipped visits credited, the due date. With the app: duplicate last month's invoice, change the period and the number. Sample: October, 4 weekly visits, 1 skipped and credited.
@@ -5754,7 +5748,7 @@
 
 ### D8-de · /templates/labor-and-materials-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-lohn-und-material
 - **English page:** [labor and materials invoice template](https://invoicor.com/templates/labor-and-materials-invoice) (live: use it as the source)
 - **Search words:** the German term for "labor and materials invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The general labor + materials invoice for any trade: labor lines (hours × rate or a flat price), material lines (quantity, unit, unit price), markup on materials (shown or built in), trip and disposal fees, and where tax applies (in many US states materials are taxed and labor isn't: hedge). Time and materials vs a fixed price. Sample: a repair with 3 labor hours and 5 material lines. A 'by trade' section links the trade versions.
@@ -5762,23 +5756,17 @@
 
 ### D9-de · /templates/service-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-dienstleistung
 - **English page:** [service invoice template](https://invoicor.com/templates/service-invoice) (live: use it as the source)
 - **Search words:** the German term for "service invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Invoicing services rather than goods, for any business: a description the client recognises (what, when, for whom), service date vs invoice date, hours, visits or a flat fee, tax on services (often different from goods: hedge), payment terms. Sample: 3 service lines. 'Find your trade' links to the templates hub.
 - **Don't:** Any trade's specifics (the trade templates); selling goods (/templates/sales-invoice).
 
-### D10-de · /templates/sales-invoice → German
-
-- [ ] **Live in de**
-- **English page:** [sales invoice template](https://invoicor.com/templates/sales-invoice) (live: use it as the source)
-- **Search words:** the German term for "sales invoice template"
-- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Selling goods: item and SKU, quantity, unit price, discount, shipping, sales tax or VAT on goods, delivery date and address, returns terms. How it differs from a receipt (already paid) and a commercial invoice (export). Sample: 4 products + shipping, for makers, resellers and B2B orders.
-- **Don't:** Export and customs (/templates/commercial-invoice); receipts (the receipt generator).
+- ~~**D10-de** /templates/sales-invoice~~ skipped in de: parked 2026-11-27 (demand gate, de): weak results; German sites treat a Verkaufsrechnung as an ordinary Rechnung, which the Rechnung-Pflichtangaben page (LO1) covers.
 
 ### D11-de · /templates/commercial-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/handelsrechnung
 - **English page:** [commercial invoice template](https://invoicor.com/templates/commercial-invoice) (live: use it as the source)
 - **Search words:** the German term for "commercial invoice template"; known local terms: Handelsrechnung (de), handelsfactuur (nl), facture commerciale (fr), factura comercial (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The invoice that travels with goods across a border: seller, buyer and consignee, a precise description per item, HS code, country of origin, quantity, weight, value and currency, Incoterms, reason for export, a signed declaration. Honest: Invoicor makes the invoice PDF; HS codes and origin go in the item lines or notes; carriers and customs may want their own forms too. Sample: 3 items shipped from the UK to the US (duties hedged).
@@ -5786,7 +5774,7 @@
 
 ### D14-de · /templates/expense-reimbursement-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/auslagen-weiterberechnen
 - **English page:** [reimbursement invoice template](https://invoicor.com/templates/expense-reimbursement-invoice) (live: use it as the source)
 - **Search words:** the German term for "reimbursement invoice template"; known local terms: Auslagen / durchlaufende Posten (de), doorbelasten kosten (nl), débours (fr)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Passing costs on to a client: what you paid (travel, materials, fees), at cost or with a markup (per the contract), receipts kept and listed, and the tax difference between a disbursement paid in the client's name (often outside VAT) and a rebilled cost (part of your price): hedge, with the HMRC guidance as the English example (cite and date).
@@ -5794,7 +5782,7 @@
 
 ### D15-de · /templates/no-vat-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/kleinunternehmer-rechnung
 - **English page:** [invoice without vat template](https://invoicor.com/templates/no-vat-invoice) (live: use it as the source)
 - **Search words:** the German term for "invoice without vat template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): For sellers below the VAT threshold or exempt: what an invoice without VAT must and mustn't show (no VAT line, no VAT number, the wording a country requires), why the client can't reclaim VAT on it, what changes when you cross the threshold. English examples: the UK (not VAT registered: cite HMRC, date it) and Australia (not registered for GST, so it isn't a 'tax invoice'). Sample with the note and no tax line.
@@ -5802,7 +5790,7 @@
 
 ### D16-de · /templates/freelance-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/rechnung-freiberufler
 - **English page:** [freelance invoice template](https://invoicor.com/templates/freelance-invoice) (live: use it as the source)
 - **Search words:** the German term for "freelance invoice template"; known local terms: Rechnung Freiberufler / Selbstständige (de), factuur zzp (nl), facture auto-entrepreneur (fr), factura autónomo (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Freelancers in any field: what the client's accounts team needs (your legal name, address, tax ID or UTR where asked, their PO number, bank details), project, hourly or day-rate lines, usage rights when you sell creative work, VAT if registered or the no-VAT note, payment terms from the contract. UK sole traders and the self-employed use the same document. Sample: a project fee + 2 extra hours. A 'by field' section links the trade templates.
@@ -5810,7 +5798,7 @@
 
 ### D18-de · /templates/subcontractor-invoice → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen/subunternehmer-rechnung
 - **English page:** [subcontractor invoice template](https://invoicor.com/templates/subcontractor-invoice) (live: use it as the source)
 - **Search words:** the German term for "subcontractor invoice template"; known local terms: Subunternehmer Rechnung (de: §13b reverse charge on construction services), onderaannemer factuur (nl: btw verlegd, G-rekening)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A sub billing the main contractor, not the owner: the project, the GC's PO or contract number, scope or % complete, retainage held, change orders by number, the lien waiver that often goes with payment (US: hedge per state). UK: CIS deductions on the labor part (cite HMRC, date it). Sample: an $18,000 subcontract, 40% complete, 10% retainage.
@@ -6754,7 +6742,7 @@
 
 ## P1–P9 in German
 
-[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in de
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 4/8 live in de
 
 - **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
 - **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
@@ -6772,7 +6760,7 @@
 
 ### P2-de · /templates → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/vorlagen
 - **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
 - **Search words:** the German term for "invoice templates"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

@@ -16,6 +16,15 @@ describe("firstNumber (template samples → generator lines)", () => {
     expect(firstNumber("-65")).toBe(-65);
   });
 
+  it("reads the German number format (dot for thousands, comma for decimals)", () => {
+    expect(firstNumber("1.200,00 €")).toBe(1200);
+    expect(firstNumber("-1.200,00 €")).toBe(-1200);
+    expect(firstNumber("85,00 €")).toBe(85);
+    expect(firstNumber("1,5 Std.")).toBe(1.5);
+    expect(firstNumber("12.345,67 €")).toBe(12345.67);
+    expect(firstNumber("3 Std.")).toBe(3);
+  });
+
   it("doesn't take a hyphen in words for a minus", () => {
     expect(firstNumber("Net-30 terms, 2 visits")).toBe(30);
     expect(firstNumber("Day-rate 450")).toBe(450);

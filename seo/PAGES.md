@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**225 live pages** · last change 2026-11-27 · 962 more planned in [PLAN.md](PLAN.md)
+**238 live pages** · last change 2026-11-27 · 962 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -19,7 +19,7 @@
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
 | /da | 8 | tool 4, generator 1, home 1, support 1, android 1 |
-| /de | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /de | 21 | template (invoice type) 12, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 | /es | 8 | tool 4, generator 1, home 1, support 1, android 1 |
 | /fr | 8 | tool 4, generator 1, home 1, support 1, android 1 |
 | /it | 8 | tool 4, generator 1, home 1, support 1, android 1 |
@@ -39,33 +39,33 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
 | template | yes | 50 | 0 | 500 |
-| template (invoice type) | yes, en-only | 16 | 0 | 140 |
+| template (invoice type) | yes, en-only | 16 | 0–12 | 128 |
 | industry | yes | 43 | 0 | 430 |
 | compare | en-only | 20 | 0 |  |
 | tool | yes | 4 | 4 |  |
 | generator | yes | 1 | 1 |  |
 | home | yes | 1 | 1 |  |
-| hub | yes, en-only | 3 | 0 | 20 |
+| hub | yes, en-only | 3 | 0–1 | 19 |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
 | legal | yes | 2 | 0 | 20 |
 | android | yes | 1 | 1 |  |
 | trust | yes | 2 | 0 | 20 |
 
-**1140 language versions still to write** for live pages.
+**1127 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | · | · | · | · | · | · | · | · | · |
-| template (invoice type) | 16 | · | · | · | · | · | · | · | · | · | · |
+| template (invoice type) | 16 | · | 12 | · | · | · | · | · | · | · | · |
 | industry | 43 | · | · | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| hub | 3 | · | · | · | · | · | · | · | · | · | · |
+| hub | 3 | · | 1 | · | · | · | · | · | · | · | · |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
@@ -76,7 +76,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-27 | 18 | template (invoice type) 16, trust 2 |
+| 2026-11-27 | 31 | template (invoice type) 16, trust 2, translations 13 (1 languages: template (invoice type) 12, hub 1) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -276,7 +276,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /da/vaerktoejer/momsberegner | momsberegner: beregn moms online (gratis) | tool | yes | 2026-11-18 |
 | /da/vaerktoejer/timeberegner | timeberegner: beregn timer til fakturaen | tool | yes | 2026-11-18 |
 
-### /de (8)
+### /de (21)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -288,6 +288,19 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /de/tools/mehrwertsteuer-rechner | mehrwertsteuer rechner | tool | yes | 2026-11-18 |
 | /de/tools/stundenrechner | stundenrechner: arbeitsstunden für die rechnung | tool | yes | 2026-11-18 |
 | /de/tools/stundensatz-rechner | stundensatz rechner | tool | yes | 2026-11-18 |
+| /de/vorlagen | rechnungsvorlagen | hub | yes | 2026-11-27 |
+| /de/vorlagen/anzahlungsrechnung | anzahlungsrechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/auslagen-weiterberechnen | auslagen weiterberechnen | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/dauerrechnung | dauerrechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/handelsrechnung | handelsrechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/kleinunternehmer-rechnung | kleinunternehmer rechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/rechnung-dienstleistung | rechnung dienstleistung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/rechnung-freiberufler | rechnung freiberufler | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/rechnung-lohn-und-material | rechnung lohn und material | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/schlussrechnung | schlussrechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/stundenrechnung | stundenrechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/subunternehmer-rechnung | subunternehmer rechnung | template (invoice type) | yes | 2026-11-27 |
+| /de/vorlagen/teilrechnung | teilrechnung | template (invoice type) | yes | 2026-11-27 |
 
 ### /es (8)
 

@@ -7874,7 +7874,7 @@
     "req_1_title": "The usual invoice details, in full",
     "req_1_text": "GOV.UK's invoicing guidance (checked November 2026) lists the basics for any UK invoice: a unique number, your and the client's names and addresses, a description, the supply date, the invoice date, the amount and the total owed.",
     "req_2_title": "No VAT line and no VAT number",
-    "req_2_text": "If you aren't registered you can't charge VAT and have no VAT number to show. Leave the tax rate empty so no tax line appears. A \"VAT 0%\" line suggests you're registered and zero-rating the sale.",
+    "req_2_text": "If you aren't registered you can't charge VAT and have no VAT number to show. Leave the tax rate at 0: Invoicor's PDF then shows a tax line of 0%, with no VAT charged, so the note below is what tells the client why. A \"VAT 0%\" line suggests you're registered and zero-rating the sale.",
     "req_3_title": "A short note saying why",
     "req_3_text": "Add a line such as \"Not registered for VAT. No VAT has been charged.\" In the UK that's good practice, not fixed wording. Some EU countries require a note: in Germany, a reference to the exemption under §19 UStG.",
     "req_4_title": "Prices that are the final price",
@@ -7931,8 +7931,8 @@
         "text": "Adding 20% to look established isn't allowed before you're registered, and you'd owe what you collected. If it already happened, ask HMRC or an accountant how to correct it."
       },
       {
-        "title": "Showing a 0% VAT line",
-        "text": "\"VAT 0%\" tells the client you're registered and the sale is zero-rated, which is a different status. Unregistered: no VAT line at all, and a note."
+        "title": "A 0% line without a note",
+        "text": "Invoicor always prints the tax line, so an invoice without VAT shows \"Tax (0%)\". On its own that can read as a registered business zero-rating the sale, which is a different status. The note \"Not registered for VAT\" right below the lines makes your status clear."
       },
       {
         "title": "Missing the moment you must register",

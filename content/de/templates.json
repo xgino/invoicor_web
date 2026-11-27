@@ -1,1 +1,1494 @@
-[]
+[
+  {
+    "slug": "anzahlungsrechnung",
+    "translation_of": "deposit-invoice",
+    "niche": "Anzahlungsrechnung",
+    "title": "Anzahlungsrechnung: Vorlage und Muster (PDF) | Invoicor",
+    "meta_description": "Anzahlungsrechnung schreiben: Pflichtangaben nach §14 UStG, Muster mit 19 % USt auf die Anzahlung und wie die Schlussrechnung sie abzieht. Als PDF.",
+    "h1": "Anzahlungsrechnung: Vorlage und Muster",
+    "subtitle": "Einen Teil des Preises vor Beginn der Arbeit abrechnen, auf einer eigenen Rechnung mit Auftragssumme, Anteil und Umsatzsteuer.",
+    "intro_paragraph": "Eine Anzahlungsrechnung fordert Geld für eine Leistung, die noch nicht erbracht ist: 30 % vor der Materialbestellung oder einen festen Betrag, der einen Termin sichert. Nach §14 Abs. 5 UStG braucht sie dieselben Pflichtangaben wie jede Rechnung, und die Umsatzsteuer steht schon auf der Anzahlung. Für Rechnungen an Unternehmen gilt: Bis 31. Dezember 2026 ist ein PDF mit Zustimmung des Empfängers erlaubt, bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug; ab 2028 müssen B2B-Rechnungen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD. An Privatkunden bleibt das PDF in Ordnung. Unten: die Angaben, ein Muster über 30 % eines Einbauschranks und der spätere Abzug in der Schlussrechnung.",
+    "include_title": "Was auf eine Anzahlungsrechnung gehört",
+    "what_to_include_intro": "Die Anzahlung bezahlt eine Arbeit, die noch niemand sehen kann. Die Rechnung muss deshalb selbst sagen, wofür das Geld ist.",
+    "req_1_title": "Das Wort Anzahlung in der ersten Zeile",
+    "req_1_text": "Die Überschrift des PDFs lautet „Rechnung“, und das ist richtig. Schreiben Sie „Anzahlung“ an den Anfang der ersten Position, etwa „Anzahlung 30 % auf Einbauschrank Besprechungsraum“. So bucht die Buchhaltung Ihres Kunden sie richtig, und Sie finden sie bei der Schlussrechnung schnell.",
+    "req_2_title": "Alle Pflichtangaben nach §14 Abs. 4 UStG",
+    "req_2_text": "Name und Anschrift von Ihnen und Ihrem Kunden, Ihre Steuernummer oder USt-IdNr., Ausstellungsdatum, eine fortlaufende Rechnungsnummer, Art und Umfang der Leistung, Nettobetrag, Steuersatz und Steuerbetrag. Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise, denn das Feld in Invoicor druckt „USt-IdNr.“.",
+    "req_3_title": "Auftragssumme und Anteil",
+    "req_3_text": "Nennen Sie den vereinbarten Gesamtpreis und den Anteil, den Sie jetzt verlangen. „30 % von 14.000,00 € netto“ zeigt dem Kunden sofort, was danach noch offen ist.",
+    "req_4_title": "Die Leistung und der geplante Zeitraum",
+    "req_4_text": "Beschreiben Sie die Leistung so genau wie auf einer normalen Rechnung und nennen Sie Angebot oder Auftrag mit Nummer und Datum. Den geplanten Leistungszeitraum schreiben Sie in die Position oder die Hinweise, denn Invoicor hat kein eigenes Feld für das Leistungsdatum. Was genau gilt, wenn der Termin noch offen ist, klären Sie mit Ihrem Steuerberater.",
+    "req_5_title": "Umsatzsteuer auf den Anzahlungsbetrag",
+    "req_5_text": "Die Steuer wird auf den angeforderten Betrag berechnet, nicht auf die ganze Auftragssumme: 19 % von 4.200,00 € sind 798,00 €. Weisen Sie Steuersatz und Steuerbetrag aus wie auf jeder Rechnung. Als Kleinunternehmer nach §19 UStG entfällt die Steuer; dann gehört ein Hinweis auf die Befreiung auf die Rechnung.",
+    "req_6_title": "Fälligkeit und was danach kommt",
+    "req_6_text": "Geben Sie ein Zahlungsziel an und schreiben Sie, wie es weitergeht: „Der Restbetrag wird mit der Schlussrechnung nach der Abnahme fällig.“ Die Anzahlungsrechnung bekommt die nächste Nummer in Ihrer normalen Folge.",
+    "what_to_include_outro": "Eine Anzahlungsrechnung hat oft nur eine Zeile. Die Angaben oben machen daraus einen Beleg, mit dem beide Seiten später sicher rechnen.",
+    "paper_label": "Anzahlungsrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Anzahlungsrechnung",
+    "sample_breakdown_intro": "Eine Tischlerei verlangt 30 % Anzahlung auf einen Einbauschrank für 14.000,00 € netto, bevor sie das Holz bestellt. Kunde ist eine Steuerkanzlei; das PDF ist mit ihrer Zustimmung bis Ende 2026 zulässig. 19 % USt auf den Anzahlungsbetrag.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Anzahlung 30 % auf Einbauschrank mit Schiebetüren, Besprechungsraum, Auftragssumme 14.000,00 € netto (Angebot A-2026-118 vom 2. November 2026)",
+        "qty": "1",
+        "rate": "4.200,00 €",
+        "amount": "4.200,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "4.200,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "798,00 €",
+    "sample_breakdown_balance": "4.998,00 €",
+    "sample_breakdown_notes": "Anzahlungsrechnung Nr. 2026-047 vom 16. November 2026. Geplanter Leistungszeitraum: 18.–22. Januar 2027 (Einbau). Zahlbar bis 30. November 2026; nach Zahlungseingang bestellen wir das Material. Die Anzahlung (4.200,00 € netto, 798,00 € USt) wird in der Schlussrechnung abgezogen. Restbetrag laut Angebot: 9.800,00 € netto zuzüglich USt.",
+    "industry_notes_title": "Was Sie über Anzahlungsrechnungen wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Umsatzsteuer schon bei Zahlungseingang",
+        "text": "Bei der Soll-Versteuerung entsteht die Umsatzsteuer sonst erst mit der Leistung. Bei Anzahlungen entsteht sie nach unserem Verständnis von §13 Abs. 1 Nr. 1a Satz 4 UStG schon mit Eingang der Zahlung; oft heißt das Mindest-Ist-Versteuerung. In der Regel gehört die Steuer dann in die Voranmeldung des Monats, in dem das Geld kam. Wie das in Ihrem Fall läuft, bestätigt Ihr Steuerberater."
+      },
+      {
+        "title": "Anzahlung, Vorauszahlung, Abschlag",
+        "text": "Anzahlung und Vorauszahlung meinen dasselbe: Geld vor Beginn der Arbeit. Eine Abschlagsrechnung fordert dagegen während eines laufenden Auftrags eine vorläufige Zahlung nach dem Fortschritt (§632a BGB). Beide werden in der Schlussrechnung verrechnet; die steuerlichen Einzelheiten zum Abschlag klärt Ihr Steuerberater."
+      },
+      {
+        "title": "So zieht die Schlussrechnung sie ab",
+        "text": "Die Schlussrechnung nennt den vollen Preis mit der ganzen Umsatzsteuer und zieht jede Anzahlung ab, über die Sie eine Rechnung ausgestellt haben, mit Nettobetrag und Steuer (§14 Abs. 5 UStG). Nennen Sie dabei Nummer und Datum dieser Anzahlungsrechnung. Fehlt der Abzug, steht die Steuer auf die Anzahlung zweimal auf Rechnungen; was das steuerlich bedeutet, klären Sie mit Ihrem Steuerberater."
+      }
+    ],
+    "mistakes_title": "Drei Fehler bei Anzahlungsrechnungen",
+    "mistakes": [
+      {
+        "title": "Die Anzahlung steht nur im Angebot",
+        "text": "„30 % bei Auftragserteilung“ im Angebot kann die Buchhaltung Ihres Kunden nicht bezahlen, und ihr fehlt der Beleg. Schicken Sie eine nummerierte Anzahlungsrechnung mit Zahlungsziel."
+      },
+      {
+        "title": "Steuer auf die ganze Auftragssumme",
+        "text": "Die USt gehört auf den angeforderten Betrag. Wer 19 % auf 14.000,00 € ausweist, aber 4.200,00 € verlangt, stellt eine falsche Rechnung aus und muss sie korrigieren."
+      },
+      {
+        "title": "Anzahlung in der Schlussrechnung vergessen",
+        "text": "Dann fordert die Schlussrechnung den vollen Preis, und der Kunde zahlt doppelt oder gar nicht. Suchen Sie vorher jede Anzahlungsrechnung zu diesem Auftrag heraus."
+      }
+    ],
+    "tip_title": "Ein Tipp für Anzahlungsrechnungen",
+    "pro_tip": "Schreiben Sie die Nummer der Anzahlungsrechnung auch in die Hinweise der Schlussrechnung, nicht nur in die Abzugszeile. Darüber verbindet die Buchhaltung Ihres Kunden die beiden Zahlungen, auch wenn sie von verschiedenen Konten kamen.",
+    "format_pdf_desc": "Ein PDF zeigt Auftragssumme, Anteil und Umsatzsteuer auf jedem Gerät gleich, und niemand ändert den Betrag unterwegs.",
+    "faq_title": "Fragen zur Anzahlungsrechnung",
+    "faqs": [
+      {
+        "question": "Muss ich Umsatzsteuer auf die Anzahlung ausweisen?",
+        "answer": "Wenn Sie umsatzsteuerpflichtig sind, ja: 19 % (oder 7 %, wenn die Leistung ermäßigt ist) auf den Anzahlungsbetrag. Die Steuer entsteht nach §13 Abs. 1 Nr. 1a Satz 4 UStG in der Regel schon mit Eingang der Zahlung. Als Kleinunternehmer nach §19 UStG weisen Sie keine Steuer aus und weisen auf die Befreiung hin, etwa „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“."
+      },
+      {
+        "question": "Wie ziehe ich die Anzahlung in der Schlussrechnung ab?",
+        "answer": "Nennen Sie den vollen Preis, dann eine Abzugszeile pro Anzahlung mit Nummer, Datum, Nettobetrag und Steuer. Im kostenlosen Generator kann eine Position einen negativen Preis haben, so steht der Abzug auf dem PDF. Die App erlaubt keine negativen Preise: Dort rechnen Sie den Restbetrag als Position ab und führen die Anzahlungsrechnung in den Hinweisen auf."
+      },
+      {
+        "question": "Was passiert, wenn der Kunde nach der Anzahlung storniert?",
+        "answer": "Was mit dem Geld geschieht, regeln Vertrag und Gesetz, nicht die Rechnung. Zahlen Sie zurück, ändert sich auch die Umsatzsteuer; wie Sie die Anzahlungsrechnung dann berichtigen, klärt Ihr Steuerberater."
+      },
+      {
+        "question": "Brauche ich für die Anzahlung eine E-Rechnung?",
+        "answer": "An Unternehmen ab 1. Januar 2028 ja, bis dahin gelten die Übergangsfristen aus dem ersten Absatz. An Privatkunden nicht. Kleinunternehmer nach §19 UStG und Rechnungen bis 250 € brutto sind von der Pflicht ausgenommen."
+      },
+      {
+        "question": "Kann Invoicor Anzahlungen verfolgen?",
+        "answer": "Nein. Sie können die Anzahlungsrechnung als bezahlt markieren, aber Invoicor verknüpft sie nicht mit der Schlussrechnung und führt keinen Saldo. Führen Sie pro Auftrag eine kurze Liste: Nummer, Datum, Betrag, bezahlt."
+      }
+    ],
+    "cta_title": "Ihre Anzahlungsrechnung",
+    "related": [
+      {
+        "name": "Schlussrechnung",
+        "slug": "schlussrechnung"
+      },
+      {
+        "name": "Teilrechnung",
+        "slug": "teilrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "schlussrechnung",
+    "translation_of": "final-invoice",
+    "niche": "Schlussrechnung",
+    "title": "Schlussrechnung: Anzahlungen richtig abziehen | Invoicor",
+    "meta_description": "Schlussrechnung schreiben: Gesamtpreis mit USt, jede Anzahlung und jeden Abschlag mit Netto und Steuer abziehen (§14 Abs. 5 UStG). Mit Muster als PDF.",
+    "h1": "Schlussrechnung mit Abzug der Anzahlungen",
+    "subtitle": "Einen in Teilen bezahlten Auftrag abschließen: Gesamtpreis mit Umsatzsteuer, jede Anzahlung mit Netto und Steuer abgezogen, und der Restbetrag.",
+    "intro_paragraph": "Die Schlussrechnung ist die letzte Rechnung eines Auftrags, der in Teilen bezahlt wurde. Sie nennt die gesamte Leistung zum vollen Preis mit der ganzen Umsatzsteuer und zieht dann jede Anzahlung und jeden Abschlag ab, über die Sie Rechnungen ausgestellt haben, mit Nettobetrag und Steuer (§14 Abs. 5 UStG). An Unternehmen ist ein PDF bis 31. Dezember 2026 mit Zustimmung des Empfängers erlaubt und bis Ende 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug; ab 2028 braucht es eine E-Rechnung (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. Unten: die Pflichtpunkte, ein Muster über 21.500 € netto nach einer Anzahlung und einem Abschlag, und wie Sie es im Generator und in der App umsetzen.",
+    "include_title": "Was auf eine Schlussrechnung gehört",
+    "what_to_include_intro": "Die Schlussrechnung beantwortet für Ihren Kunden eine Frage: Ist das wirklich alles, und stimmt es?",
+    "req_1_title": "Als Schlussrechnung gekennzeichnet",
+    "req_1_text": "Das PDF trägt die Überschrift „Rechnung“. Schreiben Sie „Schlussrechnung“ in die erste Position oder an den Anfang der Hinweise. Das sagt dem Kunden, dass nichts mehr folgt, und seiner Buchhaltung, dass sie die früheren Zahlungen abgleichen muss. Nutzen Sie das Wort erst, wenn die Leistung vollständig erbracht ist.",
+    "req_2_title": "Die gesamte Leistung zum vollen Preis",
+    "req_2_text": "Beginnen Sie mit der Auftragssumme und führen Sie jeden beauftragten Nachtrag als eigene Position auf. Wer nur den Rest abrechnet, versteckt, wie der offene Betrag zustande kommt.",
+    "req_3_title": "Die Umsatzsteuer auf den ganzen Auftrag",
+    "req_3_text": "Zeigen Sie die Steuer auf die gesamte Leistung: 19 % von 21.500,00 € sind 4.085,00 €. Die Anteile, die schon auf Anzahlungsrechnungen standen, ziehen Sie danach ab.",
+    "req_4_title": "Jede Anzahlung mit Nummer, Datum, Netto und Steuer",
+    "req_4_text": "Nach §14 Abs. 5 UStG sind die vereinnahmten Anzahlungen und die Steuer darauf abzuziehen, wenn Sie über sie Rechnungen ausgestellt haben. Eine Zeile pro Rechnung: „abzüglich Abschlagsrechnung Nr. 2026-044 vom 14.09.2026: 8.000,00 € netto, 1.520,00 € USt“. Eine Sammelzeile „abzüglich Zahlungen“ kann niemand prüfen.",
+    "req_5_title": "Pflichtangaben und Leistungszeitraum",
+    "req_5_text": "Die Schlussrechnung braucht alle Angaben nach §14 Abs. 4 UStG, auch das Leistungsdatum, bei längeren Aufträgen den Leistungszeitraum. Invoicor hat dafür kein Feld: Schreiben Sie „Leistungszeitraum: 4. August bis 30. Oktober 2026“ in die Position oder die Hinweise.",
+    "req_6_title": "Der Restbetrag mit Zahlungsziel",
+    "req_6_text": "Am Ende steht eine klare Zahl: der Betrag, der den Auftrag ausgleicht, mit Zahlungsziel und Bankverbindung. Die Schlussrechnung bekommt eine eigene, neue Nummer und verweist auf die früheren.",
+    "what_to_include_outro": "Rechnen Sie vor dem Senden nach: Gesamtpreis mit Steuer minus alle Anzahlungen mit Steuer ergibt genau den Restbetrag.",
+    "paper_label": "Schlussrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Schlussrechnung",
+    "sample_breakdown_intro": "Ein Trockenbaubetrieb schließt den Innenausbau einer Bürofläche ab: 20.000,00 € netto plus ein Nachtrag über 1.500,00 €. Davor: eine Anzahlung über 5.000,00 € und ein Abschlag über 8.000,00 € netto, beide mit 19 % USt und bezahlt. Der Kunde ist kein Bauunternehmen (kein §13b UStG). Das Muster zieht die Anzahlungen netto ab; die volle Rechnung mit der ganzen Steuer steht in den Hinweisen. Welche Darstellung Ihr Steuerberater bevorzugt, klären Sie vorab.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Schlussrechnung: Innenausbau Büro 2. OG laut Auftrag vom 21.07.2026, Leistungszeitraum 4.8.–30.10.2026",
+        "qty": "1",
+        "rate": "20.000,00 €",
+        "amount": "20.000,00 €"
+      },
+      {
+        "description": "Nachtrag N1: zusätzliche Trennwand Besprechungsraum, beauftragt am 02.09.2026",
+        "qty": "1",
+        "rate": "1.500,00 €",
+        "amount": "1.500,00 €"
+      },
+      {
+        "description": "abzüglich Anzahlung, Rechnung Nr. 2026-031 vom 24.07.2026, bezahlt am 31.07.2026, netto (USt darauf 950,00 €)",
+        "qty": "1",
+        "rate": "-5.000,00 €",
+        "amount": "-5.000,00 €"
+      },
+      {
+        "description": "abzüglich Abschlag, Rechnung Nr. 2026-044 vom 14.09.2026, bezahlt am 25.09.2026, netto (USt darauf 1.520,00 €)",
+        "qty": "1",
+        "rate": "-8.000,00 €",
+        "amount": "-8.000,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "8.500,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "1.615,00 €",
+    "sample_breakdown_balance": "10.115,00 €",
+    "sample_breakdown_notes": "Schlussrechnung Nr. 2026-061 vom 6. November 2026 zum Auftrag vom 21.07.2026. Gesamtleistung 21.500,00 € netto + 4.085,00 € USt (19 %) = 25.585,00 €. Abzüglich Anzahlung Nr. 2026-031: 5.000,00 € + 950,00 € USt = 5.950,00 €. Abzüglich Abschlag Nr. 2026-044: 8.000,00 € + 1.520,00 € USt = 9.520,00 €. Restbetrag: 8.500,00 € + 1.615,00 € USt = 10.115,00 €, zahlbar bis 20. November 2026. Weitere Rechnungen zu diesem Auftrag folgen nicht.",
+    "industry_notes_title": "Was Sie über Schlussrechnungen wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Warum auch die Steuer abgezogen wird",
+        "text": "Die Steuer auf die Anzahlungen stand schon auf den Anzahlungsrechnungen. Ohne Abzug wäre sie zweimal ausgewiesen. Darum verlangt §14 Abs. 5 UStG, vereinnahmte Anzahlungen und die Steuer darauf abzusetzen, soweit Rechnungen darüber ausgestellt wurden. Was ein fehlender Abzug bedeutet, klärt Ihr Steuerberater."
+      },
+      {
+        "title": "Schlussrechnung und Abnahme",
+        "text": "Im Werkvertrag folgt die Schlussrechnung meist auf die Abnahme. Abschläge nach §632a BGB sind vorläufig und werden hier verrechnet. Ob BGB oder VOB/B gilt und welche Fristen laufen, steht in Ihrem Vertrag; im Zweifel fragen Sie einen Anwalt."
+      },
+      {
+        "title": "Ein Steuersatz pro Rechnung",
+        "text": "Invoicor rechnet mit einem Steuersatz pro Rechnung. Enthält der Auftrag Leistungen zu 19 % und zu 7 %, schreiben Sie zwei Rechnungen oder fragen Sie Ihren Steuerberater, wie Sie aufteilen."
+      }
+    ],
+    "mistakes_title": "Drei Fehler bei Schlussrechnungen",
+    "mistakes": [
+      {
+        "title": "Nur den letzten Teil abrechnen",
+        "text": "Eine Schlussrechnung, die nur die restliche Arbeit zeigt, verschweigt Gesamtpreis und ganze Steuer, auf denen der Abzug nach §14 Abs. 5 UStG aufbaut. Erst der volle Preis, dann der Abzug."
+      },
+      {
+        "title": "Brutto abziehen und dann Steuer aufschlagen",
+        "text": "Wer 15.470,00 € brutto von 21.500,00 € netto abzieht und auf den Rest 19 % aufschlägt, verlangt zu wenig und weist eine falsche Steuer aus. Ziehen Sie netto ab, oder brutto erst nach der Steuer."
+      },
+      {
+        "title": "Ein Abschlag fehlt",
+        "text": "Drei Abschläge bezahlt, zwei abgezogen: Der Kunde zahlt zu viel oder hält die Zahlung zurück. Invoicor verknüpft Rechnungen nicht und führt keinen Saldo; legen Sie vorher selbst eine Liste aller Rechnungen zum Auftrag an."
+      }
+    ],
+    "tip_title": "Ein Tipp für Schlussrechnungen",
+    "pro_tip": "Schreiben Sie die komplette Abrechnung in die Hinweise: Gesamtleistung netto, Steuer, brutto, jede Anzahlung mit Netto und Steuer, dann der Rest. Genau diese Aufstellung prüft die Buchhaltung Ihres Kunden zuerst.",
+    "format_pdf_desc": "Ein PDF hält Gesamtpreis, jeden Abzug und den Restbetrag in einem festen Layout, so kommt die freigegebene Zahl unverändert in der Buchhaltung an.",
+    "faq_title": "Fragen zur Schlussrechnung",
+    "faqs": [
+      {
+        "question": "Ist eine Schlussrechnung dasselbe wie eine Endrechnung?",
+        "answer": "Ja. Beide meinen die letzte Rechnung eines in Teilen bezahlten Auftrags. Entscheidend ist der Inhalt: Gesamtpreis, ganze Steuer, jede Anzahlung mit Netto und Steuer abgezogen, Restbetrag."
+      },
+      {
+        "question": "Muss ich die Umsatzsteuer jeder Anzahlung einzeln zeigen?",
+        "answer": "§14 Abs. 5 UStG verlangt den Abzug der vereinnahmten Anzahlungen und der Steuer darauf, soweit Rechnungen darüber ausgestellt wurden. Am klarsten nennen Sie pro Anzahlung Nummer, Datum, Netto und Steuer."
+      },
+      {
+        "question": "Wie setze ich das im Generator und in der App um?",
+        "answer": "Im kostenlosen Generator: Positionen zum vollen Preis, dann pro Anzahlung eine Position mit negativem Nettobetrag; die Steuer wird auf den Rest gerechnet, die Gesamtaufstellung steht in den Hinweisen. Die App erlaubt keine negativen Preise: Rechnen Sie dort den Rest netto als eine Position ab und führen Sie Gesamtpreis, Steuer und jede Anzahlung in den Hinweisen auf."
+      },
+      {
+        "question": "Was, wenn eine Abschlagsrechnung noch nicht bezahlt ist?",
+        "answer": "§14 Abs. 5 UStG spricht von vereinnahmten Anzahlungen. Wie Sie einen noch offenen Abschlag behandeln, klären Sie mit Ihrem Steuerberater. Der Kunde muss in jedem Fall sehen, was er insgesamt noch schuldet."
+      },
+      {
+        "question": "Kann ich eine gesendete Schlussrechnung ändern?",
+        "answer": "Nicht direkt. In Invoicor ist eine gesendete Rechnung gesperrt: Duplizieren Sie sie, korrigieren Sie die Kopie und markieren Sie die alte als storniert. Wie Sie in Deutschland korrekt berichtigen, klärt Ihr Steuerberater."
+      }
+    ],
+    "cta_title": "Ihre Schlussrechnung",
+    "related": [
+      {
+        "name": "Anzahlungsrechnung",
+        "slug": "anzahlungsrechnung"
+      },
+      {
+        "name": "Teilrechnung",
+        "slug": "teilrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "teilrechnung",
+    "translation_of": "milestone-invoice",
+    "niche": "Teilrechnung",
+    "title": "Teilrechnung: Vorlage, Muster und Unterschied | Invoicor",
+    "meta_description": "Teilrechnung schreiben: einen fertigen, abgenommenen Teil endgültig abrechnen. Der Unterschied zur Abschlagsrechnung, Muster mit 19 % USt, als PDF.",
+    "h1": "Teilrechnung für abgenommene Teilleistungen",
+    "subtitle": "Einen fertigen, abgenommenen Teil eines Auftrags endgültig abrechnen, mit Bezug zum Vertrag, Abnahmedatum und Umsatzsteuer.",
+    "intro_paragraph": "Eine Teilrechnung rechnet einen abgegrenzten Teil eines Auftrags ab, der fertig und abgenommen ist: das erste Gebäude einer Anlage, die gepflasterte Einfahrt vor den Grünflächen. Für diesen Teil ist sie endgültig. Das unterscheidet sie von der Abschlagsrechnung, die während der laufenden Arbeit eine vorläufige Zahlung nach dem Fortschritt verlangt (§632a BGB) und erst in der Schlussrechnung verrechnet wird. An Unternehmen ist ein PDF bis 31. Dezember 2026 mit Zustimmung des Empfängers erlaubt und bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 müssen es E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. Unten: die Pflichtpunkte, ein Muster für Teil 1 von 2 eines Auftrags über Außenanlagen und wann welche Rechnung passt.",
+    "include_title": "Was auf eine Teilrechnung gehört",
+    "what_to_include_intro": "Ihr Kunde prüft eine Teilrechnung gegen den Vertrag und das Abnahmeprotokoll. Diese sechs Punkte machen die Prüfung leicht.",
+    "req_1_title": "Teilrechnung und Teil benennen",
+    "req_1_text": "Schreiben Sie „Teilrechnung“ und den Teil so, wie der Vertrag ihn nennt, in die erste Position: „Teilrechnung 1 von 2: Hofeinfahrt und Stellplätze“. Das PDF trägt die Überschrift „Rechnung“; die Art der Rechnung steht in der Zeile.",
+    "req_2_title": "Der Vertrag, der die Teile festlegt",
+    "req_2_text": "Eine Teilrechnung setzt voraus, dass der Auftrag in getrennte Teile mit eigenem Preis aufgeteilt ist. Nennen Sie Vertrag oder Auftrag mit Datum, damit der Kunde den Teil zuordnen kann. Gibt der Vertrag keine Teile her, ist eine Abschlagsrechnung meist die passende Form.",
+    "req_3_title": "Die Abnahme mit Datum",
+    "req_3_text": "Die Teilrechnung rechnet einen fertigen und abgenommenen Teil ab. Schreiben Sie das Datum der Abnahme in die Position, etwa „abgenommen am 18.09.2026, Protokoll vom selben Tag“. Ohne Abnahme ist es keine Teilrechnung.",
+    "req_4_title": "Der Leistungszeitraum dieses Teils",
+    "req_4_text": "§14 Abs. 4 UStG verlangt das Leistungsdatum. Bei einer Teilrechnung ist das der Zeitraum, in dem genau dieser Teil ausgeführt wurde. Invoicor hat dafür kein Feld: Schreiben Sie „Leistungszeitraum: 1.–16. September 2026“ in die Position oder die Hinweise.",
+    "req_5_title": "Endgültiger Preis mit Umsatzsteuer",
+    "req_5_text": "Für den Teil rechnen Sie den vereinbarten Preis ab, mit Nettobetrag, Steuersatz und Steuerbetrag wie auf jeder Rechnung. Nachträge, die zu diesem Teil gehören, stehen als eigene Positionen darunter, mit dem Datum der Beauftragung.",
+    "req_6_title": "Was noch aussteht",
+    "req_6_text": "Schreiben Sie in die Hinweise, welche Teile noch folgen und zu welchem Preis: „Teil 2: Grünflächen und Bepflanzung, 17.500,00 € netto, nach Abnahme.“ So sieht der Kunde jederzeit, wie viel vom Auftrag schon abgerechnet ist.",
+    "what_to_include_outro": "Zusammen ergeben alle Teilrechnungen den Auftragswert plus Nachträge. Jede ist für ihren Teil abgeschlossen; die letzte schließt den Auftrag.",
+    "paper_label": "Teilrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Teilrechnung",
+    "sample_breakdown_intro": "Ein Garten- und Landschaftsbaubetrieb gestaltet die Außenanlagen eines Autohauses für 32.000,00 € netto, laut Vertrag in zwei Teilen. Teil 1, die Hofeinfahrt mit Stellplätzen für 14.500,00 €, ist fertig und abgenommen. Dazu kommt ein Nachtrag für zusätzliche Randsteine. Das Autohaus ist kein Bauunternehmen; das Muster rechnet mit 19 % USt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Teilrechnung 1 von 2: Hofeinfahrt und 6 Stellplätze gepflastert, laut Vertrag vom 12.05.2026, abgenommen am 18.09.2026",
+        "qty": "1",
+        "rate": "14.500,00 €",
+        "amount": "14.500,00 €"
+      },
+      {
+        "description": "Nachtrag N1: zusätzliche Randsteine an den Stellplätzen, beauftragt am 20.08.2026",
+        "qty": "18 m",
+        "rate": "42,50 €",
+        "amount": "765,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "15.265,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "2.900,35 €",
+    "sample_breakdown_balance": "18.165,35 €",
+    "sample_breakdown_notes": "Teilrechnung Nr. 2026-052 vom 21. September 2026. Leistungszeitraum Teil 1: 1.–16. September 2026. Auftragswert 32.000,00 € netto; Teil 2 (Grünflächen und Bepflanzung, 17.500,00 € netto) wird nach seiner Abnahme gesondert abgerechnet. Zahlbar bis 5. Oktober 2026.",
+    "industry_notes_title": "Was Sie über Teilrechnungen wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Teilrechnung oder Abschlagsrechnung?",
+        "text": "Die Teilrechnung rechnet einen getrennten, fertigen und abgenommenen Teil endgültig ab. Die Abschlagsrechnung verlangt während der laufenden Arbeit eine vorläufige Zahlung nach dem Fortschritt (§632a BGB), etwa „Abschlag 2: 40 % der Pflasterarbeiten“, und wird in der Schlussrechnung verrechnet. Faustregel: Gibt es für den Teil eine Abnahme, passt die Teilrechnung; wird nur Fortschritt gemessen, der Abschlag."
+      },
+      {
+        "title": "Steuer für die Teilleistung",
+        "text": "Ist ein Teil im Vertrag abgegrenzt und abgenommen, entsteht die Umsatzsteuer nach unserem Verständnis für diesen Teil, nicht erst am Ende des ganzen Auftrags. Ob Ihr Vertrag solche Teilleistungen wirklich vorsieht und in welchem Zeitraum Sie die Steuer melden, prüfen Sie mit Ihrem Steuerberater."
+      },
+      {
+        "title": "Bauleistungen an Bauunternehmen",
+        "text": "Erbringt Ihr Kunde selbst regelmäßig Bauleistungen oder hat er eine gültige Bescheinigung seines Finanzamts (USt 1 TG), schuldet er nach §13b UStG die Steuer. Die Rechnung zeigt dann keine USt und den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§14a Abs. 5 UStG). Für Planung und Bauüberwachung gilt das nicht."
+      }
+    ],
+    "mistakes_title": "Drei Fehler bei Teilrechnungen",
+    "mistakes": [
+      {
+        "title": "Abrechnen vor der Abnahme",
+        "text": "Wer am Tag der Fertigstellung abrechnet, bevor der Kunde abgenommen hat, schreibt in Wahrheit einen Abschlag. Warten Sie auf die Abnahme und nennen Sie ihr Datum."
+      },
+      {
+        "title": "Einen Abschlag Teilrechnung nennen",
+        "text": "„Teilrechnung: 50 % der Arbeiten“ misst Fortschritt, keinen fertigen Teil. Das verwirrt die Buchhaltung des Kunden und später die Schlussrechnung. Nennen Sie solche Rechnungen Abschlagsrechnung und verrechnen Sie sie am Ende."
+      },
+      {
+        "title": "Teilpreise, die nirgends stehen",
+        "text": "Sind die Preise der Teile im Vertrag nicht festgelegt, fehlt die Grundlage für den Betrag. Legen Sie Teile und Preise vor Beginn schriftlich fest, so dass alle Teilrechnungen genau den Auftragswert ergeben."
+      }
+    ],
+    "tip_title": "Ein Tipp für Teilrechnungen",
+    "pro_tip": "Duplizieren Sie für Teil 2 die erste Teilrechnung. Kunde, Vertragsbezug und Zahlungsbedingungen bleiben; Sie ändern den Teil, das Abnahmedatum, den Leistungszeitraum und in den Hinweisen, was schon abgerechnet ist.",
+    "format_pdf_desc": "Ein PDF hält Teil, Abnahmedatum und Preis fest. Genau dieses Dokument leitet die Bauleitung oder der Projektverantwortliche Ihres Kunden zur Freigabe an die Buchhaltung weiter.",
+    "faq_title": "Fragen zur Teilrechnung",
+    "faqs": [
+      {
+        "question": "Ist eine Teilrechnung endgültig?",
+        "answer": "Für den abgerechneten Teil ja. Sie rechnet einen fertigen, abgenommenen Teil zum vereinbarten Preis ab. Die übrigen Teile folgen auf eigenen Rechnungen, jede nach ihrer eigenen Abnahme."
+      },
+      {
+        "question": "Brauche ich nach Teilrechnungen eine Schlussrechnung?",
+        "answer": "Nicht unbedingt. Rechnet jede Teilrechnung ihren Teil endgültig ab, schließt die letzte Teilrechnung oft den Auftrag. Eine Schlussrechnung, die frühere Zahlungen mit Netto und Steuer abzieht (§14 Abs. 5 UStG), brauchen Sie vor allem, wenn Anzahlungen oder Abschläge geflossen sind. Im Zweifel fragen Sie Ihren Steuerberater."
+      },
+      {
+        "question": "Kann ich Teilrechnungen und Abschläge kombinieren?",
+        "answer": "Ja, aber halten Sie sie getrennt. Ein Abschlag gehört zu einem Teil, der noch läuft, und wird mit dessen Abrechnung verrechnet. Nennen Sie in jeder Rechnung, auf welchen Teil sie sich bezieht."
+      },
+      {
+        "question": "Wohin gehören Nachträge?",
+        "answer": "Auf die Teilrechnung des Teils, zu dem sie gehören, als eigene Positionen mit dem Datum der Beauftragung. So bleibt der Teilpreis gleich dem Vertrag, und der Nachtrag ist sichtbar."
+      },
+      {
+        "question": "Was tun, wenn der Kunde die Abnahme verweigert?",
+        "answer": "Dann stellen Sie die Teilrechnung noch nicht. Beseitigen Sie die Mängel, holen Sie die Abnahme nach und rechnen Sie dann ab. Haben Sie schon gesendet, markieren Sie die Rechnung in Invoicor als storniert und klären Sie mit Ihrem Steuerberater, wie Sie sie korrekt aufheben."
+      }
+    ],
+    "cta_title": "Ihre Teilrechnung",
+    "related": [
+      {
+        "name": "Schlussrechnung",
+        "slug": "schlussrechnung"
+      },
+      {
+        "name": "Anzahlungsrechnung",
+        "slug": "anzahlungsrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "stundenrechnung",
+    "translation_of": "hourly-invoice",
+    "niche": "Stundenrechnung",
+    "title": "Stundenrechnung: Vorlage und Muster als PDF | Invoicor",
+    "meta_description": "Stundenrechnung schreiben: Stunden mal Stundensatz, Stundennachweis und Leistungszeitraum. Mit Muster in Euro, kostenlos als PDF erstellen.",
+    "h1": "Stundenrechnung: Vorlage und Muster",
+    "subtitle": "Abrechnung nach Zeit: Stunden mal Stundensatz, mit einem Stundennachweis, den Ihr Kunde Zeile für Zeile prüfen kann.",
+    "intro_paragraph": "Eine Stundenrechnung berechnet Zeit statt eines fertigen Ergebnisses. Jede Position besteht aus zwei Zahlen: den geleisteten Stunden und dem vereinbarten Stundensatz. Das ist die offenste Art abzurechnen und zugleich die, bei der Kunden am genauesten hinsehen: an welchem Tag, für welche Aufgabe, wie viele Stunden, zu welchem Satz? Hier lesen Sie, wie Sie Stunden und Zuschläge aufführen, wie der Stundennachweis zur Rechnung passt und wo der Leistungszeitraum hingehört. Rechnen Sie für Firmen ab, gilt: Bis 31. Dezember 2026 ist ein PDF an Unternehmen erlaubt, wenn der Empfänger zustimmt, bei höchstens 800.000 € Vorjahresumsatz bis Ende 2027; ab 1. Januar 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. An Privatkunden bleibt das PDF in Ordnung.",
+    "include_title": "Was auf eine Stundenrechnung gehört",
+    "what_to_include_intro": "Neben den Pflichtangaben nach § 14 Abs. 4 UStG (Name und Anschrift beider Seiten, Steuernummer oder USt-IdNr., fortlaufende Rechnungsnummer, Datum, Nettobetrag, Steuersatz und Steuerbetrag) braucht eine Stundenrechnung vor allem eines: Stunden, die sich nachprüfen lassen.",
+    "req_1_title": "Eine Position pro Tag oder Aufgabe",
+    "req_1_text": "Gliedern Sie die Stunden so, wie Ihr Kunde über den Auftrag denkt: nach Aufgaben bei einem Projekt („Umzug Mailserver, 6,5 Std.“), nach Tagen, wenn er Ihre Anwesenheit bezahlt. Eine einzige Zeile „42 Stunden Arbeit“ verbirgt genau das, was er für die Freigabe braucht.",
+    "req_2_title": "Stunden als Dezimalzahl",
+    "req_2_text": "Schreiben Sie 2,25 Std. statt 2 Std. 15 Min., dann rechnet die Menge sauber mit dem Satz. 15 Minuten sind 0,25, 30 Minuten 0,5, 45 Minuten 0,75. Bei 20 Minuten (0,33) entstehen krumme Beträge: Ein Takt von 15 Minuten vermeidet das.",
+    "req_3_title": "Der Stundensatz in jeder Zeile",
+    "req_3_text": "Nennen Sie den Satz auch dann in jeder Position, wenn er sich wiederholt. Ein zweiter Satz für Notfall-, Wochenend- oder Nachtarbeit steht dann sichtbar in einer eigenen Zeile, statt in einem Mischsatz zu verschwinden.",
+    "req_4_title": "Der Leistungszeitraum",
+    "req_4_text": "§ 14 Abs. 4 UStG verlangt den Zeitpunkt der Leistung, bei Stunden über mehrere Tage also den Zeitraum. Invoicor hat dafür kein eigenes Feld: Schreiben Sie ihn in die Positionsbeschreibung oder in die Hinweise, etwa „Leistungszeitraum: 2.–20. März 2026“. Das Rechnungsdatum bleibt der Tag, an dem Sie die Rechnung ausstellen.",
+    "req_5_title": "Ihre Taktung, einmal erklärt",
+    "req_5_text": "Schreiben Sie in die Hinweise, wie Sie runden: auf die angefangene Viertelstunde, im 6-Minuten-Takt oder mit einer Mindeststunde je Einsatz. Kunden akzeptieren eine Rundung, die vereinbart war, nicht eine, die sie selbst entdecken.",
+    "req_6_title": "Der Stundennachweis",
+    "req_6_text": "Bei kurzen Rechnungen sind die Positionen der Nachweis: Datum, Tätigkeit, Stunden. Bei längeren Aufträgen fassen Sie pro Tag oder Woche zusammen und schicken die Einzelaufstellung als eigene Datei in derselben E-Mail mit. Verlangt der Kunde einen gegengezeichneten Stundenzettel, legen Sie ihn in seiner Form bei.",
+    "what_to_include_outro": "Die Rechnung ist die Zusammenfassung; Ihre Zeiterfassung ist das, was Sie zeigen, wenn jemand fragt, wie aus einem Dienstag sechs Stunden wurden.",
+    "sample_breakdown_title": "Beispiel einer Stundenrechnung",
+    "paper_label": "Stundenrechnung · Muster",
+    "sample_breakdown_intro": "Ein IT-Dienstleister aus Köln rechnet bei einer Steuerkanzlei die Betreuung im März ab: drei Positionen zu 95,00 € netto pro Stunde und ein Notfalleinsatz mit dem vereinbarten Zuschlag von 50 %. Geschäftskunde, Regelsteuersatz 19 % nach § 12 UStG.",
+    "sample_breakdown_rows": [
+      {
+        "description": "2.–6. März: Umzug Mailserver und Postfächer",
+        "qty": "6,5 Std.",
+        "rate": "95,00 €",
+        "amount": "617,50 €"
+      },
+      {
+        "description": "9. März: Einrichtung zweier neuer Arbeitsplätze",
+        "qty": "3,25 Std.",
+        "rate": "95,00 €",
+        "amount": "308,75 €"
+      },
+      {
+        "description": "11. März: Notfalleinsatz Druckerausfall, Zuschlag 50 %",
+        "qty": "1,5 Std.",
+        "rate": "142,50 €",
+        "amount": "213,75 €"
+      },
+      {
+        "description": "16.–20. März: Prüfung Datensicherung, Schulung Passwortmanager",
+        "qty": "4 Std.",
+        "rate": "95,00 €",
+        "amount": "380,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.520,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "288,80 €",
+    "sample_breakdown_balance": "1.808,80 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 2.–20. März 2026. Abrechnung im 15-Minuten-Takt. Notfallzuschlag 50 % für Einsätze am selben Tag laut Rahmenvertrag vom 8. Januar 2026. Abgerechnet im März: 15,25 von 30 vereinbarten Stunden. Stundennachweis als separate Datei anbei. Zahlbar innerhalb von 14 Tagen ohne Abzug.",
+    "industry_notes_title": "Was bei Stundenrechnungen gilt",
+    "industry_notes": [
+      {
+        "title": "Stunden zuerst woanders erfassen",
+        "text": "Weder die Invoicor App noch der kostenlose Generator haben eine Stoppuhr. Halten Sie Ihre Zeiten im Kalender, in einem Zeiterfassungsprogramm oder auf Papier fest und tragen Sie die Summen ein. In der App speichern Sie „Stunde Standard“ und „Stunde Notfall“ einmal als Produkte und fügen sie jeder neuen Rechnung mit einem Tipp hinzu."
+      },
+      {
+        "title": "Zuschläge und Fahrzeit sind Vereinbarungssache",
+        "text": "Ein Zuschlag für Wochenende oder Notfall, eine Mindestabrechnung je Einsatz oder Fahrzeit zum halben Satz sind fair, wenn der Kunde vorher zugestimmt hat. Halten Sie das im Angebot oder Rahmenvertrag fest und wiederholen Sie es in den Hinweisen der Rechnung."
+      },
+      {
+        "title": "Stunden, Pauschale oder Dauerrechnung",
+        "text": "Die Stundenrechnung berechnet die tatsächlich geleisteten Stunden. Zahlt der Kunde jeden Monat denselben Betrag für einen Wartungsvertrag, passt eine Pauschale oder eine Dauerrechnung besser. Wiederholt sich die Abrechnung, duplizieren Sie in Invoicor die Rechnung vom Vormonat und ändern Zeitraum und Stunden."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Stundenrechnungen",
+    "mistakes": [
+      {
+        "title": "Nur eine Stundensumme",
+        "text": "„Beratung, 18 Std., 1.710,00 €“ überlässt dem Kunden die Detektivarbeit. Die Folge ist meist eine Rückfrage und eine spätere Zahlung."
+      },
+      {
+        "title": "Zwei Sätze in einer Zeile",
+        "text": "4 Std. Standard und 1,5 Std. Notfall als „5,5 Std. zu rund 107,95 €“ ist richtig gerechnet und trotzdem kaum zu prüfen. Eine Zeile pro Satz, dann lässt sich jede Position für sich nachvollziehen."
+      },
+      {
+        "title": "Das Stundenkontingent ohne Rückfrage überschreiten",
+        "text": "Hat der Kunde bis zu 20 Stunden freigegeben und die Rechnung zeigt 26, sind die sechs zusätzlichen Stunden eine Verhandlung, keine Forderung. Fragen Sie vorher nach und vermerken Sie die Freigabe in den Hinweisen."
+      }
+    ],
+    "tip_title": "Ein Tipp für Stundenrechnungen",
+    "pro_tip": "Beschreiben Sie jede Position als Ergebnis, nicht als Beschäftigung: „Freigabe-Laufwerk nach Ausfall wiederhergestellt“ liest sich wie geleistete Arbeit, „An Laufwerk gearbeitet“ wie abgesessene Zeit. Gleiche Stunden, gleicher Satz, weniger Rückfragen.",
+    "format_pdf_desc": "Ein PDF hält Stunden, Sätze und Leistungszeitraum genau so fest, wie Sie sie gesendet haben. Die Freigabe beim Kunden und Ihre Unterlagen beziehen sich so immer auf dieselben Zahlen.",
+    "faq_title": "Fragen zur Stundenrechnung",
+    "faqs": [
+      {
+        "question": "Wie berechne ich eine Stundenrechnung?",
+        "answer": "Multiplizieren Sie in jeder Position die Stunden mit dem Stundensatz und addieren Sie die Positionen zur Zwischensumme. Rabatt und Umsatzsteuer kommen danach. Im kostenlosen Generator tragen Sie die Stunden als Menge und den Satz als Preis ein; die Summen rechnen sich selbst."
+      },
+      {
+        "question": "Muss ein Stundennachweis zur Rechnung?",
+        "answer": "§ 14 Abs. 4 UStG nennt Umfang und Art der Leistung, einen Stundenzettel nennt er nicht. Viele Kunden, vor allem Agenturen und größere Firmen, wollen ihn trotzdem, teils unterschrieben. Was Ihr Vertrag dazu sagt, geht vor; ob Ihre Positionen genau genug sind, klären Sie im Zweifel mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie runde ich die Arbeitszeit?",
+        "answer": "Legen Sie eine Regel fest und nennen Sie sie. Verbreitet sind die Viertelstunde oder der 6-Minuten-Takt (0,1 Std.). Runden Sie jeden Eintrag einzeln, nicht nur die Wochensumme, und bleiben Sie bei der Regel aus dem Vertrag."
+      },
+      {
+        "question": "Darf ich für Wochenende oder Notfälle mehr berechnen?",
+        "answer": "Ja, wenn der Kunde dem vorher zugestimmt hat. Zeigen Sie den höheren Satz in einer eigenen Zeile mit kurzem Grund, etwa „Samstagszuschlag 25 %“ oder „Notfall, Zuschlag 50 %“."
+      },
+      {
+        "question": "Erfasst Invoicor meine Arbeitszeit?",
+        "answer": "Nein. Invoicor erstellt die Rechnung, eine Zeiterfassung gibt es nicht. Tragen Sie die erfassten Stunden als Menge ein und den Leistungszeitraum in die Beschreibung oder die Hinweise."
+      }
+    ],
+    "cta_title": "Ihre Stundenrechnung",
+    "related": [
+      {
+        "name": "Rechnung für Freiberufler",
+        "slug": "rechnung-freiberufler"
+      },
+      {
+        "name": "Dienstleistungsrechnung",
+        "slug": "rechnung-dienstleistung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "dauerrechnung",
+    "translation_of": "monthly-invoice",
+    "niche": "Dauerrechnung",
+    "title": "Dauerrechnung oder Monatsrechnung: Muster | Invoicor",
+    "meta_description": "Dauerrechnung für Wartung, Reinigung oder Miete: eine Rechnung für das ganze Jahr oder eine pro Monat. Pflichtangaben, Muster mit 19 % USt, als PDF.",
+    "h1": "Dauerrechnung und wiederkehrende Rechnung",
+    "subtitle": "Laufende Leistungen in Deutschland abrechnen: eine Dauerrechnung für den ganzen Zeitraum oder eine Rechnung pro Monat, jeweils mit Leistungszeitraum und Umsatzsteuer.",
+    "intro_paragraph": "Für eine Leistung, die jeden Monat gleich läuft, wie Wartung, Büroreinigung oder ein Mietvertrag, gibt es zwei Wege. Die Dauerrechnung wird einmal ausgestellt und gilt für viele Zeiträume, etwa für ein ganzes Jahr. Oder Sie schreiben jeden Monat eine eigene Rechnung, die wiederkehrende Rechnung. Beide brauchen die Pflichtangaben nach §14 Abs. 4 UStG. An Unternehmen ist ein PDF bis 31. Dezember 2026 mit Zustimmung des Empfängers erlaubt und bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 braucht es E-Rechnungen (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen und keine automatischen Serienrechnungen. Unten: beide Wege, ein Muster für eine Dauerrechnung über ein Jahr und wie Sie mit Invoicor jeden Monat schnell fertig sind.",
+    "include_title": "Was auf eine Dauerrechnung gehört",
+    "what_to_include_intro": "Eine Dauerrechnung liegt ein Jahr lang in der Buchhaltung Ihres Kunden, eine Monatsrechnung kommt jeden Monat neu. In beiden Fällen müssen diese sechs Punkte stimmen.",
+    "req_1_title": "Der Vertrag, auf dem sie beruht",
+    "req_1_text": "Die Dauerrechnung ersetzt viele einzelne Rechnungen, also muss sie den Vertrag klar benennen: Art, Datum, Ort der Leistung. „Reinigungsvertrag vom 1. Dezember 2026, Büro Hafenstraße 12, Hamburg“. Bei Monatsrechnungen hilft derselbe Bezug auf jeder Rechnung.",
+    "req_2_title": "Der Zeitraum, den sie abdeckt",
+    "req_2_text": "Schreiben Sie Anfang und Ende: „Leistungszeitraum: 1. Januar bis 31. Dezember 2027, monatlich“. Auf einer Monatsrechnung steht der einzelne Monat: „Leistungszeitraum: 1.–31. Januar 2027“. Invoicor hat kein Feld für das Leistungsdatum, der Zeitraum gehört in die Position oder die Hinweise.",
+    "req_3_title": "Betrag pro Monat und Steuer pro Zeitraum",
+    "req_3_text": "Zeigen Sie für jeden Zeitraum Nettobetrag, Steuersatz und Steuerbetrag: „monatlich 640,00 € netto + 121,60 € USt (19 %) = 761,60 €“. So kann Ihr Kunde jede Zahlung mit der richtigen Steuer buchen.",
+    "req_4_title": "Ein Zahlungsplan mit Fälligkeit",
+    "req_4_text": "Nennen Sie, wann jede Rate fällig ist: „zahlbar jeweils bis zum 5. des Monats“. Sonst zeigt die Dauerrechnung nur eine große Summe, die niemand auf einmal zahlen soll.",
+    "req_5_title": "Eine Nummer, oder eine pro Monat",
+    "req_5_text": "Die Dauerrechnung hat eine Rechnungsnummer für den ganzen Zeitraum. Monatsrechnungen bekommen jede ihre eigene, fortlaufende Nummer; Jahr und Monat darin, etwa 2027-01, machen die Reihe leicht lesbar.",
+    "req_6_title": "Änderungen sichtbar machen",
+    "req_6_text": "Ändert sich der Preis oder der Steuersatz, passt die alte Dauerrechnung nicht mehr. Stellen Sie dann eine neue für die restlichen Zeiträume aus und klären Sie mit Ihrem Steuerberater, wie Sie die alte anpassen. Bei Monatsrechnungen ändern Sie einfach die nächste.",
+    "what_to_include_outro": "Welche Form Sie wählen, hängt auch vom Kunden ab: Manche Buchhaltungen wollen jeden Monat einen Beleg, andere sind mit einer Rechnung für das Jahr zufrieden. Fragen Sie vor der ersten Rechnung.",
+    "paper_label": "Dauerrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Dauerrechnung",
+    "sample_breakdown_intro": "Ein Reinigungsbetrieb reinigt ein Büro zweimal pro Woche zum festen Monatspreis von 640,00 € netto und stellt für 2027 eine Dauerrechnung aus. Der Betrieb hatte im Vorjahr weniger als 800.000 € Umsatz, ein PDF an den Geschäftskunden ist also bis Ende 2027 zulässig. Der offene Betrag ist die Jahressumme; gezahlt wird monatlich nach dem Zahlungsplan in den Hinweisen.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Unterhaltsreinigung Büro Hafenstraße 12, 2 × wöchentlich, Monatspauschale laut Vertrag vom 01.12.2026, Leistungszeitraum Januar bis Dezember 2027",
+        "qty": "12 Monate",
+        "rate": "640,00 €",
+        "amount": "7.680,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "7.680,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "1.459,20 €",
+    "sample_breakdown_balance": "9.139,20 €",
+    "sample_breakdown_notes": "Dauerrechnung Nr. 2026-090 vom 15. Dezember 2026 für den Zeitraum 1. Januar bis 31. Dezember 2027. Je Monat: 640,00 € netto + 121,60 € USt (19 %) = 761,60 €, fällig jeweils bis zum 5. des laufenden Monats. Diese Rechnung gilt für alle zwölf Monate; Monatsrechnungen folgen nicht. Ändert sich der Preis, erhalten Sie eine neue Dauerrechnung.",
+    "industry_notes_title": "Was Sie über laufende Rechnungen wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Dauerrechnung oder Monatsrechnung?",
+        "text": "Die Dauerrechnung macht einmal Arbeit und passt zu festen Beträgen über lange Zeit: Miete, Leasing, Wartungsverträge. Die Monatsrechnung passt, wenn sich etwas ändert: ausgefallene Termine, Extras, wechselnde Stunden. Je öfter ein Monat vom Plan abweicht, desto eher lohnt die Monatsrechnung."
+      },
+      {
+        "title": "Invoicor hat keine Serienrechnungen",
+        "text": "Invoicor erstellt und sendet keine Rechnungen automatisch. Für eine Monatsrechnung duplizieren Sie die Rechnung des Vormonats und ändern Nummer, Leistungszeitraum, Datum und Fälligkeit; Kunde, Position und Hinweise bleiben. Eine Dauerrechnung ist ein einziges PDF, das Sie einmal erstellen und senden."
+      },
+      {
+        "title": "E-Rechnung ab 2028",
+        "text": "Ab 1. Januar 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein. Ob eine Dauerrechnung, die Sie vorher als PDF ausgestellt haben, für spätere Zeiträume weiter gilt oder neu ausgestellt werden muss, klären Sie mit Ihrem Steuerberater. Im Zweifel stellen Sie eine PDF-Dauerrechnung nicht über 2027 hinaus aus."
+      }
+    ],
+    "mistakes_title": "Drei Fehler bei laufenden Rechnungen",
+    "mistakes": [
+      {
+        "title": "Vormonat kopiert, Zeitraum vergessen",
+        "text": "Eine Rechnung, die im Februar noch „Januar“ sagt, wird abgelehnt oder doppelt bezahlt. Prüfen Sie vor dem Senden Nummer, Leistungszeitraum und Fälligkeit."
+      },
+      {
+        "title": "Dauerrechnung ohne Steuer pro Monat",
+        "text": "Steht nur die Jahressumme mit Steuer da, weiß die Buchhaltung des Kunden nicht, wie sie die einzelne Zahlung buchen soll. Zeigen Sie Betrag und Steuer für jeden Monat."
+      },
+      {
+        "title": "Beide Wege gleichzeitig",
+        "text": "Wer eine Dauerrechnung für das Jahr ausstellt und zusätzlich Monatsrechnungen schickt, weist dieselbe Steuer zweimal aus. Entscheiden Sie sich für einen Weg und schreiben Sie in die Dauerrechnung, dass keine Monatsrechnungen folgen. Extras außerhalb des Vertrags rechnen Sie getrennt ab."
+      }
+    ],
+    "tip_title": "Ein Tipp für Dauerrechnungen",
+    "pro_tip": "Schreiben Sie den kompletten Zahlungsplan in die Hinweise der Dauerrechnung: Betrag netto, Steuer, brutto und Fälligkeit pro Monat. Ihr Kunde ordnet damit jede Überweisung dem richtigen Monat zu, und Sie sehen auf einen Blick, welche Rate fehlt.",
+    "format_pdf_desc": "Eine Dauerrechnung als PDF bleibt das ganze Jahr unverändert in der Buchhaltung Ihres Kunden. Monatsrechnungen als PDF lassen sich nach Monat ablegen und ändern sich nach dem Senden nicht mehr.",
+    "faq_title": "Fragen zur Dauerrechnung",
+    "faqs": [
+      {
+        "question": "Was gehört auf eine Dauerrechnung?",
+        "answer": "Die Pflichtangaben nach §14 Abs. 4 UStG, dazu der Vertrag mit Datum, der ganze Zeitraum, der Betrag pro Monat mit Nettobetrag, Steuersatz und Steuer, und der Zahlungsplan. Eine Rechnungsnummer gilt für den ganzen Zeitraum."
+      },
+      {
+        "question": "Für wie lange darf ich eine Dauerrechnung ausstellen?",
+        "answer": "Viele Betriebe stellen sie für ein Kalenderjahr aus; das passt zu Buchhaltung und Preisanpassungen. Ob eine längere Laufzeit für Ihren Vertrag passt, klären Sie mit Ihrem Steuerberater, auch wegen der E-Rechnung ab 2028."
+      },
+      {
+        "question": "Kann Invoicor wiederkehrende Rechnungen automatisch senden?",
+        "answer": "Nein. Invoicor sendet nichts automatisch und kennt keine Serienrechnungen. Duplizieren Sie die Rechnung des Vormonats und ändern Sie Nummer, Datum und Zeitraum; Kunde, Position und Hinweise bleiben erhalten. Eine Dauerrechnung erstellen Sie einmal als PDF."
+      },
+      {
+        "question": "Wie lange muss ich eine Dauerrechnung aufbewahren?",
+        "answer": "Rechnungen bewahren Sie 8 Jahre auf (§14b Abs. 1 UStG, §147 Abs. 3 AO). Wann die Frist bei einer Dauerrechnung über viele Monate beginnt, klären Sie mit Ihrem Steuerberater; wer sie bis acht Jahre nach dem letzten abgedeckten Monat aufhebt, ist auf der sicheren Seite."
+      },
+      {
+        "question": "Wie rechne ich einen angebrochenen Monat ab?",
+        "answer": "Auf der Monatsrechnung rechnen Sie den Anteil ab und schreiben es dazu: „Leistung ab 15. Januar 2027, anteilig 17 von 31 Tagen“. Auf einer Dauerrechnung steht der erste Monat mit seinem eigenen Betrag im Zahlungsplan. Die Methode, nach Tagen oder nach Terminen, legen Sie im Vertrag fest."
+      }
+    ],
+    "cta_title": "Ihre Dauerrechnung",
+    "related": [
+      {
+        "name": "Dienstleistungsrechnung",
+        "slug": "rechnung-dienstleistung"
+      },
+      {
+        "name": "Stundenrechnung",
+        "slug": "stundenrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "rechnung-lohn-und-material",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Rechnung Lohn und Material",
+    "title": "Rechnung Lohn und Material: Muster und Vorlage | Invoicor",
+    "meta_description": "Rechnung mit Lohn und Material: Arbeitszeit, Material mit Aufschlag, Anfahrt und Entsorgung getrennt aufgeführt. Mit Muster, kostenlos als PDF.",
+    "h1": "Rechnung Lohn und Material: Vorlage mit Muster",
+    "subtitle": "Arbeitszeit und Material in getrennten Positionen, dazu Anfahrt, Entsorgung und ein Materialaufschlag, den Ihr Kunde nachvollziehen kann.",
+    "intro_paragraph": "Eine Rechnung über Lohn und Material teilt den Preis eines Auftrags in zwei Teile: was Ihre Arbeit gekostet hat und was das Material, das Sie eingebaut oder verbraucht haben. Im Handwerk heißt das auch Abrechnung nach Arbeitszeit und Material oder nach Aufwand. Die Trennung hilft dreifach. Der Kunde sieht, was Können und was Teile gekostet haben. Ohne Festpreis kann er nur hier beides prüfen. Und Privatkunden können den Arbeitsanteil steuerlich geltend machen und wollen ihn deshalb getrennt ausgewiesen sehen. Für Rechnungen an Firmen gilt: Bis 31. Dezember 2026 ist ein PDF an Unternehmen erlaubt, wenn der Empfänger zustimmt, bei höchstens 800.000 € Vorjahresumsatz bis Ende 2027; ab 1. Januar 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen; für Privatkunden reicht das PDF weiterhin.",
+    "include_title": "Was auf eine Rechnung über Lohn und Material gehört",
+    "what_to_include_intro": "Jede Position sollte eindeutig zu Arbeit, Material oder einer Pauschale gehören. Kann der Kunde eine Zeile keiner Gruppe zuordnen, verliert die Trennung ihren Sinn. Dazu kommen die Pflichtangaben nach § 14 Abs. 4 UStG.",
+    "req_1_title": "Arbeitszeit als Stunden mal Satz",
+    "req_1_text": "Bei Abrechnung nach Aufwand führen Sie die Arbeit als Stunden und Stundenverrechnungssatz auf, mit dem, was gemacht wurde: „Demontage alter Waschtisch, Montage neu, 2,5 Std. zu 68,00 €“. Arbeiten Monteur und Helfer zu verschiedenen Sätzen, bekommt jeder eine eigene Zeile.",
+    "req_2_title": "Material mit Menge, Einheit und Einzelpreis",
+    "req_2_text": "Jedes Material steht in der Einheit, in der es verkauft wird: 2 Eckventile, 1 Siphon, 12 m Kupferrohr. „Material: 380,00 €“ lädt den Kunden ein, den Auftrag im Baumarkt nachzurechnen. Kleinteile wie Dübel, Silikon und Dichtungen dürfen in einer Position „Kleinmaterial“ zusammenstehen.",
+    "req_3_title": "Der Materialaufschlag, offen gesagt",
+    "req_3_text": "Der Aufschlag deckt Beschaffung, Abholung, Lager und Gewährleistung. Rechnen Sie ihn in die Einzelpreise ein und nennen Sie ihn einmal in den Hinweisen („Materialpreise inkl. 15 % Aufschlag auf den Einkaufspreis“), oder zeigen Sie Einkauf und Aufschlag getrennt.",
+    "req_4_title": "Anfahrt und Entsorgung als eigene Zeilen",
+    "req_4_text": "Eine Anfahrtspauschale oder gefahrene Kilometer (wie vereinbart) und die Entsorgung von Altteilen sind weder Arbeit noch ein bestimmtes Material. Geben Sie jeder Pauschale eine eigene Zeile und einen klaren Namen, dann liest sie sich als Kosten mit Grund und nicht als aufgeblähte Arbeitszeit.",
+    "req_5_title": "Leistungsdatum und Auftragsbezug",
+    "req_5_text": "Nennen Sie das Datum der Arbeiten in einer Position oder in den Hinweisen; ein eigenes Feld dafür hat Invoicor nicht. Dazu kommt die Nummer des Angebots oder Auftrags und, falls vereinbart, die Obergrenze: „Auftrag 2026-118, nach Aufwand, max. 900,00 € netto“.",
+    "req_6_title": "Ein Steuersatz auf die Summe",
+    "req_6_text": "Arbeit und Material tragen in Deutschland in der Regel beide den Regelsatz von 19 % (§ 12 UStG), deshalb reicht ein Steuersatz für die ganze Rechnung. Sonderfälle, etwa Bauleistungen an andere Baufirmen, klären Sie vorher mit Ihrem Steuerberater.",
+    "what_to_include_outro": "Nach diesem Aufbau rechnen fast alle Gewerke ab, vom Elektriker bis zur Schreinerei: Es ändert sich vor allem die Materialliste.",
+    "sample_breakdown_title": "Beispiel einer Rechnung über Lohn und Material",
+    "paper_label": "Lohn und Material · Muster",
+    "sample_breakdown_intro": "Ein Sanitärbetrieb tauscht bei einer Privatkundin in Bochum Waschtisch und Armatur: Anfahrt, zwei Arbeitszeilen für Monteur und Helfer, fünf Materialpositionen und die Entsorgung. Die Materialpreise enthalten 15 % Aufschlag auf den Einkaufspreis. Regelsteuersatz 19 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Anfahrtspauschale Stadtgebiet",
+        "qty": "1",
+        "rate": "35,00 €",
+        "amount": "35,00 €"
+      },
+      {
+        "description": "Arbeitszeit Monteur: Demontage und Montage Waschtisch",
+        "qty": "2,5 Std.",
+        "rate": "68,00 €",
+        "amount": "170,00 €"
+      },
+      {
+        "description": "Arbeitszeit Helfer: Tragen, Anschluss, Abdichten",
+        "qty": "2 Std.",
+        "rate": "48,00 €",
+        "amount": "96,00 €"
+      },
+      {
+        "description": "Material: Waschtisch Keramik, 60 cm",
+        "qty": "1",
+        "rate": "189,00 €",
+        "amount": "189,00 €"
+      },
+      {
+        "description": "Material: Einhebelmischer mit Ablaufgarnitur",
+        "qty": "1",
+        "rate": "124,50 €",
+        "amount": "124,50 €"
+      },
+      {
+        "description": "Material: Röhrensiphon, verchromt",
+        "qty": "1",
+        "rate": "28,90 €",
+        "amount": "28,90 €"
+      },
+      {
+        "description": "Material: Eckventil 1/2 Zoll",
+        "qty": "2",
+        "rate": "12,40 €",
+        "amount": "24,80 €"
+      },
+      {
+        "description": "Kleinmaterial (Silikon, Dübel, Dichtungen)",
+        "qty": "1",
+        "rate": "14,60 €",
+        "amount": "14,60 €"
+      },
+      {
+        "description": "Entsorgung Altteile",
+        "qty": "1",
+        "rate": "20,00 €",
+        "amount": "20,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "702,80 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "133,53 €",
+    "sample_breakdown_balance": "836,33 €",
+    "sample_breakdown_notes": "Leistungsdatum: 14. April 2026. Auftrag 2026-118 nach Aufwand, max. 900,00 € netto. Arbeitskosten netto 266,00 € (brutto 316,54 €), Anfahrt und Entsorgung netto 55,00 €, Material netto 381,80 €. Materialpreise inkl. 15 % Aufschlag. Zahlbar innerhalb von 14 Tagen.",
+    "industry_notes_title": "Was bei Rechnungen über Lohn und Material gilt",
+    "industry_notes": [
+      {
+        "title": "Nach Aufwand oder zum Festpreis",
+        "text": "Beim Festpreis dient die Aufteilung vor allem der Übersicht. Bei Abrechnung nach Aufwand zahlt er die tatsächlichen Stunden und Teile, die Rechnung ist also der Nachweis. Vereinbaren Sie vorher, was gilt, und bei Aufwand eine Obergrenze."
+      },
+      {
+        "title": "Arbeitsnachweise auf größeren Baustellen",
+        "text": "Bei längeren Arbeiten lassen sich viele Betriebe die Stunden täglich auf einem Regiebericht vom Kunden abzeichnen. Die Rechnung nennt diese Nachweise in den Hinweisen („Stunden laut Regieberichten Nr. 1 bis 4“), die Berichte gehen als eigene Datei mit."
+      },
+      {
+        "title": "Einkaufsbelege aufbewahren",
+        "text": "Die Rechnungen Ihres Großhändlers stützen Ihre Materialpreise, falls Kunde oder Betriebsprüfung nachfragen. Rechnungen bewahren Sie acht Jahre auf (§ 14b Abs. 1 UStG, § 147 Abs. 3 AO)."
+      }
+    ],
+    "mistakes_title": "Drei Fehler bei Lohn und Material",
+    "mistakes": [
+      {
+        "title": "Arbeit in den Materialpreisen versteckt",
+        "text": "Wer die Teilepreise anhebt, um Einbauzeit abzudecken, lässt das Material überteuert und die Arbeit kostenlos aussehen. Einbauzeit gehört in eine Arbeitszeile, auch wenn sie kurz ist."
+      },
+      {
+        "title": "Kleinmaterial vergessen",
+        "text": "Schrauben, Silikon und Dichtungen summieren sich über ein Jahr. Erlaubt es Ihr Auftrag, rechnen Sie sie als Position „Kleinmaterial“ ab, statt sie selbst zu tragen."
+      },
+      {
+        "title": "Die Obergrenze erst auf der Rechnung überschreiten",
+        "text": "Erfährt der Kunde erst auf der Rechnung, dass es teurer wurde, ist Streit absehbar. Melden Sie sich vorher, holen Sie die Zustimmung schriftlich ein und vermerken Sie sie: „Erweiterung um bis zu 150,00 € netto am 14. April freigegeben, per E-Mail bestätigt“."
+      }
+    ],
+    "tip_title": "Ein Tipp für Rechnungen mit Lohn und Material",
+    "pro_tip": "Speichern Sie Ihre häufigsten Materialien in der App als Produkte, mit dem Verkaufspreis inklusive Aufschlag. Die Preise bleiben einheitlich, und Sie rechnen den Aufschlag nicht auf der Baustelle im Kopf aus.",
+    "format_pdf_desc": "Ein PDF hält Arbeitszeit, Materialpreise und Steuer so fest wie vereinbart: Das vergleicht Ihr Kunde mit dem Auftrag, und das legen Sie zur Baustellenakte.",
+    "faq_title": "Fragen zur Rechnung über Lohn und Material",
+    "faqs": [
+      {
+        "question": "Muss ich meinen Materialaufschlag zeigen?",
+        "answer": "Nicht in jeder Zeile, aber der Kunde sollte wissen, dass es ihn gibt: im Einzelpreis enthalten und ein Satz in den Hinweisen. Haben Sie Einkaufspreis plus Aufschlag vereinbart, zeigen Sie beides getrennt."
+      },
+      {
+        "question": "Gilt für Material ein anderer Steuersatz als für Arbeit?",
+        "answer": "In der Regel nicht: Beides trägt den Regelsatz von 19 % (§ 12 UStG). Invoicor rechnet mit einem Steuersatz pro Rechnung. Ist in Ihrem Fall ein Teil anders zu behandeln, schreiben Sie zwei Rechnungen und klären das vorher mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie rechne ich die Anfahrt ab?",
+        "answer": "Als Pauschale in einer eigenen Zeile oder nach Kilometern, je nachdem, was Sie vereinbart haben. Fahrzeit als Arbeitszeit zu berechnen ist möglich, sollte aber im Angebot stehen."
+      },
+      {
+        "question": "Was tun, wenn der Auftrag teurer wird als angeboten?",
+        "answer": "Holen Sie vorher die schriftliche Zustimmung ein. Wie weit ein Kostenvoranschlag überschritten werden darf, ist eine Vertragsfrage: Im Zweifel fragen Sie Ihre Handwerkskammer oder einen Anwalt."
+      },
+      {
+        "question": "Kann ich mit Invoicor auch das Angebot schreiben?",
+        "answer": "Nein. Invoicor erstellt Rechnungen, keine Angebote oder Kostenvoranschläge. Nennen Sie die Nummer Ihres Angebots in den Hinweisen der Rechnung, damit der Kunde beides zuordnen kann."
+      }
+    ],
+    "cta_title": "Ihre Rechnung über Lohn und Material",
+    "related": [
+      {
+        "name": "Subunternehmer-Rechnung",
+        "slug": "subunternehmer-rechnung"
+      },
+      {
+        "name": "Stundenrechnung",
+        "slug": "stundenrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "rechnung-dienstleistung",
+    "translation_of": "service-invoice",
+    "niche": "Dienstleistungsrechnung",
+    "title": "Rechnung Dienstleistung: Vorlage und Muster | Invoicor",
+    "meta_description": "Rechnung für Dienstleistungen: Leistungsbeschreibung, Leistungszeitraum, Pflichtangaben nach § 14 UStG und 19 % USt. Mit Muster, kostenlos als PDF.",
+    "h1": "Rechnung Dienstleistung: Vorlage und Muster",
+    "subtitle": "Für alle, die Arbeit statt Ware berechnen: wie Sie die Leistung beschreiben, datieren und bepreisen, mit allen Pflichtangaben.",
+    "intro_paragraph": "Eine Dienstleistungsrechnung berechnet Zeit, Können oder ein Ergebnis, keine Ware. Es wird nichts geliefert, also ist der Text auf der Rechnung der einzige Beleg dafür, wofür Ihr Kunde zahlt. Deshalb ist die Leistungsbeschreibung das wichtigste Feld: was Sie getan haben, wann und für wen. Das ist das allgemeine Dokument hinter Beratung, Agenturen, Training, Reinigung und jedem Betrieb, der Arbeit verkauft. Für Rechnungen an Unternehmen gilt: Bis 31. Dezember 2026 ist ein PDF an Unternehmen erlaubt, wenn der Empfänger zustimmt, bei höchstens 800.000 € Vorjahresumsatz bis Ende 2027; ab 1. Januar 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD.",
+    "include_title": "Was auf eine Dienstleistungsrechnung gehört",
+    "what_to_include_intro": "Die Pflichtangaben sind dieselben wie bei jeder Rechnung (§ 14 Abs. 4 UStG). Was sich ändert, ist der Nachweis der Arbeit. Diese sechs Punkte decken beides ab.",
+    "req_1_title": "Die Angaben zu Ihnen und Ihrem Kunden",
+    "req_1_text": "Vollständiger Name und Anschrift beider Seiten, Ihre Steuernummer oder USt-IdNr., das Ausstellungsdatum und eine fortlaufende, nur einmal vergebene Rechnungsnummer. In Invoicor druckt das Steuerfeld „USt-IdNr.“: Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise.",
+    "req_2_title": "Eine Leistungsbeschreibung, die der Kunde wiedererkennt",
+    "req_2_text": "§ 14 UStG verlangt Umfang und Art der Leistung. Schreiben Sie die Position so, wie Ihr Ansprechpartner den Auftrag seiner Geschäftsführung beschreiben würde: „Social-Media-Betreuung März 2026, 12 Beiträge auf 2 Kanälen“ wird freigegeben, „Dienstleistung“ wird hinterfragt.",
+    "req_3_title": "Leistungsdatum oder Leistungszeitraum",
+    "req_3_text": "Oft rechnen Sie Tage nach der Arbeit ab. Das Rechnungsdatum ist der Tag der Ausstellung, der Zeitpunkt der Leistung ist eine eigene Pflichtangabe. Invoicor hat dafür kein Feld: Schreiben Sie ihn in die Positionszeile oder in die Hinweise, etwa „Leistungszeitraum: 1.–31. März 2026“.",
+    "req_4_title": "Die Preisgrundlage jeder Position",
+    "req_4_text": "Dienstleistungen werden nach Stunden, pro Termin oder als Pauschale für einen festgelegten Umfang berechnet. Zeigen Sie, welche Grundlage gilt: „3 Std. zu 120,00 €“ oder „Pauschale laut Vertrag vom 12. Januar 2026“. Verschiedene Grundlagen auf einer Rechnung sind kein Problem.",
+    "req_5_title": "Nettobetrag, Steuersatz und Steuerbetrag",
+    "req_5_text": "Die meisten Dienstleistungen tragen den Regelsatz von 19 % (§ 12 UStG). Auf die Rechnung gehören der Nettobetrag, der Steuersatz und der Steuerbetrag; ein vereinbartes Skonto nennen Sie ebenfalls. Als Kleinunternehmer nach § 19 UStG weisen Sie keine Steuer aus und verweisen stattdessen auf die Befreiung.",
+    "req_6_title": "Zahlungsziel mit echtem Datum",
+    "req_6_text": "Schreiben Sie das Zahlungsziel und das Fälligkeitsdatum selbst, dazu Ihre Bankverbindung oder Ihren eigenen Zahlungslink. Größere Kunden brauchen zusätzlich ihre Bestellnummer oder Kostenstelle, sonst liegt die Rechnung in einem Postfach ohne Zuständigen.",
+    "what_to_include_outro": "Stimmen diese Punkte, erklärt sich die Rechnung selbst: Der Kunde gibt sie frei, ohne anzurufen, und Sie haben einen datierten Beleg über das, was Sie geleistet haben. Rechnen Sie überwiegend nach Stunden ab, finden Sie Taktung und Stundennachweis auf der Seite zur Stundenrechnung.",
+    "sample_breakdown_title": "Beispiel einer Dienstleistungsrechnung",
+    "paper_label": "Dienstleistungsrechnung · Muster",
+    "sample_breakdown_intro": "Eine Marketingagentur aus Düsseldorf berechnet einem Möbelhändler den März: eine monatliche Pauschale, eine Projektpauschale und Beratungsstunden. Drei Positionen, drei Preisgrundlagen, Regelsteuersatz 19 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Social-Media-Betreuung März 2026, Monatspauschale laut Vertrag",
+        "qty": "1",
+        "rate": "1.200,00 €",
+        "amount": "1.200,00 €"
+      },
+      {
+        "description": "Newsletter-Vorlage Frühjahrsaktion, Pauschale (abgenommen am 20. März)",
+        "qty": "1",
+        "rate": "480,00 €",
+        "amount": "480,00 €"
+      },
+      {
+        "description": "Strategieberatung Frühjahrskampagne (10. und 24. März)",
+        "qty": "3 Std.",
+        "rate": "120,00 €",
+        "amount": "360,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2.040,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "387,60 €",
+    "sample_breakdown_balance": "2.427,60 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 1.–31. März 2026. Ihre Bestellnummer: B-4471. Rahmenvertrag vom 12. Januar 2026. Zahlbar bis 14. April 2026 per Überweisung.",
+    "industry_notes_title": "Was bei Dienstleistungsrechnungen gilt",
+    "industry_notes": [
+      {
+        "title": "Kunden im Ausland",
+        "text": "Für Dienstleistungen an Kunden in anderen Ländern gelten eigene Regeln dazu, wo die Leistung als erbracht gilt und wer die Steuer schuldet. Klären Sie das vor der ersten Auslandsrechnung mit Ihrem Steuerberater und schreiben Sie erst dann die Rechnung."
+      },
+      {
+        "title": "Kleine Beträge, kürzere Rechnung",
+        "text": "Bis 250 € brutto reicht eine Kleinbetragsrechnung nach § 33 UStDV: Ihr Name und Ihre Anschrift, Datum, Menge und Art der Leistung, der Bruttobetrag und der Steuersatz. Für die meisten Aufträge brauchen Sie aber die vollständige Rechnung mit allen Angaben."
+      },
+      {
+        "title": "Jede Rechnung bekommt eine neue Nummer",
+        "text": "Auch bei derselben Pauschale jeden Monat braucht jede Rechnung ihre eigene, fortlaufende Nummer. In Invoicor duplizieren Sie die Rechnung vom Vormonat und ändern Leistungszeitraum und Datum; eine alte Nummer mit neuem Datum ist kein Ersatz. Rechnungen bewahren Sie acht Jahre auf (§ 14b Abs. 1 UStG)."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Dienstleistungsrechnungen",
+    "mistakes": [
+      {
+        "title": "Ein Etikett statt der Leistung",
+        "text": "„Beratung: 2.000,00 €“ sagt der Buchhaltung nichts, wenn sie nicht im Termin saß. Sie hält die Rechnung zurück, bis jemand sie erklärt. Ein Satz mehr pro Position bringt eine schnellere Freigabe."
+      },
+      {
+        "title": "Kein Leistungsdatum",
+        "text": "Eine Rechnung vom 2. April für Arbeit im Februar ohne Leistungszeitraum ist unvollständig, denn der Zeitpunkt der Leistung ist Pflichtangabe. Geschäftskunden fordern dann oft eine berichtigte Rechnung an, bevor sie zahlen."
+      },
+      {
+        "title": "Den Steuersatz von der letzten Rechnung kopiert",
+        "text": "Der Steuersatz folgt der Leistung, nicht der Gewohnheit. Haben Sie eine Leistung, die anders behandelt werden könnte, etwa für einen Kunden im Ausland, prüfen Sie den Fall einmal mit Ihrem Steuerberater und notieren Sie das Ergebnis."
+      }
+    ],
+    "tip_title": "Ein Tipp für Dienstleistungsrechnungen",
+    "pro_tip": "Senden Sie die Rechnung am Tag, an dem die Arbeit endet, solange der Kunde den Nutzen noch vor Augen hat. Bei Leistungen über einen ganzen Monat rechnen Sie zum Monatsende ab und nennen den Zeitraum.",
+    "format_pdf_desc": "Ein PDF hält Beschreibungen und Leistungsdaten genau so fest, wie Sie sie geschrieben haben, und öffnet sich auf jedem Gerät gleich.",
+    "faq_title": "Fragen zur Dienstleistungsrechnung",
+    "faqs": [
+      {
+        "question": "Was muss auf einer Rechnung für Dienstleistungen stehen?",
+        "answer": "Die Angaben nach § 14 Abs. 4 UStG: Name und Anschrift beider Seiten, Steuernummer oder USt-IdNr., Datum, fortlaufende Rechnungsnummer, Umfang und Art der Leistung, Zeitpunkt der Leistung, Nettobetrag, Steuersatz und Steuerbetrag oder ein Hinweis auf die Befreiung. In der Praxis kommen Zahlungsziel und Bankverbindung dazu."
+      },
+      {
+        "question": "Was unterscheidet eine Dienstleistungsrechnung von einer Rechnung über Waren?",
+        "answer": "Die Dienstleistungsrechnung berechnet Arbeit: Stunden, Termine oder eine Projektpauschale. Sie lebt von einer guten Beschreibung und dem Leistungsdatum. Eine Rechnung über Waren nennt Artikel, Menge und Lieferdatum. Die Pflichtangaben sind dieselben."
+      },
+      {
+        "question": "Welcher Steuersatz gilt für Dienstleistungen?",
+        "answer": "Meist der Regelsatz von 19 %; der ermäßigte Satz von 7 % (§ 12 UStG) gilt nur für bestimmte Leistungen. Ob Ihre Leistung darunter fällt oder steuerfrei ist, klären Sie mit Ihrem Steuerberater. Invoicor rechnet mit einem Steuersatz pro Rechnung."
+      },
+      {
+        "question": "Stundensatz oder Pauschale?",
+        "answer": "Rechnen Sie ab, wie Sie es vereinbart haben. Stunden passen zu offener Arbeit und zeigen die Zeit hinter dem Preis, eine Pauschale passt zu einem klar umrissenen Umfang. Beides darf auf derselben Rechnung stehen."
+      },
+      {
+        "question": "Welches Zahlungsziel ist üblich?",
+        "answer": "Sofort, 14 oder 30 Tage sind verbreitet; schreiben Sie immer das konkrete Datum dazu. Zwischen Unternehmen tritt Verzug spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung ein (§ 286 Abs. 3 BGB), bei Privatkunden nur, wenn die Rechnung darauf hinweist."
+      },
+      {
+        "question": "Darf ich eine Dienstleistungsrechnung als PDF schicken?",
+        "answer": "An Privatkunden ja. An Unternehmen bis Ende 2026 mit Zustimmung des Empfängers, bei höchstens 800.000 € Vorjahresumsatz bis Ende 2027; danach brauchen Sie eine E-Rechnung. Kleinunternehmer und Rechnungen bis 250 € brutto sind von dieser Pflicht ausgenommen."
+      }
+    ],
+    "cta_title": "Ihre Dienstleistungsrechnung",
+    "related": [
+      {
+        "name": "Stundenrechnung",
+        "slug": "stundenrechnung"
+      },
+      {
+        "name": "Rechnung für Freiberufler",
+        "slug": "rechnung-freiberufler"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "handelsrechnung",
+    "translation_of": "commercial-invoice",
+    "niche": "Handelsrechnung",
+    "title": "Handelsrechnung für den Export: Muster & Vorlage | Invoicor",
+    "meta_description": "Handelsrechnung für Exporte aus Deutschland: Warentarifnummer, Ursprung, Gewichte und Incoterms je Position. Muster ohne USt, jetzt als PDF erstellen.",
+    "h1": "Handelsrechnung: Vorlage und Muster für den Export",
+    "subtitle": "Die Rechnung, die mit der Ware über die Grenze geht: was Zoll und Spediteur lesen und wie die steuerfreie Ausfuhr auf die Rechnung kommt.",
+    "intro_paragraph": "Eine Handelsrechnung (englisch Commercial Invoice) ist die Rechnung für einen Exportverkauf, so geschrieben, dass der Zoll im Zielland die Sendung versteht: Verkäufer, Käufer, Warenempfänger und je Position Beschreibung, Wert, Ursprungsland, Gewicht und Warentarifnummer. Spediteure verlangen sie für Sendungen in Länder außerhalb der EU. Solche Lieferungen sind steuerfrei (§ 4 Nr. 1a in Verbindung mit § 6 UStG): keine Umsatzsteuer, aber ein Hinweis auf die Befreiung. Invoicor erstellt das Rechnungs-PDF, auf Wunsch auf Englisch. Die Überschrift lautet „Rechnung“: Schreiben Sie „Handelsrechnung“ in die erste Position und die Hinweise, und fragen Sie Ihren Spediteur, ob er ein eigenes Formular oder diese Überschrift verlangt. Zollanmeldungen in ATLAS und Formulare der Paketdienste erstellt Invoicor nicht.",
+    "include_title": "Was auf eine Handelsrechnung gehört",
+    "what_to_include_intro": "Zoll und Spediteur prüfen dieselben Kernangaben. Fehlt eine, bleibt die Sendung oft an der Grenze liegen.",
+    "req_1_title": "Ausführer, Käufer und Warenempfänger",
+    "req_1_text": "Nennen Sie Ihr Unternehmen als Ausführer, mit Anschrift, USt-IdNr. und der EORI-Nummer, die Sie beim Zoll beantragen. Dann den Käufer, der bezahlt. Geht die Ware an eine andere Adresse, etwa ein Lager, steht der Warenempfänger (Consignee) in den Hinweisen.",
+    "req_2_title": "Eine genaue Warenbeschreibung",
+    "req_2_text": "„Muster“ oder „Geschenk“ reichen nicht. Beschreiben Sie, was die Ware ist, woraus sie besteht und wofür sie dient: „Kochmesser, Klinge Edelstahl 20 cm, Griff Olivenholz, für den Haushalt“. Danach prüft der Zoll Ihre Tarifnummer.",
+    "req_3_title": "Warentarifnummer und Ursprungsland je Position",
+    "req_3_text": "Die ersten sechs Stellen der Warentarifnummer (HS-Code) sind weltweit gleich, in der EU folgen weitere. Sie finden Ihre im Elektronischen Zolltarif des deutschen Zolls. Ursprungsland ist das Land, in dem die Ware hergestellt wurde, nicht das, aus dem sie verschickt wird. Beides gehört in die Beschreibung der Position.",
+    "req_4_title": "Menge, Gewicht und Wert in einer Währung",
+    "req_4_text": "Stückzahl, Einzelpreis und Gesamtpreis je Position, alles in einer genannten Währung. Dazu das Gewicht je Stück oder Position, das Bruttogewicht der Sendung und die Zahl der Packstücke. Der Zoll prüft, ob Wert und Gewicht zur Ware passen.",
+    "req_5_title": "Incoterms 2020 und Grund der Ausfuhr",
+    "req_5_text": "Die Lieferbedingung mit benanntem Ort, etwa „DAP Zürich“ oder „DDP Zürich“, zeigt, wer Fracht und Einfuhrabgaben trägt; aktuell ist die Fassung Incoterms 2020 der Internationalen Handelskammer. Nennen Sie auch den Grund der Ausfuhr: Verkauf, Muster, Reparatur oder Rücksendung.",
+    "req_6_title": "Steuerbefreiung, Lieferdatum und Erklärung",
+    "req_6_text": "Weil die Ausfuhr steuerfrei ist, steht kein Steuerbetrag auf der Rechnung, aber ein Hinweis wie „Steuerfreie Ausfuhrlieferung gemäß § 4 Nr. 1a i. V. m. § 6 UStG“. Das Lieferdatum (§ 14 Abs. 4 UStG) gehört in die Hinweise, weil Invoicor kein eigenes Feld dafür hat. Viele Spediteure erwarten zudem eine unterschriebene Erklärung.",
+    "what_to_include_outro": "Mit diesen Angaben kann der Zoll arbeiten. Prüfen Sie trotzdem die Liste Ihres Spediteurs: Manche verlangen zusätzlich ein eigenes Formular.",
+    "paper_label": "Handelsrechnung · Muster",
+    "sample_breakdown_title": "Muster einer Handelsrechnung",
+    "sample_breakdown_intro": "Eine Messermanufaktur aus Solingen liefert Küchenwaren an ein Fachgeschäft in Zürich, DAP Zürich, in Euro. Die Schweiz gehört nicht zur EU: steuerfreie Ausfuhr, keine Steuerzeile, dafür der Hinweis. Ob die Fracht ebenfalls steuerfrei ist, klären Sie mit Ihrem Steuerberater. Die Tarifnummern sind Beispiele.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Handelsrechnung. Kochmesser, Klinge Edelstahl 20 cm, Griff Olivenholz. Tarifnr. 8211 9200, Ursprung Deutschland, 0,25 kg je Stück",
+        "qty": "40",
+        "rate": "64,00 €",
+        "amount": "2.560,00 €"
+      },
+      {
+        "description": "Schneidebrett Buche, 40 x 25 cm. Tarifnr. 4419 9000, Ursprung Deutschland, 1,1 kg je Stück",
+        "qty": "24",
+        "rate": "38,50 €",
+        "amount": "924,00 €"
+      },
+      {
+        "description": "Geschirrtuch Baumwolle, 50 x 70 cm. Tarifnr. 6302 9100, Ursprung Portugal, 0,1 kg je Stück",
+        "qty": "60",
+        "rate": "7,90 €",
+        "amount": "474,00 €"
+      },
+      {
+        "description": "Fracht bis Zürich, 3 Kartons, 44 kg brutto",
+        "qty": "1",
+        "rate": "165,00 €",
+        "amount": "165,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "4.123,00 €",
+    "sample_breakdown_balance": "4.123,00 €",
+    "sample_breakdown_notes": "Handelsrechnung (Commercial Invoice). Steuerfreie Ausfuhrlieferung gemäß § 4 Nr. 1a i. V. m. § 6 UStG. Lieferdatum: 18. November 2026. Incoterms 2020: DAP Zürich. Grund der Ausfuhr: Verkauf. Warenempfänger: Kochwerk AG, Lager Altstetten, 8048 Zürich. EORI: DE1234567890123. Die Angaben sind richtig und vollständig. M. Krüger, Geschäftsführer.",
+    "industry_notes_title": "Was Sie bei Handelsrechnungen wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Ohne Ausfuhrnachweis keine Steuerbefreiung",
+        "text": "Die Befreiung nach § 6 UStG setzt voraus, dass die Ware die EU tatsächlich verlässt, und das müssen Sie belegen. Meist dient dazu der Ausgangsvermerk aus ATLAS, bei Kuriersendungen können andere Belege gelten. Was in Ihrem Fall reicht, klären Sie mit Ihrem Steuerberater. Die Rechnung allein ist kein Nachweis."
+      },
+      {
+        "title": "Incoterms entscheiden, wer die Einfuhrabgaben zahlt",
+        "text": "Bei DAP zahlt der Käufer Zoll und Einfuhrsteuer im Zielland, bei DDP zahlen Sie. Legen Sie die Regel vor dem Angebot fest: Bei DDP gehen die Abgaben von Ihrer Marge ab, und Sie brauchen dort unter Umständen eine Registrierung."
+      },
+      {
+        "title": "Die Rechnung ist ein Dokument unter mehreren",
+        "text": "Ab einem bestimmten Warenwert ist eine Ausfuhranmeldung in ATLAS nötig, je nach Ware auch ein Ursprungszeugnis, eine Packliste oder ein Formular des Paketdienstes. Invoicor erstellt die Rechnung; Ihr Spediteur oder der Zoll sagt Ihnen, was sonst dazugehört."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Handelsrechnungen",
+    "mistakes": [
+      {
+        "title": "Den Wert niedriger angeben",
+        "text": "Ein zu niedriger Wert, damit der Käufer weniger Zoll zahlt, ist eine falsche Angabe gegenüber dem Zoll; die Ware kann festgehalten werden. Geben Sie den tatsächlichen Preis an, bei Mustern einen realistischen Wert."
+      },
+      {
+        "title": "Ursprung mit Versandort verwechseln",
+        "text": "Ein in Portugal genähtes Geschirrtuch, das Sie aus Solingen verschicken, hat portugiesischen Ursprung, wie im Muster. Der Ursprung kann den Zollsatz und Vorteile aus Handelsabkommen ändern. Prüfen Sie ihn je Position."
+      },
+      {
+        "title": "Umsatzsteuer ausweisen oder den Hinweis vergessen",
+        "text": "Wer bei einer nachgewiesenen Ausfuhr 19 % USt berechnet, verlangt Steuer, die nicht anfällt, und muss die Rechnung berichtigen. Fehlt der Hinweis auf die Befreiung, ist die Rechnung nach § 14 Abs. 4 UStG unvollständig. Also: kein Steuersatz, aber der Hinweis."
+      }
+    ],
+    "tip_title": "Ein Tipp für Handelsrechnungen",
+    "pro_tip": "Legen Sie jedes Exportprodukt in Invoicor mit Tarifnummer, Ursprung und Gewicht in der Beschreibung an. Speichern Sie Steuerhinweis und Erklärung in einer fertigen Rechnung und duplizieren Sie sie für jede Sendung.",
+    "format_pdf_desc": "Spediteure verlangen die Handelsrechnung als PDF zur Sendung. Es hält Tarifnummern und Gewichte an ihrem Platz und druckt sauber für die Begleitpapiere.",
+    "faq_title": "Fragen zur Handelsrechnung",
+    "faqs": [
+      {
+        "question": "Wann brauche ich eine Handelsrechnung?",
+        "answer": "Immer wenn Ware eine Zollgrenze überschreitet, also bei Sendungen in Länder außerhalb der EU wie die Schweiz, Großbritannien oder die USA, für Verkäufe und meist auch für Muster und Rücksendungen. Innerhalb der EU reicht eine normale Rechnung, an Geschäftskunden mit den Angaben zur innergemeinschaftlichen Lieferung."
+      },
+      {
+        "question": "Muss ich auf eine Exportrechnung Umsatzsteuer schreiben?",
+        "answer": "Nein, wenn die Ware die EU verlässt und Sie die Ausfuhr nachweisen können: Die Lieferung ist nach § 4 Nr. 1a in Verbindung mit § 6 UStG steuerfrei, und statt eines Steuerbetrags steht der Hinweis auf der Rechnung. Sonderfälle, etwa wenn der Käufer selbst abholt, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wo steht die Warentarifnummer auf der Rechnung?",
+        "answer": "In jeder Position nach der Warenbeschreibung, mit Ursprungsland und Gewicht. Im kostenlosen Generator hat jede Position ein Feld für Details."
+      },
+      {
+        "question": "Gilt die E-Rechnungspflicht auch für Exportrechnungen?",
+        "answer": "Die E-Rechnungspflicht zielt auf Rechnungen zwischen Unternehmen in Deutschland. Für einen Käufer in der Schweiz oder den USA bleibt ein PDF üblich. Sonderfälle klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Erstellt Invoicor auch die Ausfuhranmeldung?",
+        "answer": "Nein. Invoicor erstellt das Rechnungs-PDF mit Ihren Zolldaten je Position. Ausfuhranmeldungen in ATLAS, Ursprungszeugnisse und Formulare der Paketdienste kommen von Spediteur, Zolldienstleister oder Zoll."
+      }
+    ],
+    "cta_title": "Ihre Handelsrechnung",
+    "related": [
+      {
+        "name": "Anzahlungsrechnung",
+        "slug": "anzahlungsrechnung"
+      },
+      {
+        "name": "Dienstleistungsrechnung",
+        "slug": "rechnung-dienstleistung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "auslagen-weiterberechnen",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Auslagenrechnung",
+    "title": "Auslagen weiterberechnen: Rechnung mit Muster | Invoicor",
+    "meta_description": "Auslagen an Kunden weiterberechnen: durchlaufende Posten ohne USt, eigene Auslagen mit USt, Belege und Aufschlag. Mit Muster, kostenlos als PDF.",
+    "h1": "Auslagen weiterberechnen: Rechnung und Muster",
+    "subtitle": "Für Unternehmen und Selbstständige, die Kosten für einen Kundenauftrag vorgestreckt haben und sie korrekt weiterberechnen wollen.",
+    "intro_paragraph": "Diese Seite ist für Unternehmen und Selbstständige, die einem Kunden Kosten in Rechnung stellen, die sie für seinen Auftrag bezahlt haben. Die Spesenabrechnung eines Angestellten an seinen Arbeitgeber ist etwas anderes und hier nicht gemeint. Steuerlich gibt es zwei Fälle, und die Rechnung muss zeigen, welcher vorliegt: durchlaufende Posten, die Sie im Namen und für Rechnung des Kunden bezahlt haben, und Auslagen, die Sie im eigenen Namen eingekauft haben. Für Rechnungen an Firmen gilt außerdem: Bis 31. Dezember 2026 ist ein PDF an Unternehmen erlaubt, wenn der Empfänger zustimmt, bei höchstens 800.000 € Vorjahresumsatz bis Ende 2027; ab 1. Januar 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen.",
+    "include_title": "Was auf eine Auslagenrechnung gehört",
+    "what_to_include_intro": "Ihr Kunde will jede Position mit Beleg und Vertrag abgleichen. Dazu kommen die Pflichtangaben nach § 14 Abs. 4 UStG.",
+    "req_1_title": "Durchlaufender Posten oder eigene Auslage",
+    "req_1_text": "Durchlaufende Posten sind Beträge, die Sie im Namen und für Rechnung des Kunden zahlen, etwa eine Gebühr für einen Antrag auf seinen Namen. Sie gehören nicht zum Entgelt (§ 10 Abs. 1 Satz 4 UStG): keine Umsatzsteuer. Kaufen Sie dagegen im eigenen Namen ein, ist die Weiterberechnung Teil Ihres Preises (§ 10 Abs. 1 Satz 2 UStG) und trägt Umsatzsteuer.",
+    "req_2_title": "Eigene Auslagen: welcher Steuersatz",
+    "req_2_text": "Für Auslagen, die Sie im eigenen Namen eingekauft haben, gilt in der Regel der Steuersatz Ihrer Hauptleistung, nicht unbedingt der auf dem Beleg. Prüfen Sie das vor der ersten Auslagenrechnung mit Ihrem Steuerberater, besonders bei Hotel- und Bahnkosten.",
+    "req_3_title": "Eine Zeile pro Auslage, mit Datum und Beleg",
+    "req_3_text": "Führen Sie jede Ausgabe einzeln auf: „3. Juni: Druck Flyer A5, 2.000 Stück (Beleg 1)“. Nur viele kleine gleichartige Posten, etwa die Parkgebühren einer Reise, dürfen zusammenstehen.",
+    "req_4_title": "Der richtige Betrag: netto oder genau gezahlt",
+    "req_4_text": "Ziehen Sie die Vorsteuer aus dem Beleg selbst, setzen Sie bei eigenen Auslagen in der Regel den Nettobetrag an und berechnen darauf Ihre Umsatzsteuer, sonst zahlt der Kunde die Steuer doppelt. Durchlaufende Posten geben Sie mit genau dem Betrag weiter, den Sie gezahlt haben.",
+    "req_5_title": "Ein Aufschlag nur, wenn der Vertrag ihn nennt",
+    "req_5_text": "Viele Verträge sagen „Auslagen zum Selbstkostenpreis“, andere erlauben eine Bearbeitungspauschale, oft auf Einkäufe, nicht auf Fahrten. Zeigen Sie einen Aufschlag in einer eigenen Zeile („Bearbeitungspauschale 10 % auf Druckkosten, Vertrag Ziff. 6“), damit die übrigen Beträge weiter zu den Belegen passen.",
+    "req_6_title": "Projektbezug und Verweis auf die Honorarrechnung",
+    "req_6_text": "Nennen Sie Auftrag oder Bestellnummer. Stehen Honorar und Auslagen auf getrennten Rechnungen, verweisen Sie in den Hinweisen gegenseitig auf die Nummern. So gibt der Kunde nicht die eine frei und vergisst die andere.",
+    "what_to_include_outro": "Eine Freigabe vor größeren Einkäufen erspart Ihnen den einen Streit, den eine Auslagenrechnung nicht gewinnen kann: „Das hatten wir nie vereinbart.“",
+    "sample_breakdown_title": "Beispiel: Auslagen weiterberechnen",
+    "paper_label": "Auslagenrechnung · Muster",
+    "sample_breakdown_intro": "Eine Grafikdesignerin aus Köln berechnet die Auslagen für den Messeauftritt eines Kunden getrennt vom Honorar. Alle Posten hat sie im eigenen Namen bezahlt, also tragen sie Umsatzsteuer, hier 19 % als Satz ihrer Hauptleistung (prüfen Sie Ihren Fall mit dem Steuerberater). Belegbeträge netto, auf die Druckkosten 10 % Bearbeitungspauschale laut Vertrag.",
+    "sample_breakdown_rows": [
+      {
+        "description": "3. Juni: Druck Flyer A5, 2.000 Stück (Beleg 1)",
+        "qty": "1",
+        "rate": "186,40 €",
+        "amount": "186,40 €"
+      },
+      {
+        "description": "5. Juni: Druck Roll-up 85 × 200 cm (Beleg 2)",
+        "qty": "1",
+        "rate": "129,00 €",
+        "amount": "129,00 €"
+      },
+      {
+        "description": "8. Juni: Kurier Druckerei zur Messe Frankfurt (Beleg 3)",
+        "qty": "1",
+        "rate": "48,50 €",
+        "amount": "48,50 €"
+      },
+      {
+        "description": "9. Juni: Fahrt Köln–Frankfurt und zurück, eigener Pkw",
+        "qty": "380 km",
+        "rate": "0,30 €",
+        "amount": "114,00 €"
+      },
+      {
+        "description": "10.–11. Juni: Parkgebühren Messegelände, 2 Tage (Beleg 4)",
+        "qty": "2",
+        "rate": "21,00 €",
+        "amount": "42,00 €"
+      },
+      {
+        "description": "Bearbeitungspauschale 10 % auf Druckkosten von 315,40 €",
+        "qty": "1",
+        "rate": "31,54 €",
+        "amount": "31,54 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "551,44 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "104,77 €",
+    "sample_breakdown_balance": "656,21 €",
+    "sample_breakdown_notes": "Auslagen zum Messeauftritt 10.–11. Juni 2026, Auftrag A-2026-031. Honorar mit Rechnung 2026-044. Belege 1 bis 4 als PDF anbei. Kilometersatz und Pauschale laut Vertrag Ziff. 6. Die Gebühr der Stadt für die Plakatgenehmigung (85,00 €, Antrag auf den Namen des Kunden) folgt als durchlaufender Posten ohne USt mit Rechnung 2026-046. Zahlbar innerhalb von 14 Tagen.",
+    "industry_notes_title": "Was beim Weiterberechnen von Auslagen gilt",
+    "industry_notes": [
+      {
+        "title": "Durchlaufende Posten gesondert berechnen",
+        "text": "Invoicor rechnet mit einem Steuersatz pro Rechnung. Ein durchlaufender Posten ohne Umsatzsteuer passt deshalb nicht auf dieselbe Rechnung wie Auslagen mit 19 %. Berechnen Sie ihn gesondert ohne Steuer, mit dem Vermerk „Durchlaufender Posten nach § 10 Abs. 1 Satz 4 UStG, verauslagt im Namen und für Rechnung des Kunden“, und legen Sie den Bescheid bei."
+      },
+      {
+        "title": "Wann ein Posten wirklich durchläuft",
+        "text": "Entscheidend ist, in wessen Namen die Ausgabe getätigt wurde. Lautet der Bescheid oder die Rechnung des Dritten auf Ihren Kunden und zahlen Sie nur für ihn, spricht das für einen durchlaufenden Posten. Lautet sie auf Sie, ist es eine eigene Auslage. Im Zweifel fragen Sie Ihren Steuerberater."
+      },
+      {
+        "title": "Keine Spesenabrechnung",
+        "text": "Angestellte reichen Reisekosten über das Formular des Arbeitgebers ein, nicht per Rechnung. Hier geht es um Unternehmen, die einem Kunden Kosten berechnen."
+      }
+    ],
+    "mistakes_title": "Drei Fehler beim Weiterberechnen von Auslagen",
+    "mistakes": [
+      {
+        "title": "Brutto übernommen und Steuer obendrauf",
+        "text": "Wer den Bruttobetrag vom Beleg nimmt und 19 % daraufschlägt, berechnet Steuer auf Steuer. Nehmen Sie bei eigenen Auslagen den Nettobetrag, wenn Sie die Vorsteuer selbst ziehen."
+      },
+      {
+        "title": "Durchlaufender Posten mit Umsatzsteuer",
+        "text": "Eine Gebühr, die Sie im Namen des Kunden gezahlt haben, mit 19 % weiterzuberechnen, macht die Rechnung teurer als nötig. Umgekehrt ist eine eigene Auslage ohne Steuer zu niedrig berechnet."
+      },
+      {
+        "title": "Ein Aufschlag, den der Vertrag nicht kennt",
+        "text": "15 % auf Fahrtkosten, wenn der Vertrag „zum Selbstkostenpreis“ sagt, macht aus einer Routinerechnung eine Vertrauensfrage, spätestens wenn der Kunde einen Beleg prüft. Berechnen Sie nur eine Pauschale, die die Vereinbarung nennt."
+      }
+    ],
+    "tip_title": "Ein Tipp für Auslagenrechnungen",
+    "pro_tip": "Fotografieren Sie jeden Beleg sofort und benennen Sie die Datei mit seiner späteren Nummer („B3-Kurier-0806“). Positionen und Belegdateien passen dann schon zusammen. In Invoicor lassen sich Belege nicht anhängen: Schicken Sie sie als eigenes PDF in derselben E-Mail.",
+    "format_pdf_desc": "Ein PDF liegt im Freigabeprozess des Kunden neben den Belegkopien und hält jeden Betrag genau so fest, wie Sie ihn berechnet haben.",
+    "faq_title": "Fragen zum Weiterberechnen von Auslagen",
+    "faqs": [
+      {
+        "question": "Darf ich einem Kunden Auslagen in Rechnung stellen?",
+        "answer": "Ja, wenn Ihre Vereinbarung das vorsieht. Sie sollte nennen, welche Kosten, ob mit Aufschlag und ab welchem Betrag eine Freigabe nötig ist."
+      },
+      {
+        "question": "Was sind durchlaufende Posten?",
+        "answer": "Beträge, die Sie im Namen und für Rechnung Ihres Kunden einnehmen und ausgeben. Nach § 10 Abs. 1 Satz 4 UStG gehören sie nicht zum Entgelt, auf sie fällt keine Umsatzsteuer an."
+      },
+      {
+        "question": "Muss ich auf weiterberechnete Auslagen Umsatzsteuer berechnen?",
+        "answer": "Bei Auslagen im eigenen Namen ja, denn sie sind Teil Ihres Preises (§ 10 Abs. 1 Satz 2 UStG), in der Regel zum Satz der Hauptleistung; prüfen Sie das mit Ihrem Steuerberater. Auf durchlaufende Posten nicht."
+      },
+      {
+        "question": "Muss ich die Belege beilegen?",
+        "answer": "Viele Kunden verlangen es. Schicken Sie nummerierte Kopien passend zu den Positionen und bewahren Sie die Originale auf: Rechnungen acht Jahre (§ 14b Abs. 1 UStG, § 147 Abs. 3 AO)."
+      },
+      {
+        "question": "Wie berechne ich Fahrten mit dem eigenen Auto weiter?",
+        "answer": "Mit dem vereinbarten Kilometersatz und den Kilometern als Menge: „380 km zu 0,30 €“. Die Fahrt ist eine eigene Auslage mit Umsatzsteuer, kein durchlaufender Posten."
+      }
+    ],
+    "cta_title": "Ihre Auslagenrechnung",
+    "related": [
+      {
+        "name": "Dienstleistungsrechnung",
+        "slug": "rechnung-dienstleistung"
+      },
+      {
+        "name": "Rechnung für Freiberufler",
+        "slug": "rechnung-freiberufler"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "kleinunternehmer-rechnung",
+    "translation_of": "no-vat-invoice",
+    "niche": "Kleinunternehmer-Rechnung",
+    "title": "Kleinunternehmer Rechnung: Muster nach § 19 UStG | Invoicor",
+    "meta_description": "Kleinunternehmer Rechnung nach § 19 UStG: Grenzen seit 2025, Pflichtangaben, der richtige Hinweis und ein Muster ohne Umsatzsteuer. Jetzt PDF erstellen.",
+    "h1": "Kleinunternehmer Rechnung: Vorlage und Muster nach § 19 UStG",
+    "subtitle": "Die Rechnung ohne Mehrwertsteuer für Kleinunternehmer: was darauf gehört, welcher Hinweis reicht und was sich ändert, wenn Sie die Umsatzgrenze überschreiten.",
+    "intro_paragraph": "Als Kleinunternehmer nach § 19 UStG berechnen Sie keine Umsatzsteuer. Seit dem 1. Januar 2025 gilt: Ihr Umsatz lag im Vorjahr bei höchstens 25.000 € und liegt im laufenden Jahr bei höchstens 100.000 €. Ihre Rechnung ist trotzdem eine richtige Rechnung. Sie darf nur keine Umsatzsteuer ausweisen und muss auf die Befreiung hinweisen. E-Rechnungen müssen Kleinunternehmer nicht ausstellen, empfangen können müssen sie sie seit 2025 aber. Eine PDF-Rechnung, wie Invoicor sie erstellt, bleibt für Sie also in Ordnung, auch an Geschäftskunden.",
+    "include_title": "Was auf eine Kleinunternehmer-Rechnung gehört",
+    "what_to_include_intro": "Die Umsatzsteuer wegzulassen ist einfach. Damit die Rechnung ohne Rückfragen durchgeht, achten Sie auf diese sechs Punkte.",
+    "req_1_title": "Name und Anschrift, vollständig",
+    "req_1_text": "Ihr vollständiger Name und Ihre Anschrift, bei einem Fantasienamen zusätzlich Ihr bürgerlicher Name, und die vollständigen Daten des Kunden, bei Firmen mit Rechtsform.",
+    "req_2_title": "Steuernummer in die Hinweise",
+    "req_2_text": "Die meisten Kleinunternehmer haben nur eine Steuernummer vom Finanzamt. § 34a UStDV sieht für Kleinunternehmer eine kürzere Liste von Angaben vor; dort kann eine Kleinunternehmer-Identifikationsnummer die Steuernummer ersetzen. Das Steuer-ID-Feld in Invoicor druckt „USt-IdNr.“: Schreiben Sie Ihre Steuernummer deshalb in die Hinweise und lassen Sie das Feld leer.",
+    "req_3_title": "Rechnungsnummer, Datum und Leistungszeitraum",
+    "req_3_text": "§ 34a UStDV nennt für Kleinunternehmer keine Rechnungsnummer. Vergeben Sie trotzdem fortlaufende Nummern: Kunden buchen danach, Sie finden jede Rechnung wieder, und bei einer Prüfung sieht man, dass keine fehlt. Dazu das Ausstellungsdatum und den Zeitraum Ihrer Leistung, in Invoicor in der Beschreibung oder den Hinweisen.",
+    "req_4_title": "Leistung und Preis als Endbetrag",
+    "req_4_text": "Beschreiben Sie Art und Umfang der Leistung oder Menge und Art der Ware so, dass der Kunde sie wiedererkennt. Ihr Preis ist der Endpreis: kein „netto“, kein „zzgl. MwSt.“, keine Aufteilung in Netto und Brutto.",
+    "req_5_title": "Kein Steuerbetrag, dafür der Hinweis",
+    "req_5_text": "Als Kleinunternehmer weisen Sie keine Umsatzsteuer aus. Stellen Sie im kostenlosen Generator und in der App keinen Steuersatz ein: Das PDF zeigt dann eine Zeile „MwSt. (0 %)“ mit 0,00 €, weil Invoicor diese Zeile immer druckt. Das ist kein Steuerausweis. Entscheidend ist der Hinweis auf § 19 UStG in den Hinweisen, direkt sichtbar unter den Positionen, damit niemand die Zeile für eine steuerfreie Leistung eines regelbesteuerten Unternehmens hält.",
+    "req_6_title": "Der Hinweis auf § 19 UStG",
+    "req_6_text": "Die Rechnung muss auf die Steuerbefreiung hinweisen. Einen festen Wortlaut schreibt § 34a UStDV nicht vor; üblich sind „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“ oder „Gemäß § 19 UStG wird keine Umsatzsteuer berechnet“. Ein Satz in den Hinweisen genügt.",
+    "what_to_include_outro": "So sieht Ihr Kunde sofort, dass keine Umsatzsteuer anfällt und warum, und Ihre Unterlagen zeigen, dass Sie keine Steuer kassiert haben, die Sie nicht berechnen dürfen.",
+    "paper_label": "Kleinunternehmer-Rechnung · Muster",
+    "sample_breakdown_title": "Muster einer Kleinunternehmer-Rechnung",
+    "sample_breakdown_intro": "Ein Kleinunternehmer, der nebenberuflich Gärten pflegt, rechnet einen Monat für eine Hausverwaltung in Kassel ab. Sein Umsatz liegt unter beiden Grenzen des § 19 UStG: keine Steuerzeile, dafür der Hinweis. Die Steuernummer steht in den Hinweisen, weil das Feld „USt-IdNr.“ druckt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Heckenschnitt Wohnanlage Wilhelmshöher Allee 210, inkl. Zusammenrechen",
+        "qty": "6 Std.",
+        "rate": "38,00 €",
+        "amount": "228,00 €"
+      },
+      {
+        "description": "Rasenmähen und Laubbeseitigung, Termine am 6., 16. und 27. Oktober",
+        "qty": "3",
+        "rate": "65,00 €",
+        "amount": "195,00 €"
+      },
+      {
+        "description": "Abfuhr Grünschnitt zur Kompostanlage, 1 Anhängerladung",
+        "qty": "1",
+        "rate": "45,00 €",
+        "amount": "45,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "468,00 €",
+    "sample_breakdown_balance": "468,00 €",
+    "sample_breakdown_notes": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Leistungszeitraum: 1.–31. Oktober 2026. Steuernummer: 026/123/45678. Bitte überweisen Sie den Betrag innerhalb von 14 Tagen und geben Sie die Rechnungsnummer als Verwendungszweck an.",
+    "industry_notes_title": "Was Kleinunternehmer wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Die Grenzen seit 2025",
+        "text": "Seit dem 1. Januar 2025 sind Sie Kleinunternehmer, wenn Ihr Umsatz im Vorjahr 25.000 € nicht überstiegen hat und im laufenden Jahr 100.000 € nicht übersteigt (§ 19 UStG). Lag der Vorjahresumsatz über 25.000 €, sind Sie im neuen Jahr regelbesteuert. Überschreiten Sie im laufenden Jahr 100.000 €, endet die Regelung noch im selben Jahr; ab welcher Rechnung genau, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "title": "Was sich nach dem Wechsel ändert",
+        "text": "Ab dann berechnen Sie Umsatzsteuer, meist 19 %, für manche Leistungen 7 % (§ 12 UStG), weisen Steuersatz und Steuerbetrag aus, und die Rechnung braucht die vollen Angaben nach § 14 Abs. 4 UStG. Der Hinweis auf § 19 UStG fällt weg, und für Geschäftskunden gelten die Fristen zur E-Rechnung. Frühere Rechnungen bleiben ohne Umsatzsteuer."
+      },
+      {
+        "title": "E-Rechnung: empfangen ja, ausstellen nein",
+        "text": "Kleinunternehmer sind von der Pflicht ausgenommen, E-Rechnungen auszustellen. Empfangen können müssen Sie sie seit dem 1. Januar 2025 trotzdem; dafür reicht in der Regel ein E-Mail-Postfach. Ihre eigenen Rechnungen dürfen Sie weiter als PDF schicken."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Kleinunternehmer-Rechnungen",
+    "mistakes": [
+      {
+        "title": "Umsatzsteuer ausweisen, obwohl Sie Kleinunternehmer sind",
+        "text": "Wer als Kleinunternehmer „zzgl. 19 % MwSt.“ auf die Rechnung schreibt, um größer zu wirken, muss den ausgewiesenen Betrag unter Umständen ans Finanzamt zahlen. Ist das schon passiert, fragen Sie Ihren Steuerberater, wie Sie die Rechnung berichtigen."
+      },
+      {
+        "title": "Die 0-%-Zeile ohne Hinweis",
+        "text": "Ohne den Hinweis auf § 19 UStG wirkt eine Zeile „MwSt. (0 %)“ so, als wären Sie regelbesteuert und diese Leistung wäre steuerfrei. Invoicor druckt die Steuerzeile immer; der Hinweis in den Hinweisen macht klar, dass Sie Kleinunternehmer sind."
+      },
+      {
+        "title": "Die Umsatzgrenze aus dem Blick verlieren",
+        "text": "Ein großer Auftrag kann den Umsatz über 100.000 € heben, ein gutes Jahr über 25.000 € bringt den Wechsel im nächsten Januar. Führen Sie eine laufende Summe Ihrer Umsätze, damit Sie Angebote rechtzeitig mit Umsatzsteuer kalkulieren."
+      }
+    ],
+    "tip_title": "Ein Tipp für Kleinunternehmer",
+    "pro_tip": "Legen Sie eine fertige Rechnung mit dem Hinweis auf § 19 UStG, Ihrer Steuernummer, Bankverbindung und Zahlungsfrist an und duplizieren Sie sie für jeden Auftrag. Dann steht der Hinweis immer da, und kein Steuersatz rutscht hinein.",
+    "format_pdf_desc": "Ein PDF zeigt den Endbetrag mit Ihrem Hinweis an der richtigen Stelle, lässt sich nicht nachträglich um eine Steuerzeile ergänzen und ist leicht aufzubewahren: Rechnungen acht Jahre lang (§ 14b Abs. 1 UStG).",
+    "faq_title": "Fragen zur Kleinunternehmer-Rechnung",
+    "faqs": [
+      {
+        "question": "Was muss auf einer Kleinunternehmer-Rechnung stehen?",
+        "answer": "Ihr Name und Ihre Anschrift, die des Kunden, Ihre Steuernummer, das Ausstellungsdatum, Menge und Art der Ware oder Art und Umfang der Leistung, der Betrag und der Hinweis auf die Steuerbefreiung nach § 19 UStG (§ 34a UStDV). Eine fortlaufende Rechnungsnummer und den Leistungszeitraum empfehlen wir zusätzlich."
+      },
+      {
+        "question": "Welchen Satz schreibe ich als Kleinunternehmer auf die Rechnung?",
+        "answer": "Der Wortlaut ist frei, er muss nur auf die Befreiung hinweisen (§ 34a UStDV). Bewährt sind „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“ oder „Gemäß § 19 UStG wird keine Umsatzsteuer berechnet“."
+      },
+      {
+        "question": "Brauche ich als Kleinunternehmer eine Rechnungsnummer?",
+        "answer": "§ 34a UStDV führt sie für Kleinunternehmer nicht auf. Wir empfehlen sie trotzdem: Geschäftskunden fragen danach, und mit einer lückenlosen Nummernfolge behalten Sie den Überblick über Ihre Umsätze und die Grenzen."
+      },
+      {
+        "question": "Wie erstelle ich eine Rechnung ohne Mehrwertsteuer?",
+        "answer": "Tragen Sie Ihre Positionen wie gewohnt ein, stellen Sie keinen Steuersatz ein und schreiben Sie den Hinweis auf § 19 UStG in die Hinweise. Die Rechnung zeigt dann eine Zeile „MwSt. (0 %)“ mit 0,00 € und den Endbetrag ohne Umsatzsteuer, im kostenlosen Generator wie in der App; der Hinweis erklärt, warum."
+      },
+      {
+        "question": "Was passiert, wenn ich die Grenze überschreite?",
+        "answer": "Lag Ihr Umsatz im Vorjahr über 25.000 €, berechnen Sie im neuen Jahr Umsatzsteuer. Überschreiten Sie im laufenden Jahr 100.000 €, endet die Befreiung noch im selben Jahr. Ab dann tragen Sie Steuersatz und Steuerbetrag ein und lassen den Hinweis weg; den genauen Zeitpunkt klären Sie mit Ihrem Steuerberater."
+      }
+    ],
+    "cta_title": "Ihre Kleinunternehmer-Rechnung",
+    "related": [
+      {
+        "name": "Rechnung für Freiberufler",
+        "slug": "rechnung-freiberufler"
+      },
+      {
+        "name": "Stundenrechnung",
+        "slug": "stundenrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "rechnung-freiberufler",
+    "translation_of": "freelance-invoice",
+    "niche": "Rechnung für Freiberufler",
+    "title": "Rechnung Freiberufler: Vorlage & Muster mit USt | Invoicor",
+    "meta_description": "Rechnung als Freiberufler: Pflichtangaben nach § 14 UStG, Steuernummer oder USt-IdNr., 19 % oder § 19 UStG, Kunden in der EU. Mit Muster als PDF.",
+    "h1": "Rechnung Freiberufler: Vorlage und Muster für freiberufliche Tätigkeit",
+    "subtitle": "Für Texter, Übersetzer, Designer, Berater und alle, die freiberuflich arbeiten: Pflichtangaben, der richtige Steuerfall und Zahlungsfristen.",
+    "intro_paragraph": "Als Freiberufler werden Ihre Rechnungen oft von jemandem gelesen, der Sie nie getroffen hat: der Buchhaltung Ihres Auftraggebers. Sie prüft, ob alle Angaben nach § 14 Abs. 4 UStG da sind und die Steuer stimmt. Fehlt etwas, geht die Rechnung zurück. Für Rechnungen an Unternehmen in Deutschland gilt: Bis 31. Dezember 2026 ist ein PDF mit Zustimmung des Kunden erlaubt, bis 31. Dezember 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Ab 1. Januar 2028 müssen es E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD. Privatkunden und Kleinunternehmer betrifft das nicht.",
+    "include_title": "Was auf eine Rechnung als Freiberufler gehört",
+    "what_to_include_intro": "Buchhaltungen arbeiten Rechnungen nach einer Liste ab. Wer sie beim ersten Mal erfüllt, wird zu den vereinbarten Bedingungen bezahlt und muss nicht nachliefern.",
+    "req_1_title": "Ihr Name und der Ihres Auftraggebers",
+    "req_1_text": "Ihr vollständiger Name und Ihre Anschrift, auch wenn Sie unter einem Studionamen arbeiten: „Anna Berger, Berger Text & Übersetzung“. Beim Kunden der genaue Firmenname mit Rechtsform und Anschrift.",
+    "req_2_title": "Steuernummer oder USt-IdNr.",
+    "req_2_text": "§ 14 Abs. 4 UStG verlangt eine der beiden. Viele Freiberufler haben nur eine Steuernummer vom Finanzamt. Das Steuer-ID-Feld in Invoicor druckt „USt-IdNr.“: Haben Sie eine, gehört sie dorthin. Haben Sie nur eine Steuernummer, schreiben Sie sie in die Hinweise und lassen das Feld leer. Ihre persönliche Steuer-Identifikationsnummer ist nicht gemeint.",
+    "req_3_title": "Fortlaufende Nummer und Leistungsdatum",
+    "req_3_text": "Jede Rechnung braucht eine einmalige, fortlaufende Nummer über alle Kunden hinweg, etwa 2026-046, 2026-047. Dazu das Ausstellungsdatum und den Zeitpunkt oder Zeitraum Ihrer Leistung. Invoicor hat dafür kein eigenes Feld: Schreiben Sie „Leistungszeitraum: 1.–31. Oktober 2026“ in die Beschreibung oder die Hinweise.",
+    "req_4_title": "Die Leistung so, wie Sie sie angeboten haben",
+    "req_4_text": "Beschreiben Sie die Leistung passend zum Angebot: eine Pauschale als eine Position, zusätzliche Stunden oder Wörter als eigene Positionen mit Menge und Satz. Dann gibt der Kunde die Pauschale sofort frei.",
+    "req_5_title": "19 % USt oder der Hinweis auf § 19 UStG",
+    "req_5_text": "Sind Sie regelbesteuert, stehen Nettobetrag, Steuersatz und Steuerbetrag auf der Rechnung, in der Regel 19 % (§ 12 UStG). Sind Sie Kleinunternehmer nach § 19 UStG, entfällt die Steuer, und ein Hinweis auf die Befreiung steht an ihrer Stelle. Invoicor rechnet mit einem Steuersatz je Rechnung.",
+    "req_6_title": "Zahlungsziel und Bankverbindung",
+    "req_6_text": "Nennen Sie ein Zahlungsziel, etwa 14 Tage, Ihre IBAN und die Bitte, die Rechnungsnummer als Verwendungszweck anzugeben. Hat der Kunde eine Bestellnummer vergeben, übernehmen Sie sie genau so in die Hinweise.",
+    "what_to_include_outro": "Mit diesen Angaben kann auch jemand, der Sie nicht kennt, die Rechnung freigeben.",
+    "paper_label": "Freiberufler-Rechnung · Muster",
+    "sample_breakdown_title": "Muster einer Rechnung für freiberufliche Tätigkeit",
+    "sample_breakdown_intro": "Eine freiberufliche Übersetzerin in Leipzig rechnet einen Produktkatalog für einen Maschinenbauer in Stuttgart ab. Sie ist regelbesteuert (19 % USt), der Kunde hat dem Empfang als PDF zugestimmt. Ihre Steuernummer steht in den Hinweisen. Prüfen Sie Ihren eigenen Fall mit dem Steuerberater.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Fachübersetzung Englisch–Deutsch, Produktkatalog Fräsmaschinen, je Wort",
+        "qty": "4.200",
+        "rate": "0,14 €",
+        "amount": "588,00 €"
+      },
+      {
+        "description": "Lektorat der Druckfahnen und Abstimmung mit der Grafik",
+        "qty": "3 Std.",
+        "rate": "75,00 €",
+        "amount": "225,00 €"
+      },
+      {
+        "description": "Terminologieliste Englisch–Deutsch, 180 Begriffe, pauschal",
+        "qty": "1",
+        "rate": "120,00 €",
+        "amount": "120,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "933,00 €",
+    "sample_breakdown_tax_label": "USt. 19 %",
+    "sample_breakdown_tax": "177,27 €",
+    "sample_breakdown_balance": "1.110,27 €",
+    "sample_breakdown_notes": "Leistungszeitraum: 2.–20. November 2026. Ihre Bestellnummer: 4500-2281. Steuernummer: 231/123/45678. Zahlbar innerhalb von 14 Tagen ohne Abzug; bitte geben Sie die Rechnungsnummer 2026-047 als Verwendungszweck an.",
+    "industry_notes_title": "Was Freiberufler wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Freiberuf oder Gewerbe: für die Rechnung kein Unterschied",
+        "text": "Ob Ihre Tätigkeit steuerlich als freiberuflich gilt oder als Gewerbe, entscheidet das Finanzamt, und das hat Folgen etwa für die Gewerbesteuer. An der Rechnung ändert es nichts: dieselben Pflichtangaben nach § 14 Abs. 4 UStG, dieselbe Frage nach Umsatzsteuer oder Kleinunternehmerregelung."
+      },
+      {
+        "title": "Geschäftskunden in anderen EU-Ländern",
+        "text": "Für Dienstleistungen an Unternehmen in anderen EU-Ländern gilt meist das Reverse-Charge-Verfahren: keine deutsche Umsatzsteuer, Ihre und die USt-IdNr. des Kunden und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Ob das für Ihre Leistung gilt und was Sie melden müssen, etwa in der Zusammenfassenden Meldung, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "title": "Wann ein Kunde in Verzug ist",
+        "text": "Ein Unternehmen ist spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung in Verzug, ein Privatkunde nur, wenn die Rechnung darauf hinweist (§ 286 Abs. 3 BGB). Dann können Sie Verzugszinsen verlangen, 9 Prozentpunkte über dem Basiszinssatz von Unternehmen, 5 von Privatkunden, und von Unternehmen zusätzlich 40 € Pauschale (§ 288 BGB)."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Rechnungen von Freiberuflern",
+    "mistakes": [
+      {
+        "title": "Die Steuernummer im Feld für die USt-IdNr.",
+        "text": "Steht die Steuernummer unter „USt-IdNr.“, stolpert die Buchhaltung, und EU-Kunden, die die Nummer prüfen, finden nichts. Steuernummer in die Hinweise, USt-IdNr. in das Feld."
+      },
+      {
+        "title": "Eine neue Nummernfolge für jeden Kunden",
+        "text": "„Rechnung 001“ für jeden neuen Kunden ergibt doppelte Nummern, und das Finanzamt erwartet eine einmalige, fortlaufende Nummer. Nutzen Sie eine Folge für alle Kunden, gern mit Jahreszahl: 2026-001, 2026-002."
+      },
+      {
+        "title": "Zusatzarbeit in der Pauschale verstecken",
+        "text": "Wer die vereinbarte Pauschale einfach erhöht, um zusätzliche Stunden abzudecken, löst eine Rückfrage aus, weil der Betrag nicht zum Angebot passt. Lassen Sie die Pauschale stehen und rechnen Sie die Zusatzarbeit als eigene Position mit Datum und Anlass ab."
+      }
+    ],
+    "tip_title": "Ein Tipp für Freiberufler",
+    "pro_tip": "Fragen Sie bei jedem neuen Auftrag: „Was muss auf der Rechnung stehen, damit sie beim ersten Mal bezahlt wird?“ Oft ist es eine Bestellnummer oder eine Kostenstelle. Notieren Sie das in Invoicor beim Kunden und in den Hinweisen; wenn Sie seine letzte Rechnung duplizieren, ist es schon da.",
+    "format_pdf_desc": "Buchhaltungen legen Rechnungen als PDF ab und leiten sie zur Freigabe weiter. Ein PDF behält Ihr Layout und öffnet sich überall.",
+    "faq_title": "Fragen zur Rechnung als Freiberufler",
+    "faqs": [
+      {
+        "question": "Was muss auf einer Rechnung als Freiberufler stehen?",
+        "answer": "Name und Anschrift von Ihnen und dem Kunden, Ihre Steuernummer oder USt-IdNr., das Ausstellungsdatum, eine fortlaufende Rechnungsnummer, Art und Umfang der Leistung, Leistungsdatum oder Leistungszeitraum, der Nettobetrag sowie Steuersatz und Steuerbetrag oder ein Hinweis auf die Befreiung (§ 14 Abs. 4 UStG). Bei Rechnungen bis 250 € brutto reichen weniger Angaben (§ 33 UStDV)."
+      },
+      {
+        "question": "Muss ich als Freiberufler Umsatzsteuer berechnen?",
+        "answer": "Ja, wenn Sie nicht Kleinunternehmer sind. Kleinunternehmer nach § 19 UStG ist seit 2025, wer im Vorjahr höchstens 25.000 € und im laufenden Jahr höchstens 100.000 € Umsatz hat. Manche Leistungen sind von der Umsatzsteuer befreit, etwa bestimmte Heilbehandlungen; ob das für Sie gilt, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Steuernummer oder USt-IdNr.: Was gehört auf die Rechnung?",
+        "answer": "Eine von beiden genügt (§ 14 Abs. 4 UStG). Für Kunden in anderen EU-Ländern brauchen Sie die USt-IdNr. ohnehin. In Invoicor steht die USt-IdNr. im Steuer-ID-Feld, eine Steuernummer schreiben Sie in die Hinweise."
+      },
+      {
+        "question": "Wie schreibe ich eine Rechnung an einen Kunden in einem anderen EU-Land?",
+        "answer": "Bei Dienstleistungen an Unternehmen gilt meist das Reverse-Charge-Verfahren: keine deutsche Umsatzsteuer, beide USt-IdNrn. und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“; stellen Sie keinen Steuersatz ein (das PDF zeigt dann eine Zeile mit 0 % und 0,00 €). Invoicor erstellt Rechnungen in 11 Sprachen und 38 Währungen. Prüfen Sie Ihren Fall mit dem Steuerberater."
+      },
+      {
+        "question": "Darf ich als Freiberufler noch PDF-Rechnungen schicken?",
+        "answer": "An Privatkunden ja, auch künftig. An Unternehmen in Deutschland bis 31. Dezember 2026 mit Zustimmung des Kunden, bis 31. Dezember 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Ab 2028 brauchen Sie dafür E-Rechnungen; Kleinunternehmer sind ausgenommen."
+      }
+    ],
+    "cta_title": "Ihre Rechnung als Freiberufler",
+    "related": [
+      {
+        "name": "Kleinunternehmer-Rechnung",
+        "slug": "kleinunternehmer-rechnung"
+      },
+      {
+        "name": "Stundenrechnung",
+        "slug": "stundenrechnung"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "subunternehmer-rechnung",
+    "translation_of": "subcontractor-invoice",
+    "niche": "Subunternehmer-Rechnung",
+    "title": "Subunternehmer Rechnung: Muster mit § 13b UStG | Invoicor",
+    "meta_description": "Subunternehmer Rechnung an den Hauptunternehmer: § 13b UStG bei Bauleistungen, der Pflichthinweis, Leistungsstand und Nachträge. Mit Muster als PDF.",
+    "h1": "Subunternehmer Rechnung: Vorlage und Muster mit § 13b UStG",
+    "subtitle": "Für Subunternehmer, die den Hauptunternehmer abrechnen, nicht den Bauherrn: wann § 13b UStG gilt, was dann auf der Rechnung steht und welche Angaben die Bauleitung prüft.",
+    "intro_paragraph": "Als Subunternehmer rechnen Sie nicht mit dem Bauherrn ab, sondern mit dem Hauptunternehmer. Er prüft Ihre Rechnung gegen Vertrag, Aufmaß und Nachträge. Bei Bauleistungen gilt oft § 13b UStG: Erbringt der Hauptunternehmer selbst regelmäßig Bauleistungen, schuldet er die Umsatzsteuer, und Ihre Rechnung weist keine aus. Zwischen Unternehmen ist ein PDF bis 31. Dezember 2026 mit Zustimmung des Empfängers erlaubt, bis 31. Dezember 2027, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Ab 2028 müssen es E-Rechnungen sein (XRechnung oder ZUGFeRD). Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen.",
+    "include_title": "Was auf eine Subunternehmer-Rechnung gehört",
+    "what_to_include_intro": "Hauptunternehmer sammeln Nachunternehmerrechnungen oft zu einem Stichtag im Monat. Diese sechs Punkte prüft die Bauleitung zuerst.",
+    "req_1_title": "Bauvorhaben, Auftragsnummer und Rechnungsempfänger",
+    "req_1_text": "Nennen Sie das Bauvorhaben mit Adresse, die Auftrags- oder Bestellnummer des Hauptunternehmers und seine Projektnummer, falls er eine vergibt. Rechnungsempfänger ist der Hauptunternehmer mit genauem Firmennamen, nicht der Bauherr.",
+    "req_2_title": "Leistungsstand nach Aufmaß",
+    "req_2_text": "Rechnen Sie den Stand Ihrer Arbeiten ab: Auftragssumme, Leistungsstand in Prozent oder nach Aufmaß und den bis heute verdienten Betrag. Legen Sie das Aufmaß oder den Bautenstandsbericht bei. Die Bauleitung vergleicht Ihre Zahlen mit dem, was sie auf der Baustelle sieht.",
+    "req_3_title": "Frühere Abschlagsrechnungen als eigene Zeile",
+    "req_3_text": "Ziehen Sie ab, was frühere Abschlagsrechnungen gefordert haben, mit deren Nummer: „abzüglich Abschlagsrechnung SU-2026-041“. So fordert die Rechnung nur den neuen Anteil. In der Schlussrechnung werden erhaltene Abschläge abgezogen (§ 14 Abs. 5 UStG).",
+    "req_4_title": "Nachträge mit Nummer",
+    "req_4_text": "Zusätzlich beauftragte Arbeiten stehen als eigene Position mit Nachtragsnummer und Datum der Beauftragung: „Nachtrag N-03, sechs zusätzliche Stromkreise, beauftragt am 9. Oktober“. Mischen Sie sie nie in die Hauptposition, und rechnen Sie Nachträge erst ab, wenn sie schriftlich beauftragt sind.",
+    "req_5_title": "§ 13b UStG: keine Steuer, dafür der Hinweis",
+    "req_5_text": "Fällt Ihre Bauleistung unter § 13b UStG, steht kein Umsatzsteuerbetrag auf der Rechnung, sondern der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§ 14a Abs. 5 UStG). Stellen Sie in Invoicor keinen Steuersatz ein (das PDF zeigt dann „MwSt. (0 %)“ mit 0,00 €) und schreiben Sie den Hinweis in die Hinweise. Gilt § 13b nicht, berechnen Sie wie gewohnt 19 % USt.",
+    "req_6_title": "Leistungszeitraum und Ihre Steuerangaben",
+    "req_6_text": "Auch hier gelten die Angaben nach § 14 Abs. 4 UStG: Steuernummer oder USt-IdNr., fortlaufende Rechnungsnummer, Ausstellungsdatum und Leistungszeitraum. Für das Leistungsdatum hat Invoicor kein Feld: „Leistungszeitraum: 1.–31. Oktober 2026“ gehört in die Hinweise.",
+    "what_to_include_outro": "So beantwortet Ihre Rechnung die Fragen der Bauleitung vorab und wird ohne Rückfrage freigegeben.",
+    "paper_label": "Subunternehmer-Rechnung · Muster",
+    "sample_breakdown_title": "Muster einer Subunternehmer-Rechnung mit § 13b UStG",
+    "sample_breakdown_intro": "Die zweite Abschlagsrechnung eines Elektro-Subunternehmers zu einem Auftrag über 48.000 €: Leistungsstand 40 % nach einer ersten Rechnung über 20 %, dazu ein Nachtrag. Der Hauptunternehmer erbringt selbst regelmäßig Bauleistungen, also gilt § 13b UStG. Den Sicherheitseinbehalt von 5 % zieht er laut Vertrag bei der Zahlung ab; er steht nur in den Hinweisen.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Elektroinstallation laut Auftrag 2026-118: Leistungsstand 40 % von 48.000,00 € nach Aufmaß",
+        "qty": "1",
+        "rate": "19.200,00 €",
+        "amount": "19.200,00 €"
+      },
+      {
+        "description": "Abzüglich Abschlagsrechnung SU-2026-041 (Leistungsstand 20 %)",
+        "qty": "1",
+        "rate": "-9.600,00 €",
+        "amount": "-9.600,00 €"
+      },
+      {
+        "description": "Nachtrag N-03: sechs zusätzliche Stromkreise, beauftragt am 9. Oktober, fertiggestellt",
+        "qty": "1",
+        "rate": "1.380,00 €",
+        "amount": "1.380,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "10.980,00 €",
+    "sample_breakdown_balance": "10.980,00 €",
+    "sample_breakdown_notes": "Bauvorhaben: Ärztehaus Am Hafen 4, 28217 Bremen. Auftrag 2026-118 vom 3. August 2026. Leistungszeitraum: 1.–31. Oktober 2026. Steuerschuldnerschaft des Leistungsempfängers (§ 13b UStG). Aufmaß liegt bei. Sicherheitseinbehalt 5 % laut Vertrag: 549,00 € auf diese Rechnung. Zahlbar innerhalb von 21 Tagen laut Nachunternehmervertrag.",
+    "industry_notes_title": "Was Subunternehmer wissen sollten",
+    "industry_notes": [
+      {
+        "title": "Wann § 13b UStG gilt",
+        "text": "Bei Bauleistungen schuldet der Leistungsempfänger die Umsatzsteuer nur, wenn er selbst regelmäßig Bauleistungen erbringt oder eine gültige Bescheinigung seines Finanzamts vorlegt (Vordruck USt 1 TG, höchstens drei Jahre gültig). Lassen Sie sich die Bescheinigung geben und legen Sie eine Kopie zum Auftrag. Planungs- und Überwachungsleistungen fallen nicht darunter."
+      },
+      {
+        "title": "Wann normal 19 % gelten",
+        "text": "Beauftragt Sie ein Privatkunde oder ein Unternehmen, das selbst keine Bauleistungen erbringt, etwa eine Hausverwaltung, gilt § 13b nicht: Sie berechnen 19 % USt wie gewohnt. Dasselbe gilt, wenn Sie als Subunternehmer außerhalb des Baus arbeiten, etwa in der IT. Im Zweifel klären Sie vor der ersten Rechnung mit Ihrem Steuerberater, welcher Fall vorliegt."
+      },
+      {
+        "title": "Sicherheitseinbehalt und Freistellungsbescheinigung",
+        "text": "Viele Nachunternehmerverträge sehen einen Sicherheitseinbehalt vor, etwa 5 % je Abschlag. Ob, wie viel und wann er freigegeben wird, regelt Ihr Vertrag. Viele Hauptunternehmer verlangen zudem eine Freistellungsbescheinigung für den Steuerabzug bei Bauleistungen; ohne sie kann ein Teil der Zahlung einbehalten werden. Fragen Sie Ihren Steuerberater."
+      }
+    ],
+    "mistakes_title": "Drei Fehler auf Subunternehmer-Rechnungen",
+    "mistakes": [
+      {
+        "title": "Umsatzsteuer ausweisen, obwohl § 13b gilt",
+        "text": "Weisen Sie bei einer Leistung nach § 13b trotzdem 19 % aus, kommt die Rechnung in der Regel zurück, und Sie schulden die ausgewiesene Steuer unter Umständen trotzdem. Klären Sie vor der ersten Rechnung, ob § 13b gilt, und halten Sie die Bescheinigung des Hauptunternehmers bereit."
+      },
+      {
+        "title": "Den Bauherrn statt den Hauptunternehmer anschreiben",
+        "text": "Ihr Vertrag besteht mit dem Hauptunternehmer. Die Rechnung geht an seinen genauen Firmennamen, nicht an den Bauherrn, außer der Vertrag sagt etwas anderes."
+      },
+      {
+        "title": "Ein Leistungsstand, der der Baustelle vorausläuft",
+        "text": "Wer 60 % abrechnet, wo die Bauleitung 40 % sieht, bekommt die Position gekürzt oder die Rechnung zurück. Rechnen Sie ab, was eingebaut ist, und belegen Sie es mit dem Aufmaß."
+      }
+    ],
+    "tip_title": "Ein Tipp für Subunternehmer",
+    "pro_tip": "Führen Sie je Auftrag eine Übersicht: Auftragssumme, Nachträge, Leistungsstand je Rechnung und Sicherheitseinbehalt. In der Invoicor App sind negative Preise nicht möglich: Duplizieren Sie die letzte Rechnung, rechnen Sie den neuen Anteil als Position ab und nennen Sie Leistungsstand und frühere Rechnungen in den Hinweisen. Der kostenlose Generator nimmt negative Positionen, wie im Muster.",
+    "format_pdf_desc": "Hauptunternehmer legen Nachunternehmerrechnungen zu ihrer Abrechnung an den Bauherrn. Ein PDF hält Ihre Zahlen fest und druckt sauber mit dem Aufmaß für die Bauakte.",
+    "faq_title": "Fragen zur Subunternehmer-Rechnung",
+    "faqs": [
+      {
+        "question": "Muss ich als Subunternehmer Umsatzsteuer auf die Rechnung schreiben?",
+        "answer": "Das kommt darauf an. Erbringen Sie eine Bauleistung an einen Hauptunternehmer, der selbst regelmäßig Bauleistungen erbringt oder eine Bescheinigung USt 1 TG hat, schuldet er die Steuer nach § 13b UStG: keine USt auf der Rechnung, dafür der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Sonst berechnen Sie 19 % USt."
+      },
+      {
+        "question": "Gilt § 13b auch für Planung und Bauleitung?",
+        "answer": "Nein. Planungs- und Überwachungsleistungen sind keine Bauleistungen im Sinne von § 13b UStG. Wer als Subunternehmer plant oder die Bauleitung übernimmt, berechnet in der Regel 19 % USt."
+      },
+      {
+        "question": "Wie zeige ich den Sicherheitseinbehalt?",
+        "answer": "So, wie Ihr Vertrag es vorsieht. Behält der Hauptunternehmer ihn bei der Zahlung ein, stellen Sie den vollen Betrag in Rechnung und nennen den Einbehalt und die Summe der bisherigen Einbehalte in den Hinweisen. Freigegeben wird er nach den Regeln des Vertrags, etwa nach der Abnahme oder nach Ende der Gewährleistung."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Abschlagsrechnung und Schlussrechnung?",
+        "answer": "Eine Abschlagsrechnung fordert eine vorläufige Zahlung nach Baufortschritt (§ 632a BGB). Die Schlussrechnung rechnet den ganzen Auftrag ab und zieht die erhaltenen Abschläge ab (§ 14 Abs. 5 UStG). Ist die VOB/B vereinbart, gelten zusätzlich deren Regeln: Prüfen Sie Ihren Vertrag."
+      },
+      {
+        "question": "Erstellt Invoicor auch das Aufmaß?",
+        "answer": "Nein. Invoicor erstellt die Rechnung als PDF. Das Aufmaß kommt von Ihnen oder der Bauleitung, die Bescheinigung USt 1 TG vom Finanzamt des Hauptunternehmers."
+      }
+    ],
+    "cta_title": "Ihre Subunternehmer-Rechnung",
+    "related": [
+      {
+        "name": "Schlussrechnung",
+        "slug": "schlussrechnung"
+      },
+      {
+        "name": "Rechnung Lohn und Material",
+        "slug": "rechnung-lohn-und-material"
+      }
+    ],
+    "invoice_types": []
+  }
+]
