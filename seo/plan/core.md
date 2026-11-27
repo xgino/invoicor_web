@@ -54,9 +54,8 @@
 
 - **Key:** invoice template pdf
 - **Item:** on hold: file downloads (53) · **Intent:** download · **Languages:** en-only
-- **Write about:** On hold: the generator already makes PDFs and the blog has PDF articles; check for overlap before building (chunk 53).
-- **Don't write about:** The free generator (/free-invoice-generator) and the blog's PDF articles.
-- **Already covered (link, don't repeat):** learn:/what-is-a-pdf-invoice (“what is a pdf invoice”) · learn:/how-pdf-invoice-templates-work-on-iphone (“how pdf invoice templates work on iphone”) · learn:/how-to-use-pdf-invoice-templates-on-iphone (“how to use pdf invoice templates on iphone”) · learn:/how-to-share-an-invoice-pdf-from-iphone (“how to share an invoice pdf from iphone”)
+- **Write about:** On hold: the generator already makes PDFs; check for overlap before building (chunk 53).
+- **Don't write about:** The free generator (/free-invoice-generator).
 - **Notes:** Big-volume quick wins
 
 ### Item P1 (2)

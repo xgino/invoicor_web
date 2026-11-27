@@ -72,10 +72,10 @@ export const CATEGORIES = [
       'Be a trade template under another name: "service invoice" is about invoicing services in general, not about any trade.',
       "Synonyms as their own pages: down payment = advance payment = deposit; interim = progress (owned by /templates/construction-progress-invoice); time and materials = labor and materials; sole trader = self-employed = freelance.",
       "Promise what the app can't: no deposit or partial-payment tracking, no recurring invoices, no customs forms; a commercial invoice is the document, not the carrier's paperwork.",
-      'The concept explained at length (what is a proforma, what does net 30 mean): the blog owns "what is"; this page is the document.',
+      'The concept explained at length (what is a proforma, what does net 30 mean): no "what is" explainers: this page is the document.',
     ],
     links:
-      "the trade billing-type pages of this type (both ways), the free generator, the blog explainer, one tool (deposit calculator, mileage calculator …).",
+      "the trade billing-type pages of this type (both ways), the free generator, one tool (deposit calculator, mileage calculator …).",
     languages:
       "**yes** for most: these are the big local searches (Anzahlungsrechnung, Schlussrechnung, factuur zzp). US-only ones (1099, mileage) stay **en-only**.",
   },
@@ -160,7 +160,7 @@ export const CATEGORIES = [
     cannot: [
       "Countries where a PDF invoice from Invoicor isn't a valid invoice (mandatory e-invoicing or certified software, e.g. Italy's SdI, Portugal's certified software, Poland's KSeF from 2026, Kenya's eTIMS): no page that sends people to make one here.",
       "Rules from memory: only what the official source says; rates change.",
-      'The general "what goes on an invoice" (the blog owns it).',
+      'The general "what goes on an invoice" (not a country topic).',
     ],
     links: "the VAT calculator, the free generator, the reverse-charge page (EU countries).",
     languages:
@@ -204,27 +204,8 @@ export const CATEGORIES = [
       "Separate pages for synonyms (quote = estimate: one page owns both keys).",
       "Fewer than 10 is right here: only documents a small business really sends.",
     ],
-    links: "the invoice generator, the matching blog explainer.",
+    links: "the invoice generator.",
     languages: "**yes**, like the invoice generator.",
-  },
-  {
-    id: "blog",
-    title: "Blog (learn.invoicor.com)",
-    match: (r) => r.page_type === "blog" || r.page_type === "guide",
-    url: "`https://learn.invoicor.com/{slug}` (a separate site; you publish there)",
-    key: 'a question people ask ("what is a proforma invoice")',
-    blueprint: "BLUEPRINTS.md#guide-guidesslug-chunk-42",
-    data: "the blog itself (not this repo); `npm run pages` picks new articles up from its sitemap",
-    can: [
-      "Explain concepts and how-tos (what, why, how) with a link to the matching template, tool or generator.",
-      "Own the general topics, so templates and tools don't have to repeat them.",
-    ],
-    cannot: [
-      "A second article on a topic the blog already has: 5 near-pairs exist already (PAGES.md); improve or merge.",
-      "Trade-specific invoices (the templates own them) or app promises outside BRAND.md §10 (the fact check L1 found 129 such spots).",
-    ],
-    links: "one in-text link to invoicor.com per article (L2).",
-    languages: "**en-only** for now (a separate site).",
   },
   {
     id: "core",

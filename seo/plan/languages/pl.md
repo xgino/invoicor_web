@@ -819,7 +819,7 @@
 - **English page:** [freelance invoice template](../types.md#templatesfreelance-invoice) (planned: write the English page first)
 - **Search words:** the Polish term for "freelance invoice template"; known local terms: Rechnung Freiberufler / Selbstständige (de), factuur zzp (nl), facture auto-entrepreneur (fr), factura autónomo (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Freelancers in any field: what the client's accounts team needs (your legal name, address, tax ID or UTR where asked, their PO number, bank details), project, hourly or day-rate lines, usage rights when you sell creative work, VAT if registered or the no-VAT note, payment terms from the contract. UK sole traders and the self-employed use the same document. Sample: a project fee + 2 extra hours. A 'by field' section links the trade templates.
-- **Don't:** Field specifics (freelance design, copywriting, web development, translation …); the how-to article (blog: how-to-invoice-as-a-freelancer, link it); US 1099 detail (/templates/independent-contractor-invoice).
+- **Don't:** Field specifics (freelance design, copywriting, web development, translation …); US 1099 detail (/templates/independent-contractor-invoice).
 
 ### /templates/subcontractor-invoice → Polish
 
@@ -843,7 +843,7 @@
 - **English page:** [international invoice template](../types.md#templatesinternational-invoice) (planned: write the English page first)
 - **Search words:** the Polish term for "international invoice template"; known local terms: Rechnung ins Ausland / in Fremdwährung (de), factuur buitenland (nl)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Invoicing a client in another country: which currency (yours or theirs, and the rate if you convert), bank details that work abroad (IBAN, SWIFT/BIC or a payment link), the client's full address and tax ID, which tax applies (EU business clients: the reverse charge, link it; services exported outside the EU are often outside VAT: hedge), the invoice language. Invoicor: 38 currencies, invoices in 11 languages. Sample: a UK freelancer billing a US client in USD.
-- **Don't:** The EU reverse charge in depth (/reverse-charge-invoice); exporting goods (/templates/commercial-invoice); the blog's multi-currency articles (link one).
+- **Don't:** The EU reverse charge in depth (/reverse-charge-invoice); exporting goods (/templates/commercial-invoice).
 
 ## L80: B1 in Polish
 
@@ -1184,7 +1184,7 @@
 - **English page:** [invoice due date calculator](../tools.md#toolsdue-date-calculator) (planned: write the English page first)
 - **Search words:** "kalkulator [invoice due date, in Polish]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Roadmap T8. Invoice date + terms (due on receipt, Net 7/15/30/60, end of month, end of month + 30) = the due date, with the weekday; explain each term in one line.
-- **Don't:** What payment terms mean in depth (the blog topic invoice-payment-terms).
+- **Don't:** What payment terms mean in depth (not this page's topic).
 
 ### /tools/invoice-number-generator → Polish
 
@@ -1192,7 +1192,7 @@
 - **English page:** [invoice number generator](../tools.md#toolsinvoice-number-generator) (planned: write the English page first)
 - **Search words:** "kalkulator [invoice number, in Polish]"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Roadmap T8. Build an invoice number format (prefix, year, client code, sequence) and show the next 5 numbers; the rules in one paragraph (unique, sequential; in the EU no gaps). Copy to the generator.
-- **Don't:** How to number invoices in general (the blog: learn:/how-to-number-invoices-on-iphone).
+- **Don't:** How to number invoices in general (/tools/invoice-number-generator: link it).
 
 ### /tools/discount-calculator → Polish
 
@@ -2108,7 +2108,7 @@
 - **English page:** [proforma invoice generator](../generators.md#free-proforma-invoice-generator) (planned: write the English page first)
 - **Search words:** the Polish term for "proforma invoice generator"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Explain when a proforma is used (prepayment, customs, quotes for imports). The app itself makes invoices only.
-- **Don't:** What a proforma invoice is in depth (the blog topic what-is-a-proforma-invoice): link.
+- **Don't:** What a proforma invoice is in depth: link /free-proforma-invoice-generator.
 
 ### /free-credit-note-generator → Polish
 
@@ -2116,7 +2116,7 @@
 - **English page:** [credit note generator](../generators.md#free-credit-note-generator) (planned: write the English page first)
 - **Search words:** the Polish term for "credit note generator"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The app has no credit notes: say so; in the app you cancel and duplicate.
-- **Don't:** What a credit note is (the blog topic what-is-a-credit-note): link.
+- **Don't:** What a credit note is in depth: link /free-credit-note-generator.
 
 ## L210: T7 in Polish
 

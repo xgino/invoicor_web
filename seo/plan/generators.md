@@ -9,7 +9,7 @@
 
 - **URL:** `/free-{document}-generator` · **Key:** "free {document} generator"
 - **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#generator-free-invoice-generator-chunks-3035) · **Where it's written:** page code: a `document_type` in the web generator (chunk 44)
-- **Links to:** the invoice generator, the matching blog explainer.
+- **Links to:** the invoice generator.
 - **Languages:** **yes**, like the invoice generator.
 
 **Can do:**
@@ -49,7 +49,7 @@
 - **Key:** proforma invoice generator · also: proforma invoice template
 - **Item:** G1 · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs code first (chunk 44): a proforma mode in the web generator (the title 'Proforma invoice', 'not a tax invoice', no invoice number sequence). Explain when a proforma is used (prepayment, customs, quotes for imports). The app itself makes invoices only.
-- **Don't write about:** What a proforma invoice is in depth (the blog topic what-is-a-proforma-invoice): link.
+- **Don't write about:** What a proforma invoice is in depth: link /free-proforma-invoice-generator.
 - **Already covered (link, don't repeat):** /free-invoice-generator (“free invoice generator”)
 
 #### /free-credit-note-generator
@@ -57,4 +57,4 @@
 - **Key:** credit note generator · also: credit memo template; credit note template
 - **Item:** G1 · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs code first (chunk 44): a credit note mode (refers to the original invoice number, negative amounts). The app has no credit notes: say so; in the app you cancel and duplicate.
-- **Don't write about:** What a credit note is (the blog topic what-is-a-credit-note): link.
+- **Don't write about:** What a credit note is in depth: link /free-credit-note-generator.

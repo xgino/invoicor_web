@@ -25,12 +25,11 @@ export const COLUMNS = [
 /**
  * The language decision per page (roadmap R4, "localize only what makes sense"):
  * yes = written per country in every language · local = only in its own language ·
- * en-only = stays English (US/UK-only topics, HL8; the blog is a separate site).
+ * en-only = stays English (US/UK-only topics, HL8).
  */
 export const LOCALIZE = ["yes", "local", "en-only"];
 
 export const LOCALES = ["en", "nl", "de", "fr", "es", "it", "pt", "pl", "sv", "da", "nb"];
-export const BLOG_ORIGIN = "https://learn.invoicor.com";
 
 /** Two keys this alike (0–1, shared words) are flagged. 1 = the same words. */
 export const TOO_CLOSE = 0.6;
@@ -177,16 +176,15 @@ export function overlaps(rows) {
 
 // ── Grouping ──
 
-/** Where a page lives, for the counts: "learn.invoicor.com", "/templates", "/de" … */
+/** Where a page lives, for the counts: "/templates", "/de" … */
 export function section(row) {
-  if (row.url.startsWith(BLOG_ORIGIN)) return "learn.invoicor.com (blog)";
   const first = row.url.split("/")[1] ?? "";
   if (LOCALES.includes(first)) return `/${first}`;
   if (["templates", "industries", "compare", "tools", "guides"].includes(first)) return `/${first}`;
   return "other English pages";
 }
 
-const shortUrl = (url) => url.replace(BLOG_ORIGIN, "learn:");
+const shortUrl = (url) => url;
 
 import { CATEGORIES } from "./pages-categories.mjs";
 import {
@@ -209,8 +207,8 @@ export function renderPagesMd(rows) {
   out.push(
     "# Pages we have",
     "",
-    "> **Generated, don't edit by hand.** Every live page on invoicor.com, its translations and the",
-    "> blog (learn.invoicor.com), with its **key** (the search it's for), its language decision and the",
+    "> **Generated, don't edit by hand.** Every live page on invoicor.com and its translations,",
+    "> with its **key** (the search it's for), its language decision and the",
     "> date it was made. What we still want to build is in [PLAN.md](PLAN.md). The data for both is",
     "> [keyword-map.csv](keyword-map.csv). After adding or removing pages: `npm run build && npm run pages`.",
     '> Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).',
@@ -251,7 +249,7 @@ export function renderPagesMd(rows) {
   );
 
   // Page type × language
-  const site = live.filter((r) => !r.url.startsWith(BLOG_ORIGIN));
+  const site = live;
   out.push(
     "### invoicor.com: page type × language",
     "",
@@ -328,7 +326,7 @@ export function renderPagesMd(rows) {
 
 /** Per English page type marked "yes": how many language versions are missing. */
 function languageGaps(rows) {
-  const site = rows.filter((r) => !r.url.startsWith(BLOG_ORIGIN) && r.status === "live");
+  const site = rows.filter((r) => r.status === "live");
   return [...new Set(site.filter((r) => r.lang === "en").map((r) => r.page_type))].map((type) => {
     const en = site.filter((r) => r.lang === "en" && r.page_type === type);
     const yes = en.filter((r) => r.localize === "yes").length;
@@ -633,8 +631,7 @@ function renderPlan(rows) {
   out.push(
     "## Not in an item yet",
     "",
-    "Blog topics (you write them on learn.invoicor.com), pages that need a decision or code first,",
-    "and pages on hold, with the reason in their brief.",
+    "Pages that need a decision or code first, and pages on hold, with the reason in their brief.",
     "",
   );
   for (const [g, list] of group(loose, (r) => r.chunk || "unsorted"))

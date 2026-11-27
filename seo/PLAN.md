@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**241 / 4,000 pages live** (6%) · planned: 901 English and local pages + 8,150 language pages · **9,292 when everything is built** (fewer after the demand gate parks the weak ones)
+**207 / 4,000 pages live** (5%) · planned: 901 English and local pages + 8,150 language pages · **9,258 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -114,7 +114,6 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
 | [Generators (other documents)](#generators-other-documents-g) | G0 G1 | 1 | 4 | 10/20 done |
-| [Blog (learn.invoicor.com)](#blog-learninvoicorcom-bl) | BL1 BL2 | 34 | 0 | none |
 | [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P0 P1 | 9 | 2 | 0/20 done |
 | [Languages](#languages-l) | L1–L700 | 80 | 8150 | |
 
@@ -1523,52 +1522,6 @@ Direction (what these pages can and can't do) and every brief: [plan/generators.
   - [ ] [/free-proforma-invoice-generator](plan/generators.md#free-proforma-invoice-generator) proforma invoice generator
   - [ ] [/free-credit-note-generator](plan/generators.md#free-credit-note-generator) credit note generator
 
-## Blog (learn.invoicor.com) (BL)
-
-Direction (what these pages can and can't do) and every brief: [plan/blog.md](plan/blog.md)
-
-### BL1: Blog articles 1–17 (built, learn.invoicor.com)
-
-- [x] **BL1** · 17/17 live
-  - [x] [learn:/how-to-use-an-invoice-maker-for-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-use-an-invoice-maker-for-iphone) how to use an invoice maker for iphone
-  - [x] [learn:/how-to-create-an-invoice-on-iphone-in-seconds](https://invoicor.comhttps://learn.invoicor.com/how-to-create-an-invoice-on-iphone-in-seconds) how to create an invoice on iphone in seconds
-  - [x] [learn:/free-invoice-app-for-iphone-what-to-look-for](https://invoicor.comhttps://learn.invoicor.com/free-invoice-app-for-iphone-what-to-look-for) free invoice app for iphone what to look for
-  - [x] [learn:/how-pdf-invoice-templates-work-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-pdf-invoice-templates-work-on-iphone) how pdf invoice templates work on iphone
-  - [x] [learn:/what-is-a-multi-currency-invoicing-app](https://invoicor.comhttps://learn.invoicor.com/what-is-a-multi-currency-invoicing-app) what is a multi currency invoicing app
-  - [x] [learn:/how-a-tax-calculator-helps-when-creating-invoices](https://invoicor.comhttps://learn.invoicor.com/how-a-tax-calculator-helps-when-creating-invoices) how a tax calculator helps when creating invoices
-  - [x] [learn:/how-to-share-an-invoice-pdf-from-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-share-an-invoice-pdf-from-iphone) how to share an invoice pdf from iphone
-  - [x] [learn:/what-makes-an-invoice-look-professional](https://invoicor.comhttps://learn.invoicor.com/what-makes-an-invoice-look-professional) what makes an invoice look professional
-  - [x] [learn:/invoice-creation-checklist-for-iphone-users](https://invoicor.comhttps://learn.invoicor.com/invoice-creation-checklist-for-iphone-users) invoice creation checklist for iphone users
-  - [x] [learn:/what-is-an-invoice-maker](https://invoicor.comhttps://learn.invoicor.com/what-is-an-invoice-maker) what is an invoice maker
-  - [x] [learn:/how-to-use-pdf-invoice-templates-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-use-pdf-invoice-templates-on-iphone) how to use pdf invoice templates on iphone
-  - [x] [learn:/how-to-calculate-tax-on-an-invoice-in-the-app](https://invoicor.comhttps://learn.invoicor.com/how-to-calculate-tax-on-an-invoice-in-the-app) how to calculate tax on an invoice in the app
-  - [x] [learn:/can-you-create-invoices-in-different-currencies](https://invoicor.comhttps://learn.invoicor.com/can-you-create-invoices-in-different-currencies) can you create invoices in different currencies
-  - [x] [learn:/how-auto-fill-helps-you-create-invoices-faster](https://invoicor.comhttps://learn.invoicor.com/how-auto-fill-helps-you-create-invoices-faster) how auto fill helps you create invoices faster
-  - [x] [learn:/how-to-share-invoices-instantly-from-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-share-invoices-instantly-from-iphone) how to share invoices instantly from iphone
-  - [x] [learn:/how-to-create-a-receipt-on-iphone-in-minutes](https://invoicor.comhttps://learn.invoicor.com/how-to-create-a-receipt-on-iphone-in-minutes) how to create a receipt on iphone in minutes
-  - [x] [learn:/how-to-save-an-invoice-as-a-pdf-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-save-an-invoice-as-a-pdf-on-iphone) how to save an invoice as a pdf on iphone
-
-### BL2: Blog articles 18–34 (built, learn.invoicor.com)
-
-- [x] **BL2** · 17/17 live
-  - [x] [learn:/how-to-send-an-invoice-from-iphone-by-email](https://invoicor.comhttps://learn.invoicor.com/how-to-send-an-invoice-from-iphone-by-email) how to send an invoice from iphone by email
-  - [x] [learn:/how-to-change-the-currency-on-an-invoice](https://invoicor.comhttps://learn.invoicor.com/how-to-change-the-currency-on-an-invoice) how to change the currency on an invoice
-  - [x] [learn:/how-to-reuse-invoice-details-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-reuse-invoice-details-on-iphone) how to reuse invoice details on iphone
-  - [x] [learn:/how-to-number-invoices-on-iphone](https://invoicor.comhttps://learn.invoicor.com/how-to-number-invoices-on-iphone) how to number invoices on iphone
-  - [x] [learn:/what-should-an-invoice-include](https://invoicor.comhttps://learn.invoicor.com/what-should-an-invoice-include) what should an invoice include
-  - [x] [learn:/what-is-a-pdf-invoice](https://invoicor.comhttps://learn.invoicor.com/what-is-a-pdf-invoice) what is a pdf invoice
-  - [x] [learn:/what-does-auto-fill-mean-in-an-invoice-app](https://invoicor.comhttps://learn.invoicor.com/what-does-auto-fill-mean-in-an-invoice-app) what does auto fill mean in an invoice app
-  - [x] [learn:/why-use-an-invoice-app-on-iphone](https://invoicor.comhttps://learn.invoicor.com/why-use-an-invoice-app-on-iphone) why use an invoice app on iphone
-  - [x] [learn:/what-does-an-invoice-tax-calculator-do](https://invoicor.comhttps://learn.invoicor.com/what-does-an-invoice-tax-calculator-do) what does an invoice tax calculator do
-  - [x] [learn:/what-is-a-multi-currency-invoice](https://invoicor.comhttps://learn.invoicor.com/what-is-a-multi-currency-invoice) what is a multi currency invoice
-  - [x] [learn:/best-invoice-app-features-for-freelancers-on-iphone](https://invoicor.comhttps://learn.invoicor.com/best-invoice-app-features-for-freelancers-on-iphone) best invoice app features for freelancers on iphone
-  - [x] [learn:/best-ways-to-send-invoices-from-iphone](https://invoicor.comhttps://learn.invoicor.com/best-ways-to-send-invoices-from-iphone) best ways to send invoices from iphone
-  - [x] [learn:/best-invoice-template-styles-for-mobile-use](https://invoicor.comhttps://learn.invoicor.com/best-invoice-template-styles-for-mobile-use) best invoice template styles for mobile use
-  - [x] [learn:/can-you-make-an-invoice-on-iphone-without-paper](https://invoicor.comhttps://learn.invoicor.com/can-you-make-an-invoice-on-iphone-without-paper) can you make an invoice on iphone without paper
-  - [x] [learn:/can-you-edit-an-invoice-after-saving-it](https://invoicor.comhttps://learn.invoicor.com/can-you-edit-an-invoice-after-saving-it) can you edit an invoice after saving it
-  - [x] [learn:/can-you-send-an-invoice-as-a-pdf-from-iphone](https://invoicor.comhttps://learn.invoicor.com/can-you-send-an-invoice-as-a-pdf-from-iphone) can you send an invoice as a pdf from iphone
-  - [x] [learn:/do-you-need-to-fill-every-invoice-field](https://invoicor.comhttps://learn.invoicor.com/do-you-need-to-fill-every-invoice-field) do you need to fill every invoice field
-
 ## Core pages, hubs, trust and legal (P)
 
 Direction (what these pages can and can't do) and every brief: [plan/core.md](plan/core.md)
@@ -2649,9 +2602,7 @@ Pricing calculators III: makers and production · 7 pages
 
 ## Not in an item yet
 
-Blog topics (you write them on learn.invoicor.com), pages that need a decision or code first,
-and pages on hold, with the reason in their brief.
+Pages that need a decision or code first, and pages on hold, with the reason in their brief.
 
 - **on hold: file downloads (53)** (4): [/templates/invoice-template-word](plan/core.md#templatesinvoice-template-word) · [/templates/invoice-template-excel](plan/core.md#templatesinvoice-template-excel) · [/templates/invoice-template-google-docs](plan/core.md#templatesinvoice-template-google-docs) · [/templates/invoice-template-pdf](plan/core.md#templatesinvoice-template-pdf)
 - **on hold: e-invoicing** (3): [/it/fattura-elementi-obbligatori](plan/local.md#itfattura-elementi-obbligatori) · [/pt/requisitos-fatura](plan/local.md#ptrequisitos-fatura) · [/pl/elementy-faktury](plan/local.md#plelementy-faktury)
-- **blog topics (L4)** (12): [learn:/how-to-write-an-invoice](plan/blog.md#learnhow-to-write-an-invoice) · [learn:/what-to-include-on-an-invoice](plan/blog.md#learnwhat-to-include-on-an-invoice) · [learn:/invoice-vs-receipt](plan/blog.md#learninvoice-vs-receipt) · [learn:/invoice-payment-terms](plan/blog.md#learninvoice-payment-terms) · [learn:/how-to-number-invoices](plan/blog.md#learnhow-to-number-invoices) · [learn:/late-payment-email](plan/blog.md#learnlate-payment-email) · [learn:/what-is-a-proforma-invoice](plan/blog.md#learnwhat-is-a-proforma-invoice) · [learn:/what-is-a-credit-note](plan/blog.md#learnwhat-is-a-credit-note) · [learn:/what-does-net-30-mean](plan/blog.md#learnwhat-does-net-30-mean) · [learn:/how-to-invoice-as-a-freelancer](plan/blog.md#learnhow-to-invoice-as-a-freelancer) · [learn:/what-to-do-when-a-client-doesnt-pay](plan/blog.md#learnwhat-to-do-when-a-client-doesnt-pay) · [learn:/how-to-charge-a-deposit](plan/blog.md#learnhow-to-charge-a-deposit)

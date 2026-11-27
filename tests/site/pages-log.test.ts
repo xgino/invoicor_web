@@ -6,7 +6,6 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
-  BLOG_ORIGIN,
   LOCALIZE,
   parseCsv,
   renderPagesMd,
@@ -43,9 +42,7 @@ describe("page log", () => {
 
   it(`has no live row for a page that's gone (${FIX})`, () => {
     const onSite = new Set(site);
-    const stale = rows.filter(
-      (r) => r.status === "live" && !r.url.startsWith(BLOG_ORIGIN) && !onSite.has(r.url),
-    );
+    const stale = rows.filter((r) => r.status === "live" && !onSite.has(r.url));
     expect(stale.map((r) => r.url)).toEqual([]);
   });
 

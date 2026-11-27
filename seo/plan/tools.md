@@ -53,7 +53,7 @@
 - **Key:** invoice due date calculator · also: net 30 calculator; payment terms calculator
 - **Item:** TL1 · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts in 11 languages (lib/i18n/pages/tools). Roadmap T8. Invoice date + terms (due on receipt, Net 7/15/30/60, end of month, end of month + 30) = the due date, with the weekday; explain each term in one line.
-- **Don't write about:** What payment terms mean in depth (the blog topic invoice-payment-terms).
+- **Don't write about:** What payment terms mean in depth (not this page's topic).
 - **Notes:** T8
 
 #### /tools/invoice-number-generator
@@ -61,8 +61,8 @@
 - **Key:** invoice number generator · also: invoice numbering format
 - **Item:** TL1 · **Intent:** tool (do) · **Languages:** yes
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts in 11 languages (lib/i18n/pages/tools). Roadmap T8. Build an invoice number format (prefix, year, client code, sequence) and show the next 5 numbers; the rules in one paragraph (unique, sequential; in the EU no gaps). Copy to the generator.
-- **Don't write about:** How to number invoices in general (the blog: learn:/how-to-number-invoices-on-iphone).
-- **Already covered (link, don't repeat):** /free-invoice-generator (“free invoice generator”) · learn:/how-to-number-invoices-on-iphone (“how to number invoices on iphone”)
+- **Don't write about:** How to number invoices in general (/tools/invoice-number-generator: link it).
+- **Already covered (link, don't repeat):** /free-invoice-generator (“free invoice generator”)
 - **Notes:** T8
 
 #### /tools/discount-calculator
@@ -106,7 +106,6 @@
 - **Item:** TL1 · **Intent:** tool (do) · **Languages:** en-only
 - **Write about:** Needs page code (components/tools, lib/tools/registry.ts) and its texts in 11 languages (lib/i18n/pages/tools). US sales tax: amount + rate = tax and total; state base rates as presets (sourced, dated; local rates add on top, say so). English only (US topic). Link the VAT calculator for other countries.
 - **Don't write about:** The VAT calculator (owned by /tools/vat-calculator).
-- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”)
 - **Notes:** new
 
 #### /tools/vat-number-checker

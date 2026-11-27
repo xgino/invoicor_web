@@ -464,7 +464,6 @@
 - **Item:** T7 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Per return and per form or schedule, state returns, e-filing; preparers need a PTIN in the US (hedge).
 - **Don't write about:** Bookkeeping (owned by /templates/bookkeeping).
-- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”)
 - **Notes:** industry: tax-preparers; en-only: US-style tax preparation; elsewhere fees are often regulated (Germany: StBVV)
 
 #### /templates/attorney

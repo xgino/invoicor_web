@@ -8,7 +8,6 @@
  *
  * Sync: every URL in out/sitemap.xml gets a row (new rows: today's date, a key from the URL or the
  * title, "planned" becomes "live"); rows no longer on the site become "removed" (kept as history).
- * The blog (learn.invoicor.com) comes from its own sitemap; offline, its rows stay as they were.
  * Rows without a date get the date from git history (the commit that added that page).
  */
 import { execFileSync } from "node:child_process";
@@ -16,7 +15,6 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  BLOG_ORIGIN,
   CLOSE,
   LOCALES,
   TOO_CLOSE,
@@ -119,56 +117,16 @@ for (const url of siteUrls) {
 }
 const onSite = new Set(siteUrls);
 for (const r of rows)
-  if (!r.url.startsWith(BLOG_ORIGIN) && r.status === "live" && !onSite.has(r.url)) {
+  if (r.status === "live" && !onSite.has(r.url)) {
     r.status = "removed";
     changes.push(`- ${r.url} (no longer on the site)`);
   }
-
-// ── The blog ──
-try {
-  const xml = await fetchText(`${BLOG_ORIGIN}/sitemap-1.xml`);
-  const posts = [...xml.matchAll(/<url>\s*<loc>([^<]+)<\/loc>(?:\s*<lastmod>([^<]+)<\/lastmod>)?/g)]
-    .map((m) => ({ url: m[1].replace(/\/$/, ""), date: (m[2] || "").slice(0, 10) }))
-    .filter((p) => p.url !== BLOG_ORIGIN && p.url !== `${BLOG_ORIGIN}/blog`);
-  const seen = new Set(posts.map((p) => p.url));
-  for (const p of posts) {
-    const row = byUrl.get(p.url);
-    if (row) {
-      if (row.status !== "live") row.status = "live";
-      continue;
-    }
-    const fresh = {
-      url: p.url,
-      lang: "en",
-      status: "live",
-      added: p.date,
-      page_type: "blog",
-      localize: "en-only",
-      primary_keyword: p.url.split("/").pop().replace(/-/g, " "),
-      secondary_keywords: "",
-      intent: "learn",
-      chunk: "",
-      baseline_position: "",
-      notes: "",
-    };
-    rows.push(fresh);
-    byUrl.set(p.url, fresh);
-    changes.push(`+ ${shortBlog(p.url)}  (blog)`);
-  }
-  for (const r of rows)
-    if (r.url.startsWith(BLOG_ORIGIN) && r.status === "live" && !seen.has(r.url)) {
-      r.status = "removed";
-      changes.push(`- ${shortBlog(r.url)} (no longer on the blog)`);
-    }
-} catch (e) {
-  console.warn(`Blog not reachable (${e.message}): its rows stay as they were.`);
-}
 
 // ── Dates ──
 for (const r of rows) if (r.status === "live" && !r.added) r.added = gitDate(r.url) || today;
 
 // ── Write ──
-const order = (r) => (r.url.startsWith(BLOG_ORIGIN) ? 2 : r.lang === "en" ? 0 : 1);
+const order = (r) => (r.lang === "en" ? 0 : 1);
 rows.sort((a, b) => order(a) - order(b));
 writeFileSync(CSV, toCsv(rows));
 writeFileSync(MD, renderPagesMd(rows));
@@ -218,10 +176,6 @@ function guessType(url) {
   if (url.split("/").filter(Boolean).at(-1) === "android") return "android";
   const segments = url.split("/").filter(Boolean);
   return segments.length <= 1 ? "page" : segments[0];
-}
-
-function shortBlog(url) {
-  return url.replace(BLOG_ORIGIN, "learn:");
 }
 
 /** The day the commit that first mentioned this page was made. */

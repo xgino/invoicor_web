@@ -265,7 +265,6 @@
 - **Key:** invoice app for sign makers
 - **Item:** I6 · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: design, materials and size, installation, permits for outdoor signs, the deposit. Show it as their real week of invoicing from the iPhone.
-- **Already covered (link, don't repeat):** learn:/what-is-an-invoice-maker (“what is an invoice maker”)
 - **Notes:** template: sign-making
 
 #### /industries/screen-printers
@@ -441,7 +440,6 @@
 - **Key:** invoice app for tax preparers
 - **Item:** I7 · **Intent:** app for my trade · **Languages:** en-only
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: per return and per form or schedule, state returns, e-filing; preparers need a PTIN in the US (hedge). Show it as their real week of invoicing from the iPhone.
-- **Already covered (link, don't repeat):** learn:/what-does-an-invoice-tax-calculator-do (“what does an invoice tax calculator do”) · learn:/how-to-calculate-tax-on-an-invoice-in-the-app (“how to calculate tax on an invoice in the app”)
 - **Notes:** template: tax-preparation; en-only: see /templates/tax-preparation
 
 #### /industries/lawyers
@@ -652,7 +650,6 @@
 - **Key:** invoice app for furniture makers
 - **Item:** I8 · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, a glossary, tax and licensing notes (hedged), 5 FAQs. Their day and billing: the design, the deposit, materials, finishing, delivery. Show it as their real week of invoicing from the iPhone.
-- **Already covered (link, don't repeat):** learn:/what-is-an-invoice-maker (“what is an invoice maker”)
 - **Notes:** template: custom-furniture
 
 #### /industries/glaziers
@@ -791,7 +788,6 @@
 - **Item:** I11 · **Intent:** app for my trade · **Languages:** yes
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Freelancers across fields: foreign clients (currencies, languages, reverse charge), project, hourly and day-rate invoices, chasing payment by re-sending the PDF. Parent of the field pages (designers, developers, writers): link them.
 - **Don't write about:** The template's content (/templates/freelance-invoice, /templates/hourly-invoice, /templates/day-rate-invoice): link it, don't repeat it; features outside BRAND.md §10.
-- **Already covered (link, don't repeat):** learn:/best-invoice-app-features-for-freelancers-on-iphone (“best invoice app features for freelancers on iphone”)
 - **Notes:** template: freelance-invoice, hourly-invoice, day-rate-invoice
 
 #### /industries/independent-contractors

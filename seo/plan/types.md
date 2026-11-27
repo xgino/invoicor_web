@@ -9,7 +9,7 @@
 
 - **URL:** `/templates/{type}-invoice` · **Key:** "{deposit | final | hourly | commercial | freelance …} invoice template"
 - **Blueprint:** [BLUEPRINTS.md](../BLUEPRINTS.md#invoice-type-template-templatestype-invoice) · **Where it's written:** `content/templates.json` (same fields as a template)
-- **Links to:** the trade billing-type pages of this type (both ways), the free generator, the blog explainer, one tool (deposit calculator, mileage calculator …).
+- **Links to:** the trade billing-type pages of this type (both ways), the free generator, one tool (deposit calculator, mileage calculator …).
 - **Languages:** **yes** for most: these are the big local searches (Anzahlungsrechnung, Schlussrechnung, factuur zzp). US-only ones (1099, mileage) stay **en-only**.
 
 **Can do:**
@@ -23,7 +23,7 @@
 - Be a trade template under another name: "service invoice" is about invoicing services in general, not about any trade.
 - Synonyms as their own pages: down payment = advance payment = deposit; interim = progress (owned by /templates/construction-progress-invoice); time and materials = labor and materials; sole trader = self-employed = freelance.
 - Promise what the app can't: no deposit or partial-payment tracking, no recurring invoices, no customs forms; a commercial invoice is the document, not the carrier's paperwork.
-- The concept explained at length (what is a proforma, what does net 30 mean): the blog owns "what is"; this page is the document.
+- The concept explained at length (what is a proforma, what does net 30 mean): no "what is" explainers: this page is the document.
 
 ## Done (0): don't build these again
 
@@ -121,7 +121,7 @@ _None yet._
 - **Key:** past due invoice template · also: overdue invoice template; late invoice
 - **Item:** D1 · **Intent:** template (download/fill) · **Languages:** en-only
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Re-sending an unpaid invoice: the same number and date, 'PAST DUE' and the days overdue, the original due date, a late fee only if the contract or the law allows it (as a line or a new invoice: hedge), how to pay, a short firm note. The app has no reminders: you share the PDF again. Sample: 30 days overdue with the agreed 1.5% monthly fee.
-- **Don't write about:** Late payment emails and what to do when a client doesn't pay (the blog: link both); interest math (the late fee and late payment interest calculators).
+- **Don't write about:** Late payment emails and what to do when a client doesn't pay (not this page's topic); interest math (the late fee and late payment interest calculators).
 - **Notes:** en-only: in other languages this is a dunning letter (Mahnung, aanmaning), a letter rather than an invoice; decide later
 
 #### /templates/mileage-invoice
@@ -153,7 +153,7 @@ _None yet._
 - **Key:** freelance invoice template · also: self employed invoice template; sole trader invoice template; freelancer invoice
 - **Item:** D1 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Freelancers in any field: what the client's accounts team needs (your legal name, address, tax ID or UTR where asked, their PO number, bank details), project, hourly or day-rate lines, usage rights when you sell creative work, VAT if registered or the no-VAT note, payment terms from the contract. UK sole traders and the self-employed use the same document. Sample: a project fee + 2 extra hours. A 'by field' section links the trade templates.
-- **Don't write about:** Field specifics (freelance design, copywriting, web development, translation …); the how-to article (blog: how-to-invoice-as-a-freelancer, link it); US 1099 detail (/templates/independent-contractor-invoice).
+- **Don't write about:** Field specifics (freelance design, copywriting, web development, translation …); US 1099 detail (/templates/independent-contractor-invoice).
 - **Already covered (link, don't repeat):** /industries/web-developers (“invoice app for freelance developers”)
 - **Notes:** local: Rechnung Freiberufler / Selbstständige (de), factuur zzp (nl), facture auto-entrepreneur (fr), factura autónomo (es)
 
@@ -187,5 +187,5 @@ _None yet._
 - **Key:** international invoice template · also: invoice foreign client; invoice in foreign currency; invoice in usd
 - **Item:** D1 · **Intent:** template (download/fill) · **Languages:** yes
 - **Write about:** Same fields and depth as the live templates (content/templates.json), with a filled-in sample invoice. Invoicing a client in another country: which currency (yours or theirs, and the rate if you convert), bank details that work abroad (IBAN, SWIFT/BIC or a payment link), the client's full address and tax ID, which tax applies (EU business clients: the reverse charge, link it; services exported outside the EU are often outside VAT: hedge), the invoice language. Invoicor: 38 currencies, invoices in 11 languages. Sample: a UK freelancer billing a US client in USD.
-- **Don't write about:** The EU reverse charge in depth (/reverse-charge-invoice); exporting goods (/templates/commercial-invoice); the blog's multi-currency articles (link one).
+- **Don't write about:** The EU reverse charge in depth (/reverse-charge-invoice); exporting goods (/templates/commercial-invoice).
 - **Notes:** local: Rechnung ins Ausland / in Fremdwährung (de), factuur buitenland (nl)

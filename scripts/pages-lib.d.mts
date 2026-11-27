@@ -3,7 +3,6 @@ export type Row = Record<string, string>;
 export const COLUMNS: string[];
 export const LOCALIZE: string[];
 export const LOCALES: string[];
-export const BLOG_ORIGIN: string;
 export const TOO_CLOSE: number;
 export const CLOSE: number;
 export function parseCsv(text: string): Row[];

@@ -1,13 +1,13 @@
 # Pages we have
 
-> **Generated, don't edit by hand.** Every live page on invoicor.com, its translations and the
-> blog (learn.invoicor.com), with its **key** (the search it's for), its language decision and the
+> **Generated, don't edit by hand.** Every live page on invoicor.com and its translations,
+> with its **key** (the search it's for), its language decision and the
 > date it was made. What we still want to build is in [PLAN.md](PLAN.md). The data for both is
 > [keyword-map.csv](keyword-map.csv). After adding or removing pages: `npm run build && npm run pages`.
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**241 live pages** · last change 2026-11-26 · 920 more planned in [PLAN.md](PLAN.md)
+**207 live pages** · last change 2026-11-26 · 908 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -28,7 +28,6 @@
 | /pl | 8 | tool 4, home 1, generator 1, support 1, android 1 |
 | /pt | 8 | tool 4, home 1, generator 1, support 1, android 1 |
 | /sv | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| learn.invoicor.com (blog) | 34 | blog 34 |
 
 ## Languages
 
@@ -73,23 +72,9 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-26 | 55 | template 30, industry 23, blog 2 |
-| 2026-11-25 | 2 | blog 2 |
-| 2026-11-24 | 2 | blog 2 |
-| 2026-11-23 | 2 | blog 2 |
-| 2026-11-22 | 2 | blog 2 |
-| 2026-11-21 | 2 | blog 2 |
-| 2026-11-20 | 2 | blog 2 |
-| 2026-11-19 | 2 | blog 2 |
-| 2026-11-18 | 126 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, blog 2, home 1, generator 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, home 10, generator 10, support 10, android 10) |
-| 2026-11-17 | 32 | template 10, industry 10, compare 10, blog 2 |
-| 2026-11-16 | 2 | blog 2 |
-| 2026-11-15 | 2 | blog 2 |
-| 2026-11-14 | 2 | blog 2 |
-| 2026-11-13 | 2 | blog 2 |
-| 2026-11-12 | 2 | blog 2 |
-| 2026-11-11 | 2 | blog 2 |
-| 2026-11-10 | 2 | blog 2 |
+| 2026-11-26 | 53 | template 30, industry 23 |
+| 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, home 1, generator 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, home 10, generator 10, support 10, android 10) |
+| 2026-11-17 | 30 | template 10, industry 10, compare 10 |
 
 ## Keys that are too close
 
@@ -98,7 +83,6 @@ They may compete for the same search: merge them, or give one a clearly differen
 
 | Alike | Page | Key | Page | Key |
 |---|---|---|---|---|
-| 69% | learn:/what-is-a-multi-currency-invoicing-app | what is a multi currency invoicing app | learn:/what-is-a-multi-currency-invoice | what is a multi currency invoice |
 | 62% | /templates/cleaning-services | cleaning invoice template | /templates/window-cleaning | window cleaning invoice template |
 | 62% | /templates/cleaning-services | cleaning invoice template | /templates/carpet-cleaning | carpet cleaning invoice template |
 
@@ -385,42 +369,3 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /sv/verktyg/momsraknare | momsräknare: räkna ut moms online gratis | tool | yes | 2026-11-18 |
 | /sv/verktyg/rakna-ut-timpris | rakna ut timpris | tool | yes | 2026-11-18 |
 | /sv/verktyg/timraknare | räkna timmar: gratis timräknare för fakturan | tool | yes | 2026-11-18 |
-
-### learn.invoicor.com (blog) (34)
-
-| URL | Key | Type | Languages | Made |
-|---|---|---|---|---|
-| learn:/best-invoice-app-features-for-freelancers-on-iphone | best invoice app features for freelancers on iphone | blog | en-only | 2026-11-23 |
-| learn:/best-invoice-template-styles-for-mobile-use | best invoice template styles for mobile use | blog | en-only | 2026-11-24 |
-| learn:/best-ways-to-send-invoices-from-iphone | best ways to send invoices from iphone | blog | en-only | 2026-11-24 |
-| learn:/can-you-create-invoices-in-different-currencies | can you create invoices in different currencies | blog | en-only | 2026-11-16 |
-| learn:/can-you-edit-an-invoice-after-saving-it | can you edit an invoice after saving it | blog | en-only | 2026-11-25 |
-| learn:/can-you-make-an-invoice-on-iphone-without-paper | can you make an invoice on iphone without paper | blog | en-only | 2026-11-25 |
-| learn:/can-you-send-an-invoice-as-a-pdf-from-iphone | can you send an invoice as a pdf from iphone | blog | en-only | 2026-11-26 |
-| learn:/do-you-need-to-fill-every-invoice-field | do you need to fill every invoice field | blog | en-only | 2026-11-26 |
-| learn:/free-invoice-app-for-iphone-what-to-look-for | free invoice app for iphone what to look for | blog | en-only | 2026-11-11 |
-| learn:/how-a-tax-calculator-helps-when-creating-invoices | how a tax calculator helps when creating invoices | blog | en-only | 2026-11-12 |
-| learn:/how-auto-fill-helps-you-create-invoices-faster | how auto fill helps you create invoices faster | blog | en-only | 2026-11-16 |
-| learn:/how-pdf-invoice-templates-work-on-iphone | how pdf invoice templates work on iphone | blog | en-only | 2026-11-11 |
-| learn:/how-to-calculate-tax-on-an-invoice-in-the-app | how to calculate tax on an invoice in the app | blog | en-only | 2026-11-15 |
-| learn:/how-to-change-the-currency-on-an-invoice | how to change the currency on an invoice | blog | en-only | 2026-11-19 |
-| learn:/how-to-create-a-receipt-on-iphone-in-minutes | how to create a receipt on iphone in minutes | blog | en-only | 2026-11-17 |
-| learn:/how-to-create-an-invoice-on-iphone-in-seconds | how to create an invoice on iphone in seconds | blog | en-only | 2026-11-10 |
-| learn:/how-to-number-invoices-on-iphone | how to number invoices on iphone | blog | en-only | 2026-11-20 |
-| learn:/how-to-reuse-invoice-details-on-iphone | how to reuse invoice details on iphone | blog | en-only | 2026-11-19 |
-| learn:/how-to-save-an-invoice-as-a-pdf-on-iphone | how to save an invoice as a pdf on iphone | blog | en-only | 2026-11-18 |
-| learn:/how-to-send-an-invoice-from-iphone-by-email | how to send an invoice from iphone by email | blog | en-only | 2026-11-18 |
-| learn:/how-to-share-an-invoice-pdf-from-iphone | how to share an invoice pdf from iphone | blog | en-only | 2026-11-13 |
-| learn:/how-to-share-invoices-instantly-from-iphone | how to share invoices instantly from iphone | blog | en-only | 2026-11-17 |
-| learn:/how-to-use-an-invoice-maker-for-iphone | how to use an invoice maker for iphone | blog | en-only | 2026-11-10 |
-| learn:/how-to-use-pdf-invoice-templates-on-iphone | how to use pdf invoice templates on iphone | blog | en-only | 2026-11-15 |
-| learn:/invoice-creation-checklist-for-iphone-users | invoice creation checklist for iphone users | blog | en-only | 2026-11-14 |
-| learn:/what-does-an-invoice-tax-calculator-do | what does an invoice tax calculator do | blog | en-only | 2026-11-22 |
-| learn:/what-does-auto-fill-mean-in-an-invoice-app | what does auto fill mean in an invoice app | blog | en-only | 2026-11-21 |
-| learn:/what-is-a-multi-currency-invoice | what is a multi currency invoice | blog | en-only | 2026-11-23 |
-| learn:/what-is-a-multi-currency-invoicing-app | what is a multi currency invoicing app | blog | en-only | 2026-11-12 |
-| learn:/what-is-a-pdf-invoice | what is a pdf invoice | blog | en-only | 2026-11-21 |
-| learn:/what-is-an-invoice-maker | what is an invoice maker | blog | en-only | 2026-11-14 |
-| learn:/what-makes-an-invoice-look-professional | what makes an invoice look professional | blog | en-only | 2026-11-13 |
-| learn:/what-should-an-invoice-include | what should an invoice include | blog | en-only | 2026-11-20 |
-| learn:/why-use-an-invoice-app-on-iphone | why use an invoice app on iphone | blog | en-only | 2026-11-22 |

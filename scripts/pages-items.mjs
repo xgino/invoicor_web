@@ -23,7 +23,6 @@ export const PREFIX = {
   generators: "G",
   country: "CT",
   local: "LO",
-  blog: "BL",
   core: "P",
 };
 
@@ -177,8 +176,6 @@ export const ITEMS = [
     id: "P0",
     title: "Core pages (built): home, hubs, help, affiliate, terms, privacy, Android",
   },
-  { id: "BL1", title: "Blog articles 1–17 (built, learn.invoicor.com)" },
-  { id: "BL2", title: "Blog articles 18–34 (built, learn.invoicor.com)" },
   { id: "P1", title: "Trust pages: about, contact (E-E-A-T)" },
 ];
 
