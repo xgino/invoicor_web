@@ -9,7 +9,7 @@
 > (`item`, `brief`, `avoid`), items: `scripts/pages-items.mjs`, categories:
 > `scripts/pages-categories.mjs`. After any change: `npm run pages`.
 
-**207 / 4,000 pages live** (5%) · planned: 901 English and local pages + 8,150 language pages · **9,258 when everything is built** (fewer after the demand gate parks the weak ones)
+**207 / 4,000 pages live** (5%) · planned: 958 English and local pages + 8,150 language pages · **9,315 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run an item
 
@@ -109,7 +109,7 @@ So the plan can keep growing (the goal of 4,000 can move up or down with the res
 | [Billing-type templates](#billing-type-templates-b) | B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12 B13 B14 B15 | 0 | 177 | 0/150 done |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1 | 0 | 20 | 0/10 done |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1 I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 | 43 | 196 | 0/200 done |
-| [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 | 20 | 20 | none |
+| [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL0 TL1 TL2 TL3 TL4 TL5 TL6 TL7 TL8 TL9 | 4 | 109 | 10/90 done |
 | [Country pages (English)](#country-pages-english-ct) | CT1 CT2 CT3 CT4 CT5 CT6 | 0 | 39 | 0/10 done |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1 LO2 LO3 LO4 LO5 LO6 LO7 LO8 | 0 | 71 | none |
@@ -123,7 +123,7 @@ The English items and tasks in the order that pays off most (parents first, bigg
 code before the pages that need it). Language items: in their number order, alongside, once their
 English pages are live.
 
-**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8**
+**S1** → **D1** → **B1** → **T4** → **I4** → **TL1** → **P1** → **I10** → **I11** → **S3** → **CT1** → **T5** → **I5** → **C2** → **S2** → **CT2** → **B2** → **T6** → **I6** → **LO1** → **LO2** → **TL2** → **G1** → **T7** → **I7** → **B3** → **T8** → **I8** → **S4** → **TL3** → **T9** → **I9** → **CT3** → **T10** → **T11** → **T12** → **T13** → **T14** → **T15** → **T16** → **T17** → **T18** → **T19** → **T20** → **I12** → **I13** → **I14** → **I15** → **I16** → **I17** → **I18** → **I19** → **I20** → **B4** → **B5** → **B6** → **B7** → **B8** → **B9** → **B10** → **B11** → **B12** → **B13** → **B14** → **B15** → **TL4** → **TL5** → **TL6** → **TL7** → **TL8** → **TL9** → **CT4** → **CT5** → **CT6** → **LO3** → **LO4** → **LO5** → **LO6** → **LO7** → **LO8** → **C3** → **C4** → **C5** → **C6** → **C7** → **C8** → **C9** → **C10** → **C11**
 
 ## Tasks (S): code, no pages
 
@@ -1173,6 +1173,99 @@ Direction (what these pages can and can't do) and every brief: [plan/compare.md]
   - [ ] [/compare/akaunting](plan/compare.md#compareakaunting) akaunting alternative
   - [ ] [/compare/due](plan/compare.md#comparedue) due alternative
   - [ ] [/compare/invoiceberry](plan/compare.md#compareinvoiceberry) invoiceberry alternative
+
+### C3: UK accounting and banking apps
+
+- [ ] **C3** · 0/8 live
+  - [ ] [/compare/freeagent](plan/compare.md#comparefreeagent) freeagent alternative
+  - [ ] [/compare/kashflow](plan/compare.md#comparekashflow) kashflow alternative
+  - [ ] [/compare/crunch](plan/compare.md#comparecrunch) crunch alternative
+  - [ ] [/compare/pandle](plan/compare.md#comparepandle) pandle alternative
+  - [ ] [/compare/tide-invoicing](plan/compare.md#comparetide-invoicing) tide invoicing alternative
+  - [ ] [/compare/countingup](plan/compare.md#comparecountingup) countingup alternative
+  - [ ] [/compare/anna-money](plan/compare.md#compareanna-money) anna money alternative
+  - [ ] [/compare/quickfile](plan/compare.md#comparequickfile) quickfile alternative
+
+### C4: Australia and New Zealand
+
+- [ ] **C4** · 0/6 live
+  - [ ] [/compare/myob](plan/compare.md#comparemyob) myob alternative
+  - [ ] [/compare/reckon](plan/compare.md#comparereckon) reckon one alternative
+  - [ ] [/compare/hnry](plan/compare.md#comparehnry) hnry alternative
+  - [ ] [/compare/fergus](plan/compare.md#comparefergus) fergus software alternative
+  - [ ] [/compare/rounded](plan/compare.md#comparerounded) rounded app alternative
+  - [ ] [/compare/simpro](plan/compare.md#comparesimpro) simpro alternative
+
+### C5: India (GST billing apps)
+
+- [ ] **C5** · 0/5 live
+  - [ ] [/compare/vyapar](plan/compare.md#comparevyapar) vyapar alternative
+  - [ ] [/compare/refrens](plan/compare.md#comparerefrens) refrens alternative
+  - [ ] [/compare/mybillbook](plan/compare.md#comparemybillbook) mybillbook alternative
+  - [ ] [/compare/swipe](plan/compare.md#compareswipe) swipe billing alternative
+  - [ ] [/compare/tallyprime](plan/compare.md#comparetallyprime) tallyprime alternative
+
+### C6: Field service, lawn and pest
+
+- [ ] **C6** · 0/9 live
+  - [ ] [/compare/servicetitan](plan/compare.md#compareservicetitan) servicetitan alternative
+  - [ ] [/compare/workiz](plan/compare.md#compareworkiz) workiz alternative
+  - [ ] [/compare/kickserv](plan/compare.md#comparekickserv) kickserv alternative
+  - [ ] [/compare/gorilladesk](plan/compare.md#comparegorilladesk) gorilladesk alternative
+  - [ ] [/compare/service-fusion](plan/compare.md#compareservice-fusion) service fusion alternative
+  - [ ] [/compare/fieldedge](plan/compare.md#comparefieldedge) fieldedge alternative
+  - [ ] [/compare/yardbook](plan/compare.md#compareyardbook) yardbook alternative
+  - [ ] [/compare/lawnpro](plan/compare.md#comparelawnpro) lawnpro alternative
+  - [ ] [/compare/service-autopilot](plan/compare.md#compareservice-autopilot) service autopilot alternative
+
+### C7: Construction and roofing
+
+- [ ] **C7** · 0/6 live
+  - [ ] [/compare/buildertrend](plan/compare.md#comparebuildertrend) buildertrend alternative
+  - [ ] [/compare/jobnimbus](plan/compare.md#comparejobnimbus) jobnimbus alternative
+  - [ ] [/compare/acculynx](plan/compare.md#compareacculynx) acculynx alternative
+  - [ ] [/compare/contractor-foreman](plan/compare.md#comparecontractor-foreman) contractor foreman alternative
+  - [ ] [/compare/knowify](plan/compare.md#compareknowify) knowify alternative
+  - [ ] [/compare/houzz-pro](plan/compare.md#comparehouzz-pro) houzz pro alternative
+
+### C8: Photographers and creative studios
+
+- [ ] **C8** · 0/7 live
+  - [ ] [/compare/studio-ninja](plan/compare.md#comparestudio-ninja) studio ninja alternative
+  - [ ] [/compare/vsco-workspace](plan/compare.md#comparevsco-workspace) vsco workspace alternative
+  - [ ] [/compare/pixieset-studio-manager](plan/compare.md#comparepixieset-studio-manager) pixieset studio manager alternative
+  - [ ] [/compare/sprout-studio](plan/compare.md#comparesprout-studio) sprout studio alternative
+  - [ ] [/compare/hectic](plan/compare.md#comparehectic) hectic app alternative
+  - [ ] [/compare/paymo](plan/compare.md#comparepaymo) paymo alternative
+  - [ ] [/compare/indy](plan/compare.md#compareindy) indy app alternative
+
+### C9: Payments and banks
+
+- [ ] **C9** · 0/6 live
+  - [ ] [/compare/wise-invoices](plan/compare.md#comparewise-invoices) wise invoice alternative
+  - [ ] [/compare/payoneer](plan/compare.md#comparepayoneer) payoneer alternative
+  - [ ] [/compare/gocardless](plan/compare.md#comparegocardless) gocardless alternative
+  - [ ] [/compare/melio](plan/compare.md#comparemelio) melio alternative
+  - [ ] [/compare/bill-com](plan/compare.md#comparebill-com) bill.com alternative
+  - [ ] [/compare/helcim](plan/compare.md#comparehelcim) helcim alternative
+
+### C10: Invoice apps and design tools
+
+- [ ] **C10** · 0/5 live
+  - [ ] [/compare/saldo-invoice](plan/compare.md#comparesaldo-invoice) saldo invoice alternative
+  - [ ] [/compare/invoice-asap](plan/compare.md#compareinvoice-asap) invoice asap alternative
+  - [ ] [/compare/invoice-owl](plan/compare.md#compareinvoice-owl) invoice owl alternative
+  - [ ] [/compare/canva-invoice](plan/compare.md#comparecanva-invoice) canva invoice alternative
+  - [ ] [/compare/adobe-express-invoice](plan/compare.md#compareadobe-express-invoice) adobe express invoice alternative
+
+### C11: Small-business accounting
+
+- [ ] **C11** · 0/5 live
+  - [ ] [/compare/patriot-software](plan/compare.md#comparepatriot-software) patriot software alternative
+  - [ ] [/compare/bench](plan/compare.md#comparebench) bench accounting alternative
+  - [ ] [/compare/zipbooks](plan/compare.md#comparezipbooks) zipbooks alternative
+  - [ ] [/compare/manager-io](plan/compare.md#comparemanager-io) manager.io alternative
+  - [ ] [/compare/odoo-invoicing](plan/compare.md#compareodoo-invoicing) odoo invoicing alternative
 
 ## Free tools (TL)
 
