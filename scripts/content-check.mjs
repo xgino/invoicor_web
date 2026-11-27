@@ -3,7 +3,9 @@
  * SEO quality gate for content/*.json (ROADMAP chunk 11f). Run: npm run content:check
  *
  * Errors (exit 1): duplicate slugs, titles, meta descriptions or H1s; related links to missing
- * pages; pages below the minimum word count; two pages of the same type that are near-copies.
+ * pages; pages below the minimum word count; two pages (of any type here) whose own text is a
+ * near-copy: more than 30% of the smaller page's 5-word phrases also in the other
+ * (scripts/similarity.mjs, seo/RULES.md §2). Prints the most alike pair, so the margin shows.
  * Warnings (printed only): title or description longer than Google shows.
  *
  * Schema validation (required fields, types) runs in lib/content.ts during `npm run build`.
@@ -11,6 +13,7 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { MAX_ALIKE_CONTENT, closestPair, nearCopies, shingles, words } from "./similarity.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -18,7 +21,6 @@ const RULES = {
   titleMax: 60,
   descriptionMax: 155,
   minWords: { templates: 500, industries: 500, comparisons: 500 },
-  maxSimilarity: 0.8,
 };
 
 const COLLECTIONS = [
@@ -42,21 +44,7 @@ function allText(value, key = "") {
   return "";
 }
 
-const words = (s) => s.toLowerCase().match(/[\p{L}\p{N}']+/gu) ?? [];
-
-/** Set of 3-word shingles, for a cheap near-duplicate check. */
-function shingles(list) {
-  const set = new Set();
-  for (let i = 0; i + 2 < list.length; i++) set.add(`${list[i]} ${list[i + 1]} ${list[i + 2]}`);
-  return set;
-}
-
-function jaccard(a, b) {
-  let shared = 0;
-  for (const s of a) if (b.has(s)) shared++;
-  return shared / (a.size + b.size - shared || 1);
-}
-
+const all = [];
 const seen = { title: new Map(), meta_description: new Map(), h1: new Map() };
 let pageCount = 0;
 
@@ -93,7 +81,8 @@ for (const { name, path, relatedKey } of COLLECTIONS) {
     if (list.length < RULES.minWords[name])
       errors.push(`${url}: only ${list.length} words (min ${RULES.minWords[name]})`);
 
-    prepared.push({ url, entry, shingles: shingles(list) });
+    prepared.push({ url, entry });
+    all.push({ id: url, group: "en", shingles: shingles(list) });
   }
 
   for (const { url, entry } of prepared) {
@@ -102,21 +91,20 @@ for (const { name, path, relatedKey } of COLLECTIONS) {
         errors.push(`${url}: related link to missing ${path}/${link.slug}`);
     }
   }
-
-  for (let i = 0; i < prepared.length; i++) {
-    for (let j = i + 1; j < prepared.length; j++) {
-      const sim = jaccard(prepared[i].shingles, prepared[j].shingles);
-      if (sim > RULES.maxSimilarity)
-        errors.push(
-          `${prepared[i].url} and ${prepared[j].url} are ${Math.round(sim * 100)}% alike (max ${RULES.maxSimilarity * 100}%)`,
-        );
-    }
-  }
 }
+
+for (const { a, b, score } of nearCopies(all, MAX_ALIKE_CONTENT))
+  errors.push(
+    `${a} and ${b} are ${Math.round(score * 100)}% alike (max ${MAX_ALIKE_CONTENT * 100}%): rewrite one, or park it and improve the other`,
+  );
+const closest = closestPair(all);
 
 for (const w of warnings) console.warn(`warn   ${w}`);
 for (const e of errors) console.error(`error  ${e}`);
 console.log(
-  `\ncontent:check: ${pageCount} pages, ${errors.length} errors, ${warnings.length} warnings`,
+  `\ncontent:check: ${pageCount} pages, ${errors.length} errors, ${warnings.length} warnings` +
+    (closest
+      ? ` · most alike: ${closest.a} and ${closest.b}, ${Math.round(closest.score * 100)}% (max ${MAX_ALIKE_CONTENT * 100}%)`
+      : ""),
 );
 process.exit(errors.length ? 1 : 0);

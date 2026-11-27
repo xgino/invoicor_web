@@ -211,9 +211,3 @@ function gitLog(extra) {
     return "";
   }
 }
-
-async function fetchText(url) {
-  const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  return res.text();
-}

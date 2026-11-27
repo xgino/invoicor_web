@@ -72,9 +72,18 @@ The plan's page count is a direction, not a quota.
   specific ones ("photography deposit invoice"), and the children link up to it.
 - **Proven types first:** a new page type starts with one item of ≤ 10 pages and grows only after
   it indexes.
-- **No near-copies:** `content:check` fails two pages of the same type that share more than 80% of
-  their 3-word phrases, and pages below the minimum words (500 for templates, industries and
-  compares). It covers `content/*.json` only; for other page types this is a review step.
+- **No near-copies,** checked in two places (`scripts/similarity.mjs`). Pages are compared by
+  overlapping 5-word phrases: the share of the smaller page's phrases that also appear in the
+  other one.
+  - `npm run content:check`, on the text we write (`content/*.json`, all types together): fails
+    above **30%**. Today's most alike pair: 10%. A copy with the trade's nouns swapped scores
+    ~93%, half the sentences copied ~55%.
+  - The site test `tests/site/similarity.test.ts`, on every built page of every type and language
+    (the visible text of `<main>`, pages of the same language): fails above **40%**. The page
+    type's shared headings and calls to action add ~20%, so today's most alike pair is 23%. A hub
+    and its own pages are not compared (the cards repeat their texts).
+  - The same test fails a page under its type's minimum words (§5, the built `<main>`; hubs are
+    exempt).
 
 **After each deploy**
 - **Release in waves:** at most ~150 new URLs per deploy.
@@ -170,7 +179,8 @@ section here first (the site test checks the heading: `{letter} · {title}`).
 - **Sections:** as a template, but the intro, what to include, sample, notes, mistakes and FAQs are
   all about this billing type for this trade (deposit size and terms, retainage, increments,
   unused hours). The trade's general fields get one sentence and a link to its template.
-- **Min words:** 500 (target 900+); must stay under 80% alike the trade's main template.
+- **Min words:** 500 (target 900+); must stay under the near-copy limit against the trade's main
+  template (§2).
 - **Can:** answer "how do I bill this way" for one trade; a sample of that billing type (a deposit
   invoice, then how the final invoice subtracts it); only combinations people really bill that way
   (wedding trades take deposits, contractors bill progress, consultants hourly or on retainer).
