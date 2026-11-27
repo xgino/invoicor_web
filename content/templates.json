@@ -138,6 +138,11 @@
         "slug": "catering"
       }
     ],
+    "invoice_types": [
+      "deposit-invoice",
+      "final-invoice",
+      "expense-reimbursement-invoice"
+    ],
     "industry": "photographers-videographers"
   },
   {
@@ -281,6 +286,11 @@
         "slug": "electrician"
       }
     ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "service-invoice",
+      "subcontractor-invoice"
+    ],
     "industry": "plumbers-hvac"
   },
   {
@@ -410,6 +420,11 @@
         "slug": "electrician"
       }
     ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "service-invoice",
+      "monthly-invoice"
+    ],
     "industry": "plumbers-hvac"
   },
   {
@@ -529,6 +544,11 @@
         "slug": "web-development"
       }
     ],
+    "invoice_types": [
+      "freelance-invoice",
+      "deposit-invoice",
+      "milestone-invoice"
+    ],
     "industry": "freelance-designers"
   },
   {
@@ -641,6 +661,11 @@
         "name": "Painting",
         "slug": "painting"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "hourly-invoice",
+      "service-invoice"
     ],
     "industry": "general-contractors"
   },
@@ -765,6 +790,11 @@
         "slug": "catering"
       }
     ],
+    "invoice_types": [
+      "deposit-invoice",
+      "final-invoice",
+      "expense-reimbursement-invoice"
+    ],
     "industry": "photographers-videographers"
   },
   {
@@ -882,6 +912,11 @@
         "slug": "pest-control"
       }
     ],
+    "invoice_types": [
+      "monthly-invoice",
+      "labor-and-materials-invoice",
+      "service-invoice"
+    ],
     "industry": "landscaping-lawn-care"
   },
   {
@@ -996,6 +1031,11 @@
         "name": "Tutoring",
         "slug": "tutoring"
       }
+    ],
+    "invoice_types": [
+      "retainer-invoice",
+      "hourly-invoice",
+      "independent-contractor-invoice"
     ],
     "industry": "consultants-coaches"
   },
@@ -1114,6 +1154,11 @@
         "slug": "carpet-cleaning"
       }
     ],
+    "invoice_types": [
+      "monthly-invoice",
+      "service-invoice",
+      "past-due-invoice"
+    ],
     "industry": "cleaning-services"
   },
   {
@@ -1230,6 +1275,10 @@
         "name": "Moving",
         "slug": "moving"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "sales-invoice"
     ],
     "industry": "auto-detailing-mechanics"
   },
@@ -1367,6 +1416,11 @@
         "name": "Construction",
         "slug": "construction"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "subcontractor-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -1497,6 +1551,11 @@
         "name": "Roofing",
         "slug": "roofing"
       }
+    ],
+    "invoice_types": [
+      "subcontractor-invoice",
+      "milestone-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -1635,6 +1694,11 @@
         "name": "Handyman",
         "slug": "handyman"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "labor-and-materials-invoice",
+      "subcontractor-invoice"
     ]
   },
   {
@@ -1761,6 +1825,11 @@
         "name": "Construction",
         "slug": "construction"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "labor-and-materials-invoice",
+      "subcontractor-invoice"
     ]
   },
   {
@@ -1893,6 +1962,11 @@
         "name": "Consulting",
         "slug": "consulting"
       }
+    ],
+    "invoice_types": [
+      "milestone-invoice",
+      "freelance-invoice",
+      "independent-contractor-invoice"
     ]
   },
   {
@@ -2013,6 +2087,10 @@
         "name": "Tutoring",
         "slug": "tutoring"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "service-invoice"
     ]
   },
   {
@@ -2131,6 +2209,11 @@
         "name": "Personal training",
         "slug": "personal-training"
       }
+    ],
+    "invoice_types": [
+      "hourly-invoice",
+      "monthly-invoice",
+      "no-vat-invoice"
     ]
   },
   {
@@ -2265,6 +2348,11 @@
         "name": "Cleaning services",
         "slug": "cleaning-services"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "final-invoice",
+      "sales-invoice"
     ]
   },
   {
@@ -2391,6 +2479,11 @@
         "name": "Handyman",
         "slug": "handyman"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "service-invoice",
+      "hourly-invoice"
     ]
   },
   {
@@ -2511,6 +2604,11 @@
         "name": "Landscaping",
         "slug": "landscaping"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "service-invoice",
+      "past-due-invoice"
     ]
   },
   {
@@ -2632,6 +2730,11 @@
         "name": "Freelance design",
         "slug": "freelance-design"
       }
+    ],
+    "invoice_types": [
+      "hourly-invoice",
+      "retainer-invoice",
+      "independent-contractor-invoice"
     ]
   },
   {
@@ -2759,6 +2862,10 @@
         "name": "Personal training",
         "slug": "personal-training"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "monthly-invoice"
     ]
   },
   {
@@ -2898,6 +3005,11 @@
         "name": "Videography",
         "slug": "videography"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "final-invoice",
+      "service-invoice"
     ]
   },
   {
@@ -3025,6 +3137,11 @@
         "name": "Construction",
         "slug": "construction"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "deposit-invoice",
+      "subcontractor-invoice"
     ]
   },
   {
@@ -3158,6 +3275,11 @@
         "name": "Carpentry",
         "slug": "carpentry"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "subcontractor-invoice",
+      "deposit-invoice"
     ]
   },
   {
@@ -3291,6 +3413,10 @@
         "name": "Remodeling",
         "slug": "remodeling"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "subcontractor-invoice"
     ]
   },
   {
@@ -3418,6 +3544,10 @@
         "name": "Construction",
         "slug": "construction"
       }
+    ],
+    "invoice_types": [
+      "subcontractor-invoice",
+      "labor-and-materials-invoice"
     ]
   },
   {
@@ -3539,6 +3669,11 @@
         "name": "Landscaping",
         "slug": "landscaping"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "subcontractor-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -3672,6 +3807,11 @@
         "name": "Construction",
         "slug": "construction"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "labor-and-materials-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -3793,6 +3933,11 @@
         "name": "Pressure washing",
         "slug": "pressure-washing"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "service-invoice",
+      "labor-and-materials-invoice"
     ]
   },
   {
@@ -3920,6 +4065,10 @@
         "name": "Pressure washing",
         "slug": "pressure-washing"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "monthly-invoice"
     ]
   },
   {
@@ -4047,6 +4196,10 @@
         "name": "Painting",
         "slug": "painting"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "past-due-invoice"
     ]
   },
   {
@@ -4168,6 +4321,11 @@
         "name": "Snow removal",
         "slug": "snow-removal"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "labor-and-materials-invoice",
+      "deposit-invoice"
     ]
   },
   {
@@ -4289,6 +4447,11 @@
         "name": "Tree service",
         "slug": "tree-service"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "service-invoice",
+      "past-due-invoice"
     ]
   },
   {
@@ -4416,6 +4579,10 @@
         "name": "Garage door repair",
         "slug": "garage-door-repair"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "labor-and-materials-invoice"
     ]
   },
   {
@@ -4537,6 +4704,10 @@
         "name": "HVAC",
         "slug": "hvac"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "service-invoice"
     ]
   },
   {
@@ -4664,6 +4835,10 @@
         "name": "Cleaning services",
         "slug": "cleaning-services"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "past-due-invoice"
     ]
   },
   {
@@ -4791,6 +4966,10 @@
         "name": "Pressure washing",
         "slug": "pressure-washing"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "past-due-invoice"
     ]
   },
   {
@@ -4920,6 +5099,11 @@
         "name": "Remodeling",
         "slug": "remodeling"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "retainer-invoice",
+      "expense-reimbursement-invoice"
     ]
   },
   {
@@ -5053,6 +5237,11 @@
         "name": "Handyman",
         "slug": "handyman"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "milestone-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -5186,6 +5375,11 @@
         "name": "Locksmith",
         "slug": "locksmith"
       }
+    ],
+    "invoice_types": [
+      "labor-and-materials-invoice",
+      "service-invoice",
+      "sales-invoice"
     ]
   },
   {
@@ -5313,6 +5507,10 @@
         "name": "Photography",
         "slug": "photography"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -5440,6 +5638,11 @@
         "name": "DJ",
         "slug": "dj"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "retainer-invoice",
+      "expense-reimbursement-invoice"
     ]
   },
   {
@@ -5575,6 +5778,11 @@
         "name": "Catering",
         "slug": "catering"
       }
+    ],
+    "invoice_types": [
+      "deposit-invoice",
+      "sales-invoice",
+      "final-invoice"
     ]
   },
   {
@@ -5696,6 +5904,10 @@
         "name": "Makeup artist",
         "slug": "makeup-artist"
       }
+    ],
+    "invoice_types": [
+      "service-invoice",
+      "hourly-invoice"
     ]
   },
   {
@@ -5817,6 +6029,11 @@
         "name": "Virtual assistant",
         "slug": "virtual-assistant"
       }
+    ],
+    "invoice_types": [
+      "freelance-invoice",
+      "no-vat-invoice",
+      "hourly-invoice"
     ]
   },
   {
@@ -5938,6 +6155,11 @@
         "name": "Freelance design",
         "slug": "freelance-design"
       }
+    ],
+    "invoice_types": [
+      "freelance-invoice",
+      "retainer-invoice",
+      "no-vat-invoice"
     ]
   },
   {
@@ -6059,6 +6281,11 @@
         "name": "Virtual assistant",
         "slug": "virtual-assistant"
       }
+    ],
+    "invoice_types": [
+      "retainer-invoice",
+      "monthly-invoice",
+      "independent-contractor-invoice"
     ]
   },
   {
@@ -6180,6 +6407,11 @@
         "name": "DJ",
         "slug": "dj"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "hourly-invoice",
+      "no-vat-invoice"
     ]
   },
   {
@@ -6301,6 +6533,11 @@
         "name": "Virtual assistant",
         "slug": "virtual-assistant"
       }
+    ],
+    "invoice_types": [
+      "monthly-invoice",
+      "retainer-invoice",
+      "past-due-invoice"
     ]
   },
   {

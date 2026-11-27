@@ -183,8 +183,9 @@ section here first (the site test checks the heading: `{letter} · {title}`).
   /templates/photography, mobile mechanic of /templates/auto-repair); two trades on one page;
   Word, Excel or Google Docs downloads (we don't offer those files); city or state versions;
   billing-type questions in depth (deposits, retainers, hourly: those are B pages).
-- **Links:** its industry page (`industry` field), 2 related templates, the trade's billing-type
-  pages once they exist.
+- **Links:** its industry page (`industry` field), 2 related templates, its 2–3 invoice types
+  (`invoice_types`: the D pages that fit the trade, shown as "Invoice types for {trade} jobs"),
+  the trade's billing-type pages once they exist.
 - **Languages:** yes, written per country (local trade names and prices), after task S1.
 
 ### B · Billing-type templates
@@ -229,8 +230,10 @@ section here first (the site test checks the heading: `{letter} · {title}`).
   progress; time and materials = labor and materials; sole trader = self-employed = freelance);
   promise deposit tracking, recurring invoices or customs forms; "what is" explainers (this page is
   the document).
-- **Links:** the B pages of this type (both ways), the free generator, one tool (deposit calculator,
-  mileage calculator …).
+- **Links:** the trades that list it in their `invoice_types` (shown by themselves as "{Type}
+  invoices by trade"), the B pages of this type (both ways), the free generator, one tool once it
+  exists. A new D page gets at least 2 trades, or a footer link if no trade fits (the commercial
+  invoice).
 - **Languages:** yes for most (Anzahlungsrechnung, Schlussrechnung, factuur zzp); US-only ones
   (1099, mileage) stay en-only.
 

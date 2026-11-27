@@ -35,6 +35,9 @@ const templateSchema = z.looseObject({
   industry_notes: z.array(titled).default([]),
   mistakes: z.array(titled).default([]),
   related: z.array(link).default([]),
+  /** Trade templates only: slugs of the invoice-type pages that fit this trade (deposit-invoice,
+   * labor-and-materials-invoice …). The trade page links them; each type page lists its trades. */
+  invoice_types: z.array(z.string()).default([]),
 });
 
 const industrySchema = z.looseObject({
@@ -108,6 +111,13 @@ const templateSlugs = new Set(rawTemplates.map((t) => t.slug));
 const templates: TemplateEntry[] = rawTemplates.map((t) => {
   if (t.industry && !industrySlugs.has(t.industry))
     throw new Error(`content/templates.json ${t.slug}: industry "${t.industry}" doesn't exist`);
+  for (const slug of t.invoice_types) {
+    const target = rawTemplates.find((x) => x.slug === slug);
+    if (!target || target.industry)
+      throw new Error(
+        `content/templates.json ${t.slug}: invoice type "${slug}" isn't an invoice-type page`,
+      );
+  }
   return { ...t, related: keepExistingLinks("templates", t.slug, t.related, templateSlugs) };
 });
 const industries: IndustryEntry[] = rawIndustries.map((i) => ({
@@ -128,6 +138,9 @@ const comparisons: ComparisonEntry[] = rawComparisons.map((c) => ({
 }));
 
 export const getTemplates = () => templates;
+/** The trade templates that link this invoice-type page (its "by trade" list). */
+export const getTradesForInvoiceType = (slug: string) =>
+  templates.filter((t) => t.invoice_types.includes(slug));
 export const getTemplate = (slug: string) => templates.find((t) => t.slug === slug);
 /** Template pages that belong to an industry page (e.g. plumbing + hvac → plumbers-hvac). */
 export const getTemplatesForIndustry = (slug: string) =>

@@ -18,7 +18,14 @@ import { buttonClass } from "@/components/ui/Button";
 import { RelatedLinks } from "@/components/ui/content";
 import { InvoicePaper, LineItems, PaperLabel } from "@/components/ui/invoice";
 import { appStoreLink } from "@/lib/config";
-import { CONTENT_UPDATED_AT, getIndustry, getTemplate, getTemplates, text } from "@/lib/content";
+import {
+  CONTENT_UPDATED_AT,
+  getIndustry,
+  getTemplate,
+  getTemplates,
+  getTradesForInvoiceType,
+  text,
+} from "@/lib/content";
 import { howToLd } from "@/lib/jsonld";
 import { FREE_INVOICES } from "@/lib/pricing";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
@@ -81,6 +88,25 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
   // "Use this template": the generator opens with this page's example already filled in (36a).
   const useHref = `/free-invoice-generator?example=${d.slug}`;
   const industry = d.industry ? getIndustry(d.industry) : undefined;
+  // Trade page → its invoice types (deposit, labor and materials …); type page → its trades.
+  const typeLinks = d.invoice_types.flatMap((slug) => {
+    const t = getTemplate(slug);
+    return t
+      ? [
+          {
+            href: `/templates/${t.slug}`,
+            title: `${t.niche} invoice`,
+            description: firstSentence(t.subtitle),
+          },
+        ]
+      : [];
+  });
+  const tradeLinks = d.industry
+    ? []
+    : getTradesForInvoiceType(d.slug).map((t) => ({
+        href: `/templates/${t.slug}`,
+        title: `${t.niche} invoice`,
+      }));
 
   const toc = [
     { id: "what-to-include", label: "What to include", show: !!whatToInclude },
@@ -327,6 +353,18 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
           </div>
         )}
 
+        {typeLinks.length > 0 && (
+          <div className="border-line border-t py-14">
+            <RelatedLinks title={`Invoice types for ${nicheLower} jobs`} links={typeLinks} />
+          </div>
+        )}
+
+        {tradeLinks.length > 0 && (
+          <div className="border-line border-t py-14">
+            <RelatedLinks title={`${niche} invoices by trade`} links={tradeLinks} />
+          </div>
+        )}
+
         {d.related.length > 0 && (
           <div className="border-line border-t py-14">
             <RelatedLinks
@@ -348,4 +386,10 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
       />
     </>
   );
+}
+
+/** "Bill part of the price first. Then …" → "Bill part of the price first." (card descriptions). */
+function firstSentence(text: string): string {
+  const m = text.match(/^.*?[.!?](?=\s|$)/);
+  return m ? m[0] : text;
 }
