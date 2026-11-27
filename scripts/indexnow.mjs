@@ -4,31 +4,30 @@
  *
  *   node scripts/indexnow.mjs <previous-sitemap.xml> <new-sitemap.xml>
  *
- * Submits URLs that are new or whose <lastmod> changed. If the previous sitemap is missing or
+ * Submits URLs that are new or whose <lastmod> changed. Both sitemaps may be an index of one
+ * sitemap per page type (task S1). If the previous sitemap is missing or
  * empty, every URL is submitted. Called by deploy/deploy.sh; never fails the deploy.
  */
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { readBuiltSitemap, readSitemapFile } from "./sitemap-read.mjs";
 
 const [prevPath, nextPath] = process.argv.slice(2);
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-/** Map of url -> lastmod from a sitemap.xml file. */
-function readSitemap(path) {
-  const map = new Map();
-  if (!path || !existsSync(path)) return map;
-  const xml = readFileSync(path, "utf8");
-  for (const block of xml.match(/<url>[\s\S]*?<\/url>/g) ?? []) {
-    const loc = block.match(/<loc>([^<]+)<\/loc>/)?.[1]?.trim();
-    const lastmod = block.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1]?.trim() ?? "";
-    if (loc) map.set(loc, lastmod);
-  }
-  return map;
+/** Map of url -> lastmod: the previous sitemap (downloaded; an index's children are fetched) … */
+async function readPrevious(path) {
+  return new Map((await readSitemapFile(path)).map((u) => [u.loc, u.lastmod]));
+}
+/** … and the new one, read from the build (out/sitemap.xml and its children). */
+function readNext(path) {
+  if (!path || !existsSync(path)) return new Map();
+  return new Map(readBuiltSitemap(dirname(path)).map((u) => [u.loc, u.lastmod]));
 }
 
-const prev = readSitemap(prevPath);
-const next = readSitemap(nextPath);
+const prev = await readPrevious(prevPath);
+const next = readNext(nextPath);
 const changed = [...next].filter(([url, lastmod]) => prev.get(url) !== lastmod).map(([url]) => url);
 
 if (changed.length === 0) {

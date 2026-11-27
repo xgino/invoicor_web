@@ -20,6 +20,7 @@ import {
 } from "../../scripts/pages-lib.mjs";
 import { CATEGORIES } from "../../scripts/pages-categories.mjs";
 import { loadRows } from "../../scripts/pages-data.mjs";
+import { builtSitemapPaths } from "../../scripts/sitemap-read.mjs";
 import { GROUPS, ORDER, PREFIX, TASKS } from "../../scripts/pages-items.mjs";
 
 interface Row {
@@ -33,11 +34,7 @@ interface Row {
   primary_keyword: string;
 }
 const rows = loadRows(process.cwd()) as unknown as Row[];
-const site = [
-  ...readFileSync(join(process.cwd(), "out/sitemap.xml"), "utf8").matchAll(
-    /<loc>https:\/\/invoicor\.com([^<]*)<\/loc>/g,
-  ),
-].map((m) => m[1] || "/");
+const site = builtSitemapPaths(join(process.cwd(), "out"));
 const FIX = "run `npm run build && npm run pages`";
 
 describe("page log", () => {

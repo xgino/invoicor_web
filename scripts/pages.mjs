@@ -6,7 +6,7 @@
  *   npm run pages -- --check "plumbing deposit invoice" [--lang de]
  *                                                   before planning a page: the pages with the closest keys
  *
- * Sync: every URL in out/sitemap.xml gets a row (new rows: today's date, a key from the URL or the
+ * Sync: every URL in the built sitemaps (out/sitemap.xml, an index) gets a row (new rows: today's date, a key from the URL or the
  * title, "planned" becomes "live"); rows no longer on the site become "removed" (kept as history).
  * Rows without a date get the date from git history (the commit that added that page).
  */
@@ -25,6 +25,7 @@ import {
   renderRules,
 } from "./pages-lib.mjs";
 import { loadRows, saveRows } from "./pages-data.mjs";
+import { builtSitemapPaths } from "./sitemap-read.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MD = join(root, "seo/PAGES.md");
@@ -71,11 +72,7 @@ if (!existsSync(join(OUT, "sitemap.xml"))) {
 }
 const changes = [];
 const byUrl = new Map(rows.map((r) => [r.url, r]));
-const siteUrls = [
-  ...readFileSync(join(OUT, "sitemap.xml"), "utf8").matchAll(
-    /<loc>https:\/\/invoicor\.com([^<]*)<\/loc>/g,
-  ),
-].map((m) => m[1] || "/");
+const siteUrls = builtSitemapPaths(OUT);
 
 for (const url of siteUrls) {
   // A translation remembers its English page (hreflang="en"), so PLAN.md can tick off language items.
