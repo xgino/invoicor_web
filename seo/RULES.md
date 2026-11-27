@@ -1,14 +1,16 @@
 # SEO rules
 
 > **The one rulebook for every page on invoicor.com.** Change a rule here and nowhere else. The
-> pages themselves (live, planned, parked) are rows in [keyword-map.csv](keyword-map.csv); the
-> views [PLAN.md](PLAN.md), [PAGES.md](PAGES.md) and [plan/](plan/) are generated from it by
+> pages themselves (live, planned, parked) are rows in [pages/](pages/), one CSV per category
+> (a page and its language versions next to each other); the views [PLAN.md](PLAN.md),
+> [PAGES.md](PAGES.md), [LANGUAGES.md](LANGUAGES.md) and [plan/](plan/) are generated from them by
 > `npm run pages`. Hand-written, except the block marked _generated_ in §4.
 >
 > - **Add pages to the plan:** "add 10 pages to T" (the `seo-add-pages` skill reads this file).
 > - **Build planned pages:** "do D4" (one page and its language versions), "do D4-de", "do D1–D20"
 >   (see [PLAN.md → How to run](PLAN.md#how-to-run)). One page at a glance: `npm run pages:page D4`.
 > - **One category at a glance:** `npm run pages:category -- D` (its section below + every row).
+> - **Language gaps:** [LANGUAGES.md](LANGUAGES.md); as a to-do list `npm run pages:gaps -- de`.
 > - **Facts the app backs up:** [BRAND.md §10](../BRAND.md). Nothing else counts as proof.
 
 ## 1. Every page
@@ -103,6 +105,12 @@ The plan's page count is a direction, not a quota.
 - **A group = 10–25 new pages of one category** (fewer rather than padded with sub-niches), added
   together so their IDs form one range: add it at the end of `GROUPS` (`range: "D31–D40"`, a
   title) and to `ORDER` in `scripts/pages-items.mjs`.
+- **Language gaps first.** Before planning more English pages of a type, fill the language
+  versions its live pages are missing ([LANGUAGES.md](LANGUAGES.md), `npm run pages:gaps`): they
+  build on pages that already exist and are proven. Only when a gap waits for a task (S1 for
+  templates and industry pages) may new English pages of that type come first, and the plan says
+  so. Each version still passes the demand gate in its language (park it with the reason if it
+  doesn't).
 - **Every row** gets `localize` (yes / local / en-only, the reason in `notes`), a `brief` (what to
   write, with the sources to check) and an `avoid` (what its neighbours own: link them).
 - **Languages:** a `localize: yes` page gets a version in every language by itself (D31-de …

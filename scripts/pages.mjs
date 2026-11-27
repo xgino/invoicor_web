@@ -2,7 +2,7 @@
 /**
  * The page log. Run after `npm run build`:
  *
- *   npm run pages                                   sync seo/keyword-map.csv with the site, write seo/PAGES.md
+ *   npm run pages                                   sync seo/pages/*.csv with the site, write seo/PAGES.md
  *   npm run pages -- --check "plumbing deposit invoice" [--lang de]
  *                                                   before planning a page: the pages with the closest keys
  *
@@ -19,22 +19,20 @@ import {
   LOCALES,
   TOO_CLOSE,
   closest,
-  parseCsv,
   renderPagesMd,
   renderPlanFiles,
   assignIds,
   renderRules,
-  toCsv,
 } from "./pages-lib.mjs";
+import { loadRows, saveRows } from "./pages-data.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const CSV = join(root, "seo/keyword-map.csv");
 const MD = join(root, "seo/PAGES.md");
 const OUT = join(root, "out");
 const today = new Date().toISOString().slice(0, 10);
 
 const args = process.argv.slice(2);
-const rows = parseCsv(readFileSync(CSV, "utf8")).map((r) => ({
+const rows = loadRows(root).map((r) => ({
   ...r,
   lang: r.lang || langOf(r.url),
 }));
@@ -131,11 +129,11 @@ for (const r of rows) if (r.status === "live" && !r.added) r.added = gitDate(r.u
 for (const r of assignIds(rows)) changes.push(`id ${r.id}  ${r.url}`);
 
 // ── Write ──
-const order = (r) => (r.lang === "en" ? 0 : 1);
-rows.sort((a, b) => order(a) - order(b));
-writeFileSync(CSV, toCsv(rows));
-writeFileSync(MD, renderPagesMd(rows));
-for (const [file, text] of Object.entries(renderPlanFiles(rows))) {
+saveRows(root, rows);
+// Render from the rows as filed (per category, by ID), the order the site test reads them in.
+const saved = loadRows(root);
+writeFileSync(MD, renderPagesMd(saved));
+for (const [file, text] of Object.entries(renderPlanFiles(saved))) {
   mkdirSync(dirname(join(root, file)), { recursive: true });
   writeFileSync(join(root, file), text);
 }
@@ -143,7 +141,7 @@ const RULES = join(root, "seo/RULES.md");
 writeFileSync(RULES, renderRules(readFileSync(RULES, "utf8")));
 console.log(changes.length ? changes.join("\n") : "No new or removed pages.");
 console.log(
-  `\nseo/keyword-map.csv, seo/PAGES.md, seo/PLAN.md, seo/plan/ and the language table in seo/RULES.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
+  `\nseo/pages/*.csv, seo/PAGES.md, seo/LANGUAGES.md, seo/PLAN.md, seo/plan/ and the language table in seo/RULES.md updated (${rows.filter((r) => r.status === "live").length} live pages).`,
 );
 
 // ── Helpers ──

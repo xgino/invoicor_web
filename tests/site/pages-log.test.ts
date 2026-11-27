@@ -1,5 +1,5 @@
 /**
- * The page log (seo/keyword-map.csv → seo/PAGES.md) must match the built site, so planning the
+ * The page log (seo/pages/*.csv → seo/PAGES.md) must match the built site, so planning the
  * next batch never starts from an outdated list. Fix: `npm run build && npm run pages`.
  */
 import { readFileSync } from "node:fs";
@@ -9,7 +9,6 @@ import {
   LOCALIZE,
   SCORES,
   groupOf,
-  parseCsv,
   parseId,
   parseRange,
   renderPagesMd,
@@ -20,6 +19,7 @@ import {
   similarity,
 } from "../../scripts/pages-lib.mjs";
 import { CATEGORIES } from "../../scripts/pages-categories.mjs";
+import { loadRows } from "../../scripts/pages-data.mjs";
 import { GROUPS, ORDER, PREFIX, TASKS } from "../../scripts/pages-items.mjs";
 
 interface Row {
@@ -32,8 +32,7 @@ interface Row {
   notes: string;
   primary_keyword: string;
 }
-const csv = readFileSync(join(process.cwd(), "seo/keyword-map.csv"), "utf8");
-const rows = parseCsv(csv) as unknown as Row[];
+const rows = loadRows(process.cwd()) as unknown as Row[];
 const site = [
   ...readFileSync(join(process.cwd(), "out/sitemap.xml"), "utf8").matchAll(
     /<loc>https:\/\/invoicor\.com([^<]*)<\/loc>/g,

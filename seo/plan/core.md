@@ -1,7 +1,7 @@
 # Core pages, hubs, trust and legal
 
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
+> `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **11 done · 8 planned**
 
@@ -11,7 +11,7 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 
 ## Done (11): don't build these again
 
-**P1** `/` invoice app iphone · **P2** `/templates` invoice templates · **P3** `/industries` invoicing software by industry · **P4** `/compare` invoice app alternatives · **P5** `/help` invoicor help · **P6** `/affiliate` invoicor affiliate program · **P10** `/about` about invoicor · **P11** `/contact` contact invoicor · **P7** `/terms` invoicor terms of service · **P8** `/privacy` invoicor privacy policy · **P9** `/android` invoicor for android: coming soon
+**P1** `/` invoice app iphone · **P2** `/templates` invoice templates · **P3** `/industries` invoicing software by industry · **P4** `/compare` invoice app alternatives · **P5** `/help` invoicor help · **P6** `/affiliate` invoicor affiliate program · **P7** `/terms` invoicor terms of service · **P8** `/privacy` invoicor privacy policy · **P9** `/android` invoicor for android: coming soon · **P10** `/about` about invoicor · **P11** `/contact` contact invoicor
 
 ## Planned (8)
 

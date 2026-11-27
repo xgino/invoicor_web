@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Every page planned in Italian, per group, with what each
 > version must do. A version's ID is its English page's ID + `-it` ("do D4-it"; a whole
 > group: "do D1–D20 in Italian"). Back to the [plan](../../PLAN.md#languages). Data:
-> `seo/keyword-map.csv`; then `npm run pages`.
+> `seo/pages/`; then `npm run pages`.
 
 ## Writing for Italy, Switzerland (IT)
 

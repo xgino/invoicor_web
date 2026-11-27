@@ -27,6 +27,7 @@ export const PREFIX: Record<string, string>;
 export const TASKS: Task[];
 export const GROUPS: Group[];
 export const ORDER: string[];
+export const LANGUAGE_NEEDS: Record<string, { types: string[]; urls: string[] }>;
 export const LANGUAGE_ORDER: string[];
 export const GOAL: number;
 export const LANGUAGES: Record<string, Language>;

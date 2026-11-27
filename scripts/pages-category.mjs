@@ -11,12 +11,13 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { groupOf, parseCsv, parseId, rulesSection, scoreOf } from "./pages-lib.mjs";
+import { groupOf, parseId, rulesSection, scoreOf } from "./pages-lib.mjs";
+import { loadRows } from "./pages-data.mjs";
 import { CATEGORIES } from "./pages-categories.mjs";
 import { PREFIX } from "./pages-items.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const rows = parseCsv(readFileSync(join(root, "seo/keyword-map.csv"), "utf8"));
+const rows = loadRows(root);
 const count = (list) => {
   const n = { live: 0, planned: 0, parked: 0 };
   for (const r of list) if (r.status in n) n[r.status]++;

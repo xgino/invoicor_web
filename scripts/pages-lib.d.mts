@@ -33,3 +33,7 @@ export function groupOf(
   id: string | undefined,
 ): { range: string; title: string; text?: string; needs?: string[] } | null;
 export function assignIds(rows: Row[]): Row[];
+export function languageBlocker(page: Row): string;
+export function languageGapsByPage(
+  rows: Row[],
+): Array<{ page: Row; state: Record<string, string>; gaps: string[]; needs: string }>;

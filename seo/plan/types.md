@@ -1,7 +1,7 @@
 # Invoice types (general documents)
 
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
+> `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **16 done · 10 planned**
 

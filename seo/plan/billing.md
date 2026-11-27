@@ -1,7 +1,7 @@
 # Billing-type templates
 
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
+> `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 177 planned**
 
@@ -39,7 +39,7 @@ _None yet._
 - **Group:** B1–B20 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The down payment a contractor takes before starting: what it pays for (materials, scheduling), how big it may be (some states cap home-improvement down payments, e.g. California: $1,000 or 10% of the contract price, whichever is less, Business and Professions Code §7159.5; verify and date it), a materials deposit vs a booking deposit, what the contract should say. Sample: a kitchen job deposit.
 - **Don't write about:** Progress billing and retainage (owned by /templates/construction-progress-invoice); general construction fields (/templates/construction).
-- **Already covered (link, don't repeat):** /industries/general-contractors (“invoice app for contractors”) · /templates/deposit-invoice (“deposit invoice template”)
+- **Already covered (link, don't repeat):** /templates/deposit-invoice (“deposit invoice template”) · /industries/general-contractors (“invoice app for contractors”)
 
 #### B4 · /templates/roofing-deposit-invoice
 
@@ -47,7 +47,7 @@ _None yet._
 - **Group:** B1–B20 · **Score:** not scored · **Intent:** template: deposit · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. The deposit before a roof job: ordering shingles and materials, scheduling around weather, insurance-claim jobs (homeowner deductible, insurer's first and final checks, hedged), what happens to the deposit if the job is delayed. Sample: a full re-roof materials deposit.
 - **Don't write about:** Roofing line items per square, tear-off and disposal (owned by /templates/roofing).
-- **Already covered (link, don't repeat):** /templates/roofing (“roofing invoice template”) · /industries/roofers (“roofing invoice app”) · /templates/deposit-invoice (“deposit invoice template”)
+- **Already covered (link, don't repeat):** /templates/roofing (“roofing invoice template”) · /templates/deposit-invoice (“deposit invoice template”) · /industries/roofers (“roofing invoice app”)
 
 #### B5 · /templates/painting-deposit-invoice
 
@@ -103,7 +103,7 @@ _None yet._
 - **Group:** B1–B20 · **Score:** not scored · **Intent:** template: hourly · **Languages:** yes
 - **Write about:** Same fields as the other templates (content/templates.json), plus a sample invoice of this billing type. Hourly VA invoices: hours by task category, pre-paid blocks of hours vs billing after, time zones and response times, tools and subscriptions passed through. Sample: a two-week period for one client.
 - **Don't write about:** General VA fields (owned by /templates/virtual-assistant); the app pitch for VAs (/industries/virtual-assistants).
-- **Already covered (link, don't repeat):** /industries/virtual-assistants (“invoice app for virtual assistants”) · /templates/virtual-assistant (“virtual assistant invoice template”)
+- **Already covered (link, don't repeat):** /templates/virtual-assistant (“virtual assistant invoice template”) · /industries/virtual-assistants (“invoice app for virtual assistants”)
 
 #### B12 · /templates/handyman-hourly-invoice
 
@@ -223,7 +223,7 @@ _None yet._
 - **Group:** B21–B40 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. The bridal booking deposit, trial, balance on the day.
 - **Don't write about:** General fields of the trade (owned by /templates/makeup-artist): one sentence and a link.
-- **Already covered (link, don't repeat):** /industries/hair-makeup-artists (“invoice app for makeup artists”) · /templates/makeup-artist (“makeup artist invoice template”)
+- **Already covered (link, don't repeat):** /templates/makeup-artist (“makeup artist invoice template”) · /industries/hair-makeup-artists (“invoice app for makeup artists”)
 
 #### B27 · /templates/interior-design-retainer-invoice
 
@@ -470,7 +470,7 @@ _None yet._
 - **Group:** B41–B60 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways. Monthly hours block, rollover, overage.
 - **Don't write about:** General fields of the trade (owned by /templates/virtual-assistant): one sentence and a link.
-- **Already covered (link, don't repeat):** /industries/virtual-assistants (“invoice app for virtual assistants”) · /templates/virtual-assistant (“virtual assistant invoice template”)
+- **Already covered (link, don't repeat):** /templates/virtual-assistant (“virtual assistant invoice template”) · /industries/virtual-assistants (“invoice app for virtual assistants”)
 
 #### B60 · /templates/handyman-labor-and-materials-invoice
 
@@ -1413,7 +1413,7 @@ _None yet._
 - **Group:** B167–B173 · **Score:** not scored · **Intent:** template: billing type · **Languages:** yes
 - **Write about:** Same fields as the templates, with a sample invoice of this billing type; link the trade's template both ways and the general /templates/final-invoice up. Final counts two weeks out, the deposit subtracted, rentals and delivery.
 - **Don't write about:** General fields of the trade (owned by /templates/florist): one sentence and a link; the general final invoice (owned by /templates/final-invoice); any claim that the app tracks deposits, payments or time.
-- **Already covered (link, don't repeat):** /templates/florist (“florist invoice template”) · /industries/florists (“invoice app for florists”) · /templates/final-invoice (“final invoice template”)
+- **Already covered (link, don't repeat):** /templates/florist (“florist invoice template”) · /templates/final-invoice (“final invoice template”) · /industries/florists (“invoice app for florists”)
 - **Notes:** trade: /templates/florist; parent: /templates/final-invoice
 
 #### B170 · /templates/band-final-invoice

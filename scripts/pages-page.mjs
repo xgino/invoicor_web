@@ -7,16 +7,14 @@
  *   node scripts/pages-page.mjs D4-de       # the German version (and its English page)
  *   node scripts/pages-page.mjs /templates/hourly-invoice
  */
-import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { groupOf, parseCsv, parseId } from "./pages-lib.mjs";
+import { groupOf, parseId } from "./pages-lib.mjs";
+import { loadRows } from "./pages-data.mjs";
 import { LANGUAGES, LANGUAGE_ORDER, TASKS } from "./pages-items.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const rows = parseCsv(readFileSync(join(root, "seo/keyword-map.csv"), "utf8")).filter(
-  (r) => r.status !== "removed",
-);
+const rows = loadRows(root).filter((r) => r.status !== "removed");
 const arg = process.argv[2];
 if (!arg) {
   console.error("Usage: npm run -s pages:page -- D4   (or D4-de, or a URL)");

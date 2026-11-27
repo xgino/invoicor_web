@@ -5,8 +5,9 @@ description: Suggest and plan new SEO pages for invoicor.com. Use when the user 
 
 # Add SEO pages to the plan
 
-The page log [seo/keyword-map.csv](../../../seo/keyword-map.csv) is the one source of truth: every
-page, live, planned or parked, is one row. PLAN.md, PAGES.md and seo/plan/ are generated from it
+The page log [seo/pages/](../../../seo/pages/) (one CSV per category, `D-types.csv` …) is the one
+source of truth: every page, live, planned or parked, is one row, its language versions right
+below it. PLAN.md, PAGES.md and seo/plan/ are generated from it
 (`npm run pages`); never edit them by hand. This routine plans pages (rows); writing them is
 "do D4" / "do D1–D20" (see PLAN.md → How to run).
 
@@ -23,11 +24,16 @@ page, live, planned or parked, is one row. PLAN.md, PAGES.md and seo/plan/ are g
    Don't re-propose what was left out on purpose unless something changed (new API currency, new
    app feature, Search Console data).
 
-## 2. Unbuilt pages come first
+## 2. Language gaps and unbuilt pages come first
 
-If the category has **planned** rows not yet live, say so at the top: "D has 30 planned, 0 live:
-building D1 is worth more than planning D3." New rows only help when the planned ones are weak or
-used up. The user decides.
+Say these at the top, before any new idea; the user decides:
+- **Language gaps:** `npm run -s pages:gaps` and the category's line in `seo/LANGUAGES.md`. If its
+  live pages miss language versions that can be written now (no task in the Needs column),
+  RULES.md §3 says to fill those first: "T's 50 live templates miss 500 versions (they wait for
+  S1)".
+- **Unbuilt pages:** if the category has **planned** rows not yet live: "D has 10 planned: building
+  D21–D30 is worth more than planning D31." New rows only help when the planned ones are weak or
+  used up.
 
 ## 3. Find candidates (about twice the number asked)
 
@@ -64,8 +70,8 @@ the number is a direction, not a quota.
 
 ## 5. After the user approves (they may strike rows)
 
-1. Append the rows to `seo/keyword-map.csv` with a small script that uses `parseCsv` / `toCsv`
-   from `scripts/pages-lib.mjs`. Fields: url, lang, status `planned`, page_type, localize
+1. Append the rows with a small script that uses `loadRows` / `saveRows` from
+   `scripts/pages-data.mjs` (it files each row in its category's CSV). Fields: url, lang, status `planned`, page_type, localize
    (yes / local / en-only, with the reason in notes), primary_keyword, secondary_keywords,
    intent, brief (what to write, with sources to check), avoid (what neighbours own: link
    them), score and score_why (from step 4). A language version that shouldn't exist gets a

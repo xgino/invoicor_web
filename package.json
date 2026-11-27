@@ -25,7 +25,8 @@
     "prepare": "husky",
     "pages": "node scripts/pages.mjs",
     "pages:category": "node scripts/pages-category.mjs",
-    "pages:page": "node scripts/pages-page.mjs"
+    "pages:page": "node scripts/pages-page.mjs",
+    "pages:gaps": "node scripts/pages-gaps.mjs"
   },
   "dependencies": {
     "jspdf": "4.2.1",

@@ -1,5 +1,5 @@
 /**
- * The page log (seo/keyword-map.csv → seo/PAGES.md). Shared by `npm run pages` and the site test.
+ * The page log (seo/pages/*.csv → seo/PAGES.md, PLAN.md, LANGUAGES.md). Shared by `npm run pages` and the site test.
  * Pure functions only: no file system, no network, so the test can check PAGES.md is up to date.
  */
 
@@ -205,7 +205,16 @@ export function section(row) {
 const shortUrl = (url) => url;
 
 import { CATEGORIES } from "./pages-categories.mjs";
-import { GOAL, GROUPS, LANGUAGES, LANGUAGE_ORDER, ORDER, PREFIX, TASKS } from "./pages-items.mjs";
+import {
+  GOAL,
+  GROUPS,
+  LANGUAGES,
+  LANGUAGE_NEEDS,
+  LANGUAGE_ORDER,
+  ORDER,
+  PREFIX,
+  TASKS,
+} from "./pages-items.mjs";
 
 // ── PAGES.md: what we have ──
 
@@ -219,7 +228,7 @@ export function renderPagesMd(rows) {
     "> **Generated, don't edit by hand.** Every live page on invoicor.com and its translations,",
     "> with its **key** (the search it's for), its language decision and the",
     "> date it was made. What we still want to build is in [PLAN.md](PLAN.md). The data for both is",
-    "> [keyword-map.csv](keyword-map.csv). After adding or removing pages: `npm run build && npm run pages`.",
+    "> [pages/](pages/) (one CSV per category). After adding or removing pages: `npm run build && npm run pages`.",
     '> Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).',
     "> The site test fails when this file or the CSV is behind the site.",
     "",
@@ -242,8 +251,8 @@ export function renderPagesMd(rows) {
     "",
     "Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per",
     "country in all 11 languages (local words, rules and examples, not word for word), **local** = only",
-    "in its own language, **en-only** = stays English. The language versions still to write are on the",
-    "to-do list in [PLAN.md](PLAN.md#languages-l).",
+    "in its own language, **en-only** = stays English. Which live page misses which language:",
+    "[LANGUAGES.md](LANGUAGES.md) (the gap map).",
     "",
     "| Page type | Decision | English | Per other language | Still to write |",
     "|---|---|---|---|---|",
@@ -357,6 +366,99 @@ function languageGaps(rows) {
   });
 }
 
+// ── LANGUAGES.md: the gap map ──
+
+/** The task a page's language versions wait for (S1 …), or "" when they can be written now. */
+export function languageBlocker(page) {
+  const done = (id) => TASKS.find((t) => t.id === id)?.done;
+  for (const [task, x] of Object.entries(LANGUAGE_NEEDS))
+    if (!done(task) && (x.types.includes(page.page_type) || x.urls.includes(page.url))) return task;
+  return "";
+}
+
+/**
+ * Per live page that should exist in every language (`localize: yes`): its state per language.
+ * live = the version is live; parked = skipped on purpose (the reason in its row); planned = a row
+ * exists but isn't live; missing = no version yet. A gap = planned or missing.
+ */
+export function languageGapsByPage(rows) {
+  const versions = new Map();
+  for (const r of rows)
+    if (r.translation_of && r.status !== "removed")
+      versions.set(`${r.translation_of}|${r.lang}`, r);
+  return rows
+    .filter((r) => r.status === "live" && !r.translation_of && r.localize === "yes")
+    .map((page) => {
+      const state = Object.fromEntries(
+        LANGUAGE_ORDER.map((l) => [l, versions.get(`${page.url}|${l}`)?.status ?? "missing"]),
+      );
+      const gaps = LANGUAGE_ORDER.filter((l) => state[l] === "missing" || state[l] === "planned");
+      return { page, state, gaps, needs: languageBlocker(page) };
+    });
+}
+
+const MARK = { live: "✓", parked: "–", planned: "◦", missing: "·" };
+
+function renderLanguagesMd(rows) {
+  const all = languageGapsByPage(rows);
+  const gapsTotal = all.reduce((n, x) => n + x.gaps.length, 0);
+  const now = all.filter((x) => !x.needs).reduce((n, x) => n + x.gaps.length, 0);
+  const out = [
+    "# Language gaps",
+    "",
+    "> **Generated, don't edit by hand.** Every live page that should exist in all 11 languages",
+    "> (`localize: yes`) and, per language, whether its version exists. **Fill a page type's gaps",
+    "> before adding more English pages of that type** ([RULES.md §3](RULES.md#3-planning-new-pages)).",
+    '> Ask for them by ID: "do D4-de", or "do the German gaps for D". List them:',
+    "> `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);",
+    "> then `npm run pages`.",
+    "",
+    `**${gapsTotal.toLocaleString("en")} language versions missing** for ${all.filter((x) => x.gaps.length).length} of ${all.length} live pages · ${now.toLocaleString("en")} can be written now, ${(gapsTotal - now).toLocaleString("en")} wait for a task (the **Needs** column).`,
+    "",
+    `Marks: **${MARK.live}** live, **${MARK.missing}** missing, **${MARK.planned}** planned (a row exists, not live yet), **${MARK.parked}** parked on purpose (no local demand; the reason is in its row).`,
+    "",
+    "## Per category",
+    "",
+    `| Category | Live pages | Complete | Missing | Needs | ${LANGUAGE_ORDER.join(" | ")} |`,
+    `|---|---|---|---|---|${LANGUAGE_ORDER.map(() => "---").join("|")}|`,
+  ];
+  const byCat = CATEGORIES.map((c) => ({
+    c,
+    list: all.filter((x) => categoryOf(x.page) === c),
+  })).filter((x) => x.list.length);
+  for (const { c, list } of byCat) {
+    const per = LANGUAGE_ORDER.map((l) => list.filter((x) => x.gaps.includes(l)).length || "");
+    const needs = [
+      ...new Set(
+        list
+          .filter((x) => x.gaps.length)
+          .map((x) => x.needs)
+          .filter(Boolean),
+      ),
+    ];
+    out.push(
+      `| [${PREFIX[c.id]} · ${c.title}](#${anchor(`${PREFIX[c.id]} ${c.title}`)}) | ${list.length} | ${list.filter((x) => !x.gaps.length).length} | ${list.reduce((n, x) => n + x.gaps.length, 0)} | ${needs.join(", ") || "none"} | ${per.join(" | ")} |`,
+    );
+  }
+  out.push("");
+  for (const { c, list } of byCat) {
+    out.push(
+      `## ${PREFIX[c.id]} ${c.title}`,
+      "",
+      `| ID | Page | Needs | ${LANGUAGE_ORDER.join(" | ")} |`,
+      `|---|---|---|${LANGUAGE_ORDER.map(() => "---").join("|")}|`,
+    );
+    for (const x of [...list].sort(
+      (a, b) => (parseId(a.page.id)?.n ?? 0) - (parseId(b.page.id)?.n ?? 0),
+    ))
+      out.push(
+        `| ${x.page.id} | ${x.page.url} | ${x.gaps.length ? x.needs || "" : "complete"} | ${LANGUAGE_ORDER.map((l) => MARK[x.state[l]] ?? "?").join(" | ")} |`,
+      );
+    out.push("");
+  }
+  return out.join("\n");
+}
+
 // ── RULES.md: the one generated block (the language table) ──
 
 const RULES_START =
@@ -401,7 +503,7 @@ export function rulesSection(text, c) {
 /** All plan files: seo/PLAN.md (the items), seo/plan/{category}.md (the briefs) and
  * seo/plan/languages/{lang}.md (every language item with its pages). */
 export function renderPlanFiles(rows) {
-  const files = { "seo/PLAN.md": renderPlan(rows) };
+  const files = { "seo/PLAN.md": renderPlan(rows), "seo/LANGUAGES.md": renderLanguagesMd(rows) };
   for (const c of CATEGORIES) files[`seo/plan/${c.id}.md`] = renderCategory(rows, c);
   for (const l of LANGUAGE_ORDER) files[`seo/plan/languages/${l}.md`] = renderLanguage(rows, l);
   return files;
@@ -545,7 +647,7 @@ function renderPlan(rows) {
     "> 10–25 (D1–D20) per category. Boxes tick themselves when the pages are live. The rules for",
     "> every page: [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per",
     "> category); the instructions per language version in [plan/languages/](plan/languages/). What",
-    "> exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv) (`id`, `brief`,",
+    "> exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,",
     "> `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.",
     "",
     `**${live.length.toLocaleString("en")} / ${GOAL.toLocaleString("en")} pages live** (${Math.round((live.length / GOAL) * 100)}%) · planned: ${inGroup.length} English and local pages + ${langTodo.toLocaleString("en")} language versions · **${total.toLocaleString("en")} when everything is built** (fewer after the demand gate parks the weak ones)`,
@@ -775,7 +877,7 @@ function renderLanguage(rows, lang) {
     `> **Generated, don't edit by hand.** Every page planned in ${L.name}, per group, with what each`,
     `> version must do. A version's ID is its English page's ID + \`-${lang}\` ("do D4-${lang}"; a whole`,
     `> group: "do D1–D20 in ${L.name}"). Back to the [plan](../../PLAN.md#languages). Data:`,
-    "> `seo/keyword-map.csv`; then `npm run pages`.",
+    "> `seo/pages/`; then `npm run pages`.",
     "",
     `## Writing for ${L.markets}`,
     "",
@@ -838,7 +940,7 @@ function renderCategory(rows, c) {
     `# ${c.title}`,
     "",
     "> **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:",
-    "> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).",
+    "> `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).",
     "",
     `**${done.length} done · ${todo.length} planned**`,
     "",

@@ -47,5 +47,5 @@ Bing only shows data from the day it's added, so add it now even if the export i
 ## 3. Tell Claude
 
 Commit the folder (or just tell Claude it's there). Claude then:
-- fills in today's positions in `seo/keyword-map.csv` and proposes 10 priority keywords (X9),
+- fills in today's positions in `seo/pages/*.csv` (`baseline_position`) and proposes 10 priority keywords (X9),
 - compares again on 2026-12-16 or 4 weeks after the launch (S1-k).

@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Every page planned in Dutch, per group, with what each
 > version must do. A version's ID is its English page's ID + `-nl` ("do D4-nl"; a whole
 > group: "do D1–D20 in Dutch"). Back to the [plan](../../PLAN.md#languages). Data:
-> `seo/keyword-map.csv`; then `npm run pages`.
+> `seo/pages/`; then `npm run pages`.
 
 ## Writing for Netherlands, Belgium (NL)
 

@@ -1,7 +1,7 @@
 /**
- * The page categories: which rows of seo/keyword-map.csv belong to each (`match`). Everything
+ * The page categories: which rows of seo/pages/*.csv belong to each (`match`). Everything
  * else about a category (URL, key, sections, can and can't, links, languages) is in seo/RULES.md §5 under "{letter} · {title}"; the site test checks every category has one.
- * Edit seo/keyword-map.csv to plan pages; then `npm run pages`.
+ * Edit seo/pages/*.csv to plan pages; then `npm run pages`.
  *
  * `match(row)` decides which rows (live and planned) belong to the category.
  */

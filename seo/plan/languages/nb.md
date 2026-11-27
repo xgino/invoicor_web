@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Every page planned in Norwegian (Bokmål), per group, with what each
 > version must do. A version's ID is its English page's ID + `-nb` ("do D4-nb"; a whole
 > group: "do D1–D20 in Norwegian (Bokmål)"). Back to the [plan](../../PLAN.md#languages). Data:
-> `seo/keyword-map.csv`; then `npm run pages`.
+> `seo/pages/`; then `npm run pages`.
 
 ## Writing for Norway
 

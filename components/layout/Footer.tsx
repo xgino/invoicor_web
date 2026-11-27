@@ -59,7 +59,7 @@ function AllLink({ href, children }: { href: string; children: ReactNode }) {
 
 /**
  * The 3 templates with the most search impressions (Search Console, 28 days to 2026-11-18;
- * baseline in seo/keyword-map.csv), then 3 general invoice types with strong search demand
+ * baseline in seo/pages/*.csv), then 3 general invoice types with strong search demand
  * (demand gate 2026-11-27; the commercial invoice has no trade page to link it). Update after
  * each Search Console round.
  */

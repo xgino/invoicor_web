@@ -1,5 +1,5 @@
 /**
- * The plan's groups and tasks. Every page has its own ID in seo/keyword-map.csv (`id`):
+ * The plan's groups and tasks. Every page has its own ID in seo/pages/*.csv (`id`):
  * {letter}{n} per category (T5, D12, LO3) and, for a language version, {id}-{lang} (D12-de). IDs
  * never change; a new page gets the next free number of its letter (`npm run pages` fills it in).
  *
@@ -303,6 +303,17 @@ export const ORDER = [
 ];
 
 /** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */
+/**
+ * Language versions that can't be written before a task is done: the page types (and the hubs)
+ * that need task S1's language setup. The gap map (seo/LANGUAGES.md) shows the task per gap.
+ */
+export const LANGUAGE_NEEDS = {
+  S1: {
+    types: ["template", "template (billing type)", "template (invoice type)", "industry"],
+    urls: ["/templates", "/industries"],
+  },
+};
+
 export const LANGUAGE_ORDER = ["de", "es", "fr", "nl", "sv", "da", "nb", "it", "pt", "pl"];
 
 export const GOAL = 4000;

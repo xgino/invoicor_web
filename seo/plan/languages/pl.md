@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Every page planned in Polish, per group, with what each
 > version must do. A version's ID is its English page's ID + `-pl` ("do D4-pl"; a whole
 > group: "do D1–D20 in Polish"). Back to the [plan](../../PLAN.md#languages). Data:
-> `seo/keyword-map.csv`; then `npm run pages`.
+> `seo/pages/`; then `npm run pages`.
 
 ## Writing for Poland
 

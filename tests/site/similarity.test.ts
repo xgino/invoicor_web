@@ -7,7 +7,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { parseCsv } from "../../scripts/pages-lib.mjs";
+import { loadRows } from "../../scripts/pages-data.mjs";
 import {
   MAX_ALIKE_BUILT,
   closestPair,
@@ -32,9 +32,7 @@ const MIN_WORDS: Record<string, number> = {
 };
 
 const root = process.cwd();
-const live = parseCsv(readFileSync(join(root, "seo/keyword-map.csv"), "utf8")).filter(
-  (r) => r.status === "live",
-);
+const live = loadRows(root).filter((r) => r.status === "live");
 const pages = live.map((r) => {
   const file = join(root, "out", r.url === "/" ? "index.html" : `${r.url ?? ""}.html`);
   const list = words(mainText(readFileSync(file, "utf8")));

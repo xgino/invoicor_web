@@ -5,7 +5,7 @@
 > 10–25 (D1–D20) per category. Boxes tick themselves when the pages are live. The rules for
 > every page: [RULES.md](RULES.md). The brief per English page is in [plan/](plan/) (one file per
 > category); the instructions per language version in [plan/languages/](plan/languages/). What
-> exists today: [PAGES.md](PAGES.md). Data: [keyword-map.csv](keyword-map.csv) (`id`, `brief`,
+> exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
 **225 / 4,000 pages live** (6%) · planned: 955 English and local pages + 8,269 language versions · **9,449 when everything is built** (fewer after the demand gate parks the weak ones)
@@ -2725,5 +2725,5 @@ Features, security, the countries hub and the German Impressum · 2 pages
 
 Pages that need a decision or code first, and pages on hold, with the reason in their brief.
 
-- **on hold: file downloads (53)** (4): [P16 /templates/invoice-template-word](plan/core.md#p16--templatesinvoice-template-word) · [P17 /templates/invoice-template-excel](plan/core.md#p17--templatesinvoice-template-excel) · [P18 /templates/invoice-template-google-docs](plan/core.md#p18--templatesinvoice-template-google-docs) · [P19 /templates/invoice-template-pdf](plan/core.md#p19--templatesinvoice-template-pdf)
 - **on hold: e-invoicing** (3): [LO72 /it/fattura-elementi-obbligatori](plan/local.md#lo72--itfattura-elementi-obbligatori) · [LO73 /pt/requisitos-fatura](plan/local.md#lo73--ptrequisitos-fatura) · [LO74 /pl/elementy-faktury](plan/local.md#lo74--plelementy-faktury)
+- **on hold: file downloads (53)** (4): [P16 /templates/invoice-template-word](plan/core.md#p16--templatesinvoice-template-word) · [P17 /templates/invoice-template-excel](plan/core.md#p17--templatesinvoice-template-excel) · [P18 /templates/invoice-template-google-docs](plan/core.md#p18--templatesinvoice-template-google-docs) · [P19 /templates/invoice-template-pdf](plan/core.md#p19--templatesinvoice-template-pdf)

@@ -3,7 +3,7 @@
 > **Generated, don't edit by hand.** Every live page on invoicor.com and its translations,
 > with its **key** (the search it's for), its language decision and the
 > date it was made. What we still want to build is in [PLAN.md](PLAN.md). The data for both is
-> [keyword-map.csv](keyword-map.csv). After adding or removing pages: `npm run build && npm run pages`.
+> [pages/](pages/) (one CSV per category). After adding or removing pages: `npm run build && npm run pages`.
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
@@ -13,44 +13,44 @@
 
 | Section | Live | Page types |
 |---|---|---|
-| other English pages | 9 | trust 2, legal 2, home 1, generator 1, support 1, program 1, android 1 |
+| other English pages | 9 | legal 2, trust 2, generator 1, home 1, support 1, program 1, android 1 |
 | /compare | 21 | compare 20, hub 1 |
 | /industries | 44 | industry 43, hub 1 |
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
-| /da | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /de | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /es | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /fr | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /it | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /nb | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /nl | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /pl | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /pt | 8 | tool 4, home 1, generator 1, support 1, android 1 |
-| /sv | 8 | tool 4, home 1, generator 1, support 1, android 1 |
+| /da | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /de | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /es | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /fr | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /it | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /nb | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /nl | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /pl | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /pt | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /sv | 8 | tool 4, generator 1, home 1, support 1, android 1 |
 
 ## Languages
 
 Every page has a language decision in the `localize` column (roadmap R4): **yes** = written per
 country in all 11 languages (local words, rules and examples, not word for word), **local** = only
-in its own language, **en-only** = stays English. The language versions still to write are on the
-to-do list in [PLAN.md](PLAN.md#languages-l).
+in its own language, **en-only** = stays English. Which live page misses which language:
+[LANGUAGES.md](LANGUAGES.md) (the gap map).
 
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
-| home | yes | 1 | 1 |  |
-| generator | yes | 1 | 1 |  |
-| hub | yes, en-only | 3 | 0 | 20 |
 | template | yes | 50 | 0 | 500 |
+| template (invoice type) | yes, en-only | 16 | 0 | 140 |
 | industry | yes | 43 | 0 | 430 |
 | compare | en-only | 20 | 0 |  |
+| tool | yes | 4 | 4 |  |
+| generator | yes | 1 | 1 |  |
+| home | yes | 1 | 1 |  |
+| hub | yes, en-only | 3 | 0 | 20 |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
-| trust | yes | 2 | 0 | 20 |
 | legal | yes | 2 | 0 | 20 |
-| tool | yes | 4 | 4 |  |
 | android | yes | 1 | 1 |  |
-| template (invoice type) | yes, en-only | 16 | 0 | 140 |
+| trust | yes | 2 | 0 | 20 |
 
 **1140 language versions still to write** for live pages.
 
@@ -58,19 +58,19 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| hub | 3 | · | · | · | · | · | · | · | · | · | · |
 | template | 50 | · | · | · | · | · | · | · | · | · | · |
+| template (invoice type) | 16 | · | · | · | · | · | · | · | · | · | · |
 | industry | 43 | · | · | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
+| tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| hub | 3 | · | · | · | · | · | · | · | · | · | · |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
-| trust | 2 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
-| tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | android | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| template (invoice type) | 16 | · | · | · | · | · | · | · | · | · | · |
+| trust | 2 | · | · | · | · | · | · | · | · | · | · |
 
 ### Made per day
 
@@ -78,7 +78,7 @@ to-do list in [PLAN.md](PLAN.md#languages-l).
 |---|---|---|
 | 2026-11-27 | 18 | template (invoice type) 16, trust 2 |
 | 2026-11-26 | 53 | template 30, industry 23 |
-| 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, home 1, generator 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, home 10, generator 10, support 10, android 10) |
+| 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
 
 ## Keys that are too close

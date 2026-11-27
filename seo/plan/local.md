@@ -1,7 +1,7 @@
 # Local pages (in the country's own language)
 
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
-> `seo/keyword-map.csv`; then `npm run pages`. Back to the [plan](../PLAN.md).
+> `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
 **0 done · 74 planned**
 
