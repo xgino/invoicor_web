@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TemplateView, firstSentence } from "@/components/sections/content/TemplateView";
-import {
-  CONTENT_UPDATED_AT,
-  getIndustry,
-  getTemplate,
-  getTemplates,
-  getTradesForInvoiceType,
-} from "@/lib/content";
+import { getIndustry, getTemplate, getTemplates, getTradesForInvoiceType } from "@/lib/content";
 import { contentVersions } from "@/lib/content-i18n";
+import { pageUpdated } from "@/lib/page-dates";
 import { CONTENT_TEXT } from "@/lib/i18n/pages/content";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
@@ -53,7 +48,7 @@ export default async function TemplatePage({ params }: PageProps<"/templates/[sl
       d={d}
       locale="en"
       t={CONTENT_TEXT.en}
-      updated={CONTENT_UPDATED_AT.templates}
+      updated={pageUpdated(`/templates/${d.slug}`)}
       headings={{
         include: `What to include on ${aNiche} invoice`,
         paperSample: `${niche} invoice · sample`,

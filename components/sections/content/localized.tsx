@@ -1,7 +1,8 @@
 import { HubPage } from "@/components/sections/content/hub";
 import { IndustryView } from "@/components/sections/content/IndustryView";
 import { TemplateView, firstSentence } from "@/components/sections/content/TemplateView";
-import { CONTENT_UPDATED_AT, text } from "@/lib/content";
+import { text } from "@/lib/content";
+import { pageUpdated } from "@/lib/page-dates";
 import {
   contentPath,
   contentVersions,
@@ -180,7 +181,7 @@ export function ContentRoutePage({ locale: l, route }: { locale: Locale; route: 
         d={d}
         locale={l}
         t={t}
-        updated={CONTENT_UPDATED_AT.templates}
+        updated={pageUpdated(contentPath("templates", l, d.slug))}
         headings={{
           include: d.include_title,
           paperSample: d.paper_label,
@@ -229,7 +230,7 @@ export function ContentRoutePage({ locale: l, route }: { locale: Locale; route: 
       d={d}
       locale={l}
       t={t}
-      updated={CONTENT_UPDATED_AT.industries}
+      updated={pageUpdated(contentPath("industries", l, d.slug))}
       headings={{
         badge: text(d, "badge_text") ?? t.industryHub.card,
         stats: d.stats_label ?? d.industry,

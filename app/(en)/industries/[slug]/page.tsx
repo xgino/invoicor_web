@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { IndustryView } from "@/components/sections/content/IndustryView";
-import {
-  CONTENT_UPDATED_AT,
-  getIndustries,
-  getIndustry,
-  getTemplatesForIndustry,
-  text,
-} from "@/lib/content";
+import { getIndustries, getIndustry, getTemplatesForIndustry, text } from "@/lib/content";
 import { contentVersions } from "@/lib/content-i18n";
 import { CONTENT_TEXT } from "@/lib/i18n/pages/content";
+import { pageUpdated } from "@/lib/page-dates";
 import { buildMetadata, ogImagePath } from "@/lib/seo";
 
 // Only the slugs in content/industries.json exist; anything else is a real 404.
@@ -50,7 +45,7 @@ export default async function IndustryPage({ params }: PageProps<"/industries/[s
       d={d}
       locale="en"
       t={CONTENT_TEXT.en}
-      updated={CONTENT_UPDATED_AT.industries}
+      updated={pageUpdated(`/industries/${d.slug}`)}
       headings={{
         badge: text(d, "badge_text") ?? `Invoicing for ${lower}`,
         stats: `${industry} at a glance`,

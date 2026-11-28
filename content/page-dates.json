@@ -1,0 +1,1310 @@
+{
+  "/": {
+    "updated": "2026-11-18",
+    "hash": "e5f63904c63ea915"
+  },
+  "/about": {
+    "updated": "2026-11-28",
+    "hash": "b16e2970bc6b3959"
+  },
+  "/affiliate": {
+    "updated": "2026-11-18",
+    "hash": "4af0e72654ec8f7e"
+  },
+  "/android": {
+    "updated": "2026-11-18",
+    "hash": "c81c69cbb7eb8c97"
+  },
+  "/compare": {
+    "updated": "2026-11-18",
+    "hash": "cc03be4ec1e8bcde"
+  },
+  "/compare/billdu": {
+    "updated": "2026-11-18",
+    "hash": "b0e169c1c617d32e"
+  },
+  "/compare/bonsai": {
+    "updated": "2026-11-18",
+    "hash": "a95a299410c473e9"
+  },
+  "/compare/bookipi": {
+    "updated": "2026-11-18",
+    "hash": "78f7aedd7945e275"
+  },
+  "/compare/freshbooks": {
+    "updated": "2026-11-18",
+    "hash": "be2f3a4c39623339"
+  },
+  "/compare/harvest": {
+    "updated": "2026-11-18",
+    "hash": "628b80aa94942927"
+  },
+  "/compare/honeybook": {
+    "updated": "2026-11-18",
+    "hash": "ac6b9bc812d8097c"
+  },
+  "/compare/housecall-pro": {
+    "updated": "2026-11-18",
+    "hash": "9fd5772bb6b594fb"
+  },
+  "/compare/invoice-fly": {
+    "updated": "2026-11-18",
+    "hash": "c5b3ca09f388158b"
+  },
+  "/compare/invoice-ninja": {
+    "updated": "2026-11-18",
+    "hash": "53d94a2be401177a"
+  },
+  "/compare/invoice2go": {
+    "updated": "2026-11-18",
+    "hash": "6be7001bc6e14855"
+  },
+  "/compare/jobber": {
+    "updated": "2026-11-18",
+    "hash": "f6fe1e3f394b03d0"
+  },
+  "/compare/joist": {
+    "updated": "2026-11-18",
+    "hash": "e602a75853b072a9"
+  },
+  "/compare/quickbooks": {
+    "updated": "2026-11-18",
+    "hash": "567e25ad539cac81"
+  },
+  "/compare/servicem8": {
+    "updated": "2026-11-18",
+    "hash": "1a737253da472262"
+  },
+  "/compare/square-invoices": {
+    "updated": "2026-11-18",
+    "hash": "db75f623f83205e8"
+  },
+  "/compare/stripe-invoices": {
+    "updated": "2026-11-18",
+    "hash": "1ae05c37fc588943"
+  },
+  "/compare/wave": {
+    "updated": "2026-11-18",
+    "hash": "3fe1c02267847c2f"
+  },
+  "/compare/xero": {
+    "updated": "2026-11-18",
+    "hash": "2b8275c4100620c3"
+  },
+  "/compare/zervant": {
+    "updated": "2026-11-18",
+    "hash": "dfb8a9332c43aefc"
+  },
+  "/compare/zoho-invoice": {
+    "updated": "2026-11-18",
+    "hash": "8f176d9c874c838c"
+  },
+  "/contact": {
+    "updated": "2026-11-28",
+    "hash": "0303e3184d714992"
+  },
+  "/da": {
+    "updated": "2026-11-18",
+    "hash": "d011b05c4963e3df"
+  },
+  "/da/android": {
+    "updated": "2026-11-18",
+    "hash": "fc0f2ed51d886e35"
+  },
+  "/da/hjaelp": {
+    "updated": "2026-11-18",
+    "hash": "7812039cd9af67ea"
+  },
+  "/da/kontakt": {
+    "updated": "2026-11-28",
+    "hash": "ed512db37f2a758c"
+  },
+  "/da/lav-faktura": {
+    "updated": "2026-11-18",
+    "hash": "d96d49f43905a2cf"
+  },
+  "/da/om-os": {
+    "updated": "2026-11-28",
+    "hash": "daa7834f4cb21108"
+  },
+  "/da/skabeloner": {
+    "updated": "2026-11-28",
+    "hash": "f02f5dc57aa53805"
+  },
+  "/da/skabeloner/abonnementsfaktura": {
+    "updated": "2026-11-28",
+    "hash": "3d7d20423cad9866"
+  },
+  "/da/skabeloner/acontofaktura": {
+    "updated": "2026-11-28",
+    "hash": "877496d995910e9b"
+  },
+  "/da/skabeloner/delfaktura": {
+    "updated": "2026-11-28",
+    "hash": "0148a34fe460b98c"
+  },
+  "/da/skabeloner/faktura-arbejdsloen-og-materialer": {
+    "updated": "2026-11-28",
+    "hash": "a599b1a87a0da95d"
+  },
+  "/da/skabeloner/faktura-timer": {
+    "updated": "2026-11-28",
+    "hash": "6dadcf6372d624b3"
+  },
+  "/da/skabeloner/faktura-uden-moms": {
+    "updated": "2026-11-28",
+    "hash": "9278be55e86aeb17"
+  },
+  "/da/skabeloner/faktura-ydelser": {
+    "updated": "2026-11-28",
+    "hash": "dc48fa18a07318ce"
+  },
+  "/da/skabeloner/freelance-faktura": {
+    "updated": "2026-11-28",
+    "hash": "1cb35a5d13bfa0c8"
+  },
+  "/da/skabeloner/handelsfaktura": {
+    "updated": "2026-11-28",
+    "hash": "09fb865f6951660c"
+  },
+  "/da/skabeloner/udlaeg-faktura": {
+    "updated": "2026-11-28",
+    "hash": "9546f9cae448067e"
+  },
+  "/da/vaerktoejer": {
+    "updated": "2026-11-18",
+    "hash": "4f4c7717c0b80335"
+  },
+  "/da/vaerktoejer/beregn-timepris": {
+    "updated": "2026-11-18",
+    "hash": "c5abb09c156c7fec"
+  },
+  "/da/vaerktoejer/momsberegner": {
+    "updated": "2026-11-18",
+    "hash": "25a8290762d7f4d1"
+  },
+  "/da/vaerktoejer/timeberegner": {
+    "updated": "2026-11-18",
+    "hash": "eba7c5b5ad7bcc2a"
+  },
+  "/de": {
+    "updated": "2026-11-18",
+    "hash": "5c7da302e4275b2a"
+  },
+  "/de/android": {
+    "updated": "2026-11-18",
+    "hash": "3ba604c3cf109040"
+  },
+  "/de/hilfe": {
+    "updated": "2026-11-18",
+    "hash": "27fe3582f77669b6"
+  },
+  "/de/kontakt": {
+    "updated": "2026-11-28",
+    "hash": "c79061714e36e2d4"
+  },
+  "/de/rechnung-erstellen": {
+    "updated": "2026-11-18",
+    "hash": "65aa0c2275539247"
+  },
+  "/de/tools": {
+    "updated": "2026-11-18",
+    "hash": "4e7f06d66bb80a1d"
+  },
+  "/de/tools/mehrwertsteuer-rechner": {
+    "updated": "2026-11-18",
+    "hash": "70ca3534c8a20288"
+  },
+  "/de/tools/stundenrechner": {
+    "updated": "2026-11-18",
+    "hash": "e4020797625465af"
+  },
+  "/de/tools/stundensatz-rechner": {
+    "updated": "2026-11-18",
+    "hash": "cdff072cd8c2e012"
+  },
+  "/de/ueber-uns": {
+    "updated": "2026-11-28",
+    "hash": "ab3155b5dc4abae0"
+  },
+  "/de/vorlagen": {
+    "updated": "2026-11-28",
+    "hash": "d655eb9750eac712"
+  },
+  "/de/vorlagen/anzahlungsrechnung": {
+    "updated": "2026-11-28",
+    "hash": "fda9fc4780d8e6da"
+  },
+  "/de/vorlagen/auslagen-weiterberechnen": {
+    "updated": "2026-11-28",
+    "hash": "5e252bfeb2a89f68"
+  },
+  "/de/vorlagen/dauerrechnung": {
+    "updated": "2026-11-28",
+    "hash": "696ddee7ef0cde90"
+  },
+  "/de/vorlagen/handelsrechnung": {
+    "updated": "2026-11-28",
+    "hash": "468361d983304430"
+  },
+  "/de/vorlagen/kleinunternehmer-rechnung": {
+    "updated": "2026-11-28",
+    "hash": "3a128e140997fef5"
+  },
+  "/de/vorlagen/rechnung-dienstleistung": {
+    "updated": "2026-11-28",
+    "hash": "a15a8b2508bfa37b"
+  },
+  "/de/vorlagen/rechnung-fliesenleger": {
+    "updated": "2026-11-28",
+    "hash": "730df923bf952d76"
+  },
+  "/de/vorlagen/rechnung-fotograf": {
+    "updated": "2026-11-28",
+    "hash": "bf3593904a56fddf"
+  },
+  "/de/vorlagen/rechnung-freiberufler": {
+    "updated": "2026-11-28",
+    "hash": "cd8f5275cb6f00a2"
+  },
+  "/de/vorlagen/rechnung-gebaeudereinigung": {
+    "updated": "2026-11-28",
+    "hash": "0ebc49abf72f0df9"
+  },
+  "/de/vorlagen/rechnung-grafikdesigner": {
+    "updated": "2026-11-28",
+    "hash": "a284e47c8c26853b"
+  },
+  "/de/vorlagen/rechnung-heizung-sanitaer": {
+    "updated": "2026-11-28",
+    "hash": "bf676e90caf8e720"
+  },
+  "/de/vorlagen/rechnung-lohn-und-material": {
+    "updated": "2026-11-28",
+    "hash": "f34ad79c750206ad"
+  },
+  "/de/vorlagen/rechnung-maler": {
+    "updated": "2026-11-28",
+    "hash": "30fd5742f57d7aa4"
+  },
+  "/de/vorlagen/rechnung-musikunterricht": {
+    "updated": "2026-11-28",
+    "hash": "7554a377840b075a"
+  },
+  "/de/vorlagen/rechnung-uebersetzer": {
+    "updated": "2026-11-28",
+    "hash": "6d3f4583eda085dc"
+  },
+  "/de/vorlagen/rechnung-unternehmensberatung": {
+    "updated": "2026-11-28",
+    "hash": "178ea4dc667b5312"
+  },
+  "/de/vorlagen/rechnung-webdesigner": {
+    "updated": "2026-11-28",
+    "hash": "6b9b476bcb8bcf37"
+  },
+  "/de/vorlagen/schlussrechnung": {
+    "updated": "2026-11-28",
+    "hash": "4f380c9c399c79da"
+  },
+  "/de/vorlagen/stundenrechnung": {
+    "updated": "2026-11-28",
+    "hash": "4d90aa8a9f44c8f5"
+  },
+  "/de/vorlagen/subunternehmer-rechnung": {
+    "updated": "2026-11-28",
+    "hash": "07a72119b2e0681e"
+  },
+  "/de/vorlagen/teilrechnung": {
+    "updated": "2026-11-28",
+    "hash": "1e5b898953d95ac3"
+  },
+  "/es": {
+    "updated": "2026-11-18",
+    "hash": "363d3d513e74a1d6"
+  },
+  "/es/android": {
+    "updated": "2026-11-18",
+    "hash": "6764d1be8af6e5a1"
+  },
+  "/es/ayuda": {
+    "updated": "2026-11-18",
+    "hash": "7ea910c65fff0b1f"
+  },
+  "/es/contacto": {
+    "updated": "2026-11-28",
+    "hash": "236b1ae2bcc946e8"
+  },
+  "/es/crear-factura": {
+    "updated": "2026-11-18",
+    "hash": "a68cb217fa70d478"
+  },
+  "/es/herramientas": {
+    "updated": "2026-11-18",
+    "hash": "75a2498636dc32a4"
+  },
+  "/es/herramientas/calculadora-horas": {
+    "updated": "2026-11-18",
+    "hash": "31c6b4c0e0427f93"
+  },
+  "/es/herramientas/calculadora-iva": {
+    "updated": "2026-11-18",
+    "hash": "72dd1c105cb11276"
+  },
+  "/es/herramientas/calcular-precio-hora": {
+    "updated": "2026-11-18",
+    "hash": "b9a4abf781ba8c84"
+  },
+  "/es/plantillas": {
+    "updated": "2026-11-28",
+    "hash": "34f9004fceb0422b"
+  },
+  "/es/plantillas/factura-comercial-exportacion": {
+    "updated": "2026-11-28",
+    "hash": "b1944fefcfb58b8a"
+  },
+  "/es/plantillas/factura-con-suplidos": {
+    "updated": "2026-11-28",
+    "hash": "931c419d3a8a9d66"
+  },
+  "/es/plantillas/factura-de-anticipo": {
+    "updated": "2026-11-28",
+    "hash": "f5308f71e96bc2d6"
+  },
+  "/es/plantillas/factura-de-venta": {
+    "updated": "2026-11-28",
+    "hash": "0f225fbbf7e765b4"
+  },
+  "/es/plantillas/factura-mano-de-obra-y-materiales": {
+    "updated": "2026-11-28",
+    "hash": "a24535751384ce27"
+  },
+  "/es/plantillas/factura-recurrente": {
+    "updated": "2026-11-28",
+    "hash": "0eab0f60c3894544"
+  },
+  "/es/plantillas/factura-sin-iva": {
+    "updated": "2026-11-28",
+    "hash": "15444989db5408e4"
+  },
+  "/es/plantillas/factura-subcontratista": {
+    "updated": "2026-11-28",
+    "hash": "9ad622a9166bd533"
+  },
+  "/es/sobre-nosotros": {
+    "updated": "2026-11-28",
+    "hash": "b7903d09b30b201d"
+  },
+  "/fr": {
+    "updated": "2026-11-18",
+    "hash": "8c32d04cd43db621"
+  },
+  "/fr/a-propos": {
+    "updated": "2026-11-28",
+    "hash": "124cf2b0ba0a9bc1"
+  },
+  "/fr/aide": {
+    "updated": "2026-11-18",
+    "hash": "671d62c4f55616d3"
+  },
+  "/fr/android": {
+    "updated": "2026-11-18",
+    "hash": "935c1d918d9fda54"
+  },
+  "/fr/contact": {
+    "updated": "2026-11-28",
+    "hash": "b57f7bf3b8b9d7c6"
+  },
+  "/fr/creer-une-facture": {
+    "updated": "2026-11-18",
+    "hash": "ee8ed53b98a2a055"
+  },
+  "/fr/modeles": {
+    "updated": "2026-11-28",
+    "hash": "f42137f8a2ca463c"
+  },
+  "/fr/modeles/facture-acompte": {
+    "updated": "2026-11-28",
+    "hash": "7c800128f226a7b2"
+  },
+  "/fr/modeles/facture-commerciale": {
+    "updated": "2026-11-28",
+    "hash": "cabbe8392b169064"
+  },
+  "/fr/modeles/facture-freelance": {
+    "updated": "2026-11-28",
+    "hash": "da297db6efed5d65"
+  },
+  "/fr/modeles/facture-prestation-de-services": {
+    "updated": "2026-11-28",
+    "hash": "6ca8ddb06ed7a1a4"
+  },
+  "/fr/modeles/facture-recurrente": {
+    "updated": "2026-11-28",
+    "hash": "b9ea03e446ff2ccb"
+  },
+  "/fr/modeles/facture-sans-tva": {
+    "updated": "2026-11-28",
+    "hash": "382495f97cfb846b"
+  },
+  "/fr/modeles/facture-situation": {
+    "updated": "2026-11-28",
+    "hash": "f48ec812cee7c839"
+  },
+  "/fr/modeles/facture-solde": {
+    "updated": "2026-11-28",
+    "hash": "720009c77f764a8b"
+  },
+  "/fr/modeles/facture-sous-traitant": {
+    "updated": "2026-11-28",
+    "hash": "e590d956da7ffbda"
+  },
+  "/fr/modeles/facture-travaux": {
+    "updated": "2026-11-28",
+    "hash": "6d6bc66ed1dee872"
+  },
+  "/fr/modeles/facture-vente": {
+    "updated": "2026-11-28",
+    "hash": "2abc074084a33dd4"
+  },
+  "/fr/modeles/refacturation-frais": {
+    "updated": "2026-11-28",
+    "hash": "66cb4d9171d21a4f"
+  },
+  "/fr/outils": {
+    "updated": "2026-11-18",
+    "hash": "4be7e798d39dc2b8"
+  },
+  "/fr/outils/calcul-heures": {
+    "updated": "2026-11-18",
+    "hash": "809322465b38240d"
+  },
+  "/fr/outils/calcul-taux-horaire": {
+    "updated": "2026-11-18",
+    "hash": "3db3d73009a064b6"
+  },
+  "/fr/outils/calcul-tva": {
+    "updated": "2026-11-18",
+    "hash": "72960c99c88ca5f3"
+  },
+  "/free-invoice-generator": {
+    "updated": "2026-11-18",
+    "hash": "17a9d2ab88616362"
+  },
+  "/help": {
+    "updated": "2026-11-18",
+    "hash": "0aa3cd501103937d"
+  },
+  "/industries": {
+    "updated": "2026-11-26",
+    "hash": "b258fd38a452a2a8"
+  },
+  "/industries/appliance-repair": {
+    "updated": "2026-11-26",
+    "hash": "5675667679a2d817"
+  },
+  "/industries/auto-detailing-mechanics": {
+    "updated": "2026-11-18",
+    "hash": "d39b9d365695810e"
+  },
+  "/industries/bookkeepers": {
+    "updated": "2026-11-26",
+    "hash": "8396edc73d85873e"
+  },
+  "/industries/carpenters": {
+    "updated": "2026-11-26",
+    "hash": "aa189f9d9208b032"
+  },
+  "/industries/carpet-cleaners": {
+    "updated": "2026-11-26",
+    "hash": "9b053f49866ab927"
+  },
+  "/industries/caterers": {
+    "updated": "2026-11-18",
+    "hash": "32fa262000b53f20"
+  },
+  "/industries/cleaning-services": {
+    "updated": "2026-11-18",
+    "hash": "6a84762d0fba7061"
+  },
+  "/industries/consultants-coaches": {
+    "updated": "2026-11-18",
+    "hash": "0c375bb448f8846e"
+  },
+  "/industries/copywriters": {
+    "updated": "2026-11-26",
+    "hash": "d77425625183cd86"
+  },
+  "/industries/djs": {
+    "updated": "2026-11-26",
+    "hash": "c8ca273308409342"
+  },
+  "/industries/electricians": {
+    "updated": "2026-11-18",
+    "hash": "2e4aec67b812e4a8"
+  },
+  "/industries/event-planners": {
+    "updated": "2026-11-26",
+    "hash": "9ae227919da3982c"
+  },
+  "/industries/flooring-installers": {
+    "updated": "2026-11-26",
+    "hash": "02540be200a4c9b9"
+  },
+  "/industries/florists": {
+    "updated": "2026-11-26",
+    "hash": "b759007194655201"
+  },
+  "/industries/freelance-designers": {
+    "updated": "2026-11-18",
+    "hash": "e64f0bc20c90fc62"
+  },
+  "/industries/general-contractors": {
+    "updated": "2026-11-18",
+    "hash": "f8b2a76c3cb5c683"
+  },
+  "/industries/hair-makeup-artists": {
+    "updated": "2026-11-18",
+    "hash": "fe8548f54c8632e6"
+  },
+  "/industries/interior-designers": {
+    "updated": "2026-11-26",
+    "hash": "42c94334dd1cb574"
+  },
+  "/industries/junk-removal": {
+    "updated": "2026-11-26",
+    "hash": "08768bea48800a38"
+  },
+  "/industries/landscaping-lawn-care": {
+    "updated": "2026-11-18",
+    "hash": "d22a481d35e13b44"
+  },
+  "/industries/locksmiths": {
+    "updated": "2026-11-26",
+    "hash": "cd390f65d3c6be72"
+  },
+  "/industries/masons": {
+    "updated": "2026-11-26",
+    "hash": "46e7f5c43e610b83"
+  },
+  "/industries/massage-therapists": {
+    "updated": "2026-11-26",
+    "hash": "75e91f2affd5877d"
+  },
+  "/industries/movers": {
+    "updated": "2026-11-18",
+    "hash": "354b6fe17f41b388"
+  },
+  "/industries/music-teachers": {
+    "updated": "2026-11-26",
+    "hash": "151993a1adb93ca5"
+  },
+  "/industries/painters": {
+    "updated": "2026-11-18",
+    "hash": "cfc2d35abdb77848"
+  },
+  "/industries/personal-trainers": {
+    "updated": "2026-11-18",
+    "hash": "e07f590a69b0bfa5"
+  },
+  "/industries/pest-control": {
+    "updated": "2026-11-18",
+    "hash": "e881131fe7e4a4d5"
+  },
+  "/industries/pet-care": {
+    "updated": "2026-11-18",
+    "hash": "c79192907ebcd76a"
+  },
+  "/industries/photographers-videographers": {
+    "updated": "2026-11-18",
+    "hash": "7555cc81dc7c2345"
+  },
+  "/industries/plumbers-hvac": {
+    "updated": "2026-11-18",
+    "hash": "6afacebcb569df70"
+  },
+  "/industries/pool-service": {
+    "updated": "2026-11-26",
+    "hash": "aed14d2cd137c060"
+  },
+  "/industries/pressure-washing": {
+    "updated": "2026-11-26",
+    "hash": "3f35de4af71647ef"
+  },
+  "/industries/roofers": {
+    "updated": "2026-11-18",
+    "hash": "c4518d53c2717b66"
+  },
+  "/industries/snow-removal": {
+    "updated": "2026-11-26",
+    "hash": "097b58e0fa6143aa"
+  },
+  "/industries/social-media-managers": {
+    "updated": "2026-11-26",
+    "hash": "c9456f4a73a98042"
+  },
+  "/industries/tile-installers": {
+    "updated": "2026-11-26",
+    "hash": "3fa11b2d3cfe00c5"
+  },
+  "/industries/translators": {
+    "updated": "2026-11-26",
+    "hash": "e3fde08e35b2614f"
+  },
+  "/industries/tree-service": {
+    "updated": "2026-11-26",
+    "hash": "6bc35daf2ea20fb5"
+  },
+  "/industries/tutors": {
+    "updated": "2026-11-18",
+    "hash": "5af0835c56a2a259"
+  },
+  "/industries/virtual-assistants": {
+    "updated": "2026-11-18",
+    "hash": "46179d37f4dda023"
+  },
+  "/industries/web-developers": {
+    "updated": "2026-11-18",
+    "hash": "807f991ce58588c7"
+  },
+  "/industries/window-cleaners": {
+    "updated": "2026-11-26",
+    "hash": "f423a698710fcda7"
+  },
+  "/it": {
+    "updated": "2026-11-18",
+    "hash": "ac509de1dd60529a"
+  },
+  "/it/aiuto": {
+    "updated": "2026-11-18",
+    "hash": "2cfdbe4be1861bf1"
+  },
+  "/it/android": {
+    "updated": "2026-11-18",
+    "hash": "4cdfe2ac463352f7"
+  },
+  "/it/chi-siamo": {
+    "updated": "2026-11-28",
+    "hash": "092cc40dbd244f4e"
+  },
+  "/it/contatti": {
+    "updated": "2026-11-28",
+    "hash": "da07d0d45a6816f8"
+  },
+  "/it/crea-fattura": {
+    "updated": "2026-11-18",
+    "hash": "25cd6787fbe30ac8"
+  },
+  "/it/strumenti": {
+    "updated": "2026-11-18",
+    "hash": "15a0b3fbe014f484"
+  },
+  "/it/strumenti/calcolo-iva": {
+    "updated": "2026-11-18",
+    "hash": "56a8e2c169eaa7e1"
+  },
+  "/it/strumenti/calcolo-ore": {
+    "updated": "2026-11-18",
+    "hash": "234db48256751bb5"
+  },
+  "/it/strumenti/calcolo-tariffa-oraria": {
+    "updated": "2026-11-18",
+    "hash": "63cbb78a75f00f1d"
+  },
+  "/nb": {
+    "updated": "2026-11-18",
+    "hash": "3d0b93e0c43562bd"
+  },
+  "/nb/android": {
+    "updated": "2026-11-18",
+    "hash": "b9fcaef021b4ef5e"
+  },
+  "/nb/hjelp": {
+    "updated": "2026-11-18",
+    "hash": "0325b736e26bab43"
+  },
+  "/nb/kontakt": {
+    "updated": "2026-11-28",
+    "hash": "2ef04dfe0c867214"
+  },
+  "/nb/lag-faktura": {
+    "updated": "2026-11-28",
+    "hash": "db0cb3a5d88ace1e"
+  },
+  "/nb/maler": {
+    "updated": "2026-11-28",
+    "hash": "d732cd588611777b"
+  },
+  "/nb/maler/faktura-arbeid-og-materialer": {
+    "updated": "2026-11-28",
+    "hash": "9b6feef200d8a787"
+  },
+  "/nb/maler/faktura-uten-mva": {
+    "updated": "2026-11-28",
+    "hash": "fd8a66da28e98af4"
+  },
+  "/nb/maler/handelsfaktura": {
+    "updated": "2026-11-28",
+    "hash": "bfb2924b72989685"
+  },
+  "/nb/om-oss": {
+    "updated": "2026-11-28",
+    "hash": "fcf87eb960e93b8e"
+  },
+  "/nb/verktoy": {
+    "updated": "2026-11-18",
+    "hash": "1ad50514f9b713a9"
+  },
+  "/nb/verktoy/beregn-timepris": {
+    "updated": "2026-11-18",
+    "hash": "1ff7f9ccb6e6817a"
+  },
+  "/nb/verktoy/mva-kalkulator": {
+    "updated": "2026-11-18",
+    "hash": "908800c6ce327f51"
+  },
+  "/nb/verktoy/timekalkulator": {
+    "updated": "2026-11-18",
+    "hash": "7b89d92bb41c2c2b"
+  },
+  "/nl": {
+    "updated": "2026-11-18",
+    "hash": "335b78eb6cc2c05d"
+  },
+  "/nl/android": {
+    "updated": "2026-11-18",
+    "hash": "683bb571708ad2d7"
+  },
+  "/nl/contact": {
+    "updated": "2026-11-28",
+    "hash": "d624c8ef9e757fee"
+  },
+  "/nl/gratis-factuur-maken": {
+    "updated": "2026-11-18",
+    "hash": "7e533d1f631f6013"
+  },
+  "/nl/help": {
+    "updated": "2026-11-18",
+    "hash": "049de06283df06bc"
+  },
+  "/nl/over-ons": {
+    "updated": "2026-11-28",
+    "hash": "9d39bad276903559"
+  },
+  "/nl/templates": {
+    "updated": "2026-11-28",
+    "hash": "a3a66726e6f7c85a"
+  },
+  "/nl/templates/aanbetalingsfactuur": {
+    "updated": "2026-11-28",
+    "hash": "1e1c5bbde83beb50"
+  },
+  "/nl/templates/commerciele-factuur": {
+    "updated": "2026-11-28",
+    "hash": "ec955757ecb4f820"
+  },
+  "/nl/templates/eindfactuur": {
+    "updated": "2026-11-28",
+    "hash": "10443d95c2a8b23c"
+  },
+  "/nl/templates/factuur-onderaannemer": {
+    "updated": "2026-11-28",
+    "hash": "35e17023801169f8"
+  },
+  "/nl/templates/factuur-zonder-btw": {
+    "updated": "2026-11-28",
+    "hash": "efc28945420c191a"
+  },
+  "/nl/templates/kosten-doorberekenen": {
+    "updated": "2026-11-28",
+    "hash": "2b44f572838aea1b"
+  },
+  "/nl/templates/periodieke-factuur": {
+    "updated": "2026-11-28",
+    "hash": "6a71670b9d8c538c"
+  },
+  "/nl/templates/termijnfactuur": {
+    "updated": "2026-11-28",
+    "hash": "8b570ed5a8b409b6"
+  },
+  "/nl/templates/verkoopfactuur": {
+    "updated": "2026-11-28",
+    "hash": "d0021ec743daef1f"
+  },
+  "/nl/templates/zzp-factuur": {
+    "updated": "2026-11-28",
+    "hash": "9f5d4261637ca517"
+  },
+  "/nl/tools": {
+    "updated": "2026-11-18",
+    "hash": "e2c0d83ddca58911"
+  },
+  "/nl/tools/btw-berekenen": {
+    "updated": "2026-11-18",
+    "hash": "f273b914656023e1"
+  },
+  "/nl/tools/uren-berekenen": {
+    "updated": "2026-11-18",
+    "hash": "068e52bc8f73a774"
+  },
+  "/nl/tools/uurtarief-berekenen": {
+    "updated": "2026-11-18",
+    "hash": "42e68047ee2ec206"
+  },
+  "/pl": {
+    "updated": "2026-11-18",
+    "hash": "e0cdbf3c84761bb0"
+  },
+  "/pl/android": {
+    "updated": "2026-11-18",
+    "hash": "f7cece32efa129c5"
+  },
+  "/pl/kontakt": {
+    "updated": "2026-11-28",
+    "hash": "15ab31a66b14a4fe"
+  },
+  "/pl/narzedzia": {
+    "updated": "2026-11-18",
+    "hash": "a1c7e57f2a3a0023"
+  },
+  "/pl/narzedzia/kalkulator-godzin": {
+    "updated": "2026-11-18",
+    "hash": "e469bf3711561f7a"
+  },
+  "/pl/narzedzia/kalkulator-stawki-godzinowej": {
+    "updated": "2026-11-18",
+    "hash": "4eee2f6b4cf19bda"
+  },
+  "/pl/narzedzia/kalkulator-vat": {
+    "updated": "2026-11-18",
+    "hash": "2ec580c952d3a8e0"
+  },
+  "/pl/o-nas": {
+    "updated": "2026-11-28",
+    "hash": "170513c388cb5b58"
+  },
+  "/pl/pomoc": {
+    "updated": "2026-11-18",
+    "hash": "db110ea7744f5255"
+  },
+  "/pl/wystaw-fakture": {
+    "updated": "2026-11-18",
+    "hash": "e1d4715307acb7ad"
+  },
+  "/privacy": {
+    "updated": "2026-11-25",
+    "hash": "d07764f6c2f8c0dd"
+  },
+  "/pt": {
+    "updated": "2026-11-18",
+    "hash": "ee0ffab95529ddbe"
+  },
+  "/pt/ajuda": {
+    "updated": "2026-11-18",
+    "hash": "774bb2440894de41"
+  },
+  "/pt/android": {
+    "updated": "2026-11-18",
+    "hash": "49115f9353d37dcc"
+  },
+  "/pt/contacto": {
+    "updated": "2026-11-28",
+    "hash": "5bf5d1a139785453"
+  },
+  "/pt/criar-fatura": {
+    "updated": "2026-11-18",
+    "hash": "7f3c7ce5d1278462"
+  },
+  "/pt/ferramentas": {
+    "updated": "2026-11-18",
+    "hash": "e4d7cba8db590640"
+  },
+  "/pt/ferramentas/calculadora-horas": {
+    "updated": "2026-11-18",
+    "hash": "31bdae772911aa54"
+  },
+  "/pt/ferramentas/calcular-iva": {
+    "updated": "2026-11-18",
+    "hash": "be25797b1edda64b"
+  },
+  "/pt/ferramentas/calcular-preco-hora": {
+    "updated": "2026-11-18",
+    "hash": "c6bec4bfbb2dc9d9"
+  },
+  "/pt/sobre-nos": {
+    "updated": "2026-11-28",
+    "hash": "9eae2f0a95671120"
+  },
+  "/sv": {
+    "updated": "2026-11-18",
+    "hash": "3362f8bea88943e7"
+  },
+  "/sv/android": {
+    "updated": "2026-11-18",
+    "hash": "98268165342e7876"
+  },
+  "/sv/hjalp": {
+    "updated": "2026-11-18",
+    "hash": "f985b2a7dcf0a190"
+  },
+  "/sv/kontakt": {
+    "updated": "2026-11-28",
+    "hash": "066e8520b9e5061d"
+  },
+  "/sv/mallar": {
+    "updated": "2026-11-28",
+    "hash": "5937f56dc10e4196"
+  },
+  "/sv/mallar/aterkommande-faktura": {
+    "updated": "2026-11-28",
+    "hash": "119899a295654f17"
+  },
+  "/sv/mallar/delfaktura": {
+    "updated": "2026-11-28",
+    "hash": "06f3bdefe6d40ee1"
+  },
+  "/sv/mallar/faktura-arbete-och-material": {
+    "updated": "2026-11-28",
+    "hash": "5f639a321aa2bea0"
+  },
+  "/sv/mallar/faktura-frilans": {
+    "updated": "2026-11-28",
+    "hash": "07bc7d6aba76bc42"
+  },
+  "/sv/mallar/faktura-utan-moms": {
+    "updated": "2026-11-28",
+    "hash": "22676a2bc3c140d6"
+  },
+  "/sv/mallar/forskottsfaktura": {
+    "updated": "2026-11-28",
+    "hash": "479df4c9f9503a52"
+  },
+  "/sv/mallar/handelsfaktura": {
+    "updated": "2026-11-28",
+    "hash": "a3cabc879c823636"
+  },
+  "/sv/mallar/omvand-byggmoms-faktura": {
+    "updated": "2026-11-28",
+    "hash": "9f807436bd9f5475"
+  },
+  "/sv/mallar/slutfaktura": {
+    "updated": "2026-11-28",
+    "hash": "2db26e3763206e55"
+  },
+  "/sv/mallar/vidarefakturering-utlagg": {
+    "updated": "2026-11-28",
+    "hash": "ce68b75662037f9f"
+  },
+  "/sv/om-oss": {
+    "updated": "2026-11-28",
+    "hash": "5e0f3dc61c74a730"
+  },
+  "/sv/skapa-faktura": {
+    "updated": "2026-11-18",
+    "hash": "8f347aa5e0af6bdd"
+  },
+  "/sv/verktyg": {
+    "updated": "2026-11-18",
+    "hash": "889d21c4a42c4ffd"
+  },
+  "/sv/verktyg/momsraknare": {
+    "updated": "2026-11-18",
+    "hash": "bca5c0b61e0c2664"
+  },
+  "/sv/verktyg/rakna-ut-timpris": {
+    "updated": "2026-11-18",
+    "hash": "c3a27939c101f433"
+  },
+  "/sv/verktyg/timraknare": {
+    "updated": "2026-11-18",
+    "hash": "0077f0fecdaecbca"
+  },
+  "/templates": {
+    "updated": "2026-11-28",
+    "hash": "b63d227e3c468b65"
+  },
+  "/templates/appliance-repair": {
+    "updated": "2026-11-27",
+    "hash": "10d6a3936c431cef"
+  },
+  "/templates/auto-detailing": {
+    "updated": "2026-11-27",
+    "hash": "ccb6cd7a9e1b98e7"
+  },
+  "/templates/bookkeeping": {
+    "updated": "2026-11-27",
+    "hash": "b7f57dfbf4049a52"
+  },
+  "/templates/carpentry": {
+    "updated": "2026-11-27",
+    "hash": "94532672355e9826"
+  },
+  "/templates/carpet-cleaning": {
+    "updated": "2026-11-27",
+    "hash": "b8ca41cd7ddcca13"
+  },
+  "/templates/catering": {
+    "updated": "2026-11-27",
+    "hash": "ae898aad860767f0"
+  },
+  "/templates/cleaning-services": {
+    "updated": "2026-11-27",
+    "hash": "b6aa9411e2d26038"
+  },
+  "/templates/commercial-invoice": {
+    "updated": "2026-11-27",
+    "hash": "3ecefe570d781837"
+  },
+  "/templates/construction": {
+    "updated": "2026-11-27",
+    "hash": "75cf9e842dd26656"
+  },
+  "/templates/consulting": {
+    "updated": "2026-11-27",
+    "hash": "f174934fc1e0ff7e"
+  },
+  "/templates/copywriting": {
+    "updated": "2026-11-27",
+    "hash": "23409e3556ace21e"
+  },
+  "/templates/deposit-invoice": {
+    "updated": "2026-11-27",
+    "hash": "89a1d3831575530c"
+  },
+  "/templates/dj": {
+    "updated": "2026-11-27",
+    "hash": "8c68ad93c007f2dc"
+  },
+  "/templates/drywall": {
+    "updated": "2026-11-27",
+    "hash": "6cc16fe82fb373b3"
+  },
+  "/templates/electrician": {
+    "updated": "2026-11-27",
+    "hash": "3cf182303848ed35"
+  },
+  "/templates/event-planning": {
+    "updated": "2026-11-27",
+    "hash": "3a5fbcbf4a4e57f6"
+  },
+  "/templates/expense-reimbursement-invoice": {
+    "updated": "2026-11-27",
+    "hash": "4605092cdcff082f"
+  },
+  "/templates/fence-installation": {
+    "updated": "2026-11-27",
+    "hash": "932c11e180786ad6"
+  },
+  "/templates/final-invoice": {
+    "updated": "2026-11-27",
+    "hash": "1fffece85fe790df"
+  },
+  "/templates/flooring": {
+    "updated": "2026-11-27",
+    "hash": "b684bdbf4514810c"
+  },
+  "/templates/florist": {
+    "updated": "2026-11-27",
+    "hash": "9bcbaaf6be85b5a7"
+  },
+  "/templates/freelance-design": {
+    "updated": "2026-11-27",
+    "hash": "88d1b02923ed7e87"
+  },
+  "/templates/freelance-invoice": {
+    "updated": "2026-11-27",
+    "hash": "a4f66174c6109fca"
+  },
+  "/templates/garage-door-repair": {
+    "updated": "2026-11-27",
+    "hash": "cf6d6ef13ac27271"
+  },
+  "/templates/handyman": {
+    "updated": "2026-11-27",
+    "hash": "ac1b780f25f3d86a"
+  },
+  "/templates/hourly-invoice": {
+    "updated": "2026-11-27",
+    "hash": "40f40e2d477a306e"
+  },
+  "/templates/hvac": {
+    "updated": "2026-11-27",
+    "hash": "c9ae2d2657f7921f"
+  },
+  "/templates/independent-contractor-invoice": {
+    "updated": "2026-11-27",
+    "hash": "10732aaa3ef124da"
+  },
+  "/templates/interior-design": {
+    "updated": "2026-11-27",
+    "hash": "289bb8608a318d36"
+  },
+  "/templates/junk-removal": {
+    "updated": "2026-11-27",
+    "hash": "cf0984b7853c7d77"
+  },
+  "/templates/labor-and-materials-invoice": {
+    "updated": "2026-11-27",
+    "hash": "785d0882117d2fb7"
+  },
+  "/templates/landscaping": {
+    "updated": "2026-11-27",
+    "hash": "eadc1776671490e0"
+  },
+  "/templates/locksmith": {
+    "updated": "2026-11-27",
+    "hash": "c32280355b1bd80b"
+  },
+  "/templates/makeup-artist": {
+    "updated": "2026-11-27",
+    "hash": "8de3267b9dc42124"
+  },
+  "/templates/masonry": {
+    "updated": "2026-11-27",
+    "hash": "8a88cf2faad99a77"
+  },
+  "/templates/massage-therapy": {
+    "updated": "2026-11-27",
+    "hash": "68c8abc891b9ecd9"
+  },
+  "/templates/milestone-invoice": {
+    "updated": "2026-11-27",
+    "hash": "9ed8246b273f44b5"
+  },
+  "/templates/monthly-invoice": {
+    "updated": "2026-11-27",
+    "hash": "3af4ab87ff9180c2"
+  },
+  "/templates/moving": {
+    "updated": "2026-11-27",
+    "hash": "7be3c0ff06efd292"
+  },
+  "/templates/music-lessons": {
+    "updated": "2026-11-27",
+    "hash": "c8873393237cb5f0"
+  },
+  "/templates/no-vat-invoice": {
+    "updated": "2026-11-28",
+    "hash": "f36a6a67d72ba903"
+  },
+  "/templates/painting": {
+    "updated": "2026-11-27",
+    "hash": "d7d29a5aa09a4794"
+  },
+  "/templates/past-due-invoice": {
+    "updated": "2026-11-27",
+    "hash": "d45963b47d5b7ffd"
+  },
+  "/templates/personal-training": {
+    "updated": "2026-11-27",
+    "hash": "243ff94115a7328b"
+  },
+  "/templates/pest-control": {
+    "updated": "2026-11-27",
+    "hash": "2c4b338e41de305e"
+  },
+  "/templates/pet-sitting": {
+    "updated": "2026-11-27",
+    "hash": "1229a17d5b78a118"
+  },
+  "/templates/photography": {
+    "updated": "2026-11-27",
+    "hash": "ae95a82e3ac83d2f"
+  },
+  "/templates/plumbing": {
+    "updated": "2026-11-27",
+    "hash": "8506886d7d414d59"
+  },
+  "/templates/pool-service": {
+    "updated": "2026-11-27",
+    "hash": "73ef915f286cb0d2"
+  },
+  "/templates/pressure-washing": {
+    "updated": "2026-11-27",
+    "hash": "0c5ec487c156c3ba"
+  },
+  "/templates/remodeling": {
+    "updated": "2026-11-27",
+    "hash": "c4989b80141a6559"
+  },
+  "/templates/retainer-invoice": {
+    "updated": "2026-11-27",
+    "hash": "ce5354ad2f8364dc"
+  },
+  "/templates/roofing": {
+    "updated": "2026-11-27",
+    "hash": "eda0ba129ef3c0f3"
+  },
+  "/templates/sales-invoice": {
+    "updated": "2026-11-27",
+    "hash": "8e2e8a057cdb5cc1"
+  },
+  "/templates/service-invoice": {
+    "updated": "2026-11-27",
+    "hash": "44bcb10fc25303f3"
+  },
+  "/templates/snow-removal": {
+    "updated": "2026-11-27",
+    "hash": "781fa25294d95343"
+  },
+  "/templates/social-media-management": {
+    "updated": "2026-11-27",
+    "hash": "b6061e956cdb0790"
+  },
+  "/templates/subcontractor-invoice": {
+    "updated": "2026-11-27",
+    "hash": "f3c4f402858d189b"
+  },
+  "/templates/tile-installation": {
+    "updated": "2026-11-27",
+    "hash": "73a4ce73db7ae7ba"
+  },
+  "/templates/translation": {
+    "updated": "2026-11-27",
+    "hash": "c2cd18a5b4cc28d8"
+  },
+  "/templates/tree-service": {
+    "updated": "2026-11-27",
+    "hash": "1f0d692fdbe3ffef"
+  },
+  "/templates/tutoring": {
+    "updated": "2026-11-27",
+    "hash": "f2a3a649d55b23b4"
+  },
+  "/templates/videography": {
+    "updated": "2026-11-27",
+    "hash": "baf997310386729e"
+  },
+  "/templates/virtual-assistant": {
+    "updated": "2026-11-27",
+    "hash": "c3fb0025099be7e5"
+  },
+  "/templates/web-development": {
+    "updated": "2026-11-27",
+    "hash": "17012478c820f09b"
+  },
+  "/templates/window-cleaning": {
+    "updated": "2026-11-27",
+    "hash": "4f4baea7590530a1"
+  },
+  "/terms": {
+    "updated": "2026-11-18",
+    "hash": "ed86a2e29ef70380"
+  },
+  "/tools": {
+    "updated": "2026-11-18",
+    "hash": "0fbad343c62b4037"
+  },
+  "/tools/hourly-rate-calculator": {
+    "updated": "2026-11-18",
+    "hash": "336db56250fb263d"
+  },
+  "/tools/hours-calculator": {
+    "updated": "2026-11-18",
+    "hash": "a3bbc124cda1df71"
+  },
+  "/tools/vat-calculator": {
+    "updated": "2026-11-18",
+    "hash": "bc6561f7d56d2659"
+  }
+}
