@@ -199,7 +199,7 @@ export const nb: GeneratorDict = {
       "Hvordan kunden betaler: kontonummer og gjerne KID",
     ],
     mustNote:
-      "Offentlige virksomheter krever som hovedregel elektronisk faktura (EHF), ikke PDF. Generatoren har én MVA-sats per faktura, så leverer du med ulike satser, kan du lage én faktura per sats. Spør regnskapsføreren din ved tvil.",
+      "Offentlige virksomheter krever elektronisk faktura (EHF), ikke PDF. Fra 1. januar 2027 gjelder det også fakturaer til næringsdrivende kjøpere som er registrert i ELMA; en PDF holder da for private kunder, kjøpere i utlandet og kjøpere som ikke er i ELMA. Generatoren lager PDF, ikke EHF. Den har én MVA-sats per faktura, så leverer du med ulike satser, kan du lage én faktura per sats. Spør regnskapsføreren din ved tvil.",
 
     typesEyebrow: "Det grunnleggende",
     typesTitle: "Faktura, kvittering eller tilbud?",

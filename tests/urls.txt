@@ -232,6 +232,10 @@
 /da/skabeloner/faktura-uden-moms
 /da/skabeloner/freelance-faktura
 /nb/hjelp
+/nb/maler
+/nb/maler/faktura-uten-mva
+/nb/maler/handelsfaktura
+/nb/maler/faktura-arbeid-og-materialer
 # Wave 1 batch A (2026-11-26, ROADMAP W1)
 /templates/virtual-assistant
 /templates/pet-sitting

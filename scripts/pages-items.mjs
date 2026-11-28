@@ -422,7 +422,8 @@ export const LANGUAGES = {
     markets: "Norway",
     money: "NOK",
     tax: "MVA; organisasjonsnummer + 'MVA'",
-    watch: "Public sector needs EHF; Invoicor doesn't send EHF.",
+    watch:
+      "Public sector needs EHF; from 1 Jan 2027 also invoices to business buyers in ELMA (a PDF stays fine for consumers, buyers abroad, buyers not in ELMA and sellers ≤ 50 000 kr); Invoicor doesn't send EHF.",
   },
   it: {
     numbers: "1.234,56 €",
