@@ -1,1 +1,1228 @@
-[]
+[
+  {
+    "slug": "facture-acompte",
+    "translation_of": "deposit-invoice",
+    "niche": "Facture d'acompte",
+    "title": "Facture d'acompte : modèle gratuit et exemple | Invoicor",
+    "meta_description": "Facture d'acompte : les mentions, la TVA due à l'encaissement et un exemple chiffré pour 30 % d'une commande. Créez votre facture en PDF.",
+    "h1": "Facture d'acompte : modèle et exemple",
+    "subtitle": "Une facture pour chaque acompte reçu avant la prestation, avec le prix total de la commande, la part versée, sa date et la TVA qui va avec.",
+    "intro_paragraph": "Le client verse 30 % à la commande : vous avez l'argent avant d'avoir livré ou commencé. En France, ce versement appelle une vraie facture, numérotée dans votre série et soumise à la TVA. Elle dit à quoi correspond la somme, sur quel prix total elle porte et quand elle a été versée. Depuis le 1er septembre 2026, toute entreprise doit pouvoir recevoir des factures électroniques via une plateforme agréée ; l'émission est obligatoire pour les grandes entreprises et ETI depuis cette date, pour les PME et micro-entreprises au 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date une petite entreprise peut facturer comme aujourd'hui. Invoicor crée des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne se connecte pas à une plateforme agréée. En Belgique, une facture entre entreprises belges doit être une facture Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture d'acompte",
+    "what_to_include_intro": "Une facture d'acompte suit les mêmes règles que toute facture (service-public). Mais le travail n'est pas encore fait : elle doit porter elle-même le contexte. Six points à soigner.",
+    "req_1_title": "Le mot acompte dès la première ligne",
+    "req_1_text": "Le PDF porte le titre « Facture », et c'est juste : une facture d'acompte est une facture. Commencez la première ligne par « Acompte » : le comptable du client la classe à part, et vous la retrouvez vite au solde.",
+    "req_2_title": "Le prix total et la part demandée",
+    "req_2_text": "Indiquez les deux : « Acompte de 30 % sur une commande de 8 000,00 € HT ». Le client voit ce qu'il reste à payer, et le prix convenu figure sur une pièce comptable, pas seulement sur le devis.",
+    "req_3_title": "La date de versement de l'acompte",
+    "req_3_text": "Parmi les mentions obligatoires figure la date de la vente ou de la prestation, ou celle du versement de l'acompte (service-public). Invoicor n'a pas de champ pour cette date : écrivez-la dans la ligne ou dans les notes, par exemple « acompte reçu le 12 novembre 2026 ».",
+    "req_4_title": "Le devis ou la commande concernée",
+    "req_4_text": "Citez le devis accepté par son numéro et sa date, et le numéro de bon de commande du client s'il en a un : c'est une mention prévue.",
+    "req_5_title": "La TVA de l'acompte",
+    "req_5_text": "La TVA est due dès l'encaissement de l'acompte (voir plus bas). La facture applique donc le taux de l'opération au montant HT de l'acompte, 20 % dans l'exemple, et affiche le HT, la TVA et le TTC comme une facture ordinaire.",
+    "req_6_title": "Les mentions de paiement entre professionnels",
+    "req_6_text": "Échéance, taux des pénalités de retard, indemnité forfaitaire de 40 € pour frais de recouvrement et conditions d'escompte (« Escompte pour paiement anticipé : néant » s'il n'y en a pas). Dans Invoicor, elles vont dans les notes ou les conditions de paiement.",
+    "what_to_include_outro": "Ajoutez vos mentions habituelles : SIREN dans le champ « SIRET », forme juridique et capital (ou « EI »), et les deux numéros de TVA.",
+    "paper_label": "Facture d'acompte · exemple",
+    "sample_breakdown_title": "Exemple de facture d'acompte",
+    "sample_breakdown_intro": "Un menuisier agenceur fabrique des bibliothèques et un comptoir d'accueil pour une agence de communication, commande de 8 000,00 € HT. Le client verse 30 % le 12 novembre 2026, facturés le jour même avec 20 % de TVA (client professionnel, métropole). Vérifiez votre taux avec votre expert-comptable.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Acompte de 30 % sur la commande de 8 000,00 € HT : bibliothèques sur mesure et comptoir d'accueil (devis D-2026-041 accepté le 5 novembre 2026), acompte reçu le 12 novembre 2026",
+        "qty": "1",
+        "rate": "2 400,00 €",
+        "amount": "2 400,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2 400,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "480,00 €",
+    "sample_breakdown_balance": "2 880,00 €",
+    "sample_breakdown_notes": "Facture d'acompte F-2026-112 du 12 novembre 2026, acquittée par virement le 12 novembre 2026. Commande : 8 000,00 € HT. Reste 5 600,00 € HT, sur la facture de solde à la livraison (15 décembre 2026), qui déduira cet acompte. Escompte pour paiement anticipé : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Règles à connaître sur la facture d'acompte",
+    "industry_notes": [
+      {
+        "title": "La TVA est due à l'encaissement de l'acompte",
+        "text": "Pour une vente de biens, la TVA est exigible dès l'encaissement des acomptes perçus depuis le 1er janvier 2023. Pour une prestation de services, elle l'est à l'encaissement, sauf si l'entreprise a opté pour les débits. Hors cette option, l'acompte encaissé déclenche donc la TVA."
+      },
+      {
+        "title": "Une facture pour chaque acompte",
+        "text": "Une facture doit être émise pour chaque acompte reçu avant l'opération, sauf livraison intracommunautaire. Deux acomptes, deux factures, chacune avec son numéro."
+      },
+      {
+        "title": "Acompte, situation, solde",
+        "text": "L'acompte se facture avant le début du travail, la facture de situation pendant (l'avancement ou une étape achevée), et la facture de solde clôt la commande en faisant référence aux acomptes."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur la facture d'acompte",
+    "mistakes": [
+      {
+        "title": "Demander l'acompte sur le devis seulement",
+        "text": "« 30 % à la commande » sur un devis n'est pas une facture. Dès que l'acompte arrive, établissez la facture d'acompte : c'est elle qui porte la TVA et qui sera déduite au solde."
+      },
+      {
+        "title": "Reporter toute la TVA au solde",
+        "text": "Facturer l'acompte sans TVA et toute la TVA au solde décale l'exigibilité : la TVA de l'acompte était due à l'encaissement."
+      },
+      {
+        "title": "Confondre HT et TTC",
+        "text": "30 % du prix HT ou du TTC ? Mettez-vous d'accord avant. Si les 2 400,00 € versés sont TTC, la facture affiche 2 000,00 € HT et 400,00 € de TVA."
+      }
+    ],
+    "tip_title": "Un conseil pour vos factures d'acompte",
+    "pro_tip": "Notez le numéro et la date de chaque facture d'acompte dans le dossier du client. Invoicor ne relie pas les factures et ne suit pas les acomptes : au solde, cette liste vous évite d'en oublier un.",
+    "format_pdf_desc": "Un PDF garde le montant HT, la TVA et la date de l'acompte tels que vous les avez envoyés, sur le téléphone du client comme dans sa comptabilité.",
+    "faq_title": "Questions sur la facture d'acompte",
+    "faqs": [
+      {
+        "question": "Une facture d'acompte est-elle obligatoire ?",
+        "answer": "Oui, pour chaque acompte reçu avant la livraison ou la prestation, sauf livraison intracommunautaire. Elle porte les mêmes mentions qu'une facture ordinaire, plus la date de versement de l'acompte, et la TVA due sur son montant."
+      },
+      {
+        "question": "Puis-je envoyer la facture d'acompte avant d'être payé ?",
+        "answer": "Beaucoup d'entreprises le font. Mais la règle vise l'acompte reçu, et c'est son encaissement qui rend la TVA exigible (sauf option pour les débits). Si vous facturez avant le paiement, demandez à votre expert-comptable comment dater l'opération."
+      },
+      {
+        "question": "Quel taux de TVA appliquer à l'acompte ?",
+        "answer": "Celui de l'opération finale : 20 % dans le cas général en métropole, 10 %, 5,5 % ou 2,1 % pour les opérations qui y ont droit. Sous la franchise en base, pas de TVA : la mention « TVA non applicable, art. 293 B du CGI » vaut aussi pour l'acompte. Le PDF d'Invoicor imprime quand même une ligne « TVA (0%) » à 0,00 €, que la mention explique."
+      },
+      {
+        "question": "Et si le client annule après avoir versé l'acompte ?",
+        "answer": "Tout dépend du contrat et, avec un particulier, du droit de la consommation : vérifiez avec votre conseil. Si vous remboursez, l'usage est une facture d'avoir ; votre expert-comptable vous dira comment régulariser la TVA."
+      },
+      {
+        "question": "Invoicor suit-il les acomptes versés ?",
+        "answer": "Non. Vous pouvez passer la facture d'acompte au statut « Paid » (payée), mais l'application ne la relie pas à la facture de solde et ne calcule pas de reste à payer. Tenez cette liste vous-même."
+      }
+    ],
+    "cta_title": "Créez votre facture d'acompte",
+    "related": [
+      {
+        "name": "Facture de solde",
+        "slug": "facture-solde"
+      },
+      {
+        "name": "Facture de situation",
+        "slug": "facture-situation"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-solde",
+    "translation_of": "final-invoice",
+    "niche": "Facture de solde",
+    "title": "Facture de solde : déduire les acomptes | Invoicor",
+    "meta_description": "Facture de solde : reprenez le prix total, déduisez chaque acompte HT avec son numéro et facturez le reste avec sa TVA. Exemple chiffré, PDF gratuit.",
+    "h1": "Facture de solde après acomptes",
+    "subtitle": "Clôturez une commande payée en plusieurs fois : le prix total, chaque facture d'acompte retirée avec son numéro et sa date, et le reste avec sa TVA.",
+    "intro_paragraph": "La facture de solde est la dernière facture d'une commande déjà payée en partie. Elle fait référence aux factures d'acompte et, en pratique, reprend le prix total HT puis retire chaque acompte HT, si bien que la TVA ne porte que sur le reste. Une erreur ici, et le client paie deux fois la même TVA ou bloque le règlement. Facturation électronique : réception obligatoire pour toutes les entreprises depuis le 1er septembre 2026, émission pour les grandes entreprises et ETI depuis cette date, pour les PME et micro-entreprises au 1er septembre 2027 (impots.gouv.fr) ; d'ici là, une petite entreprise peut facturer comme aujourd'hui. Invoicor produit des PDF, pas de factures électroniques (Factur-X, UBL), sans lien avec une plateforme agréée. En Belgique, les factures entre entreprises belges passent obligatoirement par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de solde",
+    "what_to_include_intro": "Devant une facture de solde, le client se demande : est-ce tout, et le compte est-il juste ? Six éléments l'aident à répondre oui.",
+    "req_1_title": "Identifiée comme facture de solde",
+    "req_1_text": "Le PDF s'intitule « Facture ». Écrivez « Facture de solde » au début de la première ligne : le client sait qu'aucune autre facture ne suivra. Réservez ce mot au travail réellement terminé.",
+    "req_2_title": "Le prix total, suppléments compris",
+    "req_2_text": "Partez du prix du devis accepté et ajoutez chaque supplément validé sur sa ligne, avec la date de l'accord. Facturer le seul reste cache le calcul.",
+    "req_3_title": "Chaque facture d'acompte, par numéro et date",
+    "req_3_text": "La facture de solde fait référence aux factures d'acompte. Retirez chacune sur sa ligne : « Déduction acompte, facture F-2026-071 du 8 septembre 2026 ». Une ligne unique « acomptes reçus » empêche tout contrôle.",
+    "req_4_title": "Les acomptes retirés HT, la TVA sur le reste",
+    "req_4_text": "En pratique, on déduit les acomptes hors taxe et leur TVA : chaque acompte a déjà supporté sa TVA, qui ne doit pas être facturée une seconde fois. Dans l'exemple, les 20 % portent sur 8 700,00 € HT, le reste. Rappeler la TVA de chaque acompte facilite le contrôle.",
+    "req_5_title": "La date d'achèvement",
+    "req_5_text": "La date de la prestation ou de la livraison est une mention obligatoire. Invoicor n'a pas de champ dédié : écrivez « travaux achevés le 20 novembre 2026 » dans la ligne principale.",
+    "req_6_title": "Un nouveau numéro et une échéance",
+    "req_6_text": "La facture de solde prend le numéro suivant de votre série, sans suffixe ajouté à un ancien numéro. Terminez par un montant unique, une échéance (par défaut 30 jours après la prestation, 60 jours après l'émission au plus) et les mentions de retard.",
+    "what_to_include_outro": "Vérifiez : prix total moins acomptes égale le reste HT, et toute la TVA facturée fait 20 % du prix total.",
+    "paper_label": "Facture de solde · exemple",
+    "sample_breakdown_title": "Exemple de facture de solde",
+    "sample_breakdown_intro": "Un agenceur termine l'aménagement d'une boutique : 24 000,00 € HT au devis, plus 1 500,00 € HT de suppléments. Le client a payé deux factures d'acompte, TVA 20 %. Version du générateur gratuit, avec lignes négatives ; dans l'application, facturez le reste HT en une ligne et listez les acomptes dans les notes. Faites valider la présentation par votre expert-comptable.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Facture de solde : aménagement de la boutique selon devis D-2026-058 du 1er septembre 2026, travaux achevés le 20 novembre 2026",
+        "qty": "1",
+        "rate": "24 000,00 €",
+        "amount": "24 000,00 €"
+      },
+      {
+        "description": "Travaux supplémentaires : cabine d'essayage et miroir mural, accord du 6 octobre 2026",
+        "qty": "1",
+        "rate": "1 500,00 €",
+        "amount": "1 500,00 €"
+      },
+      {
+        "description": "Déduction acompte n° 1, facture F-2026-071 du 8 septembre 2026 (TVA de 1 440,00 € déjà facturée)",
+        "qty": "1",
+        "rate": "-7 200,00 €",
+        "amount": "-7 200,00 €"
+      },
+      {
+        "description": "Déduction acompte n° 2, facture F-2026-088 du 13 octobre 2026 (TVA de 1 920,00 € déjà facturée)",
+        "qty": "1",
+        "rate": "-9 600,00 €",
+        "amount": "-9 600,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "8 700,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "1 740,00 €",
+    "sample_breakdown_balance": "10 440,00 €",
+    "sample_breakdown_notes": "Facture de solde F-2026-117 du 23 novembre 2026, commande D-2026-058. Prix total : 25 500,00 € HT, 30 600,00 € TTC. Acomptes F-2026-071 et F-2026-088 payés. Reste dû : 10 440,00 € TTC avant le 23 décembre 2026. Aucune autre facture ne suivra pour cette commande. Escompte pour paiement anticipé : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Règles à connaître sur la facture de solde",
+    "industry_notes": [
+      {
+        "title": "La TVA des acomptes est déjà facturée",
+        "text": "Chaque facture d'acompte a porté sa TVA, exigible à l'encaissement. Appliquer 20 % au prix total ferait payer deux fois la TVA des acomptes. Invoicor applique un seul taux au total des lignes : déduisez d'abord en HT, la TVA tombe sur le reste."
+      },
+      {
+        "title": "Solde ne veut pas dire dernière en date",
+        "text": "La dernière facture d'une série n'est pas forcément un solde : il faut que la commande soit terminée et que le montant clôture le compte. Sinon, c'est une facture d'acompte ou de situation."
+      },
+      {
+        "title": "Gardez la liste des factures du dossier",
+        "text": "Invoicor ne relie pas les factures et ne tient pas de solde par commande. Faites la liste avant : numéro, HT, TVA, payée ou non. Conservez ces factures 10 ans (Code de commerce ; 6 ans pour le fisc)."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur la facture de solde",
+    "mistakes": [
+      {
+        "title": "Facturer seulement le dernier montant",
+        "text": "« Solde : 8 700,00 € HT » sans détail cache la façon dont vous y arrivez. Reprenez le prix total, puis déduisez ; dans l'application, ce détail va dans les notes."
+      },
+      {
+        "title": "Déduire des acomptes TTC d'un prix HT",
+        "text": "Retirer les acomptes TTC du prix HT, puis ajouter 20 % de TVA, donne un reste faux et une TVA fausse. Déduisez les montants HT, comme dans l'exemple."
+      },
+      {
+        "title": "Oublier un acompte",
+        "text": "Deux acomptes payés, un seul déduit : le client paie trop ou bloque tout. Comparez avec votre liste avant d'envoyer."
+      }
+    ],
+    "tip_title": "Un conseil pour la facture de solde",
+    "pro_tip": "Partez de la dernière facture d'acompte avec « Duplicate Invoice » (Dupliquer la facture) : client et notes sont repris, avec le numéro suivant. Remplacez la ligne par le reste et détaillez les acomptes dans les notes.",
+    "format_pdf_desc": "Un PDF fige le prix total, chaque déduction et le reste dû : le montant validé est celui qui arrive en comptabilité.",
+    "faq_title": "Questions sur la facture de solde",
+    "faqs": [
+      {
+        "question": "La facture de solde doit-elle mentionner les factures d'acompte ?",
+        "answer": "Oui, elle y fait référence : citez chaque facture d'acompte par son numéro et sa date, avec son montant HT, puis facturez le reste."
+      },
+      {
+        "question": "Comment faire dans le générateur et dans l'application ?",
+        "answer": "Dans le générateur gratuit : le prix total et les suppléments, puis une ligne négative HT par acompte ; la TVA s'applique au reste. L'application refuse les prix négatifs : facturez le reste HT en une seule ligne et indiquez le prix total et chaque acompte, numéro et date, dans les notes."
+      },
+      {
+        "question": "Que faire si un acompte n'a pas été payé ?",
+        "answer": "Ne le noyez pas dans le solde. Déduisez-le comme facturé et précisez dans les notes que la facture F-2026-088 reste due. Vérifiez la TVA avec votre expert-comptable."
+      },
+      {
+        "question": "Puis-je modifier une facture de solde déjà envoyée ?",
+        "answer": "Pas directement. Dans Invoicor, une facture envoyée est verrouillée : dupliquez-la (numéro suivant), corrigez la copie et passez l'ancienne en « Cancelled » (annulée). En France, l'usage est plutôt une facture d'avoir : voyez avec votre expert-comptable."
+      },
+      {
+        "question": "Facture de solde ou facture finale : est-ce pareil ?",
+        "answer": "Dans l'usage courant, oui. Certains marchés de travaux prévoient en plus un décompte final avec ses propres règles : suivez votre contrat."
+      }
+    ],
+    "cta_title": "Créez votre facture de solde",
+    "related": [
+      {
+        "name": "Facture d'acompte",
+        "slug": "facture-acompte"
+      },
+      {
+        "name": "Facture de situation",
+        "slug": "facture-situation"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-situation",
+    "translation_of": "milestone-invoice",
+    "niche": "Facture de situation",
+    "title": "Facture de situation : modèle pour vos travaux | Invoicor",
+    "meta_description": "Facture de situation ou d'avancement : facturez les travaux réalisés à chaque étape, avec le cumul et le reste du marché. Exemple chiffré, PDF gratuit.",
+    "h1": "Facture de situation de travaux",
+    "subtitle": "Facturez l'avancement d'un chantier ou d'un projet, étape par étape : ce qui a été réalisé sur la période, le cumul facturé et ce qu'il reste au marché.",
+    "intro_paragraph": "La facture de situation facture ce qui a été réalisé pendant un chantier ou un projet : l'avancement du mois, ou une étape achevée. On dit « situation de travaux » dans le BTP, « facture d'avancement » pour une prestation de services, et l'on parle aussi de facture intermédiaire : c'est le même document. La différence avec l'acompte tient au moment : l'acompte se facture avant le début des travaux, la situation pendant, sur du travail fait. Chaque situation est une facture complète, avec sa TVA. Facturation électronique : depuis le 1er septembre 2026, toutes les entreprises doivent pouvoir en recevoir ; l'émission est obligatoire pour les grandes entreprises et ETI depuis cette date, pour les PME et micro-entreprises au 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date une petite entreprise peut facturer comme aujourd'hui. Invoicor génère des PDF, pas de factures électroniques (Factur-X, UBL), et n'est relié à aucune plateforme agréée. En Belgique, les factures entre entreprises belges doivent être des factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de situation",
+    "what_to_include_intro": "Le client contrôle une situation en la comparant au marché et au chantier. Facilitez ce contrôle avec ces six éléments.",
+    "req_1_title": "Le numéro de la situation et la période",
+    "req_1_text": "« Situation n° 2, travaux du 1er au 30 novembre 2026 ». La période tient lieu de date de prestation ; Invoicor n'a pas de champ pour elle : mettez-la dans la ligne ou les notes.",
+    "req_2_title": "Le marché de référence",
+    "req_2_text": "Citez le devis ou le marché, son numéro et sa date, et le bon de commande du client s'il existe : le maître d'ouvrage rattache ainsi la situation au bon budget.",
+    "req_3_title": "Ce qui a été réalisé, poste par poste",
+    "req_3_text": "Reprenez les postes du devis avec la quantité réalisée sur la période : 180 m² de cloisons, 95 m² de faux plafond. Pour une prestation de services, nommez l'étape livrée.",
+    "req_4_title": "Le cumul et le reste à facturer",
+    "req_4_text": "Indiquez le montant du marché, les situations précédentes avec leurs numéros, le cumul et ce qui reste.",
+    "req_5_title": "Les avenants à part",
+    "req_5_text": "Les travaux supplémentaires acceptés par avenant vont sur leurs propres lignes, avec leur référence : mélangés au marché, ils faussent l'avancement.",
+    "req_6_title": "La TVA et les mentions de paiement",
+    "req_6_text": "Chaque situation applique la TVA à son montant HT et porte les mentions habituelles : échéance, pénalités de retard, indemnité de 40 € pour frais de recouvrement, escompte (« néant » s'il n'y en a pas).",
+    "what_to_include_outro": "Additionnées, toutes les situations et la facture de solde doivent égaler le prix du marché plus les avenants, à l'euro près.",
+    "paper_label": "Facture de situation · exemple",
+    "sample_breakdown_title": "Exemple de facture de situation",
+    "sample_breakdown_intro": "Un plaquiste réaménage les bureaux d'une entreprise, marché de 42 000,00 € HT. La situation n° 2 facture les travaux posés en novembre. Le client est le maître d'ouvrage, pas une entreprise principale : TVA 20 %, pas d'autoliquidation. Vérifiez votre cas avec votre expert-comptable.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Cloisons en plaques de plâtre 72/48 avec isolant, posées du 1er au 30 novembre 2026",
+        "qty": "180 m²",
+        "rate": "38,00 €",
+        "amount": "6 840,00 €"
+      },
+      {
+        "description": "Faux plafond en dalles 600 × 600, posé du 1er au 30 novembre 2026",
+        "qty": "95 m²",
+        "rate": "42,00 €",
+        "amount": "3 990,00 €"
+      },
+      {
+        "description": "Doublage isolant des murs de façade, réalisé du 1er au 30 novembre 2026",
+        "qty": "60 m²",
+        "rate": "45,00 €",
+        "amount": "2 700,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "13 530,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "2 706,00 €",
+    "sample_breakdown_balance": "16 236,00 €",
+    "sample_breakdown_notes": "Situation n° 2, facture F-2026-121 du 30 novembre 2026, marché M-2026-019 du 14 septembre 2026 : 42 000,00 € HT. Situation n° 1 : facture F-2026-104 du 30 octobre 2026, 12 600,00 € HT. Cumul après cette situation : 26 130,00 € HT, soit 62,2 % du marché. Reste à facturer : 15 870,00 € HT. Échéance : 30 décembre 2026. Escompte pour paiement anticipé : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Règles à connaître sur la facture de situation",
+    "industry_notes": [
+      {
+        "title": "Situation ou acompte ?",
+        "text": "L'acompte se facture avant le début des travaux, à la commande ; la situation facture des travaux exécutés ou une étape terminée. Si votre marché prévoit les deux, l'acompte de départ est souvent déduit des situations ou du solde, selon le contrat : suivez-le, et faites valider la présentation par votre expert-comptable."
+      },
+      {
+        "title": "La TVA sur les situations",
+        "text": "Des travaux sont des prestations de services : la TVA est exigible à l'encaissement, sauf option pour les débits. En sous-traitance BTP, c'est différent : le sous-traitant facture HT avec la mention « Autoliquidation » (art. 283-2 nonies du CGI). Invoicor imprime alors une ligne « TVA (0%) » à 0,00 €, que la mention explique."
+      },
+      {
+        "title": "Retenue de garantie : à vérifier",
+        "text": "Beaucoup de marchés de travaux prévoient une retenue de garantie sur chaque situation. Sa présentation et son traitement en TVA sont à voir avec votre expert-comptable. Le générateur gratuit peut l'afficher en ligne négative, l'application dans les notes."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur les factures de situation",
+    "mistakes": [
+      {
+        "title": "Facturer plus que l'avancement réel",
+        "text": "Une situation gonflée se voit à la première visite de chantier, et le client conteste tout. Facturez ce qui est posé ou livré."
+      },
+      {
+        "title": "Pas de cumul",
+        "text": "Sans cumul ni reste à facturer, ni le client ni vous ne savez où en est le marché. Reprenez ces chiffres à chaque situation."
+      },
+      {
+        "title": "Des pourcentages qui ne retombent pas juste",
+        "text": "Trois situations arrondies à 33 % laissent 1 % du marché non facturé. Faites de la dernière situation, ou de la facture de solde, le reste exact du marché."
+      }
+    ],
+    "tip_title": "Un conseil pour vos situations",
+    "pro_tip": "Créez chaque nouvelle situation avec « Duplicate Invoice » (Dupliquer la facture) à partir de la précédente : client, lignes et notes sont repris, avec le numéro suivant. Il reste à changer les quantités du mois, le numéro de situation et le cumul.",
+    "format_pdf_desc": "Un PDF fige les quantités, le cumul et la période, que le maître d'ouvrage transmet tel quel à sa comptabilité.",
+    "faq_title": "Questions sur la facture de situation",
+    "faqs": [
+      {
+        "question": "Situation, avancement, intermédiaire : quelle différence ?",
+        "answer": "Aucune sur le fond. « Situation » est le mot du BTP, « avancement » celui des prestations de services, et « intermédiaire » désigne toute facture émise en cours de projet. Toutes facturent un travail réalisé, avant la facture de solde."
+      },
+      {
+        "question": "À quel rythme émettre une situation ?",
+        "answer": "Celui de votre marché : souvent chaque mois en BTP, à chaque étape livrée pour des services. Sans clause, convenez-en par écrit."
+      },
+      {
+        "question": "Faut-il déduire les situations précédentes ?",
+        "answer": "Deux présentations existent. Soit la situation ne facture que les travaux de la période, comme dans l'exemple, avec le cumul dans les notes. Soit elle reprend le cumul exécuté et retire les situations précédentes en lignes négatives, ce que permet le générateur gratuit mais pas l'application. Suivez l'usage de votre client."
+      },
+      {
+        "question": "La dernière situation peut-elle servir de facture de solde ?",
+        "answer": "Oui, si elle récapitule le prix total et les factures précédentes et clôt le marché."
+      },
+      {
+        "question": "Quel délai de paiement pour une situation ?",
+        "answer": "Les règles générales s'appliquent : 30 jours après l'exécution par défaut, 60 jours après l'émission au plus, ou 45 jours fin de mois si c'est convenu (service-public). Votre marché peut fixer un délai plus court."
+      },
+      {
+        "question": "Et si la période mêle des travaux à 20 % et à 10 % ?",
+        "answer": "Invoicor applique un seul taux de TVA par facture. Faites deux factures pour la même période, ou demandez à votre expert-comptable la meilleure façon de procéder."
+      }
+    ],
+    "cta_title": "Créez votre facture de situation",
+    "related": [
+      {
+        "name": "Facture de solde",
+        "slug": "facture-solde"
+      },
+      {
+        "name": "Facture d'acompte",
+        "slug": "facture-acompte"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-recurrente",
+    "translation_of": "monthly-invoice",
+    "niche": "Facture récurrente",
+    "title": "Facture récurrente : modèle mensuel gratuit | Invoicor",
+    "meta_description": "Facture récurrente ou mensuelle : la période, le forfait, les extras du mois et un délai de 45 jours au plus. Exemple chiffré, PDF gratuit.",
+    "h1": "Facture récurrente et mensuelle",
+    "subtitle": "Une facture par mois pour un service continu : la période couverte, le forfait, les extras du mois et une échéance qui tombe avant le paiement du client.",
+    "intro_paragraph": "Une facture récurrente revient à intervalle fixe pour un service qui dure : nettoyage de bureaux, maintenance, hébergement, location de matériel. On dit aussi facture d'abonnement ou facture mensuelle. Le prix est convenu une fois ; chaque facture montre ce qui s'est passé pendant la période, et c'est la période que le client contrôle d'abord. Pour la facturation électronique, la réception est obligatoire pour toutes les entreprises depuis le 1er septembre 2026 ; l'émission l'est pour les grandes entreprises et ETI depuis cette date, et le sera pour les PME et micro-entreprises le 1er septembre 2027 (impots.gouv.fr). Jusqu'à cette date, une petite entreprise peut continuer à envoyer ses factures comme aujourd'hui. Invoicor fait des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne communique avec aucune plateforme agréée. En Belgique, une facture entre entreprises belges doit passer par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture récurrente",
+    "what_to_include_intro": "Le client reçoit presque la même facture chaque mois : il lit ce qui change. Rendez-le facile à repérer.",
+    "req_1_title": "La période facturée, en toutes lettres",
+    "req_1_text": "« Période : du 1er au 30 novembre 2026 ». La date d'émission ne suffit pas, et Invoicor n'a pas de champ pour la période : écrivez-la dans la ligne du forfait. Une période claire évite qu'un mois soit payé deux fois ou oublié.",
+    "req_2_title": "Un numéro qui suit votre série",
+    "req_2_text": "Chaque facture a son numéro unique et continu, même si son contenu se répète. Une série avec l'année, comme F-2026-131 puis F-2026-142, reste lisible. Ne réutilisez jamais le numéro du mois précédent.",
+    "req_3_title": "Le forfait et ce qu'il comprend",
+    "req_3_text": "Précisez la base : « forfait mensuel, 2 passages par semaine », ou un prix par passage multiplié par les passages réalisés. Pour un forfait, dites comment se traite un mois qui compte un passage de plus.",
+    "req_4_title": "Les extras sur leurs propres lignes",
+    "req_4_text": "Un passage en plus, une intervention ponctuelle : chaque extra a sa ligne et son prix. Le forfait reste identique, et la copie du mois suivant reste propre.",
+    "req_5_title": "Les passages manqués, visibles",
+    "req_5_text": "Un passage annulé se déduit en clair. Dans le générateur gratuit, une ligne négative « Passage du 12 novembre annulé » fait l'affaire ; l'application refuse les prix négatifs, réduisez alors la quantité et expliquez-le dans la ligne.",
+    "req_6_title": "Une échéance de 45 jours au plus",
+    "req_6_text": "Pour une facture périodique, qui regroupe les prestations d'un mois, le délai de paiement ne peut dépasser 45 jours (service-public). Choisissez une date qui précède le jour où votre client paie ses fournisseurs, et ajoutez les mentions de retard et d'escompte.",
+    "what_to_include_outro": "Le mois où la facture diffère est celui que le client lit de près : expliquez la ligne qui change.",
+    "paper_label": "Facture récurrente · exemple",
+    "sample_breakdown_title": "Exemple de facture récurrente",
+    "sample_breakdown_intro": "Une entreprise de nettoyage facture novembre à un cabinet comptable : le forfait mensuel de deux passages par semaine, le lavage trimestriel des vitres et un passage supplémentaire après des travaux de peinture. TVA à 20 %, client professionnel. Les règles varient selon l'activité : vérifiez avec votre expert-comptable.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Nettoyage des bureaux, forfait mensuel du 1er au 30 novembre 2026 (2 passages par semaine, lundi et jeudi)",
+        "qty": "1",
+        "rate": "1 480,00 €",
+        "amount": "1 480,00 €"
+      },
+      {
+        "description": "Lavage des vitres, intervention trimestrielle du 18 novembre 2026",
+        "qty": "1",
+        "rate": "260,00 €",
+        "amount": "260,00 €"
+      },
+      {
+        "description": "Passage supplémentaire après travaux de peinture, 21 novembre 2026",
+        "qty": "3 h",
+        "rate": "32,00 €",
+        "amount": "96,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 836,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "367,20 €",
+    "sample_breakdown_balance": "2 203,20 €",
+    "sample_breakdown_notes": "Facture F-2026-131 du 30 novembre 2026, contrat d'entretien du 2 janvier 2026. Période : novembre 2026, 9 passages réalisés sur 9 prévus. Prochain lavage des vitres : février 2027. Échéance : 30 décembre 2026. Escompte pour paiement anticipé : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Règles à connaître sur la facture récurrente",
+    "industry_notes": [
+      {
+        "title": "Récurrente, mais pas automatique",
+        "text": "Beaucoup de logiciels envoient les factures récurrentes tout seuls. Invoicor ne crée pas de factures récurrentes et n'envoie rien à date fixe. Ouvrez la facture du mois précédent et touchez « Duplicate Invoice » (Dupliquer la facture) : la copie prend le numéro suivant et garde le client, les lignes et les notes. Changez la période et les extras, puis envoyez."
+      },
+      {
+        "title": "Le plafond de 45 jours",
+        "text": "Les factures périodiques ont leur propre plafond : 45 jours au plus pour payer, contre 60 jours après l'émission pour une facture ordinaire (service-public). Les pénalités de retard, au moins trois fois le taux d'intérêt légal, et l'indemnité de 40 € par facture, sans TVA, s'appliquent comme ailleurs."
+      },
+      {
+        "title": "Un abonnement facturé d'avance",
+        "text": "Facturer le 1er du mois un service pas encore rendu, c'est facturer d'avance. Dites-le dans la ligne (« abonnement de décembre 2026, payable d'avance ») et vérifiez avec votre expert-comptable quand la TVA est exigible : pour des services, en principe à l'encaissement, sauf option pour les débits."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur les factures récurrentes",
+    "mistakes": [
+      {
+        "title": "Copier sans changer la période",
+        "text": "Une facture qui indique encore « octobre » en décembre est rejetée ou payée en double. Avant d'envoyer, vérifiez la période, les extras et l'échéance."
+      },
+      {
+        "title": "Gonfler le forfait au lieu d'ajouter une ligne",
+        "text": "Passer le forfait de 1 480,00 € à 1 836,00 € pour inclure les vitres et le passage en plus fausse la copie du mois suivant et cache ce qui a changé. Gardez le forfait fixe et ajoutez des lignes."
+      },
+      {
+        "title": "Laisser filer un mois impayé",
+        "text": "La nouvelle facture part, et l'ancienne reste ouverte sans que personne ne la remarque. Passez chaque facture réglée au statut « Paid » (payée) avant de la dupliquer : celles qui restent ouvertes ressortent. Invoicor n'envoie pas de relance, c'est à vous de la faire."
+      }
+    ],
+    "tip_title": "Un conseil pour vos factures récurrentes",
+    "pro_tip": "Envoyez la facture le même jour chaque mois, idéalement le premier jour ouvré après la fin de la période. Le client l'intègre à son circuit de paiement, et un retard se repère tout de suite.",
+    "format_pdf_desc": "Un PDF par mois donne au client une pièce fixe pour chaque période, qui se classe par mois et ne change plus après l'envoi.",
+    "faq_title": "Questions sur la facture récurrente",
+    "faqs": [
+      {
+        "question": "Invoicor peut-il envoyer mes factures automatiquement chaque mois ?",
+        "answer": "Non. Invoicor ne propose ni factures récurrentes ni envoi programmé. Le plus rapide : « Duplicate Invoice » sur la facture du mois précédent, qui reprend le client, les lignes et les notes avec le numéro suivant ; vous changez la période et partagez le PDF."
+      },
+      {
+        "question": "Faut-il un nouveau numéro chaque mois ?",
+        "answer": "Oui. Chaque facture a un numéro unique dans une série continue, même si son contenu est identique à celle du mois précédent."
+      },
+      {
+        "question": "Quel délai de paiement pour une facture mensuelle ?",
+        "answer": "Pour une facture périodique, 45 jours au plus (service-public). Sans accord particulier, le délai par défaut est de 30 jours après la prestation. Beaucoup de prestataires choisissent 30 jours, bien sous le plafond."
+      },
+      {
+        "question": "Comment facturer un premier mois incomplet ?",
+        "answer": "Au prorata, en jours ou en passages réalisés, et dites-le : « service à compter du 16 novembre 2026, 4 passages sur 9 ». Convenez de la méthode avant la première facture."
+      },
+      {
+        "question": "Facture récurrente ou facture d'abonnement ?",
+        "answer": "Même logique : un prix convenu, facturé à intervalle régulier. « Abonnement » désigne plutôt l'accès à un service, utilisé ou non ; la facture récurrente couvre aussi un service mesuré chaque mois."
+      }
+    ],
+    "cta_title": "Créez votre facture récurrente",
+    "related": [
+      {
+        "name": "Facture de prestation de services",
+        "slug": "facture-prestation-de-services"
+      },
+      {
+        "name": "Facture freelance",
+        "slug": "facture-freelance"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-prestation-de-services",
+    "translation_of": "service-invoice",
+    "niche": "Facture de prestation de services",
+    "title": "Facture de prestation de services : modèle | Invoicor",
+    "meta_description": "Facture de prestation de services : mentions obligatoires, date de la prestation, TVA sur les encaissements. Voyez l'exemple et créez votre PDF.",
+    "h1": "Facture de prestation de services : modèle et exemple",
+    "subtitle": "Pour toute entreprise qui facture un travail plutôt que des marchandises : décrire la mission, la dater, la chiffrer et fixer l'échéance.",
+    "intro_paragraph": "Une facture de prestation de services facture un travail : des heures, une mission ou une intervention. Rien n'est livré, donc la description et la date de la prestation sont la seule trace de ce que le client paie. C'est le document de base des consultants, agences, dépanneurs et de toute entreprise qui vend un savoir-faire. Depuis le 1er septembre 2026, toute entreprise en France doit pouvoir recevoir des factures électroniques via une plateforme agréée ; l'émission devient obligatoire pour les PME et micro-entreprises le 1er septembre 2027 (grandes entreprises et ETI depuis le 1er septembre 2026, impots.gouv.fr). Jusqu'à cette date, une petite entreprise peut facturer comme aujourd'hui. Invoicor crée des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne se connecte à aucune plateforme agréée. En Belgique, les factures entre entreprises belges sont des e-factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de prestation de services",
+    "what_to_include_intro": "Les mentions obligatoires sont celles de toute facture (service-public.fr, F31808). Pour un service, six points comptent surtout.",
+    "req_1_title": "Une description que le client reconnaît",
+    "req_1_text": "« Atelier de cadrage, demi-journée, 8 participants » passe sans question. « Prestations diverses » revient avec une demande d'explication.",
+    "req_2_title": "La date de la prestation, distincte de la date d'émission",
+    "req_2_text": "La date de la prestation est obligatoire quand elle diffère de la date de facture. Invoicor n'a pas de champ pour elle : écrivez la date ou la période dans la ligne ou dans les notes.",
+    "req_3_title": "Votre identité complète et votre SIREN",
+    "req_3_text": "Nom, adresse et SIREN, dans le champ « SIRET ». Entrepreneur individuel : « EI ». Société : forme juridique et capital (« SAS au capital de 5 000 € »). Votre numéro de TVA va dans le champ « Numéro de TVA » ; celui du client aussi, sauf jusqu'à 150 € HT.",
+    "req_4_title": "Quantité, prix unitaire HT et taux de TVA",
+    "req_4_text": "À l'heure, à la journée ou au forfait : chaque ligne montre sa base (« 6 h à 95 € HT »). Taux normal : 20 % ; Invoicor applique un seul taux par facture.",
+    "req_5_title": "La référence du client",
+    "req_5_text": "Le numéro de bon de commande est obligatoire quand le client en a émis un. Demandez-le et mettez-le dans les notes : sans lui, la facture peut rester bloquée.",
+    "req_6_title": "Échéance, escompte, pénalités et 40 €",
+    "req_6_text": "La date d'échéance réelle, l'escompte (sinon « Escompte pour paiement anticipé : néant »), le taux des pénalités de retard et, pour un client professionnel, l'indemnité forfaitaire de 40 € pour frais de recouvrement. Ces lignes vont dans les notes.",
+    "what_to_include_outro": "Avec ces points, le client valide la facture sans vous appeler, et vous gardez une trace datée de votre travail.",
+    "paper_label": "Facture de prestation de services · exemple",
+    "sample_breakdown_title": "Exemple de facture de prestation de services",
+    "sample_breakdown_intro": "Une consultante en SAS à Lyon facture une mission de novembre à une PME : un forfait, deux journées et des heures de rédaction. TVA à 20 %. Elle n'a pas opté pour les débits, donc pas de mention à ce sujet.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Atelier de cadrage avec la direction, demi-journée, Lyon (3 novembre 2026), forfait",
+        "qty": "1",
+        "rate": "1 400,00 €",
+        "amount": "1 400,00 €"
+      },
+      {
+        "description": "Entretiens avec les équipes, sur site (5 et 6 novembre 2026)",
+        "qty": "2 jours",
+        "rate": "650,00 €",
+        "amount": "1 300,00 €"
+      },
+      {
+        "description": "Rédaction du rapport et restitution (du 12 au 21 novembre 2026)",
+        "qty": "6 h",
+        "rate": "95,00 €",
+        "amount": "570,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "3 270,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "654,00 €",
+    "sample_breakdown_balance": "3 924,00 €",
+    "sample_breakdown_notes": "Prestations réalisées du 3 au 21 novembre 2026. Bon de commande BC-2026-118. SIREN du client : 123 456 789. Nature de l'opération : prestations de services. Échéance : 28 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Bon à savoir sur la facture de prestation de services",
+    "industry_notes": [
+      {
+        "title": "La TVA est due à l'encaissement, sauf option pour les débits",
+        "text": "Pour un service, la TVA est exigible à l'encaissement, pas à la facturation, sauf option pour les débits (impots.gouv.fr) ; un acompte encaissé la rend due sur son montant. Avec l'option, la mention « Option pour le paiement de la taxe d'après les débits » devient obligatoire avec la facturation électronique : écrivez-la dès maintenant dans les notes."
+      },
+      {
+        "title": "De nouvelles mentions arrivent",
+        "text": "Le SIREN du client, la nature de l'opération (biens, services ou les deux) et l'adresse de livraison si elle diffère : obligatoires depuis le 1er septembre 2026 pour les grandes entreprises et ETI, au 1er septembre 2027 pour les PME et micro-entreprises. Vous pouvez les ajouter dès aujourd'hui, comme dans l'exemple."
+      },
+      {
+        "title": "Un numéro par facture, même pour la même mission",
+        "text": "La numérotation est unique et continue, même pour le même forfait chaque mois. Dans Invoicor, « Duplicate Invoice » (dupliquer) reprend client, lignes et notes avec le numéro suivant : changez la période et envoyez."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de prestation",
+    "mistakes": [
+      {
+        "title": "Une étiquette à la place du travail",
+        "text": "« Conseil : 3 000 € » ne dit rien à qui valide les factures sans avoir assisté aux réunions. La facture attend une explication. Une phrase de plus par ligne fait gagner des jours."
+      },
+      {
+        "title": "Oublier les mentions de retard pour un client pro",
+        "text": "Le taux des pénalités et l'indemnité de 40 € sont obligatoires entre professionnels, même si vous ne les appliquez jamais. Écrivez-les une fois et réutilisez-les."
+      },
+      {
+        "title": "Facturer la TVA sans se poser la question",
+        "text": "Certaines prestations sont exonérées ou suivent d'autres règles (client à l'étranger, franchise en base). Vérifiez votre cas avec votre expert-comptable au lieu de recopier une ancienne facture."
+      }
+    ],
+    "tip_title": "Facturez le jour où la mission se termine",
+    "pro_tip": "Envoyez la facture le jour où la mission se termine, tant que le client a le travail en tête. Pour une mission longue, facturez en fin de mois en nommant la période.",
+    "format_pdf_desc": "Le PDF garde vos descriptions et vos dates telles quelles et se classe directement dans la comptabilité du client.",
+    "faq_title": "Questions sur la facture de prestation de services",
+    "cta_title": "Créez votre facture de prestation de services",
+    "faqs": [
+      {
+        "question": "Quelle différence entre une facture de prestation de services et une facture de vente ?",
+        "answer": "La première facture un travail (heures, journées, forfait), la seconde des biens, avec quantités et livraison. La TVA diffère aussi : exigible à l'encaissement pour les services, sauf option pour les débits, à la livraison pour les biens."
+      },
+      {
+        "question": "Quelle date mettre sur une facture de prestation de services ?",
+        "answer": "La date d'émission, et la date ou la période de la prestation quand elle diffère. Dans Invoicor, la seconde va dans la ligne ou les notes."
+      },
+      {
+        "question": "Quel taux de TVA pour une prestation de services ?",
+        "answer": "En métropole, 20 % pour la plupart des services ; certains relèvent de 10 % ou 5,5 %, d'autres sont exonérés. En franchise en base : pas de TVA et la mention « TVA non applicable, art. 293 B du CGI »."
+      },
+      {
+        "question": "Quel délai de paiement indiquer ?",
+        "answer": "Sans accord, 30 jours après la prestation ; convenu, jusqu'à 60 jours après l'émission ou 45 jours fin de mois (service-public.fr, F23211). Écrivez la date d'échéance elle-même."
+      },
+      {
+        "question": "Faut-il mettre l'indemnité de 40 € pour un particulier ?",
+        "answer": "Non, l'indemnité de 40 € ne concerne que les clients professionnels. Pour un particulier, indiquez l'échéance et les conditions de paiement."
+      }
+    ],
+    "related": [
+      {
+        "name": "Facture freelance",
+        "slug": "facture-freelance"
+      },
+      {
+        "name": "Facture récurrente",
+        "slug": "facture-recurrente"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-commerciale",
+    "translation_of": "commercial-invoice",
+    "niche": "Facture commerciale",
+    "title": "Facture commerciale export : modèle et exemple | Invoicor",
+    "meta_description": "Facture commerciale pour l'export hors UE : code SH, origine, poids, Incoterms 2020 et exonération de TVA. Voyez l'exemple et créez votre PDF.",
+    "h1": "Facture commerciale pour l'export : modèle et exemple",
+    "subtitle": "La facture qui accompagne vos marchandises hors de l'Union européenne : ce que la douane et le transporteur y cherchent.",
+    "intro_paragraph": "La facture commerciale (commercial invoice) est la facture d'une vente à l'export, rédigée pour la douane du pays d'arrivée : vendeur, acheteur, destinataire et, par article, description, valeur, origine, poids et code SH. La douane s'en sert pour classer les marchandises et calculer les droits ; les transporteurs la demandent pour tout colis hors UE. Invoicor crée la facture en PDF, en français ou en anglais. Son en-tête est « Facture » : écrivez « Facture commerciale » dans la première ligne et les notes, et demandez à votre transporteur s'il exige son formulaire ou cet intitulé. Invoicor ne fait ni déclarations en douane, ni formulaires de transporteur. Réception des e-factures obligatoire en France depuis le 1er septembre 2026, émission au 1er septembre 2027 pour les PME et micro-entreprises (impots.gouv.fr) ; pour un client étranger, voyez avec votre expert-comptable. Invoicor fait des PDF, pas d'e-factures, sans plateforme agréée. En Belgique, Peppol est obligatoire entre entreprises belges depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture commerciale",
+    "what_to_include_intro": "Une seule de ces informations manque, et le colis peut rester bloqué à la frontière.",
+    "req_1_title": "Exportateur, acheteur et destinataire",
+    "req_1_text": "Votre entreprise avec SIREN, numéro de TVA et numéro EORI (obtenu auprès de la douane), puis l'acheteur. Si les marchandises vont ailleurs, nommez le destinataire (consignee) dans les notes.",
+    "req_2_title": "Une description précise de chaque article",
+    "req_2_text": "« Cadeaux » ou « échantillons » ne passent pas. Dites ce qu'est l'article, sa matière et son usage : « Bol en grès émaillé, 15 cm, usage domestique ». C'est sur ce texte que la douane contrôle le classement.",
+    "req_3_title": "Code SH (ou NC) et origine par ligne",
+    "req_3_text": "Les six chiffres du code SH sont communs à tous les pays ; la nomenclature combinée (NC) de l'UE en ajoute deux. L'origine est le pays de fabrication. Les deux vont dans chaque ligne.",
+    "req_4_title": "Quantité, poids et valeur dans une seule devise",
+    "req_4_text": "Unités, prix unitaire et total dans une devise nommée, poids par article, poids brut et nombre de colis. La douane vérifie que la valeur colle aux marchandises.",
+    "req_5_title": "Incoterms 2020 et motif de l'export",
+    "req_5_text": "La règle convenue avec son lieu (« DAP Londres », « DDP Londres ») montre qui paie transport et droits. La version en vigueur est Incoterms 2020, de la Chambre de commerce internationale. Ajoutez le motif : vente, échantillon, réparation ou retour.",
+    "req_6_title": "La mention d'exonération et une déclaration signée",
+    "req_6_text": "L'export hors UE est exonéré de TVA (article 262 I du CGI) et la facture renvoie à l'exonération ; la formulation n'est pas imposée, faites valider la vôtre. Le PDF affiche toujours « TVA (0%) » à 0,00 € : la mention l'explique. Ajoutez la déclaration signée que veulent les transporteurs.",
+    "what_to_include_outro": "Consultez aussi la liste de votre transporteur : certains demandent d'autres données.",
+    "paper_label": "Facture commerciale · exemple",
+    "sample_breakdown_title": "Exemple de facture commerciale",
+    "sample_breakdown_intro": "Un atelier de Provence expédie une commande à une boutique de Londres, en DAP Londres, en euros. Le Royaume-Uni est hors UE : la vente est exonérée de TVA, le PDF affiche « TVA (0%) » et les notes citent l'exonération. Les codes SH sont des exemples, vérifiez les vôtres.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Facture commerciale. Bol en grès émaillé, 15 cm. SH 6912.00, origine France, 0,5 kg pièce",
+        "qty": "40",
+        "rate": "18,00 €",
+        "amount": "720,00 €"
+      },
+      {
+        "description": "Torchon de cuisine, coton, 50 x 70 cm. SH 6302.91, origine France, 0,15 kg pièce",
+        "qty": "60",
+        "rate": "9,50 €",
+        "amount": "570,00 €"
+      },
+      {
+        "description": "Savon de Marseille, 300 g. SH 3401.11, origine France, 0,32 kg pièce",
+        "qty": "120",
+        "rate": "4,20 €",
+        "amount": "504,00 €"
+      },
+      {
+        "description": "Transport jusqu'à Londres, 4 colis, 62 kg brut",
+        "qty": "1",
+        "rate": "210,00 €",
+        "amount": "210,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2 004,00 €",
+    "sample_breakdown_tax_label": "TVA 0 % (export hors UE)",
+    "sample_breakdown_tax": "0,00 €",
+    "sample_breakdown_balance": "2 004,00 €",
+    "sample_breakdown_notes": "Facture commerciale (Commercial Invoice). Exportation hors UE : exonération de TVA, article 262 I du CGI. Expédition : 25 novembre 2026. Incoterms 2020 : DAP Londres. Motif : vente. Destinataire : Thornbury Home Ltd, Londres. 4 colis, 62 kg brut. EORI : FR12345678900015. Informations certifiées exactes, C. Martin, gérante. Échéance : 30 jours. Escompte : néant. Pénalités : trois fois le taux d'intérêt légal ; indemnité de recouvrement : 40 €.",
+    "industry_notes_title": "Bon à savoir sur la facture commerciale",
+    "industry_notes": [
+      {
+        "title": "Pas d'exonération sans preuve de sortie",
+        "text": "L'exonération suppose que les marchandises quittent l'UE, preuve à l'appui. Quels justificatifs garder (déclaration d'export, documents de transport) et si le transport facturé est aussi exonéré : demandez à la douane ou à votre expert-comptable."
+      },
+      {
+        "title": "Les Incoterms décident qui paie les droits",
+        "text": "En DAP, l'acheteur paie les droits et la TVA à l'import ; en DDP, c'est vous. Fixez la règle avant de donner un prix : en DDP, ces frais sortent de votre marge."
+      },
+      {
+        "title": "Dans l'UE, ce n'est pas la même facture",
+        "text": "Entre pays de l'UE, il n'y a pas de douane. Une livraison à une entreprise d'un autre État membre est exonérée avec la mention « Exonération TVA, art. 262 ter-I du CGI » (ou équivalente) et les deux numéros de TVA. Cette page concerne l'export hors UE."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture commerciale",
+    "mistakes": [
+      {
+        "title": "Sous-évaluer pour alléger les droits",
+        "text": "Déclarer moins que le prix réel est une fausse déclaration : la marchandise peut être retenue et l'importateur sanctionné. Déclarez le vrai prix, et pour un échantillon une valeur réaliste."
+      },
+      {
+        "title": "Confondre origine et lieu d'expédition",
+        "text": "Un article fabriqué au Portugal et expédié de France est d'origine portugaise. L'origine peut changer les droits : vérifiez-la article par article."
+      },
+      {
+        "title": "Pas de devise, ou deux devises",
+        "text": "La douane convertit votre valeur dans sa monnaie : choisissez une devise pour toute la facture, transport compris, et nommez-la."
+      }
+    ],
+    "tip_title": "Enregistrez les données douanières une fois",
+    "pro_tip": "Enregistrez chaque produit avec son code SH, son origine et son poids dans son détail : chaque commande export démarre avec les données douanières en place.",
+    "format_pdf_desc": "Transporteurs et commissionnaires demandent la facture commerciale en PDF pour l'attacher à l'envoi ; elle s'imprime proprement pour la pochette du colis.",
+    "faq_title": "Questions sur la facture commerciale",
+    "cta_title": "Créez votre facture commerciale",
+    "faqs": [
+      {
+        "question": "Quand faut-il une facture commerciale ?",
+        "answer": "Dès que des marchandises passent une frontière douanière, colis express compris : vente, mais en général aussi échantillon, cadeau ou retour, motif à l'appui. Pour de simples documents, demandez à votre transporteur."
+      },
+      {
+        "question": "Quelle différence avec une facture de vente ?",
+        "answer": "Les deux facturent des marchandises ; la facture commerciale ajoute codes SH, origine, poids, Incoterms, motif et déclaration signée. Une vente en France n'en a pas besoin."
+      },
+      {
+        "question": "Faut-il facturer la TVA à l'export ?",
+        "answer": "Non pour une exportation de biens hors UE, exonérée par l'article 262 I du CGI, à condition de pouvoir prouver la sortie des marchandises. Les règles diffèrent pour une vente dans l'UE ou à un particulier : vérifiez avec votre expert-comptable."
+      },
+      {
+        "question": "Où trouver le code SH de mes produits ?",
+        "answer": "Dans l'outil de classement tarifaire de la douane sur douane.gouv.fr, ou auprès de votre transporteur ; en cas de doute, la douane vous renseigne. Indiquez-le dans chaque ligne, avec l'origine."
+      },
+      {
+        "question": "Comment obtenir un numéro EORI ?",
+        "answer": "Il se demande auprès de la douane. Une entreprise qui exporte hors UE en a besoin ; notez-le dans les notes de la facture."
+      },
+      {
+        "question": "Invoicor peut-il aussi faire les formulaires de douane ?",
+        "answer": "Non. Invoicor crée la facture PDF avec vos données douanières par ligne. Déclarations, certificats d'origine et formulaires viennent du transporteur, du commissionnaire ou de la douane."
+      }
+    ],
+    "related": [
+      {
+        "name": "Facture sans TVA",
+        "slug": "facture-sans-tva"
+      },
+      {
+        "name": "Refacturation de frais",
+        "slug": "refacturation-frais"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "refacturation-frais",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Refacturation de frais",
+    "title": "Refacturation de frais et débours : modèle | Invoicor",
+    "meta_description": "Refacturer des frais à un client : frais avec TVA ou débours sans TVA, justificatifs, frais de gestion. Voyez l'exemple et créez votre facture PDF.",
+    "h1": "Refacturation de frais et débours : modèle et exemple",
+    "subtitle": "Pour l'entreprise ou l'indépendant qui facture à son client des frais engagés pour sa mission : déplacements, achats, frais payés en son nom.",
+    "intro_paragraph": "Cette page concerne une entreprise ou un indépendant qui refacture des frais à son client, pas la note de frais d'un salarié à son employeur. Vous avez payé le train, l'hôtel ou l'imprimeur pour la mission, le contrat les met à la charge du client : vous les facturez. Deux cas : les frais refacturés font partie de votre prix et portent la TVA ; les débours, payés au nom et pour le compte du client, restent hors TVA sous conditions (article 267 II 2° du CGI). Toute entreprise en France doit pouvoir recevoir des e-factures depuis le 1er septembre 2026 ; l'émission devient obligatoire pour les PME et micro-entreprises le 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date vous pouvez facturer comme aujourd'hui. Invoicor produit des PDF, pas de Factur-X ni d'UBL, sans plateforme agréée. En Belgique, les factures entre entreprises belges passent par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de refacturation de frais",
+    "what_to_include_intro": "Le client veut cocher chaque montant face à un justificatif et au contrat.",
+    "req_1_title": "Une ligne par frais, avec date et fournisseur",
+    "req_1_text": "« 12 novembre : train Paris-Bordeaux A/R, justificatif 1 ». Date et fournisseur rattachent la ligne au déplacement. Ne regroupez que de petits frais de même nature.",
+    "req_2_title": "Des justificatifs numérotés",
+    "req_2_text": "Numérotez vos justificatifs, reportez le numéro sur chaque ligne et envoyez les copies dans un PDF séparé.",
+    "req_3_title": "Montants HT et TVA des frais refacturés",
+    "req_3_text": "Un frais refacturé fait partie de votre prix : en pratique, vous le facturez HT et ajoutez la TVA, en principe au taux de la prestation principale, même si le billet portait un autre taux. Faites confirmer par votre expert-comptable.",
+    "req_4_title": "Les débours à part, avec leurs conditions",
+    "req_4_text": "Un débours est hors TVA s'il est payé au nom et pour le compte du client (mandat explicite), refacturé au montant exact, passé en comptes de passage et justifié. Invoicor applique un taux par facture : le plus simple est une facture de débours séparée, où le PDF affiche « TVA (0%) ». Validez la présentation avec votre expert-comptable.",
+    "req_5_title": "Frais de gestion seulement si le contrat les prévoit",
+    "req_5_text": "Frais au réel ou majorés, selon le contrat. Une majoration va sur sa propre ligne (« Frais de gestion 10 %, contrat art. 7 ») ; un frais majoré n'est jamais un débours.",
+    "req_6_title": "Le lien avec la facture d'honoraires",
+    "req_6_text": "Honoraires et frais sur deux factures ? Citez les numéros dans les notes : le client valide les deux et les paiements se rapprochent facilement. Les mentions obligatoires restent celles de toute facture.",
+    "what_to_include_outro": "Pour les gros frais, obtenez l'accord du client avant la dépense : vous évitez le « nous n'avions pas validé ça ».",
+    "paper_label": "Refacturation de frais · exemple",
+    "sample_breakdown_title": "Exemple de refacturation de frais",
+    "sample_breakdown_intro": "Une agence vidéo parisienne refacture les frais d'un tournage à Bordeaux, à part de ses honoraires. Montants HT, frais de gestion de 10 % prévus au contrat, TVA à 20 % comme la prestation principale.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Billets de train Paris-Bordeaux A/R, 2 personnes, 12 novembre 2026 (justificatif 1)",
+        "qty": "2",
+        "rate": "136,40 €",
+        "amount": "272,80 €"
+      },
+      {
+        "description": "Hôtel, 2 chambres, nuit du 12 novembre 2026 (justificatif 2)",
+        "qty": "2",
+        "rate": "118,00 €",
+        "amount": "236,00 €"
+      },
+      {
+        "description": "Impression de 300 brochures (justificatif 3)",
+        "qty": "1",
+        "rate": "412,50 €",
+        "amount": "412,50 €"
+      },
+      {
+        "description": "Location de matériel vidéo, 1 jour (justificatif 4)",
+        "qty": "1",
+        "rate": "260,00 €",
+        "amount": "260,00 €"
+      },
+      {
+        "description": "Frais de gestion 10 % sur impression et location (contrat, art. 7)",
+        "qty": "1",
+        "rate": "67,25 €",
+        "amount": "67,25 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 248,55 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "249,71 €",
+    "sample_breakdown_balance": "1 498,26 €",
+    "sample_breakdown_notes": "Frais du tournage des 12 et 13 novembre 2026, bon de commande BC-5521. Honoraires : facture F-2026-0142. Justificatifs 1 à 4 en PDF séparé. Débours (frais d'inscription payés au nom du client) : facture F-2026-0144. Échéance : 28 décembre 2026. Escompte : néant. Pénalités de retard : trois fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Bon à savoir sur la refacturation de frais",
+    "industry_notes": [
+      {
+        "title": "Débours ou frais refacturé : la différence de TVA",
+        "text": "Selon l'article 267 II 2° du CGI, seuls les montants payés au nom et pour le compte du client, avec mandat, refacturés au centime et passés en comptes de passage échappent à la TVA. Un billet acheté à votre nom pour la mission fait partie de votre prix."
+      },
+      {
+        "title": "Vous récupérez la TVA de l'achat, pas sur un débours",
+        "text": "Pour un frais refacturé, la facture du fournisseur est à votre nom : vous déduisez en principe sa TVA. Pour un débours, elle est au nom du client : vous ne déduisez rien. Votre expert-comptable vous dira comment comptabiliser."
+      },
+      {
+        "title": "Pas une note de frais de salarié",
+        "text": "Un salarié qui se fait rembourser ses dépenses remplit la note de frais de son employeur, pas une facture. Cette page concerne une entreprise ou un indépendant qui facture un client distinct."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une refacturation de frais",
+    "mistakes": [
+      {
+        "title": "Appeler débours ce qui n'en est pas",
+        "text": "Un billet acheté à votre nom puis refacturé sans TVA parce qu'il « n'est qu'un remboursement » est un frais refacturé, pas un débours. En cas de contrôle, la TVA oubliée peut vous être réclamée."
+      },
+      {
+        "title": "Une majoration que le contrat ne prévoit pas",
+        "text": "Ajouter 15 % sur les déplacements quand le contrat dit « au réel » transforme une facture banale en problème de confiance, découvert dès que le client regarde un justificatif."
+      },
+      {
+        "title": "Attendre des mois pour facturer",
+        "text": "Des frais facturés longtemps après la mission passent mal : budget clos, interlocuteur parti. Facturez-les dans le mois."
+      }
+    ],
+    "tip_title": "Nommez vos justificatifs tout de suite",
+    "pro_tip": "Photographiez chaque justificatif dès réception et nommez le fichier avec son futur numéro de ligne (« J3-imprimeur-nov ») : lignes et fichiers seront dans le même ordre.",
+    "format_pdf_desc": "Le PDF rejoint les copies des justificatifs dans le circuit de validation du client et garde chaque montant exactement comme sur les reçus.",
+    "faq_title": "Questions sur la refacturation de frais",
+    "cta_title": "Créez votre facture de frais",
+    "faqs": [
+      {
+        "question": "Faut-il appliquer la TVA sur des frais refacturés ?",
+        "answer": "En règle générale oui, en principe au taux de la prestation principale. Seuls les vrais débours (article 267 II 2° du CGI) restent hors TVA. En franchise en base, tout se facture sans TVA avec la mention « TVA non applicable, art. 293 B du CGI »."
+      },
+      {
+        "question": "Qu'est-ce qu'un débours ?",
+        "answer": "Une dépense payée au nom et pour le compte du client, avec son mandat, refacturée pour son montant exact et justifiée. Exemples courants : des frais administratifs ou d'inscription réglés au nom du client. Un achat à votre nom n'en est pas un."
+      },
+      {
+        "question": "Frais et honoraires sur la même facture ?",
+        "answer": "Oui pour des frais au même taux de TVA que vos honoraires ; une facture séparée est plus claire s'ils relèvent d'un autre budget. Les débours, sans TVA, vont sur une facture à part dans Invoicor (un taux par facture)."
+      },
+      {
+        "question": "Peut-on majorer les frais refacturés ?",
+        "answer": "Oui si le contrat le prévoit, sur une ligne à part. Un frais majoré reste un frais refacturé avec TVA, jamais un débours. Sans accord, facturez le montant exact."
+      },
+      {
+        "question": "Faut-il joindre les justificatifs ?",
+        "answer": "La plupart des clients les demandent, et un débours doit être justifié. Envoyez des copies numérotées et gardez les originaux."
+      }
+    ],
+    "related": [
+      {
+        "name": "Facture de prestation de services",
+        "slug": "facture-prestation-de-services"
+      },
+      {
+        "name": "Facture freelance",
+        "slug": "facture-freelance"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-sans-tva",
+    "translation_of": "no-vat-invoice",
+    "niche": "Facture sans TVA",
+    "title": "Facture sans TVA : modèle auto-entrepreneur | Invoicor",
+    "meta_description": "Facture sans TVA en micro-entreprise : seuils 2026 de la franchise, mention art. 293 B du CGI et exemple chiffré. Créez votre facture PDF gratuitement.",
+    "h1": "Facture sans TVA : modèle pour auto-entrepreneur",
+    "subtitle": "Pour les micro-entrepreneurs en franchise en base de TVA : les mentions, la phrase à écrire et ce qui change au-delà du seuil.",
+    "intro_paragraph": "En micro-entreprise, vous êtes le plus souvent en franchise en base de TVA : vous ne facturez pas de TVA et vous ne la récupérez pas sur vos achats. Votre facture garde toutes les mentions obligatoires, plus une phrase qui explique l'absence de TVA. Depuis le 1er septembre 2026, toute entreprise en France doit pouvoir recevoir des factures électroniques ; les PME et les micro-entreprises devront en émettre à partir du 1er septembre 2027 (impots.gouv.fr). Jusqu'à cette date, vous pouvez envoyer vos factures comme aujourd'hui. Invoicor crée des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne se connecte pas à une plateforme agréée. En Belgique, les factures entre entreprises belges doivent être des e-factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture sans TVA",
+    "what_to_include_intro": "Pour que votre client paie sans poser de questions, vérifiez ces six points.",
+    "req_1_title": "Votre nom, la mention « EI » et votre SIREN",
+    "req_1_text": "Votre nom avec la mention « EI » (entrepreneur individuel), votre adresse et votre numéro SIREN (service-public, fiche F31808). Dans Invoicor, il va dans le champ « SIRET », imprimé sous ce nom sur le PDF. Pour le client : son nom et son adresse.",
+    "req_2_title": "Numéro, date d'émission et date de la prestation",
+    "req_2_text": "Un numéro unique dans une suite continue, la date d'émission et la date de la vente ou de la prestation. Invoicor n'a pas de champ pour cette dernière : écrivez-la dans la description de la ligne ou dans les notes, par exemple « Prestation réalisée du 3 au 21 novembre 2026 ».",
+    "req_3_title": "Des prix HT qui sont aussi le prix final",
+    "req_3_text": "Pour chaque ligne, la quantité, le prix unitaire et le montant. Sans TVA, le total HT est ce que le client paie : pas de « + TVA » ni de partage HT et TTC qui ferait croire à une TVA oubliée.",
+    "req_4_title": "La mention de l'article 293 B",
+    "req_4_text": "Écrivez « TVA non applicable, art. 293 B du CGI » (service-public, fiche F21746). C'est la mention en vigueur aujourd'hui. Le Code général des impôts doit être renuméroté en 2027 : vérifiez à ce moment-là si la référence change. Placez-la dans les notes, juste sous les lignes.",
+    "req_5_title": "La ligne « TVA (0%) », expliquée par la mention",
+    "req_5_text": "Soyons clairs : le PDF d'Invoicor imprime toujours la ligne de TVA. Sans taux, il affiche « TVA (0%) » avec 0,00 €, et la masquer n'est pas possible dans Invoicor pour l'instant. Ce n'est pas une TVA facturée : la mention 293 B, juste en dessous, explique le zéro.",
+    "req_6_title": "Échéance, pénalités et indemnité",
+    "req_6_text": "La date d'échéance, le taux des pénalités de retard et, pour un client professionnel, l'indemnité forfaitaire de 40 € pour frais de recouvrement. Sans escompte, écrivez « Escompte pour paiement anticipé : néant ». Ces lignes vont dans les notes ou dans les conditions de paiement.",
+    "what_to_include_outro": "Votre client voit tout de suite qu'il n'y a pas de TVA, et pourquoi.",
+    "paper_label": "Facture sans TVA · exemple",
+    "sample_breakdown_title": "Exemple de facture sans TVA",
+    "sample_breakdown_intro": "Une graphiste à Nantes, en franchise en base, facture une boulangerie pour sa nouvelle identité visuelle. Le PDF imprime « TVA (0%) » avec 0,00 € ; la mention 293 B dans les notes l'explique.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Création du logo et de la charte graphique, forfait",
+        "qty": "1",
+        "rate": "1 200,00 €",
+        "amount": "1 200,00 €"
+      },
+      {
+        "description": "Déclinaison sur cartes de visite et sacs en papier",
+        "qty": "2",
+        "rate": "180,00 €",
+        "amount": "360,00 €"
+      },
+      {
+        "description": "Retouches après la deuxième présentation",
+        "qty": "3 h",
+        "rate": "45,00 €",
+        "amount": "135,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 695,00 €",
+    "sample_breakdown_balance": "1 695,00 €",
+    "sample_breakdown_notes": "TVA non applicable, art. 293 B du CGI. Prestation réalisée du 3 au 21 novembre 2026. Paiement à 30 jours par virement. Pénalités de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €. Escompte pour paiement anticipé : néant.",
+    "industry_notes_title": "Bon à savoir sur la franchise en base de TVA",
+    "industry_notes": [
+      {
+        "title": "Les seuils 2026",
+        "text": "Pour 2026, les seuils ne changent pas (service-public, fiche F21746) : 85 000 € pour la vente de marchandises et l'hébergement (seuil majoré 93 500 €), 37 500 € pour les prestations de services et les professions libérales (41 250 €). Pour les avocats, 50 000 € (55 000 €) sur les activités réglementées et 35 000 € (38 500 €) sur les autres. La réforme qui devait ramener le seuil à 25 000 € a été abandonnée par la loi du 3 novembre 2025."
+      },
+      {
+        "title": "Quand vous dépassez le seuil",
+        "text": "Vous facturez alors la TVA, en général à 20 % (10 %, 5,5 % ou 2,1 % selon ce que vous vendez), votre numéro de TVA figure sur chaque facture et la mention 293 B disparaît. La date exacte de ce changement dépend du seuil franchi, de base ou majoré, et de vos recettes de l'année précédente : vérifiez-la sur service-public ou avec votre expert-comptable. Les factures déjà émises restent sans TVA."
+      },
+      {
+        "title": "Sans TVA, mais pas en franchise",
+        "text": "Une facture peut aussi être sans TVA pour une autre raison. En sous-traitance du BTP ou pour un service à une entreprise d'un autre pays de l'UE, c'est l'autoliquidation : la facture porte la mention « Autoliquidation » et le client déclare la TVA. Pour une vente hors de l'UE, l'export est exonéré (art. 262 I du CGI) : la facture renvoie à cette exonération, sans formule imposée."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture sans TVA",
+    "mistakes": [
+      {
+        "title": "Ajouter 20 % pour faire plus « pro »",
+        "text": "En franchise, vous ne facturez pas de TVA. Une TVA écrite sur la facture peut vous être réclamée. Si c'est arrivé, voyez avec votre expert-comptable comment corriger."
+      },
+      {
+        "title": "Oublier la mention",
+        "text": "Sans « TVA non applicable, art. 293 B du CGI », la ligne « TVA (0%) » du PDF peut se lire comme une erreur. La référence à l'exonération fait partie des mentions obligatoires : mettez-la dans les notes de chaque facture."
+      },
+      {
+        "title": "Ne pas suivre vos recettes",
+        "text": "Tenez un total de vos recettes, facture après facture : vous voyez le seuil arriver au lieu de le découvrir en fin d'année."
+      }
+    ],
+    "tip_title": "Conseil pour les micro-entrepreneurs",
+    "pro_tip": "Préparez une facture complète, avec la mention 293 B, l'échéance, les pénalités et l'indemnité de 40 € dans les notes. Pour la suivante, touchez « Duplicate Invoice » (dupliquer la facture) dans l'app : la copie prend le numéro suivant et garde les notes.",
+    "format_pdf_desc": "Un PDF garde le total et la mention à leur place et se range facilement avec vos justificatifs.",
+    "faq_title": "Questions sur la facture sans TVA",
+    "faqs": [
+      {
+        "question": "Quelle mention écrire sur une facture d'auto-entrepreneur ?",
+        "answer": "« TVA non applicable, art. 293 B du CGI », tant que vous êtes en franchise en base de TVA. C'est la mention actuelle ; le CGI doit être renuméroté en 2027, vérifiez-la à ce moment-là."
+      },
+      {
+        "question": "Quels sont les seuils de la franchise en 2026 ?",
+        "answer": "85 000 € (seuil majoré 93 500 €) pour les ventes de marchandises et l'hébergement, 37 500 € (41 250 €) pour les services et les professions libérales. Le projet à 25 000 € a été abandonné."
+      },
+      {
+        "question": "Pourquoi ma facture affiche-t-elle « TVA (0%) » ?",
+        "answer": "Invoicor imprime toujours la ligne de TVA, même à zéro, et on ne peut pas la masquer pour l'instant. Elle indique 0,00 € ; la mention 293 B juste en dessous dit pourquoi."
+      },
+      {
+        "question": "Dois-je indiquer un numéro de TVA ?",
+        "answer": "Pas si vous n'en avez pas : laissez ce champ vide. Votre SIREN, lui, va dans le champ « SIRET »."
+      },
+      {
+        "question": "Une facture sans TVA, est-ce la même chose qu'une facture exonérée ?",
+        "answer": "Pas tout à fait. En franchise, vous ne facturez la TVA sur rien. Une entreprise qui facture la TVA peut aussi réaliser des opérations exonérées ou autoliquidées : elle cite alors l'exonération ou écrit « Autoliquidation »."
+      }
+    ],
+    "cta_title": "Créez votre facture sans TVA",
+    "related": [
+      {
+        "name": "Facture freelance",
+        "slug": "facture-freelance"
+      },
+      {
+        "name": "Facture de prestation de services",
+        "slug": "facture-prestation-de-services"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-freelance",
+    "translation_of": "freelance-invoice",
+    "niche": "Facture freelance",
+    "title": "Facture freelance : mentions, TVA et exemple | Invoicor",
+    "meta_description": "Facture freelance : mentions obligatoires, SIREN et « EI », TVA ou franchise, client dans l'UE, délais et indemnité de 40 €. Avec un exemple chiffré.",
+    "h1": "Facture freelance : modèle et exemple pour indépendant",
+    "subtitle": "Pour les indépendants qui facturent des entreprises : les mentions que le service comptable vérifie, la TVA selon votre régime et un exemple à reprendre.",
+    "intro_paragraph": "Votre facture freelance est lue par deux personnes : celle qui vous a confié la mission, et le service comptable qui paie et ne connaît que ce qui est écrit. Un SIREN ou un bon de commande oublié, et la facture repart dans la pile. En micro-entreprise ou en entreprise individuelle qui facture la TVA, les mentions sont les mêmes ; seule la TVA change. Depuis le 1er septembre 2026, toute entreprise en France doit pouvoir recevoir des factures électroniques ; les PME et les micro-entreprises devront en émettre à partir du 1er septembre 2027 (impots.gouv.fr). Jusqu'à cette date, vous pouvez envoyer vos factures comme aujourd'hui. Invoicor crée des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne se connecte pas à une plateforme agréée. En Belgique, les factures entre entreprises belges doivent être des e-factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture freelance",
+    "what_to_include_intro": "Le service comptable de votre client contrôle ces points avant de payer. Cochez-les dès la première facture.",
+    "req_1_title": "Votre nom, « EI » et votre SIREN",
+    "req_1_text": "Votre nom avec la mention « EI », votre adresse et votre SIREN (service-public, fiche F31808). Dans Invoicor, le SIREN ou le SIRET va dans le champ « SIRET ». Si vous exercez en société (EURL, SASU), indiquez la forme juridique et le capital.",
+    "req_2_title": "Le client et son bon de commande",
+    "req_2_text": "Le nom ou la raison sociale du client, son adresse et, s'il vous en a donné un, le numéro de bon de commande, recopié exactement : c'est souvent lui qui permet de rattacher votre facture à un budget. Son SIREN deviendra obligatoire avec la facturation électronique ; ajoutez-le déjà si vous l'avez.",
+    "req_3_title": "Numéro, date et période de la mission",
+    "req_3_text": "Un numéro unique dans une suite continue, la date d'émission et la date ou la période de la prestation. Invoicor n'a pas de champ pour cette période : mettez-la dans la description de la ligne ou dans les notes.",
+    "req_4_title": "Des lignes qui suivent votre devis",
+    "req_4_text": "Pour chaque ligne, la quantité, le prix unitaire HT et le taux de TVA. Un forfait tient en une ligne ; les jours ou les heures en dehors du périmètre ont leur propre ligne datée.",
+    "req_5_title": "La TVA, ou la mention qui explique son absence",
+    "req_5_text": "Hors franchise, vous facturez en général 20 % et indiquez votre numéro de TVA et celui du client (pas obligatoires jusqu'à 150 € HT). En franchise, écrivez « TVA non applicable, art. 293 B du CGI ». Invoicor applique un seul taux par facture ; le PDF affiche toujours la ligne de TVA, à 0 % en franchise.",
+    "req_6_title": "Échéance, pénalités et indemnité de 40 €",
+    "req_6_text": "La date d'échéance, le taux des pénalités de retard, l'indemnité forfaitaire de 40 € pour frais de recouvrement due par un client professionnel, et les conditions d'escompte, ou « Escompte pour paiement anticipé : néant ». Ces lignes vont dans les notes ou dans les conditions de paiement.",
+    "what_to_include_outro": "Avec ces six points, quelqu'un qui ne vous a jamais rencontré peut valider et payer votre facture.",
+    "paper_label": "Facture freelance · exemple",
+    "sample_breakdown_title": "Exemple de facture freelance",
+    "sample_breakdown_intro": "Un développeur indépendant, sorti de la franchise et donc redevable de la TVA, facture une agence lyonnaise : le forfait de son devis, deux jours de corrections demandés après la recette et un atelier de prise en main. Client professionnel en France, TVA à 20 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Module de réservation en ligne, forfait selon devis D-2026-014",
+        "qty": "1",
+        "rate": "3 200,00 €",
+        "amount": "3 200,00 €"
+      },
+      {
+        "description": "Corrections demandées après la recette du 6 novembre",
+        "qty": "2 jours",
+        "rate": "450,00 €",
+        "amount": "900,00 €"
+      },
+      {
+        "description": "Atelier de prise en main avec l'équipe",
+        "qty": "3 h",
+        "rate": "90,00 €",
+        "amount": "270,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "4 370,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "874,00 €",
+    "sample_breakdown_balance": "5 244,00 €",
+    "sample_breakdown_notes": "Bon de commande n° BC-7781. Prestation réalisée du 13 octobre au 14 novembre 2026. Paiement à 30 jours par virement, échéance le 14 décembre 2026. Pénalités de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €. Escompte pour paiement anticipé : néant.",
+    "industry_notes_title": "Bon à savoir pour les indépendants",
+    "industry_notes": [
+      {
+        "title": "Un client dans un autre pays de l'UE",
+        "text": "Pour un service rendu à une entreprise d'un autre pays de l'UE, la TVA est en général autoliquidée par le client : facture HT, mention « Autoliquidation » et les deux numéros de TVA. Hors de l'UE, les règles dépendent de la prestation : vérifiez avec votre expert-comptable."
+      },
+      {
+        "title": "Les délais de paiement",
+        "text": "Sans accord, le délai est de 30 jours après la prestation ; avec un accord, 60 jours au plus après l'émission, ou 45 jours fin de mois (service-public, fiche F23211). Les pénalités de retard valent au moins 3 fois le taux d'intérêt légal, et l'indemnité de 40 € s'applique par facture, sans TVA."
+      },
+      {
+        "title": "Combien de temps garder vos factures",
+        "text": "10 ans au titre du Code de commerce (article L123-22), 6 ans pour l'administration fiscale (LPF, article L102 B). Gardez ensemble, par client, les PDF envoyés et les devis signés."
+      }
+    ],
+    "mistakes_title": "Trois erreurs fréquentes sur une facture freelance",
+    "mistakes": [
+      {
+        "title": "L'envoyer à la mauvaise personne",
+        "text": "Votre contact valide la mission, mais ce n'est souvent pas lui qui paie. Demandez l'adresse du service comptable et mettez votre contact en copie."
+      },
+      {
+        "title": "Noyer le supplément dans le forfait",
+        "text": "Gonfler le forfait pour couvrir des jours en plus oblige le client à demander pourquoi le montant ne correspond plus au devis. Gardez le forfait tel quel et ajoutez le supplément sur sa propre ligne datée."
+      },
+      {
+        "title": "Une numérotation par client",
+        "text": "Une suite par client crée des doublons. Le numéro doit être unique et continu : une seule série pour toutes vos factures, par exemple 2026-031 puis 2026-032."
+      }
+    ],
+    "tip_title": "Conseil pour les freelances",
+    "pro_tip": "Au début de chaque mission, demandez : « De quoi avez-vous besoin sur la facture pour la payer du premier coup ? » Notez la réponse dans les notes du client dans l'app, puis repartez de sa dernière facture avec « Duplicate Invoice » (dupliquer la facture).",
+    "format_pdf_desc": "Les services comptables classent et transmettent les factures en PDF : il garde votre mise en page et s'ouvre partout.",
+    "faq_title": "Questions sur la facture freelance",
+    "faqs": [
+      {
+        "question": "Quelles mentions sur une facture freelance ?",
+        "answer": "Votre nom avec « EI » et votre SIREN, le client, un numéro unique, les dates d'émission et de prestation, prix HT et taux de TVA, totaux HT et TTC, l'échéance, les pénalités, l'indemnité de 40 € et l'escompte (service-public, fiche F31808)."
+      },
+      {
+        "question": "Freelance : dois-je facturer la TVA ?",
+        "answer": "Sous le seuil de la franchise (37 500 € de recettes pour les services en 2026, seuil majoré 41 250 €), non : vous écrivez la mention 293 B. Au-delà, vous facturez la TVA, en général à 20 %."
+      },
+      {
+        "question": "Comment facturer un client dans un autre pays de l'UE ?",
+        "answer": "Pour un service à une entreprise, la facture est en général HT, avec la mention « Autoliquidation » et les deux numéros de TVA. Vérifiez votre cas avec votre expert-comptable."
+      },
+      {
+        "question": "Freelance, indépendant, auto-entrepreneur : est-ce la même facture ?",
+        "answer": "Oui. Ces mots désignent la même situation : vous êtes l'entreprise. Ce qui change, c'est la TVA (franchise ou non) et, en société, la forme juridique et le capital à indiquer."
+      },
+      {
+        "question": "Les freelances passent-ils à la facture électronique ?",
+        "answer": "Oui. Depuis le 1er septembre 2026, vous devez pouvoir en recevoir, et à partir du 1er septembre 2027 les micro-entreprises et PME devront en émettre pour leurs clients professionnels (impots.gouv.fr). Invoicor ne crée pas de factures électroniques : il vous faudra une plateforme agréée."
+      }
+    ],
+    "cta_title": "Créez votre facture freelance",
+    "related": [
+      {
+        "name": "Facture sans TVA",
+        "slug": "facture-sans-tva"
+      },
+      {
+        "name": "Facture de prestation de services",
+        "slug": "facture-prestation-de-services"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-sous-traitant",
+    "translation_of": "subcontractor-invoice",
+    "niche": "Facture sous-traitant",
+    "title": "Facture sous-traitant : autoliquidation BTP | Invoicor",
+    "meta_description": "Facture de sous-traitant dans le BTP : autoliquidation de la TVA, mention à écrire, chantier, avancement et travaux supplémentaires. Exemple et PDF.",
+    "h1": "Facture sous-traitant : modèle avec autoliquidation",
+    "subtitle": "Pour les sous-traitants du bâtiment qui facturent l'entreprise principale : facture HT, mention « Autoliquidation », chantier, avancement et travaux supplémentaires.",
+    "intro_paragraph": "Sous-traitant dans le BTP, vous ne facturez pas le maître d'ouvrage mais l'entreprise qui vous a confié les travaux. Pour ces travaux, la TVA est autoliquidée (art. 283-2 nonies du CGI) : vous facturez HT, sans TVA, avec la mention « Autoliquidation », et c'est l'entreprise principale qui déclare la TVA. Depuis le 1er septembre 2026, toute entreprise en France doit pouvoir recevoir des factures électroniques ; les PME et les micro-entreprises devront en émettre à partir du 1er septembre 2027 (impots.gouv.fr). Jusqu'à cette date, vous pouvez envoyer vos factures comme aujourd'hui. Invoicor crée des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne se connecte pas à une plateforme agréée. En Belgique, les factures entre entreprises belges doivent être des e-factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de sous-traitant",
+    "what_to_include_intro": "Le conducteur de travaux de l'entreprise principale vérifie ces six points avant de valider votre facture.",
+    "req_1_title": "Un montant HT et la mention « Autoliquidation »",
+    "req_1_text": "Pas de TVA calculée : les montants sont HT et la facture porte la mention « Autoliquidation ». Dans Invoicor, ne mettez pas de taux : le PDF imprime alors « TVA (0%) » avec 0,00 €. Écrivez « Autoliquidation » dans les notes, juste sous les lignes : c'est elle qui explique cette ligne.",
+    "req_2_title": "Vos mentions habituelles",
+    "req_2_text": "Votre nom avec « EI », ou la raison sociale, la forme juridique et le capital, votre adresse, votre SIREN dans le champ « SIRET » et votre numéro de TVA. Le numéro de TVA de l'entreprise principale n'est pas obligatoire pour ces travaux.",
+    "req_3_title": "Le chantier et la référence du contrat",
+    "req_3_text": "Nommez le chantier, son adresse et la référence du contrat de sous-traitance ou du bon de commande. Une facture qu'elle ne peut pas rattacher à un chantier attend.",
+    "req_4_title": "L'avancement et ce qui a déjà été facturé",
+    "req_4_text": "Pour un prix forfaitaire, facturez à l'avancement : le montant du marché, le pourcentage réalisé et ce que vous avez déjà facturé, avec le numéro des factures précédentes. Restez réaliste : le conducteur de travaux compare avec ce qu'il voit sur le chantier.",
+    "req_5_title": "Les travaux supplémentaires sur leur propre ligne",
+    "req_5_text": "Les travaux supplémentaires acceptés ont leur ligne, avec leur référence et la date de l'accord : « TS-02, six prises extérieures, accord du 9 octobre ». Faites-les valider par écrit avant de les facturer.",
+    "req_6_title": "La période des travaux",
+    "req_6_text": "La date de la prestation est une mention obligatoire. Invoicor n'a pas de champ pour elle : écrivez la période dans la description ou dans les notes, par exemple « Travaux réalisés du 1er au 31 octobre 2026 ».",
+    "what_to_include_outro": "Une facture qui répond d'avance aux questions de l'entreprise principale part au paiement sans aller-retour.",
+    "paper_label": "Facture sous-traitant · exemple",
+    "sample_breakdown_title": "Exemple de facture de sous-traitant",
+    "sample_breakdown_intro": "La deuxième facture d'un électricien sur un marché de sous-traitance de 48 000,00 € HT pour douze logements neufs : 50 % réalisés après une première facture à 25 %, plus un travail supplémentaire accepté. TVA autoliquidée : le PDF imprime « TVA (0%) » avec 0,00 €, et la mention « Autoliquidation » l'explique. La ligne négative fonctionne dans le générateur gratuit, pas dans l'app.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Lot électricité, contrat ST-2026-045 : 50 % de 48 000,00 € réalisés",
+        "qty": "1",
+        "rate": "24 000,00 €",
+        "amount": "24 000,00 €"
+      },
+      {
+        "description": "Moins déjà facturé, facture 2026-071 (25 %)",
+        "qty": "1",
+        "rate": "-12 000,00 €",
+        "amount": "-12 000,00 €"
+      },
+      {
+        "description": "Travaux supplémentaires TS-02 : six prises extérieures, accord du 9 octobre",
+        "qty": "1",
+        "rate": "1 380,00 €",
+        "amount": "1 380,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "13 380,00 €",
+    "sample_breakdown_balance": "13 380,00 €",
+    "sample_breakdown_notes": "Autoliquidation. Chantier : 12 logements Les Terrasses, 14 rue du Port, Angers. Contrat de sous-traitance ST-2026-045. Travaux réalisés du 1er au 31 octobre 2026. Paiement à 30 jours selon le contrat. Pénalités de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €. Escompte pour paiement anticipé : néant.",
+    "industry_notes_title": "Bon à savoir pour les sous-traitants",
+    "industry_notes": [
+      {
+        "title": "Quand l'autoliquidation ne s'applique pas",
+        "text": "Elle vise les travaux que vous réalisez comme sous-traitant pour une autre entreprise. Si vous travaillez directement pour le maître d'ouvrage, un particulier par exemple, vous facturez la TVA normalement, à 20 % ou à un taux réduit selon les travaux. En cas de doute sur un chantier, voyez votre expert-comptable avant de facturer."
+      },
+      {
+        "title": "Sous-traitant en franchise en base",
+        "text": "Si vous êtes micro-entrepreneur en franchise en base de TVA, il n'y a pas d'autoliquidation : vous facturez sans TVA avec la mention « TVA non applicable, art. 293 B du CGI », comme sur vos autres factures. Le PDF affiche aussi « TVA (0%) », expliqué par cette mention."
+      },
+      {
+        "title": "Retenue de garantie et conservation",
+        "text": "Votre contrat peut prévoir une retenue de garantie jusqu'à la réception : notez-la dans les notes pour que votre facture corresponde à ce que vous recevez, et voyez les détails avec votre expert-comptable. Gardez factures, contrats et accords de travaux supplémentaires 10 ans (Code de commerce, article L123-22)."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur les factures de sous-traitant",
+    "mistakes": [
+      {
+        "title": "Ajouter 20 % de TVA quand même",
+        "text": "Si vos travaux relèvent de l'autoliquidation et que la facture porte de la TVA, elle n'est pas correcte et doit être refaite. Ne mettez pas de taux et écrivez « Autoliquidation » dans les notes."
+      },
+      {
+        "title": "Oublier la mention",
+        "text": "Sans « Autoliquidation », la ligne « TVA (0%) » du PDF ne dit pas pourquoi il n'y a pas de TVA. Mettez la mention dans les notes de la première facture du chantier ; en dupliquant cette facture pour la suivante, elle reste."
+      },
+      {
+        "title": "Un avancement en avance sur le chantier",
+        "text": "Facturer 60 % quand le conducteur de travaux en voit 40 %, c'est une facture retournée ou réduite. Facturez ce qui est en place."
+      }
+    ],
+    "tip_title": "Conseil pour les sous-traitants",
+    "pro_tip": "Tenez un tableau par chantier : montant du marché, travaux supplémentaires, pourcentage et montant de chaque facture. Dans l'app Invoicor, les lignes ne peuvent pas être négatives : dupliquez la facture précédente, facturez seulement le montant de la période et indiquez le pourcentage et les factures précédentes dans les notes. Le générateur gratuit accepte une ligne négative, comme dans l'exemple.",
+    "format_pdf_desc": "Un PDF fige vos montants, s'imprime proprement pour le dossier du chantier et ne change plus une fois transmis.",
+    "faq_title": "Questions sur la facture de sous-traitant",
+    "faqs": [
+      {
+        "question": "Quand la TVA est-elle autoliquidée en sous-traitance ?",
+        "answer": "Pour les travaux du BTP qu'un sous-traitant réalise pour une entreprise (art. 283-2 nonies du CGI). Vous facturez HT, avec la mention « Autoliquidation », et l'entreprise principale déclare la TVA."
+      },
+      {
+        "question": "Quelle mention écrire sur la facture ?",
+        "answer": "« Autoliquidation ». Le numéro de TVA de l'entreprise principale n'est pas obligatoire pour ces travaux. Si vous êtes en franchise en base, c'est la mention 293 B qui s'applique à la place."
+      },
+      {
+        "question": "Pourquoi mon PDF affiche-t-il « TVA (0%) » ?",
+        "answer": "Invoicor imprime toujours la ligne de TVA, même sans TVA, et on ne peut pas la masquer pour l'instant. Avec l'autoliquidation, elle indique 0,00 € ; la mention « Autoliquidation » juste en dessous explique que l'entreprise principale déclare la TVA."
+      },
+      {
+        "question": "Comment facturer des travaux supplémentaires ?",
+        "answer": "Sur leur propre ligne, avec la référence et la date de l'accord écrit. S'ils font partie de votre sous-traitance, ils suivent en principe la même autoliquidation que le marché."
+      },
+      {
+        "question": "Quelle différence avec une facture de situation ?",
+        "answer": "La facture de situation facture une étape du chantier à l'avancement, et en sous-traitance vous facturez souvent ainsi. Cette page porte sur qui vous facturez et sur la TVA ; la page sur la facture de situation détaille l'avancement."
+      }
+    ],
+    "cta_title": "Créez votre facture de sous-traitant",
+    "related": [
+      {
+        "name": "Facture de situation",
+        "slug": "facture-situation"
+      },
+      {
+        "name": "Facture de solde",
+        "slug": "facture-solde"
+      }
+    ],
+    "invoice_types": []
+  }
+]

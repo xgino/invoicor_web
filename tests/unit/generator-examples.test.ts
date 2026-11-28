@@ -32,6 +32,14 @@ describe("firstNumber (template samples → generator lines)", () => {
     expect(firstNumber("3 uur")).toBe(3);
   });
 
+  it("reads French amounts with a space for thousands", () => {
+    expect(firstNumber("1 234,56 €")).toBe(1234.56);
+    expect(firstNumber("12\u202f500,00 €")).toBe(12500);
+    expect(firstNumber("-1\u00a0200,00 €")).toBe(-1200);
+    expect(firstNumber("3 h")).toBe(3);
+    expect(firstNumber("2 jours")).toBe(2);
+  });
+
   it("doesn't take a hyphen in words for a minus", () => {
     expect(firstNumber("Net-30 terms, 2 visits")).toBe(30);
     expect(firstNumber("Day-rate 450")).toBe(450);

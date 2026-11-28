@@ -5700,13 +5700,13 @@
 
 ## D1–D20 in French
 
-[ ] Invoice types: the general documents · 0/14 live in fr
+[ ] Invoice types: the general documents · 10/12 live in fr
 
 - **For every template (invoice type) page:** This document under that country's rules (the local terms list): what it must show there, the law or tax office as the source with the date checked.
 
 ### D1-fr · /templates/deposit-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-acompte
 - **English page:** [deposit invoice template](https://invoicor.com/templates/deposit-invoice) (live: use it as the source)
 - **Search words:** the French term for "deposit invoice template"; known local terms: Anzahlungsrechnung (de), aanbetalingsfactuur (nl), facture d'acompte (fr), factura de anticipo (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The general deposit invoice: part of the price before work starts. What it must show (that it's a deposit, the full job price, the share asked, what it secures, when the rest is due, refundable or not), its own invoice number, and how the final invoice subtracts it (a negative line: 'Less deposit, invoice #…'). In many VAT countries VAT is due on the deposit when it's paid (hedge; check the local rule). Sample: 30% of a $4,000 job. A 'by trade' section links the trade deposit pages.
@@ -5714,7 +5714,7 @@
 
 ### D2-fr · /templates/final-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-solde
 - **English page:** [final invoice template](https://invoicor.com/templates/final-invoice) (live: use it as the source)
 - **Search words:** the French term for "final invoice template"; known local terms: Schlussrechnung (de), eindfactuur (nl), facture de solde (fr), factura final (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The last invoice of a job paid in parts: the full price, minus every earlier invoice by number and date (deposit, progress invoices), the balance due, marked 'Final invoice'. Tax only on what's left when earlier invoices already charged it (hedge; Germany's Schlussrechnung rules are strict: the local version). Sample: a $12,000 job after a $3,000 deposit and a $4,500 progress invoice.
@@ -5722,31 +5722,19 @@
 
 ### D3-fr · /templates/milestone-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-situation
 - **English page:** [milestone invoice template](https://invoicor.com/templates/milestone-invoice) (live: use it as the source)
 - **Search words:** the French term for "milestone invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A project billed in agreed stages (design 30%, build 50%, launch 20%): the milestone and the contract it's from, what was delivered and accepted, its share of the total, what's been paid so far. Milestones are deliverables; progress billing is % complete (construction, its own page). Sample: milestone 2 of 3 on a $9,000 project.
 - **Don't:** Construction progress and retainage (/templates/construction-progress-invoice); the web, app and video milestone pages (trade specifics).
 
-### D4-fr · /templates/hourly-invoice → French
+- ~~**D4-fr** /templates/hourly-invoice~~ skipped in fr: parked 2026-11-28 (demand gate, fr): only translated foreign template sites rank; the freelance and prestation pages cover hours
 
-- [ ] **Live in fr**
-- **English page:** [hourly invoice template](https://invoicor.com/templates/hourly-invoice) (live: use it as the source)
-- **Search words:** the French term for "hourly invoice template"
-- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Hours × rate for any work: hours by day or by task (a timesheet summary on the invoice), rounding and minimum increments, different rates (standard, rush, travel), a cap agreed upfront. The app has no timer: you enter the hours you tracked; the hours calculator adds up times. Sample: 3 dates at 2 rates.
-- **Don't:** The trade hourly pages (consulting, handyman, VA, bookkeeping, cleaning, moving); setting your rate (the hourly rate calculator).
-
-### D6-fr · /templates/retainer-invoice → French
-
-- [ ] **Live in fr**
-- **English page:** [retainer invoice template](https://invoicor.com/templates/retainer-invoice) (live: use it as the source)
-- **Search words:** the French term for "retainer invoice template"
-- **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A fixed fee paid ahead for availability or a block of hours (lawyers, consultants, agencies): the period, what's included (hours or scope), what happens to unused hours (rolled over or lost, per the contract), work beyond it billed on its own lines. An advance against future work vs a pure availability fee. Each month: duplicate last month's invoice (the app doesn't send recurring invoices). Sample: May, 20 hours included, 3 hours over.
-- **Don't:** The consulting, social media, website, interior design and VA retainer pages (trade specifics); legal trust-account rules (hedge, no law cited).
+- ~~**D6-fr** /templates/retainer-invoice~~ skipped in fr: parked 2026-11-28 (demand gate, fr): only bar conventions (lawyers) and template farms
 
 ### D7-fr · /templates/monthly-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-recurrente
 - **English page:** [monthly invoice template](https://invoicor.com/templates/monthly-invoice) (live: use it as the source)
 - **Search words:** the French term for "monthly invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): One invoice a month for ongoing service (cleaning, lawn care, pools, lessons, equipment): the service period, visits or units that month, a flat fee or per visit, skipped visits credited, the due date. With the app: duplicate last month's invoice, change the period and the number. Sample: October, 4 weekly visits, 1 skipped and credited.
@@ -5754,7 +5742,7 @@
 
 ### D8-fr · /templates/labor-and-materials-invoice → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-travaux
 - **English page:** [labor and materials invoice template](https://invoicor.com/templates/labor-and-materials-invoice) (live: use it as the source)
 - **Search words:** the French term for "labor and materials invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The general labor + materials invoice for any trade: labor lines (hours × rate or a flat price), material lines (quantity, unit, unit price), markup on materials (shown or built in), trip and disposal fees, and where tax applies (in many US states materials are taxed and labor isn't: hedge). Time and materials vs a fixed price. Sample: a repair with 3 labor hours and 5 material lines. A 'by trade' section links the trade versions.
@@ -5762,7 +5750,7 @@
 
 ### D9-fr · /templates/service-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-prestation-de-services
 - **English page:** [service invoice template](https://invoicor.com/templates/service-invoice) (live: use it as the source)
 - **Search words:** the French term for "service invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Invoicing services rather than goods, for any business: a description the client recognises (what, when, for whom), service date vs invoice date, hours, visits or a flat fee, tax on services (often different from goods: hedge), payment terms. Sample: 3 service lines. 'Find your trade' links to the templates hub.
@@ -5770,7 +5758,7 @@
 
 ### D10-fr · /templates/sales-invoice → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-vente
 - **English page:** [sales invoice template](https://invoicor.com/templates/sales-invoice) (live: use it as the source)
 - **Search words:** the French term for "sales invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Selling goods: item and SKU, quantity, unit price, discount, shipping, sales tax or VAT on goods, delivery date and address, returns terms. How it differs from a receipt (already paid) and a commercial invoice (export). Sample: 4 products + shipping, for makers, resellers and B2B orders.
@@ -5778,7 +5766,7 @@
 
 ### D11-fr · /templates/commercial-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-commerciale
 - **English page:** [commercial invoice template](https://invoicor.com/templates/commercial-invoice) (live: use it as the source)
 - **Search words:** the French term for "commercial invoice template"; known local terms: Handelsrechnung (de), handelsfactuur (nl), facture commerciale (fr), factura comercial (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The invoice that travels with goods across a border: seller, buyer and consignee, a precise description per item, HS code, country of origin, quantity, weight, value and currency, Incoterms, reason for export, a signed declaration. Honest: Invoicor makes the invoice PDF; HS codes and origin go in the item lines or notes; carriers and customs may want their own forms too. Sample: 3 items shipped from the UK to the US (duties hedged).
@@ -5786,7 +5774,7 @@
 
 ### D14-fr · /templates/expense-reimbursement-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/refacturation-frais
 - **English page:** [reimbursement invoice template](https://invoicor.com/templates/expense-reimbursement-invoice) (live: use it as the source)
 - **Search words:** the French term for "reimbursement invoice template"; known local terms: Auslagen / durchlaufende Posten (de), doorbelasten kosten (nl), débours (fr)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Passing costs on to a client: what you paid (travel, materials, fees), at cost or with a markup (per the contract), receipts kept and listed, and the tax difference between a disbursement paid in the client's name (often outside VAT) and a rebilled cost (part of your price): hedge, with the HMRC guidance as the English example (cite and date).
@@ -5794,7 +5782,7 @@
 
 ### D15-fr · /templates/no-vat-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-sans-tva
 - **English page:** [invoice without vat template](https://invoicor.com/templates/no-vat-invoice) (live: use it as the source)
 - **Search words:** the French term for "invoice without vat template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): For sellers below the VAT threshold or exempt: what an invoice without VAT must and mustn't show (no VAT line, no VAT number, the wording a country requires), why the client can't reclaim VAT on it, what changes when you cross the threshold. English examples: the UK (not VAT registered: cite HMRC, date it) and Australia (not registered for GST, so it isn't a 'tax invoice'). Sample with the note and no tax line.
@@ -5802,7 +5790,7 @@
 
 ### D16-fr · /templates/freelance-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-freelance
 - **English page:** [freelance invoice template](https://invoicor.com/templates/freelance-invoice) (live: use it as the source)
 - **Search words:** the French term for "freelance invoice template"; known local terms: Rechnung Freiberufler / Selbstständige (de), factuur zzp (nl), facture auto-entrepreneur (fr), factura autónomo (es)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Freelancers in any field: what the client's accounts team needs (your legal name, address, tax ID or UTR where asked, their PO number, bank details), project, hourly or day-rate lines, usage rights when you sell creative work, VAT if registered or the no-VAT note, payment terms from the contract. UK sole traders and the self-employed use the same document. Sample: a project fee + 2 extra hours. A 'by field' section links the trade templates.
@@ -5810,7 +5798,7 @@
 
 ### D18-fr · /templates/subcontractor-invoice → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-sous-traitant
 - **English page:** [subcontractor invoice template](https://invoicor.com/templates/subcontractor-invoice) (live: use it as the source)
 - **Search words:** the French term for "subcontractor invoice template"; known local terms: Subunternehmer Rechnung (de: §13b reverse charge on construction services), onderaannemer factuur (nl: btw verlegd, G-rekening)
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): A sub billing the main contractor, not the owner: the project, the GC's PO or contract number, scope or % complete, retainage held, change orders by number, the lien waiver that often goes with payment (US: hedge per state). UK: CIS deductions on the labor part (cite HMRC, date it). Sample: an $18,000 subcontract, 40% complete, 10% retainage.
@@ -6760,7 +6748,7 @@
 
 ## P1–P9 in French
 
-[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 3/8 live in fr
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 4/8 live in fr
 
 - **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
 - **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
@@ -6778,7 +6766,7 @@
 
 ### P2-fr · /templates → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles
 - **English page:** [invoice templates](https://invoicor.com/templates) (live: use it as the source)
 - **Search words:** the French term for "invoice templates"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

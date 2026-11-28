@@ -15,7 +15,9 @@ export interface GeneratorExample {
  * Number format of a money or quantity string: "1,234.56" (English) or "1.234,56" (German,
  * Dutch …). The separator that comes last is the decimal one; the other one groups thousands.
  */
-function normalize(value: string): string {
+function normalize(raw: string): string {
+  // French and Scandinavian thousands: a (narrow, non-breaking) space between digits: "1 234,56 €".
+  const value = raw.replace(/(\d)[\s\u00a0\u202f](?=\d{3}(?:\D|$))/g, "$1");
   // Only separators between two digits count (not the dot in "Std.").
   const last = (sep: string) => {
     let at = -1;

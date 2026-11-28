@@ -183,6 +183,17 @@
 /de/vorlagen/rechnung-uebersetzer
 /de/vorlagen/rechnung-musikunterricht
 /fr/aide
+/fr/modeles
+/fr/modeles/facture-acompte
+/fr/modeles/facture-solde
+/fr/modeles/facture-situation
+/fr/modeles/facture-recurrente
+/fr/modeles/facture-prestation-de-services
+/fr/modeles/facture-commerciale
+/fr/modeles/refacturation-frais
+/fr/modeles/facture-sans-tva
+/fr/modeles/facture-freelance
+/fr/modeles/facture-sous-traitant
 /es/ayuda
 /it/aiuto
 /pt/ajuda
