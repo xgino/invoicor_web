@@ -1,5 +1,11 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { CONSENT_EVENT, readConsent, saveConsent, subscribeConsent } from "@/lib/consent";
+import {
+  ASK_AGAIN_DAYS,
+  CONSENT_EVENT,
+  readConsent,
+  saveConsent,
+  subscribeConsent,
+} from "@/lib/consent";
 
 // Minimal browser globals: an event target plus localStorage.
 function fakeWindow(storage: Map<string, string> | null) {
@@ -52,5 +58,26 @@ describe("consent", () => {
     expect(readConsent()).toBeNull();
     expect(() => saveConsent("denied")).not.toThrow();
     expect(fired).toBe(true);
+  });
+
+  it("respects a Decline for 30 days, then asks again", () => {
+    const day = 24 * 60 * 60 * 1000;
+    expect(ASK_AGAIN_DAYS).toBe(30);
+    window.localStorage.setItem("invoicor-consent-v1", `denied:${Date.now() - 29 * day}`);
+    expect(readConsent()).toBe("denied");
+    window.localStorage.setItem("invoicor-consent-v1", `denied:${Date.now() - 31 * day}`);
+    expect(readConsent()).toBeNull(); // the banner shows again
+  });
+
+  it("an Accept doesn't expire", () => {
+    saveConsent("granted");
+    expect(window.localStorage.getItem("invoicor-consent-v1")).toBe("granted");
+    expect(readConsent()).toBe("granted");
+  });
+
+  it("a Decline saved before dates were kept starts its 30 days now", () => {
+    window.localStorage.setItem("invoicor-consent-v1", "denied");
+    expect(readConsent()).toBe("denied");
+    expect(window.localStorage.getItem("invoicor-consent-v1")).toMatch(/^denied:\d+$/);
   });
 });

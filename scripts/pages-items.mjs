@@ -1,0 +1,473 @@
+/**
+ * The plan's groups and tasks. Every page has its own ID in seo/pages/*.csv (`id`):
+ * {letter}{n} per category (T5, D12, LO3) and, for a language version, {id}-{lang} (D12-de). IDs
+ * never change; a new page gets the next free number of its letter (`npm run pages` fills it in).
+ *
+ * A group is a range of page IDs of one category that one run builds well (≈ 10–25 pages):
+ * "do D1–D20". It has a title, an optional note (`text`) and the tasks it waits for (`needs`).
+ * **Append only**: a new group takes the next IDs, so existing ranges never change.
+ *
+ * Completion is automatic: a page is done when it's live; a group when all its pages are live
+ * (parked pages skipped); a group's language when all its `localize: yes` pages exist in that
+ * language. A task (code, no pages) is ticked here by hand: `done: true`.
+ */
+
+/** Per category: the item letter(s). */
+export const PREFIX = {
+  templates: "T",
+  billing: "B",
+  types: "D",
+  industries: "I",
+  compare: "C",
+  tools: "TL",
+  generators: "G",
+  country: "CT",
+  local: "LO",
+  core: "P",
+};
+
+/** Code work without pages; it comes first where pages depend on it. */
+export const TASKS = [
+  {
+    id: "S1",
+    done: true,
+    title: "Language setup for templates and industry pages (roadmap H4)",
+    text: "The template and industry page labels in 11 languages, `content/{locale}/templates.json` and `industries.json`, local slugs per language in the route table, hreflang between the versions, the language switcher, the hubs per language, and the sitemap split per page type (a sitemap index, so Search Console shows indexing per type). Every L item for templates and industry pages waits for this.",
+  },
+  {
+    id: "S2",
+    done: false,
+    title: "Hubs at scale",
+    text: "With 150+ templates the hubs need groups (home services, trades, creative, professional, invoice types, billing types) with anchors and a short intro each, so every page is at most 2 clicks from its hub. No thin sub-hub URLs: groups are sections of the one hub.",
+  },
+  {
+    id: "S3",
+    done: false,
+    title: "Country page type (roadmap chunk 43)",
+    text: "The page code for country pages (CT) and the local pages (LO): the generator preset per country plus the rules section. The CT and LO groups wait for this (`needs`).",
+  },
+  {
+    id: "S4",
+    done: false,
+    title: "Calculator engine (for the pricing calculators)",
+    text: "One calculator component driven by a config per trade (inputs, units, formula steps, the 'Put on an invoice' link), metric units per language. The pricing calculator groups wait for this (`needs`).",
+  },
+];
+
+/** The groups, per category in build order: a range of page IDs, a title, an optional note. */
+export const GROUPS = [
+  { range: "T1–T20", title: "Trade templates 1–20 (built)" },
+  { range: "T21–T35", title: "Trade templates 21–35 (built)" },
+  { range: "T36–T50", title: "Trade templates 36–50 (built)" },
+  { range: "T51–T60", title: "10 trades: notary, home inspection, IT services …" },
+  { range: "T61–T80", title: "Home and property services" },
+  { range: "T81–T100", title: "Makers, repair, transport, events" },
+  { range: "T101–T120", title: "Professional, wellness, care" },
+  { range: "T121–T140", title: "Beauty, creative, specialist" },
+  {
+    range: "T141–T156",
+    title: "Trades with demand of their own: auto repair, auto body, architect …",
+  },
+  { range: "T157–T174", title: "Home systems and specialist contractors" },
+  { range: "T175–T192", title: "Property, waste and household services" },
+  { range: "T193–T207", title: "Auto, transport and heavy equipment" },
+  { range: "T208–T222", title: "Workshops, repair and industrial trades" },
+  { range: "T223–T237", title: "Events, food, travel and entertainment" },
+  { range: "T238–T252", title: "Professional services II" },
+  { range: "T253–T262", title: "Digital and tech services" },
+  { range: "T263–T274", title: "Creative, fashion and crafts" },
+  { range: "T275–T289", title: "Health and wellness II" },
+  { range: "T290–T301", title: "Education and childcare" },
+  { range: "T302–T313", title: "Animals, farms and outdoors" },
+  { range: "I1–I20", title: "Industry pages 1–20 (built)" },
+  { range: "I21–I32", title: "Industry pages 21–32 (built)" },
+  { range: "I33–I43", title: "Industry pages 33–43 (built)" },
+  { range: "I44–I53", title: "Industry pages for T51–T60's trades" },
+  { range: "I54–I73", title: "Industry pages for T61–T80's trades" },
+  { range: "I74–I93", title: "Industry pages for T81–T100's trades" },
+  { range: "I94–I113", title: "Industry pages for T101–T120's trades" },
+  { range: "I114–I133", title: "Industry pages for T121–T140's trades" },
+  {
+    range: "I134–I137",
+    title: "Architects, real estate agents, private investigators, equipment rental",
+  },
+  {
+    range: "I138–I143",
+    title: "One trade per page: split the combined industry pages",
+    text: "each split narrows its old combined page when it goes live (see the briefs)",
+  },
+  { range: "I144–I152", title: "Who invoices: self-employed, freelancers, sellers" },
+  { range: "I153–I162", title: "Specialist contractors" },
+  { range: "I163–I169", title: "Cleaning, waste and property services" },
+  { range: "I170–I179", title: "Auto shops and transport" },
+  { range: "I180–I190", title: "Professional services" },
+  { range: "I191–I200", title: "Events, food and travel" },
+  { range: "I201–I209", title: "Creative and media" },
+  { range: "I210–I220", title: "Health, wellness and beauty" },
+  { range: "I221–I230", title: "Education and childcare" },
+  { range: "I231–I239", title: "Animals, farms and outdoors" },
+  { range: "B1–B20", title: "Billing types I", text: "build with or after D1–D20 (the parents)" },
+  { range: "B21–B40", title: "Billing types II" },
+  { range: "B41–B60", title: "Billing types III" },
+  { range: "B61–B71", title: "Deposits: events and weddings" },
+  { range: "B72–B84", title: "Deposits: custom and made-to-order work" },
+  { range: "B85–B97", title: "Deposits: contractors and home projects" },
+  { range: "B98–B106", title: "Progress invoices: construction trades" },
+  { range: "B107–B119", title: "Monthly and seasonal service invoices" },
+  { range: "B120–B129", title: "Retainers for professionals" },
+  { range: "B130–B136", title: "Hourly billing for professionals and care" },
+  { range: "B137–B146", title: "Packages: lessons, wellness and coaching" },
+  { range: "B147–B157", title: "Service calls, emergencies and insurance jobs" },
+  { range: "B158–B166", title: "Milestones: creative, tech and engineering projects" },
+  { range: "B167–B173", title: "Final invoices: events and custom work" },
+  { range: "B174–B178", title: "Per-unit billing: per word, mile and minute" },
+  {
+    range: "D1–D20",
+    title: "Invoice types: the general documents",
+    text: "the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first",
+  },
+  {
+    range: "D21–D30",
+    title: "Invoice types II: special cases (self-billing, revised, paid, PO …)",
+  },
+  { range: "C1–C20", title: "Compare pages (built, English only)" },
+  { range: "C21–C40", title: "20 more compares (English only)" },
+  { range: "C41–C48", title: "UK accounting and banking apps" },
+  { range: "C49–C54", title: "Australia and New Zealand" },
+  { range: "C55–C59", title: "India (GST billing apps)" },
+  { range: "C60–C68", title: "Field service, lawn and pest" },
+  { range: "C69–C74", title: "Construction and roofing" },
+  { range: "C75–C81", title: "Photographers and creative studios" },
+  { range: "C82–C87", title: "Payments and banks" },
+  { range: "C88–C92", title: "Invoice apps and design tools" },
+  { range: "C93–C97", title: "Small-business accounting" },
+  { range: "TL1–TL4", title: "Free tools built before the plan (hub, VAT, hours, hourly rate)" },
+  { range: "TL5–TL15", title: "Free tools I" },
+  { range: "TL16–TL25", title: "Free tools II" },
+  { range: "TL26–TL45", title: "Pricing calculators for trades", needs: ["S4"] },
+  { range: "TL46–TL54", title: "VAT and GST calculators per country (English)" },
+  { range: "TL55–TL62", title: "Tax tools for the self-employed" },
+  { range: "TL63–TL75", title: "Payment fees, terms and payment details" },
+  { range: "TL76–TL90", title: "Job costing and materials for contractors", needs: ["S4"] },
+  { range: "TL91–TL106", title: "Pricing calculators II: services and transport", needs: ["S4"] },
+  { range: "TL107–TL113", title: "Pricing calculators III: makers and production", needs: ["S4"] },
+  { range: "G1–G1", title: "The free invoice generator (built)" },
+  { range: "G2–G5", title: "Document generators (receipt, estimate, proforma, credit note)" },
+  {
+    range: "G6–G10",
+    title:
+      "Document generators II (purchase order, delivery note, statement, debit note, work order)",
+  },
+  {
+    range: "CT1–CT7",
+    title: "Country pages I (English-speaking countries + EU reverse charge)",
+    needs: ["S3"],
+  },
+  { range: "CT8–CT13", title: "Country pages II", needs: ["S3"] },
+  {
+    range: "CT14–CT23",
+    title: "European countries in English (for foreign freelancers)",
+    needs: ["S3"],
+  },
+  {
+    range: "CT24–CT31",
+    title: "More EU countries in English (none of our languages)",
+    needs: ["S3"],
+  },
+  { range: "CT32–CT35", title: "India, Japan, Thailand and Quebec", needs: ["S3"] },
+  { range: "CT36–CT39", title: "Cross-border invoicing (UK, EU, US)", needs: ["S3"] },
+  {
+    range: "LO1–LO12",
+    title: "Invoice rules per country, in its own language",
+    needs: ["S3"],
+    text: "it, pt, pl stay on hold (e-invoicing)",
+  },
+  { range: "LO13–LO32", title: "Local rivals, in their own language (HL9)" },
+  { range: "LO33–LO40", needs: ["S3"], title: "Payment reminders and the fees the law allows" },
+  { range: "LO41–LO45", needs: ["S3"], title: "E-invoicing: when a PDF stops being enough" },
+  { range: "LO46–LO51", needs: ["S3"], title: "Business numbers on the invoice" },
+  {
+    range: "LO52–LO59",
+    title: "Other countries that share a language (Austria, Switzerland, Quebec, Luxembourg)",
+    needs: ["S3"],
+  },
+  { range: "LO60–LO66", needs: ["S3"], title: "More local rules (Germany, France, Spain)" },
+  {
+    range: "LO67–LO71",
+    needs: ["S3"],
+    title: "Payment reference numbers (Sweden, Norway, Denmark, Belgium)",
+    text: "needs tool code",
+  },
+  {
+    range: "P1–P9",
+    title: "Core pages (built): home, hubs, help, affiliate, terms, privacy, Android",
+  },
+  { range: "P10–P11", title: "Trust pages: about, contact (E-E-A-T)" },
+  { range: "P12–P15", title: "Features, security, the countries hub and the German Impressum" },
+];
+
+/** A suggested build order: tasks and groups (by range). A group's languages follow it once its English pages are live. */
+export const ORDER = [
+  "S1",
+  "D1–D20",
+  "B1–B20",
+  "T51–T60",
+  "I44–I53",
+  "TL5–TL15",
+  "P10–P11",
+  "I138–I143",
+  "I144–I152",
+  "S3",
+  "CT1–CT7",
+  "T61–T80",
+  "I54–I73",
+  "C21–C40",
+  "S2",
+  "CT8–CT13",
+  "B21–B40",
+  "T81–T100",
+  "I74–I93",
+  "LO1–LO12",
+  "LO13–LO32",
+  "TL16–TL25",
+  "G2–G5",
+  "T101–T120",
+  "I94–I113",
+  "B41–B60",
+  "T121–T140",
+  "I114–I133",
+  "S4",
+  "TL26–TL45",
+  "T141–T156",
+  "I134–I137",
+  "CT14–CT23",
+  "T157–T174",
+  "T175–T192",
+  "T193–T207",
+  "T208–T222",
+  "T223–T237",
+  "T238–T252",
+  "T253–T262",
+  "T263–T274",
+  "T275–T289",
+  "T290–T301",
+  "T302–T313",
+  "I153–I162",
+  "I163–I169",
+  "I170–I179",
+  "I180–I190",
+  "I191–I200",
+  "I201–I209",
+  "I210–I220",
+  "I221–I230",
+  "I231–I239",
+  "B61–B71",
+  "B72–B84",
+  "B85–B97",
+  "B98–B106",
+  "B107–B119",
+  "B120–B129",
+  "B130–B136",
+  "B137–B146",
+  "B147–B157",
+  "B158–B166",
+  "B167–B173",
+  "B174–B178",
+  "TL46–TL54",
+  "TL55–TL62",
+  "TL63–TL75",
+  "TL76–TL90",
+  "TL91–TL106",
+  "TL107–TL113",
+  "CT24–CT31",
+  "CT32–CT35",
+  "CT36–CT39",
+  "LO33–LO40",
+  "LO41–LO45",
+  "LO46–LO51",
+  "LO52–LO59",
+  "LO60–LO66",
+  "LO67–LO71",
+  "C41–C48",
+  "C49–C54",
+  "C55–C59",
+  "C60–C68",
+  "C69–C74",
+  "C75–C81",
+  "C82–C87",
+  "C88–C92",
+  "C93–C97",
+  "D21–D30",
+  "G6–G10",
+  "P12–P15",
+];
+
+/** Language order: traffic first (German), and the e-invoicing countries last (see PLAN.md). */
+/**
+ * Language versions that can't be written before a task is done: the page types (and the hubs)
+ * that need task S1's language setup. The gap map (seo/LANGUAGES.md) shows the task per gap.
+ */
+export const LANGUAGE_NEEDS = {
+  S1: {
+    types: ["template", "template (billing type)", "template (invoice type)", "industry"],
+    urls: ["/templates", "/industries"],
+  },
+};
+
+export const LANGUAGE_ORDER = ["de", "es", "fr", "nl", "sv", "da", "nb", "it", "pt", "pl"];
+
+export const GOAL = 4000;
+
+/**
+ * What every language item must get right for that language (shown in PLAN.md). `keys`: the usual
+ * shape of the local search per page type, a starting point for the research (the demand gate).
+ */
+export const LANGUAGES = {
+  de: {
+    numbers: "1.234,56 €",
+    rate: "19% (7% reduced); Austria 20%, Switzerland 8.1%",
+    keys: {
+      template: "{trade} Rechnung Vorlage",
+      industry: "Rechnungsprogramm für {trade}",
+      tool: "{tool} Rechner",
+    },
+    name: "German",
+    markets: "Germany, Austria, Switzerland",
+    money: "EUR (CHF in Switzerland)",
+    tax: "USt / MwSt; Kleinunternehmer (§19 UStG) note",
+    watch:
+      "B2B e-invoicing in Germany: receiving since 2025, sending phased in 2027–2028; say when a PDF is still fine.",
+  },
+  es: {
+    numbers: "1.234,56 €",
+    rate: "21% (10%, 4%)",
+    keys: {
+      template: "plantilla factura {trade}",
+      industry: "programa de facturación para {trade}",
+      tool: "calculadora de {tool}",
+    },
+    name: "Spanish",
+    markets: "Spain first; Latin America only with care",
+    money: "EUR",
+    tax: "IVA; NIF",
+    watch:
+      "Spain: Verifactu and B2B e-invoicing are coming (check dates). Mexico (CFDI) and most of Latin America require electronic invoices: don't present a PDF as a valid invoice there.",
+  },
+  fr: {
+    numbers: "1 234,56 €",
+    rate: "20% (10%, 5.5%, 2.1%)",
+    keys: {
+      template: "modèle facture {trade}",
+      industry: "logiciel de facturation {trade}",
+      tool: "calculateur {tool}",
+    },
+    name: "French",
+    markets: "France, Belgium (FR), Switzerland (FR)",
+    money: "EUR (CHF)",
+    tax: "TVA; 'TVA non applicable, art. 293 B du CGI' for micro-entrepreneurs",
+    watch: "France: B2B e-invoicing from 2026–2027 (check dates).",
+  },
+  nl: {
+    numbers: "€ 1.234,56",
+    rate: "21% (9%)",
+    keys: {
+      template: "factuur {trade} voorbeeld",
+      industry: "facturatie app voor {trade}",
+      tool: "{tool} berekenen",
+    },
+    name: "Dutch",
+    markets: "Netherlands, Belgium (NL)",
+    money: "EUR",
+    tax: "btw; KOR; KvK number; 'btw verlegd'",
+    watch: "Belgium: B2B e-invoicing from 2026 (Peppol): say so on Belgian examples.",
+  },
+  sv: {
+    numbers: "1 234,56 kr",
+    rate: "25% (12%, 6%)",
+    keys: {
+      template: "fakturamall {trade}",
+      industry: "faktureringsprogram för {trade}",
+      tool: "räkna ut {tool}",
+    },
+    name: "Swedish",
+    markets: "Sweden",
+    money: "SEK",
+    tax: "moms; F-skatt; momsregistreringsnummer",
+    watch: "Public sector needs Peppol e-invoices.",
+  },
+  da: {
+    numbers: "1.234,56 kr.",
+    rate: "25%",
+    keys: {
+      template: "fakturaskabelon {trade}",
+      industry: "faktureringsprogram til {trade}",
+      tool: "beregn {tool}",
+    },
+    name: "Danish",
+    markets: "Denmark",
+    money: "DKK",
+    tax: "moms; CVR number",
+    watch:
+      "Public sector needs e-invoices (NemHandel/OIOUBL); the bookkeeping law sets rules for digital systems (hedge).",
+  },
+  nb: {
+    numbers: "1 234,56 kr",
+    rate: "25% (15%, 12%)",
+    keys: {
+      template: "fakturamal {trade}",
+      industry: "faktureringsprogram for {trade}",
+      tool: "kalkulator {tool}",
+    },
+    name: "Norwegian (Bokmål)",
+    markets: "Norway",
+    money: "NOK",
+    tax: "MVA; organisasjonsnummer + 'MVA'",
+    watch:
+      "Public sector needs EHF; from 1 Jan 2027 also invoices to business buyers in ELMA (a PDF stays fine for consumers, buyers abroad, buyers not in ELMA and sellers ≤ 50 000 kr); Invoicor doesn't send EHF.",
+  },
+  it: {
+    numbers: "1.234,56 €",
+    rate: "22% (10%, 5%, 4%)",
+    keys: {
+      template: "fattura {trade} modello",
+      industry: "programma fatturazione {trade}",
+      tool: "calcolo {tool}",
+    },
+    name: "Italian",
+    markets: "Italy, Switzerland (IT)",
+    money: "EUR",
+    tax: "IVA; partita IVA",
+    watch:
+      "Italy: invoices must be electronic via the SdI; a PDF is only a courtesy copy. Every Italian page says so in the first paragraph and never sends people to make a 'valid invoice' as a PDF.",
+  },
+  pt: {
+    numbers: "1234,56 €",
+    rate: "23% (13%, 6%)",
+    keys: {
+      template: "modelo de fatura {trade}",
+      industry: "programa de faturação para {trade}",
+      tool: "calculadora de {tool}",
+    },
+    name: "Portuguese",
+    markets: "Portugal (PT-PT); Brazil only with care",
+    money: "EUR",
+    tax: "IVA; NIF",
+    watch:
+      "Portugal: invoices must come from AT-certified software; Brazil: NF-e/NFS-e electronic invoices. Say so plainly; a PDF from Invoicor isn't a valid invoice there.",
+  },
+  pl: {
+    numbers: "1 234,56 zł",
+    rate: "23% (8%, 5%)",
+    keys: {
+      template: "wzór faktury {trade}",
+      industry: "program do faktur dla {trade}",
+      tool: "kalkulator {tool}",
+    },
+    name: "Polish",
+    markets: "Poland",
+    money: "PLN",
+    tax: "VAT; NIP",
+    watch:
+      "Poland: KSeF structured e-invoices become mandatory in 2026 (check dates); after that a PDF isn't a valid B2B invoice.",
+  },
+};

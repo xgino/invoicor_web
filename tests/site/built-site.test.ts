@@ -5,6 +5,8 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
+import { childSitemaps, builtSitemapPaths } from "../../scripts/sitemap-read.mjs";
+import { SITEMAP_TYPES } from "@/lib/sitemap";
 
 const OUT = join(process.cwd(), "out");
 const SITE = "https://invoicor.com";
@@ -60,10 +62,18 @@ describe("every public URL still exists", () => {
 });
 
 describe("sitemap, robots and hidden pages", () => {
-  const sitemap = readFileSync(join(OUT, "sitemap.xml"), "utf8");
-  const listed = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) =>
-    m[1]!.replace(SITE, "") === "" ? "/" : m[1]!.replace(SITE, ""),
-  );
+  const listed = builtSitemapPaths(OUT);
+  const index = readFileSync(join(OUT, "sitemap.xml"), "utf8");
+
+  it("is an index of one sitemap per page type, each in the build", () => {
+    const children = childSitemaps(index).map((u) => u.replace(SITE, ""));
+    expect(children).toEqual(SITEMAP_TYPES.map((t) => `/sitemaps/${t}.xml`));
+    for (const c of children) expect(existsSync(join(OUT, c)), c).toBe(true);
+  });
+
+  it("lists every URL once", () => {
+    expect(listed.length).toBe(new Set(listed).size);
+  });
 
   it("lists exactly the public URLs", () => {
     expect([...listed].sort()).toEqual([...URLS].sort());

@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       title="Privacy Policy"
       intro={
         <>
-          Last updated: November 18, 2026 &middot; Invoicor &middot; Operated from the Netherlands
+          Last updated: November 25, 2026 &middot; Invoicor &middot; Operated from the Netherlands
         </>
       }
     >
@@ -144,12 +144,20 @@ export default function PrivacyPage() {
           Article 28.
         </P>
         <P>
+          <B>Visitor counts (invoicor.com, every visitor):</B> our website uses StatsUp, our own
+          visitor counter, hosted on our server in Germany. It counts which pages are visited and
+          where visitors come from, without cookies and without sharing anything with third parties.
+          It keeps only a random session number and a page counter in your browser&apos;s session
+          storage, which is deleted when you close the tab. It doesn&apos;t identify you and runs
+          whether or not you accept cookies.
+        </P>
+        <P>
           <B>Website analytics (invoicor.com only, with your consent):</B> If you click
           &quot;Accept&quot; in the cookie banner, our website uses Google Analytics 4 (Google LLC,
           USA) and PostHog (PostHog Inc., US cloud) to measure which pages are visited and which
           buttons are clicked. This website usage data is processed in the United States. Neither
           service receives your account or invoice data from the app. If you click
-          &quot;Decline&quot;, neither is loaded.
+          &quot;Decline&quot;, neither is loaded, and we ask again at the earliest after 30 days.
         </P>
         <P>
           <B>Android interest counter (invoicor.com/android only):</B> when you open that page, your
@@ -229,10 +237,11 @@ export default function PrivacyPage() {
         <P>
           The Invoicor iOS app does not use cookies. Our website (invoicor.com) only sets analytics
           cookies (Google Analytics and PostHog, both US services) after you click
-          &quot;Accept&quot; in the cookie banner. If you decline, no analytics scripts are loaded.
-          Your choice is saved in your browser, and you can change it any time with &quot;Cookie
-          settings&quot; at the bottom of every page. We do not use advertising cookies or
-          cross-site tracking.
+          &quot;Accept&quot; in the cookie banner. If you decline, they aren&apos;t loaded; only
+          StatsUp, our own cookieless counter (section 9), runs. Your choice is saved in your
+          browser, and you can change it any time with &quot;Cookie settings&quot; at the bottom of
+          every page. After a &quot;Decline&quot; we ask again at the earliest after 30 days. We do
+          not use advertising cookies or cross-site tracking.
         </P>
         <P>
           <B>Language:</B> the website is available in 11 languages. On your first visit it opens

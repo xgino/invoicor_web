@@ -15,6 +15,8 @@ export const PAGE_TYPES = {
   help: "/help",
   android: "/android",
   affiliate: "/affiliate",
+  about: "/about",
+  contact: "/contact",
   privacy: "/privacy",
   terms: "/terms",
 };
@@ -24,15 +26,25 @@ const ANALYTICS = /googletagmanager\.com|google-analytics\.com|posthog\.com/;
 /** The Android visit counter: never touched by tests unless a test stubs it itself. */
 const COUNTER = /abacus\.jasoncameron\.dev/;
 
+/** StatsUp, the cookieless counter that runs for every visitor: blocked in tests, recorded separately. */
+const STATSUP = /statsup\.co/;
+
 /** Blocks analytics requests (tests never send data) and records which were attempted. */
 export async function trackAnalytics(page: Page) {
   const attempted: string[] = [];
+  const statsup: string[] = [];
   await page.route(COUNTER, (route) => route.abort());
+  await page.route(STATSUP, (route) => {
+    statsup.push(route.request().url());
+    return route.abort();
+  });
   await page.route(ANALYTICS, (route) => {
     attempted.push(route.request().url());
     return route.abort();
   });
-  return attempted;
+  // Not enumerable, so `expect(attempted).toEqual([])` still means "no GA, no PostHog".
+  Object.defineProperty(attempted, "statsup", { value: statsup, enumerable: false });
+  return attempted as string[] & { statsup: string[] };
 }
 
 const axeSource = readFileSync(join(process.cwd(), "node_modules/axe-core/axe.min.js"), "utf8");

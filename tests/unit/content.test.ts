@@ -2,9 +2,15 @@ import { describe, expect, it } from "vitest";
 import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
 
 describe("content", () => {
-  it("loads all 60 pages with valid, unique slugs", () => {
-    for (const list of [getTemplates(), getIndustries(), getComparisons()]) {
-      expect(list).toHaveLength(20);
+  it("loads all 129 pages with valid, unique slugs", () => {
+    // 2026-11-26, wave 1 batch A: +30 templates, +23 industries (ROADMAP W1).
+    // 2026-11-27, item D1: +16 invoice-type templates (4 parked at the demand gate).
+    for (const [list, count] of [
+      [getTemplates(), 66],
+      [getIndustries(), 43],
+      [getComparisons(), 20],
+    ] as const) {
+      expect(list).toHaveLength(count);
       const slugs = list.map((e) => e.slug);
       expect(new Set(slugs).size).toBe(slugs.length);
     }

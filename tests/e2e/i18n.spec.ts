@@ -32,9 +32,12 @@ test.describe("German browser", () => {
     // Later visits keep German wherever the page exists in German.
     await page.goto("/");
     await expect(page).toHaveURL(/\/de$/);
-    // An English-only page stays English, and its links lead back to German pages.
+    // A page with a German version switches too (the templates hub, task S1) …
     await page.goto("/templates");
-    await expect(page).toHaveURL(/\/templates$/);
+    await expect(page).toHaveURL(/\/de\/vorlagen$/);
+    // … an English-only page stays English, and its links lead back to German pages.
+    await page.goto("/compare");
+    await expect(page).toHaveURL(/\/compare$/);
     await page.getByRole("banner").getByRole("link").first().click(); // the logo: a client-side link to "/"
     await expect(page).toHaveURL(/\/de$/);
   });

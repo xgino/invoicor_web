@@ -1,0 +1,395 @@
+[
+  {
+    "slug": "faktura-uten-mva",
+    "translation_of": "no-vat-invoice",
+    "niche": "Faktura uten mva",
+    "title": "Faktura uten mva: gratis mal og eksempel | Invoicor",
+    "meta_description": "Gratis mal for faktura uten mva når du ikke er mva-registrert (under 50 000 kr). Se eksempelet med riktig merknad og lag pdf-en din med en gang.",
+    "h1": "Faktura uten mva: gratis mal",
+    "subtitle": "For enkeltpersonforetak og små firmaer som ikke er mva-registrert: hva fakturaen skal inneholde, hva du skriver på den, og hva som endres når du passerer 50 000 kr.",
+    "intro_paragraph": "En faktura uten mva er en vanlig faktura fra en selger som ikke er registrert i Merverdiavgiftsregisteret. Grensen er 50 000 kr i avgiftspliktig omsetning eksklusive mva i løpet av en tolvmånedersperiode (Skatteverket). Under den skal du ikke beregne mva, og du skriver ikke «MVA» etter organisasjonsnummeret. Fakturaen trenger likevel nummer, dato, begge parters opplysninger og en tydelig beskrivelse. Fra 1. januar 2027 må bokføringspliktige som hovedregel sende EHF-faktura til næringskunder som er registrert i ELMA, og en pdf oppfyller ikke det kravet. Men selgere med omsetning på 50 000 kr eller mindre i et kalenderår må bare sende e-faktura hvis fakturasystemet deres kan det. Invoicor lager pdf, ikke EHF, så for deg holder pdf-en fortsatt, både til private og til bedrifter. Offentlige kunder krever EHF uansett.",
+    "include_title": "Dette skal stå på en faktura uten mva",
+    "what_to_include_intro": "Å la være å beregne mva er enkelt. Å lage en faktura som kunden og regnskapsføreren deres godtar uten spørsmål, krever disse seks punktene.",
+    "req_1_title": "De vanlige opplysningene etter bokføringsforskriften",
+    "req_1_text": "Bokføringsforskriften § 5-1-1 krever blant annet et fakturanummer i en kontrollerbar rekkefølge, fakturadato, ditt navn og organisasjonsnummer, kundens navn og adresse, hva du har levert og hvor mye, når og hvor det ble levert, pris og forfallsdato.",
+    "req_2_title": "Organisasjonsnummer uten «MVA» etter",
+    "req_2_text": "Skriv org.nr i feltet som skrives ut som «Organisasjonsnummer». Feltet «MVA-nummer» lar du stå tomt. «MVA» etter nummeret betyr at du er registrert, og det er du ikke ennå.",
+    "req_3_title": "Sats 0 og en merknad om hvorfor",
+    "req_3_text": "Sett mva-satsen til 0. Invoicors pdf skriver alltid ut mva-linjen, også da, som MVA (0%) med 0,00 kr. Derfor bør en kort setning i merknadene forklare det, for eksempel «Selger er ikke registrert i Merverdiavgiftsregisteret. Mva er ikke beregnet.» Ingen fast ordlyd er gitt i forskriften; setningen er god praksis.",
+    "req_4_title": "Priser som er sluttpriser",
+    "req_4_text": "Prisen din er det kunden betaler. Skriv ikke «eks. mva» og del ikke opp i netto og brutto når det ikke er mva. Har du gitt kunden en pris på forhånd, skal summen på fakturaen stemme med den.",
+    "req_5_title": "Foretaksregisteret bare for AS",
+    "req_5_text": "Et enkeltpersonforetak trenger ikke skrive «Foretaksregisteret» på fakturaen. Et AS, et ASA og en filial av et utenlandsk selskap skal ha det med (bokføringsforskriften § 5-1-2). Er du et lite AS uten mva-registrering, skriver du det i merknadene.",
+    "req_6_title": "Betalingsopplysninger som er lette å bruke",
+    "req_6_text": "Oppgi kontonummer og forfallsdato, og be kunden bruke fakturanummeret som melding ved betaling.",
+    "what_to_include_outro": "Kunden ser straks at det ikke er mva å betale, og hvorfor.",
+    "paper_label": "Faktura uten mva · eksempel",
+    "sample_breakdown_title": "Eksempel på faktura uten mva",
+    "sample_breakdown_intro": "En webutvikler med enkeltpersonforetak ved siden av en fast jobb lager ny nettside for en kafé i Trondheim. Omsetningen er godt under 50 000 kr, så det er ingen mva. Mva-linjen står på 0 % og vises likevel på pdf-en; merknaden forklarer hvorfor. Reglene kan endres: sjekk din egen situasjon på skatteetaten.no.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Ny nettside, 5 sider (forside, meny, om oss, åpningstider, kontakt)",
+        "qty": "5",
+        "rate": "1 800,00 kr",
+        "amount": "9 000,00 kr"
+      },
+      {
+        "description": "Bilder tilpasset og lagt inn",
+        "qty": "12",
+        "rate": "150,00 kr",
+        "amount": "1 800,00 kr"
+      },
+      {
+        "description": "Opplæring i redigering av menyen, 19. november",
+        "qty": "2 timer",
+        "rate": "600,00 kr",
+        "amount": "1 200,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "12 000,00 kr",
+    "sample_breakdown_tax_label": "MVA 0 % (ikke mva-registrert)",
+    "sample_breakdown_tax": "0,00 kr",
+    "sample_breakdown_balance": "12 000,00 kr",
+    "sample_breakdown_notes": "Selger er ikke registrert i Merverdiavgiftsregisteret. Mva er ikke beregnet. Arbeidet utført 4. til 19. november 2026, levert på kafeens domene. Betaling innen 14 dager til kontonummer 1234 56 78901; bruk fakturanummeret som melding.",
+    "industry_notes_title": "Greit å vite om faktura uten mva",
+    "industry_notes": [
+      {
+        "title": "Når du passerer 50 000 kr",
+        "text": "Grensen gjelder omsetning i en hvilken som helst periode på tolv måneder, ikke bare kalenderåret. Når du passerer den, skal du registrere deg innen en måned. Du kan ikke beregne mva før du er registrert, men fra registreringen skriver du «MVA» etter org.nr og legger på mva."
+      },
+      {
+        "title": "Mva som står på fakturaen, skal betales inn",
+        "text": "Har du ført opp mva uten å være registrert, skal beløpet likevel betales inn til staten (merverdiavgiftsloven § 11-4). Spør regnskapsføreren hvordan du retter fakturaen."
+      },
+      {
+        "title": "Andre grunner til null mva",
+        "text": "Noen tjenester er unntatt fra mva uansett omsetning, og utførsel av varer er fritatt. Det gir også fakturaer uten mva, men med andre merknader. En selger med slike tjenester og mer enn 50 000 kr i omsetning har EHF-plikt overfor næringskunder i ELMA fra 2027. Er du usikker, spør en regnskapsfører."
+      }
+    ],
+    "mistakes_title": "Tre feil på fakturaer uten mva",
+    "mistakes": [
+      {
+        "title": "Legge på 25 % for å virke større",
+        "text": "Det er ikke lov å beregne mva før du er registrert, og mva som står på fakturaen, må betales inn likevel."
+      },
+      {
+        "title": "En mva-linje på 0 % uten forklaring",
+        "text": "Pdf-en viser alltid mva-linjen. Alene kan MVA (0%) leses som et fritatt salg fra en registrert selger, for eksempel eksport. Setningen om at du ikke er registrert gjør statusen din tydelig."
+      },
+      {
+        "title": "Ikke følge med på omsetningen",
+        "text": "Mange fortsetter uten mva i måneder etter at de har passert grensen, og da kan mva-en komme fra egen lomme. Før en løpende sum for de siste tolv månedene, så ser du 50 000 kr komme."
+      }
+    ],
+    "tip_title": "Et tips for faktura uten mva",
+    "pro_tip": "Lag én ferdig faktura med merknaden om at du ikke er registrert, kontonummeret og betalingsvilkårene, og bruk «Duplicate Invoice» i appen for hver ny kunde. Da følger merknaden med, og ingen gammel mva-sats sniker seg inn.",
+    "format_pdf_desc": "En pdf viser den nøyaktige summen med merknaden på plass, kan ikke endres i etterkant og er lett å arkivere. Primærdokumentasjon skal i dag oppbevares i fem år etter regnskapsårets slutt (bokføringsloven § 13).",
+    "faq_title": "Spørsmål om faktura uten mva",
+    "faqs": [
+      {
+        "question": "Kan jeg sende faktura når jeg ikke er mva-registrert?",
+        "answer": "Ja. Uten mva betyr bare at fakturaen ikke har mva-beløp. Den trenger fortsatt nummer, dato, ditt navn og org.nr, kundens navn og adresse, hva du leverte og når, pris og forfallsdato."
+      },
+      {
+        "question": "Hvor mye kan jeg omsette før jeg må registrere meg?",
+        "answer": "50 000 kr eksklusive mva i løpet av en tolvmånedersperiode. Når du har passert grensen, skal du registrere deg innen en måned. Beløpet kan endres, så sjekk den gjeldende grensen på skatteetaten.no."
+      },
+      {
+        "question": "Skal det stå MVA etter organisasjonsnummeret?",
+        "answer": "Nei, ikke før du er registrert. «MVA» etter nummeret, for eksempel «123 456 789 MVA», viser at selgeren er i Merverdiavgiftsregisteret. Uten registrering skriver du bare org.nr i feltet «Organisasjonsnummer»."
+      },
+      {
+        "question": "Må jeg sende EHF-faktura fra 2027?",
+        "answer": "Til næringskunder i ELMA er EHF hovedregelen fra 1. januar 2027. Har du 50 000 kr eller mindre i omsetning i kalenderåret, må du bare sende e-faktura hvis fakturasystemet ditt kan det. Invoicor lager ikke EHF, så pdf-en fra Invoicor holder for deg. Til offentlige kunder er EHF påkrevd uansett."
+      },
+      {
+        "question": "Hva skjer med fakturaene fra før jeg ble registrert?",
+        "answer": "De står uten mva. Fra registreringen legger du mva på nye fakturaer. Er du usikker på salg rundt registreringen, spør en regnskapsfører."
+      }
+    ],
+    "cta_title": "Lag din faktura uten mva",
+    "related": [
+      {
+        "name": "Faktura arbeid og materialer",
+        "slug": "faktura-arbeid-og-materialer"
+      },
+      {
+        "name": "Handelsfaktura",
+        "slug": "handelsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "handelsfaktura",
+    "translation_of": "commercial-invoice",
+    "niche": "Handelsfaktura",
+    "title": "Handelsfaktura for eksport: gratis mal | Invoicor",
+    "meta_description": "Gratis mal for handelsfaktura når du sender varer ut av Norge: varenummer, opprinnelse, vekt og leveringsvilkår per linje. Se eksempelet, lag pdf-en.",
+    "h1": "Handelsfaktura: gratis mal for eksport",
+    "subtitle": "Fakturaen som følger varene over grensen: opplysningene tollen og speditøren leser, mva-fritaket ved utførsel, og det som trenger egne papirer.",
+    "intro_paragraph": "En handelsfaktura er fakturaen for et eksportsalg, skrevet slik at tollen i mottakerlandet forstår sendingen. Den viser selger, kjøper og mottaker, og for hver vare beskrivelse, verdi, opprinnelse, vekt og varenummer. Norge er med i EØS, men står utenfor EUs tollunion og mva-område, så også varer til Sverige eller Tyskland skal tolldeklareres. Invoicor lager selve fakturaen som pdf. Den lager ikke tolldeklarasjoner eller speditørens skjemaer, og pdf-ens overskrift er «Faktura»: skriv «Handelsfaktura / Commercial invoice» i første linje og i merknadene. Kunder i utlandet er ikke i ELMA, så pdf-en holder også etter 1. januar 2027, når norske næringskunder i ELMA skal ha EHF, som Invoicor ikke lager.",
+    "include_title": "Dette skal stå på en handelsfaktura",
+    "what_to_include_intro": "Tollen og speditøren ser etter de samme opplysningene. Mangler én av dem, er det en vanlig grunn til at en sending blir stående.",
+    "req_1_title": "Selger, kjøper og mottaker",
+    "req_1_text": "Du som eksportør med navn og org.nr; er du mva-registrert, med «MVA» etter, for eksempel «987 654 321 MVA» i feltet «MVA-nummer». Deretter kjøperen som betaler, og mottakeren i merknadene hvis varene skal et annet sted.",
+    "req_2_title": "En presis beskrivelse av hver vare",
+    "req_2_text": "«Klær» eller «gaver» er for lite. Skriv hva varen er, hva den er laget av og hva den brukes til: «Pledd, vevd, 100 % ull, 130 x 170 cm». Tollen klassifiserer ut fra denne teksten.",
+    "req_3_title": "Varenummer og opprinnelsesland per linje",
+    "req_3_text": "HS-koden er seks sifre som brukes over hele verden; den norske tolltariffen og EUs tariff har flere sifre. Opprinnelse er der varen er produsert, ikke der den ble sendt fra. Skriv begge i linjens beskrivelse.",
+    "req_4_title": "Antall, vekt og verdi i én valuta",
+    "req_4_text": "Oppgi antall, enhetspris og linjesum i én valuta som står på fakturaen, og vekt per linje eller for hele sendingen med antall kolli. Tollen sjekker at verdien passer til varene.",
+    "req_5_title": "Leveringsvilkår og grunn til utførsel",
+    "req_5_text": "Skriv hvilken Incoterms-regel dere har avtalt, for eksempel FCA eller DAP med stedsnavn: den viser hvem som betaler frakt og importavgifter. Legg til grunnen til utførselen: salg, vareprøve, reparasjon eller retur.",
+    "req_6_title": "Mva-fritaket og en erklæring",
+    "req_6_text": "Varer som føres ut av Norge, er fritatt for mva (merverdiavgiftsloven § 6-21). Ingen fast ordlyd kreves, men «Fritatt for mva, jf. mval. § 6-21» er vanlig. Mange speditører vil også ha en kort erklæring om at opplysningene er riktige, med navn og dato.",
+    "what_to_include_outro": "Tolletaten har en egen side på toll.no om hva en handelsfaktura bør inneholde. Sjekk den, og spør speditøren om de vil ha flere opplysninger eller et eget skjema.",
+    "paper_label": "Handelsfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på handelsfaktura",
+    "sample_breakdown_intro": "Et lite strikkeverksted på Voss selger ullvarer til en butikk i Hamburg på vilkåret FCA Voss: kjøperens speditør henter og betaler frakten. Prisene er avtalt i norske kroner. Varene føres ut av Norge, så mva er 0 %. HS-kodene er eksempler: sjekk dine egne i tolltariffen på toll.no.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Pledd, vevd, 100 % norsk ull, 130 x 170 cm. HS 6301.20, opprinnelse Norge, 1,2 kg per stk.",
+        "qty": "10",
+        "rate": "1 450,00 kr",
+        "amount": "14 500,00 kr"
+      },
+      {
+        "description": "Sokker, strikket, ull, str. 36 til 46. HS 6115.94, opprinnelse Norge, 0,15 kg per par",
+        "qty": "40",
+        "rate": "189,00 kr",
+        "amount": "7 560,00 kr"
+      },
+      {
+        "description": "Lue, strikket, ull. HS 6505.00, opprinnelse Norge, 0,1 kg per stk.",
+        "qty": "30",
+        "rate": "249,00 kr",
+        "amount": "7 470,00 kr"
+      },
+      {
+        "description": "Votter, strikket, ull. HS 6116.91, opprinnelse Norge, 0,1 kg per par",
+        "qty": "25",
+        "rate": "229,00 kr",
+        "amount": "5 725,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "35 255,00 kr",
+    "sample_breakdown_tax_label": "MVA 0 % (utførsel av varer)",
+    "sample_breakdown_tax": "0,00 kr",
+    "sample_breakdown_balance": "35 255,00 kr",
+    "sample_breakdown_notes": "Handelsfaktura / Commercial invoice. Fritatt for mva, jf. mval. § 6-21. Incoterms 2020: FCA Voss. Grunn til utførsel: salg. Mottaker: Nordwolle Laden, Hamburg. 3 kolli, 22 kg brutto. Varene hentet 24. november 2026. Opplysningene på denne fakturaen er riktige. Kari Lunde, daglig leder.",
+    "industry_notes_title": "Greit å vite om handelsfakturaer",
+    "industry_notes": [
+      {
+        "title": "Fakturaen alene beviser ikke utførselen",
+        "text": "For å selge uten mva må du kunne dokumentere at varene har forlatt Norge. Mva-forskriften § 6-21-1 nevner salgsdokumentet, utførselsdeklarasjonen og bevis for at varene har gått ut. En utenlandsk adresse på fakturaen er ikke nok, så ta vare på papirene fra speditøren."
+      },
+      {
+        "title": "Tolldeklarasjonen lages av speditøren",
+        "text": "De fleste små eksportører lar en speditør eller et kurerfirma deklarere varene. De bruker handelsfakturaen som grunnlag, og trenger kanskje også pakkliste eller opprinnelsesbevis. Invoicor lager fakturaen; speditøren sier hva mer som trengs."
+      },
+      {
+        "title": "Proformafaktura når fakturaen kommer senere",
+        "text": "Sendes varene før den endelige fakturaen er klar, eller er det en vareprøve uten salg, kan du vise tollen en proformafaktura. Den gratis generatoren kan lage en med overskriften proforma; selve salget faktureres etterpå."
+      }
+    ],
+    "mistakes_title": "Tre feil på handelsfakturaer",
+    "mistakes": [
+      {
+        "title": "For lav verdi for å spare kjøperen toll",
+        "text": "En verdi under den reelle prisen er en uriktig deklarasjon: tollen kan holde igjen varene, og kjøperen kan få reaksjoner. Oppgi det kjøperen betaler. Er det en vareprøve, si det og oppgi en realistisk verdi."
+      },
+      {
+        "title": "Stole på adressen som eksportbevis",
+        "text": "Mange tror at en kunde i utlandet er nok for å fjerne mva. Uten utførselsdeklarasjon og bevis for utførsel kan Skatteetaten kreve mva-en senere. Arkiver dokumentene sammen med fakturaen."
+      },
+      {
+        "title": "Blande opprinnelse og avsendersted",
+        "text": "En vare laget i Portugal og sendt fra lageret ditt i Oslo har portugisisk opprinnelse. Opprinnelsen kan avgjøre tollsatsen og om varen får fordeler etter handelsavtaler, så sjekk den for hver vare."
+      }
+    ],
+    "tip_title": "Et tips for handelsfakturaer",
+    "pro_tip": "Lagre hver vare i appen med HS-kode, opprinnelse og vekt i beskrivelsen. Da starter hver eksportordre med tolldataene på plass, og du endrer bare antall, kjøper og dato.",
+    "format_pdf_desc": "Speditører og kurerfirmaer vil ha handelsfakturaen som pdf for å legge den ved sendingen. Varenumre og vekter står fast, og den skrives pent ut hvis den skal følge pakken.",
+    "faq_title": "Spørsmål om handelsfaktura",
+    "faqs": [
+      {
+        "question": "Når trenger jeg en handelsfaktura?",
+        "answer": "Når varer sendes over en tollgrense. Fra Norge gjelder det også for varer til EU, fordi Norge ikke er med i EUs tollunion. Vareprøver, gaver og returer trenger som regel også en, med grunnen oppgitt. Spør speditøren om små forsendelser."
+      },
+      {
+        "question": "Skal jeg beregne mva når jeg selger varer til utlandet?",
+        "answer": "Nei, varer som føres ut av Norge, er fritatt (merverdiavgiftsloven § 6-21), forutsatt at du kan dokumentere utførselen. Selger du tjenester til utlandet, gjelder egne regler i § 6-22: spør regnskapsføreren."
+      },
+      {
+        "question": "Hva er forskjellen på handelsfaktura og proformafaktura?",
+        "answer": "Handelsfakturaen er den ekte fakturaen for salget, med verdien kjøperen skal betale. En proformafaktura er et dokument for tollen eller kjøperen før salget faktureres, for eksempel ved vareprøver eller når fakturaen kommer senere."
+      },
+      {
+        "question": "Hvor skriver jeg varenummeret på fakturaen?",
+        "answer": "På hver varelinje, etter beskrivelsen, sammen med opprinnelseslandet. Lagrer du varen med disse opplysningene, følger de med på hver ny faktura."
+      },
+      {
+        "question": "Kan Invoicor lage tolldeklarasjonen også?",
+        "answer": "Nei. Invoicor lager faktura-pdf-en med tollopplysningene du skriver inn per linje. Tolldeklarasjon, opprinnelsesbevis og fraktbrev kommer fra speditøren, kurerfirmaet eller Tolletaten."
+      }
+    ],
+    "cta_title": "Lag din handelsfaktura",
+    "related": [
+      {
+        "name": "Faktura uten mva",
+        "slug": "faktura-uten-mva"
+      },
+      {
+        "name": "Faktura arbeid og materialer",
+        "slug": "faktura-arbeid-og-materialer"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-arbeid-og-materialer",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Faktura arbeid og materialer",
+    "title": "Faktura arbeid og materialer: gratis mal | Invoicor",
+    "meta_description": "Gratis mal for faktura med arbeid og materialer til privatkunder: timer, spesifiserte materialer, kjøring og avfall med 25 % mva. Lag pdf-en på sekunder.",
+    "h1": "Faktura arbeid og materialer: gratis mal",
+    "subtitle": "For håndverkere som fakturerer privatkunder: arbeidet og materialene på hver sin linje, slik kunden har krav på å se dem.",
+    "intro_paragraph": "En faktura for arbeid og materialer deler prisen på en jobb i to: det du tar for arbeidet ditt, og det du tar for materialene du har brukt eller montert. Er prisen ikke fast, kalles det regningsarbeid. For en forbruker er delingen mer enn ryddighet: etter håndverkertjenesteloven har kunden rett til en spesifisert regning, og har du gitt et prisoverslag, kan prisen som hovedregel ikke overstige det med mer enn 15 %. Mva er 25 % både på arbeid og materialer. Til privatkunder er en pdf-faktura helt i orden. Fakturerer du bedrifter som er registrert i ELMA, må du fra 1. januar 2027 sende EHF, og det lager ikke Invoicor.",
+    "include_title": "Dette skal stå på en faktura for arbeid og materialer",
+    "what_to_include_intro": "Hver linje skal tydelig høre til arbeid, materialer eller et gebyr. Kan ikke kunden se hvor en linje hører hjemme, mister fakturaen poenget sitt.",
+    "req_1_title": "Arbeid som timer og timepris",
+    "req_1_text": "På regningsarbeid fører du arbeidet som antall timer og timepris, med hva som ble gjort: «Demontere gammel dør og montere ny, 7 timer à 690 kr». Er jobben priset per oppgave, holder en fast arbeidslinje som navngir oppgaven.",
+    "req_2_title": "Materialer med antall, enhet og enhetspris",
+    "req_2_text": "Gi hvert materiale sin egen linje i enheten det selges i: 14 meter listverk, 1 boks skruer, 2 bokser fugeskum. «Materialer: 11 000 kr» oppfyller ikke kundens rett til en spesifisert regning og inviterer til diskusjon.",
+    "req_3_title": "Påslaget ditt, sagt én gang",
+    "req_3_text": "Påslaget dekker innkjøp, henting, lagring og returer. Legg det inn i enhetsprisene og skriv det én gang i merknadene, for eksempel «materialpriser inkluderer 15 % påslag». Et skjult påslag skaper uenighet når kunden sjekker byggevarehuset.",
+    "req_4_title": "Kjøring og avfall som egne linjer",
+    "req_4_text": "Kjøring, bompenger og levering av avfall er verken arbeid eller et bestemt materiale. Gi dem egne linjer med vanlige navn, så de leses som gebyrer med en grunn og ikke som oppblåst arbeid.",
+    "req_5_title": "Sted, dato og prisoverslaget",
+    "req_5_text": "Bokføringsforskriften krever at fakturaen viser når og hvor arbeidet ble utført. Invoicor har ikke eget felt for leveringsdato, så skriv adresse og datoer i merknadene, sammen med prisoverslaget kunden fikk, så summen kan sammenlignes med det.",
+    "req_6_title": "Org.nr med MVA og 25 % på hele beløpet",
+    "req_6_text": "Skriv org.nr i feltet «Organisasjonsnummer» og «123 456 789 MVA» i feltet «MVA-nummer». I Norge er det ingen omvendt avgiftsplikt i bygg (merverdiavgiftsloven § 11-1 gjelder bare klimakvoter og gull), så 25 % gjelder både arbeid og materialer, og én sats på fakturaen holder.",
+    "what_to_include_outro": "Da ser kunden hva jobben kostet i materialer og hva den kostet i fagarbeid.",
+    "paper_label": "Arbeid og materialer · eksempel",
+    "sample_breakdown_title": "Eksempel på faktura for arbeid og materialer",
+    "sample_breakdown_intro": "En tømrer bytter en råtten terrassedør for et par i Bergen: sju timer arbeid, to kjøreturer, fire materiallinjer og levering av avfall. Materialprisene inkluderer 15 % påslag. Mva er 25 % på hele beløpet. Kunden fikk et prisoverslag på forhånd, og sluttsummen ligger innenfor 15 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Arbeid: demontere gammel terrassedør, montere ny dør, foringer og lister",
+        "qty": "7 timer",
+        "rate": "690,00 kr",
+        "amount": "4 830,00 kr"
+      },
+      {
+        "description": "Kjøring, Bergen sentrum til Fana",
+        "qty": "2",
+        "rate": "250,00 kr",
+        "amount": "500,00 kr"
+      },
+      {
+        "description": "Terrassedør, hvitmalt, 90 x 210 cm, ferdig hengslet",
+        "qty": "1",
+        "rate": "8 900,00 kr",
+        "amount": "8 900,00 kr"
+      },
+      {
+        "description": "Foringer og listverk, furu, ferdigmalt (meter)",
+        "qty": "14",
+        "rate": "89,00 kr",
+        "amount": "1 246,00 kr"
+      },
+      {
+        "description": "Fugeskum og tettelist",
+        "qty": "1",
+        "rate": "385,00 kr",
+        "amount": "385,00 kr"
+      },
+      {
+        "description": "Skruer og beslag",
+        "qty": "1",
+        "rate": "210,00 kr",
+        "amount": "210,00 kr"
+      },
+      {
+        "description": "Levering av gammel dør og avfall til gjenvinningsstasjon",
+        "qty": "1",
+        "rate": "450,00 kr",
+        "amount": "450,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "16 521,00 kr",
+    "sample_breakdown_tax_label": "MVA 25 %",
+    "sample_breakdown_tax": "4 130,25 kr",
+    "sample_breakdown_balance": "20 651,25 kr",
+    "sample_breakdown_notes": "Arbeidet utført 17. og 18. november 2026 i Fanavegen 12, 5244 Fana. Prisoverslag 12. oktober: 15 800,00 kr eks. mva (19 750,00 kr inkl. mva); sluttsummen er 4,6 % over. Materialpriser inkluderer 15 % påslag. Betaling innen 14 dager til kontonummer 1234 56 78901; bruk fakturanummeret som melding.",
+    "industry_notes_title": "Greit å vite om fakturaer for arbeid og materialer",
+    "industry_notes": [
+      {
+        "title": "Prisoverslag og fastpris",
+        "text": "Ved fastpris betaler kunden den avtalte summen, og spesifikasjonen er mest for oversiktens skyld. Ved et prisoverslag kan prisen etter håndverkertjenesteloven § 32 som hovedregel ikke bli mer enn 15 % høyere. Ved regningsarbeid uten overslag betaler kunden faktisk tid og materialer. Detaljene står i loven: sjekk avtalen og Forbrukertilsynets veiledning."
+      },
+      {
+        "title": "Kundens rett til en spesifisert regning",
+        "text": "Etter håndverkertjenesteloven § 36 kan forbrukeren kreve en spesifisert regning som viser arbeid, materialer og andre kostnader hver for seg. Lager du fakturaen spesifisert fra starten, slipper du den forespørselen og ofte også diskusjonen."
+      },
+      {
+        "title": "Ta vare på kvitteringene fra grossisten",
+        "text": "Kvitteringene viser hva materialene kostet deg, hvis noen spør. Primærdokumentasjon skal i dag oppbevares i fem år etter regnskapsårets slutt (bokføringsloven § 13)."
+      }
+    ],
+    "mistakes_title": "Tre feil på fakturaer for arbeid og materialer",
+    "mistakes": [
+      {
+        "title": "Overskride prisoverslaget uten å si fra",
+        "text": "Ser du at jobben blir dyrere, si fra til kunden før du går over og få svaret skriftlig. En overskridelse som kunden først ser på fakturaen, er en vanlig grunn til at slike fakturaer ikke blir betalt."
+      },
+      {
+        "title": "Arbeid gjemt i materialprisene",
+        "text": "Å skru opp prisen på dører og lister for å dekke monteringstiden får materialene til å se dyre ut og arbeidet til å se gratis ut. Hold monteringstid på arbeidslinjer, også når den er kort."
+      },
+      {
+        "title": "Glemme småtingene",
+        "text": "Skruer, fugeskum, tettelist og sagblader blir mye over et år. Står det i avtalen, før dem som materiallinjer eller som én tydelig linje for forbruksmateriell i stedet for å ta kostnaden selv."
+      }
+    ],
+    "tip_title": "Et tips for fakturaer med arbeid og materialer",
+    "pro_tip": "Lagre materialene du bruker oftest som varer i appen, med påslaget inne i prisen. Da blir prisene like fra jobb til jobb, og du slipper å regne ut påslaget i bilen.",
+    "format_pdf_desc": "En pdf låser timene, materialprisene og mva-linjen slik de ble fakturert. Det er den kunden sammenligner med prisoverslaget, og den du arkiverer med jobben.",
+    "faq_title": "Spørsmål om faktura for arbeid og materialer",
+    "faqs": [
+      {
+        "question": "Hva er forskjellen på regningsarbeid og fastpris?",
+        "answer": "Ved regningsarbeid betaler kunden for faktisk medgått tid og materialer, ofte med et prisoverslag som ramme. Ved fastpris er summen avtalt på forhånd. Fakturaoppsettet her passer til begge."
+      },
+      {
+        "question": "Hvor mye kan jeg gå over prisoverslaget?",
+        "answer": "Til en forbruker som hovedregel ikke mer enn 15 % (håndverkertjenesteloven § 32). Det finnes detaljer og unntak, så sjekk avtalen og Forbrukertilsynets veiledning, og varsle kunden i god tid."
+      },
+      {
+        "question": "Skal det være mva på både arbeid og materialer?",
+        "answer": "Ja, er du mva-registrert, er satsen 25 % på begge. Det finnes ingen egen ordning med omvendt avgiftsplikt for bygg i Norge, så også fakturaer mellom håndverkere har vanlig mva."
+      },
+      {
+        "question": "Kan jeg kreve forskudd av en privatkunde?",
+        "answer": "Som hovedregel skal det ikke utstedes salgsdokument med mva før leveringen (merverdiavgiftsloven § 15-10). Ber du om forskudd, merk det tydelig som «forskudd» uten mva, og spør regnskapsføreren hvordan det skal føres."
+      },
+      {
+        "question": "Hva skjer hvis kunden betaler for sent?",
+        "answer": "Da løper forsinkelsesrente fra forfallsdatoen, 12,25 % i året fra 1. juli 2026 (satsen fastsettes hvert halvår). Et purregebyr på 38 kr kan tidligst kreves 14 dager etter forfall."
+      }
+    ],
+    "cta_title": "Lag din faktura for arbeid og materialer",
+    "related": [
+      {
+        "name": "Faktura uten mva",
+        "slug": "faktura-uten-mva"
+      },
+      {
+        "name": "Handelsfaktura",
+        "slug": "handelsfaktura"
+      }
+    ],
+    "invoice_types": []
+  }
+]

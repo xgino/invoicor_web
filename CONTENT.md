@@ -13,8 +13,9 @@ Each file is a list of entries; one entry = one page.
 
 ## Add a page
 
-1. Check `seo/keyword-map.csv` first: if another URL already targets the same search, improve that
-   page instead (one search intent = one URL).
+1. Check [seo/PLAN.md](seo/PLAN.md) (the brief for planned pages) and [seo/PAGES.md](seo/PAGES.md) (what
+   exists) first, and run `npm run pages -- --check "<key>"`: if another URL already targets the same
+   search, improve that page instead (one search intent = one URL).
 2. Copy an existing entry in the right file and paste it at the end of the list.
 3. Change every field. At minimum:
    - `slug`: the URL part, lowercase with dashes (`window-cleaning`). Never change it once live.

@@ -2613,5 +2613,2926 @@
       }
     ],
     "canonical": "https://invoicor.com/industries/hair-makeup-artists"
+  },
+  {
+    "slug": "carpenters",
+    "industry": "Carpenters & Finish Carpenters",
+    "icon": "Hammer",
+    "color": "orange",
+    "title": "Invoice App for Carpenters & Woodworkers | Invoicor",
+    "meta_description": "Invoice app for carpenters: trim by the linear foot, doors per door, lumber with receipts and change orders on their own lines, sent from the job.",
+    "badge_text": "Carpentry Billing",
+    "h1": "The invoice app for carpenters. Bill the trim, the doors and the extras before the sawdust settles.",
+    "subtitle": "Carpentry jobs mix hourly work, per-piece pricing and a pile of lumber receipts. Invoicor helps framing, finish and custom carpenters turn all of it into one clear invoice, built on the iPhone in your truck and sent as a PDF before you leave the driveway.",
+    "industry_stats": [
+      {
+        "label": "Typical hourly rate",
+        "value": "$50 – $100 per hour"
+      },
+      {
+        "label": "Baseboard and casing",
+        "value": "$4 – $12 per linear foot installed"
+      },
+      {
+        "label": "Common structure",
+        "value": "Deposit, then a final invoice on completion"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes carpenters make",
+    "industry_mistake_1_title": "Lumber runs that never reach the invoice.",
+    "industry_mistake_1_text": "A second trip for two more sheets of plywood, a box of trim screws, a tube of construction adhesive: small purchases pile up in the truck's cup holder. If they aren't on the invoice, you paid for the client's project. Add each material run as its own line the same day, at the price you agreed (cost, or cost plus your markup).",
+    "industry_mistake_2_title": "Change orders agreed with a nod.",
+    "industry_mistake_2_text": "The homeowner asks for crown molding in the hallway too, or a wider opening for the pantry door. A quick yes on site turns into a surprise on the invoice. Write the change down with a price before you cut, then bill it on a separate line labeled as a change order.",
+    "industry_mistake_3_title": "One lump sum for a whole room.",
+    "industry_mistake_3_text": "An invoice that says 'Trim work, living room: $3,400' invites questions about every foot. Breaking it into baseboard by the linear foot, door casings per opening and window stools per window shows the client what they got and makes the price easy to accept.",
+    "feature_1_title": "Your carpentry price list, saved once",
+    "feature_1_text": "Save your standard items with your prices: baseboard per linear foot, interior door hung per door, crown per linear foot, shelving per shelf, hourly labor. On each job you pick them from the list and enter the quantity, so a detailed invoice takes minutes, not an evening.",
+    "feature_2_title": "Duplicate a similar job",
+    "feature_2_text": "Many carpentry jobs repeat: a door package in a new build, the same closet system in another unit. Duplicate the last invoice in one tap, change the client and the quantities, and you are done. Sent invoices are locked, so a duplicate is also how you correct one.",
+    "feature_3_title": "Statuses and your own payment link",
+    "feature_3_text": "Each invoice is marked draft, sent, paid, overdue or cancelled, so you can see which builders and homeowners still owe you. Put your PayPal, Stripe or bank details on the PDF; the client pays you directly and Invoicor never touches the money.",
+    "expert_tip_title": "Pro tip: price the waste, not just the wood",
+    "expert_tip_text": "Trim and hardwood get cut, and offcuts are part of the job. Add a waste factor of around 10 to 15 percent to the material quantity when you quote, and say so on the invoice line ('incl. waste'). Clients rarely question a number that was explained up front.",
+    "real_scenario_title": "Finishing the trim on a basement remodel",
+    "real_scenario_text": "You spend three days on a finished basement: 180 linear feet of baseboard, casings on five doors, two window returns and a built-in bench the client added on day two. On the last afternoon you open Invoicor, pick your saved items, enter 180 feet and five doors, add the bench as a change order with the price you texted the client, and add the lumber yard receipt as a materials line. The deposit you took at the start goes on as a negative line. The client gets the PDF before you have loaded the miter saw.",
+    "common_line_items": [
+      {
+        "name": "Baseboard install",
+        "desc": "Cut, fit, nail and caulk, per linear foot.",
+        "type": "Per Linear Foot"
+      },
+      {
+        "name": "Interior door, prehung",
+        "desc": "Set, shim, hang and adjust hardware, per door.",
+        "type": "Per Door"
+      },
+      {
+        "name": "Crown molding",
+        "desc": "Coped inside corners, per linear foot.",
+        "type": "Per Linear Foot"
+      },
+      {
+        "name": "Carpentry labor",
+        "desc": "Framing, repairs or custom work, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Lumber and materials",
+        "desc": "Trim stock, sheet goods, fasteners, per receipt.",
+        "type": "Materials"
+      }
+    ],
+    "industry_glossary_title": "Carpentry billing terms explained",
+    "industry_glossary": [
+      {
+        "term": "Linear foot",
+        "definition": "A straight-line foot of length; the usual unit for trim, baseboard, crown and railing."
+      },
+      {
+        "term": "Rough carpentry",
+        "definition": "Structural work such as framing, sheathing and blocking that gets covered later."
+      },
+      {
+        "term": "Finish carpentry",
+        "definition": "Visible work such as trim, doors, stairs and built-ins, priced for precision."
+      },
+      {
+        "term": "Change order",
+        "definition": "A written change to the agreed work and price, signed off before the extra work starts."
+      },
+      {
+        "term": "Prehung door",
+        "definition": "A door already mounted in its frame with hinges, usually priced per opening to install."
+      }
+    ],
+    "tax_or_compliance_title": "Licenses, sales tax and records for carpenters",
+    "tax_or_compliance_text": "Many states and cities require a contractor or home improvement license once a job passes a dollar threshold, and some want the license number on contracts and invoices. Sales tax on carpentry depends on the state: some tax repair labor, some treat new construction as an improvement to real property where you pay tax on materials when you buy them. Check your state's rule or ask an accountant. Invoicor applies one tax rate per invoice, inclusive or exclusive, so if only part of a job is taxable, talk to your accountant about how to show it. Keep your lumber receipts with each invoice for your own records.",
+    "faqs": [
+      {
+        "question": "Can I bill some items per linear foot and others per hour?",
+        "answer": "Yes. Each line has its own quantity and rate, so 180 feet of baseboard, five doors and six hours of labor can sit on the same invoice. Put the unit in the item name or description so the client reads it right."
+      },
+      {
+        "question": "How do I handle a deposit?",
+        "answer": "Send a separate invoice for the deposit before the job starts. When the work is done, create the final invoice and show the deposit as a line with a negative amount, or mention it in the notes, so the balance due is clear."
+      },
+      {
+        "question": "Can I send an estimate first?",
+        "answer": "Invoicor makes invoices, not estimates or quotes. Many carpenters agree the price by text or in a written contract, then use Invoicor for the deposit and final invoices."
+      },
+      {
+        "question": "Can I bill a builder for several houses each month?",
+        "answer": "Yes. Save the builder as a client and either make one invoice per house or one per month with the lot number in each line description. Line items are limited per invoice (10 on Free, 25 on Starter, 50 on Pro)."
+      },
+      {
+        "question": "Where is my client and invoice data stored?",
+        "answer": "On servers in Germany, under the GDPR, with encrypted connections and restricted access. The app needs an internet connection to save and send invoices."
+      }
+    ],
+    "related": [
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      },
+      {
+        "name": "Flooring Installers",
+        "slug": "flooring-installers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/carpenters"
+  },
+  {
+    "slug": "flooring-installers",
+    "industry": "Flooring Installers & Flooring Contractors",
+    "icon": "Layers",
+    "color": "yellow",
+    "title": "Invoice App for Flooring Installers | Invoicor",
+    "meta_description": "Invoice app for flooring installers: bill by the square foot, add tear-out, subfloor prep, underlayment and transitions, and send the PDF on site.",
+    "badge_text": "Flooring Billing",
+    "h1": "The invoice app for flooring installers. Square feet in, invoice out.",
+    "subtitle": "Flooring jobs are measured in square feet, but the money hides in tear-out, leveling, transitions and moving furniture. Invoicor helps hardwood, laminate, vinyl plank and carpet installers put every step on its own line and send the invoice from the job before the knee pads come off.",
+    "industry_stats": [
+      {
+        "label": "LVP or laminate labor",
+        "value": "$2 – $5 per sq ft"
+      },
+      {
+        "label": "Hardwood install labor",
+        "value": "$4 – $9 per sq ft"
+      },
+      {
+        "label": "Material overage",
+        "value": "Usually 5 – 15% for waste"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes flooring installers make",
+    "industry_mistake_1_title": "Subfloor surprises billed as a guess.",
+    "industry_mistake_1_text": "You only see the real subfloor after the old floor comes up. Dips that need self-leveler, soft spots that need new plywood, old glue that has to be scraped: if the price for these wasn't agreed before the job, the extra turns into a debate. Agree a rate per bag or per sheet up front and bill what you actually used.",
+    "industry_mistake_2_title": "Forgetting the small finishing pieces.",
+    "industry_mistake_2_text": "Transition strips at every doorway, stair nosing, quarter round along the walls, undercutting door jambs: each takes time and material. Left off the invoice, they quietly lower your square-foot rate. List them as separate lines with a count or linear feet.",
+    "industry_mistake_3_title": "Mixing up square feet and square yards.",
+    "industry_mistake_3_text": "Carpet is often sold by the square yard and hard flooring by the square foot. One invoice that mixes the two without saying which leaves clients confused and suspicious. Name the unit on every line: '420 sq ft LVP install' or '48 sq yd carpet'.",
+    "feature_1_title": "Every flooring service on a saved list",
+    "feature_1_text": "Save your items once: tear-out per square foot, LVP install, hardwood install, underlayment, self-leveler per bag, transitions per piece, quarter round per linear foot, furniture moving. A full invoice is then a matter of picking items and typing the square footage.",
+    "feature_2_title": "One tax rate, applied for you",
+    "feature_2_text": "Enter your subtotal, a discount if you give one, and one tax rate per invoice, inclusive or exclusive. Invoicor does the math, so the total the homeowner sees is the total you meant.",
+    "feature_3_title": "Know who has paid",
+    "feature_3_text": "Every invoice carries a status: draft, sent, paid, overdue or cancelled. Before you order material for the next job, you can check which flooring jobs are still open. Add your own payment link and the client pays you directly.",
+    "expert_tip_title": "Pro tip: write the measured square footage on the invoice",
+    "expert_tip_text": "Put the room-by-room measurements in the line description ('Kitchen 182, hall 64, dining 174 = 420 sq ft'). The client can check the math in a minute, and you have a record if the floor ever needs a warranty repair.",
+    "real_scenario_title": "Vinyl plank through the main floor",
+    "real_scenario_text": "You install luxury vinyl plank across a kitchen, hallway and dining room: 420 square feet in total. Tear-out of old laminate takes the morning, and the kitchen needs four bags of self-leveler. On the second afternoon you open Invoicor, add your saved tear-out, LVP install and underlayment items with 420 as the quantity, four bags of leveler, three transition strips and 96 linear feet of quarter round. The homeowner supplied the planks, so you note that in the description. You send the PDF while the homeowner walks the new floor in socks.",
+    "common_line_items": [
+      {
+        "name": "Remove existing flooring",
+        "desc": "Tear-out and haul-away of old floor, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "LVP installation",
+        "desc": "Floating click-lock vinyl plank, labor per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Self-leveling compound",
+        "desc": "Leveling low spots in the subfloor, per bag.",
+        "type": "Per Bag"
+      },
+      {
+        "name": "Transition strip",
+        "desc": "Doorway or floor-height transition, per piece.",
+        "type": "Per Piece"
+      },
+      {
+        "name": "Quarter round",
+        "desc": "Install and caulk along baseboards, per linear foot.",
+        "type": "Per Linear Foot"
+      }
+    ],
+    "industry_glossary_title": "Flooring terms explained",
+    "industry_glossary": [
+      {
+        "term": "LVP",
+        "definition": "Luxury vinyl plank: a waterproof vinyl floor, usually installed as a floating click-lock floor."
+      },
+      {
+        "term": "Subfloor",
+        "definition": "The plywood, OSB or concrete layer the finished floor sits on; it has to be flat and dry."
+      },
+      {
+        "term": "Underlayment",
+        "definition": "A thin layer under the floor for cushioning, sound and moisture control."
+      },
+      {
+        "term": "Acclimation",
+        "definition": "Letting flooring sit in the room for a set time so it adjusts to temperature and humidity."
+      },
+      {
+        "term": "Expansion gap",
+        "definition": "A small space left at the walls so a floating floor can move; covered by baseboard or quarter round."
+      }
+    ],
+    "tax_or_compliance_title": "Licenses, sales tax and warranties for flooring",
+    "tax_or_compliance_text": "Some states require a contractor or home improvement license for flooring work above a certain job value; check your state and city. Sales tax rules differ a lot: in some states installation labor is taxable, in others only the materials are, and who supplied the material can change the answer. Check your state's rule or ask an accountant. Invoicor applies one tax rate to the whole invoice, so if part of the job is taxed differently, ask how your accountant wants it shown. Many manufacturers tie their warranty to correct installation, so keep the product name, lot number and moisture readings in the invoice notes.",
+    "faqs": [
+      {
+        "question": "Can I bill labor and material on the same invoice?",
+        "answer": "Yes. Put material and labor on separate lines, each with its own quantity and price. If the client bought the flooring, leave material off and note 'customer-supplied' in the description."
+      },
+      {
+        "question": "How do I show a deposit for material?",
+        "answer": "Send a separate deposit invoice when you order the flooring. On the final invoice, add the deposit as a line with a negative amount, or write it in the notes, so the balance is clear."
+      },
+      {
+        "question": "Can I add photos of the subfloor damage to the invoice?",
+        "answer": "No, Invoicor doesn't attach photos. Text or email the photos separately, and describe the repair on the invoice line, for example 'Replace 3 sheets of 3/4 in. plywood subfloor, kitchen'."
+      },
+      {
+        "question": "Can I bill a store or contractor I install for?",
+        "answer": "Yes. Save them as a client and use the job address or purchase order number in the notes or line descriptions so they can match your invoice to their order."
+      },
+      {
+        "question": "Does the app work without signal on a new-build site?",
+        "answer": "Invoicor needs an internet connection to save and send invoices. If the site has no signal, finish the invoice from your phone once you are back in range."
+      }
+    ],
+    "related": [
+      {
+        "name": "Tile Installers",
+        "slug": "tile-installers"
+      },
+      {
+        "name": "Carpenters",
+        "slug": "carpenters"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/flooring-installers"
+  },
+  {
+    "slug": "tile-installers",
+    "industry": "Tile Installers & Tile Setters",
+    "icon": "Grid3x3",
+    "color": "cyan",
+    "title": "Invoice App for Tile Installers & Tile Setters | Invoicor",
+    "meta_description": "Invoice app for tile installers: bill tile setting per sq ft, plus demo, backer board, waterproofing, niches and trim, on a clear invoice from your phone.",
+    "badge_text": "Tile Setter Billing",
+    "h1": "The invoice app for tile installers. Every layer of the shower on its own line.",
+    "subtitle": "A tiled shower is demo, backer board, waterproofing, tile, grout and sealer, but clients only see the tile. Invoicor helps tile setters show every layer of the work on a clear invoice, with your saved prices, sent from your iPhone while the grout cures.",
+    "industry_stats": [
+      {
+        "label": "Floor tile labor",
+        "value": "$7 – $18 per sq ft"
+      },
+      {
+        "label": "Shower wall tile labor",
+        "value": "$12 – $30 per sq ft"
+      },
+      {
+        "label": "Billing structure",
+        "value": "Deposit, then balance after grout and sealing"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes tile installers make",
+    "industry_mistake_1_title": "Hiding the prep inside the tile price.",
+    "industry_mistake_1_text": "Backer board, waterproofing membrane, a sloped mortar bed and leveling are often half the hours on a shower. If all of that is folded into one per-square-foot number, clients compare it with a cheaper quote that skips the waterproofing. Bill the prep on its own lines so they see what they are paying for.",
+    "industry_mistake_2_title": "One rate for every tile size and pattern.",
+    "industry_mistake_2_text": "Large format porcelain needs leveling clips and extra care, small mosaics take longer, and herringbone or diagonal layouts waste more tile. Charging a single rate across all of them means you lose money on the hard jobs. Name the tile size and pattern on each line and price it accordingly.",
+    "industry_mistake_3_title": "Leaving niches, benches and edges uncounted.",
+    "industry_mistake_3_text": "A shampoo niche, a shower bench, metal edge trim along an outside corner: each one is slow, careful work. Count them as separate items per piece or per linear foot instead of hoping the square-foot rate covers them.",
+    "feature_1_title": "Saved items for every step of the job",
+    "feature_1_text": "Save demo, cement board, waterproofing, floor tile, wall tile, mosaic, niche, bench, edge trim, grout and sealing with your prices. On each bathroom or backsplash you pick the items and enter square feet or counts, and the subtotal fills itself in.",
+    "feature_2_title": "Discount and one tax rate",
+    "feature_2_text": "Add a discount for a repeat contractor or a bundled bathroom, then one tax rate for the invoice, inclusive or exclusive. Invoicor shows the subtotal, discount, tax and total in that order on the PDF.",
+    "feature_3_title": "Invoices that look as tidy as your grout lines",
+    "feature_3_text": "Choose from 31 templates and add your logo, so a designer or general contractor gets a clean PDF they can forward. Your own payment link sits on the invoice and the client pays you directly.",
+    "expert_tip_title": "Pro tip: name the products in the description",
+    "expert_tip_text": "Write the membrane, thinset and grout you used in the line descriptions or notes ('sheet membrane, polymer-modified thinset, epoxy grout'). It shows the client you didn't cut corners, and it helps if a warranty question comes up years later.",
+    "real_scenario_title": "A walk-in shower for a remodeler",
+    "real_scenario_text": "A remodeler hires you for a 60 by 36 inch walk-in shower: tear-out of the old surround, cement board, a liquid waterproofing membrane, 96 square feet of 12 by 24 porcelain on the walls, a pebble floor, one niche and a bench. When the grout is in and sealed, you open Invoicor in the van, pick each saved item, enter the square feet and counts and add the remodeler's job number in the notes. The remodeler gets a PDF that lines up with their own invoice to the homeowner, and your payment link is right on it.",
+    "common_line_items": [
+      {
+        "name": "Demo and disposal",
+        "desc": "Remove old tile, surround or mortar bed, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Waterproofing membrane",
+        "desc": "Sheet or liquid membrane on shower walls and floor, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Wall tile installation",
+        "desc": "Porcelain or ceramic, size and pattern noted, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Shower niche",
+        "desc": "Framed, waterproofed and tiled recess, per niche.",
+        "type": "Per Piece"
+      },
+      {
+        "name": "Grout and sealing",
+        "desc": "Grout joints and apply sealer, per sq ft.",
+        "type": "Per Sq Ft"
+      }
+    ],
+    "industry_glossary_title": "Tile setting terms explained",
+    "industry_glossary": [
+      {
+        "term": "Thinset",
+        "definition": "The cement-based mortar used to bond tile to the backer board or slab."
+      },
+      {
+        "term": "Backer board",
+        "definition": "Cement or foam board installed behind tile in wet areas instead of drywall."
+      },
+      {
+        "term": "Large format tile",
+        "definition": "Tile with at least one side 15 inches or longer; needs a flatter surface and more labor."
+      },
+      {
+        "term": "Lippage",
+        "definition": "A height difference between the edges of neighboring tiles; leveling systems keep it down."
+      },
+      {
+        "term": "Mud bed",
+        "definition": "A thick layer of mortar used to slope a shower floor toward the drain."
+      }
+    ],
+    "tax_or_compliance_title": "Licenses, sales tax and wet-area work",
+    "tax_or_compliance_text": "Licensing for tile work varies: some states license tile setters as specialty contractors, others under a general home improvement license, and many have a job-value threshold. Check your state and city before you bid. Sales tax may apply to the tile and setting materials, to the labor, to both or to neither, depending on the state and whether the work counts as an improvement to real property. Check your state's rule or ask an accountant. Invoicor applies one tax rate per invoice, inclusive or exclusive. For showers, keep the waterproofing product and method in the notes; some inspectors and warranties ask for it.",
+    "faqs": [
+      {
+        "question": "Can I bill floor and wall tile at different rates?",
+        "answer": "Yes. Use separate lines for floor tile, wall tile and mosaics, each with its own square footage and rate, so the client sees why the shower walls cost more than the bathroom floor."
+      },
+      {
+        "question": "What if the client supplies the tile?",
+        "answer": "Bill only your labor and setting materials, and write 'customer-supplied tile' in the description. Many installers add a note about extra trips if the client's tile runs short."
+      },
+      {
+        "question": "How do I bill a deposit on a big bathroom?",
+        "answer": "Send a separate invoice for the deposit before you start. On the final invoice, add the deposit as a negative line or note it in the notes, so the remaining balance is clear."
+      },
+      {
+        "question": "I work for several remodelers. Can I keep them apart?",
+        "answer": "Yes. Save each remodeler as a client, and put their job number or the homeowner's address on each invoice. Clients are unlimited on every plan."
+      },
+      {
+        "question": "Can I send the invoice in Spanish?",
+        "answer": "Yes. Invoices can be created in 11 languages, including Spanish. The app's own screens are in English."
+      }
+    ],
+    "related": [
+      {
+        "name": "Flooring Installers",
+        "slug": "flooring-installers"
+      },
+      {
+        "name": "Masons",
+        "slug": "masons"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/tile-installers"
+  },
+  {
+    "slug": "masons",
+    "industry": "Masons & Masonry Contractors",
+    "icon": "BrickWall",
+    "color": "red",
+    "title": "Invoice App for Masons & Masonry Contractors | Invoicor",
+    "meta_description": "Invoice app for masons: bill brick, block and stone by the square foot, repointing, chimney work and materials by the pallet, from your phone on site.",
+    "badge_text": "Masonry Billing",
+    "h1": "The invoice app for masons. Brick, block and stone, billed as solid as you build.",
+    "subtitle": "Masonry is heavy material, slow careful labor and weather you can't control. Invoicor helps bricklayers, stone masons and masonry contractors bill walls, steps, chimneys and repointing line by line, with materials by the pallet and labor by the square foot, sent from the iPhone in your pocket.",
+    "industry_stats": [
+      {
+        "label": "Brick or stone veneer",
+        "value": "$15 – $35 per sq ft installed"
+      },
+      {
+        "label": "Repointing (tuckpointing)",
+        "value": "$5 – $25 per sq ft"
+      },
+      {
+        "label": "Billing structure",
+        "value": "Material deposit, then progress or final invoice"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes masons make",
+    "industry_mistake_1_title": "Fronting the cost of a full pallet.",
+    "industry_mistake_1_text": "Brick, block, natural stone and bagged mortar are expensive and often special-ordered. Paying for them yourself and waiting until the wall is finished ties up cash for weeks. Invoice a material deposit when you order, and make the final invoice show what was already paid.",
+    "industry_mistake_2_title": "Repair work priced without seeing behind the face.",
+    "industry_mistake_2_text": "Chimney and wall repairs often reveal more damage once loose brick comes out: rusted lintels, a cracked crown, missing flashing. If the extra wasn't priced in writing, the client feels ambushed. Agree a unit price for common surprises and bill them as separate lines.",
+    "industry_mistake_3_title": "Rain days that quietly become free days.",
+    "industry_mistake_3_text": "Mortar can't be laid in heavy rain or freezing temperatures, and covering a half-built wall takes time. If your contract allows a charge for protection or extra mobilization, put it on its own line instead of absorbing it.",
+    "feature_1_title": "Materials and labor on separate lines",
+    "feature_1_text": "Save brick per thousand, block per piece, stone per ton, mortar per bag, and labor per square foot or per hour. Each invoice shows the client exactly what went into the wall, and the math (quantity times rate) is done for you.",
+    "feature_2_title": "Progress invoices from one template",
+    "feature_2_text": "On a long job, duplicate the first invoice in one tap and change the description and quantities for the next stage: footing, block, veneer, cap. Each stage is its own invoice with its own status, so you see what has been paid.",
+    "feature_3_title": "Large totals, paid straight to you",
+    "feature_3_text": "Put your own Stripe, PayPal or bank details on the invoice. The client pays you directly, and Invoicor takes no cut of a $12,000 retaining wall.",
+    "expert_tip_title": "Pro tip: write the mortar match on the invoice",
+    "expert_tip_text": "On repair and repointing work, note the mortar type and color match you used ('Type N, tinted to match existing') in the line description. If the client wants more done later, or sells the house, the next mason knows what is in the wall.",
+    "real_scenario_title": "Rebuilding the top of a chimney",
+    "real_scenario_text": "A homeowner calls about a leaking chimney. You take down the top eight courses of brick, rebuild them with matched brick, pour a new concrete crown and replace the step flashing. When the job is done, you sit in the truck and open Invoicor. You add the material deposit you took as a negative line, then your saved items: brick removal and rebuild per course, crown per chimney, flashing per linear foot, scaffold setup and disposal. You note the mortar type in the description and send the PDF before the ladder is back on the rack.",
+    "common_line_items": [
+      {
+        "name": "Brick veneer installation",
+        "desc": "Lay brick veneer with ties and weep holes, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Repointing",
+        "desc": "Grind out and refill mortar joints, per sq ft.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Concrete block wall",
+        "desc": "8 in. CMU laid and grouted, per block.",
+        "type": "Per Block"
+      },
+      {
+        "name": "Chimney crown",
+        "desc": "Remove and pour new concrete crown, per chimney.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Masonry materials",
+        "desc": "Brick, stone, mortar, sand and ties, per order.",
+        "type": "Materials"
+      }
+    ],
+    "industry_glossary_title": "Masonry terms explained",
+    "industry_glossary": [
+      {
+        "term": "Repointing",
+        "definition": "Removing deteriorated mortar from the joints and replacing it with new mortar; often called tuckpointing."
+      },
+      {
+        "term": "CMU",
+        "definition": "Concrete masonry unit: the standard concrete block used for structural and retaining walls."
+      },
+      {
+        "term": "Lintel",
+        "definition": "A steel or stone beam that carries the masonry above a door or window opening."
+      },
+      {
+        "term": "Veneer",
+        "definition": "A single layer of brick or stone attached to a wall for its face, not for structure."
+      },
+      {
+        "term": "Course",
+        "definition": "One horizontal row of brick or block; repairs are often counted in courses."
+      }
+    ],
+    "tax_or_compliance_title": "Licenses, permits and sales tax for masonry",
+    "tax_or_compliance_text": "Structural masonry, retaining walls above a certain height and chimney work often need a building permit, and many states require a contractor license for work above a job-value threshold. Check with your city and state before you start. Sales tax treatment differs by state: in some, masonry that becomes part of a building is a real property improvement where you pay tax on materials at purchase; in others, the client is charged tax on materials or on the whole job. Check your state's rule or ask an accountant. Invoicor applies one tax rate per invoice, inclusive or exclusive. Put your license and permit numbers in the invoice notes if your state asks for them.",
+    "faqs": [
+      {
+        "question": "How do I bill a material deposit?",
+        "answer": "Send a separate invoice for the deposit when you order the brick or stone. On the final invoice, show the deposit as a line with a negative amount or write it in the notes, so the balance due is clear."
+      },
+      {
+        "question": "Can I bill by the ton for stone?",
+        "answer": "Yes. Each line has its own unit and price, so stone per ton, brick per thousand and labor per square foot can share one invoice. Write the unit in the item name."
+      },
+      {
+        "question": "Can I send an estimate from Invoicor?",
+        "answer": "No. Invoicor makes invoices, not estimates or quotes. Agree the price in your contract or proposal, then invoice the deposit, stages and final balance in Invoicor."
+      },
+      {
+        "question": "Can I invoice a general contractor I sub for?",
+        "answer": "Yes. Save the contractor as a client and add their job number or the site address in the notes. Each progress invoice gets its own status, so you can see what they still owe."
+      },
+      {
+        "question": "Is there a limit to how many lines a big job can have?",
+        "answer": "Yes: 10 line items per invoice on Free, 25 on Starter and 50 on Pro. Most masonry invoices fit comfortably in 10 to 15 lines."
+      }
+    ],
+    "related": [
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      },
+      {
+        "name": "Landscaping",
+        "slug": "landscaping-lawn-care"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/masons"
+  },
+  {
+    "slug": "pool-service",
+    "industry": "Pool Service Companies & Pool Techs",
+    "icon": "Waves",
+    "color": "blue",
+    "title": "Invoice App for Pool Service Companies | Invoicor",
+    "meta_description": "Invoice app for pool service companies: monthly route billing, chemicals, filter cleans, repairs and openings on clear invoices sent from the truck.",
+    "badge_text": "Pool Service Billing",
+    "h1": "The invoice app for pool service companies. Bill the route, the chemicals and the repairs.",
+    "subtitle": "Pool service is a route of weekly stops plus chemicals, filter cleans and the occasional pump that dies in July. Invoicor helps pool techs and small pool service companies send one clear invoice per pool owner each month, with extras on their own lines, from the iPhone between stops.",
+    "industry_stats": [
+      {
+        "label": "Weekly service",
+        "value": "$100 – $250 per month"
+      },
+      {
+        "label": "Opening or closing",
+        "value": "$200 – $500 per visit"
+      },
+      {
+        "label": "Billing rhythm",
+        "value": "Monthly per pool, extras as they happen"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes pool service companies make",
+    "industry_mistake_1_title": "Chemicals that vanish into the monthly rate.",
+    "industry_mistake_1_text": "A rainy week, a pool party or an algae bloom can double the chlorine and shock you pour. If your rate includes 'normal chemicals', say what normal means and bill anything above it as its own line. Otherwise the busy weeks eat your margin.",
+    "industry_mistake_2_title": "Repairs mentioned, never billed.",
+    "industry_mistake_2_text": "You replace an O-ring, clear a skimmer basket that cracked, or swap a pressure gauge on a regular stop and forget it by the end of the route. Add the part and labor to the owner's invoice right away, even if you only send it at month's end.",
+    "industry_mistake_3_title": "Monthly invoices sent whenever there's time.",
+    "industry_mistake_3_text": "When some owners get their invoice on the 1st and others on the 20th, payments drift and you lose track of who is behind. Pick one day, invoice the whole route then, and check the statuses a week later.",
+    "feature_1_title": "Duplicate last month in one tap",
+    "feature_1_text": "Most pools get the same service every month. Duplicate the owner's last invoice, change the date and the service month, add any extras, and send it. Invoicor doesn't send invoices automatically, so you keep control of what goes out.",
+    "feature_2_title": "Chemicals and parts saved with your prices",
+    "feature_2_text": "Save weekly service, liquid chlorine per gallon, shock per bag, filter clean, salt cell clean, and common parts. Adding the week's extras to an invoice takes a few taps, and the math is always right.",
+    "feature_3_title": "See your route's payments at a glance",
+    "feature_3_text": "Every invoice is draft, sent, paid, overdue or cancelled. Before you start the next month, you can see which pools are paid up. Add your own payment link and owners pay you directly; Invoicor takes nothing.",
+    "expert_tip_title": "Pro tip: put the chemical readings in the notes",
+    "expert_tip_text": "Write the last visit's chlorine, pH and alkalinity readings in the invoice notes. Owners see that someone actually tested their water, and it backs up the extra chemical lines when the numbers were off.",
+    "real_scenario_title": "Month-end on a 60-pool route",
+    "real_scenario_text": "On the last Friday of the month you park in the shade after your final stop. For each pool owner you open last month's invoice in Invoicor, duplicate it and change the date. For the Hendersons you add two extra bags of shock after their party weekend; for a backyard with a salt system you add a salt cell clean; for another you add a new pump lid O-ring. By the time the truck's AC has cooled down, most of the route has its invoice, each with your payment link.",
+    "common_line_items": [
+      {
+        "name": "Weekly pool service",
+        "desc": "Skim, brush, vacuum, empty baskets and test water, per month.",
+        "type": "Monthly"
+      },
+      {
+        "name": "Extra chemicals",
+        "desc": "Liquid chlorine, shock or acid beyond the included amount.",
+        "type": "Per Unit"
+      },
+      {
+        "name": "Filter cleaning",
+        "desc": "Cartridge or DE filter breakdown and clean, per filter.",
+        "type": "Per Visit"
+      },
+      {
+        "name": "Pool opening",
+        "desc": "Remove cover, start equipment, balance water.",
+        "type": "Flat Rate"
+      },
+      {
+        "name": "Equipment repair",
+        "desc": "Pump, motor or heater part plus labor.",
+        "type": "Parts & Labor"
+      }
+    ],
+    "industry_glossary_title": "Pool service terms explained",
+    "industry_glossary": [
+      {
+        "term": "Shock",
+        "definition": "A large dose of chlorine or non-chlorine oxidizer to clear contaminants and algae."
+      },
+      {
+        "term": "CYA",
+        "definition": "Cyanuric acid, a stabilizer that protects chlorine from sunlight; too much makes chlorine weaker."
+      },
+      {
+        "term": "Green-to-clean",
+        "definition": "A one-off job to bring an algae-filled pool back to clear water, usually priced separately."
+      },
+      {
+        "term": "Salt cell",
+        "definition": "The part of a saltwater system that turns salt into chlorine; needs periodic cleaning."
+      },
+      {
+        "term": "DE filter",
+        "definition": "A filter that uses diatomaceous earth powder; it needs backwashing and periodic breakdown."
+      }
+    ],
+    "tax_or_compliance_title": "Licenses, chemicals and sales tax for pool service",
+    "tax_or_compliance_text": "Some states require a license or registration for pool service, and equipment repair or electrical work may need a contractor license; check your state and county. A few areas also have rules on storing and handling pool chemicals. Sales tax varies a lot: some states tax pool maintenance services, some tax only the chemicals and parts, and some tax neither. Check your state's rule or ask an accountant. Invoicor applies one tax rate per invoice, inclusive or exclusive, so if services and chemicals are taxed differently where you work, ask your accountant how to bill them.",
+    "faqs": [
+      {
+        "question": "Can Invoicor bill my pools automatically every month?",
+        "answer": "No, the app doesn't send invoices automatically or on a schedule. Duplicate each owner's last invoice, change the date and any extras, and send it; it takes a few seconds per pool."
+      },
+      {
+        "question": "Can I add extra chemicals to a monthly invoice?",
+        "answer": "Yes. Add them as separate lines with the quantity and your price, for example '3 gal liquid chlorine', so the owner sees the base service and the extras apart."
+      },
+      {
+        "question": "How do I bill a pool opening with a deposit?",
+        "answer": "Send a separate deposit invoice when the owner books. After the opening, make the final invoice and show the deposit as a negative line or in the notes."
+      },
+      {
+        "question": "Can I bill an HOA or apartment complex for several pools?",
+        "answer": "Yes. Save the property manager as a client and use one invoice per pool, or one invoice with each pool on its own line. Line items per invoice are 10 on Free, 25 on Starter and 50 on Pro."
+      },
+      {
+        "question": "How do pool owners pay?",
+        "answer": "Put your own PayPal, Stripe or bank details on the invoice. Owners pay you directly; Invoicor never handles the money and takes no fee."
+      }
+    ],
+    "related": [
+      {
+        "name": "Landscaping",
+        "slug": "landscaping-lawn-care"
+      },
+      {
+        "name": "Pest Control",
+        "slug": "pest-control"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/pool-service"
+  },
+  {
+    "slug": "window-cleaners",
+    "industry": "Window Cleaners & Window Washing Companies",
+    "icon": "AppWindow",
+    "color": "teal",
+    "title": "Invoice App for Window Cleaners | Invoicor",
+    "meta_description": "Invoice app for window cleaners: bill per pane or per window, screens, tracks and storefront routes, and send a clear invoice from the van after each job.",
+    "badge_text": "Window Cleaning Billing",
+    "h1": "The invoice app for window cleaners. Clear glass, clear invoices.",
+    "subtitle": "Window cleaning is priced per pane, per window or per visit, with screens, tracks and hard water stains as extras. Invoicor helps residential window cleaners and storefront route operators send a clean invoice after every house, or one per shop each month, from the iPhone in the van.",
+    "industry_stats": [
+      {
+        "label": "Price per window, in and out",
+        "value": "$8 – $20"
+      },
+      {
+        "label": "Average house job",
+        "value": "$200 – $500"
+      },
+      {
+        "label": "Storefront visit",
+        "value": "$20 – $75 per visit"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes window cleaners make",
+    "industry_mistake_1_title": "One price for the house, no count of windows.",
+    "industry_mistake_1_text": "A flat 'window cleaning: $340' tells the homeowner nothing, and next year you won't remember how many panes, French windows or second-story skylights there were. Count the windows on the invoice. It justifies the price and makes the next quote easy.",
+    "industry_mistake_2_title": "Screens and tracks thrown in for free.",
+    "industry_mistake_2_text": "Washing screens and vacuuming tracks can add an hour to a house. Many clients expect it unless you say otherwise. Price them as separate add-ons per screen or per track, and list them every time you do them.",
+    "industry_mistake_3_title": "Storefront routes paid in cash at the door.",
+    "industry_mistake_3_text": "Collecting $30 from each shop after every visit means chasing managers who aren't there and no paper trail. Invoice each storefront monthly for all its visits, with the dates in the description.",
+    "feature_1_title": "Per-pane and per-window prices saved",
+    "feature_1_text": "Save standard window, French pane, sliding door, skylight, screen cleaning, track detailing and hard water treatment with your prices. On site you count, enter the quantities and the invoice adds itself up.",
+    "feature_2_title": "Monthly storefront invoices in seconds",
+    "feature_2_text": "For a route of shops, duplicate last month's invoice for each storefront, change the date and the number of visits, and send. The app doesn't send invoices automatically, so nothing goes out that you didn't check.",
+    "feature_3_title": "Paid, sent or overdue, per client",
+    "feature_3_text": "Each invoice has a status: draft, sent, paid, overdue or cancelled. You see which homeowners and shop managers have paid before you plan next week's route. Your own payment link goes on the PDF, and clients pay you directly.",
+    "expert_tip_title": "Pro tip: put the next visit on the invoice",
+    "expert_tip_text": "Add a line in the notes such as 'Next spring clean suggested: April'. Homeowners who get their windows done twice a year often book again from the invoice itself, and you fill your calendar without extra marketing.",
+    "real_scenario_title": "A two-story house in spring",
+    "real_scenario_text": "You clean a two-story colonial: 24 standard windows inside and out, two sliding doors, a French door with 15 panes and 26 screens. The back windows have hard water spots from the sprinkler. Before you load the ladders, you open Invoicor, pick your saved items and enter 24 windows, two sliders, 15 French panes, 26 screens and hard water treatment on six windows. The homeowner gets the PDF while you are still coiling the water-fed pole hose.",
+    "common_line_items": [
+      {
+        "name": "Window cleaning, in and out",
+        "desc": "Standard double-hung window, both sides, per window.",
+        "type": "Per Window"
+      },
+      {
+        "name": "French pane",
+        "desc": "Small divided-light pane, per pane.",
+        "type": "Per Pane"
+      },
+      {
+        "name": "Screen cleaning",
+        "desc": "Remove, wash and refit, per screen.",
+        "type": "Per Screen"
+      },
+      {
+        "name": "Track and sill detailing",
+        "desc": "Vacuum and wipe window tracks, per window.",
+        "type": "Per Window"
+      },
+      {
+        "name": "Storefront cleaning",
+        "desc": "Exterior glass and door, per visit.",
+        "type": "Per Visit"
+      }
+    ],
+    "industry_glossary_title": "Window cleaning terms explained",
+    "industry_glossary": [
+      {
+        "term": "Pane",
+        "definition": "A single sheet of glass; divided windows have several panes and take longer."
+      },
+      {
+        "term": "Water-fed pole",
+        "definition": "A telescoping pole that sprays purified water, used to clean upper windows from the ground."
+      },
+      {
+        "term": "Hard water stains",
+        "definition": "Mineral spots from sprinklers or rain that need a special treatment, priced as an add-on."
+      },
+      {
+        "term": "In and out",
+        "definition": "Cleaning both the inside and the outside of a window; outside only is usually cheaper."
+      },
+      {
+        "term": "Storefront route",
+        "definition": "A list of shops cleaned on a regular schedule, often weekly or every two weeks."
+      }
+    ],
+    "tax_or_compliance_title": "Insurance, licenses and sales tax for window cleaners",
+    "tax_or_compliance_text": "Window cleaners usually need a local business license, and many commercial clients ask for proof of general liability insurance before you start; ladder and height work may come with extra safety rules for employees. Sales tax on window cleaning depends on the state: some tax cleaning services, some tax only commercial cleaning, and many tax neither. Check your state's rule or ask an accountant. Invoicor applies one tax rate per invoice, inclusive or exclusive, when you need it. Mention your insurance in the invoice notes; property managers often ask for it.",
+    "faqs": [
+      {
+        "question": "Can I bill per pane and per window on the same invoice?",
+        "answer": "Yes. Each line has its own unit and price, so standard windows, French panes, screens and tracks can all be on one invoice."
+      },
+      {
+        "question": "How do I bill a storefront I clean every week?",
+        "answer": "Invoice once a month: duplicate last month's invoice, change the date and the number of visits, and list the visit dates in the description. The app doesn't send invoices automatically."
+      },
+      {
+        "question": "Is this different from house cleaning software?",
+        "answer": "Invoicor works for both, but window cleaners bill by the window, pane and visit rather than by the hour or room. Save your own items and units, and the invoice reads the way your trade prices."
+      },
+      {
+        "question": "Can I give a discount to repeat clients?",
+        "answer": "Yes. Add a discount to the invoice and it appears between the subtotal and the tax, so the client sees what they saved."
+      },
+      {
+        "question": "Is my clients' information kept private?",
+        "answer": "Client and invoice data is stored on servers in Germany under the GDPR, connections are encrypted and server access is restricted. No service can promise perfect security, but we work to keep it private."
+      }
+    ],
+    "related": [
+      {
+        "name": "Cleaning Services",
+        "slug": "cleaning-services"
+      },
+      {
+        "name": "Pressure Washing",
+        "slug": "pressure-washing"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/window-cleaners"
+  },
+  {
+    "slug": "pressure-washing",
+    "industry": "Pressure Washing & Soft Washing",
+    "icon": "SprayCan",
+    "color": "cyan",
+    "title": "Invoice App for Pressure Washing Businesses | Invoicor",
+    "meta_description": "Invoice app for pressure washing businesses: driveways, house washes and decks billed by the square foot or flat rate, sent before you roll out.",
+    "badge_text": "Pressure Washing Billing",
+    "h1": "The invoice app for pressure washing businesses. Rinse, wind the hose, send the invoice.",
+    "subtitle": "Driveways by the square foot, house washes by the story, decks, fences and gutters as add-ons: a pressure washing ticket has a lot of small pieces. Invoicor turns them into one clean invoice per property, from your phone, while the concrete is still drying.",
+    "industry_stats": [
+      {
+        "label": "Driveway cleaning",
+        "value": "$0.15 – $0.40 per sq ft"
+      },
+      {
+        "label": "Soft wash, two-story house",
+        "value": "$300 – $700"
+      },
+      {
+        "label": "Typical job length",
+        "value": "2 – 5 hours on site"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes pressure washers make",
+    "industry_mistake_1_title": "One flat price for the whole property.",
+    "industry_mistake_1_text": "When the invoice just says \"exterior cleaning, $650\", the homeowner can't see that the driveway, the house wash and the back patio were three separate jobs. Next year they will ask why the price went up, or try to drop the part they think is cheap. Put each surface on its own line with the square footage or the number of stories.",
+    "industry_mistake_2_title": "Giving away the chemical and the prep.",
+    "industry_mistake_2_text": "Oil stain treatment, rust removal, a second pass of sodium hypochlorite on a north wall covered in mildew, or an hour of moving patio furniture and covering plants all cost you time and product. If they are not named on the invoice, the customer assumes they were included and expects them free next time.",
+    "industry_mistake_3_title": "Waiting until the end of the week to bill.",
+    "industry_mistake_3_text": "Pressure washing is a visible, satisfying result. The best moment to bill is right after the walk-around, when the customer is standing on a driveway that looks new. A week later the same driveway is just a driveway, and the invoice sits in their inbox.",
+    "feature_1_title": "Your price list in your pocket",
+    "feature_1_text": "Save every service once as a product: driveway per square foot, house wash by story, deck cleaning, gutter brightening, roof soft wash, oil stain treatment. On site you pick the items and type the quantity. The math is done for you.",
+    "feature_2_title": "Duplicate last spring's wash",
+    "feature_2_text": "Many customers book the same wash every year. Open last year's invoice, duplicate it in one tap, update the date and any price change, and the new invoice is ready with the same address and services.",
+    "feature_3_title": "Know which jobs are still open",
+    "feature_3_text": "Each invoice is marked draft, sent, paid, overdue or cancelled. At the end of a busy Saturday you can see which of the six houses you washed have paid and which still need a call.",
+    "expert_tip_title": "Pro tip: write the square footage on the line",
+    "expert_tip_text": "Measure the flatwork before you start and put the number in the line description, for example \"Driveway and walkway, approx. 1,100 sq ft\". It explains the price better than any sales talk, and next year you can price the repeat job without measuring again.",
+    "real_scenario_title": "A Saturday house wash with a driveway add-on",
+    "real_scenario_text": "You arrive at 8:00 for a soft wash on a two-story vinyl house. While mixing your solution the homeowner asks if you can do the driveway too. You measure it, about 900 square feet, and agree a price on the spot. By 11:30 the siding is clean, the driveway is done and a stubborn oil spot by the garage has had a degreaser treatment. You roll up the hose, open Invoicor, choose the saved customer, add three lines (house wash, two stories; driveway, 900 sq ft; oil stain treatment), and send the PDF by text. Your payment link is on the invoice, and the customer pays before you have loaded the surface cleaner back on the trailer.",
+    "common_line_items": [
+      {
+        "name": "House soft wash",
+        "desc": "Low-pressure wash of siding with cleaning solution, by number of stories.",
+        "type": "Per House"
+      },
+      {
+        "name": "Driveway and walkway cleaning",
+        "desc": "Surface cleaner on concrete flatwork, measured area.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Deck or fence cleaning",
+        "desc": "Wood-safe wash and brightener, measured area or linear feet.",
+        "type": "Per Sq Ft"
+      },
+      {
+        "name": "Gutter face brightening",
+        "desc": "Removal of black streaks on the outside of gutters.",
+        "type": "Per Linear Ft"
+      },
+      {
+        "name": "Oil or rust stain treatment",
+        "desc": "Spot treatment with degreaser or rust remover, per stain.",
+        "type": "Per Stain"
+      }
+    ],
+    "industry_glossary_title": "Pressure washing terms explained",
+    "industry_glossary": [
+      {
+        "term": "Soft washing",
+        "definition": "Cleaning with low pressure and a cleaning solution, used on siding, roofs and other surfaces that high pressure would damage."
+      },
+      {
+        "term": "Surface cleaner",
+        "definition": "A round, spinning attachment that cleans flat concrete evenly and faster than a wand, which is why flatwork is priced per square foot."
+      },
+      {
+        "term": "GPM and PSI",
+        "definition": "Gallons per minute and pounds per square inch: the flow and pressure of the machine. Higher GPM cleans faster; PSI is what can damage soft surfaces."
+      },
+      {
+        "term": "Sodium hypochlorite (SH)",
+        "definition": "The bleach-based active ingredient in most house wash and roof wash mixes; it kills mold, mildew and algae."
+      },
+      {
+        "term": "Post-treatment",
+        "definition": "A second application after cleaning, for example on concrete to stop the return of algae, often billed as an add-on."
+      }
+    ],
+    "tax_or_compliance_title": "Insurance, wastewater and tax for pressure washers",
+    "tax_or_compliance_text": "Most homeowners and every commercial client will want to know you carry general liability insurance, so mention it on your invoice or in your terms. Some cities and states have rules about washwater and chemicals reaching storm drains, especially for commercial and fleet washing; check with your local stormwater office before taking on parking lots or gas stations. Whether cleaning services are subject to sales tax depends on your state, and a few states treat commercial and residential work differently. Invoicor applies one tax rate per invoice, inclusive or exclusive, so you can add tax where your state requires it. Check your state's rule or ask an accountant.",
+    "faqs": [
+      {
+        "question": "Can I bill a driveway by the square foot?",
+        "answer": "Yes. Save a driveway item with your price per square foot, then enter the measured area as the quantity. Invoicor multiplies it out, and you can add the measurement to the line description so the customer sees how the price was built."
+      },
+      {
+        "question": "Can I give a discount for booking several services?",
+        "answer": "Yes. Add the services at their normal prices and apply a discount to the invoice. The customer sees the full value of the work and the saving, which makes next year's package easier to sell."
+      },
+      {
+        "question": "My customers want the same wash every spring. Can the app send it automatically?",
+        "answer": "No, Invoicor doesn't send invoices automatically. When you do the repeat job, duplicate last year's invoice, change the date and any prices, and send it. It takes less than a minute."
+      },
+      {
+        "question": "Can I send a quote before the job?",
+        "answer": "Invoicor doesn't make estimates or quotes. Agree the price by text or on site, then create the invoice when the work is done. Many pressure washers price on the spot after measuring anyway."
+      },
+      {
+        "question": "How do customers pay me?",
+        "answer": "Paste your own payment link, for example from Stripe or PayPal, into the invoice, or add your bank details. Customers pay you directly; Invoicor never handles the money and takes no fee."
+      }
+    ],
+    "related": [
+      {
+        "name": "Window Cleaners",
+        "slug": "window-cleaners"
+      },
+      {
+        "name": "Landscaping & Lawn Care",
+        "slug": "landscaping-lawn-care"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/pressure-washing"
+  },
+  {
+    "slug": "tree-service",
+    "industry": "Tree Service & Arborists",
+    "icon": "TreePine",
+    "color": "green",
+    "title": "Invoice App for Tree Service Companies | Invoicor",
+    "meta_description": "Invoice app for tree service companies: removals, trimming, stump grinding and haul-away on one clear invoice, sent from the job site after cleanup.",
+    "badge_text": "Tree Service Billing",
+    "h1": "The invoice app for tree service companies. Drop the tree, not the paperwork.",
+    "subtitle": "A tree job is rarely just one tree. There is the removal, the stump, the brush, the log hauling and sometimes a crane. Invoicor helps tree services and arborists put every part on one clear invoice per customer, from the truck before the chipper is cold.",
+    "industry_stats": [
+      {
+        "label": "Medium tree removal",
+        "value": "$500 – $1,500"
+      },
+      {
+        "label": "Stump grinding",
+        "value": "$3 – $6 per inch of diameter"
+      },
+      {
+        "label": "Crew size",
+        "value": "2 – 4 people per job"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes tree services make",
+    "industry_mistake_1_title": "Leaving the stump and cleanup off the invoice.",
+    "industry_mistake_1_text": "Homeowners often think removal means the stump disappears and the logs leave too. If stump grinding, chip haul-away and log removal are not listed as separate lines, you either do them for free or argue about them on the lawn. Name each one, even when it is included at no charge.",
+    "industry_mistake_2_title": "No line for difficult access.",
+    "industry_mistake_2_text": "A tree over a roof, next to power lines or in a backyard with a narrow gate takes rigging, climbing and more hours than the same tree in an open front yard. Show a separate line for rigging, crane time or hand-carrying brush, so the customer understands why the price is higher than the neighbor's quote.",
+    "industry_mistake_3_title": "Billing storm work weeks later.",
+    "industry_mistake_3_text": "After a storm you work long days and the invoices pile up. Insurance adjusters and homeowners both need a dated, itemized invoice to process a claim. Send it the day the tree is off the house, while the photos and details are fresh.",
+    "feature_1_title": "Saved services and rates",
+    "feature_1_text": "Save removal, trimming, crown thinning, stump grinding per inch, brush chipping and crane hours as products with your prices. On site you pick them, enter the counts and diameters, and the totals add up.",
+    "feature_2_title": "One customer, many properties",
+    "feature_2_text": "Clients are saved with their address, so a property manager or HOA with several sites is quick to invoice. Unlimited clients on every plan, so the storm season call list fits too.",
+    "feature_3_title": "Track who has paid",
+    "feature_3_text": "Every invoice has a status: draft, sent, paid, overdue or cancelled. You see at a glance which removals are paid and which are waiting on an insurance check.",
+    "expert_tip_title": "Pro tip: measure stumps before you leave",
+    "expert_tip_text": "Write the diameter of every stump in the line description, measured at ground level, for example \"Stump grinding, oak, 24 in\". Customers see exactly what they pay for, and if they call back for more stumps next year you already know how you priced them.",
+    "real_scenario_title": "A removal over the garage",
+    "real_scenario_text": "The job is a dead ash leaning toward a detached garage. Your climber rigs it down in sections while the ground crew runs the chipper. By early afternoon the trunk is on the ground, cut to firewood length on the customer's request, and the stump is ground to six inches below grade. Before the crew pulls out, you open Invoicor in the cab, pick the customer you saved at the first visit and add the lines: tree removal with rigging, stump grinding 28 inches, chip haul-away, and firewood left on site at no charge. You send the PDF by email with your payment link. The homeowner, who watched from the porch all morning, pays the same evening.",
+    "common_line_items": [
+      {
+        "name": "Tree removal",
+        "desc": "Felling or sectional removal, by tree size and access.",
+        "type": "Per Tree"
+      },
+      {
+        "name": "Trimming or crown thinning",
+        "desc": "Pruning for clearance, health or light, per tree.",
+        "type": "Per Tree"
+      },
+      {
+        "name": "Stump grinding",
+        "desc": "Ground below grade, priced by diameter.",
+        "type": "Per Inch"
+      },
+      {
+        "name": "Crane or bucket truck time",
+        "desc": "Equipment for removals near structures or lines.",
+        "type": "Per Hour"
+      },
+      {
+        "name": "Debris and log haul-away",
+        "desc": "Chips, brush and wood removed from the property.",
+        "type": "Per Load"
+      }
+    ],
+    "industry_glossary_title": "Tree service terms explained",
+    "industry_glossary": [
+      {
+        "term": "Sectional removal",
+        "definition": "Taking a tree down piece by piece with ropes when there is no room to fell it in one go."
+      },
+      {
+        "term": "DBH",
+        "definition": "Diameter at breast height, measured about 4.5 feet above the ground; used to size trees for pricing and permits."
+      },
+      {
+        "term": "Crown reduction",
+        "definition": "Reducing the height or spread of a tree by cutting branches back to smaller limbs."
+      },
+      {
+        "term": "Certified arborist",
+        "definition": "A tree professional who has passed an industry certification exam, often named on invoices and reports."
+      },
+      {
+        "term": "Grind depth",
+        "definition": "How far below the soil the stump is ground, usually 4 to 12 inches; state it on the invoice to avoid disputes."
+      }
+    ],
+    "tax_or_compliance_title": "Permits, insurance and tax for tree services",
+    "tax_or_compliance_text": "Many cities and counties require a permit to remove trees above a certain size or of protected species, and some ask for a certified arborist's report. Who pulls the permit, you or the homeowner, is worth writing in your terms. Customers and insurers will often ask for proof of liability and workers' compensation insurance, and a few states license tree workers; check your state's rule. Sales tax on tree trimming and removal varies by state, and some states tax it as landscaping. Invoicor applies one tax rate per invoice, inclusive or exclusive, so ask an accountant which rate applies to your work.",
+    "faqs": [
+      {
+        "question": "Can I bill stump grinding by the inch?",
+        "answer": "Yes. Save stump grinding with your price per inch, and enter the total inches as the quantity. Add each stump's size in the description, for example \"2 stumps: 18 in and 22 in\"."
+      },
+      {
+        "question": "Can I invoice the insurance company instead of the homeowner?",
+        "answer": "You can address the invoice to whoever pays, and add the claim number in the notes. Many tree services invoice the homeowner, who forwards the dated invoice to their insurer."
+      },
+      {
+        "question": "Can I take a deposit for a big removal?",
+        "answer": "Yes, with two invoices. Send one invoice for the deposit first. When the job is done, send the final invoice with the deposit shown as a line with a negative amount, or mention it in the notes. Invoicor doesn't track partial payments on one invoice."
+      },
+      {
+        "question": "Can I add photos of the tree to the invoice?",
+        "answer": "No, Invoicor doesn't attach photos to invoices. Send your before and after pictures in the same text or email as the PDF."
+      },
+      {
+        "question": "How do customers pay?",
+        "answer": "Add your own payment link, such as Stripe or PayPal, or your bank details to the invoice. The customer pays you directly and Invoicor takes no cut."
+      }
+    ],
+    "related": [
+      {
+        "name": "Landscaping & Lawn Care",
+        "slug": "landscaping-lawn-care"
+      },
+      {
+        "name": "Junk Removal",
+        "slug": "junk-removal"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/tree-service"
+  },
+  {
+    "slug": "snow-removal",
+    "industry": "Snow Plowing & Snow Removal",
+    "icon": "Snowflake",
+    "color": "blue",
+    "title": "Invoice App for Snow Removal Businesses | Invoicor",
+    "meta_description": "Invoice app for snow removal businesses: per-push, per-visit and seasonal plowing, salting and shoveling on one invoice per client, sent from the cab.",
+    "badge_text": "Snow Removal Billing",
+    "h1": "The invoice app for snow removal businesses. Plow all night, bill in the morning.",
+    "subtitle": "A snowstorm means dozens of driveways and lots in a few hours, then the billing for every push, every salt run and every shoveled walk. Invoicor helps plow operators turn a long night into one clear invoice per client, from the cab.",
+    "industry_stats": [
+      {
+        "label": "Residential driveway plow",
+        "value": "$35 – $75 per push"
+      },
+      {
+        "label": "Seasonal residential contract",
+        "value": "$300 – $800"
+      },
+      {
+        "label": "Billing rhythm",
+        "value": "After each storm or monthly"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes in snow removal",
+    "industry_mistake_1_title": "No dates on the pushes.",
+    "industry_mistake_1_text": "An invoice that says \"4 plow visits\" invites the question \"when?\". List the date, and if you can the time, of every push and every salt application. It is what customers and property managers check first, and it protects you if a slip-and-fall claim ever comes up.",
+    "industry_mistake_2_title": "Salt and ice melt thrown in for free.",
+    "industry_mistake_2_text": "Rock salt and treated ice melt are a real cost that rises during a hard winter. If you charge per application or per bag, put it on its own line. If it is part of a seasonal contract, say so on the invoice, so the customer knows what the contract covers.",
+    "industry_mistake_3_title": "Billing the whole winter in April.",
+    "industry_mistake_3_text": "Per-push customers who get one bill at the end of the season are surprised by the total and slow to pay. Send an invoice after each storm, or at the end of each month, while the snow is still on the ground and the work is easy to remember.",
+    "feature_1_title": "Every route item saved",
+    "feature_1_text": "Save plowing per push, sidewalk shoveling, salting per application, ice melt per bag and seasonal contracts as products with your prices. After a storm you pick the client, add the items and set the counts.",
+    "feature_2_title": "Duplicate after every storm",
+    "feature_2_text": "The same driveway gets plowed again next week. Duplicate the last invoice in one tap, change the dates of the pushes, and it is ready to send. For monthly seasonal payments, do the same each month.",
+    "feature_3_title": "Every client, every status",
+    "feature_3_text": "Unlimited saved clients on every plan, and every invoice shows draft, sent, paid, overdue or cancelled. By the next storm you know who has paid for the last one.",
+    "expert_tip_title": "Pro tip: write your trigger depth on the invoice",
+    "expert_tip_text": "Put your trigger depth, for example \"plowed at 2 in or more\", in the notes of every invoice. It answers the most common complaint (\"why did you come for an inch?\" or \"why didn't you come?\") before the customer asks.",
+    "real_scenario_title": "The morning after an eight-inch storm",
+    "real_scenario_text": "Snow started at 9 p.m. You went out at midnight when it passed your two-inch trigger, plowed your 28 residential driveways and two small church lots, came back at 5 a.m. for a cleanup push, and salted the lots and three steep driveways. At 9 a.m. you park, pour a coffee and open Invoicor. For each per-push client you duplicate the last storm's invoice, change the dates to tonight's two pushes and add salt where you used it. The church lots get one invoice each with the push count and the salt bags. Every PDF goes out by text or email with your payment link before you go to bed.",
+    "common_line_items": [
+      {
+        "name": "Driveway plowing",
+        "desc": "Residential plow per visit, with date and time.",
+        "type": "Per Push"
+      },
+      {
+        "name": "Sidewalk and step shoveling",
+        "desc": "Walks, steps and entrance cleared by hand or snow blower.",
+        "type": "Per Visit"
+      },
+      {
+        "name": "Salting or de-icing",
+        "desc": "Rock salt or treated ice melt spread on drives and walks.",
+        "type": "Per Application"
+      },
+      {
+        "name": "Ice melt, bagged",
+        "desc": "Material used beyond the contract, by the bag.",
+        "type": "Per Bag"
+      },
+      {
+        "name": "Seasonal contract installment",
+        "desc": "Fixed monthly payment for the season, per the agreement.",
+        "type": "Per Month"
+      }
+    ],
+    "industry_glossary_title": "Snow removal terms explained",
+    "industry_glossary": [
+      {
+        "term": "Trigger depth",
+        "definition": "The snowfall, often 1 to 3 inches, at which the plow comes out. It belongs in the contract and on the invoice."
+      },
+      {
+        "term": "Per push",
+        "definition": "Billing for every plow visit. The customer pays more in a snowy winter and less in a mild one."
+      },
+      {
+        "term": "Seasonal contract",
+        "definition": "A fixed price for the whole winter, often paid in installments, sometimes with a cap on the number of pushes."
+      },
+      {
+        "term": "Cleanup push",
+        "definition": "A final visit after the snow stops, to clear what fell after the first push and the windrow left by city plows."
+      },
+      {
+        "term": "Windrow",
+        "definition": "The ridge of heavy snow a street plow leaves at the end of a driveway; some operators charge extra to clear it."
+      }
+    ],
+    "tax_or_compliance_title": "Insurance, contracts and tax for snow removal",
+    "tax_or_compliance_text": "Snow and ice work carries real liability risk, so most commercial clients ask for proof of general liability insurance, and many operators use written contracts with trigger depths and response times. Dated invoices with every push and salt application are a useful record if a slip-and-fall claim comes later, so keep them. Sales tax on snow plowing differs a lot by state: some states tax it, some exempt residential work, and some treat salt sold separately as taxable goods. Invoicor applies one tax rate per invoice, inclusive or exclusive. Check your state's rule or ask an accountant before your first storm.",
+    "faqs": [
+      {
+        "question": "Can Invoicor send an invoice automatically after every storm or every month?",
+        "answer": "No. The app doesn't send invoices automatically. Duplicate the last invoice, change the date and the number of pushes, and send it. With saved clients that takes a minute per customer."
+      },
+      {
+        "question": "Can I list the date and time of every push?",
+        "answer": "Yes. Put the dates and times in the line description, for example \"Jan 14, 12:30 a.m. and 5:15 a.m.\", or in the invoice notes."
+      },
+      {
+        "question": "How do I bill a seasonal contract paid in installments?",
+        "answer": "Send one invoice per installment. Save the seasonal contract as a product, duplicate the previous month's invoice and change the date. Extra services outside the contract, like additional salt, go on their own line."
+      },
+      {
+        "question": "Can I invoice a property manager for several lots?",
+        "answer": "Yes. Save the property manager as a client and either send one invoice per lot, or one invoice with a line per property and its address in the description."
+      },
+      {
+        "question": "Does the app work without signal during a storm?",
+        "answer": "Invoicor needs an internet connection to save and send invoices, so finish them once you have signal again. Most operators bill after the storm from home or a coffee shop, which also keeps the night focused on plowing."
+      }
+    ],
+    "related": [
+      {
+        "name": "Landscaping & Lawn Care",
+        "slug": "landscaping-lawn-care"
+      },
+      {
+        "name": "Pressure Washing",
+        "slug": "pressure-washing"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/snow-removal"
+  },
+  {
+    "slug": "locksmiths",
+    "industry": "Locksmiths",
+    "icon": "KeyRound",
+    "color": "yellow",
+    "title": "Invoice App for Locksmiths | Invoicor",
+    "meta_description": "Invoice app for locksmiths: lockouts, rekeys, lock installs and car keys billed on the spot with a clear service call fee, sent at the door.",
+    "badge_text": "Locksmith Billing",
+    "h1": "The invoice app for locksmiths. Open the door, hand over the invoice.",
+    "subtitle": "A locksmith call is short, often urgent, and the customer wants to know exactly what they paid for. Invoicor helps mobile locksmiths list the service call, the labor and the hardware on a clear invoice, sent from the phone before you leave the porch.",
+    "industry_stats": [
+      {
+        "label": "House lockout",
+        "value": "$75 – $200"
+      },
+      {
+        "label": "Rekey, per cylinder",
+        "value": "$20 – $50 plus service call"
+      },
+      {
+        "label": "Typical call time",
+        "value": "15 – 60 minutes on site"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes locksmiths make",
+    "industry_mistake_1_title": "One total with no breakdown.",
+    "industry_mistake_1_text": "Locksmithing has a reputation problem with surprise prices, and a single total on a lockout makes customers suspicious. Show the service call fee, the labor and each piece of hardware on its own line. A clear breakdown is the easiest way to look like the honest locksmith you are.",
+    "industry_mistake_2_title": "After-hours fees nobody mentioned.",
+    "industry_mistake_2_text": "A 2 a.m. lockout is worth more than a Tuesday morning rekey, and customers accept that when they hear it on the phone. Put the after-hours or emergency fee on its own line, with the time of the call, so it matches what you told them.",
+    "industry_mistake_3_title": "No record of who you let in.",
+    "industry_mistake_3_text": "Opening a door for someone is a trust job. If the invoice does not show the customer's name, the address and how you checked they live there, you have nothing to show if questions come later. Note the ID check in the invoice notes.",
+    "feature_1_title": "Hardware and services saved",
+    "feature_1_text": "Save service calls, lockouts, rekeys per cylinder, deadbolt installs, key duplicates and the lock models you stock as products with your prices. At the door you pick the items and the totals are done.",
+    "feature_2_title": "Send before you drive off",
+    "feature_2_text": "Create the invoice on your iPhone and share the PDF by text, email or WhatsApp while the customer is standing next to you. Your payment link is on the invoice, so they can pay on the spot.",
+    "feature_3_title": "Repeat business is one tap",
+    "feature_3_text": "Property managers rekey after every tenant change. Duplicate the last rekey invoice for that client, change the date, unit and cylinder count, and send it.",
+    "expert_tip_title": "Pro tip: put your license number on every invoice",
+    "expert_tip_text": "If your state licenses locksmiths, put your license number in the notes of every invoice. It reassures new customers, and property managers and businesses often need it for their records anyway.",
+    "real_scenario_title": "A Sunday evening lockout and a rekey",
+    "real_scenario_text": "At 7:40 p.m. a homeowner calls: locked out, keys inside, and they just bought the house last month. You arrive at 8:10, check their ID against the address, and pick the front door lock. Since they never changed the locks after moving in, they ask you to rekey the front door, the back door and the garage entry while you are there. Forty minutes later you open Invoicor in the van and add the after-hours service call, the lockout, three cylinders rekeyed and four new keys. You note the ID check in the notes and send the PDF by text with your payment link. The customer pays before you have closed the van door.",
+    "common_line_items": [
+      {
+        "name": "Service call",
+        "desc": "Trip charge to the customer's location, standard hours.",
+        "type": "Flat Fee"
+      },
+      {
+        "name": "Lockout service",
+        "desc": "Non-destructive entry to a house, car or business.",
+        "type": "Per Job"
+      },
+      {
+        "name": "Rekey",
+        "desc": "Pins changed so old keys no longer work, per cylinder.",
+        "type": "Per Cylinder"
+      },
+      {
+        "name": "Deadbolt supply and install",
+        "desc": "New grade 2 deadbolt, fitted and adjusted.",
+        "type": "Per Lock"
+      },
+      {
+        "name": "After-hours fee",
+        "desc": "Evenings, nights, weekends and holidays.",
+        "type": "Surcharge"
+      }
+    ],
+    "industry_glossary_title": "Locksmith terms explained",
+    "industry_glossary": [
+      {
+        "term": "Rekeying",
+        "definition": "Changing the pins inside a lock so a new key works and the old ones don't, without replacing the lock."
+      },
+      {
+        "term": "Master key system",
+        "definition": "A setup where each door has its own key and one master key opens them all; common for landlords and offices."
+      },
+      {
+        "term": "Transponder key",
+        "definition": "A car key with a chip that must be programmed to the vehicle; billed for the blank and the programming."
+      },
+      {
+        "term": "Non-destructive entry",
+        "definition": "Opening a lock by picking or bypassing it without drilling, so the lock still works afterwards."
+      },
+      {
+        "term": "ANSI grade",
+        "definition": "A durability rating for locks from 1 (strongest, commercial) to 3 (basic residential); worth naming on the invoice."
+      }
+    ],
+    "tax_or_compliance_title": "Licensing, records and tax for locksmiths",
+    "tax_or_compliance_text": "Several US states require locksmiths to hold a license, and some cities add their own rules; where a license applies, many require the number on ads and invoices. Keeping a record of the customer's name, address and how you verified it is good practice for lockouts and may be required where you work, so check your state's rule. Sales tax usually applies to locks, keys and hardware you sell, while labor is treated differently from state to state. Invoicor applies one tax rate per invoice, not per line, so if your state taxes parts but not labor, ask an accountant how to show it; some locksmiths list hardware and labor on separate invoices.",
+    "faqs": [
+      {
+        "question": "Can I charge a service call fee plus the work?",
+        "answer": "Yes. Save the service call as its own product and add it as the first line, then the lockout, rekeys or hardware below it. The customer sees each part clearly."
+      },
+      {
+        "question": "Can I bill a property manager for many units?",
+        "answer": "Yes. Save the property manager as a client, and put the unit number and address in each line description, or send one invoice per unit, whichever their accounting prefers."
+      },
+      {
+        "question": "Can customers pay at the door?",
+        "answer": "Yes, if you add your own payment link, for example Stripe or PayPal, to the invoice. They open the PDF on their phone and pay you directly. Invoicor doesn't process payments or take a fee."
+      },
+      {
+        "question": "Can I fix an invoice after I sent it?",
+        "answer": "A sent invoice is locked so your records stay reliable. Duplicate it, correct the copy and send that, then mark the old one as cancelled."
+      },
+      {
+        "question": "Can I invoice in another currency for a client abroad?",
+        "answer": "Yes. Invoicor supports 38 currencies and invoices in 11 languages, which helps with tourists, foreign landlords or a business with a head office elsewhere."
+      }
+    ],
+    "related": [
+      {
+        "name": "Appliance Repair",
+        "slug": "appliance-repair"
+      },
+      {
+        "name": "Electricians",
+        "slug": "electricians"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/locksmiths"
+  },
+  {
+    "slug": "appliance-repair",
+    "industry": "Appliance Repair Technicians",
+    "icon": "WashingMachine",
+    "color": "orange",
+    "title": "Invoice App for Appliance Repair Technicians | Invoicor",
+    "meta_description": "Invoice app for appliance repair technicians: diagnostic fee, parts and labor for washers, fridges and ovens on one invoice, sent from the kitchen floor.",
+    "badge_text": "Appliance Repair Billing",
+    "h1": "The invoice app for appliance repair technicians. Fix it, bill it, next call.",
+    "subtitle": "A dead dryer or a fridge that won't cool means a diagnostic fee, a part number, labor and sometimes a second trip. Invoicor helps appliance repair techs put it all on one clear invoice per visit, from the phone, before the customer has put the kettle on.",
+    "industry_stats": [
+      {
+        "label": "Diagnostic or service call",
+        "value": "$75 – $150"
+      },
+      {
+        "label": "Average repair, parts and labor",
+        "value": "$150 – $450"
+      },
+      {
+        "label": "Calls per tech per day",
+        "value": "4 – 7"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes appliance techs make",
+    "industry_mistake_1_title": "Not saying whether the diagnostic is credited.",
+    "industry_mistake_1_text": "Many techs apply the diagnostic fee to the repair if the customer goes ahead. If the invoice doesn't say so, the customer thinks they paid twice. Show the diagnostic as a line, and if it is credited, show the credit as a negative line below it.",
+    "industry_mistake_2_title": "Parts without part numbers.",
+    "industry_mistake_2_text": "\"Control board, $240\" looks like a guess. \"Control board, part no. W10854220\" looks like a repair. Part numbers help the customer trust the price and help you if the part fails under warranty and you have to order it again.",
+    "industry_mistake_3_title": "The second trip billed as if it were the first.",
+    "industry_mistake_3_text": "When a part has to be ordered, you come back a few days later. Decide how you charge that trip and say it on both invoices. Customers accept a return visit fee when they knew about it, not when it appears by surprise.",
+    "feature_1_title": "Parts and labor saved",
+    "feature_1_text": "Save your diagnostic fee, labor rates and the parts you replace most often, such as igniters, drain pumps, door gaskets and thermostats, as products. At the job you pick them and add the part number in the description.",
+    "feature_2_title": "Return visit in one tap",
+    "feature_2_text": "When the part arrives, open the first visit's invoice and duplicate it. Remove the diagnostic, add the part and the install labor, change the date, and the second invoice is ready for the same customer.",
+    "feature_3_title": "Paid, sent or overdue",
+    "feature_3_text": "Every invoice shows its status, so you see which customers have paid for the repair and which still owe for the diagnostic, before you order more parts on credit.",
+    "expert_tip_title": "Pro tip: write the model and serial number",
+    "expert_tip_text": "Add the brand, model and serial number of the appliance to the first line or the notes. If the same washer breaks again, you know what you replaced and when, and the customer has the details for any parts warranty.",
+    "real_scenario_title": "A refrigerator that stopped cooling",
+    "real_scenario_text": "Your second call of the day is a side-by-side fridge, warm in the fresh food section, with the freezer still cold. You pull the back panel, find the evaporator fan motor seized and frost on the coil, and you have the motor on the van. You defrost the coil, replace the fan and check the temperatures. On the kitchen counter you open Invoicor, pick the customer, and add the diagnostic, the diagnostic credit as a negative line because they went ahead, the fan motor with its part number, and one hour of labor. The model and serial number go in the notes along with your 90-day labor warranty. You share the PDF by text, the customer pays through your payment link, and you are on the road to the third call.",
+    "common_line_items": [
+      {
+        "name": "Diagnostic fee",
+        "desc": "Trip and fault finding, credited if the repair goes ahead.",
+        "type": "Flat Fee"
+      },
+      {
+        "name": "Repair labor",
+        "desc": "Install and test, by the hour or flat rate per repair.",
+        "type": "Per Hour"
+      },
+      {
+        "name": "Replacement part",
+        "desc": "OEM or compatible part with part number.",
+        "type": "Per Part"
+      },
+      {
+        "name": "Return visit",
+        "desc": "Second trip to install an ordered part.",
+        "type": "Flat Fee"
+      },
+      {
+        "name": "Haul-away of old appliance",
+        "desc": "Removal and disposal when the unit is replaced.",
+        "type": "Per Unit"
+      }
+    ],
+    "industry_glossary_title": "Appliance repair terms explained",
+    "industry_glossary": [
+      {
+        "term": "Diagnostic fee",
+        "definition": "The charge for coming out and finding the fault, often credited toward the repair."
+      },
+      {
+        "term": "OEM part",
+        "definition": "Original equipment manufacturer part, made by or for the appliance brand, usually more expensive than a compatible part."
+      },
+      {
+        "term": "Error code",
+        "definition": "A code the appliance shows to point at a fault; writing it on the invoice helps if the problem returns."
+      },
+      {
+        "term": "Flat rate pricing",
+        "definition": "A fixed price per type of repair, including labor, instead of billing by the hour."
+      },
+      {
+        "term": "Labor warranty",
+        "definition": "Your promise to fix your own work for free for a set time, such as 30 or 90 days; state it on the invoice."
+      }
+    ],
+    "tax_or_compliance_title": "Licensing, warranties and tax for appliance repair",
+    "tax_or_compliance_text": "Licensing for appliance repair differs by state and by work: gas appliances and refrigerant handling often need extra credentials, such as EPA Section 608 certification for sealed system work on refrigerators. If the unit is under manufacturer warranty, the repair is usually billed through the manufacturer's service program rather than to the customer, so check before you invoice. Sales tax on parts is common, while labor is taxed in some states and not in others. Invoicor applies one tax rate per invoice, not per line, so if your state taxes parts and not labor, ask an accountant how to show it on your invoices.",
+    "faqs": [
+      {
+        "question": "Can I credit the diagnostic fee against the repair?",
+        "answer": "Yes. Add the diagnostic fee as a line, then a second line with the same amount as a negative number, labeled \"Diagnostic credited to repair\". The customer sees both and the total is right."
+      },
+      {
+        "question": "Can I add part numbers?",
+        "answer": "Yes. Put the part number in the line name or description. If you save common parts as products, the number comes with them every time."
+      },
+      {
+        "question": "Can I bill a landlord for repairs in a tenant's unit?",
+        "answer": "Yes. Save the landlord or property manager as the client and put the unit address and the tenant's name in the notes, so they know which apartment the repair was for."
+      },
+      {
+        "question": "How many parts can I put on one invoice?",
+        "answer": "Free invoices take up to 10 line items, Starter 25 and Pro 50, which covers even a big repair with many parts."
+      },
+      {
+        "question": "Is my customers' information safe?",
+        "answer": "Invoices and client details are stored on servers in Germany under the GDPR, every connection is encrypted, and access is restricted. No online service can promise perfect security, but we work to keep your data private."
+      }
+    ],
+    "related": [
+      {
+        "name": "Plumbers & HVAC",
+        "slug": "plumbers-hvac"
+      },
+      {
+        "name": "Electricians",
+        "slug": "electricians"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/appliance-repair"
+  },
+  {
+    "slug": "junk-removal",
+    "industry": "Junk Removal & Hauling",
+    "icon": "Trash2",
+    "color": "red",
+    "title": "Invoice App for Junk Removal Businesses | Invoicor",
+    "meta_description": "Invoice app for junk removal businesses: truck loads, single items, dump fees and heavy-item surcharges on one invoice, sent before the truck pulls away.",
+    "badge_text": "Junk Removal Billing",
+    "h1": "The invoice app for junk removal businesses. Load it, haul it, bill it.",
+    "subtitle": "Junk removal is priced by how much of the truck you fill, plus the items that cost extra to dump. Invoicor helps haulers turn a garage cleanout or a single sofa pickup into a clear invoice, sent from the phone while the customer looks at the empty space.",
+    "industry_stats": [
+      {
+        "label": "Full truck load",
+        "value": "$400 – $800"
+      },
+      {
+        "label": "Single item pickup",
+        "value": "$75 – $150"
+      },
+      {
+        "label": "Mattress or tire surcharge",
+        "value": "$15 – $50 per item"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes junk haulers make",
+    "industry_mistake_1_title": "\"Half a load\" with no explanation.",
+    "industry_mistake_1_text": "Volume pricing is fair, but the customer only sees the pile disappear. Write the fraction of the truck and its size on the line, for example \"1/2 load of a 15-yard box truck\", so the price connects to something they can picture.",
+    "industry_mistake_2_title": "Swallowing the disposal surcharges.",
+    "industry_mistake_2_text": "Mattresses, tires, refrigerators with refrigerant, paint and electronics often cost extra at the transfer station or recycler. If they are not on the invoice as separate lines, those fees come out of your margin on every job.",
+    "industry_mistake_3_title": "Heavy material priced like furniture.",
+    "industry_mistake_3_text": "A truck full of concrete, roofing shingles or wet carpet weighs far more than a truck full of boxes, and many dumps charge by weight. Bill heavy debris by its own line or a weight surcharge, and say so when you give the price.",
+    "feature_1_title": "Load sizes saved as products",
+    "feature_1_text": "Save minimum load, quarter, half, three-quarter and full truck, plus single items and surcharges, as products with your prices. On site you pick the load and the extras, and the invoice adds up.",
+    "feature_2_title": "Invoice before the truck leaves",
+    "feature_2_text": "Create the invoice on your iPhone in the driveway and share the PDF by text or email. Your own payment link sits on the invoice, so the customer can pay before you pull away.",
+    "feature_3_title": "Realtors and landlords as clients",
+    "feature_3_text": "Save the realtors, property managers and estate clean-out clients who call you again and again. Unlimited clients on every plan, and every invoice shows draft, sent, paid, overdue or cancelled.",
+    "expert_tip_title": "Pro tip: list what you donated or recycled",
+    "expert_tip_text": "Add a short note at the bottom of the invoice: what went to donation, what was recycled and what went to the landfill. Customers care where their things went, and realtors and estate clients like to pass it on.",
+    "real_scenario_title": "A garage cleanout for a home sale",
+    "real_scenario_text": "A realtor books you to clear a garage before the listing photos. You and your helper arrive at 9:00 and find old furniture, boxes of paperwork, two mattresses, four tires and a chest freezer. Two hours later the truck is about three-quarters full and the garage is swept. Standing on the driveway you open Invoicor, choose the realtor you saved last month, and add a three-quarter load, two mattress surcharges, four tire surcharges and the appliance surcharge for the freezer. In the notes you add the property address and that the dresser and bikes went to donation. You send the PDF by email with your payment link and head to the transfer station.",
+    "common_line_items": [
+      {
+        "name": "Truck load",
+        "desc": "Priced by volume: minimum, 1/4, 1/2, 3/4 or full truck.",
+        "type": "Per Load"
+      },
+      {
+        "name": "Single item pickup",
+        "desc": "One sofa, appliance or piece of furniture.",
+        "type": "Per Item"
+      },
+      {
+        "name": "Mattress or box spring surcharge",
+        "desc": "Extra disposal or recycling fee, per piece.",
+        "type": "Surcharge"
+      },
+      {
+        "name": "Appliance with refrigerant",
+        "desc": "Fridges, freezers and AC units needing certified disposal.",
+        "type": "Per Unit"
+      },
+      {
+        "name": "Heavy debris surcharge",
+        "desc": "Concrete, dirt, shingles or tile, by weight or load.",
+        "type": "Surcharge"
+      }
+    ],
+    "industry_glossary_title": "Junk removal terms explained",
+    "industry_glossary": [
+      {
+        "term": "Volume-based pricing",
+        "definition": "Charging by how much of the truck the junk fills, the most common pricing model in junk removal."
+      },
+      {
+        "term": "Tipping fee",
+        "definition": "What the landfill or transfer station charges you to dump a load, often by weight."
+      },
+      {
+        "term": "Transfer station",
+        "definition": "A site where haulers drop waste so it can be sorted and moved on to landfill or recycling."
+      },
+      {
+        "term": "Minimum load",
+        "definition": "The lowest price you charge for a trip, even for one or two small items."
+      },
+      {
+        "term": "Estate cleanout",
+        "definition": "Clearing a whole home after a death or move, often billed to an executor, family member or realtor."
+      }
+    ],
+    "tax_or_compliance_title": "Permits, disposal rules and tax for junk removal",
+    "tax_or_compliance_text": "Many cities and counties require a hauler's permit or business license for collecting waste, and some limit where you can dump certain items. Refrigerators, freezers and AC units must have their refrigerant recovered under federal rules before disposal, and tires, electronics, paint and batteries often have state or local disposal requirements; check with your local waste authority. Keep your dump and recycling receipts with your invoices. Sales tax on hauling and waste removal varies by state, and some states tax it as a service. Invoicor applies one tax rate per invoice, inclusive or exclusive, so check your state's rule or ask an accountant.",
+    "faqs": [
+      {
+        "question": "Can I bill by truck volume?",
+        "answer": "Yes. Save each load size as a product with your price, or save one \"full truck\" item and use 0.25, 0.5 or 0.75 as the quantity. Write the truck size in the description."
+      },
+      {
+        "question": "Can I add surcharges for mattresses and tires?",
+        "answer": "Yes, as separate lines with the count as the quantity. The customer sees the load price and each surcharge on its own."
+      },
+      {
+        "question": "Can I invoice the realtor instead of the homeowner?",
+        "answer": "Yes. Save the realtor or property manager as the client and put the property address in the notes, so every invoice is linked to the right listing."
+      },
+      {
+        "question": "A property manager books me every month. Can Invoicor bill them automatically?",
+        "answer": "No, the app doesn't send invoices automatically. After each pickup, duplicate the last invoice, change the date and the load, and send it."
+      },
+      {
+        "question": "Does Invoicor take a cut of my payments?",
+        "answer": "No. You add your own payment link, such as Stripe or PayPal, or your bank details. Customers pay you directly, and Invoicor never handles the money."
+      }
+    ],
+    "related": [
+      {
+        "name": "Movers",
+        "slug": "movers"
+      },
+      {
+        "name": "Cleaning Services",
+        "slug": "cleaning-services"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/junk-removal"
+  },
+  {
+    "slug": "carpet-cleaners",
+    "industry": "Carpet & Upholstery Cleaners",
+    "icon": "SprayCan",
+    "color": "cyan",
+    "title": "Invoice App for Carpet Cleaners | Invoicor",
+    "meta_description": "Invoice app for carpet cleaners: rooms, stairs, stain treatment and upholstery on one clear invoice, sent from your iPhone before you roll up the hoses.",
+    "badge_text": "Carpet Cleaning Billing",
+    "h1": "The invoice app for carpet cleaners. Bill the job before the carpet dries.",
+    "subtitle": "Rooms, hallways, stairs, a sofa, a pet stain that needed two passes: a carpet cleaning job is a list of small charges that change once you see the house. Invoicor helps carpet and upholstery cleaners turn that list into a clear invoice on the iPhone, in the driveway, while the van is still running.",
+    "industry_stats": [
+      {
+        "label": "Carpet cleaning, per room",
+        "value": "$25 – $75"
+      },
+      {
+        "label": "Sofa or sectional",
+        "value": "$100 – $250"
+      },
+      {
+        "label": "Typical home visit",
+        "value": "$150 – $450"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes carpet cleaners make",
+    "industry_mistake_1_title": "A room count with no size limit.",
+    "industry_mistake_1_text": "Most cleaners price per room, but a 400-square-foot great room is not a bedroom. If your room price covers rooms up to a set size, say so on the invoice and charge the big ones as two rooms or by the square foot, so the customer sees why the total moved.",
+    "industry_mistake_2_title": "Stain and odor work done for free.",
+    "industry_mistake_2_text": "Pet urine treatment, red wine, rust and gum all take extra product and time. When they disappear into the room price, you train customers to expect spot work at no charge. Put each treatment on its own line, even when you discount it.",
+    "industry_mistake_3_title": "Moving furniture without a line.",
+    "industry_mistake_3_text": "Sliding a bed and a dresser is part of most jobs; emptying a bookshelf or moving a piano is not. Agree up front what you move, and bill anything beyond it as furniture moving so the next visit doesn't start with an argument.",
+    "feature_1_title": "Your price list on the phone",
+    "feature_1_text": "Save rooms, hallways, stairs per step, area rugs, sofas, chairs, deodorizer and protector as products with your prices. On site you tap the items and set the counts, and the invoice adds itself up.",
+    "feature_2_title": "Repeat customers in one tap",
+    "feature_2_text": "Many households book once or twice a year. Saved clients keep the address and the notes, and duplicating last year's invoice gives you the same rooms to adjust, instead of starting from a blank page.",
+    "feature_3_title": "Status on every job",
+    "feature_3_text": "Draft, sent, paid, overdue: every invoice shows where it stands. Property managers and landlords who pay at the end of the month stay visible until the money is in.",
+    "expert_tip_title": "Pro tip: write the dry time and the warranty on the invoice",
+    "expert_tip_text": "Customers call when the carpet is still damp the next morning or a spot comes back. Put your expected dry time and your re-clean policy for returning spots in the invoice notes. It answers the question before the phone rings, and it shows you stand behind the work.",
+    "real_scenario_title": "A three-bedroom house and a sectional on a Saturday morning",
+    "real_scenario_text": "You quoted four rooms on the phone. On arrival it's three bedrooms, a living room, a hallway and 13 stairs, plus a sectional the customer mentions at the door. You finish the hot water extraction, treat two pet spots in the hallway and apply protector in the living room. Before you coil the hoses you open Invoicor, pick the saved client, tap rooms ×4, hallway ×1, stairs ×13, sectional ×1, pet odor treatment ×2 and protector ×1. You add the dry time to the notes and share the PDF by text message with your payment link on it. The customer pays from the couch they just watched you clean.",
+    "common_line_items": [
+      {
+        "name": "Carpet cleaning, standard room",
+        "desc": "Hot water extraction, rooms up to about 250 sq ft.",
+        "type": "Per Room"
+      },
+      {
+        "name": "Stairs",
+        "desc": "Carpeted stairs, cleaned and rinsed, per step.",
+        "type": "Per Step"
+      },
+      {
+        "name": "Pet odor treatment",
+        "desc": "Enzyme treatment for urine spots, per area.",
+        "type": "Per Area"
+      },
+      {
+        "name": "Upholstery cleaning, sofa",
+        "desc": "Three-seat sofa, fabric tested before cleaning.",
+        "type": "Per Piece"
+      },
+      {
+        "name": "Carpet protector",
+        "desc": "Stain-resist coating applied after cleaning, per room.",
+        "type": "Per Room"
+      }
+    ],
+    "industry_glossary_title": "Carpet cleaning terms explained",
+    "industry_glossary": [
+      {
+        "term": "Hot water extraction",
+        "definition": "Often called steam cleaning: hot water and detergent are sprayed into the carpet and pulled back out with strong suction."
+      },
+      {
+        "term": "Low-moisture cleaning",
+        "definition": "Methods such as encapsulation or bonnet cleaning that use little water, so the carpet dries faster; common in offices."
+      },
+      {
+        "term": "Pre-spray",
+        "definition": "A cleaning solution applied before extraction to loosen soil, usually included in the room price."
+      },
+      {
+        "term": "Wicking",
+        "definition": "When a stain deep in the backing rises back to the surface as the carpet dries."
+      },
+      {
+        "term": "Truck mount",
+        "definition": "A cleaning machine built into the van, with hoses run into the house; more power than a portable unit."
+      }
+    ],
+    "tax_or_compliance_title": "Sales tax, licenses and insurance for carpet cleaners",
+    "tax_or_compliance_text": "Whether carpet cleaning is taxable depends on where you work: some states tax cleaning services and many don't, and the answer can differ for homes and commercial buildings. Products you sell separately, such as a bottle of spot cleaner, may be taxable even where the service isn't. Check your state's rule, and your city's business license requirements. Liability insurance is common in this trade because you work inside customers' homes; mention it on invoices to landlords and property managers. When tax applies, Invoicor adds one tax rate to the invoice, inclusive or exclusive.",
+    "faqs": [
+      {
+        "question": "Can I charge per room and per square foot on the same invoice?",
+        "answer": "Yes. Save a per-room item and a per-square-foot item, then use the room count or the square footage as the quantity. A large open area can go on its own line at the square-foot rate."
+      },
+      {
+        "question": "Can I invoice upholstery and carpet together?",
+        "answer": "Yes. Put each piece of furniture on its own line, such as sofa, loveseat or dining chairs, next to the rooms. The customer sees one total and what each part cost."
+      },
+      {
+        "question": "How do I bill a property manager for several units?",
+        "answer": "Use one invoice per unit, or one invoice with the unit number in each line description, whichever your manager prefers. Save the manager as a client so the billing address is filled in each time."
+      },
+      {
+        "question": "Can I offer a discount for a second visit?",
+        "answer": "Yes. Invoicor has a discount field on each invoice, so the customer sees the full price and the discount you gave. Write the reason, like a returning customer, in the notes."
+      },
+      {
+        "question": "Does Invoicor send yearly cleaning reminders?",
+        "answer": "No, the app doesn't send reminders or invoices automatically. When a customer books again, duplicate last year's invoice, change the date and adjust the rooms."
+      }
+    ],
+    "related": [
+      {
+        "name": "Cleaning Services",
+        "slug": "cleaning-services"
+      },
+      {
+        "name": "Pressure Washing",
+        "slug": "pressure-washing"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/carpet-cleaners"
+  },
+  {
+    "slug": "interior-designers",
+    "industry": "Interior Designers & Decorators",
+    "icon": "Sofa",
+    "color": "purple",
+    "title": "Invoice App for Interior Designers | Invoicor",
+    "meta_description": "Invoice app for interior designers: design fees, hours, furniture and markup on clear invoices per client and phase, made on your iPhone.",
+    "badge_text": "Interior Design Billing",
+    "h1": "The invoice app for interior designers. Clear fees, clear furniture, no awkward talks.",
+    "subtitle": "Design fees, consultation hours, furniture orders, fabric, freight and installation: an interior design project mixes your time with other people's products. Invoicor helps interior designers and decorators bill each phase clearly from the iPhone, so clients know exactly what they are paying for.",
+    "industry_stats": [
+      {
+        "label": "Hourly design rate",
+        "value": "$100 – $250"
+      },
+      {
+        "label": "Single-room design fee",
+        "value": "$2,000 – $8,000"
+      },
+      {
+        "label": "Product markup",
+        "value": "Often 15% – 35% over trade price"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes interior designers make",
+    "industry_mistake_1_title": "Ordering furniture before the client pays.",
+    "industry_mistake_1_text": "A custom sofa can't be returned when the client changes their mind. Invoice the product before you place the order and wait for payment, so your business isn't carrying a four-figure piece for someone else's living room.",
+    "industry_mistake_2_title": "Hiding the markup, then explaining it.",
+    "industry_mistake_2_text": "Clients find retail prices online in seconds. Whether you show the trade price plus a procurement fee or a single client price, state your method in the contract and keep the invoice consistent with it. Surprises cost more trust than the margin is worth.",
+    "industry_mistake_3_title": "Endless revisions inside a flat fee.",
+    "industry_mistake_3_text": "A flat design fee works when it names the deliverables and the number of revision rounds. Bill extra rounds or late scope changes by the hour on their own line, so the flat fee keeps meaning something.",
+    "feature_1_title": "Design phases as saved items",
+    "feature_1_text": "Save concept design, space planning, procurement fee, site visit and hourly consultation as products. Each phase invoice is a few taps, with the project name and room in the description.",
+    "feature_2_title": "One tax rate, your choice",
+    "feature_2_text": "Set one tax rate per invoice, inclusive or exclusive. Many designers keep design fees and taxable furniture on separate invoices, which also keeps each one easy to read.",
+    "feature_3_title": "A template that fits your studio",
+    "feature_3_text": "Choose from 31 invoice templates and add your logo, so the invoice looks as considered as the mood board. Share the PDF by email straight from the iOS share sheet.",
+    "expert_tip_title": "Pro tip: invoice the product, then order it",
+    "expert_tip_text": "Make it a studio rule: furniture, lighting and fabric are invoiced and paid before you place the order. Put the vendor's lead time in the line description, so the client knows when to expect the piece and why the invoice comes now.",
+    "real_scenario_title": "Closing out the living room phase",
+    "real_scenario_text": "The living room is installed: sofa, two lounge chairs, a rug, drapery and three lamps. The design fee was paid at the start, and the furniture was invoiced and paid before ordering. What's left is the final invoice. In Invoicor you open the client, add 6 hours of styling and installation day at your hourly rate, the freight and white-glove delivery charge from the vendor, and one extra revision round on the drapery fabric the client asked for. You show the paid design deposit as a negative line so the balance is clear, add your payment link, and email the PDF from the client's driveway. The client sees one page that matches the contract.",
+    "common_line_items": [
+      {
+        "name": "Design fee, living room",
+        "desc": "Concept, layout plan and furniture selection, as agreed.",
+        "type": "Flat Fee"
+      },
+      {
+        "name": "Design consultation",
+        "desc": "Site visits, meetings and sourcing, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Furniture, custom sofa",
+        "desc": "Client price per contract, vendor and lead time noted.",
+        "type": "Product"
+      },
+      {
+        "name": "Procurement fee",
+        "desc": "Ordering, tracking and receiving, percent of product cost.",
+        "type": "Percentage"
+      },
+      {
+        "name": "Freight and white-glove delivery",
+        "desc": "Shipping, receiving warehouse and placement in the room.",
+        "type": "Pass-Through"
+      }
+    ],
+    "industry_glossary_title": "Interior design terms explained",
+    "industry_glossary": [
+      {
+        "term": "Trade price",
+        "definition": "The discounted price vendors give design professionals, below the retail price clients would pay."
+      },
+      {
+        "term": "Procurement",
+        "definition": "Ordering, tracking, receiving and inspecting furniture and materials on the client's behalf."
+      },
+      {
+        "term": "Retainer",
+        "definition": "An upfront payment that starts the project and is credited against later invoices."
+      },
+      {
+        "term": "FF&E",
+        "definition": "Furniture, fixtures and equipment: the movable items in a design, usually listed in a schedule."
+      },
+      {
+        "term": "White-glove delivery",
+        "definition": "Delivery that includes carrying the piece inside, unpacking, assembling and removing packaging."
+      }
+    ],
+    "tax_or_compliance_title": "Sales tax, resale and licensing for interior designers",
+    "tax_or_compliance_text": "Furniture and decor you sell to clients is usually subject to sales tax, and many designers use a resale certificate to buy from vendors without paying tax up front, then collect it from the client. Whether your design fee itself is taxable depends on the state, and on whether it's billed together with products. A few states also regulate the title interior designer. Rules vary, so check your state's sales tax and licensing rules, or ask an accountant. Invoicor applies one tax rate per invoice, which is a good reason to put design fees and taxable products on separate invoices.",
+    "faqs": [
+      {
+        "question": "How do I bill a design retainer?",
+        "answer": "Send a separate invoice for the retainer at the start. On the final invoice, add the retainer as a line with a negative amount, or mention it in the notes, so the client sees the balance."
+      },
+      {
+        "question": "Can I show my markup on the invoice?",
+        "answer": "You can. Put the product at trade price on one line and your procurement fee on the next, or list one client price. Use whatever method your contract describes."
+      },
+      {
+        "question": "Can I send estimates or proposals with Invoicor?",
+        "answer": "No, Invoicor doesn't make estimates or quotes. Send your proposal the way you do today, and use Invoicor for the invoices once the client agrees."
+      },
+      {
+        "question": "What if a project has more items than fit on one invoice?",
+        "answer": "Line items per invoice are 10 on Free, 25 on Starter and 50 on Pro. Large FF&E orders can also be split by room, which many clients find easier to check."
+      },
+      {
+        "question": "Can I bill a client abroad in their currency?",
+        "answer": "Yes. Invoicor supports 38 currencies and invoices in 11 languages, so a second-home client can get an invoice they read easily."
+      }
+    ],
+    "related": [
+      {
+        "name": "General Contractors",
+        "slug": "general-contractors"
+      },
+      {
+        "name": "Freelance Designers",
+        "slug": "freelance-designers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/interior-designers"
+  },
+  {
+    "slug": "djs",
+    "industry": "DJs & Mobile Entertainers",
+    "icon": "Disc3",
+    "color": "pink",
+    "title": "Invoice App for DJs | Invoicor",
+    "meta_description": "Invoice app for DJs: performance fee, overtime, lighting, MC work and travel on one clear invoice per gig, sent from your iPhone before you pack up.",
+    "badge_text": "DJ Billing",
+    "h1": "The invoice app for DJs. Get paid for the set, the overtime and the uplighting.",
+    "subtitle": "A wedding DJ booking is rarely just music: there's the performance, the ceremony sound, uplighting, MC work, an extra hour when the dance floor won't quit, and the drive. Invoicor helps DJs and mobile entertainers put every part of the gig on one clear invoice from the iPhone.",
+    "industry_stats": [
+      {
+        "label": "Wedding DJ, 4–5 hours",
+        "value": "$800 – $2,500"
+      },
+      {
+        "label": "Overtime",
+        "value": "$100 – $300 per hour"
+      },
+      {
+        "label": "Booking deposit",
+        "value": "Often 25% – 50% to hold the date"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes DJs make",
+    "industry_mistake_1_title": "Holding a Saturday without a deposit.",
+    "industry_mistake_1_text": "A June Saturday you keep free for a couple who never paid is a gig you turned down. Invoice the deposit when they sign and hold the date only once it's paid.",
+    "industry_mistake_2_title": "Overtime agreed on the dance floor.",
+    "industry_mistake_2_text": "At 11:45 the groom asks for one more hour and you say yes. Without the overtime rate in the contract and a line on the invoice, that hour often goes unpaid. Agree the rate in advance and bill it on its own line the next morning.",
+    "industry_mistake_3_title": "Add-ons thrown in to close the deal.",
+    "industry_mistake_3_text": "Uplighting, a second sound system for the ceremony, a dance floor monogram: each one costs you gear, setup time and wear. Price them as add-ons, even when you discount the package.",
+    "feature_1_title": "Packages and add-ons saved",
+    "feature_1_text": "Save your wedding package, corporate set, ceremony sound, uplighting per fixture, MC services and overtime per hour as products. Each gig invoice is a few taps.",
+    "feature_2_title": "Your payment link on the PDF",
+    "feature_2_text": "Paste your own PayPal, Stripe or other payment link and it shows on the invoice. Clients pay you directly; Invoicor never touches the money.",
+    "feature_3_title": "Deposit and balance under control",
+    "feature_3_text": "Invoice the deposit and the balance separately and watch each status: sent, paid or overdue. You see which upcoming weddings still owe money before you load the van.",
+    "expert_tip_title": "Pro tip: get the balance before the first song",
+    "expert_tip_text": "Make the balance due a week or two before the event, and send the final invoice a month out. Chasing a newlywed couple on their honeymoon is no fun for anyone, and after the party the urgency is gone. Overtime is the only thing left to bill the morning after.",
+    "real_scenario_title": "A wedding season Saturday, start to finish",
+    "real_scenario_text": "The couple paid a $600 deposit in March from your first invoice. Four weeks before the date you duplicated it in Invoicor and turned it into the final invoice: the five-hour package, ceremony sound, 12 uplights and MC services, with the deposit as a negative line and your payment link at the bottom. They paid a week ahead. On the night the party runs an hour over, as the planner approved. On Sunday morning you open Invoicor, add one line, overtime ×1 hour, at the rate in your contract, and share the PDF by email to the couple and their planner. Done before brunch.",
+    "common_line_items": [
+      {
+        "name": "Wedding DJ package",
+        "desc": "Up to 5 hours of music, sound system and setup.",
+        "type": "Package"
+      },
+      {
+        "name": "Ceremony sound",
+        "desc": "Separate speakers and wireless mics for the ceremony.",
+        "type": "Add-On"
+      },
+      {
+        "name": "Uplighting",
+        "desc": "Battery LED fixtures matched to the color scheme, per fixture.",
+        "type": "Per Fixture"
+      },
+      {
+        "name": "Overtime",
+        "desc": "Music beyond the booked end time, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Travel",
+        "desc": "Venues beyond the included radius, per mile.",
+        "type": "Per Mile"
+      }
+    ],
+    "industry_glossary_title": "DJ booking terms explained",
+    "industry_glossary": [
+      {
+        "term": "Booking deposit",
+        "definition": "The amount paid to hold a date; often non-refundable, as stated in the contract."
+      },
+      {
+        "term": "Rider",
+        "definition": "A list of what the DJ needs at the venue, such as power, a table, a meal and load-in access."
+      },
+      {
+        "term": "Load-in",
+        "definition": "The time set aside to bring gear in and set it up before guests arrive."
+      },
+      {
+        "term": "MC services",
+        "definition": "Announcing the entrance, toasts, cake cutting and other moments, usually part of a wedding package."
+      },
+      {
+        "term": "Uplighting",
+        "definition": "Lights placed on the floor along the walls to color the room."
+      }
+    ],
+    "tax_or_compliance_title": "Tax, music licensing and insurance for DJs",
+    "tax_or_compliance_text": "Most DJs are self-employed and should set money aside for income and self-employment tax; check with an accountant about quarterly estimated payments. Sales tax on entertainment services differs by state, and some states treat equipment rental differently from performance. Many venues ask for a certificate of liability insurance before you can play, so keep it ready and note it on the invoice. Public performance licensing for music is usually the venue's job, but rules vary, so check what applies to you. When tax applies, Invoicor adds one tax rate per invoice.",
+    "faqs": [
+      {
+        "question": "How do I invoice a deposit and the final balance?",
+        "answer": "Send a separate invoice for the deposit when the client signs. On the final invoice, show the deposit as a line with a negative amount, or in the notes, so the balance due is clear."
+      },
+      {
+        "question": "Can I bill overtime after the event?",
+        "answer": "Yes. Create a small invoice with the overtime hours as the quantity and your contract rate, or add it to the final invoice if that one isn't sent yet. A sent invoice is locked, so duplicate it to make changes."
+      },
+      {
+        "question": "Can I invoice a venue or a planner instead of the couple?",
+        "answer": "Yes. Save the venue, planner or company as the client and put the couple's names and the event date in the description or notes."
+      },
+      {
+        "question": "I play a weekly residency. Can Invoicor invoice it automatically?",
+        "answer": "No, the app doesn't send invoices automatically. Duplicate last week's invoice, change the date and the set times, and send it. It takes under a minute."
+      },
+      {
+        "question": "Does Invoicor take a cut of my booking fee?",
+        "answer": "No. Clients pay you through your own payment link or bank details, and Invoicor charges no transaction fees."
+      }
+    ],
+    "related": [
+      {
+        "name": "Event Planners",
+        "slug": "event-planners"
+      },
+      {
+        "name": "Photographers & Videographers",
+        "slug": "photographers-videographers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/djs"
+  },
+  {
+    "slug": "event-planners",
+    "industry": "Event & Wedding Planners",
+    "icon": "CalendarHeart",
+    "color": "orange",
+    "title": "Invoice App for Event Planners | Invoicor",
+    "meta_description": "Invoice app for event and wedding planners: planning fees, day-of coordination and vendor costs in clear invoices per milestone, made on your iPhone.",
+    "badge_text": "Event Planning Billing",
+    "h1": "The invoice app for event planners. Milestone billing without the spreadsheet.",
+    "subtitle": "A wedding or corporate event can run a year from first call to last thank-you, with payments spread across signing, venue booking and the final weeks. Invoicor helps event and wedding planners send each milestone invoice from the iPhone, so clients always know what they've paid and what is next.",
+    "industry_stats": [
+      {
+        "label": "Day-of coordination",
+        "value": "$1,000 – $3,000"
+      },
+      {
+        "label": "Full wedding planning",
+        "value": "$4,000 – $15,000+"
+      },
+      {
+        "label": "Percentage-based fee",
+        "value": "Often 10% – 20% of the event budget"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes event planners make",
+    "industry_mistake_1_title": "Fronting vendor payments.",
+    "industry_mistake_1_text": "Paying the florist or the rental company from your own account and billing the client later turns you into a lender. Have clients pay vendors directly, or invoice the vendor cost to the client before you pay it.",
+    "industry_mistake_2_title": "Milestones nobody wrote down.",
+    "industry_mistake_2_text": "A planning fee split into thirds works only if the dates are clear: at signing, at a set date, and a few weeks before the event. Put the schedule in the contract and reference it on each invoice, such as payment 2 of 3.",
+    "industry_mistake_3_title": "Scope creep in the last month.",
+    "industry_mistake_3_text": "The rehearsal dinner, a welcome bag for 80 guests, a second venue walkthrough: requests pile up near the date. Name what the package covers and bill added events or hours as their own lines.",
+    "feature_1_title": "Milestones in one tap",
+    "feature_1_text": "Duplicate the first milestone invoice to make the second and third, change the date and the payment number, and send. The client, the event and the wording stay the same.",
+    "feature_2_title": "Status per client and per payment",
+    "feature_2_text": "Every invoice shows draft, sent, paid, overdue or cancelled. With several weddings in a season, you see at a glance which couples are on schedule.",
+    "feature_3_title": "Invoices for destination events",
+    "feature_3_text": "Planning a wedding in Italy for a couple from Boston, or a corporate retreat for a client in Germany? Invoice in 38 currencies and 11 languages.",
+    "expert_tip_title": "Pro tip: put the payment schedule on every invoice",
+    "expert_tip_text": "In the notes of each milestone invoice, list all payments with their dates and mark the ones already paid. Couples share invoices with parents who are paying part of the bill, and a full schedule on the page saves you three separate explanations.",
+    "real_scenario_title": "The final invoice, five weeks before a 150-guest wedding",
+    "real_scenario_text": "The couple signed in January and paid the first two milestone invoices on time. Five weeks out, after the final walkthrough, you open Invoicor and duplicate the second invoice. You change it to payment 3 of 3, add the rehearsal dinner coordination they requested in April, 4 extra hours for the welcome event, and the welcome bags you sourced at cost plus your agreed handling fee. In the notes you list the schedule with the two earlier payments marked paid, and you add your payment link. You email the PDF to the couple and the bride's father, who is covering the balance, and mark it sent.",
+    "common_line_items": [
+      {
+        "name": "Full planning package",
+        "desc": "Planning from signing to event day, milestone payment 1 of 3.",
+        "type": "Milestone"
+      },
+      {
+        "name": "Day-of coordination",
+        "desc": "Up to 10 hours on the event day, timeline and vendor management.",
+        "type": "Flat Fee"
+      },
+      {
+        "name": "Additional coordination hours",
+        "desc": "Added events or meetings beyond the package, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Welcome bags",
+        "desc": "Sourced items at cost, quantity per guest.",
+        "type": "Pass-Through"
+      },
+      {
+        "name": "Assistant coordinator",
+        "desc": "Second planner on site for the event day.",
+        "type": "Per Event"
+      }
+    ],
+    "industry_glossary_title": "Event planning terms explained",
+    "industry_glossary": [
+      {
+        "term": "Day-of coordination",
+        "definition": "A service where the planner joins a few weeks before the event to run the timeline and vendors on the day."
+      },
+      {
+        "term": "Run of show",
+        "definition": "A minute-by-minute schedule for the event day, shared with every vendor."
+      },
+      {
+        "term": "Pass-through cost",
+        "definition": "An expense the planner pays on the client's behalf and bills back, sometimes with a handling fee."
+      },
+      {
+        "term": "Final count",
+        "definition": "The confirmed guest number given to the caterer and venue, usually a week or two before the event."
+      },
+      {
+        "term": "Force majeure",
+        "definition": "A contract clause for events beyond anyone's control, such as severe weather, and what happens to payments then."
+      }
+    ],
+    "tax_or_compliance_title": "Tax, contracts and insurance for event planners",
+    "tax_or_compliance_text": "Planning fees are a service, and in many states they aren't subject to sales tax, but some states tax certain services, and tangible items you resell, such as favors or decor, often are taxable. Rules vary by state and by how you bill, so check your state's rule or ask an accountant. Many venues require planners to carry liability insurance and to be listed on the event's certificate. A written contract with the payment schedule and cancellation terms matters more in this trade than almost any other. When tax applies, Invoicor adds one tax rate per invoice.",
+    "faqs": [
+      {
+        "question": "How do I split my planning fee into milestones?",
+        "answer": "Send one invoice per milestone. Duplicate the first one for the next payment, change the date and write payment 2 of 3 in the description."
+      },
+      {
+        "question": "How do I show the retainer on the final invoice?",
+        "answer": "Send the retainer as its own invoice first. On the final invoice, add it as a line with a negative amount, or list it in the notes, so the remaining balance is clear."
+      },
+      {
+        "question": "Can I bill a percentage of the event budget?",
+        "answer": "Yes. Work out your fee from the budget and put it on one line, with the percentage and the budget amount in the description so the client can check it."
+      },
+      {
+        "question": "Can I invoice vendor costs to my client?",
+        "answer": "Yes. Add each vendor cost as its own line with the vendor's name, plus a handling fee line if your contract includes one."
+      },
+      {
+        "question": "Does Invoicor remind clients when a payment is due?",
+        "answer": "No, the app doesn't send reminders. You see which invoices are overdue in the status, and you can share the PDF again with a short message."
+      }
+    ],
+    "related": [
+      {
+        "name": "Caterers",
+        "slug": "caterers"
+      },
+      {
+        "name": "Florists",
+        "slug": "florists"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/event-planners"
+  },
+  {
+    "slug": "florists",
+    "industry": "Florists & Floral Designers",
+    "icon": "Flower2",
+    "color": "green",
+    "title": "Invoice App for Florists | Invoicor",
+    "meta_description": "Invoice app for florists: bouquets, centerpieces, installs, delivery and setup on clear invoices for weddings, events and weekly accounts.",
+    "badge_text": "Florist Billing",
+    "h1": "The invoice app for florists. Price the stems, not just the arrangement.",
+    "subtitle": "Bridal bouquets, boutonnieres, 18 centerpieces, an arch install, delivery and teardown at midnight: event floral work is a long list of items with costs that move with the season. Invoicor helps florists and floral designers bill weddings, events and weekly business accounts clearly from the iPhone.",
+    "industry_stats": [
+      {
+        "label": "Bridal bouquet",
+        "value": "$150 – $400"
+      },
+      {
+        "label": "Reception centerpiece",
+        "value": "$75 – $250 each"
+      },
+      {
+        "label": "Wedding flowers, full order",
+        "value": "$2,500 – $10,000"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes florists make",
+    "industry_mistake_1_title": "Buying flowers before the deposit clears.",
+    "industry_mistake_1_text": "Wholesale stems are perishable and paid on order. If a couple cancels after you've bought 400 garden roses, nobody else will take them. Invoice the deposit at booking and the balance before you place the wholesale order.",
+    "industry_mistake_2_title": "Delivery, setup and teardown in the price.",
+    "industry_mistake_2_text": "Loading the van, setting 20 tables, flipping the ceremony arch to the reception and coming back at midnight for the vases is real labor. Put delivery, setup and teardown on their own lines so clients see what they're paying for.",
+    "industry_mistake_3_title": "Prices fixed months before the season.",
+    "industry_mistake_3_text": "Peonies in September or roses near Valentine's Day can cost far more than you planned. Say in your contract that substitutions of similar value may happen, and invoice the final balance from the confirmed recipe, not the first mood board.",
+    "feature_1_title": "Your arrangements as products",
+    "feature_1_text": "Save bridal bouquets, bridesmaid bouquets, boutonnieres, centerpieces, arch installs and delivery as products with your prices. An event invoice becomes quantities, not typing.",
+    "feature_2_title": "Weekly accounts in a minute",
+    "feature_2_text": "Restaurants, hotel lobbies and offices with weekly arrangements get the same invoice each week: duplicate the last one, change the date and send it.",
+    "feature_3_title": "One discount, shown clearly",
+    "feature_3_text": "Giving a small studio-wedding discount or a regular-account rate? Use the invoice discount so the client sees the full value and what you took off.",
+    "expert_tip_title": "Pro tip: invoice rentals separately from flowers",
+    "expert_tip_text": "Vases, candle holders, arches and stands that come back after the event aren't flowers. Bill them as rentals on their own lines and note the damage or loss charge in your terms. When a cylinder vase goes home with a guest, the conversation is short.",
+    "real_scenario_title": "A wedding order from deposit to teardown",
+    "real_scenario_text": "In February the couple paid a 30% deposit from your first Invoicor invoice. Six weeks before the June date, the final recipe is set: one bridal bouquet, five bridesmaid bouquets, eight boutonnieres, 16 centerpieces, an arch install, vase and stand rentals, delivery, setup and teardown. You open Invoicor, duplicate the deposit invoice, swap in the confirmed counts, add the deposit as a negative line and set the due date two weeks before the wedding, before your wholesale order. You add your payment link and email the PDF from the cooler. When the balance shows paid, you place the stem order with confidence.",
+    "common_line_items": [
+      {
+        "name": "Bridal bouquet",
+        "desc": "Hand-tied, seasonal blooms per confirmed recipe.",
+        "type": "Per Piece"
+      },
+      {
+        "name": "Reception centerpiece",
+        "desc": "Low arrangement in a rented vessel, per table.",
+        "type": "Per Piece"
+      },
+      {
+        "name": "Ceremony arch installation",
+        "desc": "Floral install on the arch, moved to the reception after.",
+        "type": "Installation"
+      },
+      {
+        "name": "Vase and stand rental",
+        "desc": "Returned after the event; loss or damage billed separately.",
+        "type": "Rental"
+      },
+      {
+        "name": "Delivery, setup and teardown",
+        "desc": "Delivery to the venue, placement and pickup after the event.",
+        "type": "Service"
+      }
+    ],
+    "industry_glossary_title": "Floral terms explained",
+    "industry_glossary": [
+      {
+        "term": "Recipe",
+        "definition": "The stem count and varieties in each arrangement, used to price and order flowers."
+      },
+      {
+        "term": "Boutonniere",
+        "definition": "A single flower or small cluster pinned to a jacket lapel, priced per piece."
+      },
+      {
+        "term": "Substitution clause",
+        "definition": "A contract term that lets the florist swap a variety for one of similar look and value when supply is short."
+      },
+      {
+        "term": "Flip",
+        "definition": "Moving ceremony arrangements to the reception space during cocktail hour, often billed as labor."
+      },
+      {
+        "term": "Standing order",
+        "definition": "A repeat arrangement for a business, such as a hotel lobby, delivered on a fixed day each week."
+      }
+    ],
+    "tax_or_compliance_title": "Sales tax and delivery charges for florists",
+    "tax_or_compliance_text": "Flowers and arrangements are tangible goods, so sales tax usually applies to them. Whether delivery, setup and design labor are taxable depends on the state, and on whether they're billed together with the flowers or separately. Rentals can have their own rules too. Check your state's rule or ask an accountant, especially for events in another county or state where the rate may differ. Invoicor applies one tax rate per invoice, inclusive or exclusive; if a service line isn't taxable where you work, a separate invoice for it keeps the math correct.",
+    "faqs": [
+      {
+        "question": "How do I invoice a wedding deposit and the balance?",
+        "answer": "Send a deposit invoice at booking. On the final invoice, add the deposit as a line with a negative amount, or mention it in the notes, so the balance is clear."
+      },
+      {
+        "question": "Can Invoicor bill my weekly hotel account automatically?",
+        "answer": "No, the app doesn't send invoices automatically. Duplicate last week's invoice, change the date and any changed arrangements, and send it."
+      },
+      {
+        "question": "Can I add photos of the arrangements to the invoice?",
+        "answer": "No, Invoicor doesn't attach photos to invoices. Describe each arrangement in the line, such as low centerpiece in blush and white, and send photos separately if the client wants them."
+      },
+      {
+        "question": "Can I invoice the planner instead of the couple?",
+        "answer": "Yes. Save the planner or venue as the client and put the couple's names and the event date in the notes."
+      },
+      {
+        "question": "Can I bill every arrangement on one invoice?",
+        "answer": "Line items per invoice are 10 on Free, 25 on Starter and 50 on Pro. Grouping items, such as bridesmaid bouquets ×5, keeps most weddings well within those numbers."
+      }
+    ],
+    "related": [
+      {
+        "name": "Event Planners",
+        "slug": "event-planners"
+      },
+      {
+        "name": "Caterers",
+        "slug": "caterers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/florists"
+  },
+  {
+    "slug": "massage-therapists",
+    "industry": "Massage Therapists & Bodyworkers",
+    "icon": "HandHeart",
+    "color": "teal",
+    "title": "Invoice App for Massage Therapists | Invoicor",
+    "meta_description": "Invoice app for massage therapists: sessions, packages, mobile visits and add-ons on clean invoices clients can keep for their records.",
+    "badge_text": "Massage Therapy Billing",
+    "h1": "The invoice app for massage therapists. Calm sessions, clear invoices.",
+    "subtitle": "Sixty- and ninety-minute sessions, hot stone add-ons, mobile visits, chair massage at an office, and clients who want a receipt for their health savings account. Invoicor helps massage therapists and bodyworkers send a clean, professional invoice from the iPhone after the session, without breaking the calm.",
+    "industry_stats": [
+      {
+        "label": "60-minute session",
+        "value": "$70 – $140"
+      },
+      {
+        "label": "Mobile visit surcharge",
+        "value": "$20 – $50"
+      },
+      {
+        "label": "Corporate chair massage",
+        "value": "$100 – $180 per therapist hour"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes massage therapists make",
+    "industry_mistake_1_title": "Taking payment at the table without a record.",
+    "industry_mistake_1_text": "A tap of a card or cash in an envelope leaves the client nothing to submit to an HSA or FSA administrator and leaves you with a gap in your books. A short invoice per session, marked paid, fixes both.",
+    "industry_mistake_2_title": "Late cancellations nobody pays for.",
+    "industry_mistake_2_text": "An empty 90-minute slot on a Saturday is lost income. If your policy charges for cancellations under 24 hours, put it in writing at booking and bill it on its own line when it happens.",
+    "industry_mistake_3_title": "Packages with no balance tracking.",
+    "industry_mistake_3_text": "Selling five sessions up front is good for both sides, until neither of you remembers how many are left. Note the session number on each visit, such as session 3 of 5, in the invoice or the notes.",
+    "feature_1_title": "Sessions and add-ons saved",
+    "feature_1_text": "Save 60-minute and 90-minute sessions, deep tissue, prenatal, hot stone, cupping and mobile surcharge as products. A session invoice takes a few taps.",
+    "feature_2_title": "A clean record for every client",
+    "feature_2_text": "Saved clients keep each person's name and contact details, and their invoices stay together. Mark each one paid, and the client has a dated record of the service.",
+    "feature_3_title": "Corporate events on one invoice",
+    "feature_3_text": "Bill an office wellness day with therapist hours as the quantity, travel and setup as their own lines, and the company's billing contact as the client. Share the PDF by email straight from the iOS share sheet.",
+    "expert_tip_title": "Pro tip: write what a health account needs",
+    "expert_tip_text": "Clients who pay with an HSA or FSA often need the date, the type of service, the length and your license number on the paperwork. Put your license number in your business details and the session length in each line, so the invoice is ready to submit. Whether massage qualifies depends on their plan and often a letter of medical necessity, so let them check that.",
+    "real_scenario_title": "A mobile therapist's Thursday",
+    "real_scenario_text": "You have three home visits and an afternoon at a law firm. After each home session you open Invoicor in the car, pick the saved client, tap a 90-minute deep tissue session and the mobile surcharge, add hot stone for one of them, mark the invoice paid if they paid on the spot, and share the PDF by text. At the law firm you work four hours of 15-minute chair massages. That evening you create one invoice for the firm's office manager: 4 therapist hours, setup and travel, and your payment link, with payment due in 30 days. Your day's books are done before dinner.",
+    "common_line_items": [
+      {
+        "name": "Massage session, 60 min",
+        "desc": "Swedish or deep tissue, per session.",
+        "type": "Per Session"
+      },
+      {
+        "name": "Massage session, 90 min",
+        "desc": "Extended session, per session.",
+        "type": "Per Session"
+      },
+      {
+        "name": "Hot stone add-on",
+        "desc": "Heated basalt stones added to the session.",
+        "type": "Add-On"
+      },
+      {
+        "name": "Mobile visit surcharge",
+        "desc": "Travel and table setup at the client's home.",
+        "type": "Surcharge"
+      },
+      {
+        "name": "Chair massage, corporate",
+        "desc": "On-site chair massage, per therapist hour.",
+        "type": "Hourly"
+      }
+    ],
+    "industry_glossary_title": "Massage therapy terms explained",
+    "industry_glossary": [
+      {
+        "term": "HSA / FSA",
+        "definition": "Health savings and flexible spending accounts; some plans reimburse massage with a letter of medical necessity."
+      },
+      {
+        "term": "Letter of medical necessity",
+        "definition": "A note from a doctor stating massage treats a condition, which some health accounts require."
+      },
+      {
+        "term": "Session package",
+        "definition": "Several sessions sold together, often at a lower price per session, paid up front."
+      },
+      {
+        "term": "Late cancellation fee",
+        "definition": "A charge for appointments cancelled with short notice, as stated in the therapist's policy."
+      },
+      {
+        "term": "Chair massage",
+        "definition": "Short seated sessions, clothed, common at offices and events, usually billed by the hour."
+      }
+    ],
+    "tax_or_compliance_title": "Licensing, privacy and sales tax for massage therapists",
+    "tax_or_compliance_text": "Most states license massage therapists, and many cities add their own business permit; your license number on invoices helps clients with health account claims. A few states and cities apply sales tax to massage services, often with exceptions for therapeutic work, so check your state's rule. If you bill insurance or handle health information under HIPAA, follow those rules; Invoicor makes invoices, not insurance claims, so keep health notes off the invoice and in your intake records. When tax applies, Invoicor adds one tax rate per invoice.",
+    "faqs": [
+      {
+        "question": "Can I give clients an invoice for their HSA or FSA?",
+        "answer": "Yes. Invoicor creates a PDF with the date, service, length and your business details. Whether a plan reimburses massage is up to the plan, so clients should check with their administrator."
+      },
+      {
+        "question": "Can I bill health insurance with Invoicor?",
+        "answer": "No. Invoicor makes invoices for clients and businesses, not insurance claim forms. Many therapists give the client an invoice marked paid, and the client submits it themselves."
+      },
+      {
+        "question": "How do I bill a package of sessions?",
+        "answer": "Invoice the package once, with the number of sessions and the price. For each visit after that, note session 2 of 5 and so on in your records or on a zero-balance invoice."
+      },
+      {
+        "question": "I see some clients every week. Can Invoicor invoice them automatically?",
+        "answer": "No, the app doesn't send invoices automatically. Duplicate the client's last invoice, change the date, and send it. It takes seconds after the session."
+      },
+      {
+        "question": "Can I charge a late cancellation fee?",
+        "answer": "Yes. Save a late cancellation item and add it to an invoice when your policy applies, with the missed appointment date in the description."
+      }
+    ],
+    "related": [
+      {
+        "name": "Personal Trainers",
+        "slug": "personal-trainers"
+      },
+      {
+        "name": "Hair & Makeup Artists",
+        "slug": "hair-makeup-artists"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/massage-therapists"
+  },
+  {
+    "slug": "translators",
+    "industry": "Translators & Interpreters",
+    "icon": "Languages",
+    "color": "cyan",
+    "title": "Invoice App for Translators & Interpreters | Invoicor",
+    "meta_description": "Invoice app for translators: bill per word, per page or per hour, in your client's currency and one of 11 invoice languages, as a PDF from your iPhone.",
+    "badge_text": "Translation Billing",
+    "h1": "The invoice app for translators. Every word counted, every job billed.",
+    "subtitle": "Per-word rates, certified pages, rush fees and half-day interpreting bookings, often for agencies and clients in other countries. Invoicor helps translators and interpreters turn each job into a clear PDF invoice in the client's currency and language, sent from your iPhone.",
+    "industry_stats": [
+      {
+        "label": "Rate per source word",
+        "value": "$0.10 – $0.25"
+      },
+      {
+        "label": "Interpreting, half day",
+        "value": "$250 – $600"
+      },
+      {
+        "label": "Billing basis",
+        "value": "Per word, page or hour"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes translators make",
+    "industry_mistake_1_title": "Not saying which word count you billed.",
+    "industry_mistake_1_text": "Source words or target words, with or without repetitions: an agency project manager will ask. Write the count and its basis in the line description, for example '4,180 source words, CAT analysis attached', so the invoice matches their purchase order.",
+    "industry_mistake_2_title": "No minimum charge for tiny jobs.",
+    "industry_mistake_2_text": "A 60-word birth certificate stamp or a two-line app string still takes a file check, a glossary lookup and an email. Set a minimum fee, state it in your terms and bill it as its own line instead of charging $9.",
+    "industry_mistake_3_title": "Rush and weekend work at the normal rate.",
+    "industry_mistake_3_text": "A file that arrives Friday at 6 pm and is due Monday morning costs you your weekend. If you agreed a rush surcharge, show it as a separate line so the client sees the base rate stays the same.",
+    "feature_1_title": "Your rates per language pair, saved",
+    "feature_1_text": "Save English to Spanish, Spanish to English, certified pages, proofreading and interpreting as products with their prices. An invoice becomes the client, the item and the word count as the quantity.",
+    "feature_2_title": "Your client's currency and language",
+    "feature_2_text": "Bill a Madrid agency in EUR with Spanish invoice labels and a Toronto law firm in CAD in English. Invoicor offers 38 currencies and 11 invoice languages; the app's own screens are in English.",
+    "feature_3_title": "Open invoices at a glance",
+    "feature_3_text": "Agencies often pay 30 or 45 days after month end. Each invoice shows draft, sent, paid, overdue or cancelled, so you know which project manager to nudge without opening a spreadsheet.",
+    "expert_tip_title": "Pro tip: quote the PO and file name",
+    "expert_tip_text": "Agencies match invoices to purchase orders, often by machine. Put their PO number, the project name and the file name in the line description or notes. An invoice that matches on the first try skips the 'please resend' email and lands in the next payment run.",
+    "real_scenario_title": "Month-end for two agencies and a direct client",
+    "real_scenario_text": "On the last working day of the month you open your list of delivered jobs. For the Berlin agency you create one invoice in EUR with German labels, one line per PO with the source word count as the quantity. For the US agency you duplicate last month's invoice, swap the lines and change the date. The immigration lawyer who needed three certified pages and a rush fee gets her own invoice with your payment link. Twenty minutes, three PDFs sent, back to the next file.",
+    "common_line_items": [
+      {
+        "name": "Translation, EN > ES",
+        "desc": "Per source word, CAT analysis available.",
+        "type": "Per Word"
+      },
+      {
+        "name": "Certified translation",
+        "desc": "Birth, marriage or court documents, signed statement, per page.",
+        "type": "Per Page"
+      },
+      {
+        "name": "Proofreading and editing",
+        "desc": "Review of a second translator's work, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Consecutive interpreting, half day",
+        "desc": "Up to four hours on site or by video.",
+        "type": "Half Day"
+      },
+      {
+        "name": "Rush surcharge",
+        "desc": "Delivery within 24 hours or over a weekend, as agreed.",
+        "type": "Surcharge"
+      }
+    ],
+    "industry_glossary_title": "Translation terms explained",
+    "industry_glossary": [
+      {
+        "term": "Source word count",
+        "definition": "The number of words in the original text, the most common basis for per-word billing."
+      },
+      {
+        "term": "CAT tool",
+        "definition": "Computer-assisted translation software that stores past translations and produces a word count analysis."
+      },
+      {
+        "term": "Fuzzy match",
+        "definition": "A segment partly matching an earlier translation; agencies often pay a reduced rate for it."
+      },
+      {
+        "term": "Certified translation",
+        "definition": "A translation with a signed statement of accuracy, often required by courts and immigration offices."
+      },
+      {
+        "term": "Language pair",
+        "definition": "The source and target language of a job, such as French to English; rates often differ per pair."
+      }
+    ],
+    "tax_or_compliance_title": "Tax and paperwork for translators",
+    "tax_or_compliance_text": "Most US freelance translators bill services without sales tax, but rules differ by state and a few states tax some services, so check your state's rule. US clients may send you a 1099-NEC if they pay you above the IRS reporting threshold, and agencies abroad may ask for a W-8 or W-9 form or your tax ID before the first payment. If you work for business clients in the EU, they may expect an invoice that shows their VAT number and a reverse charge note; ask your accountant what applies to you. Invoicor puts one tax rate on an invoice when you need one, and leaves it off when you don't.",
+    "faqs": [
+      {
+        "question": "Can I bill per word?",
+        "answer": "Yes. Save your per-word rate as a product, then enter the word count as the quantity. A 4,180-word job at $0.12 shows as 4,180 × $0.12 = $501.60, and you can add the basis of the count in the description."
+      },
+      {
+        "question": "Can I bill different language pairs on one invoice?",
+        "answer": "Yes. Save each pair as its own item with its own rate and add as many lines as the job needs, within your plan's line item limit (Free 10, Starter 25, Pro 50)."
+      },
+      {
+        "question": "Can the invoice be in my client's language?",
+        "answer": "The invoice labels can be in one of 11 languages, and you choose one of 38 currencies. Your line descriptions stay exactly as you write them, so you can write them in the client's language too."
+      },
+      {
+        "question": "How do clients abroad pay me?",
+        "answer": "Paste your own payment link, for example from PayPal or Stripe, or add your bank details to the invoice. The client pays you directly; Invoicor never handles the money and takes no cut."
+      },
+      {
+        "question": "An agency sends me work every month. Can Invoicor send the invoice automatically?",
+        "answer": "No, the app doesn't send invoices automatically. Duplicate last month's invoice, change the date and the lines, and send it yourself; it takes a minute or two."
+      }
+    ],
+    "related": [
+      {
+        "name": "Copywriters",
+        "slug": "copywriters"
+      },
+      {
+        "name": "Virtual Assistants",
+        "slug": "virtual-assistants"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/translators"
+  },
+  {
+    "slug": "copywriters",
+    "industry": "Copywriters & Freelance Writers",
+    "icon": "PenLine",
+    "color": "orange",
+    "title": "Invoice App for Copywriters & Freelance Writers | Invoicor",
+    "meta_description": "Invoice app for copywriters: bill project fees, retainers, extra revision rounds and kill fees on a clean PDF, sent from your iPhone after delivery.",
+    "badge_text": "Copywriting Billing",
+    "h1": "The invoice app for copywriters. Your invoices should read as well as your copy.",
+    "subtitle": "Website pages, email sequences, blog posts, product descriptions and the occasional 'quick tagline'. Invoicor helps copywriters and freelance writers bill project fees, monthly retainers and extra revision rounds on one tidy PDF, sent from your iPhone the day the work is approved.",
+    "industry_stats": [
+      {
+        "label": "Website page",
+        "value": "$250 – $1,000"
+      },
+      {
+        "label": "Blog post, 1,200 words",
+        "value": "$150 – $600"
+      },
+      {
+        "label": "Common model",
+        "value": "Project fee or monthly retainer"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes copywriters make",
+    "industry_mistake_1_title": "Revisions without a limit.",
+    "industry_mistake_1_text": "'Revisions included' turns a homepage into a six-week rewrite. Name the number of rounds in your proposal, and when a client asks for round four, bill it as its own line at your agreed rate.",
+    "industry_mistake_2_title": "Waiting for launch day to invoice.",
+    "industry_mistake_2_text": "Clients delay launches for reasons that have nothing to do with you. Invoice when the copy is approved, not when the site goes live, and say so in your terms before you start.",
+    "industry_mistake_3_title": "Forgetting the kill fee.",
+    "industry_mistake_3_text": "A project cancelled halfway still cost you research, interviews and drafts. If your contract has a kill fee, invoice it promptly with a short note on what was delivered up to the cancellation.",
+    "feature_1_title": "Packages saved as products",
+    "feature_1_text": "Save your homepage package, email sequence, blog post and extra revision round with their prices. A new invoice is the client, three taps and a short description of the deliverable.",
+    "feature_2_title": "Duplicate the retainer each month",
+    "feature_2_text": "Four blog posts and a newsletter every month for the same client? Duplicate last month's invoice, change the month and the post titles, and send. The app doesn't send invoices on its own, so you stay in control of each one.",
+    "feature_3_title": "A payment link on every invoice",
+    "feature_3_text": "Paste your own PayPal or Stripe link once and it appears on your PDFs, so a marketing manager can pay from the email instead of forwarding it to finance and forgetting.",
+    "expert_tip_title": "Pro tip: describe the deliverable, not the hours",
+    "expert_tip_text": "'Homepage copy, 850 words, two revision rounds, approved 14 Nov' reads like value. 'Writing, 7 hours' invites a discussion about whether it should have taken five. Name the piece, the length and the approval date in the line description.",
+    "real_scenario_title": "Approval on Thursday, invoice on Thursday",
+    "real_scenario_text": "The SaaS client approves the final round of their pricing page copy at 3 pm. You open Invoicor on your phone, pick the client, add your 'Landing page' package, the extra revision round they asked for, and a negative line for the 50% deposit invoiced at kickoff. You add your payment link and send the PDF before you close the doc. On the same afternoon you duplicate the monthly blog retainer for another client and change the four post titles.",
+    "common_line_items": [
+      {
+        "name": "Homepage copy",
+        "desc": "Up to 900 words, two revision rounds included.",
+        "type": "Project"
+      },
+      {
+        "name": "Email welcome sequence",
+        "desc": "Five emails with subject lines.",
+        "type": "Project"
+      },
+      {
+        "name": "Blog post",
+        "desc": "1,200 words, keyword brief and one revision.",
+        "type": "Per Post"
+      },
+      {
+        "name": "Additional revision round",
+        "desc": "Beyond the rounds included in the proposal.",
+        "type": "Per Round"
+      },
+      {
+        "name": "Kill fee",
+        "desc": "Project cancelled after first draft, as per contract.",
+        "type": "Fee"
+      }
+    ],
+    "industry_glossary_title": "Copywriting terms explained",
+    "industry_glossary": [
+      {
+        "term": "Brief",
+        "definition": "The client's description of audience, goal, tone and length; the basis for your quote."
+      },
+      {
+        "term": "Revision round",
+        "definition": "One batch of consolidated feedback from the client and the edit that follows."
+      },
+      {
+        "term": "Kill fee",
+        "definition": "A fee owed when the client cancels a project after work has started."
+      },
+      {
+        "term": "Usage rights",
+        "definition": "Where and how the client may use the copy; some writers charge more for broad rights."
+      },
+      {
+        "term": "Content retainer",
+        "definition": "A fixed monthly fee for a set number of pieces, such as four blog posts."
+      }
+    ],
+    "tax_or_compliance_title": "Tax and contracts for copywriters",
+    "tax_or_compliance_text": "In most US states writing services are not subject to sales tax, but a few states tax some services, so check your state's rule before you add tax. US business clients may send you a 1099-NEC if they pay you above the IRS reporting threshold, and many will ask for a W-9 before the first payment. Keep your contract and your invoice aligned: the same project name, the same number of revision rounds, the same payment terms. Invoicor lets you add one tax rate and a discount per invoice, and your terms in the notes.",
+    "faqs": [
+      {
+        "question": "Can I ask for a deposit before I start writing?",
+        "answer": "Yes. Send a separate invoice for the deposit at kickoff. When the copy is approved, send the final invoice for the full fee with the deposit shown as a line with a negative amount, or mention it in the notes."
+      },
+      {
+        "question": "Can I bill per word?",
+        "answer": "Yes. Save your per-word rate as a product and enter the word count as the quantity, for example 1,500 × $0.30 = $450."
+      },
+      {
+        "question": "How do I bill a monthly content retainer?",
+        "answer": "Save the retainer as a product. Each month, duplicate the last invoice and change the date and the piece titles. The app doesn't send invoices automatically, so you send each one yourself."
+      },
+      {
+        "question": "Can I give a discount for a bundle of pieces?",
+        "answer": "Yes. Add the pieces at your normal prices and apply a discount to the invoice, so the client sees what the bundle saved them."
+      },
+      {
+        "question": "Do I need an app to write the invoice from my laptop?",
+        "answer": "Invoicor's app runs on iPhone (Android is coming later). If you'd rather use a browser, the free web invoice generator on invoicor.com makes a PDF right in your browser."
+      }
+    ],
+    "related": [
+      {
+        "name": "Freelance Designers",
+        "slug": "freelance-designers"
+      },
+      {
+        "name": "Social Media Managers",
+        "slug": "social-media-managers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/copywriters"
+  },
+  {
+    "slug": "social-media-managers",
+    "industry": "Social Media Managers & Content Creators",
+    "icon": "Megaphone",
+    "color": "purple",
+    "title": "Invoice App for Social Media Managers | Invoicor",
+    "meta_description": "Invoice app for social media managers: bill monthly retainers, ad management fees and extra content, in advance, with a clear PDF from your iPhone.",
+    "badge_text": "Social Media Billing",
+    "h1": "The invoice app for social media managers. Bill the month before you post it.",
+    "subtitle": "Content calendars, posts per platform, reels, community replies and paid ad management, for clients who want everything 'by tomorrow'. Invoicor helps social media managers bill monthly retainers and the extras that come up, on one clear PDF sent from the phone you already manage accounts on.",
+    "industry_stats": [
+      {
+        "label": "Monthly retainer",
+        "value": "$500 – $3,000"
+      },
+      {
+        "label": "Ad management fee",
+        "value": "10% – 20% of ad spend"
+      },
+      {
+        "label": "Billing rhythm",
+        "value": "Monthly, in advance"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes social media managers make",
+    "industry_mistake_1_title": "Putting the ad budget through your invoice.",
+    "industry_mistake_1_text": "If a client's $2,000 ad budget runs through your card and your invoice, you carry their risk and your income looks bigger than it is. Many managers have the client's own card on the ad account and bill only the management fee.",
+    "industry_mistake_2_title": "Extra posts nobody counted.",
+    "industry_mistake_2_text": "'Can you also do one for LinkedIn?' adds up to a fourth platform by March. List the posts and platforms in your package, and bill extra pieces as their own lines.",
+    "industry_mistake_3_title": "Billing after the month is over.",
+    "industry_mistake_3_text": "Invoicing in arrears means you have already done a month of work when a client decides to pause. Bill the retainer at the start of the month and the extras at the end, and write that in your terms.",
+    "feature_1_title": "Packages and extras saved",
+    "feature_1_text": "Save 'Instagram and Facebook, 12 posts', 'Reel, edited', 'Ad management' and 'Monthly report' as products. Each invoice is a package line and whatever extra the client asked for.",
+    "feature_2_title": "Duplicate next month in one tap",
+    "feature_2_text": "Retainers repeat. On the 1st, duplicate last month's invoice, change the month and add the extras. The app doesn't send it for you; you check it and send it yourself.",
+    "feature_3_title": "Know who has paid before you schedule",
+    "feature_3_text": "Each invoice is marked draft, sent, paid, overdue or cancelled. Before you load next week's posts into the scheduler, check that the client's month is paid.",
+    "expert_tip_title": "Pro tip: one line for the ad fee, one note for the spend",
+    "expert_tip_text": "Bill your management fee as a line, for example '15% of $3,000 ad spend, October' at $450, and note the actual spend and platform in the notes. The client sees how the fee was worked out, and nobody confuses your fee with their ad budget.",
+    "real_scenario_title": "The 1st of the month for four clients",
+    "real_scenario_text": "Before your first coffee on the 1st you open Invoicor. The bakery, the dental practice and the yoga studio each get last month's invoice duplicated, with the new month in the description. The yoga studio asked for two extra reels for its retreat launch, so you add the 'Reel, edited' item with a quantity of 2. The e-commerce client gets its retainer plus the ad management fee worked out from last month's spend. Four PDFs with your payment link, sent before you open the scheduler.",
+    "common_line_items": [
+      {
+        "name": "Monthly management, 2 platforms",
+        "desc": "12 posts, scheduling and captions per month.",
+        "type": "Retainer"
+      },
+      {
+        "name": "Short-form video, edited",
+        "desc": "Reel or TikTok, up to 30 seconds, per video.",
+        "type": "Per Video"
+      },
+      {
+        "name": "Community management",
+        "desc": "Replies to comments and messages, weekdays.",
+        "type": "Monthly"
+      },
+      {
+        "name": "Paid ads management",
+        "desc": "Percentage of the month's ad spend, as agreed.",
+        "type": "Fee"
+      },
+      {
+        "name": "Account setup and audit",
+        "desc": "Profile cleanup, bio, highlights and a written audit.",
+        "type": "One-off"
+      }
+    ],
+    "industry_glossary_title": "Social media terms explained",
+    "industry_glossary": [
+      {
+        "term": "Content calendar",
+        "definition": "The planned list of posts, dates and platforms for a month, often approved before billing."
+      },
+      {
+        "term": "Ad spend",
+        "definition": "The money paid to the platform for ads, separate from the manager's fee."
+      },
+      {
+        "term": "Management fee",
+        "definition": "The manager's charge for running ads, often a percentage of ad spend or a flat amount."
+      },
+      {
+        "term": "Community management",
+        "definition": "Answering comments and direct messages on a client's behalf."
+      },
+      {
+        "term": "Deliverables",
+        "definition": "The posts, videos and reports a package includes each month."
+      }
+    ],
+    "tax_or_compliance_title": "Tax, contracts and ad accounts",
+    "tax_or_compliance_text": "Sales tax on marketing and digital services differs a lot between states, and a few states tax some services, so check your state's rule before adding tax. US business clients may send you a 1099-NEC if they pay you above the IRS reporting threshold. If you ever pay for ads on a client's behalf, keep the receipts and show the pass-through clearly; your accountant can tell you how to record it. Invoicor applies one tax rate per invoice when needed, and your payment terms and pause policy fit in the notes.",
+    "faqs": [
+      {
+        "question": "Can I bill a retainer at the start of the month?",
+        "answer": "Yes. Create the invoice on the 1st with the month in the line description, and set a due date that fits your terms. Extras from the month can go on the next invoice."
+      },
+      {
+        "question": "Can Invoicor send my monthly invoices automatically?",
+        "answer": "No. The app doesn't send invoices automatically or on a schedule. Duplicate last month's invoice, change the date and any extras, and send it yourself."
+      },
+      {
+        "question": "How do I bill a percentage of ad spend?",
+        "answer": "Work out the fee, for example 15% of $3,000 = $450, and add it as one line with the spend and the month in the description. Invoicor doesn't connect to ad accounts, so you take the spend from the platform's report."
+      },
+      {
+        "question": "Can I bill several brands owned by the same person?",
+        "answer": "Yes. Save each brand as its own client if they pay separately, or use one invoice with a line per brand if one company pays for all of them."
+      },
+      {
+        "question": "Can I bill clients outside the US?",
+        "answer": "Yes. Choose from 38 currencies and 11 invoice languages, and add your own PayPal, Stripe or bank details so the client pays you directly."
+      }
+    ],
+    "related": [
+      {
+        "name": "Copywriters",
+        "slug": "copywriters"
+      },
+      {
+        "name": "Freelance Designers",
+        "slug": "freelance-designers"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/social-media-managers"
+  },
+  {
+    "slug": "music-teachers",
+    "industry": "Music Teachers & Private Instructors",
+    "icon": "Music",
+    "color": "yellow",
+    "title": "Invoice App for Music Teachers | Invoicor",
+    "meta_description": "Invoice app for music teachers: bill monthly lessons, books and recital fees per family, with sibling discounts, on a clear PDF sent from your iPhone.",
+    "badge_text": "Music Lesson Billing",
+    "h1": "The invoice app for music teachers. Teach the scales, not the spreadsheet.",
+    "subtitle": "Weekly piano, guitar, violin and voice lessons, a recital fee in spring, a new method book in September and siblings on the same bench. Invoicor helps music teachers send one clear invoice per family each month, from the iPhone on the music stand.",
+    "industry_stats": [
+      {
+        "label": "30-minute lesson",
+        "value": "$30 – $60"
+      },
+      {
+        "label": "Monthly tuition, weekly lessons",
+        "value": "$120 – $250"
+      },
+      {
+        "label": "Billing rhythm",
+        "value": "Monthly or per term"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes music teachers make",
+    "industry_mistake_1_title": "Collecting a check at every lesson.",
+    "industry_mistake_1_text": "Parents forget the checkbook, the lesson starts late, and you end up chasing $45 at the door. One invoice per family at the start of the month, paid in advance, keeps money out of the lesson time.",
+    "industry_mistake_2_title": "No written make-up policy.",
+    "industry_mistake_2_text": "If a cancelled lesson is sometimes refunded and sometimes not, each invoice turns into a debate. Write your rule, for example 24 hours notice for a make-up lesson, in your studio policy and in the invoice notes.",
+    "industry_mistake_3_title": "Paying for books and recital costs yourself.",
+    "industry_mistake_3_text": "Method books, sheet music, the recital hall rental and the accompanist add up. Bill them as their own lines, so families see what tuition covers and what it doesn't.",
+    "feature_1_title": "One invoice per family",
+    "feature_1_text": "Save each family as a client and each lesson length as a product. Two kids, one piano and one guitar, become two lines on the same invoice with each student's name in the description.",
+    "feature_2_title": "Sibling discount without math",
+    "feature_2_text": "Add both students' lessons at your normal rate and apply a discount to the invoice. Parents see the full price and what the sibling discount saves them.",
+    "feature_3_title": "Next month in one tap",
+    "feature_3_text": "Most families have the same weekly slot all term. Duplicate last month's invoice, change the month and the number of lessons, and send. The app doesn't send it automatically, so you can check for holidays first.",
+    "expert_tip_title": "Pro tip: count the lessons, not the month",
+    "expert_tip_text": "Some months have five Tuesdays, some have a school holiday. Bill the number of lessons as the quantity and list the dates in the description ('Tuesdays: 4, 11, 18, 25 Nov'). Parents see exactly what they pay for, and there's no argument about the fifth week.",
+    "real_scenario_title": "The last Sunday of the month",
+    "real_scenario_text": "You have 22 students in 16 families. On Sunday evening you open Invoicor and go down the list: duplicate each family's last invoice, change the month, fix the lesson count for the Thanksgiving week, and add the spring recital fee for the students who signed up. The Morales family gets the sibling discount again, and the new adult student gets her first invoice with the 'Piano Adventures Level 2' book on its own line. Every invoice has your payment link, and by Monday's first lesson most families have paid.",
+    "common_line_items": [
+      {
+        "name": "Private lesson, 30 min",
+        "desc": "Weekly lesson at the studio, per lesson.",
+        "type": "Per Lesson"
+      },
+      {
+        "name": "Private lesson, 45 min",
+        "desc": "Weekly lesson, intermediate students, per lesson.",
+        "type": "Per Lesson"
+      },
+      {
+        "name": "Home lesson travel fee",
+        "desc": "Lessons at the student's home, per visit.",
+        "type": "Per Visit"
+      },
+      {
+        "name": "Spring recital fee",
+        "desc": "Hall rental, accompanist and program, per student.",
+        "type": "Fee"
+      },
+      {
+        "name": "Method book",
+        "desc": "Books and sheet music bought for the student.",
+        "type": "Materials"
+      }
+    ],
+    "industry_glossary_title": "Music studio terms explained",
+    "industry_glossary": [
+      {
+        "term": "Tuition",
+        "definition": "The regular fee for lessons, billed per lesson, per month or per term."
+      },
+      {
+        "term": "Make-up lesson",
+        "definition": "A replacement lesson for one the student missed, offered under the studio policy."
+      },
+      {
+        "term": "Studio policy",
+        "definition": "The written rules on payment, cancellations, make-ups and holidays that families agree to."
+      },
+      {
+        "term": "Recital fee",
+        "definition": "A charge per student that covers the venue, accompanist and programs for a performance."
+      },
+      {
+        "term": "Registration fee",
+        "definition": "A yearly fee some studios charge to hold a weekly time slot."
+      }
+    ],
+    "tax_or_compliance_title": "Tax, policies and permits for music teachers",
+    "tax_or_compliance_text": "Private music lessons are usually not subject to sales tax in the US, but books and sheet music you resell may be in some states, and rules vary, so check your state's rule. If you teach from home, some cities ask for a home business permit. Keep your studio policy short and put the key lines (payment due date, make-up rule) in your invoice notes, so families see them every month. Invoicor applies one tax rate per invoice; if only some items are taxable in your state, ask your accountant whether to bill materials on a separate invoice.",
+    "faqs": [
+      {
+        "question": "Can I bill monthly for weekly lessons?",
+        "answer": "Yes. Add your lesson item with the number of lessons as the quantity, for example 4 × $40 = $160, and list the dates in the description."
+      },
+      {
+        "question": "Do I have to make a new invoice every month?",
+        "answer": "Duplicate last month's invoice and change the date and lesson count. The app doesn't send invoices automatically, which lets you adjust for holidays and missed lessons before you send."
+      },
+      {
+        "question": "Can I bill two siblings on one invoice?",
+        "answer": "Yes. Add one line per student with their name and instrument in the description, then apply a discount to the invoice for the sibling rate."
+      },
+      {
+        "question": "How do parents pay?",
+        "answer": "Add your own payment link, such as PayPal or Stripe, or your bank details to the invoice. Parents pay you directly; Invoicor never touches the money."
+      },
+      {
+        "question": "Can I charge a registration fee at the start of the year?",
+        "answer": "Yes. Save it as a product and add it to the September invoice, or send it as its own invoice when a family signs up for a time slot."
+      }
+    ],
+    "related": [
+      {
+        "name": "Tutors",
+        "slug": "tutors"
+      },
+      {
+        "name": "DJs",
+        "slug": "djs"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/music-teachers"
+  },
+  {
+    "slug": "bookkeepers",
+    "industry": "Bookkeepers & Accounting Freelancers",
+    "icon": "Calculator",
+    "color": "green",
+    "title": "Invoice App for Bookkeepers | Invoicor",
+    "meta_description": "Invoice app for bookkeepers: bill monthly packages, catch-up work, payroll runs and software costs to each client, with a clear PDF from your iPhone.",
+    "badge_text": "Bookkeeping Billing",
+    "h1": "The invoice app for bookkeepers. Your own invoices, as tidy as your clients' books.",
+    "subtitle": "Monthly packages by transaction volume, catch-up months for the client who 'fell a bit behind', payroll runs and the software subscription you pay for them. Invoicor helps freelance bookkeepers bill each client clearly and on time, from your iPhone, without opening a second accounting file for yourself.",
+    "industry_stats": [
+      {
+        "label": "Monthly package",
+        "value": "$300 – $1,500"
+      },
+      {
+        "label": "Catch-up work, hourly",
+        "value": "$45 – $100"
+      },
+      {
+        "label": "Common model",
+        "value": "Fixed monthly fee by volume"
+      }
+    ],
+    "industry_mistakes_title": "Billing mistakes bookkeepers make",
+    "industry_mistake_1_title": "A fixed fee with no transaction cap.",
+    "industry_mistake_1_text": "A $400 package that covered 150 transactions a month doesn't cover 600 after the client opens an online store. State the volume in the package description and bill the tier change when it happens.",
+    "industry_mistake_2_title": "Catch-up months at the monthly rate.",
+    "industry_mistake_2_text": "Reconciling six months of a shoebox is a different job from keeping a current set of books. Quote and bill catch-up work separately, by the hour or as a project, before the monthly package starts.",
+    "industry_mistake_3_title": "Absorbing your clients' software costs.",
+    "industry_mistake_3_text": "If you pay for the client's accounting or receipt-capture subscription on your account, it should be on the invoice. Add it as its own line every month, so it doesn't vanish into your fee.",
+    "feature_1_title": "Packages, payroll and extras saved",
+    "feature_1_text": "Save your Starter, Growth and Full-service packages, payroll per run, catch-up hours and software pass-through as products. An invoice is the client, the package and any extras for the month.",
+    "feature_2_title": "Month-end in a few taps",
+    "feature_2_text": "Monthly clients get nearly the same invoice every time. Duplicate last month's, change the period, and add the extra payroll run or the year-end package. You send it yourself; nothing goes out automatically.",
+    "feature_3_title": "Overdue clients stand out",
+    "feature_3_text": "Draft, sent, paid, overdue and cancelled statuses show which clients are behind. Starter and Pro add a dashboard, so you can see what's open before you start next month's close.",
+    "expert_tip_title": "Pro tip: bill the period, not the date",
+    "expert_tip_text": "Write the period you worked on in the line description ('Bookkeeping, October 2026, up to 250 transactions'), not only the invoice date. Your client's own books then record your fee in the right month, and nobody asks which month an invoice was for.",
+    "real_scenario_title": "Your own invoices on the 5th",
+    "real_scenario_text": "By the 5th you have closed October for your nine clients. You open Invoicor and duplicate each client's September invoice, then change the period. The landscaping company ran two extra payrolls for seasonal staff, so you raise the payroll quantity from 2 to 4. The new restaurant client gets a separate invoice for 14 catch-up hours. You add your payment link and send nine PDFs in under half an hour, then mark the two that paid by card the same day.",
+    "common_line_items": [
+      {
+        "name": "Monthly bookkeeping, Growth",
+        "desc": "Up to 250 transactions, reconciliations and reports.",
+        "type": "Monthly"
+      },
+      {
+        "name": "Catch-up bookkeeping",
+        "desc": "Prior months reconciled, per hour.",
+        "type": "Hourly"
+      },
+      {
+        "name": "Payroll run",
+        "desc": "Up to 10 employees, per run.",
+        "type": "Per Run"
+      },
+      {
+        "name": "Year-end package for CPA",
+        "desc": "Adjusted trial balance and supporting schedules.",
+        "type": "Project"
+      },
+      {
+        "name": "Software subscription",
+        "desc": "Client's accounting software, passed through at cost.",
+        "type": "Pass-through"
+      }
+    ],
+    "industry_glossary_title": "Bookkeeping terms explained",
+    "industry_glossary": [
+      {
+        "term": "Reconciliation",
+        "definition": "Matching the books to bank and card statements so every transaction is accounted for."
+      },
+      {
+        "term": "Catch-up bookkeeping",
+        "definition": "Bringing books that are months behind up to date, usually billed separately."
+      },
+      {
+        "term": "Month-end close",
+        "definition": "The routine of finishing and checking a month's books before reports go out."
+      },
+      {
+        "term": "Transaction volume",
+        "definition": "The number of bank and card transactions per month, a common basis for pricing tiers."
+      },
+      {
+        "term": "Pass-through cost",
+        "definition": "An expense paid on the client's behalf and billed back at cost, such as a software subscription."
+      }
+    ],
+    "tax_or_compliance_title": "Tax and engagement letters for bookkeepers",
+    "tax_or_compliance_text": "Bookkeeping is generally not subject to sales tax in most US states, but a few states tax many services, so check your state's rule. Business clients may send you a 1099-NEC if they pay you above the IRS reporting threshold. An engagement letter that names your packages, volumes and payment terms makes each invoice easy to defend. Invoicor is for your own invoices to clients, not for keeping their books: it doesn't import bank feeds or export CSV, and it applies one tax rate per invoice when you need one.",
+    "faqs": [
+      {
+        "question": "Can Invoicor send my monthly invoices on a schedule?",
+        "answer": "No, the app doesn't send invoices automatically. Duplicate last month's invoice, change the period and any extras, and send it; with saved packages it takes a minute per client."
+      },
+      {
+        "question": "Can I bill catch-up hours?",
+        "answer": "Yes. Save an hourly item and enter the hours as the quantity, for example 14 × $65 = $910. Invoicor doesn't track time, so take the hours from your own timesheet."
+      },
+      {
+        "question": "Can I bill a software subscription I pay for my client?",
+        "answer": "Yes. Add it as its own line, at cost or with your markup, and name the software and the month in the description."
+      },
+      {
+        "question": "Can I take a retainer up front for a catch-up project?",
+        "answer": "Yes. Send a separate invoice for the up-front payment. When the project is done, send the final invoice with that payment shown as a line with a negative amount, or mention it in the notes."
+      },
+      {
+        "question": "Can I run invoices for two businesses of my own?",
+        "answer": "The Pro plan allows up to 3 business profiles, each with its own details on the invoice, for example a bookkeeping practice and a payroll service."
+      }
+    ],
+    "related": [
+      {
+        "name": "Consultants & Coaches",
+        "slug": "consultants-coaches"
+      },
+      {
+        "name": "Virtual Assistants",
+        "slug": "virtual-assistants"
+      }
+    ],
+    "canonical": "https://invoicor.com/industries/bookkeepers"
   }
 ]

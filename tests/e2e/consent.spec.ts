@@ -1,7 +1,8 @@
 import { expect, test } from "@playwright/test";
 import { trackAnalytics } from "./helpers";
 
-// Decision D5: nothing that sets cookies or sends analytics loads before "Accept".
+// Decision D5: nothing that sets cookies loads before "Accept". StatsUp (cookieless, our own
+// server) counts every visit, with or without a choice.
 
 test("no analytics before a choice, and none after Decline", async ({ page }) => {
   const attempted = await trackAnalytics(page);
@@ -45,4 +46,41 @@ test("the footer link re-opens the banner", async ({ page }) => {
   await page.getByRole("button", { name: "Decline" }).click();
   await page.getByRole("button", { name: /cookie settings/i }).click();
   await expect(page.getByRole("dialog", { name: /cookies/i })).toBeVisible();
+});
+
+test("StatsUp counts every visit, also without a choice or after Decline", async ({ page }) => {
+  const attempted = await trackAnalytics(page);
+  await page.goto("/");
+  await expect.poll(() => attempted.statsup.some((u) => u.includes("/static/tracker/"))).toBe(true);
+  expect(attempted).toEqual([]); // still no Google Analytics or PostHog
+});
+
+test("after a Decline, the banner comes back after 30 days", async ({ page }) => {
+  await trackAnalytics(page);
+  const fortyDaysAgo = Date.now() - 40 * 24 * 60 * 60 * 1000;
+  await page.addInitScript(
+    (at) => localStorage.setItem("invoicor-consent-v1", `denied:${at}`),
+    fortyDaysAgo,
+  );
+  await page.goto("/");
+  await expect(page.getByRole("dialog", { name: /cookies/i })).toBeVisible();
+});
+
+test("StatsUp counts page changes inside the site, without consent", async ({ page }) => {
+  const attempted = await trackAnalytics(page);
+  // A stand-in for the StatsUp tracker that records the page changes it's told about.
+  await page.route(/statsup\.co\/static\/tracker\/main\.js/, (route) =>
+    route.fulfill({
+      contentType: "application/javascript",
+      body: "window.__pages=[];window.__statsup={page:function(p){window.__pages.push(p)}};",
+    }),
+  );
+  await page.goto("/");
+  await expect.poll(() => page.evaluate(() => "__statsup" in window)).toBe(true);
+  await page.locator('a[href="/templates"]:visible').first().click();
+  await expect(page).toHaveURL(/\/templates$/);
+  await expect
+    .poll(() => page.evaluate(() => (window as unknown as { __pages: string[] }).__pages))
+    .toEqual(["/templates"]);
+  expect(attempted).toEqual([]); // still no Google Analytics or PostHog
 });

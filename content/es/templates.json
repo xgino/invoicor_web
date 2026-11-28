@@ -1,0 +1,1006 @@
+[
+  {
+    "slug": "factura-de-anticipo",
+    "translation_of": "deposit-invoice",
+    "niche": "Factura de anticipo",
+    "title": "Factura de anticipo: modelo gratis y ejemplo | Invoicor",
+    "meta_description": "Factura de anticipo: qué debe llevar, el IVA al cobrar y un ejemplo con el 30 % de un encargo. Y cómo descontarlo en la factura final. Crea tu PDF.",
+    "h1": "Factura de anticipo: modelo y ejemplo",
+    "subtitle": "Una factura por cada cobro antes de entregar el trabajo, con el precio total del encargo, la parte cobrada, su fecha y su IVA.",
+    "intro_paragraph": "El cliente te paga el 30 % al encargar y tú aún no has entregado nada. En España ese cobro necesita su factura (art. 2.1 del Reglamento de facturación) y su IVA se devenga al cobrarlo (art. 75.Dos LIVA). Aquí tienes qué debe llevar, un ejemplo con el 30 % de un encargo de 6.500,00 € y cómo la factura final descuenta lo cobrado. Hoy un PDF sigue siendo una factura válida en España: la factura electrónica entre empresas (Ley Crea y Crece, RD 238/2026) será obligatoria el 6 de octubre de 2027 si facturas más de 8 millones de euros y el 6 de octubre de 2028 para el resto, y Verifactu se aplica a los programas de facturación desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor crea facturas en PDF, no facturas electrónicas ni registros Verifactu. Esta guía es para España: en México y en casi toda Latinoamérica la factura debe ser electrónica (el CFDI en México) y un PDF no es una factura válida.",
+    "include_title": "Qué debe incluir una factura de anticipo",
+    "what_to_include_intro": "Lleva los datos de toda factura completa (art. 6.1 del Reglamento de facturación), pero el trabajo aún no está hecho: la factura tiene que contar de qué va el dinero.",
+    "req_1_title": "La palabra anticipo en la primera línea",
+    "req_1_text": "El PDF se titula «Factura», y es correcto. Empieza la primera línea con «Anticipo»: el gestor del cliente la archiva aparte y tú la encuentras rápido al hacer la factura final.",
+    "req_2_title": "El precio total y la parte que cobras",
+    "req_2_text": "Escribe las dos cifras: «Anticipo del 30 % sobre un encargo de 6.500,00 € sin IVA». El cliente ve cuánto le queda y el precio pactado consta en una factura. Acordad si el porcentaje va sobre la base o sobre el total.",
+    "req_3_title": "La fecha en que cobraste el anticipo",
+    "req_3_text": "La factura debe recoger la fecha del pago anticipado si es distinta de la de emisión (art. 6.1 RF). Invoicor no tiene campo para esa fecha: ponla en la línea o en las notas, «anticipo recibido el 12/11/2026».",
+    "req_4_title": "El IVA del importe cobrado",
+    "req_4_text": "El IVA se devenga al cobrar el anticipo, sobre la cantidad cobrada (art. 75.Dos LIVA), así que la factura aplica el tipo de la operación final: el 21 % general en el ejemplo. Esta regla no vale para las entregas intracomunitarias.",
+    "req_5_title": "Su propio número y el presupuesto al que se refiere",
+    "req_5_text": "Numera la factura de anticipo en tu serie, correlativa como las demás, y cita el presupuesto aceptado por su número y fecha. La factura final citará el número de esta.",
+    "req_6_title": "Cómo la descontará la factura final",
+    "req_6_text": "En la práctica, la factura final recoge el precio completo y descuenta el anticipo, así que su IVA solo recae sobre lo que falta. Anúncialo en las notas.",
+    "what_to_include_outro": "Añade tus datos y los del cliente: nombre, NIF y dirección; el PDF imprime el campo fiscal como «NIF/CIF». Si eres profesional y facturas a empresas, tu factura lleva retención de IRPF; Invoicor no la calcula, así que para ese caso esta plantilla no sirve: consúltalo con tu asesor.",
+    "paper_label": "Factura de anticipo · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura de anticipo",
+    "sample_breakdown_intro": "Una carpintería de Valencia fabrica los armarios y el mostrador de una agencia de viajes por 6.500,00 € sin IVA. La agencia paga el 30 % el 12/11/2026 y la factura sale ese día, al 21 % de IVA. Comprueba tu caso con tu asesor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Anticipo del 30 % sobre el encargo de 6.500,00 € sin IVA: armarios empotrados y mostrador de recepción (presupuesto P-2026-058, aceptado el 05/11/2026). Anticipo recibido el 12/11/2026",
+        "qty": "1",
+        "rate": "1.950,00 €",
+        "amount": "1.950,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.950,00 €",
+    "sample_breakdown_tax_label": "IVA 21 %",
+    "sample_breakdown_tax": "409,50 €",
+    "sample_breakdown_balance": "2.359,50 €",
+    "sample_breakdown_notes": "Factura de anticipo A-2026-014, cobrada por transferencia el 12/11/2026. Encargo: 6.500,00 € más IVA. Quedan 4.550,00 € más IVA, en la factura final de la entrega (prevista el 18/12/2026), que descontará este anticipo.",
+    "industry_notes_title": "Lo que conviene saber sobre la factura de anticipo",
+    "industry_notes": [
+      {
+        "title": "El IVA se paga al cobrar, no al entregar",
+        "text": "El IVA del anticipo se devenga cuando lo cobras, sobre el importe cobrado (art. 75.Dos LIVA). Entra en la declaración del periodo en que llegó el dinero, aunque entregues meses después."
+      },
+      {
+        "title": "Una factura por cada anticipo",
+        "text": "Hace falta factura por cada pago recibido antes de la operación (art. 2.1 RF). Un 30 % al encargar y otro 30 % a mitad de obra son dos facturas, cada una con su número, su fecha de cobro y su IVA."
+      },
+      {
+        "title": "Si el trabajo dura meses",
+        "text": "En una reforma larga, cada pago tiene su factura y la final los descuenta todos. Lleva tu lista de anticipos por cliente: es lo que su gestor comparará con sus pagos."
+      }
+    ],
+    "mistakes_title": "Tres errores con la factura de anticipo",
+    "mistakes": [
+      {
+        "title": "Pedir el anticipo solo en el presupuesto",
+        "text": "«30 % a la firma» en un presupuesto no es una factura. Cuando llegue el dinero, emite la factura de anticipo: lleva el IVA de ese cobro y la final la descontará."
+      },
+      {
+        "title": "Dejar todo el IVA para la factura final",
+        "text": "Cobrar sin factura y cargar todo el IVA al final lleva el impuesto a un periodo que no le toca: el del anticipo se devengó el día del cobro."
+      },
+      {
+        "title": "Olvidar el anticipo en la factura final",
+        "text": "Si la factura final pide los 6.500,00 € completos, el cliente no paga hasta que la corrijas. Antes de emitirla, revisa los anticipos de ese encargo."
+      }
+    ],
+    "tip_title": "Un consejo para tus facturas de anticipo",
+    "pro_tip": "Apunta el número y la fecha de cada factura de anticipo en la ficha del cliente. Invoicor no enlaza facturas entre sí, y esa lista evita que olvides un anticipo al final.",
+    "format_pdf_desc": "Un PDF conserva la base, el IVA y la fecha del anticipo tal como los enviaste, en el móvil del cliente y en la contabilidad de su gestor.",
+    "faq_title": "Preguntas sobre la factura de anticipo",
+    "faqs": [
+      {
+        "question": "¿Es obligatorio hacer factura de un anticipo?",
+        "answer": "Sí. Los pagos recibidos antes de la operación necesitan factura (art. 2.1 RF), con los datos de una factura completa y la fecha del cobro si no coincide con la de emisión."
+      },
+      {
+        "question": "¿Cómo descuento el anticipo en la factura final?",
+        "answer": "En la práctica, la factura final pone el precio completo y resta el anticipo. En el generador gratis, con una línea negativa: «Menos anticipo, factura A-2026-014 del 12/11/2026: -1.950,00 €»; quedan 4.550,00 € de base y 955,50 € de IVA. La app no acepta precios negativos: allí factura lo que falta en una línea (4.550,00 €) y cita la factura de anticipo en las notas."
+      },
+      {
+        "question": "¿Y si el cliente paga el anticipo con el IVA incluido?",
+        "answer": "Entonces lo cobrado ya lleva el IVA dentro: de 1.950,00 € en total, la base es 1.611,57 € y el IVA 338,43 €. Pactadlo por escrito para que las dos facturas cuadren."
+      },
+      {
+        "question": "¿Qué pasa si el cliente cancela después de pagar?",
+        "answer": "Depende de lo firmado y, con un particular, de las normas de consumo. Si devuelves el dinero, lo habitual es una factura rectificativa; tu asesor te dirá cómo regularizar el IVA."
+      },
+      {
+        "question": "¿Invoicor lleva la cuenta de los anticipos?",
+        "answer": "No. Puedes marcar la factura de anticipo como «Paid» (pagada), pero la app no la enlaza con la final ni calcula lo que queda. Esa lista la llevas tú."
+      }
+    ],
+    "cta_title": "Crea tu factura de anticipo",
+    "related": [
+      {
+        "name": "Factura de venta",
+        "slug": "factura-de-venta"
+      },
+      {
+        "name": "Factura recurrente",
+        "slug": "factura-recurrente"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-recurrente",
+    "translation_of": "monthly-invoice",
+    "niche": "Factura recurrente",
+    "title": "Factura recurrente mensual: modelo y ejemplo | Invoicor",
+    "meta_description": "Factura recurrente o mensual: el periodo facturado, la numeración en serie, los extras y los plazos de pago en España. Ejemplo real y PDF gratis.",
+    "h1": "Factura recurrente: modelo para facturar cada mes",
+    "subtitle": "La misma cuota cada mes, con el periodo facturado bien visible, los extras en su propia línea y un vencimiento que encaje con los pagos del cliente.",
+    "intro_paragraph": "Una factura recurrente, o factura mensual, cobra cada mes un servicio que sigue: la limpieza de una oficina, el mantenimiento de un ascensor, el alojamiento de una web. El precio se pacta una vez y cada factura repite casi lo mismo, así que el cliente mira lo que cambia: el periodo, los extras, el número. Aquí tienes qué debe llevar, un ejemplo de una empresa de limpieza y cómo preparar la del mes siguiente en un momento. Hoy un PDF sigue siendo una factura válida en España: la factura electrónica entre empresas (Ley Crea y Crece, RD 238/2026) será obligatoria el 6 de octubre de 2027 si facturas más de 8 millones de euros y el 6 de octubre de 2028 para el resto, y Verifactu se aplica a los programas de facturación desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor crea facturas en PDF, no facturas electrónicas ni registros Verifactu. Esta guía es para España: en México y en casi toda Latinoamérica la factura debe ser electrónica (el CFDI en México) y un PDF no es una factura válida.",
+    "include_title": "Qué debe incluir una factura recurrente",
+    "what_to_include_intro": "Cada mensual es una factura completa (art. 6.1 del Reglamento de facturación), no una copia del contrato. Estos seis puntos hacen que se lea en segundos.",
+    "req_1_title": "El periodo facturado, con fechas",
+    "req_1_text": "Escribe «Periodo: del 1 al 30 de noviembre de 2026». La factura debe recoger la fecha de la operación si es distinta de la de emisión (art. 6.1 RF), y en un servicio mensual esa fecha es el periodo. Invoicor no tiene un campo para ella: va en la descripción de la línea o en las notas.",
+    "req_2_title": "Un número correlativo, quizá en su propia serie",
+    "req_2_text": "La numeración debe ser correlativa dentro de cada serie (art. 6.1 RF). Muchas empresas usan una serie para las cuotas, como M-2026-11, y otra para los trabajos sueltos.",
+    "req_3_title": "La cuota y lo que incluye",
+    "req_3_text": "Di qué cubre la cuota: «Limpieza de oficinas, lunes a viernes, 20 servicios». Si cobras por servicio, pon los del mes. Con cuota fija, deja claro en el contrato qué pasa en un mes de 22 días laborables.",
+    "req_4_title": "Los extras en su propia línea",
+    "req_4_text": "Lo que no entra en la cuota, como una limpieza de cristales o unos consumibles, va en su propia línea. Así la cuota no cambia y el mes siguiente basta con borrar el extra.",
+    "req_5_title": "El IVA de cada mes",
+    "req_5_text": "La mayoría de estos servicios van al 21 % general (art. 90 LIVA). Invoicor aplica un solo tipo por factura: si un mes mezclas conceptos con tipos distintos, haz dos facturas o pregunta a tu asesor.",
+    "req_6_title": "Un vencimiento claro",
+    "req_6_text": "Entre empresas, si no pactáis nada, el plazo es de 30 días desde la prestación del servicio, y se puede ampliar a 60 como máximo por acuerdo (Ley 3/2004). Pon la fecha concreta: «Vence el 30/12/2026» se entiende mejor que «30 días».",
+    "what_to_include_outro": "Si la factura es igual cada mes, el mes con un extra es el que el cliente leerá con lupa. Haz que esa línea se entienda sola. Si eres profesional y facturas a empresas, tu factura lleva retención de IRPF; Invoicor no la calcula, así que para ese caso esta plantilla no sirve: consúltalo con tu asesor.",
+    "paper_label": "Factura recurrente · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura recurrente",
+    "sample_breakdown_intro": "Una empresa de limpieza de Sevilla factura noviembre a una gestoría: la cuota mensual, la limpieza trimestral de cristales que tocaba y una reposición de consumibles. Todo al 21 % de IVA; comprueba tu caso con tu asesor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Limpieza de oficinas, noviembre 2026 (del 01/11 al 30/11, lunes a viernes, 20 servicios)",
+        "qty": "1",
+        "rate": "680,00 €",
+        "amount": "680,00 €"
+      },
+      {
+        "description": "Limpieza trimestral de cristales interiores y exteriores, 13/11/2026",
+        "qty": "1",
+        "rate": "120,00 €",
+        "amount": "120,00 €"
+      },
+      {
+        "description": "Reposición de consumibles: papel higiénico, papel de manos y jabón (caja)",
+        "qty": "2",
+        "rate": "24,00 €",
+        "amount": "48,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "848,00 €",
+    "sample_breakdown_tax_label": "IVA 21 %",
+    "sample_breakdown_tax": "178,08 €",
+    "sample_breakdown_balance": "1.026,08 €",
+    "sample_breakdown_notes": "Factura M-2026-11. Periodo de servicio: del 1 al 30 de noviembre de 2026, según el contrato de mantenimiento de limpieza firmado el 15/01/2026. Cristales: servicio trimestral (próximo en febrero). Pago por transferencia antes del 30/12/2026.",
+    "industry_notes_title": "Lo que conviene saber sobre la factura recurrente",
+    "industry_notes": [
+      {
+        "title": "Recurrente, pero no automática",
+        "text": "Invoicor no tiene facturas recurrentes ni envíos programados. Abre la factura del mes pasado y pulsa «Duplicate Invoice»: la copia sale con el número siguiente, el cliente, las líneas y las notas. Cambia el periodo, quita los extras y envíala."
+      },
+      {
+        "title": "Hasta el día 16 del mes siguiente",
+        "text": "Si el cliente es empresario o profesional, la factura puede emitirse hasta el día 16 del mes siguiente a la operación (art. 11 RF). Facturar a primeros de mes, con todo el mes prestado, encaja de sobra."
+      },
+      {
+        "title": "Cuando el cliente paga tarde",
+        "text": "Entre empresas, la Ley 3/2004 prevé intereses al tipo del BCE más 8 puntos y 40 € de compensación por costes de cobro; con particulares no se aplica. Marca cada mes como «Paid» al cobrar y verás enseguida cuál falta."
+      }
+    ],
+    "mistakes_title": "Tres errores en la factura recurrente",
+    "mistakes": [
+      {
+        "title": "Duplicar sin cambiar el periodo",
+        "text": "Una factura de diciembre que aún dice «noviembre» se rechaza o se paga como duplicada. Revisa el periodo, las notas y el vencimiento de la copia."
+      },
+      {
+        "title": "Meter los extras en la cuota",
+        "text": "Subir la cuota de 680,00 € a 848,00 € para incluir los cristales esconde lo que cambió y estropea la copia del mes siguiente."
+      },
+      {
+        "title": "Saltarse la numeración",
+        "text": "Reutilizar el número del mes pasado o dejar huecos rompe la serie. Al duplicar, Invoicor asigna el número siguiente; no lo cambies a mano."
+      }
+    ],
+    "tip_title": "Un consejo para tus facturas mensuales",
+    "pro_tip": "Factura siempre el mismo día, por ejemplo el primer día laborable del mes siguiente: el cliente la espera y, si un mes no paga, lo notas enseguida. Guarda las facturas al menos 4 años (art. 66 LGT), o 6 con contabilidad mercantil (art. 30 del Código de Comercio).",
+    "format_pdf_desc": "Un PDF por mes da al cliente un documento fijo para cada periodo, que su gestor archiva por meses y que no cambia después de enviado.",
+    "faq_title": "Preguntas sobre la factura recurrente",
+    "faqs": [
+      {
+        "question": "¿Cuándo envío la factura mensual?",
+        "answer": "Para un servicio prestado durante el mes, al terminarlo, cuando ya sabes los extras. Si el cliente es una empresa, tienes hasta el día 16 del mes siguiente (art. 11 RF). Elige un día y mantenlo."
+      },
+      {
+        "question": "¿Puedo facturar el mes por adelantado?",
+        "answer": "Si cobras antes de prestar el servicio, ese cobro es un anticipo y su IVA se devenga al cobrarlo (art. 75.Dos LIVA). Pon el periodo con claridad y consulta con tu asesor cómo encaja en tus declaraciones."
+      },
+      {
+        "question": "¿Cómo descuento un servicio que no se hizo?",
+        "answer": "En el generador gratis, con una línea negativa y el motivo: «Abono: servicio del 24/11 no realizado, oficina cerrada». La app no acepta precios negativos: allí baja la cantidad o la cuota de ese mes y explica el motivo en la descripción."
+      },
+      {
+        "question": "¿Cómo facturo el primer mes si empecé a mitad?",
+        "answer": "Factura la parte del mes o los servicios prestados y dilo: «Del 17 al 30 de noviembre, 10 servicios». Pactad antes si se prorratea por días o por servicios."
+      },
+      {
+        "question": "¿Cada mensual necesita su propio número?",
+        "answer": "Sí, aunque el contenido se repita: la numeración es correlativa dentro de cada serie (art. 6.1 RF). Al duplicar, Invoicor pone el número siguiente."
+      }
+    ],
+    "cta_title": "Crea tu factura recurrente",
+    "related": [
+      {
+        "name": "Factura de anticipo",
+        "slug": "factura-de-anticipo"
+      },
+      {
+        "name": "Factura de mano de obra y materiales",
+        "slug": "factura-mano-de-obra-y-materiales"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-mano-de-obra-y-materiales",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Factura de mano de obra y materiales",
+    "title": "Factura mano de obra y materiales: modelo | Invoicor",
+    "meta_description": "Factura de mano de obra y materiales: horas, materiales con cantidad y precio, desplazamiento y un solo tipo de IVA. Ejemplo de reforma y PDF gratis.",
+    "h1": "Factura mano de obra y materiales: modelo y ejemplo",
+    "subtitle": "El trabajo y el material en líneas separadas, con el desplazamiento y la retirada a la vista y el IVA bien aplicado.",
+    "intro_paragraph": "Una factura de mano de obra y materiales separa el precio de un trabajo en dos: tu tiempo y lo que instalas o gastas. Es la factura de siempre en reformas, fontanería o electricidad, y muchos la llaman factura de reformas. El cliente ve cuánto es oficio y cuánto pieza, lo compara con el presupuesto y, si el trabajo fue por administración (horas reales más material), la factura es la única prueba. Abajo, una reparación en el aseo de una oficina. Hoy un PDF sigue siendo una factura válida en España: la factura electrónica entre empresas (Ley Crea y Crece, RD 238/2026) será obligatoria el 6 de octubre de 2027 si facturas más de 8 millones de euros y el 6 de octubre de 2028 para el resto, y Verifactu se aplica a los programas de facturación desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor crea facturas en PDF, no facturas electrónicas ni registros Verifactu. Esta guía es para España: en México y en casi toda Latinoamérica la factura debe ser electrónica (el CFDI en México) y un PDF no es una factura válida.",
+    "include_title": "Qué debe incluir una factura de mano de obra y materiales",
+    "what_to_include_intro": "Además de los datos de toda factura completa (art. 6.1 del Reglamento de facturación), cada línea debe ser claramente mano de obra, material o un cargo.",
+    "req_1_title": "La mano de obra en horas por precio",
+    "req_1_text": "Por administración, pon horas, precio por hora y quién trabajó: «Mano de obra oficial fontanero, 3 h a 38,00 €». A precio cerrado basta una línea que nombre la tarea.",
+    "req_2_title": "Cada material con cantidad y precio unitario",
+    "req_2_text": "El reglamento pide la descripción y el precio unitario sin impuestos (art. 6.1 RF). Cada material en su línea y su unidad: 2 latiguillos, 1 cisterna. «Materiales: 208,60 €» invita a buscar los precios en la ferretería.",
+    "req_3_title": "El desplazamiento y la retirada, como cargos propios",
+    "req_3_text": "El desplazamiento o la retirada de escombros no son horas ni una pieza. Dales su línea y un nombre claro, para que se lean como un cargo con motivo y no como horas infladas.",
+    "req_4_title": "Un solo tipo de IVA en la factura",
+    "req_4_text": "Lo normal es el 21 % general (art. 90 LIVA). Puede aplicarse el 10 % en algunas reformas de vivienda si se cumplen los requisitos, entre ellos un límite a los materiales; compruébalo con tu asesor. Invoicor aplica un solo tipo por factura: con una parte al 21 % y otra al 10 %, haz dos facturas o pregunta a tu asesor.",
+    "req_5_title": "La fecha del trabajo",
+    "req_5_text": "Si el trabajo se hizo en una fecha distinta de la de emisión, la factura debe decirlo (art. 6.1 RF). Invoicor no tiene campo para ella: va en la primera línea o en las notas.",
+    "req_6_title": "La referencia al presupuesto o al parte de trabajo",
+    "req_6_text": "Cita en las notas el presupuesto o el parte firmado y el tope aprobado, para que el cliente compare el total con lo que aceptó.",
+    "what_to_include_outro": "Las plantillas por oficio (fontanero, electricista, pintor) siguen esta estructura con las piezas de cada oficio. Si eres profesional y facturas a empresas, tu factura lleva retención de IRPF; Invoicor no la calcula, así que para ese caso esta plantilla no sirve: consúltalo con tu asesor.",
+    "paper_label": "Factura de mano de obra y materiales · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura de mano de obra y materiales",
+    "sample_breakdown_intro": "Una empresa de reformas de Zaragoza cambia el grifo y la cisterna del aseo de una oficina. El cliente es la empresa que la usa, no otro contratista, y el ejemplo aplica el 21 % de IVA; comprueba tu caso con tu asesor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Desplazamiento",
+        "qty": "1",
+        "rate": "30,00 €",
+        "amount": "30,00 €"
+      },
+      {
+        "description": "Mano de obra oficial fontanero: desmontaje y montaje de grifo y cisterna (19/11/2026)",
+        "qty": "3 h",
+        "rate": "38,00 €",
+        "amount": "114,00 €"
+      },
+      {
+        "description": "Mano de obra ayudante",
+        "qty": "3 h",
+        "rate": "24,00 €",
+        "amount": "72,00 €"
+      },
+      {
+        "description": "Material: grifo monomando de lavabo, cromado",
+        "qty": "1",
+        "rate": "68,50 €",
+        "amount": "68,50 €"
+      },
+      {
+        "description": "Material: cisterna de doble descarga, porcelana blanca",
+        "qty": "1",
+        "rate": "112,00 €",
+        "amount": "112,00 €"
+      },
+      {
+        "description": "Material: latiguillo flexible 40 cm",
+        "qty": "2",
+        "rate": "6,80 €",
+        "amount": "13,60 €"
+      },
+      {
+        "description": "Material: silicona sanitaria, cartucho",
+        "qty": "2",
+        "rate": "7,25 €",
+        "amount": "14,50 €"
+      },
+      {
+        "description": "Retirada del grifo y la cisterna viejos",
+        "qty": "1",
+        "rate": "25,00 €",
+        "amount": "25,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "449,60 €",
+    "sample_breakdown_tax_label": "IVA 21 %",
+    "sample_breakdown_tax": "94,42 €",
+    "sample_breakdown_balance": "544,02 €",
+    "sample_breakdown_notes": "Trabajo realizado el 19/11/2026 según el parte PT-0412, por administración con un máximo de 600,00 € sin IVA. Pago por transferencia a 30 días.",
+    "industry_notes_title": "Lo que conviene saber sobre la factura de mano de obra y materiales",
+    "industry_notes": [
+      {
+        "title": "Por administración o a precio cerrado",
+        "text": "A precio cerrado, el cliente paga lo presupuestado y la separación sirve para que se entienda. Por administración paga horas y material reales, y la factura es la prueba: pactad un tope antes de empezar."
+      },
+      {
+        "title": "Si trabajas para otro contratista",
+        "text": "En obras de construcción o rehabilitación de edificaciones entre promotor y contratista, o entre contratista y subcontratista, la factura va sin IVA y con la mención «inversión del sujeto pasivo» (art. 84.Uno.2.º f LIVA, art. 6.1.m RF). El PDF imprime aun así «IVA (0%)», que la mención explica."
+      },
+      {
+        "title": "Guarda los tickets del proveedor",
+        "text": "Las facturas de tu almacén respaldan los precios del material si el cliente o Hacienda preguntan. La factura al cliente lleva pieza, cantidad y precio, no tu coste."
+      }
+    ],
+    "mistakes_title": "Tres errores en la factura de mano de obra y materiales",
+    "mistakes": [
+      {
+        "title": "Aplicar el 10 % sin comprobarlo",
+        "text": "El tipo reducido de algunas reformas de vivienda tiene requisitos. Aplicarlo sin cumplirlos deja un IVA mal repercutido. Ante la duda, el 21 % y una consulta al asesor."
+      },
+      {
+        "title": "Esconder la mano de obra en el material",
+        "text": "Subir las piezas para cubrir la instalación hace que el material parezca caro y el trabajo gratis. Deja las horas en sus líneas, aunque sean pocas."
+      },
+      {
+        "title": "Olvidar el material pequeño",
+        "text": "Silicona, tacos y tornillos suman mucho en un año. Si el presupuesto lo permite, factúralos como material o en una línea de pequeño material."
+      }
+    ],
+    "tip_title": "Un consejo para tus facturas de reformas",
+    "pro_tip": "Guarda en la app tus materiales y tus precios por hora como productos: salen iguales en cada factura y no tienes que recordarlos en la obra.",
+    "format_pdf_desc": "Un PDF fija las horas, los precios y el IVA tal como se acordaron: lo que el cliente compara con el parte y lo que tú guardas.",
+    "faq_title": "Preguntas sobre la factura de mano de obra y materiales",
+    "faqs": [
+      {
+        "question": "¿Tengo que separar la mano de obra y los materiales?",
+        "answer": "El reglamento pide describir la operación con su precio unitario (art. 6.1 RF), no un formato concreto. Separarlos es lo que el cliente espera y evita discusiones."
+      },
+      {
+        "question": "¿Qué IVA lleva una reforma?",
+        "answer": "El general es el 21 %. Puede aplicarse el 10 % en algunas reformas de vivienda si se cumplen los requisitos; compruébalo con tu asesor antes de facturar. Entre contratistas puede tocar la inversión del sujeto pasivo, que explica la guía de la factura de subcontratista."
+      },
+      {
+        "question": "¿Cómo facturo el desplazamiento?",
+        "answer": "En la primera línea, con precio fijo: «Desplazamiento, 30,00 €», con el mismo IVA que el resto. Si lo descuentas al aceptar el trabajo, dilo en el presupuesto."
+      },
+      {
+        "question": "¿Y si el trabajo se pasa del presupuesto?",
+        "answer": "Avisa antes de superar el tope y pide conformidad por escrito; luego anótalo: «Ampliación de 150,00 € aprobada el 18/11/2026». Un exceso descubierto en la factura es una causa habitual de impago."
+      },
+      {
+        "question": "¿Qué precio por hora pongo al ayudante?",
+        "answer": "El que pactaste en el presupuesto. Si oficial y ayudante cobran distinto, una línea para cada uno: el cliente ve quién hizo qué."
+      }
+    ],
+    "cta_title": "Crea tu factura de mano de obra y materiales",
+    "related": [
+      {
+        "name": "Factura de subcontratista",
+        "slug": "factura-subcontratista"
+      },
+      {
+        "name": "Factura de anticipo",
+        "slug": "factura-de-anticipo"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-de-venta",
+    "translation_of": "sales-invoice",
+    "niche": "Factura de venta",
+    "title": "Factura de venta: modelo gratis con ejemplo | Invoicor",
+    "meta_description": "Factura de venta de productos: artículos, cantidades, precio unitario, portes e IVA al 21, 10 o 4 %. Mira un pedido de ejemplo y crea tu PDF gratis.",
+    "h1": "Factura de venta: modelo y ejemplo para productos",
+    "subtitle": "Para talleres, distribuidores y tiendas que venden a empresas: artículos, portes, IVA y condiciones.",
+    "intro_paragraph": "Una factura de venta cobra mercancía que sale de tu almacén. Tiene que cuadrar línea a línea con el pedido y el albarán, para que el comprador compruebe la caja y dé entrada al género: cantidades, precios unitarios, referencias y entrega. No es un ticket o factura simplificada, ni una factura comercial de exportación, que tienen sus propias guías. Esta página trata la venta de bienes en España, con una nota para la UE. Hoy un PDF sigue siendo una factura válida en España: la factura electrónica entre empresas (Ley Crea y Crece, RD 238/2026) será obligatoria el 6 de octubre de 2027 si facturas más de 8 millones de euros y el 6 de octubre de 2028 para el resto, y Verifactu se aplica a los programas de facturación desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor crea facturas en PDF, no facturas electrónicas ni registros Verifactu. Esta guía es para España: en México y en casi toda Latinoamérica la factura debe ser electrónica (el CFDI en México) y un PDF no es una factura válida.",
+    "include_title": "Qué debe incluir una factura de venta",
+    "what_to_include_intro": "Además de los datos de toda factura completa (art. 6.1 del Reglamento de facturación), estos seis puntos hacen que el comprador la compruebe en un minuto.",
+    "req_1_title": "Artículo y referencia en cada línea",
+    "req_1_text": "Nombre, variante y tu referencia: «Plato llano de gres 27 cm, arena (PL-27)». Así se casa con el pedido y la reposición. Guarda tus productos en la app y elígelos en cada pedido.",
+    "req_2_title": "Cantidad y precio unitario, no solo el total",
+    "req_2_text": "El reglamento pide el precio unitario sin impuestos y los descuentos (art. 6.1 RF). Si llegan 46 platos en vez de 48, el cliente necesita el precio por unidad para el abono. Indica la unidad si no es obvia: caja de 6, kilo.",
+    "req_3_title": "Los portes en su propia línea",
+    "req_3_text": "Pon el envío aparte, no dentro de los precios: el cliente ve lo que cuesta la mercancía y lo que cuesta moverla. Los portes que acompañan a la venta suelen llevar el IVA de los bienes; si dudas, pregunta a tu asesor.",
+    "req_4_title": "El tipo de IVA: 21 %, 10 % o 4 %",
+    "req_4_text": "El general es el 21 % (art. 90 LIVA); la ley fija tipos reducidos del 10 % y del 4 % para ciertos bienes (art. 91). Invoicor aplica un solo tipo por factura: si un pedido mezcla tipos, haz una factura por tipo.",
+    "req_5_title": "Fecha y lugar de entrega",
+    "req_5_text": "Si entregaste en una fecha distinta de la de emisión, la factura debe recogerla (art. 6.1 RF). Invoicor no tiene campo para ella: va en las notas, con la dirección de entrega y el albarán.",
+    "req_6_title": "Ventas a empresas de otros países de la UE",
+    "req_6_text": "La entrega intracomunitaria está exenta (art. 25 LIVA) si el comprador te ha dado su número de IVA de otro Estado miembro. La factura lleva ese número y la mención «Entrega intracomunitaria exenta, art. 25 LIVA» (art. 6.1.j RF), y la operación va al modelo 349. El PDF imprime aun así «IVA (0%)» a 0,00 €, que la mención explica.",
+    "what_to_include_outro": "Con estos datos la factura cuadra con el pedido y con la caja, y el cliente paga sin preguntar.",
+    "paper_label": "Factura de venta · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura de venta",
+    "sample_breakdown_intro": "Un taller de cerámica de Toledo vende vajilla a un restaurante, que la usa y no la revende: cuatro artículos y los portes, todo al 21 % de IVA. Comprueba el tipo de tus productos con tu asesor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Plato llano de gres 27 cm, arena (PL-27)",
+        "qty": "48",
+        "rate": "9,50 €",
+        "amount": "456,00 €"
+      },
+      {
+        "description": "Plato hondo de gres 22 cm, arena (PH-22)",
+        "qty": "48",
+        "rate": "8,75 €",
+        "amount": "420,00 €"
+      },
+      {
+        "description": "Taza de café 9 cl con plato, blanca (TC-09)",
+        "qty": "36",
+        "rate": "4,20 €",
+        "amount": "151,20 €"
+      },
+      {
+        "description": "Fuente oval de servir 35 cm, arena (FO-35)",
+        "qty": "6",
+        "rate": "24,00 €",
+        "amount": "144,00 €"
+      },
+      {
+        "description": "Portes: envío en 2 cajas por agencia, entrega en 24 h",
+        "qty": "1",
+        "rate": "18,50 €",
+        "amount": "18,50 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1.189,70 €",
+    "sample_breakdown_tax_label": "IVA 21 %",
+    "sample_breakdown_tax": "249,84 €",
+    "sample_breakdown_balance": "1.439,54 €",
+    "sample_breakdown_notes": "Pedido RT-2026-031. Entregado el 20/11/2026 en el restaurante, albarán AL-2026-187. Roturas o faltas: avisar en 48 horas. Pago por transferencia a 30 días desde la entrega.",
+    "industry_notes_title": "Lo que conviene saber sobre la factura de venta",
+    "industry_notes": [
+      {
+        "title": "El plazo de pago entre empresas",
+        "text": "Sin pacto, 30 días desde la entrega, ampliable a 60 como máximo por acuerdo (Ley 3/2004). Si pagan tarde, intereses al tipo del BCE más 8 puntos y 40 € de compensación por costes de cobro. Con consumidores esa ley no se aplica."
+      },
+      {
+        "title": "Si vendes a una tienda que revende",
+        "text": "Con un minorista, tu factura puede tener que añadir el recargo de equivalencia, que tiene su propia guía. Invoicor aplica un solo tipo de impuesto, así que pregunta a tu asesor cómo mostrarlo."
+      },
+      {
+        "title": "Las correcciones van en otro documento",
+        "text": "Una factura enviada queda bloqueada en Invoicor. Lo habitual en España es una factura rectificativa que cite la original; tu asesor te dirá cómo. «Duplicate Invoice» crea una copia con el número siguiente y puedes marcar la original como «Cancelled»."
+      }
+    ],
+    "mistakes_title": "Tres errores en la factura de venta",
+    "mistakes": [
+      {
+        "title": "Una sola línea para todo el pedido",
+        "text": "«Vajilla según pedido: 1.189,70 €» no se comprueba contra la caja ni sirve para abonar un plato roto. Cada artículo, con cantidad y precio unitario."
+      },
+      {
+        "title": "Mezclar tipos de IVA en una factura",
+        "text": "Productos al 21 % y al 10 % bajo un mismo tipo cobran de más o de menos. Una factura por tipo de IVA."
+      },
+      {
+        "title": "Quitar el IVA a un cliente de la UE sin su número",
+        "text": "La exención exige que el comprador te haya dado su número de IVA de otro Estado miembro. Sin él, la venta no se factura como exenta."
+      }
+    ],
+    "tip_title": "Un consejo para tus facturas de venta",
+    "pro_tip": "Pon el número de factura en el albarán de la caja. Cuando el cliente avisa de una falta, cita el albarán, tú abres la misma factura y basta un correo.",
+    "format_pdf_desc": "Un PDF mantiene las referencias, las cantidades y los totales en columnas fijas, se imprime bien junto al albarán y se archiva sin que nada se mueva.",
+    "faq_title": "Preguntas sobre la factura de venta",
+    "faqs": [
+      {
+        "question": "¿Qué diferencia hay entre una factura de venta y un ticket?",
+        "answer": "La factura completa lleva los datos del comprador y es la que una empresa necesita para su contabilidad y su IVA. El ticket o factura simplificada se da en ventas al público, con menos datos."
+      },
+      {
+        "question": "¿Es lo mismo una factura de venta que una factura comercial?",
+        "answer": "No. La factura comercial acompaña la mercancía que sale de la UE y añade lo que pide la aduana; la exportación está exenta (art. 21 LIVA) y tiene su propia guía."
+      },
+      {
+        "question": "¿Qué IVA pongo a mis productos?",
+        "answer": "El 21 % general (art. 90 LIVA), salvo que el producto esté entre los de tipo reducido del 10 % o del 4 % (art. 91). Si dudas, pregunta a tu asesor antes de la primera factura: cambiarlo después obliga a rectificar."
+      },
+      {
+        "question": "¿Cómo añado los portes?",
+        "answer": "Como una línea más, «Portes: envío en 2 cajas», con su precio. Invoicor aplica un solo tipo de IVA a toda la factura, lo normal cuando los portes acompañan a la venta."
+      },
+      {
+        "question": "¿Qué necesito para vender a una empresa de otro país de la UE?",
+        "answer": "Su número de IVA intracomunitario, que debes comprobar, y la mención de la exención (art. 25 LIVA). Luego declaras la operación en el modelo 349. Con particulares de otros países las reglas son otras: consúltalo con tu asesor."
+      }
+    ],
+    "cta_title": "Crea tu factura de venta",
+    "related": [
+      {
+        "name": "Factura comercial",
+        "slug": "factura-comercial-exportacion"
+      },
+      {
+        "name": "Factura sin IVA",
+        "slug": "factura-sin-iva"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-comercial-exportacion",
+    "translation_of": "commercial-invoice",
+    "niche": "Factura comercial",
+    "title": "Factura comercial de exportación: modelo | Invoicor",
+    "meta_description": "Factura comercial para exportar fuera de la UE: TARIC, origen, pesos, Incoterms y la exención del art. 21 LIVA. Mira el ejemplo y crea tu PDF gratis.",
+    "h1": "Factura comercial de exportación: modelo y ejemplo",
+    "subtitle": "Para empresas que envían mercancía fuera de la Unión Europea: los datos que leen la aduana y el transportista, la mención de la exención y lo que va en otros documentos.",
+    "intro_paragraph": "La factura comercial es la factura de una venta de exportación, escrita para que la aduana de destino entienda qué viaja en la caja. Con ella la aduana clasifica la mercancía y calcula los aranceles, y el transportista la pide antes de mover el envío. Una venta de bienes que salen de la UE está exenta de IVA (art. 21 LIVA), y la factura lo dice. En España un PDF sigue siendo hoy una factura válida; la factura electrónica entre empresas llegará el 6 de octubre de 2027 si facturas más de 8 millones de euros y el 6 de octubre de 2028 para el resto, y los requisitos de Verifactu para el software de facturación, el 6 de octubre de 2028 (RDL 43/2026). Invoicor hace facturas en PDF, no facturas electrónicas ni registros Verifactu, y tampoco el DUA ni los formularios del transportista. El encabezado del PDF dice «Factura»: escribe «Factura comercial» en la primera línea y en las notas, y pregunta a tu transportista si necesita su propio formulario o ese título en el encabezado. Esta guía es para España: en México (CFDI) y en casi toda Latinoamérica la factura tiene que ser electrónica y un PDF no vale como factura.",
+    "include_title": "Qué debe incluir una factura comercial de exportación",
+    "what_to_include_intro": "Si falta uno de estos datos, el envío puede quedarse parado.",
+    "req_1_title": "Exportador, comprador y destinatario de la mercancía",
+    "req_1_text": "Tu empresa como exportador, con tu NIF y tu número EORI, el que identifica a los operadores ante la aduana (lo da la Agencia Tributaria, a través de Aduanas). Después, el comprador que paga y, en las notas, quién recibe la mercancía si no es el mismo.",
+    "req_2_title": "Una descripción que permita clasificar",
+    "req_2_text": "«Regalos» o «muestras» no pasan. Di qué es cada artículo, de qué está hecho y para qué sirve: «Alpargata de yute con suela cosida, lona de algodón, para adulto». La aduana clasifica a partir de este texto.",
+    "req_3_title": "Código TARIC o HS y origen en cada línea",
+    "req_3_text": "El código HS tiene seis dígitos comunes en todo el mundo; el TARIC de la UE añade más. El origen es donde se fabricó la mercancía, no desde donde sale. Escribe los dos en la descripción de la línea.",
+    "req_4_title": "Cantidad, peso y valor en una sola moneda",
+    "req_4_text": "Unidades, precio unitario y total de cada línea en la moneda que nombra la factura, más el peso por línea o del envío y el número de bultos.",
+    "req_5_title": "Incoterms 2020 y motivo de la exportación",
+    "req_5_text": "Indica la regla Incoterms acordada con el lugar: «DAP Zúrich» o «EXW Elche». Dice quién paga el flete y los aranceles de importación. Añade el motivo: venta, muestra, reparación o devolución.",
+    "req_6_title": "La exención y una declaración firmada",
+    "req_6_text": "Sin IVA, la factura debe decir por qué: «Operación exenta de IVA, art. 21 LIVA» (art. 6.1.j del Reglamento de facturación). Muchos transportistas piden además una frase que confirme que los datos son ciertos, con nombre, cargo y fecha.",
+    "what_to_include_outro": "Mira también la lista de tu transportista: algunos piden datos extra o su propio formulario.",
+    "paper_label": "Factura comercial · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura comercial de exportación",
+    "sample_breakdown_intro": "Un fabricante de alpargatas de Elche envía un pedido a una tienda de Zúrich, en euros y con DAP Zúrich: los aranceles suizos los paga el comprador. Exportación fuera de la UE, exenta por el art. 21 LIVA: el PDF imprime «IVA (0%)» con 0,00 € y la mención de las notas lo explica. Los códigos son de ejemplo: comprueba los tuyos.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Factura comercial. Alpargata de yute, suela cosida, lona de algodón, tallas 36 a 41. HS 6405.20, origen España, 0,45 kg el par",
+        "qty": "60",
+        "rate": "24,00 €",
+        "amount": "1.440,00 €"
+      },
+      {
+        "description": "Bolso de lona de algodón con asas de yute. HS 4202.22, origen España, 0,6 kg",
+        "qty": "25",
+        "rate": "32,50 €",
+        "amount": "812,50 €"
+      },
+      {
+        "description": "Transporte internacional hasta Zúrich, 3 bultos, 48 kg brutos",
+        "qty": "1",
+        "rate": "210,00 €",
+        "amount": "210,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2.462,50 €",
+    "sample_breakdown_tax_label": "IVA 0 % (exportación, art. 21 LIVA)",
+    "sample_breakdown_tax": "0,00 €",
+    "sample_breakdown_balance": "2.462,50 €",
+    "sample_breakdown_notes": "Factura comercial. Operación exenta de IVA, art. 21 LIVA (exportación). Incoterms 2020: DAP Zúrich. Motivo: venta. Destinatario de la mercancía: Atelier Sol GmbH, Zúrich. Mercancía enviada el 20 de noviembre de 2026. Declaro que los datos de esta factura son ciertos y correctos. Firmado: Marta Ruiz, administradora.",
+    "industry_notes_title": "Lo que conviene saber de la factura comercial",
+    "industry_notes": [
+      {
+        "title": "Exportación o entrega intracomunitaria",
+        "text": "Enviar a Suiza, Reino Unido o Estados Unidos es exportar (art. 21 LIVA). Vender a una empresa de Francia o Alemania no lo es: es una entrega intracomunitaria, exenta por el art. 25 LIVA si el cliente te ha dado su NIF-IVA de otro Estado miembro, y va en el modelo 349."
+      },
+      {
+        "title": "Quién paga los aranceles lo dicen los Incoterms",
+        "text": "Los Incoterms los publica la Cámara de Comercio Internacional; la versión vigente es Incoterms 2020. Con DAP, el comprador paga los aranceles e impuestos de importación; con DDP, tú. Con DDP, esos costes salen de tu margen."
+      },
+      {
+        "title": "La factura es un documento entre varios",
+        "text": "Un envío puede necesitar también el DUA de exportación, un certificado de origen, una lista de bultos o el formulario del transportista. Invoicor hace la factura; tu transitario o agente de aduanas te dirá qué más hace falta. Guarda la prueba de que la mercancía salió de la UE y consulta con tu asesor qué documentos justifican la exención."
+      }
+    ],
+    "mistakes_title": "Tres errores en la factura comercial",
+    "mistakes": [
+      {
+        "title": "Declarar menos valor para ahorrar aranceles al cliente",
+        "text": "Poner un precio inferior al real es una declaración falsa: la aduana puede retener la mercancía y multar al importador. Declara lo que paga el comprador. Si es una muestra o un regalo, dilo y pon un valor realista."
+      },
+      {
+        "title": "Confundir origen con lugar de salida",
+        "text": "Un bolso fabricado en Portugal y enviado desde tu almacén de Alicante tiene origen portugués. El origen puede cambiar el arancel: compruébalo por artículo."
+      },
+      {
+        "title": "Olvidar la mención de la exención",
+        "text": "Sin «exenta, art. 21 LIVA», la línea «IVA (0%)» del PDF no explica nada y la factura queda incompleta. Escríbela en las notas, justo debajo de las líneas, en cada exportación."
+      }
+    ],
+    "tip_title": "Consejo para exportar",
+    "pro_tip": "Guarda cada producto con su código HS, origen y peso en la descripción. Cada pedido empieza con los datos de aduana puestos: solo cambias cantidades, comprador y fecha.",
+    "format_pdf_desc": "Transportistas y agentes de aduanas piden la factura comercial en PDF para adjuntarla al envío. Mantiene códigos y pesos en su sitio.",
+    "faq_title": "Preguntas sobre la factura comercial de exportación",
+    "faqs": [
+      {
+        "question": "¿Cuándo necesito una factura comercial?",
+        "answer": "Cuando la mercancía cruza una frontera aduanera, también en casi todos los paquetes de mensajería: en ventas y, con el motivo indicado, en muestras, regalos y devoluciones."
+      },
+      {
+        "question": "¿Lleva IVA una factura de exportación?",
+        "answer": "No, si los bienes salen de la UE: la exportación está exenta (art. 21 LIVA) y la factura cita la exención. Dentro de la UE, a una empresa con NIF-IVA de otro país, es una entrega intracomunitaria exenta por el art. 25."
+      },
+      {
+        "question": "¿Dónde pongo el código TARIC en la factura?",
+        "answer": "En la línea de cada artículo, después de la descripción, junto al país de origen. Si dudas del código, pregunta a tu agente de aduanas."
+      },
+      {
+        "question": "¿Qué es el EORI y dónde lo pido?",
+        "answer": "El número que identifica a las empresas ante las aduanas de la UE. Lo da la Agencia Tributaria, a través de Aduanas. Ponlo en las notas."
+      },
+      {
+        "question": "¿Puede Invoicor hacer el DUA o los formularios de aduana?",
+        "answer": "No. Invoicor hace el PDF de la factura con los datos de aduana que escribes en cada línea. El DUA, los certificados de origen y los formularios del transportista los tramitan tu transitario, tu agente de aduanas o el propio transportista."
+      }
+    ],
+    "cta_title": "Crea tu factura comercial",
+    "related": [
+      {
+        "name": "Factura de venta",
+        "slug": "factura-de-venta"
+      },
+      {
+        "name": "Factura sin IVA",
+        "slug": "factura-sin-iva"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-con-suplidos",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Factura con suplidos",
+    "title": "Suplidos en factura: cómo ponerlos, con ejemplo | Invoicor",
+    "meta_description": "Suplidos en factura: cuándo un gasto va sin IVA (art. 78 LIVA) y cuándo refacturarlo con IVA. Ejemplo para una empresa y PDF gratis en minutos.",
+    "h1": "Suplidos en factura: cómo incluirlos y refacturar gastos",
+    "subtitle": "Para empresas que pasan a su cliente gastos del encargo: qué es un suplido sin IVA, qué es un gasto refacturado con IVA y cómo presentar cada uno.",
+    "intro_paragraph": "Esta página es para una empresa o un autónomo que factura a su cliente los gastos de un encargo, no para la nota de gastos de un empleado a su empresa. Pagaste una tasa, un alquiler o una imprenta para el trabajo del cliente; ahora toca cobrarlo, y aquí hay dos caminos distintos. El suplido es un pago hecho en nombre y por cuenta del cliente, con su mandato expreso: no lleva IVA. El gasto refacturado es una compra hecha a tu nombre que pasas al cliente: forma parte de tu servicio y lleva IVA. Hoy una factura en PDF es válida en España. La factura electrónica entre empresas será obligatoria desde el 6 de octubre de 2027 para quien facture más de 8 millones de euros y desde el 6 de octubre de 2028 para todos los demás; Verifactu, para los programas de facturación, desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor genera PDF, no facturas electrónicas ni registros Verifactu. Ojo si estás fuera de España: en México (CFDI) y en la mayor parte de Latinoamérica solo vale la factura electrónica, no un PDF.",
+    "include_title": "Qué debe incluir una factura con suplidos",
+    "what_to_include_intro": "Tu cliente quiere poder cuadrar cada gasto con un justificante y con lo pactado. Estos seis puntos se lo ponen fácil.",
+    "req_1_title": "Separar suplidos y gastos refacturados",
+    "req_1_text": "Antes de facturar, decide qué es cada gasto. ¿Se pagó a nombre del cliente, por encargo suyo y con un justificante a su nombre? Suplido. ¿La factura del proveedor está a tu nombre? Gasto refacturado, con IVA.",
+    "req_2_title": "El mandato del cliente",
+    "req_2_text": "Para que un pago sea suplido hace falta el mandato expreso del cliente (art. 78.Tres.3.º LIVA). Déjalo por escrito en el presupuesto, el contrato o un correo: «Pagaremos en tu nombre la tasa municipal de ocupación de vía pública».",
+    "req_3_title": "Justificar el importe exacto",
+    "req_3_text": "El suplido se cobra por lo que costó, céntimo a céntimo, y debes poder justificarlo con el recibo o la carta de pago. Tampoco puedes deducirte su IVA.",
+    "req_4_title": "Los gastos refacturados con IVA",
+    "req_4_text": "Lo que compraste a tu nombre entra en la base de tu factura, como una línea más de tu servicio, y lleva IVA. En general se aplica el tipo de tu servicio; si el gasto tiene otro tipo, consúltalo con tu asesor.",
+    "req_5_title": "Una línea por gasto, con su referencia",
+    "req_5_text": "Cada gasto con su fecha, el proveedor y el número de su factura: «Alquiler de equipo de sonido, factura proveedor 318».",
+    "req_6_title": "Los datos de siempre",
+    "req_6_text": "Número y serie, fecha de emisión, nombre, NIF y dirección de los dos, y la fecha del servicio si no coincide con la de emisión (art. 6.1 del Reglamento de facturación). Invoicor no tiene campo para esa fecha: ponla en la descripción o en las notas.",
+    "what_to_include_outro": "Un dato práctico: Invoicor aplica un solo tipo de IVA por factura, así que una línea de suplido a 0 junto a tus líneas al 21 % no es posible. Emite los suplidos en un documento aparte, citando la factura del servicio, o pregunta a tu asesor cómo prefiere presentarlos.",
+    "paper_label": "Factura con suplidos · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura con gastos refacturados y suplidos",
+    "sample_breakdown_intro": "Una agencia de eventos de Valencia (una S.L.) factura a una empresa una jornada para sus clientes. El equipo de sonido y la imprenta se contrataron a nombre de la agencia: gastos refacturados, al 21 % como el servicio. La tasa municipal se pagó en nombre del cliente y con su autorización: es un suplido y va aparte, sin IVA, como dicen las notas.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Organización y coordinación de la jornada del 14 de noviembre de 2026",
+        "qty": "1",
+        "rate": "2.400,00 €",
+        "amount": "2.400,00 €"
+      },
+      {
+        "description": "Montaje y desmontaje, 2 técnicos",
+        "qty": "10 h",
+        "rate": "35,00 €",
+        "amount": "350,00 €"
+      },
+      {
+        "description": "Alquiler de equipo de sonido (factura proveedor 318, a nombre de la agencia)",
+        "qty": "1",
+        "rate": "640,00 €",
+        "amount": "640,00 €"
+      },
+      {
+        "description": "Impresión de cartelería y acreditaciones (factura proveedor A-77)",
+        "qty": "1",
+        "rate": "286,00 €",
+        "amount": "286,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "3.676,00 €",
+    "sample_breakdown_tax_label": "IVA 21 %",
+    "sample_breakdown_tax": "771,96 €",
+    "sample_breakdown_balance": "4.447,96 €",
+    "sample_breakdown_notes": "Jornada del 14 de noviembre de 2026, pedido del cliente 2026-118. Suplidos aparte en el documento S-2026-012: tasa municipal de ocupación de vía pública, 186,40 €, pagada en nombre y por cuenta del cliente con su autorización, sin IVA (art. 78.Tres.3.º LIVA), con la carta de pago adjunta. Pago por transferencia a 30 días.",
+    "industry_notes_title": "Lo que conviene saber de los suplidos",
+    "industry_notes": [
+      {
+        "title": "Por qué el suplido no lleva IVA",
+        "text": "Las cantidades pagadas en nombre y por cuenta del cliente, con su mandato expreso, no forman parte de la base imponible (art. 78.Tres.3.º LIVA). Tú solo adelantas el dinero: el gasto es del cliente. A cambio, quien emite la factura debe justificar el importe y no puede deducirse el IVA de ese gasto."
+      },
+      {
+        "title": "Ejemplos típicos y dudosos",
+        "text": "Tasas, impuestos y aranceles pagados a nombre del cliente son suplidos clásicos. Un billete de tren, un hotel o una imprenta contratados a tu nombre son gastos tuyos que refacturas, con IVA. Si un caso te genera dudas, revísalo con tu asesor antes de facturar."
+      },
+      {
+        "title": "Profesionales y retención",
+        "text": "Si eres profesional y facturas a empresas, tu factura lleva retención de IRPF; Invoicor no la calcula, así que para ese caso esta plantilla no sirve: consúltalo con tu asesor. Guarda las facturas y los justificantes de los suplidos al menos 4 años (art. 66 LGT), 6 si llevas contabilidad mercantil (art. 30 del Código de Comercio)."
+      }
+    ],
+    "mistakes_title": "Tres errores con los suplidos",
+    "mistakes": [
+      {
+        "title": "Llamar suplido a cualquier gasto",
+        "text": "Si la factura del proveedor está a tu nombre, no es un suplido aunque lo pague el cliente al final. Facturarlo sin IVA es un error que se descubre en una comprobación."
+      },
+      {
+        "title": "Sumar un margen al suplido",
+        "text": "El suplido se cobra por su importe exacto. Si quieres cobrar la gestión, factúrala como un servicio más, con IVA, en tu factura."
+      },
+      {
+        "title": "Facturar los gastos meses después",
+        "text": "Con el presupuesto cerrado y el contacto cambiado, aprobar gastos viejos cuesta. Factúralos junto al servicio o ese mismo mes."
+      }
+    ],
+    "tip_title": "Consejo para refacturar gastos",
+    "pro_tip": "Fotografía cada recibo al momento y nómbralo con su futura línea («R3-tasa-14nov»). Al facturar, líneas y justificantes ya coinciden, y ves cuáles van a nombre del cliente.",
+    "format_pdf_desc": "Un PDF va junto a los justificantes en el circuito de aprobación del cliente y conserva cada importe tal como lo muestran los recibos.",
+    "faq_title": "Preguntas sobre los suplidos en factura",
+    "faqs": [
+      {
+        "question": "¿Qué son los suplidos en una factura?",
+        "answer": "Pagos que haces en nombre y por cuenta de tu cliente, por encargo expreso suyo, y que luego le recuperas por su importe exacto. No forman parte de la base imponible, así que no llevan IVA (art. 78.Tres.3.º LIVA)."
+      },
+      {
+        "question": "¿Los gastos refacturados llevan IVA?",
+        "answer": "Sí: lo que compras a tu nombre y repercutes al cliente forma parte de tu servicio. Normalmente se aplica el tipo de tu servicio; si dudas sobre el tipo, consúltalo con tu asesor."
+      },
+      {
+        "question": "¿Puedo poner suplidos y servicio en la misma factura?",
+        "answer": "Es habitual mostrarlos por separado, debajo de la base. En Invoicor hay un solo tipo de IVA por factura, así que una línea a 0 junto a otras al 21 % no cabe: emite los suplidos en un documento aparte o pregunta a tu asesor."
+      },
+      {
+        "question": "¿Tengo que adjuntar los justificantes?",
+        "answer": "Para un suplido debes poder justificar el importe, así que conviene enviar copia del recibo a nombre del cliente. Para los gastos refacturados, muchos clientes también los piden. Guarda los originales."
+      },
+      {
+        "question": "¿Puedo cobrar un margen sobre los gastos?",
+        "answer": "Sobre un gasto refacturado, sí, si el cliente lo acepta, y en una línea aparte. Sobre un suplido, no: deja de serlo. Sin acuerdo, factura el importe exacto."
+      }
+    ],
+    "cta_title": "Crea tu factura con suplidos",
+    "related": [
+      {
+        "name": "Factura recurrente",
+        "slug": "factura-recurrente"
+      },
+      {
+        "name": "Factura de venta",
+        "slug": "factura-de-venta"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-sin-iva",
+    "translation_of": "no-vat-invoice",
+    "niche": "Factura sin IVA",
+    "title": "Factura sin IVA: cuándo es legal en España | Invoicor",
+    "meta_description": "Factura sin IVA en España: no hay exención por facturar poco. Los 4 casos legales, la mención que exige cada uno y un ejemplo. Crea tu PDF gratis.",
+    "h1": "Factura sin IVA: cuándo se puede y qué mención poner",
+    "subtitle": "Para quien necesita emitir una factura exenta de IVA: los casos en que la ley lo permite, la frase que debes escribir en cada uno y cómo se ve en el PDF.",
+    "intro_paragraph": "Primero, lo que más dudas genera: en España no existe una exención de IVA para pequeños negocios. El régimen de franquicia que permite la normativa europea no se ha adoptado, así que empezar, facturar poco o ser autónomo no te libra de cobrar IVA. Una factura sin IVA solo es correcta en casos concretos, y entonces debe decir por qué. Hoy esa factura puede ser un PDF. La factura electrónica entre empresas llega el 6 de octubre de 2027 para quien supere 8 millones de euros de facturación y el 6 de octubre de 2028 para el resto, y Verifactu, para el software de facturación, el 6 de octubre de 2028 (RDL 43/2026). Invoicor crea facturas en PDF, no facturas electrónicas ni registros Verifactu. Esta página habla de España: en México (CFDI) y en casi toda Latinoamérica la factura debe ser electrónica y un PDF no es una factura válida.",
+    "include_title": "Qué debe incluir una factura sin IVA",
+    "what_to_include_intro": "Una factura sin IVA lleva todo lo de una factura normal, más la frase que justifica el cero. Estos son los seis puntos.",
+    "req_1_title": "Los datos de una factura completa",
+    "req_1_text": "Número y serie, fecha de emisión, nombre, NIF y dirección del emisor y del destinatario, la descripción con el precio unitario y la fecha de la operación si es distinta (art. 6.1 del Reglamento de facturación). Esa fecha va en la descripción o en las notas: Invoicor no tiene campo para ella.",
+    "req_2_title": "Operación exenta (art. 20 LIVA)",
+    "req_2_text": "Algunas actividades están exentas, por ejemplo ciertos servicios de enseñanza o de asistencia sanitaria, con sus requisitos. La factura cita el artículo: «Operación exenta de IVA, art. 20 LIVA», añadiendo el apartado que corresponda a tu caso.",
+    "req_3_title": "Inversión del sujeto pasivo (art. 84 LIVA)",
+    "req_3_text": "En algunas operaciones el IVA lo declara el cliente, como en las obras entre contratista y subcontratista. Tu factura va sin IVA y lleva las palabras «inversión del sujeto pasivo» (art. 6.1.m del Reglamento).",
+    "req_4_title": "Exportación (art. 21 LIVA)",
+    "req_4_text": "Los bienes que envías fuera de la UE salen sin IVA. Escribe «Operación exenta de IVA, art. 21 LIVA (exportación)» y guarda la prueba de la salida.",
+    "req_5_title": "Entrega intracomunitaria (art. 25 LIVA)",
+    "req_5_text": "Bienes vendidos a una empresa de otro país de la UE que te ha dado su NIF-IVA: «Entrega intracomunitaria exenta, art. 25 LIVA», con ese número en la factura. La operación se declara en el modelo 349.",
+    "req_6_title": "La línea «IVA (0%)», explicada por la mención",
+    "req_6_text": "Para que quede claro: el PDF de Invoicor siempre imprime la línea de IVA. Sin tipo, muestra «IVA (0%)» con 0,00 €, y ocultarla no es posible en Invoicor por ahora. La mención que escribes en las notas, justo debajo de las líneas, es lo que explica ese cero.",
+    "what_to_include_outro": "Si tu caso no es ninguno de estos cuatro, tu factura lleva IVA: el 21 % general, o el 10 % o el 4 % según lo que vendas (arts. 90 y 91 LIVA).",
+    "paper_label": "Factura sin IVA · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura sin IVA",
+    "sample_breakdown_intro": "Un taller de muebles de Valencia vende sillas y mesas a una empresa de restauración de Lyon que le ha dado su NIF-IVA francés: entrega intracomunitaria exenta. El PDF imprime «IVA (0%)» con 0,00 €; la mención de las notas lo explica.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Silla de haya maciza con asiento de enea, modelo Albufera",
+        "qty": "24",
+        "rate": "145,00 €",
+        "amount": "3.480,00 €"
+      },
+      {
+        "description": "Mesa de comedor de haya, 80 x 80 cm",
+        "qty": "6",
+        "rate": "290,00 €",
+        "amount": "1.740,00 €"
+      },
+      {
+        "description": "Embalaje y transporte hasta Lyon, 4 palés",
+        "qty": "1",
+        "rate": "380,00 €",
+        "amount": "380,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "5.600,00 €",
+    "sample_breakdown_tax_label": "IVA 0 % (entrega intracomunitaria)",
+    "sample_breakdown_tax": "0,00 €",
+    "sample_breakdown_balance": "5.600,00 €",
+    "sample_breakdown_notes": "Entrega intracomunitaria exenta de IVA, art. 25 LIVA. NIF-IVA del cliente: FR XX XXXXXXXXX. Mercancía enviada el 18 de noviembre de 2026 desde Valencia a Lyon. Pago por transferencia a 30 días; indica el número de factura como referencia.",
+    "industry_notes_title": "Lo que conviene saber de la factura sin IVA",
+    "industry_notes": [
+      {
+        "title": "Ser autónomo no te exime",
+        "text": "Es la duda más repetida: «facturo poco, ¿tengo que cobrar IVA?». En España, sí. No hay un umbral por debajo del cual se deje de cobrar IVA, porque la franquicia para pequeñas empresas no se ha adoptado. Lo que decide si una factura va sin IVA es la operación, no el tamaño del negocio."
+      },
+      {
+        "title": "Exenta no es lo mismo que inversión",
+        "text": "En una operación exenta nadie paga IVA por ella. En la inversión del sujeto pasivo sí hay IVA, pero lo declara el cliente. Por eso cada caso tiene su mención: citar la exención en una inversión, o al revés, deja la factura incompleta."
+      },
+      {
+        "title": "Profesionales sanitarios o docentes",
+        "text": "Si eres profesional y facturas a empresas, tu factura lleva retención de IRPF; Invoicor no la calcula, así que para ese caso esta plantilla no sirve: consúltalo con tu asesor. Si tu actividad puede estar exenta por el art. 20, confirma con tu asesor que cumples los requisitos antes de quitar el IVA."
+      }
+    ],
+    "mistakes_title": "Tres errores en las facturas sin IVA",
+    "mistakes": [
+      {
+        "title": "Quitar el IVA por facturar poco",
+        "text": "Sin exención para pequeños negocios, una factura sin IVA y sin causa legal está mal hecha, y el IVA que no cobraste puede acabar saliendo de tu bolsillo. Si ya ocurrió, pregunta a tu asesor cómo rectificarla."
+      },
+      {
+        "title": "La línea a 0 sin mención",
+        "text": "Invoicor imprime siempre «IVA (0%)». Sola, esa línea no dice por qué no hay IVA, y la factura no cumple el art. 6.1.j o m del Reglamento. La mención, en las notas, lo resuelve."
+      },
+      {
+        "title": "Una entrega intracomunitaria sin NIF-IVA",
+        "text": "Si el cliente europeo no te ha dado un NIF-IVA válido de otro Estado miembro, no se aplica la exención del art. 25. Pídelo antes de facturar y escríbelo en la factura."
+      }
+    ],
+    "tip_title": "Consejo para facturas sin IVA",
+    "pro_tip": "Guarda una factura terminada por cada caso que uses, con su mención en las notas, y duplícala para el siguiente cliente. No tendrás que reescribir la frase ni arrastrarás un tipo de IVA de otra factura.",
+    "format_pdf_desc": "Un PDF muestra el total exacto con la mención en su sitio, no se modifica después y es fácil de guardar con tu contabilidad.",
+    "faq_title": "Preguntas sobre la factura sin IVA",
+    "faqs": [
+      {
+        "question": "¿Puedo facturar sin IVA si soy autónomo y facturo poco?",
+        "answer": "No. En España no hay exención de IVA para pequeños negocios: la franquicia europea no se ha adoptado. Solo facturas sin IVA si la operación está exenta, hay inversión del sujeto pasivo, es una exportación o una entrega intracomunitaria."
+      },
+      {
+        "question": "¿Qué pongo en una factura exenta de IVA?",
+        "answer": "La mención que explica el motivo, con su artículo: por ejemplo «Operación exenta de IVA, art. 20 LIVA» (con su apartado), «Operación exenta, art. 21 LIVA» o «Entrega intracomunitaria exenta, art. 25 LIVA». Para la inversión, «inversión del sujeto pasivo»."
+      },
+      {
+        "question": "¿Por qué mi PDF muestra «IVA (0%)»?",
+        "answer": "Porque Invoicor imprime siempre la línea de IVA, también sin tipo, y por ahora no se puede ocultar. Muestra 0,00 €, y la mención debajo de las líneas explica por qué."
+      },
+      {
+        "question": "¿Una factura sin IVA necesita mi NIF?",
+        "answer": "Sí. Tu NIF va en todas tus facturas. En el PDF se imprime como «NIF/CIF». El NIF del cliente también, entre otros casos, cuando la operación es una entrega intracomunitaria o hay inversión del sujeto pasivo."
+      },
+      {
+        "question": "¿Y si vendo servicios a una empresa de otro país de la UE?",
+        "answer": "Esos servicios suelen tributar en el país del cliente: la factura va sin IVA español, con «inversión del sujeto pasivo» y el NIF-IVA del cliente. Si tienes dudas sobre tu servicio concreto, consúltalo con tu asesor."
+      }
+    ],
+    "cta_title": "Crea tu factura sin IVA",
+    "related": [
+      {
+        "name": "Factura comercial",
+        "slug": "factura-comercial-exportacion"
+      },
+      {
+        "name": "Factura de subcontratista",
+        "slug": "factura-subcontratista"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factura-subcontratista",
+    "translation_of": "subcontractor-invoice",
+    "niche": "Factura de subcontratista",
+    "title": "Factura con inversión del sujeto pasivo en obra | Invoicor",
+    "meta_description": "Factura de subcontratista en construcción con inversión del sujeto pasivo: sin IVA, la mención exacta, la obra y la certificación. Ejemplo y PDF gratis.",
+    "h1": "Factura de subcontratista: inversión del sujeto pasivo en construcción",
+    "subtitle": "Para subcontratistas de obra que facturan al contratista: factura sin IVA con «inversión del sujeto pasivo», la obra, el contrato, la certificación y los trabajos adicionales.",
+    "intro_paragraph": "Como subcontratista de obra no facturas al promotor ni al dueño, sino a la empresa que te encargó los trabajos. En las obras de construcción o rehabilitación de edificaciones, entre promotor y contratista y entre contratista y subcontratista, el IVA lo declara quien recibe la factura (art. 84.Uno.2.º f) LIVA): tú facturas sin IVA y escribes «inversión del sujeto pasivo». Un PDF es hoy una factura válida en España; la factura electrónica entre empresas empieza el 6 de octubre de 2027 para las que facturan más de 8 millones de euros y el 6 de octubre de 2028 para todas las demás, y Verifactu se exige al software de facturación desde el 6 de octubre de 2028 (RDL 43/2026). Invoicor hace facturas en PDF, no facturas electrónicas ni registros Verifactu. Una advertencia para Latinoamérica: en México (CFDI) y en la mayoría de esos países la factura es electrónica y un PDF no sirve como factura.",
+    "include_title": "Qué debe incluir una factura de subcontratista",
+    "what_to_include_intro": "El jefe de obra del contratista revisa estos seis puntos antes de dar tu factura por buena.",
+    "req_1_title": "Sin IVA y con «inversión del sujeto pasivo»",
+    "req_1_text": "No se calcula IVA, y la factura lleva esas palabras exactas (art. 6.1.m del Reglamento de facturación). En Invoicor no pongas tipo: el PDF imprime entonces «IVA (0%)» con 0,00 €. Escribe la mención en las notas, justo debajo de las líneas: es la que explica esa línea.",
+    "req_2_title": "Tus datos y los del contratista",
+    "req_2_text": "Tu razón social, NIF y dirección, y los del contratista, con su NIF: con inversión del sujeto pasivo, el NIF del destinatario es obligatorio. En el PDF tu NIF sale como «NIF/CIF»; el número del Registro Mercantil, si lo pones, como «Número de registro».",
+    "req_3_title": "La obra y el contrato",
+    "req_3_text": "Nombra la obra, su dirección y la referencia del contrato de subcontratación o del pedido. La factura que no encaja con una obra espera.",
+    "req_4_title": "La certificación: lo ejecutado y lo ya facturado",
+    "req_4_text": "En un contrato a precio cerrado se factura por certificaciones: el importe del contrato, el porcentaje ejecutado a origen y lo facturado antes, con el número de esas facturas. Sé realista: el jefe de obra lo compara con lo que ve.",
+    "req_5_title": "Trabajos adicionales en su propia línea",
+    "req_5_text": "Los trabajos adicionales aprobados van en una línea aparte, con su referencia y la fecha de aprobación: «TA-02, ocho puntos de recarga en garaje, aprobado el 6 de noviembre». Que te los aprueben por escrito antes de facturarlos.",
+    "req_6_title": "El periodo de los trabajos",
+    "req_6_text": "La fecha de la operación, si no coincide con la de emisión, es obligatoria (art. 6.1 del Reglamento). Invoicor no tiene campo para ella: escribe el periodo en la descripción o en las notas, por ejemplo «Trabajos ejecutados del 1 al 31 de octubre de 2026».",
+    "what_to_include_outro": "Una factura que responde de antemano a las preguntas del contratista entra en su propia certificación al promotor sin idas y vueltas.",
+    "paper_label": "Factura de subcontratista · ejemplo",
+    "sample_breakdown_title": "Ejemplo de factura de subcontratista con inversión del sujeto pasivo",
+    "sample_breakdown_intro": "La segunda certificación de una instaladora eléctrica (una S.L.) en un edificio de 18 viviendas: contrato de 64.000,00 €, ejecutado el 45 % tras una primera factura del 20 %, más un trabajo adicional aprobado. Inversión del sujeto pasivo: el PDF imprime «IVA (0%)» con 0,00 € y la mención de las notas lo explica. La línea negativa funciona en el generador gratis, no en la app.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Instalación eléctrica, contrato SUB-2026-031: 45 % de 64.000,00 € ejecutado a origen",
+        "qty": "1",
+        "rate": "28.800,00 €",
+        "amount": "28.800,00 €"
+      },
+      {
+        "description": "Menos lo certificado antes, factura 2026-0087 (20 %)",
+        "qty": "1",
+        "rate": "-12.800,00 €",
+        "amount": "-12.800,00 €"
+      },
+      {
+        "description": "Trabajo adicional TA-02: ocho puntos de recarga en garaje, aprobado el 6 de noviembre",
+        "qty": "1",
+        "rate": "2.150,00 €",
+        "amount": "2.150,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "18.150,00 €",
+    "sample_breakdown_tax_label": "IVA 0 % (inversión del sujeto pasivo)",
+    "sample_breakdown_tax": "0,00 €",
+    "sample_breakdown_balance": "18.150,00 €",
+    "sample_breakdown_notes": "Inversión del sujeto pasivo. Obra: edificio de 18 viviendas, calle del Ebro 42, Zaragoza. Contrato de subcontratación SUB-2026-031, certificación n.º 2. Trabajos ejecutados del 1 al 31 de octubre de 2026. Pago a 60 días según contrato, por transferencia.",
+    "industry_notes_title": "Lo que conviene saber si eres subcontratista",
+    "industry_notes": [
+      {
+        "title": "Cuándo no se aplica la inversión",
+        "text": "Se aplica a obras sobre edificaciones entre promotor y contratista o entre contratista y subcontratista. Si trabajas directamente para un particular, el dueño de un piso por ejemplo, facturas con IVA normal: el 21 %, o el 10 % en algunas reformas de vivienda si se cumplen los requisitos; compruébalo con tu asesor."
+      },
+      {
+        "title": "Plazos de pago",
+        "text": "Sin pacto, el contratista tiene 30 días desde la ejecución para pagarte; con pacto, hasta 60 (Ley 3/2004). Si se retrasa, puedes reclamar intereses al tipo del BCE más 8 puntos y 40 € de indemnización fija. Entre empresas puedes emitir la factura hasta el día 16 del mes siguiente (art. 11 del Reglamento)."
+      },
+      {
+        "title": "Retención de garantía y documentos de obra",
+        "text": "Muchos contratos retienen un porcentaje de cada certificación hasta la recepción: anótalo en las notas para que tu factura cuadre con lo que cobras, y revisa con tu asesor cómo tratarlo. El contratista puede pedirte además documentación de la obra; confirma con él qué necesita."
+      }
+    ],
+    "mistakes_title": "Tres errores en las facturas de subcontratista",
+    "mistakes": [
+      {
+        "title": "Cobrar el 21 % igualmente",
+        "text": "Si tu trabajo entra en la inversión del sujeto pasivo y la factura lleva IVA, no es correcta y hay que rectificarla. No pongas tipo y escribe la mención en las notas."
+      },
+      {
+        "title": "Olvidar la mención",
+        "text": "Sin «inversión del sujeto pasivo», la línea «IVA (0%)» del PDF no explica por qué no hay IVA. Escríbela en la primera factura de la obra: al duplicarla para la siguiente certificación, se mantiene."
+      },
+      {
+        "title": "Certificar por delante de la obra",
+        "text": "Facturar el 60 % cuando el jefe de obra ve un 40 % acaba en una factura devuelta o recortada. Factura lo ejecutado."
+      }
+    ],
+    "tip_title": "Consejo para subcontratistas",
+    "pro_tip": "Lleva una hoja por obra: importe del contrato, trabajos adicionales, porcentaje e importe de cada certificación. En la app Invoicor las líneas no pueden ser negativas: duplica la factura anterior, factura solo el importe del periodo y pon el porcentaje a origen y las facturas anteriores en las notas. El generador gratis acepta una línea negativa, como en el ejemplo.",
+    "format_pdf_desc": "Un PDF fija tus importes, se imprime limpio para el expediente de la obra y no cambia una vez entregado al contratista.",
+    "faq_title": "Preguntas sobre la factura de subcontratista",
+    "faqs": [
+      {
+        "question": "¿Cuándo hay inversión del sujeto pasivo en una subcontrata?",
+        "answer": "En obras de construcción o rehabilitación de edificaciones, con o sin materiales, que facturas al contratista, y en las del contratista al promotor (art. 84.Uno.2.º f) LIVA). Facturas sin IVA y el contratista lo declara."
+      },
+      {
+        "question": "¿Qué mención pongo en la factura?",
+        "answer": "Las palabras «inversión del sujeto pasivo», tal cual (art. 6.1.m del Reglamento de facturación), junto con el NIF del contratista."
+      },
+      {
+        "question": "¿Por qué mi PDF dice «IVA (0%)»?",
+        "answer": "Invoicor imprime siempre la línea de IVA, también sin IVA, y por ahora no se puede ocultar. Con inversión del sujeto pasivo marca 0,00 €, y la mención debajo de las líneas explica que el IVA lo declara el contratista."
+      },
+      {
+        "question": "¿Y los trabajos adicionales?",
+        "answer": "En su propia línea, con la referencia y la fecha de la aprobación por escrito. Si forman parte de la misma subcontrata de obra, en principio siguen la misma inversión que el contrato."
+      },
+      {
+        "question": "¿Si trabajo para un particular también va sin IVA?",
+        "answer": "No. La inversión es entre empresarios de la cadena de la obra. A un particular le facturas con IVA, al 21 % o al 10 % en algunas reformas de vivienda si se cumplen los requisitos; compruébalo con tu asesor."
+      }
+    ],
+    "cta_title": "Crea tu factura de subcontratista",
+    "related": [
+      {
+        "name": "Factura de mano de obra y materiales",
+        "slug": "factura-mano-de-obra-y-materiales"
+      },
+      {
+        "name": "Factura sin IVA",
+        "slug": "factura-sin-iva"
+      }
+    ],
+    "invoice_types": []
+  }
+]

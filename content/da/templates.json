@@ -1,0 +1,1236 @@
+[
+  {
+    "slug": "acontofaktura",
+    "translation_of": "deposit-invoice",
+    "niche": "Acontofaktura",
+    "title": "Acontofaktura: skabelon og eksempel (pdf) | Invoicor",
+    "meta_description": "Lav en acontofaktura med moms af forudbetalingen, et udfyldt eksempel og slutfakturaen, der trækker beløbet fra. Gratis som pdf.",
+    "h1": "Acontofaktura: skabelon og eksempel",
+    "subtitle": "Fakturer en del af prisen, før arbejdet begynder, på en selvstændig faktura med den samlede pris, din andel og momsen.",
+    "intro_paragraph": "En acontofaktura beder kunden om penge for et arbejde, der endnu ikke er udført: 30 % før materialerne bestilles, eller et fast beløb, der sikrer en plads i kalenderen. Den er en rigtig faktura med eget nummer, og efter momsloven § 23, stk. 3 skal der moms af acontobeløbet, allerede når det bliver betalt. Fakturerer du til en offentlig myndighed, skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder er e-faktura stadig frivilligt, og du kan fortsat aftale andre fakturaformer, så en pdf er fint. Nedenfor: felterne, et eksempel, forskellen på aconto og depositum og fradraget på slutfakturaen.",
+    "include_title": "Det skal stå på en acontofaktura",
+    "what_to_include_intro": "Kunden betaler for noget, ingen kan se endnu. Derfor skal fakturaen selv fortælle, hvad pengene dækker.",
+    "req_1_title": "Ordet aconto i første linje",
+    "req_1_text": "Pdf'ens overskrift er »Faktura«, og det er korrekt: en acontofaktura er en faktura. Skriv »Aconto« først i linjeteksten, fx »Aconto 30 % af skabsinventar, mødelokale«. Så bogfører kundens bogholder den rigtigt, og du finder den hurtigt, når slutfakturaen skal laves.",
+    "req_2_title": "De almindelige krav til en faktura",
+    "req_2_text": "Efter momsbekendtgørelsen § 58, stk. 1 skal en fuld faktura have udstedelsesdato, et fortløbende nummer, dit CVR- eller SE-nummer, dit og kundens navn og adresse, ydelsens art og omfang, beløbet uden moms, momssatsen og momsbeløbet. Nummeret skriver du i det felt, der på pdf'en hedder »CVR-nummer«. Acontofakturaen får det næste nummer i din almindelige række.",
+    "req_3_title": "Samlet pris og den andel, du beder om",
+    "req_3_text": "Skriv både den aftalte samlede pris og acontoens andel. »30 % af 120.000,00 kr. ekskl. moms« viser med det samme, hvad der står tilbage.",
+    "req_4_title": "Hvad acontoen dækker",
+    "req_4_text": "Ydelsen skal være specificeret, når acontoen betales. Beskriv arbejdet lige så præcist som på en almindelig faktura, og henvis til tilbud eller aftale med nummer og dato. Den forventede leveringsperiode skriver du i linjen eller i bemærkningerne, for Invoicor har ikke et særskilt felt til leveringsdato.",
+    "req_5_title": "Moms af acontobeløbet",
+    "req_5_text": "Momsen beregnes af det beløb, du beder om, ikke af hele prisen: 25 % af 36.000,00 kr. er 9.000,00 kr. Er du ikke momsregistreret, fordi du sælger for under 50.000 kr. om året, står der ingen moms; det er god praksis at skrive på fakturaen, at du ikke er momsregistreret.",
+    "req_6_title": "Forfaldsdato og næste skridt",
+    "req_6_text": "Giv acontoen sin egen forfaldsdato, og skriv, hvad der sker bagefter: »Restbeløbet faktureres ved aflevering, og acontoen trækkes fra.« Bliver intet bestilt, før pengene er modtaget, så skriv det også.",
+    "what_to_include_outro": "En acontofaktura har ofte kun én linje. Punkterne ovenfor gør den linje til et bilag, som både du og kunden kan regne med, når slutfakturaen kommer.",
+    "paper_label": "Acontofaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en acontofaktura",
+    "sample_breakdown_intro": "En snedker beder om 30 % aconto på et skabsinventar til 120.000,00 kr. ekskl. moms, før træet bestilles. Kunden er et advokatfirma, og fakturaen sendes som pdf. 25 % moms af acontobeløbet.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Aconto 30 % af skabsinventar med skydedøre, mødelokale, samlet pris 120.000,00 kr. ekskl. moms (tilbud T-2026-118 af 2. november 2026)",
+        "qty": "1",
+        "rate": "36.000,00 kr.",
+        "amount": "36.000,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "36.000,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "9.000,00 kr.",
+    "sample_breakdown_balance": "45.000,00 kr.",
+    "sample_breakdown_notes": "Acontofaktura nr. 2026-047 af 16. november 2026. Forventet levering og montering: uge 3, 2027. Betales senest 30. november 2026; træet bestilles, når beløbet er modtaget. Acontoen (36.000,00 kr. plus moms 9.000,00 kr.) trækkes fra på slutfakturaen. Rest ifølge tilbud: 84.000,00 kr. ekskl. moms.",
+    "industry_notes_title": "Det skal du vide om acontofakturaer",
+    "industry_notes": [
+      {
+        "title": "Momsen skal betales, når acontoen kommer",
+        "text": "Normalt hører momsen til det tidspunkt, hvor du leverer. Ved en forudbetaling regnes betalingsdatoen som leveringstidspunkt for den del, der er betalt (momsloven § 23, stk. 3, Den juridiske vejledning D.A.7.2.5). Momsen af acontoen skal derfor angives nu. Hvilken periode det konkret lander i, kan din revisor bekræfte."
+      },
+      {
+        "title": "Aconto er ikke et depositum",
+        "text": "Et depositum, der står som sikkerhed, fx for lånt udstyr, er ikke en forudbetaling, og der er ingen moms, når det indbetales. Det laver du ikke en acontofaktura på. Beder du derimod om penge, der skal gå til betaling af selve arbejdet, er det en aconto med moms."
+      },
+      {
+        "title": "Sådan trækker slutfakturaen acontoen fra",
+        "text": "I praksis viser slutfakturaen den fulde pris med den fulde moms og trækker derefter hver aconto fra med beløb og moms, så momsen ikke står på to fakturaer. Skriv nummer og dato på acontofakturaen ved fradraget. Pdf'en lægger du bagefter i dit bogføringssystem eller sender til din bogholder; Invoicor er et faktureringsprogram, ikke et bogføringssystem."
+      }
+    ],
+    "mistakes_title": "Tre fejl på acontofakturaer",
+    "mistakes": [
+      {
+        "title": "Acontoen står kun i tilbuddet",
+        "text": "»30 % ved ordrebekræftelse« i et tilbud kan kundens bogholder ikke betale, og der mangler et bilag til momsen. Send en nummereret acontofaktura med forfaldsdato."
+      },
+      {
+        "title": "Moms af hele prisen",
+        "text": "Momsen hører til det beløb, du beder om. Står der 30.000,00 kr. i moms af 120.000,00 kr., men du beder om 36.000,00 kr., er fakturaen forkert og skal rettes."
+      },
+      {
+        "title": "Acontoen glemt på slutfakturaen",
+        "text": "Så beder slutfakturaen om hele prisen, og kunden betaler enten dobbelt eller slet ikke, før det er rettet. Find alle acontofakturaer til opgaven frem, før du sender slutfakturaen."
+      }
+    ],
+    "tip_title": "Et tip til acontofakturaer",
+    "pro_tip": "Gentag acontofakturaens nummer i bemærkningerne på slutfakturaen, ikke kun i fradragslinjen. Det er sådan kundens bogholder forbinder de to betalinger, også hvis de kom fra forskellige konti.",
+    "format_pdf_desc": "En pdf viser samlet pris, andel og moms ens på alle skærme, og ingen kommer til at ændre beløbet undervejs.",
+    "faq_title": "Spørgsmål om acontofaktura",
+    "faqs": [
+      {
+        "question": "Skal der moms på en acontofaktura?",
+        "answer": "Ja, hvis du er momsregistreret: 25 % af acontobeløbet. Momsen skal betales, når acontoen er betalt, fordi betalingsdatoen tæller som leveringstidspunkt for den del (momsloven § 23, stk. 3). Er du ikke momsregistreret, opkræver du ingen moms, og pdf'en viser en momslinje med 0 % og 0,00 kr.; skriv i bemærkningerne, at du ikke er momsregistreret."
+      },
+      {
+        "question": "Hvordan trækker jeg acontoen fra på slutfakturaen?",
+        "answer": "Skriv den fulde pris og derefter en linje med minus for hver aconto, med nummer og dato: »Aconto, faktura 2026-047: -36.000,00 kr.« Momsen beregnes så af resten. I den gratis generator kan en linje have en negativ pris, så fradraget står på pdf'en. Appen tillader ikke negative priser: der fakturerer du restbeløbet som linje og nævner acontofakturaen i bemærkningerne."
+      },
+      {
+        "question": "Hvad sker der, hvis kunden annullerer efter betalingen?",
+        "answer": "Hvad der sker med pengene, afgør aftalen og lovgivningen, ikke fakturaen. Betaler du acontoen tilbage, ændrer det også momsen; hvordan du retter acontofakturaen, aftaler du med din revisor eller bogholder."
+      },
+      {
+        "question": "Skal en acontofaktura være en e-faktura?",
+        "answer": "Kun til offentlige myndigheder, hvor e-faktura via NemHandel har været et krav siden 2005. Til virksomheder og private kunder er en pdf fint. For handel med virksomheder i andre EU-lande bliver e-faktura et krav fra 1. juli 2030."
+      },
+      {
+        "question": "Kan Invoicor holde styr på acontobeløb?",
+        "answer": "Nej. Du kan markere acontofakturaen som betalt (»Paid«), men Invoicor kobler den ikke til slutfakturaen og fører ingen saldo. Hold en kort liste pr. opgave: nummer, dato, beløb, betalt."
+      }
+    ],
+    "cta_title": "Lav din acontofaktura",
+    "related": [
+      {
+        "name": "Delfaktura",
+        "slug": "delfaktura"
+      },
+      {
+        "name": "Arbejdsløn og materialer",
+        "slug": "faktura-arbejdsloen-og-materialer"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "delfaktura",
+    "translation_of": "milestone-invoice",
+    "niche": "Delfaktura",
+    "title": "Delfaktura: skabelon og eksempel (pdf) | Invoicor",
+    "meta_description": "Fakturer en etape ad gangen: delfaktura med andel af den samlede pris, moms og hvad der er betalt indtil nu. Udfyldt eksempel, gratis som pdf.",
+    "h1": "Delfaktura: skabelon og eksempel",
+    "subtitle": "Fakturer et projekt i de etaper, aftalen fastsætter, én faktura pr. godkendt leverance, med andelen af prisen og et klart overblik over, hvad der er betalt.",
+    "intro_paragraph": "En delfaktura fakturerer én etape af et projekt, når etapen er leveret og godkendt. Etaperne står i aftalen: design 30 %, udvikling 50 %, lancering 20 %. Hver etape er en leverance, ikke en dato og ikke et antal timer. I byggeriet hedder det ofte en acontobegæring efter en betalingsplan, og aftalegrundlag som AB 18 kan have egne regler for den; dem finder du i din aftale. Sender du delfakturaen til en offentlig myndighed, skal den være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder er e-faktura fortsat frivilligt, så her er en pdf fint. Nedenfor: felterne og et eksempel på etape 2 af 3.",
+    "include_title": "Det skal stå på en delfaktura",
+    "what_to_include_intro": "Kunden godkender en delfaktura ved at holde den op mod aftalen. Gør det let med disse seks punkter.",
+    "req_1_title": "Etapen, med aftalens navn",
+    "req_1_text": "Brug etapens nummer og navn præcis som i aftalen: »Etape 2 af 3: Udvikling«. Står der »Betaversion« i aftalen og »Udviklingsfase« på fakturaen, spørger kundens bogholder, hvilken betaling det er.",
+    "req_2_title": "Aftalen, den hører til",
+    "req_2_text": "Henvis til aftalen eller tilbuddet med nummer og dato. Kunder med flere projekter skal bruge det til at matche fakturaen med et budget.",
+    "req_3_title": "Hvad der er leveret, og hvornår",
+    "req_3_text": "Beskriv leverancen kort, og skriv, hvornår den blev leveret og godkendt: »Leveret 7. oktober, godkendt pr. mail 14. oktober«. Efter momsbekendtgørelsen § 58 skal leveringsdatoen stå på fakturaen, når den er en anden end fakturadatoen. Invoicor har ikke et felt til det, så datoen står i linjen.",
+    "req_4_title": "Andelen af den samlede pris",
+    "req_4_text": "Vis etapens procent eller faste beløb ved siden af den samlede pris: »50 % af 180.000,00 kr. ekskl. moms«. Så ser kunden etapen i forhold til helheden, og den, der læser fakturaen senere, kan se hele aftalen.",
+    "req_5_title": "Faktureret indtil nu",
+    "req_5_text": "Nævn de tidligere delfakturaer med nummer og beløb, og hvad der står tilbage efter denne: »Faktureret indtil nu: 54.000,00 kr. ekskl. moms (faktura 2026-031). Tilbage efter denne faktura: 36.000,00 kr.« Det overblik gør den sidste etape forudsigelig.",
+    "req_6_title": "Ekstraarbejde på egne linjer",
+    "req_6_text": "Arbejde uden for etaperne, som kunden har bestilt, fx en ændring, skal stå på en særskilt linje med sin egen reference. Lægger du det ind i etapebeløbet, ser etapen dyrere ud end i aftalen.",
+    "what_to_include_outro": "Tilsammen skal delfakturaerne give aftalens samlede pris plus godkendte ændringer, hverken mere eller mindre.",
+    "paper_label": "Delfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en delfaktura",
+    "sample_breakdown_intro": "Etape 2 af 3 i en kundeportal til 180.000,00 kr. ekskl. moms, fordelt med 30 % design, 50 % udvikling og 20 % lancering. Etape 1 er betalt på faktura 2026-031. Kunden er en virksomhed, og der er 25 % moms af både etapen og ændringen.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Etape 2 af 3: Udvikling (50 % af 180.000,00 kr.), leveret 7. oktober 2026, godkendt 14. oktober 2026, jf. aftale A-14",
+        "qty": "1",
+        "rate": "90.000,00 kr.",
+        "amount": "90.000,00 kr."
+      },
+      {
+        "description": "Ændring Æ-3: eksport af data, godkendt 28. september 2026",
+        "qty": "1",
+        "rate": "8.500,00 kr.",
+        "amount": "8.500,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "98.500,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "24.625,00 kr.",
+    "sample_breakdown_balance": "123.125,00 kr.",
+    "sample_breakdown_notes": "Delfaktura nr. 2026-044, betales senest 13. november 2026 (netto 30 dage). Samlet pris 180.000,00 kr. ekskl. moms. Faktureret indtil nu: 54.000,00 kr. ekskl. moms (faktura 2026-031, etape 1: Design). Efter denne faktura står 36.000,00 kr. ekskl. moms tilbage til etape 3: Lancering. Ændringer faktureres ud over den samlede pris.",
+    "industry_notes_title": "Det skal du vide om delfakturaer",
+    "industry_notes": [
+      {
+        "title": "Delfaktura, aconto og acontobegæring",
+        "text": "En acontofaktura beder om penge, før arbejdet begynder; en delfaktura fakturerer en etape, der er leveret. I byggeriet sender entreprenøren typisk acontobegæringer efter en betalingsplan, og aftalegrundlag som AB 18 eller AB-Forbruger kan sætte rammerne. Hvad der gælder for dig, står i din aftale."
+      },
+      {
+        "title": "Godkendelsen afgør, hvornår du må fakturere",
+        "text": "Mange aftaler giver kunden et antal dage til at godkende eller afvise en leverance og regner tavshed som godkendelse bagefter. Står det i din aftale, kan fakturaen henvise til det: »Anset for godkendt 14. oktober, jf. punkt 6«. Siger aftalen intet, så få godkendelsen på skrift, før du fakturerer."
+      },
+      {
+        "title": "Moms på hver etape",
+        "text": "Hver delfaktura er en fuld faktura med 25 % moms af etapens beløb. Beder du om betaling for en etape, før den er leveret, er det en forudbetaling, og så skal momsen betales, når pengene kommer (momsloven § 23, stk. 3). Invoicor bruger én momssats pr. faktura; rummer en etape både momspligtigt og momsfritaget arbejde, kan det kræve to fakturaer, så spørg din revisor."
+      }
+    ],
+    "mistakes_title": "Tre fejl på delfakturaer",
+    "mistakes": [
+      {
+        "title": "Faktura før godkendelse",
+        "text": "Sender du fakturaen samme dag, som du leverer, før kunden har godkendt, inviterer du til at få begge dele afvist. Vent på godkendelsen, eller den dato aftalen regner som godkendelse, og skriv datoen på fakturaen."
+      },
+      {
+        "title": "Etaper, der ikke går op",
+        "text": "Tre gange en tredjedel af 100.000 kr. afrundet til 33.333 kr. efterlader 1 kr. ufaktureret, og en genforhandlet fordeling kan efterlade mere. Lad den sidste etape være resten af den samlede pris, så etaperne altid giver præcis aftalens beløb."
+      },
+      {
+        "title": "Intet løbende overblik",
+        "text": "Hver faktura ser fin ud alene, men uden »faktureret indtil nu« og »tilbage« mister kunden overblikket, og det gør du også."
+      }
+    ],
+    "tip_title": "Et tip til delfakturaer",
+    "pro_tip": "Lav hver ny delfaktura ved at duplikere den forrige med »Duplicate Invoice«. Aftalehenvisning, kunde, linjer og bemærkninger følger med, og kopien får selv det næste nummer; du skifter etapelinjen, godkendelsesdatoen og det løbende tal.",
+    "format_pdf_desc": "En pdf holder etapens navn, godkendelsesdatoen og det løbende tal fast, og det er den, kundens projektleder sender videre til bogholderiet til godkendelse.",
+    "faq_title": "Spørgsmål om delfaktura",
+    "faqs": [
+      {
+        "question": "Kan første etape betales forud?",
+        "answer": "Ja. Mange aftaler gør den første betaling forfalden ved underskrift, før der er leveret noget. Den betaling er i virkeligheden en aconto, så fakturer den på en acontofaktura med moms og henvisning til aftalen, og fakturer de senere etaper som delfakturaer. Den sidste faktura nævner dem alle."
+      },
+      {
+        "question": "Hvad hvis kunden afviser en etape?",
+        "answer": "Så fakturerer du den ikke endnu. Ret det, aftalens godkendelseskriterier kræver, lever igen, og fakturer ved godkendelse. Har du allerede sendt fakturaen, så marker den som annulleret (»Cancelled«) i stedet for at lade den stå åben, og tal med din bogholder om, hvordan den skal krediteres."
+      },
+      {
+        "question": "Hvor skal ændringer stå?",
+        "answer": "Godkendte ændringer faktureres på den næste delfaktura, på egne linjer med ændringens reference, eller på en særskilt faktura. Hold dem ude af selve etapebeløbet, så hver etape stadig matcher aftalens tal."
+      },
+      {
+        "question": "Hvordan adskiller den sidste delfaktura sig?",
+        "answer": "Den sidste etape lukker aftalen, så den er ofte også slutfakturaen. Gentag den samlede pris, nævn alle tidligere delfakturaer med nummer, og skriv tydeligt, at det er den sidste."
+      },
+      {
+        "question": "Hvornår skal kunden betale en delfaktura?",
+        "answer": "Efter den frist, I har aftalt. Har I ikke aftalt en forfaldsdato, løber der rente fra 30 dage efter, du har bedt om betaling (renteloven § 3), og mellem virksomheder kan du kræve en fast kompensation på 310 kr. én gang pr. forsinket faktura (§ 9 a)."
+      }
+    ],
+    "cta_title": "Lav din delfaktura",
+    "related": [
+      {
+        "name": "Acontofaktura",
+        "slug": "acontofaktura"
+      },
+      {
+        "name": "Arbejdsløn og materialer",
+        "slug": "faktura-arbejdsloen-og-materialer"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-timer",
+    "translation_of": "hourly-invoice",
+    "niche": "Timefaktura",
+    "title": "Faktura timer: skabelon til timefaktura (pdf) | Invoicor",
+    "meta_description": "Lav en faktura for timer: timer gange timepris, en kort timeoversigt, hastetillæg og afrunding. Udfyld eksemplet, og hent din timefaktura som pdf.",
+    "h1": "Faktura timer: sådan laver du en timefaktura",
+    "subtitle": "Fakturer den tid, du har brugt, som timer gange timepris, med en kort oversigt, kunden kan tjekke linje for linje.",
+    "intro_paragraph": "En timefaktura tager betaling for tid, ikke for et færdigt resultat. Hver linje bygger på to tal: de timer, du har arbejdet, og timeprisen. Det gør den til den mest gennemskuelige måde at fakturere på, og den, kunderne stiller flest spørgsmål til. En god timefaktura svarer på dem på forhånd: hvilken dag, hvilken opgave, hvor mange timer, til hvilken pris. Til offentlige myndigheder skal du sende en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til andre virksomheder er e-faktura stadig frivilligt, så en pdf er fint. Nedenfor: timeoversigten, afrunding, hastetillæg, et timeloft og et eksempel med tre arbejdsdage.",
+    "include_title": "Det skal stå på en timefaktura",
+    "what_to_include_intro": "Kunden har allerede sagt ja til din timepris. Det, de vil se på fakturaen, er dokumentation for timerne. Byg hver linje, så den kan tjekkes mod din egen tidsregistrering.",
+    "req_1_title": "Én linje pr. dag eller pr. opgave",
+    "req_1_text": "Grupper timerne, som kunden tænker på arbejdet: pr. opgave på et projekt (»Flytning af postkasser, 3,5 timer«), pr. dato, når de betaler for, at du er til stede. Én linje med »42 timers arbejde« skjuler netop det, kunden skal godkende.",
+    "req_2_title": "Timer som decimaltal",
+    "req_2_text": "Skriv 2,25 timer, ikke 2 t 15 min, så antallet kan ganges direkte med timeprisen. 15 minutter er 0,25, 30 minutter er 0,5, og 45 minutter er 0,75. Notér start og slut i løbet af dagen, og regn om, før du skriver fakturaen.",
+    "req_3_title": "Timeprisen på hver linje",
+    "req_3_text": "Skriv timeprisen ekskl. moms på hver linje, også når den gentages. Momsbekendtgørelsen kræver enhedsprisen uden moms på fakturaen, og en anden pris (hastetillæg, weekend, transporttid) står så på sin egen linje i stedet for at gemme sig i et gennemsnit.",
+    "req_4_title": "Din afrundingsregel, én gang",
+    "req_4_text": "Skriv i bemærkningerne, hvordan du afrunder: til nærmeste kvarter, i enheder på 6 minutter eller med mindst én time pr. udkald. Afrund hver registrering, ikke kun ugens total. Kunder accepterer afrunding, de har fået at vide, ikke afrunding, de selv opdager.",
+    "req_5_title": "Perioden, fakturaen dækker",
+    "req_5_text": "Skriv datoerne: »Arbejde udført 2. til 9. november 2026«. Leveringsdatoen skal stå på fakturaen, når den er en anden end fakturadatoen, og Invoicor har ikke et felt til det, så perioden står i linjerne eller bemærkningerne.",
+    "req_6_title": "Timeloftet, hvis der er et",
+    "req_6_text": "Har kunden godkendt »op til 30 timer«, så vis, hvor fakturaen efterlader dem: »Faktureret denne måned: 11,25 af 30 timer«. Det skaber tillid og giver dig en anledning til at spørge efter flere timer, før du går over.",
+    "what_to_include_outro": "Gem din egen tidsregistrering bag fakturaen. Fakturaen er opsummeringen; registreringen er det, du viser, hvis kunden spørger, hvordan tirsdag blev til seks timer.",
+    "paper_label": "Timefaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en timefaktura",
+    "sample_breakdown_intro": "En selvstændig IT-konsulent fakturerer et lille kontor for en uge: tre arbejdsdage til 750 kr. i timen ekskl. moms og en akut opgave samme dag til det aftalte hastetillæg på 1,5 gange timeprisen. Kunden er en virksomhed; 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "2. november: opsætning af ny router og firewallregler (normal)",
+        "qty": "3,5 timer",
+        "rate": "750,00 kr.",
+        "amount": "2.625,00 kr."
+      },
+      {
+        "description": "4. november: klargøring af to bærbare til nye medarbejdere (normal)",
+        "qty": "2,25 timer",
+        "rate": "750,00 kr.",
+        "amount": "1.687,50 kr."
+      },
+      {
+        "description": "4. november: printernedbrud, bestilt kl. 16 til samme dag (hastetillæg 1,5)",
+        "qty": "1,5 timer",
+        "rate": "1.125,00 kr.",
+        "amount": "1.687,50 kr."
+      },
+      {
+        "description": "9. november: kontrol af backup og nulstilling af adgangskoder (normal)",
+        "qty": "4 timer",
+        "rate": "750,00 kr.",
+        "amount": "3.000,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "9.000,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "2.250,00 kr.",
+    "sample_breakdown_balance": "11.250,00 kr.",
+    "sample_breakdown_notes": "Arbejde udført 2. til 9. november 2026. Tid afrundet til nærmeste kvarter. Hastetillæg (1,5 gange timeprisen) gælder for opgaver bestilt til samme dag, jf. serviceaftalen. Faktureret i november: 11,25 af 30 timer. Betales senest 14 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om timefakturaer",
+    "industry_notes": [
+      {
+        "title": "Registrér tiden et andet sted først",
+        "text": "Hverken Invoicor-appen eller den gratis generator har et stopur. Hold styr på timerne i en kalender, en notesbog eller en app til tidsregistrering, og skriv totalerne ind. I appen kan du gemme »Time, normal« og »Time, hastetillæg« som varer én gang og tilføje dem til hver ny faktura med et tryk."
+      },
+      {
+        "title": "Minimum og transporttid aftales på forhånd",
+        "text": "En minimumsbetaling på én time pr. besøg eller transporttid til halv pris er kun rimelig, hvis kunden har sagt ja på forhånd. Skriv det i tilbuddet eller serviceaftalen, og gentag det i bemærkningerne."
+      },
+      {
+        "title": "Timer, abonnement eller fast pris",
+        "text": "En timefaktura fakturerer præcis de timer, der er brugt. Et abonnement fakturerer et fast beløb for en periode, uanset forbruget. Betaler kunden det samme hver måned, passer en abonnementsfaktura bedre."
+      }
+    ],
+    "mistakes_title": "Tre fejl på timefakturaer",
+    "mistakes": [
+      {
+        "title": "Et timetal uden opdeling",
+        "text": "»Konsulentbistand, 18 timer, 13.500 kr.« lader kunden lave detektivarbejdet, og resultatet er som regel en forsinket betaling."
+      },
+      {
+        "title": "Flere priser i én linje",
+        "text": "4 normale timer og 1,5 timer med hastetillæg skrevet som »5,5 timer à 852,27 kr.« er rigtigt regnet og svært at læse. Brug én linje pr. pris, så hver linje kan tjekkes for sig."
+      },
+      {
+        "title": "Over loftet uden at spørge",
+        "text": "Har kunden godkendt 20 timer, og fakturaen siger 26, er de seks ekstra timer en forhandling, ikke en regning. Spørg, før du passerer loftet, og skriv godkendelsen i bemærkningerne."
+      }
+    ],
+    "tip_title": "Et tip til timefakturaer",
+    "pro_tip": "Skriv linjeteksten i datid, som et resultat: »Genskabte det fælles drev efter nedbruddet« lyder som værdi leveret, mens »Arbejde på drev« lyder som tid brugt. Samme timer, samme pris, færre spørgsmål.",
+    "format_pdf_desc": "En pdf holder dine timer og priser præcis, som du sendte dem, så kundens godkendelse og dit regnskab altid bygger på de samme tal.",
+    "faq_title": "Spørgsmål om faktura for timer",
+    "faqs": [
+      {
+        "question": "Hvordan regner jeg en timefaktura ud?",
+        "answer": "Gang hver linjes timer med timeprisen, og læg linjerne sammen. Rabat og moms kommer efter subtotalen: 25 % af 9.000,00 kr. er 2.250,00 kr. I den gratis generator skriver du timerne i antal og timeprisen i pris; totalerne regnes ud for dig."
+      },
+      {
+        "question": "Skal jeg vedlægge en timeseddel?",
+        "answer": "På korte fakturaer er linjerne timesedlen: dato, opgave og timer. Ved lange forløb kan du opsummere pr. dag eller uge og have den detaljerede registrering klar. Kræver kunden en godkendt timeseddel med hver faktura, så følg deres proces."
+      },
+      {
+        "question": "Hvor ofte skal jeg sende en timefaktura?",
+        "answer": "Hver uge eller hver anden uge passer til faste opgaver: timerne er friske, og beløbene små. Månedligt passer til kunder med en fast betalingskørsel. Har I ikke aftalt en forfaldsdato, løber der først rente fra 30 dage efter, du har bedt om betaling (renteloven § 3), så skriv altid en betalingsfrist."
+      },
+      {
+        "question": "Skal jeg have et CVR-nummer for at sende en timefaktura?",
+        "answer": "Ikke altid. Lejlighedsvist arbejde i mindre omfang kan fx være B-indkomst, men reglerne afhænger af din situation, så tjek det på skat.dk. Invoicor passer bedst, når du har din egen enkeltmandsvirksomhed eller dit eget selskab; så står dit CVR-nummer i det felt, der på pdf'en hedder »CVR-nummer«."
+      },
+      {
+        "question": "Holder Invoicor styr på mine timer?",
+        "answer": "Nej. Appen laver fakturaen; den har ikke et stopur. Skriv de timer, du har registreret, som antal på linjerne. Pdf'en sender du til kunden og lægger i dit bogføringssystem eller giver til din bogholder."
+      }
+    ],
+    "cta_title": "Lav din timefaktura",
+    "related": [
+      {
+        "name": "Faktura for ydelser",
+        "slug": "faktura-ydelser"
+      },
+      {
+        "name": "Freelancefaktura",
+        "slug": "freelance-faktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "abonnementsfaktura",
+    "translation_of": "monthly-invoice",
+    "niche": "Abonnementsfaktura",
+    "title": "Abonnementsfaktura: skabelon og eksempel | Invoicor",
+    "meta_description": "Abonnementsfaktura for løbende ydelser: perioden, månedens besøg og kreditering af aflyste besøg. Udfyld eksemplet, og hent pdf'en gratis.",
+    "h1": "Abonnementsfaktura: skabelon og eksempel",
+    "subtitle": "Én faktura pr. måned for en løbende ydelse: perioden, hvad der blev leveret, eventuelle krediteringer og en klar forfaldsdato.",
+    "intro_paragraph": "En abonnementsfaktura fakturerer den samme kunde én gang om måneden for en ydelse, der fortsætter: ugentlige besøg, vedligeholdt udstyr, noget udlejet. Prisen aftales én gang, som et fast månedsbeløb eller en pris pr. besøg. Hver faktura viser så, hvad der skete i måneden: blev alle besøg gennemført, blev et aflyst og krediteret, kom der noget ekstra til? Invoicor sender ikke fakturaer automatisk; du duplikerer sidste måneds faktura og retter den. Går abonnementet til en offentlig myndighed, skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder er e-faktura fortsat frivilligt, så en pdf er fint.",
+    "include_title": "Det skal stå på en abonnementsfaktura",
+    "what_to_include_intro": "Kunden ser næsten den samme faktura hver måned, så det er det, der ændrer sig, de læser. Gør perioden, antallet af besøg og eventuelle justeringer lette at finde.",
+    "req_1_title": "Perioden, skrevet ud",
+    "req_1_text": "Skriv den præcise periode: »Periode: 1. til 30. november 2026«. Fakturadatoen alene er ikke nok. Leveringsdatoen skal stå på fakturaen, når den er en anden end fakturadatoen (momsbekendtgørelsen § 58), og Invoicor har ikke et særskilt felt til det, så perioden står i linjen.",
+    "req_2_title": "Hver måned sit eget nummer",
+    "req_2_text": "Selv om indholdet gentager sig, skal hver faktura have sit eget fortløbende nummer. Du må bruge én eller flere nummerrækker, fx én til abonnementer og én til enkeltopgaver, så månederne er lette at følge. Duplikerer du i Invoicor, får kopien selv det næste nummer.",
+    "req_3_title": "Prisen, og hvordan den er bygget op",
+    "req_3_text": "Skriv grundlaget: et fast beløb (»Plantepleje pr. måned, 4 besøg inkluderet«) eller en pris pr. besøg gange antal besøg. Er prisen fast, så skriv, hvordan en måned med fem uger behandles.",
+    "req_4_title": "Krediteringer på egne linjer",
+    "req_4_text": "Blev et besøg aflyst, så tilføj en linje med minus: »Kreditering: besøg 26. november aflyst, kontoret lukket«. En stille nedsat pris ligner en prisændring; en synlig kreditering viser, at aftalen stadig gælder.",
+    "req_5_title": "Ekstra ud over aftalen",
+    "req_5_text": "Alt, der ikke er dækket af månedsprisen, fx en ny plante eller et ekstra besøg, står på sin egen linje med sin egen pris. Så er næste måneds kopi ren, når du har slettet linjen.",
+    "req_6_title": "En forfaldsdato, der passer til kundens betalingsdag",
+    "req_6_text": "Mange virksomheder betaler leverandører på faste dage. Spørg hvilke, og sæt forfaldsdatoen før den dag. »Betales senest 15. december« er tydeligere end »netto 14 dage«, når fakturaen ligger i en indbakke.",
+    "what_to_include_outro": "Den måned, noget er anderledes, er den, kunden læser grundigt. Gør den linje tydelig og forklaret.",
+    "paper_label": "Abonnementsfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en abonnementsfaktura",
+    "sample_breakdown_intro": "Et firma med plantepleje fakturerer november bagud: fire ugentlige besøg i den faste månedspris, ét besøg aflyst (kontoret lukket) og krediteret til prisen pr. besøg, og én ny plante. Kunden er en virksomhed; 25 % moms af det hele.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Plantepleje pr. måned, 1. til 30. november 2026 (4 ugentlige besøg)",
+        "qty": "1",
+        "rate": "1.960,00 kr.",
+        "amount": "1.960,00 kr."
+      },
+      {
+        "description": "Kreditering: besøg 26. november aflyst (kontoret lukket)",
+        "qty": "1",
+        "rate": "-490,00 kr.",
+        "amount": "-490,00 kr."
+      },
+      {
+        "description": "Ny plante, reception (figentræ, 180 cm)",
+        "qty": "1",
+        "rate": "1.150,00 kr.",
+        "amount": "1.150,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "2.620,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "655,00 kr.",
+    "sample_breakdown_balance": "3.275,00 kr.",
+    "sample_breakdown_notes": "Faktura nr. 2026-118. Periode 1. til 30. november 2026, faktureret bagud. Besøg: 5., 12. og 19. november; besøget 26. november aflyst efter aftale med kunden og krediteret med 490,00 kr. pr. besøg. Betales senest 15. december 2026.",
+    "industry_notes_title": "Det skal du vide om abonnementsfakturaer",
+    "industry_notes": [
+      {
+        "title": "Hver måned, men ikke automatisk",
+        "text": "Mange programmer kalder det en gentagen faktura og sender den efter en plan. Det gør Invoicor ikke. Åbn sidste måneds faktura, tryk »Duplicate Invoice«, og ret perioden og eventuelle krediteringer. Kunde, linjer og bemærkninger følger med."
+      },
+      {
+        "title": "Forud eller bagud",
+        "text": "Fakturerer du bagud, som i eksemplet, fakturerer du en leveret måned. Fakturerer du måneden forud, er det en forudbetaling: betalingsdatoen tæller som leveringstidspunkt, og momsen skal betales, når pengene kommer (momsloven § 23, stk. 3). Krediteringer lander så på næste måneds faktura. Vælg én model, og skriv den i aftalen."
+      },
+      {
+        "title": "Marker sidste måned betalt, før du kopierer",
+        "text": "Sæt den forrige faktura til »Paid«, når pengene er kommet, og dupliker den derefter. Så viser statuslisten, hvilke måneder der er betalt, og hvilke der er forfaldne. Pdf'erne lægger du i dit bogføringssystem eller sender til din bogholder; Invoicor er et faktureringsprogram, ikke et bogføringssystem."
+      }
+    ],
+    "mistakes_title": "Tre fejl på abonnementsfakturaer",
+    "mistakes": [
+      {
+        "title": "Kopieret uden at rette perioden",
+        "text": "En faktura, der stadig siger »oktober« i december, bliver afvist eller betalt som en dublet. Tjek periode, linjer og forfaldsdato, før du sender kopien."
+      },
+      {
+        "title": "Aflyste besøg udeladt i stilhed",
+        "text": "Fakturerer du den fulde pris for et aflyst besøg uden et ord, beder kunden måske om alle krediteringer på én gang måneder senere. Krediter besøget, eller skriv i aftalen, at prisen dækker aflyste besøg."
+      },
+      {
+        "title": "Ekstra lagt ind i månedsprisen",
+        "text": "Hæver du hovedlinjen fra 1.960 til 3.110 kr. for en ny plante, bliver næste måneds kopi forkert, og det er uklart, hvad der ændrede sig. Hold grundprisen fast, og sæt ekstra på egne linjer."
+      }
+    ],
+    "tip_title": "Et tip til abonnementsfakturaer",
+    "pro_tip": "Send abonnementsfakturaen samme dag hver måned, helst første hverdag efter perioden. Kunden får den ind i sin rutine, og en forsinket betaling er let at se.",
+    "format_pdf_desc": "En pdf pr. måned giver kunden et fast dokument for hver periode, som arkiveres pænt efter måned og ikke kan ændres, efter den er sendt.",
+    "faq_title": "Spørgsmål om abonnementsfaktura",
+    "faqs": [
+      {
+        "question": "Hvornår skal jeg sende abonnementsfakturaen?",
+        "answer": "Faktureres der bagud, så lige efter perioden, når alle besøg og krediteringer er kendt. For et fast beløb uden justeringer fakturerer nogle virksomheder den første i måneden, forud; så er det en forudbetaling med moms ved betaling. Vælg én model, og hold fast i den."
+      },
+      {
+        "question": "Hvordan fakturerer jeg en måned med fem ugentlige besøg?",
+        "answer": "Med en pris pr. besøg fakturerer du fem. Med en fast pris dækker den som regel alle uger, så den er uændret; nogle definerer den som fire besøg og fakturerer det femte som ekstra. Skriv reglen i aftalen og i bemærkningerne."
+      },
+      {
+        "question": "Hvordan viser jeg en kreditering?",
+        "answer": "Tilføj en linje med negativ pris og en kort begrundelse, fx »Kreditering: besøg 26. november aflyst«. Kunden ser både den fulde pris og justeringen. Den gratis generator tillader negative priser til netop det. Appen gør ikke: der sætter du månedens antal eller pris ned og skriver begrundelsen i linjen."
+      },
+      {
+        "question": "Kan jeg dele første eller sidste måned op?",
+        "answer": "Ja. Fakturer den del af måneden eller de besøg, der blev gennemført, og skriv det: »Fra 15. november, 2 af 4 besøg«. Aftal metoden, efter dage eller efter besøg, før den første faktura."
+      },
+      {
+        "question": "Kan Invoicor sende fakturaen automatisk hver måned?",
+        "answer": "Nej. Invoicor har ingen gentagne eller planlagte fakturaer. Med »Duplicate Invoice« tager det dog kun et øjeblik."
+      },
+      {
+        "question": "Hvad hvis kunden betaler for sent?",
+        "answer": "Har I ikke aftalt en forfaldsdato, løber der rente fra 30 dage efter, du har bedt om betaling (renteloven § 3), med Nationalbankens udlånsrente plus 8 procentpoint (§ 5). Mellem virksomheder kan du desuden kræve en kompensation på 310 kr. én gang pr. faktura. Et rykkergebyr må højst være 100 kr., og du må højst opkræve det for tre rykkere."
+      }
+    ],
+    "cta_title": "Lav din abonnementsfaktura",
+    "related": [
+      {
+        "name": "Faktura for ydelser",
+        "slug": "faktura-ydelser"
+      },
+      {
+        "name": "Freelancefaktura",
+        "slug": "freelance-faktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-arbejdsloen-og-materialer",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Arbejdsløn og materialer",
+    "title": "Faktura arbejdsløn og materialer: skabelon | Invoicor",
+    "meta_description": "Faktura med arbejdsløn og materialer på hver sin linje: timer, materialer med avance, kørsel og 25 % moms. Udfyld eksemplet, og hent en pdf.",
+    "h1": "Faktura arbejdsløn og materialer: skabelon og eksempel",
+    "subtitle": "Fakturer arbejdet og materialerne på hver sin linje, så kunden kan se, hvad opgaven kostede i tid, og hvad den kostede i dele.",
+    "intro_paragraph": "En faktura med arbejdsløn og materialer deler opgavens pris i to: det, du tager for dit arbejde, og det, du tager for de ting, du har monteret eller brugt. Kunden ser, hvad opgaven kostede i dele og i timer, og på regningsarbejde uden fast pris er fakturaen det eneste sted, kunden kan tjekke begge. Private kunder skal desuden have arbejdslønnen vist for sig, hvis de vil bruge håndværkerfradraget. I Danmark er der 25 % moms på både arbejdsløn og materialer. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til private og til andre virksomheder er en pdf fint. Nedenfor: arbejdslinjer, materialer og avance, gebyrer og et eksempel på en ny dørkarm.",
+    "include_title": "Det skal stå på en faktura med arbejdsløn og materialer",
+    "what_to_include_intro": "Hver linje skal tydeligt høre til arbejdsløn, materialer eller et gebyr. Kan kunden ikke se, hvilken gruppe en linje hører til, mister opdelingen sin mening.",
+    "req_1_title": "Arbejdsløn som timer gange timepris, eller fast pris",
+    "req_1_text": "På regningsarbejde står arbejdslønnen som timer og timepris med det, der blev lavet: »Udskiftning af rådden karm, 3 timer à 520,00 kr.«. Ved en opgave med fast pris pr. del er én samlet arbejdslinje fint, hvis den nævner opgaven.",
+    "req_2_title": "Materialer med antal, enhed og stykpris",
+    "req_2_text": "Giv hvert materiale sin egen linje i den enhed, det sælges i: 3 patroner fugemasse, 1 æske skruer, 12 meter liste. Momsbekendtgørelsen § 58 kræver mængde og art af varerne og stykprisen uden moms.",
+    "req_3_title": "Din avance",
+    "req_3_text": "Avancen betaler for indkøb, afhentning, lager og returneringer. Byg den ind i stykprisen, og skriv den én gang i bemærkningerne (»materialepriser inkl. 15 % håndteringstillæg«). Skjult avance giver uenighed.",
+    "req_4_title": "Kørsel, bortskaffelse og småmaterialer",
+    "req_4_text": "Kørsel, affaldsgebyr eller et tillæg for småmaterialer er hverken arbejdsløn eller et bestemt materiale. Giv hver sin linje og et enkelt navn, så det ikke ligner oppustet arbejdsløn.",
+    "req_5_title": "Moms af det hele",
+    "req_5_text": "Momsen er 25 % af hele subtotalen, arbejdsløn og materialer under ét (momsloven § 33). Sælger du til en anden dansk virksomhed, også som underentreprenør i byggeriet, fakturerer du med moms: Danmark har ikke omvendt betalingspligt for byggeydelser mellem danske virksomheder.",
+    "req_6_title": "Henvisning til tilbud eller arbejdsseddel",
+    "req_6_text": "Regningsarbejde begynder ofte med et overslag eller en aftalt øvre grænse. Skriv henvisningen og grænsen i bemærkningerne, så kunden kan sammenligne.",
+    "what_to_include_outro": "Opbygningen er den samme for tømrer, elektriker og VVS-installatør; kun materialerne skifter.",
+    "paper_label": "Arbejdsløn og materialer · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura med arbejdsløn og materialer",
+    "sample_breakdown_intro": "En tømrer skifter en rådden yderdørskarm hos en privat kunde: kørsel, tre timers arbejde, fem materialelinjer og bortskaffelse. Materialepriserne indeholder 15 % avance. 25 % moms af hele beløbet; arbejdslønnen står for sig, så kunden kan se den.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kørsel",
+        "qty": "1",
+        "rate": "395,00 kr.",
+        "amount": "395,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: udskiftning af rådden karm og bundstykke",
+        "qty": "3 timer",
+        "rate": "520,00 kr.",
+        "amount": "1.560,00 kr."
+      },
+      {
+        "description": "Materiale: dørkarm, fyr, grundmalet, 90 cm",
+        "qty": "1",
+        "rate": "1.245,00 kr.",
+        "amount": "1.245,00 kr."
+      },
+      {
+        "description": "Materiale: bundstykke, eg, 90 cm",
+        "qty": "1",
+        "rate": "489,00 kr.",
+        "amount": "489,00 kr."
+      },
+      {
+        "description": "Materiale: spartelmasse til udendørs brug",
+        "qty": "2",
+        "rate": "89,50 kr.",
+        "amount": "179,00 kr."
+      },
+      {
+        "description": "Materiale: rustfri skruer, æske",
+        "qty": "1",
+        "rate": "129,00 kr.",
+        "amount": "129,00 kr."
+      },
+      {
+        "description": "Materiale: fugemasse, patron",
+        "qty": "3",
+        "rate": "79,00 kr.",
+        "amount": "237,00 kr."
+      },
+      {
+        "description": "Bortskaffelse af gammel karm",
+        "qty": "1",
+        "rate": "250,00 kr.",
+        "amount": "250,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "4.484,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "1.121,00 kr.",
+    "sample_breakdown_balance": "5.605,00 kr.",
+    "sample_breakdown_notes": "Arbejdsseddel A-0412, regningsarbejde med en øvre grænse på 6.000,00 kr. inkl. moms. Udført 12. november 2026. Materialepriser inkl. 15 % håndteringstillæg. Arbejdsløn pr. påbegyndt halve time. Betales senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om arbejdsløn og materialer",
+    "industry_notes": [
+      {
+        "title": "Regningsarbejde eller fast pris",
+        "text": "Ved fast pris betaler kunden den aftalte total. Ved regningsarbejde betaler kunden de faktiske timer og materialer, så fakturaen er beviset. Aftal, hvad der gælder, før du går i gang, og sæt en øvre grænse på regningsarbejde."
+      },
+      {
+        "title": "Materialer er ikke udlæg",
+        "text": "Køber du materialerne i dit eget navn og sælger dem videre med avance, er de en almindelig del af dit salg med moms. Kun et beløb, du betaler i kundens navn og for kundens regning uden tillæg og bogfører på en særskilt udlægskonto, holdes uden for momsen (momsloven § 27, stk. 3, nr. 3). Kørsel er normalt heller ikke et udlæg; spørg din revisor."
+      },
+      {
+        "title": "Gem leverandørens bilag",
+        "text": "Leverandørens kvitteringer underbygger dine materialepriser, hvis kunden eller Skattestyrelsen spørger, så gem dem med opgaven i mindst 5 år, som bogføringsloven kræver. Selve bogføringen sker i dit bogføringssystem eller hos din bogholder, ikke i Invoicor."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer med arbejdsløn og materialer",
+    "mistakes": [
+      {
+        "title": "Arbejdsløn gemt i materialeprisen",
+        "text": "Hæver du prisen på dele for at dække monteringstiden, ser delene dyre ud, og en privat kunde kan ikke se sin arbejdsløn. Hold monteringstiden på arbejdslinjer, også når den er kort."
+      },
+      {
+        "title": "»Materialer, diverse« i én linje",
+        "text": "En samlet materialelinje giver spørgsmål og tvivl om avancen. Specificer hvert materiale med antal og stykpris."
+      },
+      {
+        "title": "Glemte småting",
+        "text": "Skruer, fugemasse, spartel og klinger løber op i løbet af et år. Tillader aftalen det, så fakturer dem som materialelinjer eller som ét tydeligt tillæg for småmaterialer."
+      }
+    ],
+    "tip_title": "Et tip til fakturaer med arbejdsløn og materialer",
+    "pro_tip": "Gem dine mest brugte materialer som varer i appen, med avancen regnet ind i prisen. Så er priserne ens fra opgave til opgave.",
+    "format_pdf_desc": "En pdf låser timer, materialepriser og moms, som de blev aftalt, så kunden kan sammenligne med arbejdssedlen.",
+    "faq_title": "Spørgsmål om faktura med arbejdsløn og materialer",
+    "faqs": [
+      {
+        "question": "Er der moms på både arbejdsløn og materialer?",
+        "answer": "Ja. I Danmark er der 25 % moms på alle momspligtige leverancer (momsloven § 33), så arbejdsløn og materialer får samme sats, og én faktura med én momssats dækker hele opgaven. Nogle aktiviteter er momsfritaget (momsloven § 13), fx undervisning; er du i tvivl, så spørg din revisor."
+      },
+      {
+        "question": "Skal jeg vise min avance på materialer?",
+        "answer": "Ikke nødvendigvis pr. linje, men kunden bør vide, at den findes: byg den ind i stykprisen, og skriv én sætning i bemærkningerne. Er aftalen kostpris plus tillæg, viser du begge dele."
+      },
+      {
+        "question": "Hvordan fakturerer jeg kørsel?",
+        "answer": "Som første linje til en fast pris: »Kørsel, 395,00 kr.«. Krediterer du kørslen, når kunden siger ja til opgaven, så tilføj en linje med minus lige under i den gratis generator. I appen, hvor priser ikke kan være negative, fjerner du kørselslinjen."
+      },
+      {
+        "question": "Hvad hvis opgaven bliver dyrere end overslaget?",
+        "answer": "Sig det til kunden, før du passerer den aftalte grænse, og få godkendelsen på skrift; skriv den så i bemærkningerne. En overskridelse, kunden først hører om på fakturaen, er en almindelig grund til, at den ikke bliver betalt. Over for private kunder kan der gælde særlige regler for overslag, så tjek dem."
+      },
+      {
+        "question": "Skal en underentreprenør fakturere uden moms?",
+        "answer": "Nej, ikke når I begge er danske virksomheder. Danmark har ingen indenlandsk omvendt betalingspligt for byggeydelser (momsloven § 46), så en dansk underentreprenør fakturerer med 25 % moms. Omvendt betalingspligt i byggeriet gælder kun, når leverandøren er udenlandsk."
+      }
+    ],
+    "cta_title": "Lav din faktura med arbejdsløn og materialer",
+    "related": [
+      {
+        "name": "Acontofaktura",
+        "slug": "acontofaktura"
+      },
+      {
+        "name": "Udlægsfaktura",
+        "slug": "udlaeg-faktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-ydelser",
+    "translation_of": "service-invoice",
+    "niche": "Faktura for ydelser",
+    "title": "Faktura for ydelser: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for ydelser og konsulentarbejde: hvad der skal stå på den, et udfyldt eksempel med 25 % moms og typiske fejl. Lav din pdf gratis.",
+    "h1": "Faktura for ydelser: skabelon og eksempel",
+    "subtitle": "Til konsulenter, bureauer, undervisere og alle andre, der sælger arbejde frem for varer: sådan beskriver, daterer og prissætter du ydelsen.",
+    "intro_paragraph": "En faktura for ydelser opkræver betaling for tid, viden eller et resultat, ikke for en vare. Der bliver ikke leveret noget, kunden kan pakke ud, så teksten på fakturaen er kundens eneste bevis for, hvad der betales for. Derfor er beskrivelsen det vigtigste felt: hvad du lavede, hvornår og for hvem. Det er den samme faktura, uanset om du kalder den konsulentfaktura, honorarfaktura eller bare faktura. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder kan du fortsat aftale andre fakturaformer, så en pdf er fin.",
+    "include_title": "Det skal stå på en faktura for ydelser",
+    "what_to_include_intro": "Kravene er de samme som til enhver faktura. Det særlige ved ydelser er, hvordan du dokumenterer arbejdet. Disse seks punkter gør det.",
+    "req_1_title": "En beskrivelse, kunden genkender",
+    "req_1_text": "Momsbekendtgørelsen § 58 kræver, at fakturaen angiver omfanget og arten af de ydelser, du leverer. Skriv linjen, som kunden selv ville forklare opgaven: \"Workshop om kundeservice, Aarhus, 14 deltagere\" bliver godkendt. \"Konsulentydelser\" bliver der spurgt til.",
+    "req_2_title": "Leveringsdatoen, når den ikke er fakturadatoen",
+    "req_2_text": "Du fakturerer ofte nogle dage efter arbejdet. Er leveringsdatoen en anden end fakturadatoen, skal den stå på fakturaen (momsbekendtgørelsen § 58). Invoicor har ikke et særskilt felt til den: skriv datoen eller perioden i linjens beskrivelse eller i bemærkningerne, og lad fakturadatoen være den dag, du udsteder fakturaen.",
+    "req_3_title": "Prisgrundlaget på hver linje",
+    "req_3_text": "Ydelser prissættes pr. time, pr. besøg eller som en fast pris for en aftalt opgave. Vis, hvilket grundlag hver linje bruger: \"4 timer à 1.100,00 kr.\" eller \"Fast pris: opstartsforløb\". Enhedsprisen står uden moms, og giver du rabat, skal den fremgå.",
+    "req_4_title": "Kundens reference",
+    "req_4_text": "Større kunder fordeler fakturaer efter indkøbsordrenummer, projektnummer eller kontaktperson. Spørg efter referencen, før du fakturerer, og skriv den i bemærkningerne.",
+    "req_5_title": "CVR-nummer, fakturanummer og moms",
+    "req_5_text": "Er du momsregistreret, skal fakturaen vise dit CVR- eller SE-nummer, et fortløbende nummer, momssatsen og momsbeløbet. Ydelser har som udgangspunkt 25 % moms (momsloven § 33). Enkelte ydelser er fritaget efter momsloven § 13, fx sundhedsydelser og undervisning. Er du i tvivl om din egen ydelse, så spørg din revisor.",
+    "req_6_title": "Betalingsbetingelser med en rigtig forfaldsdato",
+    "req_6_text": "Skriv både betingelsen, fx netto 14 dage, og selve datoen, og hvordan der betales: kontonummer eller dit eget betalingslink. Er der ikke aftalt en forfaldsdato, løber renten efter renteloven § 3 først fra 30 dage efter, at du har bedt om betaling.",
+    "what_to_include_outro": "Så forklarer fakturaen sig selv, og du har et dateret bevis på, hvad du leverede.",
+    "paper_label": "Faktura for ydelser · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura for ydelser",
+    "sample_breakdown_intro": "Et lille kursusfirma i Aarhus fakturerer en måneds arbejde for en erhvervskunde: en workshop til fast pris, to opfølgende besøg og coachingsamtaler pr. time. Eksemplet går ud fra, at ydelserne er momspligtige med 25 %. Om et kursus kan være momsfritaget undervisning, så spørg en revisor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Workshop om kundeservice, halv dag, hos kunden i Aarhus (4. november), fast pris",
+        "qty": "1",
+        "rate": "9.500,00 kr.",
+        "amount": "9.500,00 kr."
+      },
+      {
+        "description": "Opfølgende besøg hos kunden (11. og 25. november)",
+        "qty": "2",
+        "rate": "2.400,00 kr.",
+        "amount": "4.800,00 kr."
+      },
+      {
+        "description": "Coachingsamtaler med teamledere (5. til 28. november)",
+        "qty": "4 timer",
+        "rate": "1.100,00 kr.",
+        "amount": "4.400,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "18.700,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "4.675,00 kr.",
+    "sample_breakdown_balance": "23.375,00 kr.",
+    "sample_breakdown_notes": "Ydelser leveret 4. til 28. november 2026. Indkøbsordre 4471-B, godkendt af driftschefen. Betaling senest 14. december 2026 via bankoverførsel til konto 5301 0241234; skriv fakturanummer 2026-047 som tekst.",
+    "industry_notes_title": "Godt at vide om fakturaer for ydelser",
+    "industry_notes": [
+      {
+        "title": "Ydelser til virksomheder i andre EU-lande",
+        "text": "Sælger du en ydelse til en virksomhed i et andet EU-land, skriver du kundens momsnummer og \"omvendt betalingspligt\" på fakturaen og lægger ikke dansk moms på. Fakturaen skal udstedes senest den 15. i måneden efter. Invoicor udskriver altid momslinjen, også ved 0 %, så noten er det, der forklarer, hvorfor der står 0,00. Til private og uden for EU gælder andre regler: spørg din revisor."
+      },
+      {
+        "title": "Blandede opgaver kræver en beslutning",
+        "text": "Nogle opgaver indeholder både arbejde og dele. Invoicor bruger én momssats pr. faktura, og det er sjældent et problem i Danmark, hvor momspligtige ydelser og varer har 25 %. Sælger du både momspligtige og momsfritagne ydelser, så lav to fakturaer, eller spørg din revisor."
+      },
+      {
+        "title": "Samme ydelse hver måned, nyt nummer hver gang",
+        "text": "Hver faktura skal have sit eget fortløbende nummer. I Invoicor duplikerer du sidste måneds faktura med \"Duplicate Invoice\", retter perioden og datoerne, og den nye faktura får det næste nummer. Invoicor er et faktureringsprogram, ikke et bogføringssystem: pdf'en går videre til dit bogføringssystem eller din bogholder."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer for ydelser",
+    "mistakes": [
+      {
+        "title": "En overskrift i stedet for arbejdet",
+        "text": "\"Rådgivning: 20.000 kr.\" siger intet til den, der skal godkende fakturaen, hvis vedkommende ikke var med til møderne. Så bliver fakturaen liggende, til nogen kan forklare den."
+      },
+      {
+        "title": "Ingen dato for, hvornår ydelsen blev leveret",
+        "text": "En faktura dateret 2. december for arbejde i oktober ligner en fejl for kunden og kan placere omsætningen i den forkerte momsperiode hos dig. Skriv leveringsdatoerne på linjerne eller i bemærkningerne."
+      },
+      {
+        "title": "Momsen kopieret fra en gammel faktura",
+        "text": "De fleste ydelser har 25 % moms, men undervisning og sundhedsydelser kan være fritaget. Afklar én gang, hvad der gælder for hver ydelse, i stedet for at kopiere satsen fra sidste faktura."
+      }
+    ],
+    "tip_title": "Et tip til fakturaer for ydelser",
+    "pro_tip": "Send fakturaen den dag, arbejdet slutter, mens kunden stadig kan mærke værdien af det. En faktura, der kommer tre uger efter, konkurrerer med en falmende erindring.",
+    "format_pdf_desc": "En pdf holder dine beskrivelser og datoer præcis, som du skrev dem, ser ens ud på alle enheder og kan lægges direkte ind i kundens bogføring.",
+    "faq_title": "Spørgsmål om fakturaer for ydelser",
+    "faqs": [
+      {
+        "question": "Hvad er forskellen på en faktura for ydelser og en salgsfaktura?",
+        "answer": "En faktura for ydelser opkræver betaling for arbejde: timer, besøg, sessioner eller en fast projektpris. En salgsfaktura opkræver betaling for varer med antal, stykpris og ofte fragt."
+      },
+      {
+        "question": "Hvordan skriver jeg en konsulentfaktura?",
+        "answer": "Sæt hver ydelse på sin egen linje med, hvad du lavede, hvornår og for hvem, og angiv antal og pris uden moms. Derefter subtotal, moms og total, efterfulgt af betalingsbetingelser, forfaldsdato og hvordan der betales. Husk dit CVR-nummer og et fortløbende fakturanummer."
+      },
+      {
+        "question": "Skal der moms på ydelser?",
+        "answer": "Som udgangspunkt ja: 25 % på alle momspligtige ydelser (momsloven § 33). Enkelte ydelser er fritaget efter momsloven § 13, fx sundhedsydelser og undervisning. Sælger du til en virksomhed i et andet EU-land, gælder omvendt betalingspligt. Er du i tvivl, så spørg din revisor."
+      },
+      {
+        "question": "Skal jeg fakturere pr. time eller til fast pris?",
+        "answer": "Fakturér, som I har aftalt: timepris ved opgaver med åbent omfang, fast pris ved en afgrænset opgave."
+      },
+      {
+        "question": "Hvad sker der, hvis en erhvervskunde betaler for sent?",
+        "answer": "Skriv altid selve forfaldsdatoen på fakturaen. Betaler en erhvervskunde for sent, kan du kræve rente svarende til Nationalbankens udlånsrente plus 8 procentpoint (renteloven § 5) og en kompensation på 310 kr. én gang pr. fordring (§ 9 a)."
+      }
+    ],
+    "cta_title": "Lav din faktura for ydelser",
+    "related": [
+      {
+        "name": "Timefaktura",
+        "slug": "faktura-timer"
+      },
+      {
+        "name": "Udlægsfaktura",
+        "slug": "udlaeg-faktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "handelsfaktura",
+    "translation_of": "commercial-invoice",
+    "niche": "Handelsfaktura",
+    "title": "Handelsfaktura til eksport: skabelon og eksempel | Invoicor",
+    "meta_description": "Handelsfaktura til eksport uden for EU: varekode, oprindelse, vægt og Incoterms på hver linje. Se et eksempel fra Danmark til Norge.",
+    "h1": "Handelsfaktura til eksport: skabelon og eksempel",
+    "subtitle": "Fakturaen, der følger varerne over en toldgrænse: de felter, tolden og fragtfirmaet læser, og hvad der stadig kræver sin egen formular.",
+    "intro_paragraph": "En handelsfaktura (commercial invoice) er fakturaen for et eksportsalg, skrevet så tolden i modtagerlandet kan forstå forsendelsen. Den nævner sælger, køber og modtager og angiver for hver vare beskrivelse, værdi, oprindelse, vægt og varekode (HS-kode). Tolden bruger den til at klassificere varerne og fastsætte told; fragtfirmaer beder om den, før de sender en pakke ud af EU. Invoicor laver selve fakturaen som pdf med varekode og oprindelse i hver linjes detaljer. Den laver ikke toldangivelser eller fragtfirmaets formularer, og pdf'ens overskrift er \"Faktura\": skriv \"Handelsfaktura / Commercial invoice\" i første linje og i bemærkningerne, og spørg dit fragtfirma, om de kræver deres egen formular. Sælger du til en dansk offentlig myndighed, skal du bruge e-faktura (OIOUBL eller Peppol via NemHandel); mellem virksomheder er e-faktura frivillig, så en pdf er fin.",
+    "include_title": "Det skal stå på en handelsfaktura",
+    "what_to_include_intro": "Tolden og fragtfirmaet leder efter de samme grundoplysninger, og en manglende oplysning er en almindelig grund til, at en forsendelse bliver holdt tilbage.",
+    "req_1_title": "Sælger, køber og modtager",
+    "req_1_text": "Angiv din virksomhed som eksportør med CVR-nummer og eventuelt det EORI-nummer, som virksomheder i EU bruger over for tolden; spørg Toldstyrelsen eller dit fragtfirma, om du skal have et. Derefter køberen, der betaler, og modtageren i bemærkningerne, hvis varerne skal et andet sted hen.",
+    "req_2_title": "En præcis beskrivelse af hver vare",
+    "req_2_text": "\"Gaver\" eller \"vareprøver\" kommer ikke igennem. Skriv, hvad varen er, hvad den er lavet af, og hvad den bruges til: \"Krus i stentøj, glaseret, 350 ml, til husholdning\". Tolden klassificerer ud fra teksten.",
+    "req_3_title": "Varekode og oprindelsesland pr. linje",
+    "req_3_text": "HS-koden klassificerer varen til told: seks cifre, der er fælles for hele verden, og ofte flere cifre nationalt. Oprindelse er, hvor varen er fremstillet, ikke hvor den blev sendt fra. Skriv begge dele i linjens detaljer.",
+    "req_4_title": "Antal, vægt og værdi i én valuta",
+    "req_4_text": "Angiv enheder, stykpris og linjetotal i én valuta, der står på fakturaen, plus vægt pr. linje eller for hele forsendelsen og antal kolli. Tolden tjekker, at værdien passer til varerne.",
+    "req_5_title": "Incoterms og formålet med eksporten",
+    "req_5_text": "Skriv den Incoterms-regel, I har aftalt, fx DAP eller DDP med det navngivne sted: den viser, hvem der betaler fragt og importafgifter. Tilføj formålet: salg, vareprøve, reparation eller returnering.",
+    "req_6_title": "Momsen og en underskrevet erklæring",
+    "req_6_text": "Eksport af varer til et land uden for EU er normalt momsfri; tjek med din revisor, og spørg, hvilken dokumentation for udførslen du skal gemme. Invoicor udskriver altid momslinjen, også ved 0 %, så skriv årsagen i bemærkningerne. Mange fragtfirmaer vil desuden have en kort erklæring om, at oplysningerne er korrekte, med navn og dato.",
+    "what_to_include_outro": "Med disse felter bliver en almindelig faktura til en, tolden kan arbejde med.",
+    "paper_label": "Handelsfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en handelsfaktura",
+    "sample_breakdown_intro": "En lille keramik- og tekstilvirksomhed på Fyn sender en ordre til en butik i Oslo på DAP Oslo, med priser i danske kroner. Norge er uden for EU, så forsendelsen skal gennem tolden. Eksemplet går ud fra, at eksporten er momsfri, så momsen er 0 %; under DAP betaler køberen told og importafgifter i Norge. Varekoderne er eksempler: tjek dine egne.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Krus i stentøj, glaseret, 350 ml. HS 6912.00, oprindelse Danmark, 0,4 kg pr. stk.",
+        "qty": "48",
+        "rate": "110,00 kr.",
+        "amount": "5.280,00 kr."
+      },
+      {
+        "description": "Plaid i uld, 130 x 180 cm. HS 6301.20, oprindelse Danmark, 1,1 kg pr. stk.",
+        "qty": "12",
+        "rate": "450,00 kr.",
+        "amount": "5.400,00 kr."
+      },
+      {
+        "description": "Notesbog, A5, stofomslag. HS 4820.10, oprindelse Danmark, 0,3 kg pr. stk.",
+        "qty": "60",
+        "rate": "55,00 kr.",
+        "amount": "3.300,00 kr."
+      },
+      {
+        "description": "Fragt til Oslo, 4 kolli, 55 kg brutto",
+        "qty": "1",
+        "rate": "1.450,00 kr.",
+        "amount": "1.450,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "15.430,00 kr.",
+    "sample_breakdown_tax_label": "Moms 0 % (eksport uden for EU)",
+    "sample_breakdown_tax": "0,00 kr.",
+    "sample_breakdown_balance": "15.430,00 kr.",
+    "sample_breakdown_notes": "Handelsfaktura / Commercial invoice. Incoterms 2020: DAP Oslo. Formål: salg. Modtager: køberens lager i Oslo. Eksport uden for EU, ingen dansk moms. Jeg erklærer, at oplysningerne på denne faktura er sande og korrekte. Underskrevet: M. Holm, indehaver, 26. november 2026.",
+    "industry_notes_title": "Godt at vide om handelsfakturaer",
+    "industry_notes": [
+      {
+        "title": "Incoterms afgør, hvem der betaler told",
+        "text": "Incoterms udgives af Det Internationale Handelskammer (ICC); de gældende er Incoterms 2020. Under DAP betaler køberen importtold og afgifter, under DDP gør sælgeren. Under DDP kommer tolden ud af din avance."
+      },
+      {
+        "title": "Salg til andre EU-lande er noget andet",
+        "text": "Inden for EU er der ingen told, så du sender en almindelig faktura. Sælger du varer til en virksomhed i et andet EU-land, skal fakturaen vise køberens momsnummer og dit eget og en note som \"momsfritaget\" eller \"0-sats\", og den skal udstedes senest den 15. i måneden efter. Handelsfakturaen er til forsendelser ud af EU."
+      },
+      {
+        "title": "Fakturaen er ét dokument blandt flere",
+        "text": "En forsendelse kan også kræve en udførselsangivelse, et oprindelsescertifikat, en pakkeliste eller fragtfirmaets formular. Invoicor laver fakturaen; dit fragtfirma, din speditør eller Toldstyrelsen fortæller dig, hvad der ellers skal med."
+      }
+    ],
+    "mistakes_title": "Tre fejl på handelsfakturaer",
+    "mistakes": [
+      {
+        "title": "En lav værdi for at spare køberen for told",
+        "text": "At angive mindre end den rigtige pris er en falsk angivelse: tolden kan tilbageholde varerne og give importøren en bøde. Angiv det, køberen betaler. Er det en gave eller en vareprøve, så skriv det og angiv en realistisk værdi."
+      },
+      {
+        "title": "Oprindelse forvekslet med afsendelsessted",
+        "text": "En vare fremstillet i Portugal og sendt fra dit lager i Odense har portugisisk oprindelse. Oprindelsen kan ændre toldsatsen og retten til frihandelsfordele, så tjek den for hver vare."
+      },
+      {
+        "title": "Ingen valuta eller to valutaer",
+        "text": "Tolden omregner værdien til sin egen valuta og skal derfor vide, hvilken du bruger. Vælg én for hele fakturaen, og hold alle linjer og fragten i den."
+      }
+    ],
+    "tip_title": "Et tip til handelsfakturaer",
+    "pro_tip": "Gem hver vare med varekode, oprindelse og vægt i detaljerne. Så starter hver eksportordre med tolddata på plads, og du retter kun antal, køber og dato.",
+    "format_pdf_desc": "Fragtfirmaer og speditører vil have handelsfakturaen som pdf, som de kan vedhæfte forsendelsen. Den holder koder og vægte på plads.",
+    "faq_title": "Spørgsmål om handelsfakturaer",
+    "faqs": [
+      {
+        "question": "Hvornår skal jeg bruge en handelsfaktura?",
+        "answer": "Når varer krydser en toldgrænse, fx fra Danmark til Norge, Storbritannien eller USA, også for de fleste kurerpakker. Det gælder salg og som regel også vareprøver, gaver og returneringer med formålet angivet."
+      },
+      {
+        "question": "Hvad er forskellen på en handelsfaktura og en proformafaktura?",
+        "answer": "Handelsfakturaen er fakturaen for selve salget. En proformafaktura sendes før, fx så køberen kan betale forud eller søge en importtilladelse, og den er ikke en faktura for salget."
+      },
+      {
+        "question": "Hvor skriver jeg varekoden på fakturaen?",
+        "answer": "På hver vares linje, efter beskrivelsen eller i linjens detaljer, sammen med oprindelseslandet."
+      },
+      {
+        "question": "Skal der moms på eksport?",
+        "answer": "Eksport af varer til lande uden for EU er normalt momsfri; tjek med din revisor, hvilken dokumentation du skal have. Sælger du varer til en virksomhed i et andet EU-land, skal fakturaen vise begge momsnumre og en note som \"momsfritaget\" eller \"0-sats\"."
+      },
+      {
+        "question": "Kan Invoicor også lave tolddokumenterne?",
+        "answer": "Nej. Invoicor laver faktura-pdf'en med de tolddata, du skriver på hver linje. Udførselsangivelser, oprindelsescertifikater og fragtformularer kommer fra dit fragtfirma, din speditør eller Toldstyrelsen."
+      }
+    ],
+    "cta_title": "Lav din handelsfaktura",
+    "related": [
+      {
+        "name": "Faktura uden moms",
+        "slug": "faktura-uden-moms"
+      },
+      {
+        "name": "Acontofaktura",
+        "slug": "acontofaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "udlaeg-faktura",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Udlægsfaktura",
+    "title": "Udlæg på faktura: skabelon og momsregler | Invoicor",
+    "meta_description": "Sådan fakturerer du udlæg: hvornår beløbet er uden for momsgrundlaget, hvornår det er viderefakturering med 25 % moms, og et udfyldt eksempel.",
+    "h1": "Udlæg faktura: sådan fakturerer du udlæg til kunden",
+    "subtitle": "For virksomheder og freelancere, der har betalt regninger for en kunde: hvornår et udlæg er uden moms, og hvornår det er en almindelig viderefakturering.",
+    "intro_paragraph": "Har du betalt noget for en kunde, som kunden skal dække, sender du en faktura for det. Men momsreglerne skelner skarpt mellem to slags. Et ægte udlæg er betalt i kundens navn og for kundens regning, uden avance, og ligger uden for dit momsgrundlag. Alt andet, du sender videre, er viderefakturering: en del af din egen ydelse, med 25 % moms ligesom dit honorar. Siden her handler om fakturaen fra en virksomhed til en kunde, ikke om en medarbejders udlæg hos arbejdsgiveren. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; mellem virksomheder er e-faktura stadig frivillig, så en pdf er fin.",
+    "include_title": "Det skal stå på en udlægsfaktura",
+    "what_to_include_intro": "Kunden vil kunne sætte flueben ved hvert beløb ud fra et bilag og jeres aftale.",
+    "req_1_title": "Én linje pr. udlæg med dato og leverandør",
+    "req_1_text": "Skriv hvert beløb for sig: \"12. november: lokaleleje, konferencecenter i Aarhus (bilag 1)\". Dato og leverandør gør det let for kunden at finde bilaget.",
+    "req_2_title": "Betalt i kundens navn og for kundens regning",
+    "req_2_text": "Et udlæg er kun uden for momsgrundlaget, når det er betalt i kundens navn og for kundens regning (momsloven § 27, stk. 3, nr. 3). Typisk er leverandørens regning derfor udstedt til kunden; spørg din revisor, hvis den lyder på dig. Nummerér bilagene, skriv nummeret på linjen, og send kopier med fakturaen.",
+    "req_3_title": "Præcis det beløb, du betalte",
+    "req_3_text": "Et udlæg må ikke have avance. Lægger du noget oveni, er det ikke længere et udlæg, men viderefakturering: beløbet indgår så i din ydelse og skal have moms. Et aftalt håndteringsgebyr hører derfor hjemme på din almindelige faktura med moms.",
+    "req_4_title": "En særskilt udlægskonto i bogføringen",
+    "req_4_text": "Den sidste betingelse er, at beløbet bogføres på en særskilt udlægskonto. Så trækker du heller ikke købsmoms fra på udlægget. Invoicor er et faktureringsprogram, ikke et bogføringssystem: pdf'en og bilagene går videre til dit bogføringssystem eller din bogholder.",
+    "req_5_title": "Sagen eller projektet",
+    "req_5_text": "Skriv, hvilket projekt, arrangement eller hvilken indkøbsordre udlæggene hører til. Kunder betaler ofte udlæg af et andet budget end honoraret, og en reference sender din faktura til den rigtige person.",
+    "req_6_title": "En henvisning til honorarfakturaen",
+    "req_6_text": "Invoicor bruger én momssats pr. faktura. Ægte udlæg uden moms og dit honorar med 25 % moms hører derfor på to fakturaer. Skriv den anden fakturas nummer i bemærkningerne, så kunden ikke godkender den ene og glemmer den anden.",
+    "what_to_include_outro": "Aftal på forhånd, hvilke udgifter kunden dækker, og om større udgifter skal godkendes først.",
+    "paper_label": "Udlægsfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en udlægsfaktura",
+    "sample_breakdown_intro": "En eventkonsulent har holdt et todages seminar for en kunde og fakturerer udlæggene på en særskilt faktura. Lokale, forplejning, AV-udstyr og bus er bestilt i kundens navn, regningerne lyder på kunden, og konsulenten har betalt dem uden avance og bogført dem på en udlægskonto. Derfor er der ingen moms. Pdf'en viser alligevel \"Moms (0%)\" med 0,00, og noten forklarer hvorfor. Honoraret står på en anden faktura med 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "12. november: lokaleleje, konferencecenter i Aarhus, regning i kundens navn (bilag 1)",
+        "qty": "1",
+        "rate": "12.500,00 kr.",
+        "amount": "12.500,00 kr."
+      },
+      {
+        "description": "12. og 13. november: forplejning, 40 deltagere, regning i kundens navn (bilag 2)",
+        "qty": "40",
+        "rate": "245,00 kr.",
+        "amount": "9.800,00 kr."
+      },
+      {
+        "description": "Leje af AV-udstyr, regning i kundens navn (bilag 3)",
+        "qty": "1",
+        "rate": "3.150,00 kr.",
+        "amount": "3.150,00 kr."
+      },
+      {
+        "description": "Bustransport for deltagerne, regning i kundens navn (bilag 4)",
+        "qty": "1",
+        "rate": "2.750,00 kr.",
+        "amount": "2.750,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "28.200,00 kr.",
+    "sample_breakdown_balance": "28.200,00 kr.",
+    "sample_breakdown_notes": "Udlæg for seminaret 12. til 13. november 2026, indkøbsordre 7731. Afholdt i kundens navn og for kundens regning, uden avance og bogført på udlægskonto, og derfor uden for momsgrundlaget (momsloven § 27, stk. 3, nr. 3). Honorar på faktura 2026-088. Bilag 1 til 4 vedlagt som pdf. Betaling senest 14. december 2026.",
+    "industry_notes_title": "Godt at vide om udlæg og moms",
+    "industry_notes": [
+      {
+        "title": "Udlæg eller viderefakturering: 25 % til forskel",
+        "text": "Ifølge Den juridiske vejledning (D.A.8.1.1.3.3.2) skal alle betingelser være opfyldt: kundens navn, kundens regning, ingen avance og en særskilt udlægskonto. Mangler én af dem, er beløbet en del af din ydelse og får moms som dit honorar. Det gælder fx en hotelregning, der lyder på dit eget firma."
+      },
+      {
+        "title": "Kørsel er normalt ikke et udlæg",
+        "text": "Kører du i egen bil til kunden og tager betaling pr. kilometer, er det normalt en del af din ydelse og ikke et udlæg, så det får moms som resten. Tjek med din revisor, hvordan du håndterer det i din situation."
+      },
+      {
+        "title": "Ikke en medarbejders udlægsseddel",
+        "text": "Ansatte, der får penge tilbage for udlæg, bruger arbejdsgiverens udlægsseddel, ikke en faktura. Gem bilag og regnskabsmateriale i mindst 5 år, som bogføringsloven kræver."
+      }
+    ],
+    "mistakes_title": "Tre fejl på udlægsfakturaer",
+    "mistakes": [
+      {
+        "title": "Avance på et udlæg",
+        "text": "Lægger du 10 % oveni et udlæg, er det ikke længere et udlæg, og beløbet skal have moms. Tillader kontrakten et håndteringsgebyr, så fakturér gebyret og de udgifter, det dækker, som viderefakturering med moms."
+      },
+      {
+        "title": "Regningen lyder på dit eget firma",
+        "text": "Står dit firma på hotellets eller trykkeriets regning, er det normalt dit eget indkøb, som du viderefakturerer med 25 % moms; spørg din revisor om fradraget. Skal det være et udlæg, så bestil i kundens navn."
+      },
+      {
+        "title": "Udlæg sendt måneder efter",
+        "text": "Udlæg, der faktureres længe efter opgaven, er sværere at få godkendt: budgettet er lukket. Send dem samtidig med honorarfakturaen eller inden for måneden."
+      }
+    ],
+    "tip_title": "Et tip til udlægsfakturaer",
+    "pro_tip": "Tag et billede af hvert bilag, når du får det, og giv filen dets kommende nummer, fx \"B2-forplejning-12nov\". Når du laver fakturaen, passer linjer og bilagsfiler allerede sammen.",
+    "format_pdf_desc": "En pdf ligger ved siden af bilagskopierne i kundens godkendelse og viser hvert beløb præcis som på bilagene.",
+    "faq_title": "Spørgsmål om udlæg på fakturaen",
+    "faqs": [
+      {
+        "question": "Skal der moms på udlæg?",
+        "answer": "Ikke på et ægte udlæg: et beløb, der er betalt i kundens navn og for kundens regning, uden avance og bogført på en udlægskonto, er uden for momsgrundlaget (momsloven § 27, stk. 3, nr. 3). Opfylder det ikke alle betingelser, er det viderefakturering med 25 % moms."
+      },
+      {
+        "question": "Kan jeg have udlæg og honorar på samme faktura?",
+        "answer": "Invoicor bruger én momssats pr. faktura, så ægte udlæg uden moms og et honorar med 25 % moms lægger du på to fakturaer, der henviser til hinanden."
+      },
+      {
+        "question": "Må jeg lægge en avance på udlæg?",
+        "answer": "Ja, hvis kunden har accepteret det, men så er det ikke længere et udlæg. Beløbet bliver en del af din ydelse og skal have moms. Uden en aftalt avance fakturerer du det præcise beløb."
+      },
+      {
+        "question": "Skal jeg sende bilag med?",
+        "answer": "De fleste kunder beder om det, og ved ægte udlæg er regningen i kundens navn en del af dokumentationen. Send nummererede kopier, der passer til linjerne, og gem selv bilagene i mindst 5 år."
+      },
+      {
+        "question": "Hvad er en udlægskonto?",
+        "answer": "En særskilt konto i din bogføring, hvor udlæg holdes adskilt fra din omsætning. Det er en af betingelserne for, at beløbet er uden for momsgrundlaget."
+      }
+    ],
+    "cta_title": "Lav din udlægsfaktura",
+    "related": [
+      {
+        "name": "Faktura for ydelser",
+        "slug": "faktura-ydelser"
+      },
+      {
+        "name": "Arbejdsløn og materialer",
+        "slug": "faktura-arbejdsloen-og-materialer"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-uden-moms",
+    "translation_of": "no-vat-invoice",
+    "niche": "Faktura uden moms",
+    "title": "Faktura uden moms: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura uden moms, når du ikke er momsregistreret: grænsen på 50.000 kr., hvad du skriver på fakturaen og et eksempel. Lav din pdf gratis.",
+    "h1": "Faktura uden moms: skabelon og eksempel",
+    "subtitle": "For små virksomheder, der ikke er momsregistreret: hvad fakturaen skal vise, hvad du skriver på den, og hvad der ændrer sig, når du kommer over 50.000 kr.",
+    "intro_paragraph": "En faktura uden moms er en almindelig faktura fra en sælger, der ikke lægger moms på. Den hyppigste grund er, at virksomheden er lille: under 50.000 kr. i omsætning pr. kalenderår er momsregistrering frivillig, og er du ikke registreret, viser fakturaen ingen moms. Fakturaen skal stadig have et nummer, en dato, begge parters oplysninger og en klar beskrivelse. Det, den ikke må, er at ligne en momsfaktura. Andre fakturaer uden moms, fx momsfritagne ydelser, eksport eller omvendt betalingspligt, følger deres egne regler; dem nævner vi længere nede. En pdf fra Invoicor er fin til virksomheder og private; kun offentlige myndigheder kræver e-faktura (OIOUBL eller Peppol via NemHandel), og den laver Invoicor ikke.",
+    "include_title": "Det skal stå på en faktura uden moms",
+    "what_to_include_intro": "Det er nemt at lade momsen være. Med disse seks punkter er fakturaen også i orden for en kunde, der forventer en momslinje.",
+    "req_1_title": "De almindelige fakturaoplysninger",
+    "req_1_text": "Udstedelsesdato, et fortløbende fakturanummer, dit og kundens navn og adresse, hvad du har leveret med antal og pris, og leveringsdatoen, hvis den er en anden end fakturadatoen. Invoicor har ikke et felt til leveringsdatoen: skriv den i linjens beskrivelse eller i bemærkningerne.",
+    "req_2_title": "Ingen moms og ingen \"ekskl. moms\"",
+    "req_2_text": "Din pris er den endelige pris. Skriv ikke \"ekskl. moms\", og læg ikke 25 % oveni for at se mere etableret ud. Har du lagt moms på en faktura uden at være registreret, så spørg din revisor, hvordan du retter det.",
+    "req_3_title": "En kort note om, hvorfor der ikke er moms",
+    "req_3_text": "Der er ingen officiel formulering, du skal bruge. Men det er god praksis at skrive, at du ikke er momsregistreret, fx \"Virksomheden er ikke momsregistreret. Der er ikke beregnet moms.\" Så tror ingen, at momsen er glemt.",
+    "req_4_title": "Dit CVR-nummer, hvis du har et",
+    "req_4_text": "Har din virksomhed et CVR-nummer, kan du skrive det i feltet CVR-nummer, som Invoicor udskriver. Det viser kunden, hvem de handler med. Et CVR-nummer betyder ikke i sig selv, at du er momsregistreret, så noten om moms er stadig vigtig.",
+    "req_5_title": "Ærlig om momslinjen på pdf'en",
+    "req_5_text": "Invoicor udskriver altid momslinjen. Sætter du ingen sats, står der \"Moms (0%)\" med 0,00. Den linje kan ikke skjules i dag, heller ikke i den gratis generator. Sæt derfor noten i bemærkningerne lige under linjerne, så ingen læser 0 % som en momssats.",
+    "req_6_title": "Betalingsoplysninger, der er nemme at bruge",
+    "req_6_text": "Skriv dit kontonummer eller dit eget betalingslink og en forfaldsdato.",
+    "what_to_include_outro": "Så kan kunden se med det samme, at der ikke kommer moms oveni, og hvorfor.",
+    "paper_label": "Faktura uden moms · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura uden moms",
+    "sample_breakdown_intro": "En illustrator i Aalborg med en lille enkeltmandsvirksomhed laver etiketter til et mikrobryggeri. Hun regner med at holde sig under 50.000 kr. i omsætning i år og har valgt ikke at blive momsregistreret. Nedenfor er der ingen momslinje; på pdf'en står \"Moms (0%)\" med 0,00, og noten forklarer hvorfor.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Etiketdesign pr. øl: pilsner, IPA og stout",
+        "qty": "3",
+        "rate": "1.800,00 kr.",
+        "amount": "5.400,00 kr."
+      },
+      {
+        "description": "Tilpasning af logo til ølbrikker og tapanlæg",
+        "qty": "1",
+        "rate": "1.200,00 kr.",
+        "amount": "1.200,00 kr."
+      },
+      {
+        "description": "Møde med bryggeren og kontrol af prøvetryk",
+        "qty": "2 timer",
+        "rate": "450,00 kr.",
+        "amount": "900,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "7.500,00 kr.",
+    "sample_breakdown_balance": "7.500,00 kr.",
+    "sample_breakdown_notes": "Virksomheden er ikke momsregistreret. Der er ikke beregnet moms. Leveret 2. til 20. november 2026. Betaling senest 10. december 2026 til konto 9070 1234567890; skriv fakturanummer 2026-012 som tekst.",
+    "industry_notes_title": "Godt at vide om fakturaer uden moms",
+    "industry_notes": [
+      {
+        "title": "Ingen moms på salget, normalt intet fradrag på køb",
+        "text": "Er du ikke momsregistreret, lægger du ikke moms på dit salg, og du kan normalt heller ikke trække moms fra på dine egne indkøb. Tal med din revisor om, hvorvidt frivillig registrering kan betale sig."
+      },
+      {
+        "title": "Over 50.000 kr.: så ændrer fakturaen sig",
+        "text": "Grænsen på 50.000 kr. pr. kalenderår har gældet siden 1. januar 2025. Kommer din omsætning over den, skal du momsregistreres, og fra da af lægger du 25 % moms på og laver fulde fakturaer med dit CVR-nummer, momssats og momsbeløb. Hvornår registreringen skal ske, og hvad der gælder lige omkring grænsen, så spørg Skattestyrelsen eller din revisor."
+      },
+      {
+        "title": "Ikke alle fakturaer uden moms er ens",
+        "text": "Momsfritagne aktiviteter efter momsloven § 13, fx sundhedsydelser og undervisning, er en anden situation end at være under grænsen. Ved eksport, varer til EU-virksomheder og omvendt betalingspligt er du typisk momsregistreret, og fakturaen skal have sin egen note. Er du godkendt til EU's momsordning for små virksomheder, skriver du dit fritagelsesnummer på fakturaen."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer uden moms",
+    "mistakes": [
+      {
+        "title": "\"0 % moms\" som forklaring",
+        "text": "At være under grænsen er ikke det samme som en momssats på 0 %. Skriver du \"0 % moms\" som forklaring, ligner det et momsfrit salg fra en registreret virksomhed, fx eksport. Skriv, at du ikke er momsregistreret; linjen \"Moms (0%)\" står kun på pdf'en, fordi Invoicor altid udskriver den."
+      },
+      {
+        "title": "Ingen note på fakturaen",
+        "text": "Uden noten kan en erhvervskunde tro, at du har glemt momsen, og bede om en ny faktura. Én sætning i bemærkningerne sparer jer begge for den runde."
+      },
+      {
+        "title": "Du holder ikke øje med omsætningen",
+        "text": "En stor opgave i november kan løfte dig over 50.000 kr. Læg det fakturerede sammen hver måned, så ser du grænsen komme i god tid."
+      }
+    ],
+    "tip_title": "Et tip til fakturaer uden moms",
+    "pro_tip": "Gem en færdig faktura med noten om moms, dine bankoplysninger og betalingsbetingelser, og duplikér den til hver ny opgave. Så skal du ikke skrive noget igen, og der sniger sig ingen momssats ind fra en anden faktura.",
+    "format_pdf_desc": "En pdf viser den præcise total med din note på plads, kan ikke ændres ved et uheld og er nem at gemme sammen med dine bilag.",
+    "faq_title": "Spørgsmål om fakturaer uden moms",
+    "faqs": [
+      {
+        "question": "Må jeg sende en faktura uden moms?",
+        "answer": "Ja. Er din omsætning under 50.000 kr. pr. kalenderår, og er du ikke momsregistreret, viser din faktura ingen moms. Den skal stadig have nummer, dato, begge parters oplysninger, en beskrivelse og totalen."
+      },
+      {
+        "question": "Hvad skriver jeg på en faktura, når jeg ikke er momsregistreret?",
+        "answer": "Der er ingen påkrævet formulering. God praksis er en kort note i bemærkningerne som \"Virksomheden er ikke momsregistreret. Der er ikke beregnet moms.\""
+      },
+      {
+        "question": "Hvad er momsgrænsen i Danmark?",
+        "answer": "50.000 kr. i omsætning pr. kalenderår, siden 1. januar 2025. Under grænsen er momsregistrering frivillig. Er du tæt på grænsen, så tjek de aktuelle regler på skat.dk."
+      },
+      {
+        "question": "Er en faktura uden moms det samme som en momsfritaget faktura?",
+        "answer": "Ikke helt. En virksomhed under grænsen lægger ikke moms på noget. En momsfritaget aktivitet efter momsloven § 13, fx sundhedsydelser eller undervisning, er fritaget som sådan. Er du i tvivl om, hvad der gælder for dig, så spørg din revisor."
+      },
+      {
+        "question": "Kan jeg vælge at blive momsregistreret under 50.000 kr.?",
+        "answer": "Ja, under grænsen er registrering frivillig. Så lægger du 25 % moms på dine fakturaer. Om det kan betale sig, afhænger af dine kunder og dine indkøb: tal med din revisor."
+      }
+    ],
+    "cta_title": "Lav din faktura uden moms",
+    "related": [
+      {
+        "name": "Freelancefaktura",
+        "slug": "freelance-faktura"
+      },
+      {
+        "name": "Handelsfaktura",
+        "slug": "handelsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "freelance-faktura",
+    "translation_of": "freelance-invoice",
+    "niche": "Freelancefaktura",
+    "title": "Freelance faktura: skabelon med eksempel | Invoicor",
+    "meta_description": "Freelance faktura med udfyldt eksempel: CVR-nummer, moms, kundens reference og betaling, som bogholderiet tjekker. Lav din pdf gratis.",
+    "h1": "Freelance faktura: skabelon og eksempel",
+    "subtitle": "Én faktura for freelancere i alle fag, med egen enkeltmandsvirksomhed eller selskab: det, kundens bogholderi tjekker, før de betaler, og et eksempel at rette i.",
+    "intro_paragraph": "En freelancefaktura bliver tit læst af to personer. Den, der hyrede dig, kender arbejdet. Den, der betaler, sidder ofte i bogholderiet og kender kun det, der står på papiret. Mangler dit CVR-nummer, kundens reference eller dine bankoplysninger, ryger fakturaen tilbage i bunken. Skabelonen er bygget til den anden læser, uanset om du er tekstforfatter, udvikler, fotograf eller grafiker. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder kan du fortsat aftale andre fakturaformer, så en pdf er fin.",
+    "include_title": "Det skal stå på en freelancefaktura",
+    "what_to_include_intro": "Kunder med et bogholderi behandler fakturaer efter en tjekliste. Rammer du den første gang, bliver du betalt til den aftalte tid.",
+    "req_1_title": "Dit navn og CVR-nummer",
+    "req_1_text": "Skriv virksomhedens navn, som det står i CVR, og gerne dit eget navn, hvis du har en enkeltmandsvirksomhed. Er du momsregistreret, skal dit CVR- eller SE-nummer stå på fakturaen (momsbekendtgørelsen § 58). I Invoicor skriver du det i feltet CVR-nummer.",
+    "req_2_title": "Et fortløbende fakturanummer",
+    "req_2_text": "Brug én nummerserie på tværs af alle kunder, fx 2026-031 og 2026-032, ikke et nyt \"001\" for hver kunde. Reglerne tillader en eller flere serier, men numrene skal være fortløbende, så du aldrig bruger det samme nummer to gange.",
+    "req_3_title": "Kundens reference eller indkøbsordre",
+    "req_3_text": "Større virksomheder matcher hver faktura med et indkøbsordrenummer, et projektnummer eller en kontaktperson. Spørg efter det, når I aftaler opgaven, og skriv det præcist af i bemærkningerne.",
+    "req_4_title": "Linjer, der følger din pris",
+    "req_4_text": "Et projekthonorar er én linje med det aftalte omfang i beskrivelsen. Timer ud over aftalen får deres egne linjer med antal og timepris uden moms. Så kan kunden godkende honoraret med det samme og kun spørge til det ekstra. Skriv perioden for arbejdet i beskrivelsen eller bemærkningerne.",
+    "req_5_title": "Brugsret, når du sælger kreativt arbejde",
+    "req_5_text": "Sælger du tekst, billeder, musik eller kode, så skriv, hvad kunden får, og hvornår: \"Fuld brugsret overgår ved betaling af hele beløbet\" eller \"Licens til brug på web i 12 måneder\". En skrevet aftale slår en uklar forventning.",
+    "req_6_title": "Moms, eller en klar note om, at der ingen er",
+    "req_6_text": "Er du momsregistreret, lægger du 25 % moms på og viser momsbeløbet. Er din omsætning under 50.000 kr. pr. kalenderår, og har du valgt ikke at blive registreret, skriver du, at du ikke er momsregistreret. Til en virksomhed i et andet EU-land skriver du kundens momsnummer og \"omvendt betalingspligt\".",
+    "what_to_include_outro": "Med de seks oplysninger kan en, der aldrig har mødt dig, godkende fakturaen.",
+    "paper_label": "Freelancefaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en freelancefaktura",
+    "sample_breakdown_intro": "En momsregistreret freelance tekstforfatter i København fakturerer et projekthonorar plus tre timers ekstra rettelser, som kunden bad om efter godkendelsen. Derfor 25 % moms. Er du ikke momsregistreret, ser din faktura anderledes ud: tjek din egen situation.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Projekthonorar: lanceringstekster til hjemmeside og nyhedsbrev, jf. tilbud af 6. oktober",
+        "qty": "1",
+        "rate": "18.000,00 kr.",
+        "amount": "18.000,00 kr."
+      },
+      {
+        "description": "Ekstra rettelser bestilt 28. oktober (ud over de to runder i aftalen)",
+        "qty": "3 timer",
+        "rate": "650,00 kr.",
+        "amount": "1.950,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "19.950,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "4.987,50 kr.",
+    "sample_breakdown_balance": "24.937,50 kr.",
+    "sample_breakdown_notes": "Indkøbsordre 4500-1187. Leveret 7. oktober til 14. november 2026. Betaling senest 12. december 2026 til konto 5301 0241234; skriv fakturanummer 2026-031 som tekst. Fuld brugsret til de leverede tekster overgår ved betaling af hele beløbet.",
+    "industry_notes_title": "Godt at vide om freelancefakturaer",
+    "industry_notes": [
+      {
+        "title": "Skal du have et CVR-nummer?",
+        "text": "Laver du små opgaver en gang imellem, kan honoraret i nogle tilfælde være B-indkomst uden CVR-nummer, men reglerne afhænger af din situation: læs om det på skat.dk, eller spørg en revisor. Invoicor passer til dig, der har din egen enkeltmandsvirksomhed eller et selskab."
+      },
+      {
+        "title": "Betalingsfrist og renter",
+        "text": "Står der 14 dage i dit tilbud, står der 14 dage på fakturaen. Betaler en erhvervskunde for sent, kan du kræve rente svarende til Nationalbankens udlånsrente plus 8 procentpoint (renteloven § 5) og en kompensation på 310 kr. én gang pr. fordring (§ 9 a). Er der ingen aftalt forfaldsdato, løber renten fra 30 dage efter, at du har bedt om betaling (§ 3)."
+      },
+      {
+        "title": "Faktura og bogføring er to ting",
+        "text": "Invoicor er et faktureringsprogram, ikke et bogføringssystem: pdf'en går videre til dit bogføringssystem eller din bogholder. Bogføringslovens krav om digital bogføring indføres trinvis, for personligt ejede virksomheder fra 2026, når nettoomsætningen har været over 300.000 kr. to år i træk. Gem bilag i mindst 5 år."
+      }
+    ],
+    "mistakes_title": "Tre fejl, freelancere laver på fakturaer",
+    "mistakes": [
+      {
+        "title": "Sendt til den forkerte",
+        "text": "Din kontaktperson godkender arbejdet, men betaler det måske ikke. Spørg, hvor fakturaer skal hen, ofte en fælles adresse til bogholderiet, og send en kopi til din kontakt."
+      },
+      {
+        "title": "Ekstra arbejde gemt i honoraret",
+        "text": "Hæver du honoraret for at dække ekstra timer, skjuler du ændringen, og kunden stopper op og spørger, hvorfor beløbet ikke passer med tilbuddet. Behold honoraret, og sæt det ekstra på en linje for sig med dato."
+      },
+      {
+        "title": "Bankoplysninger, der ikke virker fra udlandet",
+        "text": "Et dansk kontonummer alene kan ofte ikke bruges fra udlandet. Til udenlandske kunder skal du skrive IBAN, BIC (SWIFT) og bankens navn og fakturere i den valuta, kontrakten nævner."
+      }
+    ],
+    "tip_title": "Et tip til freelancefakturaer",
+    "pro_tip": "Når du aftaler en ny opgave, så spørg: \"Hvad skal der stå på fakturaen, for at den bliver betalt første gang?\" Svaret kan være et indkøbsordrenummer, et projektnummer eller en leverandøroprettelse. Skriv det i kundens noter i Invoicor-appen og i hver fakturas bemærkninger; duplikerer du kundens seneste faktura, kommer det med.",
+    "format_pdf_desc": "Bogholderier gemmer og videresender fakturaer som pdf. En pdf beholder dit layout, kan ikke ændres ved et uheld undervejs og kan åbnes overalt.",
+    "faq_title": "Spørgsmål om freelancefakturaer",
+    "faqs": [
+      {
+        "question": "Hvad skal der stå på en freelancefaktura?",
+        "answer": "Dit og kundens navn og adresse, et fortløbende fakturanummer, udstedelsesdato og forfaldsdato, arbejdet med antal og pris, totalen og hvordan der betales. Er du momsregistreret, også dit CVR- eller SE-nummer, momssatsen og momsbeløbet."
+      },
+      {
+        "question": "Skal jeg lægge moms på som freelancer?",
+        "answer": "Er du momsregistreret, lægger du 25 % moms på. Under 50.000 kr. i omsætning pr. kalenderår er registrering frivillig, og er du ikke registreret, viser fakturaen ingen moms. Skriv så, at du ikke er momsregistreret."
+      },
+      {
+        "question": "Kan jeg sende en faktura uden CVR-nummer?",
+        "answer": "Laver du kun små opgaver en gang imellem, kan det i nogle tilfælde være B-indkomst uden CVR-nummer, men det afhænger af din situation. Læs om det på skat.dk, eller spørg en revisor, før du sender den første faktura."
+      },
+      {
+        "question": "Hvordan fakturerer jeg en kunde i udlandet?",
+        "answer": "Fakturér i den valuta, kontrakten nævner, og skriv dit IBAN og BIC. Til en virksomhed i et andet EU-land skriver du kundens momsnummer og \"omvendt betalingspligt\" og udsteder fakturaen senest den 15. i måneden efter. Den gratis generator har 38 valutaer og 11 fakturasprog."
+      },
+      {
+        "question": "Hvornår skal jeg sende fakturaen?",
+        "answer": "Når kontrakten siger det: ved levering, ved en delleverance eller ved månedens udgang. Ved lange projekter er det bedre at aftale en acontofaktura eller delfakturaer fra starten end én stor regning til sidst."
+      }
+    ],
+    "cta_title": "Lav din freelancefaktura",
+    "related": [
+      {
+        "name": "Timefaktura",
+        "slug": "faktura-timer"
+      },
+      {
+        "name": "Faktura uden moms",
+        "slug": "faktura-uden-moms"
+      }
+    ],
+    "invoice_types": []
+  }
+]

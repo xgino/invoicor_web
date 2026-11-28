@@ -6,10 +6,12 @@ import { Logo } from "@/components/brand/Logo";
 import { CookieSettingsButton } from "@/components/consent/CookieSettingsButton";
 import { AndroidButton } from "@/components/ui/AndroidButton";
 import { AppStoreBadge } from "@/components/ui/content";
-import { BLOG_URL, CONTACT_EMAIL } from "@/lib/config";
+import { CONTACT_EMAIL } from "@/lib/config";
 import { getTemplates } from "@/lib/content";
+import { hubPath } from "@/lib/content-i18n";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
+import { TRUST } from "@/lib/i18n/pages/trust";
 import { ROUTES } from "@/lib/i18n/routes";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -59,9 +61,18 @@ function AllLink({ href, children }: { href: string; children: ReactNode }) {
 
 /**
  * The 3 templates with the most search impressions (Search Console, 28 days to 2026-11-18;
- * baseline in seo/keyword-map.csv). Update after each Search Console round.
+ * baseline in seo/pages/*.csv), then 3 general invoice types with strong search demand
+ * (demand gate 2026-11-27; the commercial invoice has no trade page to link it). Update after
+ * each Search Console round.
  */
-const POPULAR_SLUGS = ["plumbing", "hvac", "freelance-design"];
+const POPULAR_SLUGS = [
+  "plumbing",
+  "hvac",
+  "freelance-design",
+  "deposit-invoice",
+  "freelance-invoice",
+  "commercial-invoice",
+];
 const POPULAR_TEMPLATES = POPULAR_SLUGS.flatMap((slug) => {
   const t = getTemplates().find((x) => x.slug === slug);
   return t ? [t] : [];
@@ -123,16 +134,6 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
               <AllLink href="/templates">All templates</AllLink>
             </Column>
             <Column title="Resources">
-              <li>
-                <a
-                  href={BLOG_URL}
-                  className={LINK}
-                  data-track="footer_click"
-                  data-track-link="blog"
-                >
-                  Blog &amp; guides
-                </a>
-              </li>
               <Item href="/help" track="help">
                 Help &amp; FAQ
               </Item>
@@ -144,6 +145,12 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
               </Item>
             </Column>
             <Column title="Company">
+              <Item href="/about" track="about">
+                About
+              </Item>
+              <Item href="/contact" track="contact">
+                Contact
+              </Item>
               <Item href="/affiliate" track="affiliate">
                 Affiliate program ({AFFILIATE.commission}%)
               </Item>
@@ -190,6 +197,9 @@ export function Footer({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
  */
 function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
   const t = CHROME[locale].footer;
+  // This language's hubs, once it has pages (task S1); until then the English ones are linked.
+  const templatesHub = hubPath("templates", locale);
+  const industriesHub = hubPath("industries", locale);
   const home = ROUTES.home[locale];
   const year = new Date().getFullYear();
   return (
@@ -248,6 +258,22 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               <Item href={ROUTES.android[locale] ?? "/android"} track="android">
                 {t.android}
               </Item>
+              {templatesHub && (
+                <Item href={templatesHub} track="templates">
+                  {t.templates}
+                </Item>
+              )}
+              {industriesHub && (
+                <Item href={industriesHub} track="industries">
+                  {t.industries}
+                </Item>
+              )}
+              <Item href={ROUTES.about[locale] ?? "/about"} track="about">
+                {TRUST[locale].about.crumb}
+              </Item>
+              <Item href={ROUTES.contact[locale] ?? "/contact"} track="contact">
+                {TRUST[locale].contact.crumb}
+              </Item>
               <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}
@@ -260,14 +286,9 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
               </li>
             </Column>
             <Column title={t.colEnglish}>
-              <EnglishItem href="/templates">{t.templates}</EnglishItem>
-              <EnglishItem href="/industries">{t.industries}</EnglishItem>
+              {!templatesHub && <EnglishItem href="/templates">{t.templates}</EnglishItem>}
+              {!industriesHub && <EnglishItem href="/industries">{t.industries}</EnglishItem>}
               <EnglishItem href="/compare">{t.compare}</EnglishItem>
-              <li>
-                <a href={BLOG_URL} hrefLang="en" className={LINK}>
-                  Blog
-                </a>
-              </li>
             </Column>
             <div className="col-span-2 sm:col-span-1">
               <LanguageSwitcher

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { HubPage } from "@/components/sections/content/hub";
 import { getIndustries, text } from "@/lib/content";
 import { FREE_INVOICES } from "@/lib/pricing";
+import { hubVersions } from "@/lib/content-i18n";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -9,6 +10,8 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Whether you are a plumber, freelance designer, or consultant, see how Invoicor's mobile app speeds up your billing process.",
   path: "/industries",
+  // The hub in every language it exists in (task S1), for hreflang.
+  languages: hubVersions("industries"),
 });
 
 /** Industries hub (ROADMAP chunk 22b, blueprint "Hub"). */
