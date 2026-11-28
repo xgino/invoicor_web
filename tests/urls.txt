@@ -178,6 +178,16 @@
 /nl/templates/factuur-zonder-btw
 /nl/templates/zzp-factuur
 /nl/templates/factuur-onderaannemer
+/nl/templates/factuur-aannemer
+/nl/templates/factuur-grafisch-ontwerper
+/nl/templates/factuur-schilder
+/nl/templates/factuur-hovenier
+/nl/templates/factuur-schoonmaakbedrijf
+/nl/templates/factuur-personal-trainer
+/nl/templates/factuur-bijles
+/nl/templates/factuur-fotograaf
+/nl/templates/factuur-loodgieter
+/nl/templates/factuur-muziekles
 /de/hilfe
 /de/vorlagen
 /de/vorlagen/anzahlungsrechnung

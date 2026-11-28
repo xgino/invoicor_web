@@ -20,371 +20,226 @@
 
 ## T1–T20 in Dutch
 
-[ ] Trade templates 1–20 (built) · 0/20 live in nl
+[ ] Trade templates 1–20 (built) · 9/15 live in nl
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
 ### T1-nl · /templates/photography → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-fotograaf
 - **English page:** [photography invoice template](https://invoicor.com/templates/photography) (live: use it as the source)
 - **Search words:** "factuur [photography, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T2-nl · /templates/plumbing → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-loodgieter
 - **English page:** [plumbing invoice template](https://invoicor.com/templates/plumbing) (live: use it as the source)
 - **Search words:** "factuur [plumbing, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T3-nl · /templates/hvac → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-installateur
 - **English page:** [hvac invoice template](https://invoicor.com/templates/hvac) (live: use it as the source)
 - **Search words:** "factuur [hvac, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T4-nl · /templates/freelance-design → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-grafisch-ontwerper
 - **English page:** [graphic design invoice template](https://invoicor.com/templates/freelance-design) (live: use it as the source)
 - **Search words:** "factuur [graphic design, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T5-nl · /templates/handyman → Dutch
+- ~~**T5-nl** /templates/handyman~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (only getharvest.com/nl)
 
-- [ ] **Live in nl**
-- **English page:** [handyman invoice template](https://invoicor.com/templates/handyman) (live: use it as the source)
-- **Search words:** "factuur [handyman, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T6-nl · /templates/videography → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [videography invoice template](https://invoicor.com/templates/videography) (live: use it as the source)
-- **Search words:** "factuur [videography, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T6-nl** /templates/videography~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, nothing Dutch-specific
 
 ### T7-nl · /templates/landscaping → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-hovenier
 - **English page:** [landscaping invoice template](https://invoicor.com/templates/landscaping) (live: use it as the source)
 - **Search words:** "factuur [landscaping, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T8-nl · /templates/consulting → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-consultant
 - **English page:** [consulting invoice template](https://invoicor.com/templates/consulting) (live: use it as the source)
 - **Search words:** "factuur [consulting, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T9-nl · /templates/cleaning-services → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-schoonmaakbedrijf
 - **English page:** [cleaning invoice template](https://invoicor.com/templates/cleaning-services) (live: use it as the source)
 - **Search words:** "factuur [cleaning, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T10-nl · /templates/auto-detailing → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-garage
 - **English page:** [auto detailing invoice template](https://invoicor.com/templates/auto-detailing) (live: use it as the source)
 - **Search words:** "factuur [auto detailing, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T11-nl · /templates/electrician → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-elektricien
 - **English page:** [electrician invoice template](https://invoicor.com/templates/electrician) (live: use it as the source)
 - **Search words:** "factuur [electrician, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T12-nl · /templates/construction → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-aannemer
 - **English page:** [construction invoice template](https://invoicor.com/templates/construction) (live: use it as the source)
 - **Search words:** "factuur [construction, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T13-nl · /templates/roofing → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [roofing invoice template](https://invoicor.com/templates/roofing) (live: use it as the source)
-- **Search words:** "factuur [roofing, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T13-nl** /templates/roofing~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (aiply.nl only)
 
 ### T14-nl · /templates/painting → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-schilder
 - **English page:** [painting invoice template](https://invoicor.com/templates/painting) (live: use it as the source)
 - **Search words:** "factuur [painting, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T15-nl · /templates/web-development → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-webdesigner
 - **English page:** [web development invoice template](https://invoicor.com/templates/web-development) (live: use it as the source)
 - **Search words:** "factuur [web development, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T16-nl · /templates/personal-training → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-personal-trainer
 - **English page:** [personal trainer invoice template](https://invoicor.com/templates/personal-training) (live: use it as the source)
 - **Search words:** "factuur [personal trainer, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T17-nl · /templates/tutoring → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-bijles
 - **English page:** [tutoring invoice template](https://invoicor.com/templates/tutoring) (live: use it as the source)
 - **Search words:** "factuur [tutoring, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T18-nl · /templates/catering → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-catering
 - **English page:** [catering invoice template](https://invoicor.com/templates/catering) (live: use it as the source)
 - **Search words:** "factuur [catering, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T19-nl · /templates/moving → Dutch
+- ~~**T19-nl** /templates/moving~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, nothing found
 
-- [ ] **Live in nl**
-- **English page:** [moving company invoice template](https://invoicor.com/templates/moving) (live: use it as the source)
-- **Search words:** "factuur [moving company, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T20-nl · /templates/pest-control → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [pest control invoice template](https://invoicor.com/templates/pest-control) (live: use it as the source)
-- **Search words:** "factuur [pest control, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T20-nl** /templates/pest-control~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (mijnzzp.nl only)
 
 ## T21–T35 in Dutch
 
-[ ] Trade templates 21–35 (built) · 0/15 live in nl
+[ ] Trade templates 21–35 (built) · 0/2 live in nl
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T21-nl · /templates/virtual-assistant → Dutch
+- ~~**T21-nl** /templates/virtual-assistant~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (getharvest.com/nl, mijnzzp.nl)
 
-- [ ] **Live in nl**
-- **English page:** [virtual assistant invoice template](https://invoicor.com/templates/virtual-assistant) (live: use it as the source)
-- **Search words:** "factuur [virtual assistant, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T22-nl** /templates/pet-sitting~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (mijnzzp.nl)
 
-### T22-nl · /templates/pet-sitting → Dutch
+- ~~**T23-nl** /templates/makeup-artist~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak
 
-- [ ] **Live in nl**
-- **English page:** [pet sitting invoice template](https://invoicor.com/templates/pet-sitting) (live: use it as the source)
-- **Search words:** "factuur [pet sitting, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T24-nl** /templates/carpentry~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (getharvest.com/nl, mijnzzp.nl)
 
-### T23-nl · /templates/makeup-artist → Dutch
+- ~~**T25-nl** /templates/flooring~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak
 
-- [ ] **Live in nl**
-- **English page:** [makeup artist invoice template](https://invoicor.com/templates/makeup-artist) (live: use it as the source)
-- **Search words:** "factuur [makeup artist, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T24-nl · /templates/carpentry → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [carpentry invoice template](https://invoicor.com/templates/carpentry) (live: use it as the source)
-- **Search words:** "factuur [carpentry, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T25-nl · /templates/flooring → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [flooring invoice template](https://invoicor.com/templates/flooring) (live: use it as the source)
-- **Search words:** "factuur [flooring, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T26-nl · /templates/tile-installation → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [tile installation invoice template](https://invoicor.com/templates/tile-installation) (live: use it as the source)
-- **Search words:** "factuur [tile installation, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T26-nl** /templates/tile-installation~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak
 
 ### T27-nl · /templates/drywall → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-stukadoor
 - **English page:** [drywall invoice template](https://invoicor.com/templates/drywall) (live: use it as the source)
 - **Search words:** "factuur [drywall, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T28-nl · /templates/masonry → Dutch
+- ~~**T28-nl** /templates/masonry~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak; btw verlegd is covered by factuur-onderaannemer
 
-- [ ] **Live in nl**
-- **English page:** [masonry invoice template](https://invoicor.com/templates/masonry) (live: use it as the source)
-- **Search words:** "factuur [masonry, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T29-nl** /templates/fence-installation~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak; part of the hovenier trade in the Netherlands
 
-### T29-nl · /templates/fence-installation → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [fence installation invoice template](https://invoicor.com/templates/fence-installation) (live: use it as the source)
-- **Search words:** "factuur [fence installation, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T30-nl · /templates/pool-service → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [pool service invoice template](https://invoicor.com/templates/pool-service) (live: use it as the source)
-- **Search words:** "factuur [pool service, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T30-nl** /templates/pool-service~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, niche in the Netherlands
 
 ### T31-nl · /templates/window-cleaning → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-glazenwasser
 - **English page:** [window cleaning invoice template](https://invoicor.com/templates/window-cleaning) (live: use it as the source)
 - **Search words:** "factuur [window cleaning, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T32-nl · /templates/pressure-washing → Dutch
+- ~~**T32-nl** /templates/pressure-washing~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak; part of cleaning/glazenwasser
 
-- [ ] **Live in nl**
-- **English page:** [pressure washing invoice template](https://invoicor.com/templates/pressure-washing) (live: use it as the source)
-- **Search words:** "factuur [pressure washing, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T33-nl** /templates/tree-service~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak; part of the hovenier page
 
-### T33-nl · /templates/tree-service → Dutch
+- ~~**T34-nl** /templates/snow-removal~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, not a sole-trader trade in the Netherlands
 
-- [ ] **Live in nl**
-- **English page:** [tree service invoice template](https://invoicor.com/templates/tree-service) (live: use it as the source)
-- **Search words:** "factuur [tree service, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T34-nl · /templates/snow-removal → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [snow removal invoice template](https://invoicor.com/templates/snow-removal) (live: use it as the source)
-- **Search words:** "factuur [snow removal, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T35-nl · /templates/locksmith → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [locksmith invoice template](https://invoicor.com/templates/locksmith) (live: use it as the source)
-- **Search words:** "factuur [locksmith, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T35-nl** /templates/locksmith~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (consumer complaints only)
 
 ## T36–T50 in Dutch
 
-[ ] Trade templates 36–50 (built) · 0/15 live in nl
+[ ] Trade templates 36–50 (built) · 1/4 live in nl
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T36-nl · /templates/appliance-repair → Dutch
+- ~~**T36-nl** /templates/appliance-repair~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (mijnzzp.nl)
 
-- [ ] **Live in nl**
-- **English page:** [appliance repair invoice template](https://invoicor.com/templates/appliance-repair) (live: use it as the source)
-- **Search words:** "factuur [appliance repair, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T37-nl** /templates/junk-removal~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (mijnzzp.nl)
 
-### T37-nl · /templates/junk-removal → Dutch
+- ~~**T38-nl** /templates/carpet-cleaning~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak; specialist cleaning, part of the cleaning page
 
-- [ ] **Live in nl**
-- **English page:** [junk removal invoice template](https://invoicor.com/templates/junk-removal) (live: use it as the source)
-- **Search words:** "factuur [junk removal, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T39-nl** /templates/interior-design~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, generic results only
 
-### T38-nl · /templates/carpet-cleaning → Dutch
+- ~~**T40-nl** /templates/remodeling~~ skipped in nl: parked 2026-11-28 (demand gate, nl): overlap: the 9 %/21 % split and renovation are owned by factuur-aannemer (T12-nl)
 
-- [ ] **Live in nl**
-- **English page:** [carpet cleaning invoice template](https://invoicor.com/templates/carpet-cleaning) (live: use it as the source)
-- **Search words:** "factuur [carpet cleaning, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T39-nl · /templates/interior-design → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [interior design invoice template](https://invoicor.com/templates/interior-design) (live: use it as the source)
-- **Search words:** "factuur [interior design, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T40-nl · /templates/remodeling → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [remodeling invoice template](https://invoicor.com/templates/remodeling) (live: use it as the source)
-- **Search words:** "factuur [remodeling, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T41-nl · /templates/garage-door-repair → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [garage door repair invoice template](https://invoicor.com/templates/garage-door-repair) (live: use it as the source)
-- **Search words:** "factuur [garage door repair, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T41-nl** /templates/garage-door-repair~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, nothing found
 
 ### T42-nl · /templates/dj → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-dj
 - **English page:** [dj invoice template](https://invoicor.com/templates/dj) (live: use it as the source)
 - **Search words:** "factuur [dj, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T43-nl · /templates/event-planning → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [event planner invoice template](https://invoicor.com/templates/event-planning) (live: use it as the source)
-- **Search words:** "factuur [event planner, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T43-nl** /templates/event-planning~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, generic results only
 
 ### T44-nl · /templates/florist → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-bloemist
 - **English page:** [florist invoice template](https://invoicor.com/templates/florist) (live: use it as the source)
 - **Search words:** "factuur [florist, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T45-nl · /templates/massage-therapy → Dutch
 
-- [ ] **Live in nl**
+- [ ] **Live in nl**: /nl/templates/factuur-masseur
 - **English page:** [massage therapy invoice template](https://invoicor.com/templates/massage-therapy) (live: use it as the source)
 - **Search words:** "factuur [massage therapy, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T46-nl · /templates/translation → Dutch
+- ~~**T46-nl** /templates/translation~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (mijnzzp.nl, translayte)
 
-- [ ] **Live in nl**
-- **English page:** [translation invoice template](https://invoicor.com/templates/translation) (live: use it as the source)
-- **Search words:** "factuur [translation, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T47-nl** /templates/copywriting~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (getharvest.com/nl, freelance.nl)
 
-### T47-nl · /templates/copywriting → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [copywriter invoice template](https://invoicor.com/templates/copywriting) (live: use it as the source)
-- **Search words:** "factuur [copywriter, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T48-nl · /templates/social-media-management → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [social media manager invoice template](https://invoicor.com/templates/social-media-management) (live: use it as the source)
-- **Search words:** "factuur [social media manager, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T48-nl** /templates/social-media-management~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak (getharvest.com/nl, mijnzzp.nl)
 
 ### T49-nl · /templates/music-lessons → Dutch
 
-- [ ] **Live in nl**
+- [x] **Live in nl**: /nl/templates/factuur-muziekles
 - **English page:** [music teacher invoice template](https://invoicor.com/templates/music-lessons) (live: use it as the source)
 - **Search words:** "factuur [music teacher, in Dutch] voorbeeld"
 - **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T50-nl · /templates/bookkeeping → Dutch
-
-- [ ] **Live in nl**
-- **English page:** [bookkeeping invoice template](https://invoicor.com/templates/bookkeeping) (live: use it as the source)
-- **Search words:** "factuur [bookkeeping, in Dutch] voorbeeld"
-- **Write:** the live page rewritten for Netherlands, Belgium (NL): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T50-nl** /templates/bookkeeping~~ skipped in nl: parked 2026-11-28 (demand gate, nl): weak, generic results only
 
 ## T51–T60 in Dutch
 

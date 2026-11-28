@@ -793,7 +793,7 @@
   },
   "/nl/templates": {
     "updated": "2026-11-28",
-    "hash": "a3a66726e6f7c85a"
+    "hash": "e7772d38e87fe918"
   },
   "/nl/templates/aanbetalingsfactuur": {
     "updated": "2026-11-28",
@@ -807,9 +807,49 @@
     "updated": "2026-11-28",
     "hash": "10443d95c2a8b23c"
   },
+  "/nl/templates/factuur-aannemer": {
+    "updated": "2026-11-28",
+    "hash": "a7980e684fbaff71"
+  },
+  "/nl/templates/factuur-bijles": {
+    "updated": "2026-11-28",
+    "hash": "f272289395683f8e"
+  },
+  "/nl/templates/factuur-fotograaf": {
+    "updated": "2026-11-28",
+    "hash": "8fb25e0e820fd6fe"
+  },
+  "/nl/templates/factuur-grafisch-ontwerper": {
+    "updated": "2026-11-28",
+    "hash": "07d9fcc66d1b8bec"
+  },
+  "/nl/templates/factuur-hovenier": {
+    "updated": "2026-11-28",
+    "hash": "e2af7149441a0b2b"
+  },
+  "/nl/templates/factuur-loodgieter": {
+    "updated": "2026-11-28",
+    "hash": "0eaa9f1bb17ff3e4"
+  },
+  "/nl/templates/factuur-muziekles": {
+    "updated": "2026-11-28",
+    "hash": "4479edacfaf13ab2"
+  },
   "/nl/templates/factuur-onderaannemer": {
     "updated": "2026-11-28",
     "hash": "35e17023801169f8"
+  },
+  "/nl/templates/factuur-personal-trainer": {
+    "updated": "2026-11-28",
+    "hash": "1f16f30c568b9f4a"
+  },
+  "/nl/templates/factuur-schilder": {
+    "updated": "2026-11-28",
+    "hash": "d92d46786f608187"
+  },
+  "/nl/templates/factuur-schoonmaakbedrijf": {
+    "updated": "2026-11-28",
+    "hash": "63e297dc1a243927"
   },
   "/nl/templates/factuur-zonder-btw": {
     "updated": "2026-11-28",

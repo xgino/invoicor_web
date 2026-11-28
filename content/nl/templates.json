@@ -1232,5 +1232,1285 @@
       }
     ],
     "invoice_types": []
+  },
+  {
+    "slug": "factuur-aannemer",
+    "translation_of": "construction",
+    "niche": "Factuur aannemer",
+    "title": "Factuur aannemer: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur als aannemer: termijnen, meerwerk en 9 % en 21 % btw gescheiden bij een verbouwing. Met voorbeeld. Maak je factuur gratis als pdf.",
+    "h1": "Factuur aannemer: template en voorbeeld voor verbouwingen",
+    "subtitle": "Voor aannemers en verbouwers: termijnen, meerwerk, 9 % en 21 % btw gescheiden, en btw verlegd als je onder een hoofdaannemer werkt.",
+    "intro_paragraph": "Een verbouwing factureer je zelden in één keer. Je spreekt in de offerte termijnen af: bij de start, na de ruwbouw, bij de oplevering. Elke factuur laat zien waar het werk staat, wat deze termijn dekt en wat er nog komt. Daarbij valt in een woning ouder dan twee jaar een deel van het werk onder 9 % btw en de rest onder 21 %. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan; verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Factureer je vanuit België aan een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur van een aannemer moet staan",
+    "what_to_include_intro": "Een opdrachtgever betaalt een termijn snel als hij elke regel naast de offerte kan leggen. Dit hoort erop.",
+    "req_1_title": "Project, adres en offertenummer",
+    "req_1_text": "Noem het werk en het adres ('Verbouwing keuken, Lindelaan 12, Amersfoort') en het nummer van de offerte of aanneemovereenkomst. Werk je in termijnen, zet er dan bij welke termijn het is: 'termijn 2 van 3'.",
+    "req_2_title": "Wat er klaar is, per onderdeel",
+    "req_2_text": "Factureer wat er staat: 'sloopwerk gereed', 'wandtegels keuken, 12,5 m²'. Bij een vaste aanneemsom noem je het onderdeel of het percentage uit het betalingsschema. Loop niet voor op de bouw.",
+    "req_3_title": "9 % en 21 % btw gescheiden",
+    "req_3_text": "Schilderwerk, stucwerk, behangen en het arbeidsdeel van isolatie in een woning die langer dan twee jaar als woning in gebruik is, vallen volgens de Belastingdienst onder 9 %. Sloop, tegels, kozijnen, installaties en isolatiemateriaal blijven 21 %. Bij een grotere verbouwing moeten offerte en factuur die delen apart laten zien. Invoicor rekent met één tarief per factuur: maak dus twee facturen.",
+    "req_4_title": "Meerwerk op een eigen regel",
+    "req_4_text": "Alles wat de opdrachtgever na het tekenen van de offerte vraagt, krijgt een eigen regel met een nummer en de datum van het akkoord: 'Meerwerk MW-01: raamopening dichtzetten, akkoord 14 oktober'. Laat meerwerk eerst per mail of app bevestigen.",
+    "req_5_title": "Datum of periode van het werk",
+    "req_5_text": "Invoicor heeft geen veld voor de leverdatum: zet de periode in de omschrijving of de notities, bijvoorbeeld 'uitgevoerd van 5 tot en met 23 oktober 2026'.",
+    "req_6_title": "KvK-nummer, btw-id en de vaste gegevens",
+    "req_6_text": "Je KvK-nummer en btw-identificatienummer moeten op elke factuur, naast een doorlopend factuurnummer, de factuurdatum, het bedrag zonder btw, het tarief en het btw-bedrag. In Invoicor sla je ze één keer op in je bedrijfsprofiel.",
+    "what_to_include_outro": "Zo is elke termijnfactuur meteen een voortgangsverslag: wat klaar is, wat erbij kwam en wat er nog volgt.",
+    "paper_label": "Factuur aannemer · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur van een aannemer",
+    "sample_breakdown_intro": "Termijn 2 van 3 voor de verbouwing van een keuken in een woning uit 1978, voor een particulier. Op deze factuur staat alleen het werk tegen 21 %. Het stucwerk en schilderwerk (9 %) staan op een aparte factuur van dezelfde dag.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Sloopwerk oude keuken en afvoer puin (gereed)",
+        "qty": "1",
+        "rate": "€ 1.450,00",
+        "amount": "€ 1.450,00"
+      },
+      {
+        "description": "Leidingwerk water en afvoer verleggen",
+        "qty": "14 uur",
+        "rate": "€ 58,50",
+        "amount": "€ 819,00"
+      },
+      {
+        "description": "Elektra: groepenkast uitbreiden, 6 wandcontactdozen (gereed)",
+        "qty": "1",
+        "rate": "€ 1.185,00",
+        "amount": "€ 1.185,00"
+      },
+      {
+        "description": "Wandtegels keuken leggen en voegen, incl. tegels",
+        "qty": "12,5 m²",
+        "rate": "€ 62,00",
+        "amount": "€ 775,00"
+      },
+      {
+        "description": "Meerwerk MW-01: raamopening dichtzetten, akkoord 14 oktober",
+        "qty": "1",
+        "rate": "€ 640,00",
+        "amount": "€ 640,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 4.869,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 1.022,49",
+    "sample_breakdown_balance": "€ 5.891,49",
+    "sample_breakdown_notes": "Termijn 2 van 3 volgens offerte O-2026-044 van 12 september 2026. Uitgevoerd van 5 tot en met 23 oktober 2026, Lindelaan 12, Amersfoort. Stucwerk en schilderwerk (9 % btw) op factuur 2026-088. Nog te factureren na deze termijn: € 6.200,00 excl. btw (keukenmontage, afwerking, oplevering). Betaling binnen 14 dagen.",
+    "industry_notes_title": "Waar aannemers op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Termijnen afspreken in de offerte",
+        "text": "Leg het betalingsschema vast voordat je begint, bijvoorbeeld 30 % bij de start, 40 % na de ruwbouw en 30 % bij de oplevering. Hoe je zo'n reeks opbouwt, staat op de pagina over de termijnfactuur."
+      },
+      {
+        "title": "Btw verlegd als onderaannemer",
+        "text": "Werk je voor een andere aannemer, dan geldt voor fysiek werk aan een gebouw de verleggingsregeling: geen btw, wel 'btw verlegd', het btw-id van je opdrachtgever en het bedrag per tarief. Bij particulieren nooit. Meer op de pagina factuur onderaannemer."
+      },
+      {
+        "title": "Projectgegevens bewaar je 10 jaar",
+        "text": "Facturen bewaar je 7 jaar (artikel 52 AWR), gegevens over onroerende zaken 10 jaar. Houd per project offerte, meerwerkakkoorden en facturen bij elkaar."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van aannemers",
+    "mistakes": [
+      {
+        "title": "Alles tegen één tarief",
+        "text": "Stucwerk in een bestaande woning tegen 21 % laat de klant te veel betalen; tegels tegen 9 % kosten jou het verschil. Splits het werk al in de offerte."
+      },
+      {
+        "title": "Meerwerk pas aan het eind",
+        "text": "Een wijziging uit week twee die pas in week twaalf op de factuur staat, voelt als een verrassing. Zet meerwerk op de eerstvolgende termijn."
+      },
+      {
+        "title": "Geen openstaand saldo",
+        "text": "Zonder 'nog te factureren na deze termijn' vraagt de opdrachtgever zich bij elke factuur af wat er nog komt. Eén zin in de notities lost dat op."
+      }
+    ],
+    "tip_title": "Tip voor aannemers",
+    "pro_tip": "Stuur de termijnfactuur op de dag dat je de opdrachtgever door het afgeronde deel leidt. Dan heeft hij het werk net gezien. In de Invoicor-app dupliceer je de vorige termijn: klant, notities en vaste regels staan er weer, je past alleen de bedragen en de periode aan.",
+    "format_pdf_desc": "Een pdf houdt je bedragen vast en past zo in het projectdossier.",
+    "faq_title": "Vragen over de factuur van een aannemer",
+    "faqs": [
+      {
+        "question": "Wanneer reken ik 9 % btw bij een verbouwing?",
+        "answer": "Volgens de Belastingdienst voor schilderen, stukadoren en behangen (inclusief materiaal) en voor het arbeidsdeel van isolatie, in woningen die langer dan twee jaar als woning in gebruik zijn. De rest van een verbouwing is 21 %. Twijfel je bij een onderdeel, check het bij je boekhouder."
+      },
+      {
+        "question": "Mag ik 9 % en 21 % op één factuur zetten?",
+        "answer": "Dat mag, als je de bedragen per tarief laat zien. Invoicor rekent met één tarief per factuur; daar maak je twee facturen en verwijs je in de notities naar elkaar."
+      },
+      {
+        "question": "Moet ik btw verleggen als ik voor een andere aannemer werk?",
+        "answer": "Ja, als je als onderaannemer fysiek werk aan een gebouw doet: geen btw-bedrag, wel 'btw verlegd' en het btw-id van de hoofdaannemer. De pdf van Invoicor drukt dan 'BTW (0%)' met € 0,00 af; je notitie legt uit waarom."
+      },
+      {
+        "question": "Hoe zet ik meerwerk op de factuur?",
+        "answer": "Als eigen regel op de eerstvolgende termijn, met nummer, omschrijving en datum van het akkoord. Zonder schriftelijk akkoord is het achteraf lastig te verdedigen."
+      },
+      {
+        "question": "Hoe trek ik eerdere termijnen af?",
+        "answer": "In de gratis generator met een min-regel, zoals 'min termijn 1, factuur 2026-061'. In de app kunnen regels niet negatief zijn: factureer daar alleen deze termijn en noem de eerdere facturen in de notities."
+      }
+    ],
+    "cta_title": "Maak je factuur als aannemer",
+    "links_title": "Factuursoorten voor aannemers",
+    "related": [
+      {
+        "name": "Factuur schilder",
+        "slug": "factuur-schilder"
+      },
+      {
+        "name": "Factuur loodgieter",
+        "slug": "factuur-loodgieter"
+      }
+    ],
+    "invoice_types": ["termijnfactuur", "aanbetalingsfactuur", "factuur-onderaannemer"]
+  },
+  {
+    "slug": "factuur-grafisch-ontwerper",
+    "translation_of": "freelance-design",
+    "niche": "Factuur grafisch ontwerper",
+    "title": "Factuur grafisch ontwerper: template + voorbeeld | Invoicor",
+    "meta_description": "Factuur als grafisch ontwerper: projectprijs of uurtarief, correctierondes, gebruiksrecht en btw verlegd bij EU-klanten. Met voorbeeld, gratis pdf.",
+    "h1": "Factuur grafisch ontwerper: template en voorbeeld",
+    "subtitle": "Voor freelance grafisch ontwerpers en kleine studio's: hoe je een logo, huisstijl of campagne factureert, met correctierondes, bestanden en gebruiksrecht duidelijk op papier.",
+    "intro_paragraph": "Een ontwerpfactuur verkoopt iets wat de klant niet kan vastpakken: ideeën, schetsen, keuzes en uiteindelijk een set bestanden die hij jaren gebruikt. Een goede factuur noemt wat je opleverde, hoeveel correctierondes erin zaten en wat de klant met het ontwerp mag doen. Je klanten zijn meestal bedrijven. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan; verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Werk je vanuit België voor een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur van een grafisch ontwerper moet staan",
+    "what_to_include_intro": "Een marketingmanager keurt je factuur sneller goed als hij er de offerte in terugziet. Zet dit erop.",
+    "req_1_title": "Opgeleverde onderdelen, niet alleen uren",
+    "req_1_text": "Beschrijf het resultaat: 'logo in drie varianten, kleurenpalet, typografie en een huisstijlgids van 8 pagina's'. Werk je per uur, noem dan per regel de taak en het aantal uur.",
+    "req_2_title": "Projectprijs of uurtarief, zoals in de offerte",
+    "req_2_text": "Spraken jullie een vaste prijs af, factureer die met het offertenummer. Werk je per uur, zet dan uren en tarief op de regel.",
+    "req_3_title": "Correctierondes en extra werk",
+    "req_3_text": "Zet in de offerte hoeveel correctierondes in de prijs zitten, vaak twee. Vraagt de klant meer, dan staat de extra ronde als eigen regel op de factuur, met uren en tarief.",
+    "req_4_title": "Gebruiksrecht in woorden",
+    "req_4_text": "Schrijf in de notities wat de klant met het werk mag, bijvoorbeeld 'onbeperkt gebruik voor eigen bedrijf, alle media; het auteursrecht blijft bij de ontwerper'. Het btw-tarief verandert er niet door, maar het voorkomt discussie als het logo straks op een bestelbus opduikt.",
+    "req_5_title": "Bestanden en formaten",
+    "req_5_text": "Noem wat de klant krijgt: pdf voor drukwerk, svg en png voor web, de open bronbestanden of juist niet. Kosten bronbestanden extra, zet ze dan op een eigen regel.",
+    "req_6_title": "Btw, KvK-nummer en opleverdatum",
+    "req_6_text": "Grafisch ontwerp valt onder 21 % btw. Je KvK-nummer en btw-id staan op elke factuur, met de datum of periode van het werk. Invoicor heeft geen veld voor de leverdatum: zet 'opgeleverd op 6 november 2026' in de notities.",
+    "what_to_include_outro": "Zo bewaart de klant je factuur als bewijs van wat hij kocht, en ziet zijn boekhouder meteen waar het over gaat.",
+    "paper_label": "Factuur grafisch ontwerper · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur van een grafisch ontwerper",
+    "sample_breakdown_intro": "Een ontwerper uit Utrecht maakte logo en huisstijl voor een koffiebranderij in Deventer, plus een flyer voor de opening. De vaste prijs komt uit de offerte, de derde correctieronde ging per uur en de lettertypelicentie is doorberekend. Klant en ontwerper zitten in Nederland: 21 % btw.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Logo en huisstijl volgens offerte OF-2026-019 (incl. 2 correctierondes)",
+        "qty": "1",
+        "rate": "€ 2.400,00",
+        "amount": "€ 2.400,00"
+      },
+      {
+        "description": "Extra correctieronde logo, op verzoek van de klant",
+        "qty": "3 uur",
+        "rate": "€ 75,00",
+        "amount": "€ 225,00"
+      },
+      {
+        "description": "Opmaak flyer A5, dubbelzijdig, drukklaar",
+        "qty": "1",
+        "rate": "€ 345,00",
+        "amount": "€ 345,00"
+      },
+      {
+        "description": "Lettertypelicentie webgebruik (aangeschaft en doorberekend)",
+        "qty": "1",
+        "rate": "€ 60,00",
+        "amount": "€ 60,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 3.030,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 636,30",
+    "sample_breakdown_balance": "€ 3.666,30",
+    "sample_breakdown_notes": "Offerte OF-2026-019 van 2 oktober 2026. Opgeleverd op 6 november 2026: logo (svg, pdf, png), huisstijlgids van 8 pagina's, flyer A5 drukklaar. Gebruiksrecht: onbeperkt gebruik voor eigen bedrijf, alle media; het auteursrecht blijft bij de ontwerper. Open bronbestanden niet inbegrepen. Betaling binnen 14 dagen.",
+    "industry_notes_title": "Waar grafisch ontwerpers op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Klanten in andere EU-landen",
+        "text": "Ontwerp je voor een bedrijf in België of Duitsland, dan wordt de btw verlegd naar het land van de klant. Op je factuur staat geen Nederlandse btw, wel 'btw verlegd' en het btw-id van de klant, en de dienst komt in je opgaaf intracommunautaire prestaties (ICP). De pdf van Invoicor drukt dan 'BTW (0%)' met € 0,00 af; je notitie legt uit waarom."
+      },
+      {
+        "title": "Drukwerk en andere kosten",
+        "text": "Regel je ook het drukwerk, dan koop je het in op je eigen naam en factureer je het door, met btw. Zet het op een eigen regel, los van het ontwerp. Welk tarief bij doorberekende kosten hoort, is meestal dat van je eigen dienst; check het bij je boekhouder."
+      },
+      {
+        "title": "Aanbetaling bij grote projecten",
+        "text": "Bij een huisstijl of campagne van een paar weken vragen veel ontwerpers een aanbetaling bij de start. Dat is een eigen factuur met btw; de eindfactuur rekent de rest af (zie de pagina over de aanbetalingsfactuur)."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van ontwerpers",
+    "mistakes": [
+      {
+        "title": "Bronbestanden weg voor de betaling",
+        "text": "Stuur de definitieve bestanden mee met de factuur of na betaling, en spreek dat af in je voorwaarden. Een klant die alles al heeft, heeft minder haast met betalen."
+      },
+      {
+        "title": "Correctierondes niet tellen",
+        "text": "Wie extra rondes 'even meeneemt', werkt aan het eind voor een te laag uurtarief. Tel de rondes en factureer wat erbij kwam."
+      },
+      {
+        "title": "Stockbeelden en lettertypen vergeten",
+        "text": "Een licentie voor een foto of lettertype die je voor de klant kocht, is een kostenpost. Zet hem op de factuur, anders betaal je hem zelf."
+      }
+    ],
+    "tip_title": "Tip voor grafisch ontwerpers",
+    "pro_tip": "Zet in de notities van je eerste factuur een vaste zin over het gebruiksrecht en je betaaltermijn. In de Invoicor-app dupliceer je die factuur voor het volgende project: de zin staat er weer, je past alleen de klant en de regels aan.",
+    "format_pdf_desc": "Een pdf ziet er bij de klant uit zoals jij hem ontwierp, met je eigen logo, en niemand verschuift per ongeluk een bedrag.",
+    "faq_title": "Vragen over de factuur van een grafisch ontwerper",
+    "faqs": [
+      {
+        "question": "Hoeveel btw reken ik als grafisch ontwerper?",
+        "answer": "21 %, het gewone tarief, ook als je een gebruiksrecht meelevert. Voor bedrijven in een ander EU-land verleg je de btw; met de KOR reken je geen btw."
+      },
+      {
+        "question": "Hoe factureer ik met de kleineondernemersregeling?",
+        "answer": "Met de KOR (maximaal € 20.000 omzet per kalenderjaar, dit jaar en vorig jaar) reken je geen btw. Zet op de factuur dat je de kleineondernemersregeling gebruikt, bijvoorbeeld 'Geen btw: kleineondernemersregeling (KOR)'. Een vaste formulering is er niet. De pdf van Invoicor drukt dan 'BTW (0%)' met € 0,00 af; je notitie maakt duidelijk dat het om de KOR gaat en niet om een nultarief."
+      },
+      {
+        "question": "Wat zet ik op een factuur voor een klant in België?",
+        "answer": "Geen Nederlandse btw, wel 'btw verlegd' en het btw-id van de klant naast het jouwe. De dienst geef je op in je opgaaf ICP. De Belgische Peppol-plicht geldt voor facturen tussen Belgische bedrijven, niet voor jouw factuur vanuit Nederland."
+      },
+      {
+        "question": "Moet het gebruiksrecht op de factuur?",
+        "answer": "Verplicht is het niet, verstandig wel: de factuur is vaak het enige papier dat de klant bewaart. Wil je het auteursrecht overdragen, laat je voorwaarden dan checken door een jurist."
+      },
+      {
+        "question": "Kan ik deze factuur online invullen?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, vervang de regels door je eigen project en download de pdf. In de Invoicor-app op je iPhone sla je klanten en vaste regels op, zoals je uurtarief en een extra correctieronde."
+      }
+    ],
+    "cta_title": "Maak je factuur als grafisch ontwerper",
+    "links_title": "Factuursoorten voor grafisch ontwerpers",
+    "related": [
+      {
+        "name": "Factuur fotograaf",
+        "slug": "factuur-fotograaf"
+      }
+    ],
+    "invoice_types": ["zzp-factuur", "aanbetalingsfactuur", "factuur-zonder-btw"]
+  },
+  {
+    "slug": "factuur-schilder",
+    "translation_of": "painting",
+    "niche": "Factuur schilder",
+    "title": "Factuur schilder: template met 9 % btw | Invoicor",
+    "meta_description": "Factuur als schilder: wanneer 9 % btw geldt (ook voor de verf), wat 21 % blijft en hoe je per m² factureert. Met voorbeeld. Maak gratis je pdf.",
+    "h1": "Factuur schilder: template en voorbeeld met 9 % btw",
+    "subtitle": "Voor schilders en schildersbedrijven: hoe je voorwerk, muren per m², deuren, kozijnen en verf factureert, en wanneer je 9 % of 21 % btw rekent.",
+    "intro_paragraph": "Bij een schilder ziet de klant twee dagen rollen; het afplakken, vullen, schuren en gronden ziet hij niet. Een factuur die voorwerk, oppervlakken per m² en materiaal apart noemt, legt de prijs uit voordat iemand ernaar vraagt. Daarnaast hoort bij schilderwerk in Nederland een vaste btw-vraag: is de woning ouder dan twee jaar? Dan valt het werk volgens de Belastingdienst onder 9 %, de verf inbegrepen. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan; verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor een schilder moet staan",
+    "what_to_include_intro": "Volg op de factuur de route die je bij de offerte met de klant door het huis liep: ruimte voor ruimte, oppervlak voor oppervlak.",
+    "req_1_title": "Voorwerk als eigen regel",
+    "req_1_text": "Afdekken, afplakken, gaten en scheuren vullen, schuren, ontvetten: dat is vaak de helft van het werk. Zet het per uur of als vaste post op een eigen regel.",
+    "req_2_title": "Oppervlakken per m² of per stuk",
+    "req_2_text": "Muren en plafonds per m², met de ruimte erbij: 'woonkamer en hal, muren, 2 lagen latex, 64 m²'. Deuren, kozijnen en radiatoren per stuk.",
+    "req_3_title": "Verf en materiaal",
+    "req_3_text": "Noem de verfsoort en de hoeveelheid, of zet alles op één materiaalregel. Leverde de klant zelf de verf, zet dat dan in de notities en reken alleen je arbeid.",
+    "req_4_title": "Het btw-tarief en waarom",
+    "req_4_text": "Zet in de notities waarom je 9 % rekent: 'woning in gebruik sinds 1994, schilderwerk aan een woning ouder dan 2 jaar'. Voor een bedrijfspand, nieuwbouw of een woning die korter dan twee jaar in gebruik is, reken je 21 %.",
+    "req_5_title": "Datum of periode van het werk",
+    "req_5_text": "De Belastingdienst vraagt de datum van levering. Invoicor heeft daar geen apart veld voor: zet 'uitgevoerd van 9 tot en met 13 november 2026' in de notities of in de eerste regel.",
+    "req_6_title": "Kleuren en kleurcodes",
+    "req_6_text": "Zet per ruimte de kleur en kleurcode in de notities. Bij een kras weet de klant dan welke verf hij nodig heeft, en wie hij kan bellen.",
+    "what_to_include_outro": "Zo leest je factuur als een werkbon: elke ruimte, elk oppervlak en elke kleur.",
+    "paper_label": "Factuur schilder · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur van een schilder",
+    "sample_breakdown_intro": "Binnenschilderwerk in een rijtjeshuis in Haarlem: voorwerk, muren en plafonds van woonkamer en hal, vijf binnendeuren met kozijn. De woning is sinds 1994 in gebruik en de klant is particulier: 9 % btw over arbeid en materiaal.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Voorwerk: afdekken, afplakken, gaten en scheuren vullen, schuren",
+        "qty": "6 uur",
+        "rate": "€ 49,50",
+        "amount": "€ 297,00"
+      },
+      {
+        "description": "Muren woonkamer en hal, 2 lagen latex",
+        "qty": "64 m²",
+        "rate": "€ 11,50",
+        "amount": "€ 736,00"
+      },
+      {
+        "description": "Plafonds woonkamer en hal, 1 laag",
+        "qty": "32 m²",
+        "rate": "€ 10,75",
+        "amount": "€ 344,00"
+      },
+      {
+        "description": "Binnendeuren met kozijn, grondlak en aflak",
+        "qty": "5",
+        "rate": "€ 95,00",
+        "amount": "€ 475,00"
+      },
+      {
+        "description": "Materiaal: latex, grondverf, lak, afplaktape, vulmiddel",
+        "qty": "1",
+        "rate": "€ 212,40",
+        "amount": "€ 212,40"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 2.064,40",
+    "sample_breakdown_tax_label": "Btw 9%",
+    "sample_breakdown_tax": "€ 185,80",
+    "sample_breakdown_balance": "€ 2.250,20",
+    "sample_breakdown_notes": "Uitgevoerd van 9 tot en met 13 november 2026, Kerkstraat 31, Haarlem. Btw 9 %: schilderwerk aan een woning ouder dan 2 jaar (in gebruik sinds 1994), inclusief materiaal. Kleuren: muren RAL 9010 mat, plafonds wit, deuren en kozijnen RAL 9001 zijdeglans. Restverf met etiket in de berging. Muren de eerste 4 weken niet nat afnemen. Betaling binnen 14 dagen.",
+    "industry_notes_title": "Waar schilders op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Wat onder 9 % valt",
+        "text": "Schilderen, stukadoren en behangen van woningen die langer dan twee jaar als woning in gebruik zijn, inclusief het materiaal en het voorbereidende werk. De twee jaar tel je vanaf het eerste gebruik als woning. Een garage, schuur of tuin op hetzelfde perceel telt mee. Bij een pand met een winkel beneden en een woning erboven geldt 9 % alleen voor het woongedeelte."
+      },
+      {
+        "title": "Wat 21 % blijft",
+        "text": "Kozijnen of deuren vervangen, houtrot herstellen met nieuwe delen, constructief kitwerk, glaszetten en wrapfolie vallen onder 21 %. Ook gipsplaatwanden, wandtegels en vloeren, en behang dat je zelf levert. Zit zulk werk in dezelfde klus, dan moet je het apart laten zien. Invoicor rekent met één tarief per factuur: maak twee facturen, of vraag je boekhouder hoe hij het wil."
+      },
+      {
+        "title": "Werken voor een aannemer",
+        "text": "Schilder je als onderaannemer voor een aannemer, dan wordt de btw meestal verlegd (zie de pagina factuur onderaannemer); de aannemer rekent zijn klant dan zelf 9 %. Werk je voor een VvE of woningcorporatie, check dan bij je boekhouder welk tarief geldt voor gemeenschappelijke ruimtes."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van schilders",
+    "mistakes": [
+      {
+        "title": "21 % bij een gewone woning",
+        "text": "Reken je 21 % voor binnenschilderwerk in een woning uit de jaren negentig, dan betaalt de klant 12 procentpunt te veel btw."
+      },
+      {
+        "title": "De verf apart tegen 21 %",
+        "text": "De verf die je bij het schilderwerk gebruikt, hoort bij dat werk en valt dan ook onder 9 %. Alleen behang dat je zelf levert, gaat tegen 21 %."
+      },
+      {
+        "title": "Geen kleurgegevens",
+        "text": "Zonder kleurcode op de factuur kan de klant een beschadiging niet bijwerken, en denkt hij bij de volgende kamer niet aan jou."
+      }
+    ],
+    "tip_title": "Tip voor schilders",
+    "pro_tip": "Plak op elk restblik een etiket met de ruimte en de kleurcode en noem dat in de notities van je factuur. In de Invoicor-app sla je je vaste regels op, zoals muren per m² en voorwerk per uur, zodat je bij de volgende klus alleen de aantallen invult.",
+    "format_pdf_desc": "Een pdf met ruimtes, m² en kleuren blijft zoals je hem stuurde en past bij de huispapieren van de klant.",
+    "faq_title": "Vragen over de factuur van een schilder",
+    "faqs": [
+      {
+        "question": "Wanneer rekent een schilder 9 % btw?",
+        "answer": "Volgens de Belastingdienst bij schilderen, stukadoren en behangen van een woning die langer dan twee jaar als woning in gebruik is, inclusief verf en voorwerk. Bij bedrijfspanden en nieuwere woningen reken je 21 %."
+      },
+      {
+        "question": "Wat als ik ook een kozijn vervang?",
+        "answer": "Een kozijn vervangen is 21 %. Zet dat in Invoicor op een tweede factuur tegen 21 %, met een verwijzing naar de factuur voor het schilderwerk. Twijfel je, vraag het je boekhouder."
+      },
+      {
+        "question": "Rekenen schilders per m² of per uur?",
+        "answer": "Allebei komt voor: muren en plafonds vaak per m², deuren en kozijnen per stuk, kleine reparaties per uur. Gebruik op de factuur dezelfde eenheid als in je offerte."
+      },
+      {
+        "question": "Hoe factureer ik extra werk dat niet in de offerte stond?",
+        "answer": "Spreek het eerst af met de klant, een appje is genoeg, en zet het daarna als eigen regel op de factuur met de uren of de afgesproken prijs. Extra werk zonder afspraak levert achteraf vaak discussie op."
+      },
+      {
+        "question": "Kan ik deze factuur online invullen?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, pas ruimtes, m² en prijzen aan, kies 9 % of 21 % btw en download de pdf. Met de Invoicor-app op je iPhone bewaar je je klanten en vaste regels."
+      }
+    ],
+    "cta_title": "Maak je factuur als schilder",
+    "links_title": "Factuursoorten voor schilders",
+    "related": [
+      {
+        "name": "Factuur aannemer",
+        "slug": "factuur-aannemer"
+      },
+      {
+        "name": "Factuur schoonmaakbedrijf",
+        "slug": "factuur-schoonmaakbedrijf"
+      }
+    ],
+    "invoice_types": ["aanbetalingsfactuur", "eindfactuur", "factuur-onderaannemer"]
+  },
+  {
+    "slug": "factuur-hovenier",
+    "translation_of": "landscaping",
+    "niche": "Factuur hovenier",
+    "title": "Factuur hovenier: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur als hovenier: aanleg en onderhoud tegen 21 %, planten en graszoden tegen 9 %, grondwerk en afvoer apart. Met voorbeeld, gratis als pdf.",
+    "h1": "Factuur hovenier: template en voorbeeld voor tuinwerk",
+    "subtitle": "Voor hoveniers en tuinbedrijven: hoe je tuinaanleg, onderhoud, bestrating, groenafval en beplanting factureert, met de juiste btw voor het werk en voor de planten.",
+    "intro_paragraph": "Een hovenier heeft twee soorten werk die heel anders factureren. Onderhoud is klein en komt terug, aanleg is groot en eenmalig. Bij aanleg zie je ook de btw-regel waar hoveniers in Nederland mee werken: het werk is 21 %, maar planten, bollen en graszoden die je levert zijn 9 %. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan; verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur van een hovenier moet staan",
+    "what_to_include_intro": "Een tuinklant betaalt sneller als hij elke regel terugziet in wat er in zijn tuin ligt. Zet dit erop.",
+    "req_1_title": "Arbeid per uur of als vaste prijs",
+    "req_1_text": "Onderhoud factureer je meestal per uur, met de taken erbij: 'snoeien haag en heesters, 4 uur'. Voor aanleg spreek je vaak een vaste prijs af per onderdeel of per m². Gebruik dezelfde eenheid als in je offerte.",
+    "req_2_title": "Bestrating en materiaal per m² of meter",
+    "req_2_text": "Tegels, klinkers, opsluitbanden, zand en grond met de hoeveelheid erbij: '24 m² keramische tegels', '18 m opsluitband'. Zo kan de klant nameten en ziet hij waar het geld zit.",
+    "req_3_title": "Grondwerk en afvoer apart",
+    "req_3_text": "Oude bestrating eruit, grond afvoeren, een container voor groenafval: dat kost geld bij de verwerker en tijd op de weg. Een eigen regel laat zien dat het niet in je uurtarief verstopt zit.",
+    "req_4_title": "Planten los van het werk",
+    "req_4_text": "Werk en materiaal zoals tegels en grond zijn 21 %; planten, bollen en graszoden die je levert 9 %. Invoicor rekent met één tarief per factuur. Zet de beplanting daarom op een tweede factuur tegen 9 %, of vraag je boekhouder hoe hij het wil, en verwijs in de notities naar elkaar.",
+    "req_5_title": "Adres en datum van het werk",
+    "req_5_text": "Noem het adres van de tuin, zeker bij klanten met meer adressen of een VvE. De Belastingdienst vraagt ook de datum van levering; Invoicor heeft daar geen veld voor, dus zet 'uitgevoerd van 2 tot en met 6 november 2026' in de notities.",
+    "req_6_title": "KvK-nummer, btw-id en betaaltermijn",
+    "req_6_text": "Je KvK-nummer en btw-identificatienummer horen op elke factuur. Zet ook de betaaltermijn erop; is er niets afgesproken, dan geldt 30 dagen.",
+    "what_to_include_outro": "Met werk, materiaal, afvoer en planten zo verdeeld, snapt de klant waarom een terras kost wat het kost.",
+    "paper_label": "Factuur hovenier · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur van een hovenier",
+    "sample_breakdown_intro": "Een nieuw terras in een achtertuin in Zwolle voor een particulier, plus snoeiwerk en de afvoer van groenafval. Alles op deze factuur is werk en materiaal tegen 21 %. De nieuwe border (planten en graszoden, 9 %) staat op een aparte factuur van dezelfde dag.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Grondwerk: oude tegels verwijderen, grond afgraven en afvoeren",
+        "qty": "1",
+        "rate": "€ 685,00",
+        "amount": "€ 685,00"
+      },
+      {
+        "description": "Terras aanleggen, keramische tegels 60x60 op zandbed, incl. tegels",
+        "qty": "24 m²",
+        "rate": "€ 78,00",
+        "amount": "€ 1.872,00"
+      },
+      {
+        "description": "Opsluitbanden plaatsen",
+        "qty": "18 m",
+        "rate": "€ 14,50",
+        "amount": "€ 261,00"
+      },
+      {
+        "description": "Snoeien haag en heesters",
+        "qty": "4 uur",
+        "rate": "€ 52,00",
+        "amount": "€ 208,00"
+      },
+      {
+        "description": "Container groenafval, plaatsen en afvoeren",
+        "qty": "1",
+        "rate": "€ 145,00",
+        "amount": "€ 145,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 3.171,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 665,91",
+    "sample_breakdown_balance": "€ 3.836,91",
+    "sample_breakdown_notes": "Offerte H-2026-072 van 6 oktober 2026. Uitgevoerd van 2 tot en met 6 november 2026, Esdoornlaan 8, Zwolle. Beplanting en graszoden (9 % btw) op factuur 2026-142. Voegen de eerste twee weken niet met de hogedrukspuit reinigen. Betaling binnen 14 dagen.",
+    "industry_notes_title": "Waar hoveniers op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Btw op planten: 9 % en een voorstel",
+        "text": "Planten, bollen en graszoden die je levert zijn nu 9 %. Er ligt een voorstel om bloemen en planten vanaf 1 januari 2028 onder 21 % te brengen. Dat is nog geen wet: houd het in de gaten en check het bij je boekhouder voordat je offertes voor 2028 maakt."
+      },
+      {
+        "title": "Onderhoudscontracten",
+        "text": "Klanten met vast onderhoud factureer je vaak per maand of per kwartaal. Invoicor verstuurt geen terugkerende facturen: dupliceer de vorige factuur, pas de datums van de bezoeken aan en verstuur hem. Zie ook de pagina over de periodieke factuur."
+      },
+      {
+        "title": "Werk voor een aannemer",
+        "text": "Leg je als onderaannemer een tuin aan voor een aannemer of projectontwikkelaar, dan geldt voor dat werk aan grond de verleggingsregeling: geen btw op je factuur, wel 'btw verlegd' en het btw-id van je opdrachtgever. Voor particulieren nooit. De details staan op de pagina factuur onderaannemer."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van hoveniers",
+    "mistakes": [
+      {
+        "title": "Planten tegen 21 %",
+        "text": "Zet je de beplanting op dezelfde factuur als het terras tegen 21 %, dan betaalt de klant te veel btw over de planten."
+      },
+      {
+        "title": "Afvoer in de arbeid verstopt",
+        "text": "Stortkosten en containerhuur zijn echte kosten. Zitten ze in je uurtarief, dan lijkt je tarief hoog naast een collega die ze apart rekent."
+      },
+      {
+        "title": "Extra werk zonder afspraak",
+        "text": "Een boom die toch weg moet of een extra laag zand: spreek het eerst af, ook al is het met een appje, en zet het als eigen regel op de factuur."
+      }
+    ],
+    "tip_title": "Tip voor hoveniers",
+    "pro_tip": "Stuur de factuur bij de oplevering, als de klant net zijn nieuwe tuin ziet. Zet er in de notities een korte onderhoudstip bij: wanneer water geven, wanneer snoeien. Dan bewaart de klant je factuur en belt hij jou voor het onderhoud.",
+    "format_pdf_desc": "Een pdf met m², materialen en het adres blijft zoals je hem stuurde en print netjes voor de klant die zijn tuinpapieren bewaart.",
+    "faq_title": "Vragen over de factuur van een hovenier",
+    "faqs": [
+      {
+        "question": "Hoeveel btw rekent een hovenier?",
+        "answer": "Volgens de Belastingdienst valt het aanleggen en onderhouden van tuinen onder 21 %, inclusief materiaal zoals tegels en grond. Planten, bollen en graszoden die je levert vallen onder 9 %. Twijfel je over een onderdeel, check het bij je boekhouder."
+      },
+      {
+        "question": "Moet ik planten op een aparte factuur zetten?",
+        "answer": "Invoicor rekent met één tarief per factuur, dus daar maak je twee facturen. Wil je het anders, overleg dan met je boekhouder."
+      },
+      {
+        "question": "Factureer ik onderhoud per bezoek of per maand?",
+        "answer": "Allebei kan. Per maand of per kwartaal scheelt werk; noem dan de datums van elk bezoek op de factuur. Een vast bedrag per maand spreek je vooraf af, ook wat er gebeurt als het een week regent."
+      },
+      {
+        "question": "Wanneer is de btw verlegd voor een hovenier?",
+        "answer": "Als je als onderaannemer werk aan grond doet voor een andere ondernemer, zoals een aannemer. Op je factuur staat dan geen btw, wel 'btw verlegd' en zijn btw-id. De pdf van Invoicor drukt daarbij 'BTW (0%)' met € 0,00 af; je notitie legt uit waarom."
+      },
+      {
+        "question": "Mag ik een opslag op materiaal rekenen?",
+        "answer": "Ja, die prijs bepaal je zelf. Zet op de factuur de prijs per m² of per stuk, niet je inkoopprijs plus een percentage."
+      },
+      {
+        "question": "Kan ik deze factuur online invullen?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, pas de regels en het adres aan en download de pdf. In de Invoicor-app op je iPhone sla je vaste regels op, zoals je uurtarief en de containerhuur."
+      }
+    ],
+    "cta_title": "Maak je factuur als hovenier",
+    "links_title": "Factuursoorten voor hoveniers",
+    "related": [
+      {
+        "name": "Factuur aannemer",
+        "slug": "factuur-aannemer"
+      }
+    ],
+    "invoice_types": ["aanbetalingsfactuur", "periodieke-factuur", "factuur-onderaannemer"]
+  },
+  {
+    "slug": "factuur-schoonmaakbedrijf",
+    "translation_of": "cleaning-services",
+    "niche": "Factuur schoonmaakbedrijf",
+    "title": "Factuur schoonmaakbedrijf: template + voorbeeld | Invoicor",
+    "meta_description": "Factuur voor schoonmaak: 9 % btw in woningen, 21 % voor kantoren en specialistisch werk, glazenwassen en maandfacturen. Met voorbeeld, gratis pdf.",
+    "h1": "Factuur schoonmaakbedrijf: template en voorbeeld",
+    "subtitle": "Voor schoonmaakbedrijven en zelfstandige schoonmakers: hoe je kantoren en woningen factureert, per maand of per beurt, met het juiste btw-tarief.",
+    "intro_paragraph": "Schoonmaken is werk dat elke week terugkomt, en de factuur dus ook. Juist daardoor sluipen er fouten in: een verkeerde maand, een vergeten extra beurt, hetzelfde factuurnummer twee keer. Daarbij hangt het btw-tarief af van waar je schoonmaakt: binnen in een woning is het 9 %, op kantoor 21 %. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan; verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Maak je vanuit België schoon voor Belgische bedrijven, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur van een schoonmaakbedrijf moet staan",
+    "what_to_include_intro": "Een facilitair manager legt je factuur naast het contract. Zet dit erop, dan gaat hij zonder vragen door.",
+    "req_1_title": "Object en contract",
+    "req_1_text": "Noem het adres dat je schoonmaakt en het contract- of offertenummer. Heeft de klant meer locaties, maak dan per locatie een regel of een eigen factuur, net wat de klant wil.",
+    "req_2_title": "De periode",
+    "req_2_text": "Bij een maandfactuur is de maand je leverdatum. Invoicor heeft daar geen apart veld voor: zet 'november 2026' in de omschrijving van de regel. Bij losse beurten noem je de datum van elke beurt.",
+    "req_3_title": "Vast bedrag of uren",
+    "req_3_text": "Kantoren factureer je vaak voor een vast bedrag per maand volgens contract, woningen per uur of per beurt. Gebruik dezelfde eenheid als in je offerte, dan herkent de klant het bedrag meteen.",
+    "req_4_title": "Extra werk op eigen regels",
+    "req_4_text": "Glazenwassen, een extra beurt na een verbouwing, tapijt reinigen: elke extra krijgt een eigen regel met de datum. Zo leert de klant dat extra werk extra kost, en ziet zijn administratie wat contract was en wat niet.",
+    "req_5_title": "Het juiste btw-tarief",
+    "req_5_text": "Binnen een woning 9 %, kantoren en bedrijfspanden 21 % (zie hieronder). Kijk per klant welk tarief past.",
+    "req_6_title": "KvK-nummer, btw-id en een doorlopend nummer",
+    "req_6_text": "Je KvK-nummer en btw-identificatienummer staan op elke factuur, en het factuurnummer loopt door. Invoicor nummert je facturen; een gedupliceerde factuur krijgt vanzelf het volgende nummer.",
+    "what_to_include_outro": "Zo herkent de klant elke maand dezelfde opbouw en ziet hij in één oogopslag wat er anders was.",
+    "paper_label": "Factuur schoonmaakbedrijf · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur van een schoonmaakbedrijf",
+    "sample_breakdown_intro": "Maandfactuur aan een makelaarskantoor in Breda: de vaste kantoorschoonmaak in november, een extra beurt na een verbouwing van de vergaderruimte, de glasbewassing van het kwartaal en hygiëneartikelen. Een kantoor is een bedrijfspand: 21 % btw.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kantoorschoonmaak volgens contract, ma t/m vr, november 2026",
+        "qty": "1",
+        "rate": "€ 1.380,00",
+        "amount": "€ 1.380,00"
+      },
+      {
+        "description": "Extra beurt vergaderruimte na verbouwing, 12 november",
+        "qty": "3 uur",
+        "rate": "€ 38,50",
+        "amount": "€ 115,50"
+      },
+      {
+        "description": "Glasbewassing binnen- en buitenzijde, kwartaal, 18 november",
+        "qty": "1",
+        "rate": "€ 265,00",
+        "amount": "€ 265,00"
+      },
+      {
+        "description": "Hygiëneartikelen: handzeep, handdoekpapier, vuilniszakken",
+        "qty": "1",
+        "rate": "€ 86,40",
+        "amount": "€ 86,40"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 1.846,90",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 387,85",
+    "sample_breakdown_balance": "€ 2.234,75",
+    "sample_breakdown_notes": "Contract SC-2025-014. Periode: 1 tot en met 30 november 2026, Ginnekenweg 120, Breda. Extra beurt vergaderruimte op 12 november, in opdracht van mevrouw De Wit. Glasbewassing op 18 november. Betaling binnen 30 dagen.",
+    "industry_notes_title": "Waar schoonmaakbedrijven op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "9 % of 21 %: waar en wat",
+        "text": "Binnen een woning is schoonmaken 9 %, hoe oud de woning ook is. 21 % geldt voor de buitenkant van een woning, schoorsteenvegen, cv-reiniging en specialistisch werk met speciaal materieel: parket in de was zetten, hogedrukreinigen, schoonmaak na brand-, roet- of waterschade, zware vervuiling of het leeghalen van een woning na een overlijden. Kantoren en bedrijven zijn 21 %. Valt er bij één klant werk onder allebei, maak dan twee facturen of vraag je boekhouder."
+      },
+      {
+        "title": "Glazenwassen",
+        "text": "Volgens de schoonmaakregels van de Belastingdienst valt de binnenkant van een woning onder 9 % en de buitenkant onder 21 %. Volgens de KVK mag je 9 % rekenen als het gebouw voor minstens de helft bewoond wordt. Die twee lopen niet helemaal gelijk: check bij je boekhouder welk tarief jij gebruikt."
+      },
+      {
+        "title": "Werk als onderaannemer",
+        "text": "Maak je een gebouw schoon in opdracht van een ander schoonmaakbedrijf, of leen je personeel uit voor zulk werk, dan valt dat onder de verleggingsregeling: geen btw op je factuur, wel 'btw verlegd', het btw-id van je opdrachtgever en het bedrag per tarief. Bij particulieren nooit. De pagina factuur onderaannemer legt het verder uit."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van schoonmaakbedrijven",
+    "mistakes": [
+      {
+        "title": "21 % binnen een woning",
+        "text": "Wie een particulier voor binnenschoonmaak 21 % rekent, laat de klant te veel betalen. Controleer het tarief bij elke nieuwe klant, voordat je de eerste factuur verstuurt."
+      },
+      {
+        "title": "De maand niet bijwerken",
+        "text": "Een gedupliceerde factuur waar nog 'oktober' in de regel staat, is een klassieke fout bij maandfacturen. Pas na het dupliceren eerst de periode aan, dan pas de rest."
+      },
+      {
+        "title": "Extra's in het vaste bedrag",
+        "text": "Een extra beurt die je 'even meeneemt', verwacht de klant de volgende keer weer. Zet hem op de factuur, ook als je er korting op geeft."
+      }
+    ],
+    "tip_title": "Tip voor schoonmaakbedrijven",
+    "pro_tip": "Verstuur de maandfactuur elke maand op dezelfde dag, bijvoorbeeld de eerste werkdag. Klanten wennen eraan en plannen hun betaling erop.",
+    "format_pdf_desc": "Een pdf met periode, adres en extra's past in het crediteurensysteem van je zakelijke klant en ziet er elke maand hetzelfde uit.",
+    "faq_title": "Vragen over de factuur van een schoonmaakbedrijf",
+    "faqs": [
+      {
+        "question": "Hoeveel btw reken ik voor schoonmaak?",
+        "answer": "Volgens de Belastingdienst 9 % binnen een woning, hoe oud die ook is, en 21 % voor kantoren, bedrijfspanden, de buitenkant van een woning en specialistisch werk."
+      },
+      {
+        "question": "Welk tarief geldt voor glazenwassen?",
+        "answer": "Binnen in een woning 9 %, buiten 21 %, volgens de schoonmaakregels van de Belastingdienst. De KVK noemt 9 % als het gebouw voor minstens de helft bewoond wordt. Twijfel je, check het bij je boekhouder."
+      },
+      {
+        "question": "Kan Invoicor de maandfactuur vanzelf elke maand sturen?",
+        "answer": "Nee, Invoicor heeft geen terugkerende facturen. Dupliceer de factuur van vorige maand (die krijgt het volgende nummer en houdt klant, regels en notities), pas de periode aan en verstuur hem. Meer op de pagina over de periodieke factuur."
+      },
+      {
+        "question": "Wanneer is de btw verlegd bij schoonmaak?",
+        "answer": "Als je als onderaannemer een gebouw schoonmaakt voor een ander bedrijf dat die schoonmaak heeft aangenomen, of personeel uitleent voor zulk werk. Je factuur heeft dan geen btw-bedrag, wel 'btw verlegd' en het btw-id van je opdrachtgever. De pdf drukt daarbij 'BTW (0%)' met € 0,00 af; je notitie legt uit waarom."
+      },
+      {
+        "question": "Factureer ik voor of na de schoonmaak?",
+        "answer": "Bij vaste klanten meestal na afloop van de maand, voor het werk dat gedaan is. Bij een eenmalige grote klus, zoals een opleveringsschoonmaak, kun je vooraf een aanbetaling vragen op een eigen factuur."
+      },
+      {
+        "question": "Mag ik een afgezegde beurt in rekening brengen?",
+        "answer": "Als je contract een annuleringsregeling heeft, bijvoorbeeld de helft van de prijs als de klant binnen 24 uur afzegt, zet die dan als eigen regel op de factuur met de datum. Staat er niets over in je afspraken, reken het dan liever niet."
+      }
+    ],
+    "cta_title": "Maak je factuur als schoonmaakbedrijf",
+    "links_title": "Factuursoorten voor schoonmaakbedrijven",
+    "related": [
+      {
+        "name": "Factuur schilder",
+        "slug": "factuur-schilder"
+      }
+    ],
+    "invoice_types": ["periodieke-factuur", "factuur-onderaannemer", "factuur-zonder-btw"]
+  },
+  {
+    "slug": "factuur-personal-trainer",
+    "translation_of": "personal-training",
+    "niche": "Factuur personal trainer",
+    "title": "Factuur personal trainer: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur als personal trainer: strippenkaart, intake en de btw (21 % of 9 %) in een voorbeeld. Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur personal trainer: template en voorbeeld",
+    "subtitle": "Voor zelfstandige personal trainers: zo factureer je strippenkaarten, losse trainingen en voedingsadvies, met het juiste btw-tarief en je afzegregels erbij.",
+    "intro_paragraph": "Als personal trainer verkoop je vooral toewijding. Je factuur legt vast wat je klant kocht, hoe lang het geldig is en wat er gebeurt als hij afzegt. En hij beantwoordt de vraag waar veel trainers over twijfelen: 21 % of 9 % btw? Dat hangt af van waar je traint. Een pdf-factuur is in Nederland voorlopig gewoon goed: de geplande e-factuurplicht tussen bedrijven (1 juli 2030) is nog geen wet, alleen de Rijksoverheid wil nu al een e-factuur. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor een personal trainer moet staan",
+    "what_to_include_intro": "Eerst de factuureisen van de Belastingdienst: jouw naam, adres, btw-id en KvK-nummer, de gegevens van je klant, een factuurdatum, een doorlopend nummer, wat je leverde en wanneer, en de bedragen met tarief en btw. Voor trainers komt dit erbij.",
+    "req_1_title": "Het pakket, met aantal en geldigheid",
+    "req_1_text": "'Strippenkaart 10 × personal training, 60 minuten, geldig tot en met 31 maart 2027.' Aantal, duur en einddatum staan in de regel zelf. Invoicor heeft geen apart veld voor de leverdatum: zet de datum of periode in de omschrijving of de notities.",
+    "req_2_title": "Waar je traint",
+    "req_2_text": "In het park, bij de klant thuis, in je eigen studio of in andermans sportschool. De plek bepaalt ook het btw-tarief (zie hieronder).",
+    "req_3_title": "Extra's op een eigen regel",
+    "req_3_text": "Een intake met conditietest, een voedingsschema of een trainingsschema voor thuis zijn aparte diensten met een eigen prijs. Zo ziet je klant wat hij voor zijn geld krijgt.",
+    "req_4_title": "Producten apart van trainingen",
+    "req_4_text": "Weerstandsbanden of shakes verkoop je als product, op een eigen regel. Geldt er een ander tarief dan voor je training, maak er dan een aparte factuur van: Invoicor rekent met één btw-tarief per factuur.",
+    "req_5_title": "Je afzegregels",
+    "req_5_text": "Hoe lang van tevoren mag een klant afzeggen, en telt een gemiste training als gebruikt? Spreek dat vooraf af, bijvoorbeeld in je algemene voorwaarden, en herhaal het kort in de notities.",
+    "req_6_title": "Je KvK-nummer en betaalgegevens",
+    "req_6_text": "Volgens de KvK hoort je KvK-nummer op al je facturen; in Invoicor vul je het in bij het veld KVK-nummer. Zet je IBAN en een betaaltermijn erbij, of plak je eigen betaallink in het betaalveld. Spreek je geen termijn af, dan geldt 30 dagen.",
+    "what_to_include_outro": "Kort, duidelijk en elke keer hetzelfde: zo zien klanten je als een bedrijf.",
+    "paper_label": "Factuur personal trainer · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur voor personal training",
+    "sample_breakdown_intro": "Een personal trainer in Amsterdam start met een nieuwe klant: een strippenkaart voor tien trainingen buiten en bij de klant thuis, een intake, een voedingsschema en een set weerstandsbanden. Ze heeft geen eigen sportaccommodatie, dus rekent ze 21 % btw.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Strippenkaart 10 × personal training, 60 min, buiten of bij de klant thuis",
+        "qty": "1",
+        "rate": "€ 650,00",
+        "amount": "€ 650,00"
+      },
+      {
+        "description": "Intake met conditietest, 75 min (3 december 2026)",
+        "qty": "1",
+        "rate": "€ 75,00",
+        "amount": "€ 75,00"
+      },
+      {
+        "description": "Voedingsschema op maat voor 4 weken",
+        "qty": "1",
+        "rate": "€ 95,00",
+        "amount": "€ 95,00"
+      },
+      {
+        "description": "Set weerstandsbanden voor thuis",
+        "qty": "1",
+        "rate": "€ 24,95",
+        "amount": "€ 24,95"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 844,95",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 177,44",
+    "sample_breakdown_balance": "€ 1.022,39",
+    "sample_breakdown_notes": "Intake op 3 december 2026; strippenkaart geldig van 3 december 2026 tot en met 31 maart 2027. Afzeggen kan tot 24 uur van tevoren, daarna telt de training als gebruikt. Te betalen vóór de eerste training op NL00 BANK 0123 4567 89, met factuurnummer 2026-112. KVK-nummer 12345678.",
+    "industry_notes_title": "Waar personal trainers op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "21 % of 9 %: het hangt af van de plek",
+        "text": "Het verlaagde tarief van 9 % geldt volgens de Belastingdienst alleen als je mensen de gelegenheid geeft om te sporten met een sportaccommodatie; lessen vallen er alleen onder samen met die accommodatie. Train je bij de klant thuis, buiten of in de sportschool van een ander, dan is het volgens onze lezing van de regel 21 %. Heb je een eigen studio, check het bij je boekhouder. De geplande btw-verhoging op sport voor 2026 is geschrapt."
+      },
+      {
+        "title": "Strippenkaart: factureer bij verkoop",
+        "text": "Een strippenkaart factureer je als één regel bij verkoop, meestal vooraf. Moet je klant vooraf betalen, dan stuur je de factuur voordat het bedrag opeisbaar is; de btw hoort in de aangifte over het tijdvak van de factuurdatum. Gebruikte trainingen houd je zelf bij: Invoicor telt niet mee."
+      },
+      {
+        "title": "Starten met de KOR",
+        "text": "Blijf je onder de € 20.000 omzet per kalenderjaar, dan kun je de kleineondernemersregeling gebruiken, na bevestiging door de Belastingdienst. Je rekent dan geen btw en zet een zin als 'Geen btw: kleineondernemersregeling (KOR)' in de notities. Invoicor drukt de btw-regel toch af, als 'BTW (0%)' met € 0,00; je zin legt uit dat het om een vrijstelling gaat."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van personal trainers",
+    "mistakes": [
+      {
+        "title": "9 % rekenen voor training in het park",
+        "text": "Zonder eigen sportaccommodatie past het lage sporttarief volgens onze lezing niet. Reken je te weinig btw, dan betaal je het verschil later zelf. Twijfel je, vraag het je boekhouder."
+      },
+      {
+        "title": "Geen einddatum op het pakket",
+        "text": "Zonder geldigheid rekt een strippenkaart zich uit over een jaar. Zet de einddatum in de regel."
+      },
+      {
+        "title": "Afzegregels alleen op je website",
+        "text": "Klanten lezen je website niet terug voordat ze afzeggen. De factuur die ze betaalden, lezen ze wel."
+      }
+    ],
+    "tip_title": "Tip voor personal trainers",
+    "pro_tip": "Stuur de factuur voor het pakket direct na de intake, terwijl je klant nog gemotiveerd is. Sla je pakketten op als product in Invoicor; dan staat de factuur in een minuut klaar en betaalt je klant meteen met je betaallink.",
+    "format_pdf_desc": "Een pdf ziet je klant op zijn telefoon precies zoals jij hem bedoelde. Bewaar je facturen 7 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur als personal trainer",
+    "faqs": [
+      {
+        "question": "Reken ik als personal trainer 21 % of 9 % btw?",
+        "answer": "Train je bij de klant thuis, buiten of in de sportschool van een ander, dan is het volgens onze lezing van de regel 21 %. Volgens de Belastingdienst geldt 9 % alleen bij sporten met een sportaccommodatie. Check je eigen situatie bij je boekhouder."
+      },
+      {
+        "question": "Hoe factureer ik online coaching per maand?",
+        "answer": "Stuur aan het begin van elke maand een factuur. In de Invoicor-app dupliceer je de factuur van vorige maand: het duplicaat krijgt het volgende factuurnummer en neemt klant, regels en notities over. Invoicor verstuurt facturen niet vanzelf."
+      },
+      {
+        "question": "Mag ik een gemiste training in rekening brengen?",
+        "answer": "Als je dat vooraf met je klant hebt afgesproken, bijvoorbeeld in je algemene voorwaarden, telt een te laat afgezegde training als gebruikt. Zet de regel op elke factuur. Twijfel je over wat je met particulieren mag afspreken, vraag het dan een jurist."
+      },
+      {
+        "question": "Wat zet ik op een factuur aan een bedrijf?",
+        "answer": "Hetzelfde als bij een particulier, plus een referentie als het bedrijf daarom vraagt. Tussen bedrijven is de betaaltermijn hoogstens 60 dagen."
+      },
+      {
+        "question": "Is dit template gratis?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, pas pakket, prijzen en notities aan en download de pdf, ook als factuur in het Nederlands. De Invoicor-app voor iPhone bewaart je klanten en pakketten; je eerste 3 facturen zijn gratis."
+      }
+    ],
+    "cta_title": "Maak je factuur als personal trainer",
+    "links_title": "Factuursoorten voor personal trainers",
+    "related": [
+      {
+        "name": "Factuur muziekles",
+        "slug": "factuur-muziekles"
+      },
+      {
+        "name": "Factuur bijles",
+        "slug": "factuur-bijles"
+      }
+    ],
+    "invoice_types": ["periodieke-factuur", "zzp-factuur", "factuur-zonder-btw"]
+  },
+  {
+    "slug": "factuur-bijles",
+    "translation_of": "tutoring",
+    "niche": "Factuur bijles",
+    "title": "Factuur bijles: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur voor bijles: wanneer je vrijgesteld bent van btw, wanneer 21 % geldt en wat je ouders stuurt. Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur bijles: template en voorbeeld",
+    "subtitle": "Voor bijlesdocenten en kleine bijlesbureaus: zo factureer je ouders, scholen en instituten voor bijles en examentraining, en zo zie je of er btw op moet.",
+    "intro_paragraph": "Bijles wordt meestal betaald door ouders die er niet bij waren. Je factuur laat zien wat ze kregen: welk vak, hoeveel lessen, op welke data. Daarnaast speelt een lastige vraag: is je les vrijgesteld van btw, of reken je 21 %? Dat hangt af van wat je precies geeft. Een pdf-factuur is in Nederland voorlopig gewoon goed; de e-factuurplicht tussen bedrijven staat gepland voor 1 juli 2030, maar is nog geen wet. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor bijles moet staan",
+    "what_to_include_intro": "Ook bijles valt onder de factuureisen van de Belastingdienst: jouw gegevens en die van je klant, een factuurdatum, een doorlopend nummer, wat je leverde en wanneer, en de bedragen. Ben je vrijgesteld, dan komt er een korte uitleg bij. Verder deze punten.",
+    "req_1_title": "Leerling, vak en niveau",
+    "req_1_text": "Je factureert de ouder, maar noem de leerling, het vak en het niveau in elke regel: 'Bijles wiskunde B, Sem, havo 4'. Dat helpt gezinnen met meer kinderen, en het laat zien dat de les over schoolstof gaat. Dat laatste telt voor de btw.",
+    "req_2_title": "Lesdata of periode",
+    "req_2_text": "Zet de data van de lessen in de regel of in de notities, bijvoorbeeld '4, 11, 18 en 25 november 2026'; Invoicor heeft geen apart veld voor de leverdatum. Ouders leggen de data naast de gezinsagenda, en 'we hadden er toch maar drie?' is meteen beantwoord.",
+    "req_3_title": "Verschillende diensten op eigen regels",
+    "req_3_text": "Een-op-een bijles, examentraining, huiswerkbegeleiding en scripties nakijken zijn voor de btw niet hetzelfde. Geef ze elk een eigen regel, of een eigen factuur als het tarief verschilt.",
+    "req_4_title": "De btw of de vrijstelling",
+    "req_4_text": "Reken je btw, dan staan het tarief en het btw-bedrag erop. Ben je vrijgesteld, zet dan in de notities waarom, bijvoorbeeld 'Vrijgesteld van btw (onderwijs)'. Een vaste tekst is ons niet bekend; check de formulering bij je boekhouder.",
+    "req_5_title": "Je KvK-nummer",
+    "req_5_text": "Volgens de KvK hoort je KvK-nummer op al je facturen, ook als je geen btw rekent. In Invoicor heeft het een eigen veld: KVK-nummer.",
+    "req_6_title": "Afzegregel en betaaltermijn",
+    "req_6_text": "Zeg in een zin wat er gebeurt met een te laat afgezegde les, en wanneer je betaald wilt worden. Zonder afspraak geldt 30 dagen.",
+    "what_to_include_outro": "Zo'n factuur vertelt ouders wat er deze maand gebeurde en waarom het de moeite waard was.",
+    "paper_label": "Factuur bijles · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur voor bijles",
+    "sample_breakdown_intro": "Een bijlesdocent in Utrecht geeft een leerling uit havo 4 bijles wiskunde B, een proefwerkvoorbereiding Engels en twee examentrainingen scheikunde in een groepje. Alles gaat over schoolstof uit het voortgezet onderwijs, en zijn boekhouder bevestigde de vrijstelling. Invoicor drukt altijd 'BTW (0%)' met € 0,00 af; de notitie legt uit dat het een vrijstelling is.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Bijles wiskunde B, Sem (havo 4), 60 min, 4, 11, 18 en 25 november 2026",
+        "qty": "4",
+        "rate": "€ 42,50",
+        "amount": "€ 170,00"
+      },
+      {
+        "description": "Proefwerkvoorbereiding Engels, Sem, 60 min, 27 november 2026",
+        "qty": "1",
+        "rate": "€ 42,50",
+        "amount": "€ 42,50"
+      },
+      {
+        "description": "Examentraining scheikunde in een groepje van 4, 2 uur, 14 en 21 november 2026",
+        "qty": "2",
+        "rate": "€ 55,00",
+        "amount": "€ 110,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 322,50",
+    "sample_breakdown_tax_label": "BTW (0%), vrijgesteld: zie notitie",
+    "sample_breakdown_tax": "€ 0,00",
+    "sample_breakdown_balance": "€ 322,50",
+    "sample_breakdown_notes": "Vrijgesteld van btw (onderwijs): bijles in vakken van het voortgezet onderwijs. Deze maand: kwadratische vergelijkingen; volgende maand: goniometrie. Afzeggen tot 24 uur van tevoren, daarna wordt de les gerekend. Graag betalen binnen 14 dagen op NL00 BANK 0123 4567 89, met factuurnummer 2026-087. KVK-nummer 12345678.",
+    "industry_notes_title": "Waar bijlesgevers op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Wanneer bijles vrijgesteld is",
+        "text": "Volgens de Belastingdienst is bijles of examentraining alleen vrijgesteld als die aansluit op onderwijs dat zelf vrijgesteld is: het wettelijk geregelde onderwijs, en algemeen vormend, beroeps- of kunstzinnig onderwijs voor jongeren onder de 21. De voorwaarden zijn gedetailleerd. Lees de pagina 'Vrijstelling in het onderwijs' op belastingdienst.nl en check je eigen geval bij je boekhouder."
+      },
+      {
+        "title": "Huiswerkbegeleiding en scripties: meestal 21 %",
+        "text": "Huiswerkbegeleiding die niet over de inhoud van het vak gaat, zoals plannen en leren leren, valt volgens de Belastingdienst onder 21 %, met de mogelijkheid om toch voor de vrijstelling te kiezen. Het nakijken van de tekst van een scriptie is altijd 21 %. Geef je beide soorten, maak dan twee facturen: Invoicor rekent met één btw-tarief per factuur. Blijf je onder de € 20.000 omzet per jaar, dan kan de KOR een uitweg zijn."
+      },
+      {
+        "title": "Ouders, scholen of een instituut",
+        "text": "Meestal factureer je ouders, als particulier. Werk je voor een school, dan is de school je klant: vraag welke referentie op de factuur moet. Werk je via een bijlesinstituut, dan factureer je het instituut, niet de ouders."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen voor bijles",
+    "mistakes": [
+      {
+        "title": "Vrijstelling aannemen voor alles",
+        "text": "Planningscoaching of een scriptie nakijken valt meestal onder 21 %. Kijk per dienst, niet per klant."
+      },
+      {
+        "title": "Geen lesdata",
+        "text": "'Vier lessen' leidt tot 'het waren er drie'. Met de data op de factuur is dat gesprek voorbij."
+      },
+      {
+        "title": "'0% btw' als uitleg",
+        "text": "Een vrijstelling is niet het nultarief. Invoicor drukt 'BTW (0%)' af omdat die regel altijd op de pdf staat; zet er een zin bij die zegt dat je vrijgesteld bent, en waarom."
+      }
+    ],
+    "tip_title": "Tip voor bijlesgevers",
+    "pro_tip": "Sluit elke factuur af met wat de leerling deze maand bereikte, in één zin. Ouders sturen dat door, en zo komen bijlesgevers aan nieuwe leerlingen. Sla elk gezin op als klant in Invoicor en dupliceer de factuur van vorige maand.",
+    "format_pdf_desc": "Ouders bewaren een pdf makkelijk, en hij ziet er overal hetzelfde uit. Jij bewaart je facturen 7 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur voor bijles",
+    "faqs": [
+      {
+        "question": "Moet ik btw rekenen over bijles?",
+        "answer": "Dat hangt af van wat je geeft: bijles en examentraining die aansluiten op vrijgesteld onderwijs zijn vrijgesteld, huiswerkbegeleiding zonder vakinhoud en het nakijken van scripties meestal niet (zie hierboven). Check je situatie op de Belastingdienst-pagina 'Vrijstelling in het onderwijs' en bij je boekhouder."
+      },
+      {
+        "question": "Wat zet ik op de factuur als ik vrijgesteld ben?",
+        "answer": "Geen btw-bedrag, wel een korte uitleg in de notities, bijvoorbeeld 'Vrijgesteld van btw (onderwijs)'. Dat is gangbaar, geen voorgeschreven tekst. Op de pdf van Invoicor staat dan 'BTW (0%)' met € 0,00; die regel kun je niet verbergen."
+      },
+      {
+        "question": "Hoe factureer ik ouders per maand?",
+        "answer": "Eén factuur per gezin per maand, met per leerling het vak, het niveau en de lesdata. In de Invoicor-app dupliceer je de factuur van vorige maand: hij krijgt het volgende nummer en houdt klant, regels en notities. Invoicor verstuurt facturen niet vanzelf."
+      },
+      {
+        "question": "Mag ik een te laat afgezegde les rekenen?",
+        "answer": "Als je dat vooraf hebt afgesproken, ja: zet de datum en 'te laat afgezegd' in de regel, en pas je regel steeds hetzelfde toe. Welke btw-behandeling zo'n les krijgt, vraag je je boekhouder."
+      },
+      {
+        "question": "Is dit template gratis?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, verander leerling, lessen en prijzen en download de pdf, ook als factuur in het Nederlands. De Invoicor-app voor iPhone bewaart je gezinnen en vaste lessen; de eerste 3 facturen zijn gratis."
+      }
+    ],
+    "cta_title": "Maak je factuur voor bijles",
+    "links_title": "Factuursoorten voor bijlesgevers",
+    "related": [
+      {
+        "name": "Factuur muziekles",
+        "slug": "factuur-muziekles"
+      },
+      {
+        "name": "Factuur personal trainer",
+        "slug": "factuur-personal-trainer"
+      }
+    ],
+    "invoice_types": ["periodieke-factuur", "factuur-zonder-btw", "zzp-factuur"]
+  },
+  {
+    "slug": "factuur-fotograaf",
+    "translation_of": "photography",
+    "niche": "Factuur fotograaf",
+    "title": "Factuur fotograaf: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur als fotograaf: bruiloft, gebruiksrecht, reiskosten en btw (21 %, of 9 % voor een fotoboek). Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur fotograaf: template en voorbeeld",
+    "subtitle": "Voor bruiloft-, portret- en bedrijfsfotografen: wat er op je factuur moet, hoe je het gebruiksrecht vastlegt en welk btw-tarief past.",
+    "intro_paragraph": "Een factuur van een fotograaf legt meer vast dan een bedrag: wat je leverde, wat de klant met de beelden mag doen en wanneer de bestanden vrijkomen. De btw is meestal 21 %, met een paar uitzonderingen. Een pdf-factuur is in Nederland voorlopig gewoon goed; het kabinet koos 1 juli 2030 voor e-facturen tussen bedrijven, maar dat is nog geen wet, en alleen de Rijksoverheid wil nu al een e-factuur. Factureer je vanuit België aan een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor een fotograaf moet staan",
+    "what_to_include_intro": "De factuureisen van de Belastingdienst gelden ook voor fotografen: beide namen en adressen, je btw-id en KvK-nummer, een factuurdatum, een doorlopend nummer, wat je leverde en wanneer, het bedrag zonder btw, het tarief en het btw-bedrag. Daarbovenop helpen deze punten.",
+    "req_1_title": "De opdracht, met datum en plek",
+    "req_1_text": "'Bruiloftsreportage 8 uur, 12 september 2026, Houten.' Invoicor heeft geen apart veld voor de datum van de shoot: die hoort in de regel of in de notities. Zo staat meteen ook de leverdatum op je factuur.",
+    "req_2_title": "Wat je oplevert",
+    "req_2_text": "Hoeveel bewerkte beelden, in welke vorm en hoe lang: een online galerij voor 12 maanden, bestanden in hoge resolutie, een fotoboek. Noem ook je prijs per extra beeld.",
+    "req_3_title": "Het gebruiksrecht",
+    "req_3_text": "Schrijf op wat de klant met de beelden mag: privégebruik, de eigen website en sociale media, een campagne van een jaar in Nederland. Bij bedrijfsopdrachten kan het een eigen regel met een eigen prijs zijn. Het auteursrecht blijft bij jou, tenzij je iets anders afspreekt. Het btw-tarief verandert er niet door.",
+    "req_4_title": "Tweede fotograaf, reiskosten en extra's",
+    "req_4_text": "Een tweede fotograaf, reiskosten, studiohuur of een drone horen op eigen regels; dan ziet je klant wat er bij een productie komt kijken.",
+    "req_5_title": "Wanneer de bestanden vrijkomen",
+    "req_5_text": "Een zin als 'De volledige galerij in hoge resolutie wordt vrijgegeven na betaling' geeft je een stok achter de deur. Spreek het wel vooraf af.",
+    "req_6_title": "Je KvK-nummer en betaaltermijn",
+    "req_6_text": "Volgens de KvK hoort je KvK-nummer op al je facturen; Invoicor heeft er een eigen veld voor. Spreek je geen termijn af, dan geldt 30 dagen. Tussen bedrijven is het hoogstens 60 dagen.",
+    "what_to_include_outro": "Zo weet je klant wat hij betaalt, wat hij mag en wanneer hij zijn beelden krijgt.",
+    "paper_label": "Factuur fotograaf · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur voor een bruiloftsfotograaf",
+    "sample_breakdown_intro": "Een fotograaf uit Utrecht legde een bruiloft vast met een tweede fotograaf en levert een online galerij. Er hoort geen fotoboek bij, dus rekent ze 21 % btw over de hele opdracht.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Bruiloftsreportage, 8 uur, 12 september 2026, Houten",
+        "qty": "1",
+        "rate": "€ 1.650,00",
+        "amount": "€ 1.650,00"
+      },
+      {
+        "description": "Tweede fotograaf, 12 september 2026",
+        "qty": "6 uur",
+        "rate": "€ 65,00",
+        "amount": "€ 390,00"
+      },
+      {
+        "description": "Selectie en nabewerking, ca. 450 beelden, online galerij 12 maanden",
+        "qty": "1",
+        "rate": "€ 295,00",
+        "amount": "€ 295,00"
+      },
+      {
+        "description": "Reiskosten Utrecht-Houten, heen en terug",
+        "qty": "36 km",
+        "rate": "€ 0,35",
+        "amount": "€ 12,60"
+      },
+      {
+        "description": "Gebruiksrecht: privégebruik en delen op sociale media (inbegrepen)",
+        "qty": "1",
+        "rate": "€ 0,00",
+        "amount": "€ 0,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 2.347,60",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 493,00",
+    "sample_breakdown_balance": "€ 2.840,60",
+    "sample_breakdown_notes": "Bruiloft op 12 september 2026. De volledige galerij in hoge resolutie wordt vrijgegeven na betaling. Het auteursrecht blijft bij de fotograaf; gebruik voor privédoeleinden en sociale media, niet commercieel. Graag betalen binnen 14 dagen op NL00 BANK 0123 4567 89, met factuurnummer 2026-064. KVK-nummer 12345678.",
+    "industry_notes_title": "Waar fotografen op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "21 % is de standaard",
+        "text": "Fotografie is volgens de Belastingdienst een dienst tegen 21 %: bruiloften, portretten, bedrijfsreportages, productfoto's. Of de klant de beelden privé of zakelijk gebruikt, maakt voor het tarief niet uit; het gebruiksrecht is geen btw-kwestie."
+      },
+      {
+        "title": "9 % voor een fotoboek en voor kunstfoto's",
+        "text": "Lever je een shoot op als fotoboek, zoals een trouwalbum dat herkenbaar een boek is, dan geldt volgens de Belastingdienst 9 % voor shoot en album samen. Ook kunstfoto's die je zelf afdrukt, signeert en nummert (tot 30 afdrukken) zijn 9 %. Twijfel je of jouw album telt, vraag het je boekhouder. Invoicor rekent met één tarief per factuur: 9 % en 21 % betekent twee facturen."
+      },
+      {
+        "title": "Bedrijfsklanten in de EU",
+        "text": "Fotografeer je voor een bedrijf in een ander EU-land, dan zet je 'btw verlegd' op de factuur, met het btw-id van je klant. Of de dienst ook op je opgaaf intracommunautaire prestaties (ICP) moet, check je bij je boekhouder. Invoicor drukt dan 'BTW (0%)' af; je notitie legt uit dat de btw verlegd is."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van fotografen",
+    "mistakes": [
+      {
+        "title": "Gebruiksrecht zonder grenzen",
+        "text": "'Commercieel gebruik' zonder termijn of medium klinkt als alles, voor altijd. Heb je geprijsd voor een campagne van een jaar online, schrijf dat dan zo op de factuur."
+      },
+      {
+        "title": "9 % rekenen omdat er een album bij zit",
+        "text": "Niet elk pakket met een album is een fotoboek tegen 9 %. Een galerij met een klein album als extraatje valt niet vanzelf onder het lage tarief. Twijfel je, vraag het je boekhouder."
+      },
+      {
+        "title": "Alle beelden vrijgeven voor de betaling",
+        "text": "Een volledige galerij zonder watermerk vóór de betaling kost je je stok achter de deur. Zet op de factuur wanneer de bestanden vrijkomen."
+      }
+    ],
+    "tip_title": "Tip voor fotografen",
+    "pro_tip": "Vraagt een klant waarom je zo duur bent, verlaag dan niet je prijs maar splits je factuur. Reportage, tweede fotograaf, nabewerking, reiskosten en gebruiksrecht op eigen regels lezen als een productie, niet als een willekeurig bedrag. Sla ze op als producten in Invoicor.",
+    "format_pdf_desc": "Een pdf ziet er op elk scherm hetzelfde uit en verandert niet onderweg. Bewaar je facturen 7 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur als fotograaf",
+    "faqs": [
+      {
+        "question": "Factureer ik een bruiloft vooraf of achteraf?",
+        "answer": "Vaak met een aanbetalingsfactuur bij het boeken en een eindfactuur na de bruiloft. In de app trek je de aanbetaling niet af met een negatieve regel: je factureert het restbedrag en noemt de aanbetalingsfactuur in de notities. De gratis generator accepteert wel negatieve regels."
+      },
+      {
+        "question": "Hoe zet ik het gebruiksrecht op de factuur?",
+        "answer": "Als eigen regel of in de omschrijving: wie de beelden mag gebruiken, waarvoor, waar en hoe lang. Bij privéklanten is 'privégebruik' vaak genoeg. Ingewikkelde licentievoorwaarden leg je vast in een contract waar de factuur naar verwijst."
+      },
+      {
+        "question": "Kan ik als beginnend fotograaf zonder btw factureren?",
+        "answer": "Ja, met de kleineondernemersregeling: maximaal € 20.000 omzet per kalenderjaar en eerst een bevestiging van de Belastingdienst. Zet dan een zin als 'Geen btw: kleineondernemersregeling (KOR)' in de notities. Invoicor drukt de btw-regel toch af, als 'BTW (0%)' met € 0,00."
+      },
+      {
+        "question": "Hoe reken ik reiskosten?",
+        "answer": "Op een eigen regel, bijvoorbeeld per kilometer met het aantal kilometers erbij. Het btw-tarief is meestal dat van je eigen dienst; check het bij je boekhouder."
+      },
+      {
+        "question": "Is dit template gratis?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, pas de regels aan je opdracht aan en download de pdf, ook als factuur in het Nederlands. De Invoicor-app voor iPhone bewaart je klanten en vaste pakketten; je eerste 3 facturen zijn gratis."
+      }
+    ],
+    "cta_title": "Maak je factuur als fotograaf",
+    "links_title": "Factuursoorten voor fotografen",
+    "related": [
+      {
+        "name": "Factuur grafisch ontwerper",
+        "slug": "factuur-grafisch-ontwerper"
+      }
+    ],
+    "invoice_types": ["aanbetalingsfactuur", "zzp-factuur", "kosten-doorberekenen"]
+  },
+  {
+    "slug": "factuur-loodgieter",
+    "translation_of": "plumbing",
+    "niche": "Factuur loodgieter",
+    "title": "Factuur loodgieter: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur als loodgieter: voorrijkosten, spoedtoeslag, arbeid en materiaal met 21 % btw in een voorbeeld. Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur loodgieter: template en voorbeeld",
+    "subtitle": "Voor loodgieters en installateurs: zo zet je voorrijkosten, uren, spoedtoeslag en materiaal op je factuur, met de juiste btw en heldere afspraken over garantie.",
+    "intro_paragraph": "Een loodgietersfactuur is een betaalverzoek en een werkverslag tegelijk: wat er kapot was, wat je deed, welk materiaal je gebruikte en wanneer. Staat dat er duidelijk op, dan krijg je minder vragen over waarom een lekkage zoveel kost. De btw is eenvoudig: reparatie en installatie zijn 21 %. Een pdf-factuur is in Nederland voorlopig gewoon goed: de e-factuurplicht tussen bedrijven (gepland op 1 juli 2030) is nog geen wet, alleen de Rijksoverheid wil nu al een e-factuur. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor een loodgieter moet staan",
+    "what_to_include_intro": "Eerst de factuureisen van de Belastingdienst: jouw naam en adres en die van de klant, je btw-id, je KvK-nummer, een factuurdatum, een doorlopend nummer, wat je deed en wanneer, het bedrag zonder btw, het tarief en het btw-bedrag. Voor loodgieters komen deze punten erbij.",
+    "req_1_title": "Voorrijkosten bovenaan",
+    "req_1_text": "Reken je voorrijkosten, zet ze dan als eerste regel. Dan is duidelijk dat de rit en het zoeken naar het probleem iets kosten, ook als de reparatie zelf meevalt. Noem het bedrag al als je de afspraak maakt.",
+    "req_2_title": "Arbeid met uren en uurtarief",
+    "req_2_text": "Zet 'lekkage verholpen' niet als één bedrag op de factuur, maar als uren tegen je uurtarief: '1,5 uur à € 68,00'. Rond je af op kwartieren of halve uren, zeg dat dan.",
+    "req_3_title": "Een precieze omschrijving",
+    "req_3_text": "'Lekkage onder het aanrecht opgespoord, sifon en afvoerbocht vervangen' zegt veel meer dan 'reparatie'. Een precieze omschrijving voorkomt discussie als er later ergens anders iets lekt. Zet de datum van het werk erbij: Invoicor heeft geen apart veld voor de leverdatum.",
+    "req_4_title": "Spoedtoeslag zichtbaar",
+    "req_4_text": "Werkte je 's avonds, in het weekend of met spoed, zet de toeslag dan op een eigen regel of noem het hogere uurtarief. Wat je aan de telefoon afspreekt en vergeet te factureren, krijg je achteraf moeilijk nog betaald.",
+    "req_5_title": "Materiaal per onderdeel",
+    "req_5_text": "Elk onderdeel met aantal en prijs: de kraan, de sifon, de koppelingen. Klein materiaal mag samen op één regel. Zo kan de klant je prijs volgen.",
+    "req_6_title": "Garantie en je KvK-nummer",
+    "req_6_text": "Zet je eigen garantieafspraken in de notities, bijvoorbeeld hoe lang je garantie geeft op je werk en dat op onderdelen de fabrieksgarantie geldt. Wat de wet consumenten verder garandeert, check je bij een jurist. Volgens de KvK hoort je KvK-nummer op al je facturen.",
+    "what_to_include_outro": "Een gedetailleerde factuur onderbouwt je prijs en legt het werk vast.",
+    "paper_label": "Factuur loodgieter · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur voor een loodgieter",
+    "sample_breakdown_intro": "Een loodgieter in Haarlem wordt op zaterdag gebeld voor een lekkage onder het aanrecht. Hij vervangt sifon en afvoer en plaatst op verzoek een nieuwe keukenkraan. Reparatie aan een woning valt niet onder de 9 %-regels: 21 % btw.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Voorrijkosten",
+        "qty": "1",
+        "rate": "€ 45,00",
+        "amount": "€ 45,00"
+      },
+      {
+        "description": "Arbeid: lekkage opgespoord, sifon en afvoer vervangen, kraan geplaatst (zaterdag 21 november 2026)",
+        "qty": "1,5 uur",
+        "rate": "€ 68,00",
+        "amount": "€ 102,00"
+      },
+      {
+        "description": "Spoedtoeslag zaterdag, 50 % over arbeid",
+        "qty": "1",
+        "rate": "€ 51,00",
+        "amount": "€ 51,00"
+      },
+      {
+        "description": "Keukenmengkraan met uittrekbare uitloop",
+        "qty": "1",
+        "rate": "€ 129,00",
+        "amount": "€ 129,00"
+      },
+      {
+        "description": "Sifon, flexibele slangen en klein materiaal",
+        "qty": "1",
+        "rate": "€ 18,50",
+        "amount": "€ 18,50"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 345,50",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 72,56",
+    "sample_breakdown_balance": "€ 418,06",
+    "sample_breakdown_notes": "Werk uitgevoerd op zaterdag 21 november 2026. Garantie: 6 maanden op het uitgevoerde werk; op de kraan geldt de fabrieksgarantie. Graag betalen binnen 14 dagen op NL00 BANK 0123 4567 89 of via de betaallink, met factuurnummer 2026-203. KVK-nummer 12345678.",
+    "industry_notes_title": "Waar loodgieters op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "21 % op werk en materiaal",
+        "text": "Reparatie, installatie en onderhoud van leidingen, kranen en sanitair zijn 21 %, inclusief het materiaal. Het 9 %-tarief voor arbeid aan woningen ouder dan 2 jaar geldt voor schilderen, stukadoren, behangen en isolatiewerk, niet voor loodgieterswerk. Het reinigen van een cv-installatie is volgens de Belastingdienst ook 21 %. Doe je naast je loodgieterswerk ook isolatie, vraag je boekhouder hoe je dat splitst; Invoicor rekent met één tarief per factuur."
+      },
+      {
+        "title": "Gaswerk en het CO-certificaat",
+        "text": "Werk je aan gastoestellen, zoals een cv-ketel of geiser, dan heb je sinds 1 april 2023 een CO-certificaat nodig. Het hoeft niet op de factuur. Wil je laten zien dat je gecertificeerd bent, dan kun je het in de notities zetten."
+      },
+      {
+        "title": "Als onderaannemer: btw verlegd",
+        "text": "Werk je als onderaannemer voor een installatiebedrijf of aannemer aan een gebouw, dan geldt de verleggingsregeling: geen btw op de factuur, wel 'btw verlegd', het btw-id van je opdrachtgever en het bedrag per tarief. Voor particulieren geldt dit nooit. Invoicor drukt dan 'BTW (0%)' af; je notitie legt uit dat de btw verlegd is. Meer staat op onze pagina over de factuur voor onderaannemers."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van loodgieters",
+    "mistakes": [
+      {
+        "title": "Alles op één regel",
+        "text": "'Lekkage, € 418,06' nodigt uit tot discussie. Voorrijkosten, uren, toeslag en onderdelen apart laten zien waar het bedrag vandaan komt."
+      },
+      {
+        "title": "Btw verleggen bij een particulier",
+        "text": "Btw verlegd is er alleen voor onderaanneming, niet voor een huiseigenaar of huurder. Werk je direct voor een particulier, dan reken je gewoon 21 %."
+      },
+      {
+        "title": "Spoedtoeslag vergeten",
+        "text": "Je noemde de zaterdagtoeslag aan de telefoon, maar vergat hem op de factuur. Dan denkt de klant dat je gewone tarief ook in het weekend geldt."
+      }
+    ],
+    "tip_title": "Tip voor loodgieters",
+    "pro_tip": "Maak de factuur nog bij de klant aan de keukentafel en stuur de pdf meteen via WhatsApp of e-mail, met je eigen betaallink erop. Sla voorrijkosten, uurtarief, spoedtoeslag en vaste onderdelen op als product in Invoicor; dan staat de factuur er in een paar minuten.",
+    "format_pdf_desc": "Een pdf kan de klant printen en bewaren, en hij verandert niet onderweg. Bewaar je facturen 7 jaar, gegevens over onroerende zaken 10 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur als loodgieter",
+    "faqs": [
+      {
+        "question": "Reken ik 9 % of 21 % btw op loodgieterswerk?",
+        "answer": "21 %. Reparatie, installatie en onderhoud van leidingen, sanitair en cv vallen niet onder het verlaagde tarief, ook niet in een oude woning."
+      },
+      {
+        "question": "Mag ik voorrijkosten rekenen?",
+        "answer": "Ja, als je ze vooraf noemt, bijvoorbeeld bij het maken van de afspraak. Zet ze op een eigen regel; ze horen bij je werk, dus ook daarover reken je 21 %."
+      },
+      {
+        "question": "Wanneer zet ik 'btw verlegd' op mijn factuur?",
+        "answer": "Alleen als je als onderaannemer werkt voor een aannemer of installatiebedrijf, aan een gebouw of ander onroerend goed. Dan staat er geen btw op, wel 'btw verlegd', het btw-id van je opdrachtgever en het bedrag. Nooit bij een particulier."
+      },
+      {
+        "question": "Welke betaaltermijn zet ik op de factuur?",
+        "answer": "Bij particulieren kun je betaling direct of binnen 14 dagen afspreken. Spreek je niets af, dan geldt 30 dagen. Voor een VvE of verhuurder geldt tussen bedrijven hoogstens 60 dagen, tenzij geen van beide partijen erdoor benadeeld wordt."
+      },
+      {
+        "question": "Hoe factureer ik een lekkage die de verzekering vergoedt?",
+        "answer": "Meestal factureer je de huiseigenaar of huurder, die de factuur bij de verzekeraar indient. Zet het schadenummer in de notities en omschrijf het werk zo precies mogelijk. Wat de verzekeraar vergoedt, verschilt per polis: laat de klant dat navragen."
+      }
+    ],
+    "cta_title": "Maak je factuur als loodgieter",
+    "links_title": "Factuursoorten voor loodgieters",
+    "related": [
+      {
+        "name": "Factuur aannemer",
+        "slug": "factuur-aannemer"
+      }
+    ],
+    "invoice_types": ["kosten-doorberekenen", "aanbetalingsfactuur", "factuur-onderaannemer"]
+  },
+  {
+    "slug": "factuur-muziekles",
+    "translation_of": "music-lessons",
+    "niche": "Factuur muziekles",
+    "title": "Factuur muziekles: template en voorbeeld | Invoicor",
+    "meta_description": "Factuur voor muziekles: vrijgesteld van btw onder de 21, meestal 21 % daarboven, met lesdata en afzegregel. Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur muziekles: template en voorbeeld",
+    "subtitle": "Voor zelfstandige muziekdocenten in piano, gitaar, viool of zang: zo factureer je lesgeld aan ouders, lessenkaarten en volwassen leerlingen, met of zonder btw.",
+    "intro_paragraph": "Muziekles volgt de weekagenda, en daar ontstaan de vragen: een maand met vier of vijf lesweken, de schoolvakanties, een kind dat ziek is. Een factuur met leerling, instrument, lesduur en lesdata maakt het lesgeld voor ouders voorspelbaar. Bij muziekles speelt ook de btw: les aan leerlingen jonger dan 21 is vrijgesteld, les aan volwassenen meestal niet. Je factureert vooral particulieren, en voor hen is een pdf-factuur gewoon goed; de geplande e-factuurplicht (1 juli 2030) geldt tussen bedrijven en is nog geen wet. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor muziekles moet staan",
+    "what_to_include_intro": "De factuureisen van de Belastingdienst gelden ook voor jou: jouw gegevens en die van je klant, factuurdatum, doorlopend nummer, wat je leverde en wanneer, de bedragen, en een korte uitleg als er geen btw op staat. Verder deze punten.",
+    "req_1_title": "Leerling, instrument en lesduur",
+    "req_1_text": "Je factureert meestal de ouder, maar de les is voor het kind. Noem beide: 'Pianoles Noor, 30 minuten per week'. Bij broers en zussen krijgt elk kind een eigen regel.",
+    "req_2_title": "De lesdata",
+    "req_2_text": "Zet de data in de regel, bijvoorbeeld '4, 11, 18 en 25 november 2026'. Dan legt een maand met vijf lesweken zichzelf uit. Invoicor heeft geen apart veld voor de leverdatum.",
+    "req_3_title": "De leeftijd van de leerling",
+    "req_3_text": "Voor de btw telt of je leerling bij de start van de cursus jonger is dan 21. Zet de leeftijd in de regel of de notities, zodat je later kunt laten zien waarom er geen btw op staat.",
+    "req_4_title": "Lessenkaart of lesgeld per maand",
+    "req_4_text": "Verkoop je een lessenkaart, zet dan het aantal lessen, de duur en de geldigheid in één regel: 'Lessenkaart 10 × 45 minuten gitaar, geldig tot 1 juli 2027'. Werk je met vast lesgeld per maand of per lesjaar, noem dan de periode.",
+    "req_5_title": "Je afzegregel",
+    "req_5_text": "Wordt een te laat afgezegde les gerekend, ingehaald of niet? Dat spreek je vooraf af in je lesvoorwaarden. Herhaal de regel kort in de notities, bijvoorbeeld 'Afzeggen tot 24 uur van tevoren: de les wordt ingehaald'.",
+    "req_6_title": "KvK-nummer en betaaltermijn",
+    "req_6_text": "Volgens de KvK hoort je KvK-nummer op al je facturen; Invoicor heeft er een eigen veld voor. Zet er een datum en je IBAN bij, bijvoorbeeld 'te betalen vóór de eerste les van de maand'. Zonder afspraak geldt 30 dagen.",
+    "what_to_include_outro": "Een goede factuur voor muziekles is kort: één leerling per regel, de lesdata en je afspraken in twee zinnen.",
+    "paper_label": "Factuur muziekles · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur voor muziekles",
+    "sample_breakdown_intro": "Een muziekdocent in Eindhoven geeft een broer en zus les: piano voor Noor (12) en gitaar voor Daan (15), vier lessen in november. Beiden zijn jonger dan 21, dus de lessen zijn vrijgesteld van btw. Invoicor drukt altijd 'BTW (0%)' met € 0,00 af; de notitie zegt dat het om een vrijstelling gaat.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Pianoles Noor (12 jaar), 30 min, 4, 11, 18 en 25 november 2026",
+        "qty": "4",
+        "rate": "€ 27,50",
+        "amount": "€ 110,00"
+      },
+      {
+        "description": "Gitaarles Daan (15 jaar), 45 min, 5, 12, 19 en 26 november 2026",
+        "qty": "4",
+        "rate": "€ 39,00",
+        "amount": "€ 156,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 266,00",
+    "sample_breakdown_tax_label": "BTW (0%), vrijgesteld: zie notitie",
+    "sample_breakdown_tax": "€ 0,00",
+    "sample_breakdown_balance": "€ 266,00",
+    "sample_breakdown_notes": "Vrijgesteld van btw: muziekles aan leerlingen jonger dan 21 jaar. Lesgeld november 2026. Afzeggen tot 24 uur van tevoren: de les wordt ingehaald; later afgezegde lessen worden gerekend. Graag betalen vóór 4 november 2026 op NL00 BANK 0123 4567 89, met factuurnummer 2026-041. KVK-nummer 12345678.",
+    "industry_notes_title": "Waar muziekdocenten op letten bij de factuur",
+    "industry_notes": [
+      {
+        "title": "Jonger dan 21: vrijgesteld",
+        "text": "Volgens de Belastingdienst is les in een instrument of zang vrijgesteld van btw voor leerlingen die jonger zijn dan 21 als de cursus begint. Een cursus van hoogstens een jaar die doorloopt na de 21e verjaardag, blijft vrijgesteld; langere cursussen worden opgeknipt in periodes van hoogstens een jaar. Je hebt hiervoor geen CRKBO-registratie nodig."
+      },
+      {
+        "title": "21 jaar en ouder: meestal 21 %",
+        "text": "Les aan volwassenen is normaal 21 %, tenzij een andere vrijstelling geldt; vraag je boekhouder of dat bij jou zo is. Geef je les aan kinderen en volwassenen, maak dan aparte facturen: Invoicor rekent met één btw-tarief per factuur. Blijf je onder de € 20.000 omzet per kalenderjaar, dan kan de KOR een optie zijn; check bij je boekhouder hoe de grens voor jou uitpakt."
+      },
+      {
+        "title": "Lesboeken en voorspeelavonden",
+        "text": "Een lesboek, bladmuziek of een bijdrage voor de zaalhuur van een voorspeelavond valt niet vanzelf onder de vrijstelling. Laat ouders boeken zelf kopen, of vraag je boekhouder welk tarief geldt en factureer het apart."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen voor muziekles",
+    "mistakes": [
+      {
+        "title": "Een maandbedrag zonder data",
+        "text": "'Lesgeld november € 266,00' laat een maand met vijf lesweken lijken op een prijsverhoging. Zet de lesdata er elke keer bij."
+      },
+      {
+        "title": "Vrijstelling voor iedereen",
+        "text": "De vrijstelling hangt af van de leeftijd van de leerling, niet van het instrument. Een moeder die zelf zangles neemt, krijgt een eigen factuur, meestal met 21 % btw."
+      },
+      {
+        "title": "Broers en zussen op één regel",
+        "text": "Eén bedrag voor twee kinderen maakt een korting of opzegging voor één kind lastig te laten zien. Geef elk kind een eigen regel."
+      }
+    ],
+    "tip_title": "Tip voor muziekdocenten",
+    "pro_tip": "Stuur de factuur voor volgende maand in de laatste week van deze maand, met de lesdata erin: ouders zien vakanties vooraf en het lesgeld is er voor de maand begint. In Invoicor dupliceer je de factuur van vorige maand; terugkerende facturen verstuurt Invoicor niet vanzelf.",
+    "format_pdf_desc": "Ouders bewaren een pdf makkelijk, en hij ziet er op elke telefoon hetzelfde uit. Jij bewaart je facturen 7 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur voor muziekles",
+    "faqs": [
+      {
+        "question": "Moet ik btw rekenen over muziekles?",
+        "answer": "Niet voor leerlingen die bij de start van de cursus jonger zijn dan 21. Voor 21 en ouder is het normaal 21 %, tenzij een andere vrijstelling geldt. Check het bij je boekhouder."
+      },
+      {
+        "question": "Wat zet ik op de factuur als de les vrijgesteld is?",
+        "answer": "Geen btw-bedrag, wel een korte uitleg in de notities, bijvoorbeeld 'Vrijgesteld van btw: muziekles aan leerlingen jonger dan 21 jaar'. Een vaste tekst is ons niet bekend; check de formulering bij je boekhouder. Op de pdf staat 'BTW (0%)' met € 0,00, omdat Invoicor die regel altijd afdrukt."
+      },
+      {
+        "question": "Wat als een leerling tijdens het lesjaar 21 wordt?",
+        "answer": "Een cursus van hoogstens een jaar die begon voor de 21e verjaardag, blijft vrijgesteld tot het eind. Loopt de cursus langer, dan wordt hij opgeknipt in periodes van hoogstens een jaar, en telt volgens onze lezing de leeftijd bij de start van elke periode."
+      },
+      {
+        "question": "Hoe factureer ik een lessenkaart?",
+        "answer": "Als één regel met het aantal lessen, de duur en de geldigheid, op het moment dat de leerling de kaart koopt. Welke lessen gebruikt zijn, houd je zelf bij; Invoicor telt niet mee."
+      },
+      {
+        "question": "Is dit template gratis?",
+        "answer": "Ja. Open het voorbeeld in de gratis generator, verander leerlingen, data en prijzen en download de pdf. De Invoicor-app voor iPhone bewaart je gezinnen en vaste lessen als klanten en producten; de eerste 3 facturen zijn gratis."
+      }
+    ],
+    "cta_title": "Maak je factuur voor muziekles",
+    "links_title": "Factuursoorten voor muziekdocenten",
+    "related": [
+      {
+        "name": "Factuur bijles",
+        "slug": "factuur-bijles"
+      },
+      {
+        "name": "Factuur personal trainer",
+        "slug": "factuur-personal-trainer"
+      }
+    ],
+    "invoice_types": ["periodieke-factuur", "factuur-zonder-btw", "zzp-factuur"]
   }
 ]

@@ -7,7 +7,7 @@
 > `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);
 > then `npm run pages`.
 
-**940 language versions missing** for 107 of 122 live pages · 940 can be written now, 0 wait for a task (the **Needs** column).
+**901 language versions missing** for 107 of 122 live pages · 901 can be written now, 0 wait for a task (the **Needs** column).
 
 Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet), **–** parked on purpose (no local demand; the reason is in its row).
 
@@ -15,7 +15,7 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 
 | Category | Live pages | Complete | Missing | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [T · Trade templates](#t-trade-templates) | 50 | 0 | 455 | none | 5 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 |
+| [T · Trade templates](#t-trade-templates) | 50 | 0 | 416 | none | 5 | 50 | 50 | 11 | 50 | 50 | 50 | 50 | 50 | 50 |
 | [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 5 | 12 | none |  | 3 |  |  | 1 | 1 | 7 |  |  |  |
 | [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 430 | none | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
 | [TL · Free tools](#tl-free-tools) | 4 | 4 | 0 | none |  |  |  |  |  |  |  |  |  |  |
@@ -26,56 +26,56 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 
 | ID | Page | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| T1 | /templates/photography |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T2 | /templates/plumbing |  | – | · | · | · | · | · | · | · | · | · |
-| T3 | /templates/hvac |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T4 | /templates/freelance-design |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T5 | /templates/handyman |  | ◦ | · | · | · | · | · | · | · | · | · |
-| T6 | /templates/videography |  | – | · | · | · | · | · | · | · | · | · |
-| T7 | /templates/landscaping |  | – | · | · | · | · | · | · | · | · | · |
-| T8 | /templates/consulting |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T9 | /templates/cleaning-services |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T10 | /templates/auto-detailing |  | – | · | · | · | · | · | · | · | · | · |
-| T11 | /templates/electrician |  | – | · | · | · | · | · | · | · | · | · |
-| T12 | /templates/construction |  | – | · | · | · | · | · | · | · | · | · |
-| T13 | /templates/roofing |  | – | · | · | · | · | · | · | · | · | · |
-| T14 | /templates/painting |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T15 | /templates/web-development |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T16 | /templates/personal-training |  | – | · | · | · | · | · | · | · | · | · |
-| T17 | /templates/tutoring |  | – | · | · | · | · | · | · | · | · | · |
-| T18 | /templates/catering |  | ◦ | · | · | · | · | · | · | · | · | · |
-| T19 | /templates/moving |  | – | · | · | · | · | · | · | · | · | · |
-| T20 | /templates/pest-control |  | – | · | · | · | · | · | · | · | · | · |
-| T21 | /templates/virtual-assistant |  | – | · | · | · | · | · | · | · | · | · |
-| T22 | /templates/pet-sitting |  | – | · | · | · | · | · | · | · | · | · |
-| T23 | /templates/makeup-artist |  | – | · | · | · | · | · | · | · | · | · |
-| T24 | /templates/carpentry |  | – | · | · | · | · | · | · | · | · | · |
-| T25 | /templates/flooring |  | – | · | · | · | · | · | · | · | · | · |
-| T26 | /templates/tile-installation |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T27 | /templates/drywall |  | ◦ | · | · | · | · | · | · | · | · | · |
-| T28 | /templates/masonry |  | ◦ | · | · | · | · | · | · | · | · | · |
-| T29 | /templates/fence-installation |  | – | · | · | · | · | · | · | · | · | · |
-| T30 | /templates/pool-service |  | – | · | · | · | · | · | · | · | · | · |
-| T31 | /templates/window-cleaning |  | – | · | · | · | · | · | · | · | · | · |
-| T32 | /templates/pressure-washing |  | – | · | · | · | · | · | · | · | · | · |
-| T33 | /templates/tree-service |  | – | · | · | · | · | · | · | · | · | · |
-| T34 | /templates/snow-removal |  | – | · | · | · | · | · | · | · | · | · |
-| T35 | /templates/locksmith |  | – | · | · | · | · | · | · | · | · | · |
-| T36 | /templates/appliance-repair |  | – | · | · | · | · | · | · | · | · | · |
-| T37 | /templates/junk-removal |  | – | · | · | · | · | · | · | · | · | · |
-| T38 | /templates/carpet-cleaning |  | – | · | · | · | · | · | · | · | · | · |
-| T39 | /templates/interior-design |  | – | · | · | · | · | · | · | · | · | · |
-| T40 | /templates/remodeling |  | – | · | · | · | · | · | · | · | · | · |
-| T41 | /templates/garage-door-repair |  | – | · | · | · | · | · | · | · | · | · |
-| T42 | /templates/dj |  | ◦ | · | · | · | · | · | · | · | · | · |
-| T43 | /templates/event-planning |  | – | · | · | · | · | · | · | · | · | · |
-| T44 | /templates/florist |  | – | · | · | · | · | · | · | · | · | · |
-| T45 | /templates/massage-therapy |  | – | · | · | · | · | · | · | · | · | · |
-| T46 | /templates/translation |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T47 | /templates/copywriting |  | – | · | · | · | · | · | · | · | · | · |
-| T48 | /templates/social-media-management |  | – | · | · | · | · | · | · | · | · | · |
-| T49 | /templates/music-lessons |  | ✓ | · | · | · | · | · | · | · | · | · |
-| T50 | /templates/bookkeeping |  | – | · | · | · | · | · | · | · | · | · |
+| T1 | /templates/photography |  | ✓ | · | · | ✓ | · | · | · | · | · | · |
+| T2 | /templates/plumbing |  | – | · | · | ✓ | · | · | · | · | · | · |
+| T3 | /templates/hvac |  | ✓ | · | · | ◦ | · | · | · | · | · | · |
+| T4 | /templates/freelance-design |  | ✓ | · | · | ✓ | · | · | · | · | · | · |
+| T5 | /templates/handyman |  | ◦ | · | · | – | · | · | · | · | · | · |
+| T6 | /templates/videography |  | – | · | · | – | · | · | · | · | · | · |
+| T7 | /templates/landscaping |  | – | · | · | ✓ | · | · | · | · | · | · |
+| T8 | /templates/consulting |  | ✓ | · | · | ◦ | · | · | · | · | · | · |
+| T9 | /templates/cleaning-services |  | ✓ | · | · | ✓ | · | · | · | · | · | · |
+| T10 | /templates/auto-detailing |  | – | · | · | ◦ | · | · | · | · | · | · |
+| T11 | /templates/electrician |  | – | · | · | ◦ | · | · | · | · | · | · |
+| T12 | /templates/construction |  | – | · | · | ✓ | · | · | · | · | · | · |
+| T13 | /templates/roofing |  | – | · | · | – | · | · | · | · | · | · |
+| T14 | /templates/painting |  | ✓ | · | · | ✓ | · | · | · | · | · | · |
+| T15 | /templates/web-development |  | ✓ | · | · | ◦ | · | · | · | · | · | · |
+| T16 | /templates/personal-training |  | – | · | · | ✓ | · | · | · | · | · | · |
+| T17 | /templates/tutoring |  | – | · | · | ✓ | · | · | · | · | · | · |
+| T18 | /templates/catering |  | ◦ | · | · | ◦ | · | · | · | · | · | · |
+| T19 | /templates/moving |  | – | · | · | – | · | · | · | · | · | · |
+| T20 | /templates/pest-control |  | – | · | · | – | · | · | · | · | · | · |
+| T21 | /templates/virtual-assistant |  | – | · | · | – | · | · | · | · | · | · |
+| T22 | /templates/pet-sitting |  | – | · | · | – | · | · | · | · | · | · |
+| T23 | /templates/makeup-artist |  | – | · | · | – | · | · | · | · | · | · |
+| T24 | /templates/carpentry |  | – | · | · | – | · | · | · | · | · | · |
+| T25 | /templates/flooring |  | – | · | · | – | · | · | · | · | · | · |
+| T26 | /templates/tile-installation |  | ✓ | · | · | – | · | · | · | · | · | · |
+| T27 | /templates/drywall |  | ◦ | · | · | ◦ | · | · | · | · | · | · |
+| T28 | /templates/masonry |  | ◦ | · | · | – | · | · | · | · | · | · |
+| T29 | /templates/fence-installation |  | – | · | · | – | · | · | · | · | · | · |
+| T30 | /templates/pool-service |  | – | · | · | – | · | · | · | · | · | · |
+| T31 | /templates/window-cleaning |  | – | · | · | ◦ | · | · | · | · | · | · |
+| T32 | /templates/pressure-washing |  | – | · | · | – | · | · | · | · | · | · |
+| T33 | /templates/tree-service |  | – | · | · | – | · | · | · | · | · | · |
+| T34 | /templates/snow-removal |  | – | · | · | – | · | · | · | · | · | · |
+| T35 | /templates/locksmith |  | – | · | · | – | · | · | · | · | · | · |
+| T36 | /templates/appliance-repair |  | – | · | · | – | · | · | · | · | · | · |
+| T37 | /templates/junk-removal |  | – | · | · | – | · | · | · | · | · | · |
+| T38 | /templates/carpet-cleaning |  | – | · | · | – | · | · | · | · | · | · |
+| T39 | /templates/interior-design |  | – | · | · | – | · | · | · | · | · | · |
+| T40 | /templates/remodeling |  | – | · | · | – | · | · | · | · | · | · |
+| T41 | /templates/garage-door-repair |  | – | · | · | – | · | · | · | · | · | · |
+| T42 | /templates/dj |  | ◦ | · | · | ◦ | · | · | · | · | · | · |
+| T43 | /templates/event-planning |  | – | · | · | – | · | · | · | · | · | · |
+| T44 | /templates/florist |  | – | · | · | ◦ | · | · | · | · | · | · |
+| T45 | /templates/massage-therapy |  | – | · | · | ◦ | · | · | · | · | · | · |
+| T46 | /templates/translation |  | ✓ | · | · | – | · | · | · | · | · | · |
+| T47 | /templates/copywriting |  | – | · | · | – | · | · | · | · | · | · |
+| T48 | /templates/social-media-management |  | – | · | · | – | · | · | · | · | · | · |
+| T49 | /templates/music-lessons |  | ✓ | · | · | ✓ | · | · | · | · | · | · |
+| T50 | /templates/bookkeeping |  | – | · | · | – | · | · | · | · | · | · |
 
 ## D Invoice types (general documents)
 
