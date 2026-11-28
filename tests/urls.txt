@@ -208,6 +208,17 @@
 /pt/ajuda
 /pl/pomoc
 /sv/hjalp
+/sv/mallar
+/sv/mallar/forskottsfaktura
+/sv/mallar/slutfaktura
+/sv/mallar/delfaktura
+/sv/mallar/aterkommande-faktura
+/sv/mallar/faktura-arbete-och-material
+/sv/mallar/vidarefakturering-utlagg
+/sv/mallar/handelsfaktura
+/sv/mallar/faktura-utan-moms
+/sv/mallar/faktura-frilans
+/sv/mallar/omvand-byggmoms-faktura
 /da/hjaelp
 /nb/hjelp
 # Wave 1 batch A (2026-11-26, ROADMAP W1)

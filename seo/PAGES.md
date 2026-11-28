@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**279 live pages** · last change 2026-11-28 · 972 more planned in [PLAN.md](PLAN.md)
+**290 live pages** · last change 2026-11-28 · 973 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -27,7 +27,7 @@
 | /nl | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 | /pl | 8 | tool 4, generator 1, home 1, support 1, android 1 |
 | /pt | 8 | tool 4, generator 1, home 1, support 1, android 1 |
-| /sv | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /sv | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 
 ## Languages
 
@@ -39,33 +39,33 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
 | template | yes | 50 | 0–10 | 490 |
-| template (invoice type) | yes, en-only | 16 | 0–12 | 100 |
+| template (invoice type) | yes, en-only | 16 | 0–12 | 90 |
 | industry | yes | 43 | 0 | 430 |
 | compare | en-only | 20 | 0 |  |
 | tool | yes | 4 | 4 |  |
 | generator | yes | 1 | 1 |  |
 | home | yes | 1 | 1 |  |
-| hub | yes, en-only | 3 | 0–1 | 16 |
+| hub | yes, en-only | 3 | 0–1 | 15 |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
 | legal | yes | 2 | 0 | 20 |
 | android | yes | 1 | 1 |  |
 | trust | yes | 2 | 0 | 20 |
 
-**1086 language versions still to write** for live pages.
+**1075 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
-| template (invoice type) | 16 | 10 | 12 | 10 | 8 | · | · | · | · | · | · |
+| template (invoice type) | 16 | 10 | 12 | 10 | 8 | · | · | · | 10 | · | · |
 | industry | 43 | · | · | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| hub | 3 | 1 | 1 | 1 | 1 | · | · | · | · | · | · |
+| hub | 3 | 1 | 1 | 1 | 1 | · | · | · | 1 | · | · |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
@@ -76,8 +76,8 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 28 | translations 28 (3 languages: template (invoice type) 28) |
-| 2026-11-27 | 44 | template (invoice type) 16, trust 2, translations 26 (4 languages: template (invoice type) 12, template 10, hub 4) |
+| 2026-11-28 | 38 | translations 38 (4 languages: template (invoice type) 38) |
+| 2026-11-27 | 45 | template (invoice type) 16, trust 2, translations 27 (5 languages: template (invoice type) 12, template 10, hub 5) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -435,13 +435,24 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /pt/ferramentas/calcular-iva | calcular iva | tool | yes | 2026-11-18 |
 | /pt/ferramentas/calcular-preco-hora | calcular preco hora | tool | yes | 2026-11-18 |
 
-### /sv (8)
+### /sv (19)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /sv | fakturaapp för iphone | home | yes | 2026-11-18 |
 | /sv/android | invoicor för android: kommer snart | android | yes | 2026-11-18 |
 | /sv/hjalp | hjälp och vanliga frågor | support | yes | 2026-11-18 |
+| /sv/mallar | fakturamall | hub | yes | 2026-11-27 |
+| /sv/mallar/aterkommande-faktura | återkommande faktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/delfaktura | delfaktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/faktura-arbete-och-material | faktura arbete och material | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/faktura-frilans | faktura frilans | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/faktura-utan-moms | faktura utan moms | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/forskottsfaktura | förskottsfaktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/handelsfaktura | handelsfaktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/omvand-byggmoms-faktura | omvänd byggmoms faktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/slutfaktura | slutfaktura | template (invoice type) | yes | 2026-11-28 |
+| /sv/mallar/vidarefakturering-utlagg | utlägg och vidarefakturering | template (invoice type) | yes | 2026-11-28 |
 | /sv/skapa-faktura | skapa faktura | generator | yes | 2026-11-18 |
 | /sv/verktyg | gratis verktyg: faktura, momsräknare, timpris | tool | yes | 2026-11-18 |
 | /sv/verktyg/momsraknare | momsräknare: räkna ut moms online gratis | tool | yes | 2026-11-18 |

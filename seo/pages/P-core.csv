@@ -15,6 +15,7 @@ P2-de,/de/vorlagen,de,live,2026-11-27,hub,yes,rechnungsvorlagen,kostenlose rechn
 P2-es,/es/plantillas,es,live,2026-11-27,hub,yes,plantillas de factura,modelo de factura gratis,,,,Spanish templates hub (task S1),,,/templates,,
 P2-fr,/fr/modeles,fr,live,2026-11-27,hub,yes,modèles de facture,modèle facture gratuit,,,,French templates hub (task S1),,,/templates,,
 P2-nl,/nl/templates,nl,live,2026-11-27,hub,yes,factuur templates,factuur voorbeeld,,,,Dutch templates hub (task S1),,,/templates,,
+P2-sv,/sv/mallar,sv,live,2026-11-27,hub,yes,fakturamall,gratis fakturamall,,,,Swedish templates hub (task S1),,,/templates,,
 P3,/industries,en,live,2026-11-18,hub,yes,invoicing software by industry,invoice app for small business,browse,22,,,,,,,
 P4,/compare,en,live,2026-11-18,hub,en-only,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,,,,,,
 P5,/help,en,live,2026-11-18,support,yes,invoicor help,invoicor faq,support,24,,,,,,,

@@ -1,1 +1,1244 @@
-[]
+[
+  {
+    "slug": "forskottsfaktura",
+    "translation_of": "deposit-invoice",
+    "niche": "Förskottsfaktura",
+    "title": "Förskottsfaktura: mall och exempel (pdf) | Invoicor",
+    "meta_description": "Skriv en förskottsfaktura: vad som ska stå på den, exempel med 25 % moms på förskottet och hur slutfakturan drar av det. Skapa pdf:en gratis.",
+    "h1": "Förskottsfaktura: mall och exempel",
+    "subtitle": "Ta betalt för en del av priset innan arbetet börjar, på en egen faktura med hela ordersumman, din andel och momsen.",
+    "intro_paragraph": "En förskottsfaktura begär betalt för något som inte är levererat än: 30 % innan du beställer material, eller ett fast belopp som håller en vecka åt kunden. Den är en riktig faktura med eget nummer, och enligt Skatteverket ska förskott faktureras. Momsen redovisar du när pengarna kommer in, oavsett om du använder faktureringsmetoden eller bokslutsmetoden. En pdf-faktura går bra mellan svenska företag och till privatpersoner; till offentlig sektor måste fakturan vara en e-faktura (Peppol, lag 2018:1277, sedan 1 april 2019), och Invoicor skapar pdf:er, inte e-fakturor. Nedan: vad som ska med, ett exempel på 30 % av en platsbyggd bokhylla och hur slutfakturan sedan drar av förskottet.",
+    "include_title": "Det här ska stå på en förskottsfaktura",
+    "what_to_include_intro": "Förskottet betalar ett arbete som ingen kan se än. Därför måste fakturan själv berätta vad pengarna gäller. Sex saker gör att den håller.",
+    "req_1_title": "Ordet förskott på första raden",
+    "req_1_text": "Rubriken på pdf:en är ”Faktura”, och det stämmer: en förskottsfaktura är en faktura. Skriv ”Förskott” först på första raden, till exempel ”Förskott 30 % på platsbyggd bokhylla”. Kundens redovisning bokför den då rätt, och du hittar den snabbt när slutfakturan ska skrivas.",
+    "req_2_title": "Samma uppgifter som en vanlig faktura",
+    "req_2_text": "Fakturadatum, ett unikt löpnummer, ditt momsregistreringsnummer, namn och adress för dig och kunden, vad förskottet gäller, beloppet utan moms, momssats och momsbelopp. Har betalningen redan kommit in när du fakturerar, ska datumet för förskottet stå med om det skiljer sig från fakturadatum. Invoicor har inget eget fält för det, så skriv det på raden eller under Anmärkningar.",
+    "req_3_title": "Ordersumman och din andel",
+    "req_3_text": "Skriv det överenskomna totalpriset och andelen du begär nu: ”30 % av 80 000,00 kr exkl. moms”. Kunden ser direkt vad som återstår.",
+    "req_4_title": "Vad förskottet håller",
+    "req_4_text": "Nämn jobbet och vad betalningen säkrar: ett startdatum, en bokad vecka, material som beställs för just den här kunden. Hänvisa till offerten eller avtalet med nummer och datum. Den planerade tiden för arbetet skriver du på raden eller under Anmärkningar.",
+    "req_5_title": "Moms på förskottsbeloppet",
+    "req_5_text": "Momsen räknas på beloppet du begär, inte på hela ordern: 25 % av 24 000,00 kr är 6 000,00 kr. Är ditt företag befriat från moms (omsättning högst 120 000 kr per år) tar du inte ut någon moms och skriver att försäljningen är undantagen från momsplikt. Pdf:en skriver då ut momsraden med 0,00 kr, och texten förklarar varför.",
+    "req_6_title": "Förfallodag och vad som händer sedan",
+    "req_6_text": "Ge förskottet en egen förfallodag och skriv vad som kommer efter: ”Resterande belopp faktureras på slutfakturan efter leverans.” Ska inget bokas förrän förskottet är betalt, skriv det också. Fakturan får nästa nummer i din vanliga nummerserie.",
+    "what_to_include_outro": "En förskottsfaktura har ofta bara en rad. Uppgifterna ovan gör den raden till ett underlag som båda parter kan lita på när slutfakturan kommer.",
+    "paper_label": "Förskottsfaktura · exempel",
+    "sample_breakdown_title": "Exempel på förskottsfaktura",
+    "sample_breakdown_intro": "En snickare tar 30 % i förskott på en platsbyggd bokhylla med fönstersittbänk för 80 000,00 kr exkl. moms, innan virket beställs. Kunden är en arkitektbyrå, och förskottet faktureras med 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Förskott 30 % på platsbyggd bokhylla och fönstersittbänk, ordersumma 80 000,00 kr exkl. moms (offert 2026-118, godkänd 16 november 2026)",
+        "qty": "1",
+        "rate": "24 000,00 kr",
+        "amount": "24 000,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "24 000,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "6 000,00 kr",
+    "sample_breakdown_balance": "30 000,00 kr",
+    "sample_breakdown_notes": "Förskottsfaktura nr 2026-047, fakturadatum 20 november 2026. Förfaller 4 december 2026; virket beställs när förskottet är betalt. Planerat arbete: 11 till 22 januari 2027. Förskottet (24 000,00 kr + 6 000,00 kr moms) dras av på slutfakturan. Kvar enligt offert: 56 000,00 kr exkl. moms. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om förskottsfakturor",
+    "industry_notes": [
+      {
+        "title": "Momsen redovisas när pengarna kommer",
+        "text": "Skatteverkets regel: för förskott och a conto redovisar säljaren momsen när betalningen tas emot, både med faktureringsmetoden och bokslutsmetoden. Kommer pengarna i december hör momsen alltså till december, även om du bygger i januari."
+      },
+      {
+        "title": "Kunden drar av momsen först efter betalning",
+        "text": "Köparen får inte dra av momsen på ett förskott förrän förskottsfakturan är betald. Det är ett skäl till att kundens ekonomiavdelning vill ha en tydlig, numrerad faktura och inte bara en mening i offerten."
+      },
+      {
+        "title": "Förskott, a conto eller delfaktura",
+        "text": "Ett förskott betalas innan arbetet börjar. A conto och delfakturor tar betalt medan arbetet pågår, efter en betalningsplan eller efter hur långt jobbet har kommit. Alla dras i praktiken av på slutfakturan, med nummer och belopp."
+      }
+    ],
+    "mistakes_title": "Tre misstag med förskottsfakturor",
+    "mistakes": [
+      {
+        "title": "Förskottet står bara i offerten",
+        "text": "”30 % vid beställning” i offerten kan kundens ekonomiavdelning inte betala, och kunden saknar underlag för momsavdraget. Skicka en numrerad förskottsfaktura med förfallodag."
+      },
+      {
+        "title": "Moms på hela ordersumman",
+        "text": "Momsen hör till beloppet du begär. Den som skriver 25 % moms på 80 000 kr men begär 24 000 kr skickar en felaktig faktura som behöver rättas."
+      },
+      {
+        "title": "Förskottet glöms på slutfakturan",
+        "text": "Då begär slutfakturan hela priset, och kunden betalar dubbelt eller inte alls. Leta fram alla förskottsfakturor för jobbet innan du skriver slutfakturan."
+      }
+    ],
+    "tip_title": "Ett tips för förskottsfakturor",
+    "pro_tip": "Skriv förskottsfakturans nummer även under Anmärkningar på slutfakturan, inte bara på avdragsraden. Det är så kundens redovisning kopplar ihop de två betalningarna, även om de kom från olika konton.",
+    "format_pdf_desc": "En pdf visar ordersumma, andel och moms likadant på alla skärmar, och ingen kan ändra beloppet på vägen till kundens ekonomiavdelning.",
+    "faq_title": "Frågor om förskottsfaktura",
+    "faqs": [
+      {
+        "question": "Måste jag ta ut moms på ett förskott?",
+        "answer": "Om ditt företag är momsregistrerat, ja: samma momssats som för själva jobbet, oftast 25 %, på förskottsbeloppet. Momsen redovisas när förskottet betalas. Är du befriad från moms (omsättning högst 120 000 kr per år exkl. moms, i år och de två föregående åren) tar du inte ut moms och skriver att försäljningen är undantagen från momsplikt."
+      },
+      {
+        "question": "Är en förskottsfaktura en riktig faktura?",
+        "answer": "Ja. Den har nummer, datum, dina och kundens uppgifter och ett belopp att betala, och den bokförs som andra fakturor. Spara den lika länge som övrig bokföring, i sju år enligt bokföringslagen."
+      },
+      {
+        "question": "Hur drar jag av förskottet på slutfakturan?",
+        "answer": "Lista hela jobbet till fullt pris och dra sedan av förskottet på en rad med minus, exkl. moms, så räknas momsen bara på resten. I den gratis generatorn kan en rad ha negativt pris. I appen går det inte: där fakturerar du resterande belopp som rad och skriver förskottsfakturans nummer under Anmärkningar. Mallen för slutfaktura visar ett helt exempel."
+      },
+      {
+        "question": "Vad händer om kunden avbokar efter att ha betalat?",
+        "answer": "Är förskottet återbetalningsbart, betala tillbaka och dokumentera återbetalningen kopplad till förskottsfakturan; hur momsen ska rättas, till exempel med en kreditfaktura, bestämmer du med din redovisningskonsult. Är det inte återbetalningsbart, hänvisa till villkoren kunden godkände. Konsumentregler kan begränsa vad du får behålla när kunden är en privatperson."
+      },
+      {
+        "question": "Håller Invoicor reda på om förskottet är betalt?",
+        "answer": "Inte som förskott. Du kan markera förskottsfakturan som betald (”Paid”) som vilken faktura som helst, men appen kopplar den inte till slutfakturan och visar inget löpande saldo. Den listan för du själv."
+      }
+    ],
+    "cta_title": "Skapa din förskottsfaktura",
+    "related": [
+      {
+        "name": "Slutfaktura",
+        "slug": "slutfaktura"
+      },
+      {
+        "name": "Delfaktura",
+        "slug": "delfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "slutfaktura",
+    "translation_of": "final-invoice",
+    "niche": "Slutfaktura",
+    "title": "Slutfaktura: mall och exempel (pdf) | Invoicor",
+    "meta_description": "Skriv en slutfaktura: hela priset, avdrag för förskott och delfakturor med nummer, moms bara på resten och beloppet att betala. Exempel och gratis pdf.",
+    "h1": "Slutfaktura: mall och exempel",
+    "subtitle": "Avsluta ett jobb som betalats i delar: hela priset, varje tidigare faktura avdragen med nummer och datum, och beloppet som gör upp kontot.",
+    "intro_paragraph": "En slutfaktura är den sista fakturan på ett jobb som har betalats i omgångar. Den visar hela priset med alla tillägg, drar av varje förskottsfaktura och delfaktura kunden redan har fått och begär det som återstår. Här går hela affären ihop: avtalet, ändrings- och tilläggsarbetena (ÄTA), förskottet och delbetalningarna. En pdf-faktura går bra mellan svenska företag och till privatpersoner; till offentlig sektor måste fakturan vara en e-faktura (Peppol, lag 2018:1277, sedan 1 april 2019), och Invoicor skapar pdf:er, inte e-fakturor. Nedan: sex uppgifter, ett exempel på en kontorsombyggnad för 128 000 kr och hur momsen hanteras när tidigare fakturor redan har haft moms.",
+    "include_title": "Det här ska stå på en slutfaktura",
+    "what_to_include_intro": "Slutfakturan svarar på kundens fråga: är det här verkligen allt? Uppgifterna nedan gör svaret till ja.",
+    "req_1_title": "Märkt som slutfaktura",
+    "req_1_text": "Skriv ”Slutfaktura” på första raden eller först under Anmärkningar (pdf:ens rubrik är ”Faktura”). Det säger kunden att inget mer kommer för det här jobbet, och att tidigare betalningar ska stämmas av först. Använd ordet bara när jobbet verkligen är klart.",
+    "req_2_title": "Hela priset, med ÄTA",
+    "req_2_text": "Börja med avtalspriset och lägg varje godkänt tilläggsarbete på en egen rad med datum för beställningen. Summan av raderna är jobbets verkliga pris.",
+    "req_3_title": "Varje tidigare faktura, med nummer och datum",
+    "req_3_text": "Dra av varje förskott och varje delfaktura på en egen rad: ”Avgår delfaktura nr 2026-052, betald 30 oktober”. En samlad rad för ”inbetalt” gömmer fel. I praktiken dras beloppen av exklusive moms, så att momsen bara räknas på det som återstår.",
+    "req_4_title": "Avtalet den avslutar",
+    "req_4_text": "Nämn jobbet och avtalet eller offerten med nummer eller datum. En kund med flera projekt måste veta vilket som avslutas.",
+    "req_5_title": "Arbetsperiod och belopp att betala",
+    "req_5_text": "Skatteverket kräver datum för leveransen om det skiljer sig från fakturadatum. Invoicor har inget eget fält för det, så skriv arbetsperioden på raden. Avsluta med ett tydligt belopp, en förfallodag och dina betalningsuppgifter.",
+    "req_6_title": "Eget nummer i serien",
+    "req_6_text": "Slutfakturan får nästa nummer i din vanliga serie. Den hänvisar till de tidigare numren men återanvänder inget och får inget tillägg som ”-S”.",
+    "what_to_include_outro": "Hela priset minus de tidigare fakturorna ska bli exakt beloppet att betala. Stäm av mot din egen lista över jobbets fakturor innan du skickar.",
+    "paper_label": "Slutfaktura · exempel",
+    "sample_breakdown_title": "Exempel på slutfaktura",
+    "sample_breakdown_intro": "En byggfirma avslutar ombyggnaden av ett kontor: 120 000,00 kr enligt avtal plus ett tilläggsarbete för 8 000,00 kr. Kunden har tidigare betalat ett förskott på 30 000,00 kr och en delfaktura på 45 000,00 kr, båda exkl. moms och med 25 % moms. Kunden är en redovisningsbyrå, inte ett byggföretag, så omvänd byggmoms gäller inte. Avdragen görs exkl. moms; hela kalkylen med moms står i meddelandet.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Slutfaktura: ombyggnad kontor plan 2 enligt avtal 21 juli 2026, arbete utfört 3 augusti till 13 november 2026",
+        "qty": "1",
+        "rate": "120 000,00 kr",
+        "amount": "120 000,00 kr"
+      },
+      {
+        "description": "ÄTA 1: extra innervägg i mötesrummet, beställd 2 september 2026",
+        "qty": "1",
+        "rate": "8 000,00 kr",
+        "amount": "8 000,00 kr"
+      },
+      {
+        "description": "Avgår förskott, faktura nr 2026-031, betald 31 juli 2026 (moms 7 500,00 kr)",
+        "qty": "1",
+        "rate": "-30 000,00 kr",
+        "amount": "-30 000,00 kr"
+      },
+      {
+        "description": "Avgår delfaktura nr 2026-052, betald 30 oktober 2026 (moms 11 250,00 kr)",
+        "qty": "1",
+        "rate": "-45 000,00 kr",
+        "amount": "-45 000,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "53 000,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "13 250,00 kr",
+    "sample_breakdown_balance": "66 250,00 kr",
+    "sample_breakdown_notes": "Slutfaktura nr 2026-068, fakturadatum 20 november 2026, avtal 21 juli 2026. Hela jobbet: 128 000,00 kr + 32 000,00 kr moms = 160 000,00 kr. Avgår förskott nr 2026-031: 37 500,00 kr inkl. moms. Avgår delfaktura nr 2026-052: 56 250,00 kr inkl. moms. Att betala: 66 250,00 kr senast 20 december 2026. Inga fler fakturor kommer för detta avtal. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om slutfakturor",
+    "industry_notes": [
+      {
+        "title": "Moms bara på det som återstår",
+        "text": "Förskottet och delfakturan har redan haft moms, och enligt Skatteverket redovisade du den momsen när pengarna kom in. Slutfakturan tar därför bara ut moms på resten. Invoicor har en momssats för hela fakturan och räknar den på delsumman, så när avdragen står exkl. moms hamnar momsen rätt."
+      },
+      {
+        "title": "Betalningstid och dröjsmålsränta",
+        "text": "Mellan företag ska betalning enligt räntelagen ske senast 30 dagar efter kravet, om du inte uttryckligen har gått med på en senare dag. Betalar kunden sent får du ta ut dröjsmålsränta, referensräntan plus 8 procentenheter, och en förseningsersättning på 450 kr."
+      },
+      {
+        "title": "Slutfaktura betyder att jobbet är stängt",
+        "text": "Den senaste fakturan i en serie är inte automatiskt en slutfaktura. Kalla den så när avtalet är fullgjort och beloppet gör upp kontot. Invoicor kopplar inte ihop fakturor, så listan över jobbets fakturor håller du själv."
+      }
+    ],
+    "mistakes_title": "Tre misstag med slutfakturor",
+    "mistakes": [
+      {
+        "title": "Bara sista etappen fakturerad",
+        "text": "En slutfaktura som bara listar det sista arbetet döljer hur beloppet räknades fram. Visa hela priset och dra sedan av."
+      },
+      {
+        "title": "Ett klumpbelopp som avdrag",
+        "text": "”Avgår inbetalt 75 000 kr” är svårt att kontrollera. En rad per tidigare faktura, med nummer och datum, gör varje belopp spårbart."
+      },
+      {
+        "title": "Moms två gånger",
+        "text": "Om de tidigare fakturorna redan haft moms och slutfakturan tar moms på hela priset igen, betalar kunden moms två gånger på samma del. Dra av först, så hamnar momsen bara på resten."
+      }
+    ],
+    "tip_title": "Ett tips för slutfakturor",
+    "pro_tip": "Skicka med en kort lista över jobbets alla fakturor, under Anmärkningar eller i mejlet: nummer, datum, belopp, betald eller obetald. Kundens ekonomiavdelning kontrollerar den listan först, så se till att den stämmer med deras.",
+    "format_pdf_desc": "En pdf låser hela priset, varje avdrag och beloppet att betala i samma uppställning, så siffran kunden godkänner är siffran som når ekonomiavdelningen.",
+    "faq_title": "Frågor om slutfaktura",
+    "faqs": [
+      {
+        "question": "Vad är skillnaden mellan en slutfaktura och en vanlig faktura?",
+        "answer": "En vanlig faktura tar betalt för ett arbete. En slutfaktura avslutar ett jobb som betalats i delar: den visar hela priset, drar av alla tidigare fakturor och begär resten."
+      },
+      {
+        "question": "Hur drar jag av förskottet på slutfakturan?",
+        "answer": "Under arbetsraderna lägger du en rad med minus per tidigare faktura, till exempel ”Avgår förskott nr 2026-031: -30 000,00 kr”. Den gratis generatorn tar negativa priser. Appen gör det inte: där fakturerar du resterande belopp på en rad och listar varje tidigare faktura med nummer under Anmärkningar. Mallen för förskottsfaktura visar första halvan av paret."
+      },
+      {
+        "question": "Om kunden inte har betalat en delfaktura än?",
+        "answer": "Göm den inte i slutsumman. Dra bara av de betalda och skriv den obetalda under Anmärkningar, eller dra av alla och notera att den är obetald. Eftersom momsen på delfakturan redan står på en faktura, fråga din redovisningskonsult vilken variant som passar."
+      },
+      {
+        "question": "När ska slutfakturan skickas?",
+        "answer": "När jobbet är klart och godkänt. För byggtjänster med omvänd byggmoms ska fakturan utfärdas senast vid utgången av andra månaden efter arbetet. Vad som gäller för just ditt jobb kan din redovisningskonsult bekräfta."
+      },
+      {
+        "question": "Kan jag ändra en slutfaktura efter att den skickats?",
+        "answer": "Inte i själva fakturan. I Invoicor låses en skickad faktura: duplicera den med ”Duplicate Invoice”, rätta kopian, skicka den och markera den gamla som ”Cancelled”. Ofta förväntas en kreditfaktura mot den felaktiga fakturan, så fråga din redovisningskonsult."
+      }
+    ],
+    "cta_title": "Skapa din slutfaktura",
+    "related": [
+      {
+        "name": "Förskottsfaktura",
+        "slug": "forskottsfaktura"
+      },
+      {
+        "name": "Delfaktura",
+        "slug": "delfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "delfaktura",
+    "translation_of": "milestone-invoice",
+    "niche": "Delfaktura",
+    "title": "Delfaktura: mall och exempel för a conto (pdf) | Invoicor",
+    "meta_description": "Delfakturera ett projekt: delfaktura med andel av kontraktssumman, ÄTA på egna rader, 25 % moms och vad som återstår. Exempel och gratis pdf.",
+    "h1": "Delfaktura: mall och exempel",
+    "subtitle": "Ta betalt för ett större jobb i etapper, en delfaktura i taget, med andelen av kontraktet och en tydlig räkning av vad som redan är fakturerat.",
+    "intro_paragraph": "En delfaktura tar betalt för en del av ett större jobb medan det pågår. I byggbranschen kallas det ofta a conto-fakturering: du fakturerar enligt en betalningsplan i avtalet, eller efter hur stor del av arbetet som är utfört, och gör upp hela affären på slutfakturan. Delfakturering passar också konsultprojekt med etapper som levereras och godkänns var för sig. Varje delfaktura är en fullständig faktura med eget nummer och moms. En pdf-faktura går bra mellan svenska företag och till privatpersoner; till offentlig sektor måste fakturan vara en e-faktura (Peppol, lag 2018:1277, sedan 1 april 2019), och Invoicor skapar pdf:er, inte e-fakturor. Nedan: vad som ska med, ett exempel på delfaktura 2 av 4 för en ombyggd tandläkarmottagning och hur delarna ska gå ihop.",
+    "include_title": "Det här ska stå på en delfaktura",
+    "what_to_include_intro": "Kunden godkänner en delfaktura genom att jämföra den med avtalet. Gör den jämförelsen enkel med de här sex uppgifterna.",
+    "req_1_title": "Vilken del det är",
+    "req_1_text": "Skriv delfakturans plats i planen och vad den avser: ”Delfaktura 2 av 4 enligt betalningsplan”. Använd samma namn på etapperna som i avtalet, annars frågar kundens ekonomiavdelning vilken betalning det gäller.",
+    "req_2_title": "Avtalet den bygger på",
+    "req_2_text": "Hänvisa till avtalet eller offerten med nummer eller datum. Kunder med flera projekt behöver det för att matcha fakturan mot rätt budget, och du behöver det om en etapp ifrågasätts.",
+    "req_3_title": "Andel av kontraktssumman",
+    "req_3_text": "Visa delens andel eller belopp bredvid hela kontraktssumman: ”25 % av 240 000,00 kr”. Fakturerar du efter utfört arbete i stället, skriv hur stor del som är klar och vad bedömningen bygger på, till exempel en gemensam avstämning på plats.",
+    "req_4_title": "Vad som utförts och när",
+    "req_4_text": "Beskriv kort vad som gjorts sedan förra delfakturan. Datum för leveransen ska stå med om det skiljer sig från fakturadatum; Invoicor har inget eget fält för det, så skriv perioden på raden.",
+    "req_5_title": "Fakturerat hittills och vad som återstår",
+    "req_5_text": "Lista tidigare delfakturor med nummer och belopp, och vad som återstår efter den här: ”Fakturerat hittills: 60 000,00 kr (nr 2026-044). Återstår efter denna: 120 000,00 kr exkl. moms.” Den löpande räkningen gör att slutfakturan inte blir en överraskning.",
+    "req_6_title": "ÄTA på egna rader",
+    "req_6_text": "Ändrings- och tilläggsarbeten (ÄTA) som kunden har beställt utöver avtalet läggs på egna rader med datum för beställningen. Bakar du in dem i etappbeloppet ser delen dyrare ut än avtalet säger, och fakturan blir ifrågasatt.",
+    "what_to_include_outro": "Alla delfakturor tillsammans, plus slutfakturan, ska bli exakt kontraktssumman med godkända ÄTA, varken mer eller mindre.",
+    "paper_label": "Delfaktura · exempel",
+    "sample_breakdown_title": "Exempel på delfaktura",
+    "sample_breakdown_intro": "En byggfirma bygger om en tandläkarmottagning för 240 000,00 kr exkl. moms, fakturerat i fyra lika delar enligt betalningsplan. Del 1 är betald. Tandläkarmottagningen är inget byggföretag, så exemplet har 25 % moms och ingen omvänd byggmoms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Delfaktura 2 av 4 enligt betalningsplan: 25 % av kontraktssumman 240 000,00 kr (avtal 2 september 2026), arbete utfört 1 till 31 oktober 2026",
+        "qty": "1",
+        "rate": "60 000,00 kr",
+        "amount": "60 000,00 kr"
+      },
+      {
+        "description": "ÄTA 1: extra eluttag i behandlingsrummen, beställda 14 oktober 2026",
+        "qty": "6",
+        "rate": "850,00 kr",
+        "amount": "5 100,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "65 100,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "16 275,00 kr",
+    "sample_breakdown_balance": "81 375,00 kr",
+    "sample_breakdown_notes": "Delfaktura nr 2026-058, fakturadatum 3 november 2026. Kontraktssumma 240 000,00 kr exkl. moms. Fakturerat tidigare: 60 000,00 kr (nr 2026-044, betald). Återstår efter denna: 120 000,00 kr exkl. moms, delfaktura 3 och slutfaktura. ÄTA faktureras utöver kontraktssumman. Betalas senast 3 december 2026. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om delfakturor",
+    "industry_notes": [
+      {
+        "title": "Moms på varje delfaktura",
+        "text": "Varje delfaktura har moms på sitt eget belopp. Skatteverket räknar a conto-betalningar som förskott: säljaren redovisar momsen när pengarna kommer in, både med faktureringsmetoden och bokslutsmetoden, och kunden får dra av momsen först när fakturan är betald. Hur det blir med just din betalningsplan kan din redovisningskonsult bekräfta."
+      },
+      {
+        "title": "Betalningsplan eller utfört arbete",
+        "text": "Med en betalningsplan fakturerar du fasta belopp vid bestämda datum eller etapper. Fakturerar du efter utfört arbete tar du betalt för hur långt jobbet har kommit, och då måste kunden kunna kontrollera det. Bestäm i avtalet vilket som gäller och hur ni stämmer av."
+      },
+      {
+        "title": "Omvänd byggmoms till byggföretag",
+        "text": "Är kunden själv ett byggföretag och arbetet en byggtjänst, betalar kunden momsen: fakturan har ingen moms, kundens momsregistreringsnummer och texten ”Omvänd betalningsskyldighet”. Om just ditt jobb räknas som byggtjänst avgör Skatteverkets regler; fråga Skatteverket eller din redovisningskonsult."
+      }
+    ],
+    "mistakes_title": "Tre misstag med delfakturor",
+    "mistakes": [
+      {
+        "title": "Etapper som inte går ihop",
+        "text": "Avrundar du en tredjedel av 100 000 kr till 33 333 kr tre gånger blir en krona aldrig fakturerad, och en omförhandlad plan kan lämna mer. Låt sista fakturan ta resten av kontraktssumman, så stämmer totalen alltid."
+      },
+      {
+        "title": "Ingen löpande summa",
+        "text": "Varje delfaktura ser rätt ut för sig, men utan ”fakturerat hittills” och ”återstår” tappar kunden räkningen, och du också."
+      },
+      {
+        "title": "ÄTA utan skriftlig beställning",
+        "text": "Tilläggsarbete som kunden aldrig beställt skriftligt blir lätt en tvist när fakturan kommer. Få beställningen skriftligt, med datum, innan du gör arbetet, och hänvisa till den på raden."
+      }
+    ],
+    "tip_title": "Ett tips för delfakturor",
+    "pro_tip": "Skapa varje ny delfaktura genom att duplicera den förra (”Duplicate Invoice”). Kund, avtalshänvisning och villkor följer med och kopian får nästa nummer; du ändrar delen, perioden och den löpande summan under Anmärkningar.",
+    "format_pdf_desc": "En pdf håller etappen, perioden och den löpande summan fast, och det är den som projektledaren skickar vidare till ekonomi för attest.",
+    "faq_title": "Frågor om delfaktura",
+    "faqs": [
+      {
+        "question": "Vad är skillnaden mellan delfaktura och a conto-faktura?",
+        "answer": "Ofta ingen. A conto betyder ”på kontot”: en betalning i förväg eller under arbetet som räknas av när hela jobbet gås igenom på slutfakturan. Delfaktura är det bredare ordet för att fakturera ett jobb i delar, med eller utan betalningsplan."
+      },
+      {
+        "question": "Är en delfaktura en fullständig faktura?",
+        "answer": "Ja. Den ska ha samma uppgifter som andra fakturor: datum, unikt löpnummer, ditt momsregistreringsnummer, båda parters namn och adress, vad som utförts, belopp utan moms, momssats och momsbelopp."
+      },
+      {
+        "question": "Kan första delen betalas i förväg?",
+        "answer": "Ja, många avtal har en första betalning när avtalet skrivs, innan något är gjort. Den är i praktiken ett förskott: fakturera den på en förskottsfaktura och de senare delarna som delfakturor. Slutfakturan listar sedan alla."
+      },
+      {
+        "question": "Hur ser slutfakturan ut efter delfakturor?",
+        "answer": "Slutfakturan visar hela kontraktssumman med ÄTA, drar av varje delfaktura med nummer och tar moms bara på resten. Mallen för slutfaktura visar uppställningen med ett komplett exempel."
+      },
+      {
+        "question": "Vad gör jag om kunden inte godkänner en etapp?",
+        "answer": "Kräver avtalet godkännande, fakturera inte etappen än. Rätta det som behövs och fakturera när den är godkänd. Har fakturan redan gått iväg, prata med din redovisningskonsult om en kreditfaktura; i Invoicor markerar du den som ”Cancelled”."
+      }
+    ],
+    "cta_title": "Skapa din delfaktura",
+    "related": [
+      {
+        "name": "Slutfaktura",
+        "slug": "slutfaktura"
+      },
+      {
+        "name": "Arbete och material",
+        "slug": "faktura-arbete-och-material"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "aterkommande-faktura",
+    "translation_of": "monthly-invoice",
+    "niche": "Återkommande faktura",
+    "title": "Återkommande faktura: mall per månad (pdf) | Invoicor",
+    "meta_description": "Återkommande faktura för löpande tjänster: period, avtal, avdrag och extra arbete på egna rader, 25 % moms. Duplicera förra månaden och skicka pdf:en.",
+    "h1": "Återkommande faktura: mall och exempel",
+    "subtitle": "En faktura per månad för en löpande tjänst: perioden, vad som ingick, eventuella avdrag och en tydlig förfallodag.",
+    "intro_paragraph": "En återkommande faktura tar betalt varje månad för en tjänst som fortsätter: kontorsstädning, it-support, underhåll, en hyrd maskin. Priset avtalas en gång, som en fast månadsavgift eller ett pris per besök, och därför kallas det ofta avtalsfakturering. Varje faktura visar vad som hände just den månaden: gjordes alla besök, ställdes något in, tillkom något extra? Invoicor skickar inga återkommande eller schemalagda fakturor; du duplicerar förra månadens faktura och ändrar perioden. En pdf-faktura går bra mellan svenska företag och till privatpersoner; till offentlig sektor måste fakturan vara en e-faktura (Peppol, lag 2018:1277, sedan 1 april 2019), och Invoicor skapar pdf:er, inte e-fakturor. Nedan: upplägget, avdrag för inställda tillfällen och ett snabbt sätt att göra nästa månads faktura.",
+    "include_title": "Det här ska stå på en återkommande faktura",
+    "what_to_include_intro": "Kunden ser nästan samma faktura varje månad, så det som ändras är det som läses. Gör perioden, antalet tillfällen och eventuella justeringar lätta att hitta.",
+    "req_1_title": "Perioden i klartext",
+    "req_1_text": "Skriv exakt period: ”Period: 1 till 30 november 2026”. Fakturadatum räcker inte. Datum för leveransen ska stå med när det skiljer sig från fakturadatum, och eftersom Invoicor saknar ett eget fält för det skriver du perioden på raden. Då betalas ingen månad två gånger och ingen hoppas över.",
+    "req_2_title": "Ett unikt nummer varje månad",
+    "req_2_text": "Även om innehållet upprepas ska varje faktura ha ett unikt löpnummer i din serie. Duplicerar du i Invoicor får kopian automatiskt nästa nummer.",
+    "req_3_title": "Avgiften och vad den täcker",
+    "req_3_text": "Ange grunden: en fast avgift (”Kontorsstädning 2 gånger per vecka enligt avtal”) eller pris per besök gånger antal besök. Hänvisa till avtalet med datum.",
+    "req_4_title": "Avdrag på egna rader",
+    "req_4_text": "Ställdes ett tillfälle in, lägg avdraget på en egen rad: ”Avdrag: städning 13 november inställd, kontoret stängt”. Sänker du bara avgiften i tysthet ser det ut som en prisändring; ett synligt avdrag visar att avtalet fortfarande gäller.",
+    "req_5_title": "Extra utanför avtalet",
+    "req_5_text": "Det som inte ingår i månadsavgiften, till exempel fönsterputs eller ett extra besök, får en egen rad med eget pris. Då blir nästa månads kopia rätt från början.",
+    "req_6_title": "En förfallodag som passar kundens betalrutin",
+    "req_6_text": "Många företag betalar leverantörer på fasta dagar. Fråga vilken och sätt förfallodagen före den. ”Förfaller 30 december 2026” är tydligare än ”30 dagar netto” när fakturan blir liggande i en inkorg.",
+    "what_to_include_outro": "Får kunden samma faktura varje månad med bara perioden ändrad, är det den månad något skiljer sig som fakturan läses noga. Gör den raden tydlig och förklarad.",
+    "paper_label": "Återkommande faktura · exempel",
+    "sample_breakdown_title": "Exempel på återkommande faktura",
+    "sample_breakdown_intro": "En städfirma fakturerar november för kontorsstädning två gånger i veckan till fast månadsavgift. Ett tillfälle ställdes in och dras av, och fönsterputs beställdes som extra. Kunden är en reklambyrå; exemplet har 25 % moms. Raden med minus fungerar i den gratis generatorn; i appen sänker du i stället månadsraden och förklarar avdraget i texten.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kontorsstädning 2 gånger per vecka, period 1 till 30 november 2026 (avtal 1 mars 2026)",
+        "qty": "1",
+        "rate": "6 800,00 kr",
+        "amount": "6 800,00 kr"
+      },
+      {
+        "description": "Avdrag: städning 13 november inställd, kontoret stängt",
+        "qty": "1",
+        "rate": "-425,00 kr",
+        "amount": "-425,00 kr"
+      },
+      {
+        "description": "Fönsterputs, 14 fönster in- och utvändigt, utfört 20 november 2026",
+        "qty": "1",
+        "rate": "1 450,00 kr",
+        "amount": "1 450,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "7 825,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "1 956,25 kr",
+    "sample_breakdown_balance": "9 781,25 kr",
+    "sample_breakdown_notes": "Faktura nr 2026-112, fakturadatum 30 november 2026. Period 1 till 30 november 2026. Städning utförd vid 8 av 9 tillfällen; 13 november inställd på kundens begäran och avdragen med 425,00 kr enligt avtalet. Förfaller 30 december 2026. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om återkommande fakturor",
+    "industry_notes": [
+      {
+        "title": "Duplicera, inte automatiskt",
+        "text": "Många faktureringsprogram skickar återkommande fakturor enligt schema. Invoicor gör inte det. Öppna förra månadens faktura, tryck på ”Duplicate Invoice” och ändra period, avdrag och extra. Kund, rader och anmärkningar följer med, och kopian får nästa nummer."
+      },
+      {
+        "title": "En faktura för flera månader?",
+        "text": "Vissa skickar en faktura för hela året med en betalningsplan, i stället för en per månad. Om en sådan faktura fungerar för momsen och hur den ska bokföras beror på upplägget, så fråga din redovisningskonsult innan du byter. En faktura per månad är enklast att stämma av."
+      },
+      {
+        "title": "Markera förra månaden som betald först",
+        "text": "Sätt förra fakturan som ”Paid” när pengarna kommit, och duplicera den sedan. Statuslistan visar vilka månader som är betalda och vilka som är förfallna, så en utebliven betalning inte gömmer sig bakom en nyare faktura. Påminnelser skickar appen inte; dem skriver du själv."
+      }
+    ],
+    "mistakes_title": "Tre misstag med återkommande fakturor",
+    "mistakes": [
+      {
+        "title": "Förra månadens period står kvar",
+        "text": "En faktura som säger ”oktober” i december blir returnerad eller betald som dubblett. Kontrollera period, nummer och förfallodag varje gång innan du skickar."
+      },
+      {
+        "title": "Inställda tillfällen nämns inte",
+        "text": "Tar du full avgift för ett inställt besök utan ett ord, kan kunden begära alla avdrag på en gång flera månader senare. Dra av, eller skriv i avtalet att avgiften gäller även när ett tillfälle ställs in."
+      },
+      {
+        "title": "Extra arbete i månadsavgiften",
+        "text": "Höjer du månadsraden från 6 800 kr till 8 250 kr för fönsterputsen blir nästa månads kopia fel och kunden ser inte vad som ändrats. Låt grundavgiften stå kvar och lägg extra på egna rader."
+      }
+    ],
+    "tip_title": "Ett tips för återkommande fakturor",
+    "pro_tip": "Skicka fakturan samma dag varje månad, helst första vardagen efter perioden. Kunden lägger in den i sin rutin och en sen betalning syns direkt.",
+    "format_pdf_desc": "En pdf per månad ger kunden ett fast dokument för varje period, som går att arkivera månad för månad och inte ändras efter att det skickats. Du sparar fakturorna i sju år, som bokföringslagen kräver.",
+    "faq_title": "Frågor om återkommande faktura",
+    "faqs": [
+      {
+        "question": "När ska jag skicka en återkommande faktura?",
+        "answer": "För tjänster under månaden: direkt efter månadens slut, när alla besök och avdrag är kända. För en fast avgift utan justeringar fakturerar vissa i början av månaden; då tar du betalt i förskott, och momsen redovisas när pengarna kommer in. Välj ett sätt och håll fast vid det."
+      },
+      {
+        "question": "Kan Invoicor skicka fakturan automatiskt varje månad?",
+        "answer": "Nej. Invoicor har inga återkommande eller schemalagda fakturor. Med ”Duplicate Invoice” gör du nästa månads faktura på några sekunder: kund, rader och anmärkningar följer med, och du ändrar perioden och eventuella avdrag."
+      },
+      {
+        "question": "Hur visar jag ett avdrag på fakturan?",
+        "answer": "Lägg en rad med minus och en kort förklaring, till exempel ”Avdrag: städning 13 november inställd”. Den gratis generatorn tar negativa priser för just detta. Appen gör det inte: där sänker du månadsraden och skriver orsaken i radens text."
+      },
+      {
+        "question": "Hur gör jag med första eller sista månaden?",
+        "answer": "Fakturera andelen av månaden eller antalet besök och skriv ut det: ”Från 15 november, 4 av 9 tillfällen”. Bestäm metoden, per dag eller per besök, i avtalet innan första fakturan."
+      },
+      {
+        "question": "Vilken betalningstid gäller mellan företag?",
+        "answer": "Enligt räntelagen ska ett företag betala senast 30 dagar efter kravet; en senare förfallodag gäller bara om du som säljare uttryckligen har gått med på den. Betalar kunden sent har du rätt till dröjsmålsränta, referensräntan plus 8 procentenheter, och förseningsersättning på 450 kr."
+      }
+    ],
+    "cta_title": "Skapa din återkommande faktura",
+    "related": [
+      {
+        "name": "Frilansfaktura",
+        "slug": "faktura-frilans"
+      },
+      {
+        "name": "Förskottsfaktura",
+        "slug": "forskottsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-arbete-och-material",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Arbete och material",
+    "title": "Faktura arbete och material: mall och exempel | Invoicor",
+    "meta_description": "Faktura för arbete och material: timmar och timpris, material med antal och påslag, framkörning och 25 % moms. Exempel och gratis pdf.",
+    "h1": "Faktura arbete och material: mall och exempel",
+    "subtitle": "Fakturera arbetet och materialet på separata rader, så att kunden ser vad som är tid och vad som är delar.",
+    "intro_paragraph": "En faktura för arbete och material delar upp jobbets pris i två delar: det du tar för ditt arbete och det du tar för det du har monterat eller förbrukat. Många hantverkare jobbar på löpande räkning, och då finns inget fast pris: fakturan är det enda ställe där kunden kan kontrollera både timmar och material. För privatpersoner som vill ha ROT-avdrag måste arbetskostnaden stå för sig. En pdf-faktura går bra mellan svenska företag och till privatpersoner; till offentlig sektor måste fakturan vara en e-faktura (Peppol, lag 2018:1277, sedan 1 april 2019), och Invoicor skapar pdf:er, inte e-fakturor. Nedan: arbetsrader, material med påslag, framkörning och moms, med ett elarbete på ett kafé som exempel.",
+    "include_title": "Det här ska stå på en faktura för arbete och material",
+    "what_to_include_intro": "Varje rad ska tydligt höra till arbete, material eller en avgift. Kan kunden inte se vilken grupp en rad tillhör, tappar uppdelningen sitt syfte.",
+    "req_1_title": "Arbete som timmar gånger timpris",
+    "req_1_text": "På löpande räkning anger du arbetet som timmar och timpris, med vad som gjordes: ”Byte av elcentral, 6 tim à 650 kr”. Vid fast pris per moment räcker en arbetsrad med fast belopp, om den namnger momentet.",
+    "req_2_title": "Material med antal, enhet och á-pris",
+    "req_2_text": "Ge varje material en egen rad i den enhet det säljs i: 15 m kabel, 2 jordfelsbrytare, 1 elcentral. Då uppfyller du samtidigt kravet på mängd, art och pris per enhet utan moms. ”Material 7 500 kr” får kunden att jämföra hela jobbet med byggvaruhusets priser.",
+    "req_3_title": "Ditt materialpåslag",
+    "req_3_text": "Påslaget betalar inköp, hämtning, lager och returer. Bygg in det i á-priset och skriv det en gång under Anmärkningar (”materialpriser inkluderar 15 % påslag”), eller visa inköpspris och påslag separat.",
+    "req_4_title": "Framkörning och småmaterial",
+    "req_4_text": "Framkörningsavgift, deponi eller ett fast belopp för småmaterial är varken arbete eller ett bestämt material. Ge var och en en egen rad med ett tydligt namn, så att den läses som en avgift med ett skäl och inte som utfyllnad.",
+    "req_5_title": "Rätt moms på rätt underlag",
+    "req_5_text": "I de flesta hantverksjobb har arbete och material samma momssats, 25 %, så momsen ligger på hela delsumman. Är kunden ett byggföretag och jobbet en byggtjänst gäller omvänd byggmoms i stället: ingen moms, kundens momsregistreringsnummer och texten ”Omvänd betalningsskyldighet”.",
+    "req_6_title": "Hänvisning till offert eller arbetsorder",
+    "req_6_text": "Jobb på löpande räkning börjar ofta med en uppskattning eller ett takpris. Skriv hänvisningen och taket under Anmärkningar, så att kunden kan jämföra slutsumman med det de godkände. Arbetsdagen skriver du på raden, eftersom Invoicor inte har något eget fält för leveransdatum.",
+    "what_to_include_outro": "Samma upplägg fungerar för elektriker, rörmokare, snickare och målare, med branschens egna material.",
+    "paper_label": "Arbete och material · exempel",
+    "sample_breakdown_title": "Exempel på faktura för arbete och material",
+    "sample_breakdown_intro": "En elektriker byter elcentral och monterar jordfelsbrytare på ett kafé: sex timmars arbete, framkörning, tre materialrader och småmaterial. Materialpriserna innehåller 15 % påslag på inköpspriset. Kafét är inget byggföretag, så exemplet har 25 % moms på allt.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Framkörning",
+        "qty": "1",
+        "rate": "450,00 kr",
+        "amount": "450,00 kr"
+      },
+      {
+        "description": "Arbete: byte av elcentral och montering av jordfelsbrytare, 12 november 2026",
+        "qty": "6 tim",
+        "rate": "650,00 kr",
+        "amount": "3 900,00 kr"
+      },
+      {
+        "description": "Material: elcentral 18 moduler",
+        "qty": "1",
+        "rate": "4 890,00 kr",
+        "amount": "4 890,00 kr"
+      },
+      {
+        "description": "Material: jordfelsbrytare 30 mA",
+        "qty": "2",
+        "rate": "1 150,00 kr",
+        "amount": "2 300,00 kr"
+      },
+      {
+        "description": "Material: installationskabel 3G2,5",
+        "qty": "15 m",
+        "rate": "18,00 kr",
+        "amount": "270,00 kr"
+      },
+      {
+        "description": "Småmaterial (kabelskor, buntband, märkning)",
+        "qty": "1",
+        "rate": "195,00 kr",
+        "amount": "195,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "12 005,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "3 001,25 kr",
+    "sample_breakdown_balance": "15 006,25 kr",
+    "sample_breakdown_notes": "Faktura nr 2026-139, fakturadatum 13 november 2026. Arbetsorder AO-0412 på löpande räkning, takpris 16 000 kr inkl. moms. Materialpriser inkluderar 15 % påslag på inköpspris. Arbete debiteras per påbörjad halvtimme. Förfaller 13 december 2026. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om fakturor för arbete och material",
+    "industry_notes": [
+      {
+        "title": "Löpande räkning eller fast pris",
+        "text": "Vid fast pris betalar kunden det offererade beloppet, och uppdelningen är mest för tydlighetens skull. På löpande räkning betalar kunden faktisk tid och faktiskt material, så fakturan är beviset. Kom överens om vilket som gäller innan du börjar, gärna med ett takpris."
+      },
+      {
+        "title": "Varför uppdelningen spelar roll",
+        "text": "Kunden ser vad jobbet kostade i material och vad i kunnande, och kan jämföra med offerten rad för rad. Till en privatperson som vill ha ROT-avdrag måste arbetskostnaden dessutom stå för sig; sidan om ROT-avdrag går igenom resten."
+      },
+      {
+        "title": "En momssats per faktura",
+        "text": "Invoicor och den gratis generatorn har en momssats för hela fakturan, utan inställning per rad. Det räcker när arbete och material har samma sats. Om byggtjänster: om ett elarbete räknas som byggtjänst avgör Skatteverkets regler, fråga din redovisningskonsult vid tvekan."
+      }
+    ],
+    "mistakes_title": "Tre misstag med fakturor för arbete och material",
+    "mistakes": [
+      {
+        "title": "Arbete gömt i materialpriset",
+        "text": "Höjer du materialpriserna för att täcka monteringstiden ser materialet dyrt ut och arbetet gratis, och för en ROT-kund blir arbetskostnaden fel. Lägg tiden på arbetsrader."
+      },
+      {
+        "title": "Material utan specifikation",
+        "text": "En klumpsumma för material går inte att kontrollera, och kunden börjar ifrågasätta hela fakturan. Specificera antal och á-pris, och spara leverantörskvittona med jobbet."
+      },
+      {
+        "title": "Småmaterialet glöms",
+        "text": "Skruv, kabelskor, buntband och fogmassa blir mycket pengar på ett år. Tillåter avtalet det, fakturera dem som materialrader eller en angiven rad för småmaterial."
+      }
+    ],
+    "tip_title": "Ett tips för fakturor med arbete och material",
+    "pro_tip": "Spara ditt vanligaste material som artiklar i appen, med påslaget inräknat. Priserna blir desamma från jobb till jobb och du slipper räkna påslag på plats.",
+    "format_pdf_desc": "En pdf låser timmar, materialpriser och moms som de fakturerades, och det är den kunden jämför med arbetsordern och du sparar i jobbmappen.",
+    "faq_title": "Frågor om faktura för arbete och material",
+    "faqs": [
+      {
+        "question": "Vad är skillnaden mellan arbete och material och löpande räkning?",
+        "answer": "Samma faktura: arbete och material på separata rader. Löpande räkning betyder dessutom att det inte finns något fast pris, så kunden betalar faktisk tid och faktiskt material. Upplägget passar båda."
+      },
+      {
+        "question": "Ska jag visa mitt påslag på material?",
+        "answer": "Inte nödvändigtvis per rad, men kunden ska veta att det finns: bygg in det i á-priset och skriv en mening under Anmärkningar. Har ni avtalat självkostnad plus påslag, visa inköpspris och påslag på separata rader."
+      },
+      {
+        "question": "Ska det vara moms på både arbete och material?",
+        "answer": "Om du är momsregistrerad, normalt ja: 25 % på båda. Undantagen är omvänd byggmoms när kunden är ett byggföretag och arbetet en byggtjänst, och företag som är befriade från moms (omsättning högst 120 000 kr per år). Är du osäker på om jobbet är en byggtjänst, fråga Skatteverket eller din redovisningskonsult."
+      },
+      {
+        "question": "Hur fakturerar jag framkörning?",
+        "answer": "Som första rad med fast pris: ”Framkörning 450 kr”. Stryker du avgiften när kunden beställer jobbet, lägg en rad med minus direkt under i den gratis generatorn, så syns avgift och avdrag bredvid varandra."
+      },
+      {
+        "question": "Vad gör jag om jobbet drar över uppskattningen?",
+        "answer": "Säg till kunden innan du passerar det avtalade taket, få ett skriftligt godkännande och skriv det på fakturan: ”Godkänt 12 november att överskrida takpriset med högst 2 000 kr”. En överskridning som kunden först ser på fakturan är ett vanligt skäl till att sådana fakturor blir liggande."
+      }
+    ],
+    "cta_title": "Skapa din faktura för arbete och material",
+    "related": [
+      {
+        "name": "Faktura med omvänd byggmoms",
+        "slug": "omvand-byggmoms-faktura"
+      },
+      {
+        "name": "Förskottsfaktura",
+        "slug": "forskottsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "vidarefakturering-utlagg",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Utlägg och vidarefakturering",
+    "title": "Utlägg och vidarefakturering: fakturamall | Invoicor",
+    "meta_description": "Fakturera kostnader du betalat för en kund: vidarefakturering med moms eller utlägg utan moms, med kvitton per rad. Fyll i mallen och få en pdf.",
+    "h1": "Faktura för utlägg och vidarefakturering",
+    "subtitle": "För företag och frilansare som tar betalt för resor, lokaler och inköp de har betalat i ett kunduppdrag: vad som är ett utlägg, vad som vidarefaktureras och hur raderna ska se ut.",
+    "intro_paragraph": "Du har bokat tåget, betalat lokalen och beställt trycket till kundens workshop, och avtalet säger att kunden står för kostnaderna. Det här är fakturan från ett företag till en kund, inte en anställds reseräkning. Det viktiga är att skilja på två saker som ofta blandas ihop: vidarefakturering, där kostnaden blir en del av din egen försäljning och får moms, och utlägg, där du bara har lagt ut pengar åt kunden och ingen moms tas ut. En pdf-faktura räcker mellan svenska företag och till privatpersoner; offentlig sektor kräver e-faktura via Peppol (lag 2018:1277, sedan 1 april 2019), och Invoicor gör pdf, inte e-fakturor.",
+    "include_title": "Det här ska stå på en faktura för utlägg",
+    "what_to_include_intro": "Kunden som attesterar fakturan vill pricka av varje kostnad mot ett kvitto och mot avtalet. Ge hen det som behövs för det.",
+    "req_1_title": "En rad per kostnad, med datum och leverantör",
+    "req_1_text": "Skriv varje kostnad för sig: ”14 okt: tåg Stockholm–Göteborg t/r, kvitto 1”. Datum och leverantör gör att kunden kan koppla raden till resan och kvittot. Slå bara ihop många små poster av samma slag, som taxiresor under samma resa.",
+    "req_2_title": "Kvittonummer på varje rad",
+    "req_2_text": "Numrera kvittona och skriv numret på raden. Skicka kopiorna som en egen pdf tillsammans med fakturan. När ekonomiavdelningen frågar efter kvitto 4 vet ni båda vilket det är.",
+    "req_3_title": "Vidarefakturering eller utlägg, inte båda på samma rad",
+    "req_3_text": "Skatteverket räknar en kostnad som utlägg bara när kunden är skyldig leverantören, du inte gör något påslag och du bokför den som ett utlägg för kundens räkning. Allt annat du fakturerar vidare är vidarefakturering och får moms. Bestäm vilket det är innan du skriver raden.",
+    "req_4_title": "Belopp utan den moms du redan dragit av",
+    "req_4_text": "Vid vidarefakturering drar du i praktiken av ingående moms på inköpet och fakturerar kostnaden exklusive moms, med din egen moms ovanpå. Momssatsen är normalt samma som för huvudtjänsten; kontrollera med din redovisningskonsult.",
+    "req_5_title": "Påslag bara om avtalet tillåter det",
+    "req_5_text": "Många avtal säger att kostnader faktureras till självkostnad, andra tillåter en hanteringsavgift på inköp. Lägg påslaget på en egen rad (”Hanteringsavgift 10 % på tryck, avtal punkt 6”) så att varje kostnadsrad fortfarande stämmer med sitt kvitto.",
+    "req_6_title": "Projekt, ordernummer och arvodesfakturan",
+    "req_6_text": "Ange projektet, eventet eller kundens ordernummer. Kostnader betalas ofta från en annan budget än arvodet. Skickar du arvode och kostnader på olika fakturor, hänvisa till den andra fakturans nummer i anmärkningarna.",
+    "what_to_include_outro": "Läs avtalet innan du köper något du tänker fakturera vidare. Ett godkännande i förväg för flyg, hotell och hyrd utrustning undviker diskussionen ”det har vi inte gått med på”.",
+    "paper_label": "Faktura för utlägg · exempel",
+    "sample_breakdown_title": "Exempel på vidarefakturering av kostnader",
+    "sample_breakdown_intro": "En workshopledare med enskild firma i Stockholm fakturerar kostnaderna för en tvådagars workshop i Göteborg, skilt från arvodet. Kostnaderna vidarefaktureras exklusive moms med 25 % moms, som arvodet; trycket har en hanteringsavgift på 10 % enligt avtalet. Stäm av momsen i ditt fall med din redovisningskonsult.",
+    "sample_breakdown_rows": [
+      {
+        "description": "14 okt: tåg Stockholm–Göteborg t/r (kvitto 1)",
+        "qty": "1",
+        "rate": "1 180,00 kr",
+        "amount": "1 180,00 kr"
+      },
+      {
+        "description": "Hotell, 2 nätter (kvitto 2)",
+        "qty": "2",
+        "rate": "1 450,00 kr",
+        "amount": "2 900,00 kr"
+      },
+      {
+        "description": "Taxi stationen–lokalen t/r (kvitto 3 och 4)",
+        "qty": "1",
+        "rate": "412,00 kr",
+        "amount": "412,00 kr"
+      },
+      {
+        "description": "Lokalhyra, 2 dagar (kvitto 5)",
+        "qty": "1",
+        "rate": "4 800,00 kr",
+        "amount": "4 800,00 kr"
+      },
+      {
+        "description": "Tryck av workshopmaterial, 20 ex (kvitto 6)",
+        "qty": "1",
+        "rate": "1 640,00 kr",
+        "amount": "1 640,00 kr"
+      },
+      {
+        "description": "Hanteringsavgift 10 % på tryck",
+        "qty": "1",
+        "rate": "164,00 kr",
+        "amount": "164,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "11 096,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "2 774,00 kr",
+    "sample_breakdown_balance": "13 870,00 kr",
+    "sample_breakdown_notes": "Kostnader för workshopen 15–16 oktober, er order 7731. Arvodet på faktura 2026-088. Kvitto 1–6 bifogas som separat pdf. Resor och lokal till självkostnad; hanteringsavgift enligt avtal punkt 6. Betalning inom 30 dagar. Godkänd för F-skatt.",
+    "industry_notes_title": "Bra att veta om utlägg och vidarefakturering",
+    "industry_notes": [
+      {
+        "title": "Utlägg: kvittot är ställt till kunden",
+        "text": "Ett äkta utlägg är när kunden själv är skyldig leverantören, du betalar exakt kvittots belopp åt kunden och bokför det som utlägg. Då tar du inte ut moms (Skatteverket). Är leverantörens faktura ställd till dig är det i regel vidarefakturering."
+      },
+      {
+        "title": "Ett utlägg och en momsrad på samma faktura",
+        "text": "Invoicor har en momssats per faktura. Ett utlägg utan moms och vidarefakturerade kostnader med 25 % moms går därför inte att blanda på samma faktura. Lägg utlägget på en egen faktura, eller fråga din redovisningskonsult hur du helst vill att det ska se ut."
+      },
+      {
+        "title": "Inte en reseräkning",
+        "text": "Anställda som vill ha tillbaka utgifter använder arbetsgivarens reseräkning, inte en faktura. Den här sidan gäller ett företag som fakturerar en kund."
+      }
+    ],
+    "mistakes_title": "Tre misstag på fakturor för utlägg",
+    "mistakes": [
+      {
+        "title": "Kalla vidarefakturering för utlägg",
+        "text": "Att ta bort momsen på hotellet för att det ”bara är ett utlägg” är ett vanligt fel. Är hotellräkningen ställd till dig och du fakturerar den vidare, så är det vidarefakturering med moms. Felet brukar upptäckas när kundens ekonomi stämmer av momsen."
+      },
+      {
+        "title": "Ett påslag som avtalet inte tillåter",
+        "text": "Att lägga 15 % på resorna när avtalet säger självkostnad gör en rutinfaktura till en förtroendefråga, och det märks så fort kunden jämför med ett kvitto. Ta bara ut en hanteringsavgift som avtalet nämner."
+      },
+      {
+        "title": "Fakturera månader för sent",
+        "text": "Kostnader som faktureras långt efter projektet är svårare att få attesterade när budgeten redan är stängd. Skicka dem med arvodesfakturan eller inom månaden."
+      }
+    ],
+    "tip_title": "Ett tips för fakturor med utlägg",
+    "pro_tip": "Fotografera varje kvitto när du får det och döp filen efter raden det ska bli (”K3-taxi-15okt”). När du skriver fakturan stämmer raderna och kvittofilerna redan överens.",
+    "format_pdf_desc": "En pdf hamnar bredvid kvittokopiorna i kundens attestflöde och behåller varje belopp precis som du skrev det, så att kostnaderna går att stämma av mot kvittona.",
+    "faq_title": "Frågor om utlägg och vidarefakturering",
+    "faqs": [
+      {
+        "question": "Vad är skillnaden mellan utlägg och vidarefakturering?",
+        "answer": "Ett utlägg betalar du åt kunden: kunden är skyldig leverantören, du gör inget påslag och bokför det som utlägg, och ingen moms tas ut. Vidarefakturering är när du köper något själv och fakturerar det till kunden som en del av din försäljning; då tar du ut moms."
+      },
+      {
+        "question": "Vilken moms ska vidarefakturerade kostnader ha?",
+        "answer": "Normalt samma momssats som huvudtjänsten, även om inköpet hade en annan sats. Det finns undantag, så kontrollera med din redovisningskonsult innan den första fakturan."
+      },
+      {
+        "question": "Ska kostnaderna stå på samma faktura som arvodet?",
+        "answer": "Det går bra båda sätten när allt har samma moms. En faktura med ett kostnadsavsnitt är enklast för små uppdrag. En separat faktura är bättre när kostnaderna betalas från en annan budget eller kommer senare än arvodet."
+      },
+      {
+        "question": "Måste jag bifoga kvitton?",
+        "answer": "De flesta kunder vill ha kopior, och många avtal kräver det över ett visst belopp. Skicka numrerade kopior som stämmer med raderna och spara originalen i din bokföring, som ska sparas i sju år enligt bokföringslagen."
+      },
+      {
+        "question": "Hur fakturerar jag en kostnad i euro?",
+        "answer": "Räkna om den till kronor och skriv hur, till exempel ”omräknat till kursen på kortutdraget”. Kunden betalar då en summa i en valuta. Generatorn har 38 valutor, så du kan också fakturera i euro om avtalet säger det."
+      }
+    ],
+    "cta_title": "Skapa din faktura för utlägg",
+    "related": [
+      {
+        "name": "Frilansfaktura",
+        "slug": "faktura-frilans"
+      },
+      {
+        "name": "Arbete och material",
+        "slug": "faktura-arbete-och-material"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "handelsfaktura",
+    "translation_of": "commercial-invoice",
+    "niche": "Handelsfaktura",
+    "title": "Handelsfaktura för export (gratis mall) | Invoicor",
+    "meta_description": "Gratis mall för handelsfaktura vid export utanför EU: varukod, ursprung, vikt och Incoterms per rad. Se ett exempel till Norge och skapa din pdf.",
+    "h1": "Handelsfaktura för export: gratis mall",
+    "subtitle": "Fakturan som följer med varorna över tullgränsen: uppgifterna tull och fraktbolag läser, och vad som fortfarande kräver egna handlingar.",
+    "intro_paragraph": "En handelsfaktura är fakturan för en exportförsäljning, skriven så att tullen i mottagarlandet förstår sändningen. Den behövs när varor lämnar EU, till exempel till Norge, Storbritannien eller USA; inom EU räcker en vanlig faktura. Den anger säljare, köpare och mottagare, och för varje vara beskrivning, värde, ursprung, vikt och varukod. Tullen klassar varorna och tar ut tull utifrån den, och fraktbolaget vill ha den innan paketet går. Som pdf fungerar den mellan företag och till privatpersoner; svensk offentlig sektor tar bara emot e-fakturor via Peppol (lag 2018:1277, sedan 1 april 2019), och Invoicor gör inte e-fakturor. Invoicor skapar fakturans pdf med varukod och ursprung i radtexten, men inga tulldeklarationer, och rubriken på pdf:en är ”Faktura”: skriv ”Handelsfaktura” på första raden och i anmärkningarna.",
+    "include_title": "Det här ska stå på en handelsfaktura",
+    "what_to_include_intro": "Tull och fraktbolag letar efter samma grunduppgifter, och en som saknas är en vanlig orsak till att en sändning blir stående.",
+    "req_1_title": "Exportör, köpare och mottagare",
+    "req_1_text": "Ange ditt företag som exportör med momsregistreringsnummer och EORI-nummer, som Tullverket ger ut och som du normalt behöver för tullärenden. Sedan köparen som betalar, och mottagaren i anmärkningarna om varorna ska till en annan adress.",
+    "req_2_title": "En exakt beskrivning av varje vara",
+    "req_2_text": "”Presenter” eller ”varuprover” räcker inte. Skriv vad varan är, vad den är gjord av och vad den används till: ”Skärbräda i björk, 40 x 25 cm, för hushållsbruk”. Tullen klassar varan utifrån den texten.",
+    "req_3_title": "Varukod och ursprungsland per rad",
+    "req_3_text": "Varukoden (HS-numret) bestämmer tullsatsen: sex siffror som är gemensamma i hela världen, ofta med fler siffror nationellt. Ursprung är där varan är tillverkad, inte varifrån den skickas. Skriv båda i radens beskrivning.",
+    "req_4_title": "Antal, vikt och värde i en angiven valuta",
+    "req_4_text": "Ange antal, styckpris och radsumma i en valuta som står på fakturan, plus vikt per rad eller per sändning och antal kollin. Tullen kontrollerar att värdet är rimligt för varorna.",
+    "req_5_title": "Incoterms och orsak till exporten",
+    "req_5_text": "Skriv den Incoterms-regel ni har kommit överens om, till exempel DAP eller DDP med en namngiven ort. Den visar vem som betalar frakt, tull och importmoms. Lägg till orsaken: försäljning, varuprov, reparation eller retur.",
+    "req_6_title": "En undertecknad försäkran",
+    "req_6_text": "De flesta fraktbolag vill ha en kort försäkran om att uppgifterna är riktiga, med namn och datum. Skriv den i anmärkningarna och skriv under den utskrivna kopian, eller följ fraktbolagets instruktioner.",
+    "what_to_include_outro": "Med de här uppgifterna blir en vanlig faktura en som tullen kan arbeta med. Kontrollera också fraktbolagets lista: vissa vill ha fler uppgifter eller en egen blankett.",
+    "paper_label": "Handelsfaktura · exempel",
+    "sample_breakdown_title": "Exempel på handelsfaktura",
+    "sample_breakdown_intro": "En liten tillverkare i Dalarna skickar en order till en butik i Oslo enligt DAP Oslo, prissatt i kronor. Exempet utgår från att hela försäljningen, frakten inräknad, är en momsfri export, så momsen är 0 %; Invoicors pdf skriver ändå ut momsraden, och anmärkningen förklarar varför den är noll. Norsk tull och importmoms betalar köparen enligt DAP. Varukoderna är exempel: kontrollera dina egna.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Skärbräda i björk, 40 x 25 cm. HS 4419.90, ursprung Sverige, 1,2 kg/st",
+        "qty": "24",
+        "rate": "320,00 kr",
+        "amount": "7 680,00 kr"
+      },
+      {
+        "description": "Ullpläd, 130 x 170 cm. HS 6301.20, ursprung Sverige, 1,1 kg/st",
+        "qty": "10",
+        "rate": "890,00 kr",
+        "amount": "8 900,00 kr"
+      },
+      {
+        "description": "Mugg i stengods, 30 cl. HS 6912.00, ursprung Sverige, 0,4 kg/st",
+        "qty": "36",
+        "rate": "165,00 kr",
+        "amount": "5 940,00 kr"
+      },
+      {
+        "description": "Frakt till Oslo, 3 kartonger, 48 kg brutto",
+        "qty": "1",
+        "rate": "1 450,00 kr",
+        "amount": "1 450,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "23 970,00 kr",
+    "sample_breakdown_tax_label": "Moms 0 % (export)",
+    "sample_breakdown_tax": "0,00 kr",
+    "sample_breakdown_balance": "23 970,00 kr",
+    "sample_breakdown_notes": "Handelsfaktura. Export utanför EU, försäljningen är undantagen från moms. Incoterms 2020: DAP Oslo. Orsak till export: försäljning. Mottagare: Fjordhjem AS, Oslo. Jag försäkrar att uppgifterna på denna faktura är riktiga. A. Lind, 12 november 2026.",
+    "industry_notes_title": "Bra att veta om handelsfakturor",
+    "industry_notes": [
+      {
+        "title": "Momsfri export kräver en anmärkning",
+        "text": "En försäljning som är undantagen från moms ska ha en anmärkning om det på fakturan. Enligt Skatteverket räcker en hänvisning till 10 kap. mervärdesskattelagen, motsvarande artikel i mervärdesskattedirektivet eller ett vanligt konstaterande att försäljningen är undantagen. Spara också bevis på att varorna har lämnat EU; fråga din redovisningskonsult vilka som räcker."
+      },
+      {
+        "title": "Proformafaktura när inget säljs",
+        "text": "Skickar du varuprover, utställningsvaror eller en retur utan försäljning används ofta en proformafaktura med ett realistiskt värde; generatorn har rubriken ”Proforma Invoice” för det. När varorna är sålda är det handelsfakturan som gäller."
+      },
+      {
+        "title": "Fakturan är en handling av flera",
+        "text": "En sändning kan också behöva en exportdeklaration, ett ursprungsintyg eller en packlista. Invoicor gör fakturan; fraktbolaget, speditören eller ett tullombud vet vad mer som krävs, och Tullverket har vägledning för export."
+      }
+    ],
+    "mistakes_title": "Tre misstag på handelsfakturor",
+    "mistakes": [
+      {
+        "title": "Ett för lågt värde för att spara köparen tull",
+        "text": "Att ange ett lägre pris än det verkliga är en felaktig uppgift till tullen: varorna kan hållas kvar och importören få betala mer i efterhand. Ange vad köparen faktiskt betalar. För gåvor och varuprover anger du det och ett rimligt värde."
+      },
+      {
+        "title": "Blanda ihop ursprung och avsändarland",
+        "text": "En vara som tillverkats i Polen och skickas från ditt lager i Sverige har polskt ursprung. Ursprunget kan påverka tullsatsen och om ett frihandelsavtal ger lägre tull, så kontrollera det för varje vara."
+      },
+      {
+        "title": "Moms på en export eller 0 % utan förklaring",
+        "text": "Att lägga på 25 % moms på en export utanför EU gör varan dyrare i onödan, och köparen betalar importmoms i sitt land ändå. En momsrad på 0 % utan anmärkning väcker frågor. Skriv alltid varför momsen är noll."
+      }
+    ],
+    "tip_title": "Ett tips för handelsfakturor",
+    "pro_tip": "Spara varje produkt i Invoicor med varukod, ursprung och vikt i beskrivningen. Varje exportorder börjar då med tulluppgifterna på plats, och du ändrar bara antal, köpare och datum.",
+    "format_pdf_desc": "Fraktbolag och tullombud vill ha handelsfakturan som pdf för att bifoga den till sändningen. Den behåller koder och vikter på plats och går att skriva ut för kartongens utsida.",
+    "faq_title": "Frågor om handelsfaktura",
+    "faqs": [
+      {
+        "question": "När behöver jag en handelsfaktura?",
+        "answer": "När varor passerar en tullgräns, alltså när de lämnar EU, också för de flesta kurirpaket. Det gäller försäljning och oftast även varuprover, gåvor och returer, med orsaken angiven. Bara dokument brukar inte behöva en: kontrollera med fraktbolaget."
+      },
+      {
+        "question": "Vad är skillnaden mellan handelsfaktura och vanlig faktura?",
+        "answer": "Båda tar betalt för varor. Handelsfakturan har dessutom det tullen behöver: varukoder, ursprung, vikter, Incoterms, orsak till exporten och en försäkran. En försäljning inom Sverige eller EU behöver bara en vanlig faktura."
+      },
+      {
+        "question": "Ska jag ta ut moms på en export till Norge?",
+        "answer": "Export av varor till ett land utanför EU är normalt undantagen från svensk moms, och fakturan ska ha en anmärkning om det. Säljer du till en privatperson eller om varorna inte lämnar EU kan det bli annorlunda, så stäm av med din redovisningskonsult."
+      },
+      {
+        "question": "Var skriver jag varukoden?",
+        "answer": "På varje vara, efter beskrivningen i radtexten, tillsammans med ursprungslandet. Tullverkets tulltaxa hjälper dig hitta rätt kod; ansvaret för koden ligger hos exportören och importören, inte fraktbolaget."
+      },
+      {
+        "question": "Kan Invoicor göra tulldeklarationen också?",
+        "answer": "Nej. Invoicor gör fakturans pdf med de tulluppgifter du skriver per rad. Exportdeklaration, ursprungsintyg och fraktblanketter kommer från fraktbolaget, speditören, tullombudet eller Tullverket."
+      }
+    ],
+    "cta_title": "Skapa din handelsfaktura",
+    "related": [
+      {
+        "name": "Faktura utan moms",
+        "slug": "faktura-utan-moms"
+      },
+      {
+        "name": "Förskottsfaktura",
+        "slug": "forskottsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-utan-moms",
+    "translation_of": "no-vat-invoice",
+    "niche": "Faktura utan moms",
+    "title": "Faktura utan moms: gratis mall och exempel | Invoicor",
+    "meta_description": "Gratis mall för faktura utan moms när du har momsbefrielse (upp till 120 000 kr). Se exemplet med rätt anmärkning och skapa din pdf direkt.",
+    "h1": "Faktura utan moms: gratis mall",
+    "subtitle": "För enskilda firmor och små företag med momsbefrielse: vad fakturan ska innehålla, vilken mening som ska stå på den och vad som ändras när du passerar gränsen.",
+    "intro_paragraph": "En faktura utan moms är en vanlig faktura från en säljare som inte tar ut moms. Den vanligaste orsaken i Sverige är momsbefrielsen: säljer du för högst 120 000 kr om året exklusive moms, i år och vart och ett av de två föregående åren, är du befriad från moms (Skatteverket). Det gäller många nystartade enskilda firmor och sidoverksamheter. Fakturan behöver ändå nummer, datum, båda parternas uppgifter och en tydlig beskrivning, och den ska säga att försäljningen är undantagen från moms. En pdf-faktura fungerar mellan företag och till privatpersoner; offentlig sektor kräver e-faktura via Peppol (lag 2018:1277, sedan 1 april 2019), som Invoicor inte gör. Här är exemplet, och det du ska tänka på vid momsrader, export och omvänd moms.",
+    "include_title": "Det här ska stå på en faktura utan moms",
+    "what_to_include_intro": "Att ta bort momsen är lätt. Att göra fakturan komplett för en kund som väntar sig en momsrad kräver de här sex punkterna.",
+    "req_1_title": "De vanliga uppgifterna",
+    "req_1_text": "Fakturadatum, ett unikt löpnummer, ditt och kundens namn och adress, vad du sålt och när, och beloppet. Säljer du med momsbefrielse får du använda en förenklad faktura enligt Skatteverket, men en fullständig skadar aldrig, och kundens ekonomiavdelning slipper fråga.",
+    "req_2_title": "Anmärkningen ”undantagen från momsplikt”",
+    "req_2_text": "Fakturan ska visa att försäljningen är undantagen från moms. Det räcker att skriva ”Försäljningen är undantagen från momsplikt”; du behöver inte hänvisa till någon lag. Lägg meningen i anmärkningarna, direkt under raderna.",
+    "req_3_title": "Momssats 0 och ingen momsberäkning",
+    "req_3_text": "Ställ momssatsen på 0. Invoicors pdf skriver alltid ut momsraden, även då, med 0 % och 0,00 kr. Det är anmärkningen som förklarar för kunden varför. Lägg aldrig på 25 % för att verka etablerad: moms som du tar ut måste betalas in.",
+    "req_4_title": "Priser som är slutpriser",
+    "req_4_text": "Ditt pris är det kunden betalar. Skriv inte ”exkl. moms” eller dela upp i netto och brutto när ingen moms tas ut. Har du lämnat ett pris tidigare ska fakturans summa stämma med det.",
+    "req_5_title": "Organisationsnummer, och momsnummer bara om du har ett",
+    "req_5_text": "Organisationsnumret skrivs ut i fältet ”Organisationsnummer”; för en enskild firma är det ditt personnummer. Har du inget momsregistreringsnummer lämnar du det fältet tomt. ”Godkänd för F-skatt” i anmärkningarna är ett råd, inget lagkrav, men många företagskunder vill se det.",
+    "req_6_title": "Betalningsuppgifter som är lätta att använda",
+    "req_6_text": "Skriv bankgiro eller kontonummer, en förfallodag och be kunden ange fakturanumret som referens. Då hittar du betalningen direkt när den kommer.",
+    "what_to_include_outro": "Kunden ser direkt att ingen moms ska betalas och varför, och din bokföring visar att du inte tagit ut skatt som du inte fick ta ut.",
+    "paper_label": "Faktura utan moms · exempel",
+    "sample_breakdown_title": "Exempel på faktura utan moms",
+    "sample_breakdown_intro": "En illustratör med enskild firma och momsbefrielse fakturerar en reklambyrå i Malmö för bilder till en broschyr. Momsen står på 0 %, raden syns ändå på pdf:en, och anmärkningen förklarar varför. Reglerna kan ändras: kontrollera din egen situation på skatteverket.se.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Illustrationer till broschyr, 4 helsidor",
+        "qty": "4",
+        "rate": "1 500,00 kr",
+        "amount": "6 000,00 kr"
+      },
+      {
+        "description": "Omslagsbild",
+        "qty": "1",
+        "rate": "2 200,00 kr",
+        "amount": "2 200,00 kr"
+      },
+      {
+        "description": "Justeringar efter byråns synpunkter 20 nov",
+        "qty": "3 tim",
+        "rate": "450,00 kr",
+        "amount": "1 350,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "9 550,00 kr",
+    "sample_breakdown_tax_label": "Moms 0 % (momsbefrielse)",
+    "sample_breakdown_tax": "0,00 kr",
+    "sample_breakdown_balance": "9 550,00 kr",
+    "sample_breakdown_notes": "Försäljningen är undantagen från momsplikt. Arbetet utfört 3–21 november 2026. Godkänd för F-skatt. Betalning inom 30 dagar till bankgiro 123-4567; ange fakturanumret som referens.",
+    "industry_notes_title": "Bra att veta om fakturor utan moms",
+    "industry_notes": [
+      {
+        "title": "Så får du momsbefrielse",
+        "text": "Nya företag som håller sig under 120 000 kr om året får momsbefrielsen automatiskt. Är du redan momsregistrerad ansöker du på verksamt.se eller med blanketten SKV 4639 (Skatteverket)."
+      },
+      {
+        "title": "Din kund kan inte dra av moms som inte finns",
+        "text": "En momsregistrerad kund drar bara av moms som står på fakturan. På din finns ingen, så det finns inget att dra av och inget att lägga till. För en privatperson, som ändå inte drar av moms, blir ditt pris helt enkelt lägre."
+      },
+      {
+        "title": "Andra skäl till noll moms",
+        "text": "Vissa tjänster är undantagna från moms oavsett omsättning, och export samt omvänd byggmoms ger också fakturor utan moms. De har egna anmärkningar och egna sidor. Är du osäker på vilket fall som gäller dig, fråga din redovisningskonsult."
+      }
+    ],
+    "mistakes_title": "Tre misstag på fakturor utan moms",
+    "mistakes": [
+      {
+        "title": "Ta ut moms utan att vara registrerad",
+        "text": "Att lägga på 25 % för att se större ut är inte tillåtet när du inte är momsregistrerad, och du kan bli skyldig att betala in det du tagit ut. Har det redan hänt, fråga Skatteverket eller en redovisningskonsult hur du rättar det, till exempel med en kreditfaktura."
+      },
+      {
+        "title": "En momsrad på 0 % utan anmärkning",
+        "text": "Invoicors pdf visar alltid momsraden, så en faktura utan moms visar 0 %. Ensam kan den läsas som en export eller ett räknefel. Meningen ”Försäljningen är undantagen från momsplikt” gör din status tydlig."
+      },
+      {
+        "title": "Missa när du passerar 120 000 kr",
+        "text": "Gränsen gäller både i år och de två föregående åren. Den som fortsätter fakturera utan moms efter att ha passerat den kan få betala momsen ur egen ficka. Håll en löpande summa för året och kontakta Skatteverket i tid."
+      }
+    ],
+    "tip_title": "Ett tips för fakturor utan moms",
+    "pro_tip": "Gör en färdig faktura med anmärkningen om momsbefrielse, ditt bankgiro och dina villkor, och använd ”Duplicate Invoice” i appen för varje ny kund. Inget att skriva om, och ingen momssats som råkar följa med från en annan faktura.",
+    "format_pdf_desc": "En pdf visar den exakta summan med anmärkningen på plats, går inte att ändra i efterhand och är lätt att spara i bokföringen.",
+    "faq_title": "Frågor om faktura utan moms",
+    "faqs": [
+      {
+        "question": "Får jag skicka faktura om jag inte är momsregistrerad?",
+        "answer": "Ja. Alla företag ska fakturera sina kunder. Utan moms betyder bara att fakturan saknar momsbelopp; den behöver fortfarande nummer, datum, båda parternas uppgifter, en beskrivning och summan."
+      },
+      {
+        "question": "Vad ska jag skriva på fakturan när jag har momsbefrielse?",
+        "answer": "Att försäljningen är undantagen från momsplikt. Den formuleringen räcker enligt Skatteverket, och du behöver inte hänvisa till någon paragraf."
+      },
+      {
+        "question": "Hur stor får omsättningen vara?",
+        "answer": "Högst 120 000 kr om året exklusive moms, både i år och vart och ett av de två föregående åren. Beloppet kan ändras, så kontrollera den aktuella gränsen på skatteverket.se."
+      },
+      {
+        "question": "Måste jag ha momsregistreringsnummer på fakturan?",
+        "answer": "Bara om du har ett. Med momsbefrielse tar du inte ut moms, och har du inget nummer lämnar du fältet tomt. Organisationsnumret är något annat och kan alltid stå med."
+      },
+      {
+        "question": "Vad händer om jag passerar 120 000 kr?",
+        "answer": "Då gäller inte momsbefrielsen längre och du ska börja ta ut moms. Från vilken försäljning det gäller och hur du registrerar dig får du besked om hos Skatteverket eller din redovisningskonsult."
+      },
+      {
+        "question": "Är faktura utan moms samma sak som en förenklad faktura?",
+        "answer": "Nej, men de hänger ihop. En förenklad faktura har färre uppgifter och får användas bland annat när summan är högst 4 000 kr inklusive moms eller när säljaren har momsbefrielse. Den ska ändå visa att försäljningen är undantagen från moms."
+      }
+    ],
+    "cta_title": "Skapa din faktura utan moms",
+    "related": [
+      {
+        "name": "Frilansfaktura",
+        "slug": "faktura-frilans"
+      },
+      {
+        "name": "Handelsfaktura",
+        "slug": "handelsfaktura"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "faktura-frilans",
+    "translation_of": "freelance-invoice",
+    "niche": "Frilansfaktura",
+    "title": "Faktura frilans: gratis mall med F-skatt | Invoicor",
+    "meta_description": "Gratis mall för faktura som frilans med enskild firma eller aktiebolag: F-skatt, moms och det kundens ekonomi behöver. Se exemplet, skapa en pdf.",
+    "h1": "Faktura frilans: gratis mall för frilansare",
+    "subtitle": "För frilansare med egen firma i alla branscher: vad kundens ekonomiavdelning kontrollerar innan den betalar, och skillnaden mot att fakturera via ett egenanställningsföretag.",
+    "intro_paragraph": "En frilansfaktura läses ofta av två personer. Den som anlitade dig känner till jobbet. Den som betalar, ofta någon på ekonomiavdelningen, vet bara det som står på fakturan. Saknas ditt företagsnamn, kundens referens eller F-skatten hamnar fakturan i en kö. Den här mallen är byggd för den andra läsaren. Den gäller dig som frilansar med egen enskild firma eller aktiebolag; har du inget eget företag kan du fakturera via ett egenanställningsföretag, som då skickar fakturan åt dig. En pdf-faktura går bra till svenska företag och privatpersoner, men fakturor till offentlig sektor ska vara e-fakturor via Peppol (lag 2018:1277, sedan 1 april 2019), och Invoicor skapar bara pdf.",
+    "include_title": "Det här ska stå på en frilansfaktura",
+    "what_to_include_intro": "Kunder med en ekonomiavdelning går igenom fakturor mot en checklista. Träffa den första gången så får du betalt på de villkor ni kommit överens om.",
+    "req_1_title": "Ditt företagsnamn och organisationsnummer",
+    "req_1_text": "Ekonomiavdelningen betalar den leverantör som finns i deras system. Driver du enskild firma under ett annat namn än ditt eget, skriv båda. Organisationsnumret, för enskild firma ditt personnummer, skrivs ut i fältet ”Organisationsnummer”.",
+    "req_2_title": "Momsregistreringsnummer och moms",
+    "req_2_text": "Är du momsregistrerad ska ditt momsregistreringsnummer, momssatsen och momsbeloppet stå på fakturan (Skatteverket). De flesta frilanstjänster har 25 %. Har du momsbefrielse, upp till 120 000 kr om året, tar du inte ut moms och skriver att försäljningen är undantagen från momsplikt.",
+    "req_3_title": "”Godkänd för F-skatt”",
+    "req_3_text": "Det är inget lagkrav att skriva det på varje faktura, men det är ett bra råd: kunden ser direkt att hen inte ska dra skatt och betala arbetsgivaravgifter på ersättningen. Har du FA-skatt krävs däremot en skriftlig hänvisning, annars ska kunden behandla dig som om du hade A-skatt.",
+    "req_4_title": "Kundens referens eller ordernummer",
+    "req_4_text": "Större företag matchar varje faktura mot en referens, ett inköpsordernummer eller ett kostnadsställe. Fråga efter det när ni kommer överens om jobbet och skriv av det exakt.",
+    "req_5_title": "Rader som följer hur du prissatte jobbet",
+    "req_5_text": "Ett fast projektpris är en rad med omfattningen i texten. Timmar utöver det får egna rader med antal och timpris. Då kan kunden godkänna det fasta priset direkt och bara fråga om det extra.",
+    "req_6_title": "Nyttjanderätt för kreativt arbete",
+    "req_6_text": "Säljer du text, bild, musik eller kod, skriv vad kunden får och när: ”Fullständig nyttjanderätt övergår vid full betalning” eller ”Licens för webbruk i 12 månader”. Ett skriftligt villkor är bättre än en vag förväntan.",
+    "what_to_include_outro": "Med de här uppgifterna kan någon som aldrig har träffat dig attestera fakturan. Vad som i övrigt måste stå på en faktura enligt momslagen går vi igenom på en egen sida.",
+    "paper_label": "Frilansfaktura · exempel",
+    "sample_breakdown_title": "Exempel på frilansfaktura",
+    "sample_breakdown_intro": "En frilansande copywriter med enskild firma, F-skatt och momsregistrering fakturerar ett fast projektpris plus tre timmar extra arbete som kunden bad om efter godkännandet. Exemplet har 25 % moms. Din situation kan skilja sig, till exempel med momsbefrielse.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Projektpris: webbtexter till lanseringen, enligt offert 6 okt",
+        "qty": "1",
+        "rate": "18 000,00 kr",
+        "amount": "18 000,00 kr"
+      },
+      {
+        "description": "Extra revisionsrunda 28 okt (utöver de två som ingår)",
+        "qty": "3 tim",
+        "rate": "850,00 kr",
+        "amount": "2 550,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "20 550,00 kr",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "5 137,50 kr",
+    "sample_breakdown_balance": "25 687,50 kr",
+    "sample_breakdown_notes": "Godkänd för F-skatt. Er referens: Sara Ek, order 4500-1187. Betalning inom 30 dagar till bankgiro 123-4567; ange fakturanummer FR-2026-031. Arbetet levererat 3 november 2026. Fullständig nyttjanderätt till texterna övergår vid full betalning.",
+    "industry_notes_title": "Bra att veta om frilansfakturor",
+    "industry_notes": [
+      {
+        "title": "Egen firma eller egenanställning",
+        "text": "Med enskild firma eller aktiebolag och F-skatt fakturerar du själv, betalar din egen skatt och dina egenavgifter eller arbetsgivaravgifter. Med egenanställning skickar egenanställningsföretaget fakturan, och du får lön. Invoicor är till för dig som har eget företag."
+      },
+      {
+        "title": "30 dagar mellan företag",
+        "text": "Räntelagen säger att en betalning mellan företag ska ske senast 30 dagar efter att du krävt betalning, i praktiken fakturan. En längre betalningstid gäller bara om du som borgenär uttryckligen har gått med på den (2 a §). Läs därför kundens leverantörsavtal innan du skriver under 60 dagar."
+      },
+      {
+        "title": "En obruten nummerserie",
+        "text": "Fakturanumret ska vara unikt och löpande. Använd en serie för alla kunder, som FR-2026-001 och FR-2026-002, inte en ny ”001” per kund. Spara fakturorna i sju år enligt bokföringslagen."
+      }
+    ],
+    "mistakes_title": "Tre misstag frilansare gör på fakturor",
+    "mistakes": [
+      {
+        "title": "Glömma F-skatten",
+        "text": "Utan ”Godkänd för F-skatt” på fakturan börjar en del kunder fråga, eller vill kontrollera din status innan de betalar. Har du FA-skatt och ingen skriftlig hänvisning kan kunden behöva dra skatt. En mening i anmärkningarna löser det."
+      },
+      {
+        "title": "Baka in extra arbete i projektpriset",
+        "text": "Att höja det fasta priset för att täcka extra timmar döljer ändringen, och kunden stannar upp när siffran inte stämmer med offerten. Behåll det avtalade priset och lägg extratiden på en egen daterad rad."
+      },
+      {
+        "title": "Skicka fakturan till fel person",
+        "text": "Din kontaktperson godkänner jobbet men betalar det kanske inte. Fråga vart fakturor ska skickas, ofta en gemensam adress hos ekonomi, och sätt kontaktpersonen som referens."
+      }
+    ],
+    "tip_title": "Ett tips för frilansfakturor",
+    "pro_tip": "Fråga varje ny kund: ”Vad behöver stå på fakturan för att den ska betalas direkt?” Svaret kan vara en referens, ett ordernummer eller ett kostnadsställe. Skriv det i kundens anteckningar i Invoicor-appen och i fakturans anmärkningar; med ”Duplicate Invoice” följer det med till nästa faktura.",
+    "format_pdf_desc": "Ekonomiavdelningar arkiverar och vidarebefordrar fakturor som pdf. En pdf behåller din layout, ändras inte av misstag på vägen och öppnas överallt.",
+    "faq_title": "Frågor om faktura som frilans",
+    "faqs": [
+      {
+        "question": "Kan jag fakturera som frilans utan eget företag?",
+        "answer": "Inte i eget namn med F-skatt. Utan företag kan du fakturera via ett egenanställningsföretag, som skickar fakturan till kunden och betalar ut lön till dig. Vill du fakturera själv startar du en enskild firma eller ett aktiebolag och ansöker om F-skatt."
+      },
+      {
+        "question": "Måste det stå ”Godkänd för F-skatt” på fakturan?",
+        "answer": "Det är inget lagkrav för den som har F-skatt, men det rekommenderas och många kunder förväntar sig det. Har du FA-skatt krävs en skriftlig hänvisning för att kunden ska kunna behandla dig som F-skattare."
+      },
+      {
+        "question": "Ska jag ta ut moms som frilansare?",
+        "answer": "Ja om du är momsregistrerad, oftast 25 %. Har du momsbefrielse, med en omsättning på högst 120 000 kr om året, tar du inte ut moms och skriver att försäljningen är undantagen från momsplikt."
+      },
+      {
+        "question": "Hur fakturerar jag en kund i ett annat EU-land?",
+        "answer": "Tjänster till ett företag i ett annat EU-land faktureras normalt utan svensk moms, med köparens momsregistreringsnummer och anmärkningen ”Omvänd betalningsskyldighet”. Sådana fakturor ska skickas senast den 15:e i månaden efter. Stäm av ditt fall med din redovisningskonsult."
+      },
+      {
+        "question": "Vilken betalningstid får jag sätta?",
+        "answer": "Den ni har avtalat. Mellan företag gäller 30 dagar om inget annat avtalats, och en längre tid gäller bara om du uttryckligen har gått med på den. Betalar kunden för sent har du rätt till dröjsmålsränta, referensräntan plus 8 procentenheter, och 450 kr i förseningsersättning."
+      }
+    ],
+    "cta_title": "Skapa din frilansfaktura",
+    "related": [
+      {
+        "name": "Återkommande faktura",
+        "slug": "aterkommande-faktura"
+      },
+      {
+        "name": "Utlägg och vidarefakturering",
+        "slug": "vidarefakturering-utlagg"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "omvand-byggmoms-faktura",
+    "translation_of": "subcontractor-invoice",
+    "niche": "Faktura med omvänd byggmoms",
+    "title": "Omvänd byggmoms på faktura: gratis mall | Invoicor",
+    "meta_description": "Gratis mall för omvänd byggmoms faktura till huvudentreprenören: ingen moms, köparens momsnummer och rätt anmärkning. Se exemplet, skapa en pdf.",
+    "h1": "Omvänd byggmoms faktura: gratis mall för underentreprenörer",
+    "subtitle": "För underentreprenörer som fakturerar ett annat byggföretag: när köparen betalar momsen, vad som ska stå på fakturan och hur du visar delfakturor och ÄTA-arbeten.",
+    "intro_paragraph": "Säljer du byggtjänster till ett annat byggföretag, som underentreprenör till en huvudentreprenör, är det köparen som redovisar och betalar momsen. Det kallas omvänd byggmoms (Skatteverket). Din faktura har då ingen moms men ska visa köparens momsregistreringsnummer och anmärkningen ”Omvänd betalningsskyldighet”. Huvudentreprenören stämmer av den mot underentreprenadavtalet, så projekt, kontraktsnummer, upparbetat belopp och ÄTA-arbeten behöver också stå tydligt. En pdf-faktura räcker mellan byggföretag; bygger du åt offentlig sektor och fakturerar myndigheten direkt krävs e-faktura via Peppol (lag 2018:1277, sedan 1 april 2019), och Invoicor gör pdf, inte e-fakturor. Fakturerar du en privatperson gäller vanlig moms, och ROT-avdraget har en egen sida.",
+    "include_title": "Det här ska stå på en faktura med omvänd byggmoms",
+    "what_to_include_intro": "Huvudentreprenören kontrollerar två saker: att momsen är rätt hanterad och att beloppet stämmer med kontraktet. De här sex punkterna täcker båda.",
+    "req_1_title": "Köparens momsregistreringsnummer",
+    "req_1_text": "Vid omvänd byggmoms ska fakturan visa både ditt och köparens momsregistreringsnummer. Be om köparens nummer när avtalet skrivs och skriv av det exakt, till exempel SE556677889901.",
+    "req_2_title": "Anmärkningen ”Omvänd betalningsskyldighet”",
+    "req_2_text": "Skriv ”Omvänd betalningsskyldighet” i anmärkningarna. Skatteverket godtar också ”Reverse charge”. Utan anmärkningen kan köparen inte se varför momsen saknas och kan skicka tillbaka fakturan.",
+    "req_3_title": "Ingen moms, och momsraden på 0 %",
+    "req_3_text": "Du tar inte ut någon moms. Ställ momssatsen på 0; Invoicors pdf skriver ändå ut momsraden med 0 % och 0,00 kr, och anmärkningen förklarar varför. Lägg aldrig på 25 % ”för säkerhets skull”: då blir momsen fel hos båda.",
+    "req_4_title": "Projekt, arbetsplats och kontraktsnummer",
+    "req_4_text": "Ange projektets namn och adress, underentreprenadavtalets nummer och huvudentreprenörens projektnummer. Arbetsperioden skriver du i radtexten eller anmärkningarna, eftersom Invoicor inte har ett eget fält för leveransdatum.",
+    "req_5_title": "Upparbetat och tidigare fakturerat",
+    "req_5_text": "Vid fast pris fakturerar du efter hur långt arbetet har kommit: kontraktssumman, andel utförd hittills och belopp hittills. Dra av tidigare delfakturor på en egen rad med fakturanumret. Då begär fakturan bara periodens arbete.",
+    "req_6_title": "ÄTA-arbeten med nummer",
+    "req_6_text": "Ändrings- och tilläggsarbeten får en egen rad med ÄTA-nummer och datum för godkännandet: ”ÄTA 3, sex extra grupper, godkänd 9 okt”. Baka aldrig in dem i kontraktsraden och fakturera inte ÄTA som inte är godkända.",
+    "what_to_include_outro": "En faktura som svarar på huvudentreprenörens frågor i förväg kan godkännas och läggas in i nästa betalning utan att någon behöver ringa dig.",
+    "paper_label": "Faktura med omvänd byggmoms · exempel",
+    "sample_breakdown_title": "Exempel på faktura med omvänd byggmoms",
+    "sample_breakdown_intro": "Den andra delfakturan på ett elentreprenadkontrakt på 180 000 kr i en bostadsrättsförening i Uppsala, nu 40 % utfört efter en första faktura på 20 %, plus ett godkänt ÄTA-arbete. Köparen är ett byggföretag, så omvänd byggmoms gäller och momsen är 0 %. Om just ditt arbete räknas som byggtjänst: kontrollera med Skatteverket eller din redovisningskonsult.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Elinstallation, avtal UE-2214: 40 % av 180 000 kr utfört t.o.m. 31 okt",
+        "qty": "1",
+        "rate": "72 000,00 kr",
+        "amount": "72 000,00 kr"
+      },
+      {
+        "description": "Avgår tidigare fakturerat, faktura 2026-041 (20 %)",
+        "qty": "1",
+        "rate": "-36 000,00 kr",
+        "amount": "-36 000,00 kr"
+      },
+      {
+        "description": "ÄTA 3: sex extra grupper, godkänd 9 okt (100 % utfört)",
+        "qty": "1",
+        "rate": "13 500,00 kr",
+        "amount": "13 500,00 kr"
+      }
+    ],
+    "sample_breakdown_subtotal": "49 500,00 kr",
+    "sample_breakdown_tax_label": "Moms 0 % (omvänd betalningsskyldighet)",
+    "sample_breakdown_tax": "0,00 kr",
+    "sample_breakdown_balance": "49 500,00 kr",
+    "sample_breakdown_notes": "Omvänd betalningsskyldighet. Köparens momsregistreringsnummer: SE556677889901. Arbetsplats: Brf Ekbacken, Ekbacksvägen 4, Uppsala. Huvudentreprenörens projektnr 7781. Arbetet utfört 1–31 oktober 2026. Godkänd för F-skatt. Betalning 30 dagar enligt avtal.",
+    "industry_notes_title": "Bra att veta om omvänd byggmoms",
+    "industry_notes": [
+      {
+        "title": "Vem som omfattas",
+        "text": "Omvänd byggmoms gäller när du säljer byggtjänster till ett företag som självt säljer byggtjänster, typiskt underentreprenör till huvudentreprenör. Gränsen för vad som är byggtjänst är inte alltid självklar, till exempel vid ren materialförsäljning eller städning. Skatteverkets vägledning om byggverksamhet eller din redovisningskonsult avgör i tveksamma fall."
+      },
+      {
+        "title": "Fakturera senast andra månaden efter",
+        "text": "Fakturor för byggtjänster ska enligt Skatteverket utfärdas senast vid utgången av andra månaden efter den månad då arbetet utfördes. Arbete i oktober ska alltså vara fakturerat före utgången av december. Att fakturera varje månad håller dig långt innanför gränsen."
+      },
+      {
+        "title": "Kontraktets regler för betalning",
+        "text": "Många byggkontrakt har egna regler för delbetalning, slutbesiktning och om beställaren får hålla inne en del av betalningen. Fakturan kan inte ändra kontraktet, men den kan se till att förseningen inte beror på dina papper. Läs ditt avtal eller fråga din branschorganisation."
+      }
+    ],
+    "mistakes_title": "Tre misstag på fakturor med omvänd byggmoms",
+    "mistakes": [
+      {
+        "title": "Moms till ett byggföretag",
+        "text": "Att ta ut 25 % moms av en köpare som ska redovisa den själv är det vanligaste felet. Huvudentreprenören skickar tillbaka fakturan, och du får göra en kreditfaktura och en ny. Kontrollera alltid om köparen säljer byggtjänster."
+      },
+      {
+        "title": "Köparens momsnummer saknas",
+        "text": "Utan köparens momsregistreringsnummer är fakturan inte komplett för omvänd byggmoms. Skriv in det i kundkortet i appen en gång, så kommer det med på varje faktura till samma kund."
+      },
+      {
+        "title": "Andel utfört som springer före bygget",
+        "text": "Att fakturera 60 % när platschefen ser 40 % ger en nedskuren rad eller en returnerad faktura, och det försvagar din position om det blir tvist. Fakturera det som faktiskt är utfört."
+      }
+    ],
+    "tip_title": "Ett tips för fakturor med omvänd byggmoms",
+    "pro_tip": "Håll en enkel sammanställning per kontrakt: kontraktssumma, ÄTA, varje fakturas andel och belopp. I Invoicor-appen kan radpriser inte vara negativa, så använd ”Duplicate Invoice” på förra fakturan, fakturera periodens belopp som rad och skriv andel och tidigare fakturor i anmärkningarna. Den gratis generatorn tar negativa rader, som i exemplet.",
+    "format_pdf_desc": "Huvudentreprenören lägger din faktura i projektets pärm och stämmer av den mot kontraktet. En pdf behåller siffrorna, går att skriva ut och kan inte ändras när den väl är attesterad.",
+    "faq_title": "Frågor om omvänd byggmoms",
+    "faqs": [
+      {
+        "question": "Vad ska stå på en faktura med omvänd byggmoms?",
+        "answer": "Det som ska stå på en vanlig faktura, utan momsbelopp, plus ditt och köparens momsregistreringsnummer och anmärkningen ”Omvänd betalningsskyldighet”. Köparen redovisar sedan momsen i sin momsdeklaration."
+      },
+      {
+        "question": "Gäller omvänd byggmoms om jag jobbar åt en privatperson?",
+        "answer": "Nej. Den gäller mellan byggföretag. En privatperson faktureras med 25 % moms, och om kunden vill göra ROT-avdrag finns särskilda krav som en egen sida går igenom."
+      },
+      {
+        "question": "Får jag skriva ”Reverse charge” i stället?",
+        "answer": "Ja, Skatteverket godtar både ”Omvänd betalningsskyldighet” och ”Reverse charge”. Den svenska formuleringen är vanligast mellan svenska byggföretag."
+      },
+      {
+        "question": "När måste fakturan skickas?",
+        "answer": "Senast vid utgången av andra månaden efter den månad då arbetet utfördes, enligt Skatteverket. Kontraktet kan kräva att du fakturerar oftare, till exempel varje månad."
+      },
+      {
+        "question": "Hur visar jag delfakturering och ÄTA?",
+        "answer": "Fakturera upparbetat belopp hittills, dra av tidigare fakturor på en egen rad och lägg varje godkänt ÄTA-arbete på en egen rad med nummer och datum. I appen, där raderna inte kan vara negativa, fakturerar du periodens belopp och skriver resten i anmärkningarna."
+      },
+      {
+        "question": "Är mitt arbete en byggtjänst?",
+        "answer": "Många arbeten med att bygga, reparera, riva eller installera i byggnader räknas som byggtjänster, men det finns gränsfall. Skatteverkets vägledning om byggverksamhet listar vad som omfattas; är du osäker, fråga din redovisningskonsult innan du fakturerar utan moms."
+      }
+    ],
+    "cta_title": "Skapa din faktura med omvänd byggmoms",
+    "related": [
+      {
+        "name": "Arbete och material",
+        "slug": "faktura-arbete-och-material"
+      },
+      {
+        "name": "Delfaktura",
+        "slug": "delfaktura"
+      }
+    ],
+    "invoice_types": []
+  }
+]
