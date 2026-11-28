@@ -25,6 +25,13 @@ describe("firstNumber (template samples → generator lines)", () => {
     expect(firstNumber("3 Std.")).toBe(3);
   });
 
+  it("reads Dutch amounts with the minus before or after the euro sign", () => {
+    expect(firstNumber("€ 1.234,56")).toBe(1234.56);
+    expect(firstNumber("-€ 1.200,00")).toBe(-1200);
+    expect(firstNumber("€ -45,50")).toBe(-45.5);
+    expect(firstNumber("3 uur")).toBe(3);
+  });
+
   it("doesn't take a hyphen in words for a minus", () => {
     expect(firstNumber("Net-30 terms, 2 visits")).toBe(30);
     expect(firstNumber("Day-rate 450")).toBe(450);

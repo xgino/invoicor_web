@@ -12,6 +12,7 @@ P1-pt,/pt,pt,live,2026-11-18,home,yes,app de faturas para iphone,,,,,key from th
 P1-pl,/pl,pl,live,2026-11-18,home,yes,darmowa aplikacja do faktur na iphone'a,,,,,key from the URL or title (npm run pages); check it,,,/,,
 P2,/templates,en,live,2026-11-18,hub,yes,invoice templates,free invoice template; invoice template by industry,browse,21,10.0 (GSC 28d to 2026-11-18),,,,,,
 P2-de,/de/vorlagen,de,live,2026-11-27,hub,yes,rechnungsvorlagen,kostenlose rechnungsvorlagen,,,,German templates hub (task S1),,,/templates,,
+P2-nl,/nl/templates,nl,live,2026-11-27,hub,yes,factuur templates,factuur voorbeeld,,,,Dutch templates hub (task S1),,,/templates,,
 P3,/industries,en,live,2026-11-18,hub,yes,invoicing software by industry,invoice app for small business,browse,22,,,,,,,
 P4,/compare,en,live,2026-11-18,hub,en-only,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,,,,,,
 P5,/help,en,live,2026-11-18,support,yes,invoicor help,invoicor faq,support,24,,,,,,,

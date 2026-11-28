@@ -1,1 +1,1236 @@
-[]
+[
+  {
+    "slug": "aanbetalingsfactuur",
+    "translation_of": "deposit-invoice",
+    "niche": "Aanbetalingsfactuur",
+    "title": "Aanbetalingsfactuur: voorbeeld en btw-regels | Invoicor",
+    "meta_description": "Aanbetalingsfactuur maken: de totaalprijs, het deel dat je vraagt en btw over de aanbetaling. Met voorbeeld voor Nederland, gratis als pdf.",
+    "h1": "Aanbetalingsfactuur maken, met voorbeeld",
+    "subtitle": "Vraag een deel van de prijs voordat je begint, op een eigen factuur met de totaalprijs, het percentage en de btw.",
+    "intro_paragraph": "Met een aanbetalingsfactuur vraag je een deel van de prijs voordat het werk begint. Het is een gewone factuur met een eigen nummer en btw, geen zinnetje in je offerte. In Vlaanderen heet hij meestal voorschotfactuur. Een pdf is in Nederland voorlopig prima: e-facturen tussen bedrijven zijn nog niet verplicht (het kabinet koos 1 juli 2030, maar dat is nog geen wet), alleen de Rijksoverheid wil er al een. Factureer je vanuit België aan een Belgisch bedrijf, dan moet het sinds 1 januari 2026 als e-factuur via Peppol en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen. Hieronder: wat erop moet, een voorbeeld voor 30% van € 6.400,00 en wanneer je de btw afdraagt.",
+    "include_title": "Wat er op een aanbetalingsfactuur moet staan",
+    "what_to_include_intro": "Je klant betaalt voor werk dat nog niet gedaan is, dus de factuur moet zelf vertellen waar het geld voor is. Naast de gewone factuureisen van de Belastingdienst (waaronder je btw-id en je KvK-nummer) gaat het om deze zes punten.",
+    "req_1_title": "Het woord aanbetaling in de eerste regel",
+    "req_1_text": "De pdf heeft als kop ‘Factuur’, en dat klopt: ook dit is een factuur. Begin de eerste regel met ‘Aanbetaling’, zoals ‘Aanbetaling 30% maatwerkkast’. De boekhouder van je klant boekt hem dan apart, en jij vindt hem snel terug voor de eindfactuur.",
+    "req_2_title": "De totaalprijs en het deel dat je vraagt",
+    "req_2_text": "Zet de afgesproken prijs en de aanbetaling allebei erop: ‘30% van € 6.400,00 excl. btw’ laat meteen zien wat er nog komt.",
+    "req_3_title": "Btw over de aanbetaling",
+    "req_3_text": "Ook een aanbetalingsfactuur rekent btw: 21% over € 1.920,00 is € 403,20. Werk je met de kleineondernemersregeling (KOR), dan reken je geen btw en zeg je dat op de factuur. De pdf print altijd een btw-regel, ook met € 0,00, dus noem de KOR in de opmerkingen.",
+    "req_4_title": "De datum van de vooruitbetaling",
+    "req_4_text": "De Belastingdienst vraagt de datum van levering of van de vooruitbetaling. Invoicor heeft daar geen veld voor: zet het in de regel of de opmerkingen, zoals ‘te voldoen vóór 12 december 2026’. Welke datum je noemt als het geld nog moet komen, check je bij je boekhouder.",
+    "req_5_title": "Waar hij voor is, en of je hem terugbetaalt",
+    "req_5_text": "Noem de klus en de offerte met nummer en datum, en wat de aanbetaling vastlegt: een startdatum of materiaal dat je speciaal inkoopt. Zeg ook of en tot wanneer je hem terugbetaalt bij annulering. Bij particulieren kan het consumentenrecht grenzen stellen; check het bij een jurist.",
+    "req_6_title": "Een eigen nummer en een vervaldatum",
+    "req_6_text": "Nummer hem gewoon in je doorlopende reeks; je eindfactuur verwijst later naar dit nummer. Geef hem een eigen vervaldatum en zeg wat er gebeurt als hij te laat is, bijvoorbeeld dat de planning vervalt.",
+    "what_to_include_outro": "Vaak is een aanbetalingsfactuur maar één regel. Met deze punten kunnen jij en je klant er later op bouwen.",
+    "paper_label": "Aanbetalingsfactuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een aanbetalingsfactuur",
+    "sample_breakdown_intro": "Een interieurbouwer maakt een eiken boekenkast met bureau op maat voor € 6.400,00 excl. btw. Volgens de offerte betaalt de klant 30% vooruit, voordat het hout wordt besteld, met 21% btw. Omdat die vooruitbetaling verplicht is, hoort de btw volgens de Belastingdienst in de aangifte over het tijdvak van de factuurdatum.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Aanbetaling 30% van € 6.400,00 excl. btw: eiken boekenkast met bureau op maat (offerte O-2026-041, akkoord 3 november 2026)",
+        "qty": "1",
+        "rate": "€ 1.920,00",
+        "amount": "€ 1.920,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 1.920,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 403,20",
+    "sample_breakdown_balance": "€ 2.323,20",
+    "sample_breakdown_notes": "Aanbetalingsfactuur 2026-118, te voldoen vóór 12 december 2026; daarna bestellen we het hout en plannen we de plaatsing in week 3 van 2027. Na de houtbestelling niet terug te betalen. Het restant van € 4.480,00 excl. btw volgt op de eindfactuur, met deze aanbetaling ervan af.",
+    "industry_notes_title": "Goed om te weten over aanbetalingen",
+    "industry_notes": [
+      {
+        "title": "Verplicht of vrijwillig: dat bepaalt de btw-datum",
+        "text": "Moet je klant volgens de afspraak vooruitbetalen, dan stuur je de factuur voordat het bedrag opeisbaar is en geef je de btw aan over het tijdvak van de factuurdatum, ook als het geld later komt. Betaalt je klant uit zichzelf vooruit, dan ben je de btw verschuldigd bij ontvangst. Zo staat het bij de Belastingdienst. In beide gevallen staat er btw op de factuur."
+      },
+      {
+        "title": "Aanbetaling, voorschot of abonnement",
+        "text": "Voorschot, vooruitbetaling en aanbetaling zijn hetzelfde stuk; de Belastingdienst spreekt van een voorschotnota. Een vast bedrag per maand voor doorlopend werk is iets anders: dat is een periodieke factuur. Een aanbetaling hoort bij één klus en wordt door de eindfactuur verrekend."
+      },
+      {
+        "title": "Zo komt hij terug op de eindfactuur",
+        "text": "De eindfactuur noemt de volledige prijs en haalt elke aanbetaling eraf met nummer en datum. In de gratis generator kan dat met een negatieve regel. In de app, zonder negatieve prijzen, factureer je het restant als één regel en noem je de aanbetalingsfactuur in de opmerkingen."
+      }
+    ],
+    "mistakes_title": "Drie fouten met aanbetalingsfacturen",
+    "mistakes": [
+      {
+        "title": "Alleen ‘30% vooraf’ in de offerte",
+        "text": "Een offerte kan de administratie van je klant niet betalen. Stuur een genummerde aanbetalingsfactuur met btw en een vervaldatum."
+      },
+      {
+        "title": "De btw vergeten",
+        "text": "Een aanbetaling zonder btw lijkt simpel, maar dan klopt de factuur niet en mis je € 403,20. Ben je btw-plichtig, dan rekent ook de aanbetaling 21%."
+      },
+      {
+        "title": "De aanbetaling op de eindfactuur vergeten",
+        "text": "Factureer je aan het eind de volle € 6.400,00 opnieuw, dan betaalt je klant te veel of houdt hij alles tegen. Zoek vóór elke eindfactuur alle aanbetalingen van die klus op."
+      }
+    ],
+    "tip_title": "Een tip voor aanbetalingsfacturen",
+    "pro_tip": "Zet het nummer van de aanbetalingsfactuur ook in de opmerkingen van je eindfactuur. Zo legt de boekhouder van je klant het verband, ook als de betalingen van verschillende rekeningen kwamen.",
+    "format_pdf_desc": "Een pdf ziet er op de telefoon van je klant en in zijn boekhoudpakket hetzelfde uit, dus percentage, totaalprijs en voorwaarden verschuiven niet.",
+    "faq_title": "Vragen over de aanbetalingsfactuur",
+    "faqs": [
+      {
+        "question": "Wat is het verschil met een voorschotfactuur?",
+        "answer": "Er is geen verschil. Voorschotfactuur is het woord dat vooral in Vlaanderen wordt gebruikt; in Nederland zeg je meestal aanbetalingsfactuur of voorschotnota. De inhoud en de regels zijn dezelfde."
+      },
+      {
+        "question": "Moet er btw op een aanbetalingsfactuur?",
+        "answer": "Ja, als je btw-plichtig bent: btw over het vooruitbetaalde bedrag. Of je die afdraagt over het tijdvak van de factuurdatum of van de ontvangst, hangt volgens de Belastingdienst af van of de vooruitbetaling verplicht of vrijwillig was."
+      },
+      {
+        "question": "Hoeveel aanbetaling mag ik vragen?",
+        "answer": "Dat spreek je af en zet je in de offerte. Werk je voor particulieren, dan kan het consumentenrecht een grens stellen: check het bij een jurist voordat je een hoog percentage vraagt."
+      },
+      {
+        "question": "Wat als de klant annuleert na de aanbetaling?",
+        "answer": "Is de aanbetaling terug te betalen, dan betaal je hem terug, meestal met een creditfactuur die naar de aanbetalingsfactuur verwijst; de btw-correctie check je bij je boekhouder. Is hij dat niet, verwijs dan naar de voorwaarde die je klant accepteerde."
+      },
+      {
+        "question": "Houdt Invoicor bij of de aanbetaling betaald is?",
+        "answer": "Niet als aanbetaling. Je zet hem op ‘Paid’ zoals elke factuur, maar de app koppelt hem niet aan de eindfactuur en houdt geen saldo per klus bij. Dat overzicht houd je zelf bij."
+      }
+    ],
+    "cta_title": "Maak je aanbetalingsfactuur",
+    "related": [
+      {
+        "name": "Eindfactuur",
+        "slug": "eindfactuur"
+      },
+      {
+        "name": "Termijnfactuur",
+        "slug": "termijnfactuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "eindfactuur",
+    "translation_of": "final-invoice",
+    "niche": "Eindfactuur",
+    "title": "Eindfactuur: aanbetalingen correct aftrekken | Invoicor",
+    "meta_description": "Eindfactuur maken: de volledige prijs, elke aanbetaling en termijn met nummer eraf, en het restant met de btw die nog over is. Voorbeeld als pdf.",
+    "h1": "Eindfactuur na aanbetaling en termijnen",
+    "subtitle": "Sluit een in delen betaalde klus af: de volledige prijs, elke eerdere factuur eraf met nummer en datum, en het restant met de btw die nog over is.",
+    "intro_paragraph": "De eindfactuur is de laatste factuur van een klus die in delen is betaald. Hij zet de opdracht nog één keer neer tegen de volledige prijs, haalt elke aanbetalings- en termijnfactuur eraf en vraagt het restant, met het btw-bedrag dat nog resteert (zo zegt de Belastingdienst het). Een pdf volstaat in Nederland voorlopig: zakelijke e-facturen zijn gepland voor 1 juli 2030, maar dat is nog geen wet; alleen de Rijksoverheid wil er al een. Een Belgisch bedrijf factureert een Belgische zakelijke klant sinds 1 januari 2026 verplicht via Peppol, met de pdf alleen als bijlage. Invoicor maakt pdf's, geen e-facturen.",
+    "include_title": "Wat er op een eindfactuur moet staan",
+    "what_to_include_intro": "Je klant wil van een eindfactuur één ding weten: is dit alles, en klopt het?",
+    "req_1_title": "Herkenbaar als eindfactuur",
+    "req_1_text": "De pdf heeft de kop ‘Factuur’. Zet ‘Eindfactuur’ aan het begin van de eerste regel: je klant weet dan dat er niets meer volgt. Gebruik het woord pas als het werk echt is opgeleverd.",
+    "req_2_title": "De volledige prijs, met meerwerk",
+    "req_2_text": "Begin bij de aanneemsom of offerteprijs en zet elk goedgekeurd meer- of minderwerk op een eigen regel met de datum van akkoord. Factureer je alleen het laatste stuk, dan ziet je klant niet hoe je bij het restant komt.",
+    "req_3_title": "Elke eerdere factuur, met nummer en datum",
+    "req_3_text": "Haal elke aanbetalings- en termijnfactuur er apart af: ‘Af: termijn, factuur 2026-101 van 6 oktober 2026’. Eén regel ‘af: ontvangen betalingen’ kan niemand controleren, en een vergeten termijn valt dan niet op.",
+    "req_4_title": "Het restant en de btw die nog over is",
+    "req_4_text": "Volgens de Belastingdienst rekent de eindfactuur het restant en vermeldt hij het btw-bedrag dat nog resteert; de btw over de eerdere facturen stond daar al op. Zet voor de duidelijkheid de hele opbouw in de opmerkingen, en check vooraf of je boekhouder een andere opbouw wil.",
+    "req_5_title": "De opleverdatum en de opdracht",
+    "req_5_text": "Ook een eindfactuur volgt alle factuureisen, dus ook de leverdatum. Invoicor heeft daar geen veld voor: zet ‘opgeleverd 14 november 2026’ in de regel, met de opdracht die je afsluit.",
+    "req_6_title": "Een nieuw nummer en een vervaldatum",
+    "req_6_text": "Het volgende nummer in je reeks, geen ‘-E’ achter een oud nummer. Eindig met één bedrag, een vervaldatum en je IBAN. Is er niets afgesproken, dan is de wettelijke betaaltermijn 30 dagen.",
+    "what_to_include_outro": "Reken het na: de volledige prijs min alle eerdere facturen is precies het restant, en alle btw samen is 21% van de volledige prijs.",
+    "paper_label": "Eindfactuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een eindfactuur",
+    "sample_breakdown_intro": "Een interieurbouwer levert een winkelinrichting op: € 18.000,00 aanneemsom plus € 1.200,00 meerwerk, excl. btw. Eerder gefactureerd en betaald: een aanbetaling (2026-087) en een termijn (2026-101), met 21% btw. De klant is een winkelier, dus geen btw verlegd. Dit is de versie voor de gratis generator; in de app factureer je € 6.400,00 als één regel.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Eindfactuur: winkelinrichting volgens opdracht van 4 augustus 2026, opgeleverd 14 november 2026",
+        "qty": "1",
+        "rate": "€ 18.000,00",
+        "amount": "€ 18.000,00"
+      },
+      {
+        "description": "Meerwerk: extra paskamer met spiegelwand, akkoord 22 september 2026",
+        "qty": "1",
+        "rate": "€ 1.200,00",
+        "amount": "€ 1.200,00"
+      },
+      {
+        "description": "Af: aanbetaling, factuur 2026-087 van 5 augustus 2026 (btw € 1.008,00)",
+        "qty": "1",
+        "rate": "-€ 4.800,00",
+        "amount": "-€ 4.800,00"
+      },
+      {
+        "description": "Af: termijn, factuur 2026-101 van 6 oktober 2026 (btw € 1.680,00)",
+        "qty": "1",
+        "rate": "-€ 8.000,00",
+        "amount": "-€ 8.000,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 6.400,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 1.344,00",
+    "sample_breakdown_balance": "€ 7.744,00",
+    "sample_breakdown_notes": "Eindfactuur 2026-124 voor de opdracht van 4 augustus 2026. Totaal € 19.200,00 + btw € 4.032,00 = € 23.232,00. Eerder: 2026-087 € 4.800,00 + btw € 1.008,00 en 2026-101 € 8.000,00 + btw € 1.680,00, beide betaald. Restant € 6.400,00 + btw € 1.344,00 = € 7.744,00, te betalen vóór 17 december 2026. Hierna volgen geen facturen meer.",
+    "industry_notes_title": "Goed om te weten over eindfacturen",
+    "industry_notes": [
+      {
+        "title": "Btw alleen over het restant",
+        "text": "De btw over aanbetaling en termijnen is al gefactureerd. Reken je 21% over de volle € 19.200,00, dan betaalt je klant die btw dubbel. Invoicor rekent één tarief over het totaal van de regels: trek eerst af, dan valt de btw vanzelf over het restant."
+      },
+      {
+        "title": "Eindfactuur betekent: klaar",
+        "text": "Noem een factuur pas eindfactuur als het werk is opgeleverd en het restant de rekening sluit. Volgt er nog meerwerk, dan is het gewoon een termijnfactuur."
+      },
+      {
+        "title": "Houd zelf de lijst bij",
+        "text": "Invoicor koppelt facturen niet en houdt geen saldo per klus bij. Zet vóór de eindfactuur alle facturen van de klus op een rij: nummer, bedrag, btw, betaald of open. Bewaar ze zeven jaar; gegevens over onroerende zaken tien jaar."
+      }
+    ],
+    "mistakes_title": "Drie fouten met eindfacturen",
+    "mistakes": [
+      {
+        "title": "Alleen het laatste stuk factureren",
+        "text": "‘Restant € 6.400,00’ zonder opbouw verbergt of de aanbetaling is meegeteld. Zet eerst de volledige prijs neer en trek dan af; in de app doe je dat in de opmerkingen."
+      },
+      {
+        "title": "Bedragen incl. btw aftrekken en dan btw erover",
+        "text": "Trek je de betaalde € 15.488,00 incl. btw af van € 19.200,00 excl. btw en reken je over de rest 21%, dan vraag je te weinig en klopt de btw niet. Trek af zonder btw, zoals in het voorbeeld."
+      },
+      {
+        "title": "Een termijn vergeten",
+        "text": "Drie termijnen betaald, twee afgetrokken: je klant betaalt te veel of houdt alles tegen. Leg je eigen lijst ernaast voordat je verstuurt."
+      }
+    ],
+    "tip_title": "Een tip voor eindfacturen",
+    "pro_tip": "Begin met een duplicaat van de laatste termijnfactuur: klant en opmerkingen staan er al en het nummer schuift vanzelf door. Vervang de regel door het restant en zet de volledige opbouw in de opmerkingen.",
+    "format_pdf_desc": "Een pdf legt de volledige prijs, elke aftrek en het restant vast, zodat het bedrag dat je klant goedkeurt ook bij zijn administratie aankomt.",
+    "faq_title": "Vragen over de eindfactuur",
+    "faqs": [
+      {
+        "question": "Moet ik de btw van de aanbetaling op de eindfactuur zetten?",
+        "answer": "De Belastingdienst vraagt het restant en het resterende btw-bedrag; meer schrijft die regel niet voor. De btw per eerdere factuur noemen maakt controleren wel makkelijk. Vraag je boekhouder welke opbouw hij wil."
+      },
+      {
+        "question": "Hoe doe ik dit in de generator en in de app?",
+        "answer": "In de gratis generator: de regels tegen de volle prijs, dan per eerdere factuur een negatieve regel excl. btw; de btw valt over het restant. De app kent geen negatieve prijzen: factureer daar het restant excl. btw als één regel en zet de volledige prijs en elke eerdere factuur met nummer en datum in de opmerkingen."
+      },
+      {
+        "question": "Wat als een termijnfactuur nog niet betaald is?",
+        "answer": "Verstop hem niet in het restant. Haal hem af als gefactureerd en zet in de opmerkingen dat factuur 2026-101 nog openstaat. Check de btw-kant bij je boekhouder."
+      },
+      {
+        "question": "Is een eindafrekening hetzelfde?",
+        "answer": "In het dagelijks taalgebruik wel; ook slotfactuur hoor je. Let op: ‘eindafrekening’ betekent ook de jaarafrekening van energie of servicekosten, en dat is iets anders."
+      },
+      {
+        "question": "Mag ik een verstuurde eindfactuur nog aanpassen?",
+        "answer": "Niet zomaar. In Invoicor is een verstuurde factuur vergrendeld: dupliceer hem, verbeter het duplicaat (dat krijgt een nieuw nummer) en zet de oude op ‘Cancelled’. Of een creditfactuur beter is, vraag je je boekhouder."
+      }
+    ],
+    "cta_title": "Maak je eindfactuur",
+    "related": [
+      {
+        "name": "Aanbetalingsfactuur",
+        "slug": "aanbetalingsfactuur"
+      },
+      {
+        "name": "Termijnfactuur",
+        "slug": "termijnfactuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "termijnfactuur",
+    "translation_of": "milestone-invoice",
+    "niche": "Termijnfactuur",
+    "title": "Termijnfactuur maken: voorbeeld en uitleg | Invoicor",
+    "meta_description": "Termijnfactuur per afgesproken termijn: het deel van de totaalprijs, wat al betaald is en wat nog komt. Met voorbeeld en btw, gratis als pdf.",
+    "h1": "Termijnfactuur per afgesproken termijn",
+    "subtitle": "Factureer een project in de termijnen uit je opdracht: één factuur per termijn, met het aandeel in de totaalprijs en een duidelijke stand van wat al betaald is.",
+    "intro_paragraph": "Met een termijnfactuur reken je één termijn af van een project dat in delen wordt betaald, volgens het schema in de opdracht: 30% ontwerp, 40% bouw, 30% livegang, of in de bouw per fase. Je ziet ook vaak deelfactuur; geen van beide woorden heeft een wettelijke definitie, hieronder lees je het verschil. Zakelijk is een pdf in Nederland voorlopig goed: de verplichte e-factuur staat gepland voor 1 juli 2030, maar is nog geen wet; alleen de Rijksoverheid wil er al een. Een Belgisch bedrijf factureert een Belgische klant sinds 1 januari 2026 via Peppol, met de pdf hooguit als bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een termijnfactuur moet staan",
+    "what_to_include_intro": "Je klant keurt een termijnfactuur goed door hem naast de opdracht te leggen. Maak die controle makkelijk met deze zes punten, bovenop de factuureisen van de Belastingdienst.",
+    "req_1_title": "De termijn, zoals hij in de opdracht heet",
+    "req_1_text": "Gebruik het nummer en de naam uit het termijnschema: ‘Termijn 2 van 3: bouw’. Staat er in de opdracht ‘oplevering testomgeving’ en op de factuur ‘ontwikkelfase’, dan vraagt de administratie van je klant welke betaling het is.",
+    "req_2_title": "De opdracht waar hij bij hoort",
+    "req_2_text": "Noem de offerte of opdrachtbevestiging met nummer en datum, zodat je klant de factuur aan het juiste project en budget koppelt.",
+    "req_3_title": "Wat er geleverd is, en wanneer",
+    "req_3_text": "Beschrijf wat er af is en wanneer de klant het goedkeurde: ‘testomgeving opgeleverd 3 november, akkoord 10 november’. Invoicor heeft geen veld voor de leverdatum die de Belastingdienst vraagt, dus deze regel is de plek.",
+    "req_4_title": "Het aandeel in de totaalprijs",
+    "req_4_text": "Zet het percentage of vaste bedrag naast de totale opdrachtwaarde: ‘40% van € 12.000,00’. Je klant ziet de termijn in verhouding, en wie de factuur later leest, ziet de hele afspraak waar hij bij hoort.",
+    "req_5_title": "Btw per termijn",
+    "req_5_text": "Elke termijnfactuur rekent btw over het eigen termijnbedrag. Is een termijn een verplichte vooruitbetaling, dan gaat de btw volgens de Belastingdienst in de aangifte van het tijdvak van de factuurdatum. Werk tegen 21% en 9% in één termijn: twee facturen in Invoicor (één tarief per factuur), of vraag je boekhouder.",
+    "req_6_title": "De stand: betaald en nog te gaan",
+    "req_6_text": "Noem in de opmerkingen de eerdere termijnfacturen met nummer en bedrag, en wat er na deze termijn overblijft. Zo is de laatste termijn voor niemand een verrassing. Meerwerk zet je op een eigen regel.",
+    "what_to_include_outro": "Alle termijnen samen zijn precies de opdrachtwaarde plus goedgekeurd meerwerk. Maak de laatste termijn daarom het restant.",
+    "paper_label": "Termijnfactuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een termijnfactuur",
+    "sample_breakdown_intro": "Een webbureau bouwt een klantportaal voor € 12.000,00 excl. btw, in drie termijnen: 30% ontwerp, 40% bouw, 30% livegang. Termijn 1 is betaald op factuur 2026-109. Deze factuur rekent termijn 2 af plus een goedgekeurde meerwerkopdracht van zes uur, met 21% btw. De klant is een Nederlands bedrijf.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Termijn 2 van 3: bouw klantportaal (40% van € 12.000,00), testomgeving opgeleverd 3 november 2026, akkoord 10 november, opdracht OB-2026-17",
+        "qty": "1",
+        "rate": "€ 4.800,00",
+        "amount": "€ 4.800,00"
+      },
+      {
+        "description": "Meerwerk MW-2: exportfunctie voor klantgegevens, akkoord 21 oktober 2026",
+        "qty": "6 uur",
+        "rate": "€ 95,00",
+        "amount": "€ 570,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 5.370,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 1.127,70",
+    "sample_breakdown_balance": "€ 6.497,70",
+    "sample_breakdown_notes": "Termijnfactuur 2026-131, te betalen binnen 30 dagen, uiterlijk 12 december 2026. Opdrachtwaarde € 12.000,00 excl. btw. Betaald: termijn 1 ontwerp € 3.600,00 excl. btw (factuur 2026-109). Na deze termijn resteert € 3.600,00 excl. btw voor termijn 3: livegang. Meerwerk valt buiten de opdrachtwaarde.",
+    "industry_notes_title": "Goed om te weten over termijnfacturen",
+    "industry_notes": [
+      {
+        "title": "Termijnfactuur of deelfactuur",
+        "text": "Geen van beide is een wettelijk begrip. Een termijnfactuur hoort bij een vooraf afgesproken schema: per bouwfase of per mijlpaal. Een deelfactuur rekent een deel van één opdracht af, zoals een deellevering, zonder vast schema. Software gebruikt ze door elkaar; kies één woord en houd het aan."
+      },
+      {
+        "title": "Termijnen in de bouw",
+        "text": "Werk je als onderaannemer voor een aannemer aan een gebouw, dan geldt volgens de Belastingdienst btw verlegd: geen btw, de woorden ‘btw verlegd’ en het btw-id van je opdrachtgever. De pdf print dan een btw-regel van € 0,00, dus zet ‘btw verlegd’ duidelijk in de opmerkingen. De pagina over de factuur voor onderaannemers gaat verder."
+      },
+      {
+        "title": "Het akkoord bepaalt wanneer je factureert",
+        "text": "Veel opdrachten geven de klant een paar dagen om een oplevering goed of af te keuren. Staat dat in jouw opdracht, verwijs er dan naar. Zegt hij niets, vraag dan eerst een akkoord per mail."
+      }
+    ],
+    "mistakes_title": "Drie fouten met termijnfacturen",
+    "mistakes": [
+      {
+        "title": "Factureren vóór het akkoord",
+        "text": "Stuur je de factuur op de dag van oplevering, nog voordat de klant heeft gekeken, dan nodig je hem uit om allebei af te keuren. Wacht op het akkoord en noem die datum op de factuur."
+      },
+      {
+        "title": "Termijnen die niet optellen",
+        "text": "Drie keer een derde van € 10.000,00, afgerond op € 3.333,00, laat € 1,00 liggen. Maak de laatste termijn het restant van de opdrachtwaarde, zodat de som altijd klopt."
+      },
+      {
+        "title": "Meerwerk in het termijnbedrag",
+        "text": "Meerwerk bij de termijn optellen maakt € 5.370,00 van een termijn die volgens de opdracht € 4.800,00 is. Zet het op een eigen regel met de meerwerkreferentie."
+      }
+    ],
+    "tip_title": "Een tip voor termijnfacturen",
+    "pro_tip": "Maak elke nieuwe termijnfactuur door de vorige te dupliceren. Klant, opdrachtnummer en betaaltermijn staan er dan al, en het duplicaat krijgt vanzelf het volgende factuurnummer. Je past alleen de termijnregel, de datum van akkoord en de stand in de opmerkingen aan.",
+    "format_pdf_desc": "Een pdf houdt de termijnnaam, de akkoorddatum en de stand vast. Dat is wat een projectleider doorstuurt naar de financiële afdeling om goed te keuren.",
+    "faq_title": "Vragen over de termijnfactuur",
+    "faqs": [
+      {
+        "question": "Hoe deel ik een project in termijnen in?",
+        "answer": "Koppel elke termijn aan iets wat de klant kan zien en goedkeuren: een ontwerp, een werkende testversie, de livegang, of in de bouw een afgeronde fase. Leg per termijn een vast percentage of bedrag vast in de opdracht."
+      },
+      {
+        "question": "Wat is het verschil tussen een termijnfactuur en een deelfactuur?",
+        "answer": "Juridisch geen: beide woorden staan niet in de wet en dezelfde factuureisen gelden. In de praktijk volgt een termijnfactuur een vast schema en rekent een deelfactuur een deel van één opdracht af."
+      },
+      {
+        "question": "Is een eerste termijn bij ondertekening een aanbetaling?",
+        "answer": "Eigenlijk wel, want er is nog niets geleverd. Factureer hem als aanbetaling met btw en verwijs naar de opdracht. Was hij verplicht, dan valt de btw in het tijdvak van de factuurdatum."
+      },
+      {
+        "question": "Wat als de klant een termijn afkeurt?",
+        "answer": "Factureer hem dan nog niet. Los het op, lever opnieuw op en factureer na akkoord. Al verstuurd? Zet hem op ‘Cancelled’ en maak na akkoord een nieuwe; of je een creditfactuur nodig hebt, check je bij je boekhouder."
+      },
+      {
+        "question": "Hoe verschilt de laatste termijnfactuur?",
+        "answer": "De laatste termijn rekent de laatste fase af en sluit de opdracht, dus vaak is hij meteen de eindfactuur. Zet de opdrachtwaarde neer, noem elke eerdere termijnfactuur met nummer en noem hem ‘eindfactuur’ in de eerste regel."
+      }
+    ],
+    "cta_title": "Maak je termijnfactuur",
+    "related": [
+      {
+        "name": "Eindfactuur",
+        "slug": "eindfactuur"
+      },
+      {
+        "name": "Aanbetalingsfactuur",
+        "slug": "aanbetalingsfactuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "periodieke-factuur",
+    "translation_of": "monthly-invoice",
+    "niche": "Periodieke factuur",
+    "title": "Periodieke factuur: elke maand snel klaar | Invoicor",
+    "meta_description": "Periodieke factuur voor een abonnement of doorlopend werk: de periode, het vaste bedrag, extra's en creditregels. Met voorbeeld, gratis als pdf.",
+    "h1": "Periodieke factuur voor doorlopend werk",
+    "subtitle": "Eén factuur per maand of kwartaal voor werk dat doorloopt: de periode, het vaste bedrag, wat er die maand anders was en een duidelijke vervaldatum.",
+    "intro_paragraph": "Een periodieke factuur stuur je elke maand of elk kwartaal voor werk dat doorloopt: IT-beheer, hosting, onderhoud, een abonnement. Je kent hem ook als abonnementsfactuur of maandfactuur. De prijs spreek je één keer af; elke factuur laat zien wat er in die periode gebeurde. Een pdf is in Nederland voorlopig prima: zakelijke e-facturen zijn gepland voor 1 juli 2030, maar dat is nog geen wet; alleen de Rijksoverheid wil er al een. Tussen Belgische bedrijven is Peppol sinds 1 januari 2026 verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen, en verstuurt niets automatisch: hieronder zie je hoe je vorige maand in een minuut omzet in deze maand.",
+    "include_title": "Wat er op een periodieke factuur moet staan",
+    "what_to_include_intro": "Je klant ziet elke maand bijna dezelfde factuur. Juist daarom moet in één oogopslag te zien zijn wat er verandert: de periode, de aantallen en de afwijkingen.",
+    "req_1_title": "De periode, voluit",
+    "req_1_text": "Schrijf ‘Periode: 1 t/m 30 november 2026’. De Belastingdienst wil de leverdatum op de factuur; bij doorlopend werk is dat de periode. Invoicor heeft daar geen veld voor: zet hem in de eerste regel en de opmerkingen. Zo wordt geen maand dubbel of helemaal niet betaald.",
+    "req_2_title": "Een doorlopend factuurnummer",
+    "req_2_text": "Elke factuur krijgt een eigen opvolgend nummer, ook als de inhoud gelijk is. Een duplicaat in Invoicor krijgt vanzelf het volgende. Zet de maand dus in de regel en de opmerkingen, niet in het nummer.",
+    "req_3_title": "Het vaste bedrag en hoe het is opgebouwd",
+    "req_3_text": "Laat zien hoe het bedrag is opgebouwd: een vast maandbedrag, of een prijs per eenheid keer het aantal, zoals ‘10 werkplekken × € 32,50’. Verandert het aantal, dan lijkt de prijs niet te veranderen.",
+    "req_4_title": "Extra's op een eigen regel",
+    "req_4_text": "Extra supporturen of een losse installatie krijgen een eigen regel met een eigen prijs. Dupliceer je de factuur volgende maand, dan haal je die regel gewoon weg.",
+    "req_5_title": "Creditering zichtbaar maken",
+    "req_5_text": "Zegt je klant iets op of viel een dienst uit, laat de korting dan zien in plaats van het vaste bedrag stilletjes te verlagen. In de gratis generator met een negatieve regel; de app accepteert geen negatieve prijzen, dus daar verlaag je het aantal of bedrag en zet je de reden erbij.",
+    "req_6_title": "Een vervaldatum die past",
+    "req_6_text": "Niets afgesproken: wettelijk 30 dagen. Tussen bedrijven mag je maximaal 60 dagen afspreken, en grote bedrijven moeten mkb'ers en zzp'ers binnen 30 dagen betalen. Vraag wanneer je klant zijn leveranciers betaalt en kies een datum daarvoor.",
+    "what_to_include_outro": "Is alleen de periode nieuw, dan leest je klant juist de maand waarin iets anders is heel goed. Maak die regel duidelijk.",
+    "paper_label": "Periodieke factuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een periodieke factuur",
+    "sample_breakdown_intro": "Een IT-beheerder factureert november aan een accountantskantoor: tien werkplekken beheer, back-upopslag, anderhalf uur extra support en een halve maand terug voor een werkplek die per 15 november is opgezegd, tegen 21% btw. De negatieve creditregel werkt in de gratis generator; in de app verlaag je de beheerregel en noem je de reden.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Beheer werkplekken, periode 1 t/m 30 november 2026",
+        "qty": "10",
+        "rate": "€ 32,50",
+        "amount": "€ 325,00"
+      },
+      {
+        "description": "Back-upopslag 500 GB, november 2026",
+        "qty": "1",
+        "rate": "€ 45,00",
+        "amount": "€ 45,00"
+      },
+      {
+        "description": "Extra support buiten de bundel: netwerkstoring 12 november",
+        "qty": "1,5 uur",
+        "rate": "€ 85,00",
+        "amount": "€ 127,50"
+      },
+      {
+        "description": "Creditering: werkplek opgezegd per 15 november, halve maand",
+        "qty": "1",
+        "rate": "-€ 16,25",
+        "amount": "-€ 16,25"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 481,25",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 101,06",
+    "sample_breakdown_balance": "€ 582,31",
+    "sample_breakdown_notes": "Factuur 2026-142, periode 1 t/m 30 november 2026. Vast beheer: 10 werkplekken à € 32,50 per maand. Eén werkplek opgezegd per 15 november; vanaf december factureren we 9 werkplekken. Extra support: 1,5 uur op 12 november. Te betalen vóór 15 december 2026.",
+    "industry_notes_title": "Goed om te weten over periodieke facturen",
+    "industry_notes": [
+      {
+        "title": "Periodiek, niet automatisch",
+        "text": "Veel boekhoudpakketten hebben terugkerende facturen die zichzelf versturen. Invoicor heeft dat niet. Open de factuur van vorige maand en tik op ‘Duplicate Invoice’: het duplicaat krijgt het volgende nummer en houdt de klant, de regels en de opmerkingen. Je past de periode, de aantallen en eventuele extra's aan en verstuurt hem."
+      },
+      {
+        "title": "Vooraf of achteraf factureren",
+        "text": "Factureer je achteraf, dan reken je af wat er die maand geleverd is. Factureer je een abonnement vooraf, op de eerste van de maand, dan is het een vooruitbetaling. Moet je klant vooraf betalen, dan geef je de btw volgens de Belastingdienst aan over het tijdvak van de factuurdatum. Kies één manier en zet hem in je afspraak."
+      },
+      {
+        "title": "Zet vorige maand eerst op betaald",
+        "text": "Markeer vorige maand als ‘Paid’ zodra het geld binnen is en dupliceer pas daarna. Het statusoverzicht toont dan welke maanden ‘overdue’ zijn, zodat een gemiste betaling niet achter een nieuwere factuur verdwijnt. Betaalt een zakelijke klant te laat, dan kun je wettelijke handelsrente rekenen: 10,4% sinds 1 juli 2026."
+      }
+    ],
+    "mistakes_title": "Drie fouten met periodieke facturen",
+    "mistakes": [
+      {
+        "title": "De periode niet aanpassen",
+        "text": "Een duplicaat dat in december nog ‘november’ zegt, wordt afgewezen of dubbel betaald. Check vóór verzending de periode en de vervaldatum."
+      },
+      {
+        "title": "Een opgezegde dienst blijven factureren",
+        "text": "Staat een opgezegde dienst de maand erna nog op de factuur, dan volgt een creditfactuur en een vervelend gesprek. Werk de regel meteen bij en noem de wijziging in de opmerkingen."
+      },
+      {
+        "title": "Extra's in het vaste bedrag stoppen",
+        "text": "Verhoog je de beheerregel van € 325,00 naar € 452,50 omdat er support bij kwam, dan klopt je duplicaat volgende maand niet en ziet je klant niet wat er veranderde. Laat het vaste bedrag staan en zet extra's op een eigen regel."
+      }
+    ],
+    "tip_title": "Een tip voor periodieke facturen",
+    "pro_tip": "Verstuur de factuur elke maand op dezelfde dag, het liefst de eerste werkdag na afloop van de periode. Je klant verwacht hem dan, de tijd tussen twee facturen blijft gelijk en een late betaling valt meteen op.",
+    "format_pdf_desc": "Een pdf per periode is een vast stuk dat je klant per maand archiveert en dat na verzending niet verandert.",
+    "faq_title": "Vragen over de periodieke factuur",
+    "faqs": [
+      {
+        "question": "Kan Invoicor elke maand automatisch een factuur sturen?",
+        "answer": "Nee. Er zijn geen terugkerende of geplande facturen. Dupliceer de factuur van vorige maand en verander de periode; klant, regels en opmerkingen blijven staan en het nummer schuift door."
+      },
+      {
+        "question": "Wat is het verschil tussen een periodieke factuur, een abonnementsfactuur en een maandfactuur?",
+        "answer": "Weinig. Maandfactuur zegt hoe vaak, abonnementsfactuur waarvoor, en periodieke factuur is het verzamelwoord, ook voor een kwartaal. Voor de Belastingdienst is het telkens een gewone factuur met alle factuureisen."
+      },
+      {
+        "question": "Moet elke periodieke factuur een nieuw nummer hebben?",
+        "answer": "Ja. De Belastingdienst vraagt een opvolgend factuurnummer, ook als de inhoud elke maand gelijk is. Een duplicaat in Invoicor krijgt dat volgende nummer vanzelf."
+      },
+      {
+        "question": "Mag ik één factuur sturen voor meerdere maanden?",
+        "answer": "Ja, zolang je de periode noemt, zoals ‘1 oktober t/m 31 december 2026’. Wat handig is voor je btw-aangifte, check je bij je boekhouder."
+      },
+      {
+        "question": "Hoe reken ik een halve eerste maand?",
+        "answer": "Reken het deel van de maand of het aantal dagen en zeg het erbij: ‘Beheer vanaf 15 november, halve maand’. Spreek vooraf af of je per dag of per halve maand rekent."
+      }
+    ],
+    "cta_title": "Maak je periodieke factuur",
+    "related": [
+      {
+        "name": "Zzp-factuur",
+        "slug": "zzp-factuur"
+      },
+      {
+        "name": "Factuur zonder btw",
+        "slug": "factuur-zonder-btw"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "verkoopfactuur",
+    "translation_of": "sales-invoice",
+    "niche": "Verkoopfactuur",
+    "title": "Verkoopfactuur maken: voorbeeld voor goederen | Invoicor",
+    "meta_description": "Verkoopfactuur voor goederen: artikelen, aantallen, stuksprijzen, verzendkosten en 21% of 9% btw. Bekijk het voorbeeld en maak gratis je pdf.",
+    "h1": "Verkoopfactuur: template en voorbeeld voor goederen",
+    "subtitle": "Voor makers, webwinkels en groothandels die op rekening verkopen: zo zet je artikelen, verzending, btw en leverdatum goed op de factuur.",
+    "intro_paragraph": "In de boekhouding is een verkoopfactuur elke factuur die je verstuurt. Deze pagina gaat over goederen: producten die je atelier of magazijn verlaten. Je klant legt de factuur naast zijn bestelling en de pakbon, dus elke regel moet kloppen met wat er in de doos zat. Gaan de goederen buiten de EU, dan heb je een commerciële factuur nodig. Een pdf-factuur is in Nederland voorlopig goed: het kabinet koos 1 juli 2030 voor verplichte e-facturatie tussen bedrijven, maar dat is nog geen wet; facturen aan de Rijksoverheid moeten wel e-facturen zijn. Verkoop je vanuit België aan een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een verkoopfactuur moet staan",
+    "what_to_include_intro": "Naast de vaste factuureisen van de Belastingdienst, zoals je btw-identificatienummer, KvK-nummer en een doorlopend factuurnummer, let je klant op deze zes punten.",
+    "req_1_title": "Artikelnaam en artikelnummer op elke regel",
+    "req_1_text": "Geef elk product een naam, uitvoering en je eigen artikelnummer. ‘Diep bord, 22 cm, mat wit (DBR-22)’ vindt je klant terug in zijn bestelling. De Belastingdienst vraagt de hoeveelheid en soort goederen; ‘servies’ is te vaag. Sla je producten één keer op en kies ze per order.",
+    "req_2_title": "Aantal en stuksprijs, niet alleen een totaal",
+    "req_2_text": "Zet aantal, stuksprijs en regelbedrag op de factuur. Kwamen er 38 borden aan in plaats van 40, dan rekent je klant met de stuksprijs uit wat er gecrediteerd moet worden.",
+    "req_3_title": "Verzendkosten op een eigen regel",
+    "req_3_text": "Zet verzending apart in plaats van in de prijzen. Over verzendkosten reken je meestal hetzelfde btw-tarief als over de goederen; check het bij je boekhouder als je twijfelt.",
+    "req_4_title": "21 % of 9 % btw, één tarief per factuur",
+    "req_4_text": "De meeste goederen vallen onder 21 %, een beperkte groep onder 9 %, zoals veel voedingsmiddelen; welk tarief bij jouw product hoort, check je bij de Belastingdienst of je boekhouder. Vermeld tarief en btw-bedrag. Invoicor rekent met één btw-tarief per factuur: verkoop je in één order goederen tegen 21 % en 9 %, maak dan twee facturen of vraag je boekhouder.",
+    "req_5_title": "Leverdatum en afleveradres",
+    "req_5_text": "De datum van levering hoort volgens de Belastingdienst op de factuur. Invoicor heeft daar geen apart veld voor: zet hem in de opmerkingen (‘Geleverd op 18 november 2026’) of in een regel. Gaan de goederen naar een ander adres, zoals een filiaal, noem dat er ook bij.",
+    "req_6_title": "Betaaltermijn en afspraken over schade",
+    "req_6_text": "Zonder afspraak geldt een betaaltermijn van 30 dagen; tussen bedrijven maximaal 60 dagen. Zet er in één zin bij hoe lang je klant heeft om schade of ontbrekende artikelen te melden.",
+    "what_to_include_outro": "Dan past de factuur op de bestelling en de doos, en betaalt je klant zonder eerst te mailen.",
+    "paper_label": "Verkoopfactuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een verkoopfactuur",
+    "sample_breakdown_intro": "Een keramiekatelier in Utrecht levert servies aan een restaurant in Amsterdam, alles tegen 21 % btw. Leverdatum en afleveradres staan in de opmerkingen.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Plat bord, 27 cm, mat wit (BRD-27)",
+        "qty": "40",
+        "rate": "€ 18,50",
+        "amount": "€ 740,00"
+      },
+      {
+        "description": "Diep bord, 22 cm, mat wit (DBR-22)",
+        "qty": "40",
+        "rate": "€ 16,00",
+        "amount": "€ 640,00"
+      },
+      {
+        "description": "Espressokop met schotel, zandkleur (ESP-01)",
+        "qty": "30",
+        "rate": "€ 12,75",
+        "amount": "€ 382,50"
+      },
+      {
+        "description": "Schaal, 15 cm, mat wit (SCH-15)",
+        "qty": "24",
+        "rate": "€ 9,40",
+        "amount": "€ 225,60"
+      },
+      {
+        "description": "Verzending, 4 dozen, verzekerd",
+        "qty": "1",
+        "rate": "€ 45,00",
+        "amount": "€ 45,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 2.033,10",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 426,95",
+    "sample_breakdown_balance": "€ 2.460,05",
+    "sample_breakdown_notes": "Geleverd op 18 november 2026, afleveradres: keukeningang, Prinsengracht 412, Amsterdam. Uw bestelnummer: RST-2611. Schade of ontbrekende artikelen graag binnen 5 werkdagen melden. Betaling binnen 30 dagen na factuurdatum.",
+    "industry_notes_title": "Goed om te weten over verkoopfacturen",
+    "industry_notes": [
+      {
+        "title": "Levering aan een bedrijf in een ander EU-land",
+        "text": "Verkoop je goederen aan een bedrijf in een ander EU-land met een btw-nummer, dan is het tarief 0 %. Volgens de Belastingdienst zet je beide btw-nummers op de factuur, met ‘tabel II, onderdeel a, post 6, Wet OB 1968’ of ‘artikel 138, lid 1, Richtlijn 2006/112’, en geef je de levering op in je ICP-opgaaf."
+      },
+      {
+        "title": "Corrigeren doe je met een nieuwe factuur",
+        "text": "Kwam er een doos te weinig aan of stond een prijs fout, pas de verstuurde factuur dan niet aan, maar maak een creditfactuur of gecorrigeerde factuur met het oorspronkelijke nummer erin; check de vorm bij je boekhouder. In Invoicor staat een verstuurde factuur vast: dupliceer hem, verbeter de kopie (die krijgt het volgende nummer) en zet de oude op geannuleerd. Negatieve bedragen kunnen in de gratis generator, niet in de app."
+      },
+      {
+        "title": "Zeven jaar bewaren",
+        "text": "Je verkoopfacturen bewaar je zeven jaar (artikel 52 AWR). Een pdf verandert niet en vind je op factuurnummer terug."
+      }
+    ],
+    "mistakes_title": "Drie fouten op verkoopfacturen",
+    "mistakes": [
+      {
+        "title": "Eén regel voor de hele bestelling",
+        "text": "‘Servies volgens bestelling: € 2.033,10’ kan je klant niet naast de pakbon leggen. Zet elk artikel met aantal en stuksprijs op een eigen regel."
+      },
+      {
+        "title": "De leverdatum vergeten",
+        "text": "Zonder apart veld schiet de leverdatum er makkelijk bij in, terwijl hij in de factuureisen staat. Zet hem standaard in je opmerkingen; bij een duplicaat pas je alleen de datum aan."
+      },
+      {
+        "title": "Een betaalde order factureren alsof hij openstaat",
+        "text": "Rekende een zakelijke klant al af in je webwinkel, dan wil hij vaak toch een factuur. Zet erop dat het bedrag al is ontvangen, met datum, zonder betaaltermijn. Anders betaalt zijn administratie nog een keer."
+      }
+    ],
+    "tip_title": "Een tip voor verkoopfacturen",
+    "pro_tip": "Zet het factuurnummer ook op de pakbon in de doos. Meldt je klant een ontbrekend artikel, dan noemt hij dat nummer, open jij dezelfde factuur en is het met één mail opgelost.",
+    "format_pdf_desc": "Een pdf houdt artikelnummers, aantallen en totalen in vaste kolommen en print netjes naast de pakbon.",
+    "faq_title": "Vragen over de verkoopfactuur",
+    "faqs": [
+      {
+        "question": "Wat is het verschil tussen een verkoopfactuur en een inkoopfactuur?",
+        "answer": "Het is hetzelfde document, van twee kanten bekeken. De factuur die jij verstuurt is jouw verkoopfactuur; je klant boekt hem als inkoopfactuur en trekt de btw meestal af als voorbelasting. Daarom moeten zijn gegevens, je btw-nummer en het btw-bedrag kloppen."
+      },
+      {
+        "question": "Moet de leverdatum op de verkoopfactuur?",
+        "answer": "Ja, de Belastingdienst noemt de datum van levering in de factuureisen. In Invoicor zet je hem in de opmerkingen of in de omschrijving van een regel."
+      },
+      {
+        "question": "Kan ik 21 % en 9 % btw op één verkoopfactuur zetten?",
+        "answer": "Volgens de regels mag dat, met de bedragen per tarief. Invoicor werkt met één btw-tarief per factuur: maak per tarief een factuur of vraag je boekhouder."
+      },
+      {
+        "question": "Wat is het verschil tussen een verkoopfactuur en een kassabon?",
+        "answer": "Een factuur vraagt om betaling, meestal binnen een termijn. Een kassabon bevestigt dat er al betaald is. Voor facturen tot € 100 inclusief btw gelden eenvoudigere regels; welke gegevens dan mogen ontbreken, check je bij de Belastingdienst."
+      },
+      {
+        "question": "Moet mijn KvK-nummer op de verkoopfactuur?",
+        "answer": "Ja. Volgens de KvK hoort je KvK-nummer op facturen, offertes, brieven, je website en je zakelijke e-mail. In Invoicor vul je het in bij het veld dat op de pdf als ‘KVK-nummer’ wordt geprint."
+      }
+    ],
+    "cta_title": "Maak je verkoopfactuur",
+    "related": [
+      {
+        "name": "Commerciële factuur",
+        "slug": "commerciele-factuur"
+      },
+      {
+        "name": "Factuur zonder btw",
+        "slug": "factuur-zonder-btw"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "commerciele-factuur",
+    "translation_of": "commercial-invoice",
+    "niche": "Commerciële factuur",
+    "title": "Commerciële factuur voor export: voorbeeld | Invoicor",
+    "meta_description": "Commerciële factuur voor export buiten de EU: HS-code, oorsprong, gewicht en Incoterms per regel, 0% btw. Bekijk het voorbeeld en maak je pdf.",
+    "h1": "Commerciële factuur: template en voorbeeld voor export",
+    "subtitle": "De factuur die met je goederen meegaat naar een land buiten de EU: wat douane en vervoerder lezen.",
+    "intro_paragraph": "Een commerciële factuur (ook commercial invoice of handelsfactuur) is de factuur voor een exportverkoop, zo opgesteld dat de douane in het land van bestemming de zending begrijpt: verkoper, koper, ontvanger en per artikel omschrijving, waarde, oorsprong, gewicht en HS-code. Vervoerders vragen erom bij zendingen buiten de EU. Volgens de Belastingdienst geldt voor export buiten de EU het 0 %-tarief. Invoicor maakt de factuur als pdf, ook in het Engels. De kop is ‘Factuur’: schrijf ‘Commerciële factuur’ in de eerste regel en de opmerkingen, en vraag je vervoerder of hij een eigen formulier of die kop nodig heeft. Douaneaangiftes en vervoerdersformulieren maakt Invoicor niet. Voor exportfacturen is een pdf prima; ook de Belgische e-factuurplicht geldt niet voor internationale facturen.",
+    "include_title": "Wat er op een commerciële factuur moet staan",
+    "what_to_include_intro": "Douane en vervoerders zoeken naar dezelfde kerngegevens. Ontbreekt er één, dan blijft een zending vaak aan de grens staan.",
+    "req_1_title": "Exporteur, koper en ontvanger",
+    "req_1_text": "Zet je bedrijf erop als exporteur, met btw-nummer, KvK-nummer en het EORI-nummer dat je bij de Douane aanvraagt. Dan de koper die betaalt. Gaat de zending naar een ander adres, noem de ontvanger (consignee) in de opmerkingen.",
+    "req_2_title": "Een precieze omschrijving per artikel",
+    "req_2_text": "‘Cadeau’ of ‘textiel’ komt niet door de douane. Schrijf wat het is, waarvan en waarvoor: ‘Kussenhoes, katoen, 50 x 50 cm, woninginrichting’. Daarop controleert de douane je HS-code.",
+    "req_3_title": "HS-code en land van oorsprong per regel",
+    "req_3_text": "De eerste zes cijfers van de HS-code zijn wereldwijd gelijk, daarna volgen nationale cijfers. Zoek de code op in het douanetarief en vraag bij twijfel je vervoerder of de Douane. Oorsprong is waar het product gemaakt is, niet waar het vandaan komt. Zet beide in de regel.",
+    "req_4_title": "Aantal, gewicht en waarde in één valuta",
+    "req_4_text": "Per regel aantal, stuksprijs en regelbedrag in één genoemde valuta, plus het gewicht per stuk, het brutogewicht en het aantal colli. De douane kijkt of waarde en gewicht bij de goederen passen.",
+    "req_5_title": "Incoterms 2020 en de reden van export",
+    "req_5_text": "De leveringsconditie met een genoemde plaats, zoals ‘DAP Londen’ of ‘DDP Londen’, laat zien wie vracht en invoerrechten betaalt. De huidige versie is Incoterms 2020 van de Internationale Kamer van Koophandel. Noem ook de reden van export: verkoop, monster, reparatie of retour.",
+    "req_6_title": "0 % btw, leverdatum en verklaring",
+    "req_6_text": "Voor export buiten de EU reken je 0 % btw. De pdf drukt altijd een btw-regel af, hier ‘BTW (0%)’ met € 0,00; zet in de opmerkingen dat het om export buiten de EU gaat. Ook de leverdatum gaat in de opmerkingen, want Invoicor heeft er geen veld voor. Veel vervoerders willen een ondertekende verklaring dat de gegevens kloppen.",
+    "what_to_include_outro": "Check daarnaast de lijst van je vervoerder: sommige willen extra gegevens of een eigen formulier.",
+    "paper_label": "Commerciële factuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een commerciële factuur",
+    "sample_breakdown_intro": "Een textielatelier in Tilburg verscheept naar een conceptstore in Londen, DAP Londen, in euro. Het Verenigd Koninkrijk valt buiten de EU: 0 % btw, de pdf toont ‘BTW (0%)’ en de opmerkingen leggen het uit. Of de vracht ook onder 0 % valt, check je bij je boekhouder. De HS-codes zijn voorbeelden.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Commerciële factuur. Wollen plaid, 130 x 170 cm. HS 6301.20, oorsprong Nederland, 1,2 kg per stuk",
+        "qty": "20",
+        "rate": "€ 89,00",
+        "amount": "€ 1.780,00"
+      },
+      {
+        "description": "Kussenhoes, katoen, 50 x 50 cm. HS 6304.92, oorsprong Nederland, 0,3 kg per stuk",
+        "qty": "50",
+        "rate": "€ 24,50",
+        "amount": "€ 1.225,00"
+      },
+      {
+        "description": "Tafelkleed, katoen, 150 x 250 cm. HS 6302.51, oorsprong Portugal, 0,8 kg per stuk",
+        "qty": "15",
+        "rate": "€ 42,00",
+        "amount": "€ 630,00"
+      },
+      {
+        "description": "Vracht naar Londen, 3 dozen, 58 kg bruto",
+        "qty": "1",
+        "rate": "€ 155,00",
+        "amount": "€ 155,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 3.790,00",
+    "sample_breakdown_tax_label": "Btw 0% (export buiten de EU)",
+    "sample_breakdown_tax": "€ 0,00",
+    "sample_breakdown_balance": "€ 3.790,00",
+    "sample_breakdown_notes": "Commerciële factuur (Commercial Invoice). Export buiten de EU, btw 0 %. Leverdatum: 20 november 2026. Incoterms 2020: DAP Londen. Reden: verkoop. Ontvanger: Hearth & Loom Ltd, magazijn Hackney, Londen. 3 colli. EORI: NL123456789. Gegevens juist en volledig verklaard, S. de Wit, eigenaar.",
+    "industry_notes_title": "Goed om te weten over commerciële facturen",
+    "industry_notes": [
+      {
+        "title": "Zonder exportbewijs geen 0 %",
+        "text": "Het 0 %-tarief hoort bij goederen die de EU echt verlaten, en dat moet je kunnen aantonen. Welke bewijzen je bewaart, zoals de uitvoeraangifte of vrachtpapieren, check je bij je boekhouder of de Douane. Bewaar ze zeven jaar (artikel 52 AWR)."
+      },
+      {
+        "title": "Incoterms bepalen wie de invoerrechten betaalt",
+        "text": "Bij DAP betaalt de koper invoerrechten en btw in het land van bestemming, bij DDP betaal jij. Spreek het af voordat je een prijs noemt: bij DDP gaan die kosten van je marge af."
+      },
+      {
+        "title": "Binnen de EU is het een andere factuur",
+        "text": "Binnen de EU is er geen douane. Een levering aan een bedrijf met een btw-nummer gaat tegen 0 % met beide btw-nummers, de vermelding uit de Wet OB of de btw-richtlijn en een ICP-opgaaf: dat staat bij de verkoopfactuur."
+      }
+    ],
+    "mistakes_title": "Drie fouten op commerciële facturen",
+    "mistakes": [
+      {
+        "title": "De waarde lager opgeven",
+        "text": "Een lagere waarde zodat je koper minder invoerrechten betaalt, is een onjuiste opgave: de zending kan worden vastgehouden. Geef de echte prijs op, bij een monster een realistische waarde."
+      },
+      {
+        "title": "Oorsprong verwarren met verzendplaats",
+        "text": "Een tafelkleed dat in Portugal is geweven en vanuit Tilburg vertrekt, heeft Portugese oorsprong, zoals in het voorbeeld. Dat kan het invoertarief veranderen. Check het per regel."
+      },
+      {
+        "title": "21 % btw rekenen of de vermelding vergeten",
+        "text": "Wie op een export 21 % btw rekent, vraagt belasting die er niet is en moet de factuur corrigeren. Laat het btw-tarief op 0 staan, zodat de pdf ‘BTW (0%)’ toont, en leg in de opmerkingen uit waarom: export van goederen buiten de EU."
+      }
+    ],
+    "tip_title": "Een tip voor commerciële facturen",
+    "pro_tip": "Sla elk exportproduct op met HS-code, oorsprong en gewicht in de omschrijving. Dupliceer daarna een complete exportfactuur per zending en pas alleen aantallen, ontvanger en datum aan.",
+    "format_pdf_desc": "Vervoerders vragen de commerciële factuur als pdf bij de zending. Codes en gewichten blijven op hun plek.",
+    "faq_title": "Vragen over de commerciële factuur",
+    "faqs": [
+      {
+        "question": "Wanneer heb ik een commerciële factuur nodig?",
+        "answer": "Als goederen een douanegrens over gaan, dus bij zendingen buiten de EU, zoals naar het Verenigd Koninkrijk, Zwitserland of de Verenigde Staten. Ook bij monsters en retouren vragen vervoerders er meestal om, met de reden erbij."
+      },
+      {
+        "question": "Wat is het verschil met een gewone verkoopfactuur?",
+        "answer": "Allebei factureren ze goederen. De commerciële factuur voegt toe wat de douane nodig heeft: HS-codes, oorsprong, gewichten, Incoterms, de reden van export en een verklaring. Binnen de EU volstaat een verkoopfactuur."
+      },
+      {
+        "question": "Moet ik btw rekenen op export buiten de EU?",
+        "answer": "Nee, volgens de Belastingdienst geldt voor export buiten de EU het 0 %-tarief, als je kunt aantonen dat de goederen de EU verlieten. Bijzondere gevallen bespreek je met je boekhouder."
+      },
+      {
+        "question": "Waar zet ik de HS-code op de factuur?",
+        "answer": "In elke regel, na de omschrijving, samen met het land van oorsprong en het gewicht. In de gratis generator heeft elke regel daar een veld voor details."
+      },
+      {
+        "question": "Maakt Invoicor ook de douaneaangifte?",
+        "answer": "Nee. Invoicor maakt de factuur-pdf met de douanegegevens die je per regel invult. Uitvoeraangiftes, oorsprongscertificaten en formulieren van vervoerders komen van je vervoerder, expediteur of douane-agent."
+      }
+    ],
+    "cta_title": "Maak je commerciële factuur",
+    "related": [
+      {
+        "name": "Verkoopfactuur",
+        "slug": "verkoopfactuur"
+      },
+      {
+        "name": "Factuur voor doorberekende kosten",
+        "slug": "kosten-doorberekenen"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "kosten-doorberekenen",
+    "translation_of": "expense-reimbursement-invoice",
+    "niche": "Factuur voor doorberekende kosten",
+    "title": "Kosten doorberekenen op je factuur: voorbeeld | Invoicor",
+    "meta_description": "Kosten doorberekenen aan je klant: reiskosten, zaalhuur en drukwerk met btw, of verschotten zonder btw. Bekijk het voorbeeld en maak je pdf.",
+    "h1": "Kosten doorberekenen aan je klant: voorbeeld en uitleg",
+    "subtitle": "Voor ondernemers en zzp'ers die kosten voor een opdracht voorschieten: wanneer er btw over gaat en wanneer niet.",
+    "intro_paragraph": "Kosten doorberekenen (of doorfactureren) betekent dat je als bedrijf of zzp'er kosten die je voor een opdracht maakte, bij je klant in rekening brengt. Het is een factuur van bedrijf aan klant, geen declaratie van een werknemer bij zijn werkgever. Jij betaalde de trein, de zaalhuur of het drukwerk, de afspraak zegt dat de klant dat draagt, en nu factureer je het, met de bonnen erbij. Voor de btw telt hoe je de kosten maakte: op eigen naam, of op naam en voor rekening van je klant (een doorlopende post of verschot). Een pdf-factuur is in Nederland voorlopig goed: verplichte e-facturatie tussen bedrijven staat gepland voor 1 juli 2030 maar is nog geen wet; de Rijksoverheid wil al e-facturen. Factureer je vanuit België aan een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur voor doorberekende kosten moet staan",
+    "what_to_include_intro": "Je klant wil elke regel naast een bon en de afspraak kunnen leggen. Daarvoor heeft hij dit nodig.",
+    "req_1_title": "Eén regel per kostenpost, met datum",
+    "req_1_text": "Zet elke post apart: ‘14 nov: trein Zwolle naar Maastricht en terug (bon 1)’. Datum en leverancier koppelen de regel aan de opdracht en de bon. Voeg alleen kleine posten van één soort samen.",
+    "req_2_title": "Bonnummers en kopieën",
+    "req_2_text": "Nummer je bonnen, zet het nummer in de regel en stuur kopieën als aparte pdf mee. De originelen bewaar je zeven jaar (artikel 52 AWR).",
+    "req_3_title": "Op eigen naam of op naam van je klant",
+    "req_3_text": "Dit bepaalt de btw. Kosten op je eigen naam horen bij je eigen dienst en krijgen btw. Kosten op naam en voor rekening van je klant zijn doorlopende posten: volgens de Belastingdienst horen ze niet bij de btw-grondslag, als er een directe rechtsverhouding is tussen de leverancier en je klant.",
+    "req_4_title": "Bedragen exclusief de btw die je terugvraagt",
+    "req_4_text": "Vraag je de btw op de bon zelf terug als voorbelasting, bereken dan het bedrag exclusief btw door en zet je eigen btw erover. Anders betaalt je klant btw over btw. Gebruik je de KOR, check het dan bij je boekhouder.",
+    "req_5_title": "Een opslag alleen als je die hebt afgesproken",
+    "req_5_text": "Sommige afspraken zeggen ‘tegen kostprijs’, andere staan een opslag toe. Zet een opslag op een eigen regel (‘Opslag 10 % op drukwerk’), zodat de kosten nog met de bonnen kloppen.",
+    "req_6_title": "Een verwijzing naar je opdracht en je honorarium",
+    "req_6_text": "Noem het project of ordernummer van je klant en verwijs naar je honorariumfactuur als je de kosten apart factureert. Zo komt de factuur bij het juiste budget.",
+    "what_to_include_outro": "Spreek vooraf af welke kosten je doorberekent, zeker grote posten als hotels. Dat voorkomt de discussie ‘dat hadden we niet afgesproken’.",
+    "paper_label": "Doorberekende kosten · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld: kosten doorberekenen met btw",
+    "sample_breakdown_intro": "Een zelfstandig trainer uit Zwolle factureert de kosten van een trainingsdag in Maastricht, los van haar honorarium. Ze boekte alles op eigen naam, dus de kosten krijgen btw, hier 21 %, exclusief de btw die ze zelf terugvraagt. Welk tarief jij rekent: meestal het tarief van je eigen dienst; check het bij je boekhouder.",
+    "sample_breakdown_rows": [
+      {
+        "description": "14 nov: trein Zwolle naar Maastricht en terug (bon 1)",
+        "qty": "1",
+        "rate": "€ 78,40",
+        "amount": "€ 78,40"
+      },
+      {
+        "description": "Hotel Maastricht, 1 nacht (bon 2)",
+        "qty": "1",
+        "rate": "€ 129,00",
+        "amount": "€ 129,00"
+      },
+      {
+        "description": "Zaalhuur, 15 nov, hele dag (bon 3)",
+        "qty": "1",
+        "rate": "€ 275,00",
+        "amount": "€ 275,00"
+      },
+      {
+        "description": "Werkboeken gedrukt (bon 4)",
+        "qty": "16",
+        "rate": "€ 8,25",
+        "amount": "€ 132,00"
+      },
+      {
+        "description": "Huur beamer en flipover (bon 5)",
+        "qty": "1",
+        "rate": "€ 95,00",
+        "amount": "€ 95,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 709,40",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 148,97",
+    "sample_breakdown_balance": "€ 858,37",
+    "sample_breakdown_notes": "Kosten trainingsdag 15 november 2026, uw ordernummer PO-4471. Honorarium op factuur 2026-118. Kopieën bon 1 t/m 5 als aparte pdf. Kosten op eigen naam gemaakt, tegen kostprijs exclusief btw. Betaling binnen 30 dagen.",
+    "industry_notes_title": "Goed om te weten over kosten doorberekenen",
+    "industry_notes": [
+      {
+        "title": "Doorlopende posten: zonder btw, op een eigen factuur",
+        "text": "Kosten op naam en voor rekening van je klant, zoals leges op naam van je klant, horen volgens de Belastingdienst niet bij de btw-grondslag. Invoicor rekent met één btw-tarief per factuur, dus zet ze op een aparte factuur zonder tarief. De pdf toont dan ‘BTW (0%)’ met € 0,00; zet in de opmerkingen dat het doorlopende posten zijn."
+      },
+      {
+        "title": "Kosten op eigen naam: btw zoals je dienst",
+        "text": "Boekte je de kosten zelf, dan horen ze bij je dienst en reken je er btw over, meestal tegen het tarief van je eigen dienst, ook als de bon een ander tarief had. Check het bij je boekhouder."
+      },
+      {
+        "title": "Geen werknemersdeclaratie",
+        "text": "Werknemers vragen onkosten terug via het declaratieformulier van hun werkgever, niet met een factuur. Deze pagina gaat over een bedrijf of zzp'er en zijn klant."
+      }
+    ],
+    "mistakes_title": "Drie fouten bij kosten doorberekenen",
+    "mistakes": [
+      {
+        "title": "Btw over btw",
+        "text": "Wie de bon inclusief btw doorberekent en er nog 21 % overheen zet, laat de klant btw over btw betalen. Reken door exclusief btw en zet je eigen btw erover."
+      },
+      {
+        "title": "Een verschot met btw, of eigen kosten zonder",
+        "text": "Een doorlopende post met btw laat je klant te veel betalen; eigen kosten zonder btw laten jou te weinig afdragen. Kijk per post op wiens naam de factuur van de leverancier staat."
+      },
+      {
+        "title": "Maanden wachten met factureren",
+        "text": "Kosten die je lang na de opdracht doorberekent, zijn lastiger goed te keuren: budgetten zijn dicht. Factureer ze met je honorarium of binnen de maand."
+      }
+    ],
+    "tip_title": "Een tip voor doorberekende kosten",
+    "pro_tip": "Fotografeer elke bon meteen en geef het bestand het nummer van de toekomstige regel (‘B3-zaalhuur’). Dan liggen regels en bonnen al op volgorde.",
+    "format_pdf_desc": "Een pdf ligt naast de kopieën van de bonnen in de goedkeuringsronde en houdt elk bedrag vast.",
+    "faq_title": "Vragen over kosten doorberekenen",
+    "faqs": [
+      {
+        "question": "Mag ik kosten doorberekenen aan mijn klant?",
+        "answer": "Ja, als je dat hebt afgesproken. Leg in je opdrachtbevestiging vast welke kosten je doorberekent, tegen kostprijs of met opslag, en of grote posten vooraf goedkeuring nodig hebben."
+      },
+      {
+        "question": "Wat is het verschil tussen doorberekende kosten en verschotten?",
+        "answer": "Doorberekende kosten maak je op eigen naam; ze horen bij je dienst en krijgen btw. Verschotten of doorlopende posten betaal je op naam en voor rekening van je klant; die vallen buiten de btw-grondslag als er een directe rechtsverhouding is tussen de leverancier en je klant."
+      },
+      {
+        "question": "Welk btw-tarief reken ik over doorberekende kosten?",
+        "answer": "Meestal het tarief van je eigen dienst, niet het tarief op de bon. Een kostenpost met 9 % btw op de bon kan op jouw factuur dus onder 21 % vallen als je dienst onder 21 % valt. Check het bij je boekhouder."
+      },
+      {
+        "question": "Zet ik kosten op dezelfde factuur als mijn honorarium?",
+        "answer": "Dat kan allebei. Eén factuur met een blok kosten werkt als alles onder hetzelfde tarief valt, want Invoicor rekent met één tarief per factuur. Een aparte factuur is beter bij een ander budget, later binnengekomen kosten of doorlopende posten zonder btw."
+      },
+      {
+        "question": "Mag ik een opslag rekenen op doorberekende kosten?",
+        "answer": "Ja, als je klant ermee akkoord is. Zet de opslag op een eigen regel. Zonder afgesproken opslag reken je de kostprijs door."
+      }
+    ],
+    "cta_title": "Maak je factuur voor doorberekende kosten",
+    "related": [
+      {
+        "name": "Zzp-factuur",
+        "slug": "zzp-factuur"
+      },
+      {
+        "name": "Verkoopfactuur",
+        "slug": "verkoopfactuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factuur-zonder-btw",
+    "translation_of": "no-vat-invoice",
+    "niche": "Factuur zonder btw",
+    "title": "Factuur zonder btw: KOR-factuur met voorbeeld | Invoicor",
+    "meta_description": "Factuur zonder btw met de KOR: de grens van € 20.000, de juiste zin op je factuur en een voorbeeld. Maak je pdf gratis in een paar seconden.",
+    "h1": "Factuur zonder btw: template en voorbeeld voor de KOR",
+    "subtitle": "Voor ondernemers met de kleineondernemersregeling (KOR): wat er op je factuur moet, welke zin je erop zet en wat er verandert als je boven de € 20.000 komt.",
+    "intro_paragraph": "Gebruik je de kleineondernemersregeling (KOR), dan reken je geen btw. Je factuur blijft een gewone factuur; alleen komt er geen btw bij, en een korte zin legt uit waarom. Die zin doet ertoe, want vrijgesteld zijn is iets anders dan 0 % btw rekenen. Een pdf-factuur is in Nederland voorlopig gewoon goed: de geplande e-factuurplicht tussen bedrijven (1 juli 2030, nog geen wet) gaat straks niet voor KOR-ondernemers gelden. Alleen de Rijksoverheid wil nu al een e-factuur. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur zonder btw moet staan",
+    "what_to_include_intro": "Btw weglaten is zo gedaan. Met deze zes punten zien je klant en de Belastingdienst meteen dat het klopt.",
+    "req_1_title": "Eerst de bevestiging van de Belastingdienst",
+    "req_1_text": "De KOR is een vrijstelling waarvoor je je aanmeldt. Je factureert pas zonder btw als de Belastingdienst je deelname heeft bevestigd; tot dan reken je gewoon btw, meestal 21 %. De regeling is er voor ondernemers die in Nederland gevestigd zijn en per kalenderjaar maximaal € 20.000 omzet maken.",
+    "req_2_title": "Jouw gegevens en die van je klant",
+    "req_2_text": "Je naam en adres, die van je klant, een factuurdatum en een factuurnummer dat doorloopt. Ook je KvK-nummer hoort erop: volgens de KvK moet het op al je facturen. In Invoicor vul je het in bij het veld KVK-nummer.",
+    "req_3_title": "Wat je leverde, en wanneer",
+    "req_3_text": "Omschrijf het werk of de producten met aantallen en prijzen. Invoicor heeft geen apart veld voor de leverdatum: zet de datum of de periode in de omschrijving van de regel of in de notities.",
+    "req_4_title": "Geen btw-bedrag en geen 'excl. btw'",
+    "req_4_text": "Je prijs is de eindprijs. Schrijf er geen 'excl. btw' bij en tel er geen 21 % bovenop, ook niet om groter over te komen. Staat er toch btw op je factuur, vraag je boekhouder dan hoe je dat rechtzet.",
+    "req_5_title": "De zin dat je de KOR gebruikt",
+    "req_5_text": "Stuur je een factuur, dan vermeld je dat je de kleineondernemersregeling gebruikt en geen btw rekent. Een vaste tekst is niet voorgeschreven. Veel gebruikt: 'Factuur vrijgesteld van omzetbelasting o.g.v. artikel 25 Wet OB'.",
+    "req_6_title": "Eerlijk over de btw-regel op de pdf",
+    "req_6_text": "Invoicor drukt de btw-regel altijd af. Stel je geen tarief in, dan staat er 'BTW (0%)' met € 0,00. Die regel verbergen kan in Invoicor op dit moment niet, ook niet in de gratis generator. Zet de KOR-zin daarom in de notities, direct onder de factuurregels: dan leest niemand die regel als het nultarief.",
+    "what_to_include_outro": "Zo ziet je klant meteen dat er geen btw bij komt, en waarom.",
+    "paper_label": "Factuur zonder btw · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur zonder btw (KOR)",
+    "sample_breakdown_intro": "Een illustrator in Deventer met de KOR maakt etiketten voor een kleine brouwerij. Ze blijft ruim onder de € 20.000 en heeft de bevestiging van de Belastingdienst. Hieronder staat geen btw-regel; op de pdf staat 'BTW (0%)' met € 0,00, en de KOR-zin in de notities legt uit waarom.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Etiketontwerp per bier: blond, tripel en IPA",
+        "qty": "3",
+        "rate": "€ 275,00",
+        "amount": "€ 825,00"
+      },
+      {
+        "description": "Logo aanpassen voor bierviltjes en tapkraan",
+        "qty": "1",
+        "rate": "€ 180,00",
+        "amount": "€ 180,00"
+      },
+      {
+        "description": "Overleg met de brouwer en controle van de drukproef",
+        "qty": "2 uur",
+        "rate": "€ 55,00",
+        "amount": "€ 110,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 1.115,00",
+    "sample_breakdown_balance": "€ 1.115,00",
+    "sample_breakdown_notes": "Factuur vrijgesteld van omzetbelasting o.g.v. artikel 25 Wet OB (kleineondernemersregeling). Geleverd van 2 tot en met 20 november 2026. Graag betalen binnen 14 dagen op NL00 BANK 0123 4567 89, met factuurnummer 2026-018 als kenmerk.",
+    "industry_notes_title": "Goed om te weten over de KOR",
+    "industry_notes": [
+      {
+        "title": "Vrijstelling betekent: geen aangifte, geen aftrek",
+        "text": "In de KOR reken je geen btw, doe je geen btw-aangifte en trek je ook geen btw af op je eigen inkopen. Koop je een dure laptop, dan krijg je die btw niet terug."
+      },
+      {
+        "title": "Boven de € 20.000: btw vanaf die factuur",
+        "text": "Volgens de KvK geldt: kom je in een kalenderjaar boven de € 20.000, dan reken je btw vanaf de factuur waarmee je over de grens gaat. Op die factuur staan dus wel je btw-id, het tarief en het btw-bedrag, en de KOR-zin vervalt. De rest bespreek je met je boekhouder."
+      },
+      {
+        "title": "Niet elke factuur zonder btw is een KOR-factuur",
+        "text": "Werk je als onderaannemer in de bouw, dan zet je 'btw verlegd' op de factuur en draagt de hoofdaannemer de btw af. Exporteer je goederen buiten de EU, dan is dat 0 % btw: een tarief, geen vrijstelling. En sinds 1 januari 2025 bestaat er ook een EU-KOR, voor vrijstelling in andere EU-landen."
+      }
+    ],
+    "mistakes_title": "Drie fouten op een factuur zonder btw",
+    "mistakes": [
+      {
+        "title": "'0% btw' in de tekst zetten",
+        "text": "Een vrijstelling is niet het nultarief. Met '0% btw' als uitleg lijkt het op een levering tegen 0 %, zoals export. Noem de KOR of artikel 25 Wet OB; de regel 'BTW (0%)' op de pdf staat er alleen omdat Invoicor hem altijd afdrukt."
+      },
+      {
+        "title": "Zonder btw factureren voor de bevestiging",
+        "text": "Aanmelden is niet genoeg: de Belastingdienst moet je deelname eerst bevestigen. Wacht op de bevestiging, of reken tot die tijd gewoon btw."
+      },
+      {
+        "title": "Je omzet niet bijhouden",
+        "text": "Eén grote opdracht in november kan je over de € 20.000 tillen. Tel per maand op wat je factureerde, dan zie je de grens aankomen."
+      }
+    ],
+    "tip_title": "Tip voor KOR-ondernemers",
+    "pro_tip": "Maak één factuur met de KOR-zin, je KvK-nummer, je IBAN en je betaaltermijn, en dupliceer die voor elke nieuwe klus. Een duplicaat krijgt het volgende factuurnummer en neemt klant, regels en notities over. Zo staat de KOR-zin er altijd op.",
+    "format_pdf_desc": "Een pdf toont het eindbedrag en je KOR-zin precies zoals je ze bedoelde en verandert onderweg niet. Facturen bewaar je 7 jaar (artikel 52 AWR).",
+    "faq_title": "Vragen over de factuur zonder btw",
+    "faqs": [
+      {
+        "question": "Moet ik als KOR-ondernemer facturen sturen?",
+        "answer": "Nee, onder de KOR ben je niet verplicht om te factureren. Stuur je er een, dan vermeld je dat je de kleineondernemersregeling gebruikt en geen btw rekent."
+      },
+      {
+        "question": "Is een factuur zonder btw hetzelfde als 0% btw?",
+        "answer": "Nee. Met de KOR ben je vrijgesteld: je rekent geen btw en doet geen aangifte. Het nultarief hoort bij bepaalde leveringen, vooral goederen naar het buitenland, en die geef je wel aan. Daarom hoort de KOR-zin op je factuur, en niet alleen een nul."
+      },
+      {
+        "question": "Kan ik de btw-regel van mijn factuur weghalen?",
+        "answer": "Nee, niet in Invoicor op dit moment. De pdf toont altijd 'BTW (0%)' met € 0,00 als je geen tarief instelt. De KOR-zin in de notities, direct onder de regels, maakt duidelijk dat het om een vrijstelling gaat."
+      },
+      {
+        "question": "Wat gebeurt er als ik over de € 20.000 ga?",
+        "answer": "Vanaf de factuur waarmee je in dat kalenderjaar over de grens gaat, reken je btw (volgens de KvK). Dan zet je je btw-id, het tarief en het btw-bedrag op de factuur en laat je de KOR-zin weg. Bespreek de gevolgen met je boekhouder."
+      },
+      {
+        "question": "Moet ik met de KOR straks e-facturen sturen?",
+        "answer": "Nee. Het kabinet wil e-facturen tussen bedrijven verplichten vanaf 1 juli 2030, maar dat is nog geen wet, en KOR-ondernemers zijn ervan uitgezonderd. Alleen facturen aan de Rijksoverheid moeten e-facturen zijn, en die maakt Invoicor niet."
+      }
+    ],
+    "cta_title": "Maak je factuur zonder btw",
+    "related": [
+      {
+        "name": "Zzp-factuur",
+        "slug": "zzp-factuur"
+      },
+      {
+        "name": "Verkoopfactuur",
+        "slug": "verkoopfactuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "zzp-factuur",
+    "translation_of": "freelance-invoice",
+    "niche": "Zzp-factuur",
+    "title": "Zzp factuur maken: wat erop moet + voorbeeld | Invoicor",
+    "meta_description": "Zzp factuur maken? Alle verplichte gegevens volgens de Belastingdienst, KOR of 21 % btw, betaaltermijnen en een voorbeeld. Maak gratis je pdf.",
+    "h1": "Zzp factuur: template en voorbeeld voor zzp'ers",
+    "subtitle": "Voor zelfstandigen zonder personeel in elk vak: wat er volgens de Belastingdienst op je factuur moet, hoe je de btw regelt en welke betaaltermijn je mag vragen.",
+    "intro_paragraph": "Als zzp'er doe je je eigen facturen. Die worden vaak gelezen door iemand die je nooit hebt gesproken: de crediteurenadministratie van je opdrachtgever. Ontbreekt er iets wat de Belastingdienst vraagt, of klopt de btw niet, dan komt je factuur terug en wacht jij langer op je geld. Een pdf-factuur is in Nederland voorlopig gewoon toegestaan. Verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet; alleen de Rijksoverheid wil nu al e-facturen. Factureer je vanuit België aan een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen nog een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een zzp-factuur moet staan",
+    "what_to_include_intro": "De Belastingdienst noemt in zijn factuureisen de gegevens die op elke factuur horen. Zo zet je ze op een rij.",
+    "req_1_title": "Jouw naam en adres, en die van je klant",
+    "req_1_text": "Je naam of handelsnaam met adres, en de naam en het adres van je opdrachtgever. Neem die over zoals ze in het contract staan.",
+    "req_2_title": "KvK-nummer en btw-id, elk in een eigen veld",
+    "req_2_text": "Je KvK-nummer moet op je facturen, zegt de KvK; in Invoicor zet je het in het veld KVK-nummer. Je btw-identificatienummer (het nummer dat met NL begint) hoort in het veld BTW-nummer en staat dan zo op de pdf. Gebruik je de KOR, vraag je boekhouder dan wat er bij jou op moet.",
+    "req_3_title": "Factuurdatum en een doorlopend nummer",
+    "req_3_text": "Elke factuur krijgt een datum en een uniek nummer dat aansluit op het vorige, bijvoorbeeld 2026-031 en daarna 2026-032. Gebruik één reeks voor al je klanten.",
+    "req_4_title": "Wat je deed, en wanneer",
+    "req_4_text": "Omschrijf de dienst en de hoeveelheid: uren, dagen of een vaste prijs volgens offerte. Ook de datum of periode van je werk moet erop. Invoicor heeft daar geen apart veld voor: zet hem in de omschrijving of in de notities.",
+    "req_5_title": "Bedrag, tarief en btw-bedrag",
+    "req_5_text": "Het bedrag exclusief btw, het tarief en het btw-bedrag. Heb je op één opdracht 21 % en 9 %, dan toon je de bedragen per tarief. Invoicor rekent met één tarief per factuur: maak dan twee facturen, of vraag je boekhouder hoe je het het best splitst.",
+    "req_6_title": "Betaaltermijn en rekeningnummer",
+    "req_6_text": "Zet je IBAN, de naam van de rekeninghouder en een vervaldatum op de factuur, en vraag om het factuurnummer als kenmerk.",
+    "what_to_include_outro": "Zo kan iemand die je nooit sprak je factuur meteen betalen.",
+    "paper_label": "Zzp-factuur · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een zzp-factuur",
+    "sample_breakdown_intro": "Een zzp-webdeveloper in Utrecht factureert een installatiebedrijf in Amersfoort: de vaste prijs uit de offerte, zes uur extra werk en een maand hosting. Hij rekent 21 % btw.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Nieuwe website volgens offerte 2026-014, opgeleverd op 13 november",
+        "qty": "1",
+        "rate": "€ 3.200,00",
+        "amount": "€ 3.200,00"
+      },
+      {
+        "description": "Extra werk: koppeling met nieuwsbriefsysteem, gevraagd op 17 november",
+        "qty": "6 uur",
+        "rate": "€ 85,00",
+        "amount": "€ 510,00"
+      },
+      {
+        "description": "Hosting en onderhoud, december 2026",
+        "qty": "1",
+        "rate": "€ 45,00",
+        "amount": "€ 45,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 3.755,00",
+    "sample_breakdown_tax_label": "Btw 21%",
+    "sample_breakdown_tax": "€ 788,55",
+    "sample_breakdown_balance": "€ 4.543,55",
+    "sample_breakdown_notes": "Werk uitgevoerd van 20 oktober tot en met 21 november 2026. Je inkoopnummer: PO-88213. Betaling binnen 30 dagen op NL00 BANK 0123 4567 89 t.n.v. R. de Vries Webdevelopment, met factuurnummer 2026-047 als kenmerk.",
+    "industry_notes_title": "Goed om te weten als zzp'er",
+    "industry_notes": [
+      {
+        "title": "KOR of 21 % btw",
+        "text": "Blijft je omzet onder de € 20.000 per kalenderjaar en heeft de Belastingdienst je aanmelding bevestigd, dan kun je de KOR gebruiken: geen btw op je factuur, wel een zin dat je de kleineondernemersregeling gebruikt. Anders reken je meestal 21 %, voor sommige diensten 9 %. Check je tarief bij je boekhouder."
+      },
+      {
+        "title": "Een zakelijke klant in een ander EU-land",
+        "text": "Lever je een dienst aan een bedrijf met een btw-id in een ander EU-land, dan zet je volgens de Belastingdienst 'btw verlegd' op de factuur, met het btw-id van je klant, en reken je geen Nederlandse btw. De pdf toont dan 'BTW (0%)' met € 0,00; je notitie 'btw verlegd' legt uit waarom."
+      },
+      {
+        "title": "Betaaltermijnen: wat de wet zegt",
+        "text": "Spreek je niets af, dan geldt 30 dagen. Tussen bedrijven mag je hooguit 60 dagen afspreken, langer alleen als geen van beide partijen erdoor benadeeld wordt. Grote bedrijven moeten mkb'ers en zzp'ers binnen 30 dagen betalen. Betaalt een klant te laat, dan kun je de wettelijke handelsrente vragen: 10,4 % sinds 1 juli 2026."
+      }
+    ],
+    "mistakes_title": "Drie fouten op zzp-facturen",
+    "mistakes": [
+      {
+        "title": "KvK-nummer en btw-id door elkaar",
+        "text": "Je KvK-nummer en je btw-id zijn twee verschillende nummers, elk met een eigen veld. Een opdrachtgever die het verkeerde nummer in zijn systeem zet, houdt je betaling vast tot het klopt."
+      },
+      {
+        "title": "Extra werk in de vaste prijs verstoppen",
+        "text": "Verhoog je de offerteprijs om extra uren te dekken, dan klopt het bedrag niet meer met wat je opdrachtgever goedkeurde. Laat de offerteprijs staan en zet het extra werk op een eigen regel, met datum en uren."
+      },
+      {
+        "title": "Facturen te kort bewaren",
+        "text": "Je bewaart je facturen 7 jaar (artikel 52 AWR). Gaat het om gegevens over onroerende zaken, dan is het 10 jaar."
+      }
+    ],
+    "tip_title": "Tip voor zzp'ers",
+    "pro_tip": "Vraag bij elke nieuwe opdracht: 'Wat moet er op de factuur staan om hem in één keer te betalen?' Vaak is dat een inkoopnummer of projectcode. Zet het in de notities van je eerste factuur aan die klant. Een duplicaat neemt het mee.",
+    "format_pdf_desc": "Crediteurenadministraties verwerken facturen als pdf. Je opmaak blijft staan en niemand past per ongeluk een bedrag aan.",
+    "faq_title": "Vragen over de zzp-factuur",
+    "faqs": [
+      {
+        "question": "Wat moet er op een zzp-factuur staan?",
+        "answer": "Volgens de Belastingdienst: jouw naam en adres en die van je klant, je btw-id, je KvK-nummer, de factuurdatum, een doorlopend factuurnummer, wat je leverde en hoeveel, de datum van levering, het bedrag exclusief btw, het tarief en het btw-bedrag. Voor facturen tot € 100 inclusief btw gelden eenvoudigere regels."
+      },
+      {
+        "question": "Moet ik als zzp'er btw rekenen?",
+        "answer": "Meestal wel: 21 %, of 9 % voor sommige diensten. Gebruik je de kleineondernemersregeling (tot € 20.000 omzet per kalenderjaar, na bevestiging van de Belastingdienst), dan reken je geen btw en zet je dat op je factuur."
+      },
+      {
+        "question": "Hoe factureer ik een bedrijf in een ander EU-land?",
+        "answer": "Voor een dienst aan een bedrijf met een btw-id in een ander EU-land zet je 'btw verlegd' en het btw-id van je klant op de factuur, zonder Nederlandse btw. Invoicor maakt je facturen ook in de taal van je klant."
+      },
+      {
+        "question": "Welke betaaltermijn mag ik op mijn factuur zetten?",
+        "answer": "Wat je afspreekt, met een maximum van 60 dagen tussen bedrijven (langer alleen als niemand benadeeld wordt). Spreek je niets af, dan is het 30 dagen. Een groot bedrijf moet jou als zzp'er binnen 30 dagen betalen."
+      },
+      {
+        "question": "Hoe lang moet ik mijn facturen bewaren?",
+        "answer": "7 jaar, volgens artikel 52 van de Algemene wet inzake rijksbelastingen. Voor gegevens over onroerende zaken is dat 10 jaar."
+      },
+      {
+        "question": "Mag ik als zzp'er een pdf-factuur sturen?",
+        "answer": "Ja, in Nederland voorlopig wel. Verplichte e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Factureer je aan de Rijksoverheid, dan moet het een e-factuur zijn; die maakt Invoicor niet."
+      }
+    ],
+    "cta_title": "Maak je zzp-factuur",
+    "related": [
+      {
+        "name": "Factuur zonder btw",
+        "slug": "factuur-zonder-btw"
+      },
+      {
+        "name": "Periodieke factuur",
+        "slug": "periodieke-factuur"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "factuur-onderaannemer",
+    "translation_of": "subcontractor-invoice",
+    "niche": "Factuur onderaannemer",
+    "title": "Factuur onderaannemer: btw verlegd + voorbeeld | Invoicor",
+    "meta_description": "Factuur als onderaannemer in de bouw: btw verlegd, het btw-id van de hoofdaannemer, termijnen en meerwerk. Met voorbeeld. Maak gratis je pdf.",
+    "h1": "Factuur onderaannemer: template met btw verlegd",
+    "subtitle": "Voor onderaannemers in de bouw die de hoofdaannemer factureren: btw verlegd, projectgegevens, percentage gereed en meerwerk, zo dat de uitvoerder hem meteen goedkeurt.",
+    "intro_paragraph": "Als onderaannemer factureer je niet de eigenaar van het gebouw, maar de hoofdaannemer die jou inhuurde. Doe je als onderaannemer fysiek werk aan onroerend goed, dan geldt de verleggingsregeling: jij rekent geen btw, de hoofdaannemer draagt hem af, en op je factuur staat 'btw verlegd'. Een pdf-factuur is in Nederland voorlopig toegestaan; e-facturen tussen bedrijven staan gepland voor 1 juli 2030, maar dat is nog geen wet. Werk je vanuit België voor een Belgisch bedrijf, dan is sinds 1 januari 2026 een e-factuur via Peppol verplicht en is een pdf alleen een bijlage. Invoicor maakt pdf-facturen, geen e-facturen.",
+    "include_title": "Wat er op een factuur als onderaannemer moet staan",
+    "what_to_include_intro": "Dit controleert de projectleider van de hoofdaannemer als eerste.",
+    "req_1_title": "'Btw verlegd' en geen btw-bedrag",
+    "req_1_text": "Bij onderaanneming in de bouw staat er geen btw op je factuur. De Belastingdienst vraagt de woorden 'btw verlegd' en het bedrag per tarief, zoals het zonder verlegging zou zijn. In Invoicor stel je geen tarief in; de pdf drukt dan 'BTW (0%)' met € 0,00 af. Zet 'btw verlegd' daarom in de notities, direct onder de regels.",
+    "req_2_title": "Het btw-id van de hoofdaannemer",
+    "req_2_text": "Naast je eigen btw-id en KvK-nummer moet het btw-identificatienummer van de hoofdaannemer op de factuur. Zet het in de notities, bij 'btw verlegd'. Vraag het bij de start van het project op.",
+    "req_3_title": "Project, adres en opdrachtnummer",
+    "req_3_text": "Noem het project, het adres van de bouwplaats en het opdracht- of inkoopnummer van de hoofdaannemer. Een factuur die hij niet aan een project kan koppelen, blijft liggen.",
+    "req_4_title": "Percentage gereed en eerdere termijnen",
+    "req_4_text": "Werk je voor een vaste aanneemsom, factureer dan per termijn: de aanneemsom, het percentage dat klaar is en wat je eerder al factureerde. Houd het percentage realistisch, want de uitvoerder legt het naast wat hij op de bouw ziet.",
+    "req_5_title": "Meerwerk op een eigen regel",
+    "req_5_text": "Opgedragen meerwerk krijgt een eigen regel met het nummer en de datum van het akkoord, bijvoorbeeld 'Meerwerk MW-02, akkoord 9 oktober'. Laat meerwerk eerst schriftelijk bevestigen.",
+    "req_6_title": "De datum of periode van het werk",
+    "req_6_text": "De Belastingdienst vraagt de datum van levering. Invoicor heeft daar geen apart veld voor: zet de periode in de omschrijving of in de notities, bijvoorbeeld 'uitgevoerd van 1 tot en met 31 oktober 2026'.",
+    "what_to_include_outro": "Zo gaat je factuur zonder vragen door naar de betaling.",
+    "paper_label": "Factuur onderaannemer · voorbeeld",
+    "sample_breakdown_title": "Voorbeeld van een factuur als onderaannemer",
+    "sample_breakdown_intro": "De tweede termijn van een installateur op een aanneemsom van € 36.000,00 voor de elektra in twaalf nieuwbouwwoningen: nu 50 % gereed, na een eerste factuur voor 25 %, plus één opgedragen meerwerk. Het is fysiek werk aan een gebouw voor een hoofdaannemer, dus de btw is verlegd. Op de pdf staat 'BTW (0%)' met € 0,00; de notitie 'btw verlegd' legt uit waarom. De min-regel werkt in de gratis generator, niet in de app.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Elektra-installatie volgens opdracht HA-2026-118: 50 % van € 36.000,00 gereed",
+        "qty": "1",
+        "rate": "€ 18.000,00",
+        "amount": "€ 18.000,00"
+      },
+      {
+        "description": "Min eerder gefactureerd, factuur 2026-061 (25 %)",
+        "qty": "1",
+        "rate": "€ -9.000,00",
+        "amount": "€ -9.000,00"
+      },
+      {
+        "description": "Meerwerk MW-02: extra wandcontactdozen in 8 woningen, akkoord 9 oktober",
+        "qty": "1",
+        "rate": "€ 1.240,00",
+        "amount": "€ 1.240,00"
+      }
+    ],
+    "sample_breakdown_subtotal": "€ 10.240,00",
+    "sample_breakdown_balance": "€ 10.240,00",
+    "sample_breakdown_notes": "Btw verlegd. Btw-id hoofdaannemer: NL123456789B01. Bedrag excl. btw tegen 21 %: € 10.240,00. Project: 12 woningen De Kade, Havenstraat 4-26, Zwolle. Opdracht HA-2026-118. Uitgevoerd van 1 tot en met 31 oktober 2026. Betaling binnen 30 dagen volgens de onderaannemingsovereenkomst.",
+    "industry_notes_title": "Goed om te weten als onderaannemer",
+    "industry_notes": [
+      {
+        "title": "Wanneer de btw niet verlegd wordt",
+        "text": "De verleggingsregeling geldt voor fysiek werk aan onroerend goed dat je als onderaannemer doet. Werk je rechtstreeks voor de eigenaar, bijvoorbeeld een particulier, of lever je alleen een ontwerp of advies, dan reken je meestal gewoon 21 % btw. Twijfel je bij een opdracht, check het dan bij je boekhouder voordat je factureert."
+      },
+      {
+        "title": "Projectgegevens bewaar je 10 jaar",
+        "text": "Facturen bewaar je 7 jaar (artikel 52 AWR), maar voor gegevens over onroerende zaken geldt 10 jaar. Houd facturen, opdrachten en meerwerkakkoorden per project bij elkaar."
+      },
+      {
+        "title": "G-rekening en inhoudingen",
+        "text": "Sommige hoofdaannemers storten een deel van je factuur op een G-rekening, of houden een bedrag in tot de oplevering. Wat voor jou geldt, staat in je onderaannemingsovereenkomst; de details bespreek je met je boekhouder. Noem zo'n afspraak in de notities, zodat je factuur aansluit op wat je ontvangt."
+      }
+    ],
+    "mistakes_title": "Drie fouten op facturen van onderaannemers",
+    "mistakes": [
+      {
+        "title": "Toch 21 % btw rekenen",
+        "text": "Valt je werk onder de verleggingsregeling en zet je er toch btw op, dan klopt je factuur niet en moet hij opnieuw. Stel bij onderaanneming geen tarief in en zet 'btw verlegd' in de notities."
+      },
+      {
+        "title": "Het btw-id van de hoofdaannemer vergeten",
+        "text": "Zonder het btw-id van je opdrachtgever mist je factuur een gegeven dat bij btw verlegd verplicht is. Zet het in de notities van je eerste factuur voor dit project; dupliceer je die voor de volgende termijn, dan staat het er weer op."
+      },
+      {
+        "title": "Een percentage dat voorloopt op de bouw",
+        "text": "Factureer je 60 % terwijl de uitvoerder 40 % ziet, dan wordt je termijn teruggebracht of komt de factuur terug. Factureer wat er staat."
+      }
+    ],
+    "tip_title": "Tip voor onderaannemers",
+    "pro_tip": "Houd per project één overzicht bij: aanneemsom, meerwerk en per factuur het percentage en het bedrag. In de Invoicor-app kunnen regels niet negatief zijn: dupliceer de vorige factuur, zet alleen het bedrag van deze termijn als regel en noem het percentage en de eerdere facturen in de notities. De gratis generator accepteert wel een min-regel, zoals in het voorbeeld.",
+    "format_pdf_desc": "Een pdf houdt je bedragen vast, print netjes voor het projectdossier en verandert niet meer na indienen.",
+    "faq_title": "Vragen over de factuur als onderaannemer",
+    "faqs": [
+      {
+        "question": "Wanneer is de btw verlegd bij onderaanneming?",
+        "answer": "Als je als onderaannemer fysiek werk aan onroerend goed doet, zoals bouwen of installeren in een gebouw. Dan reken je geen btw en draagt de hoofdaannemer die af. Op je factuur staan 'btw verlegd' en zijn btw-id. Twijfel je, check het bij je boekhouder."
+      },
+      {
+        "question": "Wat zet ik op een factuur met btw verlegd?",
+        "answer": "Geen btw-bedrag, wel de woorden 'btw verlegd', het btw-id van de hoofdaannemer en het bedrag per tarief zoals het zonder verlegging zou zijn. Verder de gewone gegevens: namen en adressen, je eigen btw-id en KvK-nummer, factuurdatum, factuurnummer, wat je deed en wanneer."
+      },
+      {
+        "question": "Waarom staat er 'BTW (0%)' op mijn pdf?",
+        "answer": "Invoicor drukt de btw-regel altijd af, ook als er geen btw is. Bij btw verlegd staat er dus 'BTW (0%)' met € 0,00. Die regel verbergen kan op dit moment niet; de notitie 'btw verlegd' direct onder de regels maakt duidelijk dat de hoofdaannemer de btw afdraagt."
+      },
+      {
+        "question": "Hoe factureer ik meerwerk?",
+        "answer": "Op een eigen regel, met het nummer en de datum van het akkoord. Meerwerk zonder akkoord laat je eerst bevestigen."
+      },
+      {
+        "question": "Wat is het verschil met een termijnfactuur?",
+        "answer": "Een termijnfactuur is een van meerdere facturen volgens een afgesproken schema, en als onderaannemer factureer je vaak zo. Deze pagina gaat over wie je factureert en hoe de btw werkt; over het schema zelf gaat de pagina over de termijnfactuur."
+      }
+    ],
+    "cta_title": "Maak je factuur als onderaannemer",
+    "related": [
+      {
+        "name": "Termijnfactuur",
+        "slug": "termijnfactuur"
+      },
+      {
+        "name": "Eindfactuur",
+        "slug": "eindfactuur"
+      }
+    ],
+    "invoice_types": []
+  }
+]

@@ -147,6 +147,17 @@
 /da/vaerktoejer/beregn-timepris
 /nb/verktoy/beregn-timepris
 /nl/help
+/nl/templates
+/nl/templates/aanbetalingsfactuur
+/nl/templates/eindfactuur
+/nl/templates/termijnfactuur
+/nl/templates/periodieke-factuur
+/nl/templates/verkoopfactuur
+/nl/templates/commerciele-factuur
+/nl/templates/kosten-doorberekenen
+/nl/templates/factuur-zonder-btw
+/nl/templates/zzp-factuur
+/nl/templates/factuur-onderaannemer
 /de/hilfe
 /de/vorlagen
 /de/vorlagen/anzahlungsrechnung

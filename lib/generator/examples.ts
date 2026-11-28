@@ -33,9 +33,10 @@ function normalize(value: string): string {
  * an earlier invoice subtracted).
  */
 export function firstNumber(value: string): number | null {
-  const m = normalize(value).match(/([-−])?\D{0,3}?(\d+(?:\.\d+)?)/);
+  // A minus before the currency sign or right after it: "-€ 45,50", "€ -45,50", "-$45.50".
+  const m = normalize(value).match(/([-−])?(\D{0,3}?)(\d+(?:\.\d+)?)/);
   if (!m) return null;
-  return m[1] ? -Number(m[2]) : Number(m[2]);
+  return m[1] || /[€$£¥]\s*[-−]\s*$/.test(m[2] ?? "") ? -Number(m[3]) : Number(m[3]);
 }
 
 export function toExample(t: TemplateEntry): GeneratorExample | null {
