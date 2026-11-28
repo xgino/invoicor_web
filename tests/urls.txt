@@ -195,6 +195,15 @@
 /fr/modeles/facture-freelance
 /fr/modeles/facture-sous-traitant
 /es/ayuda
+/es/plantillas
+/es/plantillas/factura-de-anticipo
+/es/plantillas/factura-recurrente
+/es/plantillas/factura-mano-de-obra-y-materiales
+/es/plantillas/factura-de-venta
+/es/plantillas/factura-comercial-exportacion
+/es/plantillas/factura-con-suplidos
+/es/plantillas/factura-sin-iva
+/es/plantillas/factura-subcontratista
 /it/aiuto
 /pt/ajuda
 /pl/pomoc
