@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**290 live pages** · last change 2026-11-28 · 973 more planned in [PLAN.md](PLAN.md)
+**301 live pages** · last change 2026-11-28 · 974 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -18,7 +18,7 @@
 | /industries | 44 | industry 43, hub 1 |
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
-| /da | 8 | tool 4, generator 1, home 1, support 1, android 1 |
+| /da | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 | /de | 31 | template (invoice type) 12, template 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 | /es | 17 | template (invoice type) 8, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
 | /fr | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
@@ -39,33 +39,33 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
 | template | yes | 50 | 0–10 | 490 |
-| template (invoice type) | yes, en-only | 16 | 0–12 | 90 |
+| template (invoice type) | yes, en-only | 16 | 0–12 | 80 |
 | industry | yes | 43 | 0 | 430 |
 | compare | en-only | 20 | 0 |  |
 | tool | yes | 4 | 4 |  |
 | generator | yes | 1 | 1 |  |
 | home | yes | 1 | 1 |  |
-| hub | yes, en-only | 3 | 0–1 | 15 |
+| hub | yes, en-only | 3 | 0–1 | 14 |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
 | legal | yes | 2 | 0 | 20 |
 | android | yes | 1 | 1 |  |
 | trust | yes | 2 | 0 | 20 |
 
-**1075 language versions still to write** for live pages.
+**1064 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
-| template (invoice type) | 16 | 10 | 12 | 10 | 8 | · | · | · | 10 | · | · |
+| template (invoice type) | 16 | 10 | 12 | 10 | 8 | · | · | · | 10 | 10 | · |
 | industry | 43 | · | · | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| hub | 3 | 1 | 1 | 1 | 1 | · | · | · | 1 | · | · |
+| hub | 3 | 1 | 1 | 1 | 1 | · | · | · | 1 | 1 | · |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
@@ -76,8 +76,8 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 38 | translations 38 (4 languages: template (invoice type) 38) |
-| 2026-11-27 | 45 | template (invoice type) 16, trust 2, translations 27 (5 languages: template (invoice type) 12, template 10, hub 5) |
+| 2026-11-28 | 48 | translations 48 (5 languages: template (invoice type) 48) |
+| 2026-11-27 | 46 | template (invoice type) 16, trust 2, translations 28 (6 languages: template (invoice type) 12, template 10, hub 6) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -264,7 +264,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /tools/hours-calculator | hours calculator | tool | yes | 2026-11-18 |
 | /tools/vat-calculator | vat calculator | tool | yes | 2026-11-18 |
 
-### /da (8)
+### /da (19)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -272,6 +272,17 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /da/android | invoicor til android: kommer snart | android | yes | 2026-11-18 |
 | /da/hjaelp | hjælp og ofte stillede spørgsmål | support | yes | 2026-11-18 |
 | /da/lav-faktura | lav faktura | generator | yes | 2026-11-18 |
+| /da/skabeloner | fakturaskabelon | hub | yes | 2026-11-27 |
+| /da/skabeloner/abonnementsfaktura | abonnementsfaktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/acontofaktura | acontofaktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/delfaktura | delfaktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-arbejdsloen-og-materialer | faktura arbejdsløn og materialer | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-timer | faktura timer | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-uden-moms | faktura uden moms | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-ydelser | faktura for ydelser | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/freelance-faktura | freelance faktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/handelsfaktura | handelsfaktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/udlaeg-faktura | udlæg faktura | template (invoice type) | yes | 2026-11-28 |
 | /da/vaerktoejer | gratis værktøjer: fakturagenerator og beregnere | tool | yes | 2026-11-18 |
 | /da/vaerktoejer/beregn-timepris | beregn timepris | tool | yes | 2026-11-18 |
 | /da/vaerktoejer/momsberegner | momsberegner: beregn moms online (gratis) | tool | yes | 2026-11-18 |

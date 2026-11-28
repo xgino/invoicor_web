@@ -7,7 +7,7 @@
 > `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);
 > then `npm run pages`.
 
-**984 language versions missing** for 114 of 122 live pages · 984 can be written now, 0 wait for a task (the **Needs** column).
+**970 language versions missing** for 114 of 122 live pages · 970 can be written now, 0 wait for a task (the **Needs** column).
 
 Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet), **–** parked on purpose (no local demand; the reason is in its row).
 
@@ -16,11 +16,11 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | Category | Live pages | Complete | Missing | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [T · Trade templates](#t-trade-templates) | 50 | 0 | 455 | none | 5 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 |
-| [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 0 | 34 | none |  | 3 | 2 |  | 1 | 14 | 14 |  |  |  |
+| [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 0 | 21 | none |  | 3 | 2 |  | 1 | 1 | 14 |  |  |  |
 | [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 430 | none | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
 | [TL · Free tools](#tl-free-tools) | 4 | 4 | 0 | none |  |  |  |  |  |  |  |  |  |  |
 | [G · Generators](#g-generators) | 1 | 1 | 0 | none |  |  |  |  |  |  |  |  |  |  |
-| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 3 | 65 | none | 6 | 6 | 6 | 6 | 6 | 7 | 7 | 7 | 7 | 7 |
+| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 3 | 64 | none | 6 | 6 | 6 | 6 | 6 | 6 | 7 | 7 | 7 | 7 |
 
 ## T Trade templates
 
@@ -81,20 +81,20 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 
 | ID | Page | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| D1 | /templates/deposit-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D2 | /templates/final-invoice |  | ✓ | – | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D3 | /templates/milestone-invoice |  | ✓ | – | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D4 | /templates/hourly-invoice |  | ✓ | ◦ | – | – | – | · | · | – | – | – |
-| D6 | /templates/retainer-invoice |  | – | – | – | – | – | · | · | – | – | – |
-| D7 | /templates/monthly-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D8 | /templates/labor-and-materials-invoice |  | ✓ | ✓ | ◦ | – | ✓ | · | · | – | – | – |
-| D9 | /templates/service-invoice |  | ✓ | ◦ | ✓ | – | ◦ | · | · | – | – | – |
-| D10 | /templates/sales-invoice |  | – | ✓ | ◦ | ✓ | – | · | · | – | – | – |
-| D11 | /templates/commercial-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D14 | /templates/expense-reimbursement-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D15 | /templates/no-vat-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D16 | /templates/freelance-invoice |  | ✓ | ◦ | ✓ | ✓ | ✓ | · | · | – | – | – |
-| D18 | /templates/subcontractor-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | – | – | – |
+| D1 | /templates/deposit-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D2 | /templates/final-invoice |  | ✓ | – | ✓ | ✓ | ✓ | – | · | – | – | – |
+| D3 | /templates/milestone-invoice |  | ✓ | – | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D4 | /templates/hourly-invoice |  | ✓ | ◦ | – | – | – | ✓ | · | – | – | – |
+| D6 | /templates/retainer-invoice |  | – | – | – | – | – | – | · | – | – | – |
+| D7 | /templates/monthly-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D8 | /templates/labor-and-materials-invoice |  | ✓ | ✓ | ◦ | – | ✓ | ✓ | · | – | – | – |
+| D9 | /templates/service-invoice |  | ✓ | ◦ | ✓ | – | ◦ | ✓ | · | – | – | – |
+| D10 | /templates/sales-invoice |  | – | ✓ | ◦ | ✓ | – | ◦ | · | – | – | – |
+| D11 | /templates/commercial-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D14 | /templates/expense-reimbursement-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D15 | /templates/no-vat-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D16 | /templates/freelance-invoice |  | ✓ | ◦ | ✓ | ✓ | ✓ | ✓ | · | – | – | – |
+| D18 | /templates/subcontractor-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | – | · | – | – | – |
 
 ## I Industry pages ("invoice app for …")
 
@@ -164,7 +164,7 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | ID | Page | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P1 | / | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| P2 | /templates |  | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | · | · | · |
+| P2 | /templates |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | · | · |
 | P3 | /industries |  | · | · | · | · | · | · | · | · | · | · |
 | P5 | /help | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | P6 | /affiliate |  | · | · | · | · | · | · | · | · | · | · |

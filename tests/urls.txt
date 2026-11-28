@@ -220,6 +220,17 @@
 /sv/mallar/faktura-frilans
 /sv/mallar/omvand-byggmoms-faktura
 /da/hjaelp
+/da/skabeloner
+/da/skabeloner/acontofaktura
+/da/skabeloner/delfaktura
+/da/skabeloner/faktura-timer
+/da/skabeloner/abonnementsfaktura
+/da/skabeloner/faktura-arbejdsloen-og-materialer
+/da/skabeloner/faktura-ydelser
+/da/skabeloner/handelsfaktura
+/da/skabeloner/udlaeg-faktura
+/da/skabeloner/faktura-uden-moms
+/da/skabeloner/freelance-faktura
 /nb/hjelp
 # Wave 1 batch A (2026-11-26, ROADMAP W1)
 /templates/virtual-assistant
