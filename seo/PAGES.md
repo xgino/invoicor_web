@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**348 live pages** · last change 2026-11-28 · 1000 more planned in [PLAN.md](PLAN.md)
+**358 live pages** · last change 2026-11-28 · 1017 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -21,7 +21,7 @@
 | /da | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /de | 44 | template (invoice type) 12, template 10, industry 10, tool 4, hub 2, trust 2, generator 1, home 1, support 1, android 1 |
 | /es | 19 | template (invoice type) 8, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
-| /fr | 23 | template (invoice type) 12, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /fr | 33 | template (invoice type) 12, template (trade) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /it | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
 | /nb | 14 | tool 4, template (invoice type) 3, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /nl | 31 | template (trade) 10, template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
@@ -59,7 +59,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
-| template (trade) | · | 10 | · | · | · | · | · | · | · | · | · |
+| template (trade) | · | 10 | · | 10 | · | · | · | · | · | · | · |
 | template (invoice type) | 16 | 10 | 12 | 12 | 8 | · | · | · | 10 | 10 | 3 |
 | industry | 43 | · | 10 | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
@@ -77,7 +77,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 93 | translations 93 (10 languages: template (invoice type) 53, trust 20, template (trade) 10, industry 10) |
+| 2026-11-28 | 103 | translations 103 (10 languages: template (invoice type) 53, template (trade) 20, trust 20, industry 10) |
 | 2026-11-27 | 48 | template (invoice type) 16, trust 2, translations 30 (7 languages: template (invoice type) 12, template 10, hub 8) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
@@ -364,7 +364,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /es/plantillas/factura-subcontratista | factura inversión del sujeto pasivo | template (invoice type) | yes | 2026-11-28 |
 | /es/sobre-nosotros | quiénes somos invoicor | trust | yes | 2026-11-28 |
 
-### /fr (23)
+### /fr (33)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -376,8 +376,18 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /fr/creer-une-facture | creer une facture | generator | yes | 2026-11-18 |
 | /fr/modeles | modèles de facture | hub | yes | 2026-11-27 |
 | /fr/modeles/facture-acompte | facture d'acompte | template (invoice type) | yes | 2026-11-28 |
+| /fr/modeles/facture-carreleur | facture carreleur | template (trade) | yes | 2026-11-28 |
 | /fr/modeles/facture-commerciale | facture commerciale | template (invoice type) | yes | 2026-11-28 |
+| /fr/modeles/facture-consultant | facture consultant | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-cours-particuliers | facture cours particuliers | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-electricien | facture électricien | template (trade) | yes | 2026-11-28 |
 | /fr/modeles/facture-freelance | facture freelance | template (invoice type) | yes | 2026-11-28 |
+| /fr/modeles/facture-graphiste | facture graphiste | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-macon | facture maçon | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-menuisier | facture menuisier | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-nettoyage | facture nettoyage | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-peintre | facture peintre | template (trade) | yes | 2026-11-28 |
+| /fr/modeles/facture-plombier | facture plombier | template (trade) | yes | 2026-11-28 |
 | /fr/modeles/facture-prestation-de-services | facture de prestation de services | template (invoice type) | yes | 2026-11-28 |
 | /fr/modeles/facture-recurrente | facture récurrente | template (invoice type) | yes | 2026-11-28 |
 | /fr/modeles/facture-sans-tva | facture sans tva | template (invoice type) | yes | 2026-11-28 |

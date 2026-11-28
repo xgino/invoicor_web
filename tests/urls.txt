@@ -237,6 +237,16 @@
 /fr/modeles/facture-sous-traitant
 /fr/modeles/facture-travaux
 /fr/modeles/facture-vente
+/fr/modeles/facture-plombier
+/fr/modeles/facture-electricien
+/fr/modeles/facture-macon
+/fr/modeles/facture-peintre
+/fr/modeles/facture-menuisier
+/fr/modeles/facture-carreleur
+/fr/modeles/facture-graphiste
+/fr/modeles/facture-consultant
+/fr/modeles/facture-nettoyage
+/fr/modeles/facture-cours-particuliers
 /es/ayuda
 /es/plantillas
 /es/plantillas/factura-de-anticipo

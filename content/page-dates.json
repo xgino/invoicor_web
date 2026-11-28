@@ -465,19 +465,59 @@
   },
   "/fr/modeles": {
     "updated": "2026-11-28",
-    "hash": "f42137f8a2ca463c"
+    "hash": "320d904a9f49fbdd"
   },
   "/fr/modeles/facture-acompte": {
     "updated": "2026-11-28",
     "hash": "7c800128f226a7b2"
   },
+  "/fr/modeles/facture-carreleur": {
+    "updated": "2026-11-28",
+    "hash": "924214b4ea261163"
+  },
   "/fr/modeles/facture-commerciale": {
     "updated": "2026-11-28",
     "hash": "cabbe8392b169064"
   },
+  "/fr/modeles/facture-consultant": {
+    "updated": "2026-11-28",
+    "hash": "ec783d28a5bd7080"
+  },
+  "/fr/modeles/facture-cours-particuliers": {
+    "updated": "2026-11-28",
+    "hash": "2828a11e940cd4b5"
+  },
+  "/fr/modeles/facture-electricien": {
+    "updated": "2026-11-28",
+    "hash": "40b6af73ed1cbb65"
+  },
   "/fr/modeles/facture-freelance": {
     "updated": "2026-11-28",
     "hash": "da297db6efed5d65"
+  },
+  "/fr/modeles/facture-graphiste": {
+    "updated": "2026-11-28",
+    "hash": "e788d4567f8cf163"
+  },
+  "/fr/modeles/facture-macon": {
+    "updated": "2026-11-28",
+    "hash": "b833ea6d2cbf4a16"
+  },
+  "/fr/modeles/facture-menuisier": {
+    "updated": "2026-11-28",
+    "hash": "d3fd771afa870ba5"
+  },
+  "/fr/modeles/facture-nettoyage": {
+    "updated": "2026-11-28",
+    "hash": "cf28469c822ec167"
+  },
+  "/fr/modeles/facture-peintre": {
+    "updated": "2026-11-28",
+    "hash": "da0e58be866c5fa4"
+  },
+  "/fr/modeles/facture-plombier": {
+    "updated": "2026-11-28",
+    "hash": "7979161066837d47"
   },
   "/fr/modeles/facture-prestation-de-services": {
     "updated": "2026-11-28",

@@ -1510,5 +1510,1345 @@
       }
     ],
     "invoice_types": []
+  },
+  {
+    "slug": "facture-plombier",
+    "translation_of": "plumbing",
+    "niche": "Facture plombier",
+    "title": "Facture plombier : modèle et exemple à 10 % | Invoicor",
+    "meta_description": "Facture de plombier : devis avant dépannage, TVA à 10 % dans un logement, assurance décennale. Voyez l'exemple chiffré et créez votre PDF.",
+    "h1": "Modèle de facture plombier : dépannage et travaux",
+    "subtitle": "Pour les plombiers et chauffagistes qui interviennent chez des particuliers, des syndics ou des commerçants.",
+    "intro_paragraph": "Une fuite un samedi, un ballon d'eau chaude à changer : le plombier facture souvent dans l'urgence, devant un client qui découvre le prix. Pour un dépannage à domicile, le devis vient avant l'intervention et la facture avant le paiement. Dans un logement de plus de deux ans, la TVA passe en général à 10 %, si le client le certifie par écrit. Toute entreprise doit pouvoir recevoir des e-factures depuis le 1er septembre 2026 ; une petite entreprise artisanale devra en émettre au 1er septembre 2027 (impots.gouv.fr) et, jusqu'à cette date, peut facturer comme aujourd'hui. Les particuliers relèvent de l'e-reporting. Invoicor produit des PDF, pas des e-factures Factur-X ou UBL, sans plateforme agréée. En Belgique, facturer une entreprise belge passe par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de plombier",
+    "what_to_include_intro": "En plus des mentions de toute facture (numéro, date, SIREN dans le champ « SIRET », totaux HT et TTC) :",
+    "req_1_title": "Le numéro du devis accepté",
+    "req_1_text": "Rappelez le devis signé (« Devis D-2026-311 du 16 novembre »). Pour un dépannage à domicile, il est obligatoire avant l'intervention (arrêté du 24 janvier 2017).",
+    "req_2_title": "Le déplacement, puis le temps passé",
+    "req_2_text": "Le déplacement a sa ligne, au forfait ou par zone. Le temps suit, en heures avec votre taux horaire HT. Une majoration de nuit ou de week-end se lit sur la ligne, pas dans un total arrondi.",
+    "req_3_title": "Chaque pièce avec quantité et prix unitaire HT",
+    "req_3_text": "Mécanisme, flexible, robinet d'arrêt : quantité et prix unitaire HT sont des mentions obligatoires (service-public, F31808). Les consommables peuvent former une ligne clairement intitulée.",
+    "req_4_title": "La date et le lieu de l'intervention",
+    "req_4_text": "L'arrêté de 2017 les demande sur la note ou la facture de dépannage. Invoicor n'a pas de champ pour la date de prestation : écrivez-la dans la ligne de main-d'œuvre ou les notes, avec l'adresse.",
+    "req_5_title": "Le taux de TVA et la mention du client",
+    "req_5_text": "10 % pour réparer ou entretenir un logement achevé depuis plus de deux ans, 20 % en local professionnel. Depuis le 1er mars 2025, l'attestation n'existe plus : le client certifie les conditions par une mention sur le devis ou la facture (loi n° 2025-127, art. 41), et vous gardez une copie.",
+    "req_6_title": "Vos références d'assurance",
+    "req_6_text": "Assurance professionnelle, coordonnées de l'assureur et couverture géographique figurent sur devis et factures (Code de l'artisanat, L132-1 et R132-1). L'attestation décennale accompagne la facture (Code des assurances, L243-2) : sans pièce jointe dans Invoicor, envoyez-la dans le même e-mail.",
+    "what_to_include_outro": "La facture se relit alors comme le compte rendu de l'intervention.",
+    "paper_label": "Facture plombier · exemple",
+    "sample_breakdown_title": "Exemple de facture de plombier",
+    "sample_breakdown_intro": "Un plombier lyonnais répare une fuite et le mécanisme d'un WC dans un appartement de 1985 : TVA à 10 %, mention signée sur le devis.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Déplacement, forfait Lyon 3e",
+        "qty": "1",
+        "rate": "40,00 €",
+        "amount": "40,00 €"
+      },
+      {
+        "description": "Recherche de fuite et réfection du raccord sous évier (17 novembre 2026)",
+        "qty": "1,5 h",
+        "rate": "62,00 €",
+        "amount": "93,00 €"
+      },
+      {
+        "description": "Remplacement du mécanisme de chasse et du robinet flotteur",
+        "qty": "1 h",
+        "rate": "62,00 €",
+        "amount": "62,00 €"
+      },
+      {
+        "description": "Mécanisme de chasse double commande",
+        "qty": "1",
+        "rate": "38,90 €",
+        "amount": "38,90 €"
+      },
+      {
+        "description": "Robinet flotteur silencieux",
+        "qty": "1",
+        "rate": "19,50 €",
+        "amount": "19,50 €"
+      },
+      {
+        "description": "Raccords, joints fibre et petites fournitures",
+        "qty": "1",
+        "rate": "12,60 €",
+        "amount": "12,60 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "266,00 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "26,60 €",
+    "sample_breakdown_balance": "292,60 €",
+    "sample_breakdown_notes": "Intervention du 17 novembre 2026, 24 rue Paul-Bert, 69003 Lyon. Devis D-2026-311 accepté avant l'intervention. Le client certifie que le logement est achevé depuis plus de deux ans, qu'il est affecté à l'habitation et que les travaux n'aboutissent pas à une construction neuve. Assurance décennale : contrat n° 2026-DEC-0412, [nom et adresse de l'assureur], couverture France métropolitaine ; attestation envoyée avec la facture. Règlement à réception.",
+    "industry_notes_title": "Bon à savoir pour les plombiers",
+    "industry_notes": [
+      {
+        "title": "Dépannage à domicile : devis d'abord, facture avant paiement",
+        "text": "L'arrêté du 24 janvier 2017 vise les dépannages chez un particulier (plomberie, chauffage, serrurerie, électricité…). La note ou facture, remise avant le paiement, porte la date, les parties, la date et le lieu, le détail de chaque prestation et produit, les totaux HT et TTC. Dès 25 € TTC, une note est due au consommateur (arrêté 83-50/A)."
+      },
+      {
+        "title": "Chaudière fossile : 20 % depuis 2025",
+        "text": "Depuis le 1er mars 2025, fournir et poser une chaudière gaz ou fioul se facture à 20 %, même dans un logement ancien ; l'entretien reste à 10 %. Certains travaux de rénovation énergétique (chauffage, eau chaude) relèvent de 5,5 % : quels équipements, voyez-le avec votre expert-comptable."
+      },
+      {
+        "title": "Syndic, commerce, bureau",
+        "text": "En local professionnel : 20 %, numéro de TVA du client au-delà de 150 € HT, pénalités de retard et indemnité forfaitaire de 40 € dans les notes, paiement à 30 jours sans accord contraire (service-public, F23211)."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de plombier",
+    "mistakes": [
+      {
+        "title": "Intervenir sur un simple appel",
+        "text": "Le client presse, vous réparez, le prix se découvre à la fin. Sans le devis préalable obligatoire, même une facture juste se conteste facilement."
+      },
+      {
+        "title": "Mettre 10 % sans la mention du client",
+        "text": "Le taux réduit dépend de conditions que seul le client connaît. Sans sa mention signée, c'est vous qui portez le risque d'un rappel de TVA."
+      },
+      {
+        "title": "Une chaudière gaz neuve à 10 %",
+        "text": "Pratique d'avant mars 2025 : mettez à jour vos articles enregistrés."
+      }
+    ],
+    "tip_title": "Faites signer la mention sur le devis",
+    "pro_tip": "Mettez la mention de TVA réduite au bas du devis et faites-la signer avec lui : il ne reste qu'à la recopier dans les notes de la facture.",
+    "format_pdf_desc": "Le PDF garde pièces et heures telles que facturées, utile aussi à l'assureur du client après un dégât des eaux.",
+    "faq_title": "Questions sur la facture de plombier",
+    "faqs": [
+      {
+        "question": "Faut-il un devis pour un dépannage de plomberie ?",
+        "answer": "Oui, chez un particulier : l'arrêté du 24 janvier 2017 impose un devis avant l'intervention, puis une note ou facture détaillée remise avant le paiement."
+      },
+      {
+        "question": "Quel taux de TVA sur une facture de plombier ?",
+        "answer": "10 % pour entretenir, réparer ou améliorer un logement achevé depuis plus de deux ans ; 5,5 % pour certains travaux de rénovation énergétique ; 20 % en local professionnel, pour un logement neuf et pour une chaudière fossile fournie et posée (impots.gouv.fr)."
+      },
+      {
+        "question": "L'attestation de TVA réduite existe-t-elle encore ?",
+        "answer": "Non. Depuis le 1er mars 2025, une mention du client sur le devis ou la facture la remplace (le BOFiP en propose un modèle indicatif) ; gardez-en une copie."
+      },
+      {
+        "question": "Le client a acheté son chauffe-eau : quel taux ?",
+        "answer": "Il l'a payé à 20 % chez son vendeur. Vous facturez la pose, au taux réduit si le logement remplit les conditions, et notez que l'appareil vient du client."
+      },
+      {
+        "question": "Puis-je mettre 10 % et 20 % sur une même facture Invoicor ?",
+        "answer": "Non, un seul taux s'applique à la facture. Chaudière gaz à 20 % et réparations à 10 % : deux factures, ou voyez votre expert-comptable."
+      }
+    ],
+    "cta_title": "Créez votre facture de plombier",
+    "links_title": "Types de factures pour les plombiers",
+    "related": [
+      {
+        "name": "Facture électricien",
+        "slug": "facture-electricien"
+      },
+      {
+        "name": "Facture carreleur",
+        "slug": "facture-carreleur"
+      }
+    ],
+    "invoice_types": ["facture-travaux", "facture-acompte", "facture-sous-traitant"]
+  },
+  {
+    "slug": "facture-electricien",
+    "translation_of": "electrician",
+    "niche": "Facture électricien",
+    "title": "Facture électricien : modèle, TVA et exemple | Invoicor",
+    "meta_description": "Facture d'électricien : tableau, mise en conformité, dépannage. TVA à 10 % ou 20 %, assurance et détail du matériel. Exemple chiffré, PDF en ligne.",
+    "h1": "Modèle de facture électricien : mise en conformité et dépannage",
+    "subtitle": "Pour les électriciens qui rénovent, dépannent ou mettent aux normes, chez des particuliers comme chez des professionnels.",
+    "intro_paragraph": "Remplacer un tableau, ajouter des prises, remettre en sécurité une installation des années 1970 : sur la facture d'un électricien, le client voit surtout un gros poste « matériel » qu'il ne sait pas lire. Détailler chaque disjoncteur, chaque heure et le lieu du chantier change la conversation. Le taux de TVA dépend du lieu : 10 % dans un logement de plus de deux ans, 20 % dans une boutique ou un bureau. Depuis le 1er septembre 2026, chaque entreprise en France doit pouvoir recevoir des factures électroniques ; les PME et micro-entreprises devront en émettre au 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date vous facturez comme aujourd'hui. Les particuliers sont concernés par l'e-reporting seulement. Invoicor crée des PDF, non des factures électroniques (Factur-X, UBL), sans passer par une plateforme agréée. Entre entreprises belges, Peppol est obligatoire depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture d'électricien",
+    "what_to_include_intro": "Une facture d'électricien suit l'installation : où, quoi, combien de temps.",
+    "req_1_title": "L'adresse du chantier et le type de local",
+    "req_1_text": "Logement ou local professionnel, et l'âge du logement si vous appliquez 10 % : ces informations décident du taux. Notez l'adresse du chantier quand elle diffère de celle du client.",
+    "req_2_title": "Le diagnostic séparé des travaux",
+    "req_2_text": "Repérage des circuits, mesure d'isolement, recherche de panne : une ligne à part, que le client comprend même si le diagnostic débouche sur un autre devis.",
+    "req_3_title": "Le matériel référence par référence",
+    "req_3_text": "Tableau, différentiels, disjoncteurs, câble au mètre : quantité et prix unitaire HT pour chacun (service-public, F31808). « Fournitures électriques » sur une ligne ne se contrôle pas.",
+    "req_4_title": "Les heures, avec la date",
+    "req_4_text": "Le temps passé et votre taux horaire HT, ou un forfait qui nomme le travail. Invoicor n'a pas de champ pour la date de l'intervention : mettez-la dans la ligne ou les notes.",
+    "req_5_title": "La mention du client pour le taux réduit",
+    "req_5_text": "Depuis le 1er mars 2025, le client certifie sur le devis ou la facture que le logement a plus de deux ans et que les travaux ne créent pas un logement neuf (loi n° 2025-127, art. 41). Gardez-en une copie.",
+    "req_6_title": "Assurance et attestation décennale",
+    "req_6_text": "Assurance professionnelle, coordonnées de l'assureur et zone couverte sur devis et factures (Code de l'artisanat, L132-1 et R132-1) ; l'attestation décennale part avec la facture (Code des assurances, L243-2), en pièce séparée de votre e-mail.",
+    "what_to_include_outro": "Ces détails resservent au prochain électricien qui ouvrira le tableau, ou au client qui vend sa maison.",
+    "paper_label": "Facture électricien · exemple",
+    "sample_breakdown_title": "Exemple de facture d'électricien",
+    "sample_breakdown_intro": "Un électricien nantais remplace le tableau d'une maison de 1978 et refait la mise à la terre, pour une propriétaire occupante. Amélioration d'un logement de plus de deux ans : TVA à 10 %. Le même chantier dans une boutique serait à 20 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Déplacement, Nantes et première couronne",
+        "qty": "1",
+        "rate": "35,00 €",
+        "amount": "35,00 €"
+      },
+      {
+        "description": "Diagnostic de l'installation et repérage des circuits",
+        "qty": "1 h",
+        "rate": "58,00 €",
+        "amount": "58,00 €"
+      },
+      {
+        "description": "Dépose de l'ancien tableau, pose et raccordement du nouveau, 9 circuits (12 et 13 novembre 2026)",
+        "qty": "6 h",
+        "rate": "58,00 €",
+        "amount": "348,00 €"
+      },
+      {
+        "description": "Tableau 2 rangées pré-équipé, interrupteurs différentiels 30 mA types A et AC",
+        "qty": "1",
+        "rate": "289,00 €",
+        "amount": "289,00 €"
+      },
+      {
+        "description": "Disjoncteur divisionnaire phase + neutre",
+        "qty": "9",
+        "rate": "11,80 €",
+        "amount": "106,20 €"
+      },
+      {
+        "description": "Mise à la terre : piquet, câble 16 mm², barrette de coupure",
+        "qty": "1",
+        "rate": "64,50 €",
+        "amount": "64,50 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "900,70 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "90,07 €",
+    "sample_breakdown_balance": "990,77 €",
+    "sample_breakdown_notes": "Travaux des 12 et 13 novembre 2026, 7 rue des Hauts-Pavés, 44000 Nantes. Devis DE-2026-088 du 3 novembre 2026. La cliente certifie que le logement est achevé depuis plus de deux ans, affecté à l'habitation, et que les travaux n'aboutissent pas à une construction neuve. Assurance décennale : contrat n° 2026-DEC-1187, [nom et adresse de l'assureur], couverture France entière ; attestation jointe à l'envoi. Paiement à réception, par virement.",
+    "industry_notes_title": "Bon à savoir pour les électriciens",
+    "industry_notes": [
+      {
+        "title": "Mise en conformité : nommer chaque point",
+        "text": "Dans un logement ancien, une mise en conformité relève en général de l'amélioration ou de l'entretien, donc de 10 % si les conditions sont remplies. Nommez chaque point traité (différentiel, terre, circuits spécialisés) plutôt qu'une « mise aux normes » globale : le client pourra le montrer à un acheteur ou à son assureur."
+      },
+      {
+        "title": "Dépannage à domicile : l'arrêté de 2017",
+        "text": "Chez un particulier, le devis précède le dépannage, et la note ou facture, remise avant le paiement, porte la date et le lieu, le détail de chaque prestation et produit et les totaux HT et TTC (arrêté du 24 janvier 2017). Dès 25 € TTC, une note est due."
+      },
+      {
+        "title": "Chauffage électrique et eau chaude",
+        "text": "Certains travaux de rénovation énergétique sur le chauffage ou l'eau chaude peuvent relever de 5,5 %, selon l'équipement : vérifiez avec votre expert-comptable. Un chantier à 5,5 % et 10 % fait deux factures, Invoicor n'appliquant qu'un taux."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture d'électricien",
+    "mistakes": [
+      {
+        "title": "Un seul poste « matériel électrique »",
+        "text": "Le client compare avec un prix de grande surface et conteste. Une ligne par référence lui montre ce qu'il a dans son tableau."
+      },
+      {
+        "title": "10 % dans une maison de moins de deux ans",
+        "text": "Dans une construction récente ou un local commercial, c'est 20 %, même pour une petite intervention."
+      },
+      {
+        "title": "Pas de lieu ni de date sur un dépannage",
+        "text": "L'arrêté de 2017 les exige. Écrivez-les par habitude dans la première ligne de main-d'œuvre."
+      }
+    ],
+    "tip_title": "Enregistrez vos disjoncteurs comme articles",
+    "pro_tip": "Créez dans l'app un article par référence courante (différentiel 30 mA, disjoncteur 16 A, mètre de câble 3G2,5) avec votre prix HT : le détail se remplit en quelques touches.",
+    "format_pdf_desc": "Le PDF garde la liste des circuits et du matériel telle que facturée : le client le range avec le schéma de son installation.",
+    "faq_title": "Questions sur la facture d'électricien",
+    "faqs": [
+      {
+        "question": "Quel taux de TVA pour des travaux d'électricité ?",
+        "answer": "10 % pour améliorer, transformer, aménager ou entretenir un logement achevé depuis plus de deux ans ; 5,5 % pour certains travaux de rénovation énergétique ; 20 % en local professionnel ou dans un logement neuf (impots.gouv.fr)."
+      },
+      {
+        "question": "Une mise en conformité est-elle à 10 % ?",
+        "answer": "En général oui dans un logement de plus de deux ans, si le client le certifie sur le devis ou la facture. Dans un local commercial, 20 %."
+      },
+      {
+        "question": "Faut-il un devis avant un dépannage électrique ?",
+        "answer": "Oui, chez un particulier : un devis avant l'intervention, puis une note ou facture détaillée remise avant le paiement (arrêté du 24 janvier 2017)."
+      },
+      {
+        "question": "Comment facturer un commerce ou un bureau ?",
+        "answer": "À 20 %, avec le numéro de TVA du client au-delà de 150 € HT, une échéance (30 jours par défaut), le taux des pénalités de retard et l'indemnité forfaitaire de 40 € dans les notes, plus son bon de commande s'il en a un."
+      },
+      {
+        "question": "Puis-je remplir cette facture d'électricien en ligne ?",
+        "answer": "Oui : ouvrez l'exemple dans le générateur gratuit, mettez vos lignes et téléchargez le PDF. Dans l'app Invoicor sur iPhone, vos clients et articles restent enregistrés."
+      }
+    ],
+    "cta_title": "Créez votre facture d'électricien",
+    "links_title": "Types de factures pour les électriciens",
+    "related": [
+      {
+        "name": "Facture plombier",
+        "slug": "facture-plombier"
+      },
+      {
+        "name": "Facture maçon",
+        "slug": "facture-macon"
+      }
+    ],
+    "invoice_types": ["facture-travaux", "facture-acompte", "facture-sous-traitant"]
+  },
+  {
+    "slug": "facture-macon",
+    "translation_of": "construction",
+    "niche": "Facture maçon",
+    "title": "Facture maçon : modèle, assurance et exemple | Invoicor",
+    "meta_description": "Facture de maçon : assurance décennale, situations de chantier, TVA à 10 % sur un logement existant, autoliquidation. Voyez l'exemple, créez le PDF.",
+    "h1": "Modèle de facture maçon : chantier, assurance et TVA",
+    "subtitle": "Pour les maçons et entreprises de gros œuvre : une ouverture de mur, une dalle ou une extension, avec les mentions d'assurance requises et le bon taux de TVA.",
+    "intro_paragraph": "Un ouvrage de maçonnerie engage votre responsabilité pour dix ans, et vos factures le montrent : un maçon y indique son assurance et envoie l'attestation décennale avec elles. Viennent ensuite le taux de TVA, selon l'âge du bâtiment et l'ampleur des travaux, et une facturation qui suit l'avancement. Toute entreprise doit pouvoir recevoir des e-factures depuis le 1er septembre 2026 ; PME et micro-entreprises en émettront au 1er septembre 2027 (impots.gouv.fr). Jusqu'à cette date, une petite entreprise de maçonnerie facture comme aujourd'hui, et ses factures aux particuliers passent par l'e-reporting. Invoicor fabrique des PDF, pas des e-factures (Factur-X, UBL), et ne se raccorde à aucune plateforme agréée. En Belgique, Peppol est obligatoire entre entreprises belges depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de maçon",
+    "what_to_include_intro": "Où, quoi, dans quel cadre et sous quelle assurance : voici ce que la facture d'un maçon doit dire.",
+    "req_1_title": "Le chantier et le devis signé",
+    "req_1_text": "Adresse du chantier, nature de l'ouvrage, référence du devis ou du marché. Facturé par situations, le chantier les numérote : situation 2 sur 4.",
+    "req_2_title": "Les ouvrages par poste",
+    "req_2_text": "Installation de chantier, démolition, fourniture, mise en œuvre, évacuation des gravats : une ligne chacun, avec une unité qui se mesure (m², m³, mètre linéaire, heure, forfait).",
+    "req_3_title": "Les fournitures avec quantité et prix unitaire",
+    "req_3_text": "Parpaings, béton, poutre acier : quantité et prix unitaire HT sont obligatoires (service-public, F31808). Une poutre mérite sa ligne, avec ses dimensions.",
+    "req_4_title": "L'assurance professionnelle, en toutes lettres",
+    "req_4_text": "Références du contrat, nom et coordonnées de l'assureur, couverture géographique : le Code de l'artisanat (L132-1 et R132-1) les exige sur devis et factures.",
+    "req_5_title": "L'attestation décennale, envoyée avec la facture",
+    "req_5_text": "Elle accompagne devis et factures (Code des assurances, L243-2), au modèle de l'arrêté du 5 janvier 2016. Invoicor n'a pas de pièce jointe : envoyez-la avec le PDF et signalez-la dans les notes.",
+    "req_6_title": "Le taux de TVA et sa justification",
+    "req_6_text": "10 % sur un logement de plus de deux ans, avec la mention du client sur le devis ou la facture (loi n° 2025-127, art. 41) ; 20 % pour un local professionnel ou ce qui équivaut à du neuf. Un seul taux par facture dans Invoicor.",
+    "what_to_include_outro": "La facture rejoint le dossier de l'ouvrage : gardez-la au moins dix ans (Code de commerce, L123-22).",
+    "paper_label": "Facture maçon · exemple",
+    "sample_breakdown_title": "Exemple de facture de maçon",
+    "sample_breakdown_intro": "Un maçon toulousain ouvre 2,40 m dans le mur porteur entre cuisine et séjour d'une maison de 1972, habitée par ses propriétaires. Amélioration d'un logement existant : TVA à 10 %, sous réserve de la mention du client et de votre propre vérification.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Installation de chantier, protection des sols, étaiement",
+        "qty": "1",
+        "rate": "380,00 €",
+        "amount": "380,00 €"
+      },
+      {
+        "description": "Sciage et démolition du mur porteur, ouverture de 2,40 m",
+        "qty": "1",
+        "rate": "1 150,00 €",
+        "amount": "1 150,00 €"
+      },
+      {
+        "description": "Poutre acier HEB 160, longueur 3 m, avec platines d'appui",
+        "qty": "1",
+        "rate": "465,00 €",
+        "amount": "465,00 €"
+      },
+      {
+        "description": "Pose de la poutre, scellement et calage (18 et 19 novembre 2026)",
+        "qty": "8 h",
+        "rate": "48,00 €",
+        "amount": "384,00 €"
+      },
+      {
+        "description": "Reprise des tableaux et enduit au mortier de chaux",
+        "qty": "6 h",
+        "rate": "48,00 €",
+        "amount": "288,00 €"
+      },
+      {
+        "description": "Évacuation des gravats en déchetterie professionnelle",
+        "qty": "1",
+        "rate": "190,00 €",
+        "amount": "190,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2 857,00 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "285,70 €",
+    "sample_breakdown_balance": "3 142,70 €",
+    "sample_breakdown_notes": "Travaux du 17 au 20 novembre 2026, 15 chemin de Lardenne, 31100 Toulouse. Devis M-2026-054 du 2 octobre 2026 ; poutre selon la note de calcul fournie par le client. Le client certifie que la maison est achevée depuis plus de deux ans, affectée à l'habitation, et que les travaux n'aboutissent pas à une construction neuve. Assurance décennale : contrat n° 2026-DEC-0730, [nom et adresse de l'assureur], couverture France métropolitaine ; attestation envoyée avec cette facture. Échéance : 5 décembre 2026.",
+    "industry_notes_title": "Bon à savoir pour les maçons",
+    "industry_notes": [
+      {
+        "title": "L'assurance : sur la facture et à côté",
+        "text": "Deux obligations se cumulent : sur la facture, les références de l'assurance, l'assureur et la zone couverte ; à côté, l'attestation décennale au modèle officiel, avec chaque devis et chaque facture. Vérifiez aussi que l'activité déclarée à l'assureur (maçonnerie, gros œuvre) couvre les travaux facturés."
+      },
+      {
+        "title": "Les gros chantiers se facturent par situations",
+        "text": "Sur plusieurs semaines, une facture de situation par étape réalisée (fondations, élévation, dalle) évite d'avancer la trésorerie. L'acompte se facture avant les travaux, la situation facture ce qui est fait, avec le cumul déjà facturé. Une retenue de garantie prévue au marché se note dans les notes."
+      },
+      {
+        "title": "Sous-traitant : autoliquidation",
+        "text": "Pour une autre entreprise du bâtiment, la TVA est autoliquidée (art. 283-2 nonies du CGI) : facture HT, mention « Autoliquidation », et le PDF Invoicor affiche une TVA à 0 %. En franchise en base, c'est la mention 293 B. La facture de sous-traitant détaille ce cas."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de maçon",
+    "mistakes": [
+      {
+        "title": "Oublier l'attestation décennale",
+        "text": "Le notaire ou l'assureur du client la réclamera : joignez-la à chaque envoi."
+      },
+      {
+        "title": "Une situation en avance sur le chantier",
+        "text": "Facturer plus que ce qui est construit se conteste, et en cas de litige vous aurez encaissé un travail non fait. Facturez l'avancement constaté."
+      },
+      {
+        "title": "10 % sur une extension",
+        "text": "Une extension qui ajoute 10 % ou plus de surface de plancher compte comme une construction neuve : pas de taux réduit."
+      }
+    ],
+    "tip_title": "Une facture de chantier type",
+    "pro_tip": "Dupliquez dans l'app une facture type dont les notes portent déjà assurance, assureur, zone couverte et mention du client.",
+    "format_pdf_desc": "Envoyé avec l'attestation décennale, le PDF forme un dossier que le client garde avec les plans et que son notaire demandera à la revente.",
+    "faq_title": "Questions sur la facture de maçon",
+    "faqs": [
+      {
+        "question": "Puis-je joindre l'attestation décennale dans Invoicor ?",
+        "answer": "Non, Invoicor n'a pas de pièce jointe. Envoyez le PDF et l'attestation dans le même e-mail, avec « attestation décennale jointe à l'envoi » dans les notes."
+      },
+      {
+        "question": "Quel taux de TVA pour des travaux de maçonnerie ?",
+        "answer": "10 % sur un logement achevé depuis plus de deux ans, si les travaux n'équivalent pas à du neuf et que le client le certifie ; 20 % pour une construction neuve, une extension de 10 % ou plus de surface de plancher, ou un local professionnel (impots.gouv.fr)."
+      },
+      {
+        "question": "Et pour une terrasse ou un mur de clôture ?",
+        "answer": "Cela dépend du lien avec le logement et de la nature des travaux. Vérifiez avec votre expert-comptable avant d'appliquer 10 % à un ouvrage extérieur."
+      },
+      {
+        "question": "Comment facturer un chantier de plusieurs mois ?",
+        "answer": "Une facture d'acompte à la commande si le devis le prévoit, des factures de situation au fil de l'avancement, puis une facture de solde qui reprend ce qui a été payé."
+      },
+      {
+        "question": "Je travaille pour une entreprise générale : quelle TVA ?",
+        "answer": "En sous-traitance BTP, vous facturez HT avec la mention « Autoliquidation » (art. 283-2 nonies du CGI). En franchise en base : « TVA non applicable, art. 293 B du CGI »."
+      }
+    ],
+    "cta_title": "Créez votre facture de maçon",
+    "links_title": "Types de factures pour les maçons",
+    "related": [
+      {
+        "name": "Facture carreleur",
+        "slug": "facture-carreleur"
+      },
+      {
+        "name": "Facture peintre",
+        "slug": "facture-peintre"
+      }
+    ],
+    "invoice_types": ["facture-situation", "facture-acompte", "facture-sous-traitant"]
+  },
+  {
+    "slug": "facture-peintre",
+    "translation_of": "painting",
+    "niche": "Facture peintre",
+    "title": "Facture peintre : modèle au m² et TVA à 10 % | Invoicor",
+    "meta_description": "Facture de peintre en bâtiment : prix au m², préparation des supports, TVA à 10 % et mention du client. Exemple chiffré, PDF gratuit en ligne.",
+    "h1": "Modèle de facture peintre en bâtiment : prix au m²",
+    "subtitle": "Pour les peintres en bâtiment et décorateurs : murs, plafonds et boiseries au mètre carré, la préparation visible, le bon taux de TVA.",
+    "intro_paragraph": "Le client d'un peintre voit le résultat, rarement le travail : rebouchage, ponçage, sous-couche et protection prennent souvent autant de temps que la peinture. Une facture au m², pièce par pièce, avec la préparation sur sa ligne, explique le prix mieux qu'une discussion. Dans un logement de plus de deux ans, ces travaux sont en général à 10 %, si le client le certifie. Chaque entreprise en France doit pouvoir recevoir des e-factures depuis le 1er septembre 2026, et les PME et micro-entreprises en émettront à partir du 1er septembre 2027 (impots.gouv.fr) ; jusqu'à cette date, un peintre indépendant envoie ses factures comme aujourd'hui. Pour les particuliers, seul l'e-reporting s'applique. Invoicor génère des PDF, sans format Factur-X ou UBL ni liaison avec une plateforme agréée. Côté belge, les factures entre entreprises belges passent par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de peintre",
+    "what_to_include_intro": "La meilleure facture de peintre reprend le métré du devis, pièce par pièce, avec les surfaces réellement peintes.",
+    "req_1_title": "Les surfaces par pièce, en m²",
+    "req_1_text": "Murs et plafonds séparés, avec la pièce et la surface : « Séjour, murs, 2 couches, 62 m² ». Portes et radiateurs à l'unité. Ouvertures déduites ou non : comme dans votre devis, et dites-le.",
+    "req_2_title": "La préparation, sur sa propre ligne",
+    "req_2_text": "Protection, lessivage, rebouchage, ponçage, impression : au forfait ou au m², mais visible. Le client voit ce qu'un devis moins cher a oublié.",
+    "req_3_title": "Le nombre de couches et la finition",
+    "req_3_text": "Une couche ou deux, mat, velours ou satiné : c'est ce qui distingue un rafraîchissement d'une rénovation.",
+    "req_4_title": "Les fournitures avec quantité et prix",
+    "req_4_text": "Peinture, sous-couche, enduit, bâches : quantité et prix unitaire HT, sur des lignes séparées ou une ligne détaillée (service-public, F31808).",
+    "req_5_title": "Le taux de TVA et la mention du client",
+    "req_5_text": "10 % dans un logement achevé depuis plus de deux ans, 20 % dans des bureaux ou un commerce. Depuis le 1er mars 2025, le client certifie les conditions par une mention sur le devis ou la facture (loi n° 2025-127, art. 41) ; gardez une copie.",
+    "req_6_title": "Les dates du chantier et votre assurance",
+    "req_6_text": "Pas de champ pour la date de prestation dans Invoicor : notez les dates dans les notes, avec vos références d'assurance, l'assureur et la zone couverte (Code de l'artisanat, L132-1 et R132-1).",
+    "what_to_include_outro": "Détaillée, la facture sert aussi de fiche d'entretien : dans trois ans, le client saura quelle finition a été posée.",
+    "paper_label": "Facture peintre · exemple",
+    "sample_breakdown_title": "Exemple de facture de peintre",
+    "sample_breakdown_intro": "Un peintre bordelais rénove le séjour et le couloir d'un appartement des années 1960 pour une locataire, avec l'accord du propriétaire. Logement de plus de deux ans : TVA à 10 %, mention signée sur le devis. Au m², préparation au forfait.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Protection, rebouchage des fissures et ponçage (séjour, couloir), forfait",
+        "qty": "1",
+        "rate": "260,00 €",
+        "amount": "260,00 €"
+      },
+      {
+        "description": "Impression des murs, sous-couche",
+        "qty": "62 m²",
+        "rate": "4,50 €",
+        "amount": "279,00 €"
+      },
+      {
+        "description": "Murs, 2 couches de peinture acrylique mate",
+        "qty": "62 m²",
+        "rate": "14,00 €",
+        "amount": "868,00 €"
+      },
+      {
+        "description": "Plafonds, 2 couches de peinture mate",
+        "qty": "26 m²",
+        "rate": "16,00 €",
+        "amount": "416,00 €"
+      },
+      {
+        "description": "Portes, 2 faces, laque satinée",
+        "qty": "3",
+        "rate": "85,00 €",
+        "amount": "255,00 €"
+      },
+      {
+        "description": "Fournitures : peinture, sous-couche, enduit, ruban, bâches",
+        "qty": "1",
+        "rate": "214,30 €",
+        "amount": "214,30 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2 292,30 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "229,23 €",
+    "sample_breakdown_balance": "2 521,53 €",
+    "sample_breakdown_notes": "Travaux du 9 au 13 novembre 2026, 41 cours de l'Yser, 33800 Bordeaux. Devis P-2026-142 du 26 octobre 2026. Surfaces mesurées sur place, ouvertures déduites. Teintes : murs blanc cassé, couloir gris perle (référence sur les pots restants). La cliente certifie que le logement est achevé depuis plus de deux ans, affecté à l'habitation, et que les travaux n'aboutissent pas à une construction neuve. RC professionnelle : contrat n° 2026-RC-2290, [nom et adresse de l'assureur], couverture France métropolitaine. Paiement à réception.",
+    "industry_notes_title": "Bon à savoir pour les peintres",
+    "industry_notes": [
+      {
+        "title": "Le métré : la surface peinte, pas l'estimation",
+        "text": "Le devis annonce une surface, la facture reprend celle que vous avez peinte : 58 m² mesurés, 58 m² facturés, même si le devis disait 62."
+      },
+      {
+        "title": "La peinture achetée par le client",
+        "text": "Il l'a payée à 20 % en magasin ; le taux réduit ne vaut que pour votre travail. Vous facturez préparation et application, et notez que la peinture vient du client : vous ne répondez pas de son choix de produit."
+      },
+      {
+        "title": "Bureaux, boutiques, parties communes",
+        "text": "En local professionnel : 20 %, avec pénalités de retard et indemnité forfaitaire de 40 € dans les notes. Pour les parties communes d'un immeuble, voyez le taux avec votre expert-comptable avant le devis du syndic."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de peintre",
+    "mistakes": [
+      {
+        "title": "Fondre la préparation dans le m²",
+        "text": "Votre m² paraît cher face à un concurrent qui ne rebouche rien. Une ligne de préparation montre le travail que l'autre ne fera pas."
+      },
+      {
+        "title": "Recopier les surfaces du devis",
+        "text": "Le client qui mesure et trouve moins doute de toutes les autres lignes. Le métré final protège votre prix."
+      },
+      {
+        "title": "10 % sans la mention signée",
+        "text": "C'est au client de certifier les conditions. Sans sa mention, le taux réduit repose sur vous seul en cas de contrôle."
+      }
+    ],
+    "tip_title": "Notez les teintes sur la facture",
+    "pro_tip": "Écrivez la teinte et la finition de chaque pièce dans les notes. Pour une retouche, le client vous rappellera facture en main, et vous saurez quoi commander.",
+    "format_pdf_desc": "En PDF, métré et teintes restent tels que facturés : le client les retrouve dans ses e-mails le jour d'une retouche.",
+    "faq_title": "Questions sur la facture de peintre",
+    "faqs": [
+      {
+        "question": "Repeindre un appartement : TVA à 10 % ?",
+        "answer": "En général oui, si le logement est achevé depuis plus de deux ans et affecté à l'habitation, et que le client le certifie sur le devis ou la facture. Logement neuf ou local professionnel : 20 % (impots.gouv.fr)."
+      },
+      {
+        "question": "Quelle mention le client doit-il signer ?",
+        "answer": "Depuis le 1er mars 2025, plus de formulaire : le client certifie l'âge et l'usage du logement, et l'absence de construction neuve, par une mention sur le devis ou la facture. Le BOFiP propose une formulation, indicative."
+      },
+      {
+        "question": "Facturer au m² ou à l'heure ?",
+        "answer": "Au m² pour murs et plafonds, à l'unité pour portes et radiateurs, à l'heure pour les petites reprises, dans la même unité que votre devis."
+      },
+      {
+        "question": "Un ravalement de façade est-il à 10 % ?",
+        "answer": "L'entretien de la façade d'un logement de plus de deux ans relève en général de 10 %. Avec une isolation par l'extérieur, une partie peut relever de 5,5 % : vérifiez avec votre expert-comptable, un seul taux par facture."
+      },
+      {
+        "question": "Un peintre doit-il mentionner l'assurance décennale ?",
+        "answer": "Vos références d'assurance professionnelle, toujours. Si votre activité est soumise à la décennale (à vérifier avec votre assureur selon les travaux), l'attestation accompagne aussi devis et factures (Code des assurances, L243-2)."
+      }
+    ],
+    "cta_title": "Créez votre facture de peintre",
+    "links_title": "Types de factures pour les peintres",
+    "related": [
+      {
+        "name": "Facture maçon",
+        "slug": "facture-macon"
+      },
+      {
+        "name": "Facture carreleur",
+        "slug": "facture-carreleur"
+      }
+    ],
+    "invoice_types": ["facture-travaux", "facture-acompte", "facture-solde"]
+  },
+  {
+    "slug": "facture-menuisier",
+    "translation_of": "carpentry",
+    "niche": "Facture menuisier",
+    "title": "Facture menuisier : modèle, pose et TVA | Invoicor",
+    "meta_description": "Facture de menuisier : fourniture et pose séparées, portes à 10 %, fenêtres isolantes à 5,5 % sous conditions, assurance. Exemple et PDF gratuit.",
+    "h1": "Modèle de facture menuisier : fourniture et pose",
+    "subtitle": "Pour les menuisiers poseurs et d'agencement : portes, fenêtres, escaliers, placards, entre 10 % et 5,5 %.",
+    "intro_paragraph": "Une facture de menuisier mêle deux métiers : la fourniture, commandée des semaines à l'avance, et la pose, faite en un ou deux jours. Les séparer aide le client à comprendre le prix, et vous aide à appliquer le bon taux : 10 % pour des portes dans un logement ancien, 5,5 % pour certaines fenêtres isolantes. Toute entreprise doit pouvoir recevoir des factures électroniques depuis le 1er septembre 2026 ; pour les émettre, l'échéance des PME et micro-entreprises est le 1er septembre 2027 (impots.gouv.fr). D'ici là, un menuisier artisan garde sa façon de facturer, et ses ventes aux particuliers relèvent de l'e-reporting. Invoicor édite des PDF, non des factures électroniques (Factur-X, UBL), et n'est relié à aucune plateforme agréée. En Belgique, une facture à une entreprise belge doit être une e-facture Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de menuisier",
+    "what_to_include_intro": "Chaque ouvrage se lit en deux temps : ce que vous avez fourni, puis ce que vous avez posé.",
+    "req_1_title": "L'ouvrage et son emplacement",
+    "req_1_text": "« Bloc-porte chambre 2 », « fenêtre séjour côté rue » : le client fait le tour de la maison avec la facture. Rappelez le devis accepté.",
+    "req_2_title": "La fourniture avec dimensions et matériau",
+    "req_2_text": "Essence, dimensions, vitrage, quincaillerie : quantité et prix unitaire HT par ligne (service-public, F31808). Pour des fenêtres, les caractéristiques thermiques justifient un éventuel 5,5 %.",
+    "req_3_title": "La pose sur des lignes séparées",
+    "req_3_text": "Dépose, pose, réglage : à l'unité, au mètre linéaire pour les plinthes, ou à l'heure. La pose ne disparaît plus dans le prix de la porte.",
+    "req_4_title": "Les acomptes déjà facturés",
+    "req_4_text": "Chaque acompte reçu a sa facture, et la TVA est due à l'encaissement. La facture finale rappelle les factures d'acompte ; dans l'app, facturez le reste et nommez-les dans les notes.",
+    "req_5_title": "Le taux de TVA et la mention du client",
+    "req_5_text": "10 % dans un logement de plus de deux ans, 5,5 % pour la rénovation énergétique qui y ouvre droit, 20 % en local professionnel. Depuis le 1er mars 2025, le client certifie les conditions par une mention sur le devis ou la facture (loi n° 2025-127, art. 41).",
+    "req_6_title": "Assurance et attestation décennale",
+    "req_6_text": "Références de l'assurance, coordonnées de l'assureur et zone couverte sur la facture (Code de l'artisanat, L132-1 et R132-1) ; l'attestation décennale envoyée avec elle (Code des assurances, L243-2), à part, faute de pièce jointe dans Invoicor.",
+    "what_to_include_outro": "Ajoutez la date de pose dans une ligne ou les notes (pas de champ dédié) : la facture devient la référence pour toute garantie.",
+    "paper_label": "Facture menuisier · exemple",
+    "sample_breakdown_title": "Exemple de facture de menuisier",
+    "sample_breakdown_intro": "Un menuisier angevin remplace trois portes intérieures et pose des plinthes dans une maison de 1990 occupée par ses propriétaires. Amélioration d'un logement de plus de deux ans : TVA à 10 %, avec la mention du client.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Déplacement et protection des sols",
+        "qty": "1",
+        "rate": "45,00 €",
+        "amount": "45,00 €"
+      },
+      {
+        "description": "Dépose des anciennes portes et huisseries, évacuation",
+        "qty": "3",
+        "rate": "55,00 €",
+        "amount": "165,00 €"
+      },
+      {
+        "description": "Bloc-porte chêne plaqué 83 cm, huisserie 72 mm, poignées inox",
+        "qty": "3",
+        "rate": "236,00 €",
+        "amount": "708,00 €"
+      },
+      {
+        "description": "Pose, calage et réglage des blocs-portes (24 novembre 2026)",
+        "qty": "3",
+        "rate": "120,00 €",
+        "amount": "360,00 €"
+      },
+      {
+        "description": "Plinthes chêne 70 mm, fourniture et pose",
+        "qty": "18 ml",
+        "rate": "14,50 €",
+        "amount": "261,00 €"
+      },
+      {
+        "description": "Ajustages, pointes, colle et petites fournitures",
+        "qty": "1",
+        "rate": "28,40 €",
+        "amount": "28,40 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 567,40 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "156,74 €",
+    "sample_breakdown_balance": "1 724,14 €",
+    "sample_breakdown_notes": "Pose du 24 novembre 2026, 9 rue Desjardins, 49100 Angers. Devis MN-2026-077 du 28 septembre 2026. Les clients certifient que le logement est achevé depuis plus de deux ans, affecté à l'habitation, et que les travaux n'aboutissent pas à une construction neuve. Assurance décennale : contrat n° 2026-DEC-0958, [nom et adresse de l'assureur], couverture France métropolitaine ; attestation envoyée avec la facture. Paiement à réception, par virement.",
+    "industry_notes_title": "Bon à savoir pour les menuisiers",
+    "industry_notes": [
+      {
+        "title": "Fenêtres isolantes : 5,5 % sous conditions",
+        "text": "Remplacer des fenêtres dans un logement de plus de deux ans peut relever de 5,5 % au titre de la rénovation énergétique. Quels produits y ont droit dépend de critères de performance : faites-les confirmer par votre fournisseur et votre expert-comptable. Fenêtres à 5,5 % et portes à 10 % : deux factures, Invoicor n'appliquant qu'un taux."
+      },
+      {
+        "title": "Sur-mesure : l'acompte à la commande",
+        "text": "Pour un escalier ou un placard fait en atelier, l'acompte couvre bois et quincaillerie : facturez-le dès réception. Un meuble simplement livré, sans pose, ne suit pas forcément le taux des travaux : vérifiez avec votre expert-comptable."
+      },
+      {
+        "title": "L'assurance que le client va chercher",
+        "text": "Fenêtres et escaliers engagent votre décennale. Vérifiez que les activités déclarées à l'assureur (menuiseries extérieures, agencement) couvrent le chantier facturé."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de menuisier",
+    "mistakes": [
+      {
+        "title": "Fourniture et pose sur une même ligne",
+        "text": "« Porte posée : 411 € » cache le prix de votre travail et brouille le taux si le client a acheté ses portes ailleurs."
+      },
+      {
+        "title": "Toutes les fenêtres à 5,5 %",
+        "text": "Une fenêtre qui ne remplit pas les critères reste à 10 % dans un logement ancien : vérifiez les fiches produits avant de facturer."
+      },
+      {
+        "title": "Encaisser un acompte sans facture",
+        "text": "Chaque acompte reçu avant les travaux appelle une facture, et un acompte oublié fausse la facture finale."
+      }
+    ],
+    "tip_title": "Un devis par taux, dès le départ",
+    "pro_tip": "Fenêtres isolantes et portes intérieures sur un même chantier ? Faites deux devis, un par taux : mention du client, acomptes et factures suivent sans recalcul à la fin.",
+    "format_pdf_desc": "Le PDF garde dimensions, références et date de pose : le client le ressort pour une garantie ou à la revente.",
+    "faq_title": "Questions sur la facture de menuisier",
+    "faqs": [
+      {
+        "question": "Quel taux de TVA pour la pose de fenêtres ?",
+        "answer": "5,5 % si elles relèvent de la rénovation énergétique dans un logement de plus de deux ans (critères de performance à vérifier) ; sinon 10 % dans un logement ancien, 20 % en local professionnel ou dans du neuf (impots.gouv.fr)."
+      },
+      {
+        "question": "Fenêtres à 5,5 % et portes à 10 % sur une même facture Invoicor ?",
+        "answer": "Non, Invoicor applique un taux unique. Faites une facture par taux, ou demandez à votre expert-comptable comment présenter le chantier."
+      },
+      {
+        "question": "Comment facturer l'acompte d'une menuiserie sur mesure ?",
+        "answer": "Par une facture d'acompte dès réception, avec la TVA, due à l'encaissement. La facture finale rappelle les factures d'acompte et, en pratique, en déduit le HT et la TVA."
+      },
+      {
+        "question": "Le client a acheté ses portes : que facturer ?",
+        "answer": "La dépose, la pose et vos petites fournitures. Les portes restent à 20 % chez son vendeur ; la pose suit le taux réduit si le logement remplit les conditions. Notez-le dans les notes."
+      },
+      {
+        "question": "Quelles mentions d'assurance sur la facture ?",
+        "answer": "Vos références d'assurance professionnelle, les coordonnées de l'assureur et la couverture géographique, plus l'attestation décennale envoyée avec la facture."
+      },
+      {
+        "question": "Et pour l'agencement d'un commerce ?",
+        "answer": "20 %, avec les mentions entre professionnels : numéro de TVA du client, échéance, pénalités de retard et indemnité forfaitaire de 40 €."
+      }
+    ],
+    "cta_title": "Créez votre facture de menuisier",
+    "links_title": "Types de factures pour les menuisiers",
+    "related": [
+      {
+        "name": "Facture peintre",
+        "slug": "facture-peintre"
+      },
+      {
+        "name": "Facture maçon",
+        "slug": "facture-macon"
+      }
+    ],
+    "invoice_types": ["facture-travaux", "facture-acompte", "facture-vente"]
+  },
+  {
+    "slug": "facture-carreleur",
+    "translation_of": "tile-installation",
+    "niche": "Facture carreleur",
+    "title": "Facture carreleur : modèle avec prix au m² | Invoicor",
+    "meta_description": "Facture carreleur : pose au m² par format, étanchéité, fournitures, TVA à 10 % et assurance décennale. Voyez l'exemple et créez votre PDF.",
+    "h1": "Modèle de facture carreleur : pose au m² et fournitures",
+    "subtitle": "Pour les carreleurs : salle de bains, cuisine, sols, avec la pose au m², le support, les fournitures et le bon taux de TVA.",
+    "intro_paragraph": "Un client juge un carrelage à l'œil, mais une bonne part du prix se cache dessous : dépose, ragréage, étanchéité sous la douche. Une bonne facture de carreleur rend ce travail visible, avec la pose au m² par format, les plinthes au mètre linéaire et le nom de celui qui a acheté le carrelage. Toute entreprise française doit pouvoir recevoir des factures électroniques depuis le 1er septembre 2026 ; une PME ou micro-entreprise en émettra au 1er septembre 2027 (impots.gouv.fr) et facture comme aujourd'hui jusqu'à cette date. Vos clients particuliers relèvent seulement de l'e-reporting. Invoicor crée des PDF, pas des factures électroniques (Factur-X, UBL), sans lien avec une plateforme agréée.",
+    "include_title": "Ce que doit contenir une facture de carreleur",
+    "what_to_include_intro": "Vos clients comparent les devis au m² : la facture doit se lire de la même façon.",
+    "req_1_title": "Les surfaces, pièce par pièce",
+    "req_1_text": "Nommez la pièce et chaque surface : « Salle de bains : faïence murale 18 m², sol 6 m² ». Plinthes et listels se comptent au mètre linéaire, seuils et nez de marche à la pièce.",
+    "req_2_title": "La dépose et la préparation du support",
+    "req_2_text": "Dépose de l'ancien carrelage, évacuation des gravats, ragréage, primaire d'accrochage : ces postes prennent du temps et justifient une partie du prix.",
+    "req_3_title": "L'étanchéité des pièces humides",
+    "req_3_text": "Sous une douche à l'italienne, nommez le système (SPEC, SEL, natte) et la surface traitée : c'est le poste que le client ne verra plus une fois le carrelage posé.",
+    "req_4_title": "La pose selon le format et le calepinage",
+    "req_4_text": "Grand format, mosaïque, pose en diagonale ou en chevrons ne demandent pas le même temps.",
+    "req_5_title": "Qui fournit le carrelage",
+    "req_5_text": "Fourni et posé par vous, ou acheté par le client : écrivez-le. Acheté par le client, il reste à 20 % en magasin, et seule votre pose profite du taux réduit.",
+    "req_6_title": "Le taux de TVA et la mention du client",
+    "req_6_text": "Travaux d'amélioration dans un logement achevé depuis plus de deux ans : 10 % (impots.gouv.fr). Plus d'attestation depuis le 1er mars 2025 : le client certifie les conditions par une mention sur le devis ou la facture, et vous en gardez une copie.",
+    "what_to_include_outro": "Ajoutez vos mentions habituelles (SIREN dans le champ « SIRET », date des travaux dans une ligne ou les notes) et vos références d'assurance.",
+    "paper_label": "Facture carreleur · exemple",
+    "sample_breakdown_title": "Exemple de facture de carreleur",
+    "sample_breakdown_intro": "Une carreleuse de Nantes refait la salle de bains d'un appartement de 1998 ; le client a acheté le carrelage. Logement de plus de deux ans : TVA à 10 %, conditions certifiées par le client sur le devis.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Dépose du carrelage de sol, évacuation des gravats",
+        "qty": "6 m²",
+        "rate": "22,00 €",
+        "amount": "132,00 €"
+      },
+      {
+        "description": "Ragréage du sol avant pose",
+        "qty": "6 m²",
+        "rate": "18,00 €",
+        "amount": "108,00 €"
+      },
+      {
+        "description": "Système d'étanchéité liquide (SEL), zone de douche",
+        "qty": "5 m²",
+        "rate": "35,00 €",
+        "amount": "175,00 €"
+      },
+      {
+        "description": "Pose de faïence murale 30×60, pose droite",
+        "qty": "18 m²",
+        "rate": "52,00 €",
+        "amount": "936,00 €"
+      },
+      {
+        "description": "Pose de carrelage de sol en grès cérame 60×60",
+        "qty": "6 m²",
+        "rate": "48,00 €",
+        "amount": "288,00 €"
+      },
+      {
+        "description": "Pose de plinthes assorties",
+        "qty": "8 ml",
+        "rate": "12,00 €",
+        "amount": "96,00 €"
+      },
+      {
+        "description": "Colle, joints et profilés de finition",
+        "qty": "1",
+        "rate": "165,00 €",
+        "amount": "165,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 900,00 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "190,00 €",
+    "sample_breakdown_deposit_label": "Acompte versé, facture 2026-041",
+    "sample_breakdown_deposit": "-627,00 €",
+    "sample_breakdown_balance": "1 463,00 €",
+    "sample_breakdown_notes": "Travaux du 9 au 13 novembre 2026, 14 rue Paul-Bellamy, Nantes. TVA à 10 % : mention signée par le client sur le devis D-2026-058. Carrelage fourni par le client. Joints gris perle, époxy en douche. Assurance décennale : Atlantique Assurances Artisans, contrat n° 48213, 5 quai de la Fosse, Nantes ; couverture France métropolitaine ; attestation envoyée avec la facture. Échéance : à réception. Escompte pour paiement anticipé : néant. Pénalités de retard : 3 fois le taux d'intérêt légal.",
+    "industry_notes_title": "Ce que le carreleur vérifie avant de facturer",
+    "industry_notes": [
+      {
+        "title": "Les mentions d'assurance",
+        "text": "Le Code de l'artisanat (L132-1, R132-1) impose sur devis et factures les références de votre assurance professionnelle, les coordonnées de l'assureur et la couverture géographique ; l'attestation décennale doit y être jointe (Code des assurances, L243-2). Invoicor n'a pas de pièce jointe : références dans les notes, attestation envoyée avec le PDF."
+      },
+      {
+        "title": "Deux taux sur un même chantier",
+        "text": "Une salle de bains à 10 % et une boutique à 20 % : Invoicor applique un seul taux par facture, donc une facture par taux, ou l'avis de votre expert-comptable. Pas de taux réduit quand les travaux reviennent à une construction neuve, par exemple une surface augmentée de 10 % ou plus."
+      },
+      {
+        "title": "En sous-traitance",
+        "text": "Vous posez pour une entreprise générale ? Facture HT avec la mention « Autoliquidation » (art. 283-2 nonies du CGI) : la page facture de sous-traitant détaille ce cas."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de carreleur",
+    "mistakes": [
+      {
+        "title": "Un prix unique au m²",
+        "text": "Facturer la mosaïque au prix du 60×60 vous fait perdre de l'argent ; l'inverse fait tiquer le client."
+      },
+      {
+        "title": "Le taux réduit sans la mention du client",
+        "text": "Sans la mention de certification sur le devis ou la facture, rien ne prouve que les conditions du 10 % étaient réunies."
+      },
+      {
+        "title": "Aucune trace du carrelage et des joints",
+        "text": "Sans la référence des carreaux et la teinte des joints, une réparation dans cinq ans devient une devinette."
+      }
+    ],
+    "tip_title": "Photographiez l'étanchéité avant de carreler",
+    "pro_tip": "Avant de poser la faïence, photographiez l'étanchéité et le siphon et envoyez les photos au client. Notez la date d'envoi dans les notes de la facture : la preuve du travail caché reste au dossier.",
+    "format_pdf_desc": "Le PDF fige surfaces, taux et références d'assurance. En cas de sinistre ou de revente du logement, c'est le document que le client ressort.",
+    "faq_title": "Questions sur la facture de carreleur",
+    "faqs": [
+      {
+        "question": "Que doit contenir une facture de carreleur ?",
+        "answer": "Votre SIREN, l'adresse du chantier, la date des travaux, chaque poste avec quantité et prix unitaire HT, le taux de TVA, les totaux, l'échéance, vos références d'assurance et, à taux réduit, la mention du client."
+      },
+      {
+        "question": "Un carreleur facture-t-il au m² ou au forfait ?",
+        "answer": "Le plus souvent au m² pour la pose, au mètre linéaire pour les plinthes, au forfait pour les petits postes."
+      },
+      {
+        "question": "Quel taux de TVA pour refaire une salle de bains ?",
+        "answer": "10 % dans un logement achevé depuis plus de deux ans, si le client certifie les conditions. 20 % dans un local commercial ou pour ce qui revient à une construction neuve."
+      },
+      {
+        "question": "Le carrelage que je fournis passe-t-il aussi à 10 % ?",
+        "answer": "Fourni et posé par vous dans le cadre des travaux, il suit en principe le taux de la pose. Vérifiez votre cas avec votre expert-comptable."
+      },
+      {
+        "question": "Comment déduire l'acompte versé à la commande ?",
+        "answer": "Générateur gratuit : une ligne négative citant la facture d'acompte. App, qui refuse les prix négatifs : facturez le reste dû et citez la facture d'acompte dans les notes."
+      }
+    ],
+    "cta_title": "Créez votre facture de carreleur",
+    "links_title": "Types de factures pour les carreleurs",
+    "related": [
+      {
+        "name": "Facture maçon",
+        "slug": "facture-macon"
+      },
+      {
+        "name": "Facture plombier",
+        "slug": "facture-plombier"
+      }
+    ],
+    "invoice_types": ["facture-travaux", "facture-acompte", "facture-sous-traitant"]
+  },
+  {
+    "slug": "facture-graphiste",
+    "translation_of": "freelance-design",
+    "niche": "Facture graphiste",
+    "title": "Facture graphiste : droits d'auteur et TVA | Invoicor",
+    "meta_description": "Facture graphiste : cession de droits à 10 %, prestations à 20 %, précompte, franchise, tours de corrections. Voyez l'exemple et créez votre PDF.",
+    "h1": "Modèle de facture graphiste : création, droits et TVA",
+    "subtitle": "Pour les graphistes indépendants : séparer le travail d'exécution, facturé comme une prestation, de la cession de droits d'auteur, avec le bon taux et les bonnes mentions.",
+    "intro_paragraph": "Un graphiste vend deux choses : du temps d'exécution (mise en page, retouches, déclinaisons) et des créations dont il cède les droits. En France, cette différence change le taux de TVA, le régime social et la rédaction de la facture. Côté réforme : les entreprises françaises doivent pouvoir recevoir des factures électroniques depuis le 1er septembre 2026, et les PME comme les micro-entreprises en émettront au 1er septembre 2027 (impots.gouv.fr) ; jusqu'à cette date, un PDF reste possible. Invoicor produit des factures PDF, pas des e-factures (Factur-X, UBL), et ne se connecte à aucune plateforme agréée. En Belgique, les factures entre entreprises belges passent par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de graphiste",
+    "what_to_include_intro": "Votre client doit savoir ce qu'il a commandé, ce qu'il peut en faire et à quel taux il paie.",
+    "req_1_title": "Le livrable, décrit précisément",
+    "req_1_text": "« Logo », c'est flou. « Logo principal et deux variantes, fichiers vectoriels AI, SVG et PDF, version noir et blanc » ne l'est pas.",
+    "req_2_title": "Les tours de corrections inclus",
+    "req_2_text": "Indiquez combien de tours le prix comprend, et facturez les suivants à l'heure, sur leur propre ligne, avec la date de la demande.",
+    "req_3_title": "Ce qui est cédé, et pour quel usage",
+    "req_3_text": "Une cession de droits d'auteur précise les droits cédés (reproduction, représentation, adaptation), les supports, le territoire et la durée. La facture renvoie au contrat de cession ou en résume l'étendue.",
+    "req_4_title": "Le bon taux selon la nature de la ligne",
+    "req_4_text": "Cession de droits d'auteur : 10 % (art. 279 g du CGI). Mise en page, exécution, prestations techniques : 20 %. Invoicor applique un seul taux par facture : une facture pour la cession, une autre pour la prestation.",
+    "req_5_title": "Le montant brut, si vous êtes artiste-auteur",
+    "req_5_text": "Pour une création rémunérée en droits d'auteur, le diffuseur verse une contribution de 1,1 % et précompte vos cotisations, sauf si vous avez une dispense de précompte. Votre facture indique le montant brut ; la retenue est son affaire.",
+    "req_6_title": "Les achats refacturés",
+    "req_6_text": "Polices sous licence, photos de banque d'images, impression : une ligne chacun. Refacturés, ils entrent en principe dans votre prix et portent la TVA, sauf vrais débours (art. 267 II 2° du CGI).",
+    "what_to_include_outro": "Ajoutez SIREN, numéro de TVA du client, échéance, pénalités et indemnité de 40 € : la facture passe le service comptable du premier coup.",
+    "paper_label": "Facture graphiste · exemple",
+    "sample_breakdown_title": "Exemple de facture de graphiste",
+    "sample_breakdown_intro": "Une graphiste lyonnaise en entreprise individuelle, assujettie à la TVA, réalise pour une PME une brochure et des supports de salon sur une charte existante : du travail d'exécution, facturé à 20 %. Son logo de l'an dernier avait eu sa propre facture de cession à 10 %. La frontière entre création et exécution se discute : vérifiez avec votre expert-comptable ou l'Urssaf.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Mise en page d'une brochure A4 de 12 pages sur la charte existante",
+        "qty": "12 pages",
+        "rate": "85,00 €",
+        "amount": "1 020,00 €"
+      },
+      {
+        "description": "Retouche et détourage de photos produits",
+        "qty": "18",
+        "rate": "12,00 €",
+        "amount": "216,00 €"
+      },
+      {
+        "description": "Déclinaison kakémono 85×200 et flyer A5",
+        "qty": "1",
+        "rate": "340,00 €",
+        "amount": "340,00 €"
+      },
+      {
+        "description": "Tour de corrections supplémentaire, demandé le 17 novembre 2026",
+        "qty": "2 h",
+        "rate": "55,00 €",
+        "amount": "110,00 €"
+      },
+      {
+        "description": "Préparation des fichiers pour l'imprimeur (PDF/X, fonds perdus)",
+        "qty": "1",
+        "rate": "90,00 €",
+        "amount": "90,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 776,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "355,20 €",
+    "sample_breakdown_balance": "2 131,20 €",
+    "sample_breakdown_notes": "Prestations réalisées du 3 au 21 novembre 2026. Bon de commande : BC-1187. Aucune cession de droits d'auteur n'est facturée ici. Échéance : 30 jours, soit le 28 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Pénalités de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Ce que le graphiste vérifie avant de facturer",
+    "industry_notes": [
+      {
+        "title": "Artiste-auteur ou freelance, selon le travail",
+        "text": "Seules la création originale et la cession de droits relèvent du régime des artistes-auteurs ; le travail technique (mise en page sur charte, intégration, retouche courante) se facture comme un freelance ordinaire. Vous faites les deux ? Des factures distinctes, et vérifiez votre situation auprès de l'Urssaf."
+      },
+      {
+        "title": "La franchise de TVA",
+        "text": "Les artistes-auteurs ont une franchise jusqu'à 50 000 € de recettes, perdue au-delà de 55 000 € dans l'année ; pour les prestations de services, le seuil est de 37 500 € (41 250 € majoré). Mention : « TVA non applicable, art. 293 B du CGI », la référence actuelle, à revérifier avec la renumérotation du CGI en 2027. Le PDF imprime alors « TVA (0%) » à 0,00 €, que la mention explique. Si vous cumulez les deux activités, demandez quel seuil s'applique."
+      },
+      {
+        "title": "Clients dans l'Union européenne",
+        "text": "Pour une entreprise cliente dans un autre pays de l'UE, vous facturez HT avec la mention « Autoliquidation » et les deux numéros de TVA : le client déclare la TVA chez lui."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de graphiste",
+    "mistakes": [
+      {
+        "title": "Livrer les sources avant le paiement",
+        "text": "Envoyez des aperçus basse définition, et les fichiers finaux à réception du paiement. Une fois les sources parties, votre levier aussi."
+      },
+      {
+        "title": "Une cession sans périmètre",
+        "text": "« Cession de tous droits », sans supports, territoire ni durée, ouvre la porte aux litiges. Fixez l'étendue dans le contrat et rappelez-la sur la facture."
+      },
+      {
+        "title": "Mélanger 10 % et 20 %",
+        "text": "Une ligne de cession et une ligne de mise en page au même taux : l'une des deux est fausse."
+      }
+    ],
+    "tip_title": "Enregistrez vos tarifs comme articles",
+    "pro_tip": "Enregistrez vos prestations courantes (page mise en page, détourage, tour de corrections) comme articles dans l'app, avec leur prix HT : vos tarifs restent cohérents d'un client à l'autre.",
+    "format_pdf_desc": "Le PDF fige les livrables, le taux et l'étendue de la cession : utile si, deux ans plus tard, le client utilise votre travail sur un support non couvert.",
+    "faq_title": "Questions sur la facture de graphiste",
+    "faqs": [
+      {
+        "question": "Quel taux de TVA pour un graphiste ?",
+        "answer": "20 % pour les prestations de services (mise en page, exécution, retouches), 10 % pour la cession de droits d'auteur (art. 279 g du CGI)."
+      },
+      {
+        "question": "Qu'est-ce que le précompte sur une facture de droits d'auteur ?",
+        "answer": "Le diffuseur, votre client, retient vos cotisations sociales sur le montant brut et les verse pour vous, en plus de sa propre contribution de 1,1 %. Avec une dispense de précompte, il ne retient rien. Dans les deux cas, la facture indique le montant brut."
+      },
+      {
+        "question": "Faut-il une facture séparée pour la cession de droits ?",
+        "answer": "Avec Invoicor, oui dès que les taux diffèrent : un seul taux par facture."
+      },
+      {
+        "question": "Comment facturer des corrections en plus ?",
+        "answer": "À l'heure ou au forfait par tour, sur une ligne datée, une fois les tours inclus dépassés. Annoncez leur nombre dès le devis."
+      },
+      {
+        "question": "Puis-je demander un acompte avant de commencer ?",
+        "answer": "Oui, c'est courant pour une identité visuelle : fixez le pourcentage au devis, émettez une facture d'acompte, puis une facture de solde qui la cite."
+      }
+    ],
+    "cta_title": "Créez votre facture de graphiste",
+    "links_title": "Types de factures pour les graphistes",
+    "related": [
+      {
+        "name": "Facture consultant",
+        "slug": "facture-consultant"
+      }
+    ],
+    "invoice_types": ["facture-freelance", "facture-acompte", "facture-sans-tva"]
+  },
+  {
+    "slug": "facture-consultant",
+    "translation_of": "consulting",
+    "niche": "Facture consultant",
+    "title": "Facture consultant : TJM, frais et mentions | Invoicor",
+    "meta_description": "Facture consultant : jours au TJM, frais de mission, bon de commande, délais de paiement et indemnité de 40 €. Voyez l'exemple et créez votre PDF.",
+    "h1": "Modèle de facture consultant : TJM, frais et mentions",
+    "subtitle": "Pour les consultants indépendants, en micro-entreprise ou en société : facturer des jours au TJM, des frais de mission et des conditions de paiement qu'un service achats accepte.",
+    "intro_paragraph": "Un consultant vend du temps et un savoir-faire, rarement un objet : la facture est la seule trace tangible de la mission. Chez un grand compte, la comptabilité fournisseurs la rapproche du bon de commande et la renvoie s'il manque une référence. La plupart des indépendants facturent au TJM, le taux journalier, parfois au forfait. Pour la facturation électronique, la réception est obligatoire pour toutes les entreprises depuis le 1er septembre 2026 ; l'émission arrive au 1er septembre 2027 pour les PME et micro-entreprises (impots.gouv.fr), qui peuvent jusqu'à cette date facturer comme aujourd'hui. Invoicor crée des PDF, pas des factures électroniques (Factur-X, UBL), et n'est relié à aucune plateforme agréée. En Belgique, une facture d'entreprise belge à entreprise belge doit passer par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de consultant",
+    "what_to_include_intro": "Le service qui paie n'a pas assisté à la mission : tout ce qu'il doit vérifier doit être écrit.",
+    "req_1_title": "Le bon de commande et la référence de mission",
+    "req_1_text": "Le numéro de bon de commande du client fait partie des mentions obligatoires quand il existe (service-public, F31808). Ajoutez l'intitulé de la mission.",
+    "req_2_title": "Les jours au TJM, avec la période",
+    "req_2_text": "« Diagnostic : 6 jours à 650 € HT, du 3 au 21 novembre 2026. » La date de la prestation est obligatoire et Invoicor n'a pas de champ pour elle : mettez la période dans la ligne. Une demi-journée se compte 0,5 jour.",
+    "req_3_title": "Les livrables remis",
+    "req_3_text": "Rapport, atelier, comité de pilotage : nommez ce qui a été remis, pour qu'on retrouve à quoi correspondent les jours.",
+    "req_4_title": "Les frais de mission, un par ligne",
+    "req_4_text": "Train, hôtel, repas : une ligne par nature, avec la date. Repris sur la facture, ils font partie du prix et portent la TVA, sauf débours (dépenses au nom et pour le compte du client, avec mandat).",
+    "req_5_title": "Votre statut et vos numéros",
+    "req_5_text": "Forme juridique (EI, SASU, EURL, capital pour une société), SIREN, numéros de TVA des deux parties au-delà de 150 € HT. Dans Invoicor, le SIREN va dans le champ « SIRET ».",
+    "req_6_title": "Les conditions de paiement",
+    "req_6_text": "Échéance, pénalités de retard (au moins trois fois le taux d'intérêt légal), indemnité de 40 € et escompte. Délai par défaut : 30 jours après la prestation ; au plus 60 jours après l'émission, ou 45 jours fin de mois si convenu (service-public, F23211).",
+    "what_to_include_outro": "Invoicor n'a pas de champ dédié pour ces mentions : mettez-les dans les notes ou les conditions de paiement.",
+    "paper_label": "Facture consultant · exemple",
+    "sample_breakdown_title": "Exemple de facture de consultant",
+    "sample_breakdown_intro": "Un consultant en organisation, en SASU à Paris, facture à un client industriel nantais six jours de diagnostic en novembre, un atelier de restitution au forfait, un aller-retour en train et une nuit d'hôtel. TVA à 20 %, le taux des prestations de conseil.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Diagnostic organisationnel au TJM, du 3 au 21 novembre 2026",
+        "qty": "6 jours",
+        "rate": "650,00 €",
+        "amount": "3 900,00 €"
+      },
+      {
+        "description": "Atelier de restitution au comité de direction, 24 novembre 2026 (forfait demi-journée)",
+        "qty": "1",
+        "rate": "325,00 €",
+        "amount": "325,00 €"
+      },
+      {
+        "description": "Frais de déplacement : train Paris-Nantes aller-retour, 23 et 24 novembre",
+        "qty": "1",
+        "rate": "98,00 €",
+        "amount": "98,00 €"
+      },
+      {
+        "description": "Frais d'hébergement : hôtel à Nantes, nuit du 23 novembre",
+        "qty": "1",
+        "rate": "112,00 €",
+        "amount": "112,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "4 435,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "887,00 €",
+    "sample_breakdown_balance": "5 322,00 €",
+    "sample_breakdown_notes": "Mission « Diagnostic organisationnel », bon de commande n° 4500021873. Frais refacturés au réel, justificatifs envoyés avec la facture. Relevé de jours validé par le client le 21 novembre. Échéance : 30 jours après émission, soit le 28 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Pénalités de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire pour frais de recouvrement : 40 €.",
+    "industry_notes_title": "Ce que le consultant vérifie avant de facturer",
+    "industry_notes": [
+      {
+        "title": "Le TJM et la facture mensuelle",
+        "text": "Sur une mission longue, on facture souvent en fin de mois les jours passés, d'après un relevé validé par le client ; délai plafonné à 45 jours pour une facture périodique (F23211). Invoicor ne suit pas le temps et ne fait pas de factures récurrentes : dupliquez celle du mois précédent et changez la période."
+      },
+      {
+        "title": "Petits consultants et franchise",
+        "text": "Sous 37 500 € de chiffre d'affaires (41 250 € majoré), un consultant en micro-entreprise peut rester en franchise : pas de TVA, avec la mention « TVA non applicable, art. 293 B du CGI », référence actuelle à revérifier avec la renumérotation du CGI en 2027. Le PDF imprime « TVA (0%) » à 0,00 €, que la mention explique."
+      },
+      {
+        "title": "Clients à l'étranger",
+        "text": "Entreprise cliente dans un autre pays de l'UE : facture HT, mention « Autoliquidation », numéros de TVA des deux parties. Client hors UE : vérifiez la mention avec votre expert-comptable."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de consultant",
+    "mistakes": [
+      {
+        "title": "Des jours sans contenu",
+        "text": "« 6 jours de conseil » ne dit rien au contrôleur de gestion du client. Une ligne par phase ou livrable, avec la période."
+      },
+      {
+        "title": "Oublier pénalités et indemnité",
+        "text": "Entre professionnels, elles font partie des mentions obligatoires (F31808), même si vous ne comptez pas les réclamer."
+      },
+      {
+        "title": "Accepter un délai hors la loi",
+        "text": "Un client qui impose 90 jours dépasse le plafond de 60 jours après émission, ou 45 jours fin de mois. Rappelez la règle avant de signer, pas au moment de relancer."
+      }
+    ],
+    "tip_title": "Faites valider le relevé de jours",
+    "pro_tip": "Faites valider le relevé de jours avant de facturer et envoyez-le avec le PDF. Notez la date de validation dans les notes : le service comptable n'a plus rien à vérifier.",
+    "format_pdf_desc": "Le PDF arrive tel quel dans l'outil de traitement du client, numéro de commande et période lisibles. Demandez à vos grands comptes s'ils attendent déjà un format électronique.",
+    "faq_title": "Questions sur la facture de consultant",
+    "faqs": [
+      {
+        "question": "Comment facturer au TJM ?",
+        "answer": "Multipliez les jours passés par votre taux journalier HT, avec une ligne par phase et la période. Le TJM se fixe au contrat ou au devis ; la facture ne fait que l'appliquer."
+      },
+      {
+        "question": "Puis-je facturer une demi-journée ?",
+        "answer": "Oui : 0,5 jour au TJM, ou un forfait demi-journée sur sa propre ligne, comme l'atelier de l'exemple."
+      },
+      {
+        "question": "L'indemnité de 40 € s'applique-t-elle à chaque facture ?",
+        "answer": "Oui, par facture payée en retard par un client professionnel, en plus des pénalités. Elle ne porte pas de TVA et ne concerne pas les clients particuliers."
+      },
+      {
+        "question": "Faut-il facturer la TVA à un client européen ?",
+        "answer": "Non, si c'est une entreprise établie dans un autre pays de l'UE : facture HT avec la mention « Autoliquidation » et les deux numéros de TVA."
+      },
+      {
+        "question": "Comment refacturer mes frais de déplacement ?",
+        "answer": "Une ligne par frais, au réel, justificatifs envoyés avec la facture. Ils portent la TVA, en principe au taux de la prestation ; en cas de doute, demandez à votre expert-comptable."
+      }
+    ],
+    "cta_title": "Créez votre facture de consultant",
+    "links_title": "Types de factures pour les consultants",
+    "related": [
+      {
+        "name": "Facture graphiste",
+        "slug": "facture-graphiste"
+      }
+    ],
+    "invoice_types": ["facture-prestation-de-services", "facture-freelance", "refacturation-frais"]
+  },
+  {
+    "slug": "facture-nettoyage",
+    "translation_of": "cleaning-services",
+    "niche": "Facture nettoyage",
+    "title": "Facture nettoyage : ménage SAP et bureaux | Invoicor",
+    "meta_description": "Facture nettoyage : ménage SAP à 10 % avec heures et intervenant, crédit d'impôt, entretien de bureaux à 20 %. Voyez l'exemple et créez votre PDF.",
+    "h1": "Modèle de facture nettoyage : ménage à domicile et bureaux",
+    "subtitle": "Pour les entreprises de ménage et de nettoyage : la facture de services à la personne, avec heures et intervenant, et celle de l'entretien de locaux professionnels.",
+    "intro_paragraph": "Ménage chez un particulier ou entretien de bureaux : le métier se ressemble, la facture beaucoup moins. Une entreprise déclarée en services à la personne (SAP) facture le ménage à domicile à 10 %, avec des mentions précises, et son client récupère la moitié de la dépense en crédit d'impôt. L'entretien de locaux professionnels se facture à 20 %, comme une prestation ordinaire. Toute entreprise doit pouvoir recevoir des factures électroniques depuis le 1er septembre 2026 ; une PME ou une micro-entreprise devra en émettre au 1er septembre 2027 (impots.gouv.fr) et peut facturer comme aujourd'hui jusqu'à cette date. Les factures aux particuliers relèvent seulement de l'e-reporting. Invoicor fait des PDF, pas des factures électroniques (Factur-X, UBL), sans connexion à une plateforme agréée. En Belgique, les factures entre entreprises belges sont des e-factures Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de nettoyage",
+    "what_to_include_intro": "Pour un particulier en SAP, l'article D7233-1 du Code du travail fixe le contenu.",
+    "req_1_title": "Votre déclaration SAP",
+    "req_1_text": "Nom et adresse de l'organisme, numéro et date de la déclaration de services à la personne. C'est ce qui permet au client de rattacher la facture à son crédit d'impôt.",
+    "req_2_title": "La nature exacte du service",
+    "req_2_text": "« Ménage » reste vague : écrivez « entretien courant du logement et repassage ». Pour des bureaux, précisez les surfaces, la fréquence et les tâches.",
+    "req_3_title": "Les heures, le taux horaire ou le forfait",
+    "req_3_text": "En SAP, la facture indique le taux horaire ou le prix forfaitaire, le temps passé et le prix de chaque prestation. Ajoutez les dates de passage : Invoicor n'a pas de champ pour la date du service, mettez-les dans la ligne.",
+    "req_4_title": "La personne qui est intervenue",
+    "req_4_text": "L'identification de l'intervenant fait partie des mentions SAP. Un prénom et une initiale, ou un code intervenant, suffisent en général.",
+    "req_5_title": "Les frais de déplacement",
+    "req_5_text": "S'ils sont facturés, ils figurent sur leur propre ligne (art. D7233-1). Pour des bureaux, ils sont souvent inclus dans le prix mensuel ou forfaitisés par passage.",
+    "req_6_title": "Le bon taux de TVA",
+    "req_6_text": "Ménage au domicile par un organisme SAP déclaré : 10 %. Entretien de locaux professionnels : 20 %. En micro-entreprise sous le seuil de franchise, pas de TVA, avec la mention « TVA non applicable, art. 293 B du CGI ».",
+    "what_to_include_outro": "Ajoutez le nom et l'adresse du client et la somme effectivement payée : pour un particulier, la facture devient la pièce qui justifie son crédit d'impôt.",
+    "paper_label": "Facture nettoyage · exemple",
+    "sample_breakdown_title": "Exemple de facture de nettoyage",
+    "sample_breakdown_intro": "Une entreprise de ménage de Bordeaux, déclarée en services à la personne, facture un mois d'entretien chez une cliente : quatre passages de trois heures, un nettoyage de vitres au forfait et les déplacements. TVA à 10 %, le taux du ménage à domicile en SAP.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Entretien courant du logement et repassage, 3 h par passage (4, 11, 18 et 25 novembre 2026), intervenante : Sonia M.",
+        "qty": "12 h",
+        "rate": "27,00 €",
+        "amount": "324,00 €"
+      },
+      {
+        "description": "Nettoyage des vitres, intérieur et extérieur, forfait de 2 h (18 novembre 2026)",
+        "qty": "1",
+        "rate": "60,00 €",
+        "amount": "60,00 €"
+      },
+      {
+        "description": "Frais de déplacement, par passage",
+        "qty": "4",
+        "rate": "3,50 €",
+        "amount": "14,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "398,00 €",
+    "sample_breakdown_tax_label": "TVA 10 %",
+    "sample_breakdown_tax": "39,80 €",
+    "sample_breakdown_balance": "437,80 €",
+    "sample_breakdown_notes": "Organisme déclaré de services à la personne : déclaration n° SAP812345678 du 3 mars 2025. Cliente : Mme Claire Dumas, 22 cours de Verdun, Bordeaux. Taux horaire : 27,00 € HT, soit 29,70 € TTC. Somme acquittée le 30 novembre 2026 par prélèvement : 437,80 €. Les sommes versées ouvrent droit au crédit d'impôt selon les conditions en vigueur ; l'attestation fiscale annuelle vous sera envoyée avant le 31 mars 2027.",
+    "industry_notes_title": "Ce que l'entreprise de nettoyage vérifie avant de facturer",
+    "industry_notes": [
+      {
+        "title": "Le crédit d'impôt et l'attestation",
+        "text": "Votre client particulier récupère 50 % des sommes versées, dans la limite de 12 000 € par an en 2026, majorée de 1 500 € par personne à charge jusqu'à 15 000 €. En contrepartie, vous lui envoyez avant le 31 mars une attestation fiscale annuelle. Invoicor fait les factures, pas cette attestation : préparez-la à part."
+      },
+      {
+        "title": "Bureaux : un contrat, une facture par mois",
+        "text": "En entretien de locaux, le prix est souvent mensuel et fixé au contrat. Invoicor n'envoie pas de factures récurrentes : dupliquez la facture du mois précédent et changez la période. À 20 %, avec le numéro de TVA du client et l'indemnité de 40 € dans les conditions de paiement."
+      },
+      {
+        "title": "Jardinage et petit bricolage",
+        "text": "Proposez-vous aussi du jardinage ? En SAP, il relève de 20 % et d'un plafond de crédit d'impôt de 5 000 € ; le petit bricolage, de 10 % et 500 €. Un seul taux par facture dans Invoicor : facturez le jardinage à part."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de nettoyage",
+    "mistakes": [
+      {
+        "title": "Oublier le numéro de déclaration",
+        "text": "C'est la première chose que regarde un client qui déclare son crédit d'impôt. Mettez-le dans les notes de chaque facture SAP."
+      },
+      {
+        "title": "Un forfait mensuel sans les heures",
+        "text": "En SAP, le temps passé doit figurer. « Ménage de novembre : 398 € » ne suffit pas : indiquez les heures, les dates et le taux."
+      },
+      {
+        "title": "Mettre 10 % sur des bureaux",
+        "text": "Le taux réduit vise les services rendus au domicile d'un particulier par un organisme déclaré. Un cabinet médical ou une agence se facture à 20 %."
+      }
+    ],
+    "tip_title": "Un article par prestation",
+    "pro_tip": "Enregistrez « heure de ménage », « vitres » et « déplacement » comme articles dans l'app. En fin de mois, dupliquez la facture de chaque cliente et changez dates et heures.",
+    "format_pdf_desc": "Le PDF reste lisible pendant des années : votre cliente le range avec son attestation fiscale, au cas où l'administration lui poserait une question sur son crédit d'impôt.",
+    "faq_title": "Questions sur la facture de nettoyage",
+    "faqs": [
+      {
+        "question": "Quelles mentions sur une facture de ménage à domicile ?",
+        "answer": "Celles de l'article D7233-1 du Code du travail : nom, adresse, numéro et date de déclaration de l'organisme, nom et adresse du client, nature exacte des services, sommes payées, identification de l'intervenant, taux horaire ou prix forfaitaire, temps passé, prix de chaque prestation et frais de déplacement s'il y en a."
+      },
+      {
+        "question": "Quel taux de TVA pour le ménage ?",
+        "answer": "10 % pour le ménage au domicile d'un particulier par un organisme SAP déclaré, 20 % pour l'entretien de locaux d'entreprise. La plupart des micro-entrepreneurs sont en franchise et ne facturent pas de TVA."
+      },
+      {
+        "question": "Mon client a-t-il droit au crédit d'impôt ?",
+        "answer": "Oui s'il est particulier et que vous êtes un organisme SAP déclaré : 50 % des sommes payées, dans la limite de 12 000 € en 2026, plus 1 500 € par personne à charge, jusqu'à 15 000 €."
+      },
+      {
+        "question": "Faut-il facturer avant ou après le ménage ?",
+        "answer": "Pour des passages réguliers, en fin de mois sur les heures faites ; pour un grand nettoyage ponctuel, le jour même."
+      },
+      {
+        "question": "Dois-je envoyer une attestation fiscale chaque année ?",
+        "answer": "Oui : l'organisme SAP envoie à chaque client particulier une attestation fiscale annuelle avant le 31 mars."
+      }
+    ],
+    "cta_title": "Créez votre facture de nettoyage",
+    "links_title": "Types de factures pour les entreprises de nettoyage",
+    "related": [
+      {
+        "name": "Facture cours particuliers",
+        "slug": "facture-cours-particuliers"
+      }
+    ],
+    "invoice_types": ["facture-recurrente", "facture-prestation-de-services", "facture-sans-tva"]
+  },
+  {
+    "slug": "facture-cours-particuliers",
+    "translation_of": "tutoring",
+    "niche": "Facture cours particuliers",
+    "title": "Facture cours particuliers : TVA et exemple | Invoicor",
+    "meta_description": "Facture cours particuliers : exonération de TVA, mention à écrire, séances datées, soutien scolaire en SAP, cours de musique. Voyez l'exemple.",
+    "h1": "Modèle de facture cours particuliers : soutien, langues, musique",
+    "subtitle": "Pour les professeurs particuliers de soutien scolaire, de langues ou de musique : des séances datées, la bonne mention de TVA et, en SAP, ce qu'il faut pour le crédit d'impôt.",
+    "intro_paragraph": "Un cours particulier est souvent payé par des parents qui n'étaient pas dans la pièce. La facture leur montre ce qu'ils ont acheté : combien de séances, quelle matière, à quelles dates. En France, elle règle aussi la question de la TVA : un professeur qui enseigne lui-même et que ses élèves paient directement peut être exonéré, tandis que le soutien scolaire à domicile proposé par un organisme de services à la personne suit ses propres règles. Cette page vaut aussi pour les cours de musique, de langue ou de sport. Vos clients sont des particuliers : pour la réforme de la facturation électronique, ces factures relèvent seulement de l'e-reporting (impots.gouv.fr).",
+    "include_title": "Ce que doit contenir une facture de cours particuliers",
+    "what_to_include_intro": "Les parents relisent la facture, votre comptable aussi. Voici ce qu'elle doit montrer.",
+    "req_1_title": "L'élève et la matière",
+    "req_1_text": "Le payeur est souvent un parent : la facture est à son nom, mais nommez l'élève et la matière (« Cours de mathématiques pour Hugo, première »).",
+    "req_2_title": "Chaque séance, avec sa date et sa durée",
+    "req_2_text": "Listez les dates dans la description : Invoicor n'a pas de champ pour la date du service. La durée (1 h, 1 h 30) explique le prix.",
+    "req_3_title": "La mention d'exonération",
+    "req_3_text": "Si vous remplissez les conditions de l'article 261-4-4° b du CGI, écrivez « Exonération de TVA, art. 261-4-4° b du CGI ». Le PDF d'Invoicor imprime une ligne « TVA (0%) » à 0,00 € : c'est la mention qui l'explique.",
+    "req_4_title": "Le cadre SAP, le cas échéant",
+    "req_4_text": "Déclaré en services à la personne pour du soutien scolaire à domicile ? Ajoutez le numéro et la date de déclaration, l'intervenant, le taux horaire, le temps passé et le prix de chaque prestation (Code du travail, D7233-1).",
+    "req_5_title": "Les devoirs corrigés et les bilans",
+    "req_5_text": "Préparation et correction d'un devoir sur table, bilan écrit de fin de trimestre : une ligne chacun, pour que les parents voient le travail fait hors séance.",
+    "req_6_title": "Votre règle pour les séances annulées",
+    "req_6_text": "Séance annulée moins de 24 h avant : due, reportée ou offerte ? Écrivez la règle dans les notes. Elle évite une discussion gênante le jour où une séance saute.",
+    "what_to_include_outro": "Ajoutez votre nom, votre SIREN dans le champ « SIRET », le nom et l'adresse du payeur, un numéro de facture et l'échéance.",
+    "paper_label": "Facture cours particuliers · exemple",
+    "sample_breakdown_title": "Exemple de facture de cours particuliers",
+    "sample_breakdown_intro": "Un professeur de mathématiques de Lille, en entreprise individuelle, donne lui-même des cours chez lui à un élève de première, réglés directement par les parents. Les conditions de l'exonération sont réunies : pas de TVA, mention dans les notes, et le PDF affiche « TVA (0%) » à 0,00 €.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Cours de mathématiques, niveau première, séances d'1 h 30 (4, 7, 11, 14, 18, 21, 25 et 28 novembre 2026)",
+        "qty": "8",
+        "rate": "45,00 €",
+        "amount": "360,00 €"
+      },
+      {
+        "description": "Séance de révision avant le contrôle, 1 h (26 novembre 2026)",
+        "qty": "1",
+        "rate": "30,00 €",
+        "amount": "30,00 €"
+      },
+      {
+        "description": "Préparation et correction d'un devoir sur table, sujet type bac",
+        "qty": "1",
+        "rate": "40,00 €",
+        "amount": "40,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "430,00 €",
+    "sample_breakdown_balance": "430,00 €",
+    "sample_breakdown_notes": "Exonération de TVA, art. 261-4-4° b du CGI. Élève : Hugo Martin, première générale. Cours donnés personnellement par le professeur et réglés directement par la famille. Toute séance annulée moins de 24 h à l'avance est due. Échéance : 10 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Pénalités de retard : 3 fois le taux d'intérêt légal. Suivi : les dérivées sont acquises, prochain objectif les suites.",
+    "industry_notes_title": "Ce que le professeur particulier vérifie avant de facturer",
+    "industry_notes": [
+      {
+        "title": "Les conditions de l'exonération",
+        "text": "L'article 261-4-4° b du CGI exonère l'enseignement scolaire, universitaire, professionnel, artistique ou sportif donné par une personne physique payée directement par ses élèves. Le Conseil d'État (1er juillet 2025) précise qu'elle doit enseigner elle-même, sans que personne d'autre n'y contribue. Si vous êtes payé par l'intermédiaire d'une plateforme, l'exonération ne s'applique pas."
+      },
+      {
+        "title": "Soutien scolaire à domicile en SAP",
+        "text": "Un organisme déclaré en services à la personne facture le soutien scolaire à domicile à 10 % et les autres cours à domicile à 20 % ; ses clients ont droit au crédit d'impôt de 50 %, et il leur envoie une attestation fiscale avant le 31 mars. Professeur indépendant et déclaré SAP à la fois ? Vérifiez avec votre expert-comptable quel régime vaut pour quels cours."
+      },
+      {
+        "title": "Les cours de musique",
+        "text": "Un professeur de piano ou de guitare qui enseigne seul et que ses élèves paient directement relève de la même exonération, au titre de l'enseignement artistique. Une école qui emploie des professeurs est un autre cas, à voir avec un expert-comptable."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de cours particuliers",
+    "mistakes": [
+      {
+        "title": "Des séances sans dates",
+        "text": "« 8 cours : 360 € » ne permet pas aux parents de vérifier. Listez les dates : c'est aussi votre preuve si une séance est contestée."
+      },
+      {
+        "title": "Choisir la mention au hasard",
+        "text": "L'exonération de l'article 261-4-4° b et la franchise de l'article 293 B ne disent pas la même chose. Demandez à votre expert-comptable laquelle vous concerne, puis gardez-la sur toutes vos factures."
+      },
+      {
+        "title": "Facturer quand on y pense",
+        "text": "Une facture tous les trois mois, et le total surprend. Facturez chaque mois, à date fixe."
+      }
+    ],
+    "tip_title": "Ajoutez une phrase de suivi",
+    "pro_tip": "Terminez les notes par une ligne sur les progrès de l'élève, comme dans l'exemple : les parents lisent la facture avec intérêt, et vous gardez la trace du suivi.",
+    "format_pdf_desc": "Un PDF s'envoie aux deux parents et se range avec les papiers de l'année scolaire, sans qu'un montant puisse changer.",
+    "faq_title": "Questions sur la facture de cours particuliers",
+    "faqs": [
+      {
+        "question": "Les cours particuliers sont-ils soumis à la TVA ?",
+        "answer": "Pas s'ils remplissent les conditions de l'article 261-4-4° b du CGI : un enseignement donné personnellement par une personne physique payée directement par ses élèves. Via une plateforme ou dans un organisme SAP, d'autres règles s'appliquent."
+      },
+      {
+        "question": "Quelle mention écrire sur la facture ?",
+        "answer": "« Exonération de TVA, art. 261-4-4° b du CGI ». C'est la référence actuelle ; le CGI est renuméroté en 2027, pensez à la vérifier à ce moment-là."
+      },
+      {
+        "question": "Pourquoi le PDF affiche-t-il une ligne TVA à 0 % ?",
+        "answer": "Invoicor imprime toujours la ligne de TVA, même à 0 %. Avec la mention d'exonération dans les notes, elle se lit sans ambiguïté : aucune TVA n'est facturée."
+      },
+      {
+        "question": "Mes clients ont-ils droit au crédit d'impôt ?",
+        "answer": "Si vous êtes déclaré en services à la personne et que les cours ont lieu au domicile de l'élève, oui : 50 % des sommes payées, dans les plafonds de l'année. Dans les autres cas, vérifiez votre situation avant de l'annoncer aux familles."
+      },
+      {
+        "question": "Faut-il facturer une séance annulée ?",
+        "answer": "Si votre règle le prévoit et que la famille l'a acceptée, oui : une ligne avec la date et le motif (« annulée moins de 24 h avant »)."
+      }
+    ],
+    "cta_title": "Créez votre facture de cours particuliers",
+    "links_title": "Types de factures pour les cours particuliers",
+    "related": [
+      {
+        "name": "Facture nettoyage",
+        "slug": "facture-nettoyage"
+      }
+    ],
+    "invoice_types": ["facture-recurrente", "facture-sans-tva", "facture-freelance"]
   }
 ]

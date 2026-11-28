@@ -20,201 +20,166 @@
 
 ## T1–T20 in French
 
-[ ] Trade templates 1–20 (built) · 0/20 live in fr
+[ ] Trade templates 1–20 (built) · 8/17 live in fr
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
 ### T1-fr · /templates/photography → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-photographe
 - **English page:** [photography invoice template](https://invoicor.com/templates/photography) (live: use it as the source)
 - **Search words:** "modèle facture [photography, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T2-fr · /templates/plumbing → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-plombier
 - **English page:** [plumbing invoice template](https://invoicor.com/templates/plumbing) (live: use it as the source)
 - **Search words:** "modèle facture [plumbing, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T3-fr · /templates/hvac → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-chauffagiste
 - **English page:** [hvac invoice template](https://invoicor.com/templates/hvac) (live: use it as the source)
 - **Search words:** "modèle facture [hvac, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T4-fr · /templates/freelance-design → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-graphiste
 - **English page:** [graphic design invoice template](https://invoicor.com/templates/freelance-design) (live: use it as the source)
 - **Search words:** "modèle facture [graphic design, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T5-fr · /templates/handyman → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-multiservices
 - **English page:** [handyman invoice template](https://invoicor.com/templates/handyman) (live: use it as the source)
 - **Search words:** "modèle facture [handyman, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T6-fr · /templates/videography → French
-
-- [ ] **Live in fr**
-- **English page:** [videography invoice template](https://invoicor.com/templates/videography) (live: use it as the source)
-- **Search words:** "modèle facture [videography, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T6-fr** /templates/videography~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak, no French sites
 
 ### T7-fr · /templates/landscaping → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-paysagiste
 - **English page:** [landscaping invoice template](https://invoicor.com/templates/landscaping) (live: use it as the source)
 - **Search words:** "modèle facture [landscaping, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T8-fr · /templates/consulting → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-consultant
 - **English page:** [consulting invoice template](https://invoicor.com/templates/consulting) (live: use it as the source)
 - **Search words:** "modèle facture [consulting, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T9-fr · /templates/cleaning-services → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-nettoyage
 - **English page:** [cleaning invoice template](https://invoicor.com/templates/cleaning-services) (live: use it as the source)
 - **Search words:** "modèle facture [cleaning, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T10-fr · /templates/auto-detailing → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-garage
 - **English page:** [auto detailing invoice template](https://invoicor.com/templates/auto-detailing) (live: use it as the source)
 - **Search words:** "modèle facture [auto detailing, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T11-fr · /templates/electrician → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-electricien
 - **English page:** [electrician invoice template](https://invoicor.com/templates/electrician) (live: use it as the source)
 - **Search words:** "modèle facture [electrician, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T12-fr · /templates/construction → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-macon
 - **English page:** [construction invoice template](https://invoicor.com/templates/construction) (live: use it as the source)
 - **Search words:** "modèle facture [construction, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T13-fr · /templates/roofing → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-couvreur
 - **English page:** [roofing invoice template](https://invoicor.com/templates/roofing) (live: use it as the source)
 - **Search words:** "modèle facture [roofing, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T14-fr · /templates/painting → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-peintre
 - **English page:** [painting invoice template](https://invoicor.com/templates/painting) (live: use it as the source)
 - **Search words:** "modèle facture [painting, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T15-fr · /templates/web-development → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-developpeur-web
 - **English page:** [web development invoice template](https://invoicor.com/templates/web-development) (live: use it as the source)
 - **Search words:** "modèle facture [web development, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T16-fr · /templates/personal-training → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-coach-sportif
 - **English page:** [personal trainer invoice template](https://invoicor.com/templates/personal-training) (live: use it as the source)
 - **Search words:** "modèle facture [personal trainer, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T17-fr · /templates/tutoring → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-cours-particuliers
 - **English page:** [tutoring invoice template](https://invoicor.com/templates/tutoring) (live: use it as the source)
 - **Search words:** "modèle facture [tutoring, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T18-fr · /templates/catering → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-traiteur
 - **English page:** [catering invoice template](https://invoicor.com/templates/catering) (live: use it as the source)
 - **Search words:** "modèle facture [catering, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T19-fr · /templates/moving → French
+- ~~**T19-fr** /templates/moving~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; regulated (devis, lettre de voiture)
 
-- [ ] **Live in fr**
-- **English page:** [moving company invoice template](https://invoicor.com/templates/moving) (live: use it as the source)
-- **Search words:** "modèle facture [moving company, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T20-fr · /templates/pest-control → French
-
-- [ ] **Live in fr**
-- **English page:** [pest control invoice template](https://invoicor.com/templates/pest-control) (live: use it as the source)
-- **Search words:** "modèle facture [pest control, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T20-fr** /templates/pest-control~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak, niche
 
 ## T21–T35 in French
 
-[ ] Trade templates 21–35 (built) · 0/15 live in fr
+[ ] Trade templates 21–35 (built) · 2/5 live in fr
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T21-fr · /templates/virtual-assistant → French
+- ~~**T21-fr** /templates/virtual-assistant~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; 'assistante virtuelle' is rare in France
 
-- [ ] **Live in fr**
-- **English page:** [virtual assistant invoice template](https://invoicor.com/templates/virtual-assistant) (live: use it as the source)
-- **Search words:** "modèle facture [virtual assistant, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T22-fr** /templates/pet-sitting~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak
 
-### T22-fr · /templates/pet-sitting → French
-
-- [ ] **Live in fr**
-- **English page:** [pet sitting invoice template](https://invoicor.com/templates/pet-sitting) (live: use it as the source)
-- **Search words:** "modèle facture [pet sitting, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T23-fr · /templates/makeup-artist → French
-
-- [ ] **Live in fr**
-- **English page:** [makeup artist invoice template](https://invoicor.com/templates/makeup-artist) (live: use it as the source)
-- **Search words:** "modèle facture [makeup artist, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T23-fr** /templates/makeup-artist~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak
 
 ### T24-fr · /templates/carpentry → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-menuisier
 - **English page:** [carpentry invoice template](https://invoicor.com/templates/carpentry) (live: use it as the source)
 - **Search words:** "modèle facture [carpentry, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T25-fr · /templates/flooring → French
-
-- [ ] **Live in fr**
-- **English page:** [flooring invoice template](https://invoicor.com/templates/flooring) (live: use it as the source)
-- **Search words:** "modèle facture [flooring, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T25-fr** /templates/flooring~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; covered by facture-carreleur
 
 ### T26-fr · /templates/tile-installation → French
 
-- [ ] **Live in fr**
+- [x] **Live in fr**: /fr/modeles/facture-carreleur
 - **English page:** [tile installation invoice template](https://invoicor.com/templates/tile-installation) (live: use it as the source)
 - **Search words:** "modèle facture [tile installation, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T27-fr · /templates/drywall → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-plaquiste
 - **English page:** [drywall invoice template](https://invoicor.com/templates/drywall) (live: use it as the source)
 - **Search words:** "modèle facture [drywall, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
@@ -226,165 +191,90 @@
 - **Search words:** "modèle facture [masonry, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T29-fr · /templates/fence-installation → French
+- ~~**T29-fr** /templates/fence-installation~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; done by paysagistes
 
-- [ ] **Live in fr**
-- **English page:** [fence installation invoice template](https://invoicor.com/templates/fence-installation) (live: use it as the source)
-- **Search words:** "modèle facture [fence installation, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T30-fr** /templates/pool-service~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak
 
-### T30-fr · /templates/pool-service → French
+- ~~**T31-fr** /templates/window-cleaning~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; covered by facture-nettoyage
 
-- [ ] **Live in fr**
-- **English page:** [pool service invoice template](https://invoicor.com/templates/pool-service) (live: use it as the source)
-- **Search words:** "modèle facture [pool service, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T32-fr** /templates/pressure-washing~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; done by couvreurs or cleaners
 
-### T31-fr · /templates/window-cleaning → French
+- ~~**T33-fr** /templates/tree-service~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; part of paysagiste
 
-- [ ] **Live in fr**
-- **English page:** [window cleaning invoice template](https://invoicor.com/templates/window-cleaning) (live: use it as the source)
-- **Search words:** "modèle facture [window cleaning, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T32-fr · /templates/pressure-washing → French
-
-- [ ] **Live in fr**
-- **English page:** [pressure washing invoice template](https://invoicor.com/templates/pressure-washing) (live: use it as the source)
-- **Search words:** "modèle facture [pressure washing, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T33-fr · /templates/tree-service → French
-
-- [ ] **Live in fr**
-- **English page:** [tree service invoice template](https://invoicor.com/templates/tree-service) (live: use it as the source)
-- **Search words:** "modèle facture [tree service, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T34-fr · /templates/snow-removal → French
-
-- [ ] **Live in fr**
-- **English page:** [snow removal invoice template](https://invoicor.com/templates/snow-removal) (live: use it as the source)
-- **Search words:** "modèle facture [snow removal, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T34-fr** /templates/snow-removal~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; not a trade in France (Québec results)
 
 ### T35-fr · /templates/locksmith → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-serrurier
 - **English page:** [locksmith invoice template](https://invoicor.com/templates/locksmith) (live: use it as the source)
 - **Search words:** "modèle facture [locksmith, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ## T36–T50 in French
 
-[ ] Trade templates 36–50 (built) · 0/15 live in fr
+[ ] Trade templates 36–50 (built) · 0/6 live in fr
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T36-fr · /templates/appliance-repair → French
+- ~~**T36-fr** /templates/appliance-repair~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak, consumer sites only
 
-- [ ] **Live in fr**
-- **English page:** [appliance repair invoice template](https://invoicor.com/templates/appliance-repair) (live: use it as the source)
-- **Search words:** "modèle facture [appliance repair, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T37-fr** /templates/junk-removal~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak
 
-### T37-fr · /templates/junk-removal → French
-
-- [ ] **Live in fr**
-- **English page:** [junk removal invoice template](https://invoicor.com/templates/junk-removal) (live: use it as the source)
-- **Search words:** "modèle facture [junk removal, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T38-fr · /templates/carpet-cleaning → French
-
-- [ ] **Live in fr**
-- **English page:** [carpet cleaning invoice template](https://invoicor.com/templates/carpet-cleaning) (live: use it as the source)
-- **Search words:** "modèle facture [carpet cleaning, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T38-fr** /templates/carpet-cleaning~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; covered by facture-nettoyage
 
 ### T39-fr · /templates/interior-design → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-architecte-interieur
 - **English page:** [interior design invoice template](https://invoicor.com/templates/interior-design) (live: use it as the source)
 - **Search words:** "modèle facture [interior design, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T40-fr · /templates/remodeling → French
+- ~~**T40-fr** /templates/remodeling~~ skipped in fr: parked 2026-11-28 (demand gate, fr): overlap: owned by facture-travaux (D8-fr)
 
-- [ ] **Live in fr**
-- **English page:** [remodeling invoice template](https://invoicor.com/templates/remodeling) (live: use it as the source)
-- **Search words:** "modèle facture [remodeling, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T41-fr** /templates/garage-door-repair~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; done by menuisiers
 
-### T41-fr · /templates/garage-door-repair → French
+- ~~**T42-fr** /templates/dj~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak; GUSO/intermittent complications
 
-- [ ] **Live in fr**
-- **English page:** [garage door repair invoice template](https://invoicor.com/templates/garage-door-repair) (live: use it as the source)
-- **Search words:** "modèle facture [garage door repair, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T42-fr · /templates/dj → French
-
-- [ ] **Live in fr**
-- **English page:** [dj invoice template](https://invoicor.com/templates/dj) (live: use it as the source)
-- **Search words:** "modèle facture [dj, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T43-fr · /templates/event-planning → French
-
-- [ ] **Live in fr**
-- **English page:** [event planner invoice template](https://invoicor.com/templates/event-planning) (live: use it as the source)
-- **Search words:** "modèle facture [event planner, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T43-fr** /templates/event-planning~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak
 
 ### T44-fr · /templates/florist → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-fleuriste
 - **English page:** [florist invoice template](https://invoicor.com/templates/florist) (live: use it as the source)
 - **Search words:** "modèle facture [florist, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T45-fr · /templates/massage-therapy → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-praticien-bien-etre
 - **English page:** [massage therapy invoice template](https://invoicor.com/templates/massage-therapy) (live: use it as the source)
 - **Search words:** "modèle facture [massage therapy, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T46-fr · /templates/translation → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-traducteur
 - **English page:** [translation invoice template](https://invoicor.com/templates/translation) (live: use it as the source)
 - **Search words:** "modèle facture [translation, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T47-fr · /templates/copywriting → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-redacteur-web
 - **English page:** [copywriter invoice template](https://invoicor.com/templates/copywriting) (live: use it as the source)
 - **Search words:** "modèle facture [copywriter, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T48-fr · /templates/social-media-management → French
 
-- [ ] **Live in fr**
+- [ ] **Live in fr**: /fr/modeles/facture-community-manager
 - **English page:** [social media manager invoice template](https://invoicor.com/templates/social-media-management) (live: use it as the source)
 - **Search words:** "modèle facture [social media manager, in French]"
 - **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T49-fr · /templates/music-lessons → French
+- ~~**T49-fr** /templates/music-lessons~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak on its own; covered by facture-cours-particuliers
 
-- [ ] **Live in fr**
-- **English page:** [music teacher invoice template](https://invoicor.com/templates/music-lessons) (live: use it as the source)
-- **Search words:** "modèle facture [music teacher, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T50-fr · /templates/bookkeeping → French
-
-- [ ] **Live in fr**
-- **English page:** [bookkeeping invoice template](https://invoicor.com/templates/bookkeeping) (live: use it as the source)
-- **Search words:** "modèle facture [bookkeeping, in French]"
-- **Write:** the live page rewritten for France, Belgium (FR), Switzerland (FR): keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T50-fr** /templates/bookkeeping~~ skipped in fr: parked 2026-11-28 (demand gate, fr): weak, and keeping books for others is reserved to experts-comptables
 
 ## T51–T60 in French
 
