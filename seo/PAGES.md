@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**358 live pages** · last change 2026-11-28 · 1017 more planned in [PLAN.md](PLAN.md)
+**368 live pages** · last change 2026-11-28 · 1026 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -18,7 +18,7 @@
 | /industries | 44 | industry 43, hub 1 |
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
-| /da | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /da | 31 | template (trade) 10, template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /de | 44 | template (invoice type) 12, template 10, industry 10, tool 4, hub 2, trust 2, generator 1, home 1, support 1, android 1 |
 | /es | 19 | template (invoice type) 8, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /fr | 33 | template (invoice type) 12, template (trade) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
@@ -59,7 +59,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
-| template (trade) | · | 10 | · | 10 | · | · | · | · | · | · | · |
+| template (trade) | · | 10 | · | 10 | · | · | · | · | · | 10 | · |
 | template (invoice type) | 16 | 10 | 12 | 12 | 8 | · | · | · | 10 | 10 | 3 |
 | industry | 43 | · | 10 | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
@@ -77,7 +77,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 103 | translations 103 (10 languages: template (invoice type) 53, template (trade) 20, trust 20, industry 10) |
+| 2026-11-28 | 113 | translations 113 (10 languages: template (invoice type) 53, template (trade) 30, trust 20, industry 10) |
 | 2026-11-27 | 48 | template (invoice type) 16, trust 2, translations 30 (7 languages: template (invoice type) 12, template 10, hub 8) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
@@ -265,7 +265,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /tools/hours-calculator | hours calculator | tool | yes | 2026-11-18 |
 | /tools/vat-calculator | vat calculator | tool | yes | 2026-11-18 |
 
-### /da (21)
+### /da (31)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -279,9 +279,19 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /da/skabeloner/abonnementsfaktura | abonnementsfaktura | template (invoice type) | yes | 2026-11-28 |
 | /da/skabeloner/acontofaktura | acontofaktura | template (invoice type) | yes | 2026-11-28 |
 | /da/skabeloner/delfaktura | delfaktura | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-anlaegsgartner | faktura anlægsgartner | template (trade) | yes | 2026-11-28 |
 | /da/skabeloner/faktura-arbejdsloen-og-materialer | faktura arbejdsløn og materialer | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-elektriker | faktura elektriker | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-konsulent | faktura konsulent | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-maler | faktura maler | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-murer | faktura murer | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-personlig-traener | faktura personlig træner | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-rengoering | faktura rengøring | template (trade) | yes | 2026-11-28 |
 | /da/skabeloner/faktura-timer | faktura timer | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-toemrer | faktura tømrer | template (trade) | yes | 2026-11-28 |
 | /da/skabeloner/faktura-uden-moms | faktura uden moms | template (invoice type) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-vinduespudser | faktura vinduespudser | template (trade) | yes | 2026-11-28 |
+| /da/skabeloner/faktura-vvs | faktura vvs | template (trade) | yes | 2026-11-28 |
 | /da/skabeloner/faktura-ydelser | faktura for ydelser | template (invoice type) | yes | 2026-11-28 |
 | /da/skabeloner/freelance-faktura | freelance faktura | template (invoice type) | yes | 2026-11-28 |
 | /da/skabeloner/handelsfaktura | handelsfaktura | template (invoice type) | yes | 2026-11-28 |

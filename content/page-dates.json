@@ -129,7 +129,7 @@
   },
   "/da/skabeloner": {
     "updated": "2026-11-28",
-    "hash": "f02f5dc57aa53805"
+    "hash": "8c75c3b5a0fcf274"
   },
   "/da/skabeloner/abonnementsfaktura": {
     "updated": "2026-11-28",
@@ -143,17 +143,57 @@
     "updated": "2026-11-28",
     "hash": "0148a34fe460b98c"
   },
+  "/da/skabeloner/faktura-anlaegsgartner": {
+    "updated": "2026-11-28",
+    "hash": "fdb9dcb669c518af"
+  },
   "/da/skabeloner/faktura-arbejdsloen-og-materialer": {
     "updated": "2026-11-28",
     "hash": "a599b1a87a0da95d"
+  },
+  "/da/skabeloner/faktura-elektriker": {
+    "updated": "2026-11-28",
+    "hash": "6acda7101f638ea8"
+  },
+  "/da/skabeloner/faktura-konsulent": {
+    "updated": "2026-11-28",
+    "hash": "3a70f60215b04f13"
+  },
+  "/da/skabeloner/faktura-maler": {
+    "updated": "2026-11-28",
+    "hash": "bd03f8cc7f21ce1f"
+  },
+  "/da/skabeloner/faktura-murer": {
+    "updated": "2026-11-28",
+    "hash": "27cb0cc74d0a396a"
+  },
+  "/da/skabeloner/faktura-personlig-traener": {
+    "updated": "2026-11-28",
+    "hash": "222ef5912f4dd0a7"
+  },
+  "/da/skabeloner/faktura-rengoering": {
+    "updated": "2026-11-28",
+    "hash": "c29e55c767fca6f0"
   },
   "/da/skabeloner/faktura-timer": {
     "updated": "2026-11-28",
     "hash": "6dadcf6372d624b3"
   },
+  "/da/skabeloner/faktura-toemrer": {
+    "updated": "2026-11-28",
+    "hash": "cfea1c7762af5bc5"
+  },
   "/da/skabeloner/faktura-uden-moms": {
     "updated": "2026-11-28",
     "hash": "9278be55e86aeb17"
+  },
+  "/da/skabeloner/faktura-vinduespudser": {
+    "updated": "2026-11-28",
+    "hash": "5a2f151a62e5a995"
+  },
+  "/da/skabeloner/faktura-vvs": {
+    "updated": "2026-11-28",
+    "hash": "6c52695e743444b7"
   },
   "/da/skabeloner/faktura-ydelser": {
     "updated": "2026-11-28",

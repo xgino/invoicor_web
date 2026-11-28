@@ -284,6 +284,16 @@
 /da/skabeloner/udlaeg-faktura
 /da/skabeloner/faktura-uden-moms
 /da/skabeloner/freelance-faktura
+/da/skabeloner/faktura-vvs
+/da/skabeloner/faktura-elektriker
+/da/skabeloner/faktura-toemrer
+/da/skabeloner/faktura-maler
+/da/skabeloner/faktura-murer
+/da/skabeloner/faktura-rengoering
+/da/skabeloner/faktura-vinduespudser
+/da/skabeloner/faktura-anlaegsgartner
+/da/skabeloner/faktura-personlig-traener
+/da/skabeloner/faktura-konsulent
 /nb/hjelp
 /nb/maler
 /nb/maler/faktura-uten-mva

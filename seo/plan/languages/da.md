@@ -20,371 +20,216 @@
 
 ## T1–T20 in Danish
 
-[ ] Trade templates 1–20 (built) · 0/20 live in da
+[ ] Trade templates 1–20 (built) · 7/12 live in da
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
 ### T1-da · /templates/photography → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-fotograf
 - **English page:** [photography invoice template](https://invoicor.com/templates/photography) (live: use it as the source)
 - **Search words:** "fakturaskabelon [photography, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T2-da · /templates/plumbing → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-vvs
 - **English page:** [plumbing invoice template](https://invoicor.com/templates/plumbing) (live: use it as the source)
 - **Search words:** "fakturaskabelon [plumbing, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T3-da · /templates/hvac → Danish
-
-- [ ] **Live in da**
-- **English page:** [hvac invoice template](https://invoicor.com/templates/hvac) (live: use it as the source)
-- **Search words:** "fakturaskabelon [hvac, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T3-da** /templates/hvac~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-vvs (VVS = plumbing and heating)
 
 ### T4-da · /templates/freelance-design → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-grafisk-designer
 - **English page:** [graphic design invoice template](https://invoicor.com/templates/freelance-design) (live: use it as the source)
 - **Search words:** "fakturaskabelon [graphic design, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T5-da · /templates/handyman → Danish
+- ~~**T5-da** /templates/handyman~~ skipped in da: parked 2026-11-28 (demand gate, da): weak (handyhand only); most jobs give no fradrag
 
-- [ ] **Live in da**
-- **English page:** [handyman invoice template](https://invoicor.com/templates/handyman) (live: use it as the source)
-- **Search words:** "fakturaskabelon [handyman, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T6-da · /templates/videography → Danish
-
-- [ ] **Live in da**
-- **English page:** [videography invoice template](https://invoicor.com/templates/videography) (live: use it as the source)
-- **Search words:** "fakturaskabelon [videography, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T6-da** /templates/videography~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T7-da · /templates/landscaping → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-anlaegsgartner
 - **English page:** [landscaping invoice template](https://invoicor.com/templates/landscaping) (live: use it as the source)
 - **Search words:** "fakturaskabelon [landscaping, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T8-da · /templates/consulting → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-konsulent
 - **English page:** [consulting invoice template](https://invoicor.com/templates/consulting) (live: use it as the source)
 - **Search words:** "fakturaskabelon [consulting, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T9-da · /templates/cleaning-services → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-rengoering
 - **English page:** [cleaning invoice template](https://invoicor.com/templates/cleaning-services) (live: use it as the source)
 - **Search words:** "fakturaskabelon [cleaning, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T10-da · /templates/auto-detailing → Danish
-
-- [ ] **Live in da**
-- **English page:** [auto detailing invoice template](https://invoicor.com/templates/auto-detailing) (live: use it as the source)
-- **Search words:** "fakturaskabelon [auto detailing, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T10-da** /templates/auto-detailing~~ skipped in da: parked 2026-11-28 (demand gate, da): weak to some (FDM only)
 
 ### T11-da · /templates/electrician → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-elektriker
 - **English page:** [electrician invoice template](https://invoicor.com/templates/electrician) (live: use it as the source)
 - **Search words:** "fakturaskabelon [electrician, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T12-da · /templates/construction → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-entreprenoer
 - **English page:** [construction invoice template](https://invoicor.com/templates/construction) (live: use it as the source)
 - **Search words:** "fakturaskabelon [construction, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T13-da · /templates/roofing → Danish
-
-- [ ] **Live in da**
-- **English page:** [roofing invoice template](https://invoicor.com/templates/roofing) (live: use it as the source)
-- **Search words:** "fakturaskabelon [roofing, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T13-da** /templates/roofing~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T14-da · /templates/painting → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-maler
 - **English page:** [painting invoice template](https://invoicor.com/templates/painting) (live: use it as the source)
 - **Search words:** "fakturaskabelon [painting, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T15-da · /templates/web-development → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-webudvikler
 - **English page:** [web development invoice template](https://invoicor.com/templates/web-development) (live: use it as the source)
 - **Search words:** "fakturaskabelon [web development, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T16-da · /templates/personal-training → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-personlig-traener
 - **English page:** [personal trainer invoice template](https://invoicor.com/templates/personal-training) (live: use it as the source)
 - **Search words:** "fakturaskabelon [personal trainer, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### T17-da · /templates/tutoring → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-privatundervisning
 - **English page:** [tutoring invoice template](https://invoicor.com/templates/tutoring) (live: use it as the source)
 - **Search words:** "fakturaskabelon [tutoring, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T18-da · /templates/catering → Danish
+- ~~**T18-da** /templates/catering~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [catering invoice template](https://invoicor.com/templates/catering) (live: use it as the source)
-- **Search words:** "fakturaskabelon [catering, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T19-da** /templates/moving~~ skipped in da: parked 2026-11-28 (demand gate, da): weak; moving isn't on the servicefradrag list
 
-### T19-da · /templates/moving → Danish
-
-- [ ] **Live in da**
-- **English page:** [moving company invoice template](https://invoicor.com/templates/moving) (live: use it as the source)
-- **Search words:** "fakturaskabelon [moving company, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T20-da · /templates/pest-control → Danish
-
-- [ ] **Live in da**
-- **English page:** [pest control invoice template](https://invoicor.com/templates/pest-control) (live: use it as the source)
-- **Search words:** "fakturaskabelon [pest control, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T20-da** /templates/pest-control~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ## T21–T35 in Danish
 
-[ ] Trade templates 21–35 (built) · 0/15 live in da
+[x] Trade templates 21–35 (built) · 3/3 live in da
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
-### T21-da · /templates/virtual-assistant → Danish
+- ~~**T21-da** /templates/virtual-assistant~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [virtual assistant invoice template](https://invoicor.com/templates/virtual-assistant) (live: use it as the source)
-- **Search words:** "fakturaskabelon [virtual assistant, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T22-da** /templates/pet-sitting~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-### T22-da · /templates/pet-sitting → Danish
-
-- [ ] **Live in da**
-- **English page:** [pet sitting invoice template](https://invoicor.com/templates/pet-sitting) (live: use it as the source)
-- **Search words:** "fakturaskabelon [pet sitting, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T23-da · /templates/makeup-artist → Danish
-
-- [ ] **Live in da**
-- **English page:** [makeup artist invoice template](https://invoicor.com/templates/makeup-artist) (live: use it as the source)
-- **Search words:** "fakturaskabelon [makeup artist, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T23-da** /templates/makeup-artist~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T24-da · /templates/carpentry → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-toemrer
 - **English page:** [carpentry invoice template](https://invoicor.com/templates/carpentry) (live: use it as the source)
 - **Search words:** "fakturaskabelon [carpentry, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T25-da · /templates/flooring → Danish
+- ~~**T25-da** /templates/flooring~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [flooring invoice template](https://invoicor.com/templates/flooring) (live: use it as the source)
-- **Search words:** "fakturaskabelon [flooring, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T26-da** /templates/tile-installation~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-murer (tiling is murer work in Denmark)
 
-### T26-da · /templates/tile-installation → Danish
-
-- [ ] **Live in da**
-- **English page:** [tile installation invoice template](https://invoicor.com/templates/tile-installation) (live: use it as the source)
-- **Search words:** "fakturaskabelon [tile installation, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T27-da · /templates/drywall → Danish
-
-- [ ] **Live in da**
-- **English page:** [drywall invoice template](https://invoicor.com/templates/drywall) (live: use it as the source)
-- **Search words:** "fakturaskabelon [drywall, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T27-da** /templates/drywall~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-toemrer
 
 ### T28-da · /templates/masonry → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-murer
 - **English page:** [masonry invoice template](https://invoicor.com/templates/masonry) (live: use it as the source)
 - **Search words:** "fakturaskabelon [masonry, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T29-da · /templates/fence-installation → Danish
+- ~~**T29-da** /templates/fence-installation~~ skipped in da: parked 2026-11-28 (demand gate, da): weak, no Danish angle
 
-- [ ] **Live in da**
-- **English page:** [fence installation invoice template](https://invoicor.com/templates/fence-installation) (live: use it as the source)
-- **Search words:** "fakturaskabelon [fence installation, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T30-da · /templates/pool-service → Danish
-
-- [ ] **Live in da**
-- **English page:** [pool service invoice template](https://invoicor.com/templates/pool-service) (live: use it as the source)
-- **Search words:** "fakturaskabelon [pool service, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T30-da** /templates/pool-service~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T31-da · /templates/window-cleaning → Danish
 
-- [ ] **Live in da**
+- [x] **Live in da**: /da/skabeloner/faktura-vinduespudser
 - **English page:** [window cleaning invoice template](https://invoicor.com/templates/window-cleaning) (live: use it as the source)
 - **Search words:** "fakturaskabelon [window cleaning, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T32-da · /templates/pressure-washing → Danish
+- ~~**T32-da** /templates/pressure-washing~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-anlaegsgartner
 
-- [ ] **Live in da**
-- **English page:** [pressure washing invoice template](https://invoicor.com/templates/pressure-washing) (live: use it as the source)
-- **Search words:** "fakturaskabelon [pressure washing, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T33-da** /templates/tree-service~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-anlaegsgartner
 
-### T33-da · /templates/tree-service → Danish
+- ~~**T34-da** /templates/snow-removal~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-anlaegsgartner
 
-- [ ] **Live in da**
-- **English page:** [tree service invoice template](https://invoicor.com/templates/tree-service) (live: use it as the source)
-- **Search words:** "fakturaskabelon [tree service, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T34-da · /templates/snow-removal → Danish
-
-- [ ] **Live in da**
-- **English page:** [snow removal invoice template](https://invoicor.com/templates/snow-removal) (live: use it as the source)
-- **Search words:** "fakturaskabelon [snow removal, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T35-da · /templates/locksmith → Danish
-
-- [ ] **Live in da**
-- **English page:** [locksmith invoice template](https://invoicor.com/templates/locksmith) (live: use it as the source)
-- **Search words:** "fakturaskabelon [locksmith, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T35-da** /templates/locksmith~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ## T36–T50 in Danish
 
-[ ] Trade templates 36–50 (built) · 0/15 live in da
+[ ] Trade templates 36–50 (built) · 0/4 live in da
 
 - **For every template page:** A sample invoice in the local currency and number format with the local VAT line (or the small-business note), local trade words, prices and habits of that market; the local hub and generator links.
 
 ### T36-da · /templates/appliance-repair → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-hvidevarereparation
 - **English page:** [appliance repair invoice template](https://invoicor.com/templates/appliance-repair) (live: use it as the source)
 - **Search words:** "fakturaskabelon [appliance repair, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T37-da · /templates/junk-removal → Danish
+- ~~**T37-da** /templates/junk-removal~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [junk removal invoice template](https://invoicor.com/templates/junk-removal) (live: use it as the source)
-- **Search words:** "fakturaskabelon [junk removal, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T38-da** /templates/carpet-cleaning~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by faktura-rengoering
 
-### T38-da · /templates/carpet-cleaning → Danish
+- ~~**T39-da** /templates/interior-design~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [carpet cleaning invoice template](https://invoicor.com/templates/carpet-cleaning) (live: use it as the source)
-- **Search words:** "fakturaskabelon [carpet cleaning, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T40-da** /templates/remodeling~~ skipped in da: parked 2026-11-28 (demand gate, da): covered by the planned faktura-entreprenoer
 
-### T39-da · /templates/interior-design → Danish
-
-- [ ] **Live in da**
-- **English page:** [interior design invoice template](https://invoicor.com/templates/interior-design) (live: use it as the source)
-- **Search words:** "fakturaskabelon [interior design, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T40-da · /templates/remodeling → Danish
-
-- [ ] **Live in da**
-- **English page:** [remodeling invoice template](https://invoicor.com/templates/remodeling) (live: use it as the source)
-- **Search words:** "fakturaskabelon [remodeling, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T41-da · /templates/garage-door-repair → Danish
-
-- [ ] **Live in da**
-- **English page:** [garage door repair invoice template](https://invoicor.com/templates/garage-door-repair) (live: use it as the source)
-- **Search words:** "fakturaskabelon [garage door repair, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T41-da** /templates/garage-door-repair~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T42-da · /templates/dj → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-dj
 - **English page:** [dj invoice template](https://invoicor.com/templates/dj) (live: use it as the source)
 - **Search words:** "fakturaskabelon [dj, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T43-da · /templates/event-planning → Danish
+- ~~**T43-da** /templates/event-planning~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [event planner invoice template](https://invoicor.com/templates/event-planning) (live: use it as the source)
-- **Search words:** "fakturaskabelon [event planner, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T44-da · /templates/florist → Danish
-
-- [ ] **Live in da**
-- **English page:** [florist invoice template](https://invoicor.com/templates/florist) (live: use it as the source)
-- **Search words:** "fakturaskabelon [florist, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T44-da** /templates/florist~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T45-da · /templates/massage-therapy → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-massoer
 - **English page:** [massage therapy invoice template](https://invoicor.com/templates/massage-therapy) (live: use it as the source)
 - **Search words:** "fakturaskabelon [massage therapy, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T46-da · /templates/translation → Danish
+- ~~**T46-da** /templates/translation~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-- [ ] **Live in da**
-- **English page:** [translation invoice template](https://invoicor.com/templates/translation) (live: use it as the source)
-- **Search words:** "fakturaskabelon [translation, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T47-da** /templates/copywriting~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
-### T47-da · /templates/copywriting → Danish
-
-- [ ] **Live in da**
-- **English page:** [copywriter invoice template](https://invoicor.com/templates/copywriting) (live: use it as the source)
-- **Search words:** "fakturaskabelon [copywriter, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### T48-da · /templates/social-media-management → Danish
-
-- [ ] **Live in da**
-- **English page:** [social media manager invoice template](https://invoicor.com/templates/social-media-management) (live: use it as the source)
-- **Search words:** "fakturaskabelon [social media manager, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T48-da** /templates/social-media-management~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ### T49-da · /templates/music-lessons → Danish
 
-- [ ] **Live in da**
+- [ ] **Live in da**: /da/skabeloner/faktura-musiklaerer
 - **English page:** [music teacher invoice template](https://invoicor.com/templates/music-lessons) (live: use it as the source)
 - **Search words:** "fakturaskabelon [music teacher, in Danish]"
 - **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### T50-da · /templates/bookkeeping → Danish
-
-- [ ] **Live in da**
-- **English page:** [bookkeeping invoice template](https://invoicor.com/templates/bookkeeping) (live: use it as the source)
-- **Search words:** "fakturaskabelon [bookkeeping, in Danish]"
-- **Write:** the live page rewritten for Denmark: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**T50-da** /templates/bookkeeping~~ skipped in da: parked 2026-11-28 (demand gate, da): weak
 
 ## T51–T60 in Danish
 

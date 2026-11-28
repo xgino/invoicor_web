@@ -1232,5 +1232,1337 @@
       }
     ],
     "invoice_types": []
+  },
+  {
+    "slug": "faktura-vvs",
+    "translation_of": "plumbing",
+    "niche": "Faktura for VVS",
+    "title": "Faktura VVS: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for VVS-arbejde: kørsel, timer, dele og 25 % moms, og arbejdsløn for sig til håndværkerfradraget. Udfyld eksemplet, og hent en pdf.",
+    "h1": "Faktura VVS: skabelon og eksempel for VVS-installatører",
+    "subtitle": "Til VVS-installatører, der laver vand, varme og afløb: de linjer, en dansk kunde forventer, arbejdsløn og dele hver for sig, og et eksempel på et service af en varmepumpe.",
+    "intro_paragraph": "En VVS-installatør laver både vand og varme: et dryppende blandingsbatteri en tirsdag, en ny varmepumpe en anden dag. Fakturaen skal passe til begge slags opgaver. Den private kunde vil kunne genkende kørslen, timerne og hver enkelt del, og ved opgaver på varmeanlægget vil kunden ofte bruge det grønne håndværkerfradrag, som kræver, at arbejdslønnen står for sig. Der er 25 % moms på det hele, også når du arbejder for en anden dansk virksomhed. Fakturerer du en kommune eller en anden offentlig myndighed, skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til private og andre virksomheder er en pdf fint. Herunder: hvad der skal stå på fakturaen, et udfyldt eksempel og de fejl, der koster dig tid bagefter.",
+    "include_title": "Det skal stå på en VVS-faktura",
+    "what_to_include_intro": "Ud over de faste oplysninger på enhver faktura (nummer, dato, dit CVR-nummer, begge parters navn og adresse, moms) har en VVS-faktura brug for disse seks ting.",
+    "req_1_title": "Kørsel eller udkørselsgebyr som første linje",
+    "req_1_text": "De fleste VVS-firmaer tager et fast beløb for at køre ud. Sæt det øverst som sin egen linje, så kunden ser, at det dækker bil, værktøj og tid på vejen, og ikke er gemt i timeprisen.",
+    "req_2_title": "Timer og timepris for hver opgave",
+    "req_2_text": "Skriv timerne ud for hver del af arbejdet: »Udskiftning af sikkerhedsventil, 0,5 timer à 625,00 kr.«. Ved regningsarbejde for en privat kunde kræver markedsføringsloven § 15 en specificeret regning med timepris og timeforbrug, når de påvirker prisen.",
+    "req_3_title": "Hver del med antal og stykpris",
+    "req_3_text": "Ventiler, fittings, filtre og pakninger får hver sin linje. Én linje med »diverse dele« er det, kunden ringer om. Materialeforbruget hører også til den specificerede regning efter § 15.",
+    "req_4_title": "Hvor og hvornår arbejdet blev udført",
+    "req_4_text": "Adressen og datoen for arbejdet skal stå på fakturaen, fordi kunden bruger dem til håndværkerfradraget. Invoicor har ikke et felt til leveringsdatoen, så skriv den i linjen eller i bemærkningerne.",
+    "req_5_title": "Arbejdsløn adskilt fra materialer",
+    "req_5_text": "Til håndværkerfradraget skal arbejdslønnen stå adskilt fra materialerne, og Skattestyrelsen anbefaler, at den står uden moms. Skriv summen af arbejdslønnen i bemærkningerne, så kunden ikke selv skal regne.",
+    "req_6_title": "Aut.nr. og garanti, hvis du vil",
+    "req_6_text": "VVS-arbejde kræver autorisation fra Sikkerhedsstyrelsen, men vi har ikke fundet en regel om, at nummeret skal stå på fakturaen. Mange skriver det alligevel i bemærkningerne sammen med garantien på arbejdet: det giver kunden tryghed.",
+    "what_to_include_outro": "Med de linjer kan kunden forstå prisen uden at ringe, og din bogholder kan se, hvad der er arbejde, og hvad der er varer.",
+    "paper_label": "Faktura VVS · eksempel",
+    "sample_breakdown_title": "Eksempel på en VVS-faktura",
+    "sample_breakdown_intro": "Årligt service på en luft til vand-varmepumpe i et parcelhus i Aarhus, hvor du også skifter en utæt sikkerhedsventil. Regningsarbejde til en privat kunde, 25 % moms af det hele.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kørsel",
+        "qty": "1",
+        "rate": "450,00 kr.",
+        "amount": "450,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: årligt service af luft til vand-varmepumpe",
+        "qty": "2 timer",
+        "rate": "625,00 kr.",
+        "amount": "1.250,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: udskiftning af sikkerhedsventil",
+        "qty": "0,5 timer",
+        "rate": "625,00 kr.",
+        "amount": "312,50 kr."
+      },
+      {
+        "description": "Materiale: sikkerhedsventil 3 bar, 1/2\"",
+        "qty": "1",
+        "rate": "395,00 kr.",
+        "amount": "395,00 kr."
+      },
+      {
+        "description": "Materiale: indsats til snavsfilter",
+        "qty": "1",
+        "rate": "285,00 kr.",
+        "amount": "285,00 kr."
+      },
+      {
+        "description": "Materiale: pakninger og fittings",
+        "qty": "1",
+        "rate": "96,50 kr.",
+        "amount": "96,50 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "2.789,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "697,25 kr.",
+    "sample_breakdown_balance": "3.486,25 kr.",
+    "sample_breakdown_notes": "Udført 18. november 2026 på Egevej 12, 8210 Aarhus V. Arbejdsløn i alt 1.562,50 kr. ekskl. moms. 12 måneders garanti på arbejdet. Betales med bankoverførsel eller MobilePay senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om fakturering af VVS-arbejde",
+    "industry_notes": [
+      {
+        "title": "Grønt håndværkerfradrag på varmeanlægget",
+        "text": "Det grønne fradrag dækker blandt andet varme-, køle- og ventilationsanlæg, herunder varmepumper, og service på en varmepumpe tæller med (service på ventilation gør ikke). Kloak- og drænarbejde er også med. Fradraget gælder arbejdsløn i en eksisterende bolig, med et loft på 9.000 kr. pr. person i 2026 (skat.dk). Kunden betaler elektronisk og indberetter selv fradraget på skat.dk; dit job er en faktura, der viser det rigtige."
+      },
+      {
+        "title": "Ny installation eller reparation",
+        "text": "En reparation er typisk regningsarbejde, mens et nyt badeværelse eller en ny varmepumpe ofte får en fast pris. Ved fast pris kan arbejdslønnen stå som én linje, men den skal stadig stå adskilt fra materialerne, hvis kunden vil have fradrag."
+      },
+      {
+        "title": "Overslaget er en aftale, ikke en lov",
+        "text": "Den udbredte regel om, at et overslag højst må overskrides med 15 %, står ikke i loven. Den kommer fra AB-Forbruger og fra mange standardaftaler. Har du aftalt et overslag, så skriv det i bemærkningerne, og ring til kunden, før du kommer over det."
+      }
+    ],
+    "mistakes_title": "Tre fejl, VVS-installatører laver på fakturaen",
+    "mistakes": [
+      {
+        "title": "Arbejdsløn og dele i én pris",
+        "text": "»Udskiftning af toilet, 4.800 kr.« ser enkelt ud, men kunden kan ikke se arbejdslønnen og kan ikke bruge den til fradraget. Del linjen, selv på små opgaver."
+      },
+      {
+        "title": "Glemt nat- og weekendtillæg",
+        "text": "Du nævnte tillægget i telefonen, men fakturaen viser den normale timepris. Så tror kunden, at det er prisen næste gang også. Sæt tillægget på som sin egen linje."
+      },
+      {
+        "title": "Ingen adresse på en udlejningsbolig",
+        "text": "Når en udlejer eller en forening betaler, skal fakturaen stadig nævne, hvor arbejdet blev udført. Ellers kan ingen bagefter se, hvilken lejlighed regningen hører til."
+      }
+    ],
+    "tip_title": "Et tip til VVS-fakturaer",
+    "pro_tip": "Gem dine faste dele som varer i appen, fx sikkerhedsventiler, filterindsatser og pakningssæt, med den pris, du tager. Så skriver du fakturaen færdig i bilen, før du kører til næste kunde, og prisen er den samme hver gang.",
+    "format_pdf_desc": "En pdf, du sender fra telefonen, kommer frem, mens kunden stadig kan se den nye ventil, og den kan ikke ændres, før den lander hos kundens bank eller din bogholder.",
+    "faq_title": "Spørgsmål om faktura for VVS",
+    "faqs": [
+      {
+        "question": "Kan min kunde få håndværkerfradrag for VVS-arbejde?",
+        "answer": "Ofte, når det handler om varme, varmepumper, kloak eller dræn i en eksisterende bolig: det hører til det grønne fradrag. En ny vandhane eller et nyt toilet står ikke på listerne. Det er kunden, der søger fradraget på skat.dk; du skal levere en faktura med dit CVR-nummer, dato, adresse, arbejdets art og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Skal arbejdslønnen stå med eller uden moms?",
+        "answer": "Fakturaen viser altid moms af det hele, fordi der er 25 % moms på både arbejde og dele. Til fradraget anbefaler Skattestyrelsen, at arbejdslønnen oplyses uden moms. Skriv summen i bemærkningerne, som i eksemplet."
+      },
+      {
+        "question": "Skal mit autorisationsnummer stå på fakturaen?",
+        "answer": "Vi har ikke fundet en regel om det. Autorisationen fra Sikkerhedsstyrelsen er et krav for at udføre arbejdet; at skrive nummeret på fakturaen er god skik, ikke en pligt."
+      },
+      {
+        "question": "Fakturerer jeg uden moms som underentreprenør?",
+        "answer": "Nej. Danmark har ikke omvendt betalingspligt for byggeydelser mellem danske virksomheder, så du lægger 25 % moms på, også når kunden er en hovedentreprenør."
+      },
+      {
+        "question": "Hvad skal kunden betale med?",
+        "answer": "Vil kunden have håndværkerfradrag, skal betalingen være elektronisk: kort, MobilePay eller netbank, ikke kontanter. Skriv dine betalingsoplysninger i bemærkningerne, så kunden betaler på en måde, der tæller."
+      }
+    ],
+    "cta_title": "Lav din VVS-faktura",
+    "links_title": "Fakturatyper for VVS-installatører",
+    "related": [
+      {
+        "name": "Faktura for elektriker",
+        "slug": "faktura-elektriker"
+      },
+      {
+        "name": "Faktura for murer",
+        "slug": "faktura-murer"
+      }
+    ],
+    "invoice_types": ["faktura-arbejdsloen-og-materialer", "acontofaktura", "faktura-timer"]
+  },
+  {
+    "slug": "faktura-elektriker",
+    "translation_of": "electrician",
+    "niche": "Faktura for elektriker",
+    "title": "Faktura elektriker: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for elarbejde: kørsel, timer, sikringer og kabel på hver sin linje og 25 % moms. Se et eksempel på en ny gruppe, og hent en pdf.",
+    "h1": "Faktura elektriker: skabelon og eksempel",
+    "subtitle": "Til elinstallatører, der arbejder for private og firmaer: hvordan du specificerer timer og materialer, hvad der giver håndværkerfradrag, og et eksempel på en ny gruppe til en kogeplade.",
+    "intro_paragraph": "Elarbejde er svært for kunden at se efter. Når væggen er lukket, er der kun fakturaen til at fortælle, hvor meget kabel der blev trukket, og hvor lang tid fejlsøgningen tog. Derfor skal en elektrikers faktura være mere detaljeret end de fleste: timer for sig, hver sikring og hver meter kabel for sig. Det er også det, der gør det muligt for en privat kunde at bruge håndværkerfradraget, når opgaven er med på listerne. Der er 25 % moms på både arbejde og materialer. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel); Invoicor laver pdf'er, ikke e-fakturaer, men til private og andre virksomheder er en pdf fint. Nedenfor finder du felterne, et eksempel og de typiske fejl.",
+    "include_title": "Det skal stå på en elektrikerfaktura",
+    "what_to_include_intro": "De lovpligtige oplysninger (fakturanummer, dato, dit CVR-nummer, navne og adresser, moms) er udgangspunktet. En elektriker har desuden brug for disse linjer og noter.",
+    "req_1_title": "Kørsel og fejlsøgning først",
+    "req_1_text": "Mange elektrikere tager et fast beløb for kørsel, og fejlsøgning faktureres som tid. Hold dem øverst og hver for sig, så kunden kan se, hvad det kostede at finde fejlen, før selve reparationen.",
+    "req_2_title": "Timer pr. del af opgaven",
+    "req_2_text": "Del arbejdslønnen op efter, hvad du lavede: ny gruppe i tavlen, kabeltræk, udskiftning af stikkontakter. Ved regningsarbejde for forbrugere kræver markedsføringsloven § 15 timepris og timeforbrug på regningen, når de påvirker prisen.",
+    "req_3_title": "Materialer med enhed",
+    "req_3_text": "Kabel i meter, sikringer og udtag i stk. »12 meter installationskabel 5G2,5« siger mere end »el-materialer«, og kunden kan sammenligne med prisen i et byggemarked uden at blive mistænksom.",
+    "req_4_title": "Adresse, dato og hvad der blev lavet",
+    "req_4_text": "Skriv adressen og datoen for arbejdet. Invoicor har ikke et felt til leveringsdatoen, så den står i linjen eller i bemærkningerne. Beskriv arbejdet, så en anden elektriker kan forstå det om fem år.",
+    "req_5_title": "Arbejdsløn for sig",
+    "req_5_text": "Til håndværkerfradraget skal arbejdslønnen stå adskilt fra materialerne, og Skattestyrelsen anbefaler, at den står uden moms. Skriv summen af arbejdslønnen i bemærkningerne, også når opgaven ikke giver fradrag: kunden kan ikke altid vide det.",
+    "req_6_title": "Autorisation og garanti som god skik",
+    "req_6_text": "Du skal have autorisation fra Sikkerhedsstyrelsen til elinstallationer, men der er ingen regel, vi har fundet, om at nummeret skal stå på fakturaen. Skriver du det i bemærkningerne sammen med garantien, ser kunden, hvem der står bag arbejdet.",
+    "what_to_include_outro": "Jo mere af arbejdet der er skjult bag gips og fliser, jo mere skal fakturaen fortælle.",
+    "paper_label": "Faktura elektriker · eksempel",
+    "sample_breakdown_title": "Eksempel på en elektrikerfaktura",
+    "sample_breakdown_intro": "En ny gruppe i eltavlen til en induktionskogeplade og fire nye stikkontakter i et køkken i Odense. Regningsarbejde med et overslag på 4.000 kr. ekskl. moms, 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kørsel",
+        "qty": "1",
+        "rate": "395,00 kr.",
+        "amount": "395,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: ny gruppe i eltavlen og kabel til kogeplade",
+        "qty": "3 timer",
+        "rate": "595,00 kr.",
+        "amount": "1.785,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: udskiftning af 4 stikkontakter",
+        "qty": "1 time",
+        "rate": "595,00 kr.",
+        "amount": "595,00 kr."
+      },
+      {
+        "description": "Materiale: automatsikring 3-polet 16 A",
+        "qty": "1",
+        "rate": "289,00 kr.",
+        "amount": "289,00 kr."
+      },
+      {
+        "description": "Materiale: installationskabel 5G2,5, meter",
+        "qty": "12",
+        "rate": "24,50 kr.",
+        "amount": "294,00 kr."
+      },
+      {
+        "description": "Materiale: stikkontakt med jord, hvid",
+        "qty": "4",
+        "rate": "69,00 kr.",
+        "amount": "276,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "3.634,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "908,50 kr.",
+    "sample_breakdown_balance": "4.542,50 kr.",
+    "sample_breakdown_notes": "Udført 24. november 2026 på Rosenvænget 7, 5000 Odense C. Regningsarbejde, overslag 4.000,00 kr. ekskl. moms. Arbejdsløn i alt 2.380,00 kr. ekskl. moms. Betales senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om fakturering af elarbejde",
+    "industry_notes": [
+      {
+        "title": "Solceller giver grønt fradrag, tyverialarmer servicefradrag",
+        "text": "Installation af solceller hører til det grønne håndværkerfradrag, og siden 2025 giver installation af en tyverialarm servicefradrag. En ny gruppe eller nye stikkontakter står ikke på listerne. Fradraget gælder arbejdsløn i en eksisterende bolig, og kunden betaler elektronisk og indberetter det selv på skat.dk."
+      },
+      {
+        "title": "Servicefradrag kræver, at du er momsregistreret",
+        "text": "Til servicefradraget, fx for tyverialarmen, skal virksomheden være momsregistreret i Danmark. Er du en lille virksomhed under 50.000 kr. i omsætning og ikke registreret, kan din kunde ikke få servicefradrag for dit arbejde. Sig det, før kunden regner med det."
+      },
+      {
+        "title": "Erhvervskunder vil have deres reference",
+        "text": "Et firma, en boligforening eller en ejendomsadministrator har ofte et rekvisitions- eller ordrenummer. Skriv det i bemærkningerne, ellers kan fakturaen blive liggende i deres bogholderi. Moms er der stadig: 25 % også mellem danske virksomheder."
+      }
+    ],
+    "mistakes_title": "Tre fejl, elektrikere laver på fakturaen",
+    "mistakes": [
+      {
+        "title": "Fejlsøgning gemt i arbejdslønnen",
+        "text": "Når tre timers fejlfinding og en halv times reparation står som »3,5 timer elarbejde«, spørger kunden, hvorfor det tog så lang tid. Skriv fejlsøgningen for sig."
+      },
+      {
+        "title": "Overslaget overskredet uden besked",
+        "text": "Har du sagt 4.000 kr. og fakturerer 5.500 kr., uden at kunden har hørt om det, får du diskussionen bagefter. Ring, når du kan se det, og skriv aftalen i bemærkningerne. 15 %-grænsen kommer fra AB-Forbruger og standardaftaler, ikke fra loven."
+      },
+      {
+        "title": "Fakturaen sendes en uge senere",
+        "text": "Når kunden har glemt, at du var der en hel eftermiddag, virker timerne mange. Send fakturaen samme dag fra telefonen, mens arbejdet er frisk."
+      }
+    ],
+    "tip_title": "Et tip til elektrikerfakturaer",
+    "pro_tip": "Gem kabel som en vare med prisen pr. meter, og sikringer og udtag pr. stk. Så skriver du bare antallet på den næste faktura, og din pris pr. meter er den samme, uanset hvem der laver fakturaen.",
+    "format_pdf_desc": "En pdf viser timer, meter kabel og moms præcis som du skrev dem, og den kan videresendes til kundens bogholder eller ejendomsadministrator uden at ændre sig.",
+    "faq_title": "Spørgsmål om faktura for elektriker",
+    "faqs": [
+      {
+        "question": "Hvad skal en elektrikerfaktura indeholde?",
+        "answer": "Fakturanummer, dato, dit CVR-nummer, dit og kundens navn og adresse, en beskrivelse af arbejdet, timer og timepris, materialer med antal og stykpris, subtotal, moms 25 % og totalen. Dertil adressen og datoen for arbejdet og arbejdslønnen for sig."
+      },
+      {
+        "question": "Skal jeg skrive mit autorisationsnummer på?",
+        "answer": "Det er ikke et krav, vi har kunnet finde. Autorisationen fra Sikkerhedsstyrelsen skal du have for at lave arbejdet; nummeret på fakturaen er en god vane, der viser kunden, at arbejdet er lovligt udført."
+      },
+      {
+        "question": "Kan min kunde få fradrag for solceller?",
+        "answer": "Arbejdslønnen for at installere solceller på en eksisterende bolig hører til det grønne håndværkerfradrag. Kunden søger selv på skat.dk og skal have betalt elektronisk; fakturaen skal vise dit CVR-nummer, dato, adresse, arbejdets art og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Må jeg tage avance på materialer?",
+        "answer": "Ja, det er almindeligt. Byg den ind i stykprisen, og skriv det én gang i bemærkningerne, hvis du har aftalt det med kunden. Det, der giver problemer, er en avance, kunden opdager selv."
+      },
+      {
+        "question": "Kan jeg bruge skabelonen gratis?",
+        "answer": "Ja. Åbn eksemplet i den gratis generator i din browser, ret linjerne til din opgave, og hent pdf'en. I Invoicor-appen på iPhone gemmer du kunder og varer, så næste faktura går hurtigere."
+      }
+    ],
+    "cta_title": "Lav din elektrikerfaktura",
+    "links_title": "Fakturatyper for elektrikere",
+    "related": [
+      {
+        "name": "Faktura for VVS",
+        "slug": "faktura-vvs"
+      },
+      {
+        "name": "Faktura for tømrer",
+        "slug": "faktura-toemrer"
+      }
+    ],
+    "invoice_types": ["faktura-arbejdsloen-og-materialer", "faktura-timer", "acontofaktura"]
+  },
+  {
+    "slug": "faktura-toemrer",
+    "translation_of": "carpentry",
+    "niche": "Faktura for tømrer",
+    "title": "Faktura tømrer: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for tømrer og snedker: timer, vinduer, træ og beslag på hver sin linje, overslag og grønt fradrag. Se et eksempel, og hent en pdf.",
+    "h1": "Faktura tømrer: skabelon og eksempel",
+    "subtitle": "Til tømrere og snedkere: hvordan du fakturerer timer, træ og nye vinduer, hvad der hører til det grønne håndværkerfradrag, og et eksempel på to nye vinduer i et rækkehus.",
+    "intro_paragraph": "En tømrer kan have en dag med en ny terrassedør og en uge med et tagudhæng, og snedkeren laver køkkenet på værkstedet. Fælles for opgaverne er, at materialerne ofte koster mere end timerne, og at kunden skal kunne se forskellen. Nye vinduer, yderdøre og efterisolering hører til det grønne håndværkerfradrag, så private kunder vil have arbejdslønnen stående for sig. Der er 25 % moms på det hele, også når du er underentreprenør for en dansk virksomhed. Fakturerer du en kommune eller en region, skal det være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til private og andre virksomheder er en pdf fint. Her er felterne, et eksempel og det, du skal passe på ved overslag og ekstraarbejde.",
+    "include_title": "Det skal stå på en tømrerfaktura",
+    "what_to_include_intro": "Ud over fakturanummer, dato, dit CVR-nummer, navne, adresser og moms har en tømrerfaktura brug for de her punkter.",
+    "req_1_title": "Opgaven og adressen",
+    "req_1_text": "Beskriv opgaven, som kunden kender den: »Udskiftning af 2 vinduer i stue mod have, Kirkevej 4«. Adressen og datoen for arbejdet skal med, også fordi kunden bruger dem til fradraget. Datoen går i linjen eller bemærkningerne, da Invoicor ikke har et felt til leveringsdatoen.",
+    "req_2_title": "Timer eller fast pris pr. del",
+    "req_2_text": "Regningsarbejde fakturerer du som timer og timepris pr. del af opgaven. Over for forbrugere kræver markedsføringsloven § 15 en specificeret regning med timepris, timeforbrug og materialeforbrug, når de påvirker prisen. Ved fast pris kan arbejdet stå som én linje.",
+    "req_3_title": "Vinduer, døre og træ med mål",
+    "req_3_text": "Skriv mål og type: »Vindue, 2-fags, træ/alu, 118 × 128 cm«. Konstruktionstræ i meter, plader i stk. Så kan kunden se, hvad der blev monteret, og du kan genfinde varen næste gang.",
+    "req_4_title": "Beslag, fuger og småmaterialer",
+    "req_4_text": "Fugebånd, fugemasse, skruer og lister løber op. Giv dem en linje, eller tag et tydeligt tillæg for småmaterialer, hvis det er aftalt. Gemt i timeprisen ser det ud, som om du arbejder langsomt.",
+    "req_5_title": "Ekstraarbejde for sig",
+    "req_5_text": "Viser det sig, at rammen bag det gamle vindue er rådden, er det ekstraarbejde. Skriv det på sin egen linje og nævn i bemærkningerne, hvornår kunden sagde ja. Ekstraarbejde, kunden først hører om på fakturaen, er den klassiske strid.",
+    "req_6_title": "Arbejdsløn adskilt til fradraget",
+    "req_6_text": "Til det grønne håndværkerfradrag skal arbejdslønnen stå adskilt fra materialerne, og Skattestyrelsen anbefaler den uden moms. Sum arbejdslønnen op i bemærkningerne.",
+    "what_to_include_outro": "Samme opbygning virker for snedkeren, der fakturerer et køkken fra værkstedet: værkstedstimer, montagetimer og materialer hver for sig.",
+    "paper_label": "Faktura tømrer · eksempel",
+    "sample_breakdown_title": "Eksempel på en tømrerfaktura",
+    "sample_breakdown_intro": "To nye vinduer i et rækkehus i Roskilde, med ny lysning indvendigt. Regningsarbejde over to dage, overslag 21.000 kr. ekskl. moms, 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Kørsel, 2 dage",
+        "qty": "2",
+        "rate": "295,00 kr.",
+        "amount": "590,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: udtagning af 2 gamle vinduer og montering af nye",
+        "qty": "7 timer",
+        "rate": "545,00 kr.",
+        "amount": "3.815,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: indvendig lysning, lister og fuger",
+        "qty": "3 timer",
+        "rate": "545,00 kr.",
+        "amount": "1.635,00 kr."
+      },
+      {
+        "description": "Materiale: vindue 2-fags, træ/alu, 118 × 128 cm",
+        "qty": "2",
+        "rate": "6.450,00 kr.",
+        "amount": "12.900,00 kr."
+      },
+      {
+        "description": "Materiale: fugebånd og fugemasse",
+        "qty": "1",
+        "rate": "385,00 kr.",
+        "amount": "385,00 kr."
+      },
+      {
+        "description": "Materiale: lysningsplader og lister",
+        "qty": "1",
+        "rate": "1.140,00 kr.",
+        "amount": "1.140,00 kr."
+      },
+      {
+        "description": "Bortskaffelse af gamle vinduer",
+        "qty": "1",
+        "rate": "300,00 kr.",
+        "amount": "300,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "20.765,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "5.191,25 kr.",
+    "sample_breakdown_balance": "25.956,25 kr.",
+    "sample_breakdown_notes": "Udført 16. og 17. november 2026 på Kirkevej 4, 4000 Roskilde. Regningsarbejde, overslag 21.000,00 kr. ekskl. moms. Arbejdsløn i alt 5.450,00 kr. ekskl. moms. Betales senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om fakturering af tømrerarbejde",
+    "industry_notes": [
+      {
+        "title": "Vinduer, døre og isolering er grønt fradrag",
+        "text": "Nye vinduer og yderdøre og efterisolering af tag, loft, ydervægge og gulve hører til det grønne håndværkerfradrag. Det gælder arbejdslønnen på en eksisterende bolig, ikke materialerne og ikke et nybyggeri. Loftet er 9.000 kr. pr. person i 2026 (skat.dk). Kunden betaler elektronisk og indberetter selv; et nyt køkken står ikke på listerne."
+      },
+      {
+        "title": "Overslag og de 15 %",
+        "text": "Mange tror, at et overslag ved lov højst må overskrides med 15 %. Grænsen står i AB-Forbruger og i mange standardaftaler, ikke i en lov. Henvis til overslaget i bemærkningerne, og ring, før du kommer over det."
+      },
+      {
+        "title": "Store opgaver: faktura undervejs",
+        "text": "På en tilbygning eller et nyt tag venter du ikke med hele beløbet til sidst. Aftal acontofakturaer efter en betalingsplan, så du ikke selv finansierer vinduer og tagsten i flere uger. Hver faktura har sin egen moms."
+      }
+    ],
+    "mistakes_title": "Tre fejl, tømrere laver på fakturaen",
+    "mistakes": [
+      {
+        "title": "Arbejde og materialer i én klump",
+        "text": "»Nye vinduer, 25.000 kr.« kan kunden ikke bruge til fradraget, og det lægger op til spørgsmål om prisen. Del altid arbejdsløn og materialer."
+      },
+      {
+        "title": "Ekstraarbejde fra hukommelsen",
+        "text": "Du fandt råd i rammen, kunden sagde ja i døren, og tre uger senere husker I det forskelligt. Skriv det ned samme dag, og nævn det på fakturaen."
+      },
+      {
+        "title": "Mål og antal mangler",
+        "text": "»Træ, 2.300 kr.« siger ingenting. Med meter, dimension og antal kan kunden se, hvad der blev brugt, og du kan regne den næste opgave."
+      }
+    ],
+    "tip_title": "Et tip til tømrerfakturaer",
+    "pro_tip": "Tag et billede af det rådne træ eller den skjulte skade, før du lukker den, og skriv i bemærkningerne, at du har billedet. Billedet sender du selv med e-mailen; fakturaen nævner bare, at det findes, og det gør ekstraarbejdet let at forklare.",
+    "format_pdf_desc": "En pdf holder mål, timer og moms fast, så kunden kan sammenligne den med overslaget, og den kan gemmes sammen med papirerne til fradraget.",
+    "faq_title": "Spørgsmål om faktura for tømrer",
+    "faqs": [
+      {
+        "question": "Hvad skal en tømrerfaktura indeholde?",
+        "answer": "De faste oplysninger (nummer, dato, dit CVR-nummer, navne og adresser, moms) plus en beskrivelse af opgaven, timer og timepris, materialer med mål og antal, ekstraarbejde for sig, adresse og dato for arbejdet og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Skal jeg tage timepris eller fast pris?",
+        "answer": "Begge dele er almindelige. Fast pris passer til opgaver, du kender godt, fx en ny dør. Regningsarbejde passer, når du ikke kan se, hvad der gemmer sig bag væggen. Ved regningsarbejde for forbrugere skal regningen være specificeret."
+      },
+      {
+        "question": "Kan min kunde få fradrag for nye vinduer?",
+        "answer": "Arbejdslønnen for nye vinduer og yderdøre i en eksisterende bolig hører til det grønne fradrag. Kunden betaler elektronisk og søger selv på skat.dk. Fakturaen skal vise dit CVR-nummer, dato, adresse, arbejdets art og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Fakturerer jeg med moms som underentreprenør?",
+        "answer": "Ja. Danmark har ikke omvendt betalingspligt for byggeydelser mellem danske virksomheder, så du lægger 25 % moms på, også når hovedentreprenøren er din kunde."
+      },
+      {
+        "question": "Hvordan trækker jeg en acontofaktura fra på slutfakturaen?",
+        "answer": "I den gratis generator kan du lave en linje med minus for det, kunden allerede har betalt. I appen kan priser ikke være negative: der fakturerer du restbeløbet som linje og nævner de tidligere fakturaer i bemærkningerne."
+      }
+    ],
+    "cta_title": "Lav din tømrerfaktura",
+    "links_title": "Fakturatyper for tømrere",
+    "related": [
+      {
+        "name": "Faktura for murer",
+        "slug": "faktura-murer"
+      },
+      {
+        "name": "Faktura for maler",
+        "slug": "faktura-maler"
+      }
+    ],
+    "invoice_types": ["acontofaktura", "delfaktura", "faktura-arbejdsloen-og-materialer"]
+  },
+  {
+    "slug": "faktura-maler",
+    "translation_of": "painting",
+    "niche": "Faktura for maler",
+    "title": "Faktura maler: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for malerarbejde: pris pr. m², antal gange, forarbejde og maling på hver sin linje og 25 % moms. Se et eksempel, og hent en pdf.",
+    "h1": "Faktura maler: skabelon og eksempel",
+    "subtitle": "Til malere, der arbejder pr. m², pr. rum eller i timer: hvordan du viser forarbejde, flader og maling, hvorfor malerarbejde ikke giver håndværkerfradrag, og et eksempel på en stue.",
+    "intro_paragraph": "Malerarbejde bliver ofte prissat pr. m², og kunden kan selv måle efter. Derfor skal en malerfaktura vise flader, antal gange og forarbejde, så tallene kan tjekkes. Det forarbejde, kunden ikke ser bagefter, er spartling, slibning og afdækning, og det er der, de fleste spørgsmål kommer. Én ting skal du vide, før kunden spørger: malerarbejde står ikke på listerne over håndværkerfradrag for 2026, hverken ude eller inde. Der er 25 % moms på arbejde og maling. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til private og andre virksomheder er en pdf fint. Herunder: felterne, et eksempel og fejlene.",
+    "include_title": "Det skal stå på en malerfaktura",
+    "what_to_include_intro": "De faste oplysninger (fakturanummer, dato, dit CVR-nummer, navne og adresser, moms) skal altid med. For malerarbejde skal du desuden have styr på disse seks.",
+    "req_1_title": "Forarbejde på sin egen linje",
+    "req_1_text": "Afdækning, spartling, slibning og vask af flader tager ofte lige så lang tid som selve malingen. Står det for sig, i timer eller som et fast beløb, kan kunden se, hvorfor prisen ikke bare er m² gange en takst.",
+    "req_2_title": "Flader i m², lbm eller stk.",
+    "req_2_text": "Vægge og lofter i m², fodlister og karme i løbende meter, døre og vinduer i stk. »Vægge, stue og spisestue, 68 m²« kan kunden måle efter og sammenligne med tilbuddet.",
+    "req_3_title": "Antal gange og glans",
+    "req_3_text": "Skriv, hvor mange gange fladen er malet, og med hvilken glans: »2 gange, glans 5«. Det dokumenterer, hvad kunden har betalt for, hvis der senere kommer skjolder.",
+    "req_4_title": "Maling og materialer",
+    "req_4_text": "Maling, grunder, spartel og tape får egne linjer med mængde. Har kunden købt malingen selv, så skriv det i bemærkningerne, så ingen tror, at den er glemt.",
+    "req_5_title": "Timer, når det er regningsarbejde",
+    "req_5_text": "Maler du på regning, skal timepris, timeforbrug og materialeforbrug fremgå over for en forbruger, når de påvirker prisen (markedsføringsloven § 15). En fast pris pr. m² er nemmere for begge parter.",
+    "req_6_title": "Farvekoder og dato",
+    "req_6_text": "Skriv farvenavn og -kode i bemærkningerne sammen med datoen for arbejdet; Invoicor har ikke et felt til leveringsdatoen. Næste gang kunden skal pletmale, finder de koden på fakturaen.",
+    "what_to_include_outro": "En faktura, der viser flader, gange og forarbejde, er den bedste forklaring på din pris.",
+    "paper_label": "Faktura maler · eksempel",
+    "sample_breakdown_title": "Eksempel på en malerfaktura",
+    "sample_breakdown_intro": "Stue og spisestue i en lejlighed på Frederiksberg: vægge og lofter, karme og fodlister. Fast pris pr. m² og løbende meter, forarbejde i timer, 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Forarbejde: afdækning, spartling og slibning af vægge",
+        "qty": "4 timer",
+        "rate": "475,00 kr.",
+        "amount": "1.900,00 kr."
+      },
+      {
+        "description": "Vægge, 2 gange, glans 5",
+        "qty": "68 m²",
+        "rate": "62,00 kr.",
+        "amount": "4.216,00 kr."
+      },
+      {
+        "description": "Lofter, 2 gange, glans 5",
+        "qty": "28 m²",
+        "rate": "74,00 kr.",
+        "amount": "2.072,00 kr."
+      },
+      {
+        "description": "Karme og fodlister, 2 gange, glans 40",
+        "qty": "24 m",
+        "rate": "45,00 kr.",
+        "amount": "1.080,00 kr."
+      },
+      {
+        "description": "Materiale: vægmaling glans 5, 10 liter",
+        "qty": "2",
+        "rate": "695,00 kr.",
+        "amount": "1.390,00 kr."
+      },
+      {
+        "description": "Materiale: loftmaling, grunder og træmaling",
+        "qty": "1",
+        "rate": "845,00 kr.",
+        "amount": "845,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "11.503,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "2.875,75 kr.",
+    "sample_breakdown_balance": "14.378,75 kr.",
+    "sample_breakdown_notes": "Udført 9. til 11. november 2026 på Godthåbsvej 31, 3. th., 2000 Frederiksberg. Vægge: kalkhvid, NCS S 0502-Y. Lofter: hvid. Betales senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om fakturering af malerarbejde",
+    "industry_notes": [
+      {
+        "title": "Malerarbejde giver ikke håndværkerfradrag",
+        "text": "Malerarbejde står ikke på listerne over servicefradrag eller grønt håndværkerfradrag for 2026 (skat.dk). Sig det til kunden fra start, så ingen regner med et fradrag. Du kan stadig godt dele arbejde og maling op: det gør prisen lettere at forstå."
+      },
+      {
+        "title": "Pr. m², pr. rum eller i timer",
+        "text": "Pris pr. m² passer til store, ensartede flader. Pr. rum passer til lejligheder, du kender typen af. Timer passer til reparationer og ældre huse med meget forarbejde. Skriv på fakturaen, hvilken model du har brugt."
+      },
+      {
+        "title": "Udvendigt arbejde og vejret",
+        "text": "Facader og vinduer males, når vejret tillader det, og en opgave kan strække sig over flere uger. Skriv perioden i bemærkningerne, og aftal på forhånd, om du fakturerer delvist undervejs, fx med en acontofaktura pr. facade."
+      }
+    ],
+    "mistakes_title": "Tre fejl, malere laver på fakturaen",
+    "mistakes": [
+      {
+        "title": "Forarbejdet forsvinder",
+        "text": "Står der kun »Maling af stue, 9.000 kr.«, ser kunden en dags arbejde og undrer sig over prisen. Vis forarbejdet, så kunden ser de timer, der ikke kan ses på væggen."
+      },
+      {
+        "title": "Ingen farvekode",
+        "text": "Et år senere skal en plet males, og ingen kan huske farven. Skriv koden på fakturaen; det tager ti sekunder og sparer et opkald."
+      },
+      {
+        "title": "At love fradrag",
+        "text": "Kunden spørger, om det kan trækkes fra, og du siger »det tror jeg nok«. Malerarbejde står ikke på listerne, så sig det, som det er."
+      }
+    ],
+    "tip_title": "Et tip til malerfakturaer",
+    "pro_tip": "Gem dine takster som varer i appen: vægge pr. m², lofter pr. m², fodlister pr. meter. Så måler du op, skriver antallet, og fakturaen regner selv resten ud. Prisen bliver den samme fra kunde til kunde.",
+    "format_pdf_desc": "En pdf viser m², gange og farvekoder, som du skrev dem, og kunden kan gemme den med boligens papirer til næste gang, der skal males.",
+    "faq_title": "Spørgsmål om faktura for maler",
+    "faqs": [
+      {
+        "question": "Kan man få håndværkerfradrag for malerarbejde?",
+        "answer": "Nej, ikke i 2026. Malerarbejde står hverken på listen over servicefradrag eller på listen over grønt håndværkerfradrag (skat.dk). Er kunden i tvivl, kan de se listerne på skat.dk."
+      },
+      {
+        "question": "Hvordan regner jeg prisen pr. m² ud?",
+        "answer": "Mål væggene (længde gange højde, minus store døre og vinduer) og lofterne, og gang med din pris pr. m² for det antal gange, du maler. Forarbejde, der varierer meget, tager du bedst i timer for sig."
+      },
+      {
+        "question": "Skal malingens mærke stå på fakturaen?",
+        "answer": "Det er ikke et krav, men det er en god idé: med mærke, glans og farvekode kan kunden købe den samme maling senere, og du har dokumentation, hvis der kommer en reklamation."
+      },
+      {
+        "question": "Hvad gør jeg med ekstra forarbejde, jeg ikke havde regnet med?",
+        "answer": "Stop og sig det til kunden, før du går videre, og få ja'et på skrift, fx i en sms. Skriv det som sin egen linje på fakturaen, og nævn i bemærkningerne, hvornår det blev aftalt."
+      },
+      {
+        "question": "Kan jeg udfylde malerfakturaen online?",
+        "answer": "Ja. Åbn eksemplet i den gratis generator, ret flader og priser til din opgave, og hent en pdf. I Invoicor-appen gemmer du dine takster og kunder til næste gang."
+      }
+    ],
+    "cta_title": "Lav din malerfaktura",
+    "links_title": "Fakturatyper for malere",
+    "related": [
+      {
+        "name": "Faktura for tømrer",
+        "slug": "faktura-toemrer"
+      },
+      {
+        "name": "Faktura for murer",
+        "slug": "faktura-murer"
+      }
+    ],
+    "invoice_types": ["faktura-arbejdsloen-og-materialer", "acontofaktura", "delfaktura"]
+  },
+  {
+    "slug": "faktura-murer",
+    "translation_of": "masonry",
+    "niche": "Faktura for murer",
+    "title": "Faktura murer: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for murer- og flisearbejde: timer, mørtel, sten og stillads på hver sin linje og 25 % moms. Se et eksempel på en skorsten, og hent en pdf.",
+    "h1": "Faktura murer: skabelon og eksempel",
+    "subtitle": "Til murere, der også lægger fliser: hvordan du fakturerer timer, mørtel, sten og stillads, hvad der kan give håndværkerfradrag, og et eksempel på en omfuget skorsten.",
+    "intro_paragraph": "En murer fuger skorstene om, murer facader op, pudser, og lægger fliser i badeværelser. Opgaverne varierer, men problemet er det samme: kunden kan ikke se, hvor meget mørtel der gik til, og hvor lang tid udkradsningen tog. En god murerfaktura viser derfor timer, materialer og stillads hver for sig. Arbejde på skorstenen og efterisolering af ydervægge hører til det grønne håndværkerfradrag, så private kunder vil have arbejdslønnen stående for sig. Der er 25 % moms på det hele, også som underentreprenør. Fakturerer du en offentlig myndighed, skal det være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer; til private og andre virksomheder er en pdf fint. Her er felterne, et eksempel og fejlene, du skal undgå.",
+    "include_title": "Det skal stå på en murerfaktura",
+    "what_to_include_intro": "Fakturanummer, dato, dit CVR-nummer, navne, adresser og moms skal altid med. Til murer- og flisearbejde kommer disse seks punkter oveni.",
+    "req_1_title": "Opgaven delt op efter bygningsdel",
+    "req_1_text": "Skriv skorsten, facade, sokkel eller badeværelse hver for sig. Når kunden får én faktura for både en skorsten og en sokkel, skal de kunne se, hvad hver del kostede.",
+    "req_2_title": "Mængder i m², meter eller stk.",
+    "req_2_text": "Omfugning og puds i m², fliser i m², fuger og sokler i løbende meter. Mængder gør prisen målbar, og de gør det let at sammenligne med overslaget.",
+    "req_3_title": "Sten, mørtel og fliser med type",
+    "req_3_text": "Skriv mørteltypen og stenene: »Fugemørtel KC 50/50/700, 25 kg«, »Gule blødstrøgne sten«. Ved fliser: format og antal m². Det er dokumentation, hvis der kommer en reklamation, og det hjælper den næste murer.",
+    "req_4_title": "Stillads og lift som egne linjer",
+    "req_4_text": "Leje af stillads eller lift er en reel udgift, der ikke er arbejdsløn. Står den for sig, forstår kunden, hvorfor en lille skorsten kan koste mere end forventet.",
+    "req_5_title": "Specificeret regning ved regningsarbejde",
+    "req_5_text": "Arbejder du på regning for en privat kunde, skal timepris, timeforbrug og materialeforbrug fremgå, når de påvirker prisen (markedsføringsloven § 15). Skriv også adresse og dato for arbejdet; datoen går i linjen eller i bemærkningerne, da Invoicor ikke har et felt til den.",
+    "req_6_title": "Arbejdsløn adskilt til fradraget",
+    "req_6_text": "Til håndværkerfradraget skal arbejdslønnen stå adskilt fra materialerne, og Skattestyrelsen anbefaler den uden moms. Læg arbejdslinjerne sammen i bemærkningerne.",
+    "what_to_include_outro": "Mængder og materialetyper på fakturaen gør det let for kunden at forstå prisen og for dig at regne næste opgave.",
+    "paper_label": "Faktura murer · eksempel",
+    "sample_breakdown_title": "Eksempel på en murerfaktura",
+    "sample_breakdown_intro": "Udkradsning og omfugning af en skorsten over tag og en ny skorstenskrone på en villa i Vejle. Regningsarbejde over tre dage, 25 % moms af det hele.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Leje af stillads til skorsten, 1 uge",
+        "qty": "1",
+        "rate": "1.850,00 kr.",
+        "amount": "1.850,00 kr."
+      },
+      {
+        "description": "Kørsel, 3 dage",
+        "qty": "3",
+        "rate": "250,00 kr.",
+        "amount": "750,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: udkradsning og omfugning af skorsten over tag",
+        "qty": "9 timer",
+        "rate": "525,00 kr.",
+        "amount": "4.725,00 kr."
+      },
+      {
+        "description": "Arbejdsløn: støbning af ny skorstenskrone",
+        "qty": "4 timer",
+        "rate": "525,00 kr.",
+        "amount": "2.100,00 kr."
+      },
+      {
+        "description": "Materiale: fugemørtel KC 50/50/700, 25 kg",
+        "qty": "4",
+        "rate": "119,00 kr.",
+        "amount": "476,00 kr."
+      },
+      {
+        "description": "Materiale: beton og armering til krone",
+        "qty": "1",
+        "rate": "640,00 kr.",
+        "amount": "640,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "10.541,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "2.635,25 kr.",
+    "sample_breakdown_balance": "13.176,25 kr.",
+    "sample_breakdown_notes": "Udført 3. til 5. november 2026 på Bøgevej 19, 7100 Vejle. Arbejdsløn i alt 6.825,00 kr. ekskl. moms. Fugen skal hærde i mindst en uge, før skorstenen males eller imprægneres. Betales senest 8 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om fakturering af murerarbejde",
+    "industry_notes": [
+      {
+        "title": "Skorsten og ydervægge: grønt fradrag",
+        "text": "Arbejde på skorstene og ildsteder og efterisolering af ydervægge står på listen over grønt håndværkerfradrag, med et loft på 9.000 kr. pr. person i 2026 (skat.dk). Det gælder arbejdsløn på en eksisterende bolig. Tjek på skat.dk, om netop din opgave er med, før du siger noget til kunden."
+      },
+      {
+        "title": "Fliser og belægning",
+        "text": "Fliser i et badeværelse finder du ikke på listerne for 2026. Belægningsarbejde, fx en terrasse med fliser, kom på listen over servicefradrag i 2025, men servicefradraget kræver, at du er momsregistreret i Danmark. Kunden indberetter selv fradraget og skal have betalt elektronisk."
+      },
+      {
+        "title": "Vejret og etaper",
+        "text": "Murerarbejde udenfor går i stå ved frost og regn. Skriv perioden i bemærkningerne, og aftal på store opgaver, at du fakturerer pr. etape, så du ikke ligger ude med sten og stillads i flere uger."
+      }
+    ],
+    "mistakes_title": "Tre fejl, murere laver på fakturaen",
+    "mistakes": [
+      {
+        "title": "Én samlet pris for det hele",
+        "text": "»Skorsten, 13.000 kr.« kan kunden ikke bruge til fradraget og ikke sammenligne med overslaget. Del timer, materialer og stillads op."
+      },
+      {
+        "title": "Stilladset glemt",
+        "text": "Stilladset blev bestilt af dig, men kom aldrig på fakturaen. Læg lejen ind som en linje samme dag, som du bestiller den, så den ikke bliver glemt."
+      },
+      {
+        "title": "Overslaget overskredet i stilhed",
+        "text": "Viser det sig, at flere sten skal skiftes, så ring, før du fortsætter. 15 %-grænsen, mange taler om, kommer fra AB-Forbruger og standardaftaler, ikke fra loven, men en overraskelse på fakturaen giver strid uanset hvad."
+      }
+    ],
+    "tip_title": "Et tip til murerfakturaer",
+    "pro_tip": "Skriv hærdetid og pleje i bemærkningerne, fx at fugen ikke må males den første uge. Det tager et minut, og kunden har det på skrift, hvis noget går galt.",
+    "format_pdf_desc": "En pdf holder mængder, materialer og moms fast og kan gemmes sammen med husets papirer, så den næste murer kan se, hvilken mørtel der blev brugt.",
+    "faq_title": "Spørgsmål om faktura for murer",
+    "faqs": [
+      {
+        "question": "Hvad skal en murerfaktura indeholde?",
+        "answer": "De faste oplysninger (nummer, dato, dit CVR-nummer, navne og adresser, moms) plus opgaven delt op efter bygningsdel, timer og timepris, materialer med type og mængde, stillads eller lift for sig, adresse og dato for arbejdet og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Hvordan fakturerer jeg omfugning?",
+        "answer": "Enten pr. m² eller i timer. Pr. m² er let at sammenligne med overslaget; timer passer bedre til gamle skorstene, hvor du ikke ved, hvor dybt fugerne skal kradses ud. Mørtlen står under alle omstændigheder for sig."
+      },
+      {
+        "question": "Kan jeg bruge skabelonen til flisearbejde?",
+        "answer": "Ja. Skift linjerne ud med fliser i m², fliseklæber, fugemasse og membran, og skriv arbejdet i timer eller pr. m². Opbygningen er den samme."
+      },
+      {
+        "question": "Kan min kunde få fradrag for skorstensarbejde?",
+        "answer": "Arbejde på skorstene og ildsteder står på listen over grønt håndværkerfradrag. Kunden søger selv på skat.dk og skal have betalt elektronisk; fakturaen skal vise dit CVR-nummer, dato, adresse, arbejdets art og arbejdslønnen adskilt fra materialerne."
+      },
+      {
+        "question": "Skal jeg have forudbetaling på en stor opgave?",
+        "answer": "Det er almindeligt på større opgaver at aftale en betalingsplan med acontofakturaer. Aftal det, før du går i gang, og nævn de betalte acontofakturaer på slutfakturaen."
+      }
+    ],
+    "cta_title": "Lav din murerfaktura",
+    "links_title": "Fakturatyper for murere",
+    "related": [
+      {
+        "name": "Faktura for tømrer",
+        "slug": "faktura-toemrer"
+      },
+      {
+        "name": "Faktura for VVS",
+        "slug": "faktura-vvs"
+      }
+    ],
+    "invoice_types": ["faktura-arbejdsloen-og-materialer", "acontofaktura", "delfaktura"]
+  },
+  {
+    "slug": "faktura-rengoering",
+    "translation_of": "cleaning-services",
+    "niche": "Faktura for rengøring",
+    "title": "Faktura rengøring: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for rengøring i private hjem og på kontorer: timer, faste besøg, servicefradrag og 25 % moms. Udfyld eksemplet, og hent en pdf.",
+    "h1": "Faktura rengøring: gratis skabelon og eksempel",
+    "subtitle": "Til rengøringsfirmaer og selvstændige rengøringshjælpere: sådan fakturerer du private hjem og erhvervskunder, så kunden kan betale og bruge sit servicefradrag.",
+    "intro_paragraph": "Rengøring er et fag med mange små fakturaer: den samme kunde hver uge eller hver anden uge, et par tillæg og en gang imellem en hovedrengøring. Hos private kunder har fakturaen en ekstra opgave, fordi rengøring i hjemmet hører til servicefradraget, og kunden kun kan bruge det, hvis fakturaen viser det rigtige. Hos erhvervskunder handler det om en fast månedspris og en faktura, der passer til kontrakten. Der er 25 % moms på rengøring, og Invoicor laver fakturaen som pdf. Nedenfor: hvad der skal stå på den, et eksempel med fire besøg i november og reglerne for servicefradrag.",
+    "include_title": "Det skal stå på en faktura for rengøring",
+    "what_to_include_intro": "En privat kunde læser fakturaen med to spørgsmål: passer timerne, og kan jeg trække det fra? Begge svar skal kunne findes på papiret.",
+    "req_1_title": "Datoerne for hvert besøg",
+    "req_1_text": "Skriv datoerne i linjen, fx »Rengøring 6., 13., 20. og 27. november«. Invoicor har ikke et felt til leveringsdatoen, så den står i beskrivelsen eller i bemærkningerne.",
+    "req_2_title": "Adressen, der blev gjort rent",
+    "req_2_text": "Skattestyrelsen vil se adressen på fakturaen, når kunden bruger servicefradraget. Har kunden både helårsbolig og sommerhus, så skriv hvilken.",
+    "req_3_title": "Timer eller fast pris pr. besøg",
+    "req_3_text": "Brug den enhed, du aftalte: timer gange timepris eller en fast pris pr. gang. Skift ikke enhed fra måned til måned, så kunden kan sammenligne.",
+    "req_4_title": "Tillæg på egne linjer",
+    "req_4_text": "Ovnrens, skift af sengetøj eller rengøring efter håndværkere får hver sin linje med dato. Så ved kunden, at ekstra arbejde koster ekstra.",
+    "req_5_title": "Dit CVR- eller SE-nummer",
+    "req_5_text": "Nummeret står i feltet »CVR-nummer« på pdf'en. Uden det kan kunden ikke bruge fakturaen til servicefradrag, og det er et krav på en fuld faktura.",
+    "req_6_title": "Betaling uden kontanter",
+    "req_6_text": "Kunden skal betale elektronisk, med kort, MobilePay eller netbank, for at få fradrag. Skriv dine betalingsoplysninger på fakturaen, og tag ikke imod kontanter.",
+    "what_to_include_outro": "Med samme opbygning hver gang kan kunden genkende fakturaen, og hun finder hurtigt det, der er ændret.",
+    "paper_label": "Faktura for rengøring · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura for rengøring",
+    "sample_breakdown_intro": "Fast ugentlig rengøring i et parcelhus i Aarhus: fire besøg á tre timer i november, en ovnrens og to gange skift af sengetøj. Rengøringsmidlerne er med i timeprisen. 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Rengøring 6., 13., 20. og 27. november, 4 besøg à 3 timer",
+        "qty": "12 timer",
+        "rate": "360,00 kr.",
+        "amount": "4.320,00 kr."
+      },
+      {
+        "description": "Tillæg: ovnrens, 13. november",
+        "qty": "1",
+        "rate": "450,00 kr.",
+        "amount": "450,00 kr."
+      },
+      {
+        "description": "Tillæg: skift af sengetøj, 6. og 20. november",
+        "qty": "2",
+        "rate": "75,00 kr.",
+        "amount": "150,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "4.920,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "1.230,00 kr.",
+    "sample_breakdown_balance": "6.150,00 kr.",
+    "sample_breakdown_notes": "Udført på Skovvejen 14, 8240 Risskov. Hele prisen er arbejdsløn; rengøringsmidler under 2 % af prisen er indregnet. Betal med MobilePay eller bankoverførsel senest 8 dage efter fakturadatoen. Aflysning senere end 24 timer før faktureres med halv pris.",
+    "industry_notes_title": "Det skal du vide om rengøring og servicefradrag",
+    "industry_notes": [
+      {
+        "title": "Servicefradraget i 2026",
+        "text": "Private kunder kan trække arbejdslønnen for rengøring i hjemmet fra med op til 18.300 kr. pr. person i 2026, og fradraget er værd omkring 26 %. Kunden indberetter det selv på skat.dk i TastSelv; du sørger for, at fakturaen viser dato, adresse, arbejdets art, dit CVR- eller SE-nummer og arbejdslønnen for sig uden moms, som Skattestyrelsen anbefaler. Lov aldrig kunden fradraget: det er Skattestyrelsen, der godkender det."
+      },
+      {
+        "title": "Du skal være momsregistreret",
+        "text": "Servicefradrag kræver, at virksomheden er momsregistreret i Danmark. Har du under 50.000 kr. i omsætning og har valgt ikke at lade dig registrere, kan din kunde ikke få fradrag for din rengøring. Overvej registrering, hvis dine kunder er private, og spørg din revisor. Abonnementsydelser er undtaget fra fradraget; er du i tvivl om en fast aftale, så spørg Skattestyrelsen eller din revisor."
+      },
+      {
+        "title": "Materialer under 2 %",
+        "text": "Ved rengøring og vinduespudsning regnes hele prisen som arbejdsløn, hvis materialerne udgør under 2 % af prisen. Sælger du derimod produkter eller udstyr til kunden, får de deres egen linje, og de tæller ikke med i fradraget."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer for rengøring",
+    "mistakes": [
+      {
+        "title": "Kontant betaling ved døren",
+        "text": "Betaler kunden kontant, mister hun retten til servicefradrag, og du mister sporet af betalingen. Bed om MobilePay eller bankoverførsel fra første besøg."
+      },
+      {
+        "title": "Erhvervskunden får privatfakturaen",
+        "text": "Et kontor kan ikke bruge servicefradrag, men vil have kontraktnummer, måned og fast pris. Lav én opbygning til private og en anden til erhverv."
+      },
+      {
+        "title": "Den gamle måned står der stadig",
+        "text": "Duplikerer du sidste måneds faktura, så ret datoerne i linjen først. »Oktober« på en novemberfaktura giver et opkald fra kunden."
+      }
+    ],
+    "tip_title": "Et tip til rengøringsfirmaer",
+    "pro_tip": "Gem dine faste ydelser som varer i appen: »Rengøring, time«, »Ovnrens« og »Skift af sengetøj«. Så tager hver ny faktura et minut, og priserne er de samme hos alle kunder.",
+    "format_pdf_desc": "En pdf med adresse, datoer og arbejdsløn er det bilag, kunden gemmer, hvis Skattestyrelsen spørger til fradraget.",
+    "faq_title": "Spørgsmål om faktura for rengøring",
+    "faqs": [
+      {
+        "question": "Er der moms på rengøring?",
+        "answer": "Ja, 25 % som på næsten alt i Danmark (momsloven § 33). Er din omsætning under 50.000 kr. om året, kan du lade være med at blive momsregistreret, men så kan dine private kunder ikke få servicefradrag."
+      },
+      {
+        "question": "Hvad skal fakturaen vise, for at kunden kan få servicefradrag?",
+        "answer": "Dit CVR- eller SE-nummer, datoen, arbejdets art, adressen og arbejdslønnen opgjort for sig. Kunden skal betale elektronisk og indberetter selv fradraget i TastSelv."
+      },
+      {
+        "question": "Kan Invoicor sende en faktura automatisk hver måned?",
+        "answer": "Nej, Invoicor har ingen faste eller planlagte fakturaer. Tryk på »Duplicate Invoice« på sidste faktura: kopien får det næste nummer og beholder kunde, linjer og bemærkninger, så du kun retter datoerne."
+      },
+      {
+        "question": "Hvordan fakturerer jeg et kontor?",
+        "answer": "Typisk en fast pris pr. måned efter kontrakten, med måned og kontraktnummer i linjen og ekstra opgaver på egne linjer. Er kunden en offentlig myndighed, skal fakturaen være en e-faktura via NemHandel, og det laver Invoicor ikke."
+      },
+      {
+        "question": "Må jeg tage betaling for en aflyst rengøring?",
+        "answer": "Hvis det står i jeres aftale, fx halv pris ved aflysning under 24 timer før. Skriv det som en linje med datoen. Står der intet i aftalen, så lad være."
+      }
+    ],
+    "cta_title": "Lav din faktura for rengøring",
+    "links_title": "Fakturatyper for rengøringsfirmaer",
+    "related": [
+      {
+        "name": "Faktura for vinduespudser",
+        "slug": "faktura-vinduespudser"
+      },
+      {
+        "name": "Faktura for anlægsgartner",
+        "slug": "faktura-anlaegsgartner"
+      }
+    ],
+    "invoice_types": ["abonnementsfaktura", "faktura-timer", "faktura-uden-moms"]
+  },
+  {
+    "slug": "faktura-vinduespudser",
+    "translation_of": "window-cleaning",
+    "niche": "Faktura for vinduespudser",
+    "title": "Faktura vinduespudser: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for vinduespudsning: pris pr. fag eller pr. runde, ude og inde, ovenlys og servicefradrag. 25 % moms, udfyld eksemplet og hent en pdf.",
+    "h1": "Faktura vinduespudser: skabelon og eksempel",
+    "subtitle": "Til vinduespudsere med villakunder, butikker og boligforeninger: én faktura pr. runde, der viser fag, sider og tillæg.",
+    "intro_paragraph": "En vinduespudser lever af ruter: de samme huse hver sjette eller ottende uge, butikker hver fjortende dag og en gang om året et hus, der skal have det hele. Prisen sættes pr. fag, pr. vindue eller som en fast pris for huset, og fakturaen skal vise, hvad der faktisk blev pudset den dag. Vinduespudsning i en privat bolig hører under servicefradraget, så villakunder kigger efter de oplysninger, Skattestyrelsen kræver. Der er 25 % moms, og Invoicor laver fakturaen som pdf. Nedenfor: linjerne, et eksempel fra en forårsrunde i Odense og reglerne for fradrag.",
+    "include_title": "Det skal stå på en faktura for vinduespudsning",
+    "what_to_include_intro": "Kunden var ofte ikke hjemme, da du kom. Fakturaen er derfor det eneste bevis på, hvad du lavede, og den skal kunne læses uden forklaring.",
+    "req_1_title": "Antal fag og enhedspris",
+    "req_1_text": "Skriv antallet af fag eller vinduer som antal og prisen pr. stk. som pris. Har du en fast pris for huset, så nævn antallet af fag i beskrivelsen.",
+    "req_2_title": "Udvendigt, indvendigt eller begge",
+    "req_2_text": "Indvendig pudsning tager længere tid og kræver, at kunden er hjemme. Giv den sin egen linje, så kunden ser forskellen i pris.",
+    "req_3_title": "Ovenlys, karnapper og høje vinduer",
+    "req_3_text": "Vinduer, der kræver stige, lift eller teleskopstang, koster mere. Fakturer dem på en separat linje med antal, i stedet for at hæve prisen på alle fag.",
+    "req_4_title": "Datoen for runden",
+    "req_4_text": "Invoicor har ikke et felt til leveringsdatoen: skriv den i linjen, fx »Forårsrunde 14. april«. Det er også den dato, kunden skal bruge til sit fradrag.",
+    "req_5_title": "Adressen",
+    "req_5_text": "På en rute med mange huse er adressen det, der skiller fakturaerne ad. Den skal også stå der, hvis kunden vil bruge servicefradraget.",
+    "req_6_title": "CVR-nummer og elektronisk betaling",
+    "req_6_text": "Dit CVR- eller SE-nummer står i feltet »CVR-nummer« på pdf'en. Bed om MobilePay eller bankoverførsel; kontanter giver ikke fradrag.",
+    "what_to_include_outro": "Hold linjerne ens fra runde til runde, så er næste faktura en kopi med en ny dato.",
+    "paper_label": "Faktura for vinduespudser · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura for vinduespudsning",
+    "sample_breakdown_intro": "Forårsrunde hos en villa i Odense: 22 fag ude og inde, tre ovenlysvinduer og afvaskning af karme og rammer efter vinteren. Sæbe og vand er med i prisen. 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Udvendig pudsning, 22 fag, 14. april",
+        "qty": "22",
+        "rate": "18,00 kr.",
+        "amount": "396,00 kr."
+      },
+      {
+        "description": "Indvendig pudsning, 22 fag, 14. april",
+        "qty": "22",
+        "rate": "16,00 kr.",
+        "amount": "352,00 kr."
+      },
+      {
+        "description": "Ovenlysvinduer med stige, udvendigt",
+        "qty": "3",
+        "rate": "45,00 kr.",
+        "amount": "135,00 kr."
+      },
+      {
+        "description": "Afvaskning af karme og rammer",
+        "qty": "1",
+        "rate": "150,00 kr.",
+        "amount": "150,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "1.033,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "258,25 kr.",
+    "sample_breakdown_balance": "1.291,25 kr.",
+    "sample_breakdown_notes": "Udført 14. april 2026 på Rosenvænget 7, 5250 Odense SV. Hele prisen er arbejdsløn; materialer under 2 %. Betal med MobilePay eller bankoverførsel inden 8 dage. Næste udvendige runde er planlagt i uge 22.",
+    "industry_notes_title": "Det skal du vide om vinduespudsning og fradrag",
+    "industry_notes": [
+      {
+        "title": "Hele prisen kan være arbejdsløn",
+        "text": "Ved vinduespudsning og rengøring regnes hele prisen som arbejdsløn i forhold til servicefradraget, når materialerne er under 2 % af prisen. Skriv det gerne i bemærkningerne, så kunden ved, hvilket beløb hun kan indberette. Loftet er 18.300 kr. pr. person i 2026."
+      },
+      {
+        "title": "Abonnement giver ikke fradrag",
+        "text": "Skattestyrelsen undtager abonnementsydelser fra servicefradraget. Har kunden en fast aftale om runder, kan fakturaen ikke ændre, hvordan den vurderes. Lov derfor ikke fradrag på en fast aftale; bed kunden spørge Skattestyrelsen, eller tal med din revisor."
+      },
+      {
+        "title": "Momsregistrering og fradrag",
+        "text": "Kun en momsregistreret virksomhed kan give kunden servicefradrag. Er du under grænsen på 50.000 kr. og ikke registreret, viser din faktura ingen moms, og villakunden kan ikke trække din regning fra. Butikker og boligforeninger får aldrig servicefradrag; de har brug for en tydelig faktura med moms."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer for vinduespudsning",
+    "mistakes": [
+      {
+        "title": "Én samlet pris uden antal fag",
+        "text": "»Vinduespudsning, 1.000 kr.« giver diskussion, når kunden har fået en tilbygning. Med antal og pris pr. fag forklarer fakturaen selv prisstigningen."
+      },
+      {
+        "title": "Ingen dato på runden",
+        "text": "Kunden kan ikke huske, om du kom i april eller maj, og hun skal bruge datoen til fradraget. Skriv den i linjen hver gang."
+      },
+      {
+        "title": "Skader, du ikke nævnte",
+        "text": "Ser du en revnet rude eller en utæt fuge, før du går i gang, så skriv det i bemærkningerne. Ellers får du skylden bagefter."
+      }
+    ],
+    "tip_title": "Et tip til vinduespudsere",
+    "pro_tip": "Lav hver kundes faktura én gang med alle faste linjer. Ved næste runde trykker du »Duplicate Invoice«, retter datoen og sender den fra bilen, inden du kører videre.",
+    "format_pdf_desc": "En pdf sendt som besked eller på e-mail når kunden, selv om hun ikke var hjemme, og den kan ikke ændres ved et uheld.",
+    "faq_title": "Spørgsmål om faktura for vinduespudser",
+    "faqs": [
+      {
+        "question": "Skal jeg tage pris pr. fag eller pr. vindue?",
+        "answer": "Det er dit valg, men brug det samme på tilbud og faktura. Mange bruger pr. fag, fordi et vindue med fire ruder tager længere tid end et med én."
+      },
+      {
+        "question": "Kan kunden få servicefradrag for vinduespudsning?",
+        "answer": "Vinduespudsning i en privat bolig er med i servicefradraget, når du er momsregistreret, fakturaen viser dato, adresse, arbejdets art og dit CVR- eller SE-nummer, og kunden betaler elektronisk. Kunden indberetter selv fradraget, og abonnementsydelser er undtaget."
+      },
+      {
+        "question": "Kan Invoicor sende fakturaen automatisk efter hver runde?",
+        "answer": "Nej, der er ingen faste eller planlagte fakturaer. Dupliker sidste rundes faktura: kopien får det næste nummer og beholder kunde og linjer, og du retter datoen."
+      },
+      {
+        "question": "Hvordan fakturerer jeg en butik hver 14. dag?",
+        "answer": "Enten én faktura pr. runde eller én samlet pr. måned med datoerne for hver runde i linjen. Aftal det med butikken, og hold fast i det."
+      },
+      {
+        "question": "Skal der moms på, hvis jeg er under 50.000 kr.?",
+        "answer": "Er du ikke momsregistreret, viser fakturaen ingen moms. Pdf'en viser stadig momslinjen med »Moms (0%)« og 0,00 kr.; skriv i bemærkningerne, at du ikke er momsregistreret. Det er god praksis, ikke et krav."
+      }
+    ],
+    "cta_title": "Lav din faktura for vinduespudsning",
+    "links_title": "Fakturatyper for vinduespudsere",
+    "related": [
+      {
+        "name": "Faktura for rengøring",
+        "slug": "faktura-rengoering"
+      },
+      {
+        "name": "Faktura for anlægsgartner",
+        "slug": "faktura-anlaegsgartner"
+      }
+    ],
+    "invoice_types": ["abonnementsfaktura", "faktura-uden-moms", "faktura-ydelser"]
+  },
+  {
+    "slug": "faktura-anlaegsgartner",
+    "translation_of": "landscaping",
+    "niche": "Faktura for anlægsgartner",
+    "title": "Faktura anlægsgartner: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for anlægsgartner og havemand: belægning, ny græsplæne, fældning, materialer pr. m² og servicefradrag. Med eksempel og 25 % moms, gratis pdf.",
+    "h1": "Faktura anlægsgartner: skabelon og eksempel",
+    "subtitle": "Til anlægsgartnere og havemænd: sådan fakturerer du anlæg og pleje med arbejdsløn, materialer, maskiner og bortkørsel på hver sin linje.",
+    "intro_paragraph": "Der er to slags arbejde i haven. Havemanden slår græs, klipper hæk og luger bed, ofte hos de samme kunder hele sæsonen. Anlægsgartneren graver ud, lægger fliser, sætter kantsten og sår ny græsplæne, og en enkelt opgave kan koste mere end et års pleje. Fakturaen ser forskellig ud for de to, men reglen er den samme: arbejdslønnen skal stå for sig, fordi en stor del af havearbejdet nu hører under servicefradraget. Der er 25 % moms på det hele, og Invoicor laver fakturaen som pdf. Nedenfor: linjerne, et eksempel med en ny terrasse og reglerne for fradrag.",
+    "include_title": "Det skal stå på en faktura for anlægsgartner",
+    "what_to_include_intro": "En faktura for haven blander tre ting: timer, materialer målt i m² eller tons og maskiner. Hold dem adskilt, så kunden kan følge regnestykket.",
+    "req_1_title": "Arbejdsløn for sig",
+    "req_1_text": "Timer gange timepris, eller en fast pris for arbejdet, på egne linjer. Står arbejdslønnen gemt i prisen på sten og grus, kan en privat kunde ikke bruge sit servicefradrag.",
+    "req_2_title": "Materialer i deres enhed",
+    "req_2_text": "Belægningssten pr. m², stabilgrus og sand pr. ton, kantsten pr. meter, rullegræs pr. m². Antal og enhedspris uden moms giver kunden mulighed for at tjekke mod tilbuddet.",
+    "req_3_title": "Maskiner og bortkørsel",
+    "req_3_text": "Minigraver, pladevibrator og et læs jord til modtagestation er hverken arbejdsløn eller materialer. Giv dem hver sin linje.",
+    "req_4_title": "Datoer og adresse",
+    "req_4_text": "Skriv perioden i linjen eller i bemærkningerne, fx »udført 2. til 6. november«, og adressen, hvor arbejdet blev lavet. Begge dele skal stå der til fradraget.",
+    "req_5_title": "Plejeaftaler med datoer",
+    "req_5_text": "Fakturerer du pleje pr. måned, så skriv datoerne for besøgene. »Græsslåning, 4 gange i juni« er nemmere at betale end »Havepleje juni«.",
+    "req_6_title": "CVR-nummer og betalingsfrist",
+    "req_6_text": "Dit CVR- eller SE-nummer i feltet »CVR-nummer«, en fast betalingsfrist og dine bankoplysninger. Private kunder skal betale elektronisk for at få fradrag.",
+    "what_to_include_outro": "Så kan kunden se, hvad der var arbejde, og hvad der var ting, og du kan forklare hver krone.",
+    "paper_label": "Faktura for anlægsgartner · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura for anlægsgartner",
+    "sample_breakdown_intro": "Ny terrasse på 20 m² i et parcelhus i Silkeborg: udgravning, stabilgrus, betonsten og bortkørsel af jord. Arbejdslønnen står for sig, så kunden kan se den. 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Arbejdsløn: udgravning og lægning af terrasse, 2. til 4. november",
+        "qty": "16 timer",
+        "rate": "495,00 kr.",
+        "amount": "7.920,00 kr."
+      },
+      {
+        "description": "Leje af minigraver med pladevibrator",
+        "qty": "1",
+        "rate": "1.450,00 kr.",
+        "amount": "1.450,00 kr."
+      },
+      {
+        "description": "Materiale: betonsten, grå, m²",
+        "qty": "20",
+        "rate": "165,00 kr.",
+        "amount": "3.300,00 kr."
+      },
+      {
+        "description": "Materiale: stabilgrus, ton",
+        "qty": "4",
+        "rate": "285,00 kr.",
+        "amount": "1.140,00 kr."
+      },
+      {
+        "description": "Bortkørsel af jord, 1 læs",
+        "qty": "1",
+        "rate": "950,00 kr.",
+        "amount": "950,00 kr."
+      },
+      {
+        "description": "Kørsel",
+        "qty": "1",
+        "rate": "350,00 kr.",
+        "amount": "350,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "15.110,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "3.777,50 kr.",
+    "sample_breakdown_balance": "18.887,50 kr.",
+    "sample_breakdown_notes": "Tilbud T-2026-118, udført 2. til 4. november 2026 på Lyngbakken 9, 8600 Silkeborg. Arbejdsløn og materialer står på hver sin linje. Betales med bankoverførsel senest 14 dage efter fakturadatoen.",
+    "industry_notes_title": "Det skal du vide om havearbejde og fradrag",
+    "industry_notes": [
+      {
+        "title": "Hvad giver servicefradrag",
+        "text": "Almindeligt havearbejde og snerydning er med. Fra 2025 er også belægningsarbejde, anlæg af ny græsplæne, fældning af træer og rensning af tagrender kommet med. Loftet er 18.300 kr. pr. person i 2026, og det gælder kun arbejdslønnen, aldrig sten, grus eller maskinleje."
+      },
+      {
+        "title": "Betingelserne på fakturaen",
+        "text": "Fakturaen skal vise dit CVR- eller SE-nummer, datoen, arbejdets art, adressen og arbejdslønnen for sig, og kunden skal betale elektronisk. Du skal være momsregistreret i Danmark: er du under 50.000 kr. og ikke registreret, kan kunden ikke få servicefradrag. Kunden indberetter selv fradraget på skat.dk, så lov det aldrig."
+      },
+      {
+        "title": "Havemand eller anlægsgartner",
+        "text": "Plejeopgaver faktureres ofte pr. besøg eller pr. måned. Anlægsopgaver ligner håndværkerarbejde: tilbud, materialer og evt. en forudbetaling, før du bestiller sten. En forudbetaling får sin egen acontofaktura med moms."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer for anlægsgartnere",
+    "mistakes": [
+      {
+        "title": "Én samlet pris for hele terrassen",
+        "text": "En samlet pris kan ikke deles i arbejdsløn og materialer bagefter, og kunden mister sit fradrag. Del linjerne op fra starten, også ved fast pris."
+      },
+      {
+        "title": "Glemt bortkørsel",
+        "text": "Et læs jord eller rødder til modtagestationen koster penge. Står det ikke i tilbuddet og på fakturaen, betaler du selv."
+      },
+      {
+        "title": "Plejefaktura uden datoer",
+        "text": "»Havepleje, juni« siger intet om, hvor mange gange du var der. Skriv datoerne, så kunden ikke tvivler på beløbet."
+      }
+    ],
+    "tip_title": "Et tip til anlægsgartnere",
+    "pro_tip": "Gem de materialer, du bruger mest, som varer i appen med din pris pr. m² eller pr. ton. Så kan du lave fakturaen på stedet, når terrassen er færdig.",
+    "format_pdf_desc": "En pdf, hvor arbejdsløn og materialer står hver for sig, er det bilag, kunden gemmer til sit fradrag.",
+    "faq_title": "Spørgsmål om faktura for anlægsgartner",
+    "faqs": [
+      {
+        "question": "Kan kunden få fradrag for en ny terrasse?",
+        "answer": "Belægningsarbejde er med i servicefradraget fra 2025, men kun for arbejdslønnen. Fakturaen skal vise den for sig, og du skal være momsregistreret. Kunden indberetter selv fradraget."
+      },
+      {
+        "question": "Er der moms på materialer og maskinleje?",
+        "answer": "Ja, 25 % på hele fakturaen (momsloven § 33). Alle linjer har samme sats, så én faktura dækker hele opgaven."
+      },
+      {
+        "question": "Skal jeg fakturere græsslåning pr. gang eller pr. måned?",
+        "answer": "Begge dele er fint. Pr. måned giver færre fakturaer; skriv blot datoerne for hvert besøg i linjen."
+      },
+      {
+        "question": "Kan jeg bede om penge, før jeg køber sten?",
+        "answer": "Ja, med en acontofaktura for en del af prisen. Moms skal betales af forudbetalingen, når den modtages, og i praksis trækker du den fra på slutfakturaen. I appen kan en linje ikke være negativ: fakturer restbeløbet og nævn acontofakturaen i bemærkningerne."
+      },
+      {
+        "question": "Hvad med regn og frost?",
+        "answer": "Skriv i tilbuddet, at vejret kan flytte datoerne. Fakturer kun de dage, du faktisk arbejdede, og nævn dem i linjen."
+      }
+    ],
+    "cta_title": "Lav din faktura som anlægsgartner",
+    "links_title": "Fakturatyper for anlægsgartnere",
+    "related": [
+      {
+        "name": "Faktura for rengøring",
+        "slug": "faktura-rengoering"
+      },
+      {
+        "name": "Faktura for murer",
+        "slug": "faktura-murer"
+      }
+    ],
+    "invoice_types": ["faktura-arbejdsloen-og-materialer", "acontofaktura", "abonnementsfaktura"]
+  },
+  {
+    "slug": "faktura-personlig-traener",
+    "translation_of": "personal-training",
+    "niche": "Faktura for personlig træner",
+    "title": "Faktura personlig træner: skabelon og eksempel | Invoicor",
+    "meta_description": "Faktura for personlig træner: moms fra 2026 for kunder på 30 år og derover, klippekort og pakker. Med eksempel, udfyld online og hent en pdf.",
+    "h1": "Faktura personlig træner: skabelon og eksempel",
+    "subtitle": "Til personlige trænere og holdinstruktører: pakker, enkelte timer og de nye momsregler fra 1. januar 2026.",
+    "intro_paragraph": "Personlig træning sælges oftest som pakker: ti timer, et forløb på tre måneder eller et klippekort, som kunden betaler forud. Fra 1. januar 2026 er der desuden kommet moms på faget. Træning af voksne på 30 år og derover er momspligtig med 25 %, mens træning af personer op til og med 29 år fortsat er fritaget. Fakturaen afhænger altså af, hvem kunden er. Invoicor laver fakturaen som pdf med én momssats pr. faktura. Nedenfor: hvad der skal stå, et eksempel med en pakke på ti timer og de nye regler forklaret enkelt.",
+    "include_title": "Det skal stå på en faktura for personlig træning",
+    "what_to_include_intro": "En kunde, der betaler 6.000 kr. forud, vil kunne se præcis, hvad pengene dækker. Det er også det, du henviser til, når et klip er brugt.",
+    "req_1_title": "Pakken med navn og antal timer",
+    "req_1_text": "»Personlig træning, 10 timer à 60 min.« er tydeligt. Skriv antallet af timer som antal og prisen pr. time som pris, så kunden kan regne pakken efter.",
+    "req_2_title": "Udløbsdato",
+    "req_2_text": "Skriv i bemærkningerne, hvornår pakken skal være brugt, fx »gyldig til 31. maj 2026«. Uden en dato kan en kunde dukke op med gamle klip et år senere.",
+    "req_3_title": "Ekstra ydelser på egne linjer",
+    "req_3_text": "Kostvejledning, kropsanalyse og træningsprogram får hver sin linje. Så kan kunden se, hvad forløbet består af.",
+    "req_4_title": "Varer for sig",
+    "req_4_text": "Elastikker, kosttilskud eller en træningsmåtte er varer, ikke træning. De har 25 % moms uanset kundens alder; giv dem egne linjer.",
+    "req_5_title": "Den rigtige momssats",
+    "req_5_text": "25 % for kunder på 30 år og derover, ingen moms for kunder op til og med 29 år. Invoicor har én momssats pr. faktura, så de to slags kunder får hver deres faktura.",
+    "req_6_title": "Afbudsregler",
+    "req_6_text": "Skriv din regel kort i bemærkningerne, fx »afbud senere end 24 timer før tæller som brugt time«. En regel, der kun står på hjemmesiden, bliver ikke læst.",
+    "what_to_include_outro": "Kunden ved så, hvad hun har betalt for, og hvornår pakken udløber.",
+    "paper_label": "Faktura for personlig træner · eksempel",
+    "sample_breakdown_title": "Eksempel på en faktura for personlig træning",
+    "sample_breakdown_intro": "En ny kunde på 42 år i København køber en pakke på ti timer, en samtale om kost og en kropsanalyse ved opstart. Kunden er over 30, så der er 25 % moms. Pakken betales forud.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Personlig træning, pakke med 10 timer à 60 min.",
+        "qty": "10",
+        "rate": "640,00 kr.",
+        "amount": "6.400,00 kr."
+      },
+      {
+        "description": "Kostvejledning ved opstart, 60 min.",
+        "qty": "1",
+        "rate": "750,00 kr.",
+        "amount": "750,00 kr."
+      },
+      {
+        "description": "Kropsanalyse og målinger",
+        "qty": "1",
+        "rate": "300,00 kr.",
+        "amount": "300,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "7.450,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "1.862,50 kr.",
+    "sample_breakdown_balance": "9.312,50 kr.",
+    "sample_breakdown_notes": "Pakken er gyldig til 31. maj 2026 og betales forud senest 8 dage efter fakturadatoen. Første træning 5. januar 2026. Afbud senere end 24 timer før tæller som brugt time.",
+    "industry_notes_title": "Det skal du vide om moms på personlig træning",
+    "industry_notes": [
+      {
+        "title": "Moms fra 1. januar 2026",
+        "text": "Fra 2026 er der 25 % moms på kommerciel fitness og personlig træning, både hold og én til én, når kunden er 30 år eller derover. Det samme gælder dans, musik, sang og fritidskurser for voksne. Undervisning af personer op til og med 29 år er fortsat fritaget. Grænsen på 50.000 kr. gælder: er du under den, er registrering frivillig."
+      },
+      {
+        "title": "To fakturaer, når satserne blandes",
+        "text": "Træner du en kunde på 25 år, viser fakturaen ingen moms, men pdf'en udskriver altid momslinjen, også med »Moms (0%)« og 0,00 kr. Skriv i bemærkningerne, hvorfor der ikke er moms. Køber samme kunde også en vare med moms, så lav to fakturaer. Hvordan du dokumenterer kundens alder, kan din revisor hjælpe med."
+      },
+      {
+        "title": "Forudbetalte pakker",
+        "text": "Betaler kunden pakken, før timerne er brugt, er betalingsdagen det tidspunkt, hvor momsen skal opgøres for det beløb (momsloven § 23, stk. 3). Momsen hører altså til den måned, kunden betaler, ikke den måned, timerne bliver brugt."
+      }
+    ],
+    "mistakes_title": "Tre fejl på fakturaer for personlige trænere",
+    "mistakes": [
+      {
+        "title": "Moms af en kunde på 28 år",
+        "text": "Kunder op til og med 29 år er fritaget, og en faktura med moms gør træningen 25 % for dyr. Tjek alderen ved hver ny kunde."
+      },
+      {
+        "title": "Ingen udløbsdato",
+        "text": "Uden en dato på fakturaen står du med ubrugte klip i årevis. Skriv en rimelig frist i bemærkningerne fra første faktura."
+      },
+      {
+        "title": "Betaling til din private MobilePay",
+        "text": "Penge til din private konto blandes med dit eget forbrug og er svære at finde i bogføringen. Brug en erhvervskonto, og skriv den på fakturaen."
+      }
+    ],
+    "tip_title": "Et tip til personlige trænere",
+    "pro_tip": "Gem dine pakker som varer i appen, fx »10 timer« og »20 timer«. Så tager en ny faktura få sekunder, og prisen er den samme for alle kunder.",
+    "format_pdf_desc": "En pdf med pakke, antal timer og udløbsdato er kundens kvittering og dit bevis, når et klip bliver diskuteret.",
+    "faq_title": "Spørgsmål om faktura for personlig træner",
+    "faqs": [
+      {
+        "question": "Skal en personlig træner opkræve moms i 2026?",
+        "answer": "Ja, for kunder på 30 år og derover, med 25 %, hvis du er momsregistreret. Kunder op til og med 29 år er fritaget. Er din omsætning under 50.000 kr. om året, er registrering frivillig."
+      },
+      {
+        "question": "Hvordan fakturerer jeg et klippekort?",
+        "answer": "Som én faktura med antal timer gange pris pr. time, betalt forud, og en udløbsdato i bemærkningerne. Momsen opgøres, når kunden betaler."
+      },
+      {
+        "question": "Hvad gør jeg, hvis en kunde fylder 30 midt i et forløb?",
+        "answer": "Det er ikke afklaret i de regler, vi har tjekket. Spørg din revisor, før du sender næste faktura."
+      },
+      {
+        "question": "Kan jeg have kunder med og uden moms i samme app?",
+        "answer": "Ja, men på hver sin faktura, fordi Invoicor har én momssats pr. faktura. Duplikér en faktura, og ret satsen, når du skifter type."
+      },
+      {
+        "question": "Hvordan fakturerer jeg online coaching hver måned?",
+        "answer": "Lav en faktura for den første måned, og duplikér den hver måned: kopien får det næste nummer og beholder kunde og linjer. Invoicor sender ikke fakturaer automatisk."
+      }
+    ],
+    "cta_title": "Lav din faktura som personlig træner",
+    "links_title": "Fakturatyper for personlige trænere",
+    "related": [
+      {
+        "name": "Faktura for konsulent",
+        "slug": "faktura-konsulent"
+      }
+    ],
+    "invoice_types": ["abonnementsfaktura", "faktura-uden-moms", "freelance-faktura"]
+  },
+  {
+    "slug": "faktura-konsulent",
+    "translation_of": "consulting",
+    "niche": "Faktura for konsulent",
+    "title": "Faktura konsulent: skabelon og eksempel | Invoicor",
+    "meta_description": "Konsulentfaktura med timepris, fast pris og kørsel, 25 % moms, EU-kunder med omvendt betalingspligt og renter ved for sen betaling. Gratis pdf.",
+    "h1": "Faktura konsulent: skabelon og eksempel",
+    "subtitle": "Til selvstændige konsulenter og rådgivere, der fakturerer virksomheder: timer, faste opgaver, kørsel og betalingsfrist sat rigtigt op.",
+    "intro_paragraph": "En konsulent sender sjældent mange fakturaer, men de er store, og de går til en kreditorafdeling, der tjekker dem mod en aftale. Mangler ordrenummeret, eller er timerne ikke beskrevet, ligger fakturaen stille, til nogen spørger. Til offentlige myndigheder skal fakturaen være en e-faktura (OIOUBL eller Peppol via NemHandel), og Invoicor laver pdf'er, ikke e-fakturaer. Mellem virksomheder er e-faktura stadig frivilligt, så en pdf er fint. Nedenfor: hvad der skal stå, et eksempel med timer, en workshop og kørsel, EU-kunder og reglerne for renter.",
+    "include_title": "Det skal stå på en konsulentfaktura",
+    "what_to_include_intro": "Kreditorafdelingen kender ikke dig, kun aftalen. Fakturaen skal kunne godkendes, uden at nogen behøver at ringe til dig.",
+    "req_1_title": "Kundens ordre- eller aftalenummer",
+    "req_1_text": "Står der et indkøbsordrenummer eller en kontraktreference i aftalen, så skriv det i første linje eller i bemærkningerne. Mange virksomheder afviser fakturaer uden.",
+    "req_2_title": "Timer og timepris med opgave",
+    "req_2_text": "Skriv antallet af timer som antal, fx »22,5 timer«, timeprisen som pris og hvad timerne gik til. Invoicor har ingen tidsregistrering, så du lægger timerne ind fra dit eget regneark.",
+    "req_3_title": "Faste opgaver på egne linjer",
+    "req_3_text": "En workshop eller en rapport til fast pris står som én linje med antal 1. Så er det tydeligt, hvad der er timer, og hvad der er aftalt pris.",
+    "req_4_title": "Periode og leveringsdato",
+    "req_4_text": "Skriv perioden i linjen, fx »oktober 2026«. Leveringsdatoen skal stå, hvis den er en anden end fakturadatoen, og Invoicor har ikke et felt til den.",
+    "req_5_title": "CVR-numre og fuld adresse",
+    "req_5_text": "Dit CVR- eller SE-nummer står i feltet »CVR-nummer«. Skriv kundens navn og adresse, og ved EU-kunder også kundens momsnummer.",
+    "req_6_title": "Betalingsfrist og bankoplysninger",
+    "req_6_text": "En tydelig dato for betaling, ikke kun »netto 30«, plus reg.nr. og kontonummer eller IBAN. Så er der ingen tvivl om, hvornår renterne begynder at løbe.",
+    "what_to_include_outro": "En faktura, der svarer til aftalen punkt for punkt, bliver godkendt i første forsøg.",
+    "paper_label": "Konsulentfaktura · eksempel",
+    "sample_breakdown_title": "Eksempel på en konsulentfaktura",
+    "sample_breakdown_intro": "En selvstændig konsulent i Aarhus fakturerer en dansk virksomhed i Vejle for oktober: rådgivning på timer, en workshop til fast pris og kørsel til kunden. 25 % moms.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Rådgivning om indkøbsproces, oktober 2026",
+        "qty": "22,5 timer",
+        "rate": "1.150,00 kr.",
+        "amount": "25.875,00 kr."
+      },
+      {
+        "description": "Workshop for ledergruppen, 21. oktober, fast pris",
+        "qty": "1",
+        "rate": "9.500,00 kr.",
+        "amount": "9.500,00 kr."
+      },
+      {
+        "description": "Kørsel Aarhus-Vejle tur/retur, 2 gange, km",
+        "qty": "146",
+        "rate": "3,50 kr.",
+        "amount": "511,00 kr."
+      }
+    ],
+    "sample_breakdown_subtotal": "35.886,00 kr.",
+    "sample_breakdown_tax_label": "Moms 25 %",
+    "sample_breakdown_tax": "8.971,50 kr.",
+    "sample_breakdown_balance": "44.857,50 kr.",
+    "sample_breakdown_notes": "Indkøbsordre PO-77310. Ydelser leveret 1. til 31. oktober 2026. Betales senest 30. november 2026 til reg.nr. 1234, konto 0012345678. Ved for sen betaling beregnes renter efter renteloven.",
+    "industry_notes_title": "Det skal du vide om konsulentfakturaer",
+    "industry_notes": [
+      {
+        "title": "Kunder i andre EU-lande",
+        "text": "Sælger du rådgivning til en virksomhed i et andet EU-land, skal fakturaen vise kundens momsnummer, dit eget og teksten »omvendt betalingspligt«, og den skal udstedes senest den 15. i måneden efter. Pdf'en viser momslinjen som »Moms (0%)« med 0,00 kr.; din bemærkning forklarer hvorfor. Kunder uden for EU: tjek reglerne med din revisor."
+      },
+      {
+        "title": "Renter og kompensation",
+        "text": "Efter renteloven er renten Nationalbankens udlånsrente plus 8 procentpoint. Er der ikke aftalt en frist, løber renten fra 30 dage efter, at du har sendt fakturaen. Over for virksomheder kan du kræve en fast kompensation på 310 kr. én gang pr. faktura. Rykkergebyrer er højst 100 kr. pr. rykker og højst tre."
+      },
+      {
+        "title": "Kørsel og udgifter",
+        "text": "Kørsel er normalt ikke et udlæg, men en almindelig ydelse med moms. Et beløb holdes kun uden for momsen, når du betaler det i kundens navn uden tillæg og bogfører det på en udlægskonto. Selve bogføringen hører til i dit bogføringssystem eller hos din bogholder; Invoicor laver fakturaen."
+      }
+    ],
+    "mistakes_title": "Tre fejl på konsulentfakturaer",
+    "mistakes": [
+      {
+        "title": "»Konsulentbistand, oktober« uden detaljer",
+        "text": "En linje uden timer og opgave sendes tilbage til godkendelse hos den, der købte dig ind. Beskriv kort, hvad timerne gik til."
+      },
+      {
+        "title": "Glemt kørsel",
+        "text": "Står kørsel i aftalen, så fakturer den samme måned. En kørselsfaktura tre måneder efter bliver sjældent betalt uden diskussion."
+      },
+      {
+        "title": "Uklar betalingsfrist",
+        "text": "»Netto 30« kan tælles fra fakturadatoen eller fra modtagelsen. Skriv en dato, så du ved præcis, hvornår fakturaen er forfalden."
+      }
+    ],
+    "tip_title": "Et tip til konsulenter",
+    "pro_tip": "Send fakturaen den første hverdag efter månedens udgang, hver måned. Kreditorafdelingen vænner sig til den, og dine penge kommer på samme tid hver gang.",
+    "format_pdf_desc": "En pdf med ordrenummer og periode kan lægges direkte ind i kundens godkendelsesflow og ser ens ud for alle, der godkender den.",
+    "faq_title": "Spørgsmål om konsulentfaktura",
+    "faqs": [
+      {
+        "question": "Skal der moms på konsulentydelser?",
+        "answer": "Ja, 25 % ved salg til danske kunder (momsloven § 33). Til virksomheder i andre EU-lande bruger du omvendt betalingspligt: ingen dansk moms, kundens momsnummer og en bemærkning på fakturaen."
+      },
+      {
+        "question": "Hvordan fakturerer jeg en fast månedlig aftale?",
+        "answer": "Én linje med aftalen og måneden, fx »Rådgivning efter aftale, november 2026«. Invoicor har ingen faste fakturaer, så du duplikerer sidste måneds faktura og retter måneden."
+      },
+      {
+        "question": "Må jeg kræve renter, hvis kunden betaler for sent?",
+        "answer": "Ja. Renten er Nationalbankens udlånsrente plus 8 procentpoint, og over for virksomheder kan du kræve 310 kr. i kompensation én gang pr. faktura."
+      },
+      {
+        "question": "Kan jeg fakturere en kommune med en pdf?",
+        "answer": "Nej, offentlige myndigheder skal have en e-faktura via NemHandel (OIOUBL eller Peppol). Invoicor laver kun pdf'er, så brug et andet værktøj til de kunder."
+      },
+      {
+        "question": "Skal jeg have et CVR-nummer for at fakturere som konsulent?",
+        "answer": "Hvis du driver din egen virksomhed, ja. Ved små, enkeltstående opgaver kan der gælde andre regler; tjek din situation på skat.dk."
+      }
+    ],
+    "cta_title": "Lav din konsulentfaktura",
+    "links_title": "Fakturatyper for konsulenter",
+    "related": [
+      {
+        "name": "Faktura for personlig træner",
+        "slug": "faktura-personlig-traener"
+      }
+    ],
+    "invoice_types": ["faktura-timer", "faktura-ydelser", "udlaeg-faktura"]
   }
 ]
