@@ -1,1 +1,1426 @@
-[]
+[
+  {
+    "slug": "rechnungsprogramm-maler",
+    "translation_of": "painters",
+    "industry": "Maler",
+    "icon": "Paintbrush",
+    "color": "blue",
+    "title": "Rechnungsprogramm für Maler: vom iPhone | Invoicor",
+    "meta_description": "Rechnungsprogramm für Maler: Aufmaß in m², Vorarbeiten und Material als gespeicherte Positionen, Farbtöne in den Hinweisen, PDF vom iPhone. Jetzt testen.",
+    "badge_text": "Für Maler und Lackierer",
+    "h1": "Das Rechnungsprogramm für Maler: Rechnung schreiben, bevor die Folie weg ist",
+    "subtitle": "Der Kunde sieht frische Wände, nicht das Spachteln, Schleifen und Abkleben davor. Mit Invoicor schreiben Malerbetriebe und Solo-Maler die Rechnung auf dem iPhone, mit Aufmaß, Vorarbeiten und Farbtönen, noch auf der Baustelle. Gedacht für kleine Betriebe mit vielen Privatkunden: Invoicor erstellt PDF-Rechnungen, keine XRechnung oder ZUGFeRD.",
+    "stats_label": "Maler auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Aufmaß in m², Stundensatz oder Pauschale"
+      },
+      {
+        "label": "§35a-Anteil",
+        "value": "Lohn getrennt vom Material ausweisen"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Maler bei der Abrechnung machen",
+    "industry_mistake_1_title": "Die Vorarbeiten stecken im m²-Preis.",
+    "industry_mistake_1_text": "Abdecken, Tapete ablösen, Risse füllen und Tiefgrund kosten oft so viel Zeit wie der Anstrich selbst. Verschwinden sie in einem Wandpreis, vergleicht der Kunde Sie mit einem Angebot, das sie einfach weglässt. Eigene Zeilen zeigen, was Sie wirklich geleistet haben.",
+    "industry_mistake_2_title": "Zusatzarbeiten nur mündlich vereinbart.",
+    "industry_mistake_2_text": "„Wenn Sie schon da sind, machen Sie bitte noch den Flur.“ Auf der Rechnung wird daraus schnell Streit. Bestätigen Sie den Zusatzauftrag kurz per Nachricht und rechnen Sie ihn als eigene Position mit Datum ab.",
+    "industry_mistake_3_title": "Die Rechnung erst am Wochenende geschrieben.",
+    "industry_mistake_3_text": "Wer abends im Büro aus Zetteln abrechnet, vergisst die zweite Decke oder den lackierten Heizkörper. Und je später die Rechnung kommt, desto später kommt das Geld. Am besten entsteht sie bei der Abnahme, solange Kunde und Aufmaß noch vor Ihnen sind.",
+    "features_title": "So rechnen Maler mit Invoicor ab",
+    "feature_1_title": "Ihre Preise als gespeicherte Positionen",
+    "feature_1_text": "Speichern Sie Wände pro m², Decken, Lackierarbeiten pro Stück und Vorarbeiten pro Stunde einmal als Produkte. Beim nächsten Auftrag wählen Sie die Positionen aus, tragen die Flächen aus dem Aufmaß ein, und Invoicor rechnet Zwischensumme, Rabatt und Steuer.",
+    "feature_2_title": "Farbtöne und Leistungszeitraum in den Hinweisen",
+    "feature_2_text": "Ein eigenes Feld für das Leistungsdatum gibt es nicht, also schreiben Sie „Leistungszeitraum: 9.–13. November 2026“ in die Hinweise, dazu Farbton und Mischnummer pro Raum. Das PDF trägt die Überschrift „Rechnung“ und die Zeile „MwSt.“, Ihr Logo steht auf einer von 31 Vorlagen.",
+    "feature_3_title": "Ähnliche Aufträge per Duplikat",
+    "feature_3_text": "Die zweite Wohnung im selben Haus für dieselbe Hausverwaltung? Duplizieren Sie die letzte Rechnung, sie bekommt die nächste Nummer, und Sie ändern nur Objekt, Flächen und Zeitraum. Bezahlte Rechnungen markieren Sie als „Paid“, so sehen Sie, was noch offen ist.",
+    "expert_tip_title": "Tipp vom Profi: das Restgebinde beschriften",
+    "expert_tip_text": "Schreiben Sie Raum und Farbton auf jeden Eimer, den Sie beim Kunden lassen, und erwähnen Sie das in den Hinweisen der Rechnung. Wer in zwei Jahren eine Macke ausbessern will, findet Farbe und Ihre Nummer an derselben Stelle.",
+    "real_scenario_title": "Abnahme am Freitagnachmittag",
+    "real_scenario_text": "Sie haben in einer Mietwohnung in Kassel Schlafzimmer und Küche gestrichen. Bei der Abnahme bessern Sie zwei Stellen nach, dann öffnen Sie Invoicor auf dem iPhone und wählen den gespeicherten Kunden. Sie tippen Ihre Positionen an: Vorarbeiten 3 Std. zu 54,00 € (162,00 €), Wände 2 Anstriche 54 m² zu 9,50 € (513,00 €), Decken 18,5 m² zu 8,00 € (148,00 €) und Material mit 96,40 €. Das sind 919,40 € netto, 174,69 € USt und 1.094,09 € brutto. In die Hinweise kommen Leistungszeitraum, Farbtöne und der Arbeitsanteil von 823,00 € netto. Die Mieterin bekommt das PDF per E-Mail, bevor Sie die Abdeckfolie im Transporter haben.",
+    "line_items_title": "Typische Positionen auf einer Malerrechnung",
+    "common_line_items": [
+      {
+        "name": "Vorarbeiten: abdecken, abkleben, spachteln",
+        "desc": "Schutz von Boden und Möbeln, Risse und Löcher füllen, schleifen.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Wände, 2 Anstriche Dispersionsfarbe",
+        "desc": "Nach Aufmaß, Raum und Farbton in der Beschreibung.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Decken, 1 Anstrich",
+        "desc": "Nach Aufmaß, getrennt von den Wänden.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Tapete entfernen",
+        "desc": "Alte Tapete einweichen und ablösen.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Heizkörper oder Türen lackieren",
+        "desc": "Anschleifen, grundieren, lackieren.",
+        "type": "pro Stück"
+      },
+      {
+        "name": "Treppenhaus laut Angebot",
+        "desc": "Fester Preis mit Angebotsnummer.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Farbe und Verbrauchsmaterial",
+        "desc": "Farbe, Lack, Tiefgrund, Folie, Klebeband.",
+        "type": "Material"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus dem Malerhandwerk",
+    "industry_glossary": [
+      {
+        "term": "Aufmaß",
+        "definition": "Die gemessenen Flächen und Längen nach der Arbeit; Grundlage der Abrechnung nach m²."
+      },
+      {
+        "term": "Tiefgrund",
+        "definition": "Grundierung, die saugende oder sandende Untergründe festigt, bevor gestrichen wird."
+      },
+      {
+        "term": "Deckkraft",
+        "definition": "Wie gut eine Farbe den Untergrund verdeckt; bestimmt, ob ein oder zwei Anstriche nötig sind."
+      },
+      {
+        "term": "Übermessen",
+        "definition": "Kleine Öffnungen wie Fenster werden beim Aufmaß nicht abgezogen; was gilt, regelt Ihr Vertrag oder bei VOB-Verträgen die VOB/C."
+      },
+      {
+        "term": "Stundenlohnarbeiten",
+        "definition": "Arbeiten, die nach Zeit statt nach Fläche abgerechnet werden, belegt mit Stundenzetteln."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §35a und E-Rechnung für Maler",
+    "tax_or_compliance_text": "Malerarbeiten tragen 19 % USt; als Kleinunternehmer nach §19 UStG (höchstens 25.000 € Umsatz im Vorjahr und 100.000 € im laufenden Jahr) weisen Sie keine aus und nennen die Befreiung. Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen absetzen (höchstens 1.200 € im Jahr), nur für Lohn, Fahrt- und Maschinenkosten, nicht für Material, und nur bei Überweisung statt Barzahlung. Arbeiten Sie als Nachunternehmer für ein Bauunternehmen, das selbst Bauleistungen erbringt, kann nach §13b UStG der Auftraggeber die Steuer schulden; klären Sie Ihren Fall mit Ihrem Steuerberater. Für Privatkunden bleibt das PDF in Ordnung. An Unternehmen und Hausverwaltungen ist ein PDF bis 31. Dezember 2026 mit deren Zustimmung erlaubt, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 braucht es dort E-Rechnungen. Ausgenommen sind Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt PDFs, keine XRechnung oder ZUGFeRD. Rechnungen bewahren Sie 8 Jahre auf.",
+    "faq_title": "Fragen von Malern",
+    "faqs": [
+      {
+        "question": "Für wen ist Invoicor als Rechnungsprogramm gedacht?",
+        "answer": "Für Solo-Maler und kleine Betriebe, die ihre Rechnungen unterwegs schreiben, oft an Privatkunden, Mieter und Eigentümer. Wer viele Rechnungen an Firmen schickt, braucht ab 2028 E-Rechnungen, die Invoicor nicht erstellt; auch eine Buchhaltung ersetzt Invoicor nicht."
+      },
+      {
+        "question": "Kann ich nach Aufmaß in m² abrechnen?",
+        "answer": "Ja. Speichern Sie eine Position wie „Wände, 2 Anstriche, pro m²“ und tragen Sie die gemessene Fläche als Menge ein, auch mit Komma wie 68,5. Den Betrag rechnet Invoicor aus. Das Aufmaßblatt schicken Sie mit dem PDF in derselben E-Mail."
+      },
+      {
+        "question": "Wie rechne ich eine Abschlagszahlung ab?",
+        "answer": "Als eigene Rechnung vor oder während der Arbeit. In der Schlussrechnung führen Sie in der App den Restbetrag als Position auf und nennen die bereits gestellten Rechnungen in den Hinweisen, denn negative Positionen nimmt die App nicht an; im kostenlosen Online-Generator können Sie den Abschlag als Minusbetrag abziehen. Wie Sie die Steuer auf Abschläge verrechnen, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Kann ich mit Invoicor ein Angebot schreiben?",
+        "answer": "Nein. Invoicor erstellt nur Rechnungen. Schreiben Sie Ihr Angebot wie bisher und nehmen Sie die Angebotsnummer in die Rechnung auf, dann sieht der Kunde, dass Positionen und Preise übereinstimmen."
+      },
+      {
+        "question": "Wie schreibe ich die Rechnung, wenn ich nur eine Steuernummer habe?",
+        "answer": "Das Feld in Invoicor druckt „USt-IdNr.“. Haben Sie keine, lassen Sie es leer und schreiben Sie Ihre Steuernummer in die Hinweise. Als Kleinunternehmer gehört dort auch der Satz „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“ hin."
+      }
+    ],
+    "cta_title": "Ihre nächste Malerrechnung vom iPhone.",
+    "related": [
+      {
+        "name": "Fliesenleger",
+        "slug": "rechnungsprogramm-fliesenleger"
+      },
+      {
+        "name": "Elektriker",
+        "slug": "rechnungsprogramm-elektriker"
+      },
+      {
+        "name": "SHK-Betriebe",
+        "slug": "rechnungsprogramm-shk"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-reinigungsfirma",
+    "translation_of": "cleaning-services",
+    "industry": "Gebäudereinigung",
+    "icon": "Home",
+    "color": "teal",
+    "title": "Rechnungsprogramm Reinigungsfirma: Monatsrechnung | Invoicor",
+    "meta_description": "Rechnungsprogramm für Reinigungsfirmen: Monatsrechnung duplizieren, Glas- und Sonderreinigung einzeln abrechnen, PDF vom iPhone senden. Kostenlos testen.",
+    "badge_text": "Für Reinigungsfirmen und Reinigungskräfte",
+    "h1": "Das Rechnungsprogramm für Ihre Reinigungsfirma: jeden Monat in Minuten abgerechnet",
+    "subtitle": "Dieselben Kunden, jeden Monat fast dieselbe Rechnung, und trotzdem schleichen sich ein falscher Monat oder eine vergessene Glasreinigung ein. Mit Invoicor schreiben kleine Reinigungsfirmen und selbstständige Reinigungskräfte ihre Rechnungen auf dem iPhone, an Privathaushalte, Praxen und Büros. Invoicor erstellt PDF-Rechnungen, keine XRechnung oder ZUGFeRD.",
+    "stats_label": "Gebäudereinigung auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Abrechnung",
+        "value": "Monatspauschale, m² oder Stundensatz"
+      },
+      {
+        "label": "§13b",
+        "value": "Gilt, wenn der Kunde selbst Gebäudereinigung erbringt"
+      },
+      {
+        "label": "Privathaushalte",
+        "value": "§35a: Arbeitsanteil erkennbar machen"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Reinigungsfirmen bei der Abrechnung machen",
+    "industry_mistake_1_title": "Die Rechnung vom Vormonat unverändert verschickt.",
+    "industry_mistake_1_text": "Wer die letzte Rechnung kopiert, lässt leicht den alten Monat im Text stehen. Die Buchhaltung des Kunden schickt sie zurück, und Sie warten zwei Wochen länger auf Ihr Geld. Prüfen Sie vor dem Senden Nummer, Datum und Leistungszeitraum.",
+    "industry_mistake_2_title": "Extras gehen in der Pauschale unter.",
+    "industry_mistake_2_text": "Die Grundreinigung nach dem Umbau, die zusätzliche Treppenhausreinigung vor der Eigentümerversammlung: Ohne eigene Zeile erwartet der Kunde sie beim nächsten Mal umsonst. Jede Leistung über den Vertrag hinaus gehört einzeln auf die Rechnung.",
+    "industry_mistake_3_title": "Leerfahrten nicht geregelt.",
+    "industry_mistake_3_text": "Niemand öffnet, der Schlüssel liegt nicht da, und Ihre Kraft fährt wieder. Steht im Vertrag nichts zu Ausfallgebühren, lässt sich die Anfahrt kaum durchsetzen. Regeln Sie es schriftlich und berechnen Sie es dann als eigene Position.",
+    "features_title": "So rechnen Reinigungsfirmen mit Invoicor ab",
+    "feature_1_title": "Monatsrechnung per Duplikat",
+    "feature_1_text": "Invoicor schickt keine Rechnungen automatisch. Stattdessen duplizieren Sie die Rechnung vom Vormonat mit einem Tippen; sie erhält die nächste Rechnungsnummer, und Sie ändern Datum, Monat und Extras. Für zwanzig Stammkunden dauert das am Monatsende eine knappe Stunde statt eines Abends.",
+    "feature_2_title": "Objekte und Leistungen gespeichert",
+    "feature_2_text": "Kunden speichern Sie unbegrenzt, Ihre Leistungen als Produkte: Unterhaltsreinigung als Monatspauschale, Glasreinigung pro m², Grundreinigung pro Stunde, Hygieneartikel als Material. Objekt und Vertragsnummer schreiben Sie in die Beschreibung, damit die Buchhaltung die Rechnung zuordnet.",
+    "feature_3_title": "Den Überblick über offene Rechnungen",
+    "feature_3_text": "Ist das Geld da, markieren Sie die Rechnung als „Paid“; eine falsche Rechnung setzen Sie auf „Cancelled“ und erstellen eine neue. So sehen Sie vor dem nächsten Einsatz, welcher Haushalt den letzten Monat noch nicht bezahlt hat. Ihren eigenen Zahlungslink und die Bankverbindung druckt das PDF mit.",
+    "expert_tip_title": "Tipp vom Profi: die nächste Glasreinigung ankündigen",
+    "expert_tip_text": "Schreiben Sie in die Hinweise der Monatsrechnung, wann die nächste Glas- oder Grundreinigung ansteht. Der Kunde plant sie ein, und aus der Ankündigung wird ohne Telefonat ein Auftrag.",
+    "real_scenario_title": "Monatsende bei einer kleinen Reinigungsfirma",
+    "real_scenario_text": "Es ist der 30. November, Sie sitzen nach der letzten Tour im Auto vor einer Zahnarztpraxis in Münster. In Invoicor duplizieren Sie die Rechnung vom Oktober: Unterhaltsreinigung der Praxis, 3 × wöchentlich, Monatspauschale 640,00 €. Neu dazu kommt die Glasreinigung vom 18. November, 2,5 Std. zu 38,00 € (95,00 €). Netto 735,00 €, dazu 139,65 € USt, zusammen 874,65 €; die Summen rechnet Invoicor. Sie ändern den Leistungszeitraum in den Hinweisen auf November und senden das PDF an die Praxis, die dem PDF bis Ende 2026 zugestimmt hat. Danach duplizieren Sie die Rechnungen Ihrer vier Privathaushalte.",
+    "line_items_title": "Typische Positionen auf einer Reinigungsrechnung",
+    "common_line_items": [
+      {
+        "name": "Unterhaltsreinigung laut Vertrag",
+        "desc": "Objekt, Fläche, Turnus und Monat in der Beschreibung.",
+        "type": "Monatspauschale"
+      },
+      {
+        "name": "Haushaltsreinigung",
+        "desc": "Wohnung oder Haus, pro Einsatz nach Zeit.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Glasreinigung innen und außen",
+        "desc": "Fenster mit Rahmen, nach Glasfläche oder Einsatz.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Grundreinigung oder Bauendreinigung",
+        "desc": "Einmalige Reinigung mit Datum und Objekt.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Teppich- oder Polsterreinigung",
+        "desc": "Sprühextraktion, Raum in der Beschreibung.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Hygieneartikel",
+        "desc": "Handtuchpapier, Seife, Müllbeutel.",
+        "type": "Material"
+      },
+      {
+        "name": "Ausfall- oder Anfahrtspauschale",
+        "desc": "Nur wenn im Vertrag vereinbart.",
+        "type": "Pauschale"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus der Gebäudereinigung",
+    "industry_glossary": [
+      {
+        "term": "Unterhaltsreinigung",
+        "definition": "Die regelmäßige Reinigung nach festem Turnus, meist als Monatspauschale abgerechnet."
+      },
+      {
+        "term": "Grundreinigung",
+        "definition": "Eine gründliche, einmalige Reinigung, die über die laufende Pflege hinausgeht."
+      },
+      {
+        "term": "Leistungsverzeichnis",
+        "definition": "Die Liste im Vertrag, welche Räume wie oft und wie gereinigt werden."
+      },
+      {
+        "term": "Bauendreinigung",
+        "definition": "Die Reinigung nach Bau- oder Renovierungsarbeiten vor der Übergabe."
+      },
+      {
+        "term": "Dauerrechnung",
+        "definition": "Eine einmal ausgestellte Rechnung, die mehrere Zeiträume mit gleichem Betrag abdeckt."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §13b, §35a und E-Rechnung",
+    "tax_or_compliance_text": "Reinigungsleistungen tragen 19 % USt, außer Sie sind Kleinunternehmer nach §19 UStG (höchstens 25.000 € Umsatz im Vorjahr, 100.000 € im laufenden Jahr). Arbeiten Sie als Nachunternehmer für eine Firma, die selbst nachhaltig Gebäudereinigung erbringt, schuldet diese die Steuer (§13b Abs. 2 Nr. 8 UStG), belegt etwa durch eine gültige Bescheinigung USt 1 TG; Ihre Rechnung zeigt dann keine USt und den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Privathaushalte können nach §35a EStG 20 % der Arbeitskosten für haushaltsnahe Dienstleistungen von der Steuer abziehen (höchstens 4.000 € im Jahr), nur für den Arbeitsanteil und nur bei Überweisung. Rechnungen an Privatleute bleiben als PDF in Ordnung. Für Firmenkunden ist ein PDF bis 31. Dezember 2026 mit Zustimmung erlaubt, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 sind E-Rechnungen Pflicht, außer für Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt keine XRechnung oder ZUGFeRD.",
+    "faq_title": "Fragen von Reinigungsfirmen",
+    "faqs": [
+      {
+        "question": "Für welche Reinigungsfirmen passt Invoicor?",
+        "answer": "Für selbstständige Reinigungskräfte und kleine Teams mit Privathaushalten, Praxen und kleinen Büros, die ihre Rechnungen vom Handy schreiben. Wer überwiegend große Firmenkunden betreut, braucht ab 2028 E-Rechnungen; dafür ist Invoicor nicht gemacht."
+      },
+      {
+        "question": "Kann Invoicor die Monatsrechnung automatisch verschicken?",
+        "answer": "Nein. Wiederkehrende Rechnungen gibt es nicht. Sie duplizieren die Rechnung vom Vormonat, prüfen Datum und Leistungszeitraum und senden das PDF per E-Mail oder Messenger. Mit gespeicherten Kunden und Positionen dauert das pro Kunde etwa eine Minute."
+      },
+      {
+        "question": "Wie zeige ich Privatkunden den Arbeitsanteil für §35a?",
+        "answer": "Stellen Sie Arbeitszeit und Material in getrennten Zeilen dar, zum Beispiel Haushaltsreinigung nach Stunden und Reinigungsmittel als Material. Ist alles Arbeit, schreiben Sie in die Hinweise: „Der Rechnungsbetrag enthält ausschließlich Arbeitskosten.“ Was absetzbar ist, prüft der Kunde mit seinem Steuerberater."
+      },
+      {
+        "question": "Wo trage ich den Leistungszeitraum ein?",
+        "answer": "In die Beschreibung der Pauschale oder in die Hinweise, etwa „Leistungszeitraum: 1.–30. November 2026“. Invoicor hat dafür kein eigenes Feld, die Angabe ist aber nach §14 Abs. 4 UStG Pflicht."
+      },
+      {
+        "question": "Kann ich mehrere Objekte eines Kunden auf eine Rechnung schreiben?",
+        "answer": "Ja. Jedes Objekt bekommt eine eigene Zeile mit Adresse und Turnus, so prüft die Hausverwaltung jede Liegenschaft einzeln. Will der Kunde pro Objekt eine Rechnung, duplizieren Sie die erste und ändern die Zeile."
+      }
+    ],
+    "cta_title": "Ihre Reinigungsrechnungen vom iPhone.",
+    "related": [
+      {
+        "name": "Garten- und Landschaftsbau",
+        "slug": "rechnungsprogramm-garten-landschaftsbau"
+      },
+      {
+        "name": "Maler",
+        "slug": "rechnungsprogramm-maler"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-garten-landschaftsbau",
+    "translation_of": "landscaping-lawn-care",
+    "industry": "Garten- und Landschaftsbau",
+    "icon": "Leaf",
+    "color": "green",
+    "title": "Rechnungsprogramm Garten- und Landschaftsbau | Invoicor",
+    "meta_description": "Rechnungsprogramm für Garten- und Landschaftsbau: Gartenpflege, Baumpflege und Winterdienst vom iPhone abrechnen, Entsorgung und Material getrennt.",
+    "badge_text": "Für GaLaBau, Gartenpflege und Winterdienst",
+    "h1": "Das Rechnungsprogramm für Garten- und Landschaftsbau: abrechnen, bevor der Hänger leer ist",
+    "subtitle": "Rasen im Sommer, Laub im Herbst, Winterdienst bei Schnee: Im Garten- und Landschaftsbau wechseln die Leistungen mit der Saison, die Kunden bleiben. Mit Invoicor schreiben Gärtner und kleine GaLaBau-Betriebe ihre Rechnungen auf dem iPhone, mit gespeicherten Kunden und Leistungen. Invoicor erstellt PDF-Rechnungen für Privatkunden und kleine Auftraggeber, keine XRechnung oder ZUGFeRD.",
+    "stats_label": "Garten- und Landschaftsbau auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Stundensatz, m² oder Pauschale pro Einsatz"
+      },
+      {
+        "label": "Saison",
+        "value": "Pflege von März bis November, im Winter Räumdienst"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Gärtner bei der Abrechnung machen",
+    "industry_mistake_1_title": "Die Entsorgung nicht berechnet.",
+    "industry_mistake_1_text": "Ein Hänger Heckenschnitt kostet am Wertstoffhof Gebühren und Ihnen eine Stunde Fahrt. Steht keine eigene Position „Grünschnitt laden und entsorgen“ auf der Rechnung, zahlen Sie das aus Ihrem Gewinn.",
+    "industry_mistake_2_title": "Zuruf-Aufträge vergessen.",
+    "industry_mistake_2_text": "„Können Sie noch kurz die Forsythie schneiden?“ Eine halbe Stunde Arbeit, die Sonntagabend beim Abrechnen niemand mehr weiß. Wer die Rechnung direkt im Garten schreibt, hat jede Zusatzleistung drauf.",
+    "industry_mistake_3_title": "Winterdienst ohne Einsatzliste.",
+    "industry_mistake_3_text": "Wer pro Einsatz abrechnet, braucht die Tage, an denen geräumt und gestreut wurde. Fehlen sie, fragt die Hausverwaltung nach, und die Rechnung bleibt liegen. Notieren Sie jeden Einsatz mit Datum und Uhrzeit.",
+    "features_title": "So rechnen Gärtner mit Invoicor ab",
+    "feature_1_title": "Kunden und Leistungen einmal speichern",
+    "feature_1_text": "Speichern Sie Rasenmähen pro Einsatz, Heckenschnitt nach Stunden, Vertikutieren pro m², Baumfällung als Pauschale und Winterdienst pro Einsatz als Produkte. Kunden speichern Sie unbegrenzt, mit Adresse. Im Garten wählen Sie Kunde und Positionen, tragen Stunden oder Flächen ein und senden das PDF.",
+    "feature_2_title": "Baumpflege und Neuanlagen als eigene Rechnung",
+    "feature_2_text": "Eine Kronenpflege oder eine neue Terrasse ist kein Pflegeeinsatz. Schreiben Sie dafür eine eigene Rechnung mit Arbeit, Maschinen wie Hubsteiger oder Häcksler und Material in getrennten Zeilen. Einen Rabatt für Stammkunden geben Sie in Prozent oder als festen Betrag.",
+    "feature_3_title": "Die Pflegerechnung per Duplikat",
+    "feature_3_text": "Wiederkehrende Rechnungen verschickt Invoicor nicht von selbst. Sie duplizieren die letzte Rechnung, sie bekommt die nächste Nummer, und Sie passen Datum und Einsätze an. Regnet es eine Woche durch, steht auf der Rechnung nur, was wirklich gemacht wurde.",
+    "expert_tip_title": "Tipp vom Profi: Einsatztage in die Beschreibung",
+    "expert_tip_text": "Schreiben Sie bei Pflege und Winterdienst die Einsatztage direkt in die Position: „Rasenmähen am 3., 10., 17. und 24. Juni“ oder „Räumen und Streuen am 5., 6. und 19. Januar“. Der Kunde prüft in Sekunden, und das Leistungsdatum, für das Invoicor kein eigenes Feld hat, steht gleich mit drauf.",
+    "real_scenario_title": "Herbstschnitt in einem Reihenhausgarten",
+    "real_scenario_text": "Sie schneiden in Bielefeld eine Hainbuchenhecke von 30 Metern und vertikutieren den Rasen. Danach setzen Sie sich in den Transporter und öffnen Invoicor. Heckenschnitt 6 Std. zu 48,00 € (288,00 €), Vertikutieren 220 m² zu 0,60 € (132,00 €), Grünschnitt laden und entsorgen als Pauschale 65,00 € und Rasendünger mit 38,50 €. Netto sind das 523,50 €, dazu 99,47 € USt, zusammen 622,97 €. In die Hinweise schreiben Sie das Datum, die Bankverbindung und den Arbeitsanteil. Der Kunde hat das PDF auf dem Handy, bevor Sie am Wertstoffhof stehen.",
+    "line_items_title": "Typische Positionen im Garten- und Landschaftsbau",
+    "common_line_items": [
+      {
+        "name": "Rasenmähen mit Kantenschnitt",
+        "desc": "Pro Einsatz, Einsatztage in der Beschreibung.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Hecken- und Strauchschnitt",
+        "desc": "Schnitt und Aufräumen, nach Zeit.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Vertikutieren oder Rasen neu anlegen",
+        "desc": "Nach Fläche, mit Saatgut oder Rollrasen als Material.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Baumpflege oder Fällung",
+        "desc": "Kronenschnitt oder Fällung mit Seilklettertechnik oder Hubsteiger.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Grünschnitt laden und entsorgen",
+        "desc": "Abfahrt und Gebühren am Wertstoffhof.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Winterdienst: räumen und streuen",
+        "desc": "Pro Einsatz mit Datum, oder als Saisonpauschale.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Pflanzen, Mulch, Dünger, Streugut",
+        "desc": "Material nach Menge.",
+        "type": "Material"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus dem Garten- und Landschaftsbau",
+    "industry_glossary": [
+      {
+        "term": "GaLaBau",
+        "definition": "Kurz für Garten- und Landschaftsbau: Anlage und Pflege von Gärten, Wegen und Grünflächen."
+      },
+      {
+        "term": "Vertikutieren",
+        "definition": "Den Rasen mit Messern anritzen, um Moos und Rasenfilz zu entfernen."
+      },
+      {
+        "term": "Kronenpflege",
+        "definition": "Schnitt von Ästen in der Baumkrone, um den Baum gesund und verkehrssicher zu halten."
+      },
+      {
+        "term": "Winterdienst",
+        "definition": "Räumen und Streuen von Wegen und Gehwegen; die Pflicht dazu kann der Eigentümer übertragen."
+      },
+      {
+        "term": "Saisonpauschale",
+        "definition": "Ein fester Betrag für eine ganze Saison, unabhängig von der Zahl der Einsätze."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §35a und E-Rechnung im GaLaBau",
+    "tax_or_compliance_text": "Gartenarbeiten tragen in der Regel 19 % USt; für den reinen Verkauf von Pflanzen kann ein anderer Satz gelten, klären Sie das mit Ihrem Steuerberater. Invoicor kennt einen Steuersatz pro Rechnung, unterschiedliche Sätze gehören also auf zwei Rechnungen. Als Kleinunternehmer nach §19 UStG (bis 25.000 € Vorjahresumsatz, 100.000 € im laufenden Jahr) weisen Sie keine USt aus und nennen die Befreiung. Privatkunden können nach §35a EStG 20 % der Arbeitskosten absetzen, für Handwerkerleistungen bis 1.200 € und für haushaltsnahe Dienstleistungen bis 4.000 € im Jahr, nur für Lohn, Maschinen- und Fahrtkosten, nicht für Material, und nur bei Überweisung; welche Grenze für Pflege, Neuanlage oder Winterdienst gilt, klären Ihre Kunden mit ihrem Steuerberater. Pflaster- und Erdarbeiten für Bauunternehmen können unter §13b UStG fallen. An Privatkunden bleibt das PDF in Ordnung; an Firmen und Hausverwaltungen ist es bis 31. Dezember 2026 mit Zustimmung erlaubt, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz, ab 2028 nur noch als E-Rechnung. Ausgenommen sind Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt keine E-Rechnungen.",
+    "faq_title": "Fragen von Gärtnern",
+    "faqs": [
+      {
+        "question": "Wie rechne ich Winterdienst ab?",
+        "answer": "Pro Einsatz mit Datum oder als Saisonpauschale, je nach Vertrag. Bei Einsätzen schreiben Sie die Tage in die Position oder die Hinweise und tragen die Zahl der Einsätze als Menge ein. Bei der Pauschale nennen Sie den Zeitraum, etwa „Winterdienst 1. November 2026 bis 31. März 2027“."
+      },
+      {
+        "question": "Kann ich Baumpflege und Gartenpflege auf eine Rechnung schreiben?",
+        "answer": "Ja, als getrennte Zeilen. Übersichtlicher ist oft eine eigene Rechnung für die Baumarbeiten, besonders wenn ein Hubsteiger oder eine Fällgenehmigung dazugehört. Für den Kunden ist dann klar, was zur laufenden Pflege gehört."
+      },
+      {
+        "question": "Wie zeige ich Privatkunden den Anteil für §35a?",
+        "answer": "Arbeit, Maschinen und Anfahrt stehen in eigenen Zeilen, Pflanzen, Erde und Dünger als Material. Zusätzlich können Sie den Arbeitsanteil in die Hinweise schreiben. Was der Kunde absetzen kann, prüft er mit seinem Steuerberater."
+      },
+      {
+        "question": "Kann der Kunde direkt über die Rechnung bezahlen?",
+        "answer": "Sie können Ihren eigenen Zahlungslink und Ihre Bankverbindung auf die Rechnung setzen. Invoicor selbst nimmt kein Geld an und behält nichts ein. Ist die Zahlung da, markieren Sie die Rechnung als „Paid“."
+      },
+      {
+        "question": "Für welche Betriebe ist Invoicor gedacht?",
+        "answer": "Für Gärtner, Hausmeisterdienste und kleine GaLaBau-Betriebe, die viele Privatkunden haben und ihre Rechnungen unterwegs schreiben. Für große Bauprojekte mit Abschlägen, Aufmaß nach VOB und E-Rechnungen an Bauträger brauchen Sie eine Branchensoftware."
+      }
+    ],
+    "cta_title": "Ihre Gartenrechnungen vom iPhone.",
+    "related": [
+      {
+        "name": "Gebäudereinigung",
+        "slug": "rechnungsprogramm-reinigungsfirma"
+      },
+      {
+        "name": "Maler",
+        "slug": "rechnungsprogramm-maler"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-fotografen",
+    "translation_of": "photographers-videographers",
+    "industry": "Fotografen",
+    "icon": "Camera",
+    "color": "purple",
+    "title": "Rechnungsprogramm für Fotografen: 7 % oder 19 % | Invoicor",
+    "meta_description": "Rechnungsprogramm für Fotografen: Shooting, Bildbearbeitung und Nutzungsrechte getrennt, Pakete gespeichert, PDF-Vorlagen mit Logo. Kostenlos testen.",
+    "badge_text": "Für Fotografen und Videografen",
+    "h1": "Das Rechnungsprogramm für Fotografen: so schön wie Ihre Bilder",
+    "subtitle": "Ihre Kunden buchen Sie für Ihren Blick, also sollte auch die Rechnung gut aussehen. Mit Invoicor schreiben Fotografinnen und Fotografen ihre Rechnungen auf dem iPhone, mit Logo, gespeicherten Paketen und Nutzungsrechten in eigener Zeile. Gemacht für Selbstständige mit vielen Privatkunden und Kleinunternehmer: Invoicor erstellt PDF-Rechnungen, keine XRechnung oder ZUGFeRD.",
+    "stats_label": "Fotografen auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "7 % für Nutzungsrechte, 19 % für bestellte Bilder"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Paket, Tagessatz oder Preis pro Bild"
+      },
+      {
+        "label": "Kleinunternehmer",
+        "value": "Bis 25.000 € Vorjahresumsatz: keine USt"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Fotografen bei der Abrechnung machen",
+    "industry_mistake_1_title": "Den Termin ohne Anzahlung freigehalten.",
+    "industry_mistake_1_text": "Ein Samstag im Juni ist nur einmal zu vergeben. Halten Sie ihn ohne Anzahlung frei und das Paar sagt ab, haben Sie andere Anfragen umsonst abgelehnt. Schicken Sie die Anzahlungsrechnung gleich nach der Zusage.",
+    "industry_mistake_2_title": "„inkl. Rechte“ statt einer klaren Lizenz.",
+    "industry_mistake_2_text": "Ein Firmenkunde, der Ihre Bilder plötzlich auf Plakaten nutzt, beruft sich auf die Rechnung. Schreiben Sie in eine eigene Zeile, welche Nutzungsrechte er bekommt: Medien, Gebiet, Dauer, einfach oder ausschließlich. Das bestimmt auch den Steuersatz mit.",
+    "industry_mistake_3_title": "Die Galerie vor der Zahlung freigegeben.",
+    "industry_mistake_3_text": "Hat der Kunde alle Dateien, sinkt die Eile beim Bezahlen. Viele Fotografen geben die hochaufgelösten Bilder erst nach Zahlungseingang frei und schreiben das in die Hinweise der Rechnung.",
+    "features_title": "So rechnen Fotografen mit Invoicor ab",
+    "feature_1_title": "Vorlagen, die zu Ihrem Stil passen",
+    "feature_1_text": "Wählen Sie aus 31 Vorlagen und setzen Sie Ihr Logo darauf. Das PDF trägt die Überschrift „Rechnung“, die Steuerzeile „MwSt.“ und Ihre Bankverbindung. Für Kunden im Ausland schreiben Sie die Rechnung in einer von 11 Sprachen und 38 Währungen.",
+    "feature_2_title": "Pakete und Leistungen gespeichert",
+    "feature_2_text": "Speichern Sie Ihre Pakete, den Tagessatz, die Bildbearbeitung pro Bild, Anfahrt pro Kilometer und typische Nutzungsrechte als Produkte. Für ein Familienshooting oder eine Hochzeit wählen Sie die Positionen aus und passen nur Menge und Beschreibung an.",
+    "feature_3_title": "Anzahlung und Restbetrag als zwei Rechnungen",
+    "feature_3_text": "Die Anzahlung schreiben Sie gleich nach der Buchung als eigene Rechnung. Für den Rest duplizieren Sie sie, ändern die Position auf den Restbetrag und nennen die Anzahlungsrechnung in den Hinweisen. Eine Erinnerungsfunktion gibt es nicht: Den Status „Paid“ setzen Sie selbst, wenn das Geld da ist.",
+    "expert_tip_title": "Tipp vom Profi: Freigabe der Bilder in die Hinweise",
+    "expert_tip_text": "Schreiben Sie in die Hinweise, wann und wie die Bilder kommen: „Die Online-Galerie wird nach Zahlungseingang freigeschaltet.“ So weiß der Kunde, warum es sich lohnt, schnell zu überweisen, und Sie müssen nicht nachfragen.",
+    "real_scenario_title": "Familienshooting an einem Sonntag",
+    "real_scenario_text": "Sie fotografieren als Kleinunternehmerin eine Familie im Park in Freiburg. Am Montag ist die Auswahl fertig, die Familie bestellt zehn Bilder mehr als im Paket. Sie öffnen Invoicor, wählen den gespeicherten Kunden und Ihr „Familienpaket, 1 Std., 15 bearbeitete Bilder“ zu 349,00 €, dazu 10 zusätzliche Bilder zu 15,00 € (150,00 €) und die Anfahrt mit 25,00 €. Zusammen 524,00 €, ohne Umsatzsteuer. Die Steuerzeile druckt Invoicor mit 0 %, in die Hinweise kommen der §19-Satz, Ihre Steuernummer, das Datum des Shootings und die Freigabe der Galerie nach Zahlung. Das PDF geht per Messenger raus, noch bevor Sie die Galerie hochgeladen haben.",
+    "line_items_title": "Typische Positionen auf einer Fotografenrechnung",
+    "common_line_items": [
+      {
+        "name": "Shooting-Paket",
+        "desc": "Dauer, Ort und Zahl der bearbeiteten Bilder in der Beschreibung.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Tagessatz oder Halbtagessatz",
+        "desc": "Aufnahmezeit bei Firmen- und Werbeaufträgen.",
+        "type": "Tagessatz"
+      },
+      {
+        "name": "Bildbearbeitung",
+        "desc": "Auswahl, Farbkorrektur, Retusche pro Bild.",
+        "type": "pro Bild"
+      },
+      {
+        "name": "Nutzungsrecht",
+        "desc": "Medien, Gebiet, Dauer, einfach oder ausschließlich.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Anfahrt",
+        "desc": "Kilometer ab Ihrem Standort oder Pauschale.",
+        "type": "pro km"
+      },
+      {
+        "name": "Album oder Abzüge",
+        "desc": "Format und Anzahl in der Beschreibung.",
+        "type": "Material"
+      },
+      {
+        "name": "Zweitfotograf oder Assistenz",
+        "desc": "Zusätzliche Begleitung nach Stunden.",
+        "type": "Stundensatz"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus der Fotografie",
+    "industry_glossary": [
+      {
+        "term": "Nutzungsrecht",
+        "definition": "Die Erlaubnis, Bilder auf bestimmte Weise zu verwenden; der Fotograf bleibt Urheber."
+      },
+      {
+        "term": "Einfaches Nutzungsrecht",
+        "definition": "Der Kunde darf die Bilder nutzen, der Fotograf darf sie auch anderen lizenzieren."
+      },
+      {
+        "term": "Ausschließliches Nutzungsrecht",
+        "definition": "Nur der Kunde darf die Bilder in der vereinbarten Weise nutzen."
+      },
+      {
+        "term": "Tagessatz",
+        "definition": "Ein fester Preis für einen Aufnahmetag, üblich bei Firmen- und Werbeaufträgen."
+      },
+      {
+        "term": "Ausfallhonorar",
+        "definition": "Ein vereinbarter Betrag, wenn der Kunde kurzfristig absagt; nur mit Vereinbarung durchsetzbar."
+      }
+    ],
+    "tax_or_compliance_title": "7 % oder 19 %, Kleinunternehmer und E-Rechnung",
+    "tax_or_compliance_text": "Für die Einräumung urheberrechtlicher Nutzungsrechte, etwa wenn Sie Fotos zur Veröffentlichung lizenzieren, gilt in der Regel 7 % (§12 Abs. 2 Nr. 7c UStG mit UStAE 12.7 Abs. 18). Übergeben Sie nur die bestellten Abzüge oder Bilddateien, wie bei Hochzeiten und Porträts für Privatkunden, sind es 19 %. Wo die Grenze bei Ihrem Auftrag liegt, klären Sie mit Ihrem Steuerberater. Invoicor kennt einen Steuersatz pro Rechnung: Leistungen zu 7 % und 19 % gehören auf zwei Rechnungen. Als Kleinunternehmer nach §19 UStG (bis 25.000 € Vorjahresumsatz, 100.000 € im laufenden Jahr) entfällt die Frage. Für Firmenkunden in einem anderen EU-Land mit USt-IdNr. fällt keine deutsche USt an; die Rechnung nennt beide USt-IdNrn. und „Steuerschuldnerschaft des Leistungsempfängers“. An Unternehmen in Deutschland ist ein PDF bis 31. Dezember 2026 mit Zustimmung erlaubt, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 braucht es E-Rechnungen, außer für Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt PDFs, keine XRechnung oder ZUGFeRD. Privatkunden bekommen weiter ein PDF.",
+    "faq_title": "Fragen von Fotografen",
+    "faqs": [
+      {
+        "question": "Für welche Fotografen passt Invoicor?",
+        "answer": "Für Selbstständige und Kleinunternehmer, die viel für Privatkunden fotografieren, etwa Hochzeiten, Familien und Porträts, und ihre Rechnungen vom Handy schreiben. Arbeiten Sie überwiegend für Agenturen und Firmen, denken Sie an die E-Rechnung ab 2028, die Invoicor nicht erstellt."
+      },
+      {
+        "question": "Kann ich auf einer Rechnung 7 % und 19 % ausweisen?",
+        "answer": "Nein, Invoicor kennt einen Steuersatz pro Rechnung. Schreiben Sie für die Nutzungsrechte und für Abzüge oder Album zwei Rechnungen. Ob Ihr Auftrag überhaupt aufgeteilt werden muss, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wie rechne ich die Anzahlung für eine Hochzeit ab?",
+        "answer": "Mit einer eigenen Anzahlungsrechnung nach der Zusage. In der Schlussrechnung führt die App den Restbetrag als Position auf, die Anzahlungsrechnung nennen Sie in den Hinweisen; im kostenlosen Online-Generator können Sie die Anzahlung auch als Minusbetrag abziehen. Nach §14 Abs. 5 UStG zieht die Schlussrechnung erhaltene Anzahlungen und die Steuer darauf ab; wie Sie das darstellen, klären Sie mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wo schreibe ich das Datum des Shootings hin?",
+        "answer": "In die Beschreibung der Position oder in die Hinweise, zum Beispiel „Shooting am 18. Oktober 2026“. Das Leistungsdatum ist nach §14 Abs. 4 UStG Pflicht, Invoicor hat dafür aber kein eigenes Feld."
+      },
+      {
+        "question": "Kann ich einem Kunden in der Schweiz eine Rechnung in Franken schicken?",
+        "answer": "Ja. Invoicor rechnet in 38 Währungen, darunter Schweizer Franken, und schreibt Rechnungen in 11 Sprachen. Ob und wie Sie bei einem Kunden außerhalb der EU Umsatzsteuer ausweisen, klären Sie mit Ihrem Steuerberater."
+      }
+    ],
+    "cta_title": "Ihre Fotografenrechnung vom iPhone.",
+    "related": [
+      {
+        "name": "DJs",
+        "slug": "rechnungsprogramm-dj"
+      },
+      {
+        "name": "Berater und Coaches",
+        "slug": "rechnungsprogramm-berater-coaches"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-fliesenleger",
+    "translation_of": "tile-installers",
+    "industry": "Fliesenleger",
+    "icon": "Grid3x3",
+    "color": "cyan",
+    "title": "Rechnungsprogramm Fliesenleger: m² und lfm | Invoicor",
+    "meta_description": "Rechnungsprogramm für Fliesenleger: Rückbau, Abdichtung, Fliesen pro m² und Silikon pro lfm als gespeicherte Positionen. PDF vom iPhone, kostenlos testen.",
+    "badge_text": "Für Fliesen-, Platten- und Mosaikleger",
+    "h1": "Das Rechnungsprogramm für Fliesenleger: jede Schicht im Bad auf der Rechnung",
+    "subtitle": "Der Kunde sieht die Fliesen, nicht den Rückbau, den Ausgleich und die Abdichtung darunter. Mit Invoicor zeigen Fliesenleger jeden Arbeitsschritt mit m², laufenden Metern und Stückzahl, auf einer sauberen Rechnung vom iPhone, während die Fugen trocknen. Für Solo-Betriebe und kleine Teams mit vielen Privatkunden: Invoicor erstellt PDF-Rechnungen, keine XRechnung oder ZUGFeRD.",
+    "stats_label": "Fliesenleger auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Abrechnung",
+        "value": "m² für Flächen, lfm für Fugen und Schienen, Stück für Nischen"
+      },
+      {
+        "label": "§13b",
+        "value": "Für Bauunternehmen: keine USt, Hinweis auf der Rechnung"
+      },
+      {
+        "label": "§35a-Anteil",
+        "value": "Lohn getrennt vom Material ausweisen"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Fliesenleger bei der Abrechnung machen",
+    "industry_mistake_1_title": "Die Abdichtung im Fliesenpreis versteckt.",
+    "industry_mistake_1_text": "Verbundabdichtung, Dichtband und Ausgleich sind in der Dusche oft die halbe Arbeit. Stehen sie nicht auf der Rechnung, vergleicht der Kunde Ihren m²-Preis mit einem Angebot ohne Abdichtung und hält Sie für teuer.",
+    "industry_mistake_2_title": "Ein Preis für jedes Format.",
+    "industry_mistake_2_text": "Großformat 60 × 120 braucht einen ebenen Untergrund und zwei Leute, Mosaik und Fischgrät brauchen Zeit und Verschnitt. Wer alles zum selben m²-Preis abrechnet, verliert an den schweren Flächen. Nennen Sie Format und Verlegemuster in jeder Zeile.",
+    "industry_mistake_3_title": "Kleinkram nicht gezählt.",
+    "industry_mistake_3_text": "Nischen, Ablagen, Abschlussschienen an Außenecken und Silikonfugen kosten viel Zeit. Rechnen Sie sie pro Stück oder pro laufenden Meter ab, statt zu hoffen, dass der m²-Preis sie trägt.",
+    "features_title": "So rechnen Fliesenleger mit Invoicor ab",
+    "feature_1_title": "Jeder Arbeitsschritt als Position",
+    "feature_1_text": "Speichern Sie Rückbau, Ausgleich, Abdichtung, Wandfliesen, Bodenfliesen, Mosaik, Nische, Silikonfuge und Schiene mit Ihren Preisen. Auf der Baustelle wählen Sie die Positionen und tragen m², laufende Meter oder Stück ein; die Zwischensumme rechnet Invoicor.",
+    "feature_2_title": "Rabatt und ein Steuersatz",
+    "feature_2_text": "Geben Sie einem Stammkunden einen Rabatt in Prozent oder als festen Betrag, dann einen Steuersatz für die Rechnung. Das PDF zeigt Zwischensumme, Rabatt, MwSt. und Gesamtbetrag in dieser Reihenfolge. Für §13b-Rechnungen setzen Sie 0 %; das PDF druckt die Steuerzeile dann mit 0,00 €.",
+    "feature_3_title": "Eine Rechnung, die so sauber aussieht wie Ihre Fugen",
+    "feature_3_text": "31 Vorlagen mit Ihrem Logo, die Überschrift „Rechnung“, Ihre Bankverbindung und auf Wunsch Ihr eigener Zahlungslink. Arbeiten Sie für mehrere Bauträger oder Sanitärbetriebe, speichern Sie jeden als Kunden und schreiben die Baustelle in die Hinweise.",
+    "expert_tip_title": "Tipp vom Profi: Produkte in die Beschreibung",
+    "expert_tip_text": "Nennen Sie Abdichtungssystem, Fliesenkleber und Fugenmörtel in der Beschreibung oder den Hinweisen. Der Kunde sieht, dass Sie nicht gespart haben, und wenn Jahre später eine Gewährleistungsfrage kommt, steht alles auf der Rechnung.",
+    "real_scenario_title": "Ein Bad im Reihenhaus",
+    "real_scenario_text": "Nach zwei Wochen ist das Bad in Ulm fertig: alter Belag raus, Dusche abgedichtet, Wände in 30 × 60 und Boden neu gefliest. Die Fliesen hat der Kunde gekauft. Im Transporter öffnen Sie Invoicor: Rückbau 14 m² zu 18,00 € (252,00 €), Abdichtung 9,5 m² zu 32,00 € (304,00 €), Wandfliesen 24 m² zu 58,00 € (1.392,00 €), Bodenfliesen 6,5 m² zu 62,00 € (403,00 €), Silikonfugen 18 lfm zu 6,50 € (117,00 €) und Verlegematerial mit 286,40 €. Netto 2.754,40 €, USt 523,34 €, brutto 3.277,74 €. In die Hinweise kommen Leistungszeitraum, „Fliesen vom Auftraggeber gestellt“ und die Abdichtung. Das PDF geht noch vor der Heimfahrt raus.",
+    "line_items_title": "Typische Positionen auf einer Fliesenleger-Rechnung",
+    "common_line_items": [
+      {
+        "name": "Rückbau alter Fliesen mit Entsorgung",
+        "desc": "Abschlagen, Kleberreste entfernen, Schutt abfahren.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Untergrund ausgleichen und grundieren",
+        "desc": "Spachteln von Wand oder Boden vor dem Verlegen.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Verbundabdichtung mit Dichtband",
+        "desc": "Duschbereich, Ecken und Rohrdurchführungen.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Wand- oder Bodenfliesen verlegen",
+        "desc": "Format und Verlegemuster in der Beschreibung.",
+        "type": "pro m²"
+      },
+      {
+        "name": "Silikonfugen und Abschlussschienen",
+        "desc": "Anschlüsse, Ecken und Kanten.",
+        "type": "pro lfm"
+      },
+      {
+        "name": "Nische oder Ablage",
+        "desc": "Gemauert, abgedichtet und gefliest.",
+        "type": "pro Stück"
+      },
+      {
+        "name": "Kleber, Fugenmörtel, Abdichtung",
+        "desc": "Verlegematerial nach Verbrauch.",
+        "type": "Material"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus dem Fliesenhandwerk",
+    "industry_glossary": [
+      {
+        "term": "Verbundabdichtung",
+        "definition": "Eine Abdichtung direkt unter den Fliesen, die Wasser vom Untergrund fernhält."
+      },
+      {
+        "term": "Dünnbett",
+        "definition": "Verlegen mit wenigen Millimetern Fliesenkleber auf ebenem Untergrund."
+      },
+      {
+        "term": "Großformat",
+        "definition": "Fliesen mit großer Kantenlänge, die einen sehr ebenen Untergrund brauchen."
+      },
+      {
+        "term": "Laufender Meter (lfm)",
+        "definition": "Die Einheit für Fugen, Sockel und Schienen: die Länge, nicht die Fläche."
+      },
+      {
+        "term": "Überzahn",
+        "definition": "Höhenversatz zwischen benachbarten Fliesenkanten; Nivelliersysteme halten ihn klein."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §13b, §35a und E-Rechnung",
+    "tax_or_compliance_text": "Fliesenarbeiten tragen 19 % USt; als Kleinunternehmer nach §19 UStG (bis 25.000 € Vorjahresumsatz, 100.000 € im laufenden Jahr) weisen Sie keine aus und nennen die Befreiung. Fliesen Sie als Nachunternehmer für einen Bauträger, der selbst nachhaltig Bauleistungen erbringt oder eine gültige Bescheinigung USt 1 TG hat, schuldet er die Steuer (§13b UStG); Ihre Rechnung trägt dann „Steuerschuldnerschaft des Leistungsempfängers“. Den Einzelfall bestätigt Ihr Steuerberater. Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen absetzen (höchstens 1.200 € im Jahr), nur für Lohn, Fahrt- und Maschinenkosten, nicht für Material, und nur bei Überweisung. An Privatkunden bleibt das PDF in Ordnung. An Unternehmen ist ein PDF bis 31. Dezember 2026 mit Zustimmung erlaubt, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz; ab 2028 braucht es E-Rechnungen, außer für Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt keine XRechnung oder ZUGFeRD. Rechnungen bewahren Sie 8 Jahre auf.",
+    "faq_title": "Fragen von Fliesenlegern",
+    "faqs": [
+      {
+        "question": "Für welche Fliesenleger ist Invoicor gedacht?",
+        "answer": "Für Solo-Betriebe und kleine Teams, die Bäder, Küchen und Böden für Privatkunden fliesen und die Rechnung auf der Baustelle schreiben wollen. Wer überwiegend für Bauträger arbeitet, braucht ab 2028 E-Rechnungen, die Invoicor nicht erstellt."
+      },
+      {
+        "question": "Kann ich Wand und Boden zu verschiedenen Preisen abrechnen?",
+        "answer": "Ja. Jede Fläche bekommt eine eigene Zeile mit m² und eigenem Preis, auch Mosaik oder Großformat. So sieht der Kunde, warum die Duschwand mehr kostet als der Boden."
+      },
+      {
+        "question": "Was schreibe ich, wenn der Kunde die Fliesen selbst kauft?",
+        "answer": "Sie berechnen nur Arbeit und Verlegematerial und schreiben „Fliesen vom Auftraggeber gestellt“ in die Hinweise. Halten Sie auch fest, wie viele Fliesen übrig sind, falls später eine ausgetauscht werden muss."
+      },
+      {
+        "question": "Wie rechne ich eine Abschlagszahlung für ein großes Bad ab?",
+        "answer": "Als eigene Rechnung vor oder während der Arbeit. In der Schlussrechnung schreiben Sie in der App den Restbetrag als Position und nennen die Abschlagsrechnungen in den Hinweisen; im kostenlosen Online-Generator ziehen Sie den Abschlag als Minusbetrag ab. Die Steuer auf die Abschläge verrechnen Sie nach Rücksprache mit Ihrem Steuerberater."
+      },
+      {
+        "question": "Wo trage ich den Leistungszeitraum ein?",
+        "answer": "In die Hinweise oder in die erste Position, etwa „Leistungszeitraum: 2.–13. November 2026“. Ein eigenes Datumsfeld dafür gibt es in Invoicor nicht, die Angabe ist aber nach §14 Abs. 4 UStG Pflicht."
+      }
+    ],
+    "cta_title": "Ihre Fliesenleger-Rechnung vom iPhone.",
+    "related": [
+      {
+        "name": "Maler",
+        "slug": "rechnungsprogramm-maler"
+      },
+      {
+        "name": "SHK-Betriebe",
+        "slug": "rechnungsprogramm-shk"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-elektriker",
+    "translation_of": "electricians",
+    "industry": "Elektriker",
+    "icon": "Zap",
+    "color": "yellow",
+    "title": "Rechnungsprogramm Elektriker: Rechnung vor Ort | Invoicor",
+    "meta_description": "Rechnungsprogramm für Elektriker auf dem iPhone: Anfahrt, Arbeitszeit und Material getrennt, das PDF noch beim Kunden senden. 3 Rechnungen gratis.",
+    "badge_text": "Elektrohandwerk",
+    "h1": "Rechnungsprogramm Elektriker: die Rechnung ist fertig, bevor Sie losfahren",
+    "subtitle": "Für selbstständige Elektriker und kleine Elektrobetriebe, die viel für Privatkunden arbeiten: Steckdose, Unterverteilung, Wallbox, Fehlersuche. Mit Invoicor schreiben Sie die Rechnung auf dem iPhone, mit Anfahrt, Arbeitszeit und Material in getrennten Zeilen, und senden sie als PDF, solange der Kunde noch neben Ihnen steht.",
+    "stats_label": "Elektriker auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Stundensatz, Anfahrt und Material"
+      },
+      {
+        "label": "§35a-Anteil",
+        "value": "Arbeit und Anfahrt getrennt vom Material"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Elektrikern Geld kosten",
+    "industry_mistake_1_title": "Das Kleinmaterial nicht berechnen.",
+    "industry_mistake_1_text": "Klemmen, Dübel, Aderendhülsen: einzeln Cent-Beträge, über ein Jahr eine spürbare Summe. Viele Betriebe setzen eine Kleinmaterialpauschale pro Einsatz an oder schreiben das Material nach Verbrauch auf. Hauptsache, es steht auf der Rechnung und nicht nur im Transporter.",
+    "industry_mistake_2_title": "Zusatzwünsche vor Ort vergessen.",
+    "industry_mistake_2_text": "Sie sind für die neue Küchensteckdose bestellt, und der Kunde bittet Sie, „wenn Sie schon da sind“, noch zwei Lampen anzuschließen und den Klingeltrafo zu prüfen. Wer die Rechnung erst am Freitagabend schreibt, hat die Hälfte davon vergessen. Tragen Sie jede Zusatzarbeit sofort als eigene Zeile ein.",
+    "industry_mistake_3_title": "Arbeitslohn und Material in einer Summe.",
+    "industry_mistake_3_text": "„Elektroarbeiten Küche, pauschal“ sieht einfach aus, aber Ihr Privatkunde kann daraus den Lohnanteil für seine Steuererklärung nicht ablesen und ruft an. Trennen Sie Anfahrt, Stunden und Material, auch bei kleinen Aufträgen.",
+    "features_title": "So rechnen Elektriker mit Invoicor ab",
+    "feature_1_title": "Ihr Materialkatalog im Handy",
+    "feature_1_text": "Speichern Sie Ihre häufigsten Positionen einmal als Produkte: Schuko-Steckdose mit Rahmen, FI/LS-Schalter, NYM-J 3×1,5 pro Meter, Anfahrtspauschale, Monteurstunde. Auf der Rechnung tippen Sie sie an und ändern nur die Menge. Kunden speichern Sie ebenfalls, in jedem Tarif ohne Begrenzung.",
+    "feature_2_title": "Rechnung vor Ort, als PDF auf Deutsch",
+    "feature_2_text": "Das PDF trägt die Überschrift „Rechnung“, die Steuer als „MwSt.“, Ihre USt-IdNr. und Ihr Logo, in einer von 31 Vorlagen. Bankverbindung und, wenn Sie möchten, Ihren eigenen PayPal- oder Stripe-Link schreiben Sie in die Hinweise. Sie senden per E-Mail, WhatsApp oder AirDrop; die Bildschirme der App sind auf Englisch, die Rechnung ist auf Deutsch.",
+    "feature_3_title": "Stammkunden mit einem Tipp",
+    "feature_3_text": "Der jährliche E-Check beim Vermieter, die Prüfung im Laden um die Ecke: Duplizieren Sie die Rechnung vom letzten Mal. Invoicor vergibt die nächste Rechnungsnummer, Sie ändern Datum und Leistungszeitraum. Ist das Geld da, setzen Sie die Rechnung auf bezahlt (Paid) und sehen in der Liste, was noch offen ist.",
+    "expert_tip_title": "Tipp vom Profi: Fehlersuche als eigene Position",
+    "expert_tip_text": "Ob der Fehler nach zehn Minuten oder nach drei Stunden gefunden ist, weiß vorher niemand. Rechnen Sie die Fehlersuche nach Zeit in einer eigenen Zeile ab und die eigentliche Reparatur darunter. Dann ist Ihre Arbeit bezahlt, auch wenn der Kunde die Reparatur verschiebt, und er sieht, warum der Einsatz länger gedauert hat.",
+    "real_scenario_title": "Ein Dienstagvormittag: der FI fliegt immer wieder raus",
+    "real_scenario_text": "8:30 Uhr, Einfamilienhaus am Stadtrand. Seit dem Regen am Wochenende löst der Fehlerstromschutzschalter immer wieder aus. Sie messen die Stromkreise durch und finden nach einer knappen Stunde die Ursache: Wasser in der Außensteckdose auf der Terrasse. Sie setzen eine Feuchtraumsteckdose. Um 10 Uhr stehen Sie in der Küche und öffnen Invoicor: Kunde gespeichert, Positionen angetippt. Anfahrtspauschale 39,00 €, Arbeitszeit 1,5 Std. à 68,00 € = 102,00 €, Feuchtraumsteckdose 24,90 €, Kleinmaterial 8,40 €. Netto 174,30 €, dazu 19 % MwSt. 33,12 €, zusammen 207,42 €. In die Hinweise schreiben Sie „Leistungsdatum: 17. November 2026“ und „Arbeits- und Fahrtkosten: 141,00 € netto“. Der Hausbesitzer bekommt das PDF per E-Mail und überweist am Abend.",
+    "line_items_title": "Typische Positionen auf einer Elektrikerrechnung",
+    "common_line_items": [
+      {
+        "name": "Anfahrtspauschale",
+        "desc": "Fahrt zum Einsatzort im Stadtgebiet, inklusive Fahrzeug.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Monteurstunde",
+        "desc": "Arbeitszeit des Elektrikers, nach Viertelstunden oder wie vereinbart.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Fehlersuche",
+        "desc": "Messen und Eingrenzen eines Fehlers, getrennt von der Reparatur.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Steckdose oder Schalter setzen",
+        "desc": "Pro Stück, mit Anschluss, ohne neue Leitung.",
+        "type": "pro Stück"
+      },
+      {
+        "name": "NYM-J 3×1,5 mm²",
+        "desc": "Mantelleitung, nach verlegter Länge.",
+        "type": "pro Meter"
+      },
+      {
+        "name": "Wallbox montieren",
+        "desc": "Montage, Anschluss, Inbetriebnahme und Anmeldung beim Netzbetreiber; Zuleitung extra nach Aufmaß.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Kleinmaterial",
+        "desc": "Klemmen, Dübel, Aderendhülsen, Befestigung.",
+        "type": "Material"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus der Elektro-Abrechnung",
+    "industry_glossary": [
+      {
+        "term": "Stundenlohnarbeiten",
+        "definition": "Arbeiten, die nach tatsächlicher Zeit statt zum Festpreis abgerechnet werden, typisch bei Reparatur und Fehlersuche. Ein Stundenzettel mit Unterschrift des Kunden beugt Streit vor."
+      },
+      {
+        "term": "Kleinmaterialpauschale",
+        "definition": "Ein fester Betrag oder Prozentsatz für Verbrauchsmaterial, das sich nicht einzeln zu zählen lohnt. Sollte vorher vereinbart sein."
+      },
+      {
+        "term": "E-Check",
+        "definition": "Wiederkehrende Prüfung elektrischer Anlagen und Geräte, oft für Vermieter, Büros und Läden. Meist als Pauschale pro Anlage oder als Preis pro geprüftem Gerät abgerechnet."
+      },
+      {
+        "term": "Unterverteilung",
+        "definition": "Der Verteilerkasten mit Sicherungen und FI-Schaltern für eine Wohnung oder ein Stockwerk. Ein Umbau wird oft als Paket aus Arbeit und Material angeboten."
+      },
+      {
+        "term": "Bauleistung",
+        "definition": "Arbeit an einem Bauwerk, etwa die Elektroinstallation im Neubau. Entscheidet mit darüber, ob §13b UStG greift, wenn Sie für ein Bauunternehmen arbeiten."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §35a und E-Rechnung für Elektriker",
+    "tax_or_compliance_text": "Elektroarbeiten kosten 19 % Umsatzsteuer (§12 UStG). Als Kleinunternehmer nach §19 UStG weisen Sie keine aus und schreiben stattdessen einen Hinweis wie „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“ auf die Rechnung. Privatkunden können nach §35a EStG 20 % der Arbeitskosten für Handwerkerleistungen abziehen (höchstens 1.200 € im Jahr), aber nur für Arbeit, Anfahrt und Maschinen, nicht für Material, und nur bei Überweisung statt Barzahlung; deshalb gehören diese Kosten getrennt auf die Rechnung. Arbeiten Sie als Subunternehmer für einen Betrieb, der selbst Bauleistungen erbringt, schuldet er nach §13b UStG die Steuer, und Ihre Rechnung trägt den Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ statt der USt. Für Rechnungen an Unternehmen gilt: bis Ende 2026 ein PDF mit Zustimmung des Kunden, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz, ab 2028 nur noch E-Rechnungen (XRechnung oder ZUGFeRD); Kleinunternehmer und Rechnungen bis 250 € brutto sind ausgenommen. Invoicor erstellt PDF-Rechnungen, keine E-Rechnungen. Für Privatkunden bleibt das PDF in Ordnung. Einzelheiten klären Sie mit Ihrem Steuerberater.",
+    "faq_title": "Fragen von Elektrikern",
+    "faqs": [
+      {
+        "question": "Für wen ist Invoicor als Rechnungsprogramm gedacht?",
+        "answer": "Für Elektriker, die allein oder mit wenigen Leuten arbeiten und ihre Rechnungen unterwegs schreiben, vor allem an Privatkunden. Invoicor macht saubere PDF-Rechnungen vom iPhone, ohne Buchhaltung, ohne Lager und ohne Angebotsmodul. Für Gewerbekunden brauchen Sie ab 2027 oder 2028 E-Rechnungen; die erstellt Invoicor nicht."
+      },
+      {
+        "question": "Kann ich mit Invoicor ein Angebot schreiben?",
+        "answer": "Nein. Invoicor schreibt nur Rechnungen. Das Angebot erstellen Sie wie bisher; nach dem Auftrag übernehmen Sie die Positionen aus Ihrer gespeicherten Liste."
+      },
+      {
+        "question": "Wo trage ich das Leistungsdatum ein?",
+        "answer": "In die Hinweise oder in die erste Position, etwa „Leistungsdatum: 17. November 2026“ oder „Leistungszeitraum: 9.–13. November 2026“. Ein eigenes Feld dafür gibt es nicht. Haben Sie nur eine Steuernummer, schreiben Sie sie ebenfalls in die Hinweise, denn das Steuerfeld druckt „USt-IdNr.“."
+      },
+      {
+        "question": "Wie rechne ich eine Wallbox mit Anzahlung ab?",
+        "answer": "Schreiben Sie für die Anzahlung eine eigene Rechnung. In der Schlussrechnung werden die Anzahlung und die Steuer darauf abgezogen (§14 Abs. 5 UStG). Die App kennt keine negativen Beträge: Rechnen Sie dort den Restbetrag ab und nennen Sie Nummer, Betrag und Steuer der Anzahlungsrechnung in den Hinweisen. Der kostenlose Generator im Browser erlaubt eine Minuszeile für die Anzahlung."
+      },
+      {
+        "question": "Brauche ich auf der Baustelle Empfang?",
+        "answer": "Ja. Invoicor speichert Ihre Rechnungen auf Servern in Deutschland und braucht deshalb eine Internetverbindung. Ohne Netz im Keller schreiben Sie die Rechnung im Auto."
+      }
+    ],
+    "cta_title": "Rechnungen für Elektriker, direkt vom Einsatzort.",
+    "related": [
+      {
+        "name": "SHK-Betriebe",
+        "slug": "rechnungsprogramm-shk"
+      },
+      {
+        "name": "Maler",
+        "slug": "rechnungsprogramm-maler"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-shk",
+    "translation_of": "plumbers-hvac",
+    "industry": "SHK-Betriebe",
+    "icon": "Droplets",
+    "color": "blue",
+    "title": "Rechnungsprogramm SHK für Heizung und Sanitär | Invoicor",
+    "meta_description": "Rechnungsprogramm SHK fürs iPhone: Anfahrt, Notdienst, Monteurstunden und Teile getrennt, die Rechnung als PDF direkt nach dem Einsatz senden.",
+    "badge_text": "Sanitär, Heizung, Klima",
+    "h1": "Rechnungsprogramm SHK: abrechnen, solange Sie noch im Heizungskeller stehen",
+    "subtitle": "Für Installateure und kleine SHK-Betriebe mit vielen Einsätzen bei Privatkunden und Hausverwaltungen. Invoicor macht aus Anfahrt, Notdienstzuschlag, Monteurstunden und Ersatzteilen eine klare PDF-Rechnung auf dem iPhone, die Sie noch vor Ort senden. Keine E-Rechnung, keine Buchhaltung: ein schnelles Rechnungsprogramm für unterwegs.",
+    "stats_label": "SHK-Betriebe auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Anfahrt, Stunden, Teile, Zuschläge"
+      },
+      {
+        "label": "§35a-Anteil",
+        "value": "Lohn und Anfahrt getrennt ausweisen"
+      }
+    ],
+    "industry_mistakes_title": "Abrechnungsfehler im SHK-Alltag",
+    "industry_mistake_1_title": "Den Notdienstzuschlag nur am Telefon nennen.",
+    "industry_mistake_1_text": "Sonntagabend, Rohrbruch: Am Telefon nennen Sie den Zuschlag, auf der Rechnung fehlt er später, oder er steht da und der Kunde erinnert sich nicht mehr. Schreiben Sie den Zuschlag als eigene Zeile mit der Uhrzeit des Einsatzes. Dann ist er belegt, und Sie vergessen ihn nicht.",
+    "industry_mistake_2_title": "Die Rechnung erst Wochen später schreiben.",
+    "industry_mistake_2_text": "Wer Rechnungen am Monatsende im Büro schreibt, wartet einen Monat länger auf sein Geld, und der Kunde hat den Einsatz bis dahin halb vergessen. Dazu kommt: Ein Privatkunde gerät erst 30 Tage nach Fälligkeit und Zugang der Rechnung in Verzug, und nur, wenn die Rechnung darauf hinweist (§286 Abs. 3 BGB). Je früher sie da ist, desto früher läuft die Frist.",
+    "industry_mistake_3_title": "Eine Anfahrtspauschale für jede Entfernung.",
+    "industry_mistake_3_text": "Die Pauschale passt für das Stadtgebiet. Fahren Sie 40 Minuten aufs Land, zahlen Sie die Differenz selbst. Legen Sie zwei oder drei Zonen fest, speichern Sie jede als eigene Position und wählen Sie auf der Rechnung die passende.",
+    "features_title": "So rechnen SHK-Betriebe mit Invoicor ab",
+    "feature_1_title": "Zuschläge und Zonen als gespeicherte Positionen",
+    "feature_1_text": "Anfahrt Zone 1 und Zone 2, Notdienstzuschlag Wochenende, Monteur- und Helferstunde, Kleinmaterial: Einmal als Produkte angelegt, sind sie auf jeder Rechnung einen Tipp entfernt. Ersatzteile, die Sie oft verbauen, etwa Thermostatköpfe oder Füllventile, speichern Sie mit Preis gleich mit.",
+    "feature_2_title": "Hausverwaltungen als Stammkunden",
+    "feature_2_text": "Legen Sie die Verwaltung einmal als Kunden an und schreiben Sie bei jedem Einsatz Objekt und Wohnung in die erste Position. Kunden sind in jedem Tarif unbegrenzt. Am Status sehen Sie, welche Rechnungen bezahlt sind und welche noch offen. Eine gesendete Rechnung ist gesperrt; für eine Korrektur duplizieren Sie sie.",
+    "feature_3_title": "PDF auf Deutsch, Zahlung ohne Umweg",
+    "feature_3_text": "Das PDF trägt „Rechnung“, „MwSt.“, Ihre USt-IdNr. und Ihr Logo. Bankverbindung und auf Wunsch Ihren eigenen Zahlungslink schreiben Sie in die Hinweise; Invoicor nimmt keinen Anteil an der Zahlung und steht nie zwischen Ihnen und dem Kunden. Sie senden per E-Mail oder WhatsApp, noch bevor Sie den Transporter beladen.",
+    "expert_tip_title": "Tipp vom Profi: Einsatzbericht und Rechnung im selben Moment",
+    "expert_tip_text": "Lassen Sie den Kunden den Arbeitsbericht unterschreiben, solange Sie noch da sind, und schreiben Sie die Rechnung direkt danach aus genau diesem Bericht. Stunden, Teile und Zuschläge stimmen dann überein, und die Nummer des Berichts steht in den Hinweisen. Fragt die Verwaltung später nach, schicken Sie beides zusammen.",
+    "real_scenario_title": "Samstagmorgen, kein warmes Wasser",
+    "real_scenario_text": "7:50 Uhr ruft eine Familie an: Die Therme zeigt eine Störung, kein warmes Wasser, keine Heizung. Um 9 Uhr sind Sie da, lesen den Fehlerspeicher aus und finden ein defektes Drei-Wege-Ventil. Das Teil haben Sie im Wagen, um 10:30 Uhr läuft die Anlage wieder. Am Küchentisch erstellen Sie die Rechnung in Invoicor: Anfahrtspauschale 45,00 €, Notdienstzuschlag Samstag 60,00 €, Monteurstunden 1,5 Std. à 82,00 € = 123,00 €, Drei-Wege-Ventil 168,50 €, Kleinmaterial 9,80 €. Netto 406,30 €, 19 % MwSt. 77,20 €, gesamt 483,50 €. In den Hinweisen: „Leistungsdatum: 21. November 2026, Einsatz 9:00–10:30 Uhr. Arbeits- und Fahrtkosten: 228,00 € netto.“ Die Familie bekommt das PDF per WhatsApp und überweist noch am Wochenende. Sie sind zum Mittag zu Hause.",
+    "line_items_title": "Typische Positionen auf einer SHK-Rechnung",
+    "common_line_items": [
+      {
+        "name": "Anfahrt Zone 1",
+        "desc": "Stadtgebiet, inklusive Fahrzeug.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Notdienstzuschlag",
+        "desc": "Einsatz abends, am Wochenende oder an Feiertagen, wie vereinbart.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Monteurstunde",
+        "desc": "Arbeitszeit Geselle oder Meister, laut Arbeitsbericht.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Helferstunde",
+        "desc": "Arbeitszeit Helfer oder Azubi.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Wartung Gas-Brennwerttherme",
+        "desc": "Reinigung, Abgasmessung, Prüfung der Sicherheitseinrichtungen.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Rohrreinigung",
+        "desc": "Abfluss mit Spirale oder Maschine freigemacht.",
+        "type": "Stundensatz + Gerät"
+      },
+      {
+        "name": "Ersatzteil",
+        "desc": "Mit Hersteller und Typ, zum vereinbarten Preis.",
+        "type": "Material"
+      }
+    ],
+    "industry_glossary_title": "SHK-Begriffe auf der Rechnung",
+    "industry_glossary": [
+      {
+        "term": "Notdienstzuschlag",
+        "definition": "Aufschlag für Einsätze außerhalb der normalen Arbeitszeit. Höhe und Zeiten sollten vorher feststehen, aus der Preisliste oder dem Telefonat."
+      },
+      {
+        "term": "Arbeitsbericht",
+        "definition": "Das vor Ort ausgefüllte Blatt mit Beginn, Ende, Arbeiten und Material, vom Kunden unterschrieben. Grundlage für die Stunden auf der Rechnung."
+      },
+      {
+        "term": "Wartungsvertrag",
+        "definition": "Vereinbarung über regelmäßige Wartung zu einem festen Preis. Abgerechnet pro Termin oder mit einer Dauerrechnung über mehrere Zeiträume."
+      },
+      {
+        "term": "Hydraulischer Abgleich",
+        "definition": "Einstellen der Heizungsanlage, damit jeder Heizkörper die richtige Wassermenge bekommt. Oft als Pauschale pro Anlage oder nach Zahl der Heizkörper abgerechnet."
+      },
+      {
+        "term": "Umlagefähige Kosten",
+        "definition": "Kosten, die ein Vermieter in der Regel auf die Mieter verteilen kann, etwa für Wartung. Darum wollen Hausverwaltungen Wartung und Reparatur in getrennten Zeilen sehen."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, §35a, §13b und E-Rechnung im SHK-Handwerk",
+    "tax_or_compliance_text": "Für SHK-Leistungen gilt der Regelsatz von 19 % (§12 UStG). Kleinunternehmer nach §19 UStG weisen keine Umsatzsteuer aus und verweisen auf die Befreiung. Für Privatkunden zählt §35a EStG: Sie ziehen 20 % der Arbeitskosten für Handwerkerleistungen von der Steuer ab, bis 1.200 € im Jahr, wenn Arbeit, Anfahrt und Maschinenkosten auf der Rechnung vom Material getrennt sind und sie überweisen statt bar zu zahlen. Installieren Sie im Neubau für ein Bauunternehmen, das selbst Bauleistungen erbringt, kann §13b UStG greifen: dann keine USt auf der Rechnung, dafür der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“. Rechnungen an Hausverwaltungen und Gewerbekunden dürfen bis 31. Dezember 2026 ein PDF sein, wenn der Empfänger zustimmt, bis Ende 2027 bei einem Vorjahresumsatz bis 800.000 €; ab 2028 verlangt das Gesetz E-Rechnungen im Format XRechnung oder ZUGFeRD. Ausgenommen sind Kleinunternehmer und Rechnungen bis 250 € brutto, Privatkunden sind nicht betroffen. Invoicor erstellt PDFs, keine E-Rechnungen. Ob ein Wartungseinsatz als Bauleistung zählt, klären Sie mit Ihrem Steuerberater.",
+    "faq_title": "Fragen von SHK-Betrieben",
+    "faqs": [
+      {
+        "question": "Ist Invoicor ein Programm für den ganzen SHK-Betrieb?",
+        "answer": "Nein, Invoicor ist ein schlankes Rechnungsprogramm für das iPhone. Es macht PDF-Rechnungen mit gespeicherten Kunden und Positionen, aber keine Angebote, keine Lagerverwaltung, keine Buchhaltung und keine E-Rechnungen. Es passt zu Installateuren, die allein oder zu zweit arbeiten und viele Privatkunden haben."
+      },
+      {
+        "question": "Wie zeige ich den Lohnanteil für §35a?",
+        "answer": "Schreiben Sie Anfahrt, Monteur- und Helferstunden und Zuschläge in eigene Zeilen und das Material darunter. Zusätzlich hilft ein Satz in den Hinweisen wie „Arbeits- und Fahrtkosten: 228,00 € netto“. So muss Ihr Kunde nichts selbst zusammenrechnen."
+      },
+      {
+        "question": "Der Mieter ruft an, die Hausverwaltung zahlt. Wie schreibe ich die Rechnung?",
+        "answer": "Die Rechnung geht an Ihren Auftraggeber, meist die Verwaltung oder den Eigentümer; klären Sie das schon am Telefon. Objekt, Wohnung und den Mieter als Ansprechpartner vor Ort schreiben Sie in die erste Position oder die Hinweise."
+      },
+      {
+        "question": "Wo steht das Leistungsdatum?",
+        "answer": "In den Hinweisen oder in der Positionsbeschreibung, denn Invoicor hat dafür kein eigenes Feld. Eine reine Steuernummer gehört ebenfalls in die Hinweise, weil das Steuerfeld „USt-IdNr.“ druckt."
+      },
+      {
+        "question": "Brauche ich Empfang im Heizungskeller?",
+        "answer": "Ja. Invoicor speichert Rechnungen auf Servern in Deutschland und braucht eine Internetverbindung. Ohne Netz im Keller erstellen Sie die Rechnung oben in der Küche."
+      }
+    ],
+    "cta_title": "Rechnungen für SHK-Betriebe, direkt nach dem Einsatz.",
+    "related": [
+      {
+        "name": "Elektriker",
+        "slug": "rechnungsprogramm-elektriker"
+      },
+      {
+        "name": "Fliesenleger",
+        "slug": "rechnungsprogramm-fliesenleger"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-personal-trainer",
+    "translation_of": "personal-trainers",
+    "industry": "Personal Trainer",
+    "icon": "Activity",
+    "color": "red",
+    "title": "Rechnungsprogramm Personal Trainer fürs iPhone | Invoicor",
+    "meta_description": "Rechnungsprogramm für Personal Trainer: 10er-Pakete, Einzelstunden und Firmenkurse als PDF-Rechnung vom iPhone, mit Kleinunternehmer-Hinweis.",
+    "badge_text": "Fitness & Coaching",
+    "h1": "Rechnungsprogramm Personal Trainer: Pakete verkaufen, sauber abrechnen",
+    "subtitle": "Für selbstständige Personal Trainer und Online-Coaches, die im Studio, im Park oder beim Kunden zu Hause trainieren. Statt nach der Stunde „Schick es mir einfach per PayPal“ zu sagen, senden Sie mit Invoicor eine richtige Rechnung als PDF, für das 10er-Paket, die Einzelstunde oder den Kurs in einer Firma.",
+    "stats_label": "Personal Trainer auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "10er-Paket, Einzelstunde, Monatspreis"
+      },
+      {
+        "label": "Kunden",
+        "value": "Meist privat: PDF-Rechnung genügt"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die Personal Trainer Geld kosten",
+    "industry_mistake_1_title": "Jede Stunde einzeln kassieren.",
+    "industry_mistake_1_text": "Wer pro Termin bezahlt wird, verliert Kunden in jedem Motivationsloch, weil Absagen dann „Geld spart“. Ein 10er-Paket, bezahlt vor der ersten Einheit, bindet den Kunden und gibt Ihnen planbare Einnahmen. Die Rechnung dafür schreiben Sie, bevor das Paket startet.",
+    "industry_mistake_2_title": "Absagen ohne Regel.",
+    "industry_mistake_2_text": "Eine Stunde, die der Kunde zwei Stunden vorher absagt, ist für Sie verlorene Zeit. Eine Absageregel nützt nur, wenn sie vereinbart ist und Sie sie anwenden: Die Einheit verfällt aus dem Paket oder wird als eigene Position berechnet.",
+    "industry_mistake_3_title": "Geld per Freundschaftszahlung aufs private Konto.",
+    "industry_mistake_3_text": "Private Freundschaftszahlungen sind nicht für Geschäfte gedacht, und am Jahresende fehlt Ihnen für viele Einnahmen ein Beleg. Jede Zahlung sollte eine Rechnung mit Nummer haben, die Sie acht Jahre aufbewahren (§14b UStG). Dann sieht auch Ihr Steuerberater auf einen Blick, was hereinkam.",
+    "features_title": "So rechnen Personal Trainer mit Invoicor ab",
+    "feature_1_title": "Pakete als gespeicherte Produkte",
+    "feature_1_text": "Legen Sie Ihre Angebote einmal an: 10er-Paket, Einzelstunde, Partnertraining, Trainingsplan, Ernährungsberatung. Neue Kunden speichern Sie in Sekunden, in jedem Tarif unbegrenzt. Nach dem Probetraining wählen Sie Kunde und Paket und senden die Rechnung, bevor Sie das Studio verlassen.",
+    "feature_2_title": "Monatspreis per Duplikat",
+    "feature_2_text": "Für Online-Coaching oder einen festen Monatspreis duplizieren Sie die Rechnung vom Vormonat. Invoicor vergibt die nächste Nummer, Sie ändern den Leistungszeitraum und senden. Automatisch verschickt Invoicor nichts, aber das Duplizieren dauert nur Sekunden.",
+    "feature_3_title": "Professionell auf dem Handy des Kunden",
+    "feature_3_text": "Das PDF kommt auf Deutsch, mit Ihrem Logo und in einer von 31 Vorlagen. In den Hinweisen stehen IBAN, Absageregel und auf Wunsch Ihr eigener PayPal- oder Stripe-Link. Einen Rabatt für Studierende oder Paare ziehen Sie als Prozentsatz oder festen Betrag ab.",
+    "expert_tip_title": "Tipp vom Profi: Die Rechnung erinnert an Ihre Regeln",
+    "expert_tip_text": "Schreiben Sie Ihre wichtigsten Bedingungen in die Hinweise, damit sie auf jeder Rechnung stehen: „Paket gültig 3 Monate ab Rechnungsdatum. Absagen bis 24 Stunden vorher kostenfrei, danach gilt die Einheit als genommen.“ Dann hat der Kunde es schwarz auf weiß, und Sie müssen es nicht auf der Trainingsfläche erklären. Vereinbart sein sollten die Regeln natürlich vorher, etwa im Trainingsvertrag.",
+    "real_scenario_title": "Ein neuer Kunde nach dem Probetraining",
+    "real_scenario_text": "Dienstag, 18 Uhr, Probetraining im Park mit einer neuen Kundin. Sie möchte zweimal pro Woche trainieren. Statt „überweis mir einfach was“ öffnen Sie Invoicor auf dem Weg zum Auto, legen die Kundin an und wählen Ihr gespeichertes 10er-Paket (10 × 60 Minuten) für 650,00 €. Sie sind Kleinunternehmer und stellen keinen Steuersatz ein; das PDF zeigt „MwSt. (0 %)“ mit 0,00 €. In den Hinweisen stehen „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“, „Leistungszeitraum: 25. November 2026 bis 24. Februar 2027“ und Ihre IBAN. Das PDF ist per WhatsApp bei ihr, bevor Sie losfahren. Am nächsten Morgen ist das Geld da, und Sie setzen die Rechnung auf bezahlt.",
+    "line_items_title": "Typische Positionen auf einer Rechnung für Personal Training",
+    "common_line_items": [
+      {
+        "name": "10er-Paket Personal Training",
+        "desc": "10 Einheiten à 60 Minuten, gültig 3 Monate.",
+        "type": "Paket"
+      },
+      {
+        "name": "Einzelstunde",
+        "desc": "60 Minuten, im Studio, draußen oder beim Kunden.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Partnertraining",
+        "desc": "Training für zwei Personen.",
+        "type": "pro Einheit"
+      },
+      {
+        "name": "Trainingsplan",
+        "desc": "Individueller Plan für 8 Wochen mit einer Anpassung.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Online-Coaching",
+        "desc": "Plan und wöchentlicher Check-in per Video.",
+        "type": "Monatspreis"
+      },
+      {
+        "name": "Firmenkurs",
+        "desc": "Kurs im Unternehmen, bis 12 Teilnehmer.",
+        "type": "pro Termin"
+      },
+      {
+        "name": "Anfahrt",
+        "desc": "Training beim Kunden außerhalb des Stadtgebiets.",
+        "type": "Pauschale"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus der Trainer-Abrechnung",
+    "industry_glossary": [
+      {
+        "term": "10er-Karte",
+        "definition": "Mehrere Einheiten, im Voraus bezahlt, oft etwas günstiger als die Einzelstunde. Die Rechnung kommt vor dem Start."
+      },
+      {
+        "term": "Absageregel",
+        "definition": "Die vereinbarte Frist, bis zu der ein Termin kostenlos verschoben werden kann. Danach gilt die Einheit als genommen oder wird berechnet."
+      },
+      {
+        "term": "Kleinunternehmerregelung",
+        "definition": "Keine Umsatzsteuer nach §19 UStG, wenn der Umsatz im Vorjahr höchstens 25.000 € und im laufenden Jahr höchstens 100.000 € beträgt. Die Rechnung braucht dann einen Hinweis auf die Befreiung."
+      },
+      {
+        "term": "Firmenfitness",
+        "definition": "Kurse oder Training, die ein Arbeitgeber für sein Team bucht und bezahlt. Ein Geschäftskunde, für den die Regeln zur E-Rechnung gelten."
+      },
+      {
+        "term": "Studiomiete",
+        "definition": "Was Sie einem Studio für Fläche und Geräte zahlen, pro Stunde oder Monat. Eine Ausgabe von Ihnen, keine Position auf der Kundenrechnung."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, Kleinunternehmer und E-Rechnung für Personal Trainer",
+    "tax_or_compliance_text": "Viele Personal Trainer starten als Kleinunternehmer nach §19 UStG: höchstens 25.000 € Umsatz im Vorjahr und 100.000 € im laufenden Jahr. Dann steht keine Umsatzsteuer auf der Rechnung, aber ein Hinweis wie „Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG“; eine feste Formulierung ist nicht vorgeschrieben. In Invoicor stellen Sie dafür keinen Steuersatz ein, das PDF zeigt die Steuerzeile mit 0 %. Liegen Sie darüber, berechnen Sie in der Regel 19 %. Ob einzelne Angebote, etwa Kurse mit Gesundheitsbezug, anders behandelt werden, klären Sie mit Ihrem Steuerberater. Zahlt ein Kunde ein Paket im Voraus, braucht auch diese Rechnung alle Pflichtangaben (§14 Abs. 5 UStG). Für Privatkunden bleibt eine PDF-Rechnung erlaubt. Bei Firmenkursen gilt für Rechnungen an Unternehmen: PDF bis Ende 2026 mit Zustimmung, bis Ende 2027 bei bis zu 800.000 € Vorjahresumsatz, danach E-Rechnung (XRechnung oder ZUGFeRD), außer Sie sind Kleinunternehmer oder die Rechnung liegt bei höchstens 250 € brutto. Invoicor erstellt keine E-Rechnungen.",
+    "faq_title": "Fragen von Personal Trainern",
+    "faqs": [
+      {
+        "question": "Ist Invoicor das Richtige für mich als Personal Trainer?",
+        "answer": "Wenn Sie allein arbeiten und vor allem Privatkunden haben, ja. Invoicor schreibt PDF-Rechnungen auf dem iPhone, mit gespeicherten Kunden und Paketen. Es ist keine Buchungs- oder Studiosoftware und erstellt keine E-Rechnungen für Unternehmen."
+      },
+      {
+        "question": "Zählt Invoicor, wie viele Einheiten im Paket übrig sind?",
+        "answer": "Nein. Invoicor kümmert sich um die Rechnung, nicht um Termine oder Restguthaben. Viele Trainer führen dafür eine einfache Liste und erstellen in Invoicor die Rechnung für das nächste Paket, sobald das alte aufgebraucht ist."
+      },
+      {
+        "question": "Wie rechne ich einen Rabatt für Paare oder Studierende ab?",
+        "answer": "Fügen Sie der Rechnung einen Rabatt in Prozent oder als festen Betrag hinzu. Er steht unter der Zwischensumme, sodass der Kunde den Normalpreis und seinen Vorteil sieht."
+      },
+      {
+        "question": "Kann mein Kunde mit Karte oder PayPal zahlen?",
+        "answer": "Ja, wenn Sie einen eigenen Zahlungslink haben, etwa von PayPal oder Stripe. Den schreiben Sie in die Hinweise. Das Geld geht direkt an Sie; Invoicor nimmt keine Gebühr und sieht die Zahlung nicht."
+      },
+      {
+        "question": "Brauche ich für eine Einzelstunde für 80 € eine vollständige Rechnung?",
+        "answer": "Bis 250 € brutto genügt eine Kleinbetragsrechnung (§33 UStDV): Ihr Name und Ihre Anschrift, Datum, Leistung, Bruttobetrag und Steuersatz oder der Kleinunternehmer-Hinweis. Nummer und Kundendaten schaden trotzdem nicht und erleichtern Ihre Übersicht."
+      }
+    ],
+    "cta_title": "Rechnungen für Personal Trainer, gleich nach dem Training.",
+    "related": [
+      {
+        "name": "Berater und Coaches",
+        "slug": "rechnungsprogramm-berater-coaches"
+      },
+      {
+        "name": "DJs",
+        "slug": "rechnungsprogramm-dj"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-dj",
+    "translation_of": "djs",
+    "industry": "DJs",
+    "icon": "Disc3",
+    "color": "pink",
+    "title": "DJ Rechnungsprogramm: Gage, Technik, Anfahrt | Invoicor",
+    "meta_description": "DJ Rechnungsprogramm fürs iPhone: Gage, Verlängerung, Licht und Anfahrt auf einer PDF-Rechnung pro Auftritt, Anzahlung und Rest sauber getrennt.",
+    "badge_text": "Für DJs",
+    "h1": "DJ Rechnungsprogramm: eine Rechnung für Gage, Licht und die Stunde extra",
+    "subtitle": "Eine Hochzeit ist selten nur Musik: Beschallung der Trauung, Licht, Moderation, die Verlängerung um Mitternacht und die Anfahrt kommen dazu. Invoicor hilft Hochzeits-, Event- und Club-DJs, jeden Teil des Auftritts auf eine klare PDF-Rechnung vom iPhone zu bringen, für das Brautpaar genauso wie für die Agentur.",
+    "stats_label": "DJs auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Gage pauschal, Verlängerung pro Stunde"
+      },
+      {
+        "label": "Kunden",
+        "value": "Brautpaare privat, Clubs und Agenturen B2B"
+      }
+    ],
+    "industry_mistakes_title": "Fehler, die DJs Gage kosten",
+    "industry_mistake_1_title": "Den Termin ohne Anzahlung blocken.",
+    "industry_mistake_1_text": "Einen Samstag im Juni halten Sie frei, das Paar meldet sich nicht mehr, und Sie haben drei andere Anfragen abgesagt. Schicken Sie die Rechnung über die Anzahlung mit dem Vertrag und bestätigen Sie den Termin erst, wenn sie bezahlt ist.",
+    "industry_mistake_2_title": "Die Verlängerung per Handschlag.",
+    "industry_mistake_2_text": "Um halb eins bittet der Bräutigam um eine Stunde mehr, und Sie sagen ja. Steht der Satz für die Verlängerung nicht im Vertrag, wird über diese Stunde später gestritten. Vereinbaren Sie ihn vorher und rechnen Sie die Stunde als eigene Zeile mit Uhrzeit ab.",
+    "industry_mistake_3_title": "Extras verschenken, um den Auftrag zu bekommen.",
+    "industry_mistake_3_text": "Uplights, eine zweite Anlage für die freie Trauung, ein Funkmikrofon für die Reden: Jedes Extra kostet Material, Aufbauzeit und Verschleiß. Führen Sie sie als eigene Positionen, auch wenn Sie im Paket einen Rabatt geben. Dann sieht das Paar den Wert, und Sie kennen den Preis fürs nächste Mal.",
+    "features_title": "So rechnen DJs mit Invoicor ab",
+    "feature_1_title": "Pakete und Extras gespeichert",
+    "feature_1_text": "Hochzeitspaket bis 1 Uhr, Firmenfeier, Trauungsbeschallung, Uplight pro Stück, Moderation, Verlängerung pro Stunde, Anfahrt pro Kilometer: Einmal als Produkte angelegt, ist jede Rechnung ein paar Tipps. Location und Datum der Feier schreiben Sie in die erste Position.",
+    "feature_2_title": "Anzahlung und Restbetrag getrennt",
+    "feature_2_text": "Die Anzahlung bekommt ihre eigene Rechnung. Für die Schlussrechnung duplizieren Sie sie, ändern die Positionen und nennen die Anzahlungsrechnung in den Hinweisen. Am Status sehen Sie, welche Feiern noch offen sind, bevor Sie den Wagen packen.",
+    "feature_3_title": "Ihr Zahlungslink, Ihr Geld",
+    "feature_3_text": "Bankverbindung und auf Wunsch Ihren eigenen PayPal- oder Stripe-Link schreiben Sie in die Hinweise. Das Paar zahlt direkt an Sie; Invoicor nimmt keinen Anteil an der Gage. Für ein Paar aus dem Ausland stellen Sie die Rechnung auf Englisch aus, für eine Feier in der Schweiz in Franken.",
+    "expert_tip_title": "Tipp vom Profi: der Restbetrag vor der Feier",
+    "expert_tip_text": "Setzen Sie die Fälligkeit des Restbetrags auf ein bis zwei Wochen vor der Hochzeit und senden Sie die Rechnung etwa einen Monat vorher. Nach der Feier ist das Paar in den Flitterwochen, und die Dringlichkeit ist weg. Am Morgen danach bleibt dann nur noch die Verlängerung, mit einer kleinen Rechnung über eine einzige Zeile.",
+    "real_scenario_title": "Eine Hochzeit im September",
+    "real_scenario_text": "Im März hat das Paar die Anzahlung von 400,00 € bezahlt, aus Ihrer ersten Rechnung. Sie sind Kleinunternehmer, also ohne Umsatzsteuer. Vier Wochen vor der Feier duplizieren Sie die Rechnung in Invoicor. Vereinbart sind: Hochzeitspaket bis 1 Uhr 1.290,00 €, Trauungsbeschallung 190,00 €, 10 Uplights à 15,00 € = 150,00 €, zusammen 1.630,00 €. Weil die App keine negativen Beträge kennt, beschreiben Sie in der Position Paket, Trauung und Licht und setzen als Betrag den Rest von 1.230,00 € ein. In den Hinweisen stehen „Gesamtpreis 1.630,00 €, Anzahlung 400,00 € erhalten (Rechnung 2026-014)“, „Leistungsdatum: 19. September 2026“ und der Hinweis auf §19 UStG. Das Paar zahlt eine Woche vorher. Auf der Feier wird verlängert, eine Stunde à 120,00 €. Am Sonntagvormittag schreiben Sie dafür eine Rechnung mit einer Zeile und senden sie per E-Mail. Fertig vor dem Frühstück.",
+    "line_items_title": "Typische Positionen auf einer DJ-Rechnung",
+    "common_line_items": [
+      {
+        "name": "Hochzeitspaket",
+        "desc": "Musik vom Sektempfang bis 1 Uhr, Anlage, Auf- und Abbau.",
+        "type": "Paket"
+      },
+      {
+        "name": "Trauungsbeschallung",
+        "desc": "Eigene Lautsprecher und Funkmikrofone für die freie Trauung.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Uplights",
+        "desc": "Akku-LED-Scheinwerfer in den Farben der Feier.",
+        "type": "pro Stück"
+      },
+      {
+        "name": "Moderation",
+        "desc": "Ansagen und Programmpunkte, mit den Trauzeugen abgestimmt.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Verlängerung",
+        "desc": "Musik über das vereinbarte Ende hinaus.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Anfahrt",
+        "desc": "Ab dem vereinbarten Umkreis, hin und zurück.",
+        "type": "pro km"
+      },
+      {
+        "name": "Clubset",
+        "desc": "Auftritt im Club, Set von 23 bis 3 Uhr.",
+        "type": "Gage pauschal"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus dem DJ-Geschäft",
+    "industry_glossary": [
+      {
+        "term": "Gage",
+        "definition": "Das vereinbarte Honorar für den Auftritt; bei Hochzeiten meist ein Paketpreis, im Club oft pro Set."
+      },
+      {
+        "term": "Anzahlung",
+        "definition": "Der Betrag, mit dem der Kunde den Termin sichert. Er bekommt eine eigene Rechnung; ob er bei Absage zurückgezahlt wird, regelt Ihr Vertrag."
+      },
+      {
+        "term": "Rider",
+        "definition": "Die Liste dessen, was Sie vor Ort brauchen: Strom, Tisch, Aufbauzeit, Parkplatz, Verpflegung."
+      },
+      {
+        "term": "GEMA",
+        "definition": "Die Verwertungsgesellschaft für Musikrechte. Die Anmeldung einer Veranstaltung ist meist Sache des Veranstalters oder der Location; was in Ihrem Fall gilt, klären Sie vorab."
+      },
+      {
+        "term": "Künstlersozialkasse (KSK)",
+        "definition": "Die Sozialversicherung für selbstständige Künstler. Ob Sie als DJ dort versichert sein können und ob Ihre Auftraggeber eine Abgabe zahlen, hängt vom Einzelfall ab; fragen Sie die KSK oder Ihren Steuerberater."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer und E-Rechnung für DJs",
+    "tax_or_compliance_text": "Auf einen DJ-Auftritt berechnen Sie in der Regel 19 % Umsatzsteuer (§12 UStG). Als Kleinunternehmer nach §19 UStG steht keine Steuer auf der Rechnung, sondern ein Hinweis auf die Befreiung. Ob für Ihre Auftritte eine Sonderregel gilt, klären Sie mit Ihrem Steuerberater. Invoicor rechnet mit einem Steuersatz pro Rechnung. Haben Sie für eine Anzahlung eine Rechnung gestellt, werden in der Schlussrechnung die Anzahlung und die Steuer darauf abgezogen (§14 Abs. 5 UStG). Brautpaare und private Gastgeber sind Privatkunden; für sie bleibt ein PDF in Ordnung. Clubs, Agenturen und Firmen sind Geschäftskunden: bis Ende 2026 ein PDF mit ihrer Zustimmung, bis Ende 2027 bei bis zu 800.000 € Vorjahresumsatz, ab 2028 nur noch E-Rechnungen (XRechnung oder ZUGFeRD). Ausgenommen sind Kleinunternehmer und Rechnungen bis 250 € brutto. Invoicor erstellt keine E-Rechnungen. Zu KSK und GEMA siehe das Glossar: beides ist Einzelfall.",
+    "faq_title": "Fragen von DJs",
+    "faqs": [
+      {
+        "question": "Für wen eignet sich Invoicor als DJ Rechnungsprogramm?",
+        "answer": "Für DJs, die allein auflegen oder ein kleines Team haben und ihre Rechnungen selbst schreiben, vor allem an Brautpaare und private Gastgeber. Invoicor macht PDF-Rechnungen auf dem iPhone. Buchungskalender, Verträge und E-Rechnungen für Clubs und Agenturen gehören nicht dazu."
+      },
+      {
+        "question": "Wie rechne ich Anzahlung und Restbetrag ab?",
+        "answer": "Mit zwei Rechnungen: die Anzahlung bei Vertragsschluss, den Rest vor der Feier. In der App setzen Sie in der Schlussrechnung den Rest als Betrag ein und nennen Nummer und Betrag der Anzahlungsrechnung in den Hinweisen. Im kostenlosen Generator im Browser können Sie die Anzahlung auch als Minuszeile abziehen."
+      },
+      {
+        "question": "Kann ich die Verlängerung nach der Feier noch berechnen?",
+        "answer": "Ja. Schreiben Sie eine kleine Rechnung mit der Zahl der Stunden und dem Satz aus dem Vertrag. Ist die Schlussrechnung noch nicht gesendet, fügen Sie die Zeile dort hinzu. Eine gesendete Rechnung ist gesperrt; zum Ändern duplizieren Sie sie."
+      },
+      {
+        "question": "Die Agentur bucht mich, nicht das Paar. An wen geht die Rechnung?",
+        "answer": "An Ihren Auftraggeber, also die Agentur. Speichern Sie sie als Kunden und schreiben Sie Paar, Location und Datum der Feier in die Position. Für die Agentur gelten die Regeln zur E-Rechnung für Unternehmen."
+      },
+      {
+        "question": "Ich lege jeden Freitag im selben Club auf. Schickt Invoicor die Rechnung automatisch?",
+        "answer": "Nein. Duplizieren Sie die Rechnung der Vorwoche, ändern Sie Datum und Set-Zeiten und senden Sie sie. Das dauert weniger als eine Minute."
+      }
+    ],
+    "cta_title": "Rechnungen für DJs, noch vor dem Abbau.",
+    "related": [
+      {
+        "name": "Fotografen",
+        "slug": "rechnungsprogramm-fotografen"
+      },
+      {
+        "name": "Personal Trainer",
+        "slug": "rechnungsprogramm-personal-trainer"
+      }
+    ]
+  },
+  {
+    "slug": "rechnungsprogramm-berater-coaches",
+    "translation_of": "consultants-coaches",
+    "industry": "Berater und Coaches",
+    "icon": "Briefcase",
+    "color": "gray",
+    "title": "Rechnungsprogramm für Coaches und Berater | Invoicor",
+    "meta_description": "Rechnungsprogramm für Coaches und Berater: Coaching-Pakete, Tagessätze, Monatspauschale und Reisekosten als PDF-Rechnung vom iPhone. Gratis testen.",
+    "badge_text": "Beratung & Coaching",
+    "h1": "Rechnungsprogramm für Coaches und Berater: klar abgerechnet, schnell bezahlt",
+    "subtitle": "Für selbstständige Coaches, Berater und Trainer, die allein oder in einem kleinen Büro arbeiten: Coaching-Pakete für Privatkunden, Tagessätze für Workshops, eine monatliche Pauschale für Stammkunden. Invoicor schreibt die Rechnung auf dem iPhone, direkt nach der Sitzung, als sauberes PDF. Wichtig für Firmenkunden: Invoicor erstellt PDF-Rechnungen, keine XRechnung und kein ZUGFeRD.",
+    "stats_label": "Berater und Coaches auf einen Blick",
+    "industry_stats": [
+      {
+        "label": "Umsatzsteuer",
+        "value": "19 % (Kleinunternehmer: keine)"
+      },
+      {
+        "label": "Abrechnung",
+        "value": "Tagessatz, Stundensatz oder Paket"
+      },
+      {
+        "label": "Firmenkunden in der EU",
+        "value": "Keine deutsche USt, Hinweis nötig"
+      }
+    ],
+    "industry_mistakes_title": "Fehler auf Rechnungen von Coaches und Beratern",
+    "industry_mistake_1_title": "Coaching-Pakete ohne Zeitraum.",
+    "industry_mistake_1_text": "„10 Coaching-Sitzungen“ sagt nichts darüber, wann die Leistung erbracht wird, und das Leistungsdatum ist Pflicht (§14 Abs. 4 UStG). Nennen Sie die Laufzeit des Pakets in der Position, etwa „Dezember 2026 bis März 2027“. Das beugt auch dem Streit über verfallene Termine vor.",
+    "industry_mistake_2_title": "Reisekosten pauschal oder gar nicht.",
+    "industry_mistake_2_text": "Fahrt zum Workshop, Hotel, Bahn: Wer das stillschweigend in den Tagessatz einrechnet, verdient bei weiten Wegen nichts, und wer es vergisst, zahlt drauf. Vereinbaren Sie, wie Reisekosten berechnet werden, und schreiben Sie jede Fahrt mit Datum als eigene Zeile.",
+    "industry_mistake_3_title": "Nicht fragen, wer zahlt.",
+    "industry_mistake_3_text": "Das Coaching einer Führungskraft bezahlt oft ihr Arbeitgeber. Geht die Rechnung an die Person statt an das Unternehmen, kommt sie zurück, und Sie schreiben sie neu. Fragen Sie vor dem ersten Termin nach Rechnungsempfänger, Anschrift und Bestellnummer.",
+    "features_title": "So rechnen Coaches und Berater mit Invoicor ab",
+    "feature_1_title": "Pakete, Tagessätze und Pauschalen gespeichert",
+    "feature_1_text": "Legen Sie Ihre Leistungen einmal als Produkte an: Coaching-Sitzung 60 Minuten, 5er-Paket, Workshop-Tag, Beratungsstunde, Monatspauschale. Kunden speichern Sie mit Anschrift, in jedem Tarif unbegrenzt. Die nächste Rechnung ist dann eine Auswahl aus zwei Listen.",
+    "feature_2_title": "Die Monatspauschale in Sekunden",
+    "feature_2_text": "Für eine monatliche Beratungs- oder Coachingpauschale duplizieren Sie die Rechnung vom Vormonat: neue Nummer, neuer Leistungszeitraum, senden. Invoicor verschickt nichts automatisch, aber das geht schneller als ein Kaffee.",
+    "feature_3_title": "Zwei Geschäfte, ein iPhone",
+    "feature_3_text": "Sie beraten Unternehmen und coachen privat unter anderem Namen? Mit Pro führen Sie bis zu 3 Firmenprofile, jedes mit eigenem Logo und eigenen Angaben. Für Kunden im Ausland schreiben Sie die Rechnung in einer von 11 Sprachen und 38 Währungen, etwa auf Englisch in Schweizer Franken.",
+    "expert_tip_title": "Tipp vom Profi: Pakete statt Einzelsitzungen",
+    "expert_tip_text": "Wer jede Sitzung einzeln abrechnet, verkauft Zeit, und der Kunde überlegt nach jedem Termin, ob er weitermacht. Ein Paket aus fünf oder zehn Sitzungen, vorab bezahlt, verkauft einen Weg zum Ziel. Ihre Rechnung wird kürzer, eine Zeile statt zehn, und Ihr Einkommen planbarer. Schreiben Sie Laufzeit und Absageregel in die Position, dann wissen beide Seiten, woran sie sind.",
+    "real_scenario_title": "Ein Workshoptag in Köln",
+    "real_scenario_text": "Sie moderieren für ein mittelständisches Unternehmen einen Strategietag mit dem Führungsteam. Um 17 Uhr ist Schluss, im ICE nach Hamburg öffnen Sie Invoicor. Der Kunde ist gespeichert. Sie tragen ein: Workshop-Tag Strategie Führungsteam, 1 Tag à 1.600,00 €; Vorbereitung und Auswertung, 4 Std. à 140,00 € = 560,00 €; Bahnfahrt Hamburg–Köln und zurück, netto laut Beleg, 148,32 €. Netto 2.308,32 €, 19 % MwSt. 438,58 €, gesamt 2.746,90 €. In die Hinweise kommen „Leistungsdatum: 26. November 2026“, die Bestellnummer, Ihre IBAN und ein Zahlungsziel von 14 Tagen. Der Kunde hat der Rechnung als PDF zugestimmt. Vor Münster ist die Rechnung bei der Buchhaltung.",
+    "line_items_title": "Typische Positionen auf einer Rechnung für Coaching und Beratung",
+    "common_line_items": [
+      {
+        "name": "Coaching-Sitzung",
+        "desc": "60 Minuten, vor Ort oder per Video.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Coaching-Paket",
+        "desc": "5 Sitzungen à 60 Minuten, Laufzeit 3 Monate.",
+        "type": "Paket"
+      },
+      {
+        "name": "Workshop-Tag",
+        "desc": "Moderation vor Ort, bis 8 Stunden.",
+        "type": "Tagessatz"
+      },
+      {
+        "name": "Beratungsstunden",
+        "desc": "Arbeit außerhalb der Pauschale, mit Datum und Thema.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Monatliche Beratungspauschale",
+        "desc": "Vereinbartes Kontingent für einen Monat.",
+        "type": "Pauschale"
+      },
+      {
+        "name": "Vorbereitung und Auswertung",
+        "desc": "Konzept, Unterlagen, Protokoll.",
+        "type": "Stundensatz"
+      },
+      {
+        "name": "Reisekosten",
+        "desc": "Bahn, Hotel oder Kilometer, mit Datum und Strecke.",
+        "type": "Auslagen"
+      }
+    ],
+    "industry_glossary_title": "Begriffe aus der Abrechnung von Beratung und Coaching",
+    "industry_glossary": [
+      {
+        "term": "Tagessatz",
+        "definition": "Fester Preis für einen Arbeitstag, meist mit vereinbarter Stundenzahl. Üblich bei Workshops und Projekten vor Ort."
+      },
+      {
+        "term": "Beratungspauschale",
+        "definition": "Ein fester Monatsbetrag für ein vereinbartes Kontingent; was darüber hinausgeht, wird extra abgerechnet."
+      },
+      {
+        "term": "Bestellnummer",
+        "definition": "Die Nummer, unter der ein Unternehmen Ihren Auftrag intern führt. Ohne sie kann die Buchhaltung die Rechnung oft nicht zuordnen."
+      },
+      {
+        "term": "Durchlaufender Posten",
+        "definition": "Ein Betrag, den Sie im Namen und für Rechnung des Kunden zahlen, etwa eine Gebühr auf seinen Namen. Er gehört nicht zum Entgelt, also keine Umsatzsteuer darauf (§10 Abs. 1 Satz 4 UStG)."
+      },
+      {
+        "term": "Reverse Charge (EU)",
+        "definition": "Bei Firmenkunden in einem anderen EU-Land schuldet der Kunde die Umsatzsteuer nach dem Recht seines Landes; Ihre Rechnung zeigt keine deutsche USt."
+      }
+    ],
+    "tax_or_compliance_title": "Umsatzsteuer, EU-Kunden und E-Rechnung für Coaches und Berater",
+    "tax_or_compliance_text": "Beratung und Coaching kosten in der Regel 19 % Umsatzsteuer (§12 UStG). Als Kleinunternehmer nach §19 UStG (höchstens 25.000 € Vorjahresumsatz und 100.000 € im laufenden Jahr) weisen Sie keine aus und vermerken die Befreiung. Reisekosten, die Sie in Ihrem eigenen Namen buchen, gehören zum Entgelt (§10 Abs. 1 Satz 2 UStG); welcher Steuersatz dann gilt, ist in der Regel der der Hauptleistung, prüfen Sie das mit Ihrem Steuerberater. Für ein Unternehmen in einem anderen EU-Land liegt der Ort der Leistung dort (§3a Abs. 2 UStG): keine deutsche USt, dafür beide USt-IdNrn. und der Hinweis „Steuerschuldnerschaft des Leistungsempfängers“ (§14a Abs. 1 UStG). Rechnungen an deutsche Unternehmen dürfen bis 31. Dezember 2026 ein PDF sein, wenn der Empfänger zustimmt, bis Ende 2027 bei einem Vorjahresumsatz bis 800.000 €; ab 2028 müssen es E-Rechnungen sein (XRechnung oder ZUGFeRD), außer bei Kleinunternehmern und Rechnungen bis 250 € brutto. Invoicor erstellt nur PDFs. Wer viel für Unternehmen arbeitet, braucht dafür spätestens 2028 eine zusätzliche Lösung; für Privatkunden im Coaching bleibt das PDF in Ordnung.",
+    "faq_title": "Fragen von Coaches und Beratern",
+    "faqs": [
+      {
+        "question": "Reicht Invoicor für Rechnungen an Unternehmen?",
+        "answer": "Bis Ende 2026 ja, wenn der Kunde einer PDF-Rechnung zustimmt, bis Ende 2027 auch, wenn Ihr Vorjahresumsatz höchstens 800.000 € betrug. Ab 2028 müssen Rechnungen an Unternehmen E-Rechnungen sein, und die erstellt Invoicor nicht. Für Kleinunternehmer und für Privatkunden bleibt das PDF erlaubt."
+      },
+      {
+        "question": "Wie rechne ich ein Coaching-Paket ab?",
+        "answer": "Mit einer Rechnung vor der ersten Sitzung: eine Zeile für das Paket, mit Zahl und Dauer der Sitzungen und der Laufzeit. Weil der Kunde vor der Leistung zahlt, braucht auch diese Rechnung alle Pflichtangaben (§14 Abs. 5 UStG)."
+      },
+      {
+        "question": "Schreibt Invoicor auch Angebote?",
+        "answer": "Nein, Invoicor schreibt nur Rechnungen. Ihr Angebot erstellen Sie wie bisher; ist der Auftrag da, legen Sie die Positionen als Produkte an und nutzen sie für jede weitere Rechnung."
+      },
+      {
+        "question": "Wo stehen Bestellnummer und Leistungsdatum?",
+        "answer": "Beides in den Hinweisen oder in der ersten Position, denn für das Leistungsdatum hat Invoicor kein eigenes Feld. Eine reine Steuernummer gehört ebenfalls in die Hinweise, weil das Steuerfeld „USt-IdNr.“ druckt."
+      },
+      {
+        "question": "Mein Coachee zahlt selbst, sein Arbeitgeber erstattet. Was steht auf der Rechnung?",
+        "answer": "Die Rechnung geht an Ihren Auftraggeber, hier die Privatperson, mit Thema, Zahl der Sitzungen und Zeitraum, damit sie sie einreichen kann. Ob der Arbeitgeber eine Rechnung auf seinen Namen braucht, klären Sie vorher; sonst schreiben Sie sie später neu."
+      }
+    ],
+    "cta_title": "Rechnungen für Coaches und Berater, direkt nach der Sitzung.",
+    "related": [
+      {
+        "name": "Personal Trainer",
+        "slug": "rechnungsprogramm-personal-trainer"
+      },
+      {
+        "name": "Fotografen",
+        "slug": "rechnungsprogramm-fotografen"
+      }
+    ]
+  }
+]

@@ -2246,322 +2246,207 @@
 
 ## I1–I20 in German
 
-[ ] Industry pages 1–20 (built) · 0/20 live in de
+[ ] Industry pages 1–20 (built) · 8/12 live in de
 
 - **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
 
 ### I1-de · /industries/plumbers-hvac → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-shk
 - **English page:** [invoice app for plumbers](https://invoicor.com/industries/plumbers-hvac) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [plumbers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I2-de · /industries/freelance-designers → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-grafikdesigner
 - **English page:** [invoicing app for freelance designers](https://invoicor.com/industries/freelance-designers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [invoicing app for freelance designers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I3-de · /industries/landscaping-lawn-care → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-garten-landschaftsbau
 - **English page:** [landscaping invoicing software](https://invoicor.com/industries/landscaping-lawn-care) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [landscaping invoicing software, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I4-de · /industries/electricians → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-elektriker
 - **English page:** [invoice app for electricians](https://invoicor.com/industries/electricians) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [electricians, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I5-de · /industries/general-contractors → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for contractors](https://invoicor.com/industries/general-contractors) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [contractors, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I5-de** /industries/general-contractors~~ skipped in de: parked 2026-11-28 (demand gate, de): very strong head term owned by big software brands and comparison sites; a general German head page (LO) should own it, not an industry page
 
 ### I6-de · /industries/photographers-videographers → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-fotografen
 - **English page:** [invoicing software for photographers](https://invoicor.com/industries/photographers-videographers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [invoicing software for photographers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I7-de · /industries/consultants-coaches → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-berater-coaches
 - **English page:** [invoicing software for consultants](https://invoicor.com/industries/consultants-coaches) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [invoicing software for consultants, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I8-de · /industries/cleaning-services → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-reinigungsfirma
 - **English page:** [invoice app for cleaning business](https://invoicor.com/industries/cleaning-services) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [cleaning business, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I9-de · /industries/personal-trainers → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-personal-trainer
 - **English page:** [invoicing for personal trainers](https://invoicor.com/industries/personal-trainers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [invoicing for personal trainers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I10-de · /industries/auto-detailing-mechanics → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for mechanics](https://invoicor.com/industries/auto-detailing-mechanics) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [mechanics, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I10-de** /industries/auto-detailing-mechanics~~ skipped in de: parked 2026-11-28 (demand gate, de): strong but workshops need parts and vehicle records (weak fit for an invoice app); mobile Fahrzeugaufbereitung has no search demand
 
 ### I11-de · /industries/roofers → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-dachdecker
 - **English page:** [roofing invoice app](https://invoicor.com/industries/roofers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [roofing invoice app, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I12-de · /industries/painters → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-maler
 - **English page:** [invoice app for painters](https://invoicor.com/industries/painters) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [painters, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I13-de · /industries/web-developers → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-webdesigner
 - **English page:** [invoice app for freelance developers](https://invoicor.com/industries/web-developers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [freelance developers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I14-de · /industries/tutors → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for tutors](https://invoicor.com/industries/tutors) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [tutors, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I14-de** /industries/tutors~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
 ### I15-de · /industries/caterers → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-catering
 - **English page:** [invoice app for caterers](https://invoicor.com/industries/caterers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [caterers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I16-de · /industries/movers → German
+- ~~**I16-de** /industries/movers~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for movers](https://invoicor.com/industries/movers) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [movers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I17-de** /industries/pest-control~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-### I17-de · /industries/pest-control → German
+- ~~**I18-de** /industries/virtual-assistants~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [pest control invoicing software](https://invoicor.com/industries/pest-control) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [pest control invoicing software, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I19-de** /industries/pet-care~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-### I18-de · /industries/virtual-assistants → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for virtual assistants](https://invoicor.com/industries/virtual-assistants) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [virtual assistants, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I19-de · /industries/pet-care → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for dog walkers](https://invoicor.com/industries/pet-care) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [dog walkers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I20-de · /industries/hair-makeup-artists → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for makeup artists](https://invoicor.com/industries/hair-makeup-artists) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [makeup artists, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I20-de** /industries/hair-makeup-artists~~ skipped in de: parked 2026-11-28 (demand gate, de): strong for salons, but salons need a till with TSE (Kassensystem), which Invoicor isn't; mobile Visagisten have no search demand
 
 ## I21–I32 in German
 
-[ ] Industry pages 21–32 (built) · 0/12 live in de
+[ ] Industry pages 21–32 (built) · 1/4 live in de
 
 - **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
 
 ### I21-de · /industries/carpenters → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-tischler
 - **English page:** [invoice app for carpenters](https://invoicor.com/industries/carpenters) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [carpenters, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I22-de · /industries/flooring-installers → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-bodenleger
 - **English page:** [invoice app for flooring installers](https://invoicor.com/industries/flooring-installers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [flooring installers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I23-de · /industries/tile-installers → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-fliesenleger
 - **English page:** [invoice app for tile installers](https://invoicor.com/industries/tile-installers) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [tile installers, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I24-de · /industries/masons → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-maurer
 - **English page:** [invoice app for masons](https://invoicor.com/industries/masons) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [masons, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I25-de · /industries/pool-service → German
+- ~~**I25-de** /industries/pool-service~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for pool service companies](https://invoicor.com/industries/pool-service) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [pool service companies, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I26-de** /industries/window-cleaners~~ skipped in de: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
 
-### I26-de · /industries/window-cleaners → German
+- ~~**I27-de** /industries/pressure-washing~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for window cleaners](https://invoicor.com/industries/window-cleaners) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [window cleaners, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I28-de** /industries/tree-service~~ skipped in de: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
 
-### I27-de · /industries/pressure-washing → German
+- ~~**I29-de** /industries/snow-removal~~ skipped in de: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
 
-- [ ] **Live in de**
-- **English page:** [invoice app for pressure washing businesses](https://invoicor.com/industries/pressure-washing) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [pressure washing businesses, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I30-de** /industries/locksmiths~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-### I28-de · /industries/tree-service → German
+- ~~**I31-de** /industries/appliance-repair~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for tree service companies](https://invoicor.com/industries/tree-service) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [tree service companies, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I29-de · /industries/snow-removal → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for snow removal businesses](https://invoicor.com/industries/snow-removal) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [snow removal businesses, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I30-de · /industries/locksmiths → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for locksmiths](https://invoicor.com/industries/locksmiths) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [locksmiths, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I31-de · /industries/appliance-repair → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for appliance repair technicians](https://invoicor.com/industries/appliance-repair) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [appliance repair technicians, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I32-de · /industries/junk-removal → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for junk removal businesses](https://invoicor.com/industries/junk-removal) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [junk removal businesses, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I32-de** /industries/junk-removal~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
 ## I33–I43 in German
 
-[ ] Industry pages 33–43 (built) · 0/11 live in de
+[ ] Industry pages 33–43 (built) · 1/4 live in de
 
 - **For every industry page:** A day in the job in that country, local line items and prices, local tax and licensing notes (hedged); "invoices in your language", never "the app in your language".
 
-### I33-de · /industries/carpet-cleaners → German
+- ~~**I33-de** /industries/carpet-cleaners~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for carpet cleaners](https://invoicor.com/industries/carpet-cleaners) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [carpet cleaners, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I34-de · /industries/interior-designers → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for interior designers](https://invoicor.com/industries/interior-designers) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [interior designers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I34-de** /industries/interior-designers~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
 ### I35-de · /industries/djs → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen/rechnungsprogramm-dj
 - **English page:** [invoice app for djs](https://invoicor.com/industries/djs) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [djs, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I36-de · /industries/event-planners → German
+- ~~**I36-de** /industries/event-planners~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for event planners](https://invoicor.com/industries/event-planners) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [event planners, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I37-de · /industries/florists → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for florists](https://invoicor.com/industries/florists) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [florists, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I37-de** /industries/florists~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
 ### I38-de · /industries/massage-therapists → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-massage
 - **English page:** [invoice app for massage therapists](https://invoicor.com/industries/massage-therapists) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [massage therapists, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I39-de · /industries/translators → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-uebersetzer
 - **English page:** [invoice app for translators](https://invoicor.com/industries/translators) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [translators, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
 ### I40-de · /industries/copywriters → German
 
-- [ ] **Live in de**
+- [ ] **Live in de**: /de/branchen/rechnungsprogramm-texter
 - **English page:** [invoice app for copywriters](https://invoicor.com/industries/copywriters) (live: use it as the source)
 - **Search words:** "Rechnungsprogramm für [copywriters, in German]"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
 
-### I41-de · /industries/social-media-managers → German
+- ~~**I41-de** /industries/social-media-managers~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
-- [ ] **Live in de**
-- **English page:** [invoice app for social media managers](https://invoicor.com/industries/social-media-managers) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [social media managers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I42-de** /industries/music-teachers~~ skipped in de: parked 2026-11-28 (demand gate, de): weak to some; recurring billing expected (Invoicor has none)
 
-### I42-de · /industries/music-teachers → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for music teachers](https://invoicor.com/industries/music-teachers) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [music teachers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
-
-### I43-de · /industries/bookkeepers → German
-
-- [ ] **Live in de**
-- **English page:** [invoice app for bookkeepers](https://invoicor.com/industries/bookkeepers) (live: use it as the source)
-- **Search words:** "Rechnungsprogramm für [bookkeepers, in German]"
-- **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.
+- ~~**I43-de** /industries/bookkeepers~~ skipped in de: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
 
 ## I44–I53 in German
 
@@ -6567,7 +6452,7 @@
 
 ## P1–P9 in German
 
-[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 4/8 live in de
+[ ] Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 5/8 live in de
 
 - **For every home page:** The same facts (BRAND.md §10), written naturally in that language.
 - **For every hub page:** The same facts (BRAND.md §10), written naturally in that language.
@@ -6592,7 +6477,7 @@
 
 ### P3-de · /industries → German
 
-- [ ] **Live in de**
+- [x] **Live in de**: /de/branchen
 - **English page:** [invoicing software by industry](https://invoicor.com/industries) (live: use it as the source)
 - **Search words:** the German term for "invoicing software by industry"
 - **Write:** the live page rewritten for Germany, Austria, Switzerland: keep its sections and depth, replace its prices, units, tax lines and rules with local ones (each fact checked for that country), local trade words in the examples and FAQs.

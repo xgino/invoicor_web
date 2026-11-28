@@ -7,7 +7,7 @@
 > `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);
 > then `npm run pages`.
 
-**901 language versions missing** for 107 of 122 live pages · 901 can be written now, 0 wait for a task (the **Needs** column).
+**867 language versions missing** for 107 of 122 live pages · 867 can be written now, 0 wait for a task (the **Needs** column).
 
 Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet), **–** parked on purpose (no local demand; the reason is in its row).
 
@@ -17,10 +17,10 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [T · Trade templates](#t-trade-templates) | 50 | 0 | 416 | none | 5 | 50 | 50 | 11 | 50 | 50 | 50 | 50 | 50 | 50 |
 | [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 5 | 12 | none |  | 3 |  |  | 1 | 1 | 7 |  |  |  |
-| [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 430 | none | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
+| [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 397 | none | 10 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
 | [TL · Free tools](#tl-free-tools) | 4 | 4 | 0 | none |  |  |  |  |  |  |  |  |  |  |
 | [G · Generators](#g-generators) | 1 | 1 | 0 | none |  |  |  |  |  |  |  |  |  |  |
-| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 5 | 43 | none | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 5 | 5 | 5 |
+| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 5 | 42 | none | 3 | 4 | 4 | 4 | 4 | 4 | 4 | 5 | 5 | 5 |
 
 ## T Trade templates
 
@@ -100,49 +100,49 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 
 | ID | Page | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| I1 | /industries/plumbers-hvac |  | · | · | · | · | · | · | · | · | · | · |
-| I2 | /industries/freelance-designers |  | · | · | · | · | · | · | · | · | · | · |
-| I3 | /industries/landscaping-lawn-care |  | · | · | · | · | · | · | · | · | · | · |
-| I4 | /industries/electricians |  | · | · | · | · | · | · | · | · | · | · |
-| I5 | /industries/general-contractors |  | · | · | · | · | · | · | · | · | · | · |
-| I6 | /industries/photographers-videographers |  | · | · | · | · | · | · | · | · | · | · |
-| I7 | /industries/consultants-coaches |  | · | · | · | · | · | · | · | · | · | · |
-| I8 | /industries/cleaning-services |  | · | · | · | · | · | · | · | · | · | · |
-| I9 | /industries/personal-trainers |  | · | · | · | · | · | · | · | · | · | · |
-| I10 | /industries/auto-detailing-mechanics |  | · | · | · | · | · | · | · | · | · | · |
-| I11 | /industries/roofers |  | · | · | · | · | · | · | · | · | · | · |
-| I12 | /industries/painters |  | · | · | · | · | · | · | · | · | · | · |
-| I13 | /industries/web-developers |  | · | · | · | · | · | · | · | · | · | · |
-| I14 | /industries/tutors |  | · | · | · | · | · | · | · | · | · | · |
-| I15 | /industries/caterers |  | · | · | · | · | · | · | · | · | · | · |
-| I16 | /industries/movers |  | · | · | · | · | · | · | · | · | · | · |
-| I17 | /industries/pest-control |  | · | · | · | · | · | · | · | · | · | · |
-| I18 | /industries/virtual-assistants |  | · | · | · | · | · | · | · | · | · | · |
-| I19 | /industries/pet-care |  | · | · | · | · | · | · | · | · | · | · |
-| I20 | /industries/hair-makeup-artists |  | · | · | · | · | · | · | · | · | · | · |
-| I21 | /industries/carpenters |  | · | · | · | · | · | · | · | · | · | · |
-| I22 | /industries/flooring-installers |  | · | · | · | · | · | · | · | · | · | · |
-| I23 | /industries/tile-installers |  | · | · | · | · | · | · | · | · | · | · |
-| I24 | /industries/masons |  | · | · | · | · | · | · | · | · | · | · |
-| I25 | /industries/pool-service |  | · | · | · | · | · | · | · | · | · | · |
-| I26 | /industries/window-cleaners |  | · | · | · | · | · | · | · | · | · | · |
-| I27 | /industries/pressure-washing |  | · | · | · | · | · | · | · | · | · | · |
-| I28 | /industries/tree-service |  | · | · | · | · | · | · | · | · | · | · |
-| I29 | /industries/snow-removal |  | · | · | · | · | · | · | · | · | · | · |
-| I30 | /industries/locksmiths |  | · | · | · | · | · | · | · | · | · | · |
-| I31 | /industries/appliance-repair |  | · | · | · | · | · | · | · | · | · | · |
-| I32 | /industries/junk-removal |  | · | · | · | · | · | · | · | · | · | · |
-| I33 | /industries/carpet-cleaners |  | · | · | · | · | · | · | · | · | · | · |
-| I34 | /industries/interior-designers |  | · | · | · | · | · | · | · | · | · | · |
-| I35 | /industries/djs |  | · | · | · | · | · | · | · | · | · | · |
-| I36 | /industries/event-planners |  | · | · | · | · | · | · | · | · | · | · |
-| I37 | /industries/florists |  | · | · | · | · | · | · | · | · | · | · |
-| I38 | /industries/massage-therapists |  | · | · | · | · | · | · | · | · | · | · |
-| I39 | /industries/translators |  | · | · | · | · | · | · | · | · | · | · |
-| I40 | /industries/copywriters |  | · | · | · | · | · | · | · | · | · | · |
-| I41 | /industries/social-media-managers |  | · | · | · | · | · | · | · | · | · | · |
-| I42 | /industries/music-teachers |  | · | · | · | · | · | · | · | · | · | · |
-| I43 | /industries/bookkeepers |  | · | · | · | · | · | · | · | · | · | · |
+| I1 | /industries/plumbers-hvac |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I2 | /industries/freelance-designers |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I3 | /industries/landscaping-lawn-care |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I4 | /industries/electricians |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I5 | /industries/general-contractors |  | – | · | · | · | · | · | · | · | · | · |
+| I6 | /industries/photographers-videographers |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I7 | /industries/consultants-coaches |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I8 | /industries/cleaning-services |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I9 | /industries/personal-trainers |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I10 | /industries/auto-detailing-mechanics |  | – | · | · | · | · | · | · | · | · | · |
+| I11 | /industries/roofers |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I12 | /industries/painters |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I13 | /industries/web-developers |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I14 | /industries/tutors |  | – | · | · | · | · | · | · | · | · | · |
+| I15 | /industries/caterers |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I16 | /industries/movers |  | – | · | · | · | · | · | · | · | · | · |
+| I17 | /industries/pest-control |  | – | · | · | · | · | · | · | · | · | · |
+| I18 | /industries/virtual-assistants |  | – | · | · | · | · | · | · | · | · | · |
+| I19 | /industries/pet-care |  | – | · | · | · | · | · | · | · | · | · |
+| I20 | /industries/hair-makeup-artists |  | – | · | · | · | · | · | · | · | · | · |
+| I21 | /industries/carpenters |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I22 | /industries/flooring-installers |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I23 | /industries/tile-installers |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I24 | /industries/masons |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I25 | /industries/pool-service |  | – | · | · | · | · | · | · | · | · | · |
+| I26 | /industries/window-cleaners |  | – | · | · | · | · | · | · | · | · | · |
+| I27 | /industries/pressure-washing |  | – | · | · | · | · | · | · | · | · | · |
+| I28 | /industries/tree-service |  | – | · | · | · | · | · | · | · | · | · |
+| I29 | /industries/snow-removal |  | – | · | · | · | · | · | · | · | · | · |
+| I30 | /industries/locksmiths |  | – | · | · | · | · | · | · | · | · | · |
+| I31 | /industries/appliance-repair |  | – | · | · | · | · | · | · | · | · | · |
+| I32 | /industries/junk-removal |  | – | · | · | · | · | · | · | · | · | · |
+| I33 | /industries/carpet-cleaners |  | – | · | · | · | · | · | · | · | · | · |
+| I34 | /industries/interior-designers |  | – | · | · | · | · | · | · | · | · | · |
+| I35 | /industries/djs |  | ✓ | · | · | · | · | · | · | · | · | · |
+| I36 | /industries/event-planners |  | – | · | · | · | · | · | · | · | · | · |
+| I37 | /industries/florists |  | – | · | · | · | · | · | · | · | · | · |
+| I38 | /industries/massage-therapists |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I39 | /industries/translators |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I40 | /industries/copywriters |  | ◦ | · | · | · | · | · | · | · | · | · |
+| I41 | /industries/social-media-managers |  | – | · | · | · | · | · | · | · | · | · |
+| I42 | /industries/music-teachers |  | – | · | · | · | · | · | · | · | · | · |
+| I43 | /industries/bookkeepers |  | – | · | · | · | · | · | · | · | · | · |
 
 ## TL Free tools
 
@@ -165,7 +165,7 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | P1 | / | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | P2 | /templates |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | · | · |
-| P3 | /industries |  | · | · | · | · | · | · | · | · | · | · |
+| P3 | /industries |  | ✓ | · | · | · | · | · | · | · | · | · |
 | P5 | /help | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | P6 | /affiliate |  | · | · | · | · | · | · | · | · | · | · |
 | P7 | /terms |  | · | · | · | · | · | · | · | · | · | · |

@@ -19,6 +19,7 @@ P2-sv,/sv/mallar,sv,live,2026-11-27,hub,yes,fakturamall,gratis fakturamall,,,,Sw
 P2-da,/da/skabeloner,da,live,2026-11-27,hub,yes,fakturaskabelon,gratis fakturaskabelon,,,,Danish templates hub (task S1),,,/templates,,
 P2-nb,/nb/maler,nb,live,2026-11-27,hub,yes,fakturamal,gratis fakturamal,,,,Norwegian templates hub (task S1),,,/templates,,
 P3,/industries,en,live,2026-11-18,hub,yes,invoicing software by industry,invoice app for small business,browse,22,,,,,,,
+P3-de,/de/branchen,de,live,2026-11-27,hub,yes,rechnungsprogramm branchen,,,,,German industries hub (task S1),,,/industries,,
 P4,/compare,en,live,2026-11-18,hub,en-only,invoice app alternatives,best invoice app; invoice app comparison,compare,23,,,,,,,
 P5,/help,en,live,2026-11-18,support,yes,invoicor help,invoicor faq,support,24,,,,,,,
 P5-de,/de/hilfe,de,live,2026-11-18,support,yes,hilfe und häufige fragen,,,,,key from the URL or title (npm run pages); check it,,,/help,,

@@ -8,7 +8,7 @@
 > exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**337 / 4,000 pages live** (8%) · planned: 955 English and local pages + 8,030 language versions · **9,322 when everything is built** (fewer after the demand gate parks the weak ones)
+**348 / 4,000 pages live** (9%) · planned: 955 English and local pages + 7,996 language versions · **9,299 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run
 
@@ -37,13 +37,13 @@ Say which: "do D4" (one page and its language versions), "do D4-de" (one languag
 | [Trade templates](#trade-templates-t) | T1–T313 | 20 | 50 | 263 | 20/2926 |
 | [Billing-type templates](#billing-type-templates-b) | B1–B178 | 15 | 0 | 177 | 0/1770 |
 | [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 65/156 |
-| [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1–I239 | 20 | 43 | 196 | 0/2230 |
+| [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1–I239 | 20 | 43 | 196 | 10/2207 |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1–C97 | 11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL1–TL113 | 10 | 4 | 109 | 40/910 |
 | [Country pages (English)](#country-pages-english-ct) | CT1–CT39 | 6 | 0 | 39 | 0/10 |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1–LO74 | 8 | 0 | 71 | none |
 | [Generators](#generators-g) | G1–G10 | 3 | 1 | 9 | 10/100 |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 57/120 |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 58/120 |
 
 ## Best next (by score)
 
@@ -770,7 +770,7 @@ Rules: [RULES.md § I · Industry pages ("invoice app for …")](RULES.md#i--ind
 
 ### I1–I20: Industry pages 1–20 (built)
 
-- [x] **I1–I20** · 20/20 live · [languages](#i1i20-in-every-language): 0/200
+- [x] **I1–I20** · 20/20 live · [languages](#i1i20-in-every-language): 8/192
   - [x] **I1** [/industries/plumbers-hvac](https://invoicor.com/industries/plumbers-hvac) invoice app for plumbers
   - [x] **I2** [/industries/freelance-designers](https://invoicor.com/industries/freelance-designers) invoicing app for freelance designers
   - [x] **I3** [/industries/landscaping-lawn-care](https://invoicor.com/industries/landscaping-lawn-care) landscaping invoicing software
@@ -794,7 +794,7 @@ Rules: [RULES.md § I · Industry pages ("invoice app for …")](RULES.md#i--ind
 
 ### I21–I32: Industry pages 21–32 (built)
 
-- [x] **I21–I32** · 12/12 live · [languages](#i21i32-in-every-language): 0/120
+- [x] **I21–I32** · 12/12 live · [languages](#i21i32-in-every-language): 1/112
   - [x] **I21** [/industries/carpenters](https://invoicor.com/industries/carpenters) invoice app for carpenters
   - [x] **I22** [/industries/flooring-installers](https://invoicor.com/industries/flooring-installers) invoice app for flooring installers
   - [x] **I23** [/industries/tile-installers](https://invoicor.com/industries/tile-installers) invoice app for tile installers
@@ -810,7 +810,7 @@ Rules: [RULES.md § I · Industry pages ("invoice app for …")](RULES.md#i--ind
 
 ### I33–I43: Industry pages 33–43 (built)
 
-- [x] **I33–I43** · 11/11 live · [languages](#i33i43-in-every-language): 0/110
+- [x] **I33–I43** · 11/11 live · [languages](#i33i43-in-every-language): 1/103
   - [x] **I33** [/industries/carpet-cleaners](https://invoicor.com/industries/carpet-cleaners) invoice app for carpet cleaners
   - [x] **I34** [/industries/interior-designers](https://invoicor.com/industries/interior-designers) invoice app for interior designers
   - [x] **I35** [/industries/djs](https://invoicor.com/industries/djs) invoice app for djs
@@ -1595,7 +1595,7 @@ Rules: [RULES.md § P · Core pages, hubs, trust and legal](RULES.md#p--core-pag
 
 ### P1–P9: Core pages (built): home, hubs, help, affiliate, terms, privacy, Android
 
-- [x] **P1–P9** · 9/9 live · [languages](#p1p9-in-every-language): 37/80
+- [x] **P1–P9** · 9/9 live · [languages](#p1p9-in-every-language): 38/80
   - [x] **P1** [/](https://invoicor.com/) invoice app iphone
   - [x] **P2** [/templates](https://invoicor.com/templates) invoice templates
   - [x] **P3** [/industries](https://invoicor.com/industries) invoicing software by industry
@@ -1930,7 +1930,7 @@ Animals, farms and outdoors · 12 pages
 
 Industry pages 1–20 (built) · 20 pages
 
-- [ ] [**I1–I20 in German**](plan/languages/de.md#i1i20-in-german) · 0/20
+- [ ] [**I1–I20 in German**](plan/languages/de.md#i1i20-in-german) · 8/12
 - [ ] [**I1–I20 in Spanish**](plan/languages/es.md#i1i20-in-spanish) · 0/20
 - [ ] [**I1–I20 in French**](plan/languages/fr.md#i1i20-in-french) · 0/20
 - [ ] [**I1–I20 in Dutch**](plan/languages/nl.md#i1i20-in-dutch) · 0/20
@@ -1945,7 +1945,7 @@ Industry pages 1–20 (built) · 20 pages
 
 Industry pages 21–32 (built) · 12 pages
 
-- [ ] [**I21–I32 in German**](plan/languages/de.md#i21i32-in-german) · 0/12
+- [ ] [**I21–I32 in German**](plan/languages/de.md#i21i32-in-german) · 1/4
 - [ ] [**I21–I32 in Spanish**](plan/languages/es.md#i21i32-in-spanish) · 0/12
 - [ ] [**I21–I32 in French**](plan/languages/fr.md#i21i32-in-french) · 0/12
 - [ ] [**I21–I32 in Dutch**](plan/languages/nl.md#i21i32-in-dutch) · 0/12
@@ -1960,7 +1960,7 @@ Industry pages 21–32 (built) · 12 pages
 
 Industry pages 33–43 (built) · 11 pages
 
-- [ ] [**I33–I43 in German**](plan/languages/de.md#i33i43-in-german) · 0/11
+- [ ] [**I33–I43 in German**](plan/languages/de.md#i33i43-in-german) · 1/4
 - [ ] [**I33–I43 in Spanish**](plan/languages/es.md#i33i43-in-spanish) · 0/11
 - [ ] [**I33–I43 in French**](plan/languages/fr.md#i33i43-in-french) · 0/11
 - [ ] [**I33–I43 in Dutch**](plan/languages/nl.md#i33i43-in-dutch) · 0/11
@@ -2680,7 +2680,7 @@ Country pages I (English-speaking countries + EU reverse charge) · 1 pages
 
 Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 8 pages
 
-- [ ] [**P1–P9 in German**](plan/languages/de.md#p1p9-in-german) · 4/8
+- [ ] [**P1–P9 in German**](plan/languages/de.md#p1p9-in-german) · 5/8
 - [ ] [**P1–P9 in Spanish**](plan/languages/es.md#p1p9-in-spanish) · 4/8
 - [ ] [**P1–P9 in French**](plan/languages/fr.md#p1p9-in-french) · 4/8
 - [ ] [**P1–P9 in Dutch**](plan/languages/nl.md#p1p9-in-dutch) · 4/8

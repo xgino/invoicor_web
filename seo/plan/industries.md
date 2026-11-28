@@ -3,17 +3,96 @@
 > **Generated, don't edit by hand.** Rules: [RULES.md](../RULES.md); pages and briefs:
 > `seo/pages/`; then `npm run pages`. Back to the [plan](../PLAN.md).
 
-**43 done · 196 planned**
+**53 done · 206 planned**
 
 ## Direction
 
 URL, key, sections, what these pages can and can't do, links and languages: [RULES.md § I · Industry pages ("invoice app for …")](../RULES.md#i--industry-pages-invoice-app-for-).
 
-## Done (43): don't build these again
+## Done (53): don't build these again
 
-**I1** `plumbers-hvac` invoice app for plumbers · **I2** `freelance-designers` invoicing app for freelance designers · **I3** `landscaping-lawn-care` landscaping invoicing software · **I4** `electricians` invoice app for electricians · **I5** `general-contractors` invoice app for contractors · **I6** `photographers-videographers` invoicing software for photographers · **I7** `consultants-coaches` invoicing software for consultants · **I8** `cleaning-services` invoice app for cleaning business · **I9** `personal-trainers` invoicing for personal trainers · **I10** `auto-detailing-mechanics` invoice app for mechanics · **I11** `roofers` roofing invoice app · **I12** `painters` invoice app for painters · **I13** `web-developers` invoice app for freelance developers · **I14** `tutors` invoice app for tutors · **I15** `caterers` invoice app for caterers · **I16** `movers` invoice app for movers · **I17** `pest-control` pest control invoicing software · **I18** `virtual-assistants` invoice app for virtual assistants · **I19** `pet-care` invoice app for dog walkers · **I20** `hair-makeup-artists` invoice app for makeup artists · **I21** `carpenters` invoice app for carpenters · **I22** `flooring-installers` invoice app for flooring installers · **I23** `tile-installers` invoice app for tile installers · **I24** `masons` invoice app for masons · **I25** `pool-service` invoice app for pool service companies · **I26** `window-cleaners` invoice app for window cleaners · **I27** `pressure-washing` invoice app for pressure washing businesses · **I28** `tree-service` invoice app for tree service companies · **I29** `snow-removal` invoice app for snow removal businesses · **I30** `locksmiths` invoice app for locksmiths · **I31** `appliance-repair` invoice app for appliance repair technicians · **I32** `junk-removal` invoice app for junk removal businesses · **I33** `carpet-cleaners` invoice app for carpet cleaners · **I34** `interior-designers` invoice app for interior designers · **I35** `djs` invoice app for djs · **I36** `event-planners` invoice app for event planners · **I37** `florists` invoice app for florists · **I38** `massage-therapists` invoice app for massage therapists · **I39** `translators` invoice app for translators · **I40** `copywriters` invoice app for copywriters · **I41** `social-media-managers` invoice app for social media managers · **I42** `music-teachers` invoice app for music teachers · **I43** `bookkeepers` invoice app for bookkeepers
+**I1** `plumbers-hvac` invoice app for plumbers · **I1-de** `/de/branchen/rechnungsprogramm-shk` rechnungsprogramm shk · **I2** `freelance-designers` invoicing app for freelance designers · **I3** `landscaping-lawn-care` landscaping invoicing software · **I3-de** `/de/branchen/rechnungsprogramm-garten-landschaftsbau` rechnungsprogramm garten- und landschaftsbau · **I4** `electricians` invoice app for electricians · **I4-de** `/de/branchen/rechnungsprogramm-elektriker` rechnungsprogramm elektriker · **I5** `general-contractors` invoice app for contractors · **I6** `photographers-videographers` invoicing software for photographers · **I6-de** `/de/branchen/rechnungsprogramm-fotografen` rechnungsprogramm für fotografen · **I7** `consultants-coaches` invoicing software for consultants · **I7-de** `/de/branchen/rechnungsprogramm-berater-coaches` rechnungsprogramm für coaches · **I8** `cleaning-services` invoice app for cleaning business · **I8-de** `/de/branchen/rechnungsprogramm-reinigungsfirma` rechnungsprogramm reinigungsfirma · **I9** `personal-trainers` invoicing for personal trainers · **I9-de** `/de/branchen/rechnungsprogramm-personal-trainer` rechnungsprogramm personal trainer · **I10** `auto-detailing-mechanics` invoice app for mechanics · **I11** `roofers` roofing invoice app · **I12** `painters` invoice app for painters · **I12-de** `/de/branchen/rechnungsprogramm-maler` rechnungsprogramm für maler · **I13** `web-developers` invoice app for freelance developers · **I14** `tutors` invoice app for tutors · **I15** `caterers` invoice app for caterers · **I16** `movers` invoice app for movers · **I17** `pest-control` pest control invoicing software · **I18** `virtual-assistants` invoice app for virtual assistants · **I19** `pet-care` invoice app for dog walkers · **I20** `hair-makeup-artists` invoice app for makeup artists · **I21** `carpenters` invoice app for carpenters · **I22** `flooring-installers` invoice app for flooring installers · **I23** `tile-installers` invoice app for tile installers · **I23-de** `/de/branchen/rechnungsprogramm-fliesenleger` rechnungsprogramm fliesenleger · **I24** `masons` invoice app for masons · **I25** `pool-service` invoice app for pool service companies · **I26** `window-cleaners` invoice app for window cleaners · **I27** `pressure-washing` invoice app for pressure washing businesses · **I28** `tree-service` invoice app for tree service companies · **I29** `snow-removal` invoice app for snow removal businesses · **I30** `locksmiths` invoice app for locksmiths · **I31** `appliance-repair` invoice app for appliance repair technicians · **I32** `junk-removal` invoice app for junk removal businesses · **I33** `carpet-cleaners` invoice app for carpet cleaners · **I34** `interior-designers` invoice app for interior designers · **I35** `djs` invoice app for djs · **I35-de** `/de/branchen/rechnungsprogramm-dj` dj rechnungsprogramm · **I36** `event-planners` invoice app for event planners · **I37** `florists` invoice app for florists · **I38** `massage-therapists` invoice app for massage therapists · **I39** `translators` invoice app for translators · **I40** `copywriters` invoice app for copywriters · **I41** `social-media-managers` invoice app for social media managers · **I42** `music-teachers` invoice app for music teachers · **I43** `bookkeepers` invoice app for bookkeepers
 
-## Planned (196)
+## Planned (206)
+
+### I1–I20: Industry pages 1–20 (built) (4)
+
+#### I2-de · /de/branchen/rechnungsprogramm-grafikdesigner
+
+- **Key:** Rechnungsprogramm Grafikdesigner
+- **Group:** I1–I20 · **Score:** 3 (search results 2026-11-28 (de): some to strong (sevdesk, papierkram); desk work, weaker mobile angle) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Already covered (link, don't repeat):** /de/vorlagen/rechnung-grafikdesigner (“rechnung grafikdesigner”)
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some to strong (sevdesk, papierkram); desk work, weaker mobile angle
+
+#### I11-de · /de/branchen/rechnungsprogramm-dachdecker
+
+- **Key:** Rechnungsprogramm Dachdecker
+- **Group:** I1–I20 · **Score:** 3 (search results 2026-11-28 (de): strong (lexware, sevdesk, streit); Abschlagsrechnungen are central and Invoicor doesn't track them, so a careful page) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): strong (lexware, sevdesk, streit); Abschlagsrechnungen are central and Invoicor doesn't track them, so a careful page
+
+#### I13-de · /de/branchen/rechnungsprogramm-webdesigner
+
+- **Key:** Rechnungsprogramm Webdesigner
+- **Group:** I1–I20 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk); B2B and time tracking expected, weak fit) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Already covered (link, don't repeat):** /de/vorlagen/rechnung-webdesigner (“rechnung webdesigner”)
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk); B2B and time tracking expected, weak fit
+
+#### I15-de · /de/branchen/rechnungsprogramm-catering
+
+- **Key:** Rechnungsprogramm Catering
+- **Group:** I1–I20 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk, lexware gastronomie); 7/19 % rules need a fresh check) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk, lexware gastronomie); 7/19 % rules need a fresh check
+
+### I21–I32: Industry pages 21–32 (built) (3)
+
+#### I21-de · /de/branchen/rechnungsprogramm-tischler
+
+- **Key:** Rechnungsprogramm Tischler
+- **Group:** I21–I32 · **Score:** 3 (search results 2026-11-28 (de): some to strong (sevdesk holzbau, lexware zimmerei, sage, streit)) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some to strong (sevdesk holzbau, lexware zimmerei, sage, streit)
+
+#### I22-de · /de/branchen/rechnungsprogramm-bodenleger
+
+- **Key:** Rechnungsprogramm Bodenleger
+- **Group:** I21–I32 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk, sage); solo trade) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk, sage); solo trade
+
+#### I24-de · /de/branchen/rechnungsprogramm-maurer
+
+- **Key:** Rechnungsprogramm Maurer
+- **Group:** I21–I32 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk only)) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk only)
+
+### I33–I43: Industry pages 33–43 (built) (3)
+
+#### I38-de · /de/branchen/rechnungsprogramm-massage
+
+- **Key:** Rechnungsprogramm Massage
+- **Group:** I33–I43 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk wellness-massage)) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk wellness-massage)
+
+#### I39-de · /de/branchen/rechnungsprogramm-uebersetzer
+
+- **Key:** Rechnungsprogramm Übersetzer
+- **Group:** I33–I43 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk dolmetscher); B2B-heavy) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Already covered (link, don't repeat):** /de/vorlagen/rechnung-uebersetzer (“rechnung übersetzer”)
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk dolmetscher); B2B-heavy
+
+#### I40-de · /de/branchen/rechnungsprogramm-texter
+
+- **Key:** Rechnungsprogramm Texter
+- **Group:** I33–I43 · **Score:** 2 (search results 2026-11-28 (de): some (sevdesk texter)) · **Intent:** software (commercial) · **Languages:** yes (written in de)
+- **Write about:** Written for Germany (RULES.md §4) like the first 10 German industry pages (scratchpad de-industry-brief): honest about no XRechnung/ZUGFeRD, practice-based stats only.
+- **Notes:** planned 2026-11-28 (de, next round after the first 10 index): some (sevdesk texter)
 
 ### I44–I53: Industry pages for T51–T60's trades (10)
 
@@ -1561,3 +1640,31 @@ URL, key, sections, what these pages can and can't do, links and languages: [RUL
 - **Write about:** Same fields and depth as the live industry pages (content/industries.json): stats, 3 mistakes, 3 real app features, a real day, 5 line items, glossary, FAQs. Timber sales settlements, per-tonne hauling, firewood sales.
 - **Don't write about:** The template's content (/templates/logging, /templates/firewood, /templates/land-clearing): link it, don't repeat it; features outside BRAND.md §10.
 - **Notes:** template: logging, firewood, land-clearing
+
+## Parked (23): not built, key reserved
+
+No proven demand, or the parent page covers it. Unpark (`status: planned`) only with new evidence.
+
+- **I5-de** `/de/branchen/rechnungsprogramm-handwerker` Rechnungsprogramm Handwerker: parked 2026-11-28 (demand gate, de): very strong head term owned by big software brands and comparison sites; a general German head page (LO) should own it, not an industry page
+- **I10-de** `/de/branchen/rechnungsprogramm-kfz` Kfz-Rechnungsprogramm: parked 2026-11-28 (demand gate, de): strong but workshops need parts and vehicle records (weak fit for an invoice app); mobile Fahrzeugaufbereitung has no search demand
+- **I14-de** `/de/branchen/rechnungsprogramm-nachhilfe` Rechnungsprogramm Nachhilfe: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I16-de** `/de/branchen/rechnungsprogramm-umzugsunternehmen` Rechnungsprogramm Umzugsunternehmen: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I17-de** `/de/branchen/rechnungsprogramm-schaedlingsbekaempfung` Rechnungsprogramm Schädlingsbekämpfung: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I18-de** `/de/branchen/rechnungsprogramm-virtuelle-assistenz` Rechnungsprogramm virtuelle Assistenz: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I19-de** `/de/branchen/rechnungsprogramm-tierbetreuung` Rechnungsprogramm Tierbetreuung: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I20-de** `/de/branchen/rechnungsprogramm-friseur` Rechnungsprogramm Friseur: parked 2026-11-28 (demand gate, de): strong for salons, but salons need a till with TSE (Kassensystem), which Invoicor isn't; mobile Visagisten have no search demand
+- **I25-de** `/de/branchen/rechnungsprogramm-pool-service` Rechnungsprogramm Poolservice: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I26-de** `/de/branchen/rechnungsprogramm-fensterreinigung` Rechnungsprogramm Fensterreinigung: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
+- **I27-de** `/de/branchen/rechnungsprogramm-hochdruckreinigung` Rechnungsprogramm Hochdruckreinigung: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I28-de** `/de/branchen/rechnungsprogramm-baumpflege` Rechnungsprogramm Baumpflege: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
+- **I29-de** `/de/branchen/rechnungsprogramm-winterdienst` Rechnungsprogramm Winterdienst: parked 2026-11-28 (demand gate, de): weak; covered as a section of the Reinigung or GaLaBau page
+- **I30-de** `/de/branchen/rechnungsprogramm-schluesseldienst` Rechnungsprogramm Schlüsseldienst: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I31-de** `/de/branchen/rechnungsprogramm-hausgeraete-reparatur` Rechnungsprogramm Hausgerätereparatur: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I32-de** `/de/branchen/rechnungsprogramm-entruempelung` Rechnungsprogramm Entrümpelung: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I33-de** `/de/branchen/rechnungsprogramm-teppichreinigung` Rechnungsprogramm Teppichreinigung: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I34-de** `/de/branchen/rechnungsprogramm-innenarchitekten` Rechnungsprogramm Innenarchitekten: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I36-de** `/de/branchen/rechnungsprogramm-eventplaner` Rechnungsprogramm Eventplaner: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I37-de** `/de/branchen/rechnungsprogramm-floristen` Rechnungsprogramm Floristen: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I41-de** `/de/branchen/rechnungsprogramm-social-media` Rechnungsprogramm Social Media Manager: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites
+- **I42-de** `/de/branchen/rechnungsprogramm-musiklehrer` Rechnungsprogramm Musiklehrer: parked 2026-11-28 (demand gate, de): weak to some; recurring billing expected (Invoicor has none)
+- **I43-de** `/de/branchen/rechnungsprogramm-buchhalter` Rechnungsprogramm Buchhalter: parked 2026-11-28 (demand gate, de): weak: no dedicated German brand pages, only auto-generated sites

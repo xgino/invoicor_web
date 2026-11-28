@@ -195,6 +195,50 @@
     "updated": "2026-11-18",
     "hash": "3ba604c3cf109040"
   },
+  "/de/branchen": {
+    "updated": "2026-11-28",
+    "hash": "4050b4375a2ead33"
+  },
+  "/de/branchen/rechnungsprogramm-berater-coaches": {
+    "updated": "2026-11-28",
+    "hash": "28a9e55ef95fb04b"
+  },
+  "/de/branchen/rechnungsprogramm-dj": {
+    "updated": "2026-11-28",
+    "hash": "6dfd8025b975caae"
+  },
+  "/de/branchen/rechnungsprogramm-elektriker": {
+    "updated": "2026-11-28",
+    "hash": "6c92331c028cd923"
+  },
+  "/de/branchen/rechnungsprogramm-fliesenleger": {
+    "updated": "2026-11-28",
+    "hash": "87248c01e55f4e78"
+  },
+  "/de/branchen/rechnungsprogramm-fotografen": {
+    "updated": "2026-11-28",
+    "hash": "5819436135dbaab7"
+  },
+  "/de/branchen/rechnungsprogramm-garten-landschaftsbau": {
+    "updated": "2026-11-28",
+    "hash": "e7c86f53c6dbc893"
+  },
+  "/de/branchen/rechnungsprogramm-maler": {
+    "updated": "2026-11-28",
+    "hash": "52c2062ba8cf6595"
+  },
+  "/de/branchen/rechnungsprogramm-personal-trainer": {
+    "updated": "2026-11-28",
+    "hash": "0607f5de22aae390"
+  },
+  "/de/branchen/rechnungsprogramm-reinigungsfirma": {
+    "updated": "2026-11-28",
+    "hash": "1ea55542af3717b4"
+  },
+  "/de/branchen/rechnungsprogramm-shk": {
+    "updated": "2026-11-28",
+    "hash": "933b8a75da6cf0d7"
+  },
   "/de/hilfe": {
     "updated": "2026-11-18",
     "hash": "27fe3582f77669b6"
@@ -257,11 +301,11 @@
   },
   "/de/vorlagen/rechnung-fliesenleger": {
     "updated": "2026-11-28",
-    "hash": "730df923bf952d76"
+    "hash": "550f2768d7af8b94"
   },
   "/de/vorlagen/rechnung-fotograf": {
     "updated": "2026-11-28",
-    "hash": "bf3593904a56fddf"
+    "hash": "45c5d51898b19ce8"
   },
   "/de/vorlagen/rechnung-freiberufler": {
     "updated": "2026-11-28",
@@ -269,7 +313,7 @@
   },
   "/de/vorlagen/rechnung-gebaeudereinigung": {
     "updated": "2026-11-28",
-    "hash": "0ebc49abf72f0df9"
+    "hash": "7866e5ca14adc371"
   },
   "/de/vorlagen/rechnung-grafikdesigner": {
     "updated": "2026-11-28",
@@ -277,7 +321,7 @@
   },
   "/de/vorlagen/rechnung-heizung-sanitaer": {
     "updated": "2026-11-28",
-    "hash": "bf676e90caf8e720"
+    "hash": "6eda0a3084a98ee8"
   },
   "/de/vorlagen/rechnung-lohn-und-material": {
     "updated": "2026-11-28",
@@ -285,7 +329,7 @@
   },
   "/de/vorlagen/rechnung-maler": {
     "updated": "2026-11-28",
-    "hash": "30fd5742f57d7aa4"
+    "hash": "3f840185aa2dd3f5"
   },
   "/de/vorlagen/rechnung-musikunterricht": {
     "updated": "2026-11-28",
@@ -297,7 +341,7 @@
   },
   "/de/vorlagen/rechnung-unternehmensberatung": {
     "updated": "2026-11-28",
-    "hash": "178ea4dc667b5312"
+    "hash": "7ad393db37e0b9bc"
   },
   "/de/vorlagen/rechnung-webdesigner": {
     "updated": "2026-11-28",

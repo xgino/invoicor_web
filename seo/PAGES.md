@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**337 live pages** · last change 2026-11-28 · 990 more planned in [PLAN.md](PLAN.md)
+**348 live pages** · last change 2026-11-28 · 1000 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -19,7 +19,7 @@
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
 | /da | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
-| /de | 33 | template (invoice type) 12, template 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /de | 44 | template (invoice type) 12, template 10, industry 10, tool 4, hub 2, trust 2, generator 1, home 1, support 1, android 1 |
 | /es | 19 | template (invoice type) 8, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /fr | 23 | template (invoice type) 12, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /it | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
@@ -40,19 +40,19 @@ in its own language, **en-only** = stays English. Which live page misses which l
 |---|---|---|---|---|
 | template | yes | 50 | 0–10 | 490 |
 | template (invoice type) | yes, en-only | 16 | 0–12 | 75 |
-| industry | yes | 43 | 0 | 430 |
+| industry | yes | 43 | 0–10 | 420 |
 | compare | en-only | 20 | 0 |  |
 | tool | yes | 4 | 4 |  |
 | generator | yes | 1 | 1 |  |
 | home | yes | 1 | 1 |  |
-| hub | yes, en-only | 3 | 0–1 | 13 |
+| hub | yes, en-only | 3 | 0–2 | 12 |
 | support | yes | 1 | 1 |  |
 | program | yes | 1 | 0 | 10 |
 | legal | yes | 2 | 0 | 20 |
 | android | yes | 1 | 1 |  |
 | trust | yes | 2 | 2 |  |
 
-**1038 language versions still to write** for live pages.
+**1027 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
@@ -61,12 +61,12 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
 | template (trade) | · | 10 | · | · | · | · | · | · | · | · | · |
 | template (invoice type) | 16 | 10 | 12 | 12 | 8 | · | · | · | 10 | 10 | 3 |
-| industry | 43 | · | · | · | · | · | · | · | · | · | · |
+| industry | 43 | · | 10 | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
 | generator | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | home | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| hub | 3 | 1 | 1 | 1 | 1 | · | · | · | 1 | 1 | 1 |
+| hub | 3 | 1 | 2 | 1 | 1 | · | · | · | 1 | 1 | 1 |
 | support | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
@@ -77,8 +77,8 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 83 | translations 83 (10 languages: template (invoice type) 53, trust 20, template (trade) 10) |
-| 2026-11-27 | 47 | template (invoice type) 16, trust 2, translations 29 (7 languages: template (invoice type) 12, template 10, hub 7) |
+| 2026-11-28 | 93 | translations 93 (10 languages: template (invoice type) 53, trust 20, template (trade) 10, industry 10) |
+| 2026-11-27 | 48 | template (invoice type) 16, trust 2, translations 30 (7 languages: template (invoice type) 12, template 10, hub 8) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
 | 2026-11-17 | 30 | template 10, industry 10, compare 10 |
@@ -291,12 +291,23 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /da/vaerktoejer/momsberegner | momsberegner: beregn moms online (gratis) | tool | yes | 2026-11-18 |
 | /da/vaerktoejer/timeberegner | timeberegner: beregn timer til fakturaen | tool | yes | 2026-11-18 |
 
-### /de (33)
+### /de (44)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /de | rechnungs-app für iphone | home | yes | 2026-11-18 |
 | /de/android | invoicor für android: bald verfügbar | android | yes | 2026-11-18 |
+| /de/branchen | rechnungsprogramm branchen | hub | yes | 2026-11-27 |
+| /de/branchen/rechnungsprogramm-berater-coaches | rechnungsprogramm für coaches | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-dj | dj rechnungsprogramm | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-elektriker | rechnungsprogramm elektriker | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-fliesenleger | rechnungsprogramm fliesenleger | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-fotografen | rechnungsprogramm für fotografen | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-garten-landschaftsbau | rechnungsprogramm garten- und landschaftsbau | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-maler | rechnungsprogramm für maler | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-personal-trainer | rechnungsprogramm personal trainer | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-reinigungsfirma | rechnungsprogramm reinigungsfirma | industry | yes | 2026-11-28 |
+| /de/branchen/rechnungsprogramm-shk | rechnungsprogramm shk | industry | yes | 2026-11-28 |
 | /de/hilfe | hilfe und häufige fragen | support | yes | 2026-11-18 |
 | /de/kontakt | invoicor kontakt | trust | yes | 2026-11-28 |
 | /de/rechnung-erstellen | rechnung erstellen | generator | yes | 2026-11-18 |

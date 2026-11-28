@@ -212,6 +212,17 @@
 /de/vorlagen/rechnung-unternehmensberatung
 /de/vorlagen/rechnung-uebersetzer
 /de/vorlagen/rechnung-musikunterricht
+/de/branchen
+/de/branchen/rechnungsprogramm-maler
+/de/branchen/rechnungsprogramm-reinigungsfirma
+/de/branchen/rechnungsprogramm-garten-landschaftsbau
+/de/branchen/rechnungsprogramm-fotografen
+/de/branchen/rechnungsprogramm-fliesenleger
+/de/branchen/rechnungsprogramm-elektriker
+/de/branchen/rechnungsprogramm-shk
+/de/branchen/rechnungsprogramm-personal-trainer
+/de/branchen/rechnungsprogramm-dj
+/de/branchen/rechnungsprogramm-berater-coaches
 /fr/aide
 /fr/modeles
 /fr/modeles/facture-acompte

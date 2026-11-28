@@ -1617,7 +1617,8 @@
         "slug": "rechnung-webdesigner"
       }
     ],
-    "invoice_types": ["anzahlungsrechnung", "schlussrechnung", "auslagen-weiterberechnen"]
+    "invoice_types": ["anzahlungsrechnung", "schlussrechnung", "auslagen-weiterberechnen"],
+    "industry": "rechnungsprogramm-fotografen"
   },
   {
     "slug": "rechnung-grafikdesigner",
@@ -2015,7 +2016,8 @@
         "slug": "rechnung-maler"
       }
     ],
-    "invoice_types": ["rechnung-lohn-und-material", "rechnung-dienstleistung", "dauerrechnung"]
+    "invoice_types": ["rechnung-lohn-und-material", "rechnung-dienstleistung", "dauerrechnung"],
+    "industry": "rechnungsprogramm-shk"
   },
   {
     "slug": "rechnung-maler",
@@ -2155,7 +2157,12 @@
         "slug": "rechnung-heizung-sanitaer"
       }
     ],
-    "invoice_types": ["anzahlungsrechnung", "rechnung-lohn-und-material", "subunternehmer-rechnung"]
+    "invoice_types": [
+      "anzahlungsrechnung",
+      "rechnung-lohn-und-material",
+      "subunternehmer-rechnung"
+    ],
+    "industry": "rechnungsprogramm-maler"
   },
   {
     "slug": "rechnung-fliesenleger",
@@ -2301,7 +2308,8 @@
         "slug": "rechnung-heizung-sanitaer"
       }
     ],
-    "invoice_types": ["rechnung-lohn-und-material", "subunternehmer-rechnung"]
+    "invoice_types": ["rechnung-lohn-und-material", "subunternehmer-rechnung"],
+    "industry": "rechnungsprogramm-fliesenleger"
   },
   {
     "slug": "rechnung-gebaeudereinigung",
@@ -2429,7 +2437,8 @@
         "slug": "rechnung-heizung-sanitaer"
       }
     ],
-    "invoice_types": ["dauerrechnung", "rechnung-dienstleistung"]
+    "invoice_types": ["dauerrechnung", "rechnung-dienstleistung"],
+    "industry": "rechnungsprogramm-reinigungsfirma"
   },
   {
     "slug": "rechnung-unternehmensberatung",
@@ -2563,7 +2572,8 @@
         "slug": "rechnung-webdesigner"
       }
     ],
-    "invoice_types": ["stundenrechnung"]
+    "invoice_types": ["stundenrechnung"],
+    "industry": "rechnungsprogramm-berater-coaches"
   },
   {
     "slug": "rechnung-uebersetzer",
