@@ -8,7 +8,7 @@
 > exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**305 / 4,000 pages live** (8%) · planned: 955 English and local pages + 8,091 language versions · **9,351 when everything is built** (fewer after the demand gate parks the weak ones)
+**325 / 4,000 pages live** (8%) · planned: 955 English and local pages + 8,071 language versions · **9,351 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run
 
@@ -43,7 +43,7 @@ Say which: "do D4" (one page and its language versions), "do D4-de" (one languag
 | [Country pages (English)](#country-pages-english-ct) | CT1–CT39 | 6 | 0 | 39 | 0/10 |
 | [Local pages (in the country's own language)](#local-pages-in-the-countrys-own-language-lo) | LO1–LO74 | 8 | 0 | 71 | none |
 | [Generators](#generators-g) | G1–G10 | 3 | 1 | 9 | 10/100 |
-| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 37/120 |
+| [Core pages, hubs, trust and legal](#core-pages-hubs-trust-and-legal-p) | P1–P19 | 3 | 11 | 4 | 57/120 |
 
 ## Best next (by score)
 
@@ -1608,7 +1608,7 @@ Rules: [RULES.md § P · Core pages, hubs, trust and legal](RULES.md#p--core-pag
 
 ### P10–P11: Trust pages: about, contact (E-E-A-T)
 
-- [x] **P10–P11** · 2/2 live · [languages](#p10p11-in-every-language): 0/20
+- [x] **P10–P11** · 2/2 live · [languages](#p10p11-in-every-language): 20/20
   - [x] **P10** [/about](https://invoicor.com/about) about invoicor
   - [x] **P11** [/contact](https://invoicor.com/contact) contact invoicor
 
@@ -2695,16 +2695,16 @@ Core pages (built): home, hubs, help, affiliate, terms, privacy, Android · 8 pa
 
 Trust pages: about, contact (E-E-A-T) · 2 pages
 
-- [ ] [**P10–P11 in German**](plan/languages/de.md#p10p11-in-german) · 0/2
-- [ ] [**P10–P11 in Spanish**](plan/languages/es.md#p10p11-in-spanish) · 0/2
-- [ ] [**P10–P11 in French**](plan/languages/fr.md#p10p11-in-french) · 0/2
-- [ ] [**P10–P11 in Dutch**](plan/languages/nl.md#p10p11-in-dutch) · 0/2
-- [ ] [**P10–P11 in Swedish**](plan/languages/sv.md#p10p11-in-swedish) · 0/2
-- [ ] [**P10–P11 in Danish**](plan/languages/da.md#p10p11-in-danish) · 0/2
-- [ ] [**P10–P11 in Norwegian (Bokmål)**](plan/languages/nb.md#p10p11-in-norwegian-bokmål) · 0/2
-- [ ] [**P10–P11 in Italian**](plan/languages/it.md#p10p11-in-italian) · 0/2
-- [ ] [**P10–P11 in Portuguese**](plan/languages/pt.md#p10p11-in-portuguese) · 0/2
-- [ ] [**P10–P11 in Polish**](plan/languages/pl.md#p10p11-in-polish) · 0/2
+- [x] [**P10–P11 in German**](plan/languages/de.md#p10p11-in-german) · 2/2
+- [x] [**P10–P11 in Spanish**](plan/languages/es.md#p10p11-in-spanish) · 2/2
+- [x] [**P10–P11 in French**](plan/languages/fr.md#p10p11-in-french) · 2/2
+- [x] [**P10–P11 in Dutch**](plan/languages/nl.md#p10p11-in-dutch) · 2/2
+- [x] [**P10–P11 in Swedish**](plan/languages/sv.md#p10p11-in-swedish) · 2/2
+- [x] [**P10–P11 in Danish**](plan/languages/da.md#p10p11-in-danish) · 2/2
+- [x] [**P10–P11 in Norwegian (Bokmål)**](plan/languages/nb.md#p10p11-in-norwegian-bokmål) · 2/2
+- [x] [**P10–P11 in Italian**](plan/languages/it.md#p10p11-in-italian) · 2/2
+- [x] [**P10–P11 in Portuguese**](plan/languages/pt.md#p10p11-in-portuguese) · 2/2
+- [x] [**P10–P11 in Polish**](plan/languages/pl.md#p10p11-in-polish) · 2/2
 
 ### P12–P15 in every language
 

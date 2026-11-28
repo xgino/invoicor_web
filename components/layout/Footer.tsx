@@ -11,6 +11,7 @@ import { getTemplates } from "@/lib/content";
 import { hubPath } from "@/lib/content-i18n";
 import { CHROME } from "@/lib/i18n/chrome";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/i18n/config";
+import { TRUST } from "@/lib/i18n/pages/trust";
 import { ROUTES } from "@/lib/i18n/routes";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -267,6 +268,12 @@ function LocalizedFooter({ locale }: { locale: Exclude<Locale, "en"> }) {
                   {t.industries}
                 </Item>
               )}
+              <Item href={ROUTES.about[locale] ?? "/about"} track="about">
+                {TRUST[locale].about.crumb}
+              </Item>
+              <Item href={ROUTES.contact[locale] ?? "/contact"} track="contact">
+                {TRUST[locale].contact.crumb}
+              </Item>
               <li>
                 <a
                   href={`mailto:${CONTACT_EMAIL}`}

@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { AndroidPage } from "@/components/sections/android/AndroidPage";
 import { GeneratorPage } from "@/components/sections/generator/GeneratorPage";
 import { HelpPage } from "@/components/sections/help/HelpPage";
+import { AboutPage } from "@/components/sections/trust/AboutPage";
+import { ContactPage } from "@/components/sections/trust/ContactPage";
 import {
   type ContentRoute,
   ContentRoutePage,
@@ -17,6 +19,7 @@ import { ANDROID } from "@/lib/i18n/pages/android";
 import { GENERATOR } from "@/lib/i18n/pages/generator";
 import { HELP } from "@/lib/i18n/pages/help";
 import { TOOLS_TEXT } from "@/lib/i18n/pages/tools";
+import { TRUST } from "@/lib/i18n/pages/trust";
 import { type PageKey, alternatesFor, localizedPaths } from "@/lib/i18n/routes";
 import { buildMetadata } from "@/lib/seo";
 
@@ -86,6 +89,14 @@ const PAGES: Record<
   help: {
     render: (l) => <HelpPage locale={l} />,
     meta: (l) => HELP[l].meta,
+  },
+  about: {
+    render: (l) => <AboutPage locale={l} />,
+    meta: (l) => TRUST[l].about.meta,
+  },
+  contact: {
+    render: (l) => <ContactPage locale={l} />,
+    meta: (l) => TRUST[l].contact.meta,
   },
   android: {
     render: (l) => <AndroidPage locale={l} />,

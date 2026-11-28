@@ -6743,20 +6743,20 @@
 
 ## P10–P11 in Portuguese
 
-[ ] Trust pages: about, contact (E-E-A-T) · 0/2 live in pt
+[x] Trust pages: about, contact (E-E-A-T) · 2/2 live in pt
 
 - **For every trust page:** The same facts (BRAND.md §10), written naturally in that language.
 
 ### P10-pt · /about → Portuguese
 
-- [ ] **Live in pt**
+- [x] **Live in pt**: /pt/sobre-nos
 - **English page:** [about invoicor](https://invoicor.com/about) (live: use it as the source)
 - **Search words:** the Portuguese term for "about invoicor"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Who makes Invoicor and why, where the data lives (servers in Germany), how to reach us; facts only, no invented team size or numbers.
 
 ### P11-pt · /contact → Portuguese
 
-- [ ] **Live in pt**
+- [x] **Live in pt**: /pt/contacto
 - **English page:** [contact invoicor](https://invoicor.com/contact) (live: use it as the source)
 - **Search words:** the Portuguese term for "contact invoicor"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): How to reach the team: email and in-app feedback, read by the team, replies can take a few days (BRAND.md §10: no live chat, no phone, no response-time promise).

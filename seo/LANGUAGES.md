@@ -7,7 +7,7 @@
 > `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);
 > then `npm run pages`.
 
-**962 language versions missing** for 110 of 122 live pages · 962 can be written now, 0 wait for a task (the **Needs** column).
+**942 language versions missing** for 108 of 122 live pages · 942 can be written now, 0 wait for a task (the **Needs** column).
 
 Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet), **–** parked on purpose (no local demand; the reason is in its row).
 
@@ -20,7 +20,7 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 430 | none | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
 | [TL · Free tools](#tl-free-tools) | 4 | 4 | 0 | none |  |  |  |  |  |  |  |  |  |  |
 | [G · Generators](#g-generators) | 1 | 1 | 0 | none |  |  |  |  |  |  |  |  |  |  |
-| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 3 | 63 | none | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 7 | 7 | 7 |
+| [P · Core pages, hubs, trust and legal](#p-core-pages-hubs-trust-and-legal) | 10 | 5 | 43 | none | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 5 | 5 | 5 |
 
 ## T Trade templates
 
@@ -171,5 +171,5 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | P7 | /terms |  | · | · | · | · | · | · | · | · | · | · |
 | P8 | /privacy |  | · | · | · | · | · | · | · | · | · | · |
 | P9 | /android | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| P10 | /about |  | · | · | · | · | · | · | · | · | · | · |
-| P11 | /contact |  | · | · | · | · | · | · | · | · | · | · |
+| P10 | /about | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| P11 | /contact | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |

@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**305 live pages** · last change 2026-11-28 · 981 more planned in [PLAN.md](PLAN.md)
+**325 live pages** · last change 2026-11-28 · 981 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -18,16 +18,16 @@
 | /industries | 44 | industry 43, hub 1 |
 | /templates | 67 | template 50, template (invoice type) 16, hub 1 |
 | /tools | 4 | tool 4 |
-| /da | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
-| /de | 31 | template (invoice type) 12, template 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
-| /es | 17 | template (invoice type) 8, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
-| /fr | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
-| /it | 8 | tool 4, generator 1, home 1, support 1, android 1 |
-| /nb | 12 | tool 4, template (invoice type) 3, generator 1, home 1, hub 1, support 1, android 1 |
-| /nl | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
-| /pl | 8 | tool 4, generator 1, home 1, support 1, android 1 |
-| /pt | 8 | tool 4, generator 1, home 1, support 1, android 1 |
-| /sv | 19 | template (invoice type) 10, tool 4, generator 1, home 1, hub 1, support 1, android 1 |
+| /da | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /de | 33 | template (invoice type) 12, template 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /es | 19 | template (invoice type) 8, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /fr | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /it | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
+| /nb | 14 | tool 4, template (invoice type) 3, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /nl | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /pl | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
+| /pt | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
+| /sv | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 
 ## Languages
 
@@ -50,9 +50,9 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | program | yes | 1 | 0 | 10 |
 | legal | yes | 2 | 0 | 20 |
 | android | yes | 1 | 1 |  |
-| trust | yes | 2 | 0 | 20 |
+| trust | yes | 2 | 2 |  |
 
-**1060 language versions still to write** for live pages.
+**1040 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
@@ -70,13 +70,13 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | program | 1 | · | · | · | · | · | · | · | · | · | · |
 | legal | 2 | · | · | · | · | · | · | · | · | · | · |
 | android | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| trust | 2 | · | · | · | · | · | · | · | · | · | · |
+| trust | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
 
 ### Made per day
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 51 | translations 51 (6 languages: template (invoice type) 51) |
+| 2026-11-28 | 71 | translations 71 (10 languages: template (invoice type) 51, trust 20) |
 | 2026-11-27 | 47 | template (invoice type) 16, trust 2, translations 29 (7 languages: template (invoice type) 12, template 10, hub 7) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
@@ -264,14 +264,16 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /tools/hours-calculator | hours calculator | tool | yes | 2026-11-18 |
 | /tools/vat-calculator | vat calculator | tool | yes | 2026-11-18 |
 
-### /da (19)
+### /da (21)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /da | faktura-app til iphone | home | yes | 2026-11-18 |
 | /da/android | invoicor til android: kommer snart | android | yes | 2026-11-18 |
 | /da/hjaelp | hjælp og ofte stillede spørgsmål | support | yes | 2026-11-18 |
+| /da/kontakt | kontakt invoicor | trust | yes | 2026-11-28 |
 | /da/lav-faktura | lav faktura | generator | yes | 2026-11-18 |
+| /da/om-os | om invoicor | trust | yes | 2026-11-28 |
 | /da/skabeloner | fakturaskabelon | hub | yes | 2026-11-27 |
 | /da/skabeloner/abonnementsfaktura | abonnementsfaktura | template (invoice type) | yes | 2026-11-28 |
 | /da/skabeloner/acontofaktura | acontofaktura | template (invoice type) | yes | 2026-11-28 |
@@ -288,18 +290,20 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /da/vaerktoejer/momsberegner | momsberegner: beregn moms online (gratis) | tool | yes | 2026-11-18 |
 | /da/vaerktoejer/timeberegner | timeberegner: beregn timer til fakturaen | tool | yes | 2026-11-18 |
 
-### /de (31)
+### /de (33)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /de | rechnungs-app für iphone | home | yes | 2026-11-18 |
 | /de/android | invoicor für android: bald verfügbar | android | yes | 2026-11-18 |
 | /de/hilfe | hilfe und häufige fragen | support | yes | 2026-11-18 |
+| /de/kontakt | invoicor kontakt | trust | yes | 2026-11-28 |
 | /de/rechnung-erstellen | rechnung erstellen | generator | yes | 2026-11-18 |
 | /de/tools | kostenlose tools: rechnung, mwst-rechner & mehr | tool | yes | 2026-11-18 |
 | /de/tools/mehrwertsteuer-rechner | mehrwertsteuer rechner | tool | yes | 2026-11-18 |
 | /de/tools/stundenrechner | stundenrechner: arbeitsstunden für die rechnung | tool | yes | 2026-11-18 |
 | /de/tools/stundensatz-rechner | stundensatz rechner | tool | yes | 2026-11-18 |
+| /de/ueber-uns | über invoicor | trust | yes | 2026-11-28 |
 | /de/vorlagen | rechnungsvorlagen | hub | yes | 2026-11-27 |
 | /de/vorlagen/anzahlungsrechnung | anzahlungsrechnung | template (invoice type) | yes | 2026-11-27 |
 | /de/vorlagen/auslagen-weiterberechnen | auslagen weiterberechnen | template (invoice type) | yes | 2026-11-27 |
@@ -324,13 +328,14 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /de/vorlagen/subunternehmer-rechnung | subunternehmer rechnung | template (invoice type) | yes | 2026-11-27 |
 | /de/vorlagen/teilrechnung | teilrechnung | template (invoice type) | yes | 2026-11-27 |
 
-### /es (17)
+### /es (19)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /es | app para hacer facturas gratis en iphone | home | yes | 2026-11-18 |
 | /es/android | invoicor para android: muy pronto | android | yes | 2026-11-18 |
 | /es/ayuda | ayuda y preguntas frecuentes | support | yes | 2026-11-18 |
+| /es/contacto | contacto invoicor | trust | yes | 2026-11-28 |
 | /es/crear-factura | crear factura | generator | yes | 2026-11-18 |
 | /es/herramientas | herramientas gratis para facturar | tool | yes | 2026-11-18 |
 | /es/herramientas/calculadora-horas | calculadora horas | tool | yes | 2026-11-18 |
@@ -345,14 +350,17 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /es/plantillas/factura-recurrente | factura recurrente | template (invoice type) | yes | 2026-11-28 |
 | /es/plantillas/factura-sin-iva | factura sin iva | template (invoice type) | yes | 2026-11-28 |
 | /es/plantillas/factura-subcontratista | factura inversión del sujeto pasivo | template (invoice type) | yes | 2026-11-28 |
+| /es/sobre-nosotros | quiénes somos invoicor | trust | yes | 2026-11-28 |
 
-### /fr (19)
+### /fr (21)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /fr | application facture iphone | home | yes | 2026-11-18 |
+| /fr/a-propos | à propos d'invoicor | trust | yes | 2026-11-28 |
 | /fr/aide | aide et questions fréquentes | support | yes | 2026-11-18 |
 | /fr/android | invoicor pour android : bientôt disponible | android | yes | 2026-11-18 |
+| /fr/contact | contacter invoicor | trust | yes | 2026-11-28 |
 | /fr/creer-une-facture | creer une facture | generator | yes | 2026-11-18 |
 | /fr/modeles | modèles de facture | hub | yes | 2026-11-27 |
 | /fr/modeles/facture-acompte | facture d'acompte | template (invoice type) | yes | 2026-11-28 |
@@ -370,44 +378,50 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /fr/outils/calcul-taux-horaire | calcul taux horaire | tool | yes | 2026-11-18 |
 | /fr/outils/calcul-tva | calcul tva | tool | yes | 2026-11-18 |
 
-### /it (8)
+### /it (10)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /it | app per fatture su iphone, gratis per iniziare | home | yes | 2026-11-18 |
 | /it/aiuto | centro assistenza e aiuto | support | yes | 2026-11-18 |
 | /it/android | invoicor per android: in arrivo | android | yes | 2026-11-18 |
+| /it/chi-siamo | chi siamo invoicor | trust | yes | 2026-11-28 |
+| /it/contatti | contatti invoicor | trust | yes | 2026-11-28 |
 | /it/crea-fattura | crea fattura | generator | yes | 2026-11-18 |
 | /it/strumenti | strumenti gratuiti: fattura, calcolo iva e ore | tool | yes | 2026-11-18 |
 | /it/strumenti/calcolo-iva | calcolo iva | tool | yes | 2026-11-18 |
 | /it/strumenti/calcolo-ore | calcolo ore | tool | yes | 2026-11-18 |
 | /it/strumenti/calcolo-tariffa-oraria | calcolo tariffa oraria | tool | yes | 2026-11-18 |
 
-### /nb (12)
+### /nb (14)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /nb | faktura-app for iphone | home | yes | 2026-11-18 |
 | /nb/android | invoicor for android: kommer snart | android | yes | 2026-11-18 |
 | /nb/hjelp | hjelp og vanlige spørsmål | support | yes | 2026-11-18 |
+| /nb/kontakt | kontakt invoicor | trust | yes | 2026-11-28 |
 | /nb/lag-faktura | lag faktura | generator | yes | 2026-11-18 |
 | /nb/maler | fakturamal | hub | yes | 2026-11-27 |
 | /nb/maler/faktura-arbeid-og-materialer | faktura arbeid og materialer | template (invoice type) | yes | 2026-11-28 |
 | /nb/maler/faktura-uten-mva | faktura uten mva | template (invoice type) | yes | 2026-11-28 |
 | /nb/maler/handelsfaktura | handelsfaktura | template (invoice type) | yes | 2026-11-28 |
+| /nb/om-oss | om invoicor | trust | yes | 2026-11-28 |
 | /nb/verktoy | gratis verktøy: faktura, mva og timepris | tool | yes | 2026-11-18 |
 | /nb/verktoy/beregn-timepris | beregn timepris | tool | yes | 2026-11-18 |
 | /nb/verktoy/mva-kalkulator | mva kalkulator | tool | yes | 2026-11-18 |
 | /nb/verktoy/timekalkulator | timekalkulator: regne ut timer til fakturaen | tool | yes | 2026-11-18 |
 
-### /nl (19)
+### /nl (21)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /nl | factuur app voor iphone | home | yes | 2026-11-18 |
 | /nl/android | invoicor voor android: binnenkort | android | yes | 2026-11-18 |
+| /nl/contact | invoicor contact | trust | yes | 2026-11-28 |
 | /nl/gratis-factuur-maken | gratis factuur maken | generator | yes | 2026-11-18 |
 | /nl/help | help en veelgestelde vragen | support | yes | 2026-11-18 |
+| /nl/over-ons | over invoicor | trust | yes | 2026-11-28 |
 | /nl/templates | factuur templates | hub | yes | 2026-11-27 |
 | /nl/templates/aanbetalingsfactuur | aanbetalingsfactuur | template (invoice type) | yes | 2026-11-28 |
 | /nl/templates/commerciele-factuur | commerciële factuur | template (invoice type) | yes | 2026-11-28 |
@@ -424,39 +438,44 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /nl/tools/uren-berekenen | uren berekenen | tool | yes | 2026-11-18 |
 | /nl/tools/uurtarief-berekenen | uurtarief berekenen | tool | yes | 2026-11-18 |
 
-### /pl (8)
+### /pl (10)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /pl | darmowa aplikacja do faktur na iphone'a | home | yes | 2026-11-18 |
 | /pl/android | invoicor na androida: już wkrótce | android | yes | 2026-11-18 |
+| /pl/kontakt | invoicor kontakt | trust | yes | 2026-11-28 |
 | /pl/narzedzia | darmowe narzędzia: generator faktur i kalkulatory | tool | yes | 2026-11-18 |
 | /pl/narzedzia/kalkulator-godzin | kalkulator godzin | tool | yes | 2026-11-18 |
 | /pl/narzedzia/kalkulator-stawki-godzinowej | kalkulator stawki godzinowej | tool | yes | 2026-11-18 |
 | /pl/narzedzia/kalkulator-vat | kalkulator vat | tool | yes | 2026-11-18 |
+| /pl/o-nas | invoicor o nas | trust | yes | 2026-11-28 |
 | /pl/pomoc | pomoc i najczęstsze pytania | support | yes | 2026-11-18 |
 | /pl/wystaw-fakture | wystaw fakture | generator | yes | 2026-11-18 |
 
-### /pt (8)
+### /pt (10)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /pt | app de faturas para iphone | home | yes | 2026-11-18 |
 | /pt/ajuda | ajuda e perguntas frequentes | support | yes | 2026-11-18 |
 | /pt/android | invoicor para android: em breve | android | yes | 2026-11-18 |
+| /pt/contacto | contactos invoicor | trust | yes | 2026-11-28 |
 | /pt/criar-fatura | criar fatura | generator | yes | 2026-11-18 |
 | /pt/ferramentas | ferramentas grátis: faturas, iva e horas | tool | yes | 2026-11-18 |
 | /pt/ferramentas/calculadora-horas | calculadora horas | tool | yes | 2026-11-18 |
 | /pt/ferramentas/calcular-iva | calcular iva | tool | yes | 2026-11-18 |
 | /pt/ferramentas/calcular-preco-hora | calcular preco hora | tool | yes | 2026-11-18 |
+| /pt/sobre-nos | sobre o invoicor | trust | yes | 2026-11-28 |
 
-### /sv (19)
+### /sv (21)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
 | /sv | fakturaapp för iphone | home | yes | 2026-11-18 |
 | /sv/android | invoicor för android: kommer snart | android | yes | 2026-11-18 |
 | /sv/hjalp | hjälp och vanliga frågor | support | yes | 2026-11-18 |
+| /sv/kontakt | kontakta invoicor | trust | yes | 2026-11-28 |
 | /sv/mallar | fakturamall | hub | yes | 2026-11-27 |
 | /sv/mallar/aterkommande-faktura | återkommande faktura | template (invoice type) | yes | 2026-11-28 |
 | /sv/mallar/delfaktura | delfaktura | template (invoice type) | yes | 2026-11-28 |
@@ -468,6 +487,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /sv/mallar/omvand-byggmoms-faktura | omvänd byggmoms faktura | template (invoice type) | yes | 2026-11-28 |
 | /sv/mallar/slutfaktura | slutfaktura | template (invoice type) | yes | 2026-11-28 |
 | /sv/mallar/vidarefakturering-utlagg | utlägg och vidarefakturering | template (invoice type) | yes | 2026-11-28 |
+| /sv/om-oss | om invoicor | trust | yes | 2026-11-28 |
 | /sv/skapa-faktura | skapa faktura | generator | yes | 2026-11-18 |
 | /sv/verktyg | gratis verktyg: faktura, momsräknare, timpris | tool | yes | 2026-11-18 |
 | /sv/verktyg/momsraknare | momsräknare: räkna ut moms online gratis | tool | yes | 2026-11-18 |

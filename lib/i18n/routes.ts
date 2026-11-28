@@ -9,7 +9,16 @@ import { DEFAULT_LOCALE, LOCALES, type Locale } from "./config";
  * Client-safe (no server imports): the language switcher reads this table in the browser.
  */
 export type PageKey =
-  "home" | "generator" | "android" | "tools" | "vat" | "hours" | "rate" | "help";
+  | "home"
+  | "generator"
+  | "android"
+  | "tools"
+  | "vat"
+  | "hours"
+  | "rate"
+  | "help"
+  | "about"
+  | "contact";
 
 export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
   home: {
@@ -115,6 +124,32 @@ export const ROUTES: Record<PageKey, Partial<Record<Locale, string>>> = {
     sv: "/sv/verktyg/rakna-ut-timpris",
     da: "/da/vaerktoejer/beregn-timepris",
     nb: "/nb/verktoy/beregn-timepris",
+  },
+  about: {
+    en: "/about",
+    nl: "/nl/over-ons",
+    de: "/de/ueber-uns",
+    fr: "/fr/a-propos",
+    es: "/es/sobre-nosotros",
+    it: "/it/chi-siamo",
+    pt: "/pt/sobre-nos",
+    pl: "/pl/o-nas",
+    sv: "/sv/om-oss",
+    da: "/da/om-os",
+    nb: "/nb/om-oss",
+  },
+  contact: {
+    en: "/contact",
+    nl: "/nl/contact",
+    de: "/de/kontakt",
+    fr: "/fr/contact",
+    es: "/es/contacto",
+    it: "/it/contatti",
+    pt: "/pt/contacto",
+    pl: "/pl/kontakt",
+    sv: "/sv/kontakt",
+    da: "/da/kontakt",
+    nb: "/nb/kontakt",
   },
 };
 
