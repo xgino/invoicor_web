@@ -62,16 +62,6 @@ export type TemplateEntry = z.infer<typeof templateSchema>;
 export type IndustryEntry = z.infer<typeof industrySchema>;
 export type ComparisonEntry = z.infer<typeof comparisonSchema>;
 
-/** Last real content update per collection (used for sitemap <lastmod>). Update when content changes. */
-export const CONTENT_UPDATED_AT = {
-  templates: "2026-11-27",
-  industries: "2026-11-26",
-  comparisons: "2026-11-18",
-  legal: "2026-11-18",
-  privacy: "2026-11-18",
-  site: "2026-11-17",
-} as const;
-
 function parseCollection<S extends z.ZodType>(name: string, schema: S, raw: unknown): z.infer<S>[] {
   const result = z.array(schema).safeParse(raw);
   if (!result.success) {

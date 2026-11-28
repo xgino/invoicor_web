@@ -23,6 +23,7 @@
     "api:types": "openapi-typescript \"https://invoicor.com/api/schema/?format=json\" -o types/api.generated.ts",
     "check": "npm run lint && npm run typecheck && npm run content:check && npm run test:unit && npm run build && npm run test:site && npm run test:e2e",
     "prepare": "husky",
+    "dates": "UPDATE_PAGE_DATES=1 vitest run tests/unit/page-dates.test.ts --silent=false",
     "pages": "node scripts/pages.mjs",
     "pages:category": "node scripts/pages-category.mjs",
     "pages:page": "node scripts/pages-page.mjs",

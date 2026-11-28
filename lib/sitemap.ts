@@ -1,5 +1,6 @@
 import { absoluteUrl } from "@/lib/config";
-import { CONTENT_UPDATED_AT, getComparisons, getIndustries, getTemplates } from "@/lib/content";
+import { getComparisons, getIndustries, getTemplates } from "@/lib/content";
+import { pageUpdated } from "@/lib/page-dates";
 import {
   contentPath,
   contentVersions,
@@ -14,8 +15,8 @@ import { TOOLS } from "@/lib/tools/registry";
 /**
  * The sitemaps, one per page type, under one index at /sitemap.xml (task S1), so Search
  * Console shows indexing per type: a type under ~50% indexed is the signal to improve it before
- * adding more (seo/RULES.md §2). lastmod uses real content dates (lib/content.ts), not the build
- * date, so search engines only recrawl when something actually changed.
+ * adding more (seo/RULES.md §2). lastmod is each page's own date (lib/page-dates.ts: when its text
+ * last changed), not the build date, so search engines only recrawl what actually changed.
  */
 export const SITEMAP_TYPES = ["pages", "templates", "industries", "compare", "tools"] as const;
 export type SitemapType = (typeof SITEMAP_TYPES)[number];
@@ -38,32 +39,29 @@ function languagesOf(path: string): Partial<Record<Locale, string>> | undefined 
   return Object.keys(versions).length > 1 ? versions : undefined;
 }
 
-const entry = (
-  path: string,
-  lastModified: string,
-  versions?: Partial<Record<Locale, string>>,
-): SitemapEntry => {
+/** A URL with its own date: when its text last changed (lib/page-dates.ts). */
+const entry = (path: string, versions?: Partial<Record<Locale, string>>): SitemapEntry => {
   const languages = versions
     ? Object.keys(versions).length > 1
       ? versions
       : undefined
     : languagesOf(path);
-  return { path, lastModified, ...(languages ? { languages } : {}) };
+  return { path, lastModified: pageUpdated(path), ...(languages ? { languages } : {}) };
 };
 
 /** A content type in every language (task S1): the hubs, then the English pages and their versions. */
-function contentEntries(kind: "templates" | "industries", date: string): SitemapEntry[] {
+function contentEntries(kind: "templates" | "industries"): SitemapEntry[] {
   const hubs = hubVersions(kind);
   const english = (kind === "templates" ? getTemplates() : getIndustries()).map((e) =>
-    entry(`/${kind}/${e.slug}`, date, contentVersions(kind, e.slug)),
+    entry(`/${kind}/${e.slug}`, contentVersions(kind, e.slug)),
   );
   const local = PREFIXED_LOCALES.flatMap((l) =>
     (kind === "templates" ? getLocalTemplates(l) : getLocalIndustries(l)).map((e) =>
-      entry(contentPath(kind, l, e.slug), date, contentVersions(kind, e.translation_of)),
+      entry(contentPath(kind, l, e.slug), contentVersions(kind, e.translation_of)),
     ),
   );
   return [
-    ...(Object.entries(hubs) as [Locale, string][]).map(([, path]) => entry(path, date, hubs)),
+    ...(Object.entries(hubs) as [Locale, string][]).map(([, path]) => entry(path, hubs)),
     ...english,
     ...local,
   ];
@@ -76,30 +74,27 @@ export function sitemapEntries(): Record<SitemapType, SitemapEntry[]> {
       .flatMap((key) =>
         (Object.entries(ROUTES[key]) as [Locale, string][])
           .filter(([l]) => l !== DEFAULT_LOCALE)
-          .map(([, path]) => entry(path, CONTENT_UPDATED_AT.site)),
+          .map(([, path]) => entry(path)),
       );
   return {
     pages: [
-      entry("/", CONTENT_UPDATED_AT.site),
-      entry("/free-invoice-generator", "2026-11-18"),
-      entry("/help", CONTENT_UPDATED_AT.site),
-      entry("/android", CONTENT_UPDATED_AT.site),
-      entry("/affiliate", CONTENT_UPDATED_AT.site),
-      entry("/about", "2026-11-27"),
-      entry("/contact", "2026-11-27"),
-      entry("/terms", CONTENT_UPDATED_AT.legal),
-      entry("/privacy", CONTENT_UPDATED_AT.privacy),
+      entry("/"),
+      entry("/free-invoice-generator"),
+      entry("/help"),
+      entry("/android"),
+      entry("/affiliate"),
+      entry("/about"),
+      entry("/contact"),
+      entry("/terms"),
+      entry("/privacy"),
       ...translated((k) => !TOOL_KEYS.includes(k)),
     ],
-    templates: contentEntries("templates", CONTENT_UPDATED_AT.templates),
-    industries: contentEntries("industries", CONTENT_UPDATED_AT.industries),
-    compare: [
-      entry("/compare", CONTENT_UPDATED_AT.comparisons),
-      ...getComparisons().map((c) => entry(`/compare/${c.slug}`, CONTENT_UPDATED_AT.comparisons)),
-    ],
+    templates: contentEntries("templates"),
+    industries: contentEntries("industries"),
+    compare: [entry("/compare"), ...getComparisons().map((c) => entry(`/compare/${c.slug}`))],
     tools: [
-      entry("/tools", "2026-11-18"),
-      ...TOOLS.filter((t) => t.href.startsWith("/tools/")).map((t) => entry(t.href, "2026-11-18")),
+      entry("/tools"),
+      ...TOOLS.filter((t) => t.href.startsWith("/tools/")).map((t) => entry(t.href)),
       ...translated((k) => TOOL_KEYS.includes(k)),
     ],
   };
