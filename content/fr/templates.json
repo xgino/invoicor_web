@@ -729,6 +729,10 @@
       {
         "name": "Refacturation de frais",
         "slug": "refacturation-frais"
+      },
+      {
+        "name": "Facture de vente",
+        "slug": "facture-vente"
       }
     ],
     "invoice_types": []
@@ -1221,6 +1225,288 @@
       {
         "name": "Facture de solde",
         "slug": "facture-solde"
+      },
+      {
+        "name": "Facture de travaux",
+        "slug": "facture-travaux"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-travaux",
+    "translation_of": "labor-and-materials-invoice",
+    "niche": "Facture de travaux",
+    "title": "Facture travaux : main-d'œuvre et fournitures | Invoicor",
+    "meta_description": "Facture de travaux pour artisans : main-d'œuvre et fournitures sur des lignes séparées, déplacement, TVA et mentions. Voyez l'exemple, créez votre PDF.",
+    "h1": "Modèle de facture travaux : main-d'œuvre et fournitures",
+    "subtitle": "Pour les artisans qui facturent un particulier ou une entreprise : le temps d'un côté, le matériel de l'autre.",
+    "intro_paragraph": "Une facture de travaux sépare ce que le client paie pour votre temps de ce qu'il paie pour le matériel posé : la main-d'œuvre d'un côté, les fournitures de l'autre. Le client comprend son prix, et chaque pièce se justifie. Sous-traitant d'une autre entreprise ? La TVA est alors autoliquidée : voyez la facture de sous-traitant. Toute entreprise française doit pouvoir recevoir des factures électroniques depuis le 1er septembre 2026 ; les grandes entreprises et ETI en émettent depuis cette date, les PME et micro-entreprises le feront au 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date un artisan peut facturer comme aujourd'hui. Vos clients particuliers relèvent de l'e-reporting. Invoicor produit des PDF, pas des factures électroniques (Factur-X, UBL), sans lien avec une plateforme agréée. En Belgique, facturer une autre entreprise belge passe par Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de travaux",
+    "what_to_include_intro": "Chaque ligne doit se ranger d'emblée dans la main-d'œuvre, les fournitures ou les frais.",
+    "req_1_title": "Le temps de travail, en heures ou au forfait",
+    "req_1_text": "En régie : les heures, le taux horaire HT et le travail fait (« Recherche de fuite et remplacement du siphon, 2 h à 58 € HT »). Au forfait, une ligne qui nomme le travail suffit.",
+    "req_2_title": "Chaque fourniture avec sa quantité et son prix unitaire",
+    "req_2_text": "Quantité et prix unitaire HT font partie des mentions obligatoires (service-public, F31808). Ajoutez la référence et l'unité : 25 m de câble 3G2,5, 4 sacs de mortier colle. « Fournitures : 640 € » ne se contrôle pas.",
+    "req_3_title": "Votre marge sur le matériel, annoncée",
+    "req_3_text": "Acheter et garantir le matériel justifie une marge. Intégrez-la au prix unitaire et annoncez-la une fois dans les notes (« prix des fournitures marge comprise ») : annoncée, elle se discute moins que découverte.",
+    "req_4_title": "Déplacement, déchets et petites fournitures",
+    "req_4_text": "Ces frais ne sont ni du temps ni une pièce : chacun sa ligne et un nom clair (« Déplacement, forfait zone 1 », « Évacuation de l'ancien appareil »). Vis et chevilles peuvent former une ligne « Petites fournitures », annoncée au client.",
+    "req_5_title": "La date des travaux et l'adresse du chantier",
+    "req_5_text": "La date de la prestation est obligatoire, et Invoicor n'a pas de champ pour elle : écrivez-la dans la ligne de main-d'œuvre ou les notes. Ajoutez l'adresse du chantier si elle diffère : avec la facturation électronique, l'adresse de livraison différente devient une mention.",
+    "req_6_title": "Le bon taux de TVA, un seul par facture",
+    "req_6_text": "20 % en général. Certains travaux dans des logements peuvent relever de 10 % ou 5,5 %, sous conditions ; vérifiez avec votre expert-comptable. Invoicor applique un taux par facture : chantier à deux taux, deux factures.",
+    "what_to_include_outro": "Avec vos mentions habituelles (SIREN dans le champ « SIRET », échéance, pénalités), la facture est complète.",
+    "paper_label": "Facture de travaux · exemple",
+    "sample_breakdown_title": "Exemple de facture de travaux",
+    "sample_breakdown_intro": "Un plombier-chauffagiste de Rennes remplace le chauffe-eau et deux mitigeurs d'un salon de coiffure. Locaux professionnels : TVA à 20 %. Dans un logement, un taux réduit peut s'appliquer sous conditions : vérifiez avec votre expert-comptable.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Déplacement, forfait Rennes centre",
+        "qty": "1",
+        "rate": "35,00 €",
+        "amount": "35,00 €"
+      },
+      {
+        "description": "Main-d'œuvre : dépose et pose du chauffe-eau, remplacement de deux mitigeurs (14 novembre 2026)",
+        "qty": "5 h",
+        "rate": "58,00 €",
+        "amount": "290,00 €"
+      },
+      {
+        "description": "Chauffe-eau électrique 150 L, mural vertical",
+        "qty": "1",
+        "rate": "489,00 €",
+        "amount": "489,00 €"
+      },
+      {
+        "description": "Groupe de sécurité et raccords diélectriques",
+        "qty": "1",
+        "rate": "46,50 €",
+        "amount": "46,50 €"
+      },
+      {
+        "description": "Mitigeur de lavabo avec douchette",
+        "qty": "2",
+        "rate": "112,00 €",
+        "amount": "224,00 €"
+      },
+      {
+        "description": "Tube cuivre Ø 16, barre de 2 m",
+        "qty": "3",
+        "rate": "21,40 €",
+        "amount": "64,20 €"
+      },
+      {
+        "description": "Évacuation et recyclage de l'ancien chauffe-eau",
+        "qty": "1",
+        "rate": "30,00 €",
+        "amount": "30,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "1 178,70 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "235,74 €",
+    "sample_breakdown_balance": "1 414,44 €",
+    "sample_breakdown_notes": "Travaux réalisés le 14 novembre 2026, 8 rue des Tanneurs, Rennes. Bon de commande du client : SC-2026-07. Prix des fournitures marge comprise. Échéance : 14 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Pénalités en cas de retard : 3 fois le taux d'intérêt légal. Indemnité forfaitaire de 40 € pour frais de recouvrement.",
+    "industry_notes_title": "Bon à savoir sur la facture de travaux",
+    "industry_notes": [
+      {
+        "title": "Forfait ou régie",
+        "text": "Au forfait, le client paie le prix convenu. En régie, il paie le temps et le matériel réels, et la facture fait preuve : fixez par écrit le mode de prix et un plafond. Chez un particulier, un devis préalable est souvent attendu, parfois obligatoire selon le métier et le montant : vérifiez votre cas."
+      },
+      {
+        "title": "Particulier ou entreprise",
+        "text": "Pour un client professionnel, ajoutez son numéro de TVA (au-delà de 150 € HT) et l'indemnité forfaitaire de 40 € pour frais de recouvrement, qui ne vise pas les particuliers."
+      },
+      {
+        "title": "Gardez les factures du grossiste",
+        "text": "Elles justifient vos prix si un client les conteste. Classez-les par chantier avec la facture client et gardez le tout 10 ans (Code de commerce, L123-22). Les mentions sur l'assurance décennale ont leur propre page."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de travaux",
+    "mistakes": [
+      {
+        "title": "Tout regrouper en une ligne",
+        "text": "« Remplacement chauffe-eau : 1 178,70 € » ne dit ni combien d'heures, ni quel appareil. Séparez le temps, le matériel et les frais."
+      },
+      {
+        "title": "Cacher la pose dans le prix des pièces",
+        "text": "Gonfler le matériel pour couvrir la pose rend les pièces chères et la main-d'œuvre invisible : le client compare en magasin et conteste. Même courte, la pose va sur une ligne de main-d'œuvre."
+      },
+      {
+        "title": "Appliquer un taux réduit par habitude",
+        "text": "Facturer 10 % parce que le chantier est chez un particulier, sans vérifier les conditions, peut vous valoir un rappel de TVA. Faites le point avec votre expert-comptable pour chaque type de chantier."
+      }
+    ],
+    "tip_title": "Enregistrez vos fournitures courantes",
+    "pro_tip": "Enregistrez vos fournitures courantes comme articles dans l'app, marge comprise : vos prix restent cohérents d'un chantier à l'autre et la facture se remplit avant de repartir.",
+    "format_pdf_desc": "Un PDF fige heures, prix et TVA tels que facturés, pour le client comme pour le dossier du chantier.",
+    "faq_title": "Questions sur la facture de travaux",
+    "faqs": [
+      {
+        "question": "Faut-il séparer main-d'œuvre et fournitures sur la facture ?",
+        "answer": "La facture doit indiquer la quantité et le prix unitaire HT : en pratique, cela revient à les séparer, et cela évite bien des contestations."
+      },
+      {
+        "question": "Quel taux de TVA sur une facture de travaux ?",
+        "answer": "20 % en général, par exemple dans des locaux professionnels. Certains travaux dans des logements peuvent passer à 10 % ou 5,5 %, sous conditions : vérifiez avec votre expert-comptable."
+      },
+      {
+        "question": "Le client fournit le matériel : que facturer ?",
+        "answer": "Votre temps, le déplacement et vos petites fournitures. Précisez dans les notes que le matériel principal vient du client : utile si la pièce pose problème."
+      },
+      {
+        "question": "Et si le chantier dépasse ce qui était prévu ?",
+        "answer": "Obtenez l'accord écrit du client avant de dépasser, puis facturez le supplément sur sa ligne, avec la date de l'accord. Découvert sur la facture, un dépassement retarde souvent le paiement."
+      },
+      {
+        "question": "Puis-je mettre 10 % et 20 % sur la même facture Invoicor ?",
+        "answer": "Non : un seul taux de TVA s'applique à toute la facture. Pour un chantier à deux taux, faites deux factures ou demandez conseil à votre expert-comptable."
+      }
+    ],
+    "cta_title": "Créez votre facture de travaux",
+    "related": [
+      {
+        "name": "Facture d'acompte",
+        "slug": "facture-acompte"
+      },
+      {
+        "name": "Facture sous-traitant",
+        "slug": "facture-sous-traitant"
+      }
+    ],
+    "invoice_types": []
+  },
+  {
+    "slug": "facture-vente",
+    "translation_of": "sales-invoice",
+    "niche": "Facture de vente",
+    "title": "Facture de vente de marchandises : modèle | Invoicor",
+    "meta_description": "Facture de vente de marchandises : références, quantités, date de livraison, frais de port et TVA. Voyez l'exemple d'une commande et créez votre PDF.",
+    "h1": "Modèle de facture de vente : exemple pour vos marchandises",
+    "subtitle": "Commerçants, fabricants, vendeurs en ligne : lister les produits, dater la livraison, appliquer le bon taux.",
+    "intro_paragraph": "Une facture de vente facture des marchandises qui quittent votre stock. Elle suit la commande et le bon de livraison ligne par ligne, pour que l'acheteur pointe ce qu'il a reçu. Ce n'est ni un ticket de caisse ni la facture commerciale d'un envoi hors UE. Facturation électronique : chaque entreprise en France doit pouvoir en recevoir depuis le 1er septembre 2026 ; les grandes entreprises et ETI en émettent depuis cette date, les PME et micro-entreprises le devront au 1er septembre 2027 (impots.gouv.fr), et jusqu'à cette date vous facturez vos clients professionnels comme aujourd'hui. Vos ventes aux particuliers relèvent de l'e-reporting. Invoicor génère des factures PDF, pas des factures électroniques (Factur-X, UBL), et ne passe par aucune plateforme agréée. En Belgique, une vente entre entreprises belges se facture en Peppol depuis le 1er janvier 2026.",
+    "include_title": "Ce que doit contenir une facture de vente",
+    "what_to_include_intro": "L'acheteur la lit à côté de son bon de commande et du bon de livraison. Six points rendent le pointage immédiat.",
+    "req_1_title": "Une désignation précise et une référence",
+    "req_1_text": "Produit, variante et référence interne : « Portefeuille cuir, noir (réf. PF-03) ». La référence n'est pas imposée, mais elle accélère réassorts et retours.",
+    "req_2_title": "Quantité, prix unitaire HT et remises",
+    "req_2_text": "Par ligne : quantité, prix unitaire HT et montant. Les réductions accordées font partie des mentions (service-public, F31808) ; Invoicor propose une remise en pourcentage ou en montant fixe.",
+    "req_3_title": "La date de livraison, et l'adresse si elle diffère",
+    "req_3_text": "La date de la vente est une mention obligatoire. Invoicor n'a pas de champ pour elle : écrivez « Livré le 20 novembre 2026 » dans les notes. L'adresse de livraison, si elle diffère, devient une mention avec la facturation électronique.",
+    "req_4_title": "Les frais de port sur leur propre ligne",
+    "req_4_text": "Le transport facturé fait partie du prix et porte la TVA ; pour des produits à taux réduit, demandez à votre expert-comptable quel taux appliquer au port.",
+    "req_5_title": "Le taux de TVA de vos produits",
+    "req_5_text": "Le taux normal est de 20 %. Certains biens relèvent de 5,5 %, par exemple de nombreux produits alimentaires : vérifiez le taux de chaque produit. Invoicor applique un taux par facture : une commande à deux taux, deux factures, ou l'avis de votre expert-comptable.",
+    "req_6_title": "L'acheteur et sa commande",
+    "req_6_text": "Raison sociale, adresse, numéro de TVA (au-delà de 150 € HT) et bon de commande s'il en a émis un. Son SIREN deviendra obligatoire avec la facturation électronique : notez-le déjà.",
+    "what_to_include_outro": "La facture colle alors au colis, et l'acheteur paie sans vous écrire.",
+    "paper_label": "Facture de vente · exemple",
+    "sample_breakdown_title": "Exemple de facture de vente",
+    "sample_breakdown_intro": "Un atelier de maroquinerie lyonnais livre un réassort à un concept store de Bordeaux, qui revendra les articles : quatre produits et le port. Client professionnel en France, articles à 20 %.",
+    "sample_breakdown_rows": [
+      {
+        "description": "Porte-cartes cuir, cognac (réf. PC-01)",
+        "qty": "30",
+        "rate": "14,50 €",
+        "amount": "435,00 €"
+      },
+      {
+        "description": "Portefeuille cuir, noir (réf. PF-03)",
+        "qty": "20",
+        "rate": "32,00 €",
+        "amount": "640,00 €"
+      },
+      {
+        "description": "Ceinture cuir 35 mm, tailles 85 à 100 (réf. CE-35)",
+        "qty": "15",
+        "rate": "27,00 €",
+        "amount": "405,00 €"
+      },
+      {
+        "description": "Sac bandoulière cuir grainé, camel (réf. SB-12)",
+        "qty": "6",
+        "rate": "89,00 €",
+        "amount": "534,00 €"
+      },
+      {
+        "description": "Frais de port, 2 colis",
+        "qty": "1",
+        "rate": "18,00 €",
+        "amount": "18,00 €"
+      }
+    ],
+    "sample_breakdown_subtotal": "2 032,00 €",
+    "sample_breakdown_tax_label": "TVA 20 %",
+    "sample_breakdown_tax": "406,40 €",
+    "sample_breakdown_balance": "2 438,40 €",
+    "sample_breakdown_notes": "Commande CS-0419 du 6 novembre 2026. Livrée le 20 novembre 2026, 12 cours Victor-Hugo, Bordeaux. Nature de l'opération : biens. SIREN du client : 834 215 607. Échéance : 20 décembre 2026, par virement. Escompte pour paiement anticipé : néant. Taux des pénalités de retard : trois fois le taux d'intérêt légal. En cas de retard, indemnité de 40 € pour frais de recouvrement.",
+    "industry_notes_title": "Bon à savoir sur la facture de vente",
+    "industry_notes": [
+      {
+        "title": "Un acompte sur une vente déclenche la TVA",
+        "text": "Pour une vente de biens, la TVA est exigible dès l'encaissement d'un acompte (acomptes perçus depuis le 1er janvier 2023). Facturez-le à part (voir la facture d'acompte). Pour la TVA du reste, voyez avec votre expert-comptable."
+      },
+      {
+        "title": "Vendre hors de France",
+        "text": "Une livraison à une entreprise d'un autre pays de l'UE est exonérée avec la mention « Exonération TVA, art. 262 ter-I du CGI » (ou équivalente) et les deux numéros de TVA (voir la facture commerciale). Hors de l'UE, l'export est exonéré (art. 262 I du CGI) et l'envoi demande une facture commerciale."
+      },
+      {
+        "title": "Une erreur se corrige par un nouveau document",
+        "text": "Une facture envoyée ne se retouche pas. L'usage en France est la facture d'avoir, qui cite le numéro de l'originale : voyez-en la forme avec votre expert-comptable. Dans Invoicor, « Duplicate Invoice » crée la version juste au numéro suivant, et l'originale passe en « Cancelled »."
+      }
+    ],
+    "mistakes_title": "Trois erreurs sur une facture de vente",
+    "mistakes": [
+      {
+        "title": "Une ligne pour toute la commande",
+        "text": "« Commande maroquinerie : 2 032,00 € » ne se compare pas au colis et ne permet pas de créditer un article abîmé. Une ligne par produit."
+      },
+      {
+        "title": "Oublier la date de livraison",
+        "text": "Une facture du 25 pour une livraison du 20, sans le dire, laisse un trou : la date de la vente manque, et l'acheteur rapproche mal facture et bon de livraison."
+      },
+      {
+        "title": "Réclamer une commande déjà payée en ligne",
+        "text": "Un client qui a payé en ligne attend une facture acquittée, pas une demande de paiement. Notez « Payée le 18 novembre 2026 par carte » et passez la facture au statut « Paid »."
+      }
+    ],
+    "tip_title": "Le numéro de facture dans le colis",
+    "pro_tip": "Écrivez le numéro de facture sur le bon de livraison du colis : l'acheteur qui signale un manque le cite, et la réponse tient en un message.",
+    "format_pdf_desc": "Le PDF garde références, quantités et totaux alignés et s'imprime proprement avec le bon de livraison.",
+    "faq_title": "Questions sur la facture de vente",
+    "faqs": [
+      {
+        "question": "Quelle différence entre une facture de vente et un ticket de caisse ?",
+        "answer": "Le ticket constate un achat payé en magasin ; la facture porte toutes les mentions obligatoires et sert de pièce comptable. Un acheteur professionnel en a besoin ; pour un particulier, les cas varient : vérifiez le vôtre."
+      },
+      {
+        "question": "Facture de vente ou facture commerciale ?",
+        "answer": "La facture commerciale suit un envoi hors de l'UE et ajoute ce que veut la douane : code SH, origine, poids. Pour une vente en France, la facture de vente suffit."
+      },
+      {
+        "question": "Quel taux de TVA sur une facture de vente ?",
+        "answer": "20 % pour la plupart des produits en métropole. Le taux de 5,5 % vise certains biens, dont de nombreux produits alimentaires ; 10 % et 2,1 % existent aussi. Vérifiez le taux de chaque produit ; les DOM ont les leurs."
+      },
+      {
+        "question": "Les frais de port sont-ils soumis à la TVA ?",
+        "answer": "Oui : facturés au client, ils font partie du prix. Avec des produits à 5,5 %, faites confirmer le taux du port par votre expert-comptable."
+      },
+      {
+        "question": "Vendeur en micro-entreprise : quelle mention mettre ?",
+        "answer": "En franchise en base, pas de TVA mais « TVA non applicable, art. 293 B du CGI » (référence actuelle, à revérifier avec la renumérotation du CGI en 2027). Pour la vente de marchandises, le seuil 2026 est de 85 000 € (seuil majoré 93 500 €). Le PDF affiche alors une ligne « TVA (0%) », que la mention explique."
+      }
+    ],
+    "cta_title": "Créez votre facture de vente",
+    "related": [
+      {
+        "name": "Facture commerciale",
+        "slug": "facture-commerciale"
+      },
+      {
+        "name": "Facture d'acompte",
+        "slug": "facture-acompte"
       }
     ],
     "invoice_types": []

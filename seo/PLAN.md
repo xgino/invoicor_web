@@ -8,7 +8,7 @@
 > exists today: [PAGES.md](PAGES.md). Data: [pages/](pages/) (`id`, `brief`,
 > `avoid`), groups and tasks: `scripts/pages-items.mjs`. After any change: `npm run pages`.
 
-**325 / 4,000 pages live** (8%) · planned: 955 English and local pages + 8,071 language versions · **9,351 when everything is built** (fewer after the demand gate parks the weak ones)
+**327 / 4,000 pages live** (8%) · planned: 955 English and local pages + 8,069 language versions · **9,351 when everything is built** (fewer after the demand gate parks the weak ones)
 
 ## How to run
 
@@ -36,7 +36,7 @@ Say which: "do D4" (one page and its language versions), "do D4-de" (one languag
 |---|---|---|---|---|---|
 | [Trade templates](#trade-templates-t) | T1–T313 | 20 | 50 | 263 | 10/2955 |
 | [Billing-type templates](#billing-type-templates-b) | B1–B178 | 15 | 0 | 177 | 0/1770 |
-| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 63/156 |
+| [Invoice types (general documents)](#invoice-types-general-documents-d) | D1–D30 | 2 | 16 | 10 | 65/156 |
 | [Industry pages ("invoice app for …")](#industry-pages-invoice-app-for--i) | I1–I239 | 20 | 43 | 196 | 0/2230 |
 | [Compare pages ("{competitor} alternative")](#compare-pages-competitor-alternative-c) | C1–C97 | 11 | 20 | 77 | none |
 | [Free tools](#free-tools-tl) | TL1–TL113 | 10 | 4 | 109 | 40/910 |
@@ -728,7 +728,7 @@ Rules: [RULES.md § D · Invoice types (general documents)](RULES.md#d--invoice-
 
 ### D1–D20: Invoice types: the general documents
 
-- [x] **D1–D20** · 16/16 live · 4 parked · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · [languages](#d1d20-in-every-language): 63/77
+- [x] **D1–D20** · 16/16 live · 4 parked · the parents of the billing types and big local searches (Anzahlungsrechnung, factuur zzp): build first · [languages](#d1d20-in-every-language): 65/77
   - [x] **D1** [/templates/deposit-invoice](https://invoicor.com/templates/deposit-invoice) deposit invoice template
   - [x] **D4** [/templates/hourly-invoice](https://invoicor.com/templates/hourly-invoice) hourly invoice template
   - [x] **D6** [/templates/retainer-invoice](https://invoicor.com/templates/retainer-invoice) retainer invoice template
@@ -2457,7 +2457,7 @@ Invoice types: the general documents · 14 pages
 
 - [x] [**D1–D20 in German**](plan/languages/de.md#d1d20-in-german) · 12/12
 - [ ] [**D1–D20 in Spanish**](plan/languages/es.md#d1d20-in-spanish) · 8/11
-- [ ] [**D1–D20 in French**](plan/languages/fr.md#d1d20-in-french) · 10/12
+- [x] [**D1–D20 in French**](plan/languages/fr.md#d1d20-in-french) · 12/12
 - [x] [**D1–D20 in Dutch**](plan/languages/nl.md#d1d20-in-dutch) · 10/10
 - [ ] [**D1–D20 in Swedish**](plan/languages/sv.md#d1d20-in-swedish) · 10/11
 - [ ] [**D1–D20 in Danish**](plan/languages/da.md#d1d20-in-danish) · 10/11

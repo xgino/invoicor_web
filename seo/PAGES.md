@@ -7,7 +7,7 @@
 > Is a key taken? `npm run pages -- --check "plumbing deposit invoice"` (`--lang de` for German).
 > The site test fails when this file or the CSV is behind the site.
 
-**325 live pages** · last change 2026-11-28 · 981 more planned in [PLAN.md](PLAN.md)
+**327 live pages** · last change 2026-11-28 · 979 more planned in [PLAN.md](PLAN.md)
 
 ## Counts
 
@@ -21,7 +21,7 @@
 | /da | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /de | 33 | template (invoice type) 12, template 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /es | 19 | template (invoice type) 8, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
-| /fr | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
+| /fr | 23 | template (invoice type) 12, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /it | 10 | tool 4, trust 2, generator 1, home 1, support 1, android 1 |
 | /nb | 14 | tool 4, template (invoice type) 3, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
 | /nl | 21 | template (invoice type) 10, tool 4, trust 2, generator 1, home 1, hub 1, support 1, android 1 |
@@ -39,7 +39,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | Page type | Decision | English | Per other language | Still to write |
 |---|---|---|---|---|
 | template | yes | 50 | 0–10 | 490 |
-| template (invoice type) | yes, en-only | 16 | 0–12 | 77 |
+| template (invoice type) | yes, en-only | 16 | 0–12 | 75 |
 | industry | yes | 43 | 0 | 430 |
 | compare | en-only | 20 | 0 |  |
 | tool | yes | 4 | 4 |  |
@@ -52,14 +52,14 @@ in its own language, **en-only** = stays English. Which live page misses which l
 | android | yes | 1 | 1 |  |
 | trust | yes | 2 | 2 |  |
 
-**1040 language versions still to write** for live pages.
+**1038 language versions still to write** for live pages.
 
 ### invoicor.com: page type × language
 
 | Type | en | nl | de | fr | es | it | pt | pl | sv | da | nb |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | template | 50 | · | 10 | · | · | · | · | · | · | · | · |
-| template (invoice type) | 16 | 10 | 12 | 10 | 8 | · | · | · | 10 | 10 | 3 |
+| template (invoice type) | 16 | 10 | 12 | 12 | 8 | · | · | · | 10 | 10 | 3 |
 | industry | 43 | · | · | · | · | · | · | · | · | · | · |
 | compare | 20 | · | · | · | · | · | · | · | · | · | · |
 | tool | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
@@ -76,7 +76,7 @@ in its own language, **en-only** = stays English. Which live page misses which l
 
 | Date | Pages | What |
 |---|---|---|
-| 2026-11-28 | 71 | translations 71 (10 languages: template (invoice type) 51, trust 20) |
+| 2026-11-28 | 73 | translations 73 (10 languages: template (invoice type) 53, trust 20) |
 | 2026-11-27 | 47 | template (invoice type) 16, trust 2, translations 29 (7 languages: template (invoice type) 12, template 10, hub 7) |
 | 2026-11-26 | 53 | template 30, industry 23 |
 | 2026-11-18 | 124 | template 10, industry 10, compare 10, tool 4, hub 3, legal 2, generator 1, home 1, support 1, program 1, android 1, translations 80 (10 languages: tool 40, generator 10, home 10, support 10, android 10) |
@@ -352,7 +352,7 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /es/plantillas/factura-subcontratista | factura inversión del sujeto pasivo | template (invoice type) | yes | 2026-11-28 |
 | /es/sobre-nosotros | quiénes somos invoicor | trust | yes | 2026-11-28 |
 
-### /fr (21)
+### /fr (23)
 
 | URL | Key | Type | Languages | Made |
 |---|---|---|---|---|
@@ -372,6 +372,8 @@ They may compete for the same search: merge them, or give one a clearly differen
 | /fr/modeles/facture-situation | facture de situation | template (invoice type) | yes | 2026-11-28 |
 | /fr/modeles/facture-solde | facture de solde | template (invoice type) | yes | 2026-11-28 |
 | /fr/modeles/facture-sous-traitant | facture sous-traitant | template (invoice type) | yes | 2026-11-28 |
+| /fr/modeles/facture-travaux | facture travaux | template (invoice type) | yes | 2026-11-28 |
+| /fr/modeles/facture-vente | facture de vente | template (invoice type) | yes | 2026-11-28 |
 | /fr/modeles/refacturation-frais | refacturation de frais | template (invoice type) | yes | 2026-11-28 |
 | /fr/outils | outils gratuits : facture, calcul tva, heures | tool | yes | 2026-11-18 |
 | /fr/outils/calcul-heures | calcul heures | tool | yes | 2026-11-18 |

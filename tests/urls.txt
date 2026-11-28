@@ -214,6 +214,8 @@
 /fr/modeles/facture-sans-tva
 /fr/modeles/facture-freelance
 /fr/modeles/facture-sous-traitant
+/fr/modeles/facture-travaux
+/fr/modeles/facture-vente
 /es/ayuda
 /es/plantillas
 /es/plantillas/factura-de-anticipo

@@ -5700,7 +5700,7 @@
 
 ## D1–D20 in French
 
-[ ] Invoice types: the general documents · 10/12 live in fr
+[x] Invoice types: the general documents · 12/12 live in fr
 
 - **For every template (invoice type) page:** This document under that country's rules (the local terms list): what it must show there, the law or tax office as the source with the date checked.
 
@@ -5742,7 +5742,7 @@
 
 ### D8-fr · /templates/labor-and-materials-invoice → French
 
-- [ ] **Live in fr**: /fr/modeles/facture-travaux
+- [x] **Live in fr**: /fr/modeles/facture-travaux
 - **English page:** [labor and materials invoice template](https://invoicor.com/templates/labor-and-materials-invoice) (live: use it as the source)
 - **Search words:** the French term for "labor and materials invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): The general labor + materials invoice for any trade: labor lines (hours × rate or a flat price), material lines (quantity, unit, unit price), markup on materials (shown or built in), trip and disposal fees, and where tax applies (in many US states materials are taxed and labor isn't: hedge). Time and materials vs a fixed price. Sample: a repair with 3 labor hours and 5 material lines. A 'by trade' section links the trade versions.
@@ -5758,7 +5758,7 @@
 
 ### D10-fr · /templates/sales-invoice → French
 
-- [ ] **Live in fr**: /fr/modeles/facture-vente
+- [x] **Live in fr**: /fr/modeles/facture-vente
 - **English page:** [sales invoice template](https://invoicor.com/templates/sales-invoice) (live: use it as the source)
 - **Search words:** the French term for "sales invoice template"
 - **Write:** the English brief, adapted to the country (local rules, prices and units instead of US ones): Selling goods: item and SKU, quantity, unit price, discount, shipping, sales tax or VAT on goods, delivery date and address, returns terms. How it differs from a receipt (already paid) and a commercial invoice (export). Sample: 4 products + shipping, for makers, resellers and B2B orders.

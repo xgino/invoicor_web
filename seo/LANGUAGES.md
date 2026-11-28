@@ -7,7 +7,7 @@
 > `npm run pages:gaps -- de` (a language), `-- de D` (and a letter). Data: [pages/](pages/);
 > then `npm run pages`.
 
-**942 language versions missing** for 108 of 122 live pages · 942 can be written now, 0 wait for a task (the **Needs** column).
+**940 language versions missing** for 107 of 122 live pages · 940 can be written now, 0 wait for a task (the **Needs** column).
 
 Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet), **–** parked on purpose (no local demand; the reason is in its row).
 
@@ -16,7 +16,7 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | Category | Live pages | Complete | Missing | Needs | de | es | fr | nl | sv | da | nb | it | pt | pl |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [T · Trade templates](#t-trade-templates) | 50 | 0 | 455 | none | 5 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 | 50 |
-| [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 4 | 14 | none |  | 3 | 2 |  | 1 | 1 | 7 |  |  |  |
+| [D · Invoice types (general documents)](#d-invoice-types-general-documents) | 14 | 5 | 12 | none |  | 3 |  |  | 1 | 1 | 7 |  |  |  |
 | [I · Industry pages ("invoice app for …")](#i-industry-pages-invoice-app-for-) | 43 | 0 | 430 | none | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 | 43 |
 | [TL · Free tools](#tl-free-tools) | 4 | 4 | 0 | none |  |  |  |  |  |  |  |  |  |  |
 | [G · Generators](#g-generators) | 1 | 1 | 0 | none |  |  |  |  |  |  |  |  |  |  |
@@ -87,9 +87,9 @@ Marks: **✓** live, **·** missing, **◦** planned (a row exists, not live yet
 | D4 | /templates/hourly-invoice |  | ✓ | ◦ | – | – | – | ✓ | ◦ | – | – | – |
 | D6 | /templates/retainer-invoice | complete | – | – | – | – | – | – | – | – | – | – |
 | D7 | /templates/monthly-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ◦ | – | – | – |
-| D8 | /templates/labor-and-materials-invoice |  | ✓ | ✓ | ◦ | – | ✓ | ✓ | ✓ | – | – | – |
+| D8 | /templates/labor-and-materials-invoice | complete | ✓ | ✓ | ✓ | – | ✓ | ✓ | ✓ | – | – | – |
 | D9 | /templates/service-invoice |  | ✓ | ◦ | ✓ | – | ◦ | ✓ | – | – | – | – |
-| D10 | /templates/sales-invoice |  | – | ✓ | ◦ | ✓ | – | ◦ | – | – | – | – |
+| D10 | /templates/sales-invoice |  | – | ✓ | ✓ | ✓ | – | ◦ | – | – | – | – |
 | D11 | /templates/commercial-invoice | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | – |
 | D14 | /templates/expense-reimbursement-invoice |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ◦ | – | – | – |
 | D15 | /templates/no-vat-invoice | complete | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | – |
